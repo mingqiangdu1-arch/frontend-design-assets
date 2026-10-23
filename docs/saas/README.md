@@ -2,6 +2,8 @@
 
 本目录是 **SaaS 类前端资产的长期专题研究**，不是把所有应用都变成 SaaS，更不是宣称某一套视觉适合所有 SaaS。
 
+对应 [Notion SaaS 持续研究专题]([private-notion-link-redacted]) 和 [Notion 可检索素材库]([private-notion-link-redacted])。
+
 ## 当前研究范围
 
 先完善 **Refined Light SaaS** 的工作台/记录管理场景。通过 [视觉风格档案](../../styles/refined-light-saas/README.md) 引用现有主题，但把交互行为本身记录为跨视觉可借鉴的模式。
