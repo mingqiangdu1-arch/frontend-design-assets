@@ -21,6 +21,7 @@
 - 实操规范：[docs/interactions/patterns.md](docs/interactions/patterns.md)
 - 页面组合：[recipes](recipes)
 - 无依赖可运行演示：[playground/initial-interaction-lab.html](playground/initial-interaction-lab.html)（打开本地 HTML 即可；需要 AI 浏览器时建议使用本地 HTTP server）
+- React/TS 参考实现：[components/reference](components/reference)（9 个示例，尚未生产验收）
 - 初始快照说明：[archive/v0.1.0.md](archive/v0.1.0.md)
 
 ## 与现有平台的边界

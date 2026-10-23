@@ -282,6 +282,183 @@
       "path": "archive/v0.1.0.md",
       "demo": "playground/initial-interaction-lab.html",
       "notion": "[private-notion-link-redacted]"
+    },
+    {
+      "id": "UI-001",
+      "type": "component",
+      "name": "Button",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "react",
+        "typescript",
+        "reference",
+        "Refined Light"
+      ],
+      "path": "components/reference/Button.tsx",
+      "dependencies": [
+        "DT-001"
+      ],
+      "license": "Original reference implementation; inspect dependency licenses and do integration QA",
+      "verified": "Not validated in target app; TypeScript integration and accessibility QA pending"
+    },
+    {
+      "id": "UI-002",
+      "type": "component",
+      "name": "StatusBadge",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "react",
+        "typescript",
+        "reference",
+        "Refined Light"
+      ],
+      "path": "components/reference/StatusBadge.tsx",
+      "dependencies": [
+        "DT-001"
+      ],
+      "license": "Original reference implementation; inspect dependency licenses and do integration QA",
+      "verified": "Not validated in target app; TypeScript integration and accessibility QA pending"
+    },
+    {
+      "id": "UI-003",
+      "type": "component",
+      "name": "AppShell",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "react",
+        "typescript",
+        "reference",
+        "Refined Light"
+      ],
+      "path": "components/reference/AppShell.tsx",
+      "dependencies": [
+        "DT-001"
+      ],
+      "license": "Original reference implementation; inspect dependency licenses and do integration QA",
+      "verified": "Not validated in target app; TypeScript integration and accessibility QA pending"
+    },
+    {
+      "id": "UI-004",
+      "type": "component",
+      "name": "AnimatedTabs",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "react",
+        "typescript",
+        "reference",
+        "Refined Light"
+      ],
+      "path": "components/reference/AnimatedTabs.tsx",
+      "dependencies": [
+        "DT-001",
+        "IP-005"
+      ],
+      "license": "Original reference implementation; inspect dependency licenses and do integration QA",
+      "verified": "Not validated in target app; TypeScript integration and accessibility QA pending"
+    },
+    {
+      "id": "UI-005",
+      "type": "component",
+      "name": "DetailSheet",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "react",
+        "typescript",
+        "reference",
+        "Refined Light"
+      ],
+      "path": "components/reference/DetailSheet.tsx",
+      "dependencies": [
+        "DT-001",
+        "IP-003"
+      ],
+      "license": "Original reference implementation; inspect dependency licenses and do integration QA",
+      "verified": "Not validated in target app; TypeScript integration and accessibility QA pending"
+    },
+    {
+      "id": "UI-006",
+      "type": "component",
+      "name": "CommandPalette",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "react",
+        "typescript",
+        "reference",
+        "Refined Light"
+      ],
+      "path": "components/reference/CommandPalette.tsx",
+      "dependencies": [
+        "DT-001",
+        "IP-001"
+      ],
+      "license": "Original reference implementation; inspect dependency licenses and do integration QA",
+      "verified": "Not validated in target app; TypeScript integration and accessibility QA pending"
+    },
+    {
+      "id": "UI-007",
+      "type": "component",
+      "name": "ToastFeedback",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "react",
+        "typescript",
+        "reference",
+        "Refined Light"
+      ],
+      "path": "components/reference/ToastFeedback.tsx",
+      "dependencies": [
+        "DT-001",
+        "IP-006"
+      ],
+      "license": "Original reference implementation; inspect dependency licenses and do integration QA",
+      "verified": "Not validated in target app; TypeScript integration and accessibility QA pending"
+    },
+    {
+      "id": "UI-008",
+      "type": "component",
+      "name": "DataTable",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "react",
+        "typescript",
+        "reference",
+        "Refined Light"
+      ],
+      "path": "components/reference/DataTable.tsx",
+      "dependencies": [
+        "DT-001"
+      ],
+      "license": "Original reference implementation; inspect dependency licenses and do integration QA",
+      "verified": "Not validated in target app; TypeScript integration and accessibility QA pending"
+    },
+    {
+      "id": "UI-009",
+      "type": "component",
+      "name": "AsyncProgress",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "react",
+        "typescript",
+        "reference",
+        "Refined Light"
+      ],
+      "path": "components/reference/AsyncProgress.tsx",
+      "dependencies": [
+        "DT-001",
+        "IP-007"
+      ],
+      "license": "Original reference implementation; inspect dependency licenses and do integration QA",
+      "verified": "Not validated in target app; TypeScript integration and accessibility QA pending"
     }
-  ]
+  ],
+  "referenceImplementationRoot": "components/reference"
 }
