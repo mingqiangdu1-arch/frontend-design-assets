@@ -28,6 +28,8 @@
 
 ## 表单与高级筛选专题 V0.3
 
+- [本轮 Notion 研究及资产索引]([private-notion-link-redacted])
+
 - [SAAS-007～011 行为与边界](editing-patterns.md)：就地编辑、blur 校验、失败重试、未保存提醒、AND/OR 条件组及快捷键。
 - [SaaS Edit + Filter Lab](../../playground/saas-editing/index.html)：独立模拟交互，不连接后端。
 - [PR-005 页面组合规范](../../recipes/saas-form-filter.md)

@@ -976,7 +976,8 @@
         "workspace",
         "data-tool"
       ],
-      "spec": "docs/saas/editing-patterns.md"
+      "spec": "docs/saas/editing-patterns.md",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "REF-022",
@@ -998,7 +999,8 @@
         "workspace",
         "data-tool"
       ],
-      "spec": "docs/saas/editing-patterns.md"
+      "spec": "docs/saas/editing-patterns.md",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "REF-023",
@@ -1020,7 +1022,8 @@
         "workspace",
         "data-tool"
       ],
-      "spec": "docs/saas/editing-patterns.md"
+      "spec": "docs/saas/editing-patterns.md",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "REF-024",
@@ -1042,7 +1045,8 @@
         "workspace",
         "data-tool"
       ],
-      "spec": "docs/saas/editing-patterns.md"
+      "spec": "docs/saas/editing-patterns.md",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "REF-025",
@@ -1064,7 +1068,8 @@
         "workspace",
         "data-tool"
       ],
-      "spec": "docs/saas/editing-patterns.md"
+      "spec": "docs/saas/editing-patterns.md",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "SAAS-007",
@@ -1090,7 +1095,8 @@
       "demoStyleId": "refined-light-saas",
       "dependencies": [
         "REF-021"
-      ]
+      ],
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "SAAS-008",
@@ -1116,7 +1122,8 @@
       "demoStyleId": "refined-light-saas",
       "dependencies": [
         "REF-022"
-      ]
+      ],
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "SAAS-009",
@@ -1142,7 +1149,8 @@
       "demoStyleId": "refined-light-saas",
       "dependencies": [
         "REF-021"
-      ]
+      ],
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "SAAS-010",
@@ -1168,7 +1176,8 @@
       "demoStyleId": "refined-light-saas",
       "dependencies": [
         "REF-023"
-      ]
+      ],
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "SAAS-011",
@@ -1194,7 +1203,8 @@
       "demoStyleId": "refined-light-saas",
       "dependencies": [
         "REF-024"
-      ]
+      ],
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "PR-005",
@@ -1227,7 +1237,8 @@
         "SAAS-009",
         "SAAS-010",
         "SAAS-011"
-      ]
+      ],
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "KIT-003",
@@ -1253,7 +1264,8 @@
       "demoStyleId": "refined-light-saas",
       "dependencies": [
         "PR-005"
-      ]
+      ],
+      "notion": "[private-notion-link-redacted]"
     }
   ],
   "referenceImplementationRoot": "components/reference",
