@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Independent Style Explorer · Frontend Design Assets</title>
+<meta name="description" content="Three independent design styles with different layouts, typography, controls, and interaction patterns.">
+<link rel="stylesheet" href="../../styles/precision-dark/tokens.css">
+<link rel="stylesheet" href="../../styles/editorial-warm/tokens.css">
+<link rel="stylesheet" href="../../styles/playful-pop/tokens.css">
+<link rel="stylesheet" href="./explorer.css">
+<script type="module" src="./explorer.mjs"></script></head>
+<body>
+<header class="explorer-bar">
+  <div class="explorer-brand"><span aria-hidden="true">◈</span> Frontend Design Assets <small>STYLE EXPLORER / V0.4</small></div>
+  <div class="style-switch" role="group" aria-label="选择设计风格">
+    <button type="button" data-style="precision-dark" aria-pressed="true" class="current"><span class="swatch swatch-dark"></span> Precision Dark</button>
+    <button type="button" data-style="editorial-warm" aria-pressed="false"><span class="swatch swatch-warm"></span> Editorial Warm</button>
+    <button type="button" data-style="playful-pop" aria-pressed="false"><span class="swatch swatch-pop"></span> Playful Pop</button>
+  </div>
+  <a href="../../docs/styles/README.md" class="index-link">设计目录 ↗</a>
+</header>
+<main id="explorerRoot">
+
+<section class="style-scene precision-scene" id="precision-dark" data-design-theme="precision-dark" aria-label="Precision Dark 演示">
+  <aside class="pd-rail" aria-label="专业工具侧栏">
+    <div class="pd-logo" aria-label="深色风格演示标志">◈</div>
+    <span class="pd-rail-icon active" aria-hidden="true">⌘</span><span class="pd-rail-icon" aria-hidden="true">▦</span><span class="pd-rail-icon" aria-hidden="true">◎</span>
+    <span class="pd-rail-bottom" aria-hidden="true">⋮</span>
+  </aside>
+  <div class="pd-shell">
+    <header class="pd-header"><div class="pd-crumb"><b>MONITOR</b> <span>/</span> Workspace <span>/</span> Operations</div><div class="pd-indicator"><i></i> SYSTEM ONLINE <span class="pd-keycap">⌘ K</span></div></header>
+    <div class="pd-main">
+      <aside class="pd-projects" aria-label="项目选择"><p class="pd-eyebrow">WORKSPACE / 06</p>
+        <button class="pd-project active" type="button">◈ <span>Operations</span> <em>04</em></button>
+        <button class="pd-project" type="button">◫ <span>Design System</span></button>
+        <button class="pd-project" type="button">⌁ <span>Analytics</span></button>
+        <div class="pd-divider"></div><p class="pd-eyebrow">QUICK ACCESS</p>
+        <button id="pdCommandButton" class="pd-search" type="button">⌕ <span>Search or run command</span><kbd>⌘ K</kbd></button>
+        <p class="pd-help">键盘优先 · 清晰焦点 · 紧凑信息密度</p>
+      </aside>
+      <div class="pd-content">
+        <div class="pd-title-line"><div><p class="pd-eyebrow">SYSTEM / CURRENT VIEW</p><h1>Focus on what matters.</h1><p class="pd-subtitle">低干扰层级、紧凑操作与自然衔接的专业工作环境。</p></div><button id="pdFocus" class="pd-outline" type="button" aria-pressed="false">◌ Focus mode</button></div>
+        <div class="pd-summary"><div><span>OPEN ITEMS</span><strong>24</strong><small>↗ +3 this week</small></div><div><span>IN PROGRESS</span><strong>08</strong><small>Active queue</small></div><div><span>COMPLETED</span><strong>76<span>%</span></strong><small>Last 30 days</small></div></div>
+        <div class="pd-table-title"><h2>Active work</h2><span>STATUS <b>●</b> ALL ACTIVE</span></div>
+        <div class="pd-list" role="list" aria-label="模拟工作项">
+          <button class="pd-item selected" data-work="Feature review" role="listitem" type="button"><span class="pd-check">◉</span><span class="pd-code">OPS-120</span><span class="pd-item-name">Feature review</span><span class="pd-state">In progress</span><span class="pd-age">TODAY</span></button>
+          <button class="pd-item" data-work="Design token audit" role="listitem" type="button"><span class="pd-check">◌</span><span class="pd-code">DS-048</span><span class="pd-item-name">Design token audit</span><span class="pd-state">Queued</span><span class="pd-age">YESTERDAY</span></button>
+          <button class="pd-item" data-work="Launch checklist" role="listitem" type="button"><span class="pd-check">◉</span><span class="pd-code">OPS-119</span><span class="pd-item-name">Launch checklist</span><span class="pd-state">In progress</span><span class="pd-age">THURSDAY</span></button>
+          <button class="pd-item" data-work="Workflow metrics" role="listitem" type="button"><span class="pd-check">◌</span><span class="pd-code">ANA-027</span><span class="pd-item-name">Workflow metrics</span><span class="pd-state">Queued</span><span class="pd-age">TUESDAY</span></button>
+        </div>
+        <div class="pd-bottom-hint"><span>⌘K Command palette</span><span>↑↓ Choose item · Enter Inspect</span></div>
+      </div>
+      <aside class="pd-inspector" aria-label="选择详情"><p class="pd-eyebrow">CONTEXT PANEL</p><h2 id="pdSelected">Feature review</h2><p>只显示当前工作项所需信息。侧栏不会争夺主区域注意力。</p><div class="pd-inspector-row"><span>Owner</span><strong>Design Ops</strong></div><div class="pd-inspector-row"><span>Status</span><strong id="pdSelectedStatus">In progress</strong></div><div class="pd-inspector-row"><span>Priority</span><strong>High</strong></div><div class="pd-note">ACTIVE CONTEXT</div></aside>
+    </div>
+  </div>
+  <dialog id="pdCommandDialog" class="pd-command" aria-labelledby="pdCommandTitle">
+    <h2 id="pdCommandTitle">Command palette <small>ESC to close</small></h2>
+    <label><span>⌕</span><input id="pdCommandSearch" autocomplete="off" placeholder="Find a work item or action…" aria-label="搜索命令"></label>
+    <ul id="pdCommandResults"></ul>
+  </dialog>
+</section>
+
+<section class="style-scene editorial-scene" id="editorial-warm" data-design-theme="editorial-warm" hidden aria-label="Editorial Warm 演示">
+  <header class="ed-masthead"><div class="ed-wordmark">COMMONPLACE<span> / NOTES ON THE EVERYDAY</span></div><nav aria-label="内容导航"><a href="#edRead">阅读</a><a href="#edAside">专栏</a><a href="#edFooter">关于</a></nav><button id="edReadingMode" type="button" aria-pressed="false">开启专注阅读 ↗</button></header>
+  <div class="ed-hero"><div class="ed-kicker"><span>VOL. 04 · OCTOBER 2026</span><span>WORDS, IDEAS & CRAFT</span></div><h1>Give good ideas<br><em>room to breathe.</em></h1><p>把注意力留给内容。排版、纸张般的暖色与克制的分隔，让阅读重新成为主角。</p></div>
+  <div class="ed-columns" id="edRead"><article class="ed-article"><p class="ed-meta">ESSAY <span>•</span> 6 MIN READ</p><h2>The shape of a quieter interface</h2><p class="ed-byline">由 Design Library 撰写 <span> / </span> 2026.10.23</p><div class="ed-rule"></div>
+    <p class="ed-lead">一段文字的宽度、行距与留白，往往比复杂的动态效果更能影响信息的感受方式。</p>
+    <p>界面不一定需要把所有信息做成卡片。当内容足够重要，好的视觉层级可以通过文字本身建立。适当的衬线标题、平稳的行长，以及自然的段落呼吸感，能够让阅读过程保持连续。</p>
+    <blockquote>“让排版成为结构，而不是装饰。”</blockquote>
+    <p>阅读型设计的互动同样需要节制：清晰的锚点、可预期的保存状态、简单的目录，以及不在阅读途中争夺注意力的反馈。</p>
+    <div class="ed-actions"><button id="edSave" type="button" aria-pressed="false">☆ 收藏文章</button><span id="edSavedNote" role="status">仅本地演示，不永久保存</span></div>
+  </article>
+  <aside class="ed-aside" id="edAside"><span class="ed-aside-top">IN THIS ISSUE</span><div class="ed-toc"><a href="#edRead"><strong>01</strong> 安静的界面</a><a href="#edRead"><strong>02</strong> 合理的行长</a><a href="#edRead"><strong>03</strong> 轻量的交互</a></div><div class="ed-aside-note"><span>EDITOR’S NOTE</span><p>没有浮夸动效与大面积卡片。这里仅保留承载内容的必要结构。</p></div></aside></div>
+  <footer class="ed-footer" id="edFooter"><span>COMMONPLACE</span><small>A quiet corner for thoughtful reading. 2026</small></footer>
+</section>
+
+<section class="style-scene playful-scene" id="playful-pop" data-design-theme="playful-pop" hidden aria-label="Playful Pop 演示">
+  <header class="pop-top"><div class="pop-logo"><span>✳</span> little wins</div><div class="pop-counter">★ <b id="popPoints">120</b> points</div></header>
+  <div class="pop-stage">
+    <div class="pop-intro"><p>YOUR DAILY SPARK <span>✦</span></p><h1>A tiny challenge.<br><em>A big little win!</em></h1><div class="pop-progress"><div><span>每日进度</span><strong id="popProgressLabel">1 / 3</strong></div><div class="pop-progress-track"><div id="popProgressBar"></div></div></div></div>
+    <section class="pop-quiz" aria-label="任务选择"><div class="pop-step"><span class="pop-step-icon">✦</span><div><span class="pop-step-label">TODAY’S CHALLENGE</span><h2 id="popQuestion">哪一种设计更适合长时间阅读？</h2></div></div>
+    <div id="popChoices" class="pop-choices"></div>
+    <p id="popFeedback" class="pop-feedback" role="status" aria-live="polite">选一个选项，看看即时反馈如何提升操作感。</p>
+    <button id="popSubmit" type="button" class="pop-main-btn" disabled>确认答案 <span aria-hidden="true">→</span></button>
+    <button id="popNext" type="button" class="pop-main-btn" hidden>继续下一题 <span aria-hidden="true">→</span></button>
+    </section>
+    <aside class="pop-tip"><div class="pop-tip-badge">☺</div><strong>Little by little!</strong><p>一次只做一件事。色彩与动画负责引导，不应该淹没操作的意义。</p></aside>
+  </div>
+  <footer class="pop-footer">A PLAYFUL DESIGN EXERCISE <span>·</span> 本地状态，无真实积分系统</footer>
+</section>
+</main>
+<footer class="explorer-foot"><span>Independent original style proposals. No third-party art assets or fonts included.</span><span>Local-only preview • No production integration</span></footer>
+</body></html>

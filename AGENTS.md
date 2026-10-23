@@ -30,6 +30,10 @@ Every material asset addition updates `registry/assets.json` and related docs; n
 
 Never bulk copy third-party proprietary UI, commercial assets, trademarks, font files or paid-source snippets. Record original URL and license decision. Verify responsive/keyboard/touch/focus, empty/loading/error/success/cancel, reduced motion and actual target behavior before release.
 
+## Style references
+
+See `docs/styles/README.md`. New style IDs: `precision-dark`, `editorial-warm`, `playful-pop`. Their tokens and demos are separate and not production-ready. Never hardcode `refined-light-saas` as the fallback for an unrelated application. New styles are `design-proposal` and should pass visual/keyboard tests before integration.
+
 ## Existing first style
 
 `refined-light-saas` is a **scoped example collection**, not the repository theme. Its CSS variables activate only under `[data-design-theme="refined-light-saas"]`. `playground/initial-interaction-lab.html` is an independent old proof-of-concept. `components/reference/` consists of non-production reference implementations.

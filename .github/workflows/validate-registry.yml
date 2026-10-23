@@ -24,11 +24,13 @@ jobs:
           node-version: '22'
       - name: Validate registry and referenced files
         run: node scripts/check-registry.mjs
-      - name: Validate SaaS module syntax
+      - name: Validate standalone demo syntax
         run: |
           node --check playground/saas-patterns/model.mjs
           node --check playground/saas-patterns/app.mjs
           node --check playground/saas-editing/model.mjs
           node --check playground/saas-editing/app.mjs
-      - name: Test SaaS state model
+          node --check playground/style-explorer/model.mjs
+          node --check playground/style-explorer/explorer.mjs
+      - name: Test isolated state models
         run: node --test tests/*.test.mjs

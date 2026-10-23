@@ -1266,6 +1266,140 @@
         "PR-005"
       ],
       "notion": "[private-notion-link-redacted]"
+    },
+    {
+      "id": "DT-002",
+      "type": "token",
+      "name": "Precision Dark visual language",
+      "stage": "prototype",
+      "priority": "P1",
+      "tags": [
+        "style",
+        "visual-language",
+        "developer-tool",
+        "desktop-editor",
+        "analytics-console"
+      ],
+      "source": "https://linear.app/now/behind-the-latest-design-refresh",
+      "sources": [
+        "https://linear.app/now/behind-the-latest-design-refresh",
+        "https://manual.raycast.com/themes"
+      ],
+      "reuseKind": "style-token",
+      "styleIds": [
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "developer-tool",
+        "desktop-editor",
+        "analytics-console"
+      ],
+      "path": "styles/precision-dark/tokens.css",
+      "details": "styles/precision-dark/README.md",
+      "demo": "playground/style-explorer/index.html",
+      "demoStyleId": "precision-dark",
+      "dependencies": [],
+      "license": "Original design proposal, not an official source design system",
+      "verified": "Styles scoped. Standalone demo + pure state model, but no full visual/browser or production QA."
+    },
+    {
+      "id": "DT-003",
+      "type": "token",
+      "name": "Editorial Warm visual language",
+      "stage": "prototype",
+      "priority": "P1",
+      "tags": [
+        "style",
+        "visual-language",
+        "knowledge-base",
+        "publication",
+        "reading"
+      ],
+      "source": "[private-notion-link-redacted]",
+      "sources": [
+        "[private-notion-link-redacted]",
+        "https://support.substack.com/hc/en-us/articles/360055169471-How-do-I-set-a-custom-theme-for-my-Substack"
+      ],
+      "reuseKind": "style-token",
+      "styleIds": [
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "knowledge-base",
+        "publication",
+        "reading"
+      ],
+      "path": "styles/editorial-warm/tokens.css",
+      "details": "styles/editorial-warm/README.md",
+      "demo": "playground/style-explorer/index.html",
+      "demoStyleId": "editorial-warm",
+      "dependencies": [],
+      "license": "Original design proposal, not an official source design system",
+      "verified": "Styles scoped. Standalone demo + pure state model, but no full visual/browser or production QA."
+    },
+    {
+      "id": "DT-004",
+      "type": "token",
+      "name": "Playful Pop visual language",
+      "stage": "prototype",
+      "priority": "P1",
+      "tags": [
+        "style",
+        "visual-language",
+        "consumer-mobile",
+        "learning",
+        "gamification"
+      ],
+      "source": "https://blog.duolingo.com/shape-language-duolingos-art-style/",
+      "sources": [
+        "https://blog.duolingo.com/shape-language-duolingos-art-style/",
+        "https://blog.duolingo.com/core-tabs-redesign/"
+      ],
+      "reuseKind": "style-token",
+      "styleIds": [
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "consumer-mobile",
+        "learning",
+        "gamification"
+      ],
+      "path": "styles/playful-pop/tokens.css",
+      "details": "styles/playful-pop/README.md",
+      "demo": "playground/style-explorer/index.html",
+      "demoStyleId": "playful-pop",
+      "dependencies": [],
+      "license": "Original design proposal, not an official source design system",
+      "verified": "Styles scoped. Standalone demo + pure state model, but no full visual/browser or production QA."
+    },
+    {
+      "id": "KIT-004",
+      "type": "archive",
+      "name": "Independent Style Explorer v0.4",
+      "stage": "prototype",
+      "priority": "P1",
+      "tags": [
+        "multi-style",
+        "comparative-demo",
+        "visual"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "reuseKind": "snapshot",
+      "styleIds": [
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [],
+      "path": "playground/style-explorer/README.md",
+      "demo": "playground/style-explorer/index.html",
+      "dependencies": [
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "license": "Original demo implementation, local-only, no third-party media",
+      "verified": "Style-switch and interaction-state model tests; browser and accessibility verification pending"
     }
   ],
   "referenceImplementationRoot": "components/reference",

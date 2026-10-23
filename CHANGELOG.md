@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-23 · Style Explorer v0.4 (stage close)
+
+- Added independent Precision Dark, Editorial Warm and Playful Pop design directions, each with scoped original Token CSS/JSON, Style Profile and design documentation.
+- Added three distinct screen compositions (professional workstation, editorial long-form reader, playful challenge UI) in a standalone Style Explorer with small interaction examples.
+- Added machine-readable style/assets registry entries and pure state tests; enforced no repository-wide default.
+- **Stage boundary:** these styles and demo are prototypes; browser and accessibility QA and production integration remain for future work. No further style expansion in this stage.
+
+
 ## 2026-10-23 · SaaS editing & advanced filters v0.3
 
 - Researched Atlassian Inline Edit, Geist Input/Error, Linear filters and custom views, and expectations around explicit save.

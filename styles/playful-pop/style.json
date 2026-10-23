@@ -1,0 +1,25 @@
+{
+  "id": "playful-pop",
+  "displayName": "Playful Pop",
+  "stage": "design-proposal",
+  "assetId": "DT-004",
+  "categoryHints": [
+    "consumer-mobile",
+    "learning",
+    "gamification",
+    "wellbeing",
+    "casual-tool"
+  ],
+  "description": "Warm bright consumer interface, saturated coral and sky accents, rounded cards, chunky buttons, tactile layered strokes and immediate positive feedback.",
+  "sources": [
+    "https://blog.duolingo.com/shape-language-duolingos-art-style/",
+    "https://blog.duolingo.com/core-tabs-redesign/"
+  ],
+  "tokenFile": "tokens.json",
+  "cssFile": "tokens.css",
+  "scopeSelector": "[data-design-theme=\"playful-pop\"]",
+  "documentation": "README.md",
+  "sample": "../../playground/style-explorer/index.html",
+  "implementationStatus": "scoped tokens and experimental demo; not production validated",
+  "isDefault": false
+}

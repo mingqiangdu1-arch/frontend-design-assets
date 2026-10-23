@@ -21,6 +21,63 @@
       },
       "demo": "playground/initial-interaction-lab.html",
       "licenseNote": "Custom drafted values and original reference code, not copies of brand proprietary systems."
+    },
+    {
+      "id": "precision-dark",
+      "label": "Precision Dark",
+      "status": "design-proposal",
+      "origin": "Original exploratory style inspired by Linear and Raycast",
+      "categories": [
+        "developer-tool",
+        "desktop-editor",
+        "analytics-console"
+      ],
+      "styleProfile": "styles/precision-dark/style.json",
+      "documentation": "styles/precision-dark/README.md",
+      "tokens": {
+        "css": "styles/precision-dark/tokens.css",
+        "json": "styles/precision-dark/tokens.json"
+      },
+      "demo": "playground/style-explorer/index.html",
+      "licenseNote": "Original proposed styles. No third-party source code, imagery or font binary is included."
+    },
+    {
+      "id": "editorial-warm",
+      "label": "Editorial Warm",
+      "status": "design-proposal",
+      "origin": "Original exploratory style inspired by Notion and Substack",
+      "categories": [
+        "knowledge-base",
+        "publication",
+        "reading"
+      ],
+      "styleProfile": "styles/editorial-warm/style.json",
+      "documentation": "styles/editorial-warm/README.md",
+      "tokens": {
+        "css": "styles/editorial-warm/tokens.css",
+        "json": "styles/editorial-warm/tokens.json"
+      },
+      "demo": "playground/style-explorer/index.html",
+      "licenseNote": "Original proposed styles. No third-party source code, imagery or font binary is included."
+    },
+    {
+      "id": "playful-pop",
+      "label": "Playful Pop",
+      "status": "design-proposal",
+      "origin": "Original exploratory style inspired by Duolingo",
+      "categories": [
+        "consumer-mobile",
+        "learning",
+        "gamification"
+      ],
+      "styleProfile": "styles/playful-pop/style.json",
+      "documentation": "styles/playful-pop/README.md",
+      "tokens": {
+        "css": "styles/playful-pop/tokens.css",
+        "json": "styles/playful-pop/tokens.json"
+      },
+      "demo": "playground/style-explorer/index.html",
+      "licenseNote": "Original proposed styles. No third-party source code, imagery or font binary is included."
     }
   ]
 }

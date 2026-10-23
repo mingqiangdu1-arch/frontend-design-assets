@@ -1,0 +1,29 @@
+/* Playful Pop: original proposed tokens, not official product colors */
+[data-design-theme="playful-pop"] {
+  color-scheme: light;
+  --ds-canvas: #F3F7FE;
+  --ds-surface: #FFFFFF;
+  --ds-surface-raised: #FFF5E8;
+  --ds-sidebar: #E5F4FF;
+  --ds-border: #D7E1EF;
+  --ds-text: #26314D;
+  --ds-text-secondary: #586985;
+  --ds-text-muted: #687992;
+  --ds-accent: #FF785D;
+  --ds-accent-text: #48291F;
+  --ds-selected: #FFE6DE;
+  --ds-success: #249874;
+  --ds-danger: #D54B63;
+  --ds-warning: #DA873E;
+  --ds-blue: #65BDF8;
+  --ds-lime: #B7E85B;
+  --ds-radius-control: 14px;
+  --ds-radius-panel: 24px;
+  --ds-radius-pill: 999px;
+  --ds-motion-fast: 150ms;
+  --ds-motion-medium: 260ms;
+  --ds-font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --ds-font-serif: "Iowan Old Style", Georgia, "Noto Serif CJK SC", "Songti SC", serif;
+  --ds-font-mono: ui-monospace, SFMono-Regular, Consolas, monospace;
+}
+@media(prefers-reduced-motion:reduce){[data-design-theme="playful-pop"]{--ds-motion-fast:0ms;--ds-motion-medium:0ms;}}

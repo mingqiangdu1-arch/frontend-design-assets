@@ -49,3 +49,11 @@ These links evidence principles and observed behavior, not production code or ex
 - [Linear Advanced Filters](https://linear.app/docs/filters) — AND/OR nested group behavior.
 - [Linear Custom Views](https://linear.app/docs/custom-views) — temporary filter vs saved/shareable views.
 - [NN/g Expectations of Save](https://www.nngroup.com/articles/efficiency-vs-expectations/) — explicit saving and user mental models.
+
+## Independent visual styles V0.4
+
+- Precision Dark: [Linear design refresh](https://linear.app/now/behind-the-latest-design-refresh), [Raycast Themes](https://manual.raycast.com/themes). Keyboard-first compact professional workspace reference.
+- Editorial Warm: [Notion content styling]([private-notion-link-redacted]), [Substack theme help](https://support.substack.com/hc/en-us/articles/360055169471-How-do-I-set-a-custom-theme-for-my-Substack). Reading-first, serif-led publication direction.
+- Playful Pop: [Duolingo visual shape language](https://blog.duolingo.com/shape-language-duolingos-art-style/), [Duolingo core tabs redesign](https://blog.duolingo.com/core-tabs-redesign/). Rounded/tactile/feedback-oriented design direction.
+
+These references do not license copying vendors' UI, artwork, trademarks or fonts; generated screens and numeric token suggestions are original proposals.

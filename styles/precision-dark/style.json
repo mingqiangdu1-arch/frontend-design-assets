@@ -1,0 +1,25 @@
+{
+  "id": "precision-dark",
+  "displayName": "Precision Dark",
+  "stage": "design-proposal",
+  "assetId": "DT-002",
+  "categoryHints": [
+    "developer-tool",
+    "desktop-editor",
+    "analytics-console",
+    "professional-workspace"
+  ],
+  "description": "Information-dense charcoal desktop interface with muted navigation, restrained violet focus, quiet outlines, compact rows and keyboard-first operations.",
+  "sources": [
+    "https://linear.app/now/behind-the-latest-design-refresh",
+    "https://manual.raycast.com/settings",
+    "https://manual.raycast.com/themes"
+  ],
+  "tokenFile": "tokens.json",
+  "cssFile": "tokens.css",
+  "scopeSelector": "[data-design-theme=\"precision-dark\"]",
+  "documentation": "README.md",
+  "sample": "../../playground/style-explorer/index.html",
+  "implementationStatus": "scoped tokens and experimental demo; not production validated",
+  "isDefault": false
+}

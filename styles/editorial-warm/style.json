@@ -1,0 +1,25 @@
+{
+  "id": "editorial-warm",
+  "displayName": "Editorial Warm",
+  "stage": "design-proposal",
+  "assetId": "DT-003",
+  "categoryHints": [
+    "knowledge-base",
+    "publication",
+    "reading",
+    "portfolio",
+    "longform-writing"
+  ],
+  "description": "Calm cream-paper reading surface, dark ink, serif display headlines, generous vertical rhythm, underlined links and restrained editorial dividers.",
+  "sources": [
+    "[private-notion-link-redacted]",
+    "https://support.substack.com/hc/en-us/articles/360055169471-How-do-I-set-a-custom-theme-for-my-Substack"
+  ],
+  "tokenFile": "tokens.json",
+  "cssFile": "tokens.css",
+  "scopeSelector": "[data-design-theme=\"editorial-warm\"]",
+  "documentation": "README.md",
+  "sample": "../../playground/style-explorer/index.html",
+  "implementationStatus": "scoped tokens and experimental demo; not production validated",
+  "isDefault": false
+}

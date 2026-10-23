@@ -1,0 +1,27 @@
+/* Precision Dark: original proposed tokens, not official product colors */
+[data-design-theme="precision-dark"] {
+  color-scheme: dark;
+  --ds-canvas: #101014;
+  --ds-surface: #17171D;
+  --ds-surface-raised: #202028;
+  --ds-sidebar: #121217;
+  --ds-border: #31313C;
+  --ds-text: #F3F2F7;
+  --ds-text-secondary: #ADAAB8;
+  --ds-text-muted: #85818F;
+  --ds-accent: #A78BFA;
+  --ds-accent-text: #181121;
+  --ds-selected: #2C283C;
+  --ds-success: #71D6A0;
+  --ds-danger: #F28F92;
+  --ds-warning: #E9C27E;
+  --ds-radius-control: 7px;
+  --ds-radius-panel: 9px;
+  --ds-radius-pill: 6px;
+  --ds-motion-fast: 100ms;
+  --ds-motion-medium: 170ms;
+  --ds-font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --ds-font-serif: "Iowan Old Style", Georgia, "Noto Serif CJK SC", "Songti SC", serif;
+  --ds-font-mono: ui-monospace, SFMono-Regular, Consolas, monospace;
+}
+@media(prefers-reduced-motion:reduce){[data-design-theme="precision-dark"]{--ds-motion-fast:0ms;--ds-motion-medium:0ms;}}

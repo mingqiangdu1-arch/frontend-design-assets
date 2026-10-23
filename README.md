@@ -16,6 +16,7 @@
 | 查找全部资产及兼容标注 | [registry/assets.json](registry/assets.json) |
 | 选择某一套完整视觉风格 | [registry/styles.json](registry/styles.json) |
 | 查看 SaaS 专题研究与原型 | [SaaS 总览](docs/saas/README.md) / [列表实验 V0.2](playground/saas-patterns/index.html) / [表单编辑与筛选 V0.3](playground/saas-editing/index.html) |
+| 查看全部独立视觉风格 | [风格对比目录](docs/styles/README.md) / [可交互 Style Explorer](playground/style-explorer/index.html) |
 | 查看现有浅色 SaaS 风格 | [styles/refined-light-saas/README.md](styles/refined-light-saas/README.md) |
 | 按应用需求组合设计方案 | [applications/README.md](applications/README.md) |
 | 交互行为与验收参考 | [docs/interactions/patterns.md](docs/interactions/patterns.md) |
@@ -42,9 +43,9 @@ frontend-design-assets/
 
 ## 当前实际资产（不代表未来默认）
 
-**Refined Light SaaS** 是首个**示例设计系列**（Attio × Vercel）。[已有设计规范](docs/visual/refined-light.md)、[Token](tokens/refined-light.css)、[React/TS 示例](components/reference/README.md)及 [Interaction Lab](playground/initial-interaction-lab.html) 属于该系列或其历史 Demo。
+**Refined Light SaaS** 是首个**示例设计系列**（Attio × Vercel），并非全仓库默认；V0.4 另新增三套差异化风格。[已有设计规范](docs/visual/refined-light.md)、[Token](tokens/refined-light.css)、[React/TS 示例](components/reference/README.md)及 [Interaction Lab](playground/initial-interaction-lab.html) 属于该系列或其历史 Demo。
 
-当前只有这一套已整理的视觉风格；**不要因仓库目前只有一套而默认所有新应用必须使用它**。新项目先选择视觉方向，再组合交互。未来加入新视觉方向时新增独立 Style Profile，不能直接覆盖上一套。
+目前另有 **Precision Dark / Editorial Warm / Playful Pop** 三套独立提案与可交互 Demo，均与原有 SaaS 系列隔离。**仓库仍不设全局默认视觉主题**。
 
 ## 资产编号及成熟度
 
