@@ -1,0 +1,65 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "name": "Refined Light SaaS",
+  "status": "proposed",
+  "provenance": "Custom design proposal inspired by Attio × Vercel; not official source tokens",
+  "colors": {
+    "canvas": "#FAFAFA",
+    "surface": "#FFFFFF",
+    "sidebar": "#F7F7F8",
+    "hover": "#F5F5F5",
+    "selected": "#EEEEF0",
+    "border": "#EAEAEA",
+    "borderStrong": "#D4D4D4",
+    "text": "#171717",
+    "textSecondary": "#626262",
+    "textMuted": "#767676",
+    "accent": "#2563EB",
+    "accentSubtle": "#EFF6FF",
+    "action": "#171717",
+    "success": "#16794B",
+    "successBg": "#ECFDF3",
+    "info": "#1D4ED8",
+    "infoBg": "#EFF6FF",
+    "warning": "#92400E",
+    "warningBg": "#FFFBEB",
+    "danger": "#B91C1C",
+    "dangerBg": "#FEF2F2"
+  },
+  "typography": {
+    "pageTitle": "24px / 32px / 600",
+    "sectionTitle": "18px / 26px / 600",
+    "itemTitle": "15px / 22px / 600",
+    "body": "14px / 22px / 400",
+    "helper": "13px / 20px",
+    "metadata": "12px / 18px"
+  },
+  "spacePx": [
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    32,
+    40,
+    48
+  ],
+  "dimensionsPx": {
+    "sidebar": 240,
+    "sidebarCollapsed": 64,
+    "topbar": 56,
+    "control": 36
+  },
+  "radiiPx": {
+    "badge": 6,
+    "control": 8,
+    "card": 10,
+    "dialog": 12
+  },
+  "motionMs": {
+    "fast": 130,
+    "normal": 180,
+    "overlay": 220
+  }
+}

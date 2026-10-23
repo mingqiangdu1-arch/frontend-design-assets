@@ -1,0 +1,30 @@
+:root {
+  color-scheme: light;
+  --aw-canvas: #fafafa; --aw-surface: #fff; --aw-sidebar: #f7f7f8;
+  --aw-hover: #f5f5f5; --aw-selected: #eeeef0;
+  --aw-border: #eaeaea; --aw-border-strong: #d4d4d4;
+  --aw-text: #171717; --aw-text-secondary: #626262; --aw-text-muted: #767676;
+  --aw-accent: #2563eb; --aw-accent-subtle: #eff6ff;
+  --aw-action: #171717; --aw-on-action: #fff;
+  --aw-success: #16794b; --aw-success-bg: #ecfdf3;
+  --aw-info: #1d4ed8; --aw-info-bg: #eff6ff;
+  --aw-warning: #92400e; --aw-warning-bg: #fffbeb;
+  --aw-danger: #b91c1c; --aw-danger-bg: #fef2f2;
+  --aw-neutral: #525252; --aw-neutral-bg: #f3f4f6;
+  --aw-radius-badge: 6px; --aw-radius-control: 8px;
+  --aw-radius-card: 10px; --aw-radius-dialog: 12px;
+  --aw-space-1: 4px; --aw-space-2: 8px; --aw-space-3: 12px;
+  --aw-space-4: 16px; --aw-space-5: 20px; --aw-space-6: 24px;
+  --aw-space-8: 32px; --aw-space-10: 40px; --aw-space-12: 48px;
+  --aw-control-height: 36px; --aw-topbar-height: 56px;
+  --aw-sidebar-width: 240px; --aw-sidebar-collapsed: 64px;
+  --aw-font-sans: Inter, Geist, -apple-system, BlinkMacSystemFont,
+    "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  --aw-font-mono: "Geist Mono", Consolas, monospace;
+  --aw-motion-ease: cubic-bezier(.2, .75, .25, 1);
+  --aw-motion-fast: 130ms; --aw-motion-default: 180ms; --aw-motion-overlay: 220ms;
+  --aw-shadow-popover: 0 12px 36px rgb(16 24 40 / 10%), 0 2px 8px rgb(16 24 40 / 5%);
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { --aw-motion-fast: 0ms; --aw-motion-default: 0ms; --aw-motion-overlay: 0ms; }
+}

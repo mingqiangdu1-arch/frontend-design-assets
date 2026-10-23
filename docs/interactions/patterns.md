@@ -1,0 +1,38 @@
+# Interaction pattern field guide
+
+This document is a **research synthesis**, not a claim that all patterns are already implemented.
+
+## Principles
+
+1. Feedback immediately follows intent; async actions communicate state and allow cancel/retry where valid.
+2. Preserve context: don't require full page transition if a Peek/Sheet is sufficient.
+3. High-frequency interactions should remain fast. Motion explains cause and continuity; no loop for decoration.
+4. Keyboard, pointer, touch and reduced-motion behavior are specified together.
+5. Optimistic feedback must have recovery semantics; no false “saved” status before confirmation.
+
+## Candidate patterns
+
+| ID | Pattern | Trigger and transition | Escape/keyboard | Caveat | Reference |
+| --- | --- | --- | --- | --- | --- |
+| IP-001 | Global Command Palette | Cmd/Ctrl+K → search → select → action | Arrow/Enter, Esc, focus restoration | separate global action from plain search | [Geist Command Menu](https://vercel.com/geist/command-menu) |
+| IP-002 | Linear Peek | item focused → temporary preview → back to list | Space / arrows / Esc as supported | not a replacement for full detail | [Linear Peek](https://linear.app/docs/peek) |
+| IP-003 | Detail Sheet | click list item → side overlay → close to list | Esc, trapped focus where modal | route and history policy must be clear | [Geist Sheet](https://vercel.com/geist/sheet) |
+| IP-004 | Confirm Modal | destructive/important request → review → confirm/cancel | focus loop, Esc policy | use sparingly; no accidental confirmation | [Geist Modal](https://vercel.com/geist/modal) |
+| IP-005 | Shared Tab Indicator | click/keyboard tab → indicator travels → content changes | roving focus + reduced motion | never obscure immediate content updates | [Motion smooth tabs](https://motion.dev/examples/react-smooth-tabs) |
+| IP-006 | Toast Feedback | operation result → brief lightweight notice | announce to assistive tech; optional undo | do not use for blocking errors | [Geist](https://vercel.com/geist/introduction) |
+| IP-007 | Async Progress & Cancel | request → progress/tool steps → complete/failed/canceled | accessible Stop and retry | no fake percent or premature success | [Geist Spinner](https://vercel.com/geist/spinner) |
+| IP-008 | Resizable Panels | drag divider → panels resize | keyboard substitute, min/max | touch alternative and persistence rules | [Attio record page](https://attio.com/changelog/2026/record-page-redesign) |
+
+## Expected behavior card
+
+For each new pattern record:
+- **Before**: prerequisite, current focus, loaded data.
+- **Trigger**: pointer/keyboard/touch and discernible affordance.
+- **Transition**: intermediate and animation state.
+- **After**: result, selection, focus, history and state persistence.
+- **Cancel/Failure**: rollback, retained input, recoverability, no false completion.
+- **Validation**: keyboard, screen reader, 320–390px viewports, motion reduction, loading/performance.
+
+## Applied direction for AI workflows
+
+AI status presentation should emphasize trust over spectacle: show which step/tool is running, what is waiting for user input, how to stop, when a handoff is final, and where failure can resume. Do not portray scripted automation as autonomous agent reasoning.

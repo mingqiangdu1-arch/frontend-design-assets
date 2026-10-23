@@ -1,0 +1,287 @@
+{
+  "schemaVersion": "1.0",
+  "purpose": "Living frontend assets; case studies ≠ verified source",
+  "updatedAt": "2026-10-23",
+  "stageDefinitions": [
+    "captured",
+    "analyzed",
+    "prototype",
+    "reference-implemented",
+    "validated",
+    "production-ready",
+    "deprecated"
+  ],
+  "notionCatalog": "[private-notion-link-redacted]",
+  "assets": [
+    {
+      "id": "DT-001",
+      "type": "token",
+      "name": "Refined Light SaaS theme",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "tags": [
+        "color",
+        "typography",
+        "layout",
+        "attio",
+        "vercel"
+      ],
+      "path": "tokens/refined-light.css",
+      "details": "docs/visual/refined-light.md",
+      "sources": [
+        "https://vercel.com/geist/introduction",
+        "https://attio.com/"
+      ],
+      "license": "Original suggested token values, not copied source tokens",
+      "dependencies": [],
+      "verified": "CSS syntax not yet tested in destination app"
+    },
+    {
+      "id": "REF-001",
+      "type": "reference",
+      "name": "Attio record page layout",
+      "stage": "analyzed",
+      "priority": "P0",
+      "tags": [
+        "light",
+        "panel",
+        "density",
+        "layout"
+      ],
+      "source": "https://attio.com/changelog/2026/record-page-redesign",
+      "notion": "[private-notion-link-redacted]"
+    },
+    {
+      "id": "REF-002",
+      "type": "reference",
+      "name": "Geist design system",
+      "stage": "analyzed",
+      "priority": "P0",
+      "tags": [
+        "design-system",
+        "accessibility",
+        "component"
+      ],
+      "source": "https://vercel.com/geist/introduction",
+      "notion": "[private-notion-link-redacted]"
+    },
+    {
+      "id": "REF-003",
+      "type": "reference",
+      "name": "60fps.design animation library",
+      "stage": "captured",
+      "priority": "P1",
+      "tags": [
+        "motion",
+        "microinteraction"
+      ],
+      "source": "https://60fps.design/",
+      "notion": "[private-notion-link-redacted]"
+    },
+    {
+      "id": "IP-001",
+      "type": "interaction",
+      "name": "Global Command Menu",
+      "stage": "prototype",
+      "priority": "P0",
+      "tags": [
+        "keyboard",
+        "search",
+        "modal",
+        "menu"
+      ],
+      "source": "https://vercel.com/geist/command-menu",
+      "demo": "playground/initial-interaction-lab.html",
+      "spec": "docs/interactions/patterns.md",
+      "notion": "[private-notion-link-redacted]",
+      "license": "Original prototype inspired by official pattern"
+    },
+    {
+      "id": "IP-002",
+      "type": "interaction",
+      "name": "Linear Peek",
+      "stage": "analyzed",
+      "priority": "P0",
+      "tags": [
+        "list",
+        "keyboard",
+        "preview"
+      ],
+      "source": "https://linear.app/docs/peek",
+      "spec": "docs/interactions/patterns.md",
+      "notion": "[private-notion-link-redacted]"
+    },
+    {
+      "id": "IP-003",
+      "type": "interaction",
+      "name": "Detail Sheet",
+      "stage": "prototype",
+      "priority": "P0",
+      "tags": [
+        "list",
+        "overlay",
+        "sheet"
+      ],
+      "source": "https://vercel.com/geist/sheet",
+      "demo": "playground/initial-interaction-lab.html",
+      "spec": "docs/interactions/patterns.md",
+      "notion": "[private-notion-link-redacted]"
+    },
+    {
+      "id": "IP-004",
+      "type": "interaction",
+      "name": "Confirm Dialog",
+      "stage": "prototype",
+      "priority": "P1",
+      "tags": [
+        "modal",
+        "focus",
+        "confirmation"
+      ],
+      "source": "https://vercel.com/geist/modal",
+      "demo": "playground/initial-interaction-lab.html",
+      "spec": "docs/interactions/patterns.md"
+    },
+    {
+      "id": "IP-005",
+      "type": "interaction",
+      "name": "Shared Tabs Indicator",
+      "stage": "prototype",
+      "priority": "P1",
+      "tags": [
+        "motion",
+        "tabs",
+        "indicator"
+      ],
+      "source": "https://motion.dev/examples/react-smooth-tabs",
+      "demo": "playground/initial-interaction-lab.html",
+      "spec": "docs/interactions/patterns.md"
+    },
+    {
+      "id": "IP-006",
+      "type": "interaction",
+      "name": "Toast Feedback",
+      "stage": "prototype",
+      "priority": "P1",
+      "tags": [
+        "status",
+        "feedback",
+        "toast"
+      ],
+      "source": "https://vercel.com/geist/introduction",
+      "demo": "playground/initial-interaction-lab.html",
+      "spec": "docs/interactions/patterns.md"
+    },
+    {
+      "id": "IP-007",
+      "type": "interaction",
+      "name": "Async Progress & Stop",
+      "stage": "prototype",
+      "priority": "P0",
+      "tags": [
+        "async",
+        "ai",
+        "cancel",
+        "status"
+      ],
+      "source": "https://vercel.com/geist/spinner",
+      "demo": "playground/initial-interaction-lab.html",
+      "spec": "docs/interactions/patterns.md"
+    },
+    {
+      "id": "IP-008",
+      "type": "interaction",
+      "name": "Resizable Panels",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "layout",
+        "resizing",
+        "density"
+      ],
+      "source": "https://attio.com/changelog/2026/record-page-redesign",
+      "spec": "docs/interactions/patterns.md"
+    },
+    {
+      "id": "AN-001",
+      "type": "motion",
+      "name": "Motion smooth tabs example",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "tabs",
+        "motion"
+      ],
+      "source": "https://motion.dev/examples/react-smooth-tabs",
+      "notion": "[private-notion-link-redacted]"
+    },
+    {
+      "id": "PR-001",
+      "type": "recipe",
+      "name": "Workbench Overview",
+      "stage": "analyzed",
+      "priority": "P0",
+      "tags": [
+        "page",
+        "dashboard"
+      ],
+      "path": "recipes/workbench.md",
+      "dependencies": [
+        "DT-001",
+        "IP-001",
+        "IP-006"
+      ]
+    },
+    {
+      "id": "PR-002",
+      "type": "recipe",
+      "name": "List Detail",
+      "stage": "analyzed",
+      "priority": "P0",
+      "tags": [
+        "page",
+        "list",
+        "detail"
+      ],
+      "path": "recipes/list-detail.md",
+      "dependencies": [
+        "DT-001",
+        "IP-002",
+        "IP-003",
+        "IP-006"
+      ]
+    },
+    {
+      "id": "PR-003",
+      "type": "recipe",
+      "name": "Document Review",
+      "stage": "analyzed",
+      "priority": "P0",
+      "tags": [
+        "page",
+        "document",
+        "split"
+      ],
+      "path": "recipes/document-review.md",
+      "dependencies": [
+        "DT-001",
+        "IP-007",
+        "IP-008"
+      ]
+    },
+    {
+      "id": "KIT-001",
+      "type": "archive",
+      "name": "Initial UI Kit V0.1.0 Snapshot",
+      "stage": "prototype",
+      "priority": "P0",
+      "tags": [
+        "history",
+        "prototype"
+      ],
+      "path": "archive/v0.1.0.md",
+      "demo": "playground/initial-interaction-lab.html",
+      "notion": "[private-notion-link-redacted]"
+    }
+  ]
+}

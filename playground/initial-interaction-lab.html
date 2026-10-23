@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="color-scheme" content="light"/>
+  <title>AI Workflow UI Kit · Interaction Lab</title>
+  <style>:root {
+  --aw-canvas: #fafafa; --aw-surface: #fff; --aw-sidebar: #f7f7f8;
+  --aw-hover: #f5f5f5; --aw-selected: #eeeef0; --aw-border: #eaeaea;
+  --aw-border-strong: #d4d4d4; --aw-text: #171717; --aw-text-secondary: #626262;
+  --aw-text-muted: #767676; --aw-accent: #2563eb; --aw-accent-subtle: #eff6ff;
+  --aw-action: #171717; --aw-success: #16794b; --aw-success-bg: #ecfdf3;
+  --aw-info: #1d4ed8; --aw-info-bg: #eff6ff; --aw-warning: #92400e;
+  --aw-warning-bg: #fffbeb; --aw-danger: #b91c1c; --aw-danger-bg: #fef2f2;
+  --aw-neutral: #525252; --aw-neutral-bg: #f3f4f6;
+  --aw-r-sm: 6px; --aw-r-control: 8px; --aw-r-card: 10px; --aw-r-dialog: 12px;
+  --aw-space-1: 4px; --aw-space-2: 8px; --aw-space-3: 12px;
+  --aw-space-4: 16px; --aw-space-5: 20px; --aw-space-6: 24px;
+  --aw-space-8: 32px; --aw-space-10: 40px; --aw-space-12: 48px;
+  --aw-h-control: 36px; --aw-h-header: 56px; --aw-h-nav: 38px;
+  --aw-w-sidebar: 240px; --aw-w-sidebar-mini: 64px; --aw-w-rail: 320px;
+  --aw-font: Inter, Geist, -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+  --aw-font-mono: 'Geist Mono', SFMono-Regular, Consolas, monospace;
+  --aw-ease: cubic-bezier(.2,.75,.25,1); --aw-duration-fast: 130ms;
+  --aw-duration: 180ms; --aw-duration-overlay: 220ms;
+  --aw-shadow-popover: 0 12px 36px rgba(16,24,40,.10), 0 2px 8px rgba(16,24,40,.05);
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { --aw-duration-fast: 0ms; --aw-duration: 0ms; --aw-duration-overlay: 0ms; }
+}
+
+
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--aw-canvas);color:var(--aw-text);font-family:var(--aw-font);font-size:14px;-webkit-font-smoothing:antialiased}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer}
+a{color:var(--aw-accent);text-decoration:none}
+a:hover{text-decoration:underline}
+:focus-visible{outline:2px solid var(--aw-accent);outline-offset:2px}
+.aw-app{display:flex;height:100dvh;min-height:620px;overflow:hidden;background:var(--aw-surface)}
+.aw-sidebar{display:flex;flex-direction:column;flex:0 0 var(--aw-w-sidebar);width:var(--aw-w-sidebar);background:var(--aw-sidebar);border-right:1px solid var(--aw-border);padding:18px 12px;transition:width var(--aw-duration) var(--aw-ease), flex-basis var(--aw-duration) var(--aw-ease);min-width:0}
+.aw-app.is-collapsed .aw-sidebar{flex-basis:var(--aw-w-sidebar-mini);width:var(--aw-w-sidebar-mini)}
+.aw-sidebar-brand{display:flex;align-items:center;gap:10px;padding:0 9px 24px;font-weight:650;white-space:nowrap;overflow:hidden;letter-spacing:-.3px}
+.aw-brand-icon{display:grid;place-items:center;border-radius:8px;background:#171717;color:#fff;width:28px;height:28px;flex:none;font-size:15px;font-weight:700}
+.aw-side-label{color:var(--aw-text-muted);font-size:11px;font-weight:600;letter-spacing:.04em;padding:18px 12px 6px;text-transform:uppercase;white-space:nowrap;overflow:hidden}
+.aw-nav{display:flex;flex-direction:column;gap:3px}
+.aw-nav-item{height:var(--aw-h-nav);border-radius:8px;border:0;background:transparent;color:var(--aw-text-secondary);display:flex;align-items:center;gap:12px;text-align:left;padding:0 12px;white-space:nowrap;overflow:hidden;width:100%;font-size:13px;font-weight:500;transition:background var(--aw-duration-fast)}
+.aw-nav-item:hover{background:#ededee;color:var(--aw-text)}
+.aw-nav-item[aria-current="page"],.aw-nav-item.is-active{background:var(--aw-selected);color:var(--aw-text)}
+.aw-nav-icon{width:18px;text-align:center;display:inline-grid;place-items:center;flex:none;font-size:16px}
+.aw-sidebar-spacer{flex:1}
+.aw-sidebar-bottom{border-top:1px solid var(--aw-border);padding-top:10px}
+.aw-app.is-collapsed .aw-nav-label,.aw-app.is-collapsed .aw-side-label,.aw-app.is-collapsed .aw-brand-label,.aw-app.is-collapsed .aw-sidebar-bottom .aw-nav-label{display:none}
+.aw-app.is-collapsed .aw-sidebar-brand{justify-content:center;padding:0 0 24px}
+.aw-app.is-collapsed .aw-nav-item{justify-content:center;padding:0}
+.aw-main{flex:1;display:flex;flex-direction:column;overflow:hidden;min-width:0;background:var(--aw-surface)}
+.aw-topbar{height:var(--aw-h-header);flex:none;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--aw-border);padding:0 30px;gap:16px}
+.aw-breadcrumb{font-size:13px;color:var(--aw-text-secondary);display:flex;align-items:center;gap:10px;min-width:0}
+.aw-breadcrumb strong{font-weight:550;color:var(--aw-text)}
+.aw-content{flex:1;overflow:auto;padding:32px;scrollbar-gutter:stable}
+.aw-content-inner{max-width:1240px;margin:0 auto}
+.aw-page-head{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;margin-bottom:26px}
+.aw-page-title{font-size:25px;font-weight:630;letter-spacing:-.7px;line-height:1.35;margin:0 0 8px}
+.aw-page-description{color:var(--aw-text-secondary);font-size:13px;margin:0;line-height:1.8}
+.aw-row{display:flex;align-items:center;gap:10px}.aw-row-between{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.aw-button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:36px;padding:0 13px;border:1px solid transparent;border-radius:var(--aw-r-control);font-size:13px;font-weight:550;line-height:1.2;transition:background var(--aw-duration-fast),box-shadow var(--aw-duration-fast),border-color var(--aw-duration-fast),transform var(--aw-duration-fast);white-space:nowrap}
+.aw-button:active:not(:disabled){transform:translateY(1px)}
+.aw-button:disabled{opacity:.5;cursor:not-allowed}
+.aw-button--primary{background:var(--aw-action);color:#fff}.aw-button--primary:hover:not(:disabled){background:#303030}
+.aw-button--secondary{background:#fff;border-color:var(--aw-border-strong);color:var(--aw-text)}.aw-button--secondary:hover:not(:disabled){background:var(--aw-hover)}
+.aw-button--ghost{background:transparent;color:var(--aw-text-secondary)}.aw-button--ghost:hover:not(:disabled){background:var(--aw-hover);color:var(--aw-text)}
+.aw-button--sm{min-height:32px;padding:0 10px;font-size:12px}.aw-button--lg{min-height:40px;padding:0 16px}
+.aw-button--icon{width:34px;min-height:34px;padding:0}
+.aw-kbd{border:1px solid var(--aw-border);color:var(--aw-text-muted);border-radius:5px;font-size:11px;padding:3px 5px;background:var(--aw-surface);font-family:var(--aw-font-mono)}
+.aw-input{height:36px;border:1px solid var(--aw-border-strong);border-radius:8px;padding:0 12px;color:var(--aw-text);background:#fff;outline:0;min-width:0}
+.aw-input:focus-visible{box-shadow:0 0 0 3px rgba(37,99,235,.14);border-color:var(--aw-accent);outline:0}
+.aw-input::placeholder{color:var(--aw-text-muted)}
+.aw-card{background:#fff;border:1px solid var(--aw-border);border-radius:var(--aw-r-card);padding:20px}
+.aw-card-heading{font-size:14px;font-weight:620;margin:0 0 6px}
+.aw-muted{color:var(--aw-text-secondary)}.aw-caption{color:var(--aw-text-muted);font-size:12px}
+.aw-meta{font-size:12px;color:var(--aw-text-muted);font-variant-numeric:tabular-nums}
+.aw-stat-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:22px 0 26px}
+.aw-stat-label{font-size:12px;color:var(--aw-text-secondary)}
+.aw-stat-value{font-size:27px;font-weight:630;letter-spacing:-.9px;margin:10px 0 7px;font-variant-numeric:tabular-nums}
+.aw-badge{display:inline-flex;align-items:center;gap:6px;font-size:11px;line-height:1.7;padding:2px 8px;border-radius:6px;font-weight:580;white-space:nowrap}
+.aw-badge::before{content:'';width:5px;height:5px;border-radius:50%;background:currentColor}
+.aw-badge--success{background:var(--aw-success-bg);color:var(--aw-success)}
+.aw-badge--info{background:var(--aw-info-bg);color:var(--aw-info)}
+.aw-badge--warning{background:var(--aw-warning-bg);color:var(--aw-warning)}
+.aw-badge--danger{background:var(--aw-danger-bg);color:var(--aw-danger)}
+.aw-badge--neutral{background:var(--aw-neutral-bg);color:var(--aw-neutral)}
+.aw-section-title{font-size:15px;font-weight:620;margin:0}
+.aw-panel{border:1px solid var(--aw-border);border-radius:10px;background:#fff;overflow:hidden}
+.aw-panel-header{padding:16px 20px;border-bottom:1px solid var(--aw-border)}
+.aw-table-wrap{overflow-x:auto}
+.aw-table{width:100%;border-collapse:collapse;text-align:left;white-space:nowrap;font-size:13px}
+.aw-table th{padding:12px 18px;font-size:12px;color:var(--aw-text-muted);font-weight:520;background:#fcfcfc}
+.aw-table td{padding:14px 18px;border-top:1px solid var(--aw-border);vertical-align:middle}
+.aw-table tbody tr{transition:background var(--aw-duration-fast)}
+.aw-table tbody tr:hover{background:var(--aw-hover)}
+.aw-table tbody tr.is-clickable{cursor:pointer}
+.aw-table tbody tr:focus-visible{outline:2px solid var(--aw-accent);outline-offset:-2px}
+.aw-tabs{position:relative;display:flex;align-items:center;border-bottom:1px solid var(--aw-border);gap:23px;isolation:isolate}
+.aw-tab{position:relative;z-index:1;background:none;border:0;padding:14px 0 13px;color:var(--aw-text-secondary);font-size:13px;font-weight:520}
+.aw-tab[aria-selected="true"]{color:var(--aw-text)}
+.aw-tab-indicator{position:absolute;bottom:-1px;height:2px;background:var(--aw-text);border-radius:2px 2px 0 0;transition:transform var(--aw-duration) var(--aw-ease),width var(--aw-duration) var(--aw-ease)}
+.aw-dialog{max-width:min(520px,calc(100vw - 32px));width:100%;border:1px solid var(--aw-border);border-radius:12px;padding:0;box-shadow:var(--aw-shadow-popover);color:var(--aw-text);overflow:hidden}
+.aw-dialog::backdrop{background:rgba(15,19,28,.33)}
+.aw-dialog[open]{animation:aw-modal-in var(--aw-duration-overlay) var(--aw-ease)}
+@keyframes aw-modal-in{from{opacity:0;transform:translateY(8px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+.aw-dialog-head{padding:20px 24px;border-bottom:1px solid var(--aw-border)}
+.aw-dialog-body{padding:22px 24px}
+.aw-dialog-foot{padding:16px 24px;background:#fcfcfc;border-top:1px solid var(--aw-border);display:flex;justify-content:flex-end;gap:9px}
+.aw-dialog-title{font-size:16px;font-weight:630;margin:0 0 5px}
+.aw-command{width:min(620px,calc(100vw - 32px));max-width:none}
+.aw-command-input{width:100%;border:0;background:#fff;padding:20px 24px;font-size:15px;outline:0}
+.aw-command-list{max-height:310px;overflow-y:auto;padding:6px 10px 12px}
+.aw-command-option{display:flex;align-items:center;justify-content:space-between;border:0;background:transparent;border-radius:7px;min-height:42px;padding:8px 12px;width:100%;text-align:left;font-size:13px;color:var(--aw-text)}
+.aw-command-option[data-active="true"],.aw-command-option:hover{background:var(--aw-hover)}
+.aw-sheet-backdrop{position:fixed;inset:0;background:rgba(15,19,28,.16);z-index:90;animation:aw-fade var(--aw-duration-overlay) var(--aw-ease)}
+.aw-sheet{position:fixed;z-index:91;top:0;bottom:0;right:0;width:min(520px,100vw);background:#fff;box-shadow:-16px 0 40px rgba(16,24,40,.10);border-left:1px solid var(--aw-border);display:flex;flex-direction:column;animation:aw-slide-in var(--aw-duration-overlay) var(--aw-ease)}
+.aw-sheet[hidden],.aw-sheet-backdrop[hidden]{display:none}
+.aw-sheet-head{padding:22px 26px;border-bottom:1px solid var(--aw-border);display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.aw-sheet-body{padding:24px 26px;overflow:auto;flex:1;line-height:1.75}
+@keyframes aw-fade{from{opacity:0}to{opacity:1}}
+@keyframes aw-slide-in{from{transform:translateX(24px);opacity:.6}to{transform:translateX(0);opacity:1}}
+.aw-field-label{display:block;font-weight:550;font-size:12px;margin-bottom:7px}
+.aw-field{margin-bottom:17px}
+.aw-description{font-size:13px;color:var(--aw-text-secondary);line-height:1.9}
+.aw-separator{height:1px;background:var(--aw-border);margin:18px 0}
+.aw-toast-region{position:fixed;right:26px;bottom:22px;z-index:150;display:flex;flex-direction:column;gap:8px}
+.aw-toast{width:min(370px,calc(100vw - 32px));background:#171717;color:#fff;border-radius:9px;padding:12px 14px;display:flex;gap:12px;align-items:center;box-shadow:0 10px 30px rgba(0,0,0,.13);animation:aw-modal-in var(--aw-duration-overlay) var(--aw-ease);font-size:13px}
+.aw-toast button{background:none;border:0;color:#ddd;font-size:16px}
+.aw-skeleton{background:linear-gradient(90deg,#f4f4f4 25%,#e9e9e9 37%,#f4f4f4 63%);background-size:300% 100%;border-radius:5px;animation:aw-skeleton 1.5s infinite}
+@keyframes aw-skeleton{to{background-position-x:-300%}}
+.aw-progress-track{height:5px;background:#ededed;border-radius:3px;overflow:hidden}
+.aw-progress-fill{height:100%;width:0;background:var(--aw-accent);transition:width var(--aw-duration) var(--aw-ease)}
+.aw-showcase-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.aw-color-row{display:flex;gap:10px;align-items:center;margin:12px 0}
+.aw-swatch{width:36px;height:36px;border-radius:8px;border:1px solid var(--aw-border)}
+.aw-mini-callout{border-left:2px solid var(--aw-accent);padding:6px 12px;color:var(--aw-text-secondary);background:#fafbff;font-size:12px;line-height:1.8}
+.aw-icon{width:18px;height:18px;stroke:currentColor;stroke-width:1.7;fill:none;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.aw-link{color:var(--aw-accent)}
+@media(max-width:900px){.aw-sidebar{flex-basis:64px;width:64px}.aw-sidebar .aw-nav-label,.aw-sidebar .aw-side-label,.aw-sidebar .aw-brand-label{display:none}.aw-sidebar .aw-sidebar-brand,.aw-sidebar .aw-nav-item{justify-content:center;padding:0}.aw-content{padding:24px}.aw-stat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.aw-topbar{padding:0 20px}}
+@media(max-width:600px){.aw-sidebar{display:none}.aw-content{padding:20px 16px}.aw-topbar{padding:0 16px}.aw-page-head{flex-direction:column;gap:14px}.aw-stat-grid,.aw-showcase-grid{grid-template-columns:1fr}.aw-page-title{font-size:22px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+/* React adapter additions */
+.aw-dialog-overlay{position:fixed;inset:0;background:rgba(15,19,28,.32);z-index:90;animation:aw-fade var(--aw-duration-overlay) var(--aw-ease)}
+.aw-dialog-content{position:fixed;z-index:91;top:50%;left:50%;transform:translate(-50%,-50%);width:min(520px,calc(100vw - 32px));background:#fff;border:1px solid var(--aw-border);border-radius:12px;box-shadow:var(--aw-shadow-popover);max-height:90vh;overflow:auto}
+.aw-sheet-content{position:fixed;z-index:91;top:0;right:0;bottom:0;width:min(520px,100vw);background:var(--aw-surface);border-left:1px solid var(--aw-border);box-shadow:-16px 0 40px rgba(16,24,40,.10);display:flex;flex-direction:column}
+.aw-dialog-overlay[data-state="open"]{animation:aw-fade var(--aw-duration-overlay) var(--aw-ease)}
+.aw-sheet-content[data-state="open"]{animation:aw-slide-in var(--aw-duration-overlay) var(--aw-ease)}
+.aw-react-command-results{padding:9px;max-height:330px;overflow:auto}
+.aw-react-command-input{width:100%;height:52px;border:0;border-bottom:1px solid var(--aw-border);padding:0 18px;outline:none;font-size:14px}
+.aw-react-command-item{width:100%;text-align:left;display:block;padding:10px 12px;border:0;border-radius:7px;background:#fff;color:var(--aw-text);font-size:13px}
+.aw-react-command-item[aria-selected="true"],.aw-react-command-item:hover{background:var(--aw-hover)}
+.aw-react-toast-viewport{position:fixed;z-index:300;right:22px;bottom:22px;display:flex;flex-direction:column;gap:8px;margin:0;padding:0;list-style:none;width:min(370px,calc(100vw - 32px));outline:none}
+.aw-react-toast{background:#171717;color:#fff;border-radius:9px;box-shadow:0 10px 30px rgba(0,0,0,.14);padding:12px 14px;font-size:13px}
+.aw-react-toast[data-state="open"]{animation:aw-modal-in var(--aw-duration-overlay) var(--aw-ease)}
+.aw-react-tab{padding:13px 0;background:none;border:0;color:var(--aw-text-secondary);font-size:13px;position:relative;display:inline-flex;align-items:center;justify-content:center}
+.aw-react-tab[data-state="active"]{color:var(--aw-text);font-weight:550}
+.aw-react-tab-indicator{position:absolute;bottom:-1px;left:0;right:0;height:2px;background:var(--aw-text);border-radius:2px}
+.aw-document-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(250px,320px);gap:0;border:1px solid var(--aw-border);border-radius:10px;overflow:hidden;min-height:480px}
+.aw-document-main{padding:28px 34px;max-width:100%;min-width:0}
+.aw-document-rail{background:#fcfcfc;border-left:1px solid var(--aw-border);padding:24px 20px}
+@media(max-width:850px){.aw-document-grid{grid-template-columns:1fr}.aw-document-rail{border-top:1px solid var(--aw-border);border-left:0}}
+.aw-info-row{display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--aw-border)}
+.aw-info-row:last-child{border-bottom:0}
+
+/* Small-screen demo navigation */
+.aw-sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+.aw-mobile-nav{display:none;height:32px;border:1px solid var(--aw-border-strong);border-radius:7px;background:#fff;color:var(--aw-text);font-size:12px;padding:0 8px;max-width:118px}
+@media(max-width:600px){.aw-mobile-nav{display:block}.aw-topbar{gap:8px}.aw-breadcrumb{font-size:11px}.aw-breadcrumb>span:first-child{display:none}}
+</style>
+  <style>
+    .lab-eyebrow{letter-spacing:.1em;text-transform:uppercase;color:var(--aw-text-muted);font-size:11px;font-weight:600}
+    .lab-row-actions{display:flex;align-items:center;justify-content:flex-end;gap:10px}
+    .lab-progress-list{display:grid;gap:12px}.lab-timeline-item{display:flex;gap:12px;align-items:flex-start;font-size:13px;line-height:1.7}
+    .lab-timeline-mark{width:20px;height:20px;display:grid;place-items:center;background:#f3f4f6;color:#767676;border-radius:100%;flex:none;font-size:11px}
+    .lab-timeline-mark.is-done{background:#ecfdf3;color:#16794b}.lab-timeline-mark.is-active{background:#eff6ff;color:#1d4ed8}
+    .lab-callout{padding:15px 18px;background:#f7faff;border:1px solid #e7efff;border-radius:8px;line-height:1.8;font-size:12px;color:#385078}
+    .lab-grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .lab-section{margin:24px 0 12px}.lab-section-title{font-weight:620;font-size:15px;margin:0 0 6px}
+    .lab-demo-controls{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+    .lab-info-row{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:13px 0;border-bottom:1px solid var(--aw-border);font-size:13px}
+    .lab-info-row:last-child{border-bottom:0}
+    .lab-tab-panel[hidden],section[data-page][hidden]{display:none!important}
+    .lab-section-note{font-size:12px;line-height:1.8;color:var(--aw-text-secondary)}
+    .lab-divider{border-top:1px solid var(--aw-border);margin:24px 0}
+    .lab-stage-controls{margin:20px 0 16px}
+    .lab-mobile-toggle{display:none}
+    @media(max-width:720px){.lab-grid-3{grid-template-columns:1fr}.lab-mobile-toggle{display:inline-flex}}
+  </style>
+</head>
+<body>
+  <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+    <symbol id="icon-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+    <symbol id="icon-layers" viewBox="0 0 24 24"><path d="m12 2 9 5-9 5-9-5 9-5Z"/><path d="m3 12 9 5 9-5M3 17l9 5 9-5"/></symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="icon-panel" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18"/></symbol>
+    <symbol id="icon-flask" viewBox="0 0 24 24"><path d="M9 3h6M10 3v7L4 20a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1l-6-10V3M8 15h8"/></symbol>
+    <symbol id="icon-doc" viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H5V3h2Z"/><path d="M14 3v6h5M9 13h6M9 17h6"/></symbol>
+    <symbol id="icon-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></symbol>
+    <symbol id="icon-command" viewBox="0 0 24 24"><path d="M9 8V6a3 3 0 1 0-3 3h2v6H6a3 3 0 1 0 3 3v-3h6v3a3 3 0 1 0 3-3h-3V9h3a3 3 0 1 0-3-3v2H9Z"/></symbol>
+    <symbol id="icon-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+  </svg>
+  <div class="aw-app" id="app">
+    <aside class="aw-sidebar" aria-label="演示导航">
+      <div class="aw-sidebar-brand"><span class="aw-brand-icon">W</span><span class="aw-brand-label">AI Workflow <span style="font-size:10px;color:var(--aw-text-muted)">UI KIT</span></span></div>
+      <button class="aw-button aw-button--secondary" id="search-trigger" style="height:36px;min-height:36px;justify-content:space-between;width:100%;margin-bottom:9px" title="打开搜索 Ctrl/⌘ K"><span class="aw-row"><svg class="aw-icon"><use href="#icon-search"/></svg><span class="aw-nav-label" style="font-weight:400;color:var(--aw-text-muted)">搜索资产</span></span><kbd class="aw-kbd aw-nav-label">⌘K</kbd></button>
+      <div class="aw-side-label">ASSET LIBRARY</div>
+      <nav class="aw-nav" aria-label="资源导航">
+        <button class="aw-nav-item is-active" data-go="overview" aria-current="page" title="概览"><span class="aw-nav-icon"><svg class="aw-icon"><use href="#icon-grid"/></svg></span><span class="aw-nav-label">设计概览</span></button>
+        <button class="aw-nav-item" data-go="components" title="组件"><span class="aw-nav-icon"><svg class="aw-icon"><use href="#icon-layers"/></svg></span><span class="aw-nav-label">视觉组件</span></button>
+        <button class="aw-nav-item" data-go="patterns" title="交互"><span class="aw-nav-icon"><svg class="aw-icon"><use href="#icon-flask"/></svg></span><span class="aw-nav-label">交互实验</span></button>
+        <button class="aw-nav-item" data-go="guide" title="指南"><span class="aw-nav-icon"><svg class="aw-icon"><use href="#icon-doc"/></svg></span><span class="aw-nav-label">组装说明</span></button>
+      </nav>
+      <div class="aw-sidebar-spacer"></div>
+      <div class="aw-sidebar-bottom aw-nav">
+        <button class="aw-nav-item" id="collapse-btn" title="折叠/展开侧栏"><span class="aw-nav-icon"><svg class="aw-icon"><use href="#icon-panel"/></svg></span><span class="aw-nav-label">折叠侧栏</span></button>
+      </div>
+    </aside>
+    <main class="aw-main">
+      <header class="aw-topbar">
+        <label for="mobile-nav" class="aw-sr-only">移动端导航</label>
+        <select id="mobile-nav" class="aw-mobile-nav" aria-label="选择页面"><option value="overview">设计概览</option><option value="components">视觉组件</option><option value="patterns">交互实验</option><option value="guide">组装说明</option></select>
+        <div class="aw-breadcrumb"><span>UI Kit</span><span style="color:#bbb">/</span><strong id="crumb">设计概览</strong></div>
+        <div class="aw-row"><span class="aw-badge aw-badge--neutral">v0.1 · Explorer</span><button class="aw-button aw-button--ghost aw-button--icon" id="header-command" aria-label="打开命令菜单" title="命令菜单"><svg class="aw-icon"><use href="#icon-command"/></svg></button></div>
+      </header>
+      <div class="aw-content" id="scroll-area"><div class="aw-content-inner">
+        <section data-page="overview" id="page-overview">
+          <div class="aw-page-head"><div><div class="lab-eyebrow" style="margin-bottom:12px">REFINED LIGHT SAAS / V1</div><h1 class="aw-page-title">设计资产总览</h1><p class="aw-page-description">原创设计系统 · 参考 Attio 空间语言与 Vercel 的克制秩序。这里的交互仅用于独立验证。</p></div><button class="aw-button aw-button--primary" id="create-button"><svg class="aw-icon" style="width:15px"><use href="#icon-plus"/></svg>新建项目</button></div>
+          <div class="lab-callout">这是一套可拆装资产，而不是现有平台的新版本。试试 <strong>⌘K</strong> 命令菜单、点击表格打开详情、侧栏折叠、Tabs 滑动指示器以及后台执行反馈。</div>
+          <div class="aw-stat-grid">
+            <div class="aw-card"><div class="aw-stat-label">Design Tokens</div><div class="aw-stat-value">60</div><div class="aw-caption">统一色彩 / 字体 / 间距 / 动效</div></div>
+            <div class="aw-card"><div class="aw-stat-label">Interactive Patterns</div><div class="aw-stat-value">08</div><div class="aw-caption">含触发条件与完整状态</div></div>
+            <div class="aw-card"><div class="aw-stat-label">Page Recipes</div><div class="aw-stat-value">03</div><div class="aw-caption">工作台 / 列表详情 / 文档分栏</div></div>
+          </div>
+          <div class="aw-row-between" style="margin:16px 0 12px"><h2 class="aw-section-title">示例工作流</h2><span class="aw-caption">交互参考 · 不连接真实数据</span></div>
+          <div class="aw-panel">
+            <div class="aw-tabs" style="padding:0 18px" role="tablist" aria-label="工作流视图">
+              <button class="aw-tab" role="tab" aria-selected="true" tabindex="0" data-tab="active">进行中</button>
+              <button class="aw-tab" role="tab" aria-selected="false" tabindex="-1" data-tab="archived">已完成</button>
+              <button class="aw-tab" role="tab" aria-selected="false" tabindex="-1" data-tab="all">全部</button>
+              <div class="aw-tab-indicator" aria-hidden="true"></div>
+            </div>
+            <div class="aw-table-wrap"><table class="aw-table"><thead><tr><th style="width:46%">名称</th><th>状态</th><th>归属</th><th>最近更新</th><th></th></tr></thead><tbody id="records"></tbody></table></div>
+          </div>
+          <div class="lab-section"><h2 class="lab-section-title">设计重点</h2><p class="lab-section-note">大面积中性色、少量清晰强调、文字层级组织、高频交互的轻反馈。使用细边框建立边界，不用阴影堆砌模块。</p></div>
+        </section>
+        <section data-page="components" id="page-components" hidden>
+          <div class="aw-page-head"><div><div class="lab-eyebrow" style="margin-bottom:12px">FOUNDATIONS + PRIMITIVES</div><h1 class="aw-page-title">视觉组件</h1><p class="aw-page-description">统一 Token 和可复用的常用原子组件。</p></div><span class="aw-badge aw-badge--info">Light / Refined</span></div>
+          <div class="aw-showcase-grid">
+            <article class="aw-card"><h2 class="aw-card-heading">语义色板</h2><p class="lab-section-note">完整色值见 tokens/design-tokens.json。</p><div class="aw-color-row"><span class="aw-swatch" style="background:#fff"></span><span class="aw-swatch" style="background:#fafafa"></span><span class="aw-swatch" style="background:#f7f7f8"></span><span class="aw-swatch" style="background:#171717"></span><span class="aw-swatch" style="background:#2563eb"></span></div><p class="aw-caption">Surface · Canvas · Sidebar · Text · Accent</p></article>
+            <article class="aw-card"><h2 class="aw-card-heading">按钮</h2><p class="lab-section-note">主按钮只有一种，次操作保持轻量。</p><div class="lab-demo-controls"><button class="aw-button aw-button--primary" data-toast="主操作已触发">主要操作</button><button class="aw-button aw-button--secondary" data-toast="次要操作已触发">次要操作</button><button class="aw-button aw-button--ghost" data-toast="文字操作已触发">文字按钮</button></div></article>
+            <article class="aw-card"><h2 class="aw-card-heading">状态标签</h2><div class="lab-demo-controls"><span class="aw-badge aw-badge--success">已完成</span><span class="aw-badge aw-badge--info">进行中</span><span class="aw-badge aw-badge--warning">待确认</span><span class="aw-badge aw-badge--danger">已阻塞</span><span class="aw-badge aw-badge--neutral">草稿</span></div></article>
+            <article class="aw-card"><h2 class="aw-card-heading">输入控件</h2><label class="aw-field-label" for="demo-title">记录名称</label><input class="aw-input" id="demo-title" placeholder="输入内容以观察焦点状态" style="width:100%"/><p class="aw-caption" style="margin-bottom:0">建议在所有表单中保留可见 Label。</p></article>
+            <article class="aw-card"><h2 class="aw-card-heading">骨架加载</h2><div class="aw-skeleton" style="width:52%;height:13px;margin-bottom:15px"></div><div class="aw-skeleton" style="height:9px;width:92%;margin-bottom:11px"></div><div class="aw-skeleton" style="height:9px;width:75%"></div><p class="aw-caption">结构应当尽可能接近最终内容，减少跳动。</p></article>
+            <article class="aw-card"><h2 class="aw-card-heading">排版与数字</h2><div style="font-size:22px;font-weight:630;letter-spacing:-.6px;margin:12px 0">精密、安静的工作界面</div><p class="aw-description">正文采用 14px / 22px，数字以等宽数字特性保证对齐。</p><div class="aw-meta" style="font-size:14px">2026-10-23 · v1.2.4 · #AW-2048</div></article>
+          </div>
+        </section>
+        <section data-page="patterns" id="page-patterns" hidden>
+          <div class="aw-page-head"><div><div class="lab-eyebrow" style="margin-bottom:12px">INTERACTION PATTERNS</div><h1 class="aw-page-title">交互实验</h1><p class="aw-page-description">验证动作是否连贯、反馈是否可理解、键盘是否可访问。</p></div></div>
+          <div class="aw-showcase-grid">
+            <div class="aw-card"><h2 class="aw-card-heading">命令菜单</h2><p class="aw-description">全局检索命令。可以使用 Ctrl/⌘ K、方向键、Enter 和 Esc。</p><button class="aw-button aw-button--secondary" data-open-command>打开 Command Menu <span class="aw-kbd">⌘K</span></button></div>
+            <div class="aw-card"><h2 class="aw-card-heading">侧向详情</h2><p class="aw-description">不中断主内容，用侧边视图快速查看单条记录。</p><button class="aw-button aw-button--secondary" data-open-record="p2">打开 Detail Sheet</button></div>
+            <div class="aw-card"><h2 class="aw-card-heading">确认弹窗</h2><p class="aw-description">仅当需要明确决策时使用模态弹窗，关闭后返回触发元素。</p><button class="aw-button aw-button--secondary" id="show-modal">打开 Modal</button></div>
+            <div class="aw-card"><h2 class="aw-card-heading">即时反馈</h2><p class="aw-description">状态提示轻量出现，不干扰用户当前注意力。</p><button class="aw-button aw-button--secondary" data-toast="已保存至草稿">触发 Toast</button></div>
+          </div>
+          <div class="aw-card" style="margin-top:16px"><div class="aw-row-between"><div><h2 class="aw-card-heading">异步任务状态</h2><p class="lab-section-note" style="margin:0">模拟步骤推进、可中止操作。这里不连接 AI 服务。</p></div><span class="aw-badge aw-badge--neutral" id="job-badge">未启动</span></div><div class="lab-stage-controls"><div class="aw-progress-track"><div id="job-progress" class="aw-progress-fill"></div></div></div><div class="lab-progress-list" id="job-steps"><div class="lab-timeline-item"><span class="lab-timeline-mark">1</span><span>准备项目上下文</span></div><div class="lab-timeline-item"><span class="lab-timeline-mark">2</span><span>读取关联资料</span></div><div class="lab-timeline-item"><span class="lab-timeline-mark">3</span><span>生成结构化候选结果</span></div></div><div class="lab-demo-controls"><button class="aw-button aw-button--primary" id="start-job">开始模拟</button><button class="aw-button aw-button--secondary" id="cancel-job" disabled>中止</button></div></div>
+        </section>
+        <section data-page="guide" id="page-guide" hidden>
+          <div class="aw-page-head"><div><div class="lab-eyebrow" style="margin-bottom:12px">ASSEMBLY GUIDE</div><h1 class="aw-page-title">如何调用这些资产</h1><p class="aw-page-description">先按 ID 检索，再确定交互状态、Token、依赖和页面组装方式。</p></div></div>
+          <div class="aw-card"><h2 class="aw-card-heading">资产调用流程</h2><div class="lab-info-row"><strong>01 · 检索</strong><span>查看 registry/asset-manifest.json，根据 tags、layer、framework、status 匹配。</span></div><div class="lab-info-row"><strong>02 · 选取</strong><span>先引入 tokens/tokens.css，再挑选组件和交互模式。</span></div><div class="lab-info-row"><strong>03 · 组装</strong><span>对照 react/recipes/ 或 docs/page-recipes.md 拼装骨架。</span></div><div class="lab-info-row"><strong>04 · 验收</strong><span>核查 loading / empty / success / error / disabled / keyboard / mobile / reduced-motion。</span></div></div>
+          <div class="aw-card" style="margin-top:16px"><h2 class="aw-card-heading">现阶段范围</h2><p class="aw-description">这是独立参考实现，不与现有业务代码耦合。React 适配器使用 TypeScript 和 Radix 对话框；纯 HTML 预览不依赖服务端或外部 CDN。更复杂的拖拽分栏与生产级 Toast/表格管理应在明确技术栈后接入经过验证的专业组件。</p><div class="lab-demo-controls"><button class="aw-button aw-button--secondary" data-go="components">查看视觉组件</button><button class="aw-button aw-button--secondary" data-go="patterns">查看交互模式</button></div></div>
+        </section>
+      </div></div>
+    </main>
+  </div>
+  <div class="aw-sheet-backdrop" id="sheet-backdrop" hidden></div>
+  <aside class="aw-sheet" id="sheet" hidden role="dialog" aria-modal="true" aria-labelledby="sheet-title" tabindex="-1">
+    <div class="aw-sheet-head"><div><div class="lab-eyebrow" style="margin-bottom:8px">RECORD DETAIL</div><h2 class="aw-dialog-title" id="sheet-title">记录详情</h2><p class="aw-caption" id="sheet-subtitle" style="margin:7px 0 0"></p></div><button class="aw-button aw-button--ghost aw-button--icon" id="sheet-close" aria-label="关闭详情"><svg class="aw-icon"><use href="#icon-close"/></svg></button></div>
+    <div class="aw-sheet-body"><div class="lab-info-row"><strong>当前状态</strong><div id="sheet-status"></div></div><div class="lab-info-row"><strong>负责模块</strong><span id="sheet-module"></span></div><div class="lab-info-row"><strong>更新日期</strong><span id="sheet-time"></span></div><h3 style="margin:25px 0 10px;font-size:14px">设计用途</h3><p class="aw-description">在不离开工作台的情况下查看相关记录。此处仅演示视觉和交互模式，不代表正式业务数据。</p><div class="lab-callout">预期交互：打开后聚焦到面板，Esc 或关闭按钮退出，关闭时把焦点还给触发位置。</div></div>
+    <div class="aw-dialog-foot"><button class="aw-button aw-button--secondary" id="sheet-done">关闭</button><button class="aw-button aw-button--primary" id="sheet-save">保存草稿</button></div>
+  </aside>
+  <dialog class="aw-dialog aw-command" id="command-dialog" aria-label="搜索设计资产">
+    <input class="aw-command-input" id="command-input" placeholder="搜索页面、组件或命令…" aria-label="搜索命令" autocomplete="off"/>
+    <div class="aw-command-list" role="listbox" aria-label="命令结果" id="command-list"></div>
+    <div class="aw-dialog-foot" style="justify-content:space-between"><span class="aw-caption">↑ ↓ 选择 · Enter 确认</span><span class="aw-caption">Esc 关闭</span></div>
+  </dialog>
+  <dialog class="aw-dialog" id="confirm-dialog" aria-labelledby="confirm-title">
+    <div class="aw-dialog-head"><h2 class="aw-dialog-title" id="confirm-title">创建演示项目？</h2><p class="aw-caption" style="margin:0">确认后显示操作反馈，不写入任何真实数据。</p></div>
+    <div class="aw-dialog-body"><div class="aw-field"><label class="aw-field-label" for="project-name">项目名称</label><input class="aw-input" id="project-name" placeholder="例如：AI Workflow Alpha" style="width:100%"/></div><div class="aw-mini-callout">点击“创建”只触发演示 Toast，不会真正创建项目。</div></div>
+    <div class="aw-dialog-foot"><button class="aw-button aw-button--secondary" id="modal-cancel">取消</button><button class="aw-button aw-button--primary" id="modal-submit">创建</button></div>
+  </dialog>
+  <div class="aw-toast-region" id="toast-region" aria-live="polite" aria-atomic="false"></div>
+  <script>'use strict';
+const $ = (id) => document.getElementById(id);
+const app = $('app');
+const records = [
+  {id:'p1',name:'AI Workflow Platform',note:'项目需求与交互资产',module:'产品设计',status:'info',label:'进行中',time:'2026-10-23'},
+  {id:'p2',name:'需求澄清 Agent',note:'AI 辅助澄清研究',module:'Agent 工作流',status:'warning',label:'待确认',time:'2026-10-22'},
+  {id:'p3',name:'Design Review',note:'统一视觉与交互规范',module:'设计评审',status:'success',label:'已完成',time:'2026-10-20'},
+  {id:'p4',name:'Test Record',note:'可追溯状态记录',module:'测试验收',status:'neutral',label:'草稿',time:'2026-10-19'}
+];
+const pages={overview:'设计概览',components:'视觉组件',patterns:'交互实验',guide:'组装说明'};
+let activeTab='active';
+let previousFocus=null;
+const badge=(r)=>`<span class="aw-badge aw-badge--${r.status}">${r.label}</span>`;
+function showPage(page){
+  if(!pages[page])return;
+  for(const section of document.querySelectorAll('section[data-page]'))section.hidden=section.dataset.page!==page;
+  for(const btn of document.querySelectorAll('.aw-nav-item[data-go]')){
+    const selected=btn.dataset.go===page;
+    btn.classList.toggle('is-active',selected);
+    if(selected)btn.setAttribute('aria-current','page');else btn.removeAttribute('aria-current');
+  }
+  $('crumb').textContent=pages[page];$('mobile-nav').value=page;$('scroll-area').scrollTo(0,0);
+  document.title=pages[page]+' · AI Workflow UI Kit';
+}
+document.addEventListener('click',(e)=>{const route=e.target.closest('[data-go]');if(route){showPage(route.dataset.go);}});
+$('collapse-btn').addEventListener('click',()=>app.classList.toggle('is-collapsed'));$('mobile-nav').addEventListener('change',e=>showPage(e.target.value));
+function renderRecords(){
+  const filtered=records.filter(r=>activeTab==='all'||(activeTab==='active'?r.status!=='success':r.status==='success'));
+  $('records').replaceChildren();
+  for(const r of filtered){
+    const tr=document.createElement('tr');tr.className='is-clickable';tr.tabIndex=0;tr.setAttribute('aria-label','打开 '+r.name+' 详情');
+    tr.innerHTML=`<td><strong style="font-weight:570">${r.name}</strong><div class="aw-caption" style="margin-top:5px">${r.note}</div></td><td>${badge(r)}</td><td class="aw-muted">${r.module}</td><td class="aw-meta">${r.time}</td><td style="text-align:right;color:#999">›</td>`;
+    tr.addEventListener('click',()=>openSheet(r.id,tr));
+    tr.addEventListener('keydown',(e)=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openSheet(r.id,tr);}});
+    $('records').appendChild(tr);
+  }
+}
+function adjustIndicator(){
+  const tabs=document.querySelector('.aw-tabs');if(!tabs)return;
+  const selected=tabs.querySelector('[aria-selected="true"]');const indicator=tabs.querySelector('.aw-tab-indicator');
+  indicator.style.width=selected.offsetWidth+'px';indicator.style.transform=`translateX(${selected.offsetLeft}px)`;
+}
+function selectTab(tab){activeTab=tab;for(const b of document.querySelectorAll('.aw-tab')){const yes=b.dataset.tab===tab;b.setAttribute('aria-selected',String(yes));b.tabIndex=yes?0:-1;}renderRecords();adjustIndicator();}
+const tabItems=[...document.querySelectorAll('.aw-tab')];
+tabItems.forEach((b,i)=>{
+ b.addEventListener('click',()=>selectTab(b.dataset.tab));
+ b.addEventListener('keydown',e=>{if(!['ArrowRight','ArrowLeft','Home','End'].includes(e.key))return;e.preventDefault();const at=e.key==='Home'?0:e.key==='End'?tabItems.length-1:(i+(e.key==='ArrowRight'?1:-1)+tabItems.length)%tabItems.length;selectTab(tabItems[at].dataset.tab);tabItems[at].focus();});
+});
+window.addEventListener('resize',adjustIndicator);
+renderRecords();requestAnimationFrame(adjustIndicator);
+function openSheet(id,trigger){
+  const r=records.find(x=>x.id===id)||records[0];previousFocus=trigger||document.activeElement;
+  $('sheet-title').textContent=r.name;$('sheet-subtitle').textContent=r.note;
+  $('sheet-status').innerHTML=badge(r);$('sheet-module').textContent=r.module;$('sheet-time').textContent=r.time;
+  $('sheet').hidden=false;$('sheet-backdrop').hidden=false;
+  document.body.style.overflow='hidden';$('sheet-close').focus();
+}
+function closeSheet(){if($('sheet').hidden)return;$('sheet').hidden=true;$('sheet-backdrop').hidden=true;document.body.style.overflow='';if(previousFocus?.isConnected)previousFocus.focus();}
+$('sheet-close').addEventListener('click',closeSheet);$('sheet-done').addEventListener('click',closeSheet);$('sheet-backdrop').addEventListener('click',closeSheet);
+$('sheet-save').addEventListener('click',()=>{closeSheet();toast('草稿已保存（演示）');});
+document.querySelectorAll('[data-open-record]').forEach(b=>b.addEventListener('click',()=>openSheet(b.dataset.openRecord,b)));
+// Focus trap for the demo drawer. Production adapter uses Radix Dialog primitives.
+$('sheet').addEventListener('keydown',(e)=>{if(e.key!=='Tab')return;const els=[...$('sheet').querySelectorAll('button:not(:disabled), input:not(:disabled), [tabindex="0"]')];if(!els.length)return;const i=els.indexOf(document.activeElement);if(e.shiftKey&&i===0){e.preventDefault();els.at(-1).focus();}else if(!e.shiftKey&&i===els.length-1){e.preventDefault();els[0].focus();}});
+function toast(message){const wrap=document.createElement('div');wrap.className='aw-toast';wrap.setAttribute('role','status');const msg=document.createElement('span');msg.style.flex='1';msg.textContent='✓  '+message;const close=document.createElement('button');close.type='button';close.setAttribute('aria-label','关闭通知');close.textContent='×';close.addEventListener('click',()=>wrap.remove());wrap.append(msg,close);$('toast-region').append(wrap);setTimeout(()=>wrap.remove(),4000);}
+document.querySelectorAll('[data-toast]').forEach(b=>b.addEventListener('click',()=>toast(b.dataset.toast)));
+const modal=$('confirm-dialog');$('create-button').addEventListener('click',()=>modal.showModal());$('show-modal').addEventListener('click',()=>modal.showModal());
+$('modal-cancel').addEventListener('click',()=>modal.close());$('modal-submit').addEventListener('click',()=>{modal.close();toast('项目创建成功（演示）');});
+const palette=$('command-dialog'),commands=[
+ {name:'跳转 · 设计概览',hint:'Navigation',action:()=>showPage('overview')},
+ {name:'跳转 · 视觉组件',hint:'Navigation',action:()=>showPage('components')},
+ {name:'跳转 · 交互实验',hint:'Navigation',action:()=>showPage('patterns')},
+ {name:'跳转 · 组装说明',hint:'Navigation',action:()=>showPage('guide')},
+ {name:'打开 · 记录详情',hint:'Pattern',action:()=>openSheet('p2',$('header-command'))},
+ {name:'执行 · 显示保存反馈',hint:'Feedback',action:()=>toast('操作已完成（演示）')}
+];
+let activeCommand=0,shown=[];
+function renderCommands(){const q=$('command-input').value.trim().toLocaleLowerCase();shown=commands.filter(c=>c.name.toLocaleLowerCase().includes(q)||c.hint.toLowerCase().includes(q));activeCommand=Math.min(activeCommand,Math.max(0,shown.length-1));const list=$('command-list');list.replaceChildren();if(!shown.length){const p=document.createElement('p');p.className='aw-caption';p.style.padding='14px';p.textContent='没有找到匹配命令';list.append(p);return;}shown.forEach((c,i)=>{const option=document.createElement('button');option.type='button';option.className='aw-command-option';option.setAttribute('role','option');option.setAttribute('aria-selected',String(i===activeCommand));option.dataset.active=String(i===activeCommand);const s=document.createElement('span');s.textContent=c.name;const k=document.createElement('span');k.className='aw-caption';k.textContent=c.hint;option.append(s,k);option.addEventListener('mouseenter',()=>{activeCommand=i;renderActive();});option.addEventListener('click',()=>executeCommand(i));list.append(option);});}
+function renderActive(){[...$('command-list').querySelectorAll('.aw-command-option')].forEach((el,i)=>{el.dataset.active=String(i===activeCommand);el.setAttribute('aria-selected',String(i===activeCommand));});}
+function executeCommand(i){const c=shown[i];if(!c)return;palette.close();c.action();}
+function openPalette(){if(palette.open){palette.close();return;}palette.showModal();$('command-input').value='';activeCommand=0;renderCommands();$('command-input').focus();}
+$('search-trigger').addEventListener('click',openPalette);$('header-command').addEventListener('click',openPalette);document.querySelectorAll('[data-open-command]').forEach(b=>b.addEventListener('click',openPalette));
+$('command-input').addEventListener('input',()=>{activeCommand=0;renderCommands();});
+$('command-input').addEventListener('keydown',e=>{if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();if(shown.length){activeCommand=(activeCommand+(e.key==='ArrowDown'?1:-1)+shown.length)%shown.length;renderActive();}}else if(e.key==='Enter'){e.preventDefault();executeCommand(activeCommand);}});
+document.addEventListener('keydown',e=>{
+ if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();openPalette();return;}
+ if(e.key==='Escape'&&!palette.open&&!modal.open&&!$('sheet').hidden){e.preventDefault();closeSheet();}
+});
+let jobTimer=null,stage=0;
+const stageNames=['准备项目上下文','读取关联资料','生成结构化候选结果'];
+function renderStage(){const stageRows=[...$('job-steps').children];stageRows.forEach((el,i)=>{const icon=el.firstElementChild;icon.className='lab-timeline-mark'+(i<stage?' is-done':i===stage?' is-active':'');icon.textContent=i<stage?'✓':String(i+1);});$('job-progress').style.width=Math.round(stage/3*100)+'%';}
+function finishJob(){clearInterval(jobTimer);jobTimer=null;$('start-job').disabled=false;$('cancel-job').disabled=true;}
+$('start-job').addEventListener('click',()=>{finishJob();stage=0;renderStage();$('job-badge').className='aw-badge aw-badge--info';$('job-badge').textContent='执行中';$('start-job').disabled=true;$('cancel-job').disabled=false;jobTimer=setInterval(()=>{stage++;renderStage();if(stage===3){finishJob();$('job-badge').className='aw-badge aw-badge--success';$('job-badge').textContent='已完成';toast('模拟任务完成');}},1000);});
+$('cancel-job').addEventListener('click',()=>{finishJob();$('job-badge').className='aw-badge aw-badge--warning';$('job-badge').textContent='已中止';toast('任务已中止');});
+</script>
+</body>
+</html>
