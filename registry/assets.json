@@ -955,6 +955,305 @@
         "PR-004"
       ],
       "notion": "[private-notion-link-redacted]"
+    },
+    {
+      "id": "REF-021",
+      "type": "reference",
+      "name": "Atlassian Design inline edit",
+      "stage": "analyzed",
+      "priority": "P0",
+      "tags": [
+        "saas",
+        "inline",
+        "confirm",
+        "cancel"
+      ],
+      "source": "https://atlassian.design/patterns/inline-edit/",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "b2b-saas",
+        "workspace",
+        "data-tool"
+      ],
+      "spec": "docs/saas/editing-patterns.md"
+    },
+    {
+      "id": "REF-022",
+      "type": "reference",
+      "name": "Geist Input form behavior",
+      "stage": "analyzed",
+      "priority": "P0",
+      "tags": [
+        "saas",
+        "input",
+        "validation",
+        "blur"
+      ],
+      "source": "https://vercel.com/geist/input",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "b2b-saas",
+        "workspace",
+        "data-tool"
+      ],
+      "spec": "docs/saas/editing-patterns.md"
+    },
+    {
+      "id": "REF-023",
+      "type": "reference",
+      "name": "Linear advanced filters AND/OR",
+      "stage": "analyzed",
+      "priority": "P0",
+      "tags": [
+        "saas",
+        "filters",
+        "and-or",
+        "group"
+      ],
+      "source": "https://linear.app/docs/filters",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "b2b-saas",
+        "workspace",
+        "data-tool"
+      ],
+      "spec": "docs/saas/editing-patterns.md"
+    },
+    {
+      "id": "REF-024",
+      "type": "reference",
+      "name": "Linear custom and temporary views",
+      "stage": "analyzed",
+      "priority": "P0",
+      "tags": [
+        "saas",
+        "views",
+        "save",
+        "sharing"
+      ],
+      "source": "https://linear.app/docs/custom-views",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "b2b-saas",
+        "workspace",
+        "data-tool"
+      ],
+      "spec": "docs/saas/editing-patterns.md"
+    },
+    {
+      "id": "REF-025",
+      "type": "reference",
+      "name": "Geist layered errors and recovery",
+      "stage": "analyzed",
+      "priority": "P0",
+      "tags": [
+        "saas",
+        "error",
+        "validation",
+        "feedback"
+      ],
+      "source": "https://vercel.com/geist/error",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "b2b-saas",
+        "workspace",
+        "data-tool"
+      ],
+      "spec": "docs/saas/editing-patterns.md"
+    },
+    {
+      "id": "SAAS-007",
+      "type": "interaction",
+      "name": "Inline editing with explicit confirm/cancel",
+      "stage": "prototype",
+      "priority": "P0",
+      "tags": [
+        "saas",
+        "edit",
+        "inline",
+        "cancel"
+      ],
+      "source": "https://atlassian.design/patterns/inline-edit/",
+      "reuseKind": "behavior-pattern",
+      "styleIds": [],
+      "applicationContexts": [
+        "b2b-saas",
+        "workspace"
+      ],
+      "spec": "docs/saas/editing-patterns.md",
+      "demo": "playground/saas-editing/index.html",
+      "demoStyleId": "refined-light-saas",
+      "dependencies": [
+        "REF-021"
+      ]
+    },
+    {
+      "id": "SAAS-008",
+      "type": "interaction",
+      "name": "Field validation and simulated async saving",
+      "stage": "prototype",
+      "priority": "P0",
+      "tags": [
+        "saas",
+        "form",
+        "validation",
+        "async-save"
+      ],
+      "source": "https://vercel.com/geist/input",
+      "reuseKind": "behavior-pattern",
+      "styleIds": [],
+      "applicationContexts": [
+        "b2b-saas",
+        "workspace"
+      ],
+      "spec": "docs/saas/editing-patterns.md",
+      "demo": "playground/saas-editing/index.html",
+      "demoStyleId": "refined-light-saas",
+      "dependencies": [
+        "REF-022"
+      ]
+    },
+    {
+      "id": "SAAS-009",
+      "type": "interaction",
+      "name": "Unsaved changes protection and discard",
+      "stage": "prototype",
+      "priority": "P0",
+      "tags": [
+        "saas",
+        "draft",
+        "unsaved",
+        "confirmation"
+      ],
+      "source": "https://atlassian.design/patterns/inline-edit/",
+      "reuseKind": "behavior-pattern",
+      "styleIds": [],
+      "applicationContexts": [
+        "b2b-saas",
+        "workspace"
+      ],
+      "spec": "docs/saas/editing-patterns.md",
+      "demo": "playground/saas-editing/index.html",
+      "demoStyleId": "refined-light-saas",
+      "dependencies": [
+        "REF-021"
+      ]
+    },
+    {
+      "id": "SAAS-010",
+      "type": "interaction",
+      "name": "Advanced AND/OR filters and temporary preview",
+      "stage": "prototype",
+      "priority": "P0",
+      "tags": [
+        "saas",
+        "filters",
+        "and-or",
+        "nested"
+      ],
+      "source": "https://linear.app/docs/filters",
+      "reuseKind": "behavior-pattern",
+      "styleIds": [],
+      "applicationContexts": [
+        "b2b-saas",
+        "workspace"
+      ],
+      "spec": "docs/saas/editing-patterns.md",
+      "demo": "playground/saas-editing/index.html",
+      "demoStyleId": "refined-light-saas",
+      "dependencies": [
+        "REF-023"
+      ]
+    },
+    {
+      "id": "SAAS-011",
+      "type": "interaction",
+      "name": "Scoped keyboard shortcuts and focus rules",
+      "stage": "prototype",
+      "priority": "P0",
+      "tags": [
+        "saas",
+        "shortcut",
+        "keyboard",
+        "focus"
+      ],
+      "source": "https://atlassian.design/patterns/inline-edit/",
+      "reuseKind": "behavior-pattern",
+      "styleIds": [],
+      "applicationContexts": [
+        "b2b-saas",
+        "workspace"
+      ],
+      "spec": "docs/saas/editing-patterns.md",
+      "demo": "playground/saas-editing/index.html",
+      "demoStyleId": "refined-light-saas",
+      "dependencies": [
+        "REF-024"
+      ]
+    },
+    {
+      "id": "PR-005",
+      "type": "recipe",
+      "name": "SaaS settings and advanced filters",
+      "stage": "prototype",
+      "priority": "P0",
+      "tags": [
+        "saas",
+        "form",
+        "filters",
+        "settings"
+      ],
+      "source": "https://atlassian.design/patterns/inline-edit/",
+      "reuseKind": "composition-recipe",
+      "styleIds": [
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "b2b-saas",
+        "workspace"
+      ],
+      "path": "recipes/saas-form-filter.md",
+      "demo": "playground/saas-editing/index.html",
+      "demoStyleId": "refined-light-saas",
+      "dependencies": [
+        "DT-001",
+        "SAAS-007",
+        "SAAS-008",
+        "SAAS-009",
+        "SAAS-010",
+        "SAAS-011"
+      ]
+    },
+    {
+      "id": "KIT-003",
+      "type": "archive",
+      "name": "SaaS Edit and Filter Lab v0.3",
+      "stage": "prototype",
+      "priority": "P0",
+      "tags": [
+        "saas",
+        "form",
+        "interactive-demo"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "reuseKind": "snapshot",
+      "styleIds": [
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "b2b-saas"
+      ],
+      "path": "playground/saas-editing/README.md",
+      "demo": "playground/saas-editing/index.html",
+      "demoStyleId": "refined-light-saas",
+      "dependencies": [
+        "PR-005"
+      ]
     }
   ],
   "referenceImplementationRoot": "components/reference",

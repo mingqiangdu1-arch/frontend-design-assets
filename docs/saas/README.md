@@ -26,6 +26,14 @@
 
 所有条目先按当前成熟度标记。不因 HTML 有效果就判断为生产验收完成。实验页使用模拟数据，所有保存、归档和错误状态均为本地模拟，**没有后端或真实持久化**。已有初始 Interaction Lab 继续保留，两者承担不同目的。SaaS 之外的未来风格独立建立新研究目录及 Style Profile。
 
+## 表单与高级筛选专题 V0.3
+
+- [SAAS-007～011 行为与边界](editing-patterns.md)：就地编辑、blur 校验、失败重试、未保存提醒、AND/OR 条件组及快捷键。
+- [SaaS Edit + Filter Lab](../../playground/saas-editing/index.html)：独立模拟交互，不连接后端。
+- [PR-005 页面组合规范](../../recipes/saas-form-filter.md)
+
+本轮所有操作均为本地临时状态，没有实现持久化 Saved Views 或浏览器真实 API 保存。使用 `node --test tests/saas-edit-model.test.mjs` 只验证纯逻辑。
+
 ## 下一轮可能拓展（仅待研究）
 
 权限与协作、Form 复杂校验、保存视图的持久化、可调尺寸分栏、批量编辑、导入导出、键盘高效路径、移动端导航、暗色专业 SaaS。未实现的内容不得标记为已交付。

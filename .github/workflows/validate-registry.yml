@@ -28,5 +28,7 @@ jobs:
         run: |
           node --check playground/saas-patterns/model.mjs
           node --check playground/saas-patterns/app.mjs
+          node --check playground/saas-editing/model.mjs
+          node --check playground/saas-editing/app.mjs
       - name: Test SaaS state model
         run: node --test tests/*.test.mjs

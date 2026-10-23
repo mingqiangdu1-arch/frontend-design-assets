@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-23 · SaaS editing & advanced filters v0.3
+
+- Researched Atlassian Inline Edit, Geist Input/Error, Linear filters and custom views, and expectations around explicit save.
+- Catalogued 5 new source references, 5 SaaS interaction patterns, PR-005 composition and KIT-003 prototype snapshot.
+- Added a standalone SaaS Edit + Filter Lab: inline read/edit mode, field validation, unsaved guard, simulated save failure, scoped shortcuts and AND/OR filter builder.
+- Added pure state model unit tests; browser and full accessibility integration remain outstanding.
+
+
 ## 2026-10-23 · SaaS focused asset expansion v0.2
 
 - Reviewed Attio record layouts and views, Vercel Geist table/skeleton/menu and Linear bulk selection as source-grounded patterns.

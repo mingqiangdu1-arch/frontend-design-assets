@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="SaaS 编辑与高级筛选独立交互实验，全部操作为本地模拟">
+<title>SaaS Edit + Filter Lab · Frontend Design Assets</title>
+<link rel="stylesheet" href="./style.css"><script type="module" src="./app.mjs"></script>
+</head>
+<body data-design-theme="refined-light-saas">
+<div class="app-shell">
+<aside class="sidebar" aria-label="示例导航">
+  <div class="brand"><span class="brand-icon">◈</span><strong>Design Assets</strong></div>
+  <div class="project"><div class="project-icon">S</div><div>SaaS Interaction<small>Editing Lab · v0.3</small></div></div>
+  <div class="nav-label">RESEARCH</div>
+  <nav class="sidebar-links"><a class="selected" href="./" aria-current="page">▤ <span>表单与高级筛选</span></a>
+    <a href="../saas-patterns/">◫ <span>列表与详情</span></a>
+    <a href="../../docs/saas/README.md">◇ <span>交互规范</span></a>
+  </nav>
+  <p class="sidebar-foot">● 纯前端模拟 · 无后端</p>
+</aside>
+<div class="app-body">
+<header class="topbar"><div class="crumbs">Asset Library <b>/</b> SaaS <b>/</b> Editing Lab</div><span class="top-meta">INTERACTION STUDY</span></header>
+<main class="main">
+<div class="intro"><div><span class="eyebrow">SAAS-007 — SAAS-011</span><h1>表单与编辑体验</h1><p>让信息修改变得可预期、易恢复，同时保留成熟 SaaS 的轻量视觉。</p></div>
+  <a class="outline tiny" href="../../docs/saas/editing-patterns.md">查看设计规范 ↗</a>
+</div>
+<div class="notice"><span aria-hidden="true">ⓘ</span><span>此页面是独立的视觉与交互实验。保存、失败、筛选和更改提醒均为<strong>本地模拟</strong>，刷新后数据会恢复。</span></div>
+<nav class="page-tabs" aria-label="实验内容">
+ <button type="button" data-view="form" aria-current="page" class="selected">设置与编辑 <span>01</span></button>
+ <button type="button" data-view="filters">高级筛选 <span>02</span></button>
+</nav>
+<div id="editView" class="view">
+<div class="section-header"><div><h2>项目基本信息</h2><p>展示就地编辑与普通表单如何共享明确的保存语义。</p></div><span class="tag-label" id="draftBadge">已保存</span></div>
+<section class="panel">
+<form id="settingsForm" novalidate>
+  <div class="field-row">
+    <div class="field-desc"><label id="nameLabel">项目名称</label><p>点击名称进入编辑态。确认字段后仍需保存全部修改。</p></div>
+    <div class="field-control">
+      <div id="inlineRead" class="inline-read"><strong id="inlineDisplay"></strong><button type="button" id="editName" class="icon-button" aria-labelledby="editLabel"><span id="editLabel">编辑项目名称</span><span aria-hidden="true">✎</span></button></div>
+      <div id="inlineEdit" class="inline-edit" hidden><input aria-label="编辑项目名称" aria-describedby="inlineError" type="text" id="inlineInput" autocomplete="off" maxlength="80">
+        <button type="button" id="confirmInline" class="square primary" aria-label="确认名称草稿">✓</button>
+        <button type="button" id="cancelInline" class="square outline" aria-label="取消名称编辑">×</button></div>
+      <p id="inlineError" class="error-text" role="alert" hidden></p>
+    </div>
+  </div>
+  <div class="field-row">
+    <div class="field-desc"><label for="slug">项目标识符</label><p>2–24 位小写字母、数字或连字符。</p></div>
+    <div class="field-control"><div class="input-affix"><span>project /</span><input id="slug" name="slug" aria-describedby="slugHelp slugError" autocomplete="off"></div>
+      <small id="slugHelp">例如 ai-workflow，提交前会去除首尾空格。</small><p class="error-text" id="slugError" role="alert" hidden></p></div>
+  </div>
+  <div class="field-row">
+    <div class="field-desc"><label for="email">联系邮箱</label><p>仅用于体验字段校验及错误反馈。</p></div>
+    <div class="field-control"><input class="text-input" id="email" name="email" type="email" aria-describedby="emailError" autocomplete="off">
+    <p class="error-text" id="emailError" role="alert" hidden></p></div>
+  </div>
+  <div class="field-row">
+    <div class="field-desc"><label for="description">项目简介</label><p>长文本使用独立文本域，失焦不自动提交。</p></div>
+    <div class="field-control"><textarea id="description" name="description" rows="4" maxlength="300" aria-describedby="descriptionError"></textarea>
+    <div class="micro-hint"><span id="charCount">0 / 240</span><span>保存前将再次验证</span></div>
+    <p class="error-text" id="descriptionError" role="alert" hidden></p></div>
+  </div>
+  <div class="field-row last-row">
+    <div class="field-desc"><label for="notifications">通知偏好</label><p>同一保存动作支持文本和布尔类型字段。</p></div>
+    <div class="field-control"><label class="checkline"><input type="checkbox" id="notifications"><span>发送项目动态通知</span></label></div>
+  </div>
+  <div class="form-actions">
+    <div><strong id="saveStatus">所有修改已保存</strong><span class="form-hint">快捷键 Ctrl / ⌘ + S</span></div>
+    <button type="button" id="discardChanges" class="outline">重置草稿</button>
+    <button type="submit" id="saveAll" class="primary">保存全部修改</button>
+  </div>
+</form></section>
+<div class="demo-tools"><label><input type="checkbox" id="failSave"> 模拟下一次保存失败（仅演示）</label>
+ <span>触发失败后，草稿应保留，可再次重试。</span></div>
+<div id="saveError" class="alert-error" role="alert" hidden><strong>修改未保存</strong><span id="saveErrorText"></span><button type="button" class="outline" id="retrySave">重试保存</button></div>
+<div class="guidance"><strong>值得观察的细节</strong><p>区分“确认某个字段”和“保存整张表单”；离开未保存草稿前必须明确告知；错误发生时保留用户输入，不展示虚假的成功。</p></div>
+</div>
+<div id="filterView" class="view" hidden>
+  <div class="section-header"><div><h2>高级筛选构建器</h2><p>模拟 Linear 等 SaaS 的组合条件筛选。草稿与已应用条件分开。</p></div><span class="tag-label">临时筛选 · 不持久化</span></div>
+  <section class="panel filter-panel">
+    <div class="filter-intro"><div><strong>筛选条件</strong><small>每组最多 5 项，最多一层嵌套。值为空的规则会被忽略。</small></div><div id="filterDraftState" class="draft-flag">当前条件未应用</div></div>
+    <div id="filterBuilder" aria-label="高级筛选规则"></div>
+    <div class="filter-actions"><button type="button" class="outline" id="addRule">＋ 添加条件</button><button type="button" class="outline" id="addGroup">＋ 添加条件组</button></div>
+    <p id="filterError" class="error-text" role="alert" hidden></p>
+    <div class="filter-footer"><div class="filter-note">当前编辑是草稿；点击应用后才刷新结果。</div>
+      <button type="button" class="outline" id="resetFilter">恢复全部</button><button type="button" class="primary" id="applyFilter">应用临时筛选</button></div>
+  </section>
+  <section class="panel results">
+    <div class="result-header"><h2>匹配结果 <span class="count" id="matchCount">0</span></h2><span id="matchNote">已应用筛选</span></div>
+    <ul id="matches"></ul>
+  </section>
+  <div class="guidance"><strong>临时筛选 ≠ Saved View</strong><p>此实验仅展示前端过滤条件组合。真实产品中的视图保存、团队共享、URL 同步和服务端分页须另行设计。</p></div>
+</div>
+<p class="credits">原创实验界面 · 参考 Atlassian Inline Edit、Vercel Geist、Linear Filters 等公开设计规范</p>
+</main>
+</div>
+</div>
+<dialog id="discardDialog" class="confirm-dialog" aria-labelledby="confirmTitle">
+ <div class="confirm-content"><span class="warning-icon">!</span><h2 id="confirmTitle">有未保存的修改</h2><p>离开后，当前编辑的草稿内容会被放弃。你希望继续编辑，还是放弃这些更改？</p></div>
+ <div class="confirm-actions"><button type="button" class="outline" id="continueEditing">继续编辑</button><button type="button" class="danger" id="confirmDiscard">放弃更改</button></div>
+</dialog>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden><span id="toastText"></span><button type="button" aria-label="关闭提示" id="closeToast">×</button></div>
+</body>
+</html>

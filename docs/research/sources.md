@@ -39,3 +39,13 @@ Prefer source with real, observable interaction or official documentation over s
 - [Attio 2026 Record Page](https://attio.com/changelog/2026/record-page-redesign) — compact vs standard lists, resizable panels.
 
 These links evidence principles and observed behavior, not production code or exact source Tokens.
+
+## SaaS editing and advanced-filter study (2026-10-23)
+
+- [Atlassian Inline Edit](https://atlassian.design/patterns/inline-edit/) — read/edit/confirm/cancel state and accessible action affordances.
+- [Atlassian Inline Editable Text Field](https://atlassian.design/components/inline-edit/inline-editable-textfield/usage) — when inline edit is appropriate; avoid editing a whole-page primary document inline.
+- [Vercel Geist Input](https://vercel.com/geist/input) — blur validation, helper text, keyboard and form input.
+- [Vercel Geist Error](https://vercel.com/geist/error) — field/action/section-level error distinctions.
+- [Linear Advanced Filters](https://linear.app/docs/filters) — AND/OR nested group behavior.
+- [Linear Custom Views](https://linear.app/docs/custom-views) — temporary filter vs saved/shareable views.
+- [NN/g Expectations of Save](https://www.nngroup.com/articles/efficiency-vs-expectations/) — explicit saving and user mental models.
