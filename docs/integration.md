@@ -4,10 +4,10 @@ This is a source/reference workspace; the live AI WORKFLOW PLATFORM is not modif
 
 ## Selecting assets
 
-1. Choose page objective and runtime stack.
+1. Identify the application profile: product category, audience, platform, interaction goal, brand direction, required density and runtime stack. No default theme is implied.
 2. Search `registry/assets.json` for tags / IDs; inspect at least one alternative.
-3. Record chosen versions, source URLs, licenses and dependencies.
-4. Map semantics via `tokens/`; do not hand-copy arbitrary styling.
+3. Select an explicit style via `registry/styles.json`, or define a new one; record chosen versions, source URLs, licenses and dependencies.
+4. Map theme-specific semantics via its scoped tokens. Never load a different application's theme globally or hand-copy arbitrary styling.
 5. Start isolated playground; only then wrap/adapt to target framework.
 6. Validate keyboard, touch, aria roles, focus and reduced motion.
 7. Test state lifecycle: empty, loading, success, error, canceled and undo where applicable.

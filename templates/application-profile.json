@@ -1,0 +1,18 @@
+{
+  "id": "<project-id>",
+  "name": "<project display name>",
+  "status": "draft",
+  "productType": "<e.g. editor, mobile consumer, shop, game helper, workspace>",
+  "audience": [],
+  "platforms": [],
+  "primaryInteractionModes": [],
+  "informationDensity": "<open choice>",
+  "brandDirection": "<open description>",
+  "selectedStyleIds": [],
+  "visualAlternatives": [],
+  "candidateAssetIds": [],
+  "technicalConstraints": [],
+  "accessibilityRequirements": [],
+  "integrationStatus": "not-integrated",
+  "notes": "No global default style; choose only after evaluating the actual application."
+}

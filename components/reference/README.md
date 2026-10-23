@@ -10,7 +10,7 @@ npm install
 npm run typecheck
 ```
 
-Import `../../tokens/refined-light.css` and `styles.css` from the hosting sample application (adjust relative path for your app); never assume the styles are globally present.
+These components belong specifically to **`refined-light-saas`**, not to a universal frontend core. Import `../../tokens/refined-light.css` and `styles.css` from the hosting sample and wrap the relevant app subtree in `<div data-design-theme="refined-light-saas">`. Never import them as a global theme. Portals (Dialog/Toast) may mount outside the wrapper and require separate scoping; this is **not** yet solved or production-tested.
 
 Dependencies include Radix (dialog/tabs/toast), Motion and Lucide. Versions are *proposals*, not verified exact production lock versions; inspect license, bundle weight, focus and accessibility before adoption.
 

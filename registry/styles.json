@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0",
+  "defaultStyleId": null,
+  "policy": "No repository-wide default theme. Select per application profile.",
+  "styles": [
+    {
+      "id": "refined-light-saas",
+      "label": "Refined Light SaaS",
+      "status": "design-proposal",
+      "origin": "Attio × Vercel visual study, originally for AI WORKFLOW PLATFORM",
+      "categories": [
+        "workspaces",
+        "productivity",
+        "admin"
+      ],
+      "styleProfile": "styles/refined-light-saas/style.json",
+      "documentation": "styles/refined-light-saas/README.md",
+      "tokens": {
+        "css": "tokens/refined-light.css",
+        "json": "tokens/refined-light.json"
+      },
+      "demo": "playground/initial-interaction-lab.html",
+      "licenseNote": "Custom drafted values and original reference code, not copies of brand proprietary systems."
+    }
+  ]
+}

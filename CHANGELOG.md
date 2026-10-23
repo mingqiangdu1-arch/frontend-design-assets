@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-10-23 · Multi-style / multi-application architecture correction
+
+- Removed Refined Light SaaS as implicit **repository-wide default**.
+- Introduced independent `styles/` Style Profiles, `applications/` Application Profiles and explicit asset reuse/style/app metadata.
+- Kept the original Attio × Vercel study as the `refined-light-saas` collection without forcing future apps into it.
+- Scoped the Refined Light CSS design tokens with `data-design-theme`; existing standalone HTML demo remains unchanged.
+- Extended registry checks and Codex reuse rules to reject accidental global theme assumptions and incompatible references.
+
+The existing React examples remain style-bound and **not production validated**. Portal style scoping is a known integration gap.
+
+---
+
 ## 2026-10-23 · Repository initialization
 
 - Established a living asset repository independent of AI WORKFLOW PLATFORM.

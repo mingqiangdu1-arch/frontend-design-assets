@@ -1,6 +1,6 @@
 {
-  "schemaVersion": "1.0",
-  "purpose": "Living frontend assets; case studies ≠ verified source",
+  "schemaVersion": "1.1",
+  "purpose": "Living cross-application, multi-style design asset repository; no repository-wide visual default.",
   "updatedAt": "2026-10-23",
   "stageDefinitions": [
     "captured",
@@ -34,7 +34,14 @@
       ],
       "license": "Original suggested token values, not copied source tokens",
       "dependencies": [],
-      "verified": "CSS syntax not yet tested in destination app"
+      "verified": "CSS syntax not yet tested in destination app",
+      "reuseKind": "style-token",
+      "styleIds": [
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "workspace"
+      ]
     },
     {
       "id": "REF-001",
@@ -49,7 +56,14 @@
         "layout"
       ],
       "source": "https://attio.com/changelog/2026/record-page-redesign",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "reuseKind": "design-reference",
+      "styleIds": [
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "workspace"
+      ]
     },
     {
       "id": "REF-002",
@@ -63,7 +77,10 @@
         "component"
       ],
       "source": "https://vercel.com/geist/introduction",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": []
     },
     {
       "id": "REF-003",
@@ -76,7 +93,10 @@
         "microinteraction"
       ],
       "source": "https://60fps.design/",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": []
     },
     {
       "id": "IP-001",
@@ -94,7 +114,15 @@
       "demo": "playground/initial-interaction-lab.html",
       "spec": "docs/interactions/patterns.md",
       "notion": "[private-notion-link-redacted]",
-      "license": "Original prototype inspired by official pattern"
+      "license": "Original prototype inspired by official pattern",
+      "reuseKind": "behavior-pattern",
+      "styleIds": [],
+      "applicationContexts": [
+        "workspace",
+        "editor",
+        "desktop-tool"
+      ],
+      "demoStyleId": "refined-light-saas"
     },
     {
       "id": "IP-002",
@@ -109,7 +137,14 @@
       ],
       "source": "https://linear.app/docs/peek",
       "spec": "docs/interactions/patterns.md",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "reuseKind": "behavior-pattern",
+      "styleIds": [],
+      "applicationContexts": [
+        "workspace",
+        "editor",
+        "data-tool"
+      ]
     },
     {
       "id": "IP-003",
@@ -125,7 +160,11 @@
       "source": "https://vercel.com/geist/sheet",
       "demo": "playground/initial-interaction-lab.html",
       "spec": "docs/interactions/patterns.md",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "reuseKind": "behavior-pattern",
+      "styleIds": [],
+      "applicationContexts": [],
+      "demoStyleId": "refined-light-saas"
     },
     {
       "id": "IP-004",
@@ -140,7 +179,11 @@
       ],
       "source": "https://vercel.com/geist/modal",
       "demo": "playground/initial-interaction-lab.html",
-      "spec": "docs/interactions/patterns.md"
+      "spec": "docs/interactions/patterns.md",
+      "reuseKind": "behavior-pattern",
+      "styleIds": [],
+      "applicationContexts": [],
+      "demoStyleId": "refined-light-saas"
     },
     {
       "id": "IP-005",
@@ -155,7 +198,11 @@
       ],
       "source": "https://motion.dev/examples/react-smooth-tabs",
       "demo": "playground/initial-interaction-lab.html",
-      "spec": "docs/interactions/patterns.md"
+      "spec": "docs/interactions/patterns.md",
+      "reuseKind": "behavior-pattern",
+      "styleIds": [],
+      "applicationContexts": [],
+      "demoStyleId": "refined-light-saas"
     },
     {
       "id": "IP-006",
@@ -170,7 +217,11 @@
       ],
       "source": "https://vercel.com/geist/introduction",
       "demo": "playground/initial-interaction-lab.html",
-      "spec": "docs/interactions/patterns.md"
+      "spec": "docs/interactions/patterns.md",
+      "reuseKind": "behavior-pattern",
+      "styleIds": [],
+      "applicationContexts": [],
+      "demoStyleId": "refined-light-saas"
     },
     {
       "id": "IP-007",
@@ -186,7 +237,14 @@
       ],
       "source": "https://vercel.com/geist/spinner",
       "demo": "playground/initial-interaction-lab.html",
-      "spec": "docs/interactions/patterns.md"
+      "spec": "docs/interactions/patterns.md",
+      "reuseKind": "behavior-pattern",
+      "styleIds": [],
+      "applicationContexts": [
+        "async-tool",
+        "ai-app"
+      ],
+      "demoStyleId": "refined-light-saas"
     },
     {
       "id": "IP-008",
@@ -200,7 +258,13 @@
         "density"
       ],
       "source": "https://attio.com/changelog/2026/record-page-redesign",
-      "spec": "docs/interactions/patterns.md"
+      "spec": "docs/interactions/patterns.md",
+      "reuseKind": "behavior-pattern",
+      "styleIds": [],
+      "applicationContexts": [
+        "workspace",
+        "editor"
+      ]
     },
     {
       "id": "AN-001",
@@ -213,7 +277,10 @@
         "motion"
       ],
       "source": "https://motion.dev/examples/react-smooth-tabs",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "reuseKind": "motion-reference",
+      "styleIds": [],
+      "applicationContexts": []
     },
     {
       "id": "PR-001",
@@ -230,6 +297,13 @@
         "DT-001",
         "IP-001",
         "IP-006"
+      ],
+      "reuseKind": "composition-recipe",
+      "styleIds": [
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "workspace"
       ]
     },
     {
@@ -249,6 +323,13 @@
         "IP-002",
         "IP-003",
         "IP-006"
+      ],
+      "reuseKind": "composition-recipe",
+      "styleIds": [
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "workspace"
       ]
     },
     {
@@ -267,6 +348,13 @@
         "DT-001",
         "IP-007",
         "IP-008"
+      ],
+      "reuseKind": "composition-recipe",
+      "styleIds": [
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "workspace"
       ]
     },
     {
@@ -281,7 +369,15 @@
       ],
       "path": "archive/v0.1.0.md",
       "demo": "playground/initial-interaction-lab.html",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "reuseKind": "snapshot",
+      "styleIds": [
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "workspace"
+      ],
+      "demoStyleId": "refined-light-saas"
     },
     {
       "id": "UI-001",
@@ -300,7 +396,15 @@
         "DT-001"
       ],
       "license": "Original reference implementation; inspect dependency licenses and do integration QA",
-      "verified": "Not validated in target app; TypeScript integration and accessibility QA pending"
+      "verified": "Not validated in target app; TypeScript integration and accessibility QA pending",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "workspace"
+      ],
+      "compatibilityNote": "Reference TSX bound to Refined Light CSS; not validated for other application types, theme scoping or production."
     },
     {
       "id": "UI-002",
@@ -319,7 +423,15 @@
         "DT-001"
       ],
       "license": "Original reference implementation; inspect dependency licenses and do integration QA",
-      "verified": "Not validated in target app; TypeScript integration and accessibility QA pending"
+      "verified": "Not validated in target app; TypeScript integration and accessibility QA pending",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "workspace"
+      ],
+      "compatibilityNote": "Reference TSX bound to Refined Light CSS; not validated for other application types, theme scoping or production."
     },
     {
       "id": "UI-003",
@@ -338,7 +450,15 @@
         "DT-001"
       ],
       "license": "Original reference implementation; inspect dependency licenses and do integration QA",
-      "verified": "Not validated in target app; TypeScript integration and accessibility QA pending"
+      "verified": "Not validated in target app; TypeScript integration and accessibility QA pending",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "workspace"
+      ],
+      "compatibilityNote": "Reference TSX bound to Refined Light CSS; not validated for other application types, theme scoping or production."
     },
     {
       "id": "UI-004",
@@ -358,7 +478,15 @@
         "IP-005"
       ],
       "license": "Original reference implementation; inspect dependency licenses and do integration QA",
-      "verified": "Not validated in target app; TypeScript integration and accessibility QA pending"
+      "verified": "Not validated in target app; TypeScript integration and accessibility QA pending",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "workspace"
+      ],
+      "compatibilityNote": "Reference TSX bound to Refined Light CSS; not validated for other application types, theme scoping or production."
     },
     {
       "id": "UI-005",
@@ -378,7 +506,15 @@
         "IP-003"
       ],
       "license": "Original reference implementation; inspect dependency licenses and do integration QA",
-      "verified": "Not validated in target app; TypeScript integration and accessibility QA pending"
+      "verified": "Not validated in target app; TypeScript integration and accessibility QA pending",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "workspace"
+      ],
+      "compatibilityNote": "Reference TSX bound to Refined Light CSS; not validated for other application types, theme scoping or production."
     },
     {
       "id": "UI-006",
@@ -398,7 +534,15 @@
         "IP-001"
       ],
       "license": "Original reference implementation; inspect dependency licenses and do integration QA",
-      "verified": "Not validated in target app; TypeScript integration and accessibility QA pending"
+      "verified": "Not validated in target app; TypeScript integration and accessibility QA pending",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "workspace"
+      ],
+      "compatibilityNote": "Reference TSX bound to Refined Light CSS; not validated for other application types, theme scoping or production."
     },
     {
       "id": "UI-007",
@@ -418,7 +562,15 @@
         "IP-006"
       ],
       "license": "Original reference implementation; inspect dependency licenses and do integration QA",
-      "verified": "Not validated in target app; TypeScript integration and accessibility QA pending"
+      "verified": "Not validated in target app; TypeScript integration and accessibility QA pending",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "workspace"
+      ],
+      "compatibilityNote": "Reference TSX bound to Refined Light CSS; not validated for other application types, theme scoping or production."
     },
     {
       "id": "UI-008",
@@ -437,7 +589,15 @@
         "DT-001"
       ],
       "license": "Original reference implementation; inspect dependency licenses and do integration QA",
-      "verified": "Not validated in target app; TypeScript integration and accessibility QA pending"
+      "verified": "Not validated in target app; TypeScript integration and accessibility QA pending",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "workspace"
+      ],
+      "compatibilityNote": "Reference TSX bound to Refined Light CSS; not validated for other application types, theme scoping or production."
     },
     {
       "id": "UI-009",
@@ -457,8 +617,18 @@
         "IP-007"
       ],
       "license": "Original reference implementation; inspect dependency licenses and do integration QA",
-      "verified": "Not validated in target app; TypeScript integration and accessibility QA pending"
+      "verified": "Not validated in target app; TypeScript integration and accessibility QA pending",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "workspace"
+      ],
+      "compatibilityNote": "Reference TSX bound to Refined Light CSS; not validated for other application types, theme scoping or production."
     }
   ],
-  "referenceImplementationRoot": "components/reference"
+  "referenceImplementationRoot": "components/reference",
+  "styleRegistry": "registry/styles.json",
+  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee."
 }

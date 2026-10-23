@@ -1,4 +1,6 @@
-# Repository architecture
+# Repository architecture (multi-style, cross-application)
+
+**See [multi-context-architecture.md](multi-context-architecture.md) for the current model.** The initial workspace-specific structure below remains relevant for its first study, but has no repository-wide default style.
 
 **One topic, three different artifacts:**
 

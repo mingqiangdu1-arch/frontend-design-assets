@@ -1,0 +1,23 @@
+{
+  "id": "refined-light-saas",
+  "displayName": "Refined Light SaaS",
+  "stage": "design-proposal",
+  "assetId": "DT-001",
+  "categoryHints": [
+    "business-workspace",
+    "operations",
+    "productivity"
+  ],
+  "description": "Subtle near-white surfaces, precise hierarchy, low saturation and restrained motion.",
+  "sources": [
+    "https://attio.com/",
+    "https://vercel.com/geist/introduction"
+  ],
+  "tokenFile": "../../tokens/refined-light.json",
+  "cssFile": "../../tokens/refined-light.css",
+  "scopeSelector": "[data-design-theme=\"refined-light-saas\"]",
+  "documentation": "README.md",
+  "sample": "../../playground/initial-interaction-lab.html",
+  "implementationStatus": "reference-implemented; not production validated",
+  "isDefault": false
+}

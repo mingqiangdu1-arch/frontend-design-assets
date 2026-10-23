@@ -16,6 +16,8 @@ Use immutable IDs. Record source, license, authoring date, stage, dependency and
 
 Notion remains the long-term master for qualitative research and decisions. GitHub is the authoritative copy for committed source/demo files. Each promotion should record the other side's link when available; automate later only if desired.
 
-## Design directions
+## Design directions and application contexts
 
-`Refined Light SaaS` is default, not a policy that forbids other styles. A new style may establish a parallel token theme instead of mutating all components.
+There is **no global default theme**. `refined-light-saas` is merely the first explicit `styleId`. Every app chooses its own style(s) through an Application Profile. A shared interaction behavior may be adapted across contexts, but its exact CSS/structure cannot be assumed portable.
+
+Do not require the same navigation, type scale, density, screen layout or animation grammar for different product types. Every new style must have its own profile; never overwrite the current design series to make an unrelated new app look different.

@@ -3,6 +3,9 @@
 - **Type**: visual reference / interaction / motion / component / recipe
 - **Stage**: captured / analyzed / prototype / reference-implemented / validated / production-ready
 - **Priority**: P0 / P1 / P2
+- **Reuse kind**: reference / behavior-pattern / style-token / styled-implementation / composition-recipe / snapshot
+- **Style IDs**: [] for style-neutral references; explicitly list bindings for styled code
+- **Application contexts**: descriptive filter only; [] does NOT guarantee universal compatibility
 - **Style / tags**:
 - **Source URL**:
 - **Notion URL**:

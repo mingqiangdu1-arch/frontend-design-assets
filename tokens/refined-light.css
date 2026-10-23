@@ -1,4 +1,4 @@
-:root {
+[data-design-theme="refined-light-saas"] {
   color-scheme: light;
   --aw-canvas: #fafafa; --aw-surface: #fff; --aw-sidebar: #f7f7f8;
   --aw-hover: #f5f5f5; --aw-selected: #eeeef0;
@@ -26,5 +26,5 @@
   --aw-shadow-popover: 0 12px 36px rgb(16 24 40 / 10%), 0 2px 8px rgb(16 24 40 / 5%);
 }
 @media (prefers-reduced-motion: reduce) {
-  :root { --aw-motion-fast: 0ms; --aw-motion-default: 0ms; --aw-motion-overlay: 0ms; }
+  [data-design-theme="refined-light-saas"] { --aw-motion-fast: 0ms; --aw-motion-default: 0ms; --aw-motion-overlay: 0ms; }
 }

@@ -1,62 +1,60 @@
-# Frontend Design Assets
+# Frontend Design Assets — Living Multi-Style Repository
 
-> 一个持续积累的前端视觉、交互与动效素材仓库（Living Repository）。服务于 AI WORKFLOW PLATFORM，也可复用于其他项目。
+一个**跨应用类型、跨视觉风格、持续增量成长**的前端设计资产仓库。这里不是某个业务平台的专属 UI Kit，也没有一套强制所有项目使用的默认主题。
 
-**状态：** Initial / Research & Prototype。这里不是已经验收完毕的生产级组件库，不等于一次性 UI Kit。
+## 三个原则
 
-## 使用方式
+1. **一个仓库，多套独立视觉体系。** SaaS、消费应用、游戏工具、内容创作、活动页、移动端等，可拥有完全不同的配色、排版、布局密度、动效与组件外观。只有明确选中某套 `styleId` 后，才加载其 Tokens / CSS。
+2. **复用机制，不强制复用外观。** 快捷菜单、拖拽、Undo、加载和预览等交互可以跨场景研究，但复用时必须重新评估输入方式、无障碍、视觉语义、设备特性和用户预期。
+3. **收集不等于代码资产。** Notion 保留素材、来源和设计决策；GitHub 管理代码、版本、实验与可检索清单。收录、拆解、原型、已验证、生产集成是不同阶段。
 
-1. **收录**：在 [Notion 素材数据库]([private-notion-link-redacted]) 保存来源、截图、行为、适用条件和授权；新案例不必立即编码。
-2. **拆解**：阅读 [视觉规范](docs/visual/refined-light.md) 与 [交互规范](docs/interactions/patterns.md)；将同类方案横向比较。
-3. **复现**：有价值的案例进入 `playground/`，配稳定资产编号、边界状态与可验证操作。
-4. **沉淀**：测试通过后提升到 `components/` / `interactions/` / `recipes/`；仅在完成目标工程集成验证后标为 production-ready。
-5. **组装**：从 [registry](registry/assets.json) 按 `id`、`tags`、`stage`、`dependencies` 搜索，并依照 [AGENTS.md](AGENTS.md) 在 Codex 中快速复用。
+## 从这里开始
 
-## 当前视觉基线
+| 目标 | 路径 |
+| --- | --- |
+| 了解跨风格架构与组装顺序 | [docs/multi-context-architecture.md](docs/multi-context-architecture.md) |
+| 查找全部资产及兼容标注 | [registry/assets.json](registry/assets.json) |
+| 选择某一套完整视觉风格 | [registry/styles.json](registry/styles.json) |
+| 查看现有浅色 SaaS 风格 | [styles/refined-light-saas/README.md](styles/refined-light-saas/README.md) |
+| 按应用需求组合设计方案 | [applications/README.md](applications/README.md) |
+| 交互行为与验收参考 | [docs/interactions/patterns.md](docs/interactions/patterns.md) |
+| 研究来源与历史记录 | [docs/research/sources.md](docs/research/sources.md) |
+| 查看初始交互 Demo | [playground/initial-interaction-lab.html](playground/initial-interaction-lab.html) |
+| 给 Codex/Agent 复用的约束 | [AGENTS.md](AGENTS.md) |
 
-**Refined Light SaaS**：Attio 的浅色空间、Vercel 的排版秩序、Linear 的高效交互。它只是默认主题，不妨碍后续收录其他风格。
-
-- 设计变量：[tokens/refined-light.css](tokens/refined-light.css) / [tokens/refined-light.json](tokens/refined-light.json)
-- 参考调研：[docs/research/sources.md](docs/research/sources.md)
-- 实操规范：[docs/interactions/patterns.md](docs/interactions/patterns.md)
-- 页面组合：[recipes](recipes)
-- 无依赖可运行演示：[playground/initial-interaction-lab.html](playground/initial-interaction-lab.html)（打开本地 HTML 即可；需要 AI 浏览器时建议使用本地 HTTP server）
-- React/TS 参考实现：[components/reference](components/reference)（9 个示例，尚未生产验收）
-- 初始快照说明：[archive/v0.1.0.md](archive/v0.1.0.md)
-
-## 与现有平台的边界
-
-本仓库**完全独立**，不会自动修改 AI WORKFLOW PLATFORM 的业务代码、API、路由、数据库或工作流。新平台版本准备好后，逐项选择、集成、验证，不直接全量复制。
-
-## 仓库结构
+## 组织方式
 
 ```text
 frontend-design-assets/
-├── AGENTS.md                   # Codex/AI 复用守则
-├── docs/                       # 视觉、交互、来源、决策与验收
-├── registry/                   # 机器可检索清单与字段说明
-├── tokens/                     # 主题语义 Token
-├── components/                 # 验证后提升的通用组件
-├── interactions/               # 行为规格及模式
-├── recipes/                    # 页面组合规范
-├── playground/                 # 独立可交互原型
-├── templates/                  # 单条素材与研究模板
-└── archive/                    # 历史版本与迁移记录
+├── registry/           # 资产、风格与兼容元信息
+├── styles/             # 独立视觉风格系列；每套独立 Token / 规范 / 效果
+├── interactions/       # 可跨场景分析的交互原理与原型（成熟后放实现）
+├── components/         # 具体实现须声明视觉依赖和技术栈
+├── applications/       # 按应用类型与约束进行组合的 Profile（不是业务代码）
+├── recipes/            # 页面组合参考，不等于可直接发布的页面
+├── playground/         # 独立交互 Demo，不影响其他项目
+├── tokens/             # 历史/已引入 Token 文件，必须限定作用域
+├── docs/               # 比较、研究、无障碍与治理规则
+├── templates/          # 新素材/新应用 Profile 录入模板
+└── archive/            # 旧版快照与迁移记录
 ```
 
-## 资产状态定义
+## 当前实际资产（不代表未来默认）
 
-`captured`（收录）→ `analyzed`（拆解）→ `prototype`（独立演示）→ `reference-implemented`（参考实现）→ `validated`（经过仓库级测试）→ `production-ready`（目标工程集成验收）。
+**Refined Light SaaS** 是首个**示例设计系列**（Attio × Vercel）。[已有设计规范](docs/visual/refined-light.md)、[Token](tokens/refined-light.css)、[React/TS 示例](components/reference/README.md)及 [Interaction Lab](playground/initial-interaction-lab.html) 属于该系列或其历史 Demo。
 
-**勿将“有代码”理解成“可上线”。** 每条资产必须包含来源与许可、依赖与边界、操作状态与验证信息。
+当前只有这一套已整理的视觉风格；**不要因仓库目前只有一套而默认所有新应用必须使用它**。新项目先选择视觉方向，再组合交互。未来加入新视觉方向时新增独立 Style Profile，不能直接覆盖上一套。
 
-## 相关 Notion
+## 资产编号及成熟度
 
-- [持续积累的前端设计资产仓库]([private-notion-link-redacted])
-- [素材条目数据库]([private-notion-link-redacted])
-- [原视觉设计 V1.0]([private-notion-link-redacted])
-- [UI 与交互调研 V1.0]([private-notion-link-redacted])
+`REF-xxx`、`DT-xxx`、`UI-xxx`、`IP-xxx`、`AN-xxx`、`PR-xxx`、`KIT-xxx` 编号持续稳定。阶段为 `captured → analyzed → prototype → reference-implemented → validated → production-ready`（另有 `deprecated`）。
 
-## 使用前注意
+目前独立 Demo 和 React 参考实现没有在任一实际应用中通过生产集成测试，不能宣称 production-ready。
 
-原创示例与他人公开设计参考分开；不能把第三方截图、商标和专有实现当作本仓库授权源码。当前仓库尚未选择开放许可证，默认私有。
+## 维护与关联
+
+- [Notion 素材数据库]([private-notion-link-redacted])
+- [Notion 总仓库]([private-notion-link-redacted])
+- [贡献与治理](docs/governance.md)、[更新日志](CHANGELOG.md)
+
+本仓库为独立资源库，**不会自动修改 AI WORKFLOW PLATFORM 或任何其他应用**。当前私有，不含第三方产品的专有源码、未授权视觉素材或字体文件。

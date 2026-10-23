@@ -1,50 +1,37 @@
-# AI / Codex Agent Instructions
+# Frontend Design Assets · Agent Rules
 
-This is a **living frontend asset repository**, not the AI WORKFLOW PLATFORM business application.
+This repository is a **living multi-style, cross-application design asset library** — not an AI WORKFLOW PLATFORM kit.
 
-## Primary goal
+## Prior to any reuse or implementation
 
-Continually collect, evaluate, prototype, test and reuse visual/interaction patterns. **Never rewrite the entire library when adding one asset.**
+1. Read `README.md`, `docs/multi-context-architecture.md`, `registry/assets.json` and `registry/styles.json`.
+2. Ask which app/product category and UX goal the request concerns **only if it truly cannot be inferred**. Never assume the answer is SaaS, enterprise, desktop, light theme, or React.
+3. Determine application constraints: user group, devices, density, brand/style direction, localization, accessibility, performance and technology.
+4. Search references and behavior patterns independently of stylistic implementation. Compare tradeoffs.
+5. Choose or define the `styleId` for this application. If multiple candidates fit, compare; do not force Refined Light just because it is currently the only implemented style.
+6. Only load tokens/CSS/components whose compatibility and dependencies fit the selected direction. Theme-specific components MUST NOT silently set global `:root` variables or overwrite another theme.
+7. Preserve existing business APIs, data, app navigation and persistence when only asked about UI.
 
-## Before making changes
+## Three different kinds of reuse
 
-1. Read `README.md`, `registry/assets.json`, related design docs and existing assets.
-2. Search for duplicate/similar items and link an existing asset or document the difference.
-3. Distinguish inspiration (third-party product) from original code (repository).
-4. Preserve stable asset IDs, filenames, references, and past snapshots unless a migration is explicitly requested.
-5. Prefer narrow changes with a traceable commit.
+- **Inspiration:** product/screenshot/information architecture; requires independent adaptation, attribution and license review.
+- **Behavior pattern:** interaction contracts, states, keyboard, touch, undo/cancel, reduced-motion; can migrate if the context fits.
+- **Styled implementation:** actual TSX/CSS/HTML; explicitly bound to a style and stack; may need redesign rather than mechanical copy.
 
-## Asset lifecycle
+## Asset workflow
 
-- `captured`: URL / screenshots and description only.
-- `analyzed`: documented trigger, states, transitions, accessibility and alternatives.
-- `prototype`: standalone executable proof of concept, not production-ready.
-- `reference-implemented`: implementation exists but target integration unverified.
-- `validated`: repository tests and manual interaction checklist pass.
-- `production-ready`: explicitly verified inside target project.
+Capture → de-duplicate → dissect → compare → optionally prototype → test → promote → reuse. New inspiration need not turn into code immediately. Stable IDs do not change when asset grows.
 
-Never label an asset production-ready merely because it renders.
+Lifecycle: `captured`, `analyzed`, `prototype`, `reference-implemented`, `validated`, `production-ready`, `deprecated`. A reference snippet or a rendered demo is not production ready.
 
-## Source and licensing
+Every material asset addition updates `registry/assets.json` and related docs; new design languages require a Style Profile and `registry/styles.json` entry. Use application profiles in `applications/`, not a new project-specific global default.
 
-Keep source URLs, design references, author attribution and license notes. Do not bulk copy proprietary UI, logos, paid assets, font files, or screenshots without permission. Original reimplementations should not impersonate source brands. Every integration needs a license review.
+## Safety and quality
 
-## Visual baseline
+Never bulk copy third-party proprietary UI, commercial assets, trademarks, font files or paid-source snippets. Record original URL and license decision. Verify responsive/keyboard/touch/focus, empty/loading/error/success/cancel, reduced motion and actual target behavior before release.
 
-Default: Refined Light SaaS, inspired by Attio's subtle space and Vercel's hierarchy; not an exclusive design constraint. New themes and patterns can coexist.
+## Existing first style
 
-## Interactive behavior quality bar
+`refined-light-saas` is a **scoped example collection**, not the repository theme. Its CSS variables activate only under `[data-design-theme="refined-light-saas"]`. `playground/initial-interaction-lab.html` is an independent old proof-of-concept. `components/reference/` consists of non-production reference implementations.
 
-Support keyboard navigation, focus restoration, Escape behavior where appropriate, empty/loading/error/success/cancel states, narrow widths, accessible names and reduced motion. Avoid animated ornamentation. No autoplay continuous UI flourishes.
-
-## Working with current demo
-
-Read `playground/initial-interaction-lab.html`. It is a standalone *prototype*. Run via local static HTTP server for browser-agent inspection; no external dependencies are required.
-
-## Reusing in AI WORKFLOW PLATFORM
-
-Do not touch the business project unless separately requested. Adopt one pattern at a time and preserve existing routes, auth, API, state machines, persistence, tests and rollout behavior. Compare candidate options and show tradeoffs before implementing.
-
-## Recordkeeping
-
-Update `registry/assets.json` + affected docs + `CHANGELOG.md` for a material new asset or change. Keep Notion entry URL when known. Existing Notion catalog: [private-notion-link-redacted] .
+Use local HTTP to inspect prototype files in a browser agent. No autonomous background crawling, updating or deploying is implied.
