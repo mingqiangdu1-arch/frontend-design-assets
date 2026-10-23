@@ -28,3 +28,14 @@ Prefer source with real, observable interaction or official documentation over s
 
 - [Research collection]([private-notion-link-redacted])
 - [Living asset catalog]([private-notion-link-redacted])
+
+## SaaS-focused source review (2026-10-23)
+
+- [Geist Table](https://vercel.com/geist/table) — semantic data rows, sortable header buttons, relative time, empty state.
+- [Geist Skeleton](https://vercel.com/geist/skeleton) — loading vs empty, layout stability, reduced motion.
+- [Geist Menu](https://vercel.com/geist/menu) / [Context Menu](https://vercel.com/geist/context-menu) — local actions, keyboard and disabled/permission behavior.
+- [Attio Understanding Records](https://attio.com/help/reference/attio-101/attios-data-model/understanding-records) — sorting, filtering, saved views and personal changes.
+- [Attio Configure Record Pages](https://attio.com/help/reference/managing-your-data/records/configure-record-pages) — tabs, layout, sections and contextual hierarchy.
+- [Attio 2026 Record Page](https://attio.com/changelog/2026/record-page-redesign) — compact vs standard lists, resizable panels.
+
+These links evidence principles and observed behavior, not production code or exact source Tokens.

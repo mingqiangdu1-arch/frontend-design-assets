@@ -11,6 +11,8 @@
 - [Token JSON](../../tokens/refined-light.json)
 - [独立 HTML 交互实验室](../../playground/initial-interaction-lab.html)
 - [早期 React 参考代码](../../components/reference/README.md)
+- [SaaS 专题研究与交互索引](../../docs/saas/README.md)
+- [SaaS 高频列表与详情实验页](../../playground/saas-patterns/index.html)
 
 ## 视觉作用域
 

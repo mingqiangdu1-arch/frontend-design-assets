@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-23 · SaaS focused asset expansion v0.2
+
+- Reviewed Attio record layouts and views, Vercel Geist table/skeleton/menu and Linear bulk selection as source-grounded patterns.
+- Added independent SaaS behavior catalog, visual recipes and PR-004 operational list composition.
+- Added 13 research/pattern/recipe/demo entries to the machine-readable registry; no global theme change.
+- Added a standalone SaaS experiment and Node model tests; interaction fidelity still requires browser/manual review.
+
+
 ## 2026-10-23 · Multi-style / multi-application architecture correction
 
 - Removed Refined Light SaaS as implicit **repository-wide default**.

@@ -1,13 +1,17 @@
-name: Validate asset index
+name: Validate asset registry and SaaS examples
 on:
   push:
     paths:
       - "registry/**"
-      - "scripts/check-registry.mjs"
+      - "scripts/**"
+      - "tests/**"
       - "docs/**"
+      - "styles/**"
       - "tokens/**"
       - "recipes/**"
       - "playground/**"
+      - "components/**"
+      - "applications/**"
       - ".github/workflows/validate-registry.yml"
   pull_request:
 jobs:
@@ -18,4 +22,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node scripts/check-registry.mjs
+      - name: Validate registry and referenced files
+        run: node scripts/check-registry.mjs
+      - name: Validate SaaS module syntax
+        run: |
+          node --check playground/saas-patterns/model.mjs
+          node --check playground/saas-patterns/app.mjs
+      - name: Test SaaS state model
+        run: node --test tests/*.test.mjs

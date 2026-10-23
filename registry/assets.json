@@ -626,6 +626,322 @@
         "workspace"
       ],
       "compatibilityNote": "Reference TSX bound to Refined Light CSS; not validated for other application types, theme scoping or production."
+    },
+    {
+      "id": "REF-016",
+      "type": "reference",
+      "name": "Geist semantic tables and sorting",
+      "stage": "analyzed",
+      "priority": "P0",
+      "tags": [
+        "saas",
+        "table",
+        "sort",
+        "dense"
+      ],
+      "source": "https://vercel.com/geist/table",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "b2b-saas",
+        "workspace",
+        "data-tool"
+      ]
+    },
+    {
+      "id": "REF-017",
+      "type": "reference",
+      "name": "Geist Skeleton/loading differentiation",
+      "stage": "analyzed",
+      "priority": "P0",
+      "tags": [
+        "saas",
+        "loading",
+        "empty",
+        "status"
+      ],
+      "source": "https://vercel.com/geist/skeleton",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "b2b-saas",
+        "data-tool",
+        "consumer"
+      ]
+    },
+    {
+      "id": "REF-018",
+      "type": "reference",
+      "name": "Geist resource menu/context menu",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "saas",
+        "menu",
+        "context",
+        "keyboard"
+      ],
+      "source": "https://vercel.com/geist/menu",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "b2b-saas",
+        "workspace"
+      ]
+    },
+    {
+      "id": "REF-019",
+      "type": "reference",
+      "name": "Attio record data and views",
+      "stage": "analyzed",
+      "priority": "P0",
+      "tags": [
+        "saas",
+        "filter",
+        "view",
+        "record"
+      ],
+      "source": "https://attio.com/help/reference/attio-101/attios-data-model/understanding-records",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "b2b-saas",
+        "workspace"
+      ]
+    },
+    {
+      "id": "REF-020",
+      "type": "reference",
+      "name": "Attio configurable record layout",
+      "stage": "analyzed",
+      "priority": "P0",
+      "tags": [
+        "saas",
+        "record",
+        "layout",
+        "inline-edit"
+      ],
+      "source": "https://attio.com/help/reference/managing-your-data/records/configure-record-pages",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "b2b-saas",
+        "workspace"
+      ]
+    },
+    {
+      "id": "SAAS-001",
+      "type": "interaction",
+      "name": "SaaS view and density controls",
+      "stage": "prototype",
+      "priority": "P0",
+      "tags": [
+        "saas",
+        "view",
+        "filter",
+        "density"
+      ],
+      "source": "https://attio.com/changelog/2026/record-page-redesign",
+      "reuseKind": "behavior-pattern",
+      "styleIds": [],
+      "applicationContexts": [
+        "b2b-saas",
+        "workspace"
+      ],
+      "spec": "docs/saas/pattern-catalog.md",
+      "demo": "playground/saas-patterns/index.html",
+      "demoStyleId": "refined-light-saas",
+      "dependencies": [
+        "REF-019",
+        "REF-001"
+      ]
+    },
+    {
+      "id": "SAAS-002",
+      "type": "interaction",
+      "name": "Sortable searchable data table",
+      "stage": "prototype",
+      "priority": "P0",
+      "tags": [
+        "saas",
+        "table",
+        "sort",
+        "search"
+      ],
+      "source": "https://vercel.com/geist/table",
+      "reuseKind": "behavior-pattern",
+      "styleIds": [],
+      "applicationContexts": [
+        "b2b-saas",
+        "data-tool"
+      ],
+      "spec": "docs/saas/pattern-catalog.md",
+      "demo": "playground/saas-patterns/index.html",
+      "demoStyleId": "refined-light-saas",
+      "dependencies": [
+        "REF-016"
+      ]
+    },
+    {
+      "id": "SAAS-003",
+      "type": "interaction",
+      "name": "Bulk selection with reversible actions",
+      "stage": "prototype",
+      "priority": "P0",
+      "tags": [
+        "saas",
+        "bulk",
+        "undo",
+        "selection"
+      ],
+      "source": "https://linear.app/docs/select-issues",
+      "reuseKind": "behavior-pattern",
+      "styleIds": [],
+      "applicationContexts": [
+        "b2b-saas",
+        "workspace"
+      ],
+      "spec": "docs/saas/pattern-catalog.md",
+      "demo": "playground/saas-patterns/index.html",
+      "demoStyleId": "refined-light-saas",
+      "dependencies": [
+        "SAAS-002"
+      ]
+    },
+    {
+      "id": "SAAS-004",
+      "type": "interaction",
+      "name": "Contextual inspector and explicit saving",
+      "stage": "prototype",
+      "priority": "P0",
+      "tags": [
+        "saas",
+        "details",
+        "edit",
+        "validation"
+      ],
+      "source": "https://attio.com/help/reference/managing-your-data/records/create-and-view-records",
+      "reuseKind": "behavior-pattern",
+      "styleIds": [],
+      "applicationContexts": [
+        "b2b-saas",
+        "workspace"
+      ],
+      "spec": "docs/saas/pattern-catalog.md",
+      "demo": "playground/saas-patterns/index.html",
+      "demoStyleId": "refined-light-saas",
+      "dependencies": [
+        "IP-003"
+      ]
+    },
+    {
+      "id": "SAAS-005",
+      "type": "interaction",
+      "name": "Loading empty error success state matrix",
+      "stage": "prototype",
+      "priority": "P0",
+      "tags": [
+        "saas",
+        "loading",
+        "empty",
+        "error"
+      ],
+      "source": "https://vercel.com/geist/skeleton",
+      "reuseKind": "behavior-pattern",
+      "styleIds": [],
+      "applicationContexts": [
+        "b2b-saas",
+        "data-tool"
+      ],
+      "spec": "docs/saas/pattern-catalog.md",
+      "demo": "playground/saas-patterns/index.html",
+      "demoStyleId": "refined-light-saas",
+      "dependencies": [
+        "REF-017"
+      ]
+    },
+    {
+      "id": "SAAS-006",
+      "type": "interaction",
+      "name": "Context menu and permission-aware actions",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "saas",
+        "menu",
+        "permission",
+        "keyboard"
+      ],
+      "source": "https://vercel.com/geist/menu",
+      "reuseKind": "behavior-pattern",
+      "styleIds": [],
+      "applicationContexts": [
+        "b2b-saas",
+        "workspace"
+      ],
+      "spec": "docs/saas/pattern-catalog.md",
+      "dependencies": [
+        "REF-018"
+      ]
+    },
+    {
+      "id": "PR-004",
+      "type": "recipe",
+      "name": "SaaS operational list with inspector",
+      "stage": "prototype",
+      "priority": "P0",
+      "tags": [
+        "saas",
+        "page",
+        "list",
+        "inspector"
+      ],
+      "source": "https://attio.com/changelog/2026/record-page-redesign",
+      "reuseKind": "composition-recipe",
+      "styleIds": [
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "b2b-saas",
+        "workspace"
+      ],
+      "path": "recipes/saas-operational-list.md",
+      "demo": "playground/saas-patterns/index.html",
+      "demoStyleId": "refined-light-saas",
+      "dependencies": [
+        "DT-001",
+        "SAAS-001",
+        "SAAS-002",
+        "SAAS-003",
+        "SAAS-004",
+        "SAAS-005"
+      ]
+    },
+    {
+      "id": "KIT-002",
+      "type": "archive",
+      "name": "SaaS Pattern Lab v0.2 design study",
+      "stage": "prototype",
+      "priority": "P0",
+      "tags": [
+        "saas",
+        "prototype",
+        "reference"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "reuseKind": "snapshot",
+      "styleIds": [
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "b2b-saas"
+      ],
+      "path": "playground/saas-patterns/README.md",
+      "demo": "playground/saas-patterns/index.html",
+      "demoStyleId": "refined-light-saas",
+      "dependencies": [
+        "PR-004"
+      ]
     }
   ],
   "referenceImplementationRoot": "components/reference",

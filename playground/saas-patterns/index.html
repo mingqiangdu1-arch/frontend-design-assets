@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SaaS Pattern Lab | Frontend Design Assets</title>
+<link rel="stylesheet" href="./style.css"><script type="module" src="./app.mjs"></script></head>
+<body data-design-theme="refined-light-saas">
+<div class="shell">
+<aside class="sidebar" aria-label="研究导航">
+  <div class="brand"><b class="brandmark">◈</b> Design Assets</div>
+  <div class="workspace"><b>S</b><span>SaaS Pattern Lab<small>Refined Light · v0.2</small></span></div>
+  <p class="small-heading">EXPERIMENTS</p>
+  <nav><a aria-current="page" href="./index.html">▤ &nbsp; 列表与详情</a><a href="../../docs/saas/pattern-catalog.md">◇ &nbsp; 交互行为规格</a><a href="../../docs/saas/visual-recipes.md">◉ &nbsp; 视觉规范</a></nav>
+  <p class="sidebar-note">● 本地模拟 / 无后端</p>
+</aside>
+<div class="workarea">
+  <header class="topbar"><span>Asset Library <em>/</em> SaaS <em>/</em> Pattern Lab</span><a href="../../docs/saas/README.md">查看设计研究 ↗</a></header>
+  <main class="content" id="main">
+    <p class="eyebrow">INTERACTION STUDY · SAAS-001—005</p>
+    <div class="page-title"><div><h1>项目记录</h1><p>探索 SaaS 工作台的高频数据操作、信息密度和轻量反馈。</p></div><button id="newBtn" class="primary" type="button">＋ 新建记录</button></div>
+    <div class="note">独立交互原型。搜索、编辑、归档和执行反馈均使用<strong>本地模拟数据</strong>，刷新页面即恢复。</div>
+    <section class="panel" aria-label="项目记录">
+      <header class="panel-head"><h2>记录列表 <span id="recordCount" class="count">6</span></h2><small>清晰的信息层级，弱化不必要的卡片</small></header>
+      <div class="tabs" role="group" aria-label="状态视图">
+        <button type="button" data-status="all" aria-pressed="true" class="active">全部</button>
+        <button type="button" data-status="进行中" aria-pressed="false">进行中</button>
+        <button type="button" data-status="已完成" aria-pressed="false">已完成</button>
+        <button type="button" data-status="待确认" aria-pressed="false">待确认</button>
+      </div>
+      <div class="toolbar"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" autocomplete="off" placeholder="搜索名称、团队或编号…" aria-label="搜索记录"></label>
+        <div class="toolbar-right"><button id="clearFilter" type="button" class="subtle" hidden>清除筛选</button>
+        <button id="density" type="button" class="outline" aria-pressed="false">☷ <span id="densityText">标准密度</span></button></div></div>
+      <div id="bulk" class="bulk" hidden><strong id="bulkText">选中 0 条</strong><span>跨视图选中仍会保留</span><button id="deselect" class="subtle" type="button">清空选择</button><button id="archive" class="outline" type="button">归档选中</button></div>
+      <div id="loading" class="state" role="status" aria-live="polite" hidden><h3>正在加载记录…</h3><div class="skeleton" aria-hidden="true"><i></i><i></i><i></i></div></div>
+      <div id="error" class="state" role="alert" hidden><div class="state-icon">!</div><h3>无法加载记录</h3><p>这是错误展示模式，不是真正的网络异常。</p><button class="outline" id="retry" type="button">重新尝试</button></div>
+      <div id="empty" class="state" hidden><div class="state-icon">○</div><h3 id="emptyTitle">暂无符合条件的记录</h3><p id="emptyDesc">尝试清除搜索或切换视图。</p><button class="outline" id="reset" type="button">恢复列表</button></div>
+      <div id="tablePanel" class="table-panel"><table aria-label="项目记录"><thead><tr>
+        <th class="pick"><input type="checkbox" id="allVisible" aria-label="选择当前可见记录"></th>
+        <th id="thName" aria-sort="none"><button id="sortName" type="button">项目名称 <span id="dirName">↕</span></button></th>
+        <th>负责人</th><th>状态</th>
+        <th id="thDate" aria-sort="descending"><button id="sortDate" type="button">更新时间 <span id="dirDate">↓</span></button></th>
+      </tr></thead><tbody id="rows"></tbody></table></div>
+      <footer class="table-foot"><span id="footerCount">6 条记录</span><span>Refined Light · 本地数据</span></footer>
+    </section>
+    <section class="state-demo" aria-labelledby="stateHeading"><div><p class="eyebrow">STATE PREVIEW</p><h2 id="stateHeading">数据状态实验</h2><p>切换加载、错误与空态，检查内容区的行为和恢复方式。</p></div>
+      <div class="state-choices" role="group" aria-label="模拟数据状态">
+        <button data-mode="normal" type="button" class="active" aria-pressed="true">正常</button><button data-mode="loading" type="button" aria-pressed="false">加载中</button><button data-mode="error" type="button" aria-pressed="false">错误</button><button data-mode="empty" type="button" aria-pressed="false">空数据</button>
+      </div></section>
+    <p class="credits">设计研究基于 Attio、Geist、Linear 公开资料；此页面是原创实验，并非官方界面复刻。</p>
+  </main>
+</div></div>
+<dialog id="sheet" class="sheet" aria-labelledby="sheetTitle"><form id="recordForm" novalidate>
+  <header class="sheet-head"><div><p class="eyebrow">RECORD INSPECTOR</p><h2 id="sheetTitle">记录详情</h2></div><button id="sheetClose" class="xbtn" type="button" aria-label="关闭侧边详情">×</button></header>
+  <div class="sheet-content"><p class="sheet-intro">保留原列表上下文，在侧面板完成轻量编辑。</p>
+    <dl><div><dt>记录编号</dt><dd id="detailId"></dd></div><div><dt>状态</dt><dd id="detailStatus"></dd></div><div><dt>负责人</dt><dd id="detailOwner"></dd></div></dl>
+    <label for="nameInput" class="field-label">项目名称 *</label><input id="nameInput" class="field-input" maxlength="80" autocomplete="off" aria-describedby="nameHelp nameError">
+    <small id="nameHelp">必填，最多 40 个字符；仅在本地生效。</small><p id="nameError" class="error-text" role="alert" hidden></p>
+  </div>
+  <footer class="sheet-foot"><span id="saveState" role="status">未保存</span><button class="outline" id="sheetCancel" type="button">取消</button><button class="primary" id="sheetSave" type="submit">保存更改</button></footer>
+</form></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden><span id="toastMessage"></span><button id="undo" type="button" hidden>撤销</button><button id="toastClose" type="button" aria-label="关闭消息">×</button></div>
+</body></html>
