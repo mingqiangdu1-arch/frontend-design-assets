@@ -1300,7 +1300,8 @@
       "demoStyleId": "precision-dark",
       "dependencies": [],
       "license": "Original design proposal, not an official source design system",
-      "verified": "Styles scoped. Standalone demo + pure state model, but no full visual/browser or production QA."
+      "verified": "Styles scoped. Standalone demo + pure state model, but no full visual/browser or production QA.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "DT-003",
@@ -1335,7 +1336,8 @@
       "demoStyleId": "editorial-warm",
       "dependencies": [],
       "license": "Original design proposal, not an official source design system",
-      "verified": "Styles scoped. Standalone demo + pure state model, but no full visual/browser or production QA."
+      "verified": "Styles scoped. Standalone demo + pure state model, but no full visual/browser or production QA.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "DT-004",
@@ -1370,7 +1372,8 @@
       "demoStyleId": "playful-pop",
       "dependencies": [],
       "license": "Original design proposal, not an official source design system",
-      "verified": "Styles scoped. Standalone demo + pure state model, but no full visual/browser or production QA."
+      "verified": "Styles scoped. Standalone demo + pure state model, but no full visual/browser or production QA.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "KIT-004",
@@ -1399,7 +1402,8 @@
         "DT-004"
       ],
       "license": "Original demo implementation, local-only, no third-party media",
-      "verified": "Style-switch and interaction-state model tests; browser and accessibility verification pending"
+      "verified": "Style-switch and interaction-state model tests; browser and accessibility verification pending",
+      "notion": "[private-notion-link-redacted]"
     }
   ],
   "referenceImplementationRoot": "components/reference",
