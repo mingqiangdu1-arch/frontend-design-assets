@@ -2506,7 +2506,8 @@
         "IP-003",
         "PR-002"
       ],
-      "verified": "Standalone HTML/JS demo. Not a React package export or real app; Chromium smoke and unit test results pending."
+      "verified": "Standalone HTML/JS demo. Not a React package export or real app; Chromium smoke and unit test results pending.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "TPL-002",
@@ -2536,7 +2537,8 @@
         "DT-003",
         "IP-002"
       ],
-      "verified": "Standalone HTML/JS demo. Not a React package export or real app; Chromium smoke and unit test results pending."
+      "verified": "Standalone HTML/JS demo. Not a React package export or real app; Chromium smoke and unit test results pending.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "TPL-003",
@@ -2566,7 +2568,8 @@
         "DT-004",
         "IP-008"
       ],
-      "verified": "Standalone HTML/JS demo. Not a React package export or real app; Chromium smoke and unit test results pending."
+      "verified": "Standalone HTML/JS demo. Not a React package export or real app; Chromium smoke and unit test results pending.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "TPL-004",
@@ -2597,7 +2600,8 @@
         "IP-013",
         "PR-006"
       ],
-      "verified": "Standalone HTML/JS demo. Not a React package export or real app; Chromium smoke and unit test results pending."
+      "verified": "Standalone HTML/JS demo. Not a React package export or real app; Chromium smoke and unit test results pending.",
+      "notion": "[private-notion-link-redacted]"
     }
   ],
   "referenceImplementationRoot": "components/reference",

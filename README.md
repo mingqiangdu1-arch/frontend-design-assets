@@ -73,4 +73,6 @@ frontend-design-assets/
 
 ## V0.8 · 页面模板与可复现组装清单
 
+[Notion V0.8 总结]([private-notion-link-redacted]) · [页面配方数据库]([private-notion-link-redacted])
+
 新增四套不同应用情境的 [Page Blueprints](playground/page-blueprints/README.md)（SaaS 运营、编辑阅读、移动习惯、创意营销），其中编辑阅读和移动习惯为本阶段新实现互动原型。通过 `node scripts/compose-page.mjs --list` 找到模板，并用 `--template=TPL-002 --format=markdown` 生成可交给 Codex 的**页面实施清单**。这是实施指导，不是自动生成的 React/生产站点代码。必须显式选择风格或模板，且不能把风格冲突的素材视为可直接组合。
