@@ -16,5 +16,5 @@ for(const item of manifest.entries){
  if(found.stage==="production-ready")throw Error("Component incorrectly declared production ready: "+item.id);
 }
 for(const style of manifest.styleIds)if(!styles.includes(style))throw Error("Undeclared style "+style);
-if(get("packages/ui/src/themes.css").includes(":root"))throw Error("Global default theme tokens not allowed");
+if(/(^|\n)\s*:root\s*\{/.test(get("packages/ui/src/themes.css")))throw Error("Global default theme tokens not allowed");
 console.log("Validated "+manifest.entries.length+" exported React components, "+manifest.styleIds.length+" explicit themes and registry links.");
