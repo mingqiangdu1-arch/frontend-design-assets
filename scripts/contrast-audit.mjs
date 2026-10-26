@@ -43,8 +43,13 @@ export function auditAll(root=process.cwd()){
   if(/(^|\n)\s*:root\s*\{/.test(css))throw new Error(id+": global root selector not allowed");
   for(const [name,value] of Object.entries(tokens.colors)){
    const cssName=(id==="refined-light-saas"?"--aw-":"--ds-")+name.replace(/[A-Z]/g,c=>"-"+c.toLowerCase());
-   const re=new RegExp(cssName+"\\s*:\\s*"+value+"\\s*;","i");
-   if(!re.test(css))throw new Error(id+": JSON/CSS token drift: "+name);
+   const re=new RegExp(cssName+"\\s*:\\s*(#[0-9a-f]{3,8})\\s*;","i");
+   const found=css.match(re);
+   const normalize=hex=>{
+    const digits=hex.toLowerCase().slice(1);
+    return digits.length===3?"#"+[...digits].map(c=>c+c).join(""):"#"+digits;
+   };
+   if(!found || normalize(found[1])!==normalize(value))throw new Error(id+": JSON/CSS token drift: "+name);
   }
   const result={styleId:id,checks:inspectTheme(tokens)};
   output.push(result);
