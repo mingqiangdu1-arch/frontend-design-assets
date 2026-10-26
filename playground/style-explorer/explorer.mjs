@@ -34,12 +34,15 @@ $("pdFocus").addEventListener("click",()=>{
 });
 
 const commandDialog=$("pdCommandDialog"),commandSearch=$("pdCommandSearch");
+let commandSelected=0;
 function drawCommands(){
  const matches=filterCommands(workItems,commandSearch.value);
+ commandSelected=Math.max(0,Math.min(commandSelected,matches.length-1));
  const frag=document.createDocumentFragment();
  for(const item of matches){
   const li=document.createElement("li");
   const button=document.createElement("button");
+  button.dataset.commandIndex=String(matches.indexOf(item));
   const title=document.createElement("span");title.textContent=item.title;
   const code=document.createElement("em");code.textContent=item.meta;
   button.type="button";button.append(title,code);
@@ -56,17 +59,32 @@ function drawCommands(){
 }
 function openCommand(){
  commandSearch.value="";
+ commandSelected=0;
  drawCommands();
  commandDialog.showModal();
  requestAnimationFrame(()=>commandSearch.focus());
 }
 $("pdCommandButton").addEventListener("click",openCommand);
-commandSearch.addEventListener("input",drawCommands);
+commandSearch.addEventListener("input",()=>{commandSelected=0;drawCommands();});
+function commandButtons(){return Array.from($("pdCommandResults").querySelectorAll("button"));}
+function focusCommand(delta){
+ const buttons=commandButtons();if(!buttons.length)return;
+ commandSelected=(commandSelected+delta+buttons.length)%buttons.length;
+ buttons[commandSelected].focus();
+}
 commandSearch.addEventListener("keydown",e=>{
- if(e.key==="Enter"){
-  e.preventDefault();
-  $("pdCommandResults").querySelector("button")?.click();
+ if(e.key==="ArrowDown"||e.key==="ArrowUp"){
+  e.preventDefault();commandSelected=e.key==="ArrowDown"?-1:0;focusCommand(e.key==="ArrowDown"?1:-1);
+ }else if(e.key==="Enter"){
+  e.preventDefault();commandButtons()[0]?.click();
  }
+});
+$("pdCommandResults").addEventListener("keydown",e=>{
+ if(e.key!=="ArrowDown"&&e.key!=="ArrowUp")return;
+ e.preventDefault();
+ const current=Number(e.target.closest("button")?.dataset.commandIndex);
+ if(Number.isFinite(current))commandSelected=current;
+ focusCommand(e.key==="ArrowDown"?1:-1);
 });
 document.addEventListener("keydown",e=>{
  if(currentStyle!=="precision-dark")return;
@@ -77,7 +95,7 @@ document.addEventListener("keydown",e=>{
  }
  if(!inDialog && (e.key==="ArrowDown"||e.key==="ArrowUp")){
   const active=document.activeElement;
-  if(active?.tagName==="INPUT"||active?.tagName==="TEXTAREA")return;
+  if(!active?.classList?.contains("pd-item"))return;
   const current=document.querySelector(".pd-item.selected")?.dataset.work;
   const index=workIds.indexOf(current);
   const next=(index+(e.key==="ArrowDown"?1:-1)+workIds.length)%workIds.length;
@@ -143,8 +161,6 @@ $("popSubmit").addEventListener("click",()=>{
  if(!result.valid)return;
  submitted=true;points+=result.delta;
  $("popPoints").textContent=String(points);
- $("popFeedback").className="pop-feedback "+(result.correct?"good":"bad");
- $("popFeedback").textContent=(result.correct?"答对了！ +20 点 · ":"这个选项不太合适。")+lessons[quizIndex].detail;
  $("popNext").textContent=quizIndex===lessons.length-1?"从头开始 ↻":"继续下一题 →";
  drawLesson();
  $("popFeedback").className="pop-feedback "+(result.correct?"good":"bad");

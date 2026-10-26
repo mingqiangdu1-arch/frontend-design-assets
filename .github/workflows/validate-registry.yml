@@ -32,5 +32,9 @@ jobs:
           node --check playground/saas-editing/app.mjs
           node --check playground/style-explorer/model.mjs
           node --check playground/style-explorer/explorer.mjs
+      - name: Audit scoped theme contrast and CSS token drift
+        run: node scripts/contrast-audit.mjs
+      - name: Validate asset finder syntax
+        run: node --check scripts/find-assets.mjs
       - name: Test isolated state models
         run: node --test tests/*.test.mjs

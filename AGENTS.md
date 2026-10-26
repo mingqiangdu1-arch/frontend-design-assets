@@ -4,7 +4,7 @@ This repository is a **living multi-style, cross-application design asset librar
 
 ## Prior to any reuse or implementation
 
-1. Read `README.md`, `docs/multi-context-architecture.md`, `registry/assets.json` and `registry/styles.json`.
+1. Read `README.md`, `docs/multi-context-architecture.md`, `registry/assets.json` and `registry/styles.json`. For exact retrieval run `node scripts/find-assets.mjs --style=<id> --context=<context> --intent=<terms> --json`; candidates still need review.
 2. Ask which app/product category and UX goal the request concerns **only if it truly cannot be inferred**. Never assume the answer is SaaS, enterprise, desktop, light theme, or React.
 3. Determine application constraints: user group, devices, density, brand/style direction, localization, accessibility, performance and technology.
 4. Search references and behavior patterns independently of stylistic implementation. Compare tradeoffs.
@@ -24,7 +24,7 @@ Capture → de-duplicate → dissect → compare → optionally prototype → te
 
 Lifecycle: `captured`, `analyzed`, `prototype`, `reference-implemented`, `validated`, `production-ready`, `deprecated`. A reference snippet or a rendered demo is not production ready.
 
-Every material asset addition updates `registry/assets.json` and related docs; new design languages require a Style Profile and `registry/styles.json` entry. Use application profiles in `applications/`, not a new project-specific global default.
+Before promoting a visual component run `node scripts/check-registry.mjs`, `node scripts/contrast-audit.mjs`, and `node --test tests/*.test.mjs`; if modifying Style Explorer, run the Playwright browser smoke workflow. Inspect `docs/quality/README.md` for still-uncovered checks. Every material asset addition updates `registry/assets.json` and related docs; new design languages require a Style Profile and `registry/styles.json` entry. Use application profiles in `applications/`, not a new project-specific global default.
 
 ## Safety and quality
 

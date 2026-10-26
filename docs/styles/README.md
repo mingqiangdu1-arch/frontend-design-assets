@@ -18,7 +18,7 @@ These are **distinct screen compositions**, not three CSS color themes placed on
 - Editorial Warm: reading-first masthead, long-form content column, aside, save/reading toggle.
 - Playful Pop: progress-driven quiz, tactile selection, success/failure feedback.
 
-See [Style Explorer](../../playground/style-explorer/index.html) and [Demo README](../../playground/style-explorer/README.md).
+See [Style Explorer](../../playground/style-explorer/index.html), [Demo README](../../playground/style-explorer/README.md), [style decision matrix](decision-matrix.md) and [quality checklist](../quality/README.md).
 
 ## Token and visual governance
 
@@ -26,7 +26,7 @@ See [Style Explorer](../../playground/style-explorer/index.html) and [Demo READM
 - Import styles only inside `[data-design-theme="<styleId>"]` containers. **Never write design values into global `:root`**.
 - Different fonts, control heights, density, layout and motion are first-class, not just colors.
 - No official product tokens, vendor icons, proprietary artwork or external font files are bundled.
-- All new styles remain proposals/prototypes; they have not passed cross-browser, screen-reader, target-project or real-world usability evaluation.
+- All new styles remain proposals/prototypes; automated semantic-token contrast checks and limited Chromium browser smoke checks are **not** screen-reader, cross-browser, target-project or real-world usability certification.
 
 ## Future study shortlist (not implemented)
 

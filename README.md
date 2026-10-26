@@ -16,12 +16,14 @@
 | 查找全部资产及兼容标注 | [registry/assets.json](registry/assets.json) |
 | 选择某一套完整视觉风格 | [registry/styles.json](registry/styles.json) |
 | 查看 SaaS 专题研究与原型 | [SaaS 总览](docs/saas/README.md) / [列表实验 V0.2](playground/saas-patterns/index.html) / [表单编辑与筛选 V0.3](playground/saas-editing/index.html) |
-| 查看全部独立视觉风格 | [风格对比目录](docs/styles/README.md) / [可交互 Style Explorer](playground/style-explorer/index.html) |
+| 查看全部独立视觉风格 | [风格对比目录](docs/styles/README.md) / [选型矩阵](docs/styles/decision-matrix.md) / [Style Explorer](playground/style-explorer/index.html) |
 | 查看现有浅色 SaaS 风格 | [styles/refined-light-saas/README.md](styles/refined-light-saas/README.md) |
 | 按应用需求组合设计方案 | [applications/README.md](applications/README.md) |
 | 交互行为与验收参考 | [docs/interactions/patterns.md](docs/interactions/patterns.md) |
 | 研究来源与历史记录 | [docs/research/sources.md](docs/research/sources.md) |
 | 查看初始交互 Demo | [playground/initial-interaction-lab.html](playground/initial-interaction-lab.html) |
+| 通过条件检索复用资产 | [find-assets CLI](docs/quality/README.md) · `node scripts/find-assets.mjs --style=precision-dark --intent=command` |
+| 校验颜色与浏览器交互 | [质量基线 V0.5](docs/quality/README.md) |
 | 给 Codex/Agent 复用的约束 | [AGENTS.md](AGENTS.md) |
 
 ## 组织方式

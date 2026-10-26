@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-26 · V0.5 reliability and reuse pass
+
+- Added machine-readable contrast audit across four scoped visual styles; fixed muted foreground contrast in Editorial Warm and Playful Pop and corrected Playful's primary CTA to use its accessible accent text color.
+- Scoped keyboard navigation to focused work rows; improved command palette arrow-key navigation and removed duplicate playful quiz feedback assignment.
+- Added `find-assets.mjs` candidate search by style, application context, intent and reuse kind, with tests and no universal-theme fallback.
+- Added Chromium Playwright smoke checks for three distinct Style Explorer scenes across desktop/mobile with retained screenshots and workflow artifacts.
+- Added explicit style decision matrix and manual accessibility/open gaps. All implementations remain prototypes, not target-app production components.
+
+
 ## 2026-10-23 · Style Explorer v0.4 (stage close)
 
 - Added independent Precision Dark, Editorial Warm and Playful Pop design directions, each with scoped original Token CSS/JSON, Style Profile and design documentation.
