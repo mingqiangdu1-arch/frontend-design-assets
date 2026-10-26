@@ -31,7 +31,7 @@ test("reset and slash hotkey",async({page})=>{
  await page.locator("#query").fill("x-unique-missing-term");
  await expect(page.locator(".asset")).toHaveCount(0);
  await page.locator("#reset").click();await expect(page.locator(".asset")).toHaveCount(18);
- await page.locator("#query").blur();await page.keyboard.press("/");
+ await page.locator("#reset").focus();await page.keyboard.press("/");
  await expect(page.locator("#query")).toBeFocused();
 });
 test("no 390 / 768 / 1440 overflow and capture screenshots",async({page})=>{

@@ -42,7 +42,7 @@ function link(target,title,href){
 }
 function renderDetail(){
  const body=$("detailBody");body.replaceChildren();
- if(!active){body.append(mk("h2","", "选择素材查看详情"),mk("p","","点击素材卡片检查复用范围、来源、依赖及成熟度。"));return;}
+ if(!active){const heading=mk("h2","","选择素材查看详情");heading.id="detailTitle";heading.tabIndex=-1;body.append(heading,mk("p","","点击素材卡片检查复用范围、来源、依赖及成熟度。"));return;}
  const item=assets.find(a=>a.id===active);
  if(!item){active=null;renderDetail();return;}
  const title=mk("h2","",item.name);title.id="detailTitle";title.tabIndex=-1;
@@ -75,13 +75,25 @@ function inspect(id,trigger=null,{updateUrl=true,focus=true}={}){
 function deselectDetail(){
  active=null;const url=new URL(location.href);url.searchParams.delete("asset");history.replaceState(null,"",url);
  renderDetail();renderList();
- if(lastDetailTrigger?.isConnected)lastDetailTrigger.focus();else $("query").focus();
+ if(lastDetailTrigger?.isConnected)lastDetailTrigger.focus();
+ else if(lastDetailTrigger?.dataset.inspect){
+  const replacement=$("assetList").querySelector('[data-inspect="'+lastDetailTrigger.dataset.inspect+'"]');
+  if(replacement)replacement.focus();else $("query").focus();
+ }else $("query").focus();
 }
 $("assetList").addEventListener("click",event=>{
  const btn=event.target.closest("[data-inspect]");
  if(btn)inspect(btn.dataset.inspect,btn);
 });
-function pick(id){selected=toggleSelection(selected,id);$("selectionCount").textContent=String(selected.size);renderList();renderDetail();if(!$("bundle").hidden)updateBundle();}
+function pick(id){
+ const source=document.activeElement;
+ const fromDetail=source instanceof HTMLElement&&source.hasAttribute("data-detailpick");
+ selected=toggleSelection(selected,id);$("selectionCount").textContent=String(selected.size);
+ renderList();renderDetail();
+ if(fromDetail)$("detailBody").querySelector("[data-detailpick]")?.focus();
+ else $("assetList").querySelector('[data-pick="'+id+'"]')?.focus();
+ if(!$("bundle").hidden)updateBundle();
+}
 $("assetList").addEventListener("change",event=>{const input=event.target.closest("input[data-pick]");if(input)pick(input.dataset.pick);});
 $("detailBody").addEventListener("click",event=>{const el=event.target.closest("[data-detailpick]");if(el)pick(el.dataset.detailpick);});
 $("closeDetail").addEventListener("click",deselectDetail);

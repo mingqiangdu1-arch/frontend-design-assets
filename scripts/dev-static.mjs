@@ -1,6 +1,7 @@
 import {createServer} from "node:http";
 import {readFile,stat,realpath} from "node:fs/promises";
 import path from "node:path";
+import {fileURLToPath} from "node:url";
 
 const root=await realpath(process.cwd());
 const port=Number(process.env.PORT??8009);
@@ -39,7 +40,7 @@ export function createStaticServer(){
   }catch{res.writeHead(500);res.end("Internal error");}
  });
 }
-if(process.argv[1]&&path.resolve(process.argv[1])===path.resolve(new URL(import.meta.url).pathname)){
+if(process.argv[1]&&path.resolve(process.argv[1])===path.resolve(fileURLToPath(import.meta.url))){
  const server=createStaticServer();
  server.listen(port,"127.0.0.1",()=>console.log("Asset static preview: http://127.0.0.1:"+port+"/playground/asset-explorer/"));
  server.on("error",err=>{console.error(err.message);process.exitCode=1;});
