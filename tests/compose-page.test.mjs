@@ -6,7 +6,7 @@ import {validatePageRegistry} from "../scripts/check-page-templates.mjs";
 const pages=JSON.parse(fs.readFileSync("registry/page-templates.json","utf8")),components=JSON.parse(fs.readFileSync("registry/components.json","utf8"));
 test("five templates have distinct IDs and explicit styles",()=>{
  assert.equal(pages.templates.length,5);
- assert.equal(new Set(pages.templates.map(t=>t.id)).size,4);
+ assert.equal(new Set(pages.templates.map(t=>t.id)).size,5);
  assert.equal(listTemplates(pages,{context:"reading"}).length,1);
  assert.equal(listTemplates(pages,{style:"neo-brutalist"})[0].id,"TPL-004");
 });
