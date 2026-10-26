@@ -31,7 +31,7 @@ test("command shortcut, search and Escape",async({page})=>{
  await page.keyboard.press("Control+k");
  const dialog=page.getByRole("dialog",{name:"Quick commands"});
  await expect(dialog).toBeVisible();
- await dialog.getByRole("textbox",{name:"Search commands"}).fill("open");
+ await dialog.getByRole("textbox",{name:"Search commands"}).fill("first");
  await expect(dialog.locator(".orbit-commands button")).toHaveCount(1);
  await page.keyboard.press("Escape");
  await expect(dialog).toBeHidden();
@@ -56,4 +56,19 @@ test("mobile inspector opens and closes",async({page})=>{
  await page.getByRole("button",{name:"Close inspector"}).click();
  await expect(page.locator(".orbit-inspector")).toBeHidden();
  await expect(page.locator('[data-item-id="FD-125"]')).toBeVisible();
+});
+
+test("mobile inspector traps keyboard focus, closes on Escape and restores row focus",async({page})=>{
+ await page.setViewportSize({width:390,height:820});
+ await page.goto("/");
+ const row=page.locator('[data-item-id="FD-125"]');
+ await row.focus();await row.press("Enter");
+ const panel=page.getByRole("dialog",{name:"Issue inspector"});
+ await expect(panel).toBeVisible();
+ await expect(panel.getByRole("button",{name:"Close inspector"})).toBeFocused();
+ await panel.getByRole("button",{name:"Close inspector"}).press("Shift+Tab");
+ await expect(panel.locator(":focus")).toHaveCount(1);
+ await page.keyboard.press("Escape");
+ await expect(panel).toBeHidden();
+ await expect(row).toBeFocused();
 });

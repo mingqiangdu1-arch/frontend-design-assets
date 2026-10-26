@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-26 · V0.10 live asset search, portable preview and keyboard quality
+
+- Added a neutral, responsive Asset Explorer over canonical JSON registries with search/style/type/stage/context filters, details, source/Notion links, deep links and a multi-selection Markdown export for Codex.
+- Added three indexed assets (KIT-009, IP-014, PR-009), pure-model tests, and Chromium responsive smoke/screenshots.
+- Added a Node built-in static preview server (`npm run dev:catalog`) for Windows/macOS/Linux; static smoke tests use it instead of relying on Python.
+- Repaired Precision Dark command search test to expect the actual filter semantics, and improved responsive inspector keyboard modal semantics and focus restoration.
+- Maintained explicit source/production boundaries: export briefs are references, screenshots are not approved visual-diff baselines, no actual product integration.
+
+
 ## 2026-10-26 · V0.9 Precision Dark actual React composition and visual capture
 
 - Added Orbit Workbench as first full-page composition importing 11 React components from `packages/ui`, with an independent Precision Dark layout, in-memory status actions, undo, inspector and command palette.

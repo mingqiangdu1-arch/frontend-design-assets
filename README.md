@@ -82,3 +82,10 @@ frontend-design-assets/
 [Notion V0.9 阶段报告]([private-notion-link-redacted]) · [素材数据库]([private-notion-link-redacted])
 
 新增 [Orbit Workbench](playground/precision-workbench/README.md) 作为 **真正引用 `packages/ui` 组件库** 的 React/TypeScript 完整页面示例，并纳入 [5 个页面模板](playground/page-blueprints/README.md)。与历史四个独立 HTML/JS 原型不同，它需要 Vite 启动：`npm run dev:workbench`（端口 5175）。浏览器 QA 会上传 390 / 768 / 1440 px 截图用于人工审阅；**截图采集不等于视觉基准批准**。
+
+## V0.10 · 可视化检索与交互质量改造
+
+- **[Asset Explorer](playground/asset-explorer/README.md)**：直接浏览真实资产索引，按风格、类型、成熟度、应用场景与关键词筛选，查看依赖/来源/Notion 链接，并导出 Markdown 参考清单交给 Codex。混合风格会显式提示**不代表代码可直接组合**。
+- 跨平台静态预览：仓库根目录运行 `npm run dev:catalog`，浏览器打开 `http://127.0.0.1:8009/playground/asset-explorer/`，无需 Python 或浏览器 `file://`。
+- Precision Dark React 工作台优化：修复不准确的命令检索测试；增加窄屏详情抽屉键盘焦点管理、Escape 关闭和主界面不可交互处理。
+- 浏览器自动回归截取 390 / 768 / 1440 px 页面截图，供后续人工验收；**不是已经批准的视觉回归基线**。

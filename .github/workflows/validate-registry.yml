@@ -45,6 +45,9 @@ jobs:
           node --check playground/page-blueprints/mobile-habits/app.mjs
           node --check scripts/compose-page.mjs
           node --check scripts/check-page-templates.mjs
+          node --check playground/asset-explorer/model.mjs
+          node --check playground/asset-explorer/app.mjs
+          node --check scripts/dev-static.mjs
       - name: Audit scoped theme contrast and CSS token drift
         run: node scripts/contrast-audit.mjs
       - name: Validate asset finder syntax

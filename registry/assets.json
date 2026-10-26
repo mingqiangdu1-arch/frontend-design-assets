@@ -2710,6 +2710,92 @@
         "UI-027"
       ],
       "notion": "[private-notion-link-redacted]"
+    },
+    {
+      "priority": "P1",
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "styleIds": [],
+      "applicationContexts": [
+        "workspace",
+        "developer-tool",
+        "creative-portfolio",
+        "knowledge-base"
+      ],
+      "verified": "Local original research implementation. Unit and Chromium smoke checks are limited; no production or full screen-reader certification.",
+      "id": "KIT-009",
+      "type": "archive",
+      "name": "Visual Asset Explorer V0.10",
+      "stage": "prototype",
+      "reuseKind": "snapshot",
+      "path": "playground/asset-explorer/README.md",
+      "demo": "playground/asset-explorer/index.html",
+      "tags": [
+        "asset-catalog",
+        "faceted-search",
+        "browser",
+        "handoff",
+        "v0.10"
+      ],
+      "dependencies": [
+        "IP-014",
+        "PR-009"
+      ]
+    },
+    {
+      "priority": "P1",
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "styleIds": [],
+      "applicationContexts": [
+        "workspace",
+        "developer-tool",
+        "creative-portfolio",
+        "knowledge-base"
+      ],
+      "verified": "Local original research implementation. Unit and Chromium smoke checks are limited; no production or full screen-reader certification.",
+      "id": "IP-014",
+      "type": "interaction",
+      "name": "Faceted asset discovery and explicit handoff",
+      "stage": "prototype",
+      "reuseKind": "behavior-pattern",
+      "path": "docs/interactions/faceted-asset-discovery.md",
+      "demo": "playground/asset-explorer/index.html",
+      "tags": [
+        "search",
+        "filter",
+        "maturity",
+        "provenance",
+        "keyboard",
+        "selection"
+      ],
+      "dependencies": []
+    },
+    {
+      "priority": "P1",
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "styleIds": [],
+      "applicationContexts": [
+        "workspace",
+        "developer-tool",
+        "creative-portfolio",
+        "knowledge-base"
+      ],
+      "verified": "Local original research implementation. Unit and Chromium smoke checks are limited; no production or full screen-reader certification.",
+      "id": "PR-009",
+      "type": "recipe",
+      "name": "Asset discovery → Codex implementation handoff",
+      "stage": "prototype",
+      "reuseKind": "composition-recipe",
+      "path": "recipes/asset-discovery-handoff.md",
+      "demo": "playground/asset-explorer/index.html",
+      "tags": [
+        "codex",
+        "agent-handoff",
+        "asset-discovery",
+        "composition"
+      ],
+      "dependencies": [
+        "IP-014"
+      ]
     }
   ],
   "referenceImplementationRoot": "components/reference",

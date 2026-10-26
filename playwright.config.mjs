@@ -16,7 +16,7 @@ export default defineConfig({
  },
  projects:[{name:"chromium",use:{...devices["Desktop Chrome"],viewport:{width:1440,height:900}}}],
  webServer:{
-  command:"python3 -m http.server 8009 --bind 127.0.0.1",
+  command:"npm run dev:catalog",
   url:"http://127.0.0.1:8009/playground/style-explorer/",
   reuseExistingServer:!process.env.CI,
   timeout:30000

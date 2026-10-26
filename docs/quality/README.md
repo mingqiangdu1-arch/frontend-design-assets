@@ -75,3 +75,11 @@ Extend browser smoke to SaaS v0.2/v0.3; standardize reusable style specimens, ad
 - `npm run test:browser` separately runs static page demos and collects independent screenshot captures at the same three widths. Tests are **isolated by web server and Playwright config**.
 - These images are **capture-only artifacts**. No human-approved reference images or pixel-difference baselines are in place; do not claim automated visual regression approval.
 - Pending: screen-reader, keyboard full walkthrough, Firefox/Safari, physical touch input, CJK real content and backend failures.
+
+## V0.10 browser-reproducible catalog and keyboard regression
+
+- Start all static experiments from root with `npm run dev:catalog` on http://127.0.0.1:8009. The Node server serves correct JSON/JS MIME types; no `file://` browser access.
+- Run `node --test tests/asset-explorer.test.mjs` and `npm run test:browser` to inspect canonical index filtering, faceted state, Markdown handoff and visual capture at 390/768/1440.
+- Run `npm run test:workbench:browser` for real React page focus, inspector overlay and command searching.
+- Chromium smoke/screenshot capture is NOT a verified pixel-baseline or WCAG certification. Manual screen reader, browser and visual inspection is required.
+- References: https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/ and https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum .

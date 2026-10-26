@@ -1,0 +1,31 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Asset Explorer · Frontend Design Assets</title><meta name="description" content="Filter 95+ documented design assets by style, context, maturity and asset type. Export a Codex handoff brief.">
+<link rel="stylesheet" href="./styles.css"><script type="module" src="./app.mjs"></script></head>
+<body><header class="site-header"><div class="brand"><span class="logo" aria-hidden="true">◈</span><div><strong>DESIGN ASSETS</strong><small>RESEARCH / LIVING LIBRARY</small></div></div>
+<nav aria-label="资源导航"><a href="../page-blueprints/">页面模板</a><a href="../component-gallery/">React 组件展厅（需 Vite）</a><a href="../../docs/assembly/README.md">组装指南</a></nav></header>
+<main>
+<section class="intro"><p class="eyebrow">THE LIVING ASSET CATALOG / 1.0</p><h1>找到恰当的素材，<em>而不是默认的风格。</em></h1>
+<p>按应用场景、设计语言与成熟度筛选已有资产；检查来源与依赖，再生成可交给 Codex 的实施素材清单。</p>
+<div class="overview" id="overview" role="status" aria-live="polite">正在读取仓库索引…</div></section>
+<section class="workspace" aria-label="设计资产筛选与浏览">
+<div class="filters"><div class="filter-head"><h2>筛选条件</h2><button type="button" id="reset">清除筛选</button></div>
+<label for="query">关键词 / 编号</label><input id="query" type="search" placeholder="如 Tabs、SaaS、IP-009…" autocomplete="off">
+<label for="style">视觉风格</label><select id="style"><option value="all">全部风格</option><option value="agnostic">通用 / 无风格限定</option></select>
+<label class="checkline" for="agnostic"><input id="agnostic" type="checkbox">选定风格时包含通用资产</label>
+<label for="type">素材类型</label><select id="type"><option value="all">全部类型</option></select>
+<label for="stage">成熟度</label><select id="stage"><option value="all">所有阶段</option></select>
+<label for="context">应用场景</label><select id="context"><option value="all">全部场景</option></select>
+<div class="guidance"><strong>先看成熟度</strong><p>研究参考、实验原型、参考实现与生产级资产不等价。这里展示索引记录的当前声明，不自动升级任何资产。</p></div>
+</div>
+<section class="results" aria-labelledby="resultsTitle"><div class="results-head"><div><h2 id="resultsTitle">浏览所有资产</h2><p id="resultsCount" role="status" aria-live="polite">加载中</p></div>
+<div class="actions"><button type="button" id="clearSelection">清空选中</button><button type="button" id="showBundle">查看交接清单 <span id="selectionCount">0</span></button></div></div>
+<div class="asset-list" id="assetList" aria-label="可检索素材结果"></div><div class="paging"><button id="more" type="button" hidden>显示更多资产</button></div>
+</section>
+<aside class="detail" id="detail" aria-labelledby="detailTitle"><div class="detail-head"><small>ASSET INSPECTOR</small><button type="button" id="closeDetail" aria-label="关闭资产详情">×</button></div>
+<div id="detailBody"><h2 id="detailTitle" tabindex="-1">选择素材查看详情</h2><p>点击左侧素材，即可查看复用范围、来源、当前阶段与依赖。</p></div>
+</aside>
+</section>
+<section class="bundle" id="bundle" aria-labelledby="bundleTitle" hidden><div class="bundle-head"><div><small>EXPORT / CODEX HANDOFF</small><h2 id="bundleTitle">素材交接清单</h2></div><button type="button" id="closeBundle">收起</button></div>
+<p>导出的是可审查的参考清单，不是自动生成的项目代码；跨风格选择不会默认为兼容。</p><textarea id="bundleText" aria-label="可复制素材交接清单" readonly rows="12"></textarea>
+<div class="bundle-actions"><button type="button" id="copyBundle">复制 Markdown</button><p id="copyStatus" role="status" aria-live="polite"></p></div></section>
+</main><footer><p>All entries read from repository machine registries. Static local preview only; no user accounts, analytics or production app modification.</p></footer></body></html>

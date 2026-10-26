@@ -68,3 +68,11 @@ Use local HTTP to inspect prototype files in a browser agent. No autonomous back
 - Do not say all Page Blueprints are React-built. TPL-001–004 remain independent static HTML/JS.
 - `node scripts/compose-page.mjs --template=TPL-005 --format=json` now marks actual React exports as `wired-in-demo` and includes the Vite run/build commands.
 - Run `npm run typecheck:ui`, `npm run build:workbench`, `npm run test:workbench:browser`; inspect screenshot artifacts at three viewport sizes, and keep unverified accessibility/browser issues explicit.
+
+## V0.10 catalog discovery / keyboard QA
+
+- For a browsable registry use `npm run dev:catalog` and `/playground/asset-explorer/`. This reads `registry/assets.json` and `registry/styles.json` live; do not invent card data or default style.
+- Selecting multiple assets exports a RESEARCH handoff Markdown brief. Do not treat different style IDs as automatically compatible implementation modules.
+- `IP-014` describes faceted discovery semantics; `PR-009` documents the Codex handoff. A selected research reference is not release certification.
+- Precision Workbench mobile inspector must trap focus, close with Escape and restore the originating row's focus; validate with its dedicated Playwright suite.
+- Run `npm run test:unit`, `npm run test:browser`, `npm run test:workbench:browser`, and `npm run test:components:browser`; note that static, workbench and component suites use separate servers.

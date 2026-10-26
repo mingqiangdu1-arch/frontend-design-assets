@@ -13,6 +13,7 @@ function App(){
  const [filter,setFilter]=React.useState<Filter>("all");
  const [selectedId,setSelectedId]=React.useState(initial[0].id);
  const [inspector,setInspector]=React.useState(false);
+ const [isNarrow,setIsNarrow]=React.useState(()=>window.matchMedia("(max-width:1180px)").matches);
  const [commandsOpen,setCommandsOpen]=React.useState(false);
  const [commandSearch,setCommandSearch]=React.useState("");
  const [detailTab,setDetailTab]=React.useState("details");
@@ -20,6 +21,8 @@ function App(){
  const [snapshot,setSnapshot]=React.useState<UndoSnapshot|null>(null);
  const searchRef=React.useRef<HTMLInputElement>(null);
  const commandRef=React.useRef<HTMLInputElement>(null);
+ const inspectorCloseRef=React.useRef<HTMLButtonElement>(null);
+ const issueTriggerRef=React.useRef<HTMLElement|null>(null);
  const shown=React.useMemo(()=>filterItems(items,query,filter),[items,query,filter]);
  const selected=items.find(x=>x.id===selectedId);
  React.useEffect(()=>{
@@ -35,7 +38,35 @@ function App(){
   return()=>window.removeEventListener("keydown",onKey);
  },[commandsOpen]);
  React.useEffect(()=>{if(commandsOpen)commandRef.current?.focus();else setCommandSearch("");},[commandsOpen]);
- function choose(id:string){setSelectedId(id);setInspector(true);setDetailTab("details");}
+ React.useEffect(()=>{
+  const media=window.matchMedia("(max-width:1180px)");
+  const update=()=>setIsNarrow(media.matches);
+  update();media.addEventListener("change",update);return()=>media.removeEventListener("change",update);
+ },[]);
+ React.useEffect(()=>{if(inspector&&isNarrow&&!commandsOpen)inspectorCloseRef.current?.focus();},[inspector,isNarrow,commandsOpen]);
+ function choose(id:string){
+  const trigger=document.activeElement;
+  if(trigger instanceof HTMLElement&&!trigger.closest("dialog"))issueTriggerRef.current=trigger;
+  setSelectedId(id);setInspector(true);setDetailTab("details");
+ }
+ function closeInspector(){
+  setInspector(false);
+  if(isNarrow)requestAnimationFrame(()=>{
+   if(issueTriggerRef.current?.isConnected)issueTriggerRef.current.focus();
+   else searchRef.current?.focus();
+  });
+ }
+ function inspectorKey(e:React.KeyboardEvent<HTMLElement>){
+  if(!isNarrow||!inspector||commandsOpen)return;
+  if(e.key==="Escape"){e.preventDefault();closeInspector();return;}
+  if(e.key!=="Tab")return;
+  const focusables=Array.from(e.currentTarget.querySelectorAll<HTMLElement>(
+   'button:not([disabled]),a[href],input:not([disabled]),[tabindex="0"]'
+  )).filter(el=>el.getClientRects().length>0);
+  if(!focusables.length){e.preventDefault();return;}
+  if(e.shiftKey&&document.activeElement===focusables[0]){e.preventDefault();focusables[focusables.length-1].focus();}
+  else if(!e.shiftKey&&document.activeElement===focusables[focusables.length-1]){e.preventDefault();focusables[0].focus();}
+ }
  function change(status:Status){
   if(!selected)return;
   const result=updateStatus(items,selected.id,status);
@@ -51,13 +82,13 @@ function App(){
  ].filter(c=>c.title.toLowerCase().includes(commandSearch.toLowerCase()));
  const active=items.filter(x=>x.status!=="done").length,review=items.filter(x=>x.status==="review").length;
  return <ThemeSurface theme="precision-dark" className="orbit-root">
-  <header className="orbit-top">
+  <header className="orbit-top" inert={isNarrow&&inspector&&!commandsOpen}>
    <a className="orbit-brand" href="#main"><span className="orbit-mark">◈</span><span><strong>orbit</strong><small>REFERENCE / 0.9</small></span></a>
    <span className="orbit-breadcrumb">Workspaces <i>/</i> Product engineering</span>
    <div className="orbit-topright"><Button variant="secondary" size="sm" onClick={()=>setCommandsOpen(true)} aria-label="Open command palette">⌘ K <span>Commands</span></Button><Avatar name="Will" size="sm"/></div>
   </header>
-  <div className="orbit-layout">
-   <aside className="orbit-sidebar" aria-label="Workspace navigation">
+  <div className={"orbit-layout "+(inspector?"has-inspector":"")}>
+   <aside className="orbit-sidebar" inert={isNarrow&&inspector&&!commandsOpen} aria-label="Workspace navigation">
     <div className="orbit-team"><span className="orbit-team-mark">P</span><span><strong>Product Lab</strong><small>Reference workspace</small></span><span>⌄</span></div>
     <span className="orbit-nav-caption">WORKSPACE</span>
     <nav aria-label="Sections">
@@ -68,7 +99,7 @@ function App(){
     </nav>
     <div className="orbit-sidebar-footer"><strong>RESEARCH PROTOTYPE</strong><p>No backend, no persistence, no approval claims.</p></div>
    </aside>
-   <main id="main" className="orbit-main">
+   <main id="main" className="orbit-main" inert={isNarrow&&inspector&&!commandsOpen}>
     <div className="orbit-intro"><div><span className="orbit-eyebrow">ENGINEERING / WORK QUEUE</span><h1>Work items <span>{items.length}</span></h1><p>Keep decisions visible. Inspect without leaving the context.</p></div><Button variant="secondary" size="md" onClick={()=>setCommandsOpen(true)}>⌕ Quick actions</Button></div>
     <div className="orbit-stats">
      <Card><div className="orbit-stat"><span>Active</span><strong>{active}</strong><small>Open + in review</small></div></Card>
@@ -93,8 +124,10 @@ function App(){
      <footer className="orbit-board-footer"><span>Ctrl/⌘ K for commands</span><span>{shown.length} of {items.length} visible</span></footer>
     </section>
    </main>
-   <aside className={"orbit-inspector "+(inspector?"orbit-inspector--mobile-visible":"")} aria-label="Issue inspector" data-inspector-open={inspector}>
-    <div className="orbit-inspector-header"><span>INSPECTOR</span><Button size="sm" variant="ghost" aria-label="Close inspector" onClick={()=>setInspector(false)}>×</Button></div>
+   <aside className={"orbit-inspector "+(inspector?"orbit-inspector--mobile-visible":"")}
+     role={isNarrow&&inspector?"dialog":undefined} aria-modal={isNarrow&&inspector?true:undefined}
+     aria-label="Issue inspector" data-inspector-open={inspector} onKeyDown={inspectorKey}>
+    <div className="orbit-inspector-header"><span>INSPECTOR</span><Button ref={inspectorCloseRef} size="sm" variant="ghost" aria-label="Close inspector" onClick={closeInspector}>×</Button></div>
     {selected?<div className="orbit-inspector-body"><span className="orbit-eyebrow">ISSUE / {selected.id}</span><h2>{selected.title}</h2><p>{selected.description}</p>
       <div className="orbit-owner"><Avatar name={selected.owner}/><div><strong>{selected.owner}</strong><small>{selected.team}</small></div></div>
       <Tabs label="Issue detail tabs" value={detailTab} onValueChange={setDetailTab} items={[
@@ -108,7 +141,7 @@ function App(){
      </div>:<p className="orbit-muted">Select an issue to inspect.</p>}
    </aside>
   </div>
-  {inspector&&<button type="button" aria-label="Close mobile inspector" onClick={()=>setInspector(false)} className="orbit-mobile-shade"/>}
+  {inspector&&<button type="button" aria-label="Close mobile inspector" onClick={closeInspector} className="orbit-mobile-shade"/>}
   <Dialog open={commandsOpen} onOpenChange={setCommandsOpen} title="Quick commands" description="Choose an action. Ctrl/⌘ K opens this menu." footer={<span className="orbit-muted">Local-only commands</span>}>
     <TextField ref={commandRef} label="Search commands" value={commandSearch} onChange={e=>setCommandSearch(e.target.value)} placeholder="Find an action"/>
     <div className="orbit-commands">{commands.length?commands.map(c=><button key={c.id} type="button" onClick={()=>{setCommandsOpen(false);c.run();}}><span>{c.title}</span><small>{c.hint}</small></button>):<p className="orbit-muted">No matching commands</p>}</div>
