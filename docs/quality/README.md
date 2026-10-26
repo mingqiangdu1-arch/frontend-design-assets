@@ -61,3 +61,10 @@ Extend browser smoke to SaaS v0.2/v0.3; standardize reusable style specimens, ad
 - `npm run test:browser` now includes original Bold Grid and Interaction Lab Chromium smoke tests.
 - New Neo Brutalist semantic tokens must pass `node scripts/contrast-audit.mjs`; the fifth style deliberately does **not** inherit React `packages/ui` support.
 - Remaining manual checks: iOS/Android tap targets, Firefox/Safari focus/transition, real screen-reader announcements, responsive screenshots, UI code/brand provenance.
+
+## V0.8 full-page archetypes
+
+- Validate `registry/page-templates.json` with `node scripts/check-page-templates.mjs` before building or copying page shells.
+- Run `node --test tests/compose-page.test.mjs tests/editorial-blueprint.test.mjs tests/mobile-blueprint.test.mjs` for model/compatibility checks.
+- Run `npm run test:browser` for static page demos and narrow-screen smoke; existing React Component Gallery has its **separate Vite Playwright config**.
+- New page implementations are standalone original HTML/JS mock experiences; none performs real persistence, network search, account features or target-product integration.

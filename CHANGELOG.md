@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-26 · V0.8 independent page blueprints and deterministic composition
+
+- Added editorial reading library and mobile habit/planning page as original interactive HTML/CSS/JS prototypes, preserving distinct typographic/layout grammars.
+- Created four-entry machine-readable page template registry and a filterable catalog that also indexes existing SaaS operational list and Bold Grid campaign demos.
+- Added a deterministic CLI to select a page explicitly by template/style/context and output JSON/Markdown implementation briefs with paths, responsive/interaction checks and React compatibility caveats.
+- Added registry consistency and unit/browser smoke tests, new documentation and Codex handoff instructions.
+- No implicit default style, production-ready claim or business code changes.
+
+
 ## 2026-10-26 · V0.7 independent style and interaction patterns
 
 - Added fifth *independent* style: Neo Brutalist / Bold Grid with original scoped Tokens, poster landing/campaign layout and interactive six-sample catalog.

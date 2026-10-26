@@ -57,10 +57,3 @@ These links evidence principles and observed behavior, not production code or ex
 - Playful Pop: [Duolingo visual shape language](https://blog.duolingo.com/shape-language-duolingos-art-style/), [Duolingo core tabs redesign](https://blog.duolingo.com/core-tabs-redesign/). Rounded/tactile/feedback-oriented design direction.
 
 These references do not license copying vendors' UI, artwork, trademarks or fonts; generated screens and numeric token suggestions are original proposals.
-
-## V0.7 visual, accessibility and motion evidence
-
-- [Webflow Web Design Lookbook / Brutalism](https://webdesignlookbook.webflow.io/) — descriptive high-contrast layout and exposed structure research. No copying of official visual assets.
-- [MDN View Transition API](https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API) and [Usage](https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API/Using) — same-document transitions and fallback semantics.
-- [W3C WAI-ARIA APG listbox](https://www.w3.org/WAI/ARIA/apg/patterns/listbox/) / [rearrangeable examples](https://www.w3.org/WAI/ARIA/apg/patterns/listbox/examples/listbox-rearrangeable/) — focus/reordering and why nested interactive listbox options are not appropriate.
-- [Google Chrome modern web guidance](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/ui-behaviors/same-document-transitions.md) — reduced motion and DOM focus after transitions.

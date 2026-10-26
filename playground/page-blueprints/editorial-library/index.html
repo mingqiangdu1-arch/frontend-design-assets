@@ -1,0 +1,16 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Folio · Editorial Library Blueprint</title><link rel="stylesheet" href="../../../styles/editorial-warm/tokens.css">
+<link rel="stylesheet" href="style.css"><script type="module" src="app.mjs"></script></head>
+<body data-design-theme="editorial-warm"><header><a href="./" class="logo">folio<span>·</span></a><nav aria-label="主导航"><a href="#library">目录</a><a href="#about">关于</a></nav><a href="../">BLUEPRINTS ↗</a></header>
+<main><section class="hero"><p class="eyebrow">INDEPENDENT EDITORIAL STUDIES / 2026</p><h1>为阅读留一段<span>安静的时间。</span></h1><p>少一点无意义的装饰，多一点文字呼吸的空间。这里是面向内容与刊物的页面配方，而非 SaaS 工作台。</p><div class="ornament" aria-hidden="true">f.</div></section>
+<section id="library"><div class="sectionhead"><div><p class="eyebrow">THE INDEX / 01</p><h2>文章目录 <span>↗</span></h2></div><p>这些均为本仓库的原创模拟文字，不代表真实出版内容。</p></div>
+<div class="toolbar"><label>搜索文章 <input id="search" type="search" placeholder="标题或描述关键词…" autocomplete="off"></label><div class="filters" role="group" aria-label="文章分类">
+<button type="button" data-tag="all" aria-pressed="true">全部</button><button type="button" data-tag="product" aria-pressed="false">产品设计</button><button type="button" data-tag="culture" aria-pressed="false">文化阅读</button><button type="button" data-tag="research" aria-pressed="false">研究</button>
+</div><button id="savedOnly" type="button" aria-pressed="false">☆ 仅收藏</button></div>
+<p id="resultCount" role="status" aria-live="polite">显示 4 篇文章</p><div id="articleList" class="article-list"></div>
+</section><section id="about" class="about"><h2>重要的文字，需要<br>一个合适的容器。</h2><p>本页探索刊物式的内容节奏、文章筛选、收藏反馈和聚焦阅读。内容均为前端本地状态，不连接账户、搜索服务或文章管理后台。</p></section></main>
+<div id="reader" class="reader" hidden><div class="shade" id="readerShade"></div><div role="dialog" aria-modal="true" aria-labelledby="readerTitle" class="readerPane"><div class="readerNav">
+<button id="readerClose" type="button">← 返回目录</button><span>FOCUSED READING</span><button type="button" id="readerSave" aria-pressed="false">☆ 收藏</button></div><article>
+<p class="eyebrow" id="readerTag"></p><h2 id="readerTitle"></h2><p id="readerExcerpt" class="lead"></p><div id="readerText"></div></article></div></div>
+<footer><span class="logo">folio<span>·</span></span><p>Editorial Warm · Original Page Blueprint V0.8</p></footer>
+</body></html>

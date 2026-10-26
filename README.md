@@ -15,6 +15,7 @@
 | 了解跨风格架构与组装顺序 | [docs/multi-context-architecture.md](docs/multi-context-architecture.md) |
 | 查找全部资产及兼容标注 | [registry/assets.json](registry/assets.json) |
 | 选择某一套完整视觉风格 | [registry/styles.json](registry/styles.json) / [Bold Grid 视觉样例](playground/bold-grid/index.html) |
+| **选择完整页面模板并生成组装清单** | [Page Blueprints V0.8](playground/page-blueprints/README.md) / [组装 CLI](docs/assembly/README.md) / [机器模板索引](registry/page-templates.json) |
 | 查看 SaaS 专题研究与原型 | [SaaS 总览](docs/saas/README.md) / [列表实验 V0.2](playground/saas-patterns/index.html) / [表单编辑与筛选 V0.3](playground/saas-editing/index.html) |
 | 查看全部独立视觉风格 | [风格对比目录](docs/styles/README.md) / [选型矩阵](docs/styles/decision-matrix.md) / [Style Explorer](playground/style-explorer/index.html) |
 | 查看现有浅色 SaaS 风格 | [styles/refined-light-saas/README.md](styles/refined-light-saas/README.md) |
@@ -69,3 +70,7 @@ frontend-design-assets/
 [Notion 阶段报告]([private-notion-link-redacted]) · [可检索素材数据库]([private-notion-link-redacted])
 
 新增 [Neo Brutalist / Bold Grid](styles/neo-brutalist/README.md) 视觉系列、[原创创意落地页实验](playground/bold-grid/README.md)、[交互状态实验室](playground/interaction-lab/README.md)、[动效选择规范](docs/motion/motion-system.md) 和两套独立[页面组合配方](recipes/expressive-campaign.md)。**现有四套主题的 React 组件库仍然只声明兼容原有四套；第五套风格尚未接入 React 组件包。**
+
+## V0.8 · 页面模板与可复现组装清单
+
+新增四套不同应用情境的 [Page Blueprints](playground/page-blueprints/README.md)（SaaS 运营、编辑阅读、移动习惯、创意营销），其中编辑阅读和移动习惯为本阶段新实现互动原型。通过 `node scripts/compose-page.mjs --list` 找到模板，并用 `--template=TPL-002 --format=markdown` 生成可交给 Codex 的**页面实施清单**。这是实施指导，不是自动生成的 React/生产站点代码。必须显式选择风格或模板，且不能把风格冲突的素材视为可直接组合。

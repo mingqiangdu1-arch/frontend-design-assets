@@ -24,6 +24,8 @@ jobs:
           node-version: '22'
       - name: Validate registry and referenced files
         run: node scripts/check-registry.mjs
+      - name: Validate complete page template registry
+        run: node scripts/check-page-templates.mjs
       - name: Validate standalone demo syntax
         run: |
           node --check playground/saas-patterns/model.mjs
@@ -36,6 +38,13 @@ jobs:
           node --check playground/bold-grid/app.mjs
           node --check playground/interaction-lab/model.mjs
           node --check playground/interaction-lab/app.mjs
+          node --check playground/page-blueprints/gallery.mjs
+          node --check playground/page-blueprints/editorial-library/model.mjs
+          node --check playground/page-blueprints/editorial-library/app.mjs
+          node --check playground/page-blueprints/mobile-habits/model.mjs
+          node --check playground/page-blueprints/mobile-habits/app.mjs
+          node --check scripts/compose-page.mjs
+          node --check scripts/check-page-templates.mjs
       - name: Audit scoped theme contrast and CSS token drift
         run: node scripts/contrast-audit.mjs
       - name: Validate asset finder syntax

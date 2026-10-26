@@ -53,3 +53,11 @@ Use local HTTP to inspect prototype files in a browser agent. No autonomous back
 - Portable patterns IP-009..013 are behavior specs and independent HTML/JS samples; they are not production-ready React exports.
 - Motion choices: check `docs/motion/motion-system.md`, respect reduced motion, provide fallback, and manage focus explicitly when replacing DOM.
 - New repo quality checks include `tests/bold-grid.test.mjs`, `tests/interaction-lab.test.mjs`, and `tests/browser/creative-interactions.spec.mjs`.
+
+## V0.8 page assembly entrypoint
+
+- Read `registry/page-templates.json` and `playground/page-blueprints/README.md` before copying entire page structures.
+- `node scripts/compose-page.mjs --list` enumerates options. `--template=TPL-002 --format=markdown` returns a deterministic design brief; it does NOT generate source code or integrate a target application.
+- Never mix a template with a different style; the CLI and `scripts/check-page-templates.mjs` reject such mismatches.
+- All four page-blueprint demos are **independent DOM/JS experiments**, not imports from `packages/ui`; candidate React components are explicitly marked not wired.
+- For new archetypes, update `registry/page-templates.json`, `registry/assets.json`, gallery card, test cases, design docs and use `node scripts/check-page-templates.mjs` before claiming completeness.

@@ -1,0 +1,13 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Poppy · Mobile Habits Blueprint</title><link rel="stylesheet" href="../../../styles/playful-pop/tokens.css">
+<link rel="stylesheet" href="./style.css"><script type="module" src="./app.mjs"></script></head>
+<body data-design-theme="playful-pop">
+<div class="frame"><header><div class="identity"><span class="symbol">✳</span><strong>poppy<span>!</span></strong></div><a href="../" class="back">ALL BLUEPRINTS ↗</a></header>
+<main><section class="greeting"><div><span class="eyebrow">A LITTLE PROGRESS EVERY DAY</span><h1>今天也要<br>有点<span>小进步！</span></h1><p>一件一件地完成，而不是一次做完所有事情。</p></div><div class="mascot" aria-hidden="true"><span>☀</span><small>YOU GOT THIS</small></div></section>
+<div class="dashboard"><section class="score" aria-label="今日计划进度"><div><small>TODAY'S GROWTH</small><h2 id="score">0 <span>点</span></h2><p id="completionLabel">已完成 0 / 4</p></div><div class="ring" id="ring" style="--pct:0"><span id="percent">0%</span></div></section>
+<section class="plan" id="plan"><header class="plan-head"><div><span>MY DAILY QUESTS</span><h2>小目标大能量</h2></div><span class="tag">LEVEL 01</span></header>
+<div role="group" aria-label="任务筛选" class="filters"><button data-filter="all" aria-pressed="true">全部</button><button data-filter="pending" aria-pressed="false">待完成</button><button data-filter="done" aria-pressed="false">已完成</button></div>
+<ul id="taskList" aria-label="每日任务"></ul><p role="status" aria-live="polite" id="feedback">点击任务即可更新本地进度。</p></section>
+<section id="rewards" class="rewards" aria-labelledby="rewardsTitle"><div class="reward-icon" aria-hidden="true">★</div><div><small>COLLECT YOUR MOMENTS</small><h2 id="rewardsTitle">每一次完成都值得记录。</h2><p>当所有任务完成时，这张奖励卡片会同步变化。</p></div></section></div>
+</main><nav class="bottom" aria-label="页面导航"><a href="#plan">☷ <span>今日任务</span></a><a href="#rewards">★ <span>成长奖励</span></a><a href="../">◈ <span>其他模板</span></a></nav>
+<footer>Original mobile-first demo · V0.8 · 本地模拟，无账号或云同步</footer></div></body></html>

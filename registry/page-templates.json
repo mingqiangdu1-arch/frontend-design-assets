@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.8.0",
+  "defaultTemplateId": null,
+  "policy": "Explicit template/style selection only; examples and candidates, never automatic production certification or cross-style reuse.",
+  "templates": [
+    {
+      "id": "TPL-001",
+      "name": "Operational List Workbench",
+      "applicationContexts": [
+        "workspace",
+        "b2b-saas",
+        "operations"
+      ],
+      "styleId": "refined-light-saas",
+      "status": "prototype",
+      "implementation": "independent-static-js",
+      "demo": "playground/saas-patterns/index.html",
+      "source": "playground/saas-patterns/README.md",
+      "tokens": "tokens/refined-light.css",
+      "assetIds": [
+        "DT-001",
+        "IP-003",
+        "PR-002"
+      ],
+      "sections": [
+        "Scoped navigation and toolbar",
+        "Dense records with selection",
+        "Detail contextual interactions",
+        "Status and bulk action feedback"
+      ],
+      "requiredChecks": [
+        "keyboard row selection",
+        "filter and bulk state",
+        "390px overflow",
+        "mutation failure recovery in a real backend"
+      ],
+      "note": "Legacy SaaS reference experiment, not a complete shipped dashboard; React UI package not wired into this demo."
+    },
+    {
+      "id": "TPL-002",
+      "name": "Editorial Reading Library",
+      "applicationContexts": [
+        "publication",
+        "reading",
+        "knowledge-base",
+        "portfolio"
+      ],
+      "styleId": "editorial-warm",
+      "status": "prototype",
+      "implementation": "independent-static-js",
+      "demo": "playground/page-blueprints/editorial-library/index.html",
+      "source": "playground/page-blueprints/editorial-library/README.md",
+      "tokens": "styles/editorial-warm/tokens.css",
+      "assetIds": [
+        "DT-003",
+        "IP-002"
+      ],
+      "sections": [
+        "Masthead and publication identity",
+        "Searchable article index and topical filters",
+        "Bookmark action with clear pressed feedback",
+        "Focused modal reading sheet",
+        "Editorial footer"
+      ],
+      "requiredChecks": [
+        "search and category intersection",
+        "bookmarks local only",
+        "focus trap Escape and return",
+        "Chinese article line length and 390px overflow"
+      ],
+      "note": "Original mock editorial content. Bookmark is ephemeral and no search backend exists."
+    },
+    {
+      "id": "TPL-003",
+      "name": "Mobile Daily Habits",
+      "applicationContexts": [
+        "consumer-mobile",
+        "learning",
+        "gamification",
+        "personal-productivity"
+      ],
+      "styleId": "playful-pop",
+      "status": "prototype",
+      "implementation": "independent-static-js",
+      "demo": "playground/page-blueprints/mobile-habits/index.html",
+      "source": "playground/page-blueprints/mobile-habits/README.md",
+      "tokens": "styles/playful-pop/tokens.css",
+      "assetIds": [
+        "DT-004",
+        "IP-008"
+      ],
+      "sections": [
+        "Mobile-first greeting and illustration",
+        "Today progress and task score",
+        "Filterable action/task list",
+        "Reward area with completion feedback",
+        "Fixed mobile navigation"
+      ],
+      "requiredChecks": [
+        "task toggle and score consistency",
+        "filter + focus after item disappears",
+        "mobile touch area and 390px overflow",
+        "reduced motion",
+        "no persistent progress implied"
+      ],
+      "note": "Local daily task simulation; no account, streak persistence, or server rewards."
+    },
+    {
+      "id": "TPL-004",
+      "name": "Bold Grid Creative Campaign",
+      "applicationContexts": [
+        "creative-portfolio",
+        "campaign",
+        "indie-brand",
+        "event-landing"
+      ],
+      "styleId": "neo-brutalist",
+      "status": "prototype",
+      "implementation": "independent-static-js",
+      "demo": "playground/bold-grid/index.html",
+      "source": "playground/bold-grid/README.md",
+      "tokens": "styles/neo-brutalist/tokens.css",
+      "assetIds": [
+        "DT-005",
+        "IP-013",
+        "PR-006"
+      ],
+      "sections": [
+        "Bold typographic hero and CTA",
+        "Decorative typography strip",
+        "Filterable graphic catalog",
+        "Independent bookmarked tiles",
+        "Principles and transparent disclaimer footer"
+      ],
+      "requiredChecks": [
+        "no borrowed brand images",
+        "reduced-motion View Transition fallback",
+        "collection item focus",
+        "390px text clipping"
+      ],
+      "note": "Original graphic concept; not a store, no commerce/checkout or real catalog."
+    }
+  ]
+}

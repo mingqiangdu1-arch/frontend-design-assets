@@ -1,0 +1,25 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page Blueprints · Frontend Design Assets</title>
+<meta name="description" content="Four independent runnable page structures for different product categories.">
+<link rel="stylesheet" href="gallery.css"><script type="module" src="gallery.mjs"></script></head><body>
+<header><div class="brand"><strong>◈</strong> FRONTEND DESIGN ASSETS <span>/ PAGE BLUEPRINTS</span></div><a href="../../README.md">研究仓库 ↗</a></header>
+<main><div class="hero"><span>ARCHITECTURE BEFORE DECORATION / 0.8</span><h1>Don't start with<br><em>the same page.</em></h1><p>先从用户任务、内容密度和交互设备出发，再选择页面配方。四种应用类型、四种布局语言，互不强制兼容。</p></div>
+<div class="control"><div role="group" aria-label="模板类型" class="filters">
+<button data-mode="all" aria-pressed="true">全部类型</button><button data-mode="workspace" aria-pressed="false">工作平台</button>
+<button data-mode="reading" aria-pressed="false">阅读内容</button><button data-mode="consumer-mobile" aria-pressed="false">移动消费</button>
+<button data-mode="campaign" aria-pressed="false">创意营销</button></div><p id="count" role="status" aria-live="polite">4 个页面模板</p></div>
+<section id="blueprints" class="grid" aria-label="页面模板">
+<article class="tile workspace" data-template="TPL-001" data-context="workspace">
+<div class="mini"><div class="mini-sidebar">◈<i></i><i></i><i></i><i></i></div><div class="mini-table"><div class="mini-top"><b>Records</b><small>＋ New</small></div><span></span><span></span><span></span><span></span></div></div>
+<div class="tile-body"><span class="code">TPL-001 / REFINED LIGHT</span><h2>Operational Workbench</h2><p>高密度列表、选择与反馈，适合结构化业务任务。</p><a href="../saas-patterns/index.html">打开工作台样例 ↗</a></div></article>
+<article class="tile reading" data-template="TPL-002" data-context="reading">
+<div class="mini"><div class="mini-editor"><small>folio ·</small><h3>Read what<br>matters.</h3><div></div><div></div><div></div><div class="byline">THE EDITORIAL JOURNAL</div></div></div>
+<div class="tile-body"><span class="code">TPL-002 / EDITORIAL WARM</span><h2>Editorial Reading Library</h2><p>刊物目录、可搜索文章与安静的聚焦阅读。</p><a href="editorial-library/index.html">打开阅读资料库 ↗</a></div></article>
+<article class="tile mobile" data-template="TPL-003" data-context="consumer-mobile">
+<div class="mini"><div class="mini-phone"><h3>poppy!</h3><div class="phone-hero">A LITTLE<br>PROGRESS! ☀</div><div class="phone-row">☑ 阅读时间</div><div class="phone-row">◻ 喝一杯水</div><div class="phone-footer">☷　★　◈</div></div></div>
+<div class="tile-body"><span class="code">TPL-003 / PLAYFUL POP</span><h2>Mobile Daily Habits</h2><p>移动优先、轻任务、即时成长反馈与积分状态。</p><a href="mobile-habits/index.html">打开移动任务页 ↗</a></div></article>
+<article class="tile campaign" data-template="TPL-004" data-context="campaign">
+<div class="mini"><div class="mini-poster"><small>LOUD IDEAS ONLY</small><h3>MAKE<br>IT<br><em>BOLD.</em></h3><span>✳</span></div></div>
+<div class="tile-body"><span class="code">TPL-004 / NEO BRUTALIST</span><h2>Creative Campaign Landing</h2><p>强烈字体、粗线网格、海报化内容与分类探索。</p><a href="../bold-grid/index.html">打开创意活动页 ↗</a></div></article>
+</section>
+<div class="footnote"><strong>重要边界：</strong>此处是独立页面原型，不表示四套模板已由一个生产 React 组件库直接组装，也不包含真实业务后端。要快速生成选择方案，请运行 <code>node scripts/compose-page.mjs --list</code>。</div>
+</main><footer>Original templates · No universal default theme · V0.8</footer></body></html>

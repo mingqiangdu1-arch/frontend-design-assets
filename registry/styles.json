@@ -78,26 +78,6 @@
       },
       "demo": "playground/style-explorer/index.html",
       "licenseNote": "Original proposed styles. No third-party source code, imagery or font binary is included."
-    },
-    {
-      "id": "neo-brutalist",
-      "label": "Neo Brutalist / Bold Grid",
-      "status": "design-proposal",
-      "origin": "Original poster-like visual direction inspired by brutalist web structure, without source code or artwork reuse",
-      "categories": [
-        "creative-portfolio",
-        "indie-brand",
-        "campaign",
-        "event-landing"
-      ],
-      "styleProfile": "styles/neo-brutalist/style.json",
-      "documentation": "styles/neo-brutalist/README.md",
-      "tokens": {
-        "css": "styles/neo-brutalist/tokens.css",
-        "json": "styles/neo-brutalist/tokens.json"
-      },
-      "demo": "playground/bold-grid/index.html",
-      "licenseNote": "Original CSS, illustrations, composition and numeric Token proposals. No third-party design source reproduced."
     }
   ]
 }

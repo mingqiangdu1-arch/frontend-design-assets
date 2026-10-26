@@ -2476,6 +2476,128 @@
       "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
       "demo": "playground/interaction-lab/index.html",
       "notion": "[private-notion-link-redacted]"
+    },
+    {
+      "id": "TPL-001",
+      "type": "page-template",
+      "name": "Operational List Workbench",
+      "stage": "prototype",
+      "reuseKind": "composition-recipe",
+      "priority": "P1",
+      "tags": [
+        "v0.8",
+        "page-blueprint",
+        "application-context",
+        "standalone"
+      ],
+      "path": "playground/saas-patterns/README.md",
+      "demo": "playground/saas-patterns/index.html",
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "styleIds": [
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "workspace",
+        "b2b-saas",
+        "operations"
+      ],
+      "dependencies": [
+        "DT-001",
+        "IP-003",
+        "PR-002"
+      ],
+      "verified": "Standalone HTML/JS demo. Not a React package export or real app; Chromium smoke and unit test results pending."
+    },
+    {
+      "id": "TPL-002",
+      "type": "page-template",
+      "name": "Editorial Reading Library",
+      "stage": "prototype",
+      "reuseKind": "composition-recipe",
+      "priority": "P1",
+      "tags": [
+        "v0.8",
+        "page-blueprint",
+        "application-context",
+        "standalone"
+      ],
+      "path": "playground/page-blueprints/editorial-library/README.md",
+      "demo": "playground/page-blueprints/editorial-library/index.html",
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "styleIds": [
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "publication",
+        "reading",
+        "knowledge-base"
+      ],
+      "dependencies": [
+        "DT-003",
+        "IP-002"
+      ],
+      "verified": "Standalone HTML/JS demo. Not a React package export or real app; Chromium smoke and unit test results pending."
+    },
+    {
+      "id": "TPL-003",
+      "type": "page-template",
+      "name": "Mobile Daily Habits",
+      "stage": "prototype",
+      "reuseKind": "composition-recipe",
+      "priority": "P1",
+      "tags": [
+        "v0.8",
+        "page-blueprint",
+        "application-context",
+        "standalone"
+      ],
+      "path": "playground/page-blueprints/mobile-habits/README.md",
+      "demo": "playground/page-blueprints/mobile-habits/index.html",
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "styleIds": [
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "consumer-mobile",
+        "learning",
+        "gamification"
+      ],
+      "dependencies": [
+        "DT-004",
+        "IP-008"
+      ],
+      "verified": "Standalone HTML/JS demo. Not a React package export or real app; Chromium smoke and unit test results pending."
+    },
+    {
+      "id": "TPL-004",
+      "type": "page-template",
+      "name": "Bold Grid Creative Campaign",
+      "stage": "prototype",
+      "reuseKind": "composition-recipe",
+      "priority": "P1",
+      "tags": [
+        "v0.8",
+        "page-blueprint",
+        "application-context",
+        "standalone"
+      ],
+      "path": "playground/bold-grid/README.md",
+      "demo": "playground/bold-grid/index.html",
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "styleIds": [
+        "neo-brutalist"
+      ],
+      "applicationContexts": [
+        "campaign",
+        "creative-portfolio",
+        "indie-brand"
+      ],
+      "dependencies": [
+        "DT-005",
+        "IP-013",
+        "PR-006"
+      ],
+      "verified": "Standalone HTML/JS demo. Not a React package export or real app; Chromium smoke and unit test results pending."
     }
   ],
   "referenceImplementationRoot": "components/reference",

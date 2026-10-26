@@ -18,3 +18,7 @@
 [AI WORKFLOW PLATFORM](examples/ai-workflow-platform.json) 保留此前确定的 Refined Light SaaS 方案，但它仅作为一个项目的候选组合。其他应用无需继承它。
 
 **注意：** 不应自动为所有应用生成同样的侧栏、Dashboard 或顶部工具条。
+
+## V0.8 可选页面模板
+
+通过 [模板目录](../playground/page-blueprints/README.md) 确定应用场景，再运行 `node scripts/compose-page.mjs --list` 和 `node scripts/compose-page.mjs --template=TPL-002 --format=markdown` 生成可提交给 Codex 的页面实施清单。明确区分“独立 HTML/JS 原型”和“React 组件候选”，不得声称页面原型已经自动组合或完成真实业务集成。
