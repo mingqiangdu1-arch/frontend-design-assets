@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0",
+  "status": "unapproved",
+  "policy": "Screenshots collected by CI are evidence, not baselines. Only manual reviewers may sign and commit versioned approved hashes. No auto-promotion on green smoke test.",
+  "approved": {},
+  "targets": {
+    "matrix": {
+      "prefix": "matrix-",
+      "themes": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "widths": [
+        390,
+        768,
+        1440
+      ]
+    },
+    "workbench": {
+      "prefix": "workbench-",
+      "widths": [
+        390,
+        768,
+        1440
+      ]
+    },
+    "commerce": {
+      "prefix": "commerce-",
+      "widths": [
+        390,
+        768,
+        1440
+      ]
+    }
+  },
+  "reviewRequirements": [
+    "review actual PNG pixels at every declared viewport",
+    "check focus, cropping, touch targets and contrast",
+    "document reviewer, exact SHA256 and source commit",
+    "re-review on visual design changes",
+    "do not infer approval from a completed browser job"
+  ]
+}

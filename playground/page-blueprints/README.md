@@ -27,3 +27,7 @@ Run `npm run dev:workbench` for the actual demo. Integration and screenshot QA: 
 | TPL-006 | Product-first retail discovery (new) | Commerce Atelier | [Product Collection](../commerce-atelier/README.md) |
 
 **V0.11:** TPL-006 is a sixth *standalone HTML/CSS/JS* design direction. It is not wired to the four-theme React package. It has real local filtering, availability semantics and simulated bag state but no commerce backend or checkout.
+
+| TPL-007 | Editorial review, second React page | Editorial Warm | [Folio Review](../editorial-review/README.md) |
+
+**V0.12:** TPL-007 joins TPL-005 as a true React/TypeScript page using actual `packages/ui` exports, while retaining a content-first layout rather than reusing the dark professional shell. Launch on port 5176; its gallery card links to static setup instructions. Remaining TPL-001–004 and TPL-006 are standalone HTML/CSS/JS reference demos.

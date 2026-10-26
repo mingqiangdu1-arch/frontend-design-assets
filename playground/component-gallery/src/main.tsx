@@ -1,4 +1,5 @@
 import * as React from "react";
+import {StateMatrix} from "./StateMatrix";
 import {createRoot} from "react-dom/client";
 import {ThemeSurface,Button,Badge,Card,TextField,TextAreaField,SelectField,CheckboxField,SwitchField,
  Tabs,Alert,Progress,Skeleton,Dialog,EmptyState,Avatar,DataList,Toast,type ThemeId,type Tone} from "../../../packages/ui/src/index";
@@ -145,4 +146,4 @@ function App(){
 }
 const root=document.getElementById("root");
 if(!root)throw new Error("Gallery root missing");
-createRoot(root).render(<App/>);
+createRoot(root).render(new URLSearchParams(window.location.search).get("view")==="matrix"?<StateMatrix/>:<App/>);

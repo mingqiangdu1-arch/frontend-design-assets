@@ -2963,6 +2963,153 @@
       "dependencies": [],
       "details": "styles/commerce-atelier/README.md",
       "notion": "[private-notion-link-redacted]"
+    },
+    {
+      "id": "IP-016",
+      "type": "interaction",
+      "name": "Component state matrix across four React themes",
+      "stage": "prototype",
+      "reuseKind": "styled-implementation",
+      "priority": "P1",
+      "tags": [
+        "v0.12",
+        "react",
+        "state-coverage"
+      ],
+      "path": "docs/interactions/component-state-matrix.md",
+      "demo": "playground/component-gallery/index.html",
+      "styleIds": [],
+      "applicationContexts": [
+        "publication",
+        "content-platform",
+        "component-library"
+      ],
+      "dependencies": [
+        "UI-011",
+        "UI-014",
+        "UI-019",
+        "UI-023"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "verified": "Reference implementation. Automated browser and build checks pending; no production certification or human-approved visual baseline."
+    },
+    {
+      "id": "KIT-012",
+      "type": "archive",
+      "name": "State Matrix React specimen page",
+      "stage": "prototype",
+      "reuseKind": "styled-implementation",
+      "priority": "P1",
+      "tags": [
+        "v0.12",
+        "react",
+        "state-coverage"
+      ],
+      "path": "playground/component-gallery/src/StateMatrix.tsx",
+      "demo": "playground/component-gallery/index.html",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "publication",
+        "content-platform",
+        "component-library"
+      ],
+      "dependencies": [
+        "IP-016"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "verified": "Reference implementation. Automated browser and build checks pending; no production certification or human-approved visual baseline."
+    },
+    {
+      "id": "PR-011",
+      "type": "recipe",
+      "name": "Editorial Warm React review-room composition",
+      "stage": "prototype",
+      "reuseKind": "composition-recipe",
+      "priority": "P1",
+      "tags": [
+        "v0.12",
+        "react",
+        "state-coverage"
+      ],
+      "path": "recipes/editorial-review-react.md",
+      "demo": "playground/editorial-review/index.html",
+      "styleIds": [
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "publication",
+        "content-platform",
+        "component-library"
+      ],
+      "dependencies": [
+        "UI-010",
+        "UI-011",
+        "UI-019"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "verified": "Reference implementation. Automated browser and build checks pending; no production certification or human-approved visual baseline."
+    },
+    {
+      "id": "KIT-011",
+      "type": "archive",
+      "name": "Folio editorial React page implementation",
+      "stage": "prototype",
+      "reuseKind": "styled-implementation",
+      "priority": "P1",
+      "tags": [
+        "v0.12",
+        "react",
+        "state-coverage"
+      ],
+      "path": "playground/editorial-review/README.md",
+      "demo": "playground/editorial-review/index.html",
+      "styleIds": [
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "publication",
+        "content-platform",
+        "component-library"
+      ],
+      "dependencies": [
+        "PR-011"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "verified": "Reference implementation. Automated browser and build checks pending; no production certification or human-approved visual baseline."
+    },
+    {
+      "id": "TPL-007",
+      "type": "page-template",
+      "name": "Editorial Warm React Review Room",
+      "stage": "prototype",
+      "reuseKind": "composition-recipe",
+      "priority": "P1",
+      "tags": [
+        "v0.12",
+        "react",
+        "state-coverage"
+      ],
+      "path": "playground/editorial-review/README.md",
+      "demo": "playground/editorial-review/index.html",
+      "styleIds": [
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "publication",
+        "content-platform",
+        "component-library"
+      ],
+      "dependencies": [
+        "PR-011",
+        "KIT-011"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "verified": "Reference implementation. Automated browser and build checks pending; no production certification or human-approved visual baseline."
     }
   ],
   "referenceImplementationRoot": "components/reference",

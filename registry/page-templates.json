@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "defaultTemplateId": null,
   "policy": "Explicit template/style selection only; examples and candidates, never automatic production certification or cross-style reuse.",
   "templates": [
@@ -247,6 +247,68 @@
         "real photography and checkout data/contracts before any production integration"
       ],
       "note": "Fictitious product catalog and CSS-only object silhouettes. No verified stock, checkout, real product photography or React component package integration."
+    },
+    {
+      "id": "TPL-007",
+      "name": "Editorial Warm React Review Room",
+      "applicationContexts": [
+        "publication",
+        "content-platform",
+        "knowledge-base"
+      ],
+      "styleId": "editorial-warm",
+      "status": "prototype",
+      "implementation": "react-vite",
+      "demo": "playground/editorial-review/index.html",
+      "source": "playground/editorial-review/README.md",
+      "preview": "playground/editorial-review/preview.html",
+      "tokens": "styles/editorial-warm/tokens.css",
+      "runCommand": "npm run dev:editorial-react",
+      "buildCommand": "npm run build:editorial-react",
+      "assetIds": [
+        "PR-011",
+        "UI-010",
+        "UI-011",
+        "UI-012",
+        "UI-013",
+        "UI-014",
+        "UI-019",
+        "UI-021",
+        "UI-023",
+        "UI-024",
+        "UI-025",
+        "UI-027"
+      ],
+      "wiredUIExportIds": [
+        "UI-010",
+        "UI-011",
+        "UI-012",
+        "UI-013",
+        "UI-014",
+        "UI-019",
+        "UI-021",
+        "UI-023",
+        "UI-024",
+        "UI-025",
+        "UI-027"
+      ],
+      "sections": [
+        "Content-first editorial masthead and page hierarchy",
+        "Searchable story collection and publication-status filters",
+        "Selected story inspector with React Tabs",
+        "Local status update with latest-action undo Toast",
+        "Native dialog reading preview"
+      ],
+      "requiredChecks": [
+        "true React import + typecheck",
+        "Vite build",
+        "search and filtering",
+        "status change and undo",
+        "dialog Escape",
+        "390/768/1440 screenshot capture, no overflow",
+        "human visual and assistive technology audit"
+      ],
+      "note": "Real React component composition, in-memory editorial fixtures. No connected CMS, publishing, permissions, version history or production readiness."
     }
   ]
 }

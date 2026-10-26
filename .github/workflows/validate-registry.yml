@@ -49,10 +49,14 @@ jobs:
           node --check playground/asset-explorer/app.mjs
           node --check playground/commerce-atelier/model.mjs
           node --check playground/commerce-atelier/app.mjs
+          node --check scripts/visual-evidence.mjs
+          node --check scripts/check-component-states.mjs
           node --check scripts/dev-static.mjs
       - name: Audit scoped theme contrast and CSS token drift
         run: node scripts/contrast-audit.mjs
       - name: Validate asset finder syntax
         run: node --check scripts/find-assets.mjs
+      - name: Validate selected React state matrix declarations
+        run: node scripts/check-component-states.mjs
       - name: Test isolated state models
         run: node --test tests/*.test.mjs

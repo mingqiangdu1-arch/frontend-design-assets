@@ -4,9 +4,9 @@ import fs from "node:fs";
 import {listTemplates,chooseTemplate,buildPlan,toMarkdown,runCLI} from "../scripts/compose-page.mjs";
 import {validatePageRegistry} from "../scripts/check-page-templates.mjs";
 const pages=JSON.parse(fs.readFileSync("registry/page-templates.json","utf8")),components=JSON.parse(fs.readFileSync("registry/components.json","utf8"));
-test("six templates have distinct IDs and explicit styles",()=>{
- assert.equal(pages.templates.length,6);
- assert.equal(new Set(pages.templates.map(t=>t.id)).size,6);
+test("seven templates have distinct IDs and explicit styles",()=>{
+ assert.equal(pages.templates.length,7);
+ assert.equal(new Set(pages.templates.map(t=>t.id)).size,7);
  assert.equal(listTemplates(pages,{context:"reading"}).length,1);
  assert.equal(listTemplates(pages,{style:"neo-brutalist"})[0].id,"TPL-004");
 });
@@ -35,7 +35,7 @@ test("CLI listing and exact JSON plan",()=>{
  assert.throws(()=>runCLI(["--style=unknown"]),/Unknown style/);
 });
 test("page manifest references existing sources and indexed assets",()=>{
- const v=validatePageRegistry();assert.equal(v.templates,6);assert.ok(v.assets>=92);
+ const v=validatePageRegistry();assert.equal(v.templates,7);assert.ok(v.assets>=92);
 });
 
 test("React blueprint has verified integration flags and a separate Vite launch command",()=>{
@@ -56,3 +56,5 @@ test("commerce-atelier is explicitly selected and not React component compatible
  assert.ok(plan.assets.assetIds.includes("DT-006"));
  assert.throws(()=>chooseTemplate(pages,{template:"TPL-006",style:"editorial-warm"}),/Incompatible/);
 });
+
+test("second actual React page has explicit Editorial Warm wiring",()=>{const page=chooseTemplate(pages,{template:"TPL-007",style:"editorial-warm"});const plan=buildPlan(pages,components,page);assert.equal(plan.assets.demoActuallyUsesReactLibrary,true);assert.ok(plan.assets.relatedReactComponentCandidates.some(x=>x.status==="wired-in-demo"));assert.equal(plan.runCommand,"npm run dev:editorial-react");assert.throws(()=>chooseTemplate(pages,{template:"TPL-007",style:"precision-dark"}),/Incompatible/);});

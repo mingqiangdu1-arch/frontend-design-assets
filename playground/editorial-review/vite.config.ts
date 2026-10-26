@@ -1,0 +1,1 @@
+import {defineConfig} from "vite";export default defineConfig({root:"playground/editorial-review",server:{host:"127.0.0.1",port:5176,strictPort:true,fs:{allow:["../.."]}},build:{outDir:"../../dist/editorial-review",emptyOutDir:true}});

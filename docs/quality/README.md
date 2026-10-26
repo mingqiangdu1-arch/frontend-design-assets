@@ -90,3 +90,7 @@ Extend browser smoke to SaaS v0.2/v0.3; standardize reusable style specimens, ad
 - `node --test tests/commerce-atelier.test.mjs` checks multiselect facet intersections, sorts, disabled variants, local bag totals and immutability.
 - `npm run test:browser` includes a new commerce flow and responsive screenshot capture at 390/768/1440.
 - Demo product shapes are original CSS art, not real retail imagery; mobile touch/real screen-reader, product metadata, taxes, shipping, checkout and payment security remain unverified.
+
+## V0.12 deliberate visual sign-off gate
+
+[Visual review protocol](visual-review.md) documents evidence capture versus *approved* golden files. `npm run visual:capture` collects hashes and PNG listings without asserting visual correctness; `npm run visual:verify` fails closed when no human-approved baselines exist. Component state matrix tracks selected coverage separately from missing components, and Editorial Warm React example demonstrates an independent content page. Run `npm run test:component-states`, `npm run test:components:browser` and `npm run test:editorial-react:browser` for supported checks.

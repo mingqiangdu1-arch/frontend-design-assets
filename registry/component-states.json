@@ -1,0 +1,144 @@
+{
+  "schemaVersion": "1.0",
+  "scope": "selected component states, not complete UI package certification",
+  "styleIds": [
+    "refined-light-saas",
+    "precision-dark",
+    "editorial-warm",
+    "playful-pop"
+  ],
+  "rootUrl": "/playground/component-gallery/?view=matrix",
+  "stateCases": [
+    {
+      "id": "UI-011",
+      "states": [
+        "default",
+        "secondary",
+        "danger",
+        "loading",
+        "disabled"
+      ],
+      "notes": "loading/disabled actions must not trigger writes"
+    },
+    {
+      "id": "UI-014",
+      "states": [
+        "default",
+        "required",
+        "error",
+        "disabled"
+      ],
+      "notes": "aria-invalid and associated error text"
+    },
+    {
+      "id": "UI-017",
+      "states": [
+        "unchecked",
+        "disabled"
+      ],
+      "notes": "native checkbox states"
+    },
+    {
+      "id": "UI-018",
+      "states": [
+        "on",
+        "disabled"
+      ],
+      "notes": "controlled switch role semantics"
+    },
+    {
+      "id": "UI-012",
+      "states": [
+        "neutral",
+        "info",
+        "success",
+        "warning",
+        "danger"
+      ],
+      "notes": "semantic badge tones"
+    },
+    {
+      "id": "UI-020",
+      "states": [
+        "info",
+        "warning",
+        "danger",
+        "success"
+      ],
+      "notes": "danger uses alert; others status"
+    },
+    {
+      "id": "UI-021",
+      "states": [
+        "0-percent",
+        "60-percent",
+        "100-percent",
+        "interactive"
+      ],
+      "notes": "aria-valuenow must match actual value"
+    },
+    {
+      "id": "UI-022",
+      "states": [
+        "loading"
+      ],
+      "notes": "skeleton hidden from screen reader; separate status"
+    },
+    {
+      "id": "UI-019",
+      "states": [
+        "controlled"
+      ],
+      "notes": "keyboard tabs skip disabled choices"
+    },
+    {
+      "id": "UI-024",
+      "states": [
+        "empty"
+      ],
+      "notes": "clear reason and next step"
+    },
+    {
+      "id": "UI-023",
+      "states": [
+        "modal-closed"
+      ],
+      "notes": "opened via button; Escape closes and returns focus"
+    },
+    {
+      "id": "UI-027",
+      "states": [
+        "trigger"
+      ],
+      "notes": "status and danger toast with explicit dismissal"
+    },
+    {
+      "id": "STATE-REQUEST",
+      "states": [
+        "idle",
+        "loading",
+        "empty",
+        "error",
+        "success"
+      ],
+      "notes": "testable local finite-state fixture; not UI export"
+    }
+  ],
+  "uncoveredComponentIds": [
+    "UI-010",
+    "UI-013",
+    "UI-015",
+    "UI-016",
+    "UI-025",
+    "UI-026"
+  ],
+  "maturity": "prototype",
+  "visualBaselineStatus": "unapproved",
+  "accessibilityStatus": "limited automated keyboard and semantics, no complete screen reader evaluation",
+  "browserTargets": [
+    "chromium desktop 1440",
+    "chromium 768",
+    "chromium 390"
+  ],
+  "approval": "Screenshots captured as ephemeral CI evidence; stable baselines require independent human sign-off"
+}

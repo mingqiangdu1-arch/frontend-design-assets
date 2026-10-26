@@ -1,13 +1,13 @@
 import {test,expect} from "@playwright/test";
 
-test("page blueprint gallery exposes six separate archetypes and filters",async({page})=>{
+test("page blueprint gallery exposes seven separate archetypes and filters",async({page})=>{
  await page.goto("/playground/page-blueprints/");
- await expect(page.locator(".tile")).toHaveCount(6);
+ await expect(page.locator(".tile")).toHaveCount(7);
  await page.locator('[data-mode="reading"]').click();
  await expect(page.locator(".tile:visible")).toHaveCount(1);
  await expect(page.locator('[data-template="TPL-002"]')).toBeVisible();
  await page.locator('[data-mode="all"]').click();
- await expect(page.locator(".tile:visible")).toHaveCount(6);
+ await expect(page.locator(".tile:visible")).toHaveCount(7);
 });
 
 test("editorial page: search, open article and Escape restore usable focus",async({page})=>{
@@ -80,4 +80,13 @@ test("commerce blueprints have their own visual scope and runnable product page"
  await page.locator('[data-template="TPL-006"] a').click();
  await expect(page.locator('body[data-design-theme="commerce-atelier"]')).toBeVisible();
  await expect(page.locator(".product-card")).toHaveCount(6);
+});
+
+test("editorial React blueprint catalog routes to honest launch instructions",async({page})=>{
+ await page.goto("/playground/page-blueprints/");
+ await page.locator('[data-mode="content-platform"]').click();
+ await expect(page.locator(".tile:visible")).toHaveCount(1);
+ await page.locator('[data-template="TPL-007"] a').click();
+ await expect(page.getByRole("heading",{name:/An editorial review room/})).toBeVisible();
+ await expect(page.locator("pre")).toContainText("npm run dev:editorial-react");
 });

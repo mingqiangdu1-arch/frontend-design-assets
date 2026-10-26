@@ -83,3 +83,11 @@ Use local HTTP to inspect prototype files in a browser agent. No autonomous back
 - No React `packages/ui` support is declared for the new theme. `--template=TPL-006` must show no wired React components.
 - Product images in the demo are original CSS geometric illustrations, NOT authorized real product photographs. Prices and basket are fictional; do not show live checkout or guarantee stock.
 - Run unit/filter/variant tests and Chromium 390/768/1440 smoke before promoting maturity. Do not automatically adopt glass/3D trends as styles without task evidence.
+
+## V0.12 state coverage / visual evidence / real editorial React
+
+- Do not infer a style from current popularity: React package supports **four** explicit themes; other two styles remain independent static demonstrations.
+- `registry/component-states.json` explicitly distinguishes selected state coverage from the six UI exports not yet covered; a test passing does not imply production certification.
+- `npm run visual:capture` emits only **unapproved** screenshot hashes. `npm run visual:verify` deliberately fails unless a reviewer has signed concrete image hashes and source commit in `registry/visual-baselines.json`.
+- TPL-005 Precision Dark + TPL-007 Editorial Warm are actual React package compositions with different page grammars; do not use one shell for all application types.
+- New full-page React blueprints require explicit UI imports, their own port/config, responsive smoke, source linkage, no fake server writes and honest technical maturity.

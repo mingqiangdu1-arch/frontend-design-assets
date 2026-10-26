@@ -1,6 +1,6 @@
 import {defineConfig,devices} from "@playwright/test";
 export default defineConfig({
- testDir:"./tests/browser",testMatch:"component-gallery.spec.mjs",
+ testDir:"./tests/browser",testMatch:["component-gallery.spec.mjs","component-state-matrix.spec.mjs"],
  timeout:30000,expect:{timeout:7000},retries:process.env.CI?1:0,
  workers:process.env.CI?1:undefined,
  reporter:"list",

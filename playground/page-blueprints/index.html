@@ -1,12 +1,12 @@
 <!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page Blueprints · Frontend Design Assets</title>
-<meta name="description" content="Six independent page structures for different product categories.">
+<meta name="description" content="Seven independent page structures for different product categories.">
 <link rel="stylesheet" href="gallery.css"><script type="module" src="gallery.mjs"></script></head><body>
 <header><div class="brand"><strong>◈</strong> FRONTEND DESIGN ASSETS <span>/ PAGE BLUEPRINTS</span></div><a href="../../README.md">研究仓库 ↗</a></header>
-<main><div class="hero"><span>ARCHITECTURE BEFORE DECORATION / 0.11</span><h1>Don't start with<br><em>the same page.</em></h1><p>先从用户任务、内容密度和交互设备出发，再选择页面配方。六种应用类型、六种布局语言，互不强制兼容。</p></div>
+<main><div class="hero"><span>ARCHITECTURE BEFORE DECORATION / 0.12</span><h1>Don't start with<br><em>the same page.</em></h1><p>先从用户任务、内容密度和交互设备出发，再选择页面配方。七种页面模板、六套独立风格，互不强制兼容。</p></div>
 <div class="control"><div role="group" aria-label="模板类型" class="filters">
 <button data-mode="all" aria-pressed="true">全部类型</button><button data-mode="workspace" aria-pressed="false">工作平台</button>
 <button data-mode="reading" aria-pressed="false">阅读内容</button><button data-mode="consumer-mobile" aria-pressed="false">移动消费</button>
-<button data-mode="campaign" aria-pressed="false">创意营销</button><button data-mode="developer-tool" aria-pressed="false">专业开发工具</button><button data-mode="commerce-storefront" aria-pressed="false">商品电商</button></div><p id="count" role="status" aria-live="polite">6 个页面模板</p></div>
+<button data-mode="campaign" aria-pressed="false">创意营销</button><button data-mode="developer-tool" aria-pressed="false">专业开发工具</button><button data-mode="commerce-storefront" aria-pressed="false">商品电商</button><button data-mode="content-platform" aria-pressed="false">内容协作</button></div><p id="count" role="status" aria-live="polite">7 个页面模板</p></div>
 <section id="blueprints" class="grid" aria-label="页面模板">
 <article class="tile workspace" data-template="TPL-001" data-context="workspace">
 <div class="mini"><div class="mini-sidebar">◈<i></i><i></i><i></i><i></i></div><div class="mini-table"><div class="mini-top"><b>Records</b><small>＋ New</small></div><span></span><span></span><span></span><span></span></div></div>
@@ -26,6 +26,9 @@
 <article class="tile commerce" data-template="TPL-006" data-context="commerce-storefront">
 <div class="mini"><div class="commerce-cover"><span>atelier objects</span><div class="commerce-shape"></div><div class="commerce-copy">FORM<br>&amp; FUNCTION</div><small>COLLECTION 01—06</small></div></div>
 <div class="tile-body"><span class="code">TPL-006 / COMMERCE ATELIER · STATIC</span><h2>Commerce Product Collection</h2><p>商品导向的精致陈列：筛选、排序、规格、收藏和模拟购物袋。</p><a href="../commerce-atelier/index.html">打开商品目录体验 ↗</a></div></article>
+<article class="tile editorial-react" data-template="TPL-007" data-context="content-platform"><div class="mini">
+<div class="editorial-react-preview"><div class="er-brand">folio·</div><div class="er-title">Words worth<br><em>reviewing.</em></div><div class="er-article"><span>01</span><b>EDITORIAL REVIEW</b><small>IN REVIEW</small></div><div class="er-article"><span>02</span><b>CONTENT IN CONTEXT</b><small>READY</small></div></div></div>
+<div class="tile-body"><span class="code">TPL-007 / EDITORIAL WARM · REACT</span><h2>Folio Editorial Review Room</h2><p>实际集成 React 组件库的内容审阅页面：搜索、状态、阅读预览与本地撤销。</p><a href="../editorial-review/preview.html">打开 React 运行说明 ↗</a></div></article>
 </section>
-<div class="footnote"><strong>重要边界：</strong>模板按场景独立实现。TPL-005 实际集成 React 组件库，其余五套为独立 HTML/JS 原型；均不代表生产级应用，也不包含真实业务后端。要快速生成选择方案，请运行 <code>node scripts/compose-page.mjs --list</code>。</div>
-</main><footer>Original templates · No universal default theme · V0.11</footer></body></html>
+<div class="footnote"><strong>重要边界：</strong>模板按场景独立实现。TPL-005、TPL-007 实际集成 React 组件库，其余五套为独立 HTML/JS 原型；均不代表生产级应用，也不包含真实业务后端。要快速生成选择方案，请运行 <code>node scripts/compose-page.mjs --list</code>。</div>
+</main><footer>Original templates · No universal default theme · V0.12</footer></body></html>

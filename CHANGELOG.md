@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-26 · V0.12 React component state matrix, visual sign-off policy and Editorial React page
+
+- Added 12-of-18 real React component state specimen groups across the four supported themes, with six explicitly uncovered component exports and isolated request-state fixture.
+- Added four-theme responsive screenshot capture (390/768/1440), SHA256 evidence CLI, and human-only baseline approval policy; visual verification deliberately fails before signed baselines exist.
+- Added TPL-007 Folio Editorial Warm React review-room, a second true UI-package-integrated page with independent editorial information hierarchy, story search, state review, modal preview and local undo.
+- Registered PR-011/KIT-011/KIT-012/IP-016/TPL-007, isolated Vite CI, updated seven-template gallery and machine assemble contract; no new visual styles or package-theme claims.
+- All new artifacts remain research prototypes: no real CMS/publishing, app permissions, cross-engine/screen-reader review or approved snapshot baselines.
+
+
 ## 2026-10-26 · V0.11 product-first Commerce Atelier independent style
 
 - Researched 2025/2026 official design materials and ecommerce usability guidance to justify one missing commerce visual system; deferred glass/3D/bento as optional context-driven techniques.

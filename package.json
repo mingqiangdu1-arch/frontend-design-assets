@@ -1,7 +1,7 @@
 {
   "name": "frontend-design-assets",
   "private": true,
-  "version": "0.11.0",
+  "version": "0.12.0",
   "type": "module",
   "description": "Living multi-style design assets, React component lab and independent research demos.",
   "scripts": {
@@ -22,7 +22,13 @@
     "test:workbench:browser": "playwright test -c playwright.workbench.config.mjs",
     "dev:catalog": "node scripts/dev-static.mjs",
     "test:catalog": "node --test tests/asset-explorer.test.mjs",
-    "test:commerce": "node --test tests/commerce-atelier.test.mjs"
+    "test:commerce": "node --test tests/commerce-atelier.test.mjs",
+    "dev:editorial-react": "vite --config playground/editorial-review/vite.config.ts",
+    "build:editorial-react": "vite build --config playground/editorial-review/vite.config.ts",
+    "test:editorial-react:browser": "playwright test -c playwright.editorial.config.mjs",
+    "test:component-states": "node scripts/check-component-states.mjs",
+    "visual:capture": "node scripts/visual-evidence.mjs capture",
+    "visual:verify": "node scripts/visual-evidence.mjs verify"
   },
   "dependencies": {
     "react": "19.3.1",

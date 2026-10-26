@@ -1,5 +1,5 @@
 {
-  "version": "0.6.0",
+  "version": "0.12.0",
   "package": "@frontend-design-assets/ui",
   "status": "reference-implemented; not production-certified",
   "source": "packages/ui/src/index.tsx",
@@ -264,5 +264,7 @@
       "verified": "TypeScript + library/gallery build and 8 Chromium smoke checks passed (GitHub run 40284518385). Real target-app integration not completed.",
       "notion": "[private-notion-link-redacted]"
     }
-  ]
+  ],
+  "stateMatrix": "registry/component-states.json",
+  "stateCoverage": "12 of 18 exports with selected state demonstrations. Six uncovered. Human visual baseline unapproved."
 }

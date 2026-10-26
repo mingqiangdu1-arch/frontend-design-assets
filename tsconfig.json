@@ -24,6 +24,8 @@
     "packages/ui/src/**/*",
     "playground/component-gallery/src/**/*",
     "playground/precision-workbench/src/**/*.tsx",
-    "playground/precision-workbench/src/**/*.ts"
+    "playground/precision-workbench/src/**/*.ts",
+    "playground/editorial-review/src/**/*.tsx",
+    "playground/editorial-review/src/**/*.ts"
   ]
 }
