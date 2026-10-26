@@ -30,3 +30,7 @@
 ## Known limits
 
 Original exploratory values; no real store/catalog, licensed images, analytics, checkout, production product, screen-reader or full cross-browser validation. This style is deliberately **not** applied to the existing SaaS component gallery until a dedicated compatibility contract is built and tested.
+
+## Asset catalog entry
+
+[Notion DT-005 visual direction]([private-notion-link-redacted]) · [V0.7 research summary]([private-notion-link-redacted]).

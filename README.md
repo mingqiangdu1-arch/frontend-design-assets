@@ -66,4 +66,6 @@ frontend-design-assets/
 
 ## V0.7 · 跨风格探索和行为实验
 
+[Notion 阶段报告]([private-notion-link-redacted]) · [可检索素材数据库]([private-notion-link-redacted])
+
 新增 [Neo Brutalist / Bold Grid](styles/neo-brutalist/README.md) 视觉系列、[原创创意落地页实验](playground/bold-grid/README.md)、[交互状态实验室](playground/interaction-lab/README.md)、[动效选择规范](docs/motion/motion-system.md) 和两套独立[页面组合配方](recipes/expressive-campaign.md)。**现有四套主题的 React 组件库仍然只声明兼容原有四套；第五套风格尚未接入 React 组件包。**
