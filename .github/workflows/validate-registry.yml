@@ -32,6 +32,10 @@ jobs:
           node --check playground/saas-editing/app.mjs
           node --check playground/style-explorer/model.mjs
           node --check playground/style-explorer/explorer.mjs
+          node --check playground/bold-grid/model.mjs
+          node --check playground/bold-grid/app.mjs
+          node --check playground/interaction-lab/model.mjs
+          node --check playground/interaction-lab/app.mjs
       - name: Audit scoped theme contrast and CSS token drift
         run: node scripts/contrast-audit.mjs
       - name: Validate asset finder syntax

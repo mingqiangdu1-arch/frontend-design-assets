@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-26 · V0.7 independent style and interaction patterns
+
+- Added fifth *independent* style: Neo Brutalist / Bold Grid with original scoped Tokens, poster landing/campaign layout and interactive six-sample catalog.
+- Added reversible archive, preserved-draft wizard, button-based reorder with focus restoration, and native range dual-pane experiments in a standalone Interaction Lab.
+- Added cross-style motion semantics and progressive-enhancement View Transition guidance, page recipes, source references and machine asset registry entries.
+- React component library remains explicitly limited to its four previously supported style IDs; no universal default theme.
+- Added logic and Chromium smoke tests; external browser, screen-reader and target-product validation remain open.
+
+
 ## 2026-10-26 · V0.6 multi-style React component library
 
 - Created `packages/ui` with 18 original React/TypeScript components and explicit scoped semantic CSS bridges for four distinct visual styles.

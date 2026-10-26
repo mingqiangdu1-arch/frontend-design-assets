@@ -54,3 +54,10 @@ Extend browser smoke to SaaS v0.2/v0.3; standardize reusable style specimens, ad
 - [Source / integration](../../packages/ui/README.md) · [catalog](../../registry/components.json) · [gallery](../../playground/component-gallery/README.md)
 - Quality: `npm run check:components` and `npm run test:components:browser` (Chromium only).
 - A component-level visual mapping does not make four style systems share a single page layout. The gallery shows appearance and behavior, while the style explorer shows independent compositions.
+
+## V0.7 additive checks
+
+- `node --test tests/bold-grid.test.mjs tests/interaction-lab.test.mjs` for pure logic.
+- `npm run test:browser` now includes original Bold Grid and Interaction Lab Chromium smoke tests.
+- New Neo Brutalist semantic tokens must pass `node scripts/contrast-audit.mjs`; the fifth style deliberately does **not** inherit React `packages/ui` support.
+- Remaining manual checks: iOS/Android tap targets, Firefox/Safari focus/transition, real screen-reader announcements, responsive screenshots, UI code/brand provenance.

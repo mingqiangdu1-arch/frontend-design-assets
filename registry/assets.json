@@ -2098,6 +2098,370 @@
       ],
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
       "notion": "[private-notion-link-redacted]"
+    },
+    {
+      "id": "DT-005",
+      "type": "token",
+      "name": "Neo Brutalist / Bold Grid visual language",
+      "stage": "prototype",
+      "reuseKind": "style-token",
+      "priority": "P1",
+      "tags": [
+        "style",
+        "poster",
+        "typography",
+        "brutalist",
+        "expressive"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "styles/neo-brutalist/tokens.css",
+      "styleIds": [
+        "neo-brutalist"
+      ],
+      "applicationContexts": [
+        "creative-portfolio",
+        "indie-brand",
+        "campaign"
+      ],
+      "dependencies": [],
+      "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
+      "details": "styles/neo-brutalist/README.md",
+      "demo": "playground/bold-grid/index.html"
+    },
+    {
+      "id": "REF-026",
+      "type": "reference",
+      "name": "Brutalism structure and bold typography (Webflow lookbook)",
+      "stage": "analyzed",
+      "reuseKind": "design-reference",
+      "priority": "P1",
+      "tags": [
+        "reference",
+        "interaction",
+        "visual",
+        "accessible"
+      ],
+      "source": "https://webdesignlookbook.webflow.io/",
+      "path": "styles/neo-brutalist/README.md",
+      "styleIds": [],
+      "applicationContexts": [],
+      "dependencies": [],
+      "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
+      "details": "styles/neo-brutalist/README.md"
+    },
+    {
+      "id": "REF-027",
+      "type": "reference",
+      "name": "MDN View Transition API",
+      "stage": "analyzed",
+      "reuseKind": "design-reference",
+      "priority": "P1",
+      "tags": [
+        "reference",
+        "interaction",
+        "visual",
+        "accessible"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API",
+      "path": "docs/motion/motion-system.md",
+      "styleIds": [],
+      "applicationContexts": [],
+      "dependencies": [],
+      "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
+      "details": "docs/motion/motion-system.md"
+    },
+    {
+      "id": "REF-028",
+      "type": "reference",
+      "name": "WAI APG reorderable listbox guidance",
+      "stage": "analyzed",
+      "reuseKind": "design-reference",
+      "priority": "P1",
+      "tags": [
+        "reference",
+        "interaction",
+        "visual",
+        "accessible"
+      ],
+      "source": "https://www.w3.org/WAI/ARIA/apg/patterns/listbox/examples/listbox-rearrangeable/",
+      "path": "docs/interactions/advanced-patterns.md",
+      "styleIds": [],
+      "applicationContexts": [],
+      "dependencies": [],
+      "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
+      "details": "docs/interactions/advanced-patterns.md"
+    },
+    {
+      "id": "IP-009",
+      "type": "interaction",
+      "name": "Undo-last optimistic archive",
+      "stage": "prototype",
+      "reuseKind": "behavior-pattern",
+      "priority": "P1",
+      "tags": [
+        "interaction",
+        "keyboard",
+        "recovery",
+        "motion",
+        "v0.7"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "docs/interactions/advanced-patterns.md",
+      "styleIds": [],
+      "applicationContexts": [
+        "workspace",
+        "creative-portfolio"
+      ],
+      "dependencies": [
+        "REF-028"
+      ],
+      "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
+      "demo": "playground/interaction-lab/index.html",
+      "details": "docs/interactions/advanced-patterns.md"
+    },
+    {
+      "id": "IP-010",
+      "type": "interaction",
+      "name": "Guided multi-step draft form",
+      "stage": "prototype",
+      "reuseKind": "behavior-pattern",
+      "priority": "P1",
+      "tags": [
+        "interaction",
+        "keyboard",
+        "recovery",
+        "motion",
+        "v0.7"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "docs/interactions/advanced-patterns.md",
+      "styleIds": [],
+      "applicationContexts": [
+        "workspace",
+        "creative-portfolio"
+      ],
+      "dependencies": [],
+      "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
+      "demo": "playground/interaction-lab/index.html",
+      "details": "docs/interactions/advanced-patterns.md"
+    },
+    {
+      "id": "IP-011",
+      "type": "interaction",
+      "name": "Accessible button-based reorder",
+      "stage": "prototype",
+      "reuseKind": "behavior-pattern",
+      "priority": "P1",
+      "tags": [
+        "interaction",
+        "keyboard",
+        "recovery",
+        "motion",
+        "v0.7"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "docs/interactions/advanced-patterns.md",
+      "styleIds": [],
+      "applicationContexts": [
+        "workspace",
+        "creative-portfolio"
+      ],
+      "dependencies": [
+        "REF-028"
+      ],
+      "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
+      "demo": "playground/interaction-lab/index.html",
+      "details": "docs/interactions/advanced-patterns.md"
+    },
+    {
+      "id": "IP-012",
+      "type": "interaction",
+      "name": "Adjustable native-range split workspace",
+      "stage": "prototype",
+      "reuseKind": "behavior-pattern",
+      "priority": "P1",
+      "tags": [
+        "interaction",
+        "keyboard",
+        "recovery",
+        "motion",
+        "v0.7"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "docs/interactions/advanced-patterns.md",
+      "styleIds": [],
+      "applicationContexts": [
+        "workspace",
+        "creative-portfolio"
+      ],
+      "dependencies": [],
+      "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
+      "demo": "playground/interaction-lab/index.html",
+      "details": "docs/interactions/advanced-patterns.md"
+    },
+    {
+      "id": "IP-013",
+      "type": "interaction",
+      "name": "Progressive View Transition filtering",
+      "stage": "prototype",
+      "reuseKind": "behavior-pattern",
+      "priority": "P1",
+      "tags": [
+        "interaction",
+        "keyboard",
+        "recovery",
+        "motion",
+        "v0.7"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "docs/motion/motion-system.md",
+      "styleIds": [],
+      "applicationContexts": [
+        "workspace",
+        "creative-portfolio"
+      ],
+      "dependencies": [
+        "REF-027"
+      ],
+      "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
+      "demo": "playground/bold-grid/index.html",
+      "details": "docs/motion/motion-system.md"
+    },
+    {
+      "id": "MOT-001",
+      "type": "motion",
+      "name": "Reusable motion timing / fallback reference",
+      "stage": "analyzed",
+      "reuseKind": "motion-reference",
+      "priority": "P1",
+      "tags": [
+        "animation",
+        "motion",
+        "reduced-motion",
+        "progressive-enhancement"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "registry/motion.json",
+      "styleIds": [],
+      "applicationContexts": [],
+      "dependencies": [
+        "REF-027"
+      ],
+      "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
+      "details": "docs/motion/motion-system.md"
+    },
+    {
+      "id": "PR-006",
+      "type": "recipe",
+      "name": "Expressive campaign landing composition",
+      "stage": "prototype",
+      "reuseKind": "composition-recipe",
+      "priority": "P1",
+      "tags": [
+        "creative",
+        "landing",
+        "composition",
+        "visual"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "recipes/expressive-campaign.md",
+      "styleIds": [
+        "neo-brutalist"
+      ],
+      "applicationContexts": [
+        "campaign",
+        "creative-portfolio"
+      ],
+      "dependencies": [
+        "DT-005",
+        "IP-013",
+        "MOT-001"
+      ],
+      "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
+      "demo": "playground/bold-grid/index.html"
+    },
+    {
+      "id": "PR-007",
+      "type": "recipe",
+      "name": "Recoverable workflow workspace composition",
+      "stage": "prototype",
+      "reuseKind": "composition-recipe",
+      "priority": "P1",
+      "tags": [
+        "workflow",
+        "form",
+        "recovery",
+        "composition"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "recipes/recoverable-workflow.md",
+      "styleIds": [],
+      "applicationContexts": [
+        "workspace"
+      ],
+      "dependencies": [
+        "IP-009",
+        "IP-010",
+        "IP-011",
+        "IP-012"
+      ],
+      "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
+      "demo": "playground/interaction-lab/index.html"
+    },
+    {
+      "id": "KIT-006",
+      "type": "archive",
+      "name": "Bold Grid original visual experiment v0.7",
+      "stage": "prototype",
+      "reuseKind": "snapshot",
+      "priority": "P1",
+      "tags": [
+        "prototype",
+        "visual",
+        "demo"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "playground/bold-grid/README.md",
+      "styleIds": [
+        "neo-brutalist"
+      ],
+      "applicationContexts": [
+        "campaign",
+        "creative-portfolio"
+      ],
+      "dependencies": [
+        "DT-005",
+        "IP-013"
+      ],
+      "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
+      "demo": "playground/bold-grid/index.html"
+    },
+    {
+      "id": "KIT-007",
+      "type": "archive",
+      "name": "Cross-style Interaction Lab v0.7",
+      "stage": "prototype",
+      "reuseKind": "snapshot",
+      "priority": "P1",
+      "tags": [
+        "prototype",
+        "interaction",
+        "demo"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "playground/interaction-lab/README.md",
+      "styleIds": [],
+      "applicationContexts": [
+        "workspace"
+      ],
+      "dependencies": [
+        "IP-009",
+        "IP-010",
+        "IP-011",
+        "IP-012"
+      ],
+      "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
+      "demo": "playground/interaction-lab/index.html"
     }
   ],
   "referenceImplementationRoot": "components/reference",

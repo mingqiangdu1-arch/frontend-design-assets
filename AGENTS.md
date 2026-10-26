@@ -46,3 +46,10 @@ See `docs/styles/README.md`. New style IDs: `precision-dark`, `editorial-warm`, 
 `refined-light-saas` is a **scoped example collection**, not the repository theme. Its CSS variables activate only under `[data-design-theme="refined-light-saas"]`. `playground/initial-interaction-lab.html` is an independent old proof-of-concept. `components/reference/` consists of non-production reference implementations.
 
 Use local HTTP to inspect prototype files in a browser agent. No autonomous background crawling, updating or deploying is implied.
+
+## V0.7 scope boundaries
+
+- New `neo-brutalist` style is a standalone page experiment; `packages/ui` and `registry/components.json` are STILL compatible only with their explicitly declared four themes. Never infer fifth-theme React support from the presence of Token CSS.
+- Portable patterns IP-009..013 are behavior specs and independent HTML/JS samples; they are not production-ready React exports.
+- Motion choices: check `docs/motion/motion-system.md`, respect reduced motion, provide fallback, and manage focus explicitly when replacing DOM.
+- New repo quality checks include `tests/bold-grid.test.mjs`, `tests/interaction-lab.test.mjs`, and `tests/browser/creative-interactions.spec.mjs`.

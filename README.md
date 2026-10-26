@@ -14,13 +14,13 @@
 | --- | --- |
 | 了解跨风格架构与组装顺序 | [docs/multi-context-architecture.md](docs/multi-context-architecture.md) |
 | 查找全部资产及兼容标注 | [registry/assets.json](registry/assets.json) |
-| 选择某一套完整视觉风格 | [registry/styles.json](registry/styles.json) |
+| 选择某一套完整视觉风格 | [registry/styles.json](registry/styles.json) / [Bold Grid 视觉样例](playground/bold-grid/index.html) |
 | 查看 SaaS 专题研究与原型 | [SaaS 总览](docs/saas/README.md) / [列表实验 V0.2](playground/saas-patterns/index.html) / [表单编辑与筛选 V0.3](playground/saas-editing/index.html) |
 | 查看全部独立视觉风格 | [风格对比目录](docs/styles/README.md) / [选型矩阵](docs/styles/decision-matrix.md) / [Style Explorer](playground/style-explorer/index.html) |
 | 查看现有浅色 SaaS 风格 | [styles/refined-light-saas/README.md](styles/refined-light-saas/README.md) |
 | 按应用需求组合设计方案 | [applications/README.md](applications/README.md) |
-| 交互行为与验收参考 | [docs/interactions/patterns.md](docs/interactions/patterns.md) |
-| 研究来源与历史记录 | [docs/research/sources.md](docs/research/sources.md) |
+| 交互行为与验收参考 | [现有交互指南](docs/interactions/patterns.md) / [V0.7 Undo · Wizard · Reorder · Split](docs/interactions/advanced-patterns.md) / [交互实验室](playground/interaction-lab/index.html) |
+| 研究来源与历史记录 | [docs/research/sources.md](docs/research/sources.md) / [动效与 View Transitions](docs/motion/motion-system.md) |
 | 查看初始交互 Demo | [playground/initial-interaction-lab.html](playground/initial-interaction-lab.html) |
 | 通过条件检索复用资产 | [find-assets CLI](docs/quality/README.md) · `node scripts/find-assets.mjs --style=precision-dark --intent=command` |
 | 校验颜色与浏览器交互 | [质量基线 V0.5](docs/quality/README.md) |
@@ -63,3 +63,7 @@ frontend-design-assets/
 - [贡献与治理](docs/governance.md)、[更新日志](CHANGELOG.md)
 
 本仓库为独立资源库，**不会自动修改 AI WORKFLOW PLATFORM 或任何其他应用**。当前私有，不含第三方产品的专有源码、未授权视觉素材或字体文件。V0.6 新增独立 React/TypeScript 组件包与四风格互动展厅，仍不作为生产级已认证发行物。
+
+## V0.7 · 跨风格探索和行为实验
+
+新增 [Neo Brutalist / Bold Grid](styles/neo-brutalist/README.md) 视觉系列、[原创创意落地页实验](playground/bold-grid/README.md)、[交互状态实验室](playground/interaction-lab/README.md)、[动效选择规范](docs/motion/motion-system.md) 和两套独立[页面组合配方](recipes/expressive-campaign.md)。**现有四套主题的 React 组件库仍然只声明兼容原有四套；第五套风格尚未接入 React 组件包。**

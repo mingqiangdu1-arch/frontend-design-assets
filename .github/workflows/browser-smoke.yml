@@ -3,6 +3,8 @@ on:
   push:
     paths:
       - "playground/style-explorer/**"
+      - "playground/bold-grid/**"
+      - "playground/interaction-lab/**"
       - "styles/**"
       - "tests/browser/**"
       - "playwright.config.mjs"
@@ -11,6 +13,8 @@ on:
   pull_request:
     paths:
       - "playground/style-explorer/**"
+      - "playground/bold-grid/**"
+      - "playground/interaction-lab/**"
       - "styles/**"
       - "tests/browser/**"
       - "playwright.config.mjs"

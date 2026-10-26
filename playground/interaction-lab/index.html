@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Interaction Laboratory · Frontend Design Assets</title>
+<meta name="description" content="Cross-theme interaction patterns: undo, stepper, keyboard reordering, split workspace.">
+<link rel="stylesheet" href="../../tokens/refined-light.css">
+<link rel="stylesheet" href="style.css"><script type="module" src="app.mjs"></script></head>
+<body>
+<div data-design-theme="refined-light-saas" class="lab">
+ <header class="lab-header"><div class="brand"><span>◈</span><strong>INTERACTION LAB</strong><small>Pattern study / V0.7</small></div>
+ <a href="../../docs/interactions/advanced-patterns.md">查看行为规范 ↗</a></header>
+ <main>
+  <div class="intro"><span class="eyebrow">IP-009 — IP-012 · PORTABLE BEHAVIOR</span><h1>Good interfaces<br><em>remember what matters.</em></h1>
+  <p>四组独立的交互行为研究；示例采用 Refined Light，但行为和验证规则不绑定某套视觉风格。</p></div>
+  <section class="cards">
+   <article class="module" id="archiveModule"><header><span>01 / RECOVERY</span><h2>撤销优先的状态操作</h2><p>删除或归档后，用户应清楚地看到变化，并能够在合理范围内恢复。</p></header>
+    <div class="module-body">
+      <ul id="records" aria-label="可归档的模拟记录"></ul>
+      <div class="mini-note">此处只有临时前端状态；没有服务器、持久化或真正删除。</div>
+      <div id="archiveFeedback" class="feedback" role="status" aria-live="polite" hidden>
+        <span id="archiveText">记录已归档</span>
+        <button id="undo" type="button">撤销归档</button>
+        <button id="dismiss" type="button" aria-label="关闭提示">×</button>
+      </div>
+    </div>
+   </article>
+   <article class="module" id="wizardModule"><header><span>02 / GUIDED FLOW</span><h2>分步填写与草稿保持</h2><p>步骤清晰、错误就近、返回时保持此前填写内容。</p></header>
+    <div class="module-body">
+      <ol id="steps" class="steps" aria-label="表单步骤"></ol>
+      <div id="wizardBody" class="wizard"></div>
+      <div id="wizardError" role="alert" class="error" hidden></div>
+      <div class="actions"><button id="prev" type="button" class="outline">上一步</button><button id="next" type="button" class="primary">下一步</button></div>
+    </div>
+   </article>
+   <article class="module" id="orderModule"><header><span>03 / ORDER</span><h2>可访问的顺序调整</h2><p>不要求拖拽：明确的上移/下移按钮支持键盘，移动后保持操作焦点。</p></header>
+    <div class="module-body">
+      <ol class="order-list" id="orderList" aria-label="任务顺序"></ol>
+      <p role="status" aria-live="polite" id="orderStatus" class="mini-note">点击方向操作调整顺序。</p>
+    </div>
+   </article>
+   <article class="module" id="splitModule"><header><span>04 / WORKSPACE</span><h2>自适应双栏工作区</h2><p>用有标签的控制器调整比例，避免“只能用鼠标拖动”的交互设计。</p></header>
+    <div class="module-body">
+     <label for="splitRange" class="range-label"><strong>左栏宽度</strong><output id="splitValue" for="splitRange">50%</output></label>
+     <input id="splitRange" type="range" min="25" max="75" step="5" value="50" aria-label="左栏宽度比例">
+     <div id="splitPreview" class="split-preview" style="--left:50%">
+       <div><strong>EDIT / 01</strong><h3>内容编辑</h3><p>随着可用空间变化，文字会自动换行。</p></div>
+       <div><strong>PREVIEW / 02</strong><h3>实时预览</h3><p>演示响应式信息布局，而非真实富文本编辑器。</p></div>
+     </div><button id="resetSplit" type="button" class="outline">重置为 50%</button>
+    </div>
+   </article>
+  </section>
+  <p class="footnote">本实验只演示交互机制，数据均为本地模拟。与产品界面集成前还需检查焦点、触控、读屏和保存语义。</p>
+ </main>
+</div></body></html>
