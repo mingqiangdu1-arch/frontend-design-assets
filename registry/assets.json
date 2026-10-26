@@ -2635,7 +2635,8 @@
         "UI-011",
         "UI-019",
         "UI-023"
-      ]
+      ],
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "stage": "prototype",
@@ -2674,7 +2675,8 @@
         "UI-023",
         "UI-025",
         "UI-027"
-      ]
+      ],
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "stage": "prototype",
@@ -2706,7 +2708,8 @@
         "IP-009",
         "UI-019",
         "UI-027"
-      ]
+      ],
+      "notion": "[private-notion-link-redacted]"
     }
   ],
   "referenceImplementationRoot": "components/reference",

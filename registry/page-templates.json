@@ -207,7 +207,8 @@
         "390/768/1440px screenshots and no horizontal overflow",
         "manual keyboard and screen-reader evaluation"
       ],
-      "note": "First React-composed page using 11 real packages/ui exports; demo stores all data in memory. Requires Vite/Node; not runnable via static Python server."
+      "note": "First React-composed page using 11 real packages/ui exports; demo stores all data in memory. Requires Vite/Node; not runnable via static Python server.",
+      "notion": "[private-notion-link-redacted]"
     }
   ]
 }

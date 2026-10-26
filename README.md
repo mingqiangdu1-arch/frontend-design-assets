@@ -79,4 +79,6 @@ frontend-design-assets/
 
 ## V0.9 · React 真实组装 + Precision Dark 专业工作台
 
+[Notion V0.9 阶段报告]([private-notion-link-redacted]) · [素材数据库]([private-notion-link-redacted])
+
 新增 [Orbit Workbench](playground/precision-workbench/README.md) 作为 **真正引用 `packages/ui` 组件库** 的 React/TypeScript 完整页面示例，并纳入 [5 个页面模板](playground/page-blueprints/README.md)。与历史四个独立 HTML/JS 原型不同，它需要 Vite 启动：`npm run dev:workbench`（端口 5175）。浏览器 QA 会上传 390 / 768 / 1440 px 截图用于人工审阅；**截图采集不等于视觉基准批准**。
