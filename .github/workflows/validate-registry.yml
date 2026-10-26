@@ -47,6 +47,8 @@ jobs:
           node --check scripts/check-page-templates.mjs
           node --check playground/asset-explorer/model.mjs
           node --check playground/asset-explorer/app.mjs
+          node --check playground/commerce-atelier/model.mjs
+          node --check playground/commerce-atelier/app.mjs
           node --check scripts/dev-static.mjs
       - name: Audit scoped theme contrast and CSS token drift
         run: node scripts/contrast-audit.mjs

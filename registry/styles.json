@@ -98,6 +98,26 @@
       },
       "demo": "playground/bold-grid/index.html",
       "licenseNote": "Original CSS, illustrations, composition and numeric Token proposals. No third-party design source reproduced."
+    },
+    {
+      "id": "commerce-atelier",
+      "label": "Commerce Atelier / Product-first Retail",
+      "status": "design-proposal",
+      "origin": "Original product-led retail research grounded in 2025/2026 Baymard and Shopify UX findings",
+      "categories": [
+        "commerce-storefront",
+        "product-catalog",
+        "consumer-shopping",
+        "retail"
+      ],
+      "styleProfile": "styles/commerce-atelier/style.json",
+      "documentation": "styles/commerce-atelier/README.md",
+      "tokens": {
+        "css": "styles/commerce-atelier/tokens.css",
+        "json": "styles/commerce-atelier/tokens.json"
+      },
+      "demo": "playground/commerce-atelier/index.html",
+      "licenseNote": "Original CSS product silhouettes, original token values. No official vendor components, product images or fonts copied."
     }
   ]
 }

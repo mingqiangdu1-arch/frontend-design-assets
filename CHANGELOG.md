@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-26 · V0.11 product-first Commerce Atelier independent style
+
+- Researched 2025/2026 official design materials and ecommerce usability guidance to justify one missing commerce visual system; deferred glass/3D/bento as optional context-driven techniques.
+- Added original scoped Commerce Atelier theme, Token JSON/CSS, six fictitious CSS-only product shapes, standalone catalog with multiselect filters, removable chips, sorting, accessible variants, wishlist and simulated-only bag.
+- Added TPL-006, DT-006, IP-015, PR-010, KIT-010, REF-029 with source/QA/provenance boundaries, page gallery entry and focused tests.
+- No real product SKU, paid checkout, inventory API, external artwork or component-library six-theme compatibility claims.
+
+
 ## 2026-10-26 · V0.10 live asset search, portable preview and keyboard quality
 
 - Added a neutral, responsive Asset Explorer over canonical JSON registries with search/style/type/stage/context filters, details, source/Notion links, deep links and a multi-selection Markdown export for Codex.

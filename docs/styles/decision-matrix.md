@@ -49,3 +49,15 @@ These are examples, not constraints. A brand could choose otherwise after visual
 | Not suitable as a default | dense operational SaaS tables or long uninterrupted academic text |
 
 Do not assume the current React UI package supports this new style; use the standalone Bold Grid prototype as a design source and test new mappings first.
+
+## V0.11 evidence-led decision: add exactly one Commerce visual direction
+
+| Candidate | Decision | Why |
+| --- | --- | --- |
+| Commerce Atelier / product-first retail | Add sixth independent Style Profile | Existing profiles lack the image + variant + price + filter decision grammar of actual consumer shopping |
+| Liquid Glass / glassmorphism | Research material/overlay modifier only | Apple HIG restricts use to restrained functional/control layers and honors reduced-transparency settings |
+| Material 3 Expressive | Study motion/touch guidance | Existing Playful Pop and interaction modules can adapt principles without pretending to implement Google's framework |
+| Bento, oversized typography, maximalism | Existing style layout/motion technique | No new user task or stable implementation boundary by itself |
+| Immersive WebGL/3D/retro gaming | Defer until a grounded game/showcase use case | Performance, motion, and input constraints differ significantly; do not prematurely build a style |
+
+Commerce Atelier is distinct from Editorial Warm: serif long-form reading vs. efficient sans product comparison. It is distinct from SaaS: consumer decisions and media hierarchy vs. operations data tables. Research: [Shopify ecommerce UX 2026](https://www.shopify.com/blog/ecommerce-ux), [Baymard listing UX 2025](https://baymard.com/research-articles/current-state-product-list-and-filtering), [Apple Liquid Glass materials](https://developer.apple.com/design/human-interface-guidelines/materials), [Figma 2026 design directions](https://www.figma.com/resource-library/web-design-trends/).

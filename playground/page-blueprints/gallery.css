@@ -17,3 +17,8 @@ main{max-width:1220px;margin:auto;padding:60px 24px}.hero>span{font-size:10px;le
 .mock-caption span{display:block;font:9px monospace;color:#a59ab5;margin:5px 0 15px}
 .mock-stats{display:flex;gap:8px;margin-bottom:15px}.mock-stats span{padding:9px;flex:1;border:1px solid #484152;background:#2e2a37;color:#a99fbb;font:8px monospace}.mock-stats b{font-size:17px;color:#e3daef}
 .mock-record{height:25px;background:linear-gradient(90deg,#494151 0 37%,transparent 38% 49%,#62566f 50% 70%,transparent 71%);border-block:1px solid #3f3947;margin:8px 0}
+
+.commerce .mini{background:#e6e6de;padding:22px}.commerce-cover{position:relative;background:#f4f4eb;width:89%;height:245px;box-shadow:0 12px 22px #414e3520;padding:18px 20px;color:#29352b;overflow:hidden}
+.commerce-cover>span{font-size:13px;letter-spacing:-.06em;font-weight:800}.commerce-cover .commerce-shape{position:absolute;right:17%;top:23%;width:95px;height:85px;border-radius:50% 50% 15% 15%;background:linear-gradient(90deg,#ced7c3,#f5f5ec,#899885);box-shadow:15px 15px 18px #48563c36}
+.commerce-cover .commerce-shape:after{content:"";position:absolute;top:100%;left:48%;width:5px;height:60px;background:#849783}
+.commerce-copy{position:absolute;left:20px;bottom:40px;font-size:24px;line-height:1;letter-spacing:-.07em;font-weight:800}.commerce-cover small{position:absolute;left:20px;bottom:14px;font-size:8px;letter-spacing:.1em;color:#677568}

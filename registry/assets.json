@@ -2799,6 +2799,164 @@
         "IP-014"
       ],
       "notion": "[private-notion-link-redacted]"
+    },
+    {
+      "stage": "prototype",
+      "priority": "P1",
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "verified": "Original scoped research and browser prototype, limited automated checks only; no production ecommerce integration.",
+      "id": "DT-006",
+      "type": "token",
+      "name": "Commerce Atelier independent product-first style",
+      "reuseKind": "style-token",
+      "tags": [
+        "v0.11",
+        "commerce",
+        "product-first"
+      ],
+      "path": "styles/commerce-atelier/tokens.css",
+      "styleIds": [
+        "commerce-atelier"
+      ],
+      "applicationContexts": [
+        "commerce-storefront",
+        "product-catalog"
+      ],
+      "dependencies": [],
+      "details": "styles/commerce-atelier/README.md",
+      "demo": "playground/commerce-atelier/index.html"
+    },
+    {
+      "stage": "prototype",
+      "priority": "P1",
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "verified": "Original scoped research and browser prototype, limited automated checks only; no production ecommerce integration.",
+      "id": "IP-015",
+      "type": "interaction",
+      "name": "Multi-select retail filters, variant states and simulated bag",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "v0.11",
+        "commerce",
+        "product-first"
+      ],
+      "path": "docs/interactions/commerce-facets.md",
+      "styleIds": [],
+      "applicationContexts": [
+        "commerce-storefront",
+        "product-catalog"
+      ],
+      "dependencies": [
+        "REF-029"
+      ],
+      "demo": "playground/commerce-atelier/index.html"
+    },
+    {
+      "stage": "prototype",
+      "priority": "P1",
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "verified": "Original scoped research and browser prototype, limited automated checks only; no production ecommerce integration.",
+      "id": "PR-010",
+      "type": "recipe",
+      "name": "Commerce Atelier image-led catalog composition",
+      "reuseKind": "composition-recipe",
+      "tags": [
+        "v0.11",
+        "commerce",
+        "product-first"
+      ],
+      "path": "recipes/product-first-commerce.md",
+      "styleIds": [
+        "commerce-atelier"
+      ],
+      "applicationContexts": [
+        "commerce-storefront",
+        "product-catalog"
+      ],
+      "dependencies": [
+        "DT-006",
+        "IP-015"
+      ],
+      "demo": "playground/commerce-atelier/index.html"
+    },
+    {
+      "stage": "prototype",
+      "priority": "P1",
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "verified": "Original scoped research and browser prototype, limited automated checks only; no production ecommerce integration.",
+      "id": "KIT-010",
+      "type": "archive",
+      "name": "Commerce Atelier original interactive storefront prototype",
+      "reuseKind": "snapshot",
+      "tags": [
+        "v0.11",
+        "commerce",
+        "product-first"
+      ],
+      "path": "playground/commerce-atelier/README.md",
+      "styleIds": [
+        "commerce-atelier"
+      ],
+      "applicationContexts": [
+        "commerce-storefront",
+        "consumer-shopping"
+      ],
+      "dependencies": [
+        "DT-006",
+        "IP-015"
+      ],
+      "demo": "playground/commerce-atelier/index.html"
+    },
+    {
+      "stage": "prototype",
+      "priority": "P1",
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "verified": "Original scoped research and browser prototype, limited automated checks only; no production ecommerce integration.",
+      "id": "TPL-006",
+      "type": "page-template",
+      "name": "Commerce Atelier product collection",
+      "reuseKind": "composition-recipe",
+      "tags": [
+        "v0.11",
+        "commerce",
+        "product-first"
+      ],
+      "path": "playground/commerce-atelier/README.md",
+      "styleIds": [
+        "commerce-atelier"
+      ],
+      "applicationContexts": [
+        "commerce-storefront",
+        "product-catalog"
+      ],
+      "dependencies": [
+        "DT-006",
+        "IP-015",
+        "PR-010"
+      ],
+      "demo": "playground/commerce-atelier/index.html"
+    },
+    {
+      "stage": "analyzed",
+      "priority": "P1",
+      "source": "https://baymard.com/research-articles/current-state-product-list-and-filtering",
+      "verified": "Original scoped research and browser prototype, limited automated checks only; no production ecommerce integration.",
+      "id": "REF-029",
+      "type": "reference",
+      "name": "Baymard 2025 product list and filter UX evidence",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v0.11",
+        "commerce",
+        "product-first"
+      ],
+      "path": "docs/research/sources.md",
+      "styleIds": [],
+      "applicationContexts": [
+        "commerce-storefront"
+      ],
+      "dependencies": [],
+      "details": "styles/commerce-atelier/README.md"
     }
   ],
   "referenceImplementationRoot": "components/reference",

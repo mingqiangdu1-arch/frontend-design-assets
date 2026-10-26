@@ -83,3 +83,10 @@ Extend browser smoke to SaaS v0.2/v0.3; standardize reusable style specimens, ad
 - Run `npm run test:workbench:browser` for real React page focus, inspector overlay and command searching.
 - Chromium smoke/screenshot capture is NOT a verified pixel-baseline or WCAG certification. Manual screen reader, browser and visual inspection is required.
 - References: https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/ and https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum .
+
+## V0.11 commerce-specific QA
+
+- Scoped sixth Token system audited for JSON/CSS consistency and WCAG 4.5:1 normal text pairs with `node scripts/contrast-audit.mjs`.
+- `node --test tests/commerce-atelier.test.mjs` checks multiselect facet intersections, sorts, disabled variants, local bag totals and immutability.
+- `npm run test:browser` includes a new commerce flow and responsive screenshot capture at 390/768/1440.
+- Demo product shapes are original CSS art, not real retail imagery; mobile touch/real screen-reader, product metadata, taxes, shipping, checkout and payment security remain unverified.

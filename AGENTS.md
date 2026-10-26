@@ -76,3 +76,10 @@ Use local HTTP to inspect prototype files in a browser agent. No autonomous back
 - `IP-014` describes faceted discovery semantics; `PR-009` documents the Codex handoff. A selected research reference is not release certification.
 - Precision Workbench mobile inspector must trap focus, close with Escape and restore the originating row's focus; validate with its dedicated Playwright suite.
 - Run `npm run test:unit`, `npm run test:browser`, `npm run test:workbench:browser`, and `npm run test:components:browser`; note that static, workbench and component suites use separate servers.
+
+## V0.11 product-first style boundary
+
+- `commerce-atelier` is a standalone sixth Style Profile. Do not conflate it with Editorial Warm or internal ecommerce SaaS. Use `playground/commerce-atelier` and `TPL-006` to inspect its real local HTML/JS behavior.
+- No React `packages/ui` support is declared for the new theme. `--template=TPL-006` must show no wired React components.
+- Product images in the demo are original CSS geometric illustrations, NOT authorized real product photographs. Prices and basket are fictional; do not show live checkout or guarantee stock.
+- Run unit/filter/variant tests and Chromium 390/768/1440 smoke before promoting maturity. Do not automatically adopt glass/3D trends as styles without task evidence.

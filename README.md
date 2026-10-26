@@ -91,3 +91,7 @@ frontend-design-assets/
 - 跨平台静态预览：仓库根目录运行 `npm run dev:catalog`，浏览器打开 `http://127.0.0.1:8009/playground/asset-explorer/`，无需 Python 或浏览器 `file://`。
 - Precision Dark React 工作台优化：修复不准确的命令检索测试；增加窄屏详情抽屉键盘焦点管理、Escape 关闭和主界面不可交互处理。
 - 浏览器自动回归截取 390 / 768 / 1440 px 页面截图，供后续人工验收；**不是已经批准的视觉回归基线**。
+
+## V0.11 · 新增第六套独立风格 Commerce Atelier
+
+经 Baymard/Shopify 与 Apple/Figma 等 2026 风格与 UX 资料对比，现有五套视觉语言中明确缺少“以商品媒体、价格、筛选与规格为核心”的消费者购物场景。因此只新增 **[Commerce Atelier](styles/commerce-atelier/README.md)**，附带 [独立商品目录交互页](playground/commerce-atelier/README.md)、[IP-015 多选筛选与规格规范](docs/interactions/commerce-facets.md) 和 [PR-010 页面配方](recipes/product-first-commerce.md)。其余趋势归入可选动效/组件模式，不盲目扩增风格。React 组件库仍只兼容其原有四套主题。

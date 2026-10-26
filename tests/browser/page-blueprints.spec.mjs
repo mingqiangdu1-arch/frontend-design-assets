@@ -1,13 +1,13 @@
 import {test,expect} from "@playwright/test";
 
-test("page blueprint gallery exposes five separate archetypes and filters",async({page})=>{
+test("page blueprint gallery exposes six separate archetypes and filters",async({page})=>{
  await page.goto("/playground/page-blueprints/");
- await expect(page.locator(".tile")).toHaveCount(5);
+ await expect(page.locator(".tile")).toHaveCount(6);
  await page.locator('[data-mode="reading"]').click();
  await expect(page.locator(".tile:visible")).toHaveCount(1);
  await expect(page.locator('[data-template="TPL-002"]')).toBeVisible();
  await page.locator('[data-mode="all"]').click();
- await expect(page.locator(".tile:visible")).toHaveCount(5);
+ await expect(page.locator(".tile:visible")).toHaveCount(6);
 });
 
 test("editorial page: search, open article and Escape restore usable focus",async({page})=>{
@@ -71,4 +71,13 @@ test("capture repeatable independent blueprint screenshots at 390/768/1440",asyn
    await page.screenshot({path:"test-results/visual-"+name+"-"+width+".png",fullPage:true,animations:"disabled"});
   }
  }
+});
+
+test("commerce blueprints have their own visual scope and runnable product page",async({page})=>{
+ await page.goto("/playground/page-blueprints/");
+ await page.locator('[data-mode="commerce-storefront"]').click();
+ await expect(page.locator(".tile:visible")).toHaveCount(1);
+ await page.locator('[data-template="TPL-006"] a').click();
+ await expect(page.locator('body[data-design-theme="commerce-atelier"]')).toBeVisible();
+ await expect(page.locator(".product-card")).toHaveCount(6);
 });

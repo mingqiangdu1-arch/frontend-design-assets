@@ -43,3 +43,9 @@ Alternative professional light/dark, bold brutalist web, commerce-focused produc
 These links support studying aesthetic direction. **All new numeric values are our design proposals**, not claimed as observed values of those products.
 
 **Component library compatibility:** Existing React `packages/ui` explicitly supports the earlier four themes only. The fifth theme is its own original static/interactive page prototype, not integrated in the React theme bridge. No automatic cross-style promise.
+
+## Sixth independent visual direction (V0.11)
+
+| `commerce-atelier` | [Commerce Atelier](../../styles/commerce-atelier/README.md) | warm stone/moss sans catalog aesthetic, big product visual slots, deliberate prices and filter states | retail storefront, visual product discovery | Standalone proposed Tokens and demo; not React package integrated |
+
+Do not promote glassmorphism, bento layouts, 3D effects or dynamic typography to separate repository-wide styles merely because they trend in 2026. They are **optional cross-style techniques** with performance/accessibility obligations; new styles require genuinely different user tasks and composition grammar. The original React component package still lists four supported themes only.

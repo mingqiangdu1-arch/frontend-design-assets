@@ -1,0 +1,25 @@
+{
+  "id": "commerce-atelier",
+  "displayName": "Commerce Atelier",
+  "stage": "design-proposal",
+  "assetId": "DT-006",
+  "description": "Product-first original commerce visual system: calm product gallery, price/variant hierarchy and retail selection patterns, distinct from Editorial Warm reading.",
+  "categoryHints": [
+    "commerce-storefront",
+    "product-catalog",
+    "retail",
+    "consumer-shopping"
+  ],
+  "sources": [
+    "https://baymard.com/research-articles/current-state-product-list-and-filtering",
+    "https://www.shopify.com/blog/ecommerce-ux",
+    "https://www.shopify.com/blog/ecommerce-filters"
+  ],
+  "tokenFile": "tokens.json",
+  "cssFile": "tokens.css",
+  "scopeSelector": "[data-design-theme=\"commerce-atelier\"]",
+  "documentation": "README.md",
+  "sample": "../../playground/commerce-atelier/index.html",
+  "implementationStatus": "Original scoped CSS and local catalog demo; unverified production behavior",
+  "isDefault": false
+}

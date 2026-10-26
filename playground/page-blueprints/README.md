@@ -23,3 +23,7 @@ New demos have original mock content and functional local interactions. No third
 TPL-005 is **different** from the previous four: it imports 11 real components from `packages/ui` and runs as a Vite React/TSX application on port 5175. The static page-gallery card links to a static [launch guide](../precision-workbench/preview.html); it must not pretend the uncompiled React HTML works on the Python server.
 
 Run `npm run dev:workbench` for the actual demo. Integration and screenshot QA: `npm run test:workbench:browser`.
+
+| TPL-006 | Product-first retail discovery (new) | Commerce Atelier | [Product Collection](../commerce-atelier/README.md) |
+
+**V0.11:** TPL-006 is a sixth *standalone HTML/CSS/JS* design direction. It is not wired to the four-theme React package. It has real local filtering, availability semantics and simulated bag state but no commerce backend or checkout.

@@ -64,3 +64,11 @@ These references do not license copying vendors' UI, artwork, trademarks or font
 - [MDN View Transition API](https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API) and [Usage](https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API/Using) — same-document transitions and fallback semantics.
 - [W3C WAI-ARIA APG listbox](https://www.w3.org/WAI/ARIA/apg/patterns/listbox/) / [rearrangeable examples](https://www.w3.org/WAI/ARIA/apg/patterns/listbox/examples/listbox-rearrangeable/) — focus/reordering and why nested interactive listbox options are not appropriate.
 - [Google Chrome modern web guidance](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/ui-behaviors/same-document-transitions.md) — reduced motion and DOM focus after transitions.
+
+## V0.11 decision evidence and retail task patterns
+
+- **REF-029:** [Baymard product list/filter research, updated 2025](https://baymard.com/research-articles/current-state-product-list-and-filtering) — multi-select values, visible applied filters, multiple product media, meaningful sorting. Guidelines, not copied site assets.
+- [Baymard PLP UX 2026](https://baymard.com/blog/product-listing-page-plp-ux) — filters applied on mobile and actual product decision attributes.
+- [Shopify ecommerce UX July 2026](https://www.shopify.com/blog/ecommerce-ux) and [Filters 2026](https://www.shopify.com/blog/ecommerce-filters) — options, inventory and cost transparency, mobile UX and search.
+- [Apple HIG materials](https://developer.apple.com/design/human-interface-guidelines/materials) — Liquid Glass is a sparse functional layer, not an all-purpose page style.
+- [Figma 2026 web design trends](https://www.figma.com/resource-library/web-design-trends/) — 3D, dynamic type and expressive motion remain context-dependent research rather than automatic new style systems.

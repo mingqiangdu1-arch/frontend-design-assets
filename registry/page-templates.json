@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "version": "0.9.0",
+  "version": "0.11.0",
   "defaultTemplateId": null,
   "policy": "Explicit template/style selection only; examples and candidates, never automatic production certification or cross-style reuse.",
   "templates": [
@@ -209,6 +209,44 @@
       ],
       "note": "First React-composed page using 11 real packages/ui exports; demo stores all data in memory. Requires Vite/Node; not runnable via static Python server.",
       "notion": "[private-notion-link-redacted]"
+    },
+    {
+      "id": "TPL-006",
+      "name": "Commerce Atelier Product Collection",
+      "applicationContexts": [
+        "commerce-storefront",
+        "product-catalog",
+        "consumer-shopping",
+        "retail"
+      ],
+      "styleId": "commerce-atelier",
+      "status": "prototype",
+      "implementation": "independent-static-js",
+      "demo": "playground/commerce-atelier/index.html",
+      "source": "playground/commerce-atelier/README.md",
+      "tokens": "styles/commerce-atelier/tokens.css",
+      "assetIds": [
+        "DT-006",
+        "IP-015",
+        "PR-010"
+      ],
+      "sections": [
+        "Quiet commerce identity and product-led hero",
+        "Multi-select category and material filters with applied chips",
+        "Responsive illustrated merchandise grid and sorting",
+        "Accessible quick-view specifications and variant availability",
+        "Explicitly simulated shopping bag feedback"
+      ],
+      "requiredChecks": [
+        "filter OR-within facet AND-between facet consistency",
+        "clearing applied chips and empty states",
+        "sort without mutating source catalog",
+        "unavailable variants disabled",
+        "bag sums and local-only transaction disclaimer",
+        "390/768/1440px no overflow and browser screenshots",
+        "real photography and checkout data/contracts before any production integration"
+      ],
+      "note": "Fictitious product catalog and CSS-only object silhouettes. No verified stock, checkout, real product photography or React component package integration."
     }
   ]
 }

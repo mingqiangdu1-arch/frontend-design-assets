@@ -1,0 +1,25 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Original Commerce Atelier product-led visual system and local catalog interaction research."><title>atelier objects · 商品陈列实验</title>
+<link rel="stylesheet" href="../../styles/commerce-atelier/tokens.css"><link rel="stylesheet" href="./styles.css"><script type="module" src="./app.mjs"></script></head>
+<body data-design-theme="commerce-atelier">
+<div class="announcement">DESIGNED TO BE USED · ORIGINAL PRODUCT CONCEPTS / LOCAL DEMO</div>
+<header class="main-header"><a href="./" class="logo">atelier<span> objects</span></a><nav aria-label="主导航"><a href="#collection">所有商品</a><a href="#values">设计原则</a><a href="../page-blueprints/">全部页面蓝图</a></nav><button type="button" id="openBag" class="bag" aria-label="查看模拟购物袋">Bag <span id="bagCount">0</span></button></header>
+<main><section class="hero">
+<div class="hero-copy"><span class="eyebrow">THE QUIET OBJECTS / NO. 01</span><h1>Objects for<br><em>everyday living.</em></h1><p>从日常使用出发的物件提案。让商品自己成为视觉中心，让每一次选择都清晰而从容。</p><a class="hero-cta" href="#collection">探索精选物件 <span aria-hidden="true">↗</span></a></div>
+<div class="hero-art" aria-label="抽象灯具造型插画" role="img"><div class="hero-glow"></div><div class="hero-lamp"></div><div class="hero-note">01—06<br>FORM & FUNCTION</div></div>
+</section>
+<section id="collection" class="collection" aria-labelledby="catalogTitle">
+<div class="section-heading"><div><p class="eyebrow">THE COLLECTION / 2026</p><h2 id="catalogTitle">慢一点，选对物件。</h2></div><p>全站均为原创模拟产品，价格与库存只用于展示交互，并非真实商品或交易报价。</p></div>
+<div class="catalog"><details class="facets" id="filterPanel" open><summary>筛选商品 <span aria-hidden="true">⌄</span></summary><div class="facet-inner">
+<label for="searchProducts" class="filter-label">搜索商品</label><input type="search" id="searchProducts" placeholder="名称或特点…" autocomplete="off">
+<fieldset><legend>类别 · CATEGORY</legend><label><input type="checkbox" name="category" value="lighting"> 灯具</label><label><input type="checkbox" name="category" value="daily"> 日用</label><label><input type="checkbox" name="category" value="desk"> 桌面</label><label><input type="checkbox" name="category" value="living"> 家居</label></fieldset>
+<fieldset><legend>材质 · MATERIAL</legend><label><input type="checkbox" name="material" value="metal"> 金属</label><label><input type="checkbox" name="material" value="wood"> 木材</label><label><input type="checkbox" name="material" value="ceramic"> 陶瓷</label><label><input type="checkbox" name="material" value="paper"> 纸品</label></fieldset>
+<button id="clearFilters" type="button" class="clear">清除所有筛选</button></div></details>
+<div class="product-zone"><div class="result-bar"><div><p id="resultCount" role="status" aria-live="polite">共 6 件物件</p><div id="activeFilters" class="active-filters" aria-label="已应用筛选"></div></div><label class="sort">排序 <select id="sort"><option value="featured">精选顺序</option><option value="price-low">价格从低到高</option><option value="price-high">价格从高到低</option></select></label></div>
+<div class="products" id="products" aria-label="产品列表"></div></div></div>
+</section><section class="values" id="values"><p class="eyebrow">BEFORE DECORATION, CLARITY.</p><h2>好的陈列，让决定变得简单。</h2><div class="value-grid"><p><strong>01 / LOOK</strong>以商品为主角。完整的角度、质感与尺寸信息，比无意义的动画更重要。</p><p><strong>02 / COMPARE</strong>类别、材质、价格和所选条件保持清晰，使筛选过程可以解释。</p><p><strong>03 / TRUST</strong>规格不可用时诚实标注。演示购物袋不伪装为真实下单、库存或支付。</p></div></section>
+</main>
+<dialog id="productDialog" aria-labelledby="detailTitle"><h2 id="detailTitle" class="visually-hidden">商品详情</h2><div class="dialog-top"><span class="eyebrow">PRODUCT STORY / QUICK VIEW</span><button id="closeDetail" aria-label="关闭商品详情" type="button">×</button></div><div id="detailContent"></div></dialog>
+<dialog id="bagDialog" aria-labelledby="bagTitle"><div class="dialog-top"><h2 id="bagTitle">模拟购物袋</h2><button id="closeBag" aria-label="关闭购物袋" type="button">×</button></div><div id="bagContents"></div><p class="bag-notice">这是本地交互实验。不会产生真实订单、库存预留或付款。</p></dialog>
+<div id="feedback" role="status" aria-live="polite" class="toast" hidden></div>
+<footer>© ATELIER OBJECTS / ORIGINAL FRONTEND STUDY <span>Commerce Atelier · V0.11</span></footer>
+</body></html>

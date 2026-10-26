@@ -4,9 +4,9 @@ import fs from "node:fs";
 import {listTemplates,chooseTemplate,buildPlan,toMarkdown,runCLI} from "../scripts/compose-page.mjs";
 import {validatePageRegistry} from "../scripts/check-page-templates.mjs";
 const pages=JSON.parse(fs.readFileSync("registry/page-templates.json","utf8")),components=JSON.parse(fs.readFileSync("registry/components.json","utf8"));
-test("five templates have distinct IDs and explicit styles",()=>{
- assert.equal(pages.templates.length,5);
- assert.equal(new Set(pages.templates.map(t=>t.id)).size,5);
+test("six templates have distinct IDs and explicit styles",()=>{
+ assert.equal(pages.templates.length,6);
+ assert.equal(new Set(pages.templates.map(t=>t.id)).size,6);
  assert.equal(listTemplates(pages,{context:"reading"}).length,1);
  assert.equal(listTemplates(pages,{style:"neo-brutalist"})[0].id,"TPL-004");
 });
@@ -35,7 +35,7 @@ test("CLI listing and exact JSON plan",()=>{
  assert.throws(()=>runCLI(["--style=unknown"]),/Unknown style/);
 });
 test("page manifest references existing sources and indexed assets",()=>{
- const v=validatePageRegistry();assert.equal(v.templates,5);assert.ok(v.assets>=92);
+ const v=validatePageRegistry();assert.equal(v.templates,6);assert.ok(v.assets>=92);
 });
 
 test("React blueprint has verified integration flags and a separate Vite launch command",()=>{
@@ -46,4 +46,13 @@ test("React blueprint has verified integration flags and a separate Vite launch 
  assert.equal(plan.runCommand,"npm run dev:workbench");
  assert.ok(plan.assets.relatedReactComponentCandidates.some(c=>c.status==="wired-in-demo"));
  assert.throws(()=>chooseTemplate(pages,{template:"TPL-005",style:"neo-brutalist"}),/Incompatible/);
+});
+
+test("commerce-atelier is explicitly selected and not React component compatible",()=>{
+ const item=chooseTemplate(pages,{template:"TPL-006",style:"commerce-atelier"});
+ const plan=buildPlan(pages,components,item);
+ assert.equal(plan.assets.reactComponentPackageCompatible,false);
+ assert.equal(plan.assets.demoActuallyUsesReactLibrary,false);
+ assert.ok(plan.assets.assetIds.includes("DT-006"));
+ assert.throws(()=>chooseTemplate(pages,{template:"TPL-006",style:"editorial-warm"}),/Incompatible/);
 });
