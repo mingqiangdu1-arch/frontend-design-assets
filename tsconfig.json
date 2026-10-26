@@ -21,7 +21,7 @@
     ]
   },
   "include": [
-    "packages/ui/src/**/*.tsx",
-    "playground/component-gallery/src/**/*.tsx"
+    "packages/ui/src/**/*",
+    "playground/component-gallery/src/**/*"
   ]
 }
