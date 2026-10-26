@@ -85,6 +85,8 @@ frontend-design-assets/
 
 ## V0.10 · 可视化检索与交互质量改造
 
+[Notion V0.10 阶段报告]([private-notion-link-redacted]) · [素材数据库]([private-notion-link-redacted])
+
 - **[Asset Explorer](playground/asset-explorer/README.md)**：直接浏览真实资产索引，按风格、类型、成熟度、应用场景与关键词筛选，查看依赖/来源/Notion 链接，并导出 Markdown 参考清单交给 Codex。混合风格会显式提示**不代表代码可直接组合**。
 - 跨平台静态预览：仓库根目录运行 `npm run dev:catalog`，浏览器打开 `http://127.0.0.1:8009/playground/asset-explorer/`，无需 Python 或浏览器 `file://`。
 - Precision Dark React 工作台优化：修复不准确的命令检索测试；增加窄屏详情抽屉键盘焦点管理、Escape 关闭和主界面不可交互处理。

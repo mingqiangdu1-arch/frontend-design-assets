@@ -2739,7 +2739,8 @@
       "dependencies": [
         "IP-014",
         "PR-009"
-      ]
+      ],
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "priority": "P1",
@@ -2767,7 +2768,8 @@
         "keyboard",
         "selection"
       ],
-      "dependencies": []
+      "dependencies": [],
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "priority": "P1",
@@ -2795,7 +2797,8 @@
       ],
       "dependencies": [
         "IP-014"
-      ]
+      ],
+      "notion": "[private-notion-link-redacted]"
     }
   ],
   "referenceImplementationRoot": "components/reference",
