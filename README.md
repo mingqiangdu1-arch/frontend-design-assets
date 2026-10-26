@@ -76,3 +76,7 @@ frontend-design-assets/
 [Notion V0.8 总结]([private-notion-link-redacted]) · [页面配方数据库]([private-notion-link-redacted])
 
 新增四套不同应用情境的 [Page Blueprints](playground/page-blueprints/README.md)（SaaS 运营、编辑阅读、移动习惯、创意营销），其中编辑阅读和移动习惯为本阶段新实现互动原型。通过 `node scripts/compose-page.mjs --list` 找到模板，并用 `--template=TPL-002 --format=markdown` 生成可交给 Codex 的**页面实施清单**。这是实施指导，不是自动生成的 React/生产站点代码。必须显式选择风格或模板，且不能把风格冲突的素材视为可直接组合。
+
+## V0.9 · React 真实组装 + Precision Dark 专业工作台
+
+新增 [Orbit Workbench](playground/precision-workbench/README.md) 作为 **真正引用 `packages/ui` 组件库** 的 React/TypeScript 完整页面示例，并纳入 [5 个页面模板](playground/page-blueprints/README.md)。与历史四个独立 HTML/JS 原型不同，它需要 Vite 启动：`npm run dev:workbench`（端口 5175）。浏览器 QA 会上传 390 / 768 / 1440 px 截图用于人工审阅；**截图采集不等于视觉基准批准**。

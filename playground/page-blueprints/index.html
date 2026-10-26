@@ -2,11 +2,11 @@
 <meta name="description" content="Four independent runnable page structures for different product categories.">
 <link rel="stylesheet" href="gallery.css"><script type="module" src="gallery.mjs"></script></head><body>
 <header><div class="brand"><strong>◈</strong> FRONTEND DESIGN ASSETS <span>/ PAGE BLUEPRINTS</span></div><a href="../../README.md">研究仓库 ↗</a></header>
-<main><div class="hero"><span>ARCHITECTURE BEFORE DECORATION / 0.8</span><h1>Don't start with<br><em>the same page.</em></h1><p>先从用户任务、内容密度和交互设备出发，再选择页面配方。四种应用类型、四种布局语言，互不强制兼容。</p></div>
+<main><div class="hero"><span>ARCHITECTURE BEFORE DECORATION / 0.9</span><h1>Don't start with<br><em>the same page.</em></h1><p>先从用户任务、内容密度和交互设备出发，再选择页面配方。五种应用类型、五种布局语言，互不强制兼容。</p></div>
 <div class="control"><div role="group" aria-label="模板类型" class="filters">
 <button data-mode="all" aria-pressed="true">全部类型</button><button data-mode="workspace" aria-pressed="false">工作平台</button>
 <button data-mode="reading" aria-pressed="false">阅读内容</button><button data-mode="consumer-mobile" aria-pressed="false">移动消费</button>
-<button data-mode="campaign" aria-pressed="false">创意营销</button></div><p id="count" role="status" aria-live="polite">4 个页面模板</p></div>
+<button data-mode="campaign" aria-pressed="false">创意营销</button><button data-mode="developer-tool" aria-pressed="false">专业开发工具</button></div><p id="count" role="status" aria-live="polite">5 个页面模板</p></div>
 <section id="blueprints" class="grid" aria-label="页面模板">
 <article class="tile workspace" data-template="TPL-001" data-context="workspace">
 <div class="mini"><div class="mini-sidebar">◈<i></i><i></i><i></i><i></i></div><div class="mini-table"><div class="mini-top"><b>Records</b><small>＋ New</small></div><span></span><span></span><span></span><span></span></div></div>
@@ -20,6 +20,9 @@
 <article class="tile campaign" data-template="TPL-004" data-context="campaign">
 <div class="mini"><div class="mini-poster"><small>LOUD IDEAS ONLY</small><h3>MAKE<br>IT<br><em>BOLD.</em></h3><span>✳</span></div></div>
 <div class="tile-body"><span class="code">TPL-004 / NEO BRUTALIST</span><h2>Creative Campaign Landing</h2><p>强烈字体、粗线网格、海报化内容与分类探索。</p><a href="../bold-grid/index.html">打开创意活动页 ↗</a></div></article>
+<article class="tile dark-tool" data-template="TPL-005" data-context="developer-tool">
+<div class="mini"><div class="mock-workbench"><div class="mock-rail"><b>◈</b><i></i><i></i><i></i><i></i></div><div class="mock-table"><div class="mock-caption">orbit <span>WORK ITEMS</span></div><div class="mock-stats"><span>ACTIVE<br><b>04</b></span><span>REVIEW<br><b>02</b></span><span>DONE<br><b>02</b></span></div><div class="mock-record"></div><div class="mock-record"></div><div class="mock-record"></div></div></div></div>
+<div class="tile-body"><span class="code">TPL-005 / PRECISION DARK · REACT</span><h2>Professional React Workbench</h2><p>真正使用组件库组装的专业工具页面，包含列表、检查器、命令菜单与可撤销状态。</p><a href="../precision-workbench/preview.html">打开 React 运行说明 ↗</a></div></article>
 </section>
-<div class="footnote"><strong>重要边界：</strong>此处是独立页面原型，不表示四套模板已由一个生产 React 组件库直接组装，也不包含真实业务后端。要快速生成选择方案，请运行 <code>node scripts/compose-page.mjs --list</code>。</div>
+<div class="footnote"><strong>重要边界：</strong>模板按场景独立实现。TPL-005 实际集成 React 组件库，其余四套为独立 HTML/JS 原型；均不代表生产级应用，也不包含真实业务后端。要快速生成选择方案，请运行 <code>node scripts/compose-page.mjs --list</code>。</div>
 </main><footer>Original templates · No universal default theme · V0.8</footer></body></html>

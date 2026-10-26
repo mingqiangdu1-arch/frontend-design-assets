@@ -1,0 +1,2 @@
+import {defineConfig} from "vite";
+export default defineConfig({root:"playground/precision-workbench",server:{host:"127.0.0.1",port:5175,strictPort:true,fs:{allow:["../.."]}},build:{outDir:"../../dist/precision-workbench",emptyOutDir:true}});

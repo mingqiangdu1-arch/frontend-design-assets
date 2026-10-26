@@ -1,13 +1,13 @@
 import {test,expect} from "@playwright/test";
 
-test("page blueprint gallery exposes four separate archetypes and filters",async({page})=>{
+test("page blueprint gallery exposes five separate archetypes and filters",async({page})=>{
  await page.goto("/playground/page-blueprints/");
- await expect(page.locator(".tile")).toHaveCount(4);
+ await expect(page.locator(".tile")).toHaveCount(5);
  await page.locator('[data-mode="reading"]').click();
  await expect(page.locator(".tile:visible")).toHaveCount(1);
  await expect(page.locator('[data-template="TPL-002"]')).toBeVisible();
  await page.locator('[data-mode="all"]').click();
- await expect(page.locator(".tile:visible")).toHaveCount(4);
+ await expect(page.locator(".tile:visible")).toHaveCount(5);
 });
 
 test("editorial page: search, open article and Escape restore usable focus",async({page})=>{
@@ -49,5 +49,26 @@ test("page gallery and two new templates do not scroll horizontally at 390px",as
   await page.goto(url);
   const dimensions=await page.evaluate(()=>({client:document.documentElement.clientWidth,scroll:document.documentElement.scrollWidth}));
   expect(dimensions.scroll,url).toBeLessThanOrEqual(dimensions.client+1);
+ }
+});
+
+test("page gallery exposes React app launch guide without implying static TSX works",async({page})=>{
+ await page.goto("/playground/page-blueprints/");
+ await page.locator('[data-mode="developer-tool"]').click();
+ await expect(page.locator(".tile:visible")).toHaveCount(1);
+ await page.locator('[data-template="TPL-005"] a').click();
+ await expect(page.getByRole("heading",{name:/Orbit/})).toBeVisible();
+ await expect(page.locator("pre")).toContainText("npm run dev:workbench");
+});
+test("capture repeatable independent blueprint screenshots at 390/768/1440",async({page})=>{
+ for(const width of [390,768,1440]){
+  await page.setViewportSize({width,height:880});
+  for(const url of ["/playground/page-blueprints/","/playground/page-blueprints/editorial-library/","/playground/page-blueprints/mobile-habits/"]){
+   await page.goto(url);
+   const size=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
+   expect(size.scroll,url+" at "+width).toBeLessThanOrEqual(size.client+1);
+   const name=url.endsWith("editorial-library/")?"editorial":url.endsWith("mobile-habits/")?"mobile":"gallery";
+   await page.screenshot({path:"test-results/visual-"+name+"-"+width+".png",fullPage:true,animations:"disabled"});
+  }
  }
 });

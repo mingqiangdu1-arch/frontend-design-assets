@@ -24,3 +24,7 @@ These are independent working prototypes, not four style variants of the same UI
 7. Record integration evidence before upgrading lifecycle stage.
 
 Template references without matching implementation have not been automatically generated. When no current template fits a style/context, the CLI should reject it and prompt new research, never silently fallback to an unrelated UI kit.
+
+## TPL-005 · Precision Dark React Professional Workbench
+
+Fifth distinct page composition uses a compact workspace rail, searchable status list, metrics and optional detail inspector. It is the first page here to import the actual React UI package; it runs through Vite on port 5175. Its semantics and responsiveness must be evaluated independently of the four standalone HTML demos. [Source & operations](../../playground/precision-workbench/README.md).

@@ -1,7 +1,7 @@
 {
   "name": "frontend-design-assets",
   "private": true,
-  "version": "0.8.0",
+  "version": "0.9.0",
   "type": "module",
   "description": "Living multi-style design assets, React component lab and independent research demos.",
   "scripts": {
@@ -16,7 +16,10 @@
     "test:components:browser": "playwright test -c playwright.components.config.mjs",
     "check:components": "npm run typecheck:ui && npm run build:ui && npm run build:components",
     "compose:page": "node scripts/compose-page.mjs",
-    "check:page-blueprints": "node scripts/check-page-templates.mjs"
+    "check:page-blueprints": "node scripts/check-page-templates.mjs",
+    "dev:workbench": "vite --config playground/precision-workbench/vite.config.ts",
+    "build:workbench": "vite build --config playground/precision-workbench/vite.config.ts",
+    "test:workbench:browser": "playwright test -c playwright.workbench.config.mjs"
   },
   "dependencies": {
     "react": "19.3.1",

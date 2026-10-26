@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "defaultTemplateId": null,
   "policy": "Explicit template/style selection only; examples and candidates, never automatic production certification or cross-style reuse.",
   "templates": [
@@ -144,6 +144,70 @@
       ],
       "note": "Original graphic concept; not a store, no commerce/checkout or real catalog.",
       "notion": "[private-notion-link-redacted]"
+    },
+    {
+      "id": "TPL-005",
+      "name": "Precision Dark Professional Workbench",
+      "applicationContexts": [
+        "developer-tool",
+        "desktop-editor",
+        "analytics-console",
+        "workspace"
+      ],
+      "styleId": "precision-dark",
+      "status": "prototype",
+      "implementation": "react-vite",
+      "demo": "playground/precision-workbench/index.html",
+      "source": "playground/precision-workbench/README.md",
+      "tokens": "styles/precision-dark/tokens.css",
+      "preview": "playground/precision-workbench/preview.html",
+      "runCommand": "npm run dev:workbench",
+      "buildCommand": "npm run build:workbench",
+      "assetIds": [
+        "DT-002",
+        "PR-008",
+        "UI-010",
+        "UI-011",
+        "UI-012",
+        "UI-013",
+        "UI-014",
+        "UI-019",
+        "UI-020",
+        "UI-021",
+        "UI-023",
+        "UI-025",
+        "UI-027"
+      ],
+      "wiredUIExportIds": [
+        "UI-010",
+        "UI-011",
+        "UI-012",
+        "UI-013",
+        "UI-014",
+        "UI-019",
+        "UI-020",
+        "UI-021",
+        "UI-023",
+        "UI-025",
+        "UI-027"
+      ],
+      "sections": [
+        "Utility header and scoped workspace navigation",
+        "Three concise activity indicators",
+        "Searchable status-filtered issue queue",
+        "Responsive contextual inspector using Tabs and status actions",
+        "Native Dialog command palette and local undo Toast"
+      ],
+      "requiredChecks": [
+        "actual React package imports and typecheck",
+        "npm run build:workbench succeeds",
+        "Ctrl/Cmd K command palette and Escape",
+        "filter/search consistency",
+        "status update and latest-action undo",
+        "390/768/1440px screenshots and no horizontal overflow",
+        "manual keyboard and screen-reader evaluation"
+      ],
+      "note": "First React-composed page using 11 real packages/ui exports; demo stores all data in memory. Requires Vite/Node; not runnable via static Python server."
     }
   ]
 }

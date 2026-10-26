@@ -68,3 +68,10 @@ Extend browser smoke to SaaS v0.2/v0.3; standardize reusable style specimens, ad
 - Run `node --test tests/compose-page.test.mjs tests/editorial-blueprint.test.mjs tests/mobile-blueprint.test.mjs` for model/compatibility checks.
 - Run `npm run test:browser` for static page demos and narrow-screen smoke; existing React Component Gallery has its **separate Vite Playwright config**.
 - New page implementations are standalone original HTML/JS mock experiences; none performs real persistence, network search, account features or target-product integration.
+
+## V0.9 screenshot evidence and true component integration
+
+- `npm run build:workbench` builds the real React/TSX page from actual UI package imports; `npm run test:workbench:browser` verifies six limited flows and captures 390,768,1440-pixel screenshots in `test-results/`.
+- `npm run test:browser` separately runs static page demos and collects independent screenshot captures at the same three widths. Tests are **isolated by web server and Playwright config**.
+- These images are **capture-only artifacts**. No human-approved reference images or pixel-difference baselines are in place; do not claim automated visual regression approval.
+- Pending: screen-reader, keyboard full walkthrough, Firefox/Safari, physical touch input, CJK real content and backend failures.

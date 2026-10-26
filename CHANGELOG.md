@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-26 · V0.9 Precision Dark actual React composition and visual capture
+
+- Added Orbit Workbench as first full-page composition importing 11 React components from `packages/ui`, with an independent Precision Dark layout, in-memory status actions, undo, inspector and command palette.
+- Added TPL-005 to five-page template gallery and machine registry, plus PR-008 recipe and KIT-008 implementation entry.
+- Upgraded assembly brief to distinguish React exports actually wired in the demo from candidate-only references; includes Vite run/build commands.
+- Added dedicated React Playwright workflow and screenshot capture at 390/768/1440. Static gallery continues to serve only a safe launch guide for the uncompiled React app.
+- Screenshot capture is evidence for visual review, not a passing visual-regression baseline; real backend, screen readers and cross-browser QA remain open.
+
+
 ## 2026-10-26 · V0.8 independent page blueprints and deterministic composition
 
 - Added editorial reading library and mobile habit/planning page as original interactive HTML/CSS/JS prototypes, preserving distinct typographic/layout grammars.

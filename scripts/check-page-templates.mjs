@@ -17,6 +17,13 @@ export function validatePageRegistry(root=process.cwd()){
   if(!page.applicationContexts?.length||!page.sections?.length||!page.requiredChecks?.length)throw Error("Incomplete entry "+page.id);
   for(const field of ["demo","source","tokens"])if(!isFile(page[field]))throw Error("Missing "+field+": "+page[field]);
   for(const id of page.assetIds)if(!assetIds.has(id))throw Error("Missing referenced asset "+id);
+  if(page.implementation==="react-vite"){
+   if(!page.wiredUIExportIds?.length)throw Error("React page without declared wired component exports: "+page.id);
+   for(const id of page.wiredUIExportIds)if(!components.entries.some(c=>c.id===id))throw Error("Unknown React UI export "+id);
+   if(!isFile("playground/precision-workbench/src/main.tsx"))throw Error("React page source missing");
+   const source=fs.readFileSync(path.join(root,"playground/precision-workbench/src/main.tsx"),"utf8");
+   if(!source.includes('from "../../../packages/ui/src/index"'))throw Error("React page does not import actual UI package");
+  }
   const asset=assets.assets.find(a=>a.id===page.id);
   if(!asset||asset.styleIds.length!==1||asset.styleIds[0]!==page.styleId)throw Error("Wrong indexed template "+page.id);
  }

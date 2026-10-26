@@ -61,3 +61,10 @@ Use local HTTP to inspect prototype files in a browser agent. No autonomous back
 - Never mix a template with a different style; the CLI and `scripts/check-page-templates.mjs` reject such mismatches.
 - All four page-blueprint demos are **independent DOM/JS experiments**, not imports from `packages/ui`; candidate React components are explicitly marked not wired.
 - For new archetypes, update `registry/page-templates.json`, `registry/assets.json`, gallery card, test cases, design docs and use `node scripts/check-page-templates.mjs` before claiming completeness.
+
+## V0.9 React-composed page rules
+
+- TPL-005 is the first full-page `react-vite` example with explicit Precision Dark style; start with `npm run dev:workbench` and `playground/precision-workbench/README.md`.
+- Do not say all Page Blueprints are React-built. TPL-001–004 remain independent static HTML/JS.
+- `node scripts/compose-page.mjs --template=TPL-005 --format=json` now marks actual React exports as `wired-in-demo` and includes the Vite run/build commands.
+- Run `npm run typecheck:ui`, `npm run build:workbench`, `npm run test:workbench:browser`; inspect screenshot artifacts at three viewport sizes, and keep unverified accessibility/browser issues explicit.

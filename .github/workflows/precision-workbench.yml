@@ -1,0 +1,47 @@
+name: Precision Workbench · React Build and Browser QA
+on:
+  push:
+    paths:
+      - "playground/precision-workbench/**"
+      - "packages/ui/**"
+      - "tests/browser/precision-workbench.spec.mjs"
+      - "playwright.workbench.config.mjs"
+      - "tsconfig.json"
+      - "package.json"
+      - ".github/workflows/precision-workbench.yml"
+  pull_request:
+    paths:
+      - "playground/precision-workbench/**"
+      - "packages/ui/**"
+      - "tests/browser/precision-workbench.spec.mjs"
+      - "playwright.workbench.config.mjs"
+      - "tsconfig.json"
+      - "package.json"
+      - ".github/workflows/precision-workbench.yml"
+jobs:
+  build-and-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm install --no-audit --no-fund
+      - name: Typecheck React UI and workbench
+        run: npm run typecheck:ui
+      - name: Build integrated React page
+        run: npm run build:workbench
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Interactions and responsive screenshots
+        run: npm run test:workbench:browser
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: precision-workbench-qa
+          path: |
+            test-results/
+            dist/precision-workbench/
+          if-no-files-found: ignore
+          retention-days: 14

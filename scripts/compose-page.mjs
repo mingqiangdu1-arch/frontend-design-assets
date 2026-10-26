@@ -21,15 +21,17 @@ export function chooseTemplate(registry,{template=null,style=null,context=null}=
 }
 export function buildPlan(registry,components,selected,{title=""}={}){
  const compatible=components.styleIds.includes(selected.styleId);
- const candidates=compatible?components.entries.filter(c=>
- ["Button","Badge","TextField","Tabs","Card","DataList","Progress"].includes(c.exportName))
- .map(c=>({id:c.id,exportName:c.exportName,status:"candidate-not-wired"})):[];
+ const wired=new Set(selected.wiredUIExportIds||[]);
+ const candidates=compatible?components.entries.filter(c=>wired.has(c.id)||["Button","Badge","TextField","Tabs","Card","DataList","Progress"].includes(c.exportName))
+ .map(c=>({id:c.id,exportName:c.exportName,status:wired.has(c.id)?"wired-in-demo":"candidate-not-wired"})):[];
  return {
  schemaVersion:"1.0",title:title.trim()||selected.name,
  selection:{templateId:selected.id,styleId:selected.styleId,contexts:selected.applicationContexts,status:selected.status,implementation:selected.implementation},
  assets:{demo:selected.demo,source:selected.source,tokenCss:selected.tokens,assetIds:selected.assetIds,
- relatedReactComponentCandidates:candidates,reactComponentPackageCompatible:compatible,demoActuallyUsesReactLibrary:false},
+ relatedReactComponentCandidates:candidates,reactComponentPackageCompatible:compatible,demoActuallyUsesReactLibrary:selected.implementation==="react-vite"},
  sections:selected.sections.map((label,i)=>({order:i+1,label})),
+ runCommand:selected.runCommand||"python3 -m http.server 8009 --bind 127.0.0.1",
+ buildCommand:selected.buildCommand||null,
  acceptance:selected.requiredChecks,
  implementationSteps:["Review user needs, devices, brand and accessibility constraints.",
   "Inspect the runnable example and the selected scoped Token stylesheet.",
@@ -47,12 +49,12 @@ export function toMarkdown(plan){
   "","## Sources","- Demo: "+plan.assets.demo,"- Source: "+plan.assets.source,
   "- Scoped Token CSS: "+plan.assets.tokenCss,"- Assets: "+plan.assets.assetIds.join(", "),
   "- React component candidates: "+(plan.assets.reactComponentPackageCompatible?"theme supported; not wired":"theme not declared"),
-  "","## Sections",...plan.sections.map(s=>s.order+". "+s.label),
+  "","## Run","- Local command: "+plan.runCommand,"- Build command: "+(plan.buildCommand||"not required"),"","## Sections",...plan.sections.map(s=>s.order+". "+s.label),
   "","## Implementation",...plan.implementationSteps.map((s,i)=>(i+1)+". "+s),
   "","## Acceptance",...plan.acceptance.map(s=>"- [ ] "+s),
   "","## Boundaries",...plan.cautions.map(s=>"- "+s),
-  "","## Optional component candidates (not wired to current demo)",
-  ...(plan.assets.relatedReactComponentCandidates.map(c=>"- "+c.id+" "+c.exportName)),
+  "","## React component mappings (integration status shown per export)",
+  ...(plan.assets.relatedReactComponentCandidates.map(c=>"- "+c.id+" "+c.exportName+" ("+c.status+")")),
   ...(plan.assets.relatedReactComponentCandidates.length?[]:["- None"]),""].join("\n");
 }
 function parse(args){
