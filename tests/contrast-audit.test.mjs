@@ -11,7 +11,7 @@ test("invalid colors cannot silently pass",()=>{
  assert.throws(()=>ratio("red","#ffffff"),/Unsupported/);
 });
 test("inspects normal/secondary/muted with threshold",()=>{
- const checks=inspectTheme({colors:{text:"#000000",textSecondary:"#333333",textMuted:"#777777",canvas:"#FFFFFF",surface:"#FFFFFF",accent:"#000000",accentText:"#FFFFFF"}});
+ const checks=inspectTheme({colors:{text:"#000000",textSecondary:"#333333",textMuted:"#767676",canvas:"#FFFFFF",surface:"#FFFFFF",accent:"#000000",accentText:"#FFFFFF"}});
  assert.ok(checks.every(x=>x.pass));
 });
 test("all repository theme tokens are scoped and have sufficient contrast",()=>{
