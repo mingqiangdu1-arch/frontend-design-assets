@@ -1438,7 +1438,8 @@
       ],
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
-      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+      "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-011",
@@ -1473,7 +1474,8 @@
       ],
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
-      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+      "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-012",
@@ -1508,7 +1510,8 @@
       ],
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
-      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+      "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-013",
@@ -1543,7 +1546,8 @@
       ],
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
-      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+      "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-014",
@@ -1578,7 +1582,8 @@
       ],
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
-      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+      "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-015",
@@ -1613,7 +1618,8 @@
       ],
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
-      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+      "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-016",
@@ -1648,7 +1654,8 @@
       ],
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
-      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+      "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-017",
@@ -1683,7 +1690,8 @@
       ],
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
-      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+      "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-018",
@@ -1718,7 +1726,8 @@
       ],
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
-      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+      "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-019",
@@ -1753,7 +1762,8 @@
       ],
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
-      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+      "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-020",
@@ -1788,7 +1798,8 @@
       ],
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
-      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+      "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-021",
@@ -1823,7 +1834,8 @@
       ],
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
-      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+      "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-022",
@@ -1858,7 +1870,8 @@
       ],
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
-      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+      "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-023",
@@ -1893,7 +1906,8 @@
       ],
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
-      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+      "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-024",
@@ -1928,7 +1942,8 @@
       ],
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
-      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+      "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-025",
@@ -1963,7 +1978,8 @@
       ],
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
-      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+      "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-026",
@@ -1998,7 +2014,8 @@
       ],
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
-      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+      "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-027",
@@ -2033,7 +2050,8 @@
       ],
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
-      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+      "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "KIT-005",
@@ -2078,7 +2096,8 @@
         "UI-026",
         "UI-027"
       ],
-      "verified": "Interactive gallery via Vite; cross-browser, live projects and screen readers not certified."
+      "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
+      "notion": "[private-notion-link-redacted]"
     }
   ],
   "referenceImplementationRoot": "components/reference",

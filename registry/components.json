@@ -23,7 +23,8 @@
       "stage": "reference-implemented",
       "demo": "playground/component-gallery/index.html",
       "interaction": "controlled or native as documented",
-      "verified": "TypeScript/build/browser smoke test pending CI; not production integration."
+      "verified": "TypeScript + library/gallery build and 8 Chromium smoke checks passed (GitHub run 40284518385). Real target-app integration not completed.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-011",
@@ -36,7 +37,8 @@
       "stage": "reference-implemented",
       "demo": "playground/component-gallery/index.html",
       "interaction": "controlled or native as documented",
-      "verified": "TypeScript/build/browser smoke test pending CI; not production integration."
+      "verified": "TypeScript + library/gallery build and 8 Chromium smoke checks passed (GitHub run 40284518385). Real target-app integration not completed.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-012",
@@ -49,7 +51,8 @@
       "stage": "reference-implemented",
       "demo": "playground/component-gallery/index.html",
       "interaction": "controlled or native as documented",
-      "verified": "TypeScript/build/browser smoke test pending CI; not production integration."
+      "verified": "TypeScript + library/gallery build and 8 Chromium smoke checks passed (GitHub run 40284518385). Real target-app integration not completed.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-013",
@@ -62,7 +65,8 @@
       "stage": "reference-implemented",
       "demo": "playground/component-gallery/index.html",
       "interaction": "controlled or native as documented",
-      "verified": "TypeScript/build/browser smoke test pending CI; not production integration."
+      "verified": "TypeScript + library/gallery build and 8 Chromium smoke checks passed (GitHub run 40284518385). Real target-app integration not completed.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-014",
@@ -75,7 +79,8 @@
       "stage": "reference-implemented",
       "demo": "playground/component-gallery/index.html",
       "interaction": "controlled or native as documented",
-      "verified": "TypeScript/build/browser smoke test pending CI; not production integration."
+      "verified": "TypeScript + library/gallery build and 8 Chromium smoke checks passed (GitHub run 40284518385). Real target-app integration not completed.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-015",
@@ -88,7 +93,8 @@
       "stage": "reference-implemented",
       "demo": "playground/component-gallery/index.html",
       "interaction": "controlled or native as documented",
-      "verified": "TypeScript/build/browser smoke test pending CI; not production integration."
+      "verified": "TypeScript + library/gallery build and 8 Chromium smoke checks passed (GitHub run 40284518385). Real target-app integration not completed.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-016",
@@ -101,7 +107,8 @@
       "stage": "reference-implemented",
       "demo": "playground/component-gallery/index.html",
       "interaction": "controlled or native as documented",
-      "verified": "TypeScript/build/browser smoke test pending CI; not production integration."
+      "verified": "TypeScript + library/gallery build and 8 Chromium smoke checks passed (GitHub run 40284518385). Real target-app integration not completed.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-017",
@@ -114,7 +121,8 @@
       "stage": "reference-implemented",
       "demo": "playground/component-gallery/index.html",
       "interaction": "controlled or native as documented",
-      "verified": "TypeScript/build/browser smoke test pending CI; not production integration."
+      "verified": "TypeScript + library/gallery build and 8 Chromium smoke checks passed (GitHub run 40284518385). Real target-app integration not completed.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-018",
@@ -127,7 +135,8 @@
       "stage": "reference-implemented",
       "demo": "playground/component-gallery/index.html",
       "interaction": "controlled or native as documented",
-      "verified": "TypeScript/build/browser smoke test pending CI; not production integration."
+      "verified": "TypeScript + library/gallery build and 8 Chromium smoke checks passed (GitHub run 40284518385). Real target-app integration not completed.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-019",
@@ -140,7 +149,8 @@
       "stage": "reference-implemented",
       "demo": "playground/component-gallery/index.html",
       "interaction": "controlled or native as documented",
-      "verified": "TypeScript/build/browser smoke test pending CI; not production integration."
+      "verified": "TypeScript + library/gallery build and 8 Chromium smoke checks passed (GitHub run 40284518385). Real target-app integration not completed.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-020",
@@ -153,7 +163,8 @@
       "stage": "reference-implemented",
       "demo": "playground/component-gallery/index.html",
       "interaction": "controlled or native as documented",
-      "verified": "TypeScript/build/browser smoke test pending CI; not production integration."
+      "verified": "TypeScript + library/gallery build and 8 Chromium smoke checks passed (GitHub run 40284518385). Real target-app integration not completed.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-021",
@@ -166,7 +177,8 @@
       "stage": "reference-implemented",
       "demo": "playground/component-gallery/index.html",
       "interaction": "controlled or native as documented",
-      "verified": "TypeScript/build/browser smoke test pending CI; not production integration."
+      "verified": "TypeScript + library/gallery build and 8 Chromium smoke checks passed (GitHub run 40284518385). Real target-app integration not completed.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-022",
@@ -179,7 +191,8 @@
       "stage": "reference-implemented",
       "demo": "playground/component-gallery/index.html",
       "interaction": "controlled or native as documented",
-      "verified": "TypeScript/build/browser smoke test pending CI; not production integration."
+      "verified": "TypeScript + library/gallery build and 8 Chromium smoke checks passed (GitHub run 40284518385). Real target-app integration not completed.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-023",
@@ -192,7 +205,8 @@
       "stage": "reference-implemented",
       "demo": "playground/component-gallery/index.html",
       "interaction": "controlled or native as documented",
-      "verified": "TypeScript/build/browser smoke test pending CI; not production integration."
+      "verified": "TypeScript + library/gallery build and 8 Chromium smoke checks passed (GitHub run 40284518385). Real target-app integration not completed.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-024",
@@ -205,7 +219,8 @@
       "stage": "reference-implemented",
       "demo": "playground/component-gallery/index.html",
       "interaction": "controlled or native as documented",
-      "verified": "TypeScript/build/browser smoke test pending CI; not production integration."
+      "verified": "TypeScript + library/gallery build and 8 Chromium smoke checks passed (GitHub run 40284518385). Real target-app integration not completed.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-025",
@@ -218,7 +233,8 @@
       "stage": "reference-implemented",
       "demo": "playground/component-gallery/index.html",
       "interaction": "controlled or native as documented",
-      "verified": "TypeScript/build/browser smoke test pending CI; not production integration."
+      "verified": "TypeScript + library/gallery build and 8 Chromium smoke checks passed (GitHub run 40284518385). Real target-app integration not completed.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-026",
@@ -231,7 +247,8 @@
       "stage": "reference-implemented",
       "demo": "playground/component-gallery/index.html",
       "interaction": "controlled or native as documented",
-      "verified": "TypeScript/build/browser smoke test pending CI; not production integration."
+      "verified": "TypeScript + library/gallery build and 8 Chromium smoke checks passed (GitHub run 40284518385). Real target-app integration not completed.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "UI-027",
@@ -244,7 +261,8 @@
       "stage": "reference-implemented",
       "demo": "playground/component-gallery/index.html",
       "interaction": "controlled or native as documented",
-      "verified": "TypeScript/build/browser smoke test pending CI; not production integration."
+      "verified": "TypeScript + library/gallery build and 8 Chromium smoke checks passed (GitHub run 40284518385). Real target-app integration not completed.",
+      "notion": "[private-notion-link-redacted]"
     }
   ]
 }
