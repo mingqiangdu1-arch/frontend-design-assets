@@ -24,6 +24,7 @@
 | 查看初始交互 Demo | [playground/initial-interaction-lab.html](playground/initial-interaction-lab.html) |
 | 通过条件检索复用资产 | [find-assets CLI](docs/quality/README.md) · `node scripts/find-assets.mjs --style=precision-dark --intent=command` |
 | 校验颜色与浏览器交互 | [质量基线 V0.5](docs/quality/README.md) |
+| **复用 React 组件** | [组件库 V0.6](packages/ui/README.md) / [组件 API 清单](registry/components.json) / [可交互展厅](playground/component-gallery/README.md) |
 | 给 Codex/Agent 复用的约束 | [AGENTS.md](AGENTS.md) |
 
 ## 组织方式
@@ -61,4 +62,4 @@ frontend-design-assets/
 - [Notion 总仓库]([private-notion-link-redacted])
 - [贡献与治理](docs/governance.md)、[更新日志](CHANGELOG.md)
 
-本仓库为独立资源库，**不会自动修改 AI WORKFLOW PLATFORM 或任何其他应用**。当前私有，不含第三方产品的专有源码、未授权视觉素材或字体文件。
+本仓库为独立资源库，**不会自动修改 AI WORKFLOW PLATFORM 或任何其他应用**。当前私有，不含第三方产品的专有源码、未授权视觉素材或字体文件。V0.6 新增独立 React/TypeScript 组件包与四风格互动展厅，仍不作为生产级已认证发行物。

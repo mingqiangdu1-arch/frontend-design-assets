@@ -48,3 +48,9 @@ The Playwright config starts a local static server; it never opens or alters a r
 ## Next phase
 
 Extend browser smoke to SaaS v0.2/v0.3; standardize reusable style specimens, add screenshot approvals, and audit popup/focus management. Do not claim these are finished in V0.5.
+
+## V0.6 React component package
+
+- [Source / integration](../../packages/ui/README.md) · [catalog](../../registry/components.json) · [gallery](../../playground/component-gallery/README.md)
+- Quality: `npm run check:components` and `npm run test:components:browser` (Chromium only).
+- A component-level visual mapping does not make four style systems share a single page layout. The gallery shows appearance and behavior, while the style explorer shows independent compositions.

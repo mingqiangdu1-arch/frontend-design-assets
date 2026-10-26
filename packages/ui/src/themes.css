@@ -1,0 +1,49 @@
+/* Scoped semantic bridge. Theme choice is explicit; no :root defaults. */
+[data-design-theme="refined-light-saas"]{
+ --ui-bg:var(--aw-canvas);--ui-surface:var(--aw-surface);--ui-subtle:var(--aw-hover);
+ --ui-border:var(--aw-border-strong);--ui-border-soft:var(--aw-border);
+ --ui-text:var(--aw-text);--ui-muted:var(--aw-text-secondary);
+ --ui-accent:var(--aw-action);--ui-on-accent:var(--aw-on-action);
+ --ui-focus:var(--aw-accent);--ui-selected:var(--aw-selected);
+ --ui-success:var(--aw-success);--ui-danger:var(--aw-danger);--ui-warning:var(--aw-warning);
+ --ui-success-bg:var(--aw-success-bg);--ui-danger-bg:var(--aw-danger-bg);
+ --ui-info-bg:var(--aw-info-bg);--ui-warning-bg:var(--aw-warning-bg);
+ --ui-radius:8px;--ui-card-radius:10px;--ui-control-height:36px;--ui-body-size:13px;
+ --ui-font:var(--aw-font-sans);--ui-shadow:0 8px 26px #1111110b;--ui-speed:130ms;
+}
+[data-design-theme="precision-dark"]{
+ --ui-bg:var(--ds-canvas);--ui-surface:var(--ds-surface);--ui-subtle:var(--ds-surface-raised);
+ --ui-border:var(--ds-border);--ui-border-soft:var(--ds-border);
+ --ui-text:var(--ds-text);--ui-muted:var(--ds-text-secondary);
+ --ui-accent:var(--ds-accent);--ui-on-accent:var(--ds-accent-text);
+ --ui-focus:var(--ds-accent);--ui-selected:var(--ds-selected);
+ --ui-success:var(--ds-success);--ui-danger:var(--ds-danger);--ui-warning:var(--ds-warning);
+ --ui-success-bg:#193227;--ui-danger-bg:#39252b;--ui-info-bg:#27243d;--ui-warning-bg:#352c20;
+ --ui-radius:7px;--ui-card-radius:9px;--ui-control-height:34px;--ui-body-size:12px;
+ --ui-font:var(--ds-font-ui);--ui-shadow:0 12px 38px #0007;--ui-speed:100ms;
+}
+[data-design-theme="editorial-warm"]{
+ --ui-bg:var(--ds-canvas);--ui-surface:var(--ds-surface);--ui-subtle:var(--ds-surface-raised);
+ --ui-border:var(--ds-border);--ui-border-soft:var(--ds-border);
+ --ui-text:var(--ds-text);--ui-muted:var(--ds-text-secondary);
+ --ui-accent:var(--ds-accent);--ui-on-accent:var(--ds-accent-text);
+ --ui-focus:var(--ds-accent);--ui-selected:var(--ds-selected);
+ --ui-success:var(--ds-success);--ui-danger:var(--ds-danger);--ui-warning:var(--ds-warning);
+ --ui-success-bg:#e3eddf;--ui-danger-bg:#fae5db;--ui-info-bg:#f0e5d4;--ui-warning-bg:#f6e9cb;
+ --ui-radius:4px;--ui-card-radius:2px;--ui-control-height:40px;--ui-body-size:14px;
+ --ui-font:var(--ds-font-ui);--ui-shadow:0 12px 30px #3e2f2314;--ui-speed:140ms;
+}
+[data-design-theme="playful-pop"]{
+ --ui-bg:var(--ds-canvas);--ui-surface:var(--ds-surface);--ui-subtle:var(--ds-surface-raised);
+ --ui-border:var(--ds-border);--ui-border-soft:var(--ds-border);
+ --ui-text:var(--ds-text);--ui-muted:var(--ds-text-secondary);
+ --ui-accent:var(--ds-accent);--ui-on-accent:var(--ds-accent-text);
+ --ui-focus:#3477be;--ui-selected:var(--ds-selected);
+ --ui-success:#187454;--ui-danger:#bd3651;--ui-warning:#8b581c;
+ --ui-success-bg:#dcfae7;--ui-danger-bg:#fff0f0;--ui-info-bg:#e6f6ff;--ui-warning-bg:#fff4d7;
+ --ui-radius:15px;--ui-card-radius:24px;--ui-control-height:46px;--ui-body-size:15px;
+ --ui-font:var(--ds-font-ui);--ui-shadow:0 5px 0 #d9e4f2;--ui-speed:150ms;
+}
+@media(prefers-reduced-motion:reduce){
+ [data-design-theme]{--ui-speed:0ms;}
+}

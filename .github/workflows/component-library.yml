@@ -1,0 +1,54 @@
+name: Component Library · Typecheck Build Browser
+on:
+  push:
+    paths:
+      - "packages/ui/**"
+      - "playground/component-gallery/**"
+      - "registry/components.json"
+      - "scripts/check-components.mjs"
+      - "tests/browser/component-gallery.spec.mjs"
+      - "playwright.components.config.mjs"
+      - "tsconfig.json"
+      - "package.json"
+      - ".github/workflows/component-library.yml"
+  pull_request:
+    paths:
+      - "packages/ui/**"
+      - "playground/component-gallery/**"
+      - "registry/components.json"
+      - "scripts/check-components.mjs"
+      - "tests/browser/component-gallery.spec.mjs"
+      - "playwright.components.config.mjs"
+      - "tsconfig.json"
+      - "package.json"
+      - ".github/workflows/component-library.yml"
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: Check source imports and indexed exports
+        run: node scripts/check-components.mjs
+      - name: Typecheck and build React library/gallery
+        run: npm run check:components
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Browser smoke tests
+        run: npm run test:components:browser
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: component-gallery-browser-results
+          path: |
+            test-results/
+            packages/ui/dist/
+            dist/component-gallery/
+          if-no-files-found: ignore
+          retention-days: 7

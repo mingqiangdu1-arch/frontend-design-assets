@@ -12,6 +12,13 @@ This repository is a **living multi-style, cross-application design asset librar
 6. Only load tokens/CSS/components whose compatibility and dependencies fit the selected direction. Theme-specific components MUST NOT silently set global `:root` variables or overwrite another theme.
 7. Preserve existing business APIs, data, app navigation and persistence when only asked about UI.
 
+## Reusable React/TypeScript components · V0.6
+
+- Inspect `packages/ui/README.md` and `registry/components.json` before proposing new generic components. The old `components/reference/` remains the original **Refined Light SaaS only** study, not the new multi-style package.
+- `packages/ui/src/index.tsx` exports 18 components. Use `ThemeSurface theme=<explicit-style-id>` and load the chosen source Token CSS. No implicit fallback theme or global `:root`.
+- Run `npm run check:components` and `npm run test:components:browser` before claiming the new React gallery works. Component CI is a limited smoke test only; do not claim all apps and screen readers validated.
+- Treat a `reference-implemented` asset as reference implementation, not production ready. When adding a component, update `registry/components.json`, `registry/assets.json`, gallery specimen, tests and docs, then check `scripts/check-components.mjs`.
+
 ## Three different kinds of reuse
 
 - **Inspiration:** product/screenshot/information architecture; requires independent adaptation, attribution and license review.

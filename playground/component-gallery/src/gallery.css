@@ -1,0 +1,43 @@
+*{box-sizing:border-box}
+html{min-width:320px}body{margin:0;background:#f1f2f5;font-family:system-ui,-apple-system,"PingFang SC",sans-serif;color:#20232a}
+.cg-top{padding:16px clamp(15px,4vw,55px);background:#fff;border-bottom:1px solid #e6e9ee;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.cg-brand{display:flex;align-items:center;gap:11px}.cg-mark{background:#222438;color:#fff;border-radius:9px;display:grid;place-items:center;width:35px;height:35px;font-size:23px}
+.cg-brand strong{font-size:13px;display:block}.cg-brand small{font-size:10px;color:#929aa8}.cg-top a{text-decoration:none;color:#666e80;font-size:11px}
+.cg-picker{margin:20px auto 0;max-width:1240px;display:grid;grid-template-columns:repeat(4,1fr);gap:9px;padding:0 18px 18px}
+.cg-picker button{display:flex;align-items:center;gap:11px;min-width:0;padding:11px 14px;background:#fff;text-align:left;border:1px solid #e1e4eb;border-radius:9px;color:#465062;font-size:12px;cursor:pointer}
+.cg-picker button.chosen{border-color:#555d74;box-shadow:0 0 0 2px #ccd2e0;font-weight:700}
+.cg-picker button span:last-child{min-width:0}.cg-picker button small{display:block;font-weight:400;color:#929aa8;font-size:10px;margin-top:2px}
+.cg-dot{width:17px;height:17px;border-radius:50%;flex-shrink:0;border:1px solid #0002}
+.cg-dot--refined-light-saas{background:#f7f7f8}.cg-dot--precision-dark{background:#252230}
+.cg-dot--editorial-warm{background:#d8c4a7}.cg-dot--playful-pop{background:#ff785d}
+.cg-surface{padding:38px clamp(16px,4vw,52px) 60px;min-height:90vh}
+.cg-intro{max-width:1220px;margin:0 auto 24px;display:flex;justify-content:space-between;align-items:start;gap:20px}
+.cg-intro h1{font-size:clamp(22px,3vw,30px);font-weight:680;letter-spacing:-.04em;line-height:1.34;margin:11px 0}
+.cg-intro small{font-size:10px;letter-spacing:.1em;color:var(--ui-muted)}
+.cg-intro p{font-size:12px;color:var(--ui-muted);max-width:680px;margin:0;line-height:1.8}
+.cg-grid{max-width:1220px;margin:0 auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+.cg-spec{min-width:0;border:1px solid var(--ui-border-soft);border-radius:var(--ui-card-radius);
+ background:var(--ui-surface);overflow:hidden}
+.cg-spec__head{display:flex;justify-content:space-between;align-items:end;gap:12px;padding:18px 20px 12px;border-bottom:1px solid var(--ui-border-soft)}
+.cg-spec__head span{font-size:10px;letter-spacing:.09em;color:var(--ui-muted)}
+.cg-spec__head h2{font-size:16px;margin:4px 0 0;letter-spacing:-.02em}
+.cg-spec__head small{color:var(--ui-muted);font-size:10px;text-align:right}
+.cg-spec__body{padding:20px;display:grid;gap:19px;align-content:start}
+.cg-row{display:flex;align-items:center;flex-wrap:wrap;gap:9px}
+.cg-stack{display:grid;gap:16px}
+.cg-hint,.cg-text{font-size:11px;color:var(--ui-muted);line-height:1.8}
+.cg-text{margin:0}
+.cg-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.cg-form-grid>.fda-field:last-child{grid-column:1/-1}
+.cg-end{max-width:1220px;margin:32px auto 0;font-size:11px;color:var(--ui-muted);text-align:center}
+[data-design-theme="editorial-warm"] .cg-intro h1{font:500 clamp(27px,3.4vw,42px)/1.2 var(--ds-font-serif)}
+[data-design-theme="editorial-warm"] .cg-spec{border-radius:0;border-left:0;border-right:0;border-top:2px solid var(--ui-accent)}
+[data-design-theme="editorial-warm"] .cg-spec__head h2{font:500 23px/1.3 var(--ds-font-serif)}
+[data-design-theme="editorial-warm"] .cg-spec__head{border-bottom:1px solid var(--ui-border-soft)}
+[data-design-theme="precision-dark"] .cg-spec__head{padding-top:13px}
+[data-design-theme="precision-dark"] .cg-spec__body{padding-top:15px}
+[data-design-theme="playful-pop"] .cg-intro h1{font-weight:850;letter-spacing:-.05em}
+[data-design-theme="playful-pop"] .cg-spec{border:2px solid var(--ui-border);box-shadow:0 4px 0 #dce7f4}
+[data-design-theme="playful-pop"] .cg-spec__head h2{font-weight:850}
+@media(max-width:850px){.cg-grid{grid-template-columns:1fr}.cg-picker{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:550px){.cg-picker{padding:0 10px 10px}.cg-picker button{padding:8px;font-size:11px}.cg-picker button small{font-size:9px}.cg-dot{width:12px;height:12px}.cg-surface{padding:25px 12px}.cg-intro{flex-direction:column}.cg-spec__head{padding:15px;align-items:start}.cg-spec__body{padding:16px}.cg-form-grid{grid-template-columns:1fr}.cg-form-grid>.fda-field:last-child{grid-column:auto}}

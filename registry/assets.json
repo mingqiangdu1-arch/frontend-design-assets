@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1",
   "purpose": "Living cross-application, multi-style design asset repository; no repository-wide visual default.",
-  "updatedAt": "2026-10-23",
+  "updatedAt": "2026-10-26",
   "stageDefinitions": [
     "captured",
     "analyzed",
@@ -1404,6 +1404,681 @@
       "license": "Original demo implementation, local-only, no third-party media",
       "verified": "Style-switch and interaction-state model tests; browser and accessibility verification pending",
       "notion": "[private-notion-link-redacted]"
+    },
+    {
+      "id": "UI-010",
+      "name": "Foundation: explicit four-style scope",
+      "type": "component",
+      "exportName": "ThemeSurface",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "tags": [
+        "react",
+        "typescript",
+        "component-library",
+        "foundation"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/index.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is peer dependency",
+      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+    },
+    {
+      "id": "UI-011",
+      "name": "Actions: variants, loading and sizes",
+      "type": "component",
+      "exportName": "Button",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "react",
+        "typescript",
+        "component-library",
+        "action"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/index.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is peer dependency",
+      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+    },
+    {
+      "id": "UI-012",
+      "name": "Feedback: status badges",
+      "type": "component",
+      "exportName": "Badge",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "react",
+        "typescript",
+        "component-library",
+        "feedback"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/index.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is peer dependency",
+      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+    },
+    {
+      "id": "UI-013",
+      "name": "Layout: composition sections",
+      "type": "component",
+      "exportName": "Card",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "react",
+        "typescript",
+        "component-library",
+        "layout"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/index.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is peer dependency",
+      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+    },
+    {
+      "id": "UI-014",
+      "name": "Forms: labeled input with validation",
+      "type": "component",
+      "exportName": "TextField",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "react",
+        "typescript",
+        "component-library",
+        "forms"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/index.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is peer dependency",
+      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+    },
+    {
+      "id": "UI-015",
+      "name": "Forms: multiline editing",
+      "type": "component",
+      "exportName": "TextAreaField",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "react",
+        "typescript",
+        "component-library",
+        "forms"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/index.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is peer dependency",
+      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+    },
+    {
+      "id": "UI-016",
+      "name": "Forms: accessible native select",
+      "type": "component",
+      "exportName": "SelectField",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "react",
+        "typescript",
+        "component-library",
+        "forms"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/index.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is peer dependency",
+      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+    },
+    {
+      "id": "UI-017",
+      "name": "Forms: native checkbox",
+      "type": "component",
+      "exportName": "CheckboxField",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "react",
+        "typescript",
+        "component-library",
+        "forms"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/index.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is peer dependency",
+      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+    },
+    {
+      "id": "UI-018",
+      "name": "Forms: controlled switch",
+      "type": "component",
+      "exportName": "SwitchField",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "react",
+        "typescript",
+        "component-library",
+        "forms"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/index.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is peer dependency",
+      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+    },
+    {
+      "id": "UI-019",
+      "name": "Navigation: keyboard tabs",
+      "type": "component",
+      "exportName": "Tabs",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "react",
+        "typescript",
+        "component-library",
+        "navigation"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/index.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is peer dependency",
+      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+    },
+    {
+      "id": "UI-020",
+      "name": "Feedback: dismissible alert",
+      "type": "component",
+      "exportName": "Alert",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "react",
+        "typescript",
+        "component-library",
+        "feedback"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/index.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is peer dependency",
+      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+    },
+    {
+      "id": "UI-021",
+      "name": "Feedback: determinate progress",
+      "type": "component",
+      "exportName": "Progress",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "react",
+        "typescript",
+        "component-library",
+        "feedback"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/index.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is peer dependency",
+      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+    },
+    {
+      "id": "UI-022",
+      "name": "Feedback: loading placeholder",
+      "type": "component",
+      "exportName": "Skeleton",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "react",
+        "typescript",
+        "component-library",
+        "feedback"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/index.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is peer dependency",
+      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+    },
+    {
+      "id": "UI-023",
+      "name": "Overlays: native modal dialog",
+      "type": "component",
+      "exportName": "Dialog",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "react",
+        "typescript",
+        "component-library",
+        "overlay"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/index.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is peer dependency",
+      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+    },
+    {
+      "id": "UI-024",
+      "name": "Feedback: actionable empty area",
+      "type": "component",
+      "exportName": "EmptyState",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "react",
+        "typescript",
+        "component-library",
+        "feedback"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/index.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is peer dependency",
+      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+    },
+    {
+      "id": "UI-025",
+      "name": "Data: initials and portrait",
+      "type": "component",
+      "exportName": "Avatar",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "react",
+        "typescript",
+        "component-library",
+        "data"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/index.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is peer dependency",
+      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+    },
+    {
+      "id": "UI-026",
+      "name": "Data: selectable list",
+      "type": "component",
+      "exportName": "DataList",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "react",
+        "typescript",
+        "component-library",
+        "data"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/index.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is peer dependency",
+      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+    },
+    {
+      "id": "UI-027",
+      "name": "Overlays: transient status feedback",
+      "type": "component",
+      "exportName": "Toast",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "react",
+        "typescript",
+        "component-library",
+        "overlay"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/index.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is peer dependency",
+      "verified": "Source implemented; production integration and full a11y not certified. CI typecheck/build/browser planned."
+    },
+    {
+      "id": "KIT-005",
+      "name": "Multi-style React Component Gallery V0.6",
+      "type": "archive",
+      "stage": "prototype",
+      "priority": "P0",
+      "tags": [
+        "component-library",
+        "react",
+        "gallery",
+        "multistyle"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "playground/component-gallery/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "snapshot",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [],
+      "dependencies": [
+        "UI-010",
+        "UI-011",
+        "UI-012",
+        "UI-013",
+        "UI-014",
+        "UI-015",
+        "UI-016",
+        "UI-017",
+        "UI-018",
+        "UI-019",
+        "UI-020",
+        "UI-021",
+        "UI-022",
+        "UI-023",
+        "UI-024",
+        "UI-025",
+        "UI-026",
+        "UI-027"
+      ],
+      "verified": "Interactive gallery via Vite; cross-browser, live projects and screen readers not certified."
     }
   ],
   "referenceImplementationRoot": "components/reference",

@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-26 · V0.6 multi-style React component library
+
+- Created `packages/ui` with 18 original React/TypeScript components and explicit scoped semantic CSS bridges for four distinct visual styles.
+- Added Vite-powered interactive component gallery, variant/state demonstrations and keyboard/overlay/form interaction examples.
+- Registered UI-010–UI-027 and KIT-005 with export names, style dependencies, provenance, and reference maturity.
+- Added TypeScript declaration/library build, component registry consistency checks and Playwright Chromium component-gallery smoke tests.
+- Kept legacy single-style `components/reference/` unchanged. Public npm publishing and real product integration are not implied.
+
+
 ## 2026-10-26 · V0.5 reliability and reuse pass
 
 - Added machine-readable contrast audit across four scoped visual styles; fixed muted foreground contrast in Editorial Warm and Playful Pop and corrected Playful's primary CTA to use its accessible accent text color.
