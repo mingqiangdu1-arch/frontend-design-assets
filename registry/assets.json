@@ -2991,7 +2991,8 @@
         "UI-023"
       ],
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
-      "verified": "Reference implementation. Automated browser and build checks pending; no production certification or human-approved visual baseline."
+      "verified": "Reference implementation. Automated browser and build checks pending; no production certification or human-approved visual baseline.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "KIT-012",
@@ -3022,7 +3023,8 @@
         "IP-016"
       ],
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
-      "verified": "Reference implementation. Automated browser and build checks pending; no production certification or human-approved visual baseline."
+      "verified": "Reference implementation. Automated browser and build checks pending; no production certification or human-approved visual baseline.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "PR-011",
@@ -3052,7 +3054,8 @@
         "UI-019"
       ],
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
-      "verified": "Reference implementation. Automated browser and build checks pending; no production certification or human-approved visual baseline."
+      "verified": "Reference implementation. Automated browser and build checks pending; no production certification or human-approved visual baseline.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "KIT-011",
@@ -3080,7 +3083,8 @@
         "PR-011"
       ],
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
-      "verified": "Reference implementation. Automated browser and build checks pending; no production certification or human-approved visual baseline."
+      "verified": "Reference implementation. Automated browser and build checks pending; no production certification or human-approved visual baseline.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "TPL-007",
@@ -3109,7 +3113,8 @@
         "KIT-011"
       ],
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
-      "verified": "Reference implementation. Automated browser and build checks pending; no production certification or human-approved visual baseline."
+      "verified": "Reference implementation. Automated browser and build checks pending; no production certification or human-approved visual baseline.",
+      "notion": "[private-notion-link-redacted]"
     }
   ],
   "referenceImplementationRoot": "components/reference",

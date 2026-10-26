@@ -100,6 +100,8 @@ frontend-design-assets/
 
 ## V0.12 · 组件状态矩阵、视觉证据与第二套 React 整页
 
+[Notion V0.12 阶段报告]([private-notion-link-redacted]) · [素材数据库]([private-notion-link-redacted])
+
 - [State Matrix](registry/component-states.json) / [React 互动展厅](playground/component-gallery/README.md)：在 4 套当前兼容主题中展示 12/18 React 组件的选定状态，明确列出剩余 6 项未覆盖；不宣称全面无障碍/生产认证。
 - [视觉验收策略](docs/quality/visual-review.md)：浏览器 CI 采集 390/768/1440px 截图，使用 SHA-256 清单区分「截取证据」与「人工批准基线」；默认 **未批准**，验证器不通过无证据的签署。
 - [TPL-007 Folio Editorial React](playground/editorial-review/README.md)：继 Precision Dark 后的第二套真正引用 `packages/ui` 的整页 React 实现，以 **Editorial Warm** 内容审阅取代通用 SaaS 工作台外壳。
