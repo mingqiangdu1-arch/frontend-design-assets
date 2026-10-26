@@ -1,4 +1,4 @@
-# Multi-style research collection · V0.4
+# Multi-style research collection · V0.7
 
 The repository **does not have a default visual theme**. Visual styles are explicit, independently scoped alternatives. Shared UI behavior can be researched across styles, but implementation and layout are not assumed portable.
 
@@ -10,13 +10,15 @@ The repository **does not have a default visual theme**. Visual styles are expli
 | `precision-dark` | [Precision Dark](../../styles/precision-dark/README.md) | dense charcoal workstation, short motion, subtle violet focus | developer tools, desktop editors, pro dashboards | Proposed Tokens + demo |
 | `editorial-warm` | [Editorial Warm](../../styles/editorial-warm/README.md) | cream paper, serif typography, reading column, editorial rule | publications, knowledge, reading and portfolios | Proposed Tokens + demo |
 | `playful-pop` | [Playful Pop](../../styles/playful-pop/README.md) | bright friendly surfaces, chunky touch targets, feedback and progress | learning, consumer, gamified utilities | Proposed Tokens + demo |
+| `neo-brutalist` | [Neo Brutalist / Bold Grid](../../styles/neo-brutalist/README.md) | poster-scale type, exposed thick grids, loud graphic blocks, offset shadows | events, indie-brand pages, creative portfolios, campaigns | Proposed Tokens + standalone demo |
 
 ## Comparison
 
-These are **distinct screen compositions**, not three CSS color themes placed onto the same SaaS dashboard:
+These are **distinct screen compositions**, not five CSS color themes placed onto the same SaaS dashboard:
 - Precision Dark: 3-column compact professional workspace + action palette + focus control.
 - Editorial Warm: reading-first masthead, long-form content column, aside, save/reading toggle.
 - Playful Pop: progress-driven quiz, tactile selection, success/failure feedback.
+- Neo Brutalist / Bold Grid: striking hero, high-contrast poster cards and filterable collection; does not inherit the SaaS app shell.
 
 See [Style Explorer](../../playground/style-explorer/index.html), [Demo README](../../playground/style-explorer/README.md), [style decision matrix](decision-matrix.md) and [quality checklist](../quality/README.md).
 
@@ -39,3 +41,5 @@ Alternative professional light/dark, bold brutalist web, commerce-focused produc
 - [Duolingo shape language](https://blog.duolingo.com/shape-language-duolingos-art-style/) / [Core tabs redesign](https://blog.duolingo.com/core-tabs-redesign/)
 
 These links support studying aesthetic direction. **All new numeric values are our design proposals**, not claimed as observed values of those products.
+
+**Component library compatibility:** Existing React `packages/ui` explicitly supports the earlier four themes only. The fifth theme is its own original static/interactive page prototype, not integrated in the React theme bridge. No automatic cross-style promise.

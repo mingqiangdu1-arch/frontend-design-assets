@@ -36,3 +36,7 @@ For each new pattern record:
 ## Applied direction for AI workflows
 
 AI status presentation should emphasize trust over spectacle: show which step/tool is running, what is waiting for user input, how to stop, when a handoff is final, and where failure can resume. Do not portray scripted automation as autonomous agent reasoning.
+
+## V0.7 cross-style research additions
+
+IP-009–IP-012 live in [advanced interaction specifications](advanced-patterns.md) and a standalone [Interaction Lab](../../playground/interaction-lab/index.html). IP-013 is demonstrated in [Bold Grid](../../playground/bold-grid/index.html), with [motion and focus guardrails](../motion/motion-system.md). These are behaviors to evaluate, not mandatory visual components.

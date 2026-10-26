@@ -1,0 +1,53 @@
+{
+  "version": "0.7.0",
+  "status": "research-and-sample-only",
+  "policy": "Motion communicates cause and continuity. Honor reduced motion and restore focus after DOM changes.",
+  "sources": [
+    "https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API",
+    "https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API/Using",
+    "https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/ui-behaviors/same-document-transitions.md"
+  ],
+  "presets": [
+    {
+      "id": "MOT-01",
+      "name": "feedback-quiet",
+      "durationMs": 100,
+      "easing": "ease-out",
+      "use": "status acknowledgement",
+      "reducedMotion": "instant"
+    },
+    {
+      "id": "MOT-02",
+      "name": "overlay-context",
+      "durationMs": 180,
+      "easing": "cubic-bezier(.2,.75,.25,1)",
+      "use": "modal context",
+      "reducedMotion": "instant"
+    },
+    {
+      "id": "MOT-03",
+      "name": "selection-reflow",
+      "durationMs": 150,
+      "easing": "ease-in-out",
+      "use": "filtered content",
+      "reducedMotion": "no spatial movement"
+    },
+    {
+      "id": "MOT-04",
+      "name": "reward-tactile",
+      "durationMs": 220,
+      "easing": "cubic-bezier(.16,1,.3,1)",
+      "use": "meaningful task feedback in playful applications",
+      "reducedMotion": "text/color only"
+    },
+    {
+      "id": "MOT-05",
+      "name": "reading-calm",
+      "durationMs": 120,
+      "easing": "ease-out",
+      "use": "reading focus reveal",
+      "reducedMotion": "instant"
+    }
+  ],
+  "scope": "Numbers are original proposals, not copied official vendor timings."
+}

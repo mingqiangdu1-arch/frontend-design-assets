@@ -36,3 +36,16 @@ A consumer app can have an **internal operations SaaS** panel; it might intentio
 - Daily learning challenge → Playful Pop candidate.
 
 These are examples, not constraints. A brand could choose otherwise after visual/UX research.
+
+## V0.7 additive creative direction
+
+| Dimension | Neo Brutalist / Bold Grid |
+| --- | --- |
+| Intended work | memorable campaign, event or indie-brand presentation |
+| Structure | graphic hero + exposed grids + poster-like collection tiles |
+| Type and density | oversized bold grotesk headlines, compact captions, intentional whitespace breaks |
+| Interaction | explicit filter/pressed status, bookmarks, reduced-motion-aware transitions |
+| Risks | loudness, CJK display line breaks, smaller screens, confusing decoration with actions |
+| Not suitable as a default | dense operational SaaS tables or long uninterrupted academic text |
+
+Do not assume the current React UI package supports this new style; use the standalone Bold Grid prototype as a design source and test new mappings first.
