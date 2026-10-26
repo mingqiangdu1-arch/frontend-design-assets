@@ -94,4 +94,6 @@ frontend-design-assets/
 
 ## V0.11 · 新增第六套独立风格 Commerce Atelier
 
+[Notion V0.11 研究与交付报告]([private-notion-link-redacted]) · [可检索素材数据库]([private-notion-link-redacted])
+
 经 Baymard/Shopify 与 Apple/Figma 等 2026 风格与 UX 资料对比，现有五套视觉语言中明确缺少“以商品媒体、价格、筛选与规格为核心”的消费者购物场景。因此只新增 **[Commerce Atelier](styles/commerce-atelier/README.md)**，附带 [独立商品目录交互页](playground/commerce-atelier/README.md)、[IP-015 多选筛选与规格规范](docs/interactions/commerce-facets.md) 和 [PR-010 页面配方](recipes/product-first-commerce.md)。其余趋势归入可选动效/组件模式，不盲目扩增风格。React 组件库仍只兼容其原有四套主题。

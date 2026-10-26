@@ -2824,7 +2824,8 @@
       ],
       "dependencies": [],
       "details": "styles/commerce-atelier/README.md",
-      "demo": "playground/commerce-atelier/index.html"
+      "demo": "playground/commerce-atelier/index.html",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "stage": "prototype",
@@ -2849,7 +2850,8 @@
       "dependencies": [
         "REF-029"
       ],
-      "demo": "playground/commerce-atelier/index.html"
+      "demo": "playground/commerce-atelier/index.html",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "stage": "prototype",
@@ -2877,7 +2879,8 @@
         "DT-006",
         "IP-015"
       ],
-      "demo": "playground/commerce-atelier/index.html"
+      "demo": "playground/commerce-atelier/index.html",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "stage": "prototype",
@@ -2905,7 +2908,8 @@
         "DT-006",
         "IP-015"
       ],
-      "demo": "playground/commerce-atelier/index.html"
+      "demo": "playground/commerce-atelier/index.html",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "stage": "prototype",
@@ -2934,7 +2938,8 @@
         "IP-015",
         "PR-010"
       ],
-      "demo": "playground/commerce-atelier/index.html"
+      "demo": "playground/commerce-atelier/index.html",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "stage": "analyzed",
@@ -2956,7 +2961,8 @@
         "commerce-storefront"
       ],
       "dependencies": [],
-      "details": "styles/commerce-atelier/README.md"
+      "details": "styles/commerce-atelier/README.md",
+      "notion": "[private-notion-link-redacted]"
     }
   ],
   "referenceImplementationRoot": "components/reference",
