@@ -2969,7 +2969,7 @@
       "type": "interaction",
       "name": "Component state matrix across four React themes",
       "stage": "prototype",
-      "reuseKind": "styled-implementation",
+      "reuseKind": "behavior-pattern",
       "priority": "P1",
       "tags": [
         "v0.12",
