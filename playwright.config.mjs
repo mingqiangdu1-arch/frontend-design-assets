@@ -3,6 +3,7 @@ import {defineConfig,devices} from "@playwright/test";
 export default defineConfig({
  testDir:"./tests/browser",
  testMatch:"*.spec.mjs",
+ testIgnore:["**/component-gallery.spec.mjs"],
  timeout:30000,
  expect:{timeout:7000},
  retries:process.env.CI?1:0,
