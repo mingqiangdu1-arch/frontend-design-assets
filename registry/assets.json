@@ -3144,7 +3144,8 @@
       ],
       "dependencies": [],
       "source": "https://www.figma.com/resource-library/web-design-trends/",
-      "verified": "Original Token and CSS/JSON prototype. Automated checks pending; not React-compatible or production certified."
+      "verified": "Original Token and CSS/JSON prototype. Automated checks pending; not React-compatible or production certified.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "DT-008",
@@ -3174,7 +3175,8 @@
       ],
       "dependencies": [],
       "source": "https://www.figma.com/resource-library/web-design-trends/",
-      "verified": "Original Token and CSS/JSON prototype. Automated checks pending; not React-compatible or production certified."
+      "verified": "Original Token and CSS/JSON prototype. Automated checks pending; not React-compatible or production certified.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "DT-009",
@@ -3204,7 +3206,8 @@
       ],
       "dependencies": [],
       "source": "https://www.figma.com/resource-library/web-design-trends/",
-      "verified": "Original Token and CSS/JSON prototype. Automated checks pending; not React-compatible or production certified."
+      "verified": "Original Token and CSS/JSON prototype. Automated checks pending; not React-compatible or production certified.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "id": "DT-010",
@@ -3234,7 +3237,8 @@
       ],
       "dependencies": [],
       "source": "https://www.figma.com/resource-library/web-design-trends/",
-      "verified": "Original Token and CSS/JSON prototype. Automated checks pending; not React-compatible or production certified."
+      "verified": "Original Token and CSS/JSON prototype. Automated checks pending; not React-compatible or production certified.",
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "stage": "prototype",
@@ -3264,7 +3268,8 @@
         "DT-008",
         "DT-009",
         "DT-010"
-      ]
+      ],
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "stage": "prototype",
@@ -3294,7 +3299,8 @@
         "DT-008",
         "DT-009",
         "DT-010"
-      ]
+      ],
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "stage": "prototype",
@@ -3330,7 +3336,8 @@
         "DT-009",
         "DT-010",
         "IP-017"
-      ]
+      ],
+      "notion": "[private-notion-link-redacted]"
     },
     {
       "stage": "analyzed",
@@ -3354,7 +3361,8 @@
         "design-research",
         "experimental-web"
       ],
-      "dependencies": []
+      "dependencies": [],
+      "notion": "[private-notion-link-redacted]"
     }
   ],
   "referenceImplementationRoot": "components/reference",
