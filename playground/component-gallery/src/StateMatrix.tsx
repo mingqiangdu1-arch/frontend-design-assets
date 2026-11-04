@@ -34,7 +34,7 @@ export function StateMatrix(){
      <Cell state="default"><Button onClick={()=>{setNotice("主要动作完成（本地模拟）");setToast(true);}}>Primary action</Button></Cell>
      <Cell state="secondary"><Button variant="secondary">Secondary</Button></Cell>
      <Cell state="danger"><Button variant="danger" onClick={()=>setDialog(true)}>Danger</Button></Cell>
-     <Cell state="loading"><Button loading aria-label="Loading action">Submitting…</Button></Cell>
+     <Cell state="loading"><Button loading>Submitting…</Button></Cell>
      <Cell state="disabled"><Button disabled>Unavailable</Button></Cell>
     </></Group>
     <Group id="UI-014" title="TextField" description="输入、必填、错误关系以及辅助提示"><>

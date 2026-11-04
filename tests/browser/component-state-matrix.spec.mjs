@@ -6,6 +6,7 @@ test("state matrix renders documented cases from real React package",async({page
  await expect(page.locator('[data-component-id="UI-011"] [data-state]')).toHaveCount(5);
  await expect(page.locator('[data-component-id="UI-014"] [data-state]')).toHaveCount(4);
  await expect(page.getByRole("button",{name:"Submitting…"})).toBeDisabled();
+ await expect(page.getByRole("button",{name:"Submitting…"})).toHaveAttribute("aria-busy","true");
  await expect(page.getByRole("button",{name:"Unavailable"})).toBeDisabled();
  await expect(page.getByRole("textbox",{name:"Invalid email"})).toHaveAttribute("aria-invalid","true");
 });
