@@ -3363,6 +3363,87 @@
       ],
       "dependencies": [],
       "notion": "[private-notion-link-redacted]"
+    },
+    {
+      "id": "REF-031",
+      "type": "reference",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "name": "Unslop — contextual AI UI visual critique Skill",
+      "path": "docs/research/unslop-hallmark.md",
+      "details": "docs/research/unslop-hallmark.md",
+      "styleIds": [],
+      "applicationContexts": [
+        "design-research",
+        "frontend-quality",
+        "existing-ui-redesign"
+      ],
+      "tags": [
+        "design-review",
+        "agent-skill",
+        "anti-template",
+        "attribution",
+        "unslop"
+      ],
+      "dependencies": [],
+      "source": "https://github.com/heydamir/unslop",
+      "verified": "Upstream README, Skill instructions and licenses reviewed on 2026-11-04. No upstream code copied or executed; guidance is not production validation."
+    },
+    {
+      "id": "REF-032",
+      "type": "reference",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "name": "Hallmark — multi-theme generative design and browser lint Skill",
+      "path": "docs/research/unslop-hallmark.md",
+      "details": "docs/research/unslop-hallmark.md",
+      "styleIds": [],
+      "applicationContexts": [
+        "design-research",
+        "frontend-quality",
+        "new-page"
+      ],
+      "tags": [
+        "design-review",
+        "agent-skill",
+        "design-generation",
+        "quality-gates",
+        "hallmark"
+      ],
+      "dependencies": [],
+      "source": "https://github.com/Nutlope/hallmark",
+      "verified": "Upstream README, Skill instructions and licenses reviewed on 2026-11-04. No upstream code copied or executed; guidance is not production validation."
+    },
+    {
+      "id": "PR-013",
+      "type": "recipe",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "composition-recipe",
+      "name": "Contextual anti-template design review and controlled revision",
+      "path": "recipes/contextual-design-review.md",
+      "styleIds": [],
+      "applicationContexts": [
+        "frontend-quality",
+        "existing-ui-redesign",
+        "new-page"
+      ],
+      "tags": [
+        "art-direction",
+        "quality-review",
+        "ai-coding",
+        "a11y",
+        "provenance"
+      ],
+      "dependencies": [
+        "REF-031",
+        "REF-032",
+        "PR-012"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "verified": "Upstream README, Skill instructions and licenses reviewed on 2026-11-04. No upstream code copied or executed; guidance is not production validation."
     }
   ],
   "referenceImplementationRoot": "components/reference",

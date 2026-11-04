@@ -101,3 +101,11 @@ Use local HTTP to inspect prototype files in a browser agent. No autonomous back
 - Reference no external screenshot/font binaries; the Creative Style Lab illustrations and interaction logic must be original.
 - Honor keyboard focus, readable body copy, reduced motion, no autoplay sound, and explicit fictional data disclaimers. Validate style-specific product requirements before delivery.
 - Run `node scripts/check-creative-directions.mjs`, `node scripts/contrast-audit.mjs`, `npm run test:unit`, `npm run test:browser`. Screenshot capture is evidence only, not approved visual regression.
+
+## External design-skills research (2026-11-04)
+
+- Optional references: `REF-031` [Unslop](docs/research/unslop-hallmark.md), `REF-032` [Hallmark](docs/research/unslop-hallmark.md), and original `PR-013` [contextual design-review recipe](recipes/contextual-design-review.md).
+- **Do not automatically install, execute or vendor either third-party Skill.** User/job-specific request and reviewed source scripts are prerequisites to an external invocation.
+- Hallmark's optional aesthetic house rules are **not** equivalent to universal WCAG/quality requirements. No automatic prohibition against deliberate pixel block typography, fictional radar glow, editorial annotations or genre-specific gradients.
+- When improving existing UI, preserve user-visible features, controls, data paths and semantic reading order; use before/after screenshots and tests. Attribute any actual copied material according to its license (Unslop CC BY 4.0; Hallmark MIT; external photos separate).
+- Prefer existing local creative direction briefs and independently verified build/a11y/browser checks over unreviewed generative changes.

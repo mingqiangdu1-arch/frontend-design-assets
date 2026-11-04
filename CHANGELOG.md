@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-11-04 · V0.13 research addendum · Unslop × Hallmark
+
+- Analyzed external [heydamir/unslop](https://github.com/heydamir/unslop) and [Nutlope/hallmark](https://github.com/Nutlope/hallmark) Skills through their upstream README, SKILL.md, review/checker references and licenses.
+- Registered REF-031, REF-032 and PR-013 as **research-only** references and a local contextual design-review recipe; did not install either Skill or import its code/assets.
+- Distinguished non-negotiable functional/accessibility/truthfulness checks from optional aesthetic house rules, preserving intentionally expressive local style profiles.
+- Source license notes: Unslop CC BY 4.0, Hallmark MIT; image references may have separate licensing obligations.
+- Preserved ten styles, seven templates and four React-compatible themes; no production-ready claims.
+
+
 ## 2026-11-04 · V0.13 Experimental art direction / Creative Style Lab
 
 - Added four distinctly composed visual profiles: Pixel Arcade, Signal Noir, Paper Rebellion and Aether Orbit, each with original scoped CSS/JSON tokens, design grammar, usage limits and anti-patterns.

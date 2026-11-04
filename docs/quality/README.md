@@ -102,3 +102,7 @@ Extend browser smoke to SaaS v0.2/v0.3; standardize reusable style specimens, ad
 - `npm run test:unit` includes deterministic-seed model-brief cases; `npm run test:browser` runs actual 390/768/1440 scene tests.
 - Pixel art and collage should be scrutinized for semantic reading order and zoom. Radar/orbit animations must stop with reduced motion; every operation also has text feedback, not color-only status.
 - Browser screenshots + SHA256 outputs are **unapproved evidence**, not a manually signed golden image. Native Safari/Firefox, real touch, screen reader, performance on weak hardware and translated content still need review.
+
+## 2026-11-04 · External art-direction review references
+
+[Unslop × Hallmark comparative study](../research/unslop-hallmark.md) and [optional controlled visual review workflow](../../recipes/contextual-design-review.md) document how to supplement our existing automated checks. Do not globally enforce another project's aesthetic bans, import third-party imagery without checking separate licenses, or promote screenshot capture to approved quality.

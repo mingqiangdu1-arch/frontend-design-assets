@@ -107,3 +107,11 @@ frontend-design-assets/
 - [视觉验收策略](docs/quality/visual-review.md)：浏览器 CI 采集 390/768/1440px 截图，使用 SHA-256 清单区分「截取证据」与「人工批准基线」；默认 **未批准**，验证器不通过无证据的签署。
 - [TPL-007 Folio Editorial React](playground/editorial-review/README.md)：继 Precision Dark 后的第二套真正引用 `packages/ui` 的整页 React 实现，以 **Editorial Warm** 内容审阅取代通用 SaaS 工作台外壳。
 - 启动：`npm run dev:components`（`?view=matrix`）、`npm run dev:editorial-react`（5176）；真实产品 API、权限、人工视觉/读屏验收仍需单独完成。
+
+## V0.13 research extension · Unslop × Hallmark
+
+新增两项**外部设计 Skill 研究参考**：[heydamir/unslop](https://github.com/heydamir/unslop)（已有界面去模板化审阅）和 [Nutlope/hallmark](https://github.com/Nutlope/hallmark)（多主题构图和独立质量检查）。[比较与许可边界](docs/research/unslop-hallmark.md) · [本仓库原创、可选的审阅配方](recipes/contextual-design-review.md)。
+
+- 不将 Hallmark 的全部审美禁令设置为所有风格的全局强制规则。像素 HUD、艺术拼贴、科幻辉光需要任务与风格相关的判断。
+- 本仓库仍是 **10 套独立风格、7 套完整页面模板**；新增外部 Skill 参考和配方不增加兼容主题，也不安装任何第三方工具。
+- 在受控工作区先记下目标页面功能、截图、类型与布局约束，再按需运行外部 Skill。所有修改须经过自己的单元/浏览器/人工视觉与版权验收。

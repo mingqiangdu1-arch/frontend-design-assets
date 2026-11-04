@@ -81,3 +81,9 @@ These references do not license copying vendors' UI, artwork, trademarks or font
 - [WCAG 2.2 Animation from Interactions](https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions) — avoid unnecessary motion and support controls/reduced motion.
 
 **Important:** These are public *research and inspiration links*, not verified permissions to reuse any image, SVG, audio, font or proprietary code. The four new style systems use original numeric token proposals and CSS-only artwork.
+
+## 2026-11-04 / AI-assisted design-review reference study
+
+- **REF-031:** [heydamir/unslop](https://github.com/heydamir/unslop), [instructions](https://github.com/heydamir/unslop/blob/main/skills/unslop/SKILL.md), licensed CC BY 4.0 — original product-specific design critique and controlled UI revision; avoid copying text/art without credit.
+- **REF-032:** [Nutlope/hallmark](https://github.com/Nutlope/hallmark), [instructions](https://github.com/Nutlope/hallmark/blob/main/skills/hallmark/SKILL.md), [gates](https://github.com/Nutlope/hallmark/blob/main/skills/hallmark/references/gates.md), licensed MIT — broad theme material and browser QA gate architecture. External photographs have individual licenses.
+- [Comparative analysis and repository adoption limits](unslop-hallmark.md): study the approach, don't turn either vendor's style preferences into mandatory local constraints.
