@@ -110,6 +110,8 @@ frontend-design-assets/
 
 ## V0.13 research extension · Unslop × Hallmark
 
+[Notion 对比研究与接入边界]([private-notion-link-redacted]) · [素材数据库]([private-notion-link-redacted])
+
 新增两项**外部设计 Skill 研究参考**：[heydamir/unslop](https://github.com/heydamir/unslop)（已有界面去模板化审阅）和 [Nutlope/hallmark](https://github.com/Nutlope/hallmark)（多主题构图和独立质量检查）。[比较与许可边界](docs/research/unslop-hallmark.md) · [本仓库原创、可选的审阅配方](recipes/contextual-design-review.md)。
 
 - 不将 Hallmark 的全部审美禁令设置为所有风格的全局强制规则。像素 HUD、艺术拼贴、科幻辉光需要任务与风格相关的判断。

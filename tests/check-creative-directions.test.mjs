@@ -5,6 +5,6 @@ test("new experimental art directions reference existing independent style profi
  const result=validateCreative();
  assert.equal(result.directions,4);
  assert.equal(result.registeredStyles,10);
- assert.equal(result.assetCount,117);
+ assert.ok(result.assetCount>=117,"Asset library may grow without invalidating creative grammar");
  assert.equal(result.reactExperimentalThemes,0);
 });
