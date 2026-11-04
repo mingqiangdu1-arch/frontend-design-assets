@@ -118,6 +118,86 @@
       },
       "demo": "playground/commerce-atelier/index.html",
       "licenseNote": "Original CSS product silhouettes, original token values. No official vendor components, product images or fonts copied."
+    },
+    {
+      "id": "pixel-arcade",
+      "label": "Pixel Arcade / Experimental Art Direction",
+      "status": "design-proposal",
+      "origin": "Original experimental design grammar informed by public art-direction references; no borrowed assets or code",
+      "categories": [
+        "indie-game",
+        "gamified-learning",
+        "interactive-portfolio",
+        "arcade-event"
+      ],
+      "styleProfile": "styles/pixel-arcade/style.json",
+      "documentation": "styles/pixel-arcade/README.md",
+      "tokens": {
+        "css": "styles/pixel-arcade/tokens.css",
+        "json": "styles/pixel-arcade/tokens.json"
+      },
+      "demo": "playground/creative-style-lab/index.html",
+      "licenseNote": "Original CSS illustration, design tokens and composition; no third-party pixel sprites, fonts, images or branded components."
+    },
+    {
+      "id": "signal-noir",
+      "label": "Signal Noir / Experimental Art Direction",
+      "status": "design-proposal",
+      "origin": "Original experimental design grammar informed by public art-direction references; no borrowed assets or code",
+      "categories": [
+        "fictional-mission-control",
+        "sci-fi-game",
+        "digital-exhibition",
+        "music-visualizer"
+      ],
+      "styleProfile": "styles/signal-noir/style.json",
+      "documentation": "styles/signal-noir/README.md",
+      "tokens": {
+        "css": "styles/signal-noir/tokens.css",
+        "json": "styles/signal-noir/tokens.json"
+      },
+      "demo": "playground/creative-style-lab/index.html",
+      "licenseNote": "Original CSS illustration, design tokens and composition; no third-party pixel sprites, fonts, images or branded components."
+    },
+    {
+      "id": "paper-rebellion",
+      "label": "Paper Rebellion / Experimental Art Direction",
+      "status": "design-proposal",
+      "origin": "Original experimental design grammar informed by public art-direction references; no borrowed assets or code",
+      "categories": [
+        "artist-portfolio",
+        "indie-magazine",
+        "creative-workshop",
+        "community-story"
+      ],
+      "styleProfile": "styles/paper-rebellion/style.json",
+      "documentation": "styles/paper-rebellion/README.md",
+      "tokens": {
+        "css": "styles/paper-rebellion/tokens.css",
+        "json": "styles/paper-rebellion/tokens.json"
+      },
+      "demo": "playground/creative-style-lab/index.html",
+      "licenseNote": "Original CSS illustration, design tokens and composition; no third-party pixel sprites, fonts, images or branded components."
+    },
+    {
+      "id": "aether-orbit",
+      "label": "Aether Orbit / Experimental Art Direction",
+      "status": "design-proposal",
+      "origin": "Original experimental design grammar informed by public art-direction references; no borrowed assets or code",
+      "categories": [
+        "ambient-experience",
+        "immersive-exhibition",
+        "future-portfolio",
+        "soundscape"
+      ],
+      "styleProfile": "styles/aether-orbit/style.json",
+      "documentation": "styles/aether-orbit/README.md",
+      "tokens": {
+        "css": "styles/aether-orbit/tokens.css",
+        "json": "styles/aether-orbit/tokens.json"
+      },
+      "demo": "playground/creative-style-lab/index.html",
+      "licenseNote": "Original CSS illustration, design tokens and composition; no third-party pixel sprites, fonts, images or branded components."
     }
   ]
 }

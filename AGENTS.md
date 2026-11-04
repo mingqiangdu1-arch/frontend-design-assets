@@ -91,3 +91,13 @@ Use local HTTP to inspect prototype files in a browser agent. No autonomous back
 - `npm run visual:capture` emits only **unapproved** screenshot hashes. `npm run visual:verify` deliberately fails unless a reviewer has signed concrete image hashes and source commit in `registry/visual-baselines.json`.
 - TPL-005 Precision Dark + TPL-007 Editorial Warm are actual React package compositions with different page grammars; do not use one shell for all application types.
 - New full-page React blueprints require explicit UI imports, their own port/config, responsive smoke, source linkage, no fake server writes and honest technical maturity.
+
+## V0.13 Creative direction / anti-homogenization
+
+- Do not automatically select a SaaS shell or refit all applications to the same information architecture. For exploratory design start at `docs/styles/creative-art-direction.md` and `registry/creative-directions.json`.
+- New experimental profiles: `pixel-arcade`, `signal-noir`, `paper-rebellion`, `aether-orbit`. Each owns an independent Token scope, composition grammar, motion language and explicit anti-patterns.
+- To request **multiple diverse ideas**, run `npm run creative:brief -- --style=surprise --seed=<stable-seed> --context="<real user task>" --count=4` then critically choose/adapt a candidate. Do not paste a demo screen unchanged. CLI outputs research briefs, **not generated production code**.
+- These four styles are **not compatible React package themes**. The `packages/ui` library still supports only its four previously declared themes; do not silently share styling or components.
+- Reference no external screenshot/font binaries; the Creative Style Lab illustrations and interaction logic must be original.
+- Honor keyboard focus, readable body copy, reduced motion, no autoplay sound, and explicit fictional data disclaimers. Validate style-specific product requirements before delivery.
+- Run `node scripts/check-creative-directions.mjs`, `node scripts/contrast-audit.mjs`, `npm run test:unit`, `npm run test:browser`. Screenshot capture is evidence only, not approved visual regression.

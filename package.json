@@ -1,7 +1,7 @@
 {
   "name": "frontend-design-assets",
   "private": true,
-  "version": "0.12.0",
+  "version": "0.13.0",
   "type": "module",
   "description": "Living multi-style design assets, React component lab and independent research demos.",
   "scripts": {
@@ -28,7 +28,8 @@
     "test:editorial-react:browser": "playwright test -c playwright.editorial.config.mjs",
     "test:component-states": "node scripts/check-component-states.mjs",
     "visual:capture": "node scripts/visual-evidence.mjs capture",
-    "visual:verify": "node scripts/visual-evidence.mjs verify"
+    "visual:verify": "node scripts/visual-evidence.mjs verify",
+    "creative:brief": "node scripts/creative-director.mjs"
   },
   "dependencies": {
     "react": "19.3.1",

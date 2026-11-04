@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-11-04 · V0.13 Experimental art direction / Creative Style Lab
+
+- Added four distinctly composed visual profiles: Pixel Arcade, Signal Noir, Paper Rebellion and Aether Orbit, each with original scoped CSS/JSON tokens, design grammar, usage limits and anti-patterns.
+- Added a four-scene static interactive lab with quest/XP selection, fictional signal tuner, collage re-layout and topic filtering, and no-audio atmospheric mood presets. Uses original CSS-built illustration rather than borrowed assets.
+- Added structured model-facing `registry/creative-directions.json`, deterministic seeded `scripts/creative-director.mjs` and art-direction guidance for non-homogeneous design exploration.
+- Registered DT-007—DT-010, IP-017, PR-012, KIT-013, REF-030. Total 10 independent Style Profiles and 117 assets; no changes to the existing React package's four supported themes or the seven full-page blueprints.
+- Added contrast, syntax, model-brief and Chromium interaction/responsive test coverage. Screenshot capture remains unapproved until human review.
+
+
 ## 2026-10-26 · V0.12 React component state matrix, visual sign-off policy and Editorial React page
 
 - Added 12-of-18 real React component state specimen groups across the four supported themes, with six explicitly uncovered component exports and isolated request-state fixture.

@@ -1,0 +1,25 @@
+/* Original scoped Aether Orbit palette. CSS is not a copy of vendor code. */
+[data-design-theme="aether-orbit"]{
+ color-scheme:dark;
+ --ds-canvas:#090F29;
+ --ds-surface:#151C39;
+ --ds-surface-raised:#232C4F;
+ --ds-sidebar:#111937;
+ --ds-border:#586789;
+ --ds-text:#F7F4FF;
+ --ds-text-secondary:#D2D7F5;
+ --ds-text-muted:#B5BDE0;
+ --ds-accent:#C8F1F2;
+ --ds-accent-text:#10152C;
+ --ds-selected:#303C66;
+ --ds-success:#9DECCF;
+ --ds-danger:#FFC1CB;
+ --ds-warning:#FFE2AC;
+ --ds-font-ui:system-ui,-apple-system,"Segoe UI","PingFang SC",sans-serif;
+ --ds-font-display:Georgia,serif;
+ --ds-radius-control:999px;
+ --ds-radius-panel:12px;
+ --ds-motion-fast:140ms;
+ --ds-motion-medium:260ms;
+}
+@media(prefers-reduced-motion:reduce){[data-design-theme="aether-orbit"]{--ds-motion-fast:0ms;--ds-motion-medium:0ms;}}

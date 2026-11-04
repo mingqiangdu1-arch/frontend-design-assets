@@ -33,6 +33,21 @@
         768,
         1440
       ]
+    },
+    "creative-lab": {
+      "prefix": "creative-",
+      "styles": [
+        "pixel-arcade",
+        "signal-noir",
+        "paper-rebellion",
+        "aether-orbit"
+      ],
+      "widths": [
+        390,
+        768,
+        1440
+      ],
+      "policy": "Capture-only. Each scene is separately composed; do not auto-approve screenshots."
     }
   },
   "reviewRequirements": [

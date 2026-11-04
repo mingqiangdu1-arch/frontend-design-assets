@@ -1,0 +1,28 @@
+{
+  "id": "aether-orbit",
+  "displayName": "Aether Orbit",
+  "stage": "design-proposal",
+  "assetId": "DT-010",
+  "description": "atmospheric space and luminous orbits with large readable anchors and gently shifting viewpoints",
+  "categoryHints": [
+    "ambient-experience",
+    "soundscape",
+    "concept-exhibition",
+    "meditation-visualization",
+    "future-portfolio"
+  ],
+  "sources": [
+    "https://www.figma.com/resource-library/web-design-trends/",
+    "https://www.adobe.com/express/learn/blog/design-trends-2026",
+    "https://pros.squarespace.com/blog/design-trends",
+    "https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions"
+  ],
+  "tokenFile": "tokens.json",
+  "cssFile": "tokens.css",
+  "documentation": "README.md",
+  "scopeSelector": "[data-design-theme=\"aether-orbit\"]",
+  "sample": "../../playground/creative-style-lab/index.html",
+  "implementationStatus": "Original independent CSS token profile and interactive mini-scene; test/visual validation pending. No React package integration or production certification.",
+  "isDefault": false,
+  "creativeDirection": "../../registry/creative-directions.json"
+}

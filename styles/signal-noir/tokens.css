@@ -1,0 +1,25 @@
+/* Original scoped Signal Noir palette. CSS is not a copy of vendor code. */
+[data-design-theme="signal-noir"]{
+ color-scheme:dark;
+ --ds-canvas:#080F17;
+ --ds-surface:#101E27;
+ --ds-surface-raised:#172B36;
+ --ds-sidebar:#0E1C25;
+ --ds-border:#47626B;
+ --ds-text:#F0F7F0;
+ --ds-text-secondary:#B5D5CD;
+ --ds-text-muted:#A1BCB4;
+ --ds-accent:#92F3CA;
+ --ds-accent-text:#07131B;
+ --ds-selected:#214840;
+ --ds-success:#9DEFC1;
+ --ds-danger:#FF9999;
+ --ds-warning:#FFCE80;
+ --ds-font-ui:system-ui,-apple-system,"Segoe UI","PingFang SC",sans-serif;
+ --ds-font-display:ui-monospace,Menlo,Consolas,monospace;
+ --ds-radius-control:4px;
+ --ds-radius-panel:12px;
+ --ds-motion-fast:140ms;
+ --ds-motion-medium:260ms;
+}
+@media(prefers-reduced-motion:reduce){[data-design-theme="signal-noir"]{--ds-motion-fast:0ms;--ds-motion-medium:0ms;}}

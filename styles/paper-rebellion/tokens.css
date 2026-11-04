@@ -1,0 +1,25 @@
+/* Original scoped Paper Rebellion palette. CSS is not a copy of vendor code. */
+[data-design-theme="paper-rebellion"]{
+ color-scheme:light;
+ --ds-canvas:#F1E4CF;
+ --ds-surface:#FFFAEA;
+ --ds-surface-raised:#F3D8B9;
+ --ds-sidebar:#EFD9C0;
+ --ds-border:#9E7F68;
+ --ds-text:#30241D;
+ --ds-text-secondary:#55453A;
+ --ds-text-muted:#655348;
+ --ds-accent:#8F2F29;
+ --ds-accent-text:#FFFFFF;
+ --ds-selected:#F6CDA7;
+ --ds-success:#235D43;
+ --ds-danger:#8F2F29;
+ --ds-warning:#814F15;
+ --ds-font-ui:system-ui,-apple-system,"Segoe UI","PingFang SC",sans-serif;
+ --ds-font-display:Georgia,serif;
+ --ds-radius-control:4px;
+ --ds-radius-panel:12px;
+ --ds-motion-fast:140ms;
+ --ds-motion-medium:260ms;
+}
+@media(prefers-reduced-motion:reduce){[data-design-theme="paper-rebellion"]{--ds-motion-fast:0ms;--ds-motion-medium:0ms;}}

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1",
   "purpose": "Living cross-application, multi-style design asset repository; no repository-wide visual default.",
-  "updatedAt": "2026-10-26",
+  "updatedAt": "2026-11-04",
   "stageDefinitions": [
     "captured",
     "analyzed",
@@ -3115,6 +3115,246 @@
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
       "verified": "Reference implementation. Automated browser and build checks pending; no production certification or human-approved visual baseline.",
       "notion": "[private-notion-link-redacted]"
+    },
+    {
+      "id": "DT-007",
+      "type": "token",
+      "name": "Pixel Arcade independent experimental style",
+      "stage": "prototype",
+      "reuseKind": "style-token",
+      "priority": "P1",
+      "tags": [
+        "creative",
+        "v0.13",
+        "experimental",
+        "art-direction",
+        "pixel-arcade"
+      ],
+      "path": "styles/pixel-arcade/tokens.css",
+      "details": "styles/pixel-arcade/README.md",
+      "demo": "playground/creative-style-lab/index.html",
+      "styleIds": [
+        "pixel-arcade"
+      ],
+      "applicationContexts": [
+        "indie-game",
+        "gamified-learning",
+        "interactive-portfolio",
+        "arcade-event"
+      ],
+      "dependencies": [],
+      "source": "https://www.figma.com/resource-library/web-design-trends/",
+      "verified": "Original Token and CSS/JSON prototype. Automated checks pending; not React-compatible or production certified."
+    },
+    {
+      "id": "DT-008",
+      "type": "token",
+      "name": "Signal Noir independent experimental style",
+      "stage": "prototype",
+      "reuseKind": "style-token",
+      "priority": "P1",
+      "tags": [
+        "creative",
+        "v0.13",
+        "experimental",
+        "art-direction",
+        "signal-noir"
+      ],
+      "path": "styles/signal-noir/tokens.css",
+      "details": "styles/signal-noir/README.md",
+      "demo": "playground/creative-style-lab/index.html",
+      "styleIds": [
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "fictional-mission-control",
+        "sci-fi-game",
+        "digital-exhibition",
+        "music-visualizer"
+      ],
+      "dependencies": [],
+      "source": "https://www.figma.com/resource-library/web-design-trends/",
+      "verified": "Original Token and CSS/JSON prototype. Automated checks pending; not React-compatible or production certified."
+    },
+    {
+      "id": "DT-009",
+      "type": "token",
+      "name": "Paper Rebellion independent experimental style",
+      "stage": "prototype",
+      "reuseKind": "style-token",
+      "priority": "P1",
+      "tags": [
+        "creative",
+        "v0.13",
+        "experimental",
+        "art-direction",
+        "paper-rebellion"
+      ],
+      "path": "styles/paper-rebellion/tokens.css",
+      "details": "styles/paper-rebellion/README.md",
+      "demo": "playground/creative-style-lab/index.html",
+      "styleIds": [
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "artist-portfolio",
+        "indie-magazine",
+        "creative-workshop",
+        "community-story"
+      ],
+      "dependencies": [],
+      "source": "https://www.figma.com/resource-library/web-design-trends/",
+      "verified": "Original Token and CSS/JSON prototype. Automated checks pending; not React-compatible or production certified."
+    },
+    {
+      "id": "DT-010",
+      "type": "token",
+      "name": "Aether Orbit independent experimental style",
+      "stage": "prototype",
+      "reuseKind": "style-token",
+      "priority": "P1",
+      "tags": [
+        "creative",
+        "v0.13",
+        "experimental",
+        "art-direction",
+        "aether-orbit"
+      ],
+      "path": "styles/aether-orbit/tokens.css",
+      "details": "styles/aether-orbit/README.md",
+      "demo": "playground/creative-style-lab/index.html",
+      "styleIds": [
+        "aether-orbit"
+      ],
+      "applicationContexts": [
+        "ambient-experience",
+        "immersive-exhibition",
+        "future-portfolio",
+        "soundscape"
+      ],
+      "dependencies": [],
+      "source": "https://www.figma.com/resource-library/web-design-trends/",
+      "verified": "Original Token and CSS/JSON prototype. Automated checks pending; not React-compatible or production certified."
+    },
+    {
+      "stage": "prototype",
+      "priority": "P1",
+      "tags": [
+        "v0.13",
+        "creative",
+        "model-design",
+        "research"
+      ],
+      "demo": "playground/creative-style-lab/index.html",
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "verified": "Original research and locally interactive static prototype; no production, full accessibility or cross-browser certification.",
+      "id": "IP-017",
+      "type": "interaction",
+      "name": "Cross-genre creative scene interactions",
+      "reuseKind": "behavior-pattern",
+      "path": "docs/styles/creative-art-direction.md",
+      "styleIds": [],
+      "applicationContexts": [
+        "experimental-web",
+        "creative-tool",
+        "interactive-story"
+      ],
+      "dependencies": [
+        "DT-007",
+        "DT-008",
+        "DT-009",
+        "DT-010"
+      ]
+    },
+    {
+      "stage": "prototype",
+      "priority": "P1",
+      "tags": [
+        "v0.13",
+        "creative",
+        "model-design",
+        "research"
+      ],
+      "demo": "playground/creative-style-lab/index.html",
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "verified": "Original research and locally interactive static prototype; no production, full accessibility or cross-browser certification.",
+      "id": "PR-012",
+      "type": "recipe",
+      "name": "Seeded generative art-direction model handoff",
+      "reuseKind": "composition-recipe",
+      "path": "docs/styles/creative-art-direction.md",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-tool",
+        "design-agent",
+        "experimental-web"
+      ],
+      "dependencies": [
+        "DT-007",
+        "DT-008",
+        "DT-009",
+        "DT-010"
+      ]
+    },
+    {
+      "stage": "prototype",
+      "priority": "P1",
+      "tags": [
+        "v0.13",
+        "creative",
+        "model-design",
+        "research"
+      ],
+      "demo": "playground/creative-style-lab/index.html",
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "verified": "Original research and locally interactive static prototype; no production, full accessibility or cross-browser certification.",
+      "id": "KIT-013",
+      "type": "archive",
+      "name": "Four-scene Creative Style Lab V0.13",
+      "reuseKind": "styled-implementation",
+      "path": "playground/creative-style-lab/README.md",
+      "styleIds": [
+        "pixel-arcade",
+        "signal-noir",
+        "paper-rebellion",
+        "aether-orbit"
+      ],
+      "applicationContexts": [
+        "experimental-web",
+        "portfolio",
+        "design-agent"
+      ],
+      "dependencies": [
+        "DT-007",
+        "DT-008",
+        "DT-009",
+        "DT-010",
+        "IP-017"
+      ]
+    },
+    {
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "v0.13",
+        "creative",
+        "model-design",
+        "research"
+      ],
+      "demo": "playground/creative-style-lab/index.html",
+      "source": "https://www.figma.com/resource-library/web-design-trends/",
+      "verified": "Original research and locally interactive static prototype; no production, full accessibility or cross-browser certification.",
+      "id": "REF-030",
+      "type": "reference",
+      "name": "Creative trend source comparison: Figma, Adobe, Squarespace",
+      "reuseKind": "design-reference",
+      "path": "docs/research/sources.md",
+      "styleIds": [],
+      "applicationContexts": [
+        "design-research",
+        "experimental-web"
+      ],
+      "dependencies": []
     }
   ],
   "referenceImplementationRoot": "components/reference",

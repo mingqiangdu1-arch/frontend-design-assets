@@ -1,0 +1,28 @@
+{
+  "id": "pixel-arcade",
+  "displayName": "Pixel Arcade",
+  "stage": "design-proposal",
+  "assetId": "DT-007",
+  "description": "8-bit quest terminal with crisp modular pixel objects, readable status and visible buttons",
+  "categoryHints": [
+    "indie-game",
+    "game-companion",
+    "arcade-event",
+    "gamified-learning",
+    "interactive-portfolio"
+  ],
+  "sources": [
+    "https://www.figma.com/resource-library/web-design-trends/",
+    "https://www.adobe.com/express/learn/blog/design-trends-2026",
+    "https://pros.squarespace.com/blog/design-trends",
+    "https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions"
+  ],
+  "tokenFile": "tokens.json",
+  "cssFile": "tokens.css",
+  "documentation": "README.md",
+  "scopeSelector": "[data-design-theme=\"pixel-arcade\"]",
+  "sample": "../../playground/creative-style-lab/index.html",
+  "implementationStatus": "Original independent CSS token profile and interactive mini-scene; test/visual validation pending. No React package integration or production certification.",
+  "isDefault": false,
+  "creativeDirection": "../../registry/creative-directions.json"
+}

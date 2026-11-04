@@ -1,0 +1,67 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Four original experimental frontend art directions: retro pixel arcade, science fiction signal instruments, analog collage zine, and atmospheric orbits.">
+<title>Creative Style Lab · Frontend Design Assets</title>
+<link rel="stylesheet" href="../../styles/pixel-arcade/tokens.css">
+<link rel="stylesheet" href="../../styles/signal-noir/tokens.css">
+<link rel="stylesheet" href="../../styles/paper-rebellion/tokens.css">
+<link rel="stylesheet" href="../../styles/aether-orbit/tokens.css">
+<link rel="stylesheet" href="./lab.css"><script type="module" src="./app.mjs"></script></head>
+<body><header class="lab-header"><a class="lab-mark" href="./">◈ <span>CREATIVE STYLE LAB</span></a>
+<nav aria-label="资料入口"><a href="../../registry/creative-directions.json">Creative JSON</a><a href="../../docs/styles/README.md">Style index</a><a href="../asset-explorer/">Asset Explorer</a></nav></header>
+<div class="lab-intro"><span>ORIGINAL ART-DIRECTION PROPOSALS / V0.13</span><h1>Four ways to escape the template.</h1><p>不是将同一个页面换四套颜色，而是切换排版、构图、材质、组件形态与交互的整套表达语言。演示中的内容均为虚构，本地状态仅供设计研究。</p>
+<div class="lab-switch" role="group" aria-label="选择实验风格">
+<button type="button" data-direction="pixel-arcade" aria-pressed="false">01 / Pixel Arcade <small>Game grammar</small></button>
+<button type="button" data-direction="signal-noir" aria-pressed="false">02 / Signal Noir <small>Sci-fi instruments</small></button>
+<button type="button" data-direction="paper-rebellion" aria-pressed="false">03 / Paper Rebellion <small>Analog collage</small></button>
+<button type="button" data-direction="aether-orbit" aria-pressed="false">04 / Aether Orbit <small>Ambient spatial</small></button>
+</div></div>
+
+<main id="creativeScenes">
+<section class="scene scene-pixel" data-scene="pixel-arcade" data-design-theme="pixel-arcade" aria-label="Pixel Arcade 像素游戏风格" hidden>
+<div class="pixel-shell"><div class="pixel-top"><b>◈ QUESTLOG_</b><span>VER. 01.26 / ONLINE</span><span>█ █ █ <i class="pixel-status">POWER ON</i></span></div>
+<div class="pixel-body"><div class="pixel-copy"><span class="pixel-label">★ SELECT YOUR STORY · CHAPTER 01</span>
+<h2>THE WORLD<br>IS <em>YOURS</em><br>TO EXPLORE.</h2><p>让阅读变成任务，让体验有进度。采用离散的像素几何和清晰反馈，而不是让整页文字都难以辨认。</p>
+<div class="pixel-stats"><span>EXPLORER <b>PLAYER 01</b></span><span>XP <b id="pixelXP">025</b></span><span>STAGE <b id="pixelStage">01 / 03</b></span></div></div>
+<div class="pixel-world" role="img" aria-label="原创像素山谷、太阳、树木与阶梯地形插画"><div class="pixel-sun"></div><div class="pixel-mountain mountain-a"></div><div class="pixel-mountain mountain-b"></div><div class="pixel-ground"></div><div class="pixel-tree tree-a"></div><div class="pixel-tree tree-b"></div><div class="pixel-character"><span></span></div><div class="pixel-ribbon">WORLD 01 · MEADOW</div></div></div>
+<div class="pixel-bottom"><span class="pixel-label">AVAILABLE QUESTS / USE THE KEYS</span>
+<div class="pixel-quests" role="group" aria-label="选择冒险关卡">
+<button type="button" data-quest="1" aria-pressed="true"><span>01</span><strong>FIRST CONTACT</strong><small>Ready / +25 XP</small></button>
+<button type="button" data-quest="2" aria-pressed="false"><span>02</span><strong>THE UNKNOWN</strong><small>Exploring / +50 XP</small></button>
+<button type="button" data-quest="3" aria-pressed="false"><span>03</span><strong>RETURN HOME</strong><small>Complete / +90 XP</small></button>
+</div><p class="pixel-feedback" id="pixelFeedback" role="status" aria-live="polite">Chapter 01 selected · First Contact</p></div></div>
+</section>
+
+<section class="scene scene-signal" data-scene="signal-noir" data-design-theme="signal-noir" aria-label="Signal Noir 信号科幻风格" hidden>
+<div class="signal-shell"><div class="signal-head"><div><b>⌬ SIGNAL / NOIR</b><span>FIELD INSTRUMENTS · FICTIONAL TELEMETRY</span></div><span class="signal-online">● SIMULATION ACTIVE</span></div>
+<div class="signal-grid"><div class="signal-lead"><span class="signal-overline">OBSERVATION MODULE / 004</span><h2>MAKE<br>CONTACT<span>_</span></h2><p>以仪器面板组织叙事，技术密度并非 SaaS 表格，而是通向世界观的入口。所有读数仅为虚构模拟。</p><div class="signal-controls">
+<div class="signal-label">CHANNEL SELECTOR</div><div role="group" aria-label="选择信号频道" class="signal-channels">
+<button type="button" data-channel="ORBIT" aria-pressed="true">01 ORBIT</button><button type="button" data-channel="OCEAN" aria-pressed="false">02 OCEAN</button><button type="button" data-channel="DREAM" aria-pressed="false">03 DREAM</button>
+</div><label class="signal-label" for="signalFreq">CARRIER FREQUENCY</label>
+<input type="range" id="signalFreq" min="80" max="180" step="5" value="120"/>
+<div class="signal-frequency"><strong><output id="signalFreqValue" for="signalFreq">120</output></strong><span>MHZ / FICTIONAL</span></div></div></div>
+<div class="signal-radar" role="img" aria-label="原创虚构信号圆形雷达示意插画，非实际定位信息"><div class="radar-rings"></div><div class="radar-grid"></div><div class="radar-sweep"></div><div class="radar-target target-a"></div><div class="radar-target target-b"></div><div class="radar-cross"></div><span>SECTOR 7 / CONCEPT VISUAL</span></div>
+<aside class="signal-readings" aria-label="模拟仪表状态"><div><span>CHANNEL</span><strong id="signalChannel">ORBIT</strong></div><div><span>AMPLITUDE</span><strong>0.83<span class="unit"> AU</span></strong></div><div><span>SYNC</span><strong>LOCKED</strong></div><div><span>LAST UPDATE</span><strong>LOCAL</strong></div></aside>
+</div><div class="signal-footer"><span>NO LIVE DATA / NO NETWORK CONNECTION</span><span id="signalMessage" role="status" aria-live="polite">ORBIT channel tuned to 120 MHz (simulated).</span></div></div>
+</section>
+
+<section class="scene scene-paper" data-scene="paper-rebellion" data-design-theme="paper-rebellion" aria-label="Paper Rebellion 拼贴杂志风格" hidden>
+<div class="paper-shell"><header class="paper-top"><div class="paper-brand">paper<span>!</span> rebellion</div><div class="paper-stamp">INDEPENDENT<br>ISSUE № 07</div></header>
+<div class="paper-stage"><div class="paper-intro"><span class="paper-tag">MAKE SPACE FOR THE MESS</span><h2>GOOD IDEAS<br>DON'T STAY<br><em>IN THE LINES.</em></h2><p>手作感来自可控的材料、标注和层次，不来自无意义的错乱。结构清晰，视觉允许不服从。</p>
+<button type="button" id="paperShuffle" class="paper-action">REARRANGE THE BOARD ↗</button><span class="paper-small">ORIGINAL CSS CUTOUTS / NO BORROWED ART</span></div>
+<div class="paper-board" id="paperBoard" data-layout="0" aria-label="拼贴纸张内容板">
+<article class="paper-note note-one" data-topic="sound"><span class="paper-tape" aria-hidden="true"></span><small>01 / SOUND</small><div class="paper-disc" aria-hidden="true"><div></div></div><h3>NOISE IS<br>A LANGUAGE.</h3><p>把噪音当成表达线索。</p></article>
+<article class="paper-note note-two" data-topic="type"><span class="paper-tape" aria-hidden="true"></span><small>02 / TYPE</small><div class="paper-a" aria-hidden="true">Aa</div><h3>PRINT YOUR<br>OWN RULES.</h3><p>字不必永远整齐。</p></article>
+<article class="paper-note note-three" data-topic="people"><span class="paper-tape" aria-hidden="true"></span><small>03 / PEOPLE</small><div class="paper-burst" aria-hidden="true">✳</div><h3>WE MAKE<br>THINGS TOGETHER.</h3><p>邀请真实的声音。</p></article></div></div>
+<div class="paper-bottom"><span>INDEX / FILTER THE NOTES</span><div class="paper-filters" role="group" aria-label="筛选杂志主题"><button data-topic-filter="all" type="button" aria-pressed="true">ALL</button><button data-topic-filter="sound" type="button" aria-pressed="false">SOUND</button><button data-topic-filter="type" type="button" aria-pressed="false">TYPE</button><button data-topic-filter="people" type="button" aria-pressed="false">PEOPLE</button></div><p role="status" id="paperFeedback" aria-live="polite">Showing 3 handmade notes.</p></div></div>
+</section>
+
+<section class="scene scene-aether" data-scene="aether-orbit" data-design-theme="aether-orbit" aria-label="Aether Orbit 氛围空间风格" hidden>
+<div class="aether-shell" data-mood="dawn"><div class="aether-top"><b>æther / orbit</b><span>IMMERSIVE STUDY 01 — NO AUDIO</span></div>
+<div class="aether-center"><div class="aether-copy"><span class="aether-kicker">A SPACE BETWEEN MOMENTS</span><h2>Feel the<br><em>space</em><br>between.</h2><p>留白、光晕与轨道建立情绪，但路径和按钮必须始终清楚。这里仅用 CSS 构建轻量空间层次。</p></div>
+<div class="aether-art" role="img" aria-label="原创蓝紫色光球与多层环形轨道插画，无三维模型和自动声音"><div class="aether-ring ring-one"></div><div class="aether-ring ring-two"></div><div class="aether-ring ring-three"></div><div class="aether-core"></div><div class="aether-star star-one"></div><div class="aether-star star-two"></div><div class="aether-star star-three"></div></div></div>
+<div class="aether-controls"><div><span class="aether-kicker">ATMOSPHERE / LOCAL PRESET</span><h3>Choose a moment</h3></div>
+<div class="aether-moods" role="group" aria-label="选择氛围"><button type="button" data-mood-preset="dawn" aria-pressed="true"><span>01</span> DAWN</button><button type="button" data-mood-preset="twilight" aria-pressed="false"><span>02</span> TWILIGHT</button><button type="button" data-mood-preset="nebula" aria-pressed="false"><span>03</span> NEBULA</button></div><p role="status" id="aetherFeedback" aria-live="polite">Dawn · ambient scene preview, no audio.</p></div></div>
+</section>
+</main>
+<footer class="lab-footer"><span>EXPERIMENTAL / CONCEPT-ONLY — NOT AN EXISTING BRAND</span><span>4 ORIGINAL SCENES · 4 SEPARATE STYLE PROFILES</span><a href="../../docs/styles/creative-art-direction.md">MODEL ART DIRECTION GUIDE ↗</a></footer>
+</body></html>

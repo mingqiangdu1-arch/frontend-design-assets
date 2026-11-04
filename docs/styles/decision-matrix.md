@@ -61,3 +61,16 @@ Do not assume the current React UI package supports this new style; use the stan
 | Immersive WebGL/3D/retro gaming | Defer until a grounded game/showcase use case | Performance, motion, and input constraints differ significantly; do not prematurely build a style |
 
 Commerce Atelier is distinct from Editorial Warm: serif long-form reading vs. efficient sans product comparison. It is distinct from SaaS: consumer decisions and media hierarchy vs. operations data tables. Research: [Shopify ecommerce UX 2026](https://www.shopify.com/blog/ecommerce-ux), [Baymard listing UX 2025](https://baymard.com/research-articles/current-state-product-list-and-filtering), [Apple Liquid Glass materials](https://developer.apple.com/design/human-interface-guidelines/materials), [Figma 2026 design directions](https://www.figma.com/resource-library/web-design-trends/).
+
+## V0.13 new decision axis: creative / nonstandard expression
+
+Earlier decisions deferred immersive WebGL/3D and retro-game-oriented styles without a concrete build. The new experiment **does not claim these are production ready**: it builds small CSS-only independent studies so future models have richer artistic vocabulary.
+
+| Style | Creative intent | Good-fit projects | Constraint |
+| --- | --- | --- | --- |
+| Pixel Arcade | tactile game grammar / nonlinear task discovery | indie-game microsites, playful learning, arcade portfolios | keep body copy legible, no fake retro OS warnings |
+| Signal Noir | instruments / fictional telemetry / technical narrative | sci-fi stories, music visualizations, exhibition interfaces | do not deploy as safety-critical telemetry; no flashing |
+| Paper Rebellion | counter-grid collage / analog materiality | art zines, workshops, community storytelling | DOM reading order intact, no illegible overlaps |
+| Aether Orbit | atmospheric spatial / quiet immersion | conceptual exhibitions, ambient portfolios, contemplative journeys | no WebGL dependency or autoplay, reduced motion |
+
+Task and audience still take priority over style. [The generative model brief](creative-art-direction.md) selects composition, texture, typography and interaction independently from constrained per-style grammars, avoiding the temptation to use one default template for every application.

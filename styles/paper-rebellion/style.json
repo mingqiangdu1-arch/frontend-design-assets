@@ -1,0 +1,28 @@
+{
+  "id": "paper-rebellion",
+  "displayName": "Paper Rebellion",
+  "stage": "design-proposal",
+  "assetId": "DT-009",
+  "description": "tactile paper layers, handcrafted annotations, readable primary blocks and controlled irregularity",
+  "categoryHints": [
+    "indie-magazine",
+    "artist-portfolio",
+    "culture-campaign",
+    "community-story",
+    "creative-workshop"
+  ],
+  "sources": [
+    "https://www.figma.com/resource-library/web-design-trends/",
+    "https://www.adobe.com/express/learn/blog/design-trends-2026",
+    "https://pros.squarespace.com/blog/design-trends",
+    "https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions"
+  ],
+  "tokenFile": "tokens.json",
+  "cssFile": "tokens.css",
+  "documentation": "README.md",
+  "scopeSelector": "[data-design-theme=\"paper-rebellion\"]",
+  "sample": "../../playground/creative-style-lab/index.html",
+  "implementationStatus": "Original independent CSS token profile and interactive mini-scene; test/visual validation pending. No React package integration or production certification.",
+  "isDefault": false,
+  "creativeDirection": "../../registry/creative-directions.json"
+}

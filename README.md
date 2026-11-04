@@ -17,7 +17,8 @@
 | 选择某一套完整视觉风格 | [registry/styles.json](registry/styles.json) / [Bold Grid 视觉样例](playground/bold-grid/index.html) |
 | **选择完整页面模板并生成组装清单** | [Page Blueprints V0.8](playground/page-blueprints/README.md) / [组装 CLI](docs/assembly/README.md) / [机器模板索引](registry/page-templates.json) |
 | 查看 SaaS 专题研究与原型 | [SaaS 总览](docs/saas/README.md) / [列表实验 V0.2](playground/saas-patterns/index.html) / [表单编辑与筛选 V0.3](playground/saas-editing/index.html) |
-| 查看全部独立视觉风格 | [风格对比目录](docs/styles/README.md) / [选型矩阵](docs/styles/decision-matrix.md) / [Style Explorer](playground/style-explorer/index.html) |
+| 查看全部独立视觉风格 | [风格对比目录](docs/styles/README.md) / [选型矩阵](docs/styles/decision-matrix.md) / [Style Explorer（早期三主题）](playground/style-explorer/index.html) |
+| **实验艺术风格与模型创意探索** | [Creative Style Lab（四场景）](playground/creative-style-lab/README.md) / [创意方向数据库](registry/creative-directions.json) / [模型生成指南](docs/styles/creative-art-direction.md) |
 | 查看现有浅色 SaaS 风格 | [styles/refined-light-saas/README.md](styles/refined-light-saas/README.md) |
 | 按应用需求组合设计方案 | [applications/README.md](applications/README.md) |
 | 交互行为与验收参考 | [现有交互指南](docs/interactions/patterns.md) / [V0.7 Undo · Wizard · Reorder · Split](docs/interactions/advanced-patterns.md) / [交互实验室](playground/interaction-lab/index.html) |
@@ -45,11 +46,11 @@ frontend-design-assets/
 └── archive/            # 旧版快照与迁移记录
 ```
 
-## 当前实际资产（不代表未来默认）
+## 初期风格历史（不代表完整现状）
 
 **Refined Light SaaS** 是首个**示例设计系列**（Attio × Vercel），并非全仓库默认；V0.4 另新增三套差异化风格。[已有设计规范](docs/visual/refined-light.md)、[Token](tokens/refined-light.css)、[React/TS 示例](components/reference/README.md)及 [Interaction Lab](playground/initial-interaction-lab.html) 属于该系列或其历史 Demo。
 
-目前另有 **Precision Dark / Editorial Warm / Playful Pop** 三套独立提案与可交互 Demo，均与原有 SaaS 系列隔离。**仓库仍不设全局默认视觉主题**。
+该小节记录最早建立的三套独立系列。**当前实际共有 10 套独立风格**，最新总量与入口请查看 [registry/styles.json](registry/styles.json) 和 [Creative Style Lab](playground/creative-style-lab/README.md)。**仓库仍不设全局默认视觉主题**。
 
 ## 资产编号及成熟度
 

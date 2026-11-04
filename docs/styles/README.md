@@ -1,4 +1,4 @@
-# Multi-style research collection · V0.7
+# Multi-style research collection · V0.13
 
 The repository **does not have a default visual theme**. Visual styles are explicit, independently scoped alternatives. Shared UI behavior can be researched across styles, but implementation and layout are not assumed portable.
 

@@ -94,3 +94,11 @@ Extend browser smoke to SaaS v0.2/v0.3; standardize reusable style specimens, ad
 ## V0.12 deliberate visual sign-off gate
 
 [Visual review protocol](visual-review.md) documents evidence capture versus *approved* golden files. `npm run visual:capture` collects hashes and PNG listings without asserting visual correctness; `npm run visual:verify` fails closed when no human-approved baselines exist. Component state matrix tracks selected coverage separately from missing components, and Editorial Warm React example demonstrates an independent content page. Run `npm run test:component-states`, `npm run test:components:browser` and `npm run test:editorial-react:browser` for supported checks.
+
+## V0.13 creative-systems QA
+
+- Four distinct visual profiles are checked by the same `scripts/contrast-audit.mjs` rule, which validates **selected solid foreground/background pairs** (not blended gradients, absolute-positioned overlays or non-text contrast automatically).
+- `node scripts/check-creative-directions.mjs` audits that every experimental creative grammar references an existing scoped style, contains minimum layout/typography/texture/interaction alternatives and makes no default/compatibility promises.
+- `npm run test:unit` includes deterministic-seed model-brief cases; `npm run test:browser` runs actual 390/768/1440 scene tests.
+- Pixel art and collage should be scrutinized for semantic reading order and zoom. Radar/orbit animations must stop with reduced motion; every operation also has text feedback, not color-only status.
+- Browser screenshots + SHA256 outputs are **unapproved evidence**, not a manually signed golden image. Native Safari/Firefox, real touch, screen reader, performance on weak hardware and translated content still need review.

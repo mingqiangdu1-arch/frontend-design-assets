@@ -1,0 +1,234 @@
+{
+  "schemaVersion": "1.0",
+  "purpose": "Composable creative art direction grounded in distinct style grammars, not interchangeable CSS themes.",
+  "defaultStyleId": null,
+  "styles": [
+    {
+      "id": "pixel-arcade",
+      "assetId": "DT-007",
+      "label": "Pixel Arcade",
+      "tagline": "游戏化像素世界",
+      "contexts": [
+        "indie-game",
+        "game-companion",
+        "arcade-event",
+        "gamified-learning",
+        "interactive-portfolio"
+      ],
+      "archetype": "8-bit quest terminal with crisp modular pixel objects, readable status and visible buttons",
+      "inspiredBy": "2026 retrofuturism / pixel revival",
+      "layout": [
+        "quest map with status rail",
+        "cartridge-grid chapter selection",
+        "RPG profile and inventory collage"
+      ],
+      "typography": [
+        "monospace stair-step display",
+        "grid-locked uppercase labels",
+        "numerical HUD with generous tracking"
+      ],
+      "texture": [
+        "stepped borders",
+        "tiny tile grid",
+        "pixel sun/heart shapes"
+      ],
+      "motion": [
+        "one-step discrete highlight",
+        "short position snap",
+        "no perpetual blinking"
+      ],
+      "interactions": [
+        "chapter choice",
+        "experience meter",
+        "inventory selection"
+      ],
+      "negative": [
+        "blurred neon glass",
+        "smooth rounded SaaS cards",
+        "fake retro OS browser security UI",
+        "unlabeled icon-only controls"
+      ],
+      "surprise": [
+        "arcade UI for a cookbook",
+        "8-bit visual language for a museum microsite",
+        "pixel diary for sustainable travel"
+      ],
+      "caution": "Keep reading text modern and legible; never render body content in tiny unreadable bitmap text."
+    },
+    {
+      "id": "signal-noir",
+      "assetId": "DT-008",
+      "label": "Signal Noir",
+      "tagline": "未来仪器 / 信号科幻",
+      "contexts": [
+        "fictional-mission-control",
+        "data-art",
+        "sci-fi-game",
+        "music-visualizer",
+        "technical-exhibition"
+      ],
+      "archetype": "mission instruments and navigable technical readouts, angular divisions, subdued phosphor-inspired glow",
+      "inspiredBy": "reinterpreted sci-fi instrumentation and telemetry layout conventions",
+      "layout": [
+        "radar centerpiece and telemetry sidecars",
+        "asymmetric multi-channel spectrum",
+        "map with sparse operational telemetry"
+      ],
+      "typography": [
+        "monospaced readouts",
+        "compact spaced section labels",
+        "oversized frequency numerals"
+      ],
+      "texture": [
+        "reticle rings",
+        "ruled measurement lines",
+        "thin technical strokes"
+      ],
+      "motion": [
+        "slow scanner arc when permitted",
+        "short chart interpolation",
+        "solid static target on reduced motion"
+      ],
+      "interactions": [
+        "channel selection",
+        "frequency control",
+        "status changes with text descriptions"
+      ],
+      "negative": [
+        "constant flashing",
+        "security-critical operation mimicry",
+        "neon-only signal coding",
+        "washed out low contrast text"
+      ],
+      "surprise": [
+        "instrument UI for a music archive",
+        "fictional weather station atlas",
+        "deep-sea expedition notebook"
+      ],
+      "caution": "No real-world mission-critical use; expose values as text and do not rely on color alone."
+    },
+    {
+      "id": "paper-rebellion",
+      "assetId": "DT-009",
+      "label": "Paper Rebellion",
+      "tagline": "手工拼贴 / Zine 杂志",
+      "contexts": [
+        "indie-magazine",
+        "artist-portfolio",
+        "culture-campaign",
+        "community-story",
+        "creative-workshop"
+      ],
+      "archetype": "tactile paper layers, handcrafted annotations, readable primary blocks and controlled irregularity",
+      "inspiredBy": "2026 mixed media collage, analog expression and freeform editorial trends",
+      "layout": [
+        "overlapping torn note stack",
+        "asymmetric art-board with anchored copy",
+        "stamp annotated culture index"
+      ],
+      "typography": [
+        "oversized editorial display with handwriting accent",
+        "small print-run annotations",
+        "clear large body in plain sans"
+      ],
+      "texture": [
+        "paper fibers simulated via CSS",
+        "tape/label stamps",
+        "offset shadow and freehand border"
+      ],
+      "motion": [
+        "short paper lift on interaction",
+        "gentle offset reveal",
+        "no constant shaking"
+      ],
+      "interactions": [
+        "rearrange collage rhythm",
+        "filter zine topics",
+        "peek behind note"
+      ],
+      "negative": [
+        "illegible handwriting for essential text",
+        "uncontrolled overlaps on mobile",
+        "decorative paper hiding form labels",
+        "borrowed scanned magazine art"
+      ],
+      "surprise": [
+        "collage for science outreach",
+        "community archive with paper scraps",
+        "artist process journal"
+      ],
+      "caution": "Decorative scraps may overlap, but accessible reading order must stay predictable."
+    },
+    {
+      "id": "aether-orbit",
+      "assetId": "DT-010",
+      "label": "Aether Orbit",
+      "tagline": "氛围空间 / 光感轨道",
+      "contexts": [
+        "ambient-experience",
+        "soundscape",
+        "concept-exhibition",
+        "meditation-visualization",
+        "future-portfolio"
+      ],
+      "archetype": "atmospheric space and luminous orbits with large readable anchors and gently shifting viewpoints",
+      "inspiredBy": "2026 immersive / ambient interfaces and atmospheric visual experiments",
+      "layout": [
+        "floating center-stage orb with narrative anchors",
+        "constellation-like story stops",
+        "layered ambient poster with clear lower controls"
+      ],
+      "typography": [
+        "elegant high-contrast display and quiet narrow labels",
+        "open line-height",
+        "minimal high-salience controls"
+      ],
+      "texture": [
+        "soft CSS radial glow",
+        "orbit arcs and depth layers",
+        "sparse star-field dots"
+      ],
+      "motion": [
+        "very slow transform when permitted",
+        "scene preset transitions",
+        "static layered rings on reduced motion"
+      ],
+      "interactions": [
+        "scene switching",
+        "story chapter stepper",
+        "color temperature choice"
+      ],
+      "negative": [
+        "WebGL dependence for essential tasks",
+        "strobing lights",
+        "transparent text over glowing background",
+        "autoplay sound"
+      ],
+      "surprise": [
+        "ambient travel itinerary",
+        "slow reading gallery of poems",
+        "interactive music moodboard"
+      ],
+      "caution": "Meaningful controls must remain opaque and contrasting, no autoplay audio or vestibular-heavy effects."
+    }
+  ],
+  "styleFamilyWarning": "Select deliberately. Combining reference motifs never guarantees visual, accessibility, code or React-theme compatibility.",
+  "sourceResearch": [
+    "https://www.figma.com/resource-library/web-design-trends/",
+    "https://www.adobe.com/express/learn/blog/design-trends-2026",
+    "https://pros.squarespace.com/blog/design-trends",
+    "https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions"
+  ],
+  "allowedOutputs": [
+    "composition brief",
+    "component art direction",
+    "motion references",
+    "layout experiments"
+  ],
+  "notAllowedClaims": [
+    "production-ready",
+    "WCAG certified",
+    "official brand system",
+    "automatically React compatible"
+  ]
+}

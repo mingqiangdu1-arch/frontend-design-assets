@@ -1,0 +1,28 @@
+{
+  "id": "signal-noir",
+  "displayName": "Signal Noir",
+  "stage": "design-proposal",
+  "assetId": "DT-008",
+  "description": "mission instruments and navigable technical readouts, angular divisions, subdued phosphor-inspired glow",
+  "categoryHints": [
+    "fictional-mission-control",
+    "data-art",
+    "sci-fi-game",
+    "music-visualizer",
+    "technical-exhibition"
+  ],
+  "sources": [
+    "https://www.figma.com/resource-library/web-design-trends/",
+    "https://www.adobe.com/express/learn/blog/design-trends-2026",
+    "https://pros.squarespace.com/blog/design-trends",
+    "https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions"
+  ],
+  "tokenFile": "tokens.json",
+  "cssFile": "tokens.css",
+  "documentation": "README.md",
+  "scopeSelector": "[data-design-theme=\"signal-noir\"]",
+  "sample": "../../playground/creative-style-lab/index.html",
+  "implementationStatus": "Original independent CSS token profile and interactive mini-scene; test/visual validation pending. No React package integration or production certification.",
+  "isDefault": false,
+  "creativeDirection": "../../registry/creative-directions.json"
+}

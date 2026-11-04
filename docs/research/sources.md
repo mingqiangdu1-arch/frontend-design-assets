@@ -72,3 +72,12 @@ These references do not license copying vendors' UI, artwork, trademarks or font
 - [Shopify ecommerce UX July 2026](https://www.shopify.com/blog/ecommerce-ux) and [Filters 2026](https://www.shopify.com/blog/ecommerce-filters) — options, inventory and cost transparency, mobile UX and search.
 - [Apple HIG materials](https://developer.apple.com/design/human-interface-guidelines/materials) — Liquid Glass is a sparse functional layer, not an all-purpose page style.
 - [Figma 2026 web design trends](https://www.figma.com/resource-library/web-design-trends/) — 3D, dynamic type and expressive motion remain context-dependent research rather than automatic new style systems.
+
+## 2026-11-04 / Experimental art direction research seed (REF-030)
+
+- [Figma / 2026 web design trends](https://www.figma.com/resource-library/web-design-trends/) — expressive layouts, retrofuturism, immersive composition and context-driven visual experimentation.
+- [Adobe Express / 2026 design trends](https://www.adobe.com/express/learn/blog/design-trends-2026) — collage, physical/analog graphics, tactile mixed media.
+- [Squarespace Circle design trends](https://pros.squarespace.com/blog/design-trends) — distinctive typography, creative process, visual narrative. Dates and specifics should be rechecked before quoting externally.
+- [WCAG 2.2 Animation from Interactions](https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions) — avoid unnecessary motion and support controls/reduced motion.
+
+**Important:** These are public *research and inspiration links*, not verified permissions to reuse any image, SVG, audio, font or proprietary code. The four new style systems use original numeric token proposals and CSS-only artwork.

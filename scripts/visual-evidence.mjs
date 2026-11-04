@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
 import {fileURLToPath} from "node:url";
-const pattern=/^(matrix-(refined-light-saas|precision-dark|editorial-warm|playful-pop)-(390|768|1440)|workbench-(390|768|1440)|editorial-react-(390|768|1440)|commerce-(390|768|1440)|asset-explorer-(390|768|1440)|visual-(gallery|editorial|mobile)-(390|768|1440))\.png$/;
+const pattern=/^(matrix-(refined-light-saas|precision-dark|editorial-warm|playful-pop)-(390|768|1440)|workbench-(390|768|1440)|editorial-react-(390|768|1440)|commerce-(390|768|1440)|creative-(pixel-arcade|signal-noir|paper-rebellion|aether-orbit)-(390|768|1440)|asset-explorer-(390|768|1440)|visual-(gallery|editorial|mobile)-(390|768|1440))\.png$/;
 export function collectEvidence(dir){
  if(!fs.existsSync(dir))return [];
  return fs.readdirSync(dir).filter(name=>pattern.test(name)).sort().map(name=>{

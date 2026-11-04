@@ -1,0 +1,25 @@
+/* Original scoped Pixel Arcade palette. CSS is not a copy of vendor code. */
+[data-design-theme="pixel-arcade"]{
+ color-scheme:dark;
+ --ds-canvas:#111C23;
+ --ds-surface:#182B31;
+ --ds-surface-raised:#203A3C;
+ --ds-sidebar:#10232B;
+ --ds-border:#52776F;
+ --ds-text:#F5F3CE;
+ --ds-text-secondary:#CEDACA;
+ --ds-text-muted:#B4C8BC;
+ --ds-accent:#F9DF65;
+ --ds-accent-text:#122027;
+ --ds-selected:#294F4E;
+ --ds-success:#9CF1AF;
+ --ds-danger:#FF8B8B;
+ --ds-warning:#FFE38B;
+ --ds-font-ui:system-ui,-apple-system,"Segoe UI","PingFang SC",sans-serif;
+ --ds-font-display:ui-monospace,Menlo,Consolas,monospace;
+ --ds-radius-control:0px;
+ --ds-radius-panel:0px;
+ --ds-motion-fast:140ms;
+ --ds-motion-medium:260ms;
+}
+@media(prefers-reduced-motion:reduce){[data-design-theme="pixel-arcade"]{--ds-motion-fast:0ms;--ds-motion-medium:0ms;}}
