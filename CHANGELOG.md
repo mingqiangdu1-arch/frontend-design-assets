@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-04 · V0.13.1 optional design review workflow routing
+
+- Added original `scripts/plan-design-review.mjs`: explicit new-page → Hallmark, redesign → Unslop, audit → Hallmark routing; Markdown/JSON handoff without executing or installing third-party code.
+- Added `docs/assembly/design-review-workflows.md`, a reusable agent handoff, tests for route selection, unsupported modes, explicit style selection and non-execution boundaries.
+- Registered PR-014 as a prototype workflow rather than calling the external Skills integrated dependencies. Existing ten independent styles and seven full-page templates remain unchanged; no new production-ready claims.
+
+
 ## 2026-11-04 · V0.13 research addendum · Unslop × Hallmark
 
 - Analyzed external [heydamir/unslop](https://github.com/heydamir/unslop) and [Nutlope/hallmark](https://github.com/Nutlope/hallmark) Skills through their upstream README, SKILL.md, review/checker references and licenses.

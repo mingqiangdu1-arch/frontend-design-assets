@@ -109,3 +109,11 @@ Use local HTTP to inspect prototype files in a browser agent. No autonomous back
 - Hallmark's optional aesthetic house rules are **not** equivalent to universal WCAG/quality requirements. No automatic prohibition against deliberate pixel block typography, fictional radar glow, editorial annotations or genre-specific gradients.
 - When improving existing UI, preserve user-visible features, controls, data paths and semantic reading order; use before/after screenshots and tests. Attribute any actual copied material according to its license (Unslop CC BY 4.0; Hallmark MIT; external photos separate).
 - Prefer existing local creative direction briefs and independently verified build/a11y/browser checks over unreviewed generative changes.
+
+
+## V0.13.1 optional design workflow handoff
+
+- Before new-page design / existing-interface polish / audit requests, read `docs/assembly/design-review-workflows.md`. `npm run design:plan -- --mode=<new-page|redesign|audit> ...` creates a **planning-only** Markdown/JSON handoff.
+- New page may opt in to Hallmark; existing UI redesign may opt in to Unslop; audit-only may opt in to Hallmark. Neither external Skill is installed, called, vendored or globally enforced by the router.
+- Existing style IDs always take precedence over upstream aesthetic defaults. An unspecified style is intentionally left open, not silently set to SaaS/Minimal.
+- Run project-level checks and preserve all user-visible functionality if a target-project agent separately invokes upstream code.

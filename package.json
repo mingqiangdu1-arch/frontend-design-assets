@@ -29,7 +29,8 @@
     "test:component-states": "node scripts/check-component-states.mjs",
     "visual:capture": "node scripts/visual-evidence.mjs capture",
     "visual:verify": "node scripts/visual-evidence.mjs verify",
-    "creative:brief": "node scripts/creative-director.mjs"
+    "creative:brief": "node scripts/creative-director.mjs",
+    "design:plan": "node scripts/plan-design-review.mjs"
   },
   "dependencies": {
     "react": "19.3.1",

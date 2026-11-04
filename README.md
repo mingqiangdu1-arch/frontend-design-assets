@@ -28,6 +28,7 @@
 | 校验颜色与浏览器交互 | [质量基线 V0.5](docs/quality/README.md) |
 | **复用 React 组件** | [组件库 V0.6](packages/ui/README.md) / [组件 API 清单](registry/components.json) / [可交互展厅](playground/component-gallery/README.md) |
 | 给 Codex/Agent 复用的约束 | [AGENTS.md](AGENTS.md) |
+| **按新建/改版/审计分流设计 Skill** | [Unslop × Hallmark 工作流规划器](docs/assembly/design-review-workflows.md) · `npm run design:plan -- --help` |
 
 ## 组织方式
 
@@ -117,3 +118,8 @@ frontend-design-assets/
 - 不将 Hallmark 的全部审美禁令设置为所有风格的全局强制规则。像素 HUD、艺术拼贴、科幻辉光需要任务与风格相关的判断。
 - 本仓库仍是 **10 套独立风格、7 套完整页面模板**；新增外部 Skill 参考和配方不增加兼容主题，也不安装任何第三方工具。
 - 在受控工作区先记下目标页面功能、截图、类型与布局约束，再按需运行外部 Skill。所有修改须经过自己的单元/浏览器/人工视觉与版权验收。
+
+
+## V0.13.1 · Optional design-review routing
+
+The two upstream Skills remain external opt-in tools. New original `scripts/plan-design-review.mjs` provides reproducible Markdown/JSON review handoffs for new pages (Hallmark), existing UI redesign (Unslop), and audit-only (Hallmark). It **does not install or run** either Skill, edit a target project, or override any of the 10 independent local style profiles. [Usage, limits and QA](docs/assembly/design-review-workflows.md).
