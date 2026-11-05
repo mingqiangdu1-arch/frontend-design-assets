@@ -32,6 +32,7 @@ function App(){
   setChange(null);setToast("Last status change reversed locally");
  }
  return <ThemeSurface theme="editorial-warm" className="folio-root">
+  <a href="#stories" className="folio-skip">跳转至稿件目录</a>
   <header className="folio-header">
    <div className="folio-brand">folio<span>·</span> <small>EDITORIAL ROOM</small></div>
    <nav aria-label="站内导航"><a href="#stories">稿件目录</a><a href="#guidelines">编辑原则</a></nav>
@@ -43,7 +44,7 @@ function App(){
     <p>把文字、审阅与下一步选择放在一个安静的空间。这里是内容团队的页面结构实验，不是真正的发布系统。</p>
     <div className="folio-stripe"><span>EDITORIAL SYSTEMS</span><span>RESEARCH IN PROGRESS · 2026</span></div>
    </section>
-   <section id="stories" className="folio-content" aria-label="稿件工作区">
+   <section id="stories" tabIndex={-1} className="folio-content" aria-label="稿件工作区">
     <div className="folio-section-head"><div><span className="folio-kicker">THE READING DESK / 01</span><h2>稿件与审阅</h2></div><p>编辑状态会即时变化，但不会写入任何服务器。</p></div>
     <div className="folio-metrics">
      <Card><div><small>IN REVIEW</small><strong>{items.filter(x=>x.status==="review").length}</strong></div></Card>
@@ -81,7 +82,7 @@ function App(){
      </aside>
     </div>
    </section>
-   <section className="folio-principles" id="guidelines"><span className="folio-kicker">EDITORIAL INTENT</span><h2>A clearer page,<br/>a quieter decision.</h2><p>这套 React 页面复用了真正的按钮、输入、标签、卡片、进度、弹窗与反馈组件，但**不复用** Precision Dark 专业工作台的应用外壳。不同应用，必须拥有独立的信息架构。</p></section>
+   <section className="folio-principles" id="guidelines"><span className="folio-kicker">EDITORIAL INTENT</span><h2>A clearer page,<br/>a quieter decision.</h2><p>这套 React 页面复用了真正的按钮、输入、标签、卡片、进度、弹窗与反馈组件，但不复用 Precision Dark 专业工作台的应用外壳。不同应用，必须拥有独立的信息架构。</p></section>
   </main>
   <footer className="folio-footer"><span>folio· / ORIGINAL DESIGN RESEARCH</span><span>NO LIVE CMS · NO PUBLISHING</span></footer>
   <Dialog open={preview} onOpenChange={setPreview} title={selected?.title||"Sample preview"} description="Local mock article · not published"

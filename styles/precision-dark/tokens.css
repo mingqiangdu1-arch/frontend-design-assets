@@ -12,6 +12,10 @@
   --ds-accent: #A78BFA;
   --ds-accent-text: #181121;
   --ds-selected: #2C283C;
+  --ds-team-mark: #49405E;
+  --ds-team-mark-text: #F4EDF9;
+  --ds-overlay-shadow: #00000066;
+  --ds-overlay-scrim: #00000088;
   --ds-success: #71D6A0;
   --ds-danger: #F28F92;
   --ds-warning: #E9C27E;

@@ -40,3 +40,9 @@ AI status presentation should emphasize trust over spectacle: show which step/to
 ## V0.7 cross-style research additions
 
 IP-009–IP-012 live in [advanced interaction specifications](advanced-patterns.md) and a standalone [Interaction Lab](../../playground/interaction-lab/index.html). IP-013 is demonstrated in [Bold Grid](../../playground/bold-grid/index.html), with [motion and focus guardrails](../motion/motion-system.md). These are behaviors to evaluate, not mandatory visual components.
+
+## V0.14 · 高级与特殊交互研究
+
+在原有 IP-001 命令面板及 IP-009～IP-012 基础操作之外，新增 **IP-018 空间画布／框选／缩放／可撤销移动**、**IP-019 键盘可操作的径向上下文菜单**与 **IP-020 原生滑块驱动的连续状态对比**。这三类是原创、跨风格的行为原型，未纳入 React 生产组件包。
+
+[查看实际演示](../../playground/advanced-interactions/index.html) · [场景与键盘／触控／失败路径规范](special-interactions.md)。不采用鼠标专属手势作为关键操作的唯一入口；不要把真实业务状态误写为本地研究操作的成功。

@@ -26,3 +26,9 @@ Deep link to each scene with \`?style=pixel-arcade\`, \`?style=signal-noir\`, \`
 - Static/browser smoke tests check keyboard, state changes, responsive 390/768/1440 layouts and screenshot capture, not full screen-reader, Safari or Firefox certification.
 - Each style has an independent machine brief at [creative-directions.json](../../registry/creative-directions.json). The generator outputs research-only art direction, not final source code.
 - Before real product usage: validate performance, copy readability, sensitive flows, WCAG controls, motion preferences, asset rights and browser/device support.
+
+## Pixel Arcade genre-sensitive review · 2026-11-05
+
+In the third controlled review, Pixel Arcade retains its original square cartridge buttons, hard offset shadows, monospace HUD, landscape gradient and clipped pixel sun. Key small labels and controls gained readable sizes, and the selected quest now has a visible `▸` cue in addition to `aria-pressed` and the live status. The CSS and JavaScript for other scenes were not redesigned.
+
+The optional official Hallmark lint comparison covers shared four-scene source files and is advisory, **not a Pixel-only defect count**. The original [genre triage tool](../../scripts/triage-genre-audit.mjs) never removes upstream findings. See [experiment documentation](../../docs/research/pixel-arcade-genre-review.md).

@@ -1,0 +1,78 @@
+name: Unslop Hallmark first-pilot audit (advisory)
+on:
+  push:
+    branches:
+      - codex/unslop-hallmark-first-pilot-20261104
+    paths:
+      - "playground/precision-workbench/**"
+      - "tests/browser/precision-workbench.spec.mjs"
+      - "docs/research/unslop-hallmark-first-pilot.md"
+      - ".github/workflows/design-review-pilot.yml"
+  pull_request:
+    paths:
+      - "playground/precision-workbench/**"
+      - "tests/browser/precision-workbench.spec.mjs"
+      - "docs/research/unslop-hallmark-first-pilot.md"
+      - ".github/workflows/design-review-pilot.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  compare-hallmark-static:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout pilot branch
+        uses: actions/checkout@v4
+        with:
+          path: candidate
+          persist-credentials: false
+      - name: Checkout baseline main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: baseline
+          persist-credentials: false
+      - name: Checkout pinned upstream Hallmark script
+        uses: actions/checkout@v4
+        with:
+          repository: Nutlope/hallmark
+          ref: 52328cb3129135499e4e178d4864ee90029dea2b
+          path: external-hallmark
+          sparse-checkout: |
+            skills/hallmark/scripts/sloplint.mjs
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Evaluate baseline and candidate (advisory, static-only)
+        shell: bash
+        run: |
+          mkdir -p audit
+          set +e
+          (cd baseline && node ../external-hallmark/skills/hallmark/scripts/sloplint.mjs playground/precision-workbench/src --json) > audit/baseline.json 2> audit/baseline.stderr
+          baseline_exit=$?
+          (cd candidate && node ../external-hallmark/skills/hallmark/scripts/sloplint.mjs playground/precision-workbench/src --json) > audit/candidate.json 2> audit/candidate.stderr
+          candidate_exit=$?
+          set -e
+          echo "Hallmark advisory exits: baseline=$baseline_exit candidate=$candidate_exit"
+          node -e '
+          const fs=require("fs");
+          for(const label of ["baseline","candidate"]){
+            const file="audit/"+label+".json";
+            let data;
+            try { data=JSON.parse(fs.readFileSync(file,"utf8")); }
+            catch(e){ console.error("Invalid Hallmark output for "+label+": "+e.message); process.exitCode=1; continue; }
+            const findings=data.findings||[];
+            const counts={};
+            for(const f of findings)counts[f.grade]=(counts[f.grade]||0)+1;
+            console.log(label+": "+findings.length+" findings "+JSON.stringify(counts));
+            for(const f of findings.slice(0,12)) console.log("  "+f.grade+" "+f.gate+" "+f.file+":"+f.line+" "+(f.evidence||"").slice(0,180));
+            fs.writeFileSync("audit/"+label+"-summary.json",JSON.stringify({summary:data.summary,counts,findings:findings.length},null,2)+"\n");
+          }'
+      - name: Save advisory source evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: hallmark-static-audit-first-pilot
+          path: audit/
+          if-no-files-found: error

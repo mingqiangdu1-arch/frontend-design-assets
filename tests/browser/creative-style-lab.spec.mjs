@@ -66,3 +66,55 @@ test("every style at 390/768/1440 has no viewport overflow with capture-only scr
   }
  }
 });
+
+
+test("pixel style protects original art and maintains readable controls",async({page})=>{
+ await page.goto(base+"?style=pixel-arcade");
+ for(const width of [390,768,1440]){
+  await page.setViewportSize({width,height:850});
+  const scene=page.locator('[data-scene="pixel-arcade"]');
+  const evidence=await scene.evaluate(el=>{
+   const q=el.querySelector('[data-quest="1"]');
+   const body=el.querySelector(".pixel-copy>p");
+   const sun=el.querySelector(".pixel-sun");
+   const world=el.querySelector(".pixel-world");
+   return {
+    label:parseFloat(getComputedStyle(el.querySelector(".pixel-label")).fontSize),
+    paragraph:parseFloat(getComputedStyle(body).fontSize),
+    questSubline:parseFloat(getComputedStyle(q.querySelector("small")).fontSize),
+    hitHeight:q.getBoundingClientRect().height,
+    buttonRadius:parseFloat(getComputedStyle(q).borderTopLeftRadius)||0,
+    shellBorder:parseFloat(getComputedStyle(el.querySelector(".pixel-shell")).borderTopWidth),
+    pixelSun:getComputedStyle(sun).clipPath,
+    sceneImage:getComputedStyle(world).backgroundImage,
+    headline:getComputedStyle(el.querySelector(".pixel-copy h2")).fontFamily,
+    selectedMarker:getComputedStyle(q.querySelector("strong"),"::after").content
+   };
+  });
+  expect(evidence.label,"HUD label "+width).toBeGreaterThanOrEqual(12);
+  expect(evidence.paragraph,"reading copy "+width).toBeGreaterThanOrEqual(14);
+  expect(evidence.questSubline,"quest supporting copy "+width).toBeGreaterThanOrEqual(12);
+  expect(evidence.hitHeight,"quest hit area "+width).toBeGreaterThanOrEqual(44);
+  expect(evidence.buttonRadius,"pixel square corners "+width).toBe(0);
+  expect(evidence.shellBorder,"chunky shell "+width).toBeGreaterThanOrEqual(3);
+  expect(evidence.pixelSun,"illustrated clipped sun "+width).toContain("polygon");
+  expect(evidence.sceneImage,"illustrated landscape "+width).toContain("linear-gradient");
+  expect(evidence.headline.toLowerCase()).toMatch(/mono|menlo|consolas/);
+  expect(evidence.selectedMarker).toContain("▸");
+ }
+});
+test("pixel selected quest remains visible beyond color and updates live state",async({page})=>{
+ const scene=page.locator('[data-scene="pixel-arcade"]');
+ const second=scene.locator('[data-quest="2"]');
+ await second.focus();
+ const focus=await second.evaluate(el=>({style:getComputedStyle(el).outlineStyle,size:parseFloat(getComputedStyle(el).outlineWidth)}));
+ expect(focus.style).not.toBe("none");
+ expect(focus.size).toBeGreaterThanOrEqual(3);
+ await page.keyboard.press("Enter");
+ await expect(second).toHaveAttribute("aria-pressed","true");
+ await expect(scene.locator('[data-quest="1"]')).toHaveAttribute("aria-pressed","false");
+ await expect(scene.locator("#pixelXP")).toHaveText("050");
+ await expect(scene.locator("#pixelFeedback")).toContainText("The Unknown");
+ const marker=await second.locator("strong").evaluate(el=>getComputedStyle(el,"::after").content);
+ expect(marker).toContain("▸");
+});

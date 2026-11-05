@@ -117,3 +117,16 @@ Use local HTTP to inspect prototype files in a browser agent. No autonomous back
 - New page may opt in to Hallmark; existing UI redesign may opt in to Unslop; audit-only may opt in to Hallmark. Neither external Skill is installed, called, vendored or globally enforced by the router.
 - Existing style IDs always take precedence over upstream aesthetic defaults. An unspecified style is intentionally left open, not silently set to SaaS/Minimal.
 - Run project-level checks and preserve all user-visible functionality if a target-project agent separately invokes upstream code.
+
+
+## Cross-genre review pilot (PR-015)
+
+For existing-page critique, run the context-aware `design:plan` route before edits; **choose the target page's style**, not the most recently tested one. Optional Hallmark CI is per-target and advisory. `scripts/report-design-audit.mjs` summarizes actual upstream JSON counts but does not assign a quality score or normalize house-style preferences into global standards. `docs/research/editorial-design-review-pilot.md` documents the light editorial counterexample to Precision Dark. Preserve real copy/behavior, keyboard flow, screenshots and original design direction.
+
+## Advanced interaction research (V0.14)
+
+Reusable interaction primitives are documented at `docs/interactions/special-interactions.md` and exercised by `playground/advanced-interactions/`. Before borrowing spatial selection, radial menus, or continuous comparison, identify the real product's devices, task frequency, history semantics, focus behavior, permission boundaries and motion policy. Copy behavior selectively, never the dark sample wrapper as a global theme. The examples are local-only and not production library components. Verify actual keyboard alternatives, touch cancellation and viewport behavior before release.
+
+## Integrated draft review contract
+
+The four originally independent pilot branches are collected in `docs/research/design-review-integration-20261105.md` without changing their distinct functionality. Do not equate a successful build, an unfiltered Hallmark advisory scan or a captured screenshot with production-ready visual/accessibility approval. Preserve Pixel Arcade deliberate art and the local-only nature of the three advanced controls. Register new work using unique IP/PR/KIT IDs and validate entire dependency graph.

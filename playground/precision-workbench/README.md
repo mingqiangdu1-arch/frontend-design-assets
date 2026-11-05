@@ -26,6 +26,10 @@ Do not open `index.html` through the Python static server: it imports uncompiled
 - Local, simulated issue content and transparent notification about non-persistence.
 - Responsive desktop/narrow/mobile layout and reusable scoped design tokens.
 
+## 2026-11-04 design review pilot
+
+An Unslop-inspired **real readability/focus CSS improvement** and a separate pinned upstream Hallmark **advisory static audit** were proposed in a controlled PR. See [pilot scope, boundaries and verification](../../docs/research/unslop-hallmark-first-pilot.md). This is not a claim that the external Unslop agent ran or that Hallmark opinions are universally binding.
+
 ## Verification and visual evidence
 
 ```bash

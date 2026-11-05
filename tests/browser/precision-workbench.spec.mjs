@@ -72,3 +72,31 @@ test("mobile inspector traps keyboard focus, closes on Escape and restores row f
  await expect(panel).toBeHidden();
  await expect(row).toBeFocused();
 });
+
+
+test("Unslop pilot: issue titles and status filters remain readable and keyboard-visible",async({page})=>{
+ for(const width of [390,768,1440]){
+  await page.setViewportSize({width,height:820});
+  await page.reload();
+  const titlePx=await page.locator(".orbit-issue-main strong").first().evaluate(el=>parseFloat(getComputedStyle(el).fontSize));
+  const filter=page.locator('.orbit-filters button[data-filter="all"]');
+  const dimensions=await filter.evaluate(el=>({font:parseFloat(getComputedStyle(el).fontSize),height:el.getBoundingClientRect().height}));
+  expect(titlePx,"issue title at "+width).toBeGreaterThanOrEqual(14);
+  expect(dimensions.font,"filter font at "+width).toBeGreaterThanOrEqual(12);
+  expect(dimensions.height,"filter hit box at "+width).toBeGreaterThanOrEqual(40);
+  await filter.focus();
+  const focus=await filter.evaluate(el=>({style:getComputedStyle(el).outlineStyle,width:getComputedStyle(el).outlineWidth}));
+  expect(focus.style,"focus outline at "+width).not.toBe("none");
+  expect(parseFloat(focus.width)).toBeGreaterThanOrEqual(2);
+ }
+});
+
+test("Unslop pilot: mobile inspector respects viewport without horizontal overflow",async({page})=>{
+ await page.setViewportSize({width:390,height:820});
+ await page.goto("/");
+ await page.locator('[data-item-id="FD-125"]').click();
+ await expect(page.getByRole("dialog",{name:"Issue inspector"})).toBeVisible();
+ const result=await page.evaluate(()=>({doc:document.documentElement.scrollWidth,viewport:document.documentElement.clientWidth,panel:document.querySelector(".orbit-inspector")?.getBoundingClientRect().width}));
+ expect(result.doc).toBeLessThanOrEqual(result.viewport+1);
+ expect(result.panel).toBeLessThanOrEqual(result.viewport);
+});

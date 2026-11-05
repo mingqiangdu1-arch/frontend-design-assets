@@ -49,3 +49,7 @@ indie-game, game-companion, arcade-event, gamified-learning, interactive-portfol
 - https://www.adobe.com/express/learn/blog/design-trends-2026
 - https://pros.squarespace.com/blog/design-trends
 - https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions
+
+## Genre-sensitive audit experiment
+
+Do not treat Pixel Arcade's intended monospace uppercase HUD, CSS illustrated gradient terrain, hard shadows and square panel frames as generic AI-template defects. A separate [controlled review](../../docs/research/pixel-arcade-genre-review.md) improves body and quest-label readability while preserving these visual decisions. Upstream aesthetic checker warnings remain reviewable, not automatically waived. This is not a claim of production or screen-reader certification.

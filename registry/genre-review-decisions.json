@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0",
+  "purpose": "Explicitly scoped manual-review prompts, never waivers or automatic suppression of upstream findings.",
+  "styles": {
+    "pixel-arcade": {
+      "target": "playground/creative-style-lab",
+      "intent": "Fictional game quest terminal with legible body copy and visible game-state feedback.",
+      "protectedFeatures": [
+        {
+          "id": "landscape",
+          "description": "Original CSS gradient and stepped sun/landscape shapes serve pixel illustration, not generic landing-page chrome."
+        },
+        {
+          "id": "pixel-frames",
+          "description": "Square buttons, thick borders, and hard-offset shadows communicate 8-bit cartridge controls."
+        },
+        {
+          "id": "hud-type",
+          "description": "In-world uppercase micro-labels and monospace headlines are meaningful; reading text must still be readable."
+        }
+      ],
+      "contextualReview": [
+        {
+          "gate": "2a",
+          "file": "playground/creative-style-lab/lab.css",
+          "evidencePattern": "pixel-(world|ground|mountain)",
+          "feature": "landscape",
+          "reason": "Illustrative game environment gradient, not a generic brand/background effect."
+        },
+        {
+          "gate": "29",
+          "file": "playground/creative-style-lab/lab.css",
+          "evidencePattern": "pixel-(shell|quests|copy)",
+          "feature": "pixel-frames",
+          "reason": "Hard 8-bit offset shadows may be intentionally authentic; inspect original screenshot before proposing changes."
+        },
+        {
+          "gate": "67",
+          "file": "playground/creative-style-lab/index.html",
+          "evidencePattern": "QUEST|CHAPTER|POWER|STORY|WORLD",
+          "feature": "hud-type",
+          "reason": "In-world game metadata may deliberately use short uppercase forms. This does not exempt unreadable controls."
+        }
+      ],
+      "mandatoryChecks": [
+        "Keyboard-visible focus and semantic quest state, not merely color.",
+        "Legible narrative copy and useful control targets.",
+        "Three viewport sizes: 390, 768, 1440; no horizontal overflow.",
+        "Other three scenes retain selection, markup, keyboard and interaction flows.",
+        "Fictional XP and scenes must not be misrepresented as persistent game data."
+      ]
+    }
+  }
+}

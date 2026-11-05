@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1",
   "purpose": "Living cross-application, multi-style design asset repository; no repository-wide visual default.",
-  "updatedAt": "2026-11-04",
+  "updatedAt": "2026-11-05",
   "stageDefinitions": [
     "captured",
     "analyzed",
@@ -3478,6 +3478,203 @@
       ],
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
       "verified": "Original planning-only Node CLI with focused deterministic tests. No third-party source installed or executed, and no target UI/browser/accessibility validation is implied."
+    },
+    {
+      "id": "PR-015",
+      "type": "recipe",
+      "stage": "prototype",
+      "priority": "P1",
+      "reuseKind": "composition-recipe",
+      "name": "Cross-genre design review evidence report (Editorial Warm pilot)",
+      "path": "docs/research/editorial-design-review-pilot.md",
+      "styleIds": [
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "frontend-quality",
+        "existing-ui-redesign",
+        "design-agent",
+        "editorial-cms"
+      ],
+      "tags": [
+        "v0.13.2",
+        "design-review",
+        "audit-evidence",
+        "hallmark",
+        "unslop",
+        "cross-genre",
+        "advisory"
+      ],
+      "dependencies": [
+        "PR-013",
+        "PR-014",
+        "REF-031",
+        "REF-032",
+        "TPL-007"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "verified": "Original JSON audit comparator with deterministic tests, source-only pinned upstream Hallmark CI and a separate editorial React implementation pilot. Experimental PR only; screenshot sign-off and real accessibility certification not claimed."
+    },
+    {
+      "id": "PR-016",
+      "type": "recipe",
+      "stage": "prototype",
+      "priority": "P1",
+      "reuseKind": "composition-recipe",
+      "name": "Pixel Arcade genre-aware review and non-waiving Hallmark audit triage",
+      "path": "docs/research/pixel-arcade-genre-review.md",
+      "styleIds": [
+        "pixel-arcade"
+      ],
+      "applicationContexts": [
+        "frontend-quality",
+        "existing-ui-redesign",
+        "game-companion",
+        "experimental-web"
+      ],
+      "tags": [
+        "pixel-art",
+        "genre-review",
+        "audit-evidence",
+        "unslop",
+        "hallmark",
+        "opt-in",
+        "2026-11"
+      ],
+      "dependencies": [
+        "PR-013",
+        "PR-014",
+        "REF-031",
+        "REF-032",
+        "DT-007",
+        "KIT-013"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "verified": "Isolated branch pilot with original CSS, browser regression, context-review annotations and optional pinned upstream source audit. Not installed globally, not a universal aesthetic waiver, not production certified."
+    },
+    {
+      "id": "IP-018",
+      "type": "interaction",
+      "name": "Spatial canvas: pointer pan / zoom / marquee / drag / keyboard nudge / local history",
+      "stage": "prototype",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "path": "docs/interactions/special-interactions.md",
+      "details": "docs/interactions/special-interactions.md",
+      "demo": "playground/advanced-interactions/index.html",
+      "styleIds": [],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "verified": "Original static multi-input proof of concept with deterministic Node tests and Playwright Chromium smoke; no persistence, multi-user collaboration, signed visual baseline, cross-browser certification or production claim.",
+      "applicationContexts": [
+        "design-editor",
+        "flow-builder",
+        "canvas",
+        "map",
+        "game-level-editor"
+      ],
+      "tags": [
+        "v0.14",
+        "spatial",
+        "gesture",
+        "pointer-capture",
+        "multi-select",
+        "undo",
+        "keyboard"
+      ],
+      "notion": "[private-notion-link-redacted]"
+    },
+    {
+      "id": "IP-019",
+      "type": "interaction",
+      "name": "Contextual radial menu with menu semantics, keyboard fallback and mobile list",
+      "stage": "prototype",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "path": "docs/interactions/special-interactions.md",
+      "details": "docs/interactions/special-interactions.md",
+      "demo": "playground/advanced-interactions/index.html",
+      "styleIds": [],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "verified": "Original static multi-input proof of concept with deterministic Node tests and Playwright Chromium smoke; no persistence, multi-user collaboration, signed visual baseline, cross-browser certification or production claim.",
+      "applicationContexts": [
+        "design-editor",
+        "media-editor",
+        "game-tool",
+        "desktop-tool"
+      ],
+      "tags": [
+        "v0.14",
+        "context-menu",
+        "radial",
+        "keyboard",
+        "focus-restore",
+        "mobile-fallback"
+      ],
+      "notion": "[private-notion-link-redacted]"
+    },
+    {
+      "id": "IP-020",
+      "type": "interaction",
+      "name": "Continuous state comparison scrubber with native pointer/touch/keyboard range",
+      "stage": "prototype",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "path": "docs/interactions/special-interactions.md",
+      "details": "docs/interactions/special-interactions.md",
+      "demo": "playground/advanced-interactions/index.html",
+      "styleIds": [],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "verified": "Original static multi-input proof of concept with deterministic Node tests and Playwright Chromium smoke; no persistence, multi-user collaboration, signed visual baseline, cross-browser certification or production claim.",
+      "applicationContexts": [
+        "image-editing",
+        "design-review",
+        "media",
+        "version-diff",
+        "research"
+      ],
+      "tags": [
+        "v0.14",
+        "before-after",
+        "range",
+        "touch",
+        "keyboard",
+        "state-scrub"
+      ],
+      "notion": "[private-notion-link-redacted]"
+    },
+    {
+      "id": "KIT-014",
+      "type": "archive",
+      "name": "Advanced Interaction Laboratory V0.14 · three independent interaction families",
+      "stage": "prototype",
+      "priority": "P1",
+      "reuseKind": "composition-recipe",
+      "path": "playground/advanced-interactions/README.md",
+      "demo": "playground/advanced-interactions/index.html",
+      "styleIds": [],
+      "applicationContexts": [
+        "design-editor",
+        "media-editing",
+        "experimental-web",
+        "design-agent",
+        "game-tool"
+      ],
+      "tags": [
+        "v0.14",
+        "interaction-lab",
+        "spatial",
+        "radial",
+        "scrubber",
+        "behavior-pattern"
+      ],
+      "dependencies": [
+        "IP-018",
+        "IP-019",
+        "IP-020"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "verified": "Runnable dependency-free local research; Node model tests and Chromium browser QA specified, no production library or approved visual golden claimed.",
+      "notion": "[private-notion-link-redacted]"
     }
   ],
   "referenceImplementationRoot": "components/reference",

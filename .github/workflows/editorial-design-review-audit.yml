@@ -1,0 +1,70 @@
+name: Editorial Warm · Hallmark controlled audit (advisory)
+on:
+  push:
+    branches:
+      - codex/editorial-design-review-pilot
+    paths:
+      - "playground/editorial-review/**"
+      - "scripts/report-design-audit.mjs"
+      - "tests/report-design-audit.test.mjs"
+      - "docs/research/editorial-design-review-pilot.md"
+      - ".github/workflows/editorial-design-review-audit.yml"
+  pull_request:
+    paths:
+      - "playground/editorial-review/**"
+      - "scripts/report-design-audit.mjs"
+      - "tests/report-design-audit.test.mjs"
+      - ".github/workflows/editorial-design-review-audit.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  editorial-hallmark-advisory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Candidate source
+        uses: actions/checkout@v4
+        with:
+          path: candidate
+          persist-credentials: false
+      - name: Baseline from main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: baseline
+          persist-credentials: false
+      - name: Pinned upstream Hallmark (read-only)
+        uses: actions/checkout@v4
+        with:
+          repository: Nutlope/hallmark
+          ref: 52328cb3129135499e4e178d4864ee90029dea2b
+          path: upstream-hallmark
+          sparse-checkout: |
+            skills/hallmark/scripts/sloplint.mjs
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Hallmark source-only audit · explicit editorial genre
+        shell: bash
+        run: |
+          mkdir -p audit
+          set +e
+          (cd baseline && node ../upstream-hallmark/skills/hallmark/scripts/sloplint.mjs playground/editorial-review/src --genre editorial --json) > audit/baseline.json 2> audit/baseline.stderr
+          baseline_exit=$?
+          (cd candidate && node ../upstream-hallmark/skills/hallmark/scripts/sloplint.mjs playground/editorial-review/src --genre editorial --json) > audit/candidate.json 2> audit/candidate.stderr
+          candidate_exit=$?
+          set -e
+          echo "Hallmark source-only advisory exits: baseline=$baseline_exit candidate=$candidate_exit"
+          node candidate/scripts/report-design-audit.mjs audit/baseline.json audit/candidate.json "Editorial Warm TPL-007" > audit/report.md
+          cat audit/report.md
+          cat audit/report.md >> "${GITHUB_STEP_SUMMARY}"
+      - name: Preserve the real evidence
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: editorial-hallmark-audit
+          path: audit/
+          if-no-files-found: warn

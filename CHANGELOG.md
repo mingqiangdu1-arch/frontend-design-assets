@@ -1,5 +1,40 @@
 # Changelog
 
+## 2026-11-05 · Four-pilot cross-style integration staging (Draft PR)
+
+- Consolidated separate Precision Dark, Editorial Warm, Pixel Arcade and advanced-interaction pilots from their tested draft branches onto a single integration branch without changing their implementation files.
+- Combined unique asset registrations PR-015/PR-016/IP-018/IP-019/IP-020/KIT-014: 121 → 127, preserving per-asset scope and independent visual styles. Reconciled shared CHANGELOG and AGENTS rules.
+- Integration candidate requires its own full CI and visual review. No production certification, golden screenshot approval or upstream draft PR merge is implied.
+
+## 2026-11-05 · V0.14 Advanced / special interaction research (Draft PR)
+
+- Added **IP-018** original spatial board with multi-select marquee, pointer drag, explicit pan mode, zoom anchors, 20-entry reversible position history and keyboard alternatives.
+- Added **IP-019** radial contextual actions with actual menu semantics, explicit button + right-click + Shift+F10, arrow key navigation, Escape focus return and responsive touch-friendly list fallback.
+- Added **IP-020** continuous before/after state scrub using a real native range input, mouse/touch/keyboard presets and original CSS illustrations.
+- Registered **KIT-014**, a separate three-pattern research lab; existing Cmd/Ctrl+K command menu and V0.7 Undo/Wizard/Reorder/Split are not reimplemented.
+- Added pure state-model tests, Playwright interaction/responsive captures, scoped usage guide and next-batch backlog. No new global style, third-party source, images, font binaries or real backend integration.
+
+## 2026-11-05 · Pixel Arcade deliberate-style preservation (Draft PR)
+
+- Edited the original CSS Pixel Arcade scene for more legible quest descriptions, HUD metadata, action sizes and non-color selected-quest cue while preserving 8-bit art direction.
+- Added Playwright computed-style and keyboard tests at three responsive widths; existing tests continue to exercise the other three scenes.
+- Added first-party `triage-genre-audit.mjs` plus exact-scoped `genre-review-decisions.json` and deterministic tests: upstream Hallmark findings remain unfiltered, review-only annotations are never waivers.
+- Added pinned external Hallmark `--genre playful` source-only CI as an optional advisory report. Registered `PR-016` as a prototype in this independent draft branch; other pending design-review PRs remain unmerged.
+
+## 2026-11-05 · Cross-genre editorial design-review prototype (PR pending)
+
+- Used the Editorial Warm React reading/review room as a deliberately different test from Precision Dark. Preserved editorial hierarchy/serif and React behavior while improving filter hit areas, secondary text and a keyboard skip link.
+- Added reusable first-party `scripts/report-design-audit.mjs` with synthetic regression tests: compares real Hallmark JSON grades/gates and avoids treating aesthetic lint as an objective quality score.
+- Added pinned upstream Hallmark source audit specifically with `--genre editorial`, producing a reviewable Markdown summary plus artifacts; advisory only.
+- Recorded the source audit and verification limitations at `docs/research/editorial-design-review-pilot.md`, registering PR-015 as an unmerged prototype.
+
+## 2026-11-04 · Controlled design review pilot (PR pending)
+
+- Scoped Unslop-inspired CSS legibility and focus improvements for the actual Precision Dark React workbench; no business logic/data changed.
+- Added Playwright computed-size, minimum filter target and focus-visible regression at 390/768/1440 widths.
+- Added pinned Hallmark upstream sloplint static comparison as advisory CI evidence for baseline vs candidate, without global installation or aesthetic enforcement.
+- Recorded the baseline and remaining manual verification boundaries in `docs/research/unslop-hallmark-first-pilot.md`.
+
 ## 2026-11-04 · V0.13.1 optional design review workflow routing
 
 - Added original `scripts/plan-design-review.mjs`: explicit new-page → Hallmark, redesign → Unslop, audit → Hallmark routing; Markdown/JSON handoff without executing or installing third-party code.
