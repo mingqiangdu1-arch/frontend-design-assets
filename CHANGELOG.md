@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-05 · V0.17 lightweight GitHub-first asset handoff
+
+- Added versioned registry-wide reuse policies (copyable source / adaptation required / research only), plus precise entry/stack/cautions and bilingual aliases for selected existing assets; no new asset IDs or false maturity promotions.
+- Extended `find-assets` with deterministic goal-aware ranking, reuse-mode filtering and resolved JSON handoff instructions; kept existing style/context filtering and no default theme.
+- Added `docs/assembly/asset-handoff.md`, refreshed Codex/assembly instructions and targeted policy/search tests. No playground rebuild, runtime setup, visual baseline claim or production integration.
+
+
 ## 2026-11-05 · V0.16 advanced interactions III (Draft research prototype)
 
 - Added **IP-023** first-party frame-based multi-track edit prototype: three tracks, 24 FPS, snap to nearby clip edges/playhead/whole-second grid, cross-track Pointer drag, exact keyboard ±1/±12-frame movement, overlap rejection and reversible local history.

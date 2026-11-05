@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.1",
+  "schemaVersion": "1.2",
   "purpose": "Living cross-application, multi-style design asset repository; no repository-wide visual default.",
   "updatedAt": "2026-11-05",
   "stageDefinitions": [
@@ -1475,7 +1475,17 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "handoff": {
+        "entry": "packages/ui/src/index.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Import with an explicitly supported ThemeSurface and matching scoped tokens; button behavior alone does not validate target flows.",
+        "limitations": "Not npm-published or production-certified."
+      },
+      "aliases": [
+        "按钮",
+        "加载按钮"
+      ]
     },
     {
       "id": "UI-012",
@@ -1763,7 +1773,17 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "handoff": {
+        "entry": "packages/ui/src/index.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Reuse the keyboard-tab contract and style-bound component only after checking selection/focus behavior.",
+        "limitations": "Not tested with all assistive technologies or target application content."
+      },
+      "aliases": [
+        "选项卡",
+        "键盘切换"
+      ]
     },
     {
       "id": "UI-020",
@@ -2636,7 +2656,17 @@
         "UI-019",
         "UI-023"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "handoff": {
+        "entry": "playground/precision-workbench/src/main.tsx",
+        "stack": "React/Vite",
+        "instructions": "Actual React UI package composition; adapt information architecture, data and theme to the real product.",
+        "limitations": "Local mock data and in-memory transitions; not an API-backed workbench."
+      },
+      "aliases": [
+        "专业工作台",
+        "暗色工作台"
+      ]
     },
     {
       "stage": "prototype",
@@ -3114,7 +3144,17 @@
       ],
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
       "verified": "Reference implementation. Automated browser and build checks pending; no production certification or human-approved visual baseline.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "handoff": {
+        "entry": "playground/editorial-review/src/main.tsx",
+        "stack": "React/Vite",
+        "instructions": "Editorial React reference with an independent page grammar; do not substitute SaaS navigation.",
+        "limitations": "No real CMS, publishing, permissions or server persistence."
+      },
+      "aliases": [
+        "内容审阅",
+        "文章审阅"
+      ]
     },
     {
       "id": "DT-007",
@@ -3477,7 +3517,18 @@
         "REF-032"
       ],
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
-      "verified": "Original planning-only Node CLI with focused deterministic tests. No third-party source installed or executed, and no target UI/browser/accessibility validation is implied."
+      "verified": "Original planning-only Node CLI with focused deterministic tests. No third-party source installed or executed, and no target UI/browser/accessibility validation is implied.",
+      "handoff": {
+        "entry": "scripts/plan-design-review.mjs",
+        "stack": "Node.js CLI",
+        "instructions": "Generate opt-in review planning handoff; external Unslop/Hallmark must be separately reviewed and intentionally invoked.",
+        "limitations": "Planning-only: no Skill installation, target edit or browser review."
+      },
+      "aliases": [
+        "设计审查",
+        "界面改版",
+        "去模板化"
+      ]
     },
     {
       "id": "PR-015",
@@ -3581,7 +3632,18 @@
         "undo",
         "keyboard"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "handoff": {
+        "entry": "playground/advanced-interactions/model.mjs",
+        "stack": "Vanilla JS model + DOM demo",
+        "instructions": "Use the interaction contract and state logic as design references; rebuild the view in the destination framework.",
+        "limitations": "No shared-state/permission integration, physical touch or production a11y signoff."
+      },
+      "aliases": [
+        "空间画布",
+        "框选",
+        "缩放"
+      ]
     },
     {
       "id": "IP-019",
@@ -3706,7 +3768,18 @@
         "IP-018"
       ],
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
-      "verified": "Original static interactive prototype and deterministic state tests; real mobile touch, screen readers, persistence and cross-browser production certification pending."
+      "verified": "Original static interactive prototype and deterministic state tests; real mobile touch, screen readers, persistence and cross-browser production certification pending.",
+      "handoff": {
+        "entry": "playground/advanced-interactions-v2/model.mjs",
+        "stack": "Vanilla JS model + DOM demo",
+        "instructions": "Preserve keyboard pickup/drop/cancel, explicit move buttons, immutable transfer and local undo semantics.",
+        "limitations": "Not a production React drag-and-drop package; real persistence/optimistic rollback require separate design."
+      },
+      "aliases": [
+        "跨容器拖放",
+        "拖拽",
+        "撤销"
+      ]
     },
     {
       "id": "IP-022",
@@ -3800,7 +3873,18 @@
         "collision-rejection"
       ],
       "dependencies": [],
-      "verified": "Frame-accurate 24FPS local fixture with three tracks and deterministic model; no actual media, collaboration, device or production a11y certification."
+      "verified": "Frame-accurate 24FPS local fixture with three tracks and deterministic model; no actual media, collaboration, device or production a11y certification.",
+      "handoff": {
+        "entry": "playground/advanced-interactions-v3/model.mjs",
+        "stack": "Vanilla JS model + DOM demo",
+        "instructions": "Keep integer frame timing, collision checks, keyboard precision and reversible local history.",
+        "limitations": "No actual media playback, frame sync, remote saves or collaborative edits."
+      },
+      "aliases": [
+        "磁吸时间线",
+        "多轨编辑",
+        "时间线"
+      ]
     },
     {
       "stage": "prototype",
@@ -3831,7 +3915,17 @@
         "progressbar"
       ],
       "dependencies": [],
-      "verified": "Original four-chapter full-text accessible-content prototype with scroll position and rAF stage. Native CSS ScrollTimeline, real screen-reader and cross-browser certifications not claimed."
+      "verified": "Original four-chapter full-text accessible-content prototype with scroll position and rAF stage. Native CSS ScrollTimeline, real screen-reader and cross-browser certifications not claimed.",
+      "handoff": {
+        "entry": "playground/advanced-interactions-v3/app.mjs",
+        "stack": "Vanilla JS + semantic HTML",
+        "instructions": "Keep full chapter text readable without motion, explicit previous/next navigation and reduced-motion behavior.",
+        "limitations": "Decorative CSS stage only; no actual media, translation QA or screen-reader certification."
+      },
+      "aliases": [
+        "滚动叙事",
+        "章节进度"
+      ]
     },
     {
       "stage": "prototype",
@@ -3868,5 +3962,36 @@
   ],
   "referenceImplementationRoot": "components/reference",
   "styleRegistry": "registry/styles.json",
-  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee."
+  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee.",
+  "reusePolicyVersion": "1.0",
+  "reusePolicies": {
+    "style-token": {
+      "mode": "copyable-source",
+      "guidance": "Read exact scoped Token CSS/JSON, select styleId explicitly, and test in the destination. Do not import all styles globally."
+    },
+    "styled-implementation": {
+      "mode": "copyable-source",
+      "guidance": "Existing implementation source is a reference, not a drop-in certified package. Check framework, theme and local state/API contracts."
+    },
+    "behavior-pattern": {
+      "mode": "adapt-required",
+      "guidance": "Transfer interaction contract, state invariants, keyboard/touch alternatives and failure paths; rebuild the view for the target stack."
+    },
+    "composition-recipe": {
+      "mode": "adapt-required",
+      "guidance": "Use a blueprint or procedure for planning; verify whether the underlying demo is static or real React before copying."
+    },
+    "design-reference": {
+      "mode": "research-only",
+      "guidance": "Visual/product inspiration only; do not copy proprietary code, assets or claims. Check source/license."
+    },
+    "motion-reference": {
+      "mode": "research-only",
+      "guidance": "Study motion principles, reduced-motion behavior and fallback. Not a production animation module."
+    },
+    "snapshot": {
+      "mode": "research-only",
+      "guidance": "Historical or experimental snapshot; inspect for context, not a supported implementation entrypoint."
+    }
+  }
 }

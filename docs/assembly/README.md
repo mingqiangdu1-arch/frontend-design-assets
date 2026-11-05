@@ -24,3 +24,7 @@ Codex input is in [REUSE-PROMPT.md](REUSE-PROMPT.md). Production review and targ
 ## V0.9 real React page
 
 `node scripts/compose-page.mjs --template=TPL-005 --format=json` now reports `demoActuallyUsesReactLibrary: true`, and per-component `wired-in-demo`/`candidate-not-wired` statuses. Execute `npm run dev:workbench` (port 5175). **Only TPL-005** has verified source-level integration; TPL-001–004 remain independent static prototypes.
+
+## V0.17 lightweight handoff (GitHub-first)
+
+[Asset selection and reuse levels](asset-handoff.md) explains `find-assets --goal`, `--reuse`, the resolved source entry and technology limits. This is a reference/agent handoff, **not an automatically generated app**. For a remote GitHub-only workflow, use the existing registry/CI rather than requiring a local preview at every research step.

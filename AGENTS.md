@@ -2,6 +2,13 @@
 
 This repository is a **living multi-style, cross-application design asset library** — not an AI WORKFLOW PLATFORM kit.
 
+## V0.17 lightweight GitHub-first handoff
+
+- Start with [docs/assembly/asset-handoff.md](docs/assembly/asset-handoff.md) before reuse. The CLI `node scripts/find-assets.mjs --goal=implementation|behavior|visual --intent="..." --json` now returns `handoffResolved` (exact entry, related files, stack, instructions, limitations and dependencies). Use `--reuse=copyable-source|adapt-required|research-only` for focused results.
+- Handoff mode is **not** the maturity stage: copyable-source is still unverified in a target product, adapt-required is not React code, and research-only never authorizes copying third-party media.
+- For registry/docs/agent-instruction-only changes, prefer existing static/Node CI. Do not impose new local servers, screenshots, full browser E2E, or human golden approval as a per-asset prerequisite. If target code changes, use relevant existing checks and report untested cases honestly.
+- Keep this growing multi-style library open to novel genres. Use explicit style compatibility, not a mandatory SaaS shell. Preserve every asset's original license/source and test claims.
+
 ## Prior to any reuse or implementation
 
 1. Read `README.md`, `docs/multi-context-architecture.md`, `registry/assets.json` and `registry/styles.json`. For exact retrieval run `node scripts/find-assets.mjs --style=<id> --context=<context> --intent=<terms> --json`; candidates still need review.

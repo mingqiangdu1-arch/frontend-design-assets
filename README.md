@@ -27,6 +27,7 @@
 | **高级／特殊交互 V0.16（多轨磁吸时间线、滚动驱动叙事）** | [Interaction Atelier III](playground/advanced-interactions-v3/index.html) / [行为与失败路径](docs/interactions/advanced-interactions-v3.md) |
 | 研究来源与历史记录 | [docs/research/sources.md](docs/research/sources.md) / [动效与 View Transitions](docs/motion/motion-system.md) |
 | 查看初始交互 Demo | [playground/initial-interaction-lab.html](playground/initial-interaction-lab.html) |
+| **轻量 AI 资产交接（V0.17）** | [调用契约与复用等级](docs/assembly/asset-handoff.md) · `node scripts/find-assets.mjs --goal=behavior --intent=拖拽 --json` |
 | 通过条件检索复用资产 | [find-assets CLI](docs/quality/README.md) · `node scripts/find-assets.mjs --style=precision-dark --intent=command` |
 | 校验颜色与浏览器交互 | [质量基线 V0.5](docs/quality/README.md) |
 | **复用 React 组件** | [组件库 V0.6](packages/ui/README.md) / [组件 API 清单](registry/components.json) / [可交互展厅](playground/component-gallery/README.md) |

@@ -11,3 +11,7 @@ You are implementing one explicitly selected frontend page based on the user's r
 7. Return a mapping of implemented sections to source files and their status, including what remains untested.
 
 Do not alter this asset repository or any business product unless directly requested. Do not mark output production-ready without release evidence.
+
+## V0.17 GitHub-first extension
+
+Before implementing, use [asset handoff rules](asset-handoff.md) and run `node scripts/find-assets.mjs --goal=behavior --intent="<task>" --json` (or `--goal=implementation` / `--goal=visual`). Read `handoffResolved` and keep the difference between copyable source, adapted behavior and research references. Do not demand local screenshots or browser/server setup merely to **catalog** assets. Existing CI checks are sufficient for a metadata-only update; real product adoption still needs its own QA.

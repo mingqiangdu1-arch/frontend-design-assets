@@ -24,6 +24,15 @@ for (const style of styles.styles) {
 }
 const stages = new Set(registry.stageDefinitions);
 const reuseKinds = new Set(["design-reference","behavior-pattern","motion-reference","style-token","styled-implementation","composition-recipe","snapshot"]);
+const policies = registry.reusePolicies;
+if (!policies || registry.reusePolicyVersion !== "1.0") fail("Missing versioned asset handoff policies");
+const modes = new Set(["copyable-source","adapt-required","research-only"]);
+for (const kind of reuseKinds) {
+ const policy = policies[kind];
+ if (!policy || !modes.has(policy.mode) || typeof policy.guidance !== "string" || !policy.guidance.trim()) {
+  fail("Incomplete handoff policy for reuse kind: " + kind);
+ }
+}
 const assetIds = new Set();
 for (const asset of registry.assets) {
   if (!/^([A-Z]{2,4})-\d{3}$/.test(asset.id)) fail("Bad asset ID: " + asset.id);
@@ -33,6 +42,14 @@ for (const asset of registry.assets) {
   if (!reuseKinds.has(asset.reuseKind)) fail("Invalid reuse kind: " + asset.id);
   if (!Array.isArray(asset.styleIds) || !Array.isArray(asset.applicationContexts)) fail("Applicability missing: " + asset.id);
   for (const id of asset.styleIds) if (!styleIds.has(id)) fail(asset.id + " has unknown style: " + id);
+  if (asset.aliases && (!Array.isArray(asset.aliases) || asset.aliases.some(a=>typeof a!=="string"||!a.trim()))) fail(asset.id+" invalid search aliases");
+  if (asset.handoff) {
+    if (typeof asset.handoff.entry!=="string" || !asset.handoff.entry.trim()) fail(asset.id+" handoff entry missing");
+    assertFile(asset.handoff.entry, asset.id + ".handoff.entry");
+    for (const key of ["stack","instructions","limitations"]) {
+      if (typeof asset.handoff[key]!=="string" || !asset.handoff[key].trim()) fail(asset.id+" handoff "+key+" missing");
+    }
+  }
   if (asset.demoStyleId && !styleIds.has(asset.demoStyleId)) fail(asset.id + " has unknown demo style");
   if (["style-token","styled-implementation"].includes(asset.reuseKind) && !asset.styleIds.length) fail(asset.id + " must bind explicit styles");
   for (const key of ["path","spec","details","demo"]) {
