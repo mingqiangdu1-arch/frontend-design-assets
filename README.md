@@ -23,6 +23,7 @@
 | 按应用需求组合设计方案 | [applications/README.md](applications/README.md) |
 | 交互行为与验收参考 | [现有交互指南](docs/interactions/patterns.md) / [V0.7 Undo · Wizard · Reorder · Split](docs/interactions/advanced-patterns.md) / [交互实验室](playground/interaction-lab/index.html) |
 | **高级／特殊交互 V0.14（空间画布、径向菜单、状态擦拭）** | [可运行 Advanced Interaction Lab](playground/advanced-interactions/index.html) / [行为规范与适用场景](docs/interactions/special-interactions.md) |
+| **高级／特殊交互 V0.15（跨容器拖放、FLIP 卡片重排）** | [Interaction Lab II](playground/advanced-interactions-v2/index.html) / [交互规范](docs/interactions/advanced-interactions-v2.md) |
 | 研究来源与历史记录 | [docs/research/sources.md](docs/research/sources.md) / [动效与 View Transitions](docs/motion/motion-system.md) |
 | 查看初始交互 Demo | [playground/initial-interaction-lab.html](playground/initial-interaction-lab.html) |
 | 通过条件检索复用资产 | [find-assets CLI](docs/quality/README.md) · `node scripts/find-assets.mjs --style=precision-dark --intent=command` |

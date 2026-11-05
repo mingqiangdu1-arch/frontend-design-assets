@@ -1,6 +1,6 @@
-# Frontend Design Assets · Four controlled pilots integrated into one candidate
+# Frontend Design Assets · Four controlled pilots integrated into main (research prototypes)
 
-Date: 2026-11-05. **Integration candidate only, not `main` and not production-ready**.
+Date: 2026-11-05. **Merged to `main` as research prototypes via [PR #5](https://github.com/mingqiangdu1-arch/frontend-design-assets/pull/5) (squash commit `2f0048f5832f1df1e7df2b82d02c59b3daabf420`).** Not production-ready; formal signed visual baselines and multi-browser/assistive-device QA remain pending.
 
 ## Origin and frozen inputs
 
@@ -23,12 +23,12 @@ All four Draft PRs were independently based on `main@eb758304190538f0e88fd22e299
 
 ## Integration validation
 
-- [ ] Registry, source checks and unit tests
-- [ ] Static Chromium smoke tests, including advanced spatial interactions and pixel scenes
-- [ ] Precision Dark React build and keyboard/browser QA
-- [ ] Editorial Warm React build and keyboard/browser QA
-- [ ] Three upstream Hallmark source-only advisory workflows, with pinned scripts and unfiltered reports (Precision Dark PR trigger enabled in the integration branch)
-- [ ] Human inspection of representative screenshots and reduced motion
+- [x] Registry, source checks and unit tests (merged main and integration PR CI passed)
+- [x] Static Chromium smoke tests, 47 passed (integration PR; main re-ran smoke successfully)
+- [x] Precision Dark React build and keyboard/browser QA
+- [x] Editorial Warm React build and keyboard/browser QA
+- [x] Three upstream Hallmark source-only advisory workflows, pinned scripts and unfiltered reports; their nonzero source-lint exits are not equivalent to workflow failure
+- [x] Representative screenshots reviewed in individual pilots (capture-only); [ ] human-signed golden visual baseline
 - [ ] Formal visual baseline signoff, Safari/Firefox, screen readers and real touch are separately pending
 
-The original pilot PRs remain [independent audit trails](https://github.com/mingqiangdu1-arch/frontend-design-assets/pulls); the integrated Draft PR is for one coherent review. Do not auto-merge drafts to bypass experimental quality gates.
+The original four Draft PRs were closed as **superseded by the merged [PR #5](https://github.com/mingqiangdu1-arch/frontend-design-assets/pull/5)** without separate merges; their original CI and code review remain accessible. Merging research prototypes does **not** mean they passed production accessibility, Safari/Firefox, actual touch or visual-golden signoff. Main post-merge registry/React/Chromium workflows succeeded.

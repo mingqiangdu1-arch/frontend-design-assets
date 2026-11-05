@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-05 · V0.15 Special interactions II (integration follow-up prototype)
+
+- Integrated PR #5 from four controlled pilots into main as original research prototypes; the source registry contains 127 items and the four obsolete Draft PRs were closed as superseded, not separately merged.
+- New independent second-batch research: **IP-021 cross-container transfer board** (native Pointer stream, keyboard pickup/drop, explicit buttons, local undo/redo) and **IP-022 FLIP collection sorting/layout** (same DOM nodes, transform-only progressive transitions, reduced-motion instant fallback).
+- Added **KIT-015**, separate documented static demo, pure-state unit tests, Chromium interaction/viewport regressions and CI routing; this is not a global visual style or a production React component package.
+- Corrected former integration-draft status in shared documentation; no production, signed screenshot, cross-browser or assistive technology certification claimed.
+
+
 ## 2026-11-05 · Four-pilot cross-style integration staging (Draft PR)
 
 - Consolidated separate Precision Dark, Editorial Warm, Pixel Arcade and advanced-interaction pilots from their tested draft branches onto a single integration branch without changing their implementation files.

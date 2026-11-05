@@ -40,6 +40,8 @@ jobs:
           node --check playground/interaction-lab/app.mjs
           node --check playground/advanced-interactions/model.mjs
           node --check playground/advanced-interactions/app.mjs
+          node --check playground/advanced-interactions-v2/model.mjs
+          node --check playground/advanced-interactions-v2/app.mjs
           node --check playground/page-blueprints/gallery.mjs
           node --check playground/page-blueprints/editorial-library/model.mjs
           node --check playground/page-blueprints/editorial-library/app.mjs

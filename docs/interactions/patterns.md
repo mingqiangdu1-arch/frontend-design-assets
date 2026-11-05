@@ -46,3 +46,8 @@ IP-009–IP-012 live in [advanced interaction specifications](advanced-patterns.
 在原有 IP-001 命令面板及 IP-009～IP-012 基础操作之外，新增 **IP-018 空间画布／框选／缩放／可撤销移动**、**IP-019 键盘可操作的径向上下文菜单**与 **IP-020 原生滑块驱动的连续状态对比**。这三类是原创、跨风格的行为原型，未纳入 React 生产组件包。
 
 [查看实际演示](../../playground/advanced-interactions/index.html) · [场景与键盘／触控／失败路径规范](special-interactions.md)。不采用鼠标专属手势作为关键操作的唯一入口；不要把真实业务状态误写为本地研究操作的成功。
+
+
+## V0.15 · 第二批高级/特殊交互（prototype）
+
+新增 **IP-021 可撤销跨容器拖放**（Pointer 原生拖动 + 键盘拾取/目标选择/放下 + 明确按钮入口）及 **IP-022 FLIP 卡片重排**（原始 DOM 节点复用、顺序及布局切换、减少动效即时更新）。两者在 [独立可运行实验室](../../playground/advanced-interactions-v2/index.html) 中验证，具体设备、键盘、异常与恢复边界见 [行为规范](advanced-interactions-v2.md)。不等同于生产级 React 组件、真实持久化或跨浏览器验收。

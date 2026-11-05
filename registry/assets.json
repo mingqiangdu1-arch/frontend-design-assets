@@ -3675,6 +3675,100 @@
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
       "verified": "Runnable dependency-free local research; Node model tests and Chromium browser QA specified, no production library or approved visual golden claimed.",
       "notion": "[private-notion-link-redacted]"
+    },
+    {
+      "id": "IP-021",
+      "type": "interaction",
+      "name": "Cross-container pointer and keyboard transfer with local undo/redo",
+      "stage": "prototype",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "path": "docs/interactions/advanced-interactions-v2.md",
+      "details": "docs/interactions/advanced-interactions-v2.md",
+      "demo": "playground/advanced-interactions-v2/index.html",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-tool",
+        "editor",
+        "workspace",
+        "project-board"
+      ],
+      "tags": [
+        "cross-container",
+        "pointer-events",
+        "keyboard-drag",
+        "undo",
+        "accessibility",
+        "v0.15"
+      ],
+      "dependencies": [
+        "IP-011",
+        "IP-018"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "verified": "Original static interactive prototype and deterministic state tests; real mobile touch, screen readers, persistence and cross-browser production certification pending."
+    },
+    {
+      "id": "IP-022",
+      "type": "interaction",
+      "name": "FLIP layout/sort transition preserving DOM identity and reduced-motion fallback",
+      "stage": "prototype",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "path": "docs/interactions/advanced-interactions-v2.md",
+      "details": "docs/interactions/advanced-interactions-v2.md",
+      "demo": "playground/advanced-interactions-v2/index.html",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-tool",
+        "content-exploration",
+        "dashboard",
+        "visual-collection"
+      ],
+      "tags": [
+        "FLIP",
+        "layout-reflow",
+        "web-animations",
+        "reduced-motion",
+        "focus",
+        "v0.15"
+      ],
+      "dependencies": [
+        "IP-013"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "verified": "Original DOM-preserving FLIP prototype with progressive animation; cross-browser, hardware performance and assistive tech testing remain."
+    },
+    {
+      "id": "KIT-015",
+      "type": "archive",
+      "name": "Advanced Interaction Lab II · Cross-Container Transfer and FLIP Reflow",
+      "stage": "prototype",
+      "priority": "P1",
+      "reuseKind": "composition-recipe",
+      "path": "playground/advanced-interactions-v2/README.md",
+      "details": "docs/interactions/advanced-interactions-v2.md",
+      "demo": "playground/advanced-interactions-v2/index.html",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-tool",
+        "interaction-research",
+        "project-board",
+        "design-agent"
+      ],
+      "tags": [
+        "v0.15",
+        "advanced-interactions",
+        "independent-demo",
+        "original",
+        "browser-qa"
+      ],
+      "dependencies": [
+        "IP-021",
+        "IP-022"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "verified": "Local fixture and original scoped visual wrapper; not a reusable production React component or global design theme."
     }
   ],
   "referenceImplementationRoot": "components/reference",

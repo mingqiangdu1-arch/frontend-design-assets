@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Original advanced interaction experiments: cross-container transferable cards and FLIP animated collection with reduced-motion alternatives. Local fixture only.">
+<title>Advanced Interaction Lab II · Transfer & Reflow</title>
+<link rel="stylesheet" href="./style.css"><script type="module" src="./app.mjs"></script>
+</head><body>
+<a class="skip" href="#experiments">跳至交互实验</a>
+<header class="masthead">
+ <a href="../advanced-interactions/" class="mark">◈ INTERACTION LAB <span>/ V0.15</span></a>
+ <nav aria-label="实验导航"><a href="../../docs/interactions/special-interactions.md">上一轮规范</a><a href="../../docs/interactions/advanced-interactions-v2.md">本轮行为规范</a><a href="../asset-explorer/">资产检索</a></nav>
+</header>
+<main id="experiments">
+ <section class="intro"><span class="eyebrow">V0.15 / BEHAVIOR EXPERIMENTS / LOCAL STATE ONLY</span>
+ <h1>Move things.<br><em>Keep the context.</em></h1>
+ <p>高级交互不是让每次点击都动起来，而是保持对象、位置、焦点与用户判断之间的连续性。两套原型共享设计原则，不共享视觉主题。</p>
+ <div class="intro-rail"><span>01 / TRANSFER</span><span>02 / REFLOW</span><span>KEYBOARD FIRST · REDUCED MOTION</span></div></section>
+
+ <section class="experience" id="transferExperience" aria-labelledby="transferTitle">
+  <div class="section-head"><div><span class="eyebrow">IP-021 · CROSS-CONTAINER TRANSFER</span><h2 id="transferTitle">跨容器移动画板</h2>
+  <p>将卡片从一列拖到另一列。可用键盘拾取 / 选择目标 / 放下，也可通过明确按钮完成移动。仅保存本地状态。</p></div>
+  <div class="head-controls"><button id="boardUndo" type="button" disabled>↶ 撤销</button><button id="boardRedo" type="button" disabled>↷ 重做</button><button id="boardReset" type="button" class="quiet">恢复示例</button></div></div>
+  <div class="control-note"><b>操作</b> 拖动卡片上的「移动手柄」到其他列。键盘聚焦手柄后：<kbd>空格</kbd> 拾取，<kbd>←</kbd> / <kbd>→</kbd> 选列，<kbd>Enter</kbd> 放下，<kbd>Esc</kbd> 取消。每张卡片也有明确的左右移动按钮。</div>
+  <div id="board" class="board" role="group" aria-label="三列本地任务画板">
+   <section class="lane" data-lane="inbox" aria-label="收集列"><div class="lane-heading"><span>01</span><h3>收集</h3><output data-count="inbox">2</output></div><ol data-cards="inbox"></ol></section>
+   <section class="lane" data-lane="progress" aria-label="制作中列"><div class="lane-heading"><span>02</span><h3>制作中</h3><output data-count="progress">2</output></div><ol data-cards="progress"></ol></section>
+   <section class="lane" data-lane="ready" aria-label="待验收列"><div class="lane-heading"><span>03</span><h3>待验收</h3><output data-count="ready">1</output></div><ol data-cards="ready"></ol></section>
+  </div>
+  <p class="statusline" id="boardStatus" role="status" aria-live="polite">五张本地示例卡片已经就绪。</p>
+  <p class="footnote">演示不写入服务端；拖动途中取消不会提交，撤销仅针对本次浏览器会话中的操作。跨列移动不涉及真实团队权限或协作冲突。</p>
+ </section>
+
+ <section class="experience reflow-section" id="reflowExperience" aria-labelledby="reflowTitle">
+  <div class="section-head"><div><span class="eyebrow">IP-022 · FLIP COLLECTION REORDER</span><h2 id="reflowTitle">布局重排，保持对象</h2>
+  <p>同一组原始 DOM 卡片在不同排序、布局之间切换。支持 FLIP 过渡；减少动效模式下立即呈现新状态，不影响操作。</p></div>
+  <span class="signal">DOM IDENTITY / PRESERVED</span></div>
+  <div class="layout-controls">
+   <div class="control-group" role="group" aria-label="项目排序"><span>排序方式</span><button type="button" data-sort="priority" aria-pressed="true">优先级</button><button type="button" data-sort="name" aria-pressed="false">名称</button></div>
+   <div class="control-group" role="group" aria-label="排列方式"><span>布局模式</span><button type="button" data-layout="grid" aria-pressed="true">卡片网格</button><button type="button" data-layout="stack" aria-pressed="false">纵向列表</button></div>
+  </div>
+  <div class="collection" id="collection" role="group" data-layout="grid" aria-label="四张可重排的概念卡片">
+   <article class="concept" data-id="PRISM" tabindex="0"><span>01 · COMPOSITION</span><div class="symbol symbol-prism" aria-hidden="true"></div><h3>Prism Studies</h3><p>Geometry in motion</p></article>
+   <article class="concept" data-id="VECTOR" tabindex="0"><span>02 · WORKFLOW</span><div class="symbol symbol-vector" aria-hidden="true"></div><h3>Vector Process</h3><p>Precision first</p></article>
+   <article class="concept" data-id="TIDAL" tabindex="0"><span>03 · MOTION</span><div class="symbol symbol-tidal" aria-hidden="true"></div><h3>Tidal Volume</h3><p>Responsive rhythm</p></article>
+   <article class="concept" data-id="FORM" tabindex="0"><span>04 · WORKFLOW</span><div class="symbol symbol-form" aria-hidden="true"></div><h3>Form Atlas</h3><p>Adaptive systems</p></article>
+  </div>
+  <p class="statusline" role="status" aria-live="polite" id="reflowStatus">优先级排序 · 卡片网格。四张卡片均可聚焦。</p>
+  <p class="footnote">FLIP 负责解释状态变化，不承担状态本身。若浏览器不支持 Web Animations API 或系统要求减少动画，仍会同步更新排序与布局。</p>
+ </section>
+ <footer class="footer"><span>ORIGINAL INTERACTION RESEARCH / NO EXTERNAL ART, API OR SAVED DATA</span><a href="../advanced-interactions/">↶ 返回第一批高级交互</a></footer>
+</main></body></html>

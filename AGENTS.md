@@ -127,6 +127,11 @@ For existing-page critique, run the context-aware `design:plan` route before edi
 
 Reusable interaction primitives are documented at `docs/interactions/special-interactions.md` and exercised by `playground/advanced-interactions/`. Before borrowing spatial selection, radial menus, or continuous comparison, identify the real product's devices, task frequency, history semantics, focus behavior, permission boundaries and motion policy. Copy behavior selectively, never the dark sample wrapper as a global theme. The examples are local-only and not production library components. Verify actual keyboard alternatives, touch cancellation and viewport behavior before release.
 
-## Integrated draft review contract
+## Integrated research policy (main merged via PR #5)
 
-The four originally independent pilot branches are collected in `docs/research/design-review-integration-20261105.md` without changing their distinct functionality. Do not equate a successful build, an unfiltered Hallmark advisory scan or a captured screenshot with production-ready visual/accessibility approval. Preserve Pixel Arcade deliberate art and the local-only nature of the three advanced controls. Register new work using unique IP/PR/KIT IDs and validate entire dependency graph.
+The four originally independent pilots were combined into `main` via PR #5, as recorded in `docs/research/design-review-integration-20261105.md`, without changing their distinct functionality. Do not equate a successful build, an unfiltered Hallmark advisory scan or a captured screenshot with production-ready visual/accessibility approval. Preserve Pixel Arcade deliberate art and the local-only nature of the three advanced controls. Register new work using unique IP/PR/KIT IDs and validate entire dependency graph.
+
+
+## Advanced cross-container and FLIP interactions (V0.15, experimental)
+
+Before reusing IP-021 or IP-022 read `docs/interactions/advanced-interactions-v2.md`: the real Pointer stream, keyboard pickup/drop, explicit movement buttons, undo history, focus restoration, reduced motion and immutable data model are the reusable behavior contracts. `playground/advanced-interactions-v2/` is a locally simulated example only. No real backend, synced collaboration, cross-browser, multi-touch or production a11y signoff is implied.
