@@ -28,3 +28,7 @@ Codex input is in [REUSE-PROMPT.md](REUSE-PROMPT.md). Production review and targ
 ## V0.17 lightweight handoff (GitHub-first)
 
 [Asset selection and reuse levels](asset-handoff.md) explains `find-assets --goal`, `--reuse`, the resolved source entry and technology limits. This is a reference/agent handoff, **not an automatically generated app**. For a remote GitHub-only workflow, use the existing registry/CI rather than requiring a local preview at every research step.
+
+## V0.17 multi-asset composition planning
+
+[Design selection and composition](design-composition.md) introduces a **planning-only** combination of registered style, page blueprint, React exports and optional interaction contracts. Example: `npm run design:compose -- --context=knowledge-base --stack=react --format=markdown`. No page code is generated; the tool intentionally leaves style unselected when the user did not select it.

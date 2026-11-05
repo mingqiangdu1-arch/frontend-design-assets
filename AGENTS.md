@@ -2,6 +2,13 @@
 
 This repository is a **living multi-style, cross-application design asset library** — not an AI WORKFLOW PLATFORM kit.
 
+## V0.17 design-combination planning (GitHub-first)
+
+- For a new product design request, read [docs/assembly/design-composition.md](docs/assembly/design-composition.md) and use `npm run design:compose -- --context=<declared-context> --intent="<task>" --stack=any|react|static --format=json` to compare candidates; or pass `--template=TPL-xxx` for an explicit blueprint. This is **planning-only**: no code generation, rendering, install, target writes or default theme selection.
+- Without an explicit `--style`/`--template`, the tool gives **alternatives** and does not make a style decision. It uses declared contexts and deterministic keyword matches, not AI understanding; an unsupported context must remain open rather than falling back to SaaS.
+- Distinguish an actual React-wired template from static demos that could be **ported**. Shared React components only support the four declared themes. A neutral interaction spec is never a drop-in styled component; adapt its state/keyboard/failure semantics to the chosen stack.
+- To reduce GitHub-only execution friction, rely on the existing registry and Node unit checks for metadata/planner changes; avoid creating playground or browser test infrastructure just to deliver a design handoff.
+
 ## V0.17 lightweight GitHub-first handoff
 
 - Start with [docs/assembly/asset-handoff.md](docs/assembly/asset-handoff.md) before reuse. The CLI `node scripts/find-assets.mjs --goal=implementation|behavior|visual --intent="..." --json` now returns `handoffResolved` (exact entry, related files, stack, instructions, limitations and dependencies). Use `--reuse=copyable-source|adapt-required|research-only` for focused results.

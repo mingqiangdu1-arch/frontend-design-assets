@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-05 · V0.17 design composition planning (GitHub-first)
+
+- Added `scripts/plan-design-composition.mjs` and a `design:compose` entry for deterministic multi-asset design options across 10 styles, 7 page blueprints, existing React component support and separately adaptable interaction patterns.
+- Candidate output has no forced theme: context suggests options; explicit template/style is respected; mismatched themes or unknown interaction IDs fail closed. React-wired pages, static examples and style-only directions remain distinct.
+- Added focused no-runtime Node tests and GitHub-first Codex guidance. No new external dependencies, demo app, visual certification, upstream Skill installation, or target product editing.
+
+
 ## 2026-11-05 · V0.17 lightweight GitHub-first asset handoff
 
 - Added versioned registry-wide reuse policies (copyable source / adaptation required / research only), plus precise entry/stack/cautions and bilingual aliases for selected existing assets; no new asset IDs or false maturity promotions.

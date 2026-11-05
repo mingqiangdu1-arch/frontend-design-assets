@@ -47,3 +47,7 @@ Then ask the agent to:
 ## 5. Scope of this repository change
 
 Only registry metadata, retrieval priority, agent instructions, documentation and deterministic tests. **No new demo project, browser runtime, dependency installation, external Skill execution, screenshot approval or production integration** is part of this milestone.
+
+## 6. Compose multiple candidates without a runtime environment
+
+Use [design-composition.md](design-composition.md) and `npm run design:compose -- --context=workspace --intent="跨容器拖放" --stack=react --format=json` to cross-check a page blueprint, scoped style, shared React component status, and independent interaction contracts. The output remains an evidence-constrained **agent plan**, not a guaranteed integration or a default visual design.
