@@ -1,0 +1,41 @@
+name: Interaction Atelier III — timeline and scroll multi-engine smoke
+on:
+  push:
+    paths:
+      - "playground/advanced-interactions-v3/**"
+      - "tests/browser/advanced-interactions-v3.crossbrowser.spec.mjs"
+      - "playwright.interaction-v3.crossbrowser.config.mjs"
+      - ".github/workflows/interaction-v3-crossbrowser.yml"
+  pull_request:
+    paths:
+      - "playground/advanced-interactions-v3/**"
+      - "tests/browser/advanced-interactions-v3.crossbrowser.spec.mjs"
+      - "playwright.interaction-v3.crossbrowser.config.mjs"
+      - ".github/workflows/interaction-v3-crossbrowser.yml"
+permissions:
+  contents: read
+jobs:
+  timeline-scroll-multi-engine:
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install test dependencies
+        run: npm install --no-audit --no-fund
+      - name: Install Chromium, Firefox and WebKit
+        run: npx playwright install --with-deps chromium firefox webkit
+      - name: Validate timeline snap and scroll narrative across engines
+        run: npx playwright test -c playwright.interaction-v3.crossbrowser.config.mjs
+      - name: Save browser reports and failure evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: timeline-scroll-crossbrowser
+          path: |
+            playwright-report-timeline-story/
+            test-results/
+          if-no-files-found: ignore
+          retention-days: 14

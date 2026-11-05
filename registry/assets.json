@@ -3769,6 +3769,101 @@
       ],
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
       "verified": "Local fixture and original scoped visual wrapper; not a reusable production React component or global design theme."
+    },
+    {
+      "stage": "prototype",
+      "priority": "P1",
+      "styleIds": [],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "id": "IP-023",
+      "type": "interaction",
+      "name": "Frame-accurate multi-track timeline with magnetic snapping, track validation and local history",
+      "reuseKind": "behavior-pattern",
+      "path": "docs/interactions/advanced-interactions-v3.md",
+      "details": "docs/interactions/advanced-interactions-v3.md",
+      "demo": "playground/advanced-interactions-v3/index.html",
+      "applicationContexts": [
+        "creative-tool",
+        "video-editor",
+        "animation-timeline",
+        "audio-production",
+        "game-tools"
+      ],
+      "tags": [
+        "v0.16",
+        "timeline",
+        "magnetic-snap",
+        "frame-editor",
+        "pointer-events",
+        "keyboard",
+        "undo",
+        "collision-rejection"
+      ],
+      "dependencies": [],
+      "verified": "Frame-accurate 24FPS local fixture with three tracks and deterministic model; no actual media, collaboration, device or production a11y certification."
+    },
+    {
+      "stage": "prototype",
+      "priority": "P1",
+      "styleIds": [],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "id": "IP-024",
+      "type": "interaction",
+      "name": "Accessible scroll-led chapter storytelling with progress feedback and reduced-motion fallback",
+      "reuseKind": "behavior-pattern",
+      "path": "docs/interactions/advanced-interactions-v3.md",
+      "details": "docs/interactions/advanced-interactions-v3.md",
+      "demo": "playground/advanced-interactions-v3/index.html",
+      "applicationContexts": [
+        "content-exploration",
+        "editorial",
+        "education",
+        "brand-story",
+        "digital-exhibition"
+      ],
+      "tags": [
+        "v0.16",
+        "scroll-progress",
+        "storytelling",
+        "sticky",
+        "reduced-motion",
+        "semantic-articles",
+        "progressbar"
+      ],
+      "dependencies": [],
+      "verified": "Original four-chapter full-text accessible-content prototype with scroll position and rAF stage. Native CSS ScrollTimeline, real screen-reader and cross-browser certifications not claimed."
+    },
+    {
+      "stage": "prototype",
+      "priority": "P1",
+      "styleIds": [],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "id": "KIT-016",
+      "type": "archive",
+      "name": "Interaction Atelier III · Magnetic Timeline and Scroll Narrative",
+      "reuseKind": "composition-recipe",
+      "path": "playground/advanced-interactions-v3/README.md",
+      "details": "docs/interactions/advanced-interactions-v3.md",
+      "demo": "playground/advanced-interactions-v3/index.html",
+      "applicationContexts": [
+        "creative-tool",
+        "interactive-report",
+        "interaction-research",
+        "design-agent"
+      ],
+      "tags": [
+        "v0.16",
+        "independent-demo",
+        "original",
+        "time-editor",
+        "scroll-story",
+        "browser-qa"
+      ],
+      "dependencies": [
+        "IP-023",
+        "IP-024"
+      ],
+      "verified": "Original independent local-only demonstration of two behaviors. Style wrapper is not a default theme or production-ready component."
     }
   ],
   "referenceImplementationRoot": "components/reference",

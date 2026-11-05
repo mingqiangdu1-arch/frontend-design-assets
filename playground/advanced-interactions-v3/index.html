@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Original independent interaction prototypes: frame-accurate multi-track snapping timeline and accessible scroll-driven editorial narrative. Local demonstration data.">
+<title>Interaction Atelier III · Time / Scroll</title>
+<link rel="stylesheet" href="./styles.css"><script type="module" src="./app.mjs"></script>
+</head><body>
+<a class="skip-link" href="#main">跳至主要内容</a>
+<header class="site-head"><a class="brand" href="../advanced-interactions-v2/">◈ ATELIER <span>/ 03</span></a><nav aria-label="原型入口"><a href="../advanced-interactions/">第一批</a><a href="../advanced-interactions-v2/">第二批</a><a href="../asset-explorer/">资产目录</a></nav><span class="head-note">RESEARCH / NO SERVER</span></header>
+<main id="main">
+<section class="hero" aria-labelledby="heroTitle"><p class="kicker">INTERACTION LABORATORY / SERIES 03 · V0.16</p>
+<h1 id="heroTitle"><span>Time is an</span><em>interface.</em></h1>
+<p class="hero-lead">探索两种不同的连续体验：在多轨时间线上进行精确编辑，在长篇叙事中让滚动承载进度，而非遮蔽内容。</p>
+<div class="hero-bottom"><span>01 / FRAME ACCURACY</span><span>02 / SCROLL NARRATIVE</span><span>FRAME-BASED · KEYBOARD · REDUCED MOTION</span></div></section>
+<section class="studio" id="timelineExperience" aria-labelledby="timelineTitle">
+ <div class="section-top"><div><p class="kicker">IP-023 / MAGNETIC EDITOR</p><h2 id="timelineTitle">多轨时间线 <span>·</span> 磁吸编辑</h2><p>每个素材占据精确的时间帧。移动、跨轨、吸附、冲突拒绝与历史恢复都是实际状态变化。</p></div>
+ <div class="controls-right"><button type="button" id="undo" disabled>↶ 撤销</button><button type="button" id="redo" disabled>↷ 重做</button><button type="button" id="reset" class="secondary">恢复初始</button></div></div>
+ <div class="timeline-toolbar">
+  <div class="measure"><span>PROJECT</span><strong>12:00</strong><small>24 FPS / 288 FRAMES</small></div>
+  <label class="snap-toggle"><input id="snapEnabled" type="checkbox" checked> <span>磁吸对齐</span><small>±5 帧 · Alt 拖动临时关闭</small></label>
+  <label class="playhead-control" for="playhead"><span>播放头 <output id="playheadReadout">00:05:00</output></span><input id="playhead" type="range" min="0" max="288" step="1" value="120" aria-label="播放头位置"></label>
+ </div>
+ <div class="timeline-shell" role="group" aria-label="三轨编辑时间线">
+   <div class="timeline-ruler"><span class="ruler-caption">TRACKS / SECONDS</span><div class="ruler-scale" aria-label="0 至 12 秒，按整秒标记"><span>00</span><span>02</span><span>04</span><span>06</span><span>08</span><span>10</span><span>12</span></div></div>
+   <div id="trackList" class="track-list">
+    <div class="track" data-track="visual"><div class="track-name"><small>01 / VISUAL</small><strong>画面</strong></div><div class="track-rail" data-rail="visual" aria-label="画面轨道"></div></div>
+    <div class="track" data-track="captions"><div class="track-name"><small>02 / CAPTIONS</small><strong>字幕</strong></div><div class="track-rail" data-rail="captions" aria-label="字幕轨道"></div></div>
+    <div class="track" data-track="audio"><div class="track-name"><small>03 / AUDIO</small><strong>声场</strong></div><div class="track-rail" data-rail="audio" aria-label="声场轨道"></div></div>
+   </div>
+ </div>
+ <div class="timeline-details"><div><span class="micro">CURRENT SELECTION</span><strong id="selectedClip">第一幕 · 画面 · 00:00:00</strong><p id="selectedInfo">使用剪辑卡片中的按钮选择对象，然后通过按键或精确按钮移动。</p></div>
+ <div class="edit-buttons" role="group" aria-label="精确剪辑操作"><button type="button" id="frameBack" aria-label="所选剪辑向前移动一帧">−1f</button><button type="button" id="frameForward" aria-label="所选剪辑向后移动一帧">+1f</button><button type="button" id="trackUp" aria-label="所选剪辑移到上方轨道">↑ 轨</button><button type="button" id="trackDown" aria-label="所选剪辑移到下方轨道">↓ 轨</button></div></div>
+ <p id="timelineStatus" class="live-message" role="status" aria-live="polite">时间线已就绪。选择剪辑、拖动手柄，或使用方向键进行逐帧调整。</p>
+ <p class="hint">操作：点击剪辑即可选中；聚焦剪辑后用 ←/→ 移动 1 帧，Shift+←/→ 移动 12 帧，Alt+↑/↓ 跨轨；Alt + 指针拖动可暂时禁用磁吸。拖动仅在松开时提交，冲突与越界会被拒绝或限制。</p>
+</section>
+<section class="story-intro" id="storyExperience" aria-labelledby="storyTitle"><p class="kicker">IP-024 / EDITORIAL SCROLL SYSTEM</p><h2 id="storyTitle">让滚动讲述<span>变化</span></h2><p>四段原始章节在没有动画时仍完整可读。右侧视觉仅解释当前阅读进度，不要求读者看完动画才获得内容。</p>
+<div class="story-actions" role="group" aria-label="章节跳转"><button type="button" id="storyPrevious">← 上一章</button><button type="button" id="storyNext">下一章 →</button></div>
+</section>
+<section class="story-layout" aria-label="滚动驱动四章叙事">
+ <div class="chapters" id="chapters">
+   <article class="chapter" id="chapter-origin" data-chapter="origin"><p class="chapter-no">01 / SIGNAL</p><h3>一个信号</h3><p>从原始输入中找到值得被看见的变化。</p><a href="#chapter-structure">继续阅读第二章</a></article>
+   <article class="chapter" id="chapter-structure" data-chapter="structure"><p class="chapter-no">02 / STRUCTURE</p><h3>建立结构</h3><p>关系逐渐清晰，信息开始组成可理解的路径。</p><a href="#chapter-rhythm">继续阅读第三章</a></article>
+   <article class="chapter" id="chapter-rhythm" data-chapter="rhythm"><p class="chapter-no">03 / RHYTHM</p><h3>出现节奏</h3><p>连续的运动让转场成为叙事，而非装饰。</p><a href="#chapter-resolve">继续阅读第四章</a></article>
+   <article class="chapter" id="chapter-resolve" data-chapter="resolve"><p class="chapter-no">04 / RESOLVE</p><h3>抵达结论</h3><p>内容始终可读，动画只是解释它如何到达这里。</p><a href="#storyTitle">返回叙事开头</a></article>
+ </div>
+ <aside class="story-sticky"><div class="story-stage" id="storyStage" data-scene="origin">
+  <div class="stage-top"><span>VISUAL SIGNAL <small> / FOUR STATES</small></span><output id="storyPercent">00%</output></div>
+  <div class="stage-visual" id="stageVisual" aria-hidden="true">
+    <div class="stage-orbit stage-orbit-a"></div><div class="stage-orbit stage-orbit-b"></div><div class="stage-core"></div><div class="stage-line"></div><div class="stage-nodes"><i></i><i></i><i></i><i></i></div>
+  </div>
+  <div class="stage-bottom"><span class="micro" id="storyNumber">01 / SIGNAL</span><strong id="storyActive">一个信号</strong>
+    <div id="storyMeter" role="progressbar" aria-label="叙事阅读进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="storyMeterFill"></span></div>
+  </div>
+ </div></aside>
+</section>
+<p class="story-status" role="status" aria-live="polite" id="storyStatus">滚动章节或使用“上一章／下一章”按钮浏览。章节文本始终可见。</p>
+<footer class="footer"><span>ORIGINAL INTERACTION ASSETS / LOCAL DEMO · NO MEDIA FILES · NO API</span><a href="#main">↑ 回到顶部</a></footer>
+</main></body></html>

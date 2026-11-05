@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-05 · V0.16 advanced interactions III (Draft research prototype)
+
+- Added **IP-023** first-party frame-based multi-track edit prototype: three tracks, 24 FPS, snap to nearby clip edges/playhead/whole-second grid, cross-track Pointer drag, exact keyboard ±1/±12-frame movement, overlap rejection and reversible local history.
+- Added **IP-024** semantic four-chapter scroll-led story: real scroll progress mapped through passive event + rAF, sticky decorative stage, progressbar and explicit navigation; all content remains readable under reduced-motion and unsupported animation.
+- Registered **KIT-016**, a separate original art-direction shell for the two portable behavior contracts; added independent design rationale, original HTML/CSS/JS, model tests and Chromium responsive browser tests.
+- Previous V0.15 experiments remain in main as prototypes. No timeline media playback, server save, third-party imagery, forced visual theme or production accessibility certification claimed.
+
+
 ## 2026-11-05 · V0.15 Special interactions II (integration follow-up prototype)
 
 - Integrated PR #5 from four controlled pilots into main as original research prototypes; the source registry contains 127 items and the four obsolete Draft PRs were closed as superseded, not separately merged.

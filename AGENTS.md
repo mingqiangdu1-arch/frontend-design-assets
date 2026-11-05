@@ -135,3 +135,8 @@ The four originally independent pilots were combined into `main` via PR #5, as r
 ## Advanced cross-container and FLIP interactions (V0.15, experimental)
 
 Before reusing IP-021 or IP-022 read `docs/interactions/advanced-interactions-v2.md`: the real Pointer stream, keyboard pickup/drop, explicit movement buttons, undo history, focus restoration, reduced motion and immutable data model are the reusable behavior contracts. `playground/advanced-interactions-v2/` is a locally simulated example only. No real backend, synced collaboration, cross-browser, multi-touch or production a11y signoff is implied.
+
+
+## Frame timeline and scroll-led storytelling (V0.16 experimental)
+
+Read `docs/interactions/advanced-interactions-v3.md` before adapting IP-023 or IP-024. The timeline uses **integer 24-fps frames**, explicit overlap/bounds validation, clip-edge/playhead/second snapping and user controlled Undo/Redo, not real media manipulation. The story keeps semantic paragraphs fully readable, scroll+requestAnimationFrame visual feedback optional, and instant reduced-motion fallback. Preserve keyboard fine/coarse movement, collision refusal, focus, ARIA feedback and no false backend save. `playground/advanced-interactions-v3/` is an independent research demonstration with a distinct visual wrapper, not a global app theme or production component.

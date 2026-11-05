@@ -51,3 +51,12 @@ IP-009–IP-012 live in [advanced interaction specifications](advanced-patterns.
 ## V0.15 · 第二批高级/特殊交互（prototype）
 
 新增 **IP-021 可撤销跨容器拖放**（Pointer 原生拖动 + 键盘拾取/目标选择/放下 + 明确按钮入口）及 **IP-022 FLIP 卡片重排**（原始 DOM 节点复用、顺序及布局切换、减少动效即时更新）。两者在 [独立可运行实验室](../../playground/advanced-interactions-v2/index.html) 中验证，具体设备、键盘、异常与恢复边界见 [行为规范](advanced-interactions-v2.md)。不等同于生产级 React 组件、真实持久化或跨浏览器验收。
+
+
+## V0.16 · 第三批特殊交互（研究原型）
+
+**IP-023 多轨剪辑与帧级磁吸编辑**：24 FPS 整数帧、片段边界/播放头/整秒吸附、轨道重叠验证、Pointer 拖拽及键盘逐帧/跨轨操作、撤销重做；不同于普通的 Kanban 列间拖放。
+
+**IP-024 滚动驱动的编辑叙事**：完整可访问的四章正文、原生滚动进度、可选的 CSS 装饰反馈、章节显式导航与减少动效兜底；不是自动播放动画或只有动画才出现的内容。
+
+[第三批实际演示](../../playground/advanced-interactions-v3/index.html) · [行为规范与测试边界](advanced-interactions-v3.md)。均为 `prototype`，无需继承当前演示的任何主题颜色。
