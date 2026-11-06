@@ -1,7 +1,7 @@
 import {styleIds,selectStyle,filterCommands,markSelected,toggleSaved,lessons,evaluateChoice,progressPercent,nextQuestionIndex} from "./model.mjs";
 const $=id=>document.getElementById(id);
 let currentStyle="precision-dark";
-function switchStyle(id){
+function switchStyle(id,{historyMode="none"}={}){
  const next=selectStyle(id,currentStyle);
  currentStyle=next;
  for(const style of styleIds){
@@ -10,8 +10,15 @@ function switchStyle(id){
   if(button){button.classList.toggle("current",style===next);button.setAttribute("aria-pressed",String(style===next));}
  }
  if($("pdCommandDialog").open)$("pdCommandDialog").close();
+ if(historyMode!=="none"){
+  const url=new URL(location.href);url.searchParams.set("style",next);
+  window.history[historyMode+"State"]({style:next},"",url);
+ }
 }
-document.querySelectorAll("[data-style]").forEach(button=>button.addEventListener("click",()=>switchStyle(button.dataset.style)));
+document.querySelectorAll("[data-style]").forEach(button=>button.addEventListener("click",()=>switchStyle(button.dataset.style,{historyMode:"push"})));
+window.addEventListener("popstate",()=>{
+ switchStyle(new URLSearchParams(location.search).get("style")||"precision-dark");
+});
 
 const workItems=[{title:"Feature review",meta:"OPS-120",status:"In progress"},
  {title:"Design token audit",meta:"DS-048",status:"Queued"},
@@ -175,4 +182,4 @@ $("popNext").addEventListener("click",()=>{
  drawLesson();$("popChoices").querySelector("button")?.focus();
 });
 drawLesson();
-switchStyle("precision-dark");
+switchStyle(new URLSearchParams(location.search).get("style")||"precision-dark");

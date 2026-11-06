@@ -1,0 +1,637 @@
+{
+  "schemaVersion": "1.0",
+  "defaultStyleId": null,
+  "status": "research-selection-only",
+  "purpose": "Facet-based, task-first theme comparison and explainable deterministic matching, not popularity/quality rankings or a React compatibility bridge.",
+  "dimensions": {
+    "layouts": {
+      "workspace": "工作台/控制台",
+      "editorial": "阅读/叙事",
+      "campaign": "品牌/活动",
+      "commerce": "零售/商品",
+      "immersive": "沉浸/场景",
+      "mobile-task": "移动任务"
+    },
+    "materials": {
+      "minimal": "极简/干净",
+      "matte": "哑光/克制",
+      "paper": "纸张",
+      "colorful": "高饱和色块",
+      "tactile": "触感/层次",
+      "graphic": "图形/强对比",
+      "product": "商品展示",
+      "pixel": "像素",
+      "technical": "技术仪器",
+      "collage": "拼贴",
+      "ambient": "氛围光场",
+      "glow": "辉光",
+      "glass": "透明",
+      "organic": "自然材质"
+    },
+    "interactions": {
+      "data": "数据操作",
+      "navigation": "导航/切换",
+      "selection": "选项/状态",
+      "reading": "阅读/披露",
+      "progress": "任务进度",
+      "filter": "筛选",
+      "scene": "场景控制",
+      "story": "内容叙事",
+      "material": "材质选择"
+    },
+    "density": {
+      "compact": "紧凑",
+      "balanced": "均衡",
+      "spacious": "宽松"
+    },
+    "devices": {
+      "desktop": "桌面",
+      "mobile": "移动",
+      "responsive": "响应式"
+    }
+  },
+  "entries": [
+    {
+      "id": "refined-light-saas",
+      "asset": "DT-001",
+      "labelCN": "精致浅色工作台",
+      "layouts": [
+        "workspace"
+      ],
+      "materials": [
+        "minimal",
+        "matte"
+      ],
+      "interactions": [
+        "data",
+        "navigation",
+        "selection"
+      ],
+      "density": "balanced",
+      "devices": [
+        "desktop",
+        "responsive"
+      ],
+      "keywords": [
+        "管理后台",
+        "运营平台",
+        "业务工作台",
+        "表格工作台",
+        "工作空间",
+        "dashboard",
+        "admin console",
+        "saas"
+      ],
+      "summary": "低饱和浅色、微弱边界与信息层级；面向可持续的业务操作",
+      "dna": [
+        "精确网格与记录列表",
+        "低噪浅色界面",
+        "中等信息密度"
+      ],
+      "caution": "过度卡片化或把品牌视觉等同办公软件；独立 Demo 存在旧式单页面研究代码",
+      "preview": "playground/initial-interaction-lab.html"
+    },
+    {
+      "id": "precision-dark",
+      "asset": "DT-002",
+      "labelCN": "专业深色控制台",
+      "layouts": [
+        "workspace"
+      ],
+      "materials": [
+        "matte",
+        "technical"
+      ],
+      "interactions": [
+        "data",
+        "navigation",
+        "selection"
+      ],
+      "density": "compact",
+      "devices": [
+        "desktop"
+      ],
+      "keywords": [
+        "开发者工具",
+        "控制台",
+        "代码编辑器",
+        "专业数据分析",
+        "运维",
+        "终端",
+        "developer tools",
+        "analytics console",
+        "power user"
+      ],
+      "summary": "深炭色精密工作环境，紧凑行距与高效键盘控制",
+      "dna": [
+        "多列密集信息工作区",
+        "紧凑命令与属性检查器",
+        "安静的深色层次"
+      ],
+      "caution": "不适合默认套到移动消费者流程；高密度需键盘与窄屏评估",
+      "preview": "playground/style-explorer/index.html?style=precision-dark"
+    },
+    {
+      "id": "editorial-warm",
+      "asset": "DT-003",
+      "labelCN": "温暖编辑阅读",
+      "layouts": [
+        "editorial"
+      ],
+      "materials": [
+        "paper",
+        "minimal"
+      ],
+      "interactions": [
+        "reading",
+        "navigation",
+        "selection"
+      ],
+      "density": "spacious",
+      "devices": [
+        "responsive"
+      ],
+      "keywords": [
+        "阅读",
+        "长文章",
+        "知识库",
+        "文档网站",
+        "写作",
+        "出版社",
+        "出版",
+        "knowledge base",
+        "longform",
+        "publication",
+        "editorial"
+      ],
+      "summary": "奶油色纸张和衬线字形，服务长文阅读和编辑",
+      "dna": [
+        "阅读栏与清晰字距",
+        "克制的编辑线条",
+        "侧栏和文章层级"
+      ],
+      "caution": "不能用装饰性文字取代必要阅读内容；长段中文和窄屏需人工检查",
+      "preview": "playground/style-explorer/index.html?style=editorial-warm"
+    },
+    {
+      "id": "playful-pop",
+      "asset": "DT-004",
+      "labelCN": "趣味学习与激励",
+      "layouts": [
+        "mobile-task"
+      ],
+      "materials": [
+        "colorful",
+        "tactile"
+      ],
+      "interactions": [
+        "progress",
+        "selection",
+        "navigation"
+      ],
+      "density": "balanced",
+      "devices": [
+        "mobile",
+        "responsive"
+      ],
+      "keywords": [
+        "打卡",
+        "游戏化学习",
+        "课程练习",
+        "答题",
+        "学习进度",
+        "奖励",
+        "lesson",
+        "gamification",
+        "habit",
+        "quiz"
+      ],
+      "summary": "高饱和友好色块、进度奖励与明确任务反馈",
+      "dna": [
+        "短任务聚焦屏幕",
+        "进度与可选答案",
+        "柔和厚实的点击反馈"
+      ],
+      "caution": "与 Shape Expressive 不同，重点是游戏化任务与进度；不能以彩色取代语义",
+      "preview": "playground/style-explorer/index.html?style=playful-pop"
+    },
+    {
+      "id": "neo-brutalist",
+      "asset": "DT-005",
+      "labelCN": "高对比粗野主义",
+      "layouts": [
+        "campaign"
+      ],
+      "materials": [
+        "graphic",
+        "colorful"
+      ],
+      "interactions": [
+        "filter",
+        "navigation"
+      ],
+      "density": "balanced",
+      "devices": [
+        "responsive"
+      ],
+      "keywords": [
+        "活动落地页",
+        "海报网站",
+        "独立品牌",
+        "创意组合",
+        "展会",
+        "先锋",
+        "brutalist",
+        "campaign",
+        "poster",
+        "bold grid"
+      ],
+      "summary": "大胆黑框、错位阴影和海报式栅格，面向活动与独立品牌",
+      "dna": [
+        "巨大标语和硬边色块",
+        "厚线结构与错位阴影",
+        "可筛选海报作品"
+      ],
+      "caution": "不适合高密度业务录入、长文章或对干扰敏感的产品",
+      "preview": "playground/bold-grid/index.html"
+    },
+    {
+      "id": "commerce-atelier",
+      "asset": "DT-006",
+      "labelCN": "商品优先零售",
+      "layouts": [
+        "commerce"
+      ],
+      "materials": [
+        "minimal",
+        "product"
+      ],
+      "interactions": [
+        "filter",
+        "selection",
+        "navigation"
+      ],
+      "density": "balanced",
+      "devices": [
+        "mobile",
+        "responsive"
+      ],
+      "keywords": [
+        "商品列表",
+        "商品详情",
+        "店铺",
+        "零售",
+        "购物",
+        "电商",
+        "价格规格",
+        "storefront",
+        "product catalog",
+        "retail",
+        "shopping"
+      ],
+      "summary": "大商品展示、清晰的价格与规格，按消费决策而非后台记录组织内容",
+      "dna": [
+        "商品图与价格层级",
+        "规格/过滤/库存反馈",
+        "整洁零售列表"
+      ],
+      "caution": "商品图权利、库存、价格和结算逻辑需要宿主系统实现与验证",
+      "preview": "playground/commerce-atelier/index.html"
+    },
+    {
+      "id": "pixel-arcade",
+      "asset": "DT-007",
+      "labelCN": "像素游戏世界",
+      "layouts": [
+        "immersive",
+        "mobile-task"
+      ],
+      "materials": [
+        "pixel",
+        "graphic"
+      ],
+      "interactions": [
+        "progress",
+        "scene",
+        "selection"
+      ],
+      "density": "balanced",
+      "devices": [
+        "responsive"
+      ],
+      "keywords": [
+        "独立游戏",
+        "像素风",
+        "街机",
+        "复古游戏",
+        "互动故事",
+        "像素冒险",
+        "pixel art",
+        "arcade",
+        "indie game"
+      ],
+      "summary": "像素地貌和离散 HUD，采用游戏章节而不是传统页面跳转",
+      "dna": [
+        "格点世界场景",
+        "卡带式章节选择",
+        "可读状态 HUD"
+      ],
+      "caution": "正文不应使用难读的像素小字；避免伪系统安全提示与频闪",
+      "preview": "playground/creative-style-lab/index.html?style=pixel-arcade"
+    },
+    {
+      "id": "signal-noir",
+      "asset": "DT-008",
+      "labelCN": "未来仪器信号",
+      "layouts": [
+        "immersive",
+        "workspace"
+      ],
+      "materials": [
+        "technical",
+        "glow"
+      ],
+      "interactions": [
+        "scene",
+        "selection",
+        "navigation"
+      ],
+      "density": "compact",
+      "devices": [
+        "desktop",
+        "responsive"
+      ],
+      "keywords": [
+        "科幻",
+        "雷达",
+        "未来仪器",
+        "技术展览",
+        "音频可视化",
+        "虚构指挥",
+        "sci fi",
+        "mission control",
+        "telemetry",
+        "signal"
+      ],
+      "summary": "科幻遥测仪表、角度分割与精密数据叙事",
+      "dna": [
+        "仪器主画面和信号通道",
+        "刻度、雷达与遥测元素",
+        "虚构技术数据提示"
+      ],
+      "caution": "虚构数据绝不能被当作真实安全关键指标；持续闪烁不可接受",
+      "preview": "playground/creative-style-lab/index.html?style=signal-noir"
+    },
+    {
+      "id": "paper-rebellion",
+      "asset": "DT-009",
+      "labelCN": "拼贴杂志与手作",
+      "layouts": [
+        "editorial",
+        "campaign"
+      ],
+      "materials": [
+        "paper",
+        "collage",
+        "tactile"
+      ],
+      "interactions": [
+        "filter",
+        "selection",
+        "navigation"
+      ],
+      "density": "balanced",
+      "devices": [
+        "responsive"
+      ],
+      "keywords": [
+        "拼贴",
+        "独立杂志",
+        "文化活动",
+        "艺术家作品",
+        "手工",
+        "zine",
+        "collage",
+        "paper cut",
+        "artist portfolio"
+      ],
+      "summary": "不对称纸张拼贴、手绘感注释和杂志叙事",
+      "dna": [
+        "叠层纸张、贴纸和印章",
+        "版面错位但阅读顺序明确",
+        "可筛选主题条目"
+      ],
+      "caution": "与 Organic Tactile 的柔和自然材质不同；避免文字重叠或盗用扫描杂志图",
+      "preview": "playground/creative-style-lab/index.html?style=paper-rebellion"
+    },
+    {
+      "id": "aether-orbit",
+      "asset": "DT-010",
+      "labelCN": "氛围空间与轨道",
+      "layouts": [
+        "immersive"
+      ],
+      "materials": [
+        "ambient",
+        "glow"
+      ],
+      "interactions": [
+        "scene",
+        "story",
+        "selection"
+      ],
+      "density": "spacious",
+      "devices": [
+        "responsive"
+      ],
+      "keywords": [
+        "沉浸空间",
+        "冥想",
+        "声景",
+        "数字展览",
+        "空间故事",
+        "氛围体验",
+        "ambient",
+        "orbit",
+        "immersive exhibition",
+        "soundscape"
+      ],
+      "summary": "暗色空间、缓慢轨道、放松型场景导航",
+      "dna": [
+        "中心光体与多层轨道",
+        "稀疏故事锚点",
+        "可切换情绪气氛"
+      ],
+      "caution": "禁止自动声音、眩晕动效和将光晕放在核心文字下面",
+      "preview": "playground/creative-style-lab/index.html?style=aether-orbit"
+    },
+    {
+      "id": "liquid-layer",
+      "asset": "DT-011",
+      "labelCN": "透明悬浮功能层",
+      "layouts": [
+        "immersive",
+        "campaign"
+      ],
+      "materials": [
+        "glass",
+        "ambient"
+      ],
+      "interactions": [
+        "scene",
+        "navigation",
+        "selection"
+      ],
+      "density": "spacious",
+      "devices": [
+        "responsive"
+      ],
+      "keywords": [
+        "玻璃拟态",
+        "液态玻璃",
+        "透明导航",
+        "浮动控件",
+        "创意画廊",
+        "场景切换",
+        "glass",
+        "liquid glass",
+        "floating controls",
+        "media gallery"
+      ],
+      "summary": "场景画面保留完整表达，透明材质只用于浮动交互层",
+      "dna": [
+        "宽幅场景和漂浮导航",
+        "清晰不透明阅读内容",
+        "可关闭透明效果"
+      ],
+      "caution": "不是官方 Apple Liquid Glass；需要 reduced-transparency 和对比度回退",
+      "preview": "playground/trend-style-lab/index.html?style=liquid-layer"
+    },
+    {
+      "id": "shape-expressive",
+      "asset": "DT-012",
+      "labelCN": "表现力形状任务",
+      "layouts": [
+        "mobile-task"
+      ],
+      "materials": [
+        "colorful",
+        "graphic"
+      ],
+      "interactions": [
+        "selection",
+        "progress",
+        "navigation"
+      ],
+      "density": "balanced",
+      "devices": [
+        "mobile",
+        "responsive"
+      ],
+      "keywords": [
+        "表现力组件",
+        "形状动效",
+        "移动任务",
+        "多形状选项",
+        "强视觉反馈",
+        "expressive",
+        "material expressive",
+        "shape morph",
+        "task choice"
+      ],
+      "summary": "以形状区分任务与动作层级的表现力移动界面",
+      "dna": [
+        "大尺度不规则任务形状",
+        "清晰主次选择与状态",
+        "高辨识文字反馈"
+      ],
+      "caution": "不是 Google Material 3 的官方实现；避免形状成为唯一状态表达",
+      "preview": "playground/trend-style-lab/index.html?style=shape-expressive"
+    },
+    {
+      "id": "type-led-minimal",
+      "asset": "DT-013",
+      "labelCN": "字体主导极简",
+      "layouts": [
+        "campaign",
+        "editorial"
+      ],
+      "materials": [
+        "minimal",
+        "graphic"
+      ],
+      "interactions": [
+        "story",
+        "reading",
+        "navigation"
+      ],
+      "density": "spacious",
+      "devices": [
+        "responsive"
+      ],
+      "keywords": [
+        "极简",
+        "大字体",
+        "品牌叙事",
+        "极简落地页",
+        "工作室首页",
+        "字体排版",
+        "typography first",
+        "minimalism",
+        "type-led",
+        "brand landing"
+      ],
+      "summary": "大尺度排版、精简信息与可发现的深入阅读路径",
+      "dna": [
+        "夸张字级和巨大留白",
+        "索引式故事选择",
+        "简明 TL;DR"
+      ],
+      "caution": "不能以空白掩盖重要信息；不要依赖动效才能读懂内容",
+      "preview": "playground/trend-style-lab/index.html?style=type-led-minimal"
+    },
+    {
+      "id": "organic-tactile",
+      "asset": "DT-014",
+      "labelCN": "有机触感自然材质",
+      "layouts": [
+        "editorial",
+        "commerce"
+      ],
+      "materials": [
+        "organic",
+        "tactile",
+        "paper"
+      ],
+      "interactions": [
+        "selection",
+        "material",
+        "story"
+      ],
+      "density": "spacious",
+      "devices": [
+        "responsive"
+      ],
+      "keywords": [
+        "自然风格",
+        "陶土材质",
+        "疗愈",
+        "有机界面",
+        "可持续品牌",
+        "生活方式",
+        "organic design",
+        "tactile",
+        "clay",
+        "wellbeing"
+      ],
+      "summary": "自然材料和人文温度的可阅读商品/服务叙事",
+      "dna": [
+        "柔和非对称构图",
+        "原生 CSS 陶土物件",
+        "带文字标注的材料选择"
+      ],
+      "caution": "不能伪造环保声明或借用未获授权的产品摄影",
+      "preview": "playground/trend-style-lab/index.html?style=organic-tactile"
+    }
+  ]
+}

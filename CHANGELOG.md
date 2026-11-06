@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-06 · V0.27 theme atlas and explainable Agent retrieval
+
+- Built a new [14-theme visual atlas](playground/style-atlas/README.md): all existing registered style colors feed original *abstract layout thumbnails* and selectable pairs load the **real existing interactive demo** side by side, with correctly deep-linked Style Explorer scenes.
+- Added machine-searchable [style-facets.json](registry/style-facets.json) for layout, material, interaction, density, device, task phrases and source paths; [selection policy](docs/styles/theme-selection-v027.md) and `node scripts/select-style.mjs` provide **deterministic, no-default, grounded** theme candidates and explicit pair comparison.
+- A named application context is a hard constraint, not overridden by material/layout matches. `--stack=react` strictly limits output to the four declared React-compatible themes; matching points measure documented evidence, **not quality, popularity or aesthetic preference**.
+- New unit, registry integrity and responsive Chromium browser tests cover fourteen thumbnails, source demos, URL deep links, filters, keyboard selection, no-match cases and 390/768/1440 viewports. Original themes, registered asset IDs, runtime component APIs, dependencies and repository visibility remain unchanged.
+- Visual thumbnails are CSS composition abstractions, **not screenshots** or human-approved visual baselines. Source iframes show research-level demos and require separate production/a11y validation.
+
 ## 2026-11-06 · V0.26 four independent trend-informed style systems
 
 - Surveyed Figma 2026 Web UI trends, Webflow 2026 design trends, Adobe 2026 creative directions, Apple HIG Materials and Google CHI 2026 Expressive Design study; compared candidate directions against the ten existing independent profiles, without user/assistant aesthetic preference ranking.

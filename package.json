@@ -31,7 +31,8 @@
     "visual:verify": "node scripts/visual-evidence.mjs verify",
     "creative:brief": "node scripts/creative-director.mjs",
     "design:plan": "node scripts/plan-design-review.mjs",
-    "design:compose": "node scripts/plan-design-composition.mjs"
+    "design:compose": "node scripts/plan-design-composition.mjs",
+    "design:themes": "node scripts/select-style.mjs"
   },
   "dependencies": {
     "react": "19.3.1",

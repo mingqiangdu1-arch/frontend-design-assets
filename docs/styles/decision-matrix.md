@@ -1,6 +1,6 @@
 # Cross-application style decision matrix · V0.26
 
-This matrix is a **reasoned selection guide**, not a rule engine or a claim that any style is universally best. First identify user tasks, platform and content, then select candidates.
+This matrix is a **reasoned selection guide**, not a rule engine or a claim that any style is universally best. For the interactive **14-theme** catalog and original-demo comparisons, use [Theme Atlas](../../playground/style-atlas/README.md); for machine-assisted matching use [selection contract V0.27](theme-selection-v027.md). First identify user tasks, platform and content, then select candidates.
 
 | Dimension | Refined Light SaaS | Precision Dark | Editorial Warm | Playful Pop |
 | --- | --- | --- | --- | --- |

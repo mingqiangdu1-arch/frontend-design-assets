@@ -9,6 +9,7 @@ This directory is the **authoritative index** for choosing existing design refer
 | `assets.json` | Every stable asset ID, its identity/type/lifecycle/source/reuse constraints, tags, aliases, context, style, dependencies, and handoff |
 | `components.json` | **Actual public React component exports** (one entry per real component); source and gallery references |
 | `styles.json` | Independent style IDs, token/spec/demo entrypoints; **no repository default** |
+| `style-facets.json` | One-to-one theme selection facets: task aliases, structural layout, material, interaction, device and density; references real demo paths. Pair with `scripts/style-match.mjs` and `scripts/select-style.mjs` for explainable matching, not an ML style rank. |
 | `page-templates.json` | Independent full-page references; inspect `implementation` to distinguish static JavaScript from React integration |
 | `component-states.json` | Historical selected-state matrix, intentionally partial |
 | `creative-directions.json` | Distinct expressive visual directions, not interchangeable CSS |

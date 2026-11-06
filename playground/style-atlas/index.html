@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+ <title>Theme Atlas · 14 套独立风格的检索和对照</title>
+ <meta name="description" content="按应用情境、布局、材质和交互检索十四种独立前端风格；以真实仓库 Demo 并排查看差异。">
+ <link rel="stylesheet" href="./styles.css">
+ <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+ <header class="atlas-top"><a href="../../README.md" class="atlas-mark">◈ <strong>FRONTEND DESIGN ASSETS</strong><span>/ THEME ATLAS</span></a>
+  <nav aria-label="仓库导航"><a href="../../CATALOG.md">Agent 检索入口</a><a href="../../registry/styles.json">风格数据</a><a href="../asset-explorer/">全部资产</a></nav>
+ </header>
+ <main>
+  <section class="atlas-hero" aria-labelledby="heroTitle">
+   <div class="atlas-eyebrow"><span class="atlas-signal" aria-hidden="true"></span> INDEPENDENT VISUAL DIRECTIONS / RESEARCH PROFILES</div>
+   <h1 id="heroTitle">先判断任务。<br><em>再选择视觉语言。</em></h1>
+   <p>同一个产品情境可能有多种合理设计。这份目录把十四套风格的构图、材质、交互和真实示例并排呈现，供人工与 Agent 查证。它不是流行度排行，也不设默认风格。</p>
+   <div class="atlas-stats"><div><strong id="styleCount">—</strong><span>独立主题</span></div><div><strong>4</strong><span>React 包已声明兼容</span></div><div><strong>0</strong><span>全仓库默认风格</span></div></div>
+  </section>
+  <section class="atlas-workspace" aria-label="检索与筛选主题">
+   <aside class="atlas-filters">
+    <div class="filter-head"><h2>筛选条件</h2><button id="clearFilters" type="button">重置</button></div>
+    <p>逐项约束候选；尚未选择条件时不生成推荐。</p>
+    <label for="search">任务 / 关键词</label><input id="search" type="search" placeholder="例如：我要做商品展示、课程打卡" autocomplete="off">
+    <label for="context">应用场景</label><select id="context"><option value="">全部应用场景</option></select>
+    <label for="layout">构图结构</label><select id="layout"><option value="">全部布局</option></select>
+    <label for="material">视觉材质</label><select id="material"><option value="">全部材质</option></select>
+    <label for="interaction">交互重点</label><select id="interaction"><option value="">全部交互</option></select>
+    <label for="density">信息密度</label><select id="density"><option value="">不限制密度</option></select>
+    <label for="device">设备情境</label><select id="device"><option value="">全部设备</option></select>
+    <label for="stack">目标代码复用</label><select id="stack"><option value="any">不限制技术栈</option><option value="react">仅已声明兼容 React 主题</option><option value="static">独立 HTML/CSS 参考可用</option></select>
+    <div class="filter-note"><strong>证据边界</strong><p>缩略卡片为本仓库自制的抽象构图示意，非实拍截图。下方对比区加载仓库现有 Demo；真实产品和无障碍验收仍需单独进行。</p></div>
+   </aside>
+   <div class="atlas-results">
+    <div class="results-head"><div><span class="section-eyebrow">01 / SEARCHABLE DESIGN LIBRARY</span><h2>主题图谱</h2></div>
+     <p id="resultCount" role="status" aria-live="polite">正在加载注册表…</p></div>
+    <section class="agent-result" aria-label="基于当前条件的候选建议">
+      <div class="agent-heading"><div><span class="section-eyebrow">AGENT / EVIDENCE-BASED MATCHES</span><h3>条件匹配候选</h3></div>
+      <span class="agent-tag">未自动选定主题</span></div>
+      <div id="recommendations" aria-live="polite"><p>输入任务或选择构图、场景等条件后，展示有索引依据的候选。</p></div>
+    </section>
+    <div id="cardGrid" class="atlas-grid" aria-label="主题卡片目录"></div>
+    <p id="emptyResult" class="atlas-empty" hidden>没有同时满足条件的风格。可以取消部分筛选或创建新的风格研究；不会自动回退到 SaaS 主题。</p>
+   </div>
+  </section>
+  <section class="compare-section" id="compare" aria-labelledby="compareTitle">
+   <div class="compare-heading"><span class="section-eyebrow">02 / SOURCE-GROUNDED COMPARISON</span>
+    <h2 id="compareTitle">看见真正的布局差异</h2><p>任选两套独立主题，在当前页面并排加载其**原始互动 Demo**。对照项目类别、布局、材质、交互和复用限制；没有选定前不预置任何风格。</p>
+   </div>
+   <div class="compare-tools">
+    <label for="compareLeft">左侧主题 <select id="compareLeft"><option value="">选择左侧主题</option></select></label>
+    <button type="button" id="swap" disabled>交换左右 <span aria-hidden="true">↔</span></button>
+    <label for="compareRight">右侧主题 <select id="compareRight"><option value="">选择右侧主题</option></select></label>
+    <button type="button" id="copyHandoff" disabled>复制 Agent 交接说明</button>
+   </div>
+   <div id="compareMessage" role="status" aria-live="polite" class="compare-message">选择两套主题后，自动展示真实 Demo 和结构差异。</div>
+   <div id="compareGrid" class="compare-grid">
+    <article id="leftPane" class="compare-pane" aria-label="左侧主题预览"><div class="compare-placeholder">尚未选择左侧主题</div></article>
+    <article id="rightPane" class="compare-pane" aria-label="右侧主题预览"><div class="compare-placeholder">尚未选择右侧主题</div></article>
+   </div>
+   <p class="compare-disclaimer">iframe 展示独立研究 Demo，不应推断所有风格已映射至 React 组件；部分 Demo 是旧研究页面。并排对照不构成生产级一致性、审美优劣或截图基线认证。</p>
+  </section>
+ </main>
+ <footer class="atlas-footer"><span>Frontend Design Assets · Original visual atlas / private research repo</span><a href="../../docs/styles/decision-matrix.md">阅读风格选型矩阵</a></footer>
+</body>
+</html>

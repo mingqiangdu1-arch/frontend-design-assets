@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import {experienceRegistry,validateExperienceRegistry} from "./experience-compositions.mjs";
+import {validateStyleFacets} from "./check-style-facets.mjs";
 
 const root = process.cwd();
 const readJson = filepath => JSON.parse(fs.readFileSync(filepath, "utf8"));
@@ -75,4 +76,7 @@ const css = fs.readFileSync("tokens/refined-light.css", "utf8");
 if (!css.includes('[data-design-theme="refined-light-saas"]')) fail("Scoped design theme selector missing");
 if (/(^|\n)\s*:root\s*\{/.test(css)) fail("Theme CSS must not set global root variables");
 
+const themeFacets = readJson("registry/style-facets.json");
+const facetResult = validateStyleFacets(styles,themeFacets,readJson("registry/components.json"),registry,root);
+console.log("Validated theme atlas facets: "+facetResult.styles+" themes, "+facetResult.reactCompatible+" explicit React themes.");
 console.log("Validated " + registry.assets.length + " assets, " + styleIds.size + " style profiles, " + applicationFiles.length + " application profiles, " + experienceSummary.recipes + " experience recipes.");

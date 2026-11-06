@@ -1,5 +1,7 @@
 # Multi-style research collection · V0.26
 
+Browse all **14 styles**, source-grounded design grammar and live two-column demos in [Theme Atlas](../../playground/style-atlas/README.md). For agent selection use [task-first policy](theme-selection-v027.md) and [style facets](../../registry/style-facets.json); these are lexical evidence matches, not measured aesthetic scores.
+
 The repository **does not have a default visual theme**. Visual styles are explicit, independently scoped alternatives. Shared UI behavior can be researched across styles, but implementation and layout are not assumed portable.
 
 ## Current registered collection: 14 independent styles

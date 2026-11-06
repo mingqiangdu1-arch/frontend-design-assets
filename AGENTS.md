@@ -10,10 +10,11 @@
 2. Read only the matching index:
    - `registry/assets.json`: all stable IDs, lifecycle stages, tags/aliases, contexts, styles, provenance, `reuseKind`, dependency and handoff metadata.
    - `registry/components.json`: actual exported React reference components, public export name and source.
-   - `registry/styles.json` + `registry/creative-directions.json`: distinct visual languages; `defaultStyleId: null` is intentional.
+   - `registry/styles.json` + `registry/style-facets.json`: 14 independent themes and task/layout/material/interaction evidence; `defaultStyleId: null` is intentional. Use `scripts/select-style.mjs` or `playground/style-atlas/` for no-default, original-demo comparisons.
+   - `registry/creative-directions.json`: four specialized creative grammars, not a universal style default.
    - `registry/page-templates.json`: page blueprints and whether the demo is static or React.
    - `docs/interactions/`: reusable behavior contracts; `docs/assembly/`: composition and handoff guidance.
-3. If Node is available, use `node scripts/find-assets.mjs --intent="可编辑表格" --type=component --goal=implementation --json`, or filter by `--style`, `--context`, `--reuse`, `--stage`. GitHub-only reading of matching registry entries is equally valid.
+3. If Node is available, use `node scripts/find-assets.mjs --intent="可编辑表格" --type=component --goal=implementation --json`; for choosing a theme use `node scripts/select-style.mjs --context=knowledge-base --format=markdown` or `--compare=editorial-warm,liquid-layer`. When only GitHub is available, inspect the matching registry IDs and real demo files. Selection evidence points are **not design-quality scores**.
 4. Inspect the selected item's **source + specification + demo**, as appropriate. Read `styleIds`, `stage`, `reuseKind`, `dependencies` and `verified` before suggesting reuse. Prefer explicit IDs and paths over guesses.
 5. Handoff a **small shortlist**: IDs, why each fits, exact source paths, compatible themes, required adaptation, validation gaps and alternative options. Do not pretend the selection tool generated or modified a target app.
 
