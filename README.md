@@ -11,6 +11,7 @@
 | 我想做…… | 入口 | 能获得什么 |
 | --- | --- | --- |
 | 选择视觉风格 | [风格索引](registry/styles.json) · [风格对比](docs/styles/README.md) · [选型矩阵](docs/styles/decision-matrix.md) | 14 套独立 `styleId`、语义 Tokens、适用类型与视觉约束 |
+| 用选定主题规划页面 | [页面搭建配方](docs/assembly/style-assembly-v028.md) · [CLI](scripts/build-style-brief.mjs) · [Theme Atlas](playground/style-atlas/) | 14 套主题对应 57 个分区设计；真实模板、源文件和验收清单保持关联 |
 | 浏览全部主题并排对比 | [主题图谱](playground/style-atlas/README.md) · [Agent 选型](docs/styles/theme-selection-v027.md) | 按场景、构图、材质、交互筛选 14 套主题，任选两套加载真实 Demo |
 | 2026 流行主题研究与预览 | [趋势对比](docs/styles/trend-research-2026.md) · [Trend Style Lab](playground/trend-style-lab/README.md) | Liquid Layer、Shape Expressive、Type-led Minimal、Organic Tactile：独立主题与可交互场景，不是 React 库兼容声明 |
 | 查找并复用 React 组件 | [组件登记](registry/components.json) · [组件源码](packages/ui/src/) · [组件文档](packages/ui/README.md) | 真实 TSX/CSS、API、四套显式兼容主题和适配限制 |

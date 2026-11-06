@@ -6,6 +6,7 @@
  <meta name="description" content="按应用情境、布局、材质和交互检索十四种独立前端风格；以真实仓库 Demo 并排查看差异。">
  <link rel="stylesheet" href="./styles.css">
  <script type="module" src="./app.mjs"></script>
+ <script type="module" src="./assembly.mjs"></script>
 </head>
 <body>
  <header class="atlas-top"><a href="../../README.md" class="atlas-mark">◈ <strong>FRONTEND DESIGN ASSETS</strong><span>/ THEME ATLAS</span></a>
@@ -60,6 +61,29 @@
     <article id="rightPane" class="compare-pane" aria-label="右侧主题预览"><div class="compare-placeholder">尚未选择右侧主题</div></article>
    </div>
    <p class="compare-disclaimer">iframe 展示独立研究 Demo，不应推断所有风格已映射至 React 组件；部分 Demo 是旧研究页面。并排对照不构成生产级一致性、审美优劣或截图基线认证。</p>
+  </section>
+  <section class="assembly-section" id="assembly" aria-labelledby="assemblyTitle">
+   <div class="assembly-intro"><span class="section-eyebrow">03 / STYLE-TO-PAGE HANDOFF</span>
+    <h2 id="assemblyTitle">把选中的主题，变成页面搭建清单。</h2>
+    <p>与上方的视觉比较分开：这里输出的是主题对应的**页面架构、交互状态、源码路径和验收要求**，不是自动生成的网站。必须先明确选择风格。</p></div>
+   <div class="assembly-layout">
+    <form class="assembly-form" id="assemblyForm">
+     <label for="assemblyStyle">指定视觉主题 <select id="assemblyStyle" required><option value="">先选择主题，不设默认</option></select></label>
+     <label for="assemblyContext">应用情境（可选） <select id="assemblyContext"><option value="">不指定，保留开放判断</option></select></label>
+     <label for="assemblyStack">目标技术栈 <select id="assemblyStack"><option value="unspecified">待确定</option><option value="static">独立 HTML/CSS/JS</option><option value="react">React（需核对主题兼容）</option></select></label>
+     <label for="assemblyDevice">主要设备 <select id="assemblyDevice"><option value="unspecified">尚未确定</option><option value="mobile">移动端</option><option value="desktop">桌面端</option><option value="responsive">响应式</option></select></label>
+     <label for="assemblyTemplate">页面模板 <select id="assemblyTemplate"><option value="">不绑定真实模板，仅生成结构配方</option></select></label>
+     <label for="assemblyTitleInput">页面标题 <input id="assemblyTitleInput" maxlength="180" placeholder="可保留为空，使用配方标题"></label>
+     <label for="assemblyGoal">用户目标 <textarea id="assemblyGoal" maxlength="1000" rows="3" placeholder="例如：快速理解商品差异并选择规格；可留空"></textarea></label>
+     <div class="assembly-buttons"><button type="submit" id="buildAssembly">生成搭建简报</button>
+      <button type="button" id="copyAssembly" disabled>复制 Markdown</button></div>
+     <p class="assembly-form-note">只有页面模板被明确选中，才会报告它的真实源码集成情况；未绑定时不会自动挑选一个模板。</p>
+    </form>
+    <section class="assembly-output" aria-label="生成的页面搭建简报" aria-live="polite">
+     <div id="assemblyMessage" class="assembly-message" role="status">先选择左侧主题并生成简报。无默认页面与设计方案。</div>
+     <div id="assemblyResult" class="assembly-result"></div>
+    </section>
+   </div>
   </section>
  </main>
  <footer class="atlas-footer"><span>Frontend Design Assets · Original visual atlas / private research repo</span><a href="../../docs/styles/decision-matrix.md">阅读风格选型矩阵</a></footer>

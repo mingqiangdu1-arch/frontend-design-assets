@@ -32,7 +32,8 @@
     "creative:brief": "node scripts/creative-director.mjs",
     "design:plan": "node scripts/plan-design-review.mjs",
     "design:compose": "node scripts/plan-design-composition.mjs",
-    "design:themes": "node scripts/select-style.mjs"
+    "design:themes": "node scripts/select-style.mjs",
+    "design:assemble": "node scripts/build-style-brief.mjs"
   },
   "dependencies": {
     "react": "19.3.1",

@@ -1,0 +1,726 @@
+{
+  "schemaVersion": "1.0",
+  "defaultStyleId": null,
+  "stage": "assembly-research",
+  "reuseKind": "composition-recipe",
+  "purpose": "Fourteen style-specific page architecture and interaction handoffs; not generated source code, live React compatibility or a full app.",
+  "policy": "Explicit style selection only; align context/template, inspect actual sources and never infer package compatibility.",
+  "recipes": [
+    {
+      "styleId": "refined-light-saas",
+      "structureId": "record-workbench",
+      "title": "Clear operational workspace",
+      "focus": "快速完成记录查看、筛选和可撤销操作",
+      "typeRules": "实用层级：短标题、12–14px 数据标签和明确状态文案；避免虚构 KPI",
+      "spacing": "窄侧栏+高效记录表+随选上下文区域；桌面保留紧凑扫描节奏",
+      "motion": "状态确认优先，减少不必要的转场",
+      "responsive": "小屏将上下文面板下移或变为有标签抽屉，保证行操作可见",
+      "a11y": "表格键盘定位、错误提示、批量操作确认和焦点恢复",
+      "avoid": "将真实业务操作改成装饰仪表盘",
+      "templateIds": [
+        "TPL-001"
+      ],
+      "relatedExperienceIds": [
+        "XC-001",
+        "XC-002"
+      ],
+      "componentHints": [
+        "SidebarNav",
+        "FilterableDataTable",
+        "Tabs",
+        "Toast",
+        "EmptyState"
+      ],
+      "sections": [
+        {
+          "id": "context",
+          "label": "范围与导航",
+          "purpose": "让操作者明确正在处理什么范围",
+          "layout": "窄导航/顶部短标题，当前区有文字选中态",
+          "behavior": "切换工作区并保持筛选范围可见"
+        },
+        {
+          "id": "records",
+          "label": "记录队列",
+          "purpose": "以筛选、选择和数据状态为工作主轴",
+          "layout": "高密表格、清晰行间距、可见列标题",
+          "behavior": "搜索/筛选/选择/空结果反馈"
+        },
+        {
+          "id": "detail",
+          "label": "情境详情",
+          "purpose": "不丢失上下文地处理当前记录",
+          "layout": "右侧详情，移动端置底或抽屉",
+          "behavior": "显式保存/取消/失败恢复"
+        },
+        {
+          "id": "outcome",
+          "label": "操作结果",
+          "purpose": "帮助确认修改是否生效",
+          "layout": "内容旁的状态提示和变更摘要",
+          "behavior": "Toast、撤销与错误重试"
+        }
+      ]
+    },
+    {
+      "styleId": "precision-dark",
+      "structureId": "dense-command-console",
+      "title": "Keyboard-first professional console",
+      "focus": "为高频专业操作保留信息密度和命令效率",
+      "typeRules": "数字与状态强对比，主任务只保留少数强调色",
+      "spacing": "左工具轨+记录中央面板+可调整的右侧检查器",
+      "motion": "短反馈，无持续氛围动效",
+      "responsive": "窄屏优先可完成主任务，检查器转为弹层而非横向撑开",
+      "a11y": "命令面板搜索、方向键、Escape、焦点回归必须可验证",
+      "avoid": "大量发光边框与伪终端文字抢占真实信息",
+      "templateIds": [
+        "TPL-005"
+      ],
+      "relatedExperienceIds": [
+        "XC-001",
+        "XC-002"
+      ],
+      "componentHints": [
+        "CommandMenu",
+        "ResizablePanels",
+        "DataTable",
+        "Tabs",
+        "Tooltip"
+      ],
+      "sections": [
+        {
+          "id": "utility",
+          "label": "工具轨和项目",
+          "purpose": "保持专业导航一致",
+          "layout": "固定窄工具轨与明确标题区域",
+          "behavior": "当前工具可见且可键盘激活"
+        },
+        {
+          "id": "queue",
+          "label": "主操作队列",
+          "purpose": "让任务和异常可快速扫描",
+          "layout": "纵向高密列表与筛选工具条",
+          "behavior": "搜索/筛选/行选择与多状态"
+        },
+        {
+          "id": "inspector",
+          "label": "上下文检查器",
+          "purpose": "让详情与操作并列",
+          "layout": "右侧检查器与 Tab 分组",
+          "behavior": "展开详情、确认动作、状态回滚"
+        },
+        {
+          "id": "command",
+          "label": "命令和快捷操作",
+          "purpose": "专家可直接完成常见任务",
+          "layout": "按需出现的模态命令面板",
+          "behavior": "快捷键与焦点恢复"
+        }
+      ]
+    },
+    {
+      "styleId": "editorial-warm",
+      "structureId": "reading-index",
+      "title": "Readable editorial library",
+      "focus": "降低阅读负担并兼顾发现和保存",
+      "typeRules": "舒适行宽、正文行距、衬线标题和明确信息层级",
+      "spacing": "居中阅读栏+独立目录/索引；大段留白服务内容",
+      "motion": "阅读内容不需要持续动效",
+      "responsive": "窄屏保持正文行宽和锚点导航，避免强制双栏",
+      "a11y": "文章可通过语义标题、目录、键盘和原生链接完整阅读",
+      "avoid": "过多拼贴、动效或小字摘要遮蔽正文",
+      "templateIds": [
+        "TPL-002",
+        "TPL-007"
+      ],
+      "relatedExperienceIds": [
+        "XC-005",
+        "XC-006"
+      ],
+      "componentHints": [
+        "Tabs",
+        "TextField",
+        "Dialog",
+        "Accordion",
+        "TagInput"
+      ],
+      "sections": [
+        {
+          "id": "identity",
+          "label": "刊物身份",
+          "purpose": "说明刊物主题和内容范围",
+          "layout": "精简刊头和清晰发布日期",
+          "behavior": "导航到刊目与主题"
+        },
+        {
+          "id": "index",
+          "label": "文章索引",
+          "purpose": "帮助用户定位所需内容",
+          "layout": "主题分组和紧凑索引而非 KPI 卡",
+          "behavior": "搜索与类别筛选可组合"
+        },
+        {
+          "id": "article",
+          "label": "文章阅读",
+          "purpose": "以正文为中心",
+          "layout": "舒适阅读宽度、衬线标题和正文节奏",
+          "behavior": "目录锚点、引用和阅读设置"
+        },
+        {
+          "id": "return",
+          "label": "保存与回看",
+          "purpose": "给出回读路径",
+          "layout": "文末关联内容与可撤销操作",
+          "behavior": "收藏状态与明确返回入口"
+        }
+      ]
+    },
+    {
+      "styleId": "playful-pop",
+      "structureId": "habit-progress",
+      "title": "Cheerful learning journey",
+      "focus": "让单次任务短而可完成，反馈真实进度",
+      "typeRules": "大任务标题、友好标签和高可读操作文字",
+      "spacing": "移动优先的单任务区和有限奖励展示",
+      "motion": "完成任务时短暂反馈；减少无意义循环动画",
+      "responsive": "单列优先，固定导航不遮挡操作",
+      "a11y": "操作状态不只靠颜色/动效，错误时可重试",
+      "avoid": "奖励设计代替真实学习成果",
+      "templateIds": [
+        "TPL-003"
+      ],
+      "relatedExperienceIds": [
+        "XC-003",
+        "XC-004"
+      ],
+      "componentHints": [
+        "Progress",
+        "Button",
+        "Card",
+        "Badge",
+        "Toast"
+      ],
+      "sections": [
+        {
+          "id": "welcome",
+          "label": "当前目标",
+          "purpose": "一句话说明今天要完成什么",
+          "layout": "醒目的单任务摘要",
+          "behavior": "进入任务"
+        },
+        {
+          "id": "action",
+          "label": "短任务",
+          "purpose": "降低第一步复杂度",
+          "layout": "单列大控件与明晰主次按钮",
+          "behavior": "选择/提交/重试"
+        },
+        {
+          "id": "progress",
+          "label": "进度与学习反馈",
+          "purpose": "传达真实完成状态",
+          "layout": "进度条和文字结果",
+          "behavior": "成功、失败、继续"
+        },
+        {
+          "id": "reward",
+          "label": "奖励与下一步",
+          "purpose": "衔接下一步行动",
+          "layout": "有限卡片和可见下一节入口",
+          "behavior": "可撤销或重试，避免虚假积分"
+        }
+      ]
+    },
+    {
+      "styleId": "neo-brutalist",
+      "structureId": "poster-campaign",
+      "title": "Graphic campaign and portfolio",
+      "focus": "用高对比视觉传递明确行动和作品身份",
+      "typeRules": "超大短句、粗重字重与清晰行动标签",
+      "spacing": "暴露栅格、边框与错位层级组成不对称海报",
+      "motion": "hover/按压反馈短且可关闭",
+      "responsive": "手机保持标题不裁切，内容不依赖横向画布",
+      "a11y": "硬边高对比不等于可以忽视焦点和阅读顺序",
+      "avoid": "把海报视觉直接复用为数据密集后台",
+      "templateIds": [
+        "TPL-004"
+      ],
+      "relatedExperienceIds": [
+        "XC-009",
+        "XC-010"
+      ],
+      "componentHints": [],
+      "sections": [
+        {
+          "id": "statement",
+          "label": "宣言海报",
+          "purpose": "只传达一个最重要的视觉主张",
+          "layout": "巨型标题、硬边标签、强 CTA",
+          "behavior": "主行动显式可点击"
+        },
+        {
+          "id": "signals",
+          "label": "节奏和提示",
+          "purpose": "增强节奏但不遮蔽操作",
+          "layout": "短色条与重复排版",
+          "behavior": "减少非必要动效"
+        },
+        {
+          "id": "works",
+          "label": "图形作品墙",
+          "purpose": "展示作品间差异",
+          "layout": "偏移卡片格栅和标签",
+          "behavior": "过滤作品和查看详情"
+        },
+        {
+          "id": "cta",
+          "label": "项目路径",
+          "purpose": "把注意力转为下一步",
+          "layout": "明确联系或参与入口",
+          "behavior": "导航与表单验证由宿主实现"
+        }
+      ]
+    },
+    {
+      "styleId": "commerce-atelier",
+      "structureId": "product-discovery",
+      "title": "Product-first retail discovery",
+      "focus": "让用户理解商品、规格、价格和可选性",
+      "typeRules": "商品名价格/规格形成消费决策层级",
+      "spacing": "大商品图+紧凑选项+清晰购物路径",
+      "motion": "变体切换应稳定，不要让页面跳动",
+      "responsive": "单列商品优先，筛选抽屉和固定主按钮需可访问",
+      "a11y": "商品图说明、变体可用性、价格变更均有文本",
+      "avoid": "用虚构库存或假结账欺骗用户",
+      "templateIds": [
+        "TPL-006"
+      ],
+      "relatedExperienceIds": [
+        "XC-007",
+        "XC-008"
+      ],
+      "componentHints": [],
+      "sections": [
+        {
+          "id": "collection",
+          "label": "商品主题",
+          "purpose": "建立当前品类与用途",
+          "layout": "少量有意义的品牌文字和主产品",
+          "behavior": "浏览商品"
+        },
+        {
+          "id": "filters",
+          "label": "筛选与排序",
+          "purpose": "减少找货成本",
+          "layout": "清晰规格筛选和选中标签",
+          "behavior": "多选与清除条件"
+        },
+        {
+          "id": "catalog",
+          "label": "商品列表",
+          "purpose": "比较图、名称、价格与状态",
+          "layout": "图片占主导的响应式网格",
+          "behavior": "卡片选择和空结果"
+        },
+        {
+          "id": "product",
+          "label": "变体与详情",
+          "purpose": "确保选择可核对",
+          "layout": "商品详情与规格选项",
+          "behavior": "变体变更/不可售说明"
+        },
+        {
+          "id": "cart",
+          "label": "加入清单反馈",
+          "purpose": "确认意图并说明下一步",
+          "layout": "购物状态条与精简摘要",
+          "behavior": "真实库存/支付需业务系统接入"
+        }
+      ]
+    },
+    {
+      "styleId": "pixel-arcade",
+      "structureId": "chapter-world",
+      "title": "Pixel adventure chapter map",
+      "focus": "通过离散章节与成长反馈构建游戏化探索",
+      "typeRules": "HUD 用高可读字形，像素标题不可牺牲正文可读性",
+      "spacing": "主场景+任务列表+明确状态 HUD",
+      "motion": "格点反馈简洁，降低闪烁并尊重 reduced motion",
+      "responsive": "移动端压缩装饰而非缩小核心控制文字",
+      "a11y": "冒险地图需提供可键盘访问的文字章节清单",
+      "avoid": "装饰性像素冒充真实成就或系统通知",
+      "templateIds": [],
+      "relatedExperienceIds": [
+        "XC-013",
+        "XC-014"
+      ],
+      "componentHints": [],
+      "sections": [
+        {
+          "id": "world",
+          "label": "像素世界",
+          "purpose": "建立任务世界身份",
+          "layout": "层叠格点地貌与大标题",
+          "behavior": "章节导航"
+        },
+        {
+          "id": "missions",
+          "label": "章节选择",
+          "purpose": "让任务可逐个完成",
+          "layout": "像素任务路径和文本列表",
+          "behavior": "选择关卡并显示状态"
+        },
+        {
+          "id": "hud",
+          "label": "成绩面板",
+          "purpose": "汇总可解释的模拟指标",
+          "layout": "高对比像素 HUD 和文字标签",
+          "behavior": "更新进度及失败反馈"
+        },
+        {
+          "id": "next",
+          "label": "继续冒险",
+          "purpose": "明确下一步",
+          "layout": "可访问的下一关行动区",
+          "behavior": "返回任务列表与重新尝试"
+        }
+      ]
+    },
+    {
+      "styleId": "signal-noir",
+      "structureId": "fictional-telemetry",
+      "title": "Fictional sci-fi signal station",
+      "focus": "在数字展览中用遥测语言讲述互动故事",
+      "typeRules": "技术标签明确标注模拟/虚构，指标数字可读",
+      "spacing": "仪器场景 + 功能控制轨 + 事件信息栏",
+      "motion": "无持续闪频；高亮仅在信号变化时短暂出现",
+      "responsive": "窄屏以控制和文字日志为先，仪器画面置后",
+      "a11y": "所有仪器状态必须存在文字和静态等价内容",
+      "avoid": "将模拟遥测描述为真实任务或安全关键系统",
+      "templateIds": [],
+      "relatedExperienceIds": [
+        "XC-013",
+        "XC-015"
+      ],
+      "componentHints": [],
+      "sections": [
+        {
+          "id": "station",
+          "label": "虚构站点标志",
+          "purpose": "明确故事世界和数据性质",
+          "layout": "深色技术标题栏",
+          "behavior": "频道导航"
+        },
+        {
+          "id": "signal",
+          "label": "信号主场景",
+          "purpose": "让场景变化可见",
+          "layout": "同心刻度、模拟网格和标尺",
+          "behavior": "选择通道并保留状态"
+        },
+        {
+          "id": "tuning",
+          "label": "调节面板",
+          "purpose": "给用户可理解的控制",
+          "layout": "分组滑块与明确标签",
+          "behavior": "数值调节和复位"
+        },
+        {
+          "id": "log",
+          "label": "事件日志",
+          "purpose": "说明操作结果",
+          "layout": "可阅读的模拟日志",
+          "behavior": "当前值与更新记录"
+        }
+      ]
+    },
+    {
+      "styleId": "paper-rebellion",
+      "structureId": "collage-zine",
+      "title": "Layered independent zine",
+      "focus": "以纸张拼贴组织文化作品和编辑故事",
+      "typeRules": "保留可读正文与简明手写式注释",
+      "spacing": "不对称拼贴层与稳定阅读栏并存",
+      "motion": "纸片轻微位移不应影响焦点和文字",
+      "responsive": "手机改为稳定单列纸张块，不叠压文字",
+      "a11y": "所有图形贴纸为装饰，文章需完整文本替代",
+      "avoid": "版权不明的扫描报刊或极端错位文字",
+      "templateIds": [],
+      "relatedExperienceIds": [
+        "XC-009",
+        "XC-010"
+      ],
+      "componentHints": [],
+      "sections": [
+        {
+          "id": "cover",
+          "label": "拼贴封面",
+          "purpose": "传达杂志主题",
+          "layout": "纸片与大文字叠层，导航独立",
+          "behavior": "可读的封面入口"
+        },
+        {
+          "id": "topics",
+          "label": "主题目录",
+          "purpose": "为作品建立秩序",
+          "layout": "便签索引和清晰类别",
+          "behavior": "筛选与取消选择"
+        },
+        {
+          "id": "stories",
+          "label": "作品墙",
+          "purpose": "展示创作与来源",
+          "layout": "不规则排版但按 DOM 阅读顺序排列",
+          "behavior": "打开完整故事"
+        },
+        {
+          "id": "colophon",
+          "label": "署名与出处",
+          "purpose": "确保可溯源",
+          "layout": "独立清晰署名区",
+          "behavior": "外部作品权利与引用说明"
+        }
+      ]
+    },
+    {
+      "styleId": "aether-orbit",
+      "structureId": "ambient-orbit",
+      "title": "Ambient orbital exhibition",
+      "focus": "用节制的沉浸氛围展示内容与视听故事",
+      "typeRules": "发光图层不承载低对比正文，锚点文案简洁",
+      "spacing": "沉浸主景+稀疏导航锚点+独立详情区",
+      "motion": "缓慢但可关闭；reduced motion 静态完整可用",
+      "responsive": "移动端保留导航列表，简化轨道层数",
+      "a11y": "不需要听觉/连续运动才能访问任何内容",
+      "avoid": "自动播放音频、眩晕轨道或依靠悬停发现全部信息",
+      "templateIds": [],
+      "relatedExperienceIds": [
+        "XC-015",
+        "XC-016"
+      ],
+      "componentHints": [],
+      "sections": [
+        {
+          "id": "atmosphere",
+          "label": "空间气氛",
+          "purpose": "确立沉浸背景",
+          "layout": "层叠轨道/光体 CSS 场景",
+          "behavior": "提供静态模式"
+        },
+        {
+          "id": "anchors",
+          "label": "内容锚点",
+          "purpose": "将场景连接到故事",
+          "layout": "少量轨道坐标和显式导航列表",
+          "behavior": "选择展区"
+        },
+        {
+          "id": "story",
+          "label": "展区详情",
+          "purpose": "可阅读地表达完整内容",
+          "layout": "不透明阅读区",
+          "behavior": "展开/收起或切换故事"
+        },
+        {
+          "id": "exit",
+          "label": "返回与设置",
+          "purpose": "让用户掌控体验",
+          "layout": "退出/降低动效控制",
+          "behavior": "返回列表、静音和静态开关"
+        }
+      ]
+    },
+    {
+      "styleId": "liquid-layer",
+      "structureId": "floating-control-story",
+      "title": "Media-led floating navigation",
+      "focus": "将透明控制与不透明内容清晰分离",
+      "typeRules": "高对比功能文案始终有不透明背景兜底",
+      "spacing": "开放画面+悬浮功能条+实体信息区",
+      "motion": "控制短时移动，禁用持续透明动画",
+      "responsive": "控制栏在手机收束成明确的按钮组",
+      "a11y": "支持 prefers-reduced-transparency 并提供显式透明开关",
+      "avoid": "全页面玻璃化或在动态画面上放置无背景小字",
+      "templateIds": [],
+      "relatedExperienceIds": [
+        "XC-015",
+        "XC-016"
+      ],
+      "componentHints": [],
+      "sections": [
+        {
+          "id": "media",
+          "label": "视觉画面",
+          "purpose": "优先展示场景及含义",
+          "layout": "宽幅原创媒体/场景，简短标题",
+          "behavior": "切换视角"
+        },
+        {
+          "id": "toolbar",
+          "label": "浮动功能层",
+          "purpose": "保证主要操作轻量且清晰",
+          "layout": "局部玻璃控制层，与正文隔离",
+          "behavior": "透明开关和短时状态反馈"
+        },
+        {
+          "id": "reading",
+          "label": "不透明正文",
+          "purpose": "提供可阅读说明",
+          "layout": "独立实体底色的内容区域",
+          "behavior": "阅读详情和原生链接"
+        },
+        {
+          "id": "fallback",
+          "label": "无特效回退",
+          "purpose": "在低性能/低透明环境可用",
+          "layout": "纯色工具栏和可见焦点",
+          "behavior": "同样的控制与状态语义"
+        }
+      ]
+    },
+    {
+      "styleId": "shape-expressive",
+      "structureId": "task-shape-chooser",
+      "title": "Expressive priority-based task selection",
+      "focus": "用形状差异而非娱乐性奖励区分任务优先级",
+      "typeRules": "超大任务标题和每个动作的显式文字",
+      "spacing": "主文案+大尺度不对称任务块+单行状态摘要",
+      "motion": "形状仅在状态变化时短切换，禁用循环变形",
+      "responsive": "手机单列优先，最重要动作保持第一视口内",
+      "a11y": "形状/颜色永远不能成为唯一状态标记，键盘焦点明显",
+      "avoid": "将所有操作改为异形按钮而削弱稳定性",
+      "templateIds": [],
+      "relatedExperienceIds": [
+        "XC-003",
+        "XC-004"
+      ],
+      "componentHints": [],
+      "sections": [
+        {
+          "id": "promise",
+          "label": "任务承诺",
+          "purpose": "告诉用户此刻能完成什么",
+          "layout": "醒目大字标题",
+          "behavior": "阅读清晰主行动"
+        },
+        {
+          "id": "choices",
+          "label": "大形状选择",
+          "purpose": "让任务选项可发现",
+          "layout": "形状分区及可访问标签",
+          "behavior": "单选、取消和选中状态"
+        },
+        {
+          "id": "feedback",
+          "label": "即时反馈",
+          "purpose": "用文字解释当前重点",
+          "layout": "清晰结果/进度块",
+          "behavior": "当前选择的说明"
+        },
+        {
+          "id": "support",
+          "label": "次级帮助",
+          "purpose": "提供不打断的支持信息",
+          "layout": "轻量底部说明",
+          "behavior": "展开更多指导"
+        }
+      ]
+    },
+    {
+      "styleId": "type-led-minimal",
+      "structureId": "indexed-brand-story",
+      "title": "Typography-led brand story",
+      "focus": "通过精炼文案、强字级和显式索引解释产品",
+      "typeRules": "先写清主张再使用夸张字级；正文要有足够行距",
+      "spacing": "大留白+一条主要声明+独立索引及 TL;DR",
+      "motion": "大标题无需动画也可理解",
+      "responsive": "窄屏优先保持文字不裁切，索引移至标题上方",
+      "a11y": "链接、索引、details 均可键盘访问，禁止自动闪动文字",
+      "avoid": "为追求空白隐藏必要内容",
+      "templateIds": [],
+      "relatedExperienceIds": [
+        "XC-009",
+        "XC-010"
+      ],
+      "componentHints": [],
+      "sections": [
+        {
+          "id": "identity",
+          "label": "极简品牌栏",
+          "purpose": "建立名称和行动方向",
+          "layout": "少量品牌符号与清晰导航",
+          "behavior": "显式主要 CTA"
+        },
+        {
+          "id": "statement",
+          "label": "主要声明",
+          "purpose": "一句明确的产品主张",
+          "layout": "巨大字体+大量空白",
+          "behavior": "选择下一个阅读内容"
+        },
+        {
+          "id": "index",
+          "label": "故事索引",
+          "purpose": "让内容深度可被发现",
+          "layout": "侧栏或顶部编号列表",
+          "behavior": "切换段落且更新 URL/状态"
+        },
+        {
+          "id": "tldr",
+          "label": "简明摘要",
+          "purpose": "快速说明产品与证据",
+          "layout": "短小信息条和可展开详情",
+          "behavior": "展开事实、查看联系方式"
+        }
+      ]
+    },
+    {
+      "styleId": "organic-tactile",
+      "structureId": "material-product-story",
+      "title": "Organic material narrative",
+      "focus": "在温暖的内容中展示材质和具体使用场景",
+      "typeRules": "可读正文搭配有限人文衬线强调",
+      "spacing": "材料主体+文字故事+柔和注释卡片",
+      "motion": "微小状态反馈而非持续的呼吸动画",
+      "responsive": "主体物件缩放，但关键信息不被材质遮挡",
+      "a11y": "材质选择既有色块也有文本标签，环保声明需证据",
+      "avoid": "把纸张噪点盖在文字上或伪造环保认证",
+      "templateIds": [],
+      "relatedExperienceIds": [
+        "XC-007",
+        "XC-006"
+      ],
+      "componentHints": [],
+      "sections": [
+        {
+          "id": "intro",
+          "label": "生活方式主张",
+          "purpose": "说明产品的实际使用感受",
+          "layout": "温暖留白与短正文",
+          "behavior": "明确观看入口"
+        },
+        {
+          "id": "object",
+          "label": "材料展示",
+          "purpose": "突出原创纹理/物件",
+          "layout": "CSS 自绘的柔和造型和明确说明",
+          "behavior": "选择不同物件或材质"
+        },
+        {
+          "id": "palette",
+          "label": "材料选项",
+          "purpose": "让用户理解材料差异",
+          "layout": "短标签和可见色块",
+          "behavior": "选中、禁用和状态反馈"
+        },
+        {
+          "id": "notes",
+          "label": "来源与细节",
+          "purpose": "以具体信息支持故事",
+          "layout": "3 个简短实体内容块",
+          "behavior": "阅读材料说明与跳转实际来源"
+        }
+      ]
+    }
+  ]
+}

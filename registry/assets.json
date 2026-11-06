@@ -6669,6 +6669,70 @@
         "instructions": "Read this style's layout, typography, material, motion and task context before selecting it; import only scoped tokens and design a page appropriate to the actual product.",
         "limitations": "Independent experimental style, not a drop-in theme for existing packages/ui React components; no official third-party UI code, images or product certification."
       }
+    },
+    {
+      "id": "PR-018",
+      "type": "recipe",
+      "name": "Style to page assembly · fourteen themed architecture and Agent implementation handoff recipes",
+      "stage": "prototype",
+      "priority": "P1",
+      "reuseKind": "composition-recipe",
+      "tags": [
+        "theme-to-page",
+        "page-architecture",
+        "style-assembly",
+        "agent-handoff",
+        "composition",
+        "context",
+        "design-tokens"
+      ],
+      "aliases": [
+        "主题组装页面",
+        "主题到页面",
+        "风格复现方案",
+        "设计风格落地",
+        "页面搭建简报",
+        "style assembly brief",
+        "theme to page"
+      ],
+      "path": "docs/assembly/style-assembly-v028.md",
+      "spec": "registry/style-assembly.json",
+      "demo": "playground/style-atlas/index.html",
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "styleIds": [],
+      "applicationContexts": [
+        "workspace",
+        "knowledge-base",
+        "commerce-storefront",
+        "creative-portfolio",
+        "consumer-mobile",
+        "creative-tool",
+        "digital-exhibition"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004",
+        "DT-005",
+        "DT-006",
+        "DT-007",
+        "DT-008",
+        "DT-009",
+        "DT-010",
+        "DT-011",
+        "DT-012",
+        "DT-013",
+        "DT-014"
+      ],
+      "license": "Original source-based handoff research and deterministic script, no third-party visual artwork bundled",
+      "verified": "Fourteen original page grammars with CLI/UI source references and automated validation; not compiled pages, not live target integrations or production certified.",
+      "handoff": {
+        "entry": "docs/assembly/style-assembly-v028.md",
+        "stack": "technology-neutral architecture + Node/JS CLI",
+        "instructions": "Choose explicit style/context; inspect matching Style Assembly registry and read actual Token/Profile/Demo paths before implementing the target page.",
+        "limitations": "No app scaffolding, generated source code, backend/real data, automatic React theme port, screen reader certification or external media licensing."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",

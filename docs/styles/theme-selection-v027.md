@@ -18,6 +18,10 @@ This is a durable guide to **selecting**, not automatically applying, a frontend
 4. Compare **at least two plausible candidates** where possible, using full original demos and the `dna`, `caution` and source docs. Do not replace genuine comparison with score-only recommendations.
 5. Record tradeoffs, content/copy and accessibility concerns, plus target app validation gaps. Make a final choice **only after task-specific judgment**; the algorithm itself never selects one.
 
+## Following selection: plan a real page
+
+Once the theme is **explicitly** chosen, use [V0.28 theme-to-page handoff](../assembly/style-assembly-v028.md) or the Theme Atlas third panel to generate source-linked page architecture, interaction and acceptance requirements. A research plan must not be presented as an implemented React page.
+
 ## What a match score means
 
 `matchPoints` = sum of weighted matches to **explicit registered fields only**. It measures neither popularity nor beauty nor empirically validated usability. No user preferences or personal profile is used. Tie-breaking is deterministic for repeatable output and has **no quality significance**.

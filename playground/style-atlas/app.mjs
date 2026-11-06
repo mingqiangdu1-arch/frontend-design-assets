@@ -75,6 +75,12 @@ function makeCard(e,s){
   button.setAttribute("aria-label","将 "+s.label+" 放到"+(side==="left"?"左":"右")+"侧对比");
   button.addEventListener("click",()=>setPair(side,e.id));actions.append(button);
  }
+ const build=mk("button","","生成此主题的页面搭建简报");build.type="button";
+ build.className="card-build";
+ build.addEventListener("click",()=>{
+  document.dispatchEvent(new CustomEvent("style-assembly:select",{detail:{styleId:e.id}}));
+ });
+ actions.append(build);
  const link=mk("a","","查看主题规范");link.href=rel(s.documentation);actions.append(link);
  article.append(actions);return article;
 }

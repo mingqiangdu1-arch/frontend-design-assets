@@ -25,6 +25,10 @@ Codex input is in [REUSE-PROMPT.md](REUSE-PROMPT.md). Production review and targ
 
 `node scripts/compose-page.mjs --template=TPL-005 --format=json` now reports `demoActuallyUsesReactLibrary: true`, and per-component `wired-in-demo`/`candidate-not-wired` statuses. Execute `npm run dev:workbench` (port 5175). **Only TPL-005** has verified source-level integration; TPL-001–004 remain independent static prototypes.
 
+## V0.28 · selected style → page construction brief
+
+[Theme-to-page handoff](style-assembly-v028.md) joins fourteen visual styles, seven registered runnable templates, sixteen conceptual XC plans and real React export references. Use `node scripts/build-style-brief.mjs --style=editorial-warm --context=publication --template=TPL-007 --stack=react --format=markdown`. Theme Atlas also offers an interactive form; no theme or template is auto-selected and missing React theme bridges remain manual work.
+
 ## V0.17 lightweight handoff (GitHub-first)
 
 [Asset selection and reuse levels](asset-handoff.md) explains `find-assets --goal`, `--reuse`, the resolved source entry and technology limits. This is a reference/agent handoff, **not an automatically generated app**. For a remote GitHub-only workflow, use the existing registry/CI rather than requiring a local preview at every research step.

@@ -18,6 +18,10 @@ There are 14 **original abstract miniatures**, each showing a distinctive compos
 
 The three older scenes in `playground/style-explorer/` now accept `?style=precision-dark`, `?style=editorial-warm`, and `?style=playful-pop` without changing the default on the original page or the existing component API. The creative and 2026 trend labs already support deep links.
 
+## V0.28 · Style → Page Assembly panel
+
+A third panel below the real-demo comparison allows **explicit** theme, context, stack, device, goal and registered template selection. It generates a Markdown/JSON-equivalent planning handoff grounded in fourteen style-specific grammars; no runnable page source is generated. Each theme card offers a direct “生成此主题的页面搭建简报” action. Open `?briefStyle=organic-tactile` to preselect that theme without a default template. For CLI and source boundaries, see [V0.28 guide](../../docs/assembly/style-assembly-v028.md).
+
 ## Task-based selection for an Agent
 
 The authoritative machine feature manifest is [`registry/style-facets.json`](../../registry/style-facets.json), joined **by `styleId`** to the registered style profile, asset ID and actual React compatibility list. It records:

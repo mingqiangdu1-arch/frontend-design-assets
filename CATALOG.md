@@ -16,6 +16,7 @@
 | 典型任务（中英关键词） | 优先入口 | 核心说明 |
 | --- | --- | --- |
 | 风格选型、视觉体系、art direction、theme | `registry/styles.json`、`docs/styles/decision-matrix.md`、`registry/creative-directions.json` | 14 套独立风格；React 包仍仅支持明确列出的原有 4 套 |
+| 已选主题构建页面、风格复现、页面搭建简报 / theme-to-page | `PR-018`、`registry/style-assembly.json`、`scripts/build-style-brief.mjs`、`docs/assembly/style-assembly-v028.md` | 14 套主题 → 57 个页面结构分区，来源真实，模板显式绑定；输出 Markdown/JSON 并声明移植风险 |
 | 14 套主题、视觉对比、场景选型、theme atlas / compare styles | `playground/style-atlas/README.md`、`registry/style-facets.json`、`scripts/select-style.mjs` | 原创抽象缩略图 + 真实 Demo 双列对比；CLI 基于显式任务和维度证据匹配，无默认风格和审美分 |
 | 当前流行 UI 主题、2026 design trends、glass、expressive、organic、typography | `docs/styles/trend-research-2026.md`、`registry/styles.json`、`playground/trend-style-lab/README.md`、`DT-011`–`DT-014` | 四套原创独立 HTML/CSS 主题；依据任务选择，不等于现有 React 主题兼容 |
 | 管理后台、运营台、SaaS workspace、admin | `docs/saas/README.md`、`registry/page-templates.json`、`recipes/saas-operational-list.md` | 页面研究与可执行组件需分别验证 |

@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import {experienceRegistry,validateExperienceRegistry} from "./experience-compositions.mjs";
 import {validateStyleFacets} from "./check-style-facets.mjs";
+import {validateStyleAssembly} from "./style-assembly.mjs";
 
 const root = process.cwd();
 const readJson = filepath => JSON.parse(fs.readFileSync(filepath, "utf8"));
@@ -78,5 +79,12 @@ if (/(^|\n)\s*:root\s*\{/.test(css)) fail("Theme CSS must not set global root va
 
 const themeFacets = readJson("registry/style-facets.json");
 const facetResult = validateStyleFacets(styles,themeFacets,readJson("registry/components.json"),registry,root);
+const assemblySummary = validateStyleAssembly({
+ styles,facets:themeFacets,assembly:readJson("registry/style-assembly.json"),
+ components:readJson("registry/components.json"),
+ templates:readJson("registry/page-templates.json"),
+ experiences:readJson("registry/experience-compositions.json"),assets:registry
+});
+console.log("Validated style-to-page grammars: "+assemblySummary.styles+" themes / "+assemblySummary.sections+" page sections.");
 console.log("Validated theme atlas facets: "+facetResult.styles+" themes, "+facetResult.reactCompatible+" explicit React themes.");
 console.log("Validated " + registry.assets.length + " assets, " + styleIds.size + " style profiles, " + applicationFiles.length + " application profiles, " + experienceSummary.recipes + " experience recipes.");

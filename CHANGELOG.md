@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-06 · V0.28 original theme-to-page assembly handoffs
+
+- Added `registry/style-assembly.json`: **14 theme-specific page grammars, 57 distinct functional sections** describing structure, typography, interaction, responsive rules, accessibility and explicit anti-patterns, tied by real style IDs and selected template/XC/component references.
+- Added pure `scripts/style-assembly.mjs` and CLI `scripts/build-style-brief.mjs` to produce Markdown or JSON architecture briefs. Templates are never auto-selected; unrelated context is rejected; unsupported React theme/selected page stacks are explicitly marked **manual port required**.
+- Theme Atlas gains an explicit third Page Assembly panel, theme-card entry actions, `?briefStyle=<id>` deep linking, source/sections/integration warning preview and one-click copy. This does **not** create a website or touch the target application.
+- Added `PR-018` to the registry, machine validation integrated into `test:registry`, isolated unit and Chromium browser tests, and CLI/docs entrypoints. Existing 14 themes, four React-compatible themes, seven real runnable templates and 16 conceptual XC recipes remain distinct. No new React exports or changed public visibility.
+- Composition/interaction/visual plans are research-level handoffs, not screen-reader/physical-device/production certifications. No source code generation, API or third-party images are included.
+
 ## 2026-11-06 · V0.27 theme atlas and explainable Agent retrieval
 
 - Built a new [14-theme visual atlas](playground/style-atlas/README.md): all existing registered style colors feed original *abstract layout thumbnails* and selectable pairs load the **real existing interactive demo** side by side, with correctly deep-linked Style Explorer scenes.

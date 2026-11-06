@@ -117,3 +117,68 @@ test("style explorer deep-link selects editorial/playful source scene while pres
  await page.goto("/playground/style-explorer/");
  await expect(page.locator("#precision-dark")).toBeVisible();
 });
+
+
+test("theme-to-page panel starts with no theme or template and cannot copy a nonexistent brief",async({page})=>{
+ await expect(page.locator("#assemblyStyle")).toHaveValue("");
+ await expect(page.locator("#assemblyTemplate")).toHaveValue("");
+ await expect(page.locator("#copyAssembly")).toBeDisabled();
+ await page.locator("#buildAssembly").click();
+ await expect(page.locator("#assemblyStyle")).toBeFocused();
+ await expect(page.locator("#assemblyResult")).toBeEmpty();
+});
+
+test("a theme card explicitly selects a page-assembly grammar without defaulting a template",async({page})=>{
+ const action=page.locator('[data-theme-id="organic-tactile"] .card-build');
+ await action.focus();
+ await action.press("Enter");
+ await expect(page.locator("#assemblyStyle")).toHaveValue("organic-tactile");
+ await expect(page).toHaveURL(/briefStyle=organic-tactile/);
+ await expect(page.locator("#assemblyTemplate")).toHaveValue("");
+ await expect(page.locator("#assemblyMessage")).toContainText("Organic Tactile");
+ await expect(page.locator("#assemblyStyle")).toBeFocused();
+});
+
+test("research theme with React target reports the manual port and four distinct page sections",async({page})=>{
+ await page.goto(base+"?briefStyle=liquid-layer");
+ await expect(page.locator("#assemblyStyle")).toHaveValue("liquid-layer");
+ await page.locator("#assemblyContext").selectOption("media-gallery");
+ await page.locator("#assemblyStack").selectOption("react");
+ await page.locator("#assemblyTitleInput").fill("可视化对照画廊");
+ await page.locator("#buildAssembly").click();
+ await expect(page.locator("#assemblyMessage")).toContainText("已生成 4 个页面分区");
+ await expect(page.locator("#assemblyResult h3")).toHaveText("可视化对照画廊");
+ await expect(page.locator(".assembly-sections li")).toHaveCount(4);
+ await expect(page.locator("#assemblyResult")).toContainText("需要人工代码适配");
+ await expect(page.locator("#assemblyResult")).toContainText("没有已登记的可运行页面模板");
+ await expect(page.locator("#copyAssembly")).toBeEnabled();
+});
+
+test("existing real React template is linked only when chosen explicitly",async({page})=>{
+ await page.locator("#assemblyStyle").selectOption("editorial-warm");
+ await page.locator("#assemblyContext").selectOption("publication");
+ await page.locator("#assemblyStack").selectOption("react");
+ await expect(page.locator("#assemblyTemplate option")).toHaveCount(3);
+ await page.locator("#buildAssembly").click();
+ await expect(page.locator("#assemblyResult")).toContainText("not-selected");
+ await expect(page.locator("#assemblyResult")).not.toContainText("需要人工代码适配");
+ await page.locator("#assemblyTemplate").selectOption("TPL-007");
+ await page.locator("#buildAssembly").click();
+ await expect(page.locator("#assemblyResult")).toContainText("TPL-007");
+ await expect(page.locator("#assemblyResult")).toContainText("explicitly-selected");
+ await expect(page.locator("#assemblyResult")).toContainText("wired-in-selected-demo");
+});
+
+test("14-theme assembly UI is narrow-screen usable and style changes clear stale results",async({page})=>{
+ await page.setViewportSize({width:390,height:850});
+ await page.locator("#assemblyStyle").selectOption("playful-pop");
+ await page.locator("#assemblyContext").selectOption("consumer-mobile");
+ await page.locator("#buildAssembly").click();
+ await expect(page.locator(".assembly-sections li")).toHaveCount(4);
+ const dims=await page.evaluate(()=>[document.documentElement.scrollWidth,document.documentElement.clientWidth]);
+ expect(dims[0]).toBeLessThanOrEqual(dims[1]+1);
+ await page.locator("#assemblyStyle").selectOption("pixel-arcade");
+ await expect(page.locator("#assemblyContext")).toHaveValue("");
+ await expect(page.locator("#assemblyResult")).toBeEmpty();
+ await expect(page.locator("#copyAssembly")).toBeDisabled();
+});
