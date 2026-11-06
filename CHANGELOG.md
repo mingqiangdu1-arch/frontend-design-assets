@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-06 · V0.24 advanced React editing controls
+
+- Implemented four original TSX/CSS components: `EditableDataTable` (explicit per-cell edit, validation and commit/cancel), `SortableList` (HTML5 drag and button-based reordering), `FlowEditor` (controlled graph-node positioning and directed edge creation), `AdvancedFilterPanel` (composed text/select/multi/toggle/numeric range criteria). UI-056..059, separate from older research-only assets.
+- Real React exports **41→45**; indexed assets **176→180**. Four original supported style scopes reused, no vendor component source or new dependencies.
+- Added four live Gallery fixtures and Chromium browser scenarios for editing validity, ordering by button/drag, node movement/edge deduplication, complex filter reset/invalid ranges and four-theme responsive width. Historic selected-state matrix remains partial, explicitly leaving 33 exports uncovered.
+- These are reference UI pieces, not server-persisted spreadsheets, production drag frameworks, executing workflow engines, generated SQL queries, npm publication or cross-browser/a11y sign-off.
+
+
 ## 2026-11-06 · V0.23 interactive data operations UI expansion
 
 - Implemented four original React/TypeScript/CSS components: `FilterableDataTable` (local search/category filters, optional comparator sort), `KanbanBoard` (controlled column moves via native drag/drop and accessible select alternative), `ActivityTimeline` (event history/status with optional selection), `InteractiveBarChart` (accessible keyboard-operable values and selection).

@@ -1,5 +1,5 @@
 {
-  "version": "0.23.0",
+  "version": "0.24.0",
   "package": "@frontend-design-assets/ui",
   "status": "reference-implemented; not production-certified",
   "source": "packages/ui/src/index.tsx",
@@ -562,6 +562,58 @@
       "demo": "playground/component-gallery/index.html",
       "interaction": "controlled local state and native pointer/keyboard actions; see README",
       "verified": "V0.23 reference implementation, CI pending; not production certified."
+    },
+    {
+      "id": "UI-056",
+      "exportName": "EditableDataTable",
+      "category": "data",
+      "description": "Controlled semantic table with cell editing, validation and explicit save/cancel",
+      "source": "packages/ui/src/editors.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "interaction": "controlled state; pointer/keyboard paths and host callbacks; see packages/ui/README.md",
+      "verified": "V0.24 reference implementation; GitHub CI and target-app accessibility review required."
+    },
+    {
+      "id": "UI-057",
+      "exportName": "SortableList",
+      "category": "interaction",
+      "description": "Controlled item ordering by native HTML drag/drop and accessible up/down buttons",
+      "source": "packages/ui/src/editors.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "interaction": "controlled state; pointer/keyboard paths and host callbacks; see packages/ui/README.md",
+      "verified": "V0.24 reference implementation; GitHub CI and target-app accessibility review required."
+    },
+    {
+      "id": "UI-058",
+      "exportName": "FlowEditor",
+      "category": "interaction",
+      "description": "Controlled node canvas with pointer/keyboard positioning and directional edge creation",
+      "source": "packages/ui/src/editors.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "interaction": "controlled state; pointer/keyboard paths and host callbacks; see packages/ui/README.md",
+      "verified": "V0.24 reference implementation; GitHub CI and target-app accessibility review required."
+    },
+    {
+      "id": "UI-059",
+      "exportName": "AdvancedFilterPanel",
+      "category": "input",
+      "description": "Controlled schema-like filter panel supporting text, select, multiselect, toggle and numeric range",
+      "source": "packages/ui/src/editors.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "interaction": "controlled state; pointer/keyboard paths and host callbacks; see packages/ui/README.md",
+      "verified": "V0.24 reference implementation; GitHub CI and target-app accessibility review required."
     }
   ],
   "stateMatrix": "registry/component-states.json",

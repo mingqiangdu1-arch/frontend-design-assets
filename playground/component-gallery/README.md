@@ -1,6 +1,6 @@
 # Component Gallery · V0.6
 
-React/TypeScript gallery for [41 UI components](../../packages/ui/README.md), with four independent style scopes.
+React/TypeScript gallery for [45 UI components](../../packages/ui/README.md), with four independent style scopes.
 
 ## Run (Node 22+)
 
@@ -28,7 +28,7 @@ Historical [SaaS Labs](../saas-patterns/README.md) and [Style Explorer](../style
 
 ## V0.12 Selected Component State Matrix
 
-Run `npm run dev:components`, then open `http://127.0.0.1:5174/?view=matrix`. The matrix tests **selected states for 12 of 41 actual React exports** across all four declared package themes. The twenty-nine uncovered exports are listed in `registry/component-states.json`. It also includes a separate request-state fixture (idle/loading/empty/error/success), which is not a package export.
+Run `npm run dev:components`, then open `http://127.0.0.1:5174/?view=matrix`. The matrix tests **selected states for 12 of 45 actual React exports** across all four declared package themes. The thirty-three uncovered exports are listed in `registry/component-states.json`. It also includes a separate request-state fixture (idle/loading/empty/error/success), which is not a package export.
 
 Browser tests capture 12 screenshots at 390/768/1440 in `test-results/`. Use `npm run visual:capture` to produce unapproved SHA256 evidence; explicit human inspection and approval are still required. Read [Visual QA policy](../../docs/quality/visual-review.md).
 
@@ -51,3 +51,7 @@ Added five actually implemented UI components: `FormWizard` (UI-047), `Repeatabl
 ## V0.23 data operations specimens
 
 Real implemented exports `UI-052 FilterableDataTable`, `UI-053 KanbanBoard`, `UI-054 ActivityTimeline` and `UI-055 InteractiveBarChart` are shown with local fictional fixtures. Browser scenarios cover keyword/category filtering with controlled comparator sorting, native drag/drop and per-card select movement, timeline selection/dates, keyboard bar selection and four-theme 390/768/1440px overflow. The historical selected-state matrix continues to cover only 12 older components, explicitly leaving 29 unreviewed there.
+
+## V0.24 actual editor and filter specimens
+
+Four real React exports: `UI-056 EditableDataTable` (validated cell drafts/save/cancel), `UI-057 SortableList` (drag-and-drop with keyboard-operable ordering buttons), `UI-058 FlowEditor` (controlled node positions, pointer/keyboard movement and directed edge addition), and `UI-059 AdvancedFilterPanel` (text/single/multiple/boolean/range filters). Each has live local fixtures and dedicated Chromium tests; responsive overflow is checked at 390/768/1440px in all four supported styles. Historic selected-state matrix remains partial, explicitly listing 33 uncovered exports.

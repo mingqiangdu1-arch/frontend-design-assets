@@ -4,6 +4,6 @@ import {validateMatrix} from "../scripts/check-component-states.mjs";
 test("declared component states are real, scoped and transparently incomplete",()=>{
  const r=validateMatrix();
  assert.equal(r.coveredExports,12);
- assert.equal(r.explicitUncovered,29);
+ assert.equal(r.explicitUncovered,33);
  assert.equal(r.styles,4);
 });

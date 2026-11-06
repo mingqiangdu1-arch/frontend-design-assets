@@ -220,3 +220,7 @@ export type {WizardStep,FormWizardProps,RepeatableFieldItem,RepeatableFieldsProp
 // V0.23: real controlled search/filter, kanban, timeline and interactive chart.
 export {FilterableDataTable,KanbanBoard,ActivityTimeline,InteractiveBarChart} from "./data-ops";
 export type {DataFilterOption,FilterableDataTableProps,KanbanColumn,KanbanCard,KanbanBoardProps,TimelineStatus,ActivityTimelineEvent,ActivityTimelineProps,BarChartDatum,InteractiveBarChartProps} from "./data-ops";
+
+// V0.24: controlled editors and advanced filtering with explicit integration boundaries.
+export {EditableDataTable,SortableList,FlowEditor,AdvancedFilterPanel} from "./editors";
+export type {EditableTableColumn,EditableDataTableProps,SortableListItem,SortableListProps,FlowNode,FlowEdge,FlowEditorProps,FilterRange,AdvancedFilterValue,AdvancedFilterOption,AdvancedFilterField,AdvancedFilterPanelProps} from "./editors";

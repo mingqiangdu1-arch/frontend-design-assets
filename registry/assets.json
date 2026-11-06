@@ -5613,6 +5613,196 @@
         "instructions": "Use controlled callbacks and supplied data. Host application owns loading/persistence/permissions and a single compatible theme.",
         "limitations": "No backend query, async pagination, drag reorder across positions, virtual scrolling, real-time chart feed or production certification."
       }
+    },
+    {
+      "id": "UI-056",
+      "type": "component",
+      "name": "data: EditableDataTable",
+      "exportName": "EditableDataTable",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "data-table",
+        "inline-edit",
+        "validation",
+        "grid",
+        "react"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/editors.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "workspace",
+        "data-tool",
+        "b2b-saas",
+        "admin-console"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original source code; React is a peer dependency",
+      "verified": "V0.24 original implementation subject to CI; no real application, mobile, screen-reader or production certification.",
+      "handoff": {
+        "entry": "packages/ui/src/editors.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Pass controlled arrays and callbacks, load one compatible theme, and supply host persistence/permissions/server validation.",
+        "limitations": "Reference UI only; no backend changes, collaborative locking, rich DnD management, workflow execution or schema engine."
+      }
+    },
+    {
+      "id": "UI-057",
+      "type": "component",
+      "name": "interaction: SortableList",
+      "exportName": "SortableList",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "sort",
+        "drag-drop",
+        "reorder",
+        "keyboard",
+        "react"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/editors.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "workflow",
+        "workspace",
+        "creative-tool",
+        "content-editor"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original source code; React is a peer dependency",
+      "verified": "V0.24 original implementation subject to CI; no real application, mobile, screen-reader or production certification.",
+      "handoff": {
+        "entry": "packages/ui/src/editors.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Pass controlled arrays and callbacks, load one compatible theme, and supply host persistence/permissions/server validation.",
+        "limitations": "Reference UI only; no backend changes, collaborative locking, rich DnD management, workflow execution or schema engine."
+      }
+    },
+    {
+      "id": "UI-058",
+      "type": "component",
+      "name": "interaction: FlowEditor",
+      "exportName": "FlowEditor",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "node",
+        "flow",
+        "canvas",
+        "drag",
+        "graph",
+        "react"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/editors.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "product-design",
+        "workflow-editor",
+        "creative-tool",
+        "developer-tool"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original source code; React is a peer dependency",
+      "verified": "V0.24 original implementation subject to CI; no real application, mobile, screen-reader or production certification.",
+      "handoff": {
+        "entry": "packages/ui/src/editors.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Pass controlled arrays and callbacks, load one compatible theme, and supply host persistence/permissions/server validation.",
+        "limitations": "Reference UI only; no backend changes, collaborative locking, rich DnD management, workflow execution or schema engine."
+      }
+    },
+    {
+      "id": "UI-059",
+      "type": "component",
+      "name": "input: AdvancedFilterPanel",
+      "exportName": "AdvancedFilterPanel",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "filter",
+        "advanced-search",
+        "range",
+        "multi-select",
+        "forms",
+        "react"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/editors.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "data-tool",
+        "workspace",
+        "analytics-console",
+        "commerce-storefront"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original source code; React is a peer dependency",
+      "verified": "V0.24 original implementation subject to CI; no real application, mobile, screen-reader or production certification.",
+      "handoff": {
+        "entry": "packages/ui/src/editors.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Pass controlled arrays and callbacks, load one compatible theme, and supply host persistence/permissions/server validation.",
+        "limitations": "Reference UI only; no backend changes, collaborative locking, rich DnD management, workflow execution or schema engine."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",

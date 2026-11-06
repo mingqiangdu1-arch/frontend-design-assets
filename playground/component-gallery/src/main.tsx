@@ -8,7 +8,9 @@ import {ThemeSurface,Button,Badge,Card,TextField,TextAreaField,SelectField,Check
  Tooltip,Breadcrumb,Pagination,Accordion,SidebarNav,
  FormWizard,RepeatableFields,ValidationSummary,Sparkline,DashboardGrid,
  FilterableDataTable,KanbanBoard,ActivityTimeline,InteractiveBarChart,
- type RepeatableFieldItem,type KanbanCard,type DataTableColumn,type DataTableSort,type ThemeId,type Tone} from "../../../packages/ui/src/index";
+ EditableDataTable,SortableList,FlowEditor,AdvancedFilterPanel,
+ type RepeatableFieldItem,type KanbanCard,type EditableTableColumn,type SortableListItem,
+ type FlowNode,type FlowEdge,type AdvancedFilterValue,type DataTableColumn,type DataTableSort,type ThemeId,type Tone} from "../../../packages/ui/src/index";
 import "../../../tokens/refined-light.css";
 import "../../../styles/precision-dark/tokens.css";
 import "../../../styles/editorial-warm/tokens.css";
@@ -102,6 +104,33 @@ function App(){
  ]);
  const [selectedEvent,setSelectedEvent]=React.useState("event-2");
  const [selectedBar,setSelectedBar]=React.useState("week-2");
+ const [editableRows,setEditableRows]=React.useState([
+  {id:"E-01",name:"需求分析",state:"进行中"},
+  {id:"E-02",name:"产品验收",state:"待开始"}
+ ]);
+ const editableColumns:EditableTableColumn<(typeof editableRows)[number]>[]=[
+  {key:"name",header:"任务名称",getValue:r=>r.name,editable:true,
+   validate:value=>value.trim().length<3?"任务名称至少 3 个字符":undefined},
+  {key:"state",header:"状态",getValue:r=>r.state,editable:true}
+ ];
+ const [orderedItems,setOrderedItems]=React.useState<SortableListItem[]>([
+  {id:"sort-1",label:"收集需求"},{id:"sort-2",label:"梳理流程"},
+  {id:"sort-3",label:"设计交互"},{id:"sort-4",label:"完成复盘"}
+ ]);
+ const [flowNodes,setFlowNodes]=React.useState<FlowNode[]>([
+  {id:"flow-1",label:"需求输入",x:20,y:30},
+  {id:"flow-2",label:"人工确认",x:50,y:50},
+  {id:"flow-3",label:"方案评审",x:80,y:30}
+ ]);
+ const [flowEdges,setFlowEdges]=React.useState<FlowEdge[]>([
+  {id:"edge-1",from:"flow-1",to:"flow-2"}
+ ]);
+ const edgeSeq=React.useRef(2);
+ const [activeFlowNode,setActiveFlowNode]=React.useState("flow-1");
+ const [advancedValues,setAdvancedValues]=React.useState<Record<string,AdvancedFilterValue>>({
+  keyword:"",status:"",tags:[],important:false,score:{min:null,max:null}
+ });
+ const [filterApplied,setFilterApplied]=React.useState(0);
  const sortedReviewRows=React.useMemo(()=>!tableSort?reviewRows:
   [...reviewRows].sort((a,b)=>{
    const diff=tableSort.key==="priority"?a.priority-b.priority:
@@ -115,7 +144,7 @@ function App(){
  };
  return <div className="cg-app">
  <header className="cg-top">
-  <div className="cg-brand"><span className="cg-mark">◈</span><div><strong>Component Library</strong><small>Frontend Design Assets / v0.23</small></div></div>
+  <div className="cg-brand"><span className="cg-mark">◈</span><div><strong>Component Library</strong><small>Frontend Design Assets / v0.24</small></div></div>
   <a href="https://github.com/mingqiangdu1-arch/frontend-design-assets/tree/main/packages/ui" target="_blank" rel="noreferrer">GitHub 源码 ↗</a>
  </header>
  <div className="cg-picker" role="group" aria-label="选择组件预览风格">
@@ -126,7 +155,7 @@ function App(){
  <ThemeSurface theme={theme} className="cg-surface">
   <div className="cg-intro"><div><small>LIVE REACT / TYPESCRIPT COMPONENTS</small>
     <h1>组件不仅要好看，也要能直接组装。</h1>
-    <p>41 个实际 React 组件，本轮新增筛选表格、可移动看板、活动时间轴与键盘可操作柱状图。当前是参考实现，尚未进行生产集成认证。</p>
+    <p>45 个实际 React 组件，本轮新增单元格编辑、拖拽与键盘排序、节点流程编辑器以及多条件筛选面板。当前是参考实现，尚未进行生产集成认证。</p>
    </div><Badge tone="neutral">{themes.find(x=>x.id===theme)?.label}</Badge>
   </div>
   <div className="cg-grid">
@@ -400,6 +429,43 @@ function App(){
       {id:"week-4",label:"第4周",value:15}
      ]}/>
     <span className="cg-hint">选中柱：{selectedBar} · 数字为演示样本，不代表真实业务统计。</span>
+   </Specimen>
+
+   <Specimen id="editable-data-table" title="EditableDataTable" caption="Explicit commit / field validation / Escape cancel">
+    <EditableDataTable label="可编辑任务表" rows={editableRows} columns={editableColumns}
+     onCellCommit={(rowId,key,value)=>setEditableRows(v=>v.map(row=>
+      row.id===rowId?{...row,[key]:value}:row))}/>
+    <span className="cg-hint">内容由页面状态维护；保存按钮只触发回调，不写入远程数据库。</span>
+   </Specimen>
+   <Specimen id="sortable-list" title="SortableList" caption="HTML drag / keyboard-accessible up-down actions">
+    <SortableList label="可排序流程步骤" items={orderedItems}
+     onReorder={ids=>setOrderedItems(v=>ids.map(id=>v.find(item=>item.id===id)!))}/>
+    <span className="cg-hint">当前顺序：{orderedItems.map(x=>x.label).join(" → ")}</span>
+   </Specimen>
+   <Specimen id="flow-editor" title="FlowEditor" caption="Controlled positions / pointer and arrows / directed edges">
+    <FlowEditor label="流程节点编辑器" nodes={flowNodes} edges={flowEdges}
+     selectedId={activeFlowNode} onSelect={setActiveFlowNode}
+     onNodesChange={setFlowNodes}
+     onAddEdge={(from,to)=>setFlowEdges(v=>
+      [...v,{id:"edge-"+edgeSeq.current++,from,to}])}/>
+    <span className="cg-hint">节点：{activeFlowNode} · 连线：{flowEdges.length} 条 · 不执行实际工作流</span>
+   </Specimen>
+   <Specimen id="advanced-filter-panel" title="AdvancedFilterPanel" caption="Text / select / multi / toggle / bounded range">
+    <AdvancedFilterPanel label="高级任务筛选" values={advancedValues}
+     fields={[
+      {id:"keyword",label:"关键词",kind:"text"},
+      {id:"status",label:"处理状态",kind:"select",
+       options:[{value:"pending",label:"待处理"},{value:"done",label:"已完成"}]},
+      {id:"tags",label:"任务标签",kind:"multi",
+       options:[{value:"design",label:"设计"},{value:"test",label:"测试"}]},
+      {id:"important",label:"仅显示重要任务",kind:"toggle"},
+      {id:"score",label:"评分区间",kind:"range",min:0,max:100}
+     ]}
+     onChange={(id,value)=>setAdvancedValues(v=>({...v,[id]:value}))}
+     onApply={()=>setFilterApplied(v=>v+1)}
+     onReset={()=>setAdvancedValues({keyword:"",status:"",tags:[],
+      important:false,score:{min:null,max:null}})}/>
+    <span className="cg-hint">已执行本地筛选动作：{filterApplied} 次；宿主应用负责真实筛选。</span>
    </Specimen>
    <Specimen id="cards" title="Cards & Empty" caption="modular composition">
      <Card heading="可组合信息卡片" description="不同风格的卡片有不同的信息密度和结构" footer={<><Button size="sm">创建</Button><Button size="sm" variant="ghost">了解更多</Button></>}>

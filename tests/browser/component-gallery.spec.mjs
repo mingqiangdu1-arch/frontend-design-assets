@@ -2,11 +2,11 @@ import {test,expect} from "@playwright/test";
 
 test.beforeEach(async({page})=>{await page.goto("/");});
 
-test("gallery presents 41 component exports and explicit themes",async({page})=>{
+test("gallery presents 45 component exports and explicit themes",async({page})=>{
  await expect(page.getByRole("heading",{name:/组件不仅要好看/})).toBeVisible();
  await expect(page.locator("[data-theme-button]")).toHaveCount(4);
  await expect(page.locator('[data-theme-button="refined-light-saas"]')).toHaveAttribute("aria-pressed","true");
- await expect(page.locator(".cg-spec")).toHaveCount(32);
+ await expect(page.locator(".cg-spec")).toHaveCount(36);
 });
 
 test("switching style updates scope and semantic background",async({page})=>{
@@ -464,6 +464,90 @@ test("V0.23 data operation specimens fit four themes with internal kanban scroll
    await page.locator('[data-theme-button="'+theme+'"]').click();
    const size=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
    expect(size.scroll,theme+" at "+width).toBeLessThanOrEqual(size.client+1);
+  }
+ }
+});
+
+
+test("EditableDataTable validates field, keeps draft on error, cancels and commits on save",async({page})=>{
+ const scope=page.locator("#editable-data-table");
+ const table=scope.getByRole("table",{name:"可编辑任务表"});
+ await table.getByRole("button",{name:"编辑任务名称 E-01"}).click();
+ const input=table.getByRole("textbox",{name:"编辑任务名称 E-01"});
+ await expect(input).toBeFocused();
+ await input.fill("短");
+ await table.getByRole("button",{name:"保存"}).click();
+ await expect(table.getByRole("alert")).toContainText("至少 3 个字符");
+ await expect(input).toHaveValue("短");
+ await input.press("Escape");
+ await expect(table.getByText("需求分析")).toBeVisible();
+ await table.getByRole("button",{name:"编辑任务名称 E-01"}).click();
+ await table.getByRole("textbox",{name:"编辑任务名称 E-01"}).fill("需求梳理完成");
+ await table.getByRole("button",{name:"保存"}).click();
+ await expect(table.getByText("需求梳理完成")).toBeVisible();
+ await expect(table.getByRole("textbox",{name:"编辑任务名称 E-01"})).toHaveCount(0);
+});
+
+test("SortableList handles bounded button moves and native drag ordering",async({page})=>{
+ const scope=page.locator("#sortable-list");
+ const list=scope.getByRole("region",{name:"可排序流程步骤"});
+ await expect(list.getByRole("button",{name:"上移收集需求"})).toBeDisabled();
+ await list.getByRole("button",{name:"下移收集需求"}).click();
+ await expect(list.locator("ol > li").first()).toContainText("梳理流程");
+ await expect(list.locator("ol > li").nth(1)).toContainText("收集需求");
+ const first=list.locator("ol > li").first();
+ const last=list.locator("ol > li").last();
+ await first.dragTo(last);
+ await expect(list.locator("ol > li").last()).toContainText("梳理流程");
+ await expect(scope.locator(".cg-hint")).toContainText("设计交互");
+});
+
+test("FlowEditor moves selected node by keyboard and creates unique directed edges",async({page})=>{
+ const scope=page.getByRole("region",{name:"流程节点编辑器"});
+ const node=scope.getByRole("button",{name:"节点 需求输入"});
+ await node.focus();await node.press("ArrowRight");
+ await expect(node).toHaveCSS("left",/px/);
+ const position=await node.evaluate(el=>el.style.left);
+ expect(position).toBe("25%");
+ await node.press("Enter");
+ await expect(node).toHaveAttribute("aria-pressed","true");
+ await scope.getByRole("combobox",{name:"起点"}).selectOption("flow-2");
+ await scope.getByRole("combobox",{name:"终点"}).selectOption("flow-3");
+ await scope.getByRole("button",{name:"添加连接"}).click();
+ await expect(page.locator("#flow-editor .cg-hint")).toContainText("2 条");
+ await expect(scope.getByRole("button",{name:"添加连接"})).toBeDisabled();
+ await expect(scope.locator("svg line")).toHaveCount(2);
+});
+
+test("AdvancedFilterPanel controls text/select/multi/toggle and invalid range",async({page})=>{
+ const scope=page.getByRole("region",{name:"高级任务筛选"});
+ await expect(scope).toContainText("0 个筛选条件");
+ await scope.getByRole("searchbox",{name:"关键词"}).fill("设计");
+ await scope.getByRole("combobox",{name:"处理状态"}).selectOption("pending");
+ await scope.getByRole("checkbox",{name:"设计"}).check();
+ await scope.getByRole("checkbox",{name:"仅显示重要任务"}).check();
+ await expect(scope).toContainText("4 个筛选条件");
+ const lower=scope.getByRole("spinbutton",{name:"最小值"});
+ const upper=scope.getByRole("spinbutton",{name:"最大值"});
+ await lower.fill("80");
+ await upper.fill("40");
+ await expect(scope.getByRole("alert")).toContainText("最小值不能超过最大值");
+ await expect(scope.getByRole("button",{name:"应用筛选"})).toBeDisabled();
+ await upper.fill("95");
+ await expect(scope.getByRole("button",{name:"应用筛选"})).toBeEnabled();
+ await scope.getByRole("button",{name:"应用筛选"}).click();
+ await expect(page.locator("#advanced-filter-panel .cg-hint")).toContainText("1 次");
+ await scope.getByRole("button",{name:"清除条件"}).click();
+ await expect(scope).toContainText("0 个筛选条件");
+});
+
+test("V0.24 advanced editor specimens remain responsive across four style scopes",async({page})=>{
+ for(const width of [390,768,1440]){
+  await page.setViewportSize({width,height:900});
+  for(const theme of ["refined-light-saas","precision-dark","editorial-warm","playful-pop"]){
+   await page.locator('[data-theme-button="'+theme+'"]').click();
+   const x=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
+   expect(x.scroll,theme+" at "+width).toBeLessThanOrEqual(x.client+1);
   }
  }
 });

@@ -55,10 +55,42 @@ The illustrative import `frontend-design-assets/styles/...` above is a repositor
 | Complex forms | **FormWizard**, **RepeatableFields**, **ValidationSummary** |
 | Workflow boards | **KanbanBoard** |
 | Data visualization | **Sparkline**, **InteractiveBarChart** |
+| Advanced data editors | **EditableDataTable**, **SortableList**, **FlowEditor**, **AdvancedFilterPanel** |
 | Date & file input | **DatePicker**, **FileUpload** |
 | Layout | **ResizablePanels**, **DashboardGrid** |
 
-**41 exported React components (including four new in V0.23).** All use style-scoped `fda-` CSS rather than globally overwriting buttons, forms, cards, etc. The names are also discoverable in `registry/components.json`.
+**45 exported React components (including four new in V0.24).** All use style-scoped `fda-` CSS rather than globally overwriting buttons, forms, cards, etc. The names are also discoverable in `registry/components.json`.
+
+## V0.24 advanced editors, ordering, flow and complex filters
+
+These **four real exported React/TypeScript/CSS components** are implemented in [`src/editors.tsx`](src/editors.tsx), use the same **four explicitly supported themes**, and have working Gallery fixtures and Playwright scenarios. They are controlled UI reference code, not server-side products.
+
+| Component | Primary API and behavior | Honest implementation boundary |
+| --- | --- | --- |
+| `EditableDataTable<T>` (`UI-056`) | `rows`, `columns` with `getValue`, optional per-column `validate` and `editable`; `onCellCommit(rowId,key,value)`. Explicit Edit → Save/Cancel, Enter/Escape and inline error. | **Never persists to server** or implements async validation, edit permissions, transactions, undo, conflicts or spreadsheet formula parsing. Host updates controlled rows. |
+| `SortableList` (`UI-057`) | `items` with stable IDs, `onReorder(orderedIds)`. HTML5 drag/drop and **Up/Down buttons** as keyboard/touch alternative, with disabled item boundaries. | No nested tree sort, animated transitions, persistent ordering, cross-list dragging or virtualization. Host persists the returned order. |
+| `FlowEditor` (`UI-058`) | controlled `nodes`, `edges`, `selectedId`, `onNodesChange`, `onSelect`, `onAddEdge`. Node positions on a 0..100 coordinate canvas; pointer drag, Arrow/Shift+Arrow movement and directed connections via selects. | **Not** a production workflow execution engine. No zoom/pan, port validation, cycle detection, layout algorithm, collaborative editing, type-safe node execution or persisted graph. |
+| `AdvancedFilterPanel` (`UI-059`) | declarative field list with text, single-select, multiselect, checkbox/toggle, bounded number-range; controlled values; `onChange`, `onApply`, `onReset`. | Does **not** translate state into SQL/API, query remote data or validate permissions. Host decides filter semantics; range min must not exceed max. |
+
+### Example of controlled cell editing
+
+```tsx
+import {useState} from 'react';
+import {EditableDataTable} from '@frontend-design-assets/ui';
+
+function Example(){
+ const [rows,setRows]=useState([{id:'a',name:'Review'}]);
+ return <EditableDataTable label='Editable records' rows={rows}
+   columns={[{key:'name',header:'Name',getValue:r=>r.name,editable:true,
+     validate:v=>v.trim().length<3?'Use at least 3 characters':undefined}]}
+   onCellCommit={(rowId,key,value)=>{
+     if(key==='name')setRows(prev=>prev.map(r=>r.id===rowId?{...r,name:value}:r));
+     // Persist only after target-app authorization and server validation.
+   }}/>
+}
+```
+
+Gallery data is fictional and local. Do not treat these components as npm-published, collaborative editors, real business results, production-readiness or accessibility/cross-browser certification.
 
 ## V0.23 filtering, kanban, activity and interactive data visualization
 

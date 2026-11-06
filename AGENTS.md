@@ -2,6 +2,12 @@
 
 This repository is a **living multi-style, cross-application design asset library** — not an AI WORKFLOW PLATFORM kit.
 
+## V0.24 advanced controlled editing components
+
+- The real React component catalog now has **45 exported components**, including `EditableDataTable`, `SortableList`, `FlowEditor`, and `AdvancedFilterPanel` (`UI-056..059`) in `packages/ui/src/editors.tsx`; indexed assets total **180**. Four compatible themes remain explicit; no new global token scope or external UI framework.
+- Use `EditableDataTable` as a controlled **draft/commit callback**, never a direct database editing guarantee. `SortableList` supports drag and accessible reorder controls. `FlowEditor` is a coordinate-based graph editor reference, not a business workflow engine; enforce domain-specific edge rules in the host. `AdvancedFilterPanel` captures criteria but does not generate server queries or security checks.
+- Use original code and Gallery fixtures as starting points. Old component-state matrix is selected/partial; V0.24 browser smoke does not establish screen-reader, cross-browser, production, collaboration, npm publication or data-source accuracy.
+
 ## V0.23 data operations reference components
 
 - Real React library now has **41 exported components**, including four implemented `UI-052..055` entries in `packages/ui/src/data-ops.tsx`: `FilterableDataTable`, `KanbanBoard`, `ActivityTimeline`, `InteractiveBarChart`. Asset registry: 176 entries; four declared theme scopes unchanged.
