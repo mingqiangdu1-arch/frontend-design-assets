@@ -617,5 +617,5 @@
     }
   ],
   "stateMatrix": "registry/component-states.json",
-  "stateCoverage": "12 of 18 exports with selected state demonstrations. Six uncovered. Human visual baseline unapproved."
+  "stateCoverage": "Historical selected-state matrix covers 12 of 45 current React exports; 33 are not covered by that matrix. Separate Gallery smoke tests do not constitute full state, accessibility or production certification."
 }

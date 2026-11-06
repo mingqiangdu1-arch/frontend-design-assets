@@ -2,6 +2,13 @@
 
 This repository is a **living multi-style, cross-application design asset library** — not an AI WORKFLOW PLATFORM kit.
 
+## Current retrieval entry (read before the version history below)
+
+- Start with [CATALOG.md](CATALOG.md) to route the user's task to the smallest matching registry/source set. Read only the chosen entries, not the full historical AGENTS/README or every playground.
+- Source of truth: `registry/assets.json` for asset identity, stage, reuse, constraints and provenance; `registry/components.json` for real React exports; `registry/styles.json` for theme scope; `registry/page-templates.json` for static versus React templates.
+- For remote GitHub-only work, finding the correct paths and reporting limitations is sufficient; don't demand installation, screenshots, builds or edits just to inspect a design reference.
+- Review [docs/publication-readiness.md](docs/publication-readiness.md) before changing visibility or copying internal source links into public documents. Preserve unique IDs, provenance, status and compatibility. Detailed version notes below are historical, not a default selection order.
+
 ## V0.24 advanced controlled editing components
 
 - The real React component catalog now has **45 exported components**, including `EditableDataTable`, `SortableList`, `FlowEditor`, and `AdvancedFilterPanel` (`UI-056..059`) in `packages/ui/src/editors.tsx`; indexed assets total **180**. Four compatible themes remain explicit; no new global token scope or external UI framework.

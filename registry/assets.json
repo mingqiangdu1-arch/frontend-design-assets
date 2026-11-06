@@ -41,6 +41,11 @@
       ],
       "applicationContexts": [
         "workspace"
+      ],
+      "aliases": [
+        "浅色SaaS",
+        "运营后台",
+        "light saas"
       ]
     },
     {
@@ -1301,7 +1306,12 @@
       "dependencies": [],
       "license": "Original design proposal, not an official source design system",
       "verified": "Styles scoped. Standalone demo + pure state model, but no full visual/browser or production QA.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "深色工作台",
+        "开发者工具",
+        "dark dashboard"
+      ]
     },
     {
       "id": "DT-003",
@@ -1337,7 +1347,12 @@
       "dependencies": [],
       "license": "Original design proposal, not an official source design system",
       "verified": "Styles scoped. Standalone demo + pure state model, but no full visual/browser or production QA.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "内容阅读",
+        "知识库",
+        "editorial"
+      ]
     },
     {
       "id": "DT-004",
@@ -1373,7 +1388,12 @@
       "dependencies": [],
       "license": "Original design proposal, not an official source design system",
       "verified": "Styles scoped. Standalone demo + pure state model, but no full visual/browser or production QA.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "移动端视觉",
+        "游戏化",
+        "playful"
+      ]
     },
     {
       "id": "KIT-004",
@@ -1593,7 +1613,12 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "单行输入",
+        "输入框",
+        "文本字段"
+      ]
     },
     {
       "id": "UI-015",
@@ -1629,7 +1654,11 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "多行输入",
+        "文本域"
+      ]
     },
     {
       "id": "UI-016",
@@ -1665,7 +1694,11 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "下拉选项",
+        "选择器"
+      ]
     },
     {
       "id": "UI-017",
@@ -1819,7 +1852,11 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "提示消息",
+        "警告提示"
+      ]
     },
     {
       "id": "UI-021",
@@ -1927,7 +1964,11 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "对话框",
+        "确认弹窗"
+      ]
     },
     {
       "id": "UI-024",
@@ -2147,7 +2188,12 @@
       "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
       "details": "styles/neo-brutalist/README.md",
       "demo": "playground/bold-grid/index.html",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "粗野主义",
+        "大胆网格",
+        "brutalist"
+      ]
     },
     {
       "id": "REF-026",
@@ -2855,7 +2901,12 @@
       "dependencies": [],
       "details": "styles/commerce-atelier/README.md",
       "demo": "playground/commerce-atelier/index.html",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "电商商品页",
+        "商品目录",
+        "commerce"
+      ]
     },
     {
       "stage": "prototype",
@@ -3185,7 +3236,12 @@
       "dependencies": [],
       "source": "https://www.figma.com/resource-library/web-design-trends/",
       "verified": "Original Token and CSS/JSON prototype. Automated checks pending; not React-compatible or production certified.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "像素风",
+        "复古游戏",
+        "pixel art"
+      ]
     },
     {
       "id": "DT-008",
@@ -4806,7 +4862,12 @@
         "stack": "React/TypeScript",
         "instructions": "Use controlled props, choose exactly one compatible theme, and explicitly implement target product effects/server boundary.",
         "limitations": "Reference UI only; native date control, single splitter, controlled local files (NO network upload), and no indexed/global shortcut handler."
-      }
+      },
+      "aliases": [
+        "命令面板",
+        "快捷操作",
+        "command palette"
+      ]
     },
     {
       "id": "UI-039",
@@ -4853,7 +4914,11 @@
         "stack": "React/TypeScript",
         "instructions": "Use controlled props, choose exactly one compatible theme, and explicitly implement target product effects/server boundary.",
         "limitations": "Reference UI only; native date control, single splitter, controlled local files (NO network upload), and no indexed/global shortcut handler."
-      }
+      },
+      "aliases": [
+        "日期选择",
+        "日历选择"
+      ]
     },
     {
       "id": "UI-040",
@@ -4901,7 +4966,11 @@
         "stack": "React/TypeScript",
         "instructions": "Use controlled props, choose exactly one compatible theme, and explicitly implement target product effects/server boundary.",
         "limitations": "Reference UI only; native date control, single splitter, controlled local files (NO network upload), and no indexed/global shortcut handler."
-      }
+      },
+      "aliases": [
+        "可调整面板",
+        "分屏布局"
+      ]
     },
     {
       "id": "UI-041",
@@ -4948,7 +5017,11 @@
         "stack": "React/TypeScript",
         "instructions": "Use controlled props, choose exactly one compatible theme, and explicitly implement target product effects/server boundary.",
         "limitations": "Reference UI only; native date control, single splitter, controlled local files (NO network upload), and no indexed/global shortcut handler."
-      }
+      },
+      "aliases": [
+        "文件上传",
+        "拖放上传"
+      ]
     },
     {
       "id": "UI-042",
@@ -5043,7 +5116,11 @@
         "stack": "React/TypeScript",
         "instructions": "Load one of the four declared themes and handle controlled navigation/disclosure in the host product; test routing, responsive and assistive-technology behavior.",
         "limitations": "No app router, popper collision engine, server paging, virtualization or production approval included."
-      }
+      },
+      "aliases": [
+        "面包屑",
+        "路径导航"
+      ]
     },
     {
       "id": "UI-044",
@@ -5090,7 +5167,11 @@
         "stack": "React/TypeScript",
         "instructions": "Load one of the four declared themes and handle controlled navigation/disclosure in the host product; test routing, responsive and assistive-technology behavior.",
         "limitations": "No app router, popper collision engine, server paging, virtualization or production approval included."
-      }
+      },
+      "aliases": [
+        "分页器",
+        "分页导航"
+      ]
     },
     {
       "id": "UI-045",
@@ -5137,7 +5218,11 @@
         "stack": "React/TypeScript",
         "instructions": "Load one of the four declared themes and handle controlled navigation/disclosure in the host product; test routing, responsive and assistive-technology behavior.",
         "limitations": "No app router, popper collision engine, server paging, virtualization or production approval included."
-      }
+      },
+      "aliases": [
+        "手风琴",
+        "折叠面板"
+      ]
     },
     {
       "id": "UI-046",
@@ -5185,7 +5270,11 @@
         "stack": "React/TypeScript",
         "instructions": "Load one of the four declared themes and handle controlled navigation/disclosure in the host product; test routing, responsive and assistive-technology behavior.",
         "limitations": "No app router, popper collision engine, server paging, virtualization or production approval included."
-      }
+      },
+      "aliases": [
+        "侧边导航",
+        "侧栏菜单"
+      ]
     },
     {
       "id": "UI-047",
@@ -5233,7 +5322,11 @@
         "stack": "React/TypeScript",
         "instructions": "Provide controlled state/validation and meaningful business data; use one of four supported themes. Check host data permission, real chart provenance and form focus handling.",
         "limitations": "No backend validation/persistence, no built-in form schema, no chart package or measured UX certification."
-      }
+      },
+      "aliases": [
+        "分步表单",
+        "表单向导"
+      ]
     },
     {
       "id": "UI-048",
@@ -5280,7 +5373,11 @@
         "stack": "React/TypeScript",
         "instructions": "Provide controlled state/validation and meaningful business data; use one of four supported themes. Check host data permission, real chart provenance and form focus handling.",
         "limitations": "No backend validation/persistence, no built-in form schema, no chart package or measured UX certification."
-      }
+      },
+      "aliases": [
+        "动态字段",
+        "重复表单项"
+      ]
     },
     {
       "id": "UI-049",
@@ -5374,7 +5471,11 @@
         "stack": "React/TypeScript",
         "instructions": "Provide controlled state/validation and meaningful business data; use one of four supported themes. Check host data permission, real chart provenance and form focus handling.",
         "limitations": "No backend validation/persistence, no built-in form schema, no chart package or measured UX certification."
-      }
+      },
+      "aliases": [
+        "迷你趋势图",
+        "趋势线"
+      ]
     },
     {
       "id": "UI-051",
@@ -5421,7 +5522,11 @@
         "stack": "React/TypeScript",
         "instructions": "Provide controlled state/validation and meaningful business data; use one of four supported themes. Check host data permission, real chart provenance and form focus handling.",
         "limitations": "No backend validation/persistence, no built-in form schema, no chart package or measured UX certification."
-      }
+      },
+      "aliases": [
+        "仪表盘网格",
+        "响应式卡片布局"
+      ]
     },
     {
       "id": "UI-052",
@@ -5469,7 +5574,11 @@
         "stack": "React/TypeScript",
         "instructions": "Use controlled callbacks and supplied data. Host application owns loading/persistence/permissions and a single compatible theme.",
         "limitations": "No backend query, async pagination, drag reorder across positions, virtual scrolling, real-time chart feed or production certification."
-      }
+      },
+      "aliases": [
+        "筛选表格",
+        "搜索表格"
+      ]
     },
     {
       "id": "UI-053",
@@ -5517,7 +5626,12 @@
         "stack": "React/TypeScript",
         "instructions": "Use controlled callbacks and supplied data. Host application owns loading/persistence/permissions and a single compatible theme.",
         "limitations": "No backend query, async pagination, drag reorder across positions, virtual scrolling, real-time chart feed or production certification."
-      }
+      },
+      "aliases": [
+        "看板",
+        "卡片拖拽",
+        "kanban"
+      ]
     },
     {
       "id": "UI-054",
@@ -5564,7 +5678,11 @@
         "stack": "React/TypeScript",
         "instructions": "Use controlled callbacks and supplied data. Host application owns loading/persistence/permissions and a single compatible theme.",
         "limitations": "No backend query, async pagination, drag reorder across positions, virtual scrolling, real-time chart feed or production certification."
-      }
+      },
+      "aliases": [
+        "活动时间线",
+        "操作记录"
+      ]
     },
     {
       "id": "UI-055",
@@ -5612,7 +5730,11 @@
         "stack": "React/TypeScript",
         "instructions": "Use controlled callbacks and supplied data. Host application owns loading/persistence/permissions and a single compatible theme.",
         "limitations": "No backend query, async pagination, drag reorder across positions, virtual scrolling, real-time chart feed or production certification."
-      }
+      },
+      "aliases": [
+        "交互柱状图",
+        "柱状图"
+      ]
     },
     {
       "id": "UI-056",
@@ -5659,7 +5781,11 @@
         "stack": "React/TypeScript",
         "instructions": "Pass controlled arrays and callbacks, load one compatible theme, and supply host persistence/permissions/server validation.",
         "limitations": "Reference UI only; no backend changes, collaborative locking, rich DnD management, workflow execution or schema engine."
-      }
+      },
+      "aliases": [
+        "可编辑表格",
+        "单元格编辑"
+      ]
     },
     {
       "id": "UI-057",
@@ -5706,7 +5832,11 @@
         "stack": "React/TypeScript",
         "instructions": "Pass controlled arrays and callbacks, load one compatible theme, and supply host persistence/permissions/server validation.",
         "limitations": "Reference UI only; no backend changes, collaborative locking, rich DnD management, workflow execution or schema engine."
-      }
+      },
+      "aliases": [
+        "列表排序",
+        "拖拽排序"
+      ]
     },
     {
       "id": "UI-058",
@@ -5754,7 +5884,12 @@
         "stack": "React/TypeScript",
         "instructions": "Pass controlled arrays and callbacks, load one compatible theme, and supply host persistence/permissions/server validation.",
         "limitations": "Reference UI only; no backend changes, collaborative locking, rich DnD management, workflow execution or schema engine."
-      }
+      },
+      "aliases": [
+        "流程编辑器",
+        "节点画布",
+        "流程图"
+      ]
     },
     {
       "id": "UI-059",
@@ -5802,7 +5937,12 @@
         "stack": "React/TypeScript",
         "instructions": "Pass controlled arrays and callbacks, load one compatible theme, and supply host persistence/permissions/server validation.",
         "limitations": "Reference UI only; no backend changes, collaborative locking, rich DnD management, workflow execution or schema engine."
-      }
+      },
+      "aliases": [
+        "高级筛选",
+        "筛选面板",
+        "复合筛选"
+      ]
     }
   ],
   "referenceImplementationRoot": "components/reference",

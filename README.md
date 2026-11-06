@@ -1,5 +1,7 @@
 # Frontend Design Assets — Living Multi-Style Repository
 
+> **快速入口**：按需求挑选素材请先读 [Agent / Task Catalog](CATALOG.md)；准备把仓库公开请先读 [Publication Readiness](docs/publication-readiness.md)；历史实验与归档规则见 [archive/README.md](archive/README.md)。本仓库目前仍为 private，研究参考、原型和可复用 React 源码的成熟度不同。
+
 一个**跨应用类型、跨视觉风格、持续增量成长**的前端设计资产仓库。这里不是某个业务平台的专属 UI Kit，也没有一套强制所有项目使用的默认主题。
 
 ## 三个原则
