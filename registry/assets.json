@@ -5186,6 +5186,242 @@
         "instructions": "Load one of the four declared themes and handle controlled navigation/disclosure in the host product; test routing, responsive and assistive-technology behavior.",
         "limitations": "No app router, popper collision engine, server paging, virtualization or production approval included."
       }
+    },
+    {
+      "id": "UI-047",
+      "type": "component",
+      "name": "workflow: FormWizard",
+      "exportName": "FormWizard",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "wizard",
+        "multi-step",
+        "form",
+        "validation",
+        "progress",
+        "react"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/workflows.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "onboarding",
+        "workspace",
+        "forms",
+        "consumer-mobile"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is a peer dependency",
+      "verified": "V0.22 real React/TypeScript reference code, subject to CI; no production/device/a11y sign-off.",
+      "handoff": {
+        "entry": "packages/ui/src/workflows.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Provide controlled state/validation and meaningful business data; use one of four supported themes. Check host data permission, real chart provenance and form focus handling.",
+        "limitations": "No backend validation/persistence, no built-in form schema, no chart package or measured UX certification."
+      }
+    },
+    {
+      "id": "UI-048",
+      "type": "component",
+      "name": "input: RepeatableFields",
+      "exportName": "RepeatableFields",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "form",
+        "dynamic-fields",
+        "repeatable",
+        "validation",
+        "react"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/workflows.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "forms",
+        "workspace",
+        "onboarding",
+        "data-entry"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is a peer dependency",
+      "verified": "V0.22 real React/TypeScript reference code, subject to CI; no production/device/a11y sign-off.",
+      "handoff": {
+        "entry": "packages/ui/src/workflows.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Provide controlled state/validation and meaningful business data; use one of four supported themes. Check host data permission, real chart provenance and form focus handling.",
+        "limitations": "No backend validation/persistence, no built-in form schema, no chart package or measured UX certification."
+      }
+    },
+    {
+      "id": "UI-049",
+      "type": "component",
+      "name": "feedback: ValidationSummary",
+      "exportName": "ValidationSummary",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "form",
+        "error-summary",
+        "validation",
+        "focus",
+        "react"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/workflows.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "forms",
+        "workspace",
+        "onboarding",
+        "data-entry"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is a peer dependency",
+      "verified": "V0.22 real React/TypeScript reference code, subject to CI; no production/device/a11y sign-off.",
+      "handoff": {
+        "entry": "packages/ui/src/workflows.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Provide controlled state/validation and meaningful business data; use one of four supported themes. Check host data permission, real chart provenance and form focus handling.",
+        "limitations": "No backend validation/persistence, no built-in form schema, no chart package or measured UX certification."
+      }
+    },
+    {
+      "id": "UI-050",
+      "type": "component",
+      "name": "data: Sparkline",
+      "exportName": "Sparkline",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "chart",
+        "sparkline",
+        "trend",
+        "data-visualization",
+        "react"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/workflows.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "analytics-console",
+        "workspace",
+        "data-story",
+        "dashboard"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is a peer dependency",
+      "verified": "V0.22 real React/TypeScript reference code, subject to CI; no production/device/a11y sign-off.",
+      "handoff": {
+        "entry": "packages/ui/src/workflows.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Provide controlled state/validation and meaningful business data; use one of four supported themes. Check host data permission, real chart provenance and form focus handling.",
+        "limitations": "No backend validation/persistence, no built-in form schema, no chart package or measured UX certification."
+      }
+    },
+    {
+      "id": "UI-051",
+      "type": "component",
+      "name": "layout: DashboardGrid",
+      "exportName": "DashboardGrid",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "dashboard",
+        "responsive-grid",
+        "layout",
+        "composition",
+        "react"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/workflows.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "analytics-console",
+        "workspace",
+        "dashboard",
+        "creative-tool"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is a peer dependency",
+      "verified": "V0.22 real React/TypeScript reference code, subject to CI; no production/device/a11y sign-off.",
+      "handoff": {
+        "entry": "packages/ui/src/workflows.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Provide controlled state/validation and meaningful business data; use one of four supported themes. Check host data permission, real chart provenance and form focus handling.",
+        "limitations": "No backend validation/persistence, no built-in form schema, no chart package or measured UX certification."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",

@@ -2,6 +2,12 @@
 
 This repository is a **living multi-style, cross-application design asset library** — not an AI WORKFLOW PLATFORM kit.
 
+## V0.22 workflow, complex-form, data and layout extension
+
+- Real React library now has **37** actual exported components. The five new V0.22 original exports in `packages/ui/src/workflows.tsx` are `FormWizard`, `RepeatableFields`, `ValidationSummary`, `Sparkline`, and `DashboardGrid` (UI-047..051). Asset registry has 172 entries. React support remains **four explicitly selected theme scopes** only.
+- `FormWizard` is a controlled UI flow, **not** server-backed process orchestration or approval. `RepeatableFields` demands stable host IDs. `ValidationSummary` only invokes a caller-provided focus callback. `Sparkline` draws supplied finite numbers with an SVG summary; do not invent chart data or cite fixture numbers as real metrics. `DashboardGrid` provides responsive CSS spans, not drag-and-drop or saved layout.
+- Full Gallery fixtures and limited browser tests are separate from the historical selected-state matrix. Keep the latter's uncovered IDs honest; do not claim screenshot baseline, screen-reader/cross-browser proof, production certification or npm publication.
+
 ## V0.21 navigation and disclosure extension
 
 - Five original **implemented** React exports in `packages/ui/src/navigation.tsx`: `Tooltip`, `Breadcrumb`, `Pagination`, `Accordion`, `SidebarNav` (UI-042..046). Total real React exports 32; asset index 167; four compatible UI theme scopes unchanged.

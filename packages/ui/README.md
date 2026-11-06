@@ -52,10 +52,46 @@ The illustrative import `frontend-design-assets/styles/...` above is a repositor
 | Interactive overlays | **Popover** |
 | Commands | **CommandMenu** |
 | Disclosure & help | **Accordion**, **Tooltip** |
+| Complex forms | **FormWizard**, **RepeatableFields**, **ValidationSummary** |
+| Data visualization | **Sparkline** |
 | Date & file input | **DatePicker**, **FileUpload** |
-| Layout | **ResizablePanels** |
+| Layout | **ResizablePanels**, **DashboardGrid** |
 
-**32 exported React components (including five new in V0.21).** All use style-scoped `fda-` CSS rather than globally overwriting buttons, forms, cards, etc. The names are also discoverable in `registry/components.json`.
+**37 exported React components (including five new in V0.22).** All use style-scoped `fda-` CSS rather than globally overwriting buttons, forms, cards, etc. The names are also discoverable in `registry/components.json`.
+
+## V0.22 complex forms, workflow, data and responsive layout
+
+Five **original implemented** React/TypeScript/CSS reference components live in [`src/workflows.tsx`](src/workflows.tsx) and are exported from the public index. They support the existing four explicit UI themes and have interactive Gallery fixtures, without any added dependencies.
+
+| Export | Controlled API | User-visible behavior and honest limitations |
+| --- | --- | --- |
+| `FormWizard` (`UI-047`) | `steps`, `currentStepId/onStepChange`, `canAdvance`, `onComplete` | Three or more form phases with named steps, previous-step access, gated Next and final completion callback. **No implicit form schema, persistence, requests or trustworthy backend approval**; validate before moving ahead. |
+| `RepeatableFields` (`UI-048`) | `items`, `onAdd/onChange/onRemove`, `minItems/maxItems` | Labeled native repeatable text inputs, stable IDs and quantity limits. **Caller generates stable IDs** and owns data validation; not a JSON-schema form renderer. |
+| `ValidationSummary` (`UI-049`) | `issues`, `onNavigate(fieldId)` | Concise visible form error summary with clickable links; caller handles actual focus/scroll for the chosen field. **No automatic DOM focus or server validation**. |
+| `Sparkline` (`UI-050`) | `values`, `label`, `height`, `summary` | Lightweight original SVG path from finite numeric values; announces a range and start/end, renders a point-count trend. **Not an analytics engine**, axis, sourced metric system or full chart package. Do not fabricate real data from fixtures. |
+| `DashboardGrid` (`UI-051`) | `items`, per-item `span:1..4` | Explicit 4-column → 2-column → 1-column layout and titled cards using semantic articles. **No draggable dashboard, saved layout, async query or virtualization**. |
+
+### Simple locally controlled wizard
+
+```tsx
+import {useState} from 'react';
+import {FormWizard} from '@frontend-design-assets/ui';
+
+function Setup(){
+ const [step,setStep]=useState('identity');
+ const [name,setName]=useState('');
+ return <FormWizard label='项目设置向导' currentStepId={step} onStepChange={setStep}
+   canAdvance={name.trim().length>=3}
+   onComplete={()=>{/* host app validates & persists here */}}
+   steps={[
+     {id:'identity',title:'命名',content:<input aria-label='项目名称' value={name}
+        onChange={e=>setName(e.target.value)}/>},
+     {id:'review',title:'复核',content:<p>名称：{name}</p>}
+   ]}/>;
+}
+```
+
+These are reference implementations for adaptation to your own application, **not an npm-published component suite or a production a11y certification**. The Gallery uses local demo values and fake trend points explicitly labeled as fixtures.
 
 ## V0.21 navigation and disclosure exports — real React components
 

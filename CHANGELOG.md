@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-06 · V0.22 workflow, complex forms, data visuals and responsive layout
+
+- Five real React/TypeScript/CSS components: FormWizard (controlled guarded steps), RepeatableFields (repeatable inputs with IDs and count limits), ValidationSummary (clickable host-error routing), Sparkline (accessible SVG numeric trend) and DashboardGrid (4/2/1 responsive spans). Indexed UI-047..051 separately from research-only patterns.
+- React exports **32 → 37**; indexed assets **167 → 172**. All use the same four explicit compatible UI themes and no added third-party component/dependency.
+- Interactive gallery fixtures and Playwright smoke cover guarded wizard and completion, repeated text edit/add/remove, error focus, SVG trend data, responsive grid spans and page overflow. Historical selected-state matrix still covers only 12 original exports; new components remain explicitly unreviewed there.
+- Purely reference level: no server validation, real-product data, chart publication, production accessibility/cross-browser certification, published npm package or saved dashboard layout.
+
+
 ## 2026-11-06 · V0.21 navigation and disclosure React UI expansion
 
 - Five implemented React/TSX/CSS exports: `Tooltip`, `Breadcrumb`, `Pagination`, `Accordion`, `SidebarNav`; registered UI-042..046, separate from research-only component concepts.

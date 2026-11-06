@@ -212,3 +212,7 @@ export type {CommandItem,CommandGroup,CommandMenuProps,DatePickerProps,ResizeOri
 // V0.21 navigation and disclosure controls, with explicitly supported themes.
 export {Tooltip,Breadcrumb,Pagination,Accordion,SidebarNav} from "./navigation";
 export type {TooltipProps,BreadcrumbItem,BreadcrumbProps,PaginationProps,AccordionItem,AccordionProps,SidebarNavItem,SidebarNavProps} from "./navigation";
+
+// V0.22 complex forms, workflow progress, data visualization and responsive layout.
+export {FormWizard,RepeatableFields,ValidationSummary,Sparkline,DashboardGrid} from "./workflows";
+export type {WizardStep,FormWizardProps,RepeatableFieldItem,RepeatableFieldsProps,ValidationIssue,ValidationSummaryProps,SparklineProps,DashboardGridItem,DashboardGridProps} from "./workflows";

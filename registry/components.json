@@ -1,5 +1,5 @@
 {
-  "version": "0.21.0",
+  "version": "0.22.0",
   "package": "@frontend-design-assets/ui",
   "status": "reference-implemented; not production-certified",
   "source": "packages/ui/src/index.tsx",
@@ -445,6 +445,71 @@
       "demo": "playground/component-gallery/index.html",
       "interaction": "controlled and/or native keyboard semantics; see packages/ui/README.md",
       "verified": "V0.21 reference implementation; final CI verification pending, no production or screen-reader certification."
+    },
+    {
+      "id": "UI-047",
+      "exportName": "FormWizard",
+      "category": "workflow",
+      "description": "Controlled multi-step form workflow with validation gating, back navigation and completion callback",
+      "source": "packages/ui/src/workflows.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "interaction": "controlled properties and callbacks; behavior limitations in packages/ui/README.md",
+      "verified": "V0.22 reference implementation; GitHub CI verification pending. No target app/screen-reader certification."
+    },
+    {
+      "id": "UI-048",
+      "exportName": "RepeatableFields",
+      "category": "input",
+      "description": "Controlled repeatable text fields with stable IDs, min/max item count and remove actions",
+      "source": "packages/ui/src/workflows.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "interaction": "controlled properties and callbacks; behavior limitations in packages/ui/README.md",
+      "verified": "V0.22 reference implementation; GitHub CI verification pending. No target app/screen-reader certification."
+    },
+    {
+      "id": "UI-049",
+      "exportName": "ValidationSummary",
+      "category": "feedback",
+      "description": "Form error summary with explicit host-provided navigation/focus callbacks",
+      "source": "packages/ui/src/workflows.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "interaction": "controlled properties and callbacks; behavior limitations in packages/ui/README.md",
+      "verified": "V0.22 reference implementation; GitHub CI verification pending. No target app/screen-reader certification."
+    },
+    {
+      "id": "UI-050",
+      "exportName": "Sparkline",
+      "category": "data",
+      "description": "Accessible inline SVG trend sparkline for numeric arrays with honest range semantics",
+      "source": "packages/ui/src/workflows.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "interaction": "controlled properties and callbacks; behavior limitations in packages/ui/README.md",
+      "verified": "V0.22 reference implementation; GitHub CI verification pending. No target app/screen-reader certification."
+    },
+    {
+      "id": "UI-051",
+      "exportName": "DashboardGrid",
+      "category": "layout",
+      "description": "Responsive four-column layout with declared card spans and semantic panel headings",
+      "source": "packages/ui/src/workflows.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "interaction": "controlled properties and callbacks; behavior limitations in packages/ui/README.md",
+      "verified": "V0.22 reference implementation; GitHub CI verification pending. No target app/screen-reader certification."
     }
   ],
   "stateMatrix": "registry/component-states.json",

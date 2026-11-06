@@ -5,7 +5,9 @@ import {ThemeSurface,Button,Badge,Card,TextField,TextAreaField,SelectField,Check
  Tabs,Alert,Progress,Skeleton,Dialog,EmptyState,Avatar,DataList,Toast,
  DataTable,TreeView,Combobox,Popover,DualRangeField,
  CommandMenu,DatePicker,ResizablePanels,FileUpload,
- Tooltip,Breadcrumb,Pagination,Accordion,SidebarNav,type DataTableColumn,type DataTableSort,type ThemeId,type Tone} from "../../../packages/ui/src/index";
+ Tooltip,Breadcrumb,Pagination,Accordion,SidebarNav,
+ FormWizard,RepeatableFields,ValidationSummary,Sparkline,DashboardGrid,
+ type RepeatableFieldItem,type DataTableColumn,type DataTableSort,type ThemeId,type Tone} from "../../../packages/ui/src/index";
 import "../../../tokens/refined-light.css";
 import "../../../styles/precision-dark/tokens.css";
 import "../../../styles/editorial-warm/tokens.css";
@@ -83,6 +85,12 @@ function App(){
  const [openAccordion,setOpenAccordion]=React.useState<string[]>(["usage"]);
  const [activeSection,setActiveSection]=React.useState("workspace");
  const [openSidebar,setOpenSidebar]=React.useState<string[]>(["workspace"]);
+ const [wizardStep,setWizardStep]=React.useState("profile");
+ const [wizardName,setWizardName]=React.useState("");
+ const [wizardDone,setWizardDone]=React.useState(false);
+ const [repeatEntries,setRepeatEntries]=React.useState<RepeatableFieldItem[]>([{id:"entry-1",value:"李明"}]);
+ const repeatSeq=React.useRef(2);
+ const [showValidation,setShowValidation]=React.useState(false);
  const sortedReviewRows=React.useMemo(()=>!tableSort?reviewRows:
   [...reviewRows].sort((a,b)=>{
    const diff=tableSort.key==="priority"?a.priority-b.priority:
@@ -96,7 +104,7 @@ function App(){
  };
  return <div className="cg-app">
  <header className="cg-top">
-  <div className="cg-brand"><span className="cg-mark">◈</span><div><strong>Component Library</strong><small>Frontend Design Assets / v0.21</small></div></div>
+  <div className="cg-brand"><span className="cg-mark">◈</span><div><strong>Component Library</strong><small>Frontend Design Assets / v0.22</small></div></div>
   <a href="https://github.com/mingqiangdu1-arch/frontend-design-assets/tree/main/packages/ui" target="_blank" rel="noreferrer">GitHub 源码 ↗</a>
  </header>
  <div className="cg-picker" role="group" aria-label="选择组件预览风格">
@@ -107,7 +115,7 @@ function App(){
  <ThemeSurface theme={theme} className="cg-surface">
   <div className="cg-intro"><div><small>LIVE REACT / TYPESCRIPT COMPONENTS</small>
     <h1>组件不仅要好看，也要能直接组装。</h1>
-    <p>32 个实际 React 组件，本轮新增提示气泡、面包屑、分页、折叠内容与多层侧边导航。当前是参考实现，尚未进行生产集成认证。</p>
+    <p>37 个实际 React 组件，新增流程向导、可重复字段、表单错误摘要、趋势迷你图和自适应仪表盘布局。当前是参考实现，尚未进行生产集成认证。</p>
    </div><Badge tone="neutral">{themes.find(x=>x.id===theme)?.label}</Badge>
   </div>
   <div className="cg-grid">
@@ -283,6 +291,60 @@ function App(){
       {id:"archive",label:"历史归档",disabled:true}
      ]}/>
     <span className="cg-hint">当前页面：{activeSection} · 展开状态与页面选择相互独立</span>
+   </Specimen>
+
+   <Specimen id="form-wizard" title="FormWizard" caption="Controlled steps / guarded Next / host completion">
+    <FormWizard label="项目建立向导" currentStepId={wizardStep} onStepChange={setWizardStep}
+     canAdvance={wizardStep!=="profile"||wizardName.trim().length>=3}
+     onComplete={()=>setWizardDone(true)} completeLabel="完成模拟流程"
+     steps={[
+      {id:"profile",title:"基本信息",description:"至少填写三个字符才能进入下一步",
+       content:<label className="cg-local-field" htmlFor="wizard-project-name">
+        项目名称<input id="wizard-project-name" value={wizardName}
+         onChange={e=>setWizardName(e.target.value)} placeholder="至少三个字符"/></label>},
+      {id:"details",title:"配置",description:"选择后由真实产品完成权限与数据校验",
+       content:<p className="cg-text">此处展示配置说明，不会提交服务器。</p>},
+      {id:"review",title:"复核",description:"提交之前需要真实业务方完成校验",
+       content:<p className="cg-text">请确认项目名：{wizardName}</p>}
+     ]}/>
+    <span className="cg-hint">当前步骤：{wizardStep} · 完成回调：{wizardDone?"已触发":"未触发"}</span>
+   </Specimen>
+   <Specimen id="repeatable-fields" title="RepeatableFields" caption="Stable IDs / bounded add-remove / native inputs">
+    <RepeatableFields label="参与人员名单" items={repeatEntries} minItems={1} maxItems={3}
+     inputLabel="参与者" placeholder="填写姓名"
+     onAdd={()=>{const id="entry-"+repeatSeq.current++;setRepeatEntries(v=>[...v,{id,value:""}]);}}
+     onChange={(id,value)=>setRepeatEntries(v=>v.map(item=>item.id===id?{...item,value}:item))}
+     onRemove={id=>setRepeatEntries(v=>v.filter(item=>item.id!==id))}/>
+    <span className="cg-hint">当前字段 ID：{repeatEntries.map(item=>item.id).join("、")}</span>
+   </Specimen>
+   <Specimen id="validation-summary" title="ValidationSummary" caption="Error links / explicit host focus / no automatic form submission">
+    <div className="cg-stack">
+     <div className="cg-row"><label className="cg-local-field" htmlFor="v22-email">电子邮箱
+      <input id="v22-email" type="email" placeholder="name@example.com"/></label>
+      <label className="cg-local-field" htmlFor="v22-code">项目编号
+       <input id="v22-code" placeholder="ABC-001"/></label></div>
+     <button type="button" onClick={()=>setShowValidation(v=>!v)}>显示或隐藏错误摘要</button>
+     <ValidationSummary label="有字段需要检查"
+      issues={showValidation?[
+       {id:"email",fieldId:"v22-email",message:"电子邮箱需要检查"},
+       {id:"code",fieldId:"v22-code",message:"项目编号需要检查"}
+      ]:[]} onNavigate={fieldId=>document.getElementById(fieldId)?.focus()}/>
+    </div>
+   </Specimen>
+   <Specimen id="sparkline" title="Sparkline" caption="Original accessible SVG / supplied numeric values">
+    <Sparkline label="审核处理趋势" values={[23,28,21,38,30,42,47,40,53]}
+     summary="9 个模拟观测点 · 数据为测试夹具"/>
+    <span className="cg-hint">曲线从真实传入数值计算；不连接外部行情或 API。</span>
+   </Specimen>
+   <Specimen id="dashboard-grid" title="DashboardGrid" caption="Responsive 4→2→1 columns / per-panel span">
+    <DashboardGrid label="组件复用仪表盘" items={[
+     {id:"overview",title:"资产概览",span:2,description:"本地测试布局，不是实时指标",
+      content:<p>支持大卡片跨越两列，并保留语义化标题。</p>},
+     {id:"build",title:"构建状态",content:<strong>通过</strong>},
+     {id:"quality",title:"验证状态",content:<strong>参考级</strong>},
+     {id:"timeline",title:"交付记录",span:4,
+      content:<p>桌面跨四列，平板不超过两列，窄屏回到单列。</p>}
+    ]}/>
    </Specimen>
    <Specimen id="cards" title="Cards & Empty" caption="modular composition">
      <Card heading="可组合信息卡片" description="不同风格的卡片有不同的信息密度和结构" footer={<><Button size="sm">创建</Button><Button size="sm" variant="ghost">了解更多</Button></>}>

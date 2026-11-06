@@ -2,11 +2,11 @@ import {test,expect} from "@playwright/test";
 
 test.beforeEach(async({page})=>{await page.goto("/");});
 
-test("gallery presents 32 component exports and explicit themes",async({page})=>{
+test("gallery presents 37 component exports and explicit themes",async({page})=>{
  await expect(page.getByRole("heading",{name:/组件不仅要好看/})).toBeVisible();
  await expect(page.locator("[data-theme-button]")).toHaveCount(4);
  await expect(page.locator('[data-theme-button="refined-light-saas"]')).toHaveAttribute("aria-pressed","true");
- await expect(page.locator(".cg-spec")).toHaveCount(23);
+ await expect(page.locator(".cg-spec")).toHaveCount(28);
 });
 
 test("switching style updates scope and semantic background",async({page})=>{
@@ -21,7 +21,7 @@ test("switching style updates scope and semantic background",async({page})=>{
 });
 
 test("form input exposes inline error and controlled values",async({page})=>{
- const input=page.getByRole("textbox",{name:/项目名称/});
+ const input=page.locator("#forms").getByRole("textbox",{name:/项目名称/});
  await input.fill("ab");
  await expect(input).toHaveAttribute("aria-invalid","true");
  await expect(page.getByRole("alert").filter({hasText:"至少需要 3 个字符"})).toBeVisible();
@@ -312,6 +312,86 @@ test("V0.21 navigation specimens avoid global overflow at mobile and desktop wid
    await page.locator('[data-theme-button="'+theme+'"]').click();
    const size=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
    expect(size.scroll,theme+" / "+width).toBeLessThanOrEqual(size.client+1);
+  }
+ }
+});
+
+
+test("FormWizard gates next step, allows returning and only completes at final step",async({page})=>{
+ const scope=page.locator("#form-wizard"),next=scope.getByRole("button",{name:"下一步"});
+ await expect(next).toBeDisabled();
+ const name=scope.getByRole("textbox",{name:"项目名称"});
+ await name.fill("ab");await expect(next).toBeDisabled();
+ await name.fill("设计研发平台");await expect(next).toBeEnabled();
+ await next.click();
+ await expect(scope.getByText("当前步骤：details")).toBeVisible();
+ await scope.getByRole("button",{name:"返回基本信息"}).click();
+ await expect(name).toHaveValue("设计研发平台");
+ await next.click();await next.click();
+ await expect(scope.getByRole("button",{name:"完成模拟流程"})).toBeEnabled();
+ await scope.getByRole("button",{name:"完成模拟流程"}).click();
+ await expect(scope.locator(".cg-hint")).toContainText("已触发");
+});
+
+test("RepeatableFields handles controlled edits, bounds and stable ID removal",async({page})=>{
+ const scope=page.locator("#repeatable-fields");
+ await expect(scope.getByRole("textbox",{name:"参与者 1"})).toHaveValue("李明");
+ await expect(scope.getByRole("button",{name:"移除参与者 1"})).toBeDisabled();
+ const add=scope.getByRole("button",{name:"添加参与者"});
+ await add.click();
+ await scope.getByRole("textbox",{name:"参与者 2"}).fill("王丽");
+ await add.click();
+ await expect(add).toBeDisabled();
+ await expect(scope.getByRole("textbox",{name:"参与者 2"})).toHaveValue("王丽");
+ await scope.getByRole("button",{name:"移除参与者 2"}).click();
+ await expect(scope.locator(".cg-hint")).not.toContainText("entry-2");
+ await expect(add).toBeEnabled();
+});
+
+test("ValidationSummary navigates to host-provided field without automatic submission",async({page})=>{
+ const scope=page.locator("#validation-summary");
+ await expect(scope.locator('[role="alert"]')).toHaveCount(0);
+ await scope.getByRole("button",{name:"显示或隐藏错误摘要"}).click();
+ const summary=scope.locator('[role="alert"]');
+ await expect(summary).toContainText("2 项");
+ await summary.getByRole("button",{name:"项目编号需要检查"}).click();
+ await expect(scope.locator("#v22-code")).toBeFocused();
+ await summary.getByRole("button",{name:"电子邮箱需要检查"}).click();
+ await expect(scope.locator("#v22-email")).toBeFocused();
+ await scope.getByRole("button",{name:"显示或隐藏错误摘要"}).click();
+ await expect(scope.locator('[role="alert"]')).toHaveCount(0);
+});
+
+test("Sparkline uses accessible real SVG path and a finite point array",async({page})=>{
+ const scope=page.locator("#sparkline"),chart=scope.getByRole("img",{name:/审核处理趋势/});
+ await expect(chart).toBeVisible();
+ await expect(chart).toHaveAttribute("viewBox","0 0 200 60");
+ await expect(chart).toHaveAttribute("aria-label",/9 个数据点/);
+ const path=await chart.locator("path").getAttribute("d");
+ expect(path).toMatch(/^M[0-9.]+ [0-9.]+ L/);
+ expect(path?.includes("NaN")).toBeFalsy();
+ await expect(scope.getByText("9 个模拟观测点")).toBeVisible();
+});
+
+test("DashboardGrid keeps card semantics and derives 4/2/1 columns",async({page})=>{
+ const grid=page.getByRole("region",{name:"组件复用仪表盘"});
+ await expect(grid.locator("article")).toHaveCount(4);
+ await expect(grid.locator('[data-span="4"]')).toHaveCount(1);
+ await expect(grid.getByRole("heading",{name:"交付记录"})).toBeVisible();
+ for(const [width,count] of [[1440,4],[768,2],[390,1]]){
+  await page.setViewportSize({width,height:900});
+  const cols=await grid.evaluate(el=>getComputedStyle(el).gridTemplateColumns.split(" ").length);
+  expect(cols,"grid at "+width).toBe(count);
+ }
+});
+
+test("V0.22 complex-form and dashboard specimens stay within responsive theme widths",async({page})=>{
+ for(const width of [390,768,1440]){
+  await page.setViewportSize({width,height:900});
+  for(const theme of ["refined-light-saas","precision-dark","editorial-warm","playful-pop"]){
+   await page.locator('[data-theme-button="'+theme+'"]').click();
+   const measure=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
+   expect(measure.scroll,theme+" / "+width).toBeLessThanOrEqual(measure.client+1);
   }
  }
 });

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "scope": "Selected state matrix continues to cover 12 older exports; V0.19/V0.20/V0.21 component additions remain explicitly uncovered in that matrix and have dedicated Gallery browser tests.",
+  "scope": "Selected-state matrix still covers 12 initial exports; newer V0.19–V0.22 additions are deliberately declared uncovered and are separately tested through live Gallery.",
   "styleIds": [
     "refined-light-saas",
     "precision-dark",
@@ -144,7 +144,12 @@
     "UI-043",
     "UI-044",
     "UI-045",
-    "UI-046"
+    "UI-046",
+    "UI-047",
+    "UI-048",
+    "UI-049",
+    "UI-050",
+    "UI-051"
   ],
   "maturity": "prototype",
   "visualBaselineStatus": "unapproved",
