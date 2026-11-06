@@ -87,3 +87,9 @@ These references do not license copying vendors' UI, artwork, trademarks or font
 - **REF-031:** [heydamir/unslop](https://github.com/heydamir/unslop), [instructions](https://github.com/heydamir/unslop/blob/main/skills/unslop/SKILL.md), licensed CC BY 4.0 — original product-specific design critique and controlled UI revision; avoid copying text/art without credit.
 - **REF-032:** [Nutlope/hallmark](https://github.com/Nutlope/hallmark), [instructions](https://github.com/Nutlope/hallmark/blob/main/skills/hallmark/SKILL.md), [gates](https://github.com/Nutlope/hallmark/blob/main/skills/hallmark/references/gates.md), licensed MIT — broad theme material and browser QA gate architecture. External photographs have individual licenses.
 - [Comparative analysis and repository adoption limits](unslop-hallmark.md): study the approach, don't turn either vendor's style preferences into mandatory local constraints.
+
+## V0.18 external reference extensions (2026-11-06)
+
+New indexed material: **REF-033..038 and REF-041**, covering [Animate UI](https://github.com/imskyleen/animate-ui), [Motion-Primitives](https://github.com/ibelick/motion-primitives), [React Bits](https://github.com/DavidHDev/react-bits), [Leva](https://github.com/pmndrs/leva), [WAI-ARIA Treegrid](https://www.w3.org/WAI/ARIA/apg/patterns/treegrid/), [MDN View Transitions](https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API) and [Observable Plot](https://github.com/observablehq/plot). Also added **REF-039/040**, two independently authored visual grammar research sketches rather than borrowed vendor designs.
+
+[Source matrix and license constraints](external-catalog-v018.md) records their use and limits. React Bits and Animate UI are licensed MIT + Commons Clause: do **not** treat their code as automatically redistributable components in this living library. No upstream source imported.

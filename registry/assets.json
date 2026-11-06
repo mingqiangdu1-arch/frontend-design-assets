@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.2",
   "purpose": "Living cross-application, multi-style design asset repository; no repository-wide visual default.",
-  "updatedAt": "2026-11-05",
+  "updatedAt": "2026-11-06",
   "stageDefinitions": [
     "captured",
     "analyzed",
@@ -3958,11 +3958,555 @@
         "IP-024"
       ],
       "verified": "Original independent local-only demonstration of two behaviors. Style wrapper is not a default theme or production-ready component."
+    },
+    {
+      "id": "REF-033",
+      "type": "reference",
+      "name": "Animate UI — animated accessible primitive research",
+      "stage": "analyzed",
+      "priority": "P2",
+      "tags": [
+        "motion",
+        "animated-primitives",
+        "state-transitions"
+      ],
+      "source": "https://github.com/imskyleen/animate-ui",
+      "path": "docs/research/external-catalog-v018.md",
+      "details": "docs/research/external-catalog-v018.md",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "design-research"
+      ],
+      "license": "MIT + Commons Clause; redistribution as a component library restricted",
+      "verified": "Upstream publicly documented source and license direction reviewed 2026-11-06; not installed, copied, dependency-tested or accessibility-certified."
+    },
+    {
+      "id": "REF-034",
+      "type": "reference",
+      "name": "Motion-Primitives — portable animated compositions",
+      "stage": "analyzed",
+      "priority": "P2",
+      "tags": [
+        "motion",
+        "motion-components",
+        "transitions"
+      ],
+      "source": "https://github.com/ibelick/motion-primitives",
+      "path": "docs/research/external-catalog-v018.md",
+      "details": "docs/research/external-catalog-v018.md",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "design-research"
+      ],
+      "license": "MIT; retain attribution/notice if adapted",
+      "verified": "Upstream publicly documented source and license direction reviewed 2026-11-06; not installed, copied, dependency-tested or accessibility-certified."
+    },
+    {
+      "id": "REF-035",
+      "type": "reference",
+      "name": "React Bits — experimental creative UI inspiration",
+      "stage": "analyzed",
+      "priority": "P2",
+      "tags": [
+        "animation",
+        "creative-effects",
+        "backgrounds"
+      ],
+      "source": "https://github.com/DavidHDev/react-bits",
+      "path": "docs/research/external-catalog-v018.md",
+      "details": "docs/research/external-catalog-v018.md",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "design-research"
+      ],
+      "license": "MIT + Commons Clause; do not repackage standalone components",
+      "verified": "Upstream publicly documented source and license direction reviewed 2026-11-06; not installed, copied, dependency-tested or accessibility-certified."
+    },
+    {
+      "id": "REF-036",
+      "type": "reference",
+      "name": "Leva — creator parameter panel and input patterns",
+      "stage": "analyzed",
+      "priority": "P2",
+      "tags": [
+        "parameter-control",
+        "creator-tool",
+        "numeric-input"
+      ],
+      "source": "https://github.com/pmndrs/leva",
+      "path": "docs/research/external-catalog-v018.md",
+      "details": "docs/research/external-catalog-v018.md",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "design-research",
+        "creative-tool",
+        "parameter-editor"
+      ],
+      "license": "MIT; verify then-current React compatibility before integrating",
+      "verified": "Upstream publicly documented source and license direction reviewed 2026-11-06; not installed, copied, dependency-tested or accessibility-certified."
+    },
+    {
+      "id": "REF-037",
+      "type": "reference",
+      "name": "WAI-ARIA Treegrid Pattern — hierarchical keyboard contract",
+      "stage": "analyzed",
+      "priority": "P2",
+      "tags": [
+        "accessibility",
+        "treegrid",
+        "keyboard"
+      ],
+      "source": "https://www.w3.org/WAI/ARIA/apg/patterns/treegrid/",
+      "path": "docs/research/external-catalog-v018.md",
+      "details": "docs/research/external-catalog-v018.md",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "design-research",
+        "data-tool",
+        "workspace"
+      ],
+      "license": "Public accessibility standards guidance; no code copied",
+      "verified": "Upstream publicly documented source and license direction reviewed 2026-11-06; not installed, copied, dependency-tested or accessibility-certified."
+    },
+    {
+      "id": "REF-038",
+      "type": "reference",
+      "name": "MDN View Transitions — progressive motion and focus notes",
+      "stage": "analyzed",
+      "priority": "P2",
+      "tags": [
+        "view-transition",
+        "focus",
+        "motion"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API",
+      "path": "docs/research/external-catalog-v018.md",
+      "details": "docs/research/external-catalog-v018.md",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "design-research"
+      ],
+      "license": "Public API documentation; browser/runtime support requires actual verification",
+      "verified": "Upstream publicly documented source and license direction reviewed 2026-11-06; not installed, copied, dependency-tested or accessibility-certified."
+    },
+    {
+      "id": "REF-041",
+      "type": "reference",
+      "name": "Observable Plot — layered data marks and scales",
+      "stage": "analyzed",
+      "priority": "P2",
+      "tags": [
+        "data-visualization",
+        "linked-views",
+        "chart"
+      ],
+      "source": "https://github.com/observablehq/plot",
+      "path": "docs/research/external-catalog-v018.md",
+      "details": "docs/research/external-catalog-v018.md",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "design-research",
+        "data-story",
+        "interactive-report"
+      ],
+      "license": "ISC; retain copyright/license if used",
+      "verified": "Upstream publicly documented source and license direction reviewed 2026-11-06; not installed, copied, dependency-tested or accessibility-certified."
+    },
+    {
+      "id": "REF-039",
+      "type": "reference",
+      "name": "Atlas Ledger — original evidence-cartography visual grammar",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "data-story",
+        "interactive-report",
+        "cultural-map",
+        "digital-exhibition"
+      ],
+      "tags": [
+        "visual-grammar",
+        "atlas",
+        "cartographic",
+        "evidence",
+        "editorial"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "docs/styles/visual-studies-v018.md",
+      "details": "docs/styles/visual-studies-v018.md",
+      "sampleTokens": "styles/research/atlas-ledger.tokens.css",
+      "license": "Original composition grammar and scoped research-only token sketch; not vendor tokens",
+      "verified": "Original design study with partial scoped CSS tokens. No registered styleId, complete app theme, browser/contrast audit or target adoption."
+    },
+    {
+      "id": "REF-040",
+      "type": "reference",
+      "name": "Tactile Instrument — original precision-control visual grammar",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-tool",
+        "sound-design",
+        "color-grading",
+        "parameter-editor"
+      ],
+      "tags": [
+        "visual-grammar",
+        "tactile",
+        "instrument",
+        "parameter",
+        "analog"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "docs/styles/visual-studies-v018.md",
+      "details": "docs/styles/visual-studies-v018.md",
+      "sampleTokens": "styles/research/tactile-instrument.tokens.css",
+      "license": "Original composition grammar and scoped research-only token sketch; not vendor tokens",
+      "verified": "Original design study with partial scoped CSS tokens. No registered styleId, complete app theme, browser/contrast audit or target adoption."
+    },
+    {
+      "id": "IP-025",
+      "type": "interaction",
+      "name": "Hierarchical treegrid navigation, editing and collapse-safe focus",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "treegrid",
+        "hierarchy",
+        "keyboard",
+        "focus",
+        "inline-edit"
+      ],
+      "path": "docs/interactions/advanced-patterns-v018.md",
+      "details": "docs/interactions/advanced-patterns-v018.md",
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "styleIds": [],
+      "applicationContexts": [
+        "workspace",
+        "data-tool",
+        "editor"
+      ],
+      "dependencies": [
+        "REF-037"
+      ],
+      "license": "Original behavior specification; no third-party code copied",
+      "verified": "Original behavior specification only; no runnable UI, screen-reader or device verification."
+    },
+    {
+      "id": "IP-026",
+      "type": "interaction",
+      "name": "Linked brushing across map, chart and record list",
+      "stage": "prototype",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "linked-views",
+        "brush",
+        "selection",
+        "visualization",
+        "map"
+      ],
+      "path": "docs/interactions/advanced-patterns-v018.md",
+      "details": "docs/interactions/advanced-patterns-v018.md",
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "styleIds": [],
+      "applicationContexts": [
+        "data-story",
+        "interactive-report",
+        "data-tool"
+      ],
+      "dependencies": [
+        "REF-041"
+      ],
+      "license": "Original behavior specification and headless Node model; no third-party code copied",
+      "verified": "Original headless Node model with focused deterministic tests; no DOM/React/browser/real API integration.",
+      "handoff": {
+        "entry": "interactions/research/linked-brush.mjs",
+        "stack": "Node.js ESM / vanilla JavaScript pure state model",
+        "instructions": "Port the state invariants and user-input contract to the target framework; treat model code as reference, not UI.",
+        "limitations": "No DOM bindings, pointer/keyboard adapter, graphic rendering, persistence, device or assistive-tech verification."
+      }
+    },
+    {
+      "id": "IP-027",
+      "type": "interaction",
+      "name": "Source-linked annotation pins with collision-aware overlay",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "annotations",
+        "pins",
+        "anchor",
+        "focus-return",
+        "provenance"
+      ],
+      "path": "docs/interactions/advanced-patterns-v018.md",
+      "details": "docs/interactions/advanced-patterns-v018.md",
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "styleIds": [],
+      "applicationContexts": [
+        "document-review",
+        "design-review",
+        "digital-exhibition",
+        "data-story"
+      ],
+      "dependencies": [
+        "IP-002"
+      ],
+      "license": "Original behavior specification; no third-party code copied",
+      "verified": "Original behavior specification only; no runnable UI, screen-reader or device verification."
+    },
+    {
+      "id": "IP-028",
+      "type": "interaction",
+      "name": "Constraint-aware dual-handle parameter range editing",
+      "stage": "prototype",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "dual-thumb",
+        "range",
+        "precision",
+        "constraints",
+        "numeric"
+      ],
+      "path": "docs/interactions/advanced-patterns-v018.md",
+      "details": "docs/interactions/advanced-patterns-v018.md",
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "styleIds": [],
+      "applicationContexts": [
+        "parameter-editor",
+        "creative-tool",
+        "advanced-filter"
+      ],
+      "dependencies": [
+        "IP-020"
+      ],
+      "license": "Original behavior specification and headless Node model; no third-party code copied",
+      "verified": "Original headless Node model with focused deterministic tests; no DOM/React/browser/real API integration.",
+      "handoff": {
+        "entry": "interactions/research/constraint-range.mjs",
+        "stack": "Node.js ESM / vanilla JavaScript pure state model",
+        "instructions": "Port the state invariants and user-input contract to the target framework; treat model code as reference, not UI.",
+        "limitations": "No DOM bindings, pointer/keyboard adapter, graphic rendering, persistence, device or assistive-tech verification."
+      }
+    },
+    {
+      "id": "IP-029",
+      "type": "interaction",
+      "name": "Branching story choice graph with backtrack and consequence",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "branching",
+        "choice",
+        "story",
+        "graph",
+        "backtrack"
+      ],
+      "path": "docs/interactions/advanced-patterns-v018.md",
+      "details": "docs/interactions/advanced-patterns-v018.md",
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "styleIds": [],
+      "applicationContexts": [
+        "interactive-story",
+        "gamified-learning",
+        "digital-exhibition"
+      ],
+      "dependencies": [
+        "IP-024"
+      ],
+      "license": "Original behavior specification; no third-party code copied",
+      "verified": "Original behavior specification only; no runnable UI, screen-reader or device verification."
+    },
+    {
+      "id": "IP-030",
+      "type": "interaction",
+      "name": "Tactile rotary control with numeric and keyboard parity",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "dial",
+        "rotary",
+        "precision",
+        "keyboard",
+        "tactile"
+      ],
+      "path": "docs/interactions/advanced-patterns-v018.md",
+      "details": "docs/interactions/advanced-patterns-v018.md",
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-tool",
+        "sound-design",
+        "parameter-editor"
+      ],
+      "dependencies": [
+        "IP-028"
+      ],
+      "license": "Original behavior specification; no third-party code copied",
+      "verified": "Original behavior specification only; no runnable UI, screen-reader or device verification."
+    },
+    {
+      "id": "UI-028",
+      "type": "component",
+      "name": "Hierarchy Explorer Row — collapsible nested data morphology",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "tree",
+        "treegrid",
+        "row",
+        "component-archetype"
+      ],
+      "reuseKind": "composition-recipe",
+      "styleIds": [],
+      "applicationContexts": [
+        "workspace",
+        "data-tool",
+        "file-explorer"
+      ],
+      "dependencies": [
+        "IP-025"
+      ],
+      "path": "docs/components/advanced-patterns-v018.md",
+      "details": "docs/components/advanced-patterns-v018.md",
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original component anatomy and state specification only",
+      "verified": "Component archetype/reference only: NOT a React export, TSX/CSS implementation or production-ready UI."
+    },
+    {
+      "id": "UI-029",
+      "type": "component",
+      "name": "Linked Data Legend Rail — visible and hidden selection",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "legend",
+        "filters",
+        "selected-count",
+        "linked-view"
+      ],
+      "reuseKind": "composition-recipe",
+      "styleIds": [],
+      "applicationContexts": [
+        "data-story",
+        "interactive-report",
+        "data-tool"
+      ],
+      "dependencies": [
+        "IP-026"
+      ],
+      "path": "docs/components/advanced-patterns-v018.md",
+      "details": "docs/components/advanced-patterns-v018.md",
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original component anatomy and state specification only",
+      "verified": "Component archetype/reference only: NOT a React export, TSX/CSS implementation or production-ready UI."
+    },
+    {
+      "id": "UI-030",
+      "type": "component",
+      "name": "Annotation & Provenance Drawer — evidence and source notes",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "annotation",
+        "drawer",
+        "provenance",
+        "evidence"
+      ],
+      "reuseKind": "composition-recipe",
+      "styleIds": [],
+      "applicationContexts": [
+        "document-review",
+        "digital-exhibition",
+        "data-story"
+      ],
+      "dependencies": [
+        "IP-027"
+      ],
+      "path": "docs/components/advanced-patterns-v018.md",
+      "details": "docs/components/advanced-patterns-v018.md",
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original component anatomy and state specification only",
+      "verified": "Component archetype/reference only: NOT a React export, TSX/CSS implementation or production-ready UI."
+    },
+    {
+      "id": "UI-031",
+      "type": "component",
+      "name": "Dual-Range Band Editor — separate numeric and visual controls",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "dual-range",
+        "numeric-input",
+        "constraints",
+        "component-archetype"
+      ],
+      "reuseKind": "composition-recipe",
+      "styleIds": [],
+      "applicationContexts": [
+        "parameter-editor",
+        "creative-tool",
+        "advanced-filter"
+      ],
+      "dependencies": [
+        "IP-028"
+      ],
+      "path": "docs/components/advanced-patterns-v018.md",
+      "details": "docs/components/advanced-patterns-v018.md",
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original component anatomy and state specification only",
+      "verified": "Component archetype/reference only: NOT a React export, TSX/CSS implementation or production-ready UI."
+    },
+    {
+      "id": "UI-032",
+      "type": "component",
+      "name": "Parameter Control Rack — dial, readout and native fallback",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "knob",
+        "rack",
+        "calibration",
+        "tactile",
+        "parameter"
+      ],
+      "reuseKind": "composition-recipe",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-tool",
+        "sound-design",
+        "color-grading"
+      ],
+      "dependencies": [
+        "IP-030"
+      ],
+      "path": "docs/components/advanced-patterns-v018.md",
+      "details": "docs/components/advanced-patterns-v018.md",
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original component anatomy and state specification only",
+      "verified": "Component archetype/reference only: NOT a React export, TSX/CSS implementation or production-ready UI."
     }
   ],
   "referenceImplementationRoot": "components/reference",
   "styleRegistry": "registry/styles.json",
-  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee.",
+  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee. V0.18 adds research-only visual studies outside registry/styles.json and component archetypes outside registry/components.json; IP-026/IP-028 only include headless pure models, not UI components.",
   "reusePolicyVersion": "1.0",
   "reusePolicies": {
     "style-token": {

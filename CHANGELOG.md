@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-11-06 · V0.18 material expansion: visual grammars, controls and special interactions
+
+- **20 new indexed research assets** (133 → 153): 9 references (7 verified upstream research links + 2 original visual-study entries), 6 advanced interaction contracts (IP-025..030), and 5 component morphology references (UI-028..032). No duplicate style names, asset IDs, or automatic theme compatibility.
+- Two distinct new, deliberately **unregistered** visual studies (Atlas Ledger/evidence cartography and Tactile Instrument/precision workshop), with original scoped CSS token sketches; the ten complete style profiles remain unchanged.
+- Two original headless JavaScript behavior models for linked multi-view brushing (IP-026) and step-constrained dual-range editing (IP-028), with focused deterministic Node tests; neither represents a tested browser/React component.
+- External source/license research on Animate UI, Motion-Primitives, React Bits, Leva, WAI APG treegrid, MDN View Transitions and Observable Plot. Upstream code/images/fonts/packages are not imported; MIT + Commons Clause redistribution risks are explicitly recorded.
+- New component and interaction design-contract docs, source register, index-integrity tests and GitHub-first guidance. No new browser Demo, third-party dependency, deployed page or production/a11y certification.
+
+
 ## 2026-11-06 · V0.17 explainable preference-fit comparison
 
 - Annotated all 16 existing original architecture research recipes with a declared fit profile, concrete evidence and tradeoff: content density, primary device, interaction complexity and visual expression (not aesthetic quality).

@@ -27,6 +27,7 @@
 | **高级／特殊交互 V0.16（多轨磁吸时间线、滚动驱动叙事）** | [Interaction Atelier III](playground/advanced-interactions-v3/index.html) / [行为与失败路径](docs/interactions/advanced-interactions-v3.md) |
 | 研究来源与历史记录 | [docs/research/sources.md](docs/research/sources.md) / [动效与 View Transitions](docs/motion/motion-system.md) |
 | 查看初始交互 Demo | [playground/initial-interaction-lab.html](playground/initial-interaction-lab.html) |
+| **V0.18 新一批素材（视觉／交互／组件）** | [研究包导航](docs/research/external-catalog-v018.md) · [2 套独立视觉研究](docs/styles/visual-studies-v018.md) · [6 种高级交互](docs/interactions/advanced-patterns-v018.md) · [5 种组件形态](docs/components/advanced-patterns-v018.md) |
 | **构图方案匹配评价（V0.17）** | [可解释的匹配评价与取舍](docs/assembly/experience-compositions.md) · `npm run design:compose -- --context=consumer-mobile --density=low --device=mobile --complexity=simple --expression=restrained --format=markdown` |
 | **同一场景的差异化页面构图（V0.17）** | [16 个原创构图配方](docs/assembly/experience-compositions.md) · [机器可读结构/交互索引](registry/experience-compositions.json) · `npm run design:compose -- --context=consumer-mobile --concepts=2 --format=markdown` |
 | **AI 多素材设计组合规划（V0.17）** | [设计组合与选择规则](docs/assembly/design-composition.md) · `npm run design:compose -- --context=consumer-mobile --stack=react --format=markdown` |

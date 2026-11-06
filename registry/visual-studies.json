@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0",
+  "updatedAt": "2026-11-06",
+  "defaultStudyId": null,
+  "policy": "Research-only visual grammar plus original partial scoped CSS. No styleId, component package support, or automatic production certification is implied.",
+  "studies": [
+    {
+      "id": "VS-001",
+      "assetId": "REF-039",
+      "label": "Atlas Ledger / Evidence Cartography",
+      "status": "research-only",
+      "contexts": [
+        "data-story",
+        "interactive-report",
+        "cultural-map",
+        "public-data",
+        "digital-exhibition"
+      ],
+      "purpose": "Evidence-first atlas storytelling rather than SaaS panels",
+      "composition": [
+        "editorial issue marker",
+        "central map or data plate",
+        "legend and keyed evidence margin",
+        "linked annotated observations",
+        "methods and source notes"
+      ],
+      "typography": [
+        "editorial display",
+        "legible system captions",
+        "tabular data"
+      ],
+      "material": [
+        "parchment-neutral",
+        "cartographic rule",
+        "single source-grounded emphasis"
+      ],
+      "components": [
+        "UI-029",
+        "UI-030"
+      ],
+      "interactions": [
+        "IP-026",
+        "IP-027",
+        "IP-025"
+      ],
+      "tokens": "styles/research/atlas-ledger.tokens.css",
+      "documentation": "docs/styles/visual-studies-v018.md",
+      "limitations": "No map data, projection, geocoding, interaction UI or real-world source verification."
+    },
+    {
+      "id": "VS-002",
+      "assetId": "REF-040",
+      "label": "Tactile Instrument / Precision Workshop",
+      "status": "research-only",
+      "contexts": [
+        "sound-design",
+        "creative-tool",
+        "parameter-editor",
+        "color-grading",
+        "instrument-simulation"
+      ],
+      "purpose": "Precise creative parameters with physical-control affordances",
+      "composition": [
+        "single control focal stage",
+        "numeric feedback and measured scale",
+        "channel and parameter racks",
+        "visible preset and reset actions"
+      ],
+      "typography": [
+        "compact equipment labels",
+        "tabular numeric values",
+        "units on every scale"
+      ],
+      "material": [
+        "mineral dark chassis",
+        "warm amber focus",
+        "engraved panel seams"
+      ],
+      "components": [
+        "UI-031",
+        "UI-032"
+      ],
+      "interactions": [
+        "IP-028",
+        "IP-030",
+        "IP-029"
+      ],
+      "tokens": "styles/research/tactile-instrument.tokens.css",
+      "documentation": "docs/styles/visual-studies-v018.md",
+      "limitations": "No media rendering, hardware devices, real-time processing, touch dial or production audio contract."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+/* V0.18 original research tokens. NOT a complete theme or registered styleId. */
+[data-style-study="tactile-instrument"] {
+  --instrument-shell: #20282a;
+  --instrument-panel: #313b3a;
+  --instrument-face: #141d20;
+  --instrument-ink: #f1f0df;
+  --instrument-muted: #c2c8bf;
+  --instrument-accent: #eab977;
+  --instrument-positive: #a7d2b1;
+  --instrument-stroke: #65716a;
+  --instrument-focus: #ffdc93;
+  --instrument-radius: 12px;
+  color: var(--instrument-ink);
+  background: var(--instrument-shell);
+  font-family: system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+[data-style-study="tactile-instrument"] .instrument-panel {
+  background: var(--instrument-panel);
+  border: 1px solid var(--instrument-stroke);
+  border-radius: var(--instrument-radius);
+}
+[data-style-study="tactile-instrument"] .instrument-readout {
+  background: var(--instrument-face);
+  color: var(--instrument-accent);
+  font-variant-numeric: tabular-nums;
+}
+[data-style-study="tactile-instrument"] .instrument-label {
+  color: var(--instrument-muted);
+}
+[data-style-study="tactile-instrument"] :focus-visible {
+  outline: 3px solid var(--instrument-focus);
+  outline-offset: 3px;
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-style-study="tactile-instrument"] *,
+  [data-style-study="tactile-instrument"] *::before,
+  [data-style-study="tactile-instrument"] *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

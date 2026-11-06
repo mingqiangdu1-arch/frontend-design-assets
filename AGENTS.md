@@ -2,6 +2,14 @@
 
 This repository is a **living multi-style, cross-application design asset library** — not an AI WORKFLOW PLATFORM kit.
 
+## V0.18 asset expansion — prefer source material over more orchestration
+
+- Browse the [new material index](docs/research/external-catalog-v018.md), [independent visual grammar studies](docs/styles/visual-studies-v018.md), [advanced interaction specs](docs/interactions/advanced-patterns-v018.md), and [component archetypes](docs/components/advanced-patterns-v018.md). These increase **actual creative/behavior vocabulary**; do not replace this round with a new scoring/planning tool.
+- VS-001/002 are original, **research-only** visual studies with partial CSS token sketches under `[data-style-study]`. They are **not** registered `styleId` themes, not complete app skins, and not compatible with `packages/ui` by implication. Keep the existing 10 style IDs and no default.
+- UI-028..032 are component anatomy and state references, **not** new React exports. IP-026 and IP-028 provide only two headless Node models under `interactions/research/`, not browser widgets. Other IP specs are text-only. Do not claim external libraries installed or copy components from MIT + Commons Clause sources into a redistributed library.
+- For direct retrieval use `node scripts/find-assets.mjs --intent=linked --goal=behavior --json` or search `REF-039`, `IP-028`, `UI-031` in `registry/assets.json`. Read the exact spec and source/link before adopting one into an application; preserve license, keyboard/fallback, and limited test evidence.
+- GitHub-first validation: use existing registry + deterministic Node CI only for this research batch. Do not add a new browser demo, visual-quality approval or target-project integration just to expand the archive.
+
 ## V0.17 evidence-limited creative comparison (GitHub-first)
 
 - Before selecting among different `XC-xxx` layouts, read [the preference fit rubric](docs/assembly/experience-compositions.md). Where the actual product brief supplies preferences, call `npm run design:compose -- --context=<context> --device=mobile --density=low --complexity=simple --expression=restrained --format=markdown` with only truly grounded dimensions.

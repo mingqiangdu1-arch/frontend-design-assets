@@ -1,0 +1,33 @@
+/* V0.18 original research tokens. NOT a complete theme or registered styleId. */
+[data-style-study="atlas-ledger"] {
+  --atlas-paper: #f4f0e6;
+  --atlas-ink: #263841;
+  --atlas-muted: #52636a;
+  --atlas-rule: #aeb8ad;
+  --atlas-plate: #e6e8dd;
+  --atlas-accent: #954f35;
+  --atlas-selected: #184f60;
+  --atlas-focus: #1b597f;
+  --atlas-corner: 2px;
+  --atlas-column-gap: clamp(1rem, 2.5vw, 2.75rem);
+  color: var(--atlas-ink);
+  background: var(--atlas-paper);
+  font-family: system-ui, sans-serif;
+}
+[data-style-study="atlas-ledger"] .atlas-display {
+  font-family: Georgia, "Noto Serif", serif;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+[data-style-study="atlas-ledger"] .atlas-caption {
+  color: var(--atlas-muted);
+  line-height: 1.5;
+}
+[data-style-study="atlas-ledger"] .atlas-plate {
+  border: 1px solid var(--atlas-rule);
+  background: var(--atlas-plate);
+}
+[data-style-study="atlas-ledger"] :focus-visible {
+  outline: 3px solid var(--atlas-focus);
+  outline-offset: 3px;
+}

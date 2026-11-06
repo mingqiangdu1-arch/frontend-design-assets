@@ -51,3 +51,7 @@ These links support studying aesthetic direction. **All new numeric values are o
 | `commerce-atelier` | [Commerce Atelier](../../styles/commerce-atelier/README.md) | warm stone/moss sans catalog aesthetic, big product visual slots, deliberate prices and filter states | retail storefront, visual product discovery | Standalone proposed Tokens and demo; not React package integrated |
 
 Do not promote glassmorphism, bento layouts, 3D effects or dynamic typography to separate repository-wide styles merely because they trend in 2026. They are **optional cross-style techniques** with performance/accessibility obligations; new styles require genuinely different user tasks and composition grammar. The original React component package still lists four supported themes only.
+
+## V0.18 adjacent visual grammar research — not registered styles
+
+[Atlas Ledger / Evidence Cartography](visual-studies-v018.md#vs-001--atlas-ledger--evidence-cartography) and [Tactile Instrument / Precision Workshop](visual-studies-v018.md#vs-002--tactile-instrument--precision-workshop) add two original design directions and scoped *partial* token sketches. They are **not added to `registry/styles.json`**, so the full independent style count remains ten. Do not present a visual study as a working theme or implied React component support.
