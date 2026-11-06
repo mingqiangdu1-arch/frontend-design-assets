@@ -216,3 +216,7 @@ export type {TooltipProps,BreadcrumbItem,BreadcrumbProps,PaginationProps,Accordi
 // V0.22 complex forms, workflow progress, data visualization and responsive layout.
 export {FormWizard,RepeatableFields,ValidationSummary,Sparkline,DashboardGrid} from "./workflows";
 export type {WizardStep,FormWizardProps,RepeatableFieldItem,RepeatableFieldsProps,ValidationIssue,ValidationSummaryProps,SparklineProps,DashboardGridItem,DashboardGridProps} from "./workflows";
+
+// V0.23: real controlled search/filter, kanban, timeline and interactive chart.
+export {FilterableDataTable,KanbanBoard,ActivityTimeline,InteractiveBarChart} from "./data-ops";
+export type {DataFilterOption,FilterableDataTableProps,KanbanColumn,KanbanCard,KanbanBoardProps,TimelineStatus,ActivityTimelineEvent,ActivityTimelineProps,BarChartDatum,InteractiveBarChartProps} from "./data-ops";

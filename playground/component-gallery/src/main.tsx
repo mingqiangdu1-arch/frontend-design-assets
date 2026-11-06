@@ -7,7 +7,8 @@ import {ThemeSurface,Button,Badge,Card,TextField,TextAreaField,SelectField,Check
  CommandMenu,DatePicker,ResizablePanels,FileUpload,
  Tooltip,Breadcrumb,Pagination,Accordion,SidebarNav,
  FormWizard,RepeatableFields,ValidationSummary,Sparkline,DashboardGrid,
- type RepeatableFieldItem,type DataTableColumn,type DataTableSort,type ThemeId,type Tone} from "../../../packages/ui/src/index";
+ FilterableDataTable,KanbanBoard,ActivityTimeline,InteractiveBarChart,
+ type RepeatableFieldItem,type KanbanCard,type DataTableColumn,type DataTableSort,type ThemeId,type Tone} from "../../../packages/ui/src/index";
 import "../../../tokens/refined-light.css";
 import "../../../styles/precision-dark/tokens.css";
 import "../../../styles/editorial-warm/tokens.css";
@@ -91,6 +92,16 @@ function App(){
  const [repeatEntries,setRepeatEntries]=React.useState<RepeatableFieldItem[]>([{id:"entry-1",value:"李明"}]);
  const repeatSeq=React.useRef(2);
  const [showValidation,setShowValidation]=React.useState(false);
+ const [filterQuery,setFilterQuery]=React.useState("");
+ const [filterCategory,setFilterCategory]=React.useState("all");
+ const [filterSort,setFilterSort]=React.useState<DataTableSort>(null);
+ const [boardCards,setBoardCards]=React.useState<KanbanCard[]>([
+  {id:"task-1",title:"定义数据结构",columnId:"todo",description:"明确输入与输出"},
+  {id:"task-2",title:"制作交互实例",columnId:"doing",description:"完成键盘与拖拽路径"},
+  {id:"task-3",title:"合并前检查",columnId:"done",disabled:true}
+ ]);
+ const [selectedEvent,setSelectedEvent]=React.useState("event-2");
+ const [selectedBar,setSelectedBar]=React.useState("week-2");
  const sortedReviewRows=React.useMemo(()=>!tableSort?reviewRows:
   [...reviewRows].sort((a,b)=>{
    const diff=tableSort.key==="priority"?a.priority-b.priority:
@@ -104,7 +115,7 @@ function App(){
  };
  return <div className="cg-app">
  <header className="cg-top">
-  <div className="cg-brand"><span className="cg-mark">◈</span><div><strong>Component Library</strong><small>Frontend Design Assets / v0.22</small></div></div>
+  <div className="cg-brand"><span className="cg-mark">◈</span><div><strong>Component Library</strong><small>Frontend Design Assets / v0.23</small></div></div>
   <a href="https://github.com/mingqiangdu1-arch/frontend-design-assets/tree/main/packages/ui" target="_blank" rel="noreferrer">GitHub 源码 ↗</a>
  </header>
  <div className="cg-picker" role="group" aria-label="选择组件预览风格">
@@ -115,7 +126,7 @@ function App(){
  <ThemeSurface theme={theme} className="cg-surface">
   <div className="cg-intro"><div><small>LIVE REACT / TYPESCRIPT COMPONENTS</small>
     <h1>组件不仅要好看，也要能直接组装。</h1>
-    <p>37 个实际 React 组件，新增流程向导、可重复字段、表单错误摘要、趋势迷你图和自适应仪表盘布局。当前是参考实现，尚未进行生产集成认证。</p>
+    <p>41 个实际 React 组件，本轮新增筛选表格、可移动看板、活动时间轴与键盘可操作柱状图。当前是参考实现，尚未进行生产集成认证。</p>
    </div><Badge tone="neutral">{themes.find(x=>x.id===theme)?.label}</Badge>
   </div>
   <div className="cg-grid">
@@ -345,6 +356,50 @@ function App(){
      {id:"timeline",title:"交付记录",span:4,
       content:<p>桌面跨四列，平板不超过两列，窄屏回到单列。</p>}
     ]}/>
+   </Specimen>
+
+   <Specimen id="filterable-data-table" title="FilterableDataTable" caption="Local keyword + category / controlled sort / table composition">
+    <FilterableDataTable label="任务筛选表" rows={reviewRows} columns={reviewColumns}
+     query={filterQuery} onQueryChange={setFilterQuery}
+     category={filterCategory} onCategoryChange={setFilterCategory}
+     categories={[{value:"需审查",label:"需审查"},{value:"已核对",label:"已核对"},
+      {value:"待处理",label:"待处理"}]}
+     getSearchText={row=>row.project+" "+row.state+" P"+row.priority}
+     getCategory={row=>row.state}
+     sort={filterSort} onSortChange={setFilterSort}
+     sortComparators={{priority:(a,b)=>a.priority-b.priority,
+      project:(a,b)=>a.project.localeCompare(b.project)}}/>
+    <span className="cg-hint">搜索与分类仅过滤本地数据，不发起服务器查询。</span>
+   </Specimen>
+   <Specimen id="kanban-board" title="KanbanBoard" caption="Controlled columns / native drag-and-drop / select alternative">
+    <KanbanBoard label="研发任务看板" columns={[
+     {id:"todo",title:"待开始"},{id:"doing",title:"进行中"},{id:"done",title:"已完成"}
+    ]} cards={boardCards}
+     onMove={(cardId,columnId)=>setBoardCards(v=>
+      v.map(card=>card.id===cardId?{...card,columnId}:card))}/>
+    <span className="cg-hint">卡片位置由上层状态控制；原生下拉选择可代替拖拽。</span>
+   </Specimen>
+   <Specimen id="activity-timeline" title="ActivityTimeline" caption="Semantic events / current status / selectable record">
+    <ActivityTimeline label="项目活动记录" selectedId={selectedEvent}
+     onSelect={setSelectedEvent} events={[
+      {id:"event-1",date:"11 月 1 日",dateTime:"2026-11-01",
+       title:"整理需求",description:"完成范围确认",status:"complete"},
+      {id:"event-2",date:"11 月 4 日",dateTime:"2026-11-04",
+       title:"交互审核",description:"正在复核键盘与焦点行为",status:"current"},
+      {id:"event-3",date:"11 月 8 日",dateTime:"2026-11-08",
+       title:"项目复盘",description:"计划节点",status:"upcoming"}
+     ]}/>
+    <span className="cg-hint">当前选中事件：{selectedEvent}</span>
+   </Specimen>
+   <Specimen id="interactive-bar-chart" title="InteractiveBarChart" caption="Nonnegative values / arrow focus / selected bar">
+    <InteractiveBarChart label="每周验证样例" selectedId={selectedBar} onSelect={setSelectedBar}
+     unit="项" data={[
+      {id:"week-1",label:"第1周",value:6},
+      {id:"week-2",label:"第2周",value:11},
+      {id:"week-3",label:"第3周",value:4},
+      {id:"week-4",label:"第4周",value:15}
+     ]}/>
+    <span className="cg-hint">选中柱：{selectedBar} · 数字为演示样本，不代表真实业务统计。</span>
    </Specimen>
    <Specimen id="cards" title="Cards & Empty" caption="modular composition">
      <Card heading="可组合信息卡片" description="不同风格的卡片有不同的信息密度和结构" footer={<><Button size="sm">创建</Button><Button size="sm" variant="ghost">了解更多</Button></>}>

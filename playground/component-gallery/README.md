@@ -1,6 +1,6 @@
 # Component Gallery · V0.6
 
-React/TypeScript gallery for [37 UI components](../../packages/ui/README.md), with four independent style scopes.
+React/TypeScript gallery for [41 UI components](../../packages/ui/README.md), with four independent style scopes.
 
 ## Run (Node 22+)
 
@@ -28,7 +28,7 @@ Historical [SaaS Labs](../saas-patterns/README.md) and [Style Explorer](../style
 
 ## V0.12 Selected Component State Matrix
 
-Run `npm run dev:components`, then open `http://127.0.0.1:5174/?view=matrix`. The matrix tests **selected states for 12 of 37 actual React exports** across all four declared package themes. The twenty-five uncovered exports are listed in `registry/component-states.json`. It also includes a separate request-state fixture (idle/loading/empty/error/success), which is not a package export.
+Run `npm run dev:components`, then open `http://127.0.0.1:5174/?view=matrix`. The matrix tests **selected states for 12 of 41 actual React exports** across all four declared package themes. The twenty-nine uncovered exports are listed in `registry/component-states.json`. It also includes a separate request-state fixture (idle/loading/empty/error/success), which is not a package export.
 
 Browser tests capture 12 screenshots at 390/768/1440 in `test-results/`. Use `npm run visual:capture` to produce unapproved SHA256 evidence; explicit human inspection and approval are still required. Read [Visual QA policy](../../docs/quality/visual-review.md).
 
@@ -47,3 +47,7 @@ Five actual React exports: `Tooltip` (UI-042), `Breadcrumb` (UI-043), `Paginatio
 ## V0.22 complex-form, visualization and layout Gallery
 
 Added five actually implemented UI components: `FormWizard` (UI-047), `RepeatableFields` (UI-048), `ValidationSummary` (UI-049), `Sparkline` (UI-050), and `DashboardGrid` (UI-051). Gallery fixtures are local only. Playwright checks cover wizard input gating and completion, field list add/remove constraints, host focus callbacks from validation errors, real finite SVG path and 4→2→1 responsive grid columns across four supported themes. Historical state matrix remains transparently partial (now 25 uncovered exports).
+
+## V0.23 data operations specimens
+
+Real implemented exports `UI-052 FilterableDataTable`, `UI-053 KanbanBoard`, `UI-054 ActivityTimeline` and `UI-055 InteractiveBarChart` are shown with local fictional fixtures. Browser scenarios cover keyword/category filtering with controlled comparator sorting, native drag/drop and per-card select movement, timeline selection/dates, keyboard bar selection and four-theme 390/768/1440px overflow. The historical selected-state matrix continues to cover only 12 older components, explicitly leaving 29 unreviewed there.

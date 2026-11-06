@@ -5422,6 +5422,197 @@
         "instructions": "Provide controlled state/validation and meaningful business data; use one of four supported themes. Check host data permission, real chart provenance and form focus handling.",
         "limitations": "No backend validation/persistence, no built-in form schema, no chart package or measured UX certification."
       }
+    },
+    {
+      "id": "UI-052",
+      "type": "component",
+      "name": "data: FilterableDataTable",
+      "exportName": "FilterableDataTable",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "filter",
+        "search",
+        "table",
+        "sort",
+        "controlled",
+        "react"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/data-ops.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "workspace",
+        "b2b-saas",
+        "analytics-console",
+        "admin-console"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is a peer dependency",
+      "verified": "V0.23 original React reference component; CI validation required; no product, screen-reader or device certification.",
+      "handoff": {
+        "entry": "packages/ui/src/data-ops.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Use controlled callbacks and supplied data. Host application owns loading/persistence/permissions and a single compatible theme.",
+        "limitations": "No backend query, async pagination, drag reorder across positions, virtual scrolling, real-time chart feed or production certification."
+      }
+    },
+    {
+      "id": "UI-053",
+      "type": "component",
+      "name": "workflow: KanbanBoard",
+      "exportName": "KanbanBoard",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "kanban",
+        "board",
+        "drag-drop",
+        "workflow",
+        "keyboard",
+        "react"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/data-ops.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "project-management",
+        "workspace",
+        "creative-tool",
+        "operations"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is a peer dependency",
+      "verified": "V0.23 original React reference component; CI validation required; no product, screen-reader or device certification.",
+      "handoff": {
+        "entry": "packages/ui/src/data-ops.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Use controlled callbacks and supplied data. Host application owns loading/persistence/permissions and a single compatible theme.",
+        "limitations": "No backend query, async pagination, drag reorder across positions, virtual scrolling, real-time chart feed or production certification."
+      }
+    },
+    {
+      "id": "UI-054",
+      "type": "component",
+      "name": "data: ActivityTimeline",
+      "exportName": "ActivityTimeline",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "timeline",
+        "activity",
+        "history",
+        "status",
+        "react"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/data-ops.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "workspace",
+        "project-management",
+        "audit-trail",
+        "documentation"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is a peer dependency",
+      "verified": "V0.23 original React reference component; CI validation required; no product, screen-reader or device certification.",
+      "handoff": {
+        "entry": "packages/ui/src/data-ops.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Use controlled callbacks and supplied data. Host application owns loading/persistence/permissions and a single compatible theme.",
+        "limitations": "No backend query, async pagination, drag reorder across positions, virtual scrolling, real-time chart feed or production certification."
+      }
+    },
+    {
+      "id": "UI-055",
+      "type": "component",
+      "name": "data: InteractiveBarChart",
+      "exportName": "InteractiveBarChart",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "chart",
+        "bars",
+        "data",
+        "keyboard",
+        "interactive",
+        "react"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/data-ops.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "analytics-console",
+        "dashboard",
+        "reports",
+        "data-story"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is a peer dependency",
+      "verified": "V0.23 original React reference component; CI validation required; no product, screen-reader or device certification.",
+      "handoff": {
+        "entry": "packages/ui/src/data-ops.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Use controlled callbacks and supplied data. Host application owns loading/persistence/permissions and a single compatible theme.",
+        "limitations": "No backend query, async pagination, drag reorder across positions, virtual scrolling, real-time chart feed or production certification."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",

@@ -1,5 +1,5 @@
 {
-  "version": "0.22.0",
+  "version": "0.23.0",
   "package": "@frontend-design-assets/ui",
   "status": "reference-implemented; not production-certified",
   "source": "packages/ui/src/index.tsx",
@@ -510,6 +510,58 @@
       "demo": "playground/component-gallery/index.html",
       "interaction": "controlled properties and callbacks; behavior limitations in packages/ui/README.md",
       "verified": "V0.22 reference implementation; GitHub CI verification pending. No target app/screen-reader certification."
+    },
+    {
+      "id": "UI-052",
+      "exportName": "FilterableDataTable",
+      "category": "data",
+      "description": "Composable controlled local keyword/category filtering and optional comparator sorting around semantic DataTable",
+      "source": "packages/ui/src/data-ops.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "interaction": "controlled local state and native pointer/keyboard actions; see README",
+      "verified": "V0.23 reference implementation, CI pending; not production certified."
+    },
+    {
+      "id": "UI-053",
+      "exportName": "KanbanBoard",
+      "category": "workflow",
+      "description": "Controlled multi-column task board with native drag and accessible per-card move selector",
+      "source": "packages/ui/src/data-ops.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "interaction": "controlled local state and native pointer/keyboard actions; see README",
+      "verified": "V0.23 reference implementation, CI pending; not production certified."
+    },
+    {
+      "id": "UI-054",
+      "exportName": "ActivityTimeline",
+      "category": "data",
+      "description": "Semantic chronological event rail with completion status, time labels and optional selection",
+      "source": "packages/ui/src/data-ops.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "interaction": "controlled local state and native pointer/keyboard actions; see README",
+      "verified": "V0.23 reference implementation, CI pending; not production certified."
+    },
+    {
+      "id": "UI-055",
+      "exportName": "InteractiveBarChart",
+      "category": "data",
+      "description": "Controlled accessible interactive bar chart with arrow/Home/End focus and selected data bar",
+      "source": "packages/ui/src/data-ops.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "interaction": "controlled local state and native pointer/keyboard actions; see README",
+      "verified": "V0.23 reference implementation, CI pending; not production certified."
     }
   ],
   "stateMatrix": "registry/component-states.json",

@@ -2,11 +2,11 @@ import {test,expect} from "@playwright/test";
 
 test.beforeEach(async({page})=>{await page.goto("/");});
 
-test("gallery presents 37 component exports and explicit themes",async({page})=>{
+test("gallery presents 41 component exports and explicit themes",async({page})=>{
  await expect(page.getByRole("heading",{name:/组件不仅要好看/})).toBeVisible();
  await expect(page.locator("[data-theme-button]")).toHaveCount(4);
  await expect(page.locator('[data-theme-button="refined-light-saas"]')).toHaveAttribute("aria-pressed","true");
- await expect(page.locator(".cg-spec")).toHaveCount(28);
+ await expect(page.locator(".cg-spec")).toHaveCount(32);
 });
 
 test("switching style updates scope and semantic background",async({page})=>{
@@ -392,6 +392,78 @@ test("V0.22 complex-form and dashboard specimens stay within responsive theme wi
    await page.locator('[data-theme-button="'+theme+'"]').click();
    const measure=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
    expect(measure.scroll,theme+" / "+width).toBeLessThanOrEqual(measure.client+1);
+  }
+ }
+});
+
+
+test("FilterableDataTable searches, filters category, resets and sorts visible rows",async({page})=>{
+ const scope=page.getByRole("region",{name:"任务筛选表"});
+ const input=scope.getByRole("searchbox",{name:"搜索记录"});
+ await input.fill("Atlas");
+ await expect(scope.getByRole("table",{name:"任务筛选表结果"}).locator("tbody tr")).toHaveCount(1);
+ await expect(scope.getByRole("status")).toContainText("1 / 3");
+ await scope.getByRole("combobox",{name:"分类"}).selectOption("已核对");
+ await expect(scope.getByRole("table",{name:"任务筛选表结果"})).toContainText("没有匹配记录");
+ await scope.getByRole("button",{name:"重置"}).click();
+ await expect(scope.getByRole("status")).toContainText("3 / 3");
+ const table=scope.getByRole("table",{name:"任务筛选表结果"});
+ await table.getByRole("button",{name:/优先级/}).click();
+ await expect(table.getByRole("columnheader",{name:/优先级/})).toHaveAttribute("aria-sort","ascending");
+ await expect(table.locator("tbody tr").first()).toContainText("Workshop");
+});
+
+test("KanbanBoard moves controlled cards using an accessible select alternative",async({page})=>{
+ const board=page.getByRole("region",{name:"研发任务看板"});
+ const todo=board.getByRole("region",{name:"待开始"});
+ const doing=board.getByRole("region",{name:"进行中"});
+ await expect(todo).toContainText("定义数据结构");
+ await todo.getByRole("combobox",{name:"移动卡片 定义数据结构"}).selectOption("doing");
+ await expect(doing).toContainText("定义数据结构");
+ await expect(todo).not.toContainText("定义数据结构");
+ await expect(board.getByRole("combobox",{name:"移动卡片 合并前检查"})).toBeDisabled();
+});
+
+test("KanbanBoard supports native drag-and-drop between columns",async({page})=>{
+ const board=page.getByRole("region",{name:"研发任务看板"});
+ const start=board.getByRole("region",{name:"待开始"});
+ const destination=board.getByRole("region",{name:"已完成"});
+ await start.locator(".fda-kanban__card").filter({hasText:"定义数据结构"}).dragTo(destination);
+ await expect(destination).toContainText("定义数据结构");
+});
+
+test("ActivityTimeline preserves event dates and updates the selected record",async({page})=>{
+ const scope=page.getByRole("region",{name:"项目活动记录"});
+ await expect(scope.locator("time")).toHaveCount(3);
+ await expect(scope.locator('time[datetime="2026-11-04"]')).toContainText("11 月 4 日");
+ await expect(scope.getByRole("button",{name:"交互审核"})).toHaveAttribute("aria-pressed","true");
+ await scope.getByRole("button",{name:"整理需求"}).click();
+ await expect(scope.getByRole("button",{name:"整理需求"})).toHaveAttribute("aria-pressed","true");
+ await expect(page.locator("#activity-timeline .cg-hint")).toContainText("event-1");
+});
+
+test("InteractiveBarChart exposes real values and supports arrow/Home/End focus",async({page})=>{
+ const scope=page.getByRole("region",{name:"每周验证样例"});
+ const first=scope.getByRole("button",{name:"第1周：6项"});
+ const second=scope.getByRole("button",{name:"第2周：11项"});
+ const last=scope.getByRole("button",{name:"第4周：15项"});
+ await expect(second).toHaveAttribute("aria-pressed","true");
+ await first.focus();await first.press("ArrowRight");
+ await expect(second).toBeFocused();
+ await second.press("End");await expect(last).toBeFocused();
+ await last.press("Enter");
+ await expect(last).toHaveAttribute("aria-pressed","true");
+ await expect(scope.getByText("最高值 15项")).toBeVisible();
+ await expect(page.locator("#interactive-bar-chart .cg-hint")).toContainText("week-4");
+});
+
+test("V0.23 data operation specimens fit four themes with internal kanban scrolling",async({page})=>{
+ for(const width of [390,768,1440]){
+  await page.setViewportSize({width,height:900});
+  for(const theme of ["refined-light-saas","precision-dark","editorial-warm","playful-pop"]){
+   await page.locator('[data-theme-button="'+theme+'"]').click();
+   const size=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
+   expect(size.scroll,theme+" at "+width).toBeLessThanOrEqual(size.client+1);
   }
  }
 });

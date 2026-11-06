@@ -46,18 +46,51 @@ The illustrative import `frontend-design-assets/styles/...` above is a repositor
 | Navigation | Tabs |
 | Feedback | Badge, Alert, Progress, Skeleton, EmptyState |
 | Overlays | Dialog, Toast |
-| Data | Avatar, DataList, **DataTable** |
+| Data | Avatar, DataList, **DataTable**, **FilterableDataTable**, **ActivityTimeline** |
 | Navigation & hierarchy | **TreeView**, **Breadcrumb**, **Pagination**, **SidebarNav** |
 | Advanced input | **Combobox**, **DualRangeField** |
 | Interactive overlays | **Popover** |
 | Commands | **CommandMenu** |
 | Disclosure & help | **Accordion**, **Tooltip** |
 | Complex forms | **FormWizard**, **RepeatableFields**, **ValidationSummary** |
-| Data visualization | **Sparkline** |
+| Workflow boards | **KanbanBoard** |
+| Data visualization | **Sparkline**, **InteractiveBarChart** |
 | Date & file input | **DatePicker**, **FileUpload** |
 | Layout | **ResizablePanels**, **DashboardGrid** |
 
-**37 exported React components (including five new in V0.22).** All use style-scoped `fda-` CSS rather than globally overwriting buttons, forms, cards, etc. The names are also discoverable in `registry/components.json`.
+**41 exported React components (including four new in V0.23).** All use style-scoped `fda-` CSS rather than globally overwriting buttons, forms, cards, etc. The names are also discoverable in `registry/components.json`.
+
+## V0.23 filtering, kanban, activity and interactive data visualization
+
+Four original React/TypeScript components are implemented in [`src/data-ops.tsx`](src/data-ops.tsx), exported from the public package index, and styled through the **same four supported scoped UI themes**. No external UI code or new runtime dependencies are included.
+
+| Export | Host-controlled API | Implemented behavior and limits |
+| --- | --- | --- |
+| `FilterableDataTable<T>` (`UI-052`) | `rows`, `columns`, `query/onQueryChange`, `getSearchText`, optional `category/onCategoryChange`, `sort/onSortChange` and `sortComparators` | Local keyword and category filtering composed with the existing semantic DataTable; optional comparator-driven local sorting. **No server query, virtualized rendering, sorting without a comparator, or persistence.** Host resets pagination when filters change. |
+| `KanbanBoard` (`UI-053`) | `columns`, `cards`, `onMove(cardId,columnId)` | Controlled multi-column board, HTML5 drag/drop and **per-card native select as keyboard/touch alternative**. Validates unique column/card IDs and column references. **Only moves a card to another column, no within-column reordering, undo, API writes or auth.** |
+| `ActivityTimeline` (`UI-054`) | ordered `events`, optional `selectedId/onSelect` | Semantic ordered list with optional `<time>` values, complete/current/upcoming visual markers and controlled event selection. The host owns date ordering and event source; **not a Gantt/scheduling or audit immutability engine**. |
+| `InteractiveBarChart` (`UI-055`) | nonnegative finite numeric `data`, controlled `selectedId/onSelect`, `unit` | Interactive CSS bars with readable numeric button labels, selected state and arrow/Home/End focus navigation. **No axes, zoom, animation library, data feed, inference or automatic analytics.** Host owns data provenance and meaning. |
+
+### Controlled filter and board usage
+
+```tsx
+import {useState} from 'react';
+import {FilterableDataTable,KanbanBoard} from '@frontend-design-assets/ui';
+
+function Sample({rows,columns,kanbanColumns,initialCards}) {
+ const [query,setQuery]=useState('');
+ const [cards,setCards]=useState(initialCards);
+ return <>
+   <FilterableDataTable label='Records' rows={rows} columns={columns}
+     query={query} onQueryChange={setQuery} getSearchText={row=>row.title}/>
+   <KanbanBoard label='Tasks' columns={kanbanColumns} cards={cards}
+     onMove={(id,dest)=>setCards(previous=>previous.map(card=>
+       card.id===id?{...card,columnId:dest}:card))}/>
+ </>;
+}
+```
+
+Example is illustrative: supply TypeScript row/card types, app permissions and persistence. The component package is not published on npm. **Data examples in the Gallery are fictional test fixtures**; never present them as actual business results. Tests cover key Chromium interactions, not production cross-browser or screen-reader certification.
 
 ## V0.22 complex forms, workflow, data and responsive layout
 

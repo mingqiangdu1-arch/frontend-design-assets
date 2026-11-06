@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-06 · V0.23 interactive data operations UI expansion
+
+- Implemented four original React/TypeScript/CSS components: `FilterableDataTable` (local search/category filters, optional comparator sort), `KanbanBoard` (controlled column moves via native drag/drop and accessible select alternative), `ActivityTimeline` (event history/status with optional selection), `InteractiveBarChart` (accessible keyboard-operable values and selection).
+- Component exports increased **37→41**, indexed assets **172→176** (UI-052..055); all reuse the four supported UI themes, no new runtime dependency or copied vendor source.
+- Interactive gallery and Chromium browser checks cover filters, sorting, kanban movement via native select and drag/drop, timeline state, keyboard chart selection and responsive widths. Historical selected-state matrix remains partial, explicitly marking 29 newer exports uncovered.
+- Reference-level only: no server queries, kanban persistence or intra-column sort, formal analytics semantics, chart data source, production cross-browser/a11y certification or npm publication.
+
+
 ## 2026-11-06 · V0.22 workflow, complex forms, data visuals and responsive layout
 
 - Five real React/TypeScript/CSS components: FormWizard (controlled guarded steps), RepeatableFields (repeatable inputs with IDs and count limits), ValidationSummary (clickable host-error routing), Sparkline (accessible SVG numeric trend) and DashboardGrid (4/2/1 responsive spans). Indexed UI-047..051 separately from research-only patterns.

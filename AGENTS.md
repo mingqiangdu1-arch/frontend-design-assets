@@ -2,6 +2,12 @@
 
 This repository is a **living multi-style, cross-application design asset library** — not an AI WORKFLOW PLATFORM kit.
 
+## V0.23 data operations reference components
+
+- Real React library now has **41 exported components**, including four implemented `UI-052..055` entries in `packages/ui/src/data-ops.tsx`: `FilterableDataTable`, `KanbanBoard`, `ActivityTimeline`, `InteractiveBarChart`. Asset registry: 176 entries; four declared theme scopes unchanged.
+- `FilterableDataTable` filters supplied rows locally and needs explicit comparators for local sorting; it does not query a backend. `KanbanBoard` offers native pointer drag/drop plus accessible `<select>` movement per card; the host owns mutation, permissions, concurrency and persistence. `ActivityTimeline` displays supplied event ordering, not an immutable audit log. `InteractiveBarChart` is accessible interactive CSS bar rendering of nonnegative supplied values, with no hidden data source.
+- Always distinguish browser smoke tests and reference-level reuse from real target-app, mobile, cross-browser, accessibility certification and published npm packages. Keep research-only assets separate from actual React exports.
+
 ## V0.22 workflow, complex-form, data and layout extension
 
 - Real React library now has **37** actual exported components. The five new V0.22 original exports in `packages/ui/src/workflows.tsx` are `FormWizard`, `RepeatableFields`, `ValidationSummary`, `Sparkline`, and `DashboardGrid` (UI-047..051). Asset registry has 172 entries. React support remains **four explicitly selected theme scopes** only.
