@@ -32,3 +32,7 @@ Codex input is in [REUSE-PROMPT.md](REUSE-PROMPT.md). Production review and targ
 ## V0.17 multi-asset composition planning
 
 [Design selection and composition](design-composition.md) introduces a **planning-only** combination of registered style, page blueprint, React exports and optional interaction contracts. Example: `npm run design:compose -- --context=knowledge-base --stack=react --format=markdown`. No page code is generated; the tool intentionally leaves style unselected when the user did not select it.
+
+## Creative structure alternatives
+
+[Experience composition grammar](experience-compositions.md) adds two distinct task-first layouts to the existing `design:compose` response (default), without creating a new demo or additional runtime.

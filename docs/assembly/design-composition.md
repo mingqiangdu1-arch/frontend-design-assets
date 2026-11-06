@@ -50,3 +50,9 @@ The JSON includes: `request`, `selection`, `options`, `behaviorCandidates`, `alt
 This planner performs exact category matching and basic substring keyword ranking. It is **not a UX research engine**, an LLM, a production recommendation system, or a generator of executable apps. It cannot judge screenshot aesthetics, create new layouts automatically, resolve brand identity or certify UX. Emerging styles without templates remain legitimate candidates.
 
 Related: [lightweight asset handoff](asset-handoff.md), [template-only CLI](README.md), [creative art direction](../styles/creative-art-direction.md), [context architecture](../multi-context-architecture.md).
+
+## V0.17 task-first concept alternatives (2026-11-06)
+
+Existing `design:compose` now outputs two **research-only structural alternatives** by default in `options[].creativeAlternatives`, driven by exact context tags. They differ in information priority, sections, navigation, behavior, responsive reflow and accessibility fallback, not only visual style. Use `--concepts=0..4` to set the count. If no matching style exists, `architectureAlternatives` can still expose context-specific ideas without a fabricated page or CSS theme.
+
+See [experience recipes and examples](experience-compositions.md) and [the machine-readable index](../../registry/experience-compositions.json).

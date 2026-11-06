@@ -54,3 +54,7 @@ Use one primary style profile, then **at most one optional gesture/material infl
 - [Squarespace Circle 2026 motion narrative and creative process](https://pros.squarespace.com/blog/design-trends)
 - [WAI WCAG 2.2 animation from interactions](https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions)
 - [WAI WCAG 2.2 non-text contrast](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast)
+
+## Structure before skin · 2026-11-06
+
+Before selecting typography/texture/color, compare different **information priority, spatial organization, navigation and interaction paths** for the actual job. The [16 original experience recipes](../assembly/experience-compositions.md) are independent research ideas across eight product families, not a new style pack. The existing four experimental art directions remain free to express their own visual grammar rather than inheriting one universal layout.

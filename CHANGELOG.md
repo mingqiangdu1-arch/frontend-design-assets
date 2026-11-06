@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-06 · V0.17 original task-first experience compositions
+
+- Added 16 source-grounded architecture **research recipes** across eight product families, 24 context tags and two distinct information structures per context; no new stylesheet, page implementation or production component.
+- Extended `design:compose` with default two `creativeAlternatives` per page/style option and architecture-only ideas when no style/template matches. `--concepts=0..4` is deterministic; no visual defaults, React compatibility assumptions or fake implementations.
+- Added index consistency checks, Node tests and Codex guidance; no new dependencies, running server, browser visualization or third-party design assets.
+
+
 ## 2026-11-05 · V0.17 design composition planning (GitHub-first)
 
 - Added `scripts/plan-design-composition.mjs` and a `design:compose` entry for deterministic multi-asset design options across 10 styles, 7 page blueprints, existing React component support and separately adaptable interaction patterns.

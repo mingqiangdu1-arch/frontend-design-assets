@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import {experienceRegistry,validateExperienceRegistry} from "./experience-compositions.mjs";
 
 const root = process.cwd();
 const readJson = filepath => JSON.parse(fs.readFileSync(filepath, "utf8"));
@@ -61,6 +62,7 @@ for (const asset of registry.assets) {
     if (!assetIds.has(id)) fail(asset.id + " has unknown dependency: " + id);
   }
 }
+const experienceSummary=validateExperienceRegistry(experienceRegistry,registry.assets);
 const applicationFiles = ["applications/examples/ai-workflow-platform.json"];
 for (const file of applicationFiles) {
   assertFile(file,"application profile");
@@ -73,4 +75,4 @@ const css = fs.readFileSync("tokens/refined-light.css", "utf8");
 if (!css.includes('[data-design-theme="refined-light-saas"]')) fail("Scoped design theme selector missing");
 if (/(^|\n)\s*:root\s*\{/.test(css)) fail("Theme CSS must not set global root variables");
 
-console.log("Validated " + registry.assets.length + " assets, " + styleIds.size + " style profiles, " + applicationFiles.length + " application profiles.");
+console.log("Validated " + registry.assets.length + " assets, " + styleIds.size + " style profiles, " + applicationFiles.length + " application profiles, " + experienceSummary.recipes + " experience recipes.");

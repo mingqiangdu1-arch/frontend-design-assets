@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import {pathToFileURL} from "node:url";
 import {buildHandoff,searchAssets} from "./find-assets.mjs";
+import {createExperienceDirections} from "./experience-compositions.mjs";
 
 // A deterministic planning helper, deliberately not a generative model,
 // runtime page composer, framework bridge or visual approval system.
@@ -90,12 +91,14 @@ function buildOption(template,style,components,registry,request,interactions){
    exampleUsesReactLibrary:Boolean(isReactDemo),adaptation:
     !template?"page-design-required":needsPort?"framework-port-required":"reference-only-no-port-claim"},
   components:candidates,interactions,
+  creativeAlternatives:createExperienceDirections({context:request.context,templateContexts:template?.applicationContexts||[],styleId:style.id,limit:request.concepts},registry.assets,registry.reusePolicies),
   warnings:notes
  };
 }
-export function planComposition({context="",intent="",style="",template="",stack="any",behaviors=[]}={},data){
- const request={context:clean(context),intent:clean(intent),style:clean(style),template:clean(template),stack,behaviors};
+export function planComposition({context="",intent="",style="",template="",stack="any",behaviors=[],concepts=2}={},data){
+ const request={context:clean(context),intent:clean(intent),style:clean(style),template:clean(template),stack,behaviors,concepts:Number(concepts)};
  if(!STACKS.has(stack))throw Error("Unknown stack: "+stack);
+ if(!Number.isInteger(request.concepts)||request.concepts<0||request.concepts>4)throw Error("concept count must be between 0 and 4");
  if(!Array.isArray(behaviors)||behaviors.some(id=>typeof id!=="string"||!id.trim())||
     new Set(behaviors).size!==behaviors.length)throw Error("Invalid behavior IDs");
  if(!request.context&&!request.style&&!request.template)throw Error("Specify --context, --style, or --template; no default visual direction");
@@ -146,6 +149,7 @@ export function planComposition({context="",intent="",style="",template="",stack
   warnings.push("Selected page is static, and a React version would require a separate port.");
  return {schemaVersion:"1.0",status:"planning-only",request,selection:selected,
   options,behaviorCandidates:interactions,
+  architectureAlternatives:options.length?[]:createExperienceDirections({context:request.context,templateContexts:chosenTemplate?.applicationContexts||[],styleId:resolvedStyle||"",limit:request.concepts},registry.assets,registry.reusePolicies),
   alternatives:stylesFound.map(s=>({id:s.id,label:s.label,categoryMatch:s.categories.includes(request.context),
    reactComponentThemeSupported:components.styleIds.includes(s.id),documentation:s.documentation})),
   warnings};
@@ -168,7 +172,33 @@ export function toMarkdown(plan){
    "Sections: "+(o.page?.sections.join(" / ")||"must be defined from user task"),"",
    "React exports: "+(o.components.length?o.components.map(c=>c.id+" "+c.exportName+" ("+c.status+")").join(", "):"none declared"),"",
    "Interactions: "+(o.interactions.length?o.interactions.map(b=>b.id+" "+b.name+" ("+b.selection+")").join(" / "):"none suggested"),"",
+   "## Structural alternatives (original research briefs, NOT wired pages)",
+   ...(o.creativeAlternatives.length?o.creativeAlternatives.flatMap(c=>[
+     "#### "+c.id+" · "+c.title,
+     "- Structure: "+c.spatialModel,
+     "- Content priority: "+c.contentPriority.join(" → "),
+     "- Sections: "+c.sections.join(" / "),
+     "- Navigation: "+c.navigation,
+     "- Core interaction: "+c.primaryInteraction,
+     "- Related behaviors (adapt, do not auto-import): "+c.behaviorReferences.map(r=>r.id).join(", "),
+     "- Mobile reflow: "+c.mobileAdaptation,
+     "- Keyboard/accessibility: "+c.accessibleFallback,
+     "- Visual hierarchy: "+c.visualHierarchy,
+     "- Avoid: "+c.avoid,""
+   ]):["- No registered architecture for this context."]),
    "Cautions:",...o.warnings.map(w=>"- "+w),"");
+ }
+ if(plan.architectureAlternatives.length){
+  lines.push("## Style-free architecture hypotheses (NO theme automatically selected)");
+  for(const c of plan.architectureAlternatives){
+   lines.push("### "+c.id+" · "+c.title,"- Structure: "+c.spatialModel,
+    "- Content priority: "+c.contentPriority.join(" → "),
+    "- Sections: "+c.sections.join(" / "),
+    "- Navigation: "+c.navigation,
+    "- Interaction: "+c.primaryInteraction,
+    "- Behavioral references: "+c.behaviorReferences.map(r=>r.id).join(", "),
+    "- Mobile: "+c.mobileAdaptation,"- Accessibility: "+c.accessibleFallback,"- Avoid: "+c.avoid,"");
+  }
  }
  lines.push("## Open decisions and constraints",...plan.warnings.map(w=>"- "+w),"",
   "Implementing agent must inspect selected source/specs, preserve task-specific user data and APIs, and report untested platform/accessibility paths.");
@@ -179,7 +209,7 @@ function parseArgs(args){
  for(const arg of args){
   if(!arg.startsWith("--")||!arg.includes("="))throw Error("Usage: --context=... [--intent=...] [--style=...] [--template=...] [--stack=any|react|static] [--behaviors=IP-021,IP-022] [--format=json|markdown]");
   const i=arg.indexOf("="),key=arg.slice(2,i),value=arg.slice(i+1);
-  if(!["context","intent","style","template","stack","behaviors","format"].includes(key))throw Error("Unknown option: "+key);
+  if(!["context","intent","style","template","stack","behaviors","format","concepts"].includes(key))throw Error("Unknown option: "+key);
   if(Object.hasOwn(out,key))throw Error("Duplicate option: "+key);
   out[key]=value;
  }

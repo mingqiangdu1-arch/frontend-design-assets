@@ -75,3 +75,39 @@ test("CLI JSON/Markdown are deterministic, source-grounded and nonexecuting",()=
  assert.ok(runCLI(["--template=TPL-007","--format=markdown"]).includes("TPL-007"));
  assert.throws(()=>runCLI(["--context=workspace","--format=yaml"]),/Unknown format/);
 });
+
+test("creative alternatives change architecture rather than only theme",()=>{
+ const x=planComposition({context:"consumer-mobile",stack:"react"},data);
+ assert.equal(x.selection.styleId,null);
+ const a=x.options[0].creativeAlternatives;
+ assert.equal(a.length,2);
+ assert.notEqual(a[0].spatialModel,a[1].spatialModel);
+ assert.notEqual(a[0].navigation,a[1].navigation);
+ assert.ok(a.every(c=>c.status==="research-brief-only"&&c.behaviorReferences.every(b=>b.status==="adapt-required")));
+ assert.ok(toMarkdown(x).includes("Structural alternatives"));
+});
+test("style-only experimental direction gets relevant architecture if context declared",()=>{
+ const x=planComposition({style:"signal-noir",context:"sci-fi-game"},data);
+ assert.equal(x.options[0].page,null);
+ assert.equal(x.options[0].creativeAlternatives.length,2);
+ assert.ok(x.options[0].creativeAlternatives.every(c=>c.styleId==="signal-noir"));
+ assert.equal(planComposition({style:"signal-noir"},data).options[0].creativeAlternatives.length,0);
+});
+test("known architecture context without style avoids inventing visual compatibility",()=>{
+ const x=planComposition({context:"creative-tool"},data);
+ assert.equal(x.options.length,0);
+ assert.equal(x.selection.styleId,null);
+ assert.equal(x.architectureAlternatives.length,2);
+ assert.ok(toMarkdown(x).includes("Style-free architecture hypotheses"));
+ assert.equal(planComposition({context:"entirely-unknown"},data).architectureAlternatives.length,0);
+});
+test("concept count is bounded, opt-out works, and template-only can use declared contexts",()=>{
+ assert.equal(planComposition({context:"consumer-mobile",concepts:0},data).options[0].creativeAlternatives.length,0);
+ assert.throws(()=>planComposition({context:"consumer-mobile",concepts:5},data),/concept count/);
+ const x=planComposition({template:"TPL-005",concepts:2},data);
+ assert.equal(x.options[0].creativeAlternatives.length,2);
+ assert.ok(x.options[0].creativeAlternatives.every(c=>c.styleId==="precision-dark"));
+ const cli=JSON.parse(runCLI(["--context=knowledge-base","--concepts=2","--format=json"]));
+ assert.equal(cli.options[0].creativeAlternatives.length,2);
+ assert.throws(()=>runCLI(["--context=workspace","--concepts=5"]),/concept count/);
+});

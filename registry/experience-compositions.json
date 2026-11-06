@@ -1,0 +1,523 @@
+{
+  "schemaVersion": "1.0",
+  "updatedAt": "2026-11-06",
+  "purpose": "Original task-first alternative composition research. Not style profiles, runnable templates or React implementations.",
+  "defaultRecipeId": null,
+  "selectionPolicy": "Exact declared context match. No global default style or layout; visual style and target stack must be selected separately.",
+  "recipes": [
+    {
+      "id": "XC-001",
+      "contexts": [
+        "workspace",
+        "b2b-saas",
+        "operations"
+      ],
+      "title": "Scan-first exception console",
+      "structure": "queue-plus-inspector",
+      "priority": [
+        "exceptions",
+        "actions",
+        "audit"
+      ],
+      "sections": [
+        "Filtering toolbar",
+        "Sortable exception queue",
+        "Contextual inspector",
+        "Outcome and undo feedback"
+      ],
+      "navigation": "Search/filter and row selection",
+      "interaction": "Select row, inspect, resolve, undo",
+      "mobile": "Inspector moves into a labeled mobile sheet",
+      "accessibility": "Keyboard row navigation and explicit action feedback",
+      "visual": "Quiet dense operational hierarchy",
+      "avoid": "Replace real actions with decorative KPI cards",
+      "assetIds": [
+        "SAAS-002",
+        "SAAS-004",
+        "IP-009"
+      ],
+      "stage": "research-brief-only"
+    },
+    {
+      "id": "XC-002",
+      "contexts": [
+        "workspace",
+        "b2b-saas",
+        "operations"
+      ],
+      "title": "Guided case resolution",
+      "structure": "single-case-journey",
+      "priority": [
+        "current case",
+        "evidence",
+        "next step"
+      ],
+      "sections": [
+        "Current case header",
+        "Evidence and chronology",
+        "Decision checklist",
+        "Completion summary"
+      ],
+      "navigation": "Progressive steps with clear queue exit",
+      "interaction": "Review evidence, complete step, save or cancel",
+      "mobile": "Vertical steps with sticky back and cancel",
+      "accessibility": "Explicit next/back/cancel plus unsaved-change protection",
+      "visual": "One focal case; narrative over density",
+      "avoid": "Force complex case resolution into tiny cells",
+      "assetIds": [
+        "IP-010",
+        "IP-004",
+        "SAAS-009"
+      ],
+      "stage": "research-brief-only"
+    },
+    {
+      "id": "XC-003",
+      "contexts": [
+        "consumer-mobile",
+        "learning",
+        "personal-productivity"
+      ],
+      "title": "Single meaningful daily action",
+      "structure": "focus-card",
+      "priority": [
+        "current task",
+        "immediate result",
+        "up next"
+      ],
+      "sections": [
+        "Short greeting",
+        "Dominant active task",
+        "Secondary queue",
+        "Completion and retry message"
+      ],
+      "navigation": "One action with a short follow-up queue",
+      "interaction": "Mark complete with undo and status feedback",
+      "mobile": "One task per screen, secondary tasks below",
+      "accessibility": "Native buttons and announced result, no gesture-only actions",
+      "visual": "Large touch target and very clear task hierarchy",
+      "avoid": "Gamification overwhelming the actual learning task",
+      "assetIds": [
+        "IP-006",
+        "IP-009"
+      ],
+      "stage": "research-brief-only"
+    },
+    {
+      "id": "XC-004",
+      "contexts": [
+        "consumer-mobile",
+        "learning",
+        "personal-productivity"
+      ],
+      "title": "Chapter progress journey",
+      "structure": "path-and-milestones",
+      "priority": [
+        "learning path",
+        "current chapter",
+        "next milestone"
+      ],
+      "sections": [
+        "Progress overview",
+        "Chapter path",
+        "Current lesson",
+        "Next milestone"
+      ],
+      "navigation": "Chapter stepper with overview return",
+      "interaction": "Complete chapter and revisit progress map",
+      "mobile": "Replace winding path with numbered chapter list",
+      "accessibility": "Accessible chapter links; progress is not color-only",
+      "visual": "Connected milestones rather than a single focal card",
+      "avoid": "Hide readable content behind decorative path",
+      "assetIds": [
+        "IP-024",
+        "IP-006"
+      ],
+      "stage": "research-brief-only"
+    },
+    {
+      "id": "XC-005",
+      "contexts": [
+        "knowledge-base",
+        "publication",
+        "reading"
+      ],
+      "title": "Topic atlas",
+      "structure": "searchable-index",
+      "priority": [
+        "topics",
+        "result relevance",
+        "reading preview"
+      ],
+      "sections": [
+        "Editorial identity",
+        "Topic and search filters",
+        "Annotated article index",
+        "Preview and full article"
+      ],
+      "navigation": "Search plus topic facets",
+      "interaction": "Filter, preview, open",
+      "mobile": "Filter becomes an accessible disclosure on mobile",
+      "accessibility": "Result counts, keyboard filter controls, stable links",
+      "visual": "Consistent content labels; scan-first typography",
+      "avoid": "Every document as a generic feature card",
+      "assetIds": [
+        "IP-014",
+        "IP-002"
+      ],
+      "stage": "research-brief-only"
+    },
+    {
+      "id": "XC-006",
+      "contexts": [
+        "knowledge-base",
+        "publication",
+        "reading"
+      ],
+      "title": "Guided long-form chapter",
+      "structure": "linear-issue",
+      "priority": [
+        "thesis",
+        "chapters",
+        "sources"
+      ],
+      "sections": [
+        "Argument opener",
+        "Semantic table of contents",
+        "Chapter sections",
+        "Sources and further reading"
+      ],
+      "navigation": "Table of contents and previous/next",
+      "interaction": "Read by section with optional progress cue",
+      "mobile": "Sticky visual becomes a normal heading flow",
+      "accessibility": "Works without JS and with reduced motion",
+      "visual": "Editorial pacing rather than search-heavy index",
+      "avoid": "Scroll-jacking or hidden chapter content",
+      "assetIds": [
+        "IP-024",
+        "IP-005"
+      ],
+      "stage": "research-brief-only"
+    },
+    {
+      "id": "XC-007",
+      "contexts": [
+        "commerce-storefront",
+        "product-catalog",
+        "consumer-shopping"
+      ],
+      "title": "Media-led browse and filter",
+      "structure": "product-grid",
+      "priority": [
+        "visual product",
+        "filter",
+        "variant and price"
+      ],
+      "sections": [
+        "Product category hero",
+        "Faceted filter rail",
+        "Media product grid",
+        "Variant details"
+      ],
+      "navigation": "Filter chips and sorting",
+      "interaction": "Choose filters then product variant",
+      "mobile": "Mobile filter sheet and two-column grid",
+      "accessibility": "Explicit disabled variants and accurate textual data",
+      "visual": "Product media dominates without drowning prices",
+      "avoid": "Invent stock or checkout capability",
+      "assetIds": [
+        "IP-015",
+        "IP-003"
+      ],
+      "stage": "research-brief-only"
+    },
+    {
+      "id": "XC-008",
+      "contexts": [
+        "commerce-storefront",
+        "product-catalog",
+        "consumer-shopping"
+      ],
+      "title": "Evidence-first comparison",
+      "structure": "shortlist-matrix",
+      "priority": [
+        "comparison criteria",
+        "key differences",
+        "decision"
+      ],
+      "sections": [
+        "Needs and criteria",
+        "Chosen shortlist",
+        "Attribute comparison",
+        "Decision uncertainties"
+      ],
+      "navigation": "Criteria-first shortlist navigation",
+      "interaction": "Add/remove compare items",
+      "mobile": "Matrix turns into labeled per-item rows",
+      "accessibility": "All comparisons textual, no color-only ranking",
+      "visual": "Compare measurable attributes instead of a photo wall",
+      "avoid": "Unverified claims of a best choice",
+      "assetIds": [
+        "IP-015",
+        "IP-020"
+      ],
+      "stage": "research-brief-only"
+    },
+    {
+      "id": "XC-009",
+      "contexts": [
+        "creative-portfolio",
+        "campaign",
+        "indie-brand"
+      ],
+      "title": "Statement poster gallery",
+      "structure": "poster-led-grid",
+      "priority": [
+        "proposition",
+        "signature work",
+        "CTA"
+      ],
+      "sections": [
+        "Oversized statement",
+        "Graphic poster modules",
+        "Selected work",
+        "Contact and participation"
+      ],
+      "navigation": "Section anchors and strong CTA",
+      "interaction": "Open work via deliberate reveal",
+      "mobile": "Graphic grid collapses to readable column",
+      "accessibility": "CTA visible without hover or transitions",
+      "visual": "Typographic rhythm and visible asymmetry",
+      "avoid": "Decorations in place of actual project content",
+      "assetIds": [
+        "IP-013",
+        "IP-006"
+      ],
+      "stage": "research-brief-only"
+    },
+    {
+      "id": "XC-010",
+      "contexts": [
+        "creative-portfolio",
+        "campaign",
+        "indie-brand"
+      ],
+      "title": "Process case-story",
+      "structure": "evidence-storyboard",
+      "priority": [
+        "problem",
+        "reasoning",
+        "outcome"
+      ],
+      "sections": [
+        "Problem and scope",
+        "Decision story",
+        "Before-after comparison",
+        "Outcome and reflection"
+      ],
+      "navigation": "Case chapters and jump index",
+      "interaction": "Compare grounded design revisions",
+      "mobile": "Stack comparisons vertically with labels",
+      "accessibility": "Keyboard-accessible explicit comparison states",
+      "visual": "Evidence-driven editorial hierarchy, not posters",
+      "avoid": "Invented metrics or unlicensed imagery",
+      "assetIds": [
+        "IP-020",
+        "IP-024"
+      ],
+      "stage": "research-brief-only"
+    },
+    {
+      "id": "XC-011",
+      "contexts": [
+        "creative-tool",
+        "design-editor",
+        "canvas"
+      ],
+      "title": "Spatial design studio",
+      "structure": "infinite-canvas",
+      "priority": [
+        "workspace objects",
+        "selection",
+        "tools"
+      ],
+      "sections": [
+        "Tool palette",
+        "Spatial canvas",
+        "Selection inspector",
+        "History feedback"
+      ],
+      "navigation": "Canvas controls and explicit zoom",
+      "interaction": "Select, drag or nudge objects, undo",
+      "mobile": "Canvas stage plus collapsible inspector",
+      "accessibility": "Keyboard nudge and labeled object list",
+      "visual": "Open spatial work surface",
+      "avoid": "Drag-only manipulation without alternative input",
+      "assetIds": [
+        "IP-018",
+        "IP-019"
+      ],
+      "stage": "research-brief-only"
+    },
+    {
+      "id": "XC-012",
+      "contexts": [
+        "creative-tool",
+        "design-editor",
+        "canvas"
+      ],
+      "title": "Structured clip timeline",
+      "structure": "track-editor",
+      "priority": [
+        "timeline",
+        "frame precision",
+        "conflicts"
+      ],
+      "sections": [
+        "Track list",
+        "Frame ruler",
+        "Clips and playhead",
+        "History and conflicts"
+      ],
+      "navigation": "Track selection and frame stepping",
+      "interaction": "Snap clips, reject conflicts and undo",
+      "mobile": "Track list and controls stack at narrow widths",
+      "accessibility": "Direct frame inputs and conflict messages",
+      "visual": "Precision grid rather than open canvas",
+      "avoid": "Claiming simulated editor plays actual media",
+      "assetIds": [
+        "IP-023",
+        "IP-021"
+      ],
+      "stage": "research-brief-only"
+    },
+    {
+      "id": "XC-013",
+      "contexts": [
+        "sci-fi-game",
+        "game-companion",
+        "indie-game"
+      ],
+      "title": "Mission world map",
+      "structure": "mission-map-hud",
+      "priority": [
+        "available missions",
+        "active objective",
+        "status"
+      ],
+      "sections": [
+        "Quest map",
+        "Active objective",
+        "Inventory rail",
+        "Mission details"
+      ],
+      "navigation": "Mission node selection and full-text list",
+      "interaction": "Choose mission and inspect requirements",
+      "mobile": "Map becomes accessible numbered mission list",
+      "accessibility": "Text statuses, keyboard nodes and no flashing",
+      "visual": "World navigation with readable mission identity",
+      "avoid": "Fake operational or security-critical telemetry",
+      "assetIds": [
+        "IP-019",
+        "IP-011"
+      ],
+      "stage": "research-brief-only"
+    },
+    {
+      "id": "XC-014",
+      "contexts": [
+        "sci-fi-game",
+        "game-companion",
+        "indie-game"
+      ],
+      "title": "Adventure chapter chronicle",
+      "structure": "sequential-adventure",
+      "priority": [
+        "current chapter",
+        "consequences",
+        "history"
+      ],
+      "sections": [
+        "Chapter opener",
+        "Chronological mission log",
+        "Consequences",
+        "Next chapter"
+      ],
+      "navigation": "Previous and next chapter",
+      "interaction": "Advance story and revisit decisions",
+      "mobile": "Ordered chapter stack and clear progress",
+      "accessibility": "Motion-independent story access and focus",
+      "visual": "Narrative illustration, not an HUD dashboard",
+      "avoid": "Autoplay effects or invented game-state persistence",
+      "assetIds": [
+        "IP-024",
+        "IP-006"
+      ],
+      "stage": "research-brief-only"
+    },
+    {
+      "id": "XC-015",
+      "contexts": [
+        "digital-exhibition",
+        "ambient-experience",
+        "concept-exhibition"
+      ],
+      "title": "Explorable constellation gallery",
+      "structure": "spatial-exhibition",
+      "priority": [
+        "work locations",
+        "current work",
+        "orientation"
+      ],
+      "sections": [
+        "Exhibit locator",
+        "Art focal stage",
+        "Caption and provenance",
+        "Guided exit route"
+      ],
+      "navigation": "Nodes and an ordered exhibit list",
+      "interaction": "Select work and expand its description",
+      "mobile": "Space becomes ordinary indexed gallery",
+      "accessibility": "Keyboard/full-text navigation without animation",
+      "visual": "Calm spacious scene around one work",
+      "avoid": "WebGL or audio required to access core content",
+      "assetIds": [
+        "IP-018",
+        "IP-024"
+      ],
+      "stage": "research-brief-only"
+    },
+    {
+      "id": "XC-016",
+      "contexts": [
+        "digital-exhibition",
+        "ambient-experience",
+        "concept-exhibition"
+      ],
+      "title": "Curator-led narrative visit",
+      "structure": "linear-exhibition",
+      "priority": [
+        "premise",
+        "one work at a time",
+        "sources"
+      ],
+      "sections": [
+        "Curator introduction",
+        "Theme chapters",
+        "Work and caption",
+        "Sources and follow-up"
+      ],
+      "navigation": "Chapter links with optional progress",
+      "interaction": "Step through works and reveal context",
+      "mobile": "All works in semantic reading order",
+      "accessibility": "No-script and reduced-motion complete access",
+      "visual": "Typographic museum narration rather than spatial map",
+      "avoid": "Scroll locking or inaccessible art captions",
+      "assetIds": [
+        "IP-024",
+        "IP-005"
+      ],
+      "stage": "research-brief-only"
+    }
+  ]
+}

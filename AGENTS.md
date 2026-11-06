@@ -2,6 +2,13 @@
 
 This repository is a **living multi-style, cross-application design asset library** — not an AI WORKFLOW PLATFORM kit.
 
+## V0.17 task-first creative alternatives (GitHub-first)
+
+- Read [docs/assembly/experience-compositions.md](docs/assembly/experience-compositions.md), then run `npm run design:compose -- --context=<declared-context> --concepts=2 --format=markdown`. The 16 original `XC-xxx` concepts are architecture **research**, not new React components, runnable templates or brand styles.
+- For the same product goal, show at least two viable **information architecture and interaction** directions when indexed. Compare hierarchy, navigation, mobile reflow and accessibility; changing only colors, gradients, card radius or hero imagery does not create a second concept.
+- A design context can have relevant architectural options without a registered visual style; **leave the style unselected**. Never default to SaaS or claim an architecture idea is implemented in the referenced template.
+- All behavior IDs refer to indexed source/specs requiring adaptation. Do not invent remote APIs, product metrics, real images or production-readiness. For this catalog-only iteration, rely on Node/registry CI and existing checks, not a new running browser or deployed demo.
+
 ## V0.17 design-combination planning (GitHub-first)
 
 - For a new product design request, read [docs/assembly/design-composition.md](docs/assembly/design-composition.md) and use `npm run design:compose -- --context=<declared-context> --intent="<task>" --stack=any|react|static --format=json` to compare candidates; or pass `--template=TPL-xxx` for an explicit blueprint. This is **planning-only**: no code generation, rendering, install, target writes or default theme selection.
