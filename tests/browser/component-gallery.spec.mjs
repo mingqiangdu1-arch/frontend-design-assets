@@ -2,11 +2,11 @@ import {test,expect} from "@playwright/test";
 
 test.beforeEach(async({page})=>{await page.goto("/");});
 
-test("gallery presents 23 component exports and explicit themes",async({page})=>{
+test("gallery presents 27 component exports and explicit themes",async({page})=>{
  await expect(page.getByRole("heading",{name:/组件不仅要好看/})).toBeVisible();
  await expect(page.locator("[data-theme-button]")).toHaveCount(4);
  await expect(page.locator('[data-theme-button="refined-light-saas"]')).toHaveAttribute("aria-pressed","true");
- await expect(page.locator(".cg-spec")).toHaveCount(14);
+ await expect(page.locator(".cg-spec")).toHaveCount(18);
 });
 
 test("switching style updates scope and semantic background",async({page})=>{
@@ -164,6 +164,84 @@ test("all added components have no document horizontal overflow in four themes",
    await page.locator('[data-theme-button="'+theme+'"]').click();
    const x=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
    expect(x.scroll,theme+" at "+width).toBeLessThanOrEqual(x.client+1);
+  }
+ }
+});
+
+
+test("CommandMenu handles filtered keyboard activation, disabled items and Escape",async({page})=>{
+ await page.getByRole("button",{name:"打开命令菜单"}).click();
+ const dialog=page.getByRole("dialog",{name:"快捷命令"});
+ await expect(dialog).toBeVisible();
+ const search=dialog.getByRole("combobox",{name:"搜索快捷命令"});
+ await expect(search).toBeFocused();
+ await search.fill("新建");
+ await expect(dialog.getByRole("option",{name:/新建项目/})).toBeVisible();
+ await search.press("Enter");
+ await expect(dialog).toBeHidden();
+ await expect(page.locator("#command-menu .cg-hint")).toContainText("new-project");
+ await page.getByRole("button",{name:"打开命令菜单"}).click();
+ await dialog.getByRole("combobox",{name:"搜索快捷命令"}).fill("删除全部");
+ await expect(dialog.getByRole("option",{name:"删除全部素材"})).toHaveAttribute("aria-disabled","true");
+ await dialog.getByRole("combobox",{name:"搜索快捷命令"}).press("Enter");
+ await expect(dialog).toBeVisible();
+ await dialog.getByRole("combobox",{name:"搜索快捷命令"}).press("Escape");
+ await expect(dialog).toBeHidden();
+ await expect(page.getByRole("button",{name:"打开命令菜单"})).toBeFocused();
+});
+
+test("DatePicker uses real native date semantics, valid range and clearing",async({page})=>{
+ const date=page.locator("#date-picker input[type=date]");
+ await expect(date).toHaveAttribute("type","date");
+ await expect(date).toHaveAttribute("min","2026-11-01");
+ await expect(date).toHaveAttribute("max","2026-11-30");
+ await date.fill("2026-11-13");
+ await expect(date).toHaveValue("2026-11-13");
+ await expect(page.locator("#date-picker .cg-hint").last()).toContainText("2026-11-13");
+ await page.getByRole("button",{name:"清除计划日期"}).click();
+ await expect(date).toHaveValue("");
+});
+
+test("ResizablePanels offers keyboard resizing and enforces min/max",async({page})=>{
+ const splitter=page.getByRole("separator",{name:"工作区分隔线"});
+ await expect(splitter).toHaveAttribute("aria-valuenow","45");
+ await splitter.focus();
+ await splitter.press("ArrowRight");
+ await expect(splitter).toHaveAttribute("aria-valuenow","46");
+ await splitter.press("Shift+ArrowRight");
+ await expect(splitter).toHaveAttribute("aria-valuenow","56");
+ await splitter.press("End");
+ await expect(splitter).toHaveAttribute("aria-valuenow","75");
+ await splitter.press("Home");
+ await expect(splitter).toHaveAttribute("aria-valuenow","25");
+});
+
+test("FileUpload accepts local files, rejects size/type and allows removal without network",async({page})=>{
+ const field=page.locator("#file-upload input[type=file]");
+ await field.setInputFiles({name:"notes.txt",mimeType:"text/plain",buffer:Buffer.from("hello")});
+ await expect(page.getByRole("button",{name:"移除文件 notes.txt"})).toBeVisible();
+ await expect(page.locator("#file-upload .cg-hint").last()).toContainText("1");
+ await field.setInputFiles({name:"wrong.pdf",mimeType:"application/pdf",buffer:Buffer.from("%PDF")});
+ await expect(page.locator("#file-upload [role=alert]")).toContainText("文件类型不允许");
+ await expect(page.locator("#file-upload .cg-hint").last()).toContainText("1");
+ await field.setInputFiles({name:"big.txt",mimeType:"text/plain",buffer:Buffer.alloc(1300,97)});
+ await expect(page.locator("#file-upload [role=alert]")).toContainText("文件过大");
+ await field.setInputFiles({name:"second.txt",mimeType:"text/plain",buffer:Buffer.from("world")});
+ await expect(page.getByRole("button",{name:"移除文件 second.txt"})).toBeVisible();
+ await field.setInputFiles({name:"third.txt",mimeType:"text/plain",buffer:Buffer.from("third")});
+ await expect(page.locator("#file-upload [role=alert]")).toContainText("超过数量限制");
+ await page.getByRole("button",{name:"移除文件 notes.txt"}).click();
+ await expect(page.getByRole("button",{name:"移除文件 notes.txt"})).toHaveCount(0);
+ await expect(page.locator("#file-upload .cg-hint").last()).toContainText("1");
+});
+
+test("V0.20 gallery utilities fit four themes at mobile and desktop widths",async({page})=>{
+ for(const width of [390,768,1440]){
+  await page.setViewportSize({width,height:900});
+  for(const theme of ["refined-light-saas","precision-dark","editorial-warm","playful-pop"]){
+   await page.locator('[data-theme-button="'+theme+'"]').click();
+   const x=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
+   expect(x.scroll,theme+" / "+width).toBeLessThanOrEqual(x.client+1);
   }
  }
 });

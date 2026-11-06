@@ -15,9 +15,12 @@ for(const item of manifest.entries){
  const fileSource=get(item.source||"packages/ui/src/index.tsx");
  if(!new RegExp("export (?:const|function) "+item.exportName+"\\b").test(fileSource))
   throw Error(item.id+" is not implemented in "+item.source);
- if(item.source!=="packages/ui/src/index.tsx"&&!new RegExp(
-  "export \\{[^}]*\\b"+item.exportName+"\\b[^}]*\\} from [\\\"']\\./advanced[\\\"']"
- ).test(source))throw Error(item.id+" is not re-exported by the public UI index");
+ if(item.source!=="packages/ui/src/index.tsx"){
+  const moduleName=item.source.split("/").at(-1).replace(/\.tsx$/,"");
+  const declaration="export \\{[^}]*\\b"+item.exportName+"\\b[^}]*\\} from [\\\"']\\./"+moduleName+"[\\\"']";
+  if(!new RegExp(declaration).test(source))
+   throw Error(item.id+" is not re-exported by the public UI index");
+ }
  if(found.stage==="production-ready")throw Error("Component incorrectly declared production ready: "+item.id);
 }
 for(const style of manifest.styleIds)if(!styles.includes(style))throw Error("Undeclared style "+style);

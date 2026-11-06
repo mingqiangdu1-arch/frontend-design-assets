@@ -1,5 +1,5 @@
 {
-  "version": "0.19.0",
+  "version": "0.20.0",
   "package": "@frontend-design-assets/ui",
   "status": "reference-implemented; not production-certified",
   "source": "packages/ui/src/index.tsx",
@@ -328,6 +328,58 @@
       "demo": "playground/component-gallery/index.html",
       "interaction": "controlled state and scoped keyboard/pointer behavior; details in packages/ui/README.md",
       "verified": "V0.19 reference implementation; GitHub CI verification pending at registration time, no real-product or screen-reader certification."
+    },
+    {
+      "id": "UI-038",
+      "exportName": "CommandMenu",
+      "category": "navigation",
+      "description": "Modal grouped searchable command palette with keyboard activation",
+      "source": "packages/ui/src/utilities.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "interaction": "controlled, keyboard/browser-native behavior; see packages/ui/README.md",
+      "verified": "V0.20 reference implementation; GitHub CI verification pending at registration, no target integration or screen-reader certification."
+    },
+    {
+      "id": "UI-039",
+      "exportName": "DatePicker",
+      "category": "input",
+      "description": "Controlled browser-native calendar date field with bounds and clear action",
+      "source": "packages/ui/src/utilities.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "interaction": "controlled, keyboard/browser-native behavior; see packages/ui/README.md",
+      "verified": "V0.20 reference implementation; GitHub CI verification pending at registration, no target integration or screen-reader certification."
+    },
+    {
+      "id": "UI-040",
+      "exportName": "ResizablePanels",
+      "category": "layout",
+      "description": "Keyboard and pointer-adjustable two-pane split with controlled percentage",
+      "source": "packages/ui/src/utilities.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "interaction": "controlled, keyboard/browser-native behavior; see packages/ui/README.md",
+      "verified": "V0.20 reference implementation; GitHub CI verification pending at registration, no target integration or screen-reader certification."
+    },
+    {
+      "id": "UI-041",
+      "exportName": "FileUpload",
+      "category": "input",
+      "description": "Controlled local file picker and drag/drop with size/type/count rejection",
+      "source": "packages/ui/src/utilities.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "interaction": "controlled, keyboard/browser-native behavior; see packages/ui/README.md",
+      "verified": "V0.20 reference implementation; GitHub CI verification pending at registration, no target integration or screen-reader certification."
     }
   ],
   "stateMatrix": "registry/component-states.json",

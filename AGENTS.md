@@ -2,6 +2,12 @@
 
 This repository is a **living multi-style, cross-application design asset library** — not an AI WORKFLOW PLATFORM kit.
 
+## V0.20 actual React utility extension
+
+- The real React catalog now includes 27 exports, adding four V0.20 implementations in `packages/ui/src/utilities.tsx`: `CommandMenu`, `DatePicker`, `ResizablePanels`, `FileUpload` (`UI-038..041`). No new dependency or unregistered design style.
+- `CommandMenu` uses opt-in controlled open state and local command groups; it never executes a command unless the host application responds to `onSelect`. `DatePicker` deliberately uses a **native date input**; do not advertise a custom calendar. `ResizablePanels` is a single keyboard/pointer split with percentage state, not docking layout. `FileUpload` is only file selection, validation and removal—not upload transport or security validation.
+- Preserve the four existing React-supported style scopes and explicit dependency boundaries. The historical state matrix still covers only selected older exports; new browser smoke fixtures do not imply screen-reader, physical mobile or product certification.
+
 ## V0.19 actual React UI component extension
 
 - The real React component catalog now has **23 exports**, including five new V0.19 implementations in `packages/ui/src/advanced.tsx`: `DataTable`, `TreeView`, `Combobox`, `Popover`, `DualRangeField`. The previously listed `UI-028..032` remain **research-only component anatomy**, NOT these production implementations.

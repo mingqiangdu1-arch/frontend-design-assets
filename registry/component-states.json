@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "scope": "Selected component-state coverage of original 18 exports; V0.19 additional five exports are explicitly unreviewed in the state matrix but tested in the interactive gallery.",
+  "scope": "Selected component states of the first 18 exports; V0.19 and V0.20 additions are explicitly uncovered in the older state matrix, but exercised in the live gallery.",
   "styleIds": [
     "refined-light-saas",
     "precision-dark",
@@ -135,7 +135,11 @@
     "UI-034",
     "UI-035",
     "UI-036",
-    "UI-037"
+    "UI-037",
+    "UI-038",
+    "UI-039",
+    "UI-040",
+    "UI-041"
   ],
   "maturity": "prototype",
   "visualBaselineStatus": "unapproved",

@@ -204,3 +204,7 @@ export function Toast({open,message,tone="neutral",onDismiss,action}:{
 // Additional real React components; research-only UI-028..032 are separate assets.
 export {DataTable,TreeView,Combobox,Popover,DualRangeField} from "./advanced";
 export type {DataTableColumn,DataTableSort,DataTableProps,TreeViewItem,TreeViewProps,ComboboxOption,ComboboxProps,PopoverProps,DualRangeFieldProps} from "./advanced";
+
+// V0.20 utility components with explicit controlled state and browser-native fallbacks.
+export {CommandMenu,DatePicker,ResizablePanels,FileUpload} from "./utilities";
+export type {CommandItem,CommandGroup,CommandMenuProps,DatePickerProps,ResizeOrientation,ResizablePanelsProps,FileRejectionReason,FileRejection,FileUploadProps} from "./utilities";

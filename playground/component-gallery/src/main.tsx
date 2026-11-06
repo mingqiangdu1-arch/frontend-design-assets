@@ -3,7 +3,8 @@ import {StateMatrix} from "./StateMatrix";
 import {createRoot} from "react-dom/client";
 import {ThemeSurface,Button,Badge,Card,TextField,TextAreaField,SelectField,CheckboxField,SwitchField,
  Tabs,Alert,Progress,Skeleton,Dialog,EmptyState,Avatar,DataList,Toast,
- DataTable,TreeView,Combobox,Popover,DualRangeField,type DataTableColumn,type DataTableSort,type ThemeId,type Tone} from "../../../packages/ui/src/index";
+ DataTable,TreeView,Combobox,Popover,DualRangeField,
+ CommandMenu,DatePicker,ResizablePanels,FileUpload,type DataTableColumn,type DataTableSort,type ThemeId,type Tone} from "../../../packages/ui/src/index";
 import "../../../tokens/refined-light.css";
 import "../../../styles/precision-dark/tokens.css";
 import "../../../styles/editorial-warm/tokens.css";
@@ -71,6 +72,11 @@ function App(){
  const [city,setCity]=React.useState("tokyo");
  const [popoverOpen,setPopoverOpen]=React.useState(false);
  const [band,setBand]=React.useState<[number,number]>([20,65]);
+ const [commandOpen,setCommandOpen]=React.useState(false);
+ const [lastCommand,setLastCommand]=React.useState("无");
+ const [date,setDate]=React.useState("2026-11-06");
+ const [splitSize,setSplitSize]=React.useState(45);
+ const [localFiles,setLocalFiles]=React.useState<File[]>([]);
  const sortedReviewRows=React.useMemo(()=>!tableSort?reviewRows:
   [...reviewRows].sort((a,b)=>{
    const diff=tableSort.key==="priority"?a.priority-b.priority:
@@ -84,7 +90,7 @@ function App(){
  };
  return <div className="cg-app">
  <header className="cg-top">
-  <div className="cg-brand"><span className="cg-mark">◈</span><div><strong>Component Library</strong><small>Frontend Design Assets / v0.19</small></div></div>
+  <div className="cg-brand"><span className="cg-mark">◈</span><div><strong>Component Library</strong><small>Frontend Design Assets / v0.20</small></div></div>
   <a href="https://github.com/mingqiangdu1-arch/frontend-design-assets/tree/main/packages/ui" target="_blank" rel="noreferrer">GitHub 源码 ↗</a>
  </header>
  <div className="cg-picker" role="group" aria-label="选择组件预览风格">
@@ -95,7 +101,7 @@ function App(){
  <ThemeSurface theme={theme} className="cg-surface">
   <div className="cg-intro"><div><small>LIVE REACT / TYPESCRIPT COMPONENTS</small>
     <h1>组件不仅要好看，也要能直接组装。</h1>
-    <p>23 个实际 React 组件，包括数据表格、树形导航、可搜索选择、弹出面板与双范围输入。当前是参考实现，尚未进行生产集成认证。</p>
+    <p>27 个实际 React 组件，包括命令菜单、原生日期控件、可调整面板及仅本地校验的文件选择。当前是参考实现，尚未进行生产集成认证。</p>
    </div><Badge tone="neutral">{themes.find(x=>x.id===theme)?.label}</Badge>
   </div>
   <div className="cg-grid">
@@ -194,6 +200,40 @@ function App(){
     <DualRangeField label="参数区间" min={0} max={100} step={5} minSpan={15}
      value={band} onValueChange={setBand} unit="分"/>
     <span className="cg-hint">当前区间：{band[0]}–{band[1]}；两端不会交叉</span>
+   </Specimen>
+
+   <Specimen id="command-menu" title="CommandMenu" caption="Grouped command search / keyboard / modal">
+    <div className="cg-stack">
+     <CommandMenu label="快捷命令" triggerLabel="打开命令菜单" open={commandOpen}
+      onOpenChange={setCommandOpen} onSelect={setLastCommand} groups={[
+       {id:"create",heading:"创建",items:[
+        {id:"new-project",label:"新建项目",description:"仅本地演示",keywords:["create","new"]},
+        {id:"new-note",label:"新建笔记",keywords:["note"]}]},
+       {id:"tools",heading:"工具",items:[
+        {id:"search-assets",label:"查找素材",description:"搜索已登记资产",keywords:["search"]},
+        {id:"restricted",label:"删除全部素材",disabled:true}]}
+      ]}/>
+     <span className="cg-hint">已执行命令：{lastCommand} · 此演示不触发实际数据库操作</span>
+    </div>
+   </Specimen>
+   <Specimen id="date-picker" title="DatePicker" caption="Native date / bounds / clearable">
+    <DatePicker label="计划日期" value={date} onValueChange={setDate}
+     min="2026-11-01" max="2026-11-30" clearable
+     hint="使用浏览器原生日期输入；仅允许 2026 年 11 月"/>
+    <span className="cg-hint">当前日期：{date||"未选择"}</span>
+   </Specimen>
+   <Specimen id="resizable-panels" title="ResizablePanels" caption="Controlled split / pointer / Arrow + Shift">
+    <ResizablePanels label="工作区分隔线" size={splitSize} onSizeChange={setSplitSize}
+     minSize={25} maxSize={75}
+     start={<><strong>素材目录</strong><p className="cg-text">可调整的左侧区域。</p></>}
+     end={<><strong>预览内容</strong><p className="cg-text">调整仅保存在此页面。</p></>}/>
+    <span className="cg-hint">左侧宽度：{splitSize}% · 分隔线可用方向键、Home/End 调整</span>
+   </Specimen>
+   <Specimen id="file-upload" title="FileUpload" caption="Native picker / drag drop / validation / no network">
+    <FileUpload label="本地参考文件" files={localFiles} onFilesChange={setLocalFiles}
+     accept=".txt,image/png" maxFiles={2} maxSizeBytes={1024}
+     hint="最多 2 个文件，每个 ≤1KB，仅 TXT/PNG；不执行网络上传"/>
+    <span className="cg-hint">已选文件数：{localFiles.length}</span>
    </Specimen>
    <Specimen id="cards" title="Cards & Empty" caption="modular composition">
      <Card heading="可组合信息卡片" description="不同风格的卡片有不同的信息密度和结构" footer={<><Button size="sm">创建</Button><Button size="sm" variant="ghost">了解更多</Button></>}>

@@ -26,8 +26,8 @@ export function StateMatrix(){
    {themes.map(t=><button type="button" key={t.id} data-matrix-theme={t.id} aria-pressed={theme===t.id} onClick={()=>setTheme(t.id)}>{t.name}</button>)}
   </div>
   <ThemeSurface theme={theme} className="mx-surface">
-   <div className="mx-intro"><div><span>23 REACT EXPORTS · 4 DECLARED THEMES · SELECTED STATE COVERAGE</span>
-    <h1>Component State Matrix</h1><p>同一组真实 React 组件在四套兼容风格下检查默认、加载、禁用、空态、错误及恢复反馈。展示的是选定状态，不表示 23 个组件已全面验收。</p></div>
+   <div className="mx-intro"><div><span>27 REACT EXPORTS · 4 DECLARED THEMES · SELECTED STATE COVERAGE</span>
+    <h1>Component State Matrix</h1><p>同一组真实 React 组件在四套兼容风格下检查默认、加载、禁用、空态、错误及恢复反馈。展示的是选定状态，不表示 27 个组件已全面验收。</p></div>
     <Badge tone="info">{themes.find(t=>t.id===theme)?.name}</Badge></div>
    <main className="mx-grid">
     <Group id="UI-011" title="Button" description="动作的默认、危险、加载与禁用"><>

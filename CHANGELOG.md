@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-06 · V0.20 React utility UI components
+
+- Four genuine new React/TypeScript/CSS exports: `CommandMenu`, `DatePicker` (native browser calendar), `ResizablePanels` (controlled pointer/keyboard splitter) and `FileUpload` (local selection, validation, removal only). Catalog: 23 → 27 React exports; 158 → 162 indexed assets.
+- Component Gallery gained four working interactive specimens; new Playwright tests exercise command keyboard selection/disabled options, native date constraints/clear, splitter bounds and file type/size/count rejection/removal, with responsive theme overflow checks.
+- Existing four explicit style scopes retained; no default theme, third-party UI source, extra runtime dependency, network upload, production screen-reader certification or npm publication. The older selected component-state matrix remains transparently partial.
+
+
 ## 2026-11-06 · V0.19 actual React component expansion
 
 - Added 5 **implemented, typechecked, style-scoped** React exports: DataTable (controlled sort/selection), TreeView (hierarchy and keyboard focus), Combobox (searchable single selection), Popover (controlled nonmodal panel) and DualRangeField (clamped two-value native input). Registered as UI-033..037, distinct from UI-028..032 research sketches.

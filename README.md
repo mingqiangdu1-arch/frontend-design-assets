@@ -27,6 +27,7 @@
 | **高级／特殊交互 V0.16（多轨磁吸时间线、滚动驱动叙事）** | [Interaction Atelier III](playground/advanced-interactions-v3/index.html) / [行为与失败路径](docs/interactions/advanced-interactions-v3.md) |
 | 研究来源与历史记录 | [docs/research/sources.md](docs/research/sources.md) / [动效与 View Transitions](docs/motion/motion-system.md) |
 | 查看初始交互 Demo | [playground/initial-interaction-lab.html](playground/initial-interaction-lab.html) |
+| **V0.20 实际组件扩展（命令／日期／布局／文件）** | [27 个 React 组件及 API](packages/ui/README.md) · [4 个新增组件源码](packages/ui/src/utilities.tsx) · [可交互展示页](playground/component-gallery/README.md) |
 | **V0.19 可复用 React UI 组件扩展** | [23 个实际 React 组件及 API](packages/ui/README.md) · [新增 DataTable/TreeView/Combobox/Popover/DualRangeField](packages/ui/src/advanced.tsx) · [四主题展示页](playground/component-gallery/README.md) |
 | **V0.18 新一批素材（视觉／交互／组件）** | [研究包导航](docs/research/external-catalog-v018.md) · [2 套独立视觉研究](docs/styles/visual-studies-v018.md) · [6 种高级交互](docs/interactions/advanced-patterns-v018.md) · [5 种组件形态](docs/components/advanced-patterns-v018.md) |
 | **构图方案匹配评价（V0.17）** | [可解释的匹配评价与取舍](docs/assembly/experience-compositions.md) · `npm run design:compose -- --context=consumer-mobile --density=low --device=mobile --complexity=simple --expression=restrained --format=markdown` |

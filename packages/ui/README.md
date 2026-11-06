@@ -50,8 +50,41 @@ The illustrative import `frontend-design-assets/styles/...` above is a repositor
 | Navigation & hierarchy | **TreeView** |
 | Advanced input | **Combobox**, **DualRangeField** |
 | Interactive overlays | **Popover** |
+| Commands | **CommandMenu** |
+| Date & file input | **DatePicker**, **FileUpload** |
+| Layout | **ResizablePanels** |
 
-**23 exported React components (including five new in V0.19).** All use style-scoped `fda-` CSS rather than globally overwriting buttons, forms, cards, etc. The names are also discoverable in `registry/components.json`.
+**27 exported React components (including four new in V0.20).** All use style-scoped `fda-` CSS rather than globally overwriting buttons, forms, cards, etc. The names are also discoverable in `registry/components.json`.
+
+## V0.20 utility exports — implemented code, local-only effects
+
+Four new original reference components live in [src/utilities.tsx](src/utilities.tsx) and are re-exported in the public package index. They work with the same four declared theme scopes; no new runtime dependencies or default theme are introduced.
+
+| Component | Controlled contract | Important boundaries |
+| --- | --- | --- |
+| `CommandMenu` (`UI-038`) | `open/onOpenChange`, grouped `CommandItem[]`, `onSelect(id)` | Native modal dialog, searchable command list, Arrow/Enter/Escape and disabled options. No global hotkey, persistence or implicit execution. Caller owns the actual command action. |
+| `DatePicker` (`UI-039`) | ISO `YYYY-MM-DD` string `value/onValueChange`, optional `min/max/clearable` | Uses native browser date picker. Calendar appearance and locale depend on browser/OS; invalid explicit dates rejected. Not a custom calendar popover. |
+| `ResizablePanels` (`UI-040`) | `size` percentage, `onSizeChange`, `minSize/maxSize`, horizontal/vertical | Pointer capture and keyboard arrows/Shift/Home/End. Only one splitter/two panels; no persisted workspace layout, RTL-specific logic or nested docking. |
+| `FileUpload` (`UI-041`) | controlled `files/onFilesChange`, `accept/maxFiles/maxSizeBytes`, `onRejected` | Native picker + drag/drop, reject disallowed types/sizes/count/duplicates, remove files. **Never sends files to a server**; `accept` is only a convenience, not server-side validation. |
+
+### Reuse example
+
+```tsx
+import {useState} from 'react';
+import {DatePicker,ResizablePanels} from '@frontend-design-assets/ui';
+
+function Example(){
+  const [date,setDate]=useState('2026-11-06');
+  const [size,setSize]=useState(45);
+  return <>
+    <DatePicker label='计划日期' value={date} onValueChange={setDate} min='2026-11-01' clearable/>
+    <ResizablePanels label='内容区分隔线' size={size} onSizeChange={setSize}
+      start={<div>目录</div>} end={<div>内容</div>}/>
+  </>;
+}
+```
+
+The package remains local/unpublished, so consumers must configure its real workspace path and load the selected compatible theme tokens. Browser UI behavior is reference-level and does not establish a production accessibility audit. No cloud file upload is provided.
 
 ## V0.19 advanced exports — real code with controlled state
 

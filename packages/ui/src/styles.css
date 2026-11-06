@@ -199,3 +199,73 @@ button.fda-data-list__row[aria-pressed="true"]{background:var(--ui-selected)}
 .fda-dual-range__sliders input{width:100%;min-width:0;accent-color:var(--ui-focus)}
 .fda-dual-range:disabled{opacity:.6}
 @media(max-width:460px){.fda-dual-range__controls,.fda-dual-range__sliders{grid-template-columns:1fr}}
+
+
+/* V0.20 original React utility components, scoped through --ui-* theme tokens. */
+.fda-command__trigger,.fda-date__row button,.fda-upload__list button{
+ background:var(--ui-surface);color:var(--ui-text);border:1px solid var(--ui-border);
+ border-radius:var(--ui-radius);min-height:var(--ui-control-height);padding:7px 12px;
+}
+.fda-command__trigger{display:inline-flex;align-items:center;justify-content:space-between;gap:28px}
+.fda-command__trigger span{font-size:19px;color:var(--ui-muted)}
+.fda-command__dialog{border:1px solid var(--ui-border);border-radius:var(--ui-card-radius);
+ color:var(--ui-text);background:var(--ui-surface);padding:0;
+ width:min(540px,calc(100vw - 24px));max-height:min(78vh,700px);
+ box-shadow:0 20px 65px #0004;font:400 var(--ui-body-size)/1.5 var(--ui-font)}
+.fda-command__dialog::backdrop{background:#1117229c}
+.fda-command__surface{padding:15px;display:grid;gap:11px}
+.fda-command__surface input{width:100%;background:var(--ui-bg);color:var(--ui-text);
+ border:1px solid var(--ui-border);border-radius:var(--ui-radius);padding:11px 13px}
+.fda-command__results{max-height:43vh;overflow:auto}
+.fda-command__results [role=group]+[role=group]{border-top:1px solid var(--ui-border-soft);margin-top:9px}
+.fda-command__results h3{margin:8px 9px;font-weight:700;font-size:11px;color:var(--ui-muted)}
+.fda-command__item{display:flex;align-items:center;padding:11px 12px;border-radius:var(--ui-radius);
+ cursor:pointer;color:var(--ui-text)}
+.fda-command__item small{display:block;color:var(--ui-muted);font-size:11px}
+.fda-command__item[data-highlighted="true"]{background:var(--ui-selected)}
+.fda-command__item[aria-disabled="true"]{opacity:.43;cursor:not-allowed}
+.fda-command__empty{margin:0;padding:14px;color:var(--ui-muted)}
+.fda-command__footer{border-top:1px solid var(--ui-border-soft);padding:8px;color:var(--ui-muted);font-size:11px}
+
+.fda-date{display:grid;gap:7px;min-width:0}
+.fda-date>label,.fda-upload>label{font-size:12px;font-weight:650}
+.fda-date__row{display:flex;gap:9px;align-items:center;min-width:0}
+.fda-date__input{flex:1;min-width:0;border:1px solid var(--ui-border);border-radius:var(--ui-radius);
+ color:var(--ui-text);background:var(--ui-surface);padding:8px;min-height:var(--ui-control-height);
+ font:inherit;color-scheme:normal}
+[data-design-theme="precision-dark"] .fda-date__input{color-scheme:dark}
+.fda-date__input[aria-invalid="true"]{border-color:var(--ui-danger)}
+
+.fda-resize{display:flex;min-width:0;width:100%;border:1px solid var(--ui-border);
+ background:var(--ui-surface);border-radius:var(--ui-radius);overflow:hidden}
+.fda-resize[data-orientation="horizontal"]{flex-direction:row;min-height:180px}
+.fda-resize[data-orientation="vertical"]{flex-direction:column;min-height:260px;height:300px}
+.fda-resize__pane{min-width:0;min-height:0;overflow:auto;padding:14px;color:var(--ui-text)}
+.fda-resize__pane--start{flex:0 0 var(--fda-resize-size)}
+.fda-resize__pane--end{flex:1 1 0}
+.fda-resize__handle{flex:0 0 10px;background:var(--ui-subtle);position:relative;
+ display:grid;place-items:center;touch-action:none;user-select:none;cursor:col-resize;
+ border-inline:1px solid var(--ui-border-soft)}
+.fda-resize[data-orientation="vertical"] .fda-resize__handle{cursor:row-resize;border-inline:0;
+ border-block:1px solid var(--ui-border-soft)}
+.fda-resize__handle:focus-visible{outline:2px solid var(--ui-focus);outline-offset:-2px}
+.fda-resize__grip{color:var(--ui-muted);line-height:1;pointer-events:none}
+.fda-resize[data-orientation="vertical"] .fda-resize__grip{transform:rotate(90deg)}
+.fda-resize__handle[aria-disabled="true"]{cursor:default;opacity:.5}
+
+.fda-upload{display:grid;gap:8px;min-width:0}
+.fda-upload__drop{display:grid;gap:8px;padding:17px;min-width:0;
+ border:1px dashed var(--ui-border);border-radius:var(--ui-radius);
+ color:var(--ui-muted);background:var(--ui-subtle);font-size:12px}
+.fda-upload__drop[data-drag-over="true"]{border-color:var(--ui-focus);background:var(--ui-selected)}
+.fda-upload__drop input{color:var(--ui-text);max-width:100%;font-size:11px}
+.fda-upload__list{list-style:none;margin:0;padding:0;display:grid;gap:5px}
+.fda-upload__list li{display:flex;gap:8px;align-items:center;justify-content:space-between;
+ min-width:0;padding:8px 10px;border:1px solid var(--ui-border-soft);border-radius:var(--ui-radius);
+ background:var(--ui-surface);font-size:11px}
+.fda-upload__list li span{overflow-wrap:anywhere;min-width:0}
+.fda-upload__list li small{color:var(--ui-muted)}
+.fda-upload__list button{min-height:29px;white-space:nowrap}
+.fda-upload__error{color:var(--ui-danger);font-size:11px}
+@media(max-width:520px){.fda-resize[data-orientation="horizontal"]{min-height:150px}
+ .fda-resize__pane{padding:10px}.fda-upload__drop{padding:10px}}

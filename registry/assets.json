@@ -4759,6 +4759,196 @@
         "instructions": "Use controlled state in the target application; load only one supported theme and its scoped UI CSS. Consult README for input and keyboard boundaries.",
         "limitations": "Reference-level UI only; no server pagination, complex virtualization, async loading or complete assistive-tech certification."
       }
+    },
+    {
+      "id": "UI-038",
+      "type": "component",
+      "name": "navigation: CommandMenu",
+      "exportName": "CommandMenu",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "command",
+        "palette",
+        "search",
+        "keyboard",
+        "dialog",
+        "react"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/utilities.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "workspace",
+        "developer-tool",
+        "creative-tool",
+        "productivity"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is a peer dependency",
+      "verified": "V0.20 React/TypeScript reference implementation; CI checks pending. No production, cross-browser, native mobile or assistive-tech certification.",
+      "handoff": {
+        "entry": "packages/ui/src/utilities.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Use controlled props, choose exactly one compatible theme, and explicitly implement target product effects/server boundary.",
+        "limitations": "Reference UI only; native date control, single splitter, controlled local files (NO network upload), and no indexed/global shortcut handler."
+      }
+    },
+    {
+      "id": "UI-039",
+      "type": "component",
+      "name": "input: DatePicker",
+      "exportName": "DatePicker",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "date",
+        "calendar",
+        "form",
+        "native",
+        "react"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/utilities.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "forms",
+        "workspace",
+        "booking-flow",
+        "consumer-mobile"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is a peer dependency",
+      "verified": "V0.20 React/TypeScript reference implementation; CI checks pending. No production, cross-browser, native mobile or assistive-tech certification.",
+      "handoff": {
+        "entry": "packages/ui/src/utilities.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Use controlled props, choose exactly one compatible theme, and explicitly implement target product effects/server boundary.",
+        "limitations": "Reference UI only; native date control, single splitter, controlled local files (NO network upload), and no indexed/global shortcut handler."
+      }
+    },
+    {
+      "id": "UI-040",
+      "type": "component",
+      "name": "layout: ResizablePanels",
+      "exportName": "ResizablePanels",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "resize",
+        "split",
+        "panels",
+        "keyboard",
+        "pointer",
+        "react"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/utilities.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "workspace",
+        "creative-tool",
+        "editor",
+        "developer-tool"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is a peer dependency",
+      "verified": "V0.20 React/TypeScript reference implementation; CI checks pending. No production, cross-browser, native mobile or assistive-tech certification.",
+      "handoff": {
+        "entry": "packages/ui/src/utilities.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Use controlled props, choose exactly one compatible theme, and explicitly implement target product effects/server boundary.",
+        "limitations": "Reference UI only; native date control, single splitter, controlled local files (NO network upload), and no indexed/global shortcut handler."
+      }
+    },
+    {
+      "id": "UI-041",
+      "type": "component",
+      "name": "input: FileUpload",
+      "exportName": "FileUpload",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "file",
+        "upload",
+        "dropzone",
+        "validation",
+        "react"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/utilities.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "workspace",
+        "forms",
+        "creative-tool",
+        "document-review"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is a peer dependency",
+      "verified": "V0.20 React/TypeScript reference implementation; CI checks pending. No production, cross-browser, native mobile or assistive-tech certification.",
+      "handoff": {
+        "entry": "packages/ui/src/utilities.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Use controlled props, choose exactly one compatible theme, and explicitly implement target product effects/server boundary.",
+        "limitations": "Reference UI only; native date control, single splitter, controlled local files (NO network upload), and no indexed/global shortcut handler."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",
