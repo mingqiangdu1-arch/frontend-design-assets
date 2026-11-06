@@ -43,10 +43,13 @@ function scoreIntent(asset,terms){
  const id=text(asset.id),name=text(asset.name),exports=text(asset.exportName);
  const tags=(asset.tags||[]).map(text),aliases=(asset.aliases||[]).map(text);
  const contexts=(asset.applicationContexts||[]).map(text);
+ // Match registered, multi-character aliases inside Chinese task sentences.
+ // This is conservative lexical matching: no stemming or semantic inference.
+ const phraseMatch=term=>aliases.some(a=>a.length>=2&&term.includes(a));
  let score=0,hits=0;
  for(const term of terms){
   const matched=id.includes(term)||name.includes(term)||exports.includes(term)||
-    tags.some(t=>t.includes(term))||aliases.some(t=>t.includes(term))||contexts.some(t=>t.includes(term));
+    tags.some(t=>t.includes(term))||aliases.some(t=>t.includes(term))||contexts.some(t=>t.includes(term))||phraseMatch(term);
   if(!matched)continue;
   hits++;
   if(id===term)score+=45;
@@ -55,16 +58,19 @@ function scoreIntent(asset,terms){
   else if(tags.includes(term))score+=20;
   else if(name.includes(term)||exports.includes(term))score+=14;
   else if(aliases.some(t=>t.includes(term)))score+=12;
+  else if(phraseMatch(term))score+=11;
   else score+=6;
  }
  return {score,hits};
 }
 
 export function searchAssets(assets,options={}){
- const {style=null,context=null,kind=null,reuse=null,goal=null,intent="",limit=12,reusePolicies={}}=options;
- const terms=text(intent).split(/\s+/).filter(Boolean);
+ const {style=null,context=null,kind=null,type=null,stage=null,reuse=null,goal=null,intent="",limit=12,reusePolicies={}}=options;
+ const terms=text(intent).normalize("NFKC").split(/[\s,，、;；。.!?！？/]+/).filter(Boolean);
  return assets.filter(asset=>{
   if(kind&&asset.reuseKind!==kind)return false;
+  if(type&&asset.type!==type)return false;
+  if(stage&&asset.stage!==stage)return false;
   if(reuse&&reuseMode(asset,reusePolicies)!==reuse)return false;
   if(style&&asset.styleIds?.length&&!asset.styleIds.includes(style))return false;
   if(style&&asset.reuseKind==="style-token"&&!asset.styleIds?.includes(style))return false;
@@ -89,9 +95,9 @@ function parseArgs(args){
  const params={};
  for(const raw of args){
   if(raw==="--json"){params.json=true;continue;}
-  if(!raw.startsWith("--")||!raw.includes("="))throw Error("Use --style=... --context=... --intent=... --kind=... --reuse=... --goal=... --limit=... [--json]");
+  if(!raw.startsWith("--")||!raw.includes("="))throw Error("Use --style=... --context=... --intent=... --kind=... --type=... --stage=... --reuse=... --goal=... --limit=... [--json]");
   const [key,...rest]=raw.slice(2).split("=");
-  if(!["style","context","kind","intent","reuse","goal","limit"].includes(key))throw Error("Unknown option: "+key);
+  if(!["style","context","kind","type","stage","intent","reuse","goal","limit"].includes(key))throw Error("Unknown option: "+key);
   if(params[key]!==undefined)throw Error("Duplicate option: "+key);
   params[key]=rest.join("=");
  }
@@ -107,14 +113,14 @@ export function runCLI(args,root=process.cwd()){
  const options={...opt,reusePolicies:manifest.reusePolicies||{}};
  const results=searchAssets(manifest.assets,options);
  const criteria={style:opt.style||null,context:opt.context||null,intent:opt.intent||null,
-  kind:opt.kind||null,reuse:opt.reuse||null,goal:opt.goal||null};
+  kind:opt.kind||null,type:opt.type||null,stage:opt.stage||null,reuse:opt.reuse||null,goal:opt.goal||null};
  if(opt.json)return JSON.stringify({
   criteria,
   note:"Reference handoffs are not certified code. Empty styleIds denotes conceptual neutrality, not CSS/React portability.",
   results:results.map(asset=>({...asset,handoffResolved:buildHandoff(asset,manifest.reusePolicies)}))
  },null,2);
  const lines=[
-  "Candidates ("+results.length+"): style="+(opt.style||"any")+", context="+(opt.context||"any")+
+  "Candidates ("+results.length+"): type="+(opt.type||"any")+", stage="+(opt.stage||"any")+", style="+(opt.style||"any")+", context="+(opt.context||"any")+
    ", intent="+(opt.intent||"any")+", reuse="+(opt.reuse||"any")+", goal="+(opt.goal||"any"),
   "INFO: copyable-source means inspectable reference code, NOT drop-in/production-ready software."
  ];

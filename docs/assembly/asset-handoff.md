@@ -7,11 +7,13 @@ This repository is a living design reference library, not a source of certified 
 Identify the task, users, device, interaction mode and target stack. Keep style optional until the page's visual direction is chosen. Use the existing registries:
 
 ```sh
-node scripts/find-assets.mjs --intent=拖拽 --goal=behavior --json
-node scripts/find-assets.mjs --style=precision-dark --goal=implementation --limit=10 --json
+node scripts/find-assets.mjs --intent=拖拽 --type=interaction --goal=behavior --json
+node scripts/find-assets.mjs --style=precision-dark --type=component --stage=reference-implemented --goal=implementation --limit=10 --json
 node scripts/find-assets.mjs --reuse=research-only --goal=visual --intent=editorial --json
 node scripts/compose-page.mjs --template=TPL-005 --format=markdown
 ```
+
+Use `--type` to filter an asset's `type` (e.g., `component`, `interaction`, `reference`) and `--stage` to require an exact lifecycle stage; both exclude nonmatching assets without changing identity or maturity. The legacy `--kind` option filters `reuseKind`, not `type`.
 
 The `--goal` option **re-ranks** matching candidates: `implementation` prefers source references, `behavior` prefers interaction contracts, `visual` prefers art-direction references. It does not override `styleIds` or prove compatibility. `--reuse` filters by the registry's handoff policy.
 

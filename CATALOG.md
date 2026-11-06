@@ -41,14 +41,14 @@
 ## 可以运行 Node 时
 
 ```sh
-node scripts/find-assets.mjs --intent=drag --goal=behavior --limit=10 --json
-node scripts/find-assets.mjs --intent=table --goal=implementation --reuse=copyable-source --json
+node scripts/find-assets.mjs --intent="拖拽" --type=interaction --goal=behavior --limit=10 --json
+node scripts/find-assets.mjs --intent="我需要一个可编辑表格" --type=component --stage=reference-implemented --goal=implementation --reuse=copyable-source --json
 node scripts/find-assets.mjs --style=precision-dark --goal=implementation --json
 node scripts/compose-page.mjs --list
 node scripts/plan-design-composition.mjs --context=knowledge-base --stack=react --format=markdown
 ```
 
-注意：当前检索 CLI 主要是基于名称/标签/别名的**词项匹配**，不是语义搜索。中英文同义词覆盖不完整时，可以先用本页关键词路由，再查精确 ID；没有匹配不代表资产不存在。CLI 是选材/规划工具，**不会构建或修改目标项目**。
+注意：检索 CLI 支持 `--type=component|interaction|page-template|...` 和 `--stage=reference-implemented|prototype|...`，并能识别**已登记中文别名出现在较长句子内**的情况，但仍然是基于名称/标签/别名的**词项匹配**，不是语义搜索。中英文同义词覆盖不完整时，可以先用本页关键词路由，再查精确 ID；没有匹配不代表资产不存在。CLI 是选材/规划工具，**不会构建或修改目标项目**。
 
 ## 冲突与保守规则
 

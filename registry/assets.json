@@ -127,7 +127,11 @@
         "editor",
         "desktop-tool"
       ],
-      "demoStyleId": "refined-light-saas"
+      "demoStyleId": "refined-light-saas",
+      "aliases": [
+        "全局命令菜单",
+        "键盘快捷入口"
+      ]
     },
     {
       "id": "IP-002",
@@ -149,6 +153,10 @@
         "workspace",
         "editor",
         "data-tool"
+      ],
+      "aliases": [
+        "快速预览",
+        "悬浮预览"
       ]
     },
     {
@@ -169,7 +177,11 @@
       "reuseKind": "behavior-pattern",
       "styleIds": [],
       "applicationContexts": [],
-      "demoStyleId": "refined-light-saas"
+      "demoStyleId": "refined-light-saas",
+      "aliases": [
+        "详情侧滑面板",
+        "检查器"
+      ]
     },
     {
       "id": "IP-004",
@@ -188,7 +200,11 @@
       "reuseKind": "behavior-pattern",
       "styleIds": [],
       "applicationContexts": [],
-      "demoStyleId": "refined-light-saas"
+      "demoStyleId": "refined-light-saas",
+      "aliases": [
+        "二次确认",
+        "危险操作确认"
+      ]
     },
     {
       "id": "IP-005",
@@ -207,7 +223,11 @@
       "reuseKind": "behavior-pattern",
       "styleIds": [],
       "applicationContexts": [],
-      "demoStyleId": "refined-light-saas"
+      "demoStyleId": "refined-light-saas",
+      "aliases": [
+        "标签页指示动画",
+        "共享布局指示器"
+      ]
     },
     {
       "id": "IP-006",
@@ -226,7 +246,11 @@
       "reuseKind": "behavior-pattern",
       "styleIds": [],
       "applicationContexts": [],
-      "demoStyleId": "refined-light-saas"
+      "demoStyleId": "refined-light-saas",
+      "aliases": [
+        "Toast反馈",
+        "操作结果提示"
+      ]
     },
     {
       "id": "IP-007",
@@ -249,7 +273,11 @@
         "async-tool",
         "ai-app"
       ],
-      "demoStyleId": "refined-light-saas"
+      "demoStyleId": "refined-light-saas",
+      "aliases": [
+        "异步加载反馈",
+        "停止任务"
+      ]
     },
     {
       "id": "IP-008",
@@ -269,6 +297,10 @@
       "applicationContexts": [
         "workspace",
         "editor"
+      ],
+      "aliases": [
+        "面板拖动调整",
+        "分栏调整"
       ]
     },
     {
@@ -309,6 +341,10 @@
       ],
       "applicationContexts": [
         "workspace"
+      ],
+      "aliases": [
+        "工作台首页",
+        "概览工作台"
       ]
     },
     {
@@ -335,6 +371,10 @@
       ],
       "applicationContexts": [
         "workspace"
+      ],
+      "aliases": [
+        "主从列表详情",
+        "列表详情布局"
       ]
     },
     {
@@ -360,6 +400,10 @@
       ],
       "applicationContexts": [
         "workspace"
+      ],
+      "aliases": [
+        "文档审阅流程",
+        "内容审批页"
       ]
     },
     {
@@ -765,7 +809,11 @@
         "REF-019",
         "REF-001"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "视图切换",
+        "数据密度调整"
+      ]
     },
     {
       "id": "SAAS-002",
@@ -792,7 +840,11 @@
       "dependencies": [
         "REF-016"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "可排序数据表",
+        "表格检索"
+      ]
     },
     {
       "id": "SAAS-003",
@@ -819,7 +871,11 @@
       "dependencies": [
         "SAAS-002"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "批量选择",
+        "批量操作撤销"
+      ]
     },
     {
       "id": "SAAS-004",
@@ -846,7 +902,11 @@
       "dependencies": [
         "IP-003"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "上下文检查器",
+        "详情修改保存"
+      ]
     },
     {
       "id": "SAAS-005",
@@ -873,7 +933,11 @@
       "dependencies": [
         "REF-017"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "请求状态矩阵",
+        "加载失败空状态"
+      ]
     },
     {
       "id": "SAAS-006",
@@ -898,7 +962,11 @@
       "dependencies": [
         "REF-018"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "权限感知菜单",
+        "业务上下文操作"
+      ]
     },
     {
       "id": "PR-004",
@@ -932,7 +1000,11 @@
         "SAAS-004",
         "SAAS-005"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "运营列表详情配方",
+        "SaaS列表"
+      ]
     },
     {
       "id": "KIT-002",
@@ -1101,7 +1173,11 @@
       "dependencies": [
         "REF-021"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "行内编辑确认",
+        "修改取消"
+      ]
     },
     {
       "id": "SAAS-008",
@@ -1128,7 +1204,11 @@
       "dependencies": [
         "REF-022"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "字段验证",
+        "保存中状态"
+      ]
     },
     {
       "id": "SAAS-009",
@@ -1155,7 +1235,11 @@
       "dependencies": [
         "REF-021"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "未保存提醒",
+        "放弃修改保护"
+      ]
     },
     {
       "id": "SAAS-010",
@@ -1182,7 +1266,11 @@
       "dependencies": [
         "REF-023"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "条件组合筛选",
+        "高级AND OR筛选"
+      ]
     },
     {
       "id": "SAAS-011",
@@ -1209,7 +1297,11 @@
       "dependencies": [
         "REF-024"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "局部快捷键",
+        "焦点范围管理"
+      ]
     },
     {
       "id": "PR-005",
@@ -1243,7 +1335,11 @@
         "SAAS-010",
         "SAAS-011"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "设置筛选页面",
+        "高级筛选表单"
+      ]
     },
     {
       "id": "KIT-003",
@@ -1459,7 +1555,11 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "主题容器",
+        "主题切换范围"
+      ]
     },
     {
       "id": "UI-011",
@@ -1504,7 +1604,9 @@
       },
       "aliases": [
         "按钮",
-        "加载按钮"
+        "加载按钮",
+        "操作按钮",
+        "按钮状态"
       ]
     },
     {
@@ -1541,7 +1643,11 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "状态标签",
+        "状态徽标"
+      ]
     },
     {
       "id": "UI-013",
@@ -1577,7 +1683,11 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "卡片",
+        "内容卡片"
+      ]
     },
     {
       "id": "UI-014",
@@ -1617,7 +1727,9 @@
       "aliases": [
         "单行输入",
         "输入框",
-        "文本字段"
+        "文本字段",
+        "表单输入",
+        "文本输入框"
       ]
     },
     {
@@ -1657,7 +1769,9 @@
       "notion": "[private-notion-link-redacted]",
       "aliases": [
         "多行输入",
-        "文本域"
+        "文本域",
+        "多行文本框",
+        "多行编辑"
       ]
     },
     {
@@ -1697,7 +1811,9 @@
       "notion": "[private-notion-link-redacted]",
       "aliases": [
         "下拉选项",
-        "选择器"
+        "选择器",
+        "下拉选择框",
+        "表单选择器"
       ]
     },
     {
@@ -1734,7 +1850,11 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "复选框",
+        "多选勾选"
+      ]
     },
     {
       "id": "UI-018",
@@ -1770,7 +1890,11 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "开关",
+        "切换开关"
+      ]
     },
     {
       "id": "UI-019",
@@ -1815,7 +1939,8 @@
       },
       "aliases": [
         "选项卡",
-        "键盘切换"
+        "键盘切换",
+        "标签页"
       ]
     },
     {
@@ -1855,7 +1980,9 @@
       "notion": "[private-notion-link-redacted]",
       "aliases": [
         "提示消息",
-        "警告提示"
+        "警告提示",
+        "提示条",
+        "警告消息"
       ]
     },
     {
@@ -1892,7 +2019,11 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "进度条",
+        "任务进度"
+      ]
     },
     {
       "id": "UI-022",
@@ -1928,7 +2059,11 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "骨架屏",
+        "加载占位"
+      ]
     },
     {
       "id": "UI-023",
@@ -1967,7 +2102,9 @@
       "notion": "[private-notion-link-redacted]",
       "aliases": [
         "对话框",
-        "确认弹窗"
+        "确认弹窗",
+        "模态弹窗",
+        "确认对话框"
       ]
     },
     {
@@ -2004,7 +2141,11 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "空状态",
+        "空列表提示"
+      ]
     },
     {
       "id": "UI-025",
@@ -2040,7 +2181,11 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "头像",
+        "用户头像"
+      ]
     },
     {
       "id": "UI-026",
@@ -2076,7 +2221,11 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "数据列表",
+        "可选列表"
+      ]
     },
     {
       "id": "UI-027",
@@ -2112,7 +2261,11 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "轻提示",
+        "状态通知"
+      ]
     },
     {
       "id": "KIT-005",
@@ -2288,7 +2441,11 @@
       "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
       "demo": "playground/interaction-lab/index.html",
       "details": "docs/interactions/advanced-patterns.md",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "撤销归档",
+        "可恢复操作"
+      ]
     },
     {
       "id": "IP-010",
@@ -2315,7 +2472,11 @@
       "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
       "demo": "playground/interaction-lab/index.html",
       "details": "docs/interactions/advanced-patterns.md",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "多步骤表单",
+        "分步向导"
+      ]
     },
     {
       "id": "IP-011",
@@ -2344,7 +2505,11 @@
       "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
       "demo": "playground/interaction-lab/index.html",
       "details": "docs/interactions/advanced-patterns.md",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "无障碍排序",
+        "键盘上下移动"
+      ]
     },
     {
       "id": "IP-012",
@@ -2371,7 +2536,11 @@
       "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
       "demo": "playground/interaction-lab/index.html",
       "details": "docs/interactions/advanced-patterns.md",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "可调整分屏",
+        "原生滑块布局"
+      ]
     },
     {
       "id": "IP-013",
@@ -2400,7 +2569,11 @@
       "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
       "demo": "playground/bold-grid/index.html",
       "details": "docs/motion/motion-system.md",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "视图过渡筛选",
+        "过渡动画"
+      ]
     },
     {
       "id": "MOT-001",
@@ -2455,7 +2628,11 @@
       ],
       "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
       "demo": "playground/bold-grid/index.html",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "创意活动页布局",
+        "活动落地页"
+      ]
     },
     {
       "id": "PR-007",
@@ -2484,7 +2661,11 @@
       ],
       "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
       "demo": "playground/interaction-lab/index.html",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "可恢复操作工作台",
+        "异常恢复流程"
+      ]
     },
     {
       "id": "KIT-006",
@@ -2573,7 +2754,11 @@
         "PR-002"
       ],
       "verified": "Standalone HTML/JS demo. Not a React package export or real app; Chromium smoke and unit test results pending.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "运营列表工作台",
+        "表格详情页"
+      ]
     },
     {
       "id": "TPL-002",
@@ -2604,7 +2789,11 @@
         "IP-002"
       ],
       "verified": "Standalone HTML/JS demo. Not a React package export or real app; Chromium smoke and unit test results pending.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "编辑阅读页",
+        "阅读资料库"
+      ]
     },
     {
       "id": "TPL-003",
@@ -2635,7 +2824,11 @@
         "IP-008"
       ],
       "verified": "Standalone HTML/JS demo. Not a React package export or real app; Chromium smoke and unit test results pending.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "移动打卡页面",
+        "习惯养成页"
+      ]
     },
     {
       "id": "TPL-004",
@@ -2667,7 +2860,11 @@
         "PR-006"
       ],
       "verified": "Standalone HTML/JS demo. Not a React package export or real app; Chromium smoke and unit test results pending.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "粗野主义落地页",
+        "创意宣传页"
+      ]
     },
     {
       "stage": "prototype",
@@ -2711,7 +2908,9 @@
       },
       "aliases": [
         "专业工作台",
-        "暗色工作台"
+        "暗色工作台",
+        "暗色专业工作台",
+        "数据分析工作台"
       ]
     },
     {
@@ -2785,7 +2984,11 @@
         "UI-019",
         "UI-027"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "专业工作台组合",
+        "React工作台"
+      ]
     },
     {
       "priority": "P1",
@@ -2845,7 +3048,11 @@
         "selection"
       ],
       "dependencies": [],
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "素材多维检索",
+        "组合筛选资产"
+      ]
     },
     {
       "priority": "P1",
@@ -2874,7 +3081,11 @@
       "dependencies": [
         "IP-014"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "素材交接清单",
+        "交给Codex"
+      ]
     },
     {
       "stage": "prototype",
@@ -2932,7 +3143,11 @@
         "REF-029"
       ],
       "demo": "playground/commerce-atelier/index.html",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "商品规格选择",
+        "电商筛选"
+      ]
     },
     {
       "stage": "prototype",
@@ -2961,7 +3176,11 @@
         "IP-015"
       ],
       "demo": "playground/commerce-atelier/index.html",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "商品目录构图",
+        "电商商品展示"
+      ]
     },
     {
       "stage": "prototype",
@@ -3020,7 +3239,11 @@
         "PR-010"
       ],
       "demo": "playground/commerce-atelier/index.html",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "电商商品集合页",
+        "商品发现页面"
+      ]
     },
     {
       "stage": "analyzed",
@@ -3073,7 +3296,11 @@
       ],
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
       "verified": "Reference implementation. Automated browser and build checks pending; no production certification or human-approved visual baseline.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "组件状态矩阵",
+        "多主题状态展示"
+      ]
     },
     {
       "id": "KIT-012",
@@ -3136,7 +3363,11 @@
       ],
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
       "verified": "Reference implementation. Automated browser and build checks pending; no production certification or human-approved visual baseline.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "编辑审阅构图",
+        "文档复审"
+      ]
     },
     {
       "id": "KIT-011",
@@ -3204,7 +3435,9 @@
       },
       "aliases": [
         "内容审阅",
-        "文章审阅"
+        "文章审阅",
+        "内容审阅工作台",
+        "编辑审查页面"
       ]
     },
     {
@@ -3365,7 +3598,11 @@
         "DT-009",
         "DT-010"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "创意交互场景",
+        "不同风格交互"
+      ]
     },
     {
       "stage": "prototype",
@@ -3396,7 +3633,11 @@
         "DT-009",
         "DT-010"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "创意方向组合",
+        "多风格构图"
+      ]
     },
     {
       "stage": "prototype",
@@ -3542,7 +3783,11 @@
       ],
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
       "verified": "Upstream README, Skill instructions and licenses reviewed on 2026-11-04. No upstream code copied or executed; guidance is not production validation.",
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "去模板化复审",
+        "界面视觉审查"
+      ]
     },
     {
       "id": "PR-014",
@@ -3583,7 +3828,9 @@
       "aliases": [
         "设计审查",
         "界面改版",
-        "去模板化"
+        "去模板化",
+        "审查工作流规划",
+        "视觉审查分流"
       ]
     },
     {
@@ -3620,7 +3867,11 @@
         "TPL-007"
       ],
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
-      "verified": "Original JSON audit comparator with deterministic tests, source-only pinned upstream Hallmark CI and a separate editorial React implementation pilot. Experimental PR only; screenshot sign-off and real accessibility certification not claimed."
+      "verified": "Original JSON audit comparator with deterministic tests, source-only pinned upstream Hallmark CI and a separate editorial React implementation pilot. Experimental PR only; screenshot sign-off and real accessibility certification not claimed.",
+      "aliases": [
+        "多风格复核报告",
+        "设计质量评估"
+      ]
     },
     {
       "id": "PR-016",
@@ -3657,7 +3908,11 @@
         "KIT-013"
       ],
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
-      "verified": "Isolated branch pilot with original CSS, browser regression, context-review annotations and optional pinned upstream source audit. Not installed globally, not a universal aesthetic waiver, not production certified."
+      "verified": "Isolated branch pilot with original CSS, browser regression, context-review annotations and optional pinned upstream source audit. Not installed globally, not a universal aesthetic waiver, not production certified.",
+      "aliases": [
+        "像素风审查",
+        "复古游戏视觉验收"
+      ]
     },
     {
       "id": "IP-018",
@@ -3728,7 +3983,11 @@
         "focus-restore",
         "mobile-fallback"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "径向菜单",
+        "圆盘快捷菜单"
+      ]
     },
     {
       "id": "IP-020",
@@ -3758,7 +4017,11 @@
         "keyboard",
         "state-scrub"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "notion": "[private-notion-link-redacted]",
+      "aliases": [
+        "状态擦拭对比",
+        "前后对比滑块"
+      ]
     },
     {
       "id": "KIT-014",
@@ -3866,7 +4129,11 @@
         "IP-013"
       ],
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
-      "verified": "Original DOM-preserving FLIP prototype with progressive animation; cross-browser, hardware performance and assistive tech testing remain."
+      "verified": "Original DOM-preserving FLIP prototype with progressive animation; cross-browser, hardware performance and assistive tech testing remain.",
+      "aliases": [
+        "FLIP重排动画",
+        "布局过渡重排"
+      ]
     },
     {
       "id": "KIT-015",
@@ -4258,7 +4525,11 @@
         "REF-037"
       ],
       "license": "Original behavior specification; no third-party code copied",
-      "verified": "Original behavior specification only; no runnable UI, screen-reader or device verification."
+      "verified": "Original behavior specification only; no runnable UI, screen-reader or device verification.",
+      "aliases": [
+        "层级网格键盘导航",
+        "树形表格交互"
+      ]
     },
     {
       "id": "IP-026",
@@ -4293,7 +4564,11 @@
         "stack": "Node.js ESM / vanilla JavaScript pure state model",
         "instructions": "Port the state invariants and user-input contract to the target framework; treat model code as reference, not UI.",
         "limitations": "No DOM bindings, pointer/keyboard adapter, graphic rendering, persistence, device or assistive-tech verification."
-      }
+      },
+      "aliases": [
+        "图表联动选择",
+        "联动刷选"
+      ]
     },
     {
       "id": "IP-027",
@@ -4323,7 +4598,11 @@
         "IP-002"
       ],
       "license": "Original behavior specification; no third-party code copied",
-      "verified": "Original behavior specification only; no runnable UI, screen-reader or device verification."
+      "verified": "Original behavior specification only; no runnable UI, screen-reader or device verification.",
+      "aliases": [
+        "证据标注",
+        "来源标记"
+      ]
     },
     {
       "id": "IP-028",
@@ -4358,7 +4637,11 @@
         "stack": "Node.js ESM / vanilla JavaScript pure state model",
         "instructions": "Port the state invariants and user-input contract to the target framework; treat model code as reference, not UI.",
         "limitations": "No DOM bindings, pointer/keyboard adapter, graphic rendering, persistence, device or assistive-tech verification."
-      }
+      },
+      "aliases": [
+        "约束范围编辑",
+        "双滑块约束"
+      ]
     },
     {
       "id": "IP-029",
@@ -4387,7 +4670,11 @@
         "IP-024"
       ],
       "license": "Original behavior specification; no third-party code copied",
-      "verified": "Original behavior specification only; no runnable UI, screen-reader or device verification."
+      "verified": "Original behavior specification only; no runnable UI, screen-reader or device verification.",
+      "aliases": [
+        "分支叙事",
+        "剧情选择图"
+      ]
     },
     {
       "id": "IP-030",
@@ -4416,7 +4703,11 @@
         "IP-028"
       ],
       "license": "Original behavior specification; no third-party code copied",
-      "verified": "Original behavior specification only; no runnable UI, screen-reader or device verification."
+      "verified": "Original behavior specification only; no runnable UI, screen-reader or device verification.",
+      "aliases": [
+        "旋钮控制",
+        "精密参数调节"
+      ]
     },
     {
       "id": "UI-028",
@@ -4603,7 +4894,8 @@
       "aliases": [
         "数据表格",
         "排序",
-        "行选择"
+        "行选择",
+        "排序表格"
       ],
       "handoff": {
         "entry": "packages/ui/src/advanced.tsx",
@@ -4654,7 +4946,8 @@
       "verified": "V0.19 React/TypeScript implementation; automated CI to verify. No production, cross-browser or screen-reader certification.",
       "aliases": [
         "树状目录",
-        "层级导航"
+        "层级导航",
+        "树形视图"
       ],
       "handoff": {
         "entry": "packages/ui/src/advanced.tsx",
@@ -4705,7 +4998,9 @@
       "verified": "V0.19 React/TypeScript implementation; automated CI to verify. No production, cross-browser or screen-reader certification.",
       "aliases": [
         "搜索选择",
-        "下拉搜索"
+        "下拉搜索",
+        "组合选择框",
+        "输入搜索选择"
       ],
       "handoff": {
         "entry": "packages/ui/src/advanced.tsx",
@@ -4755,7 +5050,9 @@
       "verified": "V0.19 React/TypeScript implementation; automated CI to verify. No production, cross-browser or screen-reader certification.",
       "aliases": [
         "气泡面板",
-        "弹出操作"
+        "弹出操作",
+        "气泡弹层",
+        "弹出操作面板"
       ],
       "handoff": {
         "entry": "packages/ui/src/advanced.tsx",
@@ -4807,7 +5104,9 @@
       "aliases": [
         "双向范围",
         "数字滑块",
-        "精细调节"
+        "精细调节",
+        "双端范围选择",
+        "范围滑块"
       ],
       "handoff": {
         "entry": "packages/ui/src/advanced.tsx",
@@ -4866,7 +5165,8 @@
       "aliases": [
         "命令面板",
         "快捷操作",
-        "command palette"
+        "command palette",
+        "快捷操作菜单"
       ]
     },
     {
@@ -4917,7 +5217,9 @@
       },
       "aliases": [
         "日期选择",
-        "日历选择"
+        "日历选择",
+        "日期选择器",
+        "日期输入"
       ]
     },
     {
@@ -4969,7 +5271,9 @@
       },
       "aliases": [
         "可调整面板",
-        "分屏布局"
+        "分屏布局",
+        "分栏面板",
+        "可调宽度布局"
       ]
     },
     {
@@ -5020,7 +5324,9 @@
       },
       "aliases": [
         "文件上传",
-        "拖放上传"
+        "拖放上传",
+        "文件上传控件",
+        "文件选择"
       ]
     },
     {
@@ -5069,7 +5375,11 @@
         "stack": "React/TypeScript",
         "instructions": "Load one of the four declared themes and handle controlled navigation/disclosure in the host product; test routing, responsive and assistive-technology behavior.",
         "limitations": "No app router, popper collision engine, server paging, virtualization or production approval included."
-      }
+      },
+      "aliases": [
+        "悬浮提示",
+        "工具提示"
+      ]
     },
     {
       "id": "UI-043",
@@ -5119,7 +5429,9 @@
       },
       "aliases": [
         "面包屑",
-        "路径导航"
+        "路径导航",
+        "面包屑导航",
+        "路径指示"
       ]
     },
     {
@@ -5170,7 +5482,9 @@
       },
       "aliases": [
         "分页器",
-        "分页导航"
+        "分页导航",
+        "分页组件",
+        "页码切换"
       ]
     },
     {
@@ -5221,7 +5535,8 @@
       },
       "aliases": [
         "手风琴",
-        "折叠面板"
+        "折叠面板",
+        "内容折叠"
       ]
     },
     {
@@ -5273,7 +5588,9 @@
       },
       "aliases": [
         "侧边导航",
-        "侧栏菜单"
+        "侧栏菜单",
+        "侧边栏导航",
+        "多级菜单"
       ]
     },
     {
@@ -5325,7 +5642,8 @@
       },
       "aliases": [
         "分步表单",
-        "表单向导"
+        "表单向导",
+        "多步骤流程"
       ]
     },
     {
@@ -5376,7 +5694,9 @@
       },
       "aliases": [
         "动态字段",
-        "重复表单项"
+        "重复表单项",
+        "重复字段",
+        "动态表单"
       ]
     },
     {
@@ -5424,7 +5744,11 @@
         "stack": "React/TypeScript",
         "instructions": "Provide controlled state/validation and meaningful business data; use one of four supported themes. Check host data permission, real chart provenance and form focus handling.",
         "limitations": "No backend validation/persistence, no built-in form schema, no chart package or measured UX certification."
-      }
+      },
+      "aliases": [
+        "校验摘要",
+        "表单错误汇总"
+      ]
     },
     {
       "id": "UI-050",
@@ -5474,7 +5798,9 @@
       },
       "aliases": [
         "迷你趋势图",
-        "趋势线"
+        "趋势线",
+        "迷你折线图",
+        "趋势线图"
       ]
     },
     {
@@ -5525,7 +5851,9 @@
       },
       "aliases": [
         "仪表盘网格",
-        "响应式卡片布局"
+        "响应式卡片布局",
+        "仪表盘布局",
+        "响应式网格"
       ]
     },
     {
@@ -5577,7 +5905,8 @@
       },
       "aliases": [
         "筛选表格",
-        "搜索表格"
+        "搜索表格",
+        "可筛选数据表格"
       ]
     },
     {
@@ -5630,7 +5959,9 @@
       "aliases": [
         "看板",
         "卡片拖拽",
-        "kanban"
+        "kanban",
+        "任务看板",
+        "拖拽看板"
       ]
     },
     {
@@ -5681,7 +6012,9 @@
       },
       "aliases": [
         "活动时间线",
-        "操作记录"
+        "操作记录",
+        "事件时间线",
+        "活动记录"
       ]
     },
     {
@@ -5733,7 +6066,9 @@
       },
       "aliases": [
         "交互柱状图",
-        "柱状图"
+        "柱状图",
+        "互动柱状图",
+        "数据条形图"
       ]
     },
     {
@@ -5784,7 +6119,9 @@
       },
       "aliases": [
         "可编辑表格",
-        "单元格编辑"
+        "单元格编辑",
+        "行内编辑表格",
+        "单元格保存"
       ]
     },
     {
@@ -5835,7 +6172,9 @@
       },
       "aliases": [
         "列表排序",
-        "拖拽排序"
+        "拖拽排序",
+        "可排序列表",
+        "拖拽排序列表"
       ]
     },
     {
@@ -5888,7 +6227,9 @@
       "aliases": [
         "流程编辑器",
         "节点画布",
-        "流程图"
+        "流程图",
+        "节点流程画布",
+        "可视化流程编辑"
       ]
     },
     {
@@ -5941,7 +6282,9 @@
       "aliases": [
         "高级筛选",
         "筛选面板",
-        "复合筛选"
+        "复合筛选",
+        "高级条件筛选",
+        "组合过滤面板"
       ]
     }
   ],

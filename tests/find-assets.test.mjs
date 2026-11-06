@@ -65,3 +65,31 @@ test("Chinese aliases are searchable and reuse modes filter safely",()=>{
  assert.throws(()=>runCLI(["--reuse=production-ready"]),/Unknown reuse mode/);
  assert.throws(()=>runCLI(["--goal=magic"]),/Unknown goal/);
 });
+
+
+test("type and stage filters exclude research-only entries when requesting code",()=>{
+ const all=[
+  {id:"UI-056",type:"component",name:"EditableDataTable",aliases:["可编辑表格"],reuseKind:"styled-implementation",styleIds:["precision-dark"],applicationContexts:["workspace"],stage:"reference-implemented",tags:["table"]},
+  {id:"UI-028",type:"component",name:"Hierarchy Explorer research",aliases:["层级表格"],reuseKind:"design-reference",styleIds:[],applicationContexts:["workspace"],stage:"analyzed",tags:["table"]},
+  {id:"IP-025",type:"interaction",name:"Treegrid behavior",reuseKind:"behavior-pattern",styleIds:[],applicationContexts:["workspace"],stage:"prototype",tags:["table"]}
+ ];
+ assert.deepEqual(searchAssets(all,{type:"component",stage:"reference-implemented",intent:"可编辑表格"}).map(a=>a.id),["UI-056"]);
+ assert.deepEqual(searchAssets(all,{type:"interaction"}).map(a=>a.id),["IP-025"]);
+});
+test("registered Chinese alias matches a natural-language sentence, not only an exact keyword",()=>{
+ const items=[
+  {id:"UI-056",type:"component",name:"EditableDataTable",aliases:["可编辑表格","单元格编辑"],reuseKind:"styled-implementation",styleIds:["precision-dark"],applicationContexts:["workspace"],stage:"reference-implemented",tags:["grid"]},
+  {id:"UI-033",type:"component",name:"DataTable",aliases:["数据表格"],reuseKind:"styled-implementation",styleIds:["precision-dark"],applicationContexts:["workspace"],stage:"reference-implemented",tags:["table"]}
+ ];
+ assert.deepEqual(searchAssets(items,{intent:"我需要一个可编辑表格，支持批量操作",goal:"implementation",type:"component"}).map(a=>a.id),["UI-056"]);
+ assert.deepEqual(searchAssets(items,{intent:"可编辑表格！",type:"component"}).map(a=>a.id),["UI-056"]);
+});
+test("CLI includes type and stage in structured criteria and rejects unsupported values by zero match",()=>{
+ const data=JSON.parse(runCLI(["--type=component","--stage=reference-implemented","--intent=可编辑表格","--json"]));
+ assert.equal(data.criteria.type,"component");
+ assert.equal(data.criteria.stage,"reference-implemented");
+ assert.ok(data.results.length>0);
+ assert.ok(data.results.every(a=>a.type==="component"&&a.stage==="reference-implemented"));
+ assert.ok(data.results.some(a=>a.id==="UI-056"));
+ assert.deepEqual(JSON.parse(runCLI(["--type=nonexistent","--json"])).results,[]);
+});
