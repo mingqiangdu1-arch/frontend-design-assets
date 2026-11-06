@@ -48,7 +48,15 @@ test("interaction patterns link to existing sources and show honest maturity",()
   assert.ok(fs.existsSync(asset.handoff.entry));
   assert.match(asset.verified,/headless Node/i);
  }
- for(const id of ["IP-025","IP-027","IP-029","IP-030"])assert.equal(byId.get(id).stage,"analyzed");
+ // Four V0.18 analyzed contracts were promoted to standalone prototype assets in V0.29.
+ for(const id of ["IP-025","IP-027","IP-029","IP-030"]){
+  const asset=byId.get(id);
+  assert.equal(asset.stage,"prototype");
+  assert.ok(fs.existsSync(asset.path));
+  assert.ok(fs.existsSync(asset.demo));
+  assert.ok(fs.existsSync(asset.handoff.entry));
+  assert.match(asset.handoff.limitations,/not a product/i);
+ }
 });
 test("every external source is research-only, not auto-installed",()=>{
  for(const id of ["REF-033","REF-034","REF-035","REF-036","REF-037","REF-038","REF-041"]){

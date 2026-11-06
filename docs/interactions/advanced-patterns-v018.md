@@ -1,6 +1,6 @@
 # V0.18 · Six independent advanced interaction references
 
-**Status:** IP-025/027/029/030 = analyzed specifications only; IP-026/028 = original headless Node reference models with deterministic tests, **not production UI widgets**. No browser demonstration, integration with React `packages/ui`, target backend, product API or real-media source is present.
+**Original V0.18 status (historical):** IP-025/027/029/030 were analyzed specifications only; IP-026/028 were original headless Node reference models. **V0.29 update:** IP-025/027/029/030 now have four original, independent browser specimens and state models in [Interaction Atelier IV](../../playground/advanced-interactions-v4/README.md), indexed as `prototype` in `registry/assets.json`. Historical behavior requirements below remain reference contracts. None is integrated into the React `packages/ui` export list, external API, production workflow or certified assistive-technology support.
 
 These six contracts complement, rather than duplicate, V0.14 spatial canvas / radial menu / before-after scrubber, V0.15 cross-container drag / FLIP, and V0.16 multi-track timeline / scroll narrative.
 

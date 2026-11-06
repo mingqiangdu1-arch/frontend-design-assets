@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Four original, standalone advanced interaction references: treegrid, semantic annotation pins, reversible branching story, numeric rotary dial.">
+<title>Interaction Atelier IV · Four independent patterns</title>
+<link rel="stylesheet" href="./styles.css"><script type="module" src="./app.mjs"></script>
+</head><body>
+<a class="skip" href="#main">跳至交互素材</a>
+<header class="site-head"><a href="../../README.md" class="brand">◈ FRONTEND DESIGN ASSETS <span> / INTERACTION ATELIER 04</span></a>
+<nav aria-label="素材目录"><a href="../advanced-interactions-v3/">第三批交互</a><a href="../asset-explorer/">全部素材</a><a href="../../CATALOG.md">Agent 导航</a></nav></header>
+<main id="main">
+<section class="hero"><span class="overline">FOUR INDEPENDENT BEHAVIOR REFERENCES / V0.29</span>
+<h1>交互是行为。<br><em>不是动画的别名。</em></h1><p>四个此前只有研究说明的独立交互配方，补全状态模型、键盘路径和可操作的浏览器参考。所有内容均为原创本地虚构资料，不包含产品业务、账号或保存服务。</p>
+<div class="hero-chips"><a href="#tree">IP-025 / 层级网格</a><a href="#annotations">IP-027 / 来源标注</a><a href="#story">IP-029 / 分支故事</a><a href="#dial">IP-030 / 精密旋钮</a></div></section>
+
+<section class="specimen" id="tree" aria-labelledby="treeTitle">
+ <div class="spec-head"><div><span class="overline">01 / IP-025 · HIERARCHICAL NAVIGATION</span><h2 id="treeTitle">树形网格 <span>Treegrid</span></h2><p>上下键移动可见行，右键展开或进入子级，左键折叠或返回父级；F2 编辑、Enter 选择，折叠时保持焦点安全。</p></div><span class="state-chip">ROW-FIRST / ROVING FOCUS</span></div>
+ <div class="tree-layout"><div class="tree-panel">
+   <div class="panel-bar"><strong>分层素材目录</strong><small>原始示例 9 个节点 · 最深 5 级</small></div>
+   <div id="treeRows" class="tree-rows" role="treegrid" aria-label="可编辑素材目录" aria-colcount="2"></div>
+   <div class="tree-toolbar" role="group" aria-label="层级列表辅助操作"><button id="treeExpand" type="button">展开当前节点</button><button id="treeCollapse" type="button">折叠当前节点</button><button id="treeEdit" type="button">重命名当前节点</button><button id="treeReset" type="button">恢复结构</button></div>
+  </div>
+  <aside class="tree-inspector"><span class="overline">ACTIVE / SELECTION ARE SEPARATE</span><h3>当前焦点与选中</h3><dl><dt>焦点行</dt><dd id="treeActive">root</dd><dt>选中行</dt><dd id="treeSelected">尚未选择</dd><dt>可见节点</dt><dd id="treeCount">0</dd></dl>
+   <form id="treeRenameForm" hidden><label for="treeRenameInput">编辑名称</label><input id="treeRenameInput" maxlength="40" autocomplete="off"><div class="form-actions"><button type="submit">确认修改</button><button type="button" id="treeCancel">取消</button></div><p>编辑只修改本地副本，无网络或永久保存。</p></form>
+   <p role="status" aria-live="polite" id="treeStatus">方向键开始浏览；Enter 选择，F2 编辑。</p></aside>
+ </div></section>
+
+<section class="specimen" id="annotations" aria-labelledby="annotationTitle">
+ <div class="spec-head"><div><span class="overline">02 / IP-027 · SOURCE-LINKED REVIEW</span><h2 id="annotationTitle">来源锚点 <span>Annotations</span></h2><p>注释以稳定语义锚点绑定来源，点击原文编号或右侧索引都能打开同一条注释；孤立标注仍可访问。</p></div><span class="state-chip">PROVENANCE / ORPHAN RECOVERY</span></div>
+ <div class="annotation-layout">
+  <article class="source-paper"><div class="paper-meta">ORIGINAL DEMO TEXT / VERSION 01</div><h3>让设计证据有出处。</h3>
+   <p id="paragraph-a"><button type="button" data-note-pin="note-1" class="annotation-pin" aria-label="打开标注 01">01</button>一份前端素材不仅要展示视觉结果，还需要说明组件的适用情境、交互边界与可能出现的失败状态。</p>
+   <p id="paragraph-b"><button type="button" data-note-pin="note-2" class="annotation-pin" aria-label="打开标注 02">02</button>结构配方可以帮助模型定位正确的页面层次，但不等于已存在可以直接发布的业务产品。</p>
+   <p id="paragraph-c">当语义锚点被移动或删除，标注应保留在索引里，供作者重新绑定，而不是悄悄消失。</p>
+   <p class="source-foot">所有内容是虚构示例。注释数据和页面锚点均在本地模块中定义。</p>
+  </article>
+  <aside class="note-index" aria-label="来源标注索引"><h3>标注索引 <span id="noteCount"></span></h3><div id="noteItems"></div><p id="annotationStatus" role="status" aria-live="polite">可由原文编号或索引访问。</p></aside>
+ </div>
+ <div id="annotationOverlay" class="annotation-overlay" role="dialog" aria-label="来源标注详情" aria-modal="false" hidden><div class="overlay-head"><strong id="annotationHeading"></strong><button id="annotationClose" type="button" aria-label="关闭标注">×</button></div><p id="annotationContent"></p><small id="annotationProvenance"></small></div>
+ </section>
+
+<section class="specimen" id="story" aria-labelledby="storyTitle">
+ <div class="spec-head"><div><span class="overline">03 / IP-029 · REVERSIBLE NARRATIVE GRAPH</span><h2 id="storyTitle">分支叙事 <span>Story branches</span></h2><p>阅读一段叙事后作选择，可查看不同后果并回到路径中的任意一步。所有选择是本地模拟，无审批或真实不可逆操作。</p></div><span class="state-chip">CHOICE / BACKTRACK / EXPLICIT PATH</span></div>
+ <div class="story-layout"><div class="story-main"><span class="overline" id="storyStep">NODE 01</span><h3 id="storyHeading" tabindex="-1"></h3><p id="storyCopy"></p><div id="storyChoices" class="story-choices" role="group" aria-label="叙事选项"></div><div class="story-controls"><button type="button" id="storyBack">返回上一步</button><button type="button" id="storyReset">重新开始</button></div></div>
+ <aside class="story-path"><h3>当前路径 <small id="storyDepth"></small></h3><ol id="storyTrail"></ol><p role="status" aria-live="polite" id="storyStatus">路径记录仅在当前页面内有效。</p></aside></div>
+ </section>
+
+<section class="specimen" id="dial" aria-labelledby="dialTitle">
+ <div class="spec-head"><div><span class="overline">04 / IP-030 · PRECISION CONTROL</span><h2 id="dialTitle">精密旋钮 <span>Rotary</span></h2><p>数值永远是唯一真实状态。旋转角度只负责显示，原生滑块、数字输入和按钮提供等价的操作路径。</p></div><span class="state-chip">NUMERIC TRUTH / POINTER CANCEL</span></div>
+ <div class="dial-layout">
+  <div class="dial-visual"><div class="dial-backdrop"><div class="dial-ticks" aria-hidden="true"></div><div id="dialKnob" class="dial-knob" tabindex="0" role="slider" aria-label="精密旋钮数值" aria-valuemin="0" aria-valuemax="100" aria-valuenow="40" aria-valuetext="40 %" aria-orientation="vertical" aria-describedby="dialHelp"><div id="dialIndicator" class="dial-indicator" aria-hidden="true"></div><span id="dialCenter">40</span></div></div><span class="dial-unit">STEP = 5% / DISPLAY ONLY</span></div>
+  <div class="dial-controls"><span class="overline">NUMERICAL CONTROL / 0–100%</span><h3>旋钮和表单共享一个值</h3><label for="dialRange">原生滑块 <output id="dialRangeOutput">40 %</output></label><input id="dialRange" type="range" min="0" max="100" step="5" value="40">
+   <label for="dialNumber">精确数字输入 (%)</label><input type="number" min="0" max="100" step="5" value="40" id="dialNumber">
+   <div class="dial-buttons" role="group" aria-label="精确数值快捷操作"><button type="button" id="dialMinus">−5</button><button type="button" id="dialPlus">+5</button><button type="button" id="dialReset">复位 40</button></div>
+   <p id="dialHelp">拖动旋钮上下移动每 12px 调节 5%；方向键 ±5，Shift+方向键 ±25，Home/End 到两端。Esc 取消本次指针拖动。</p><p role="status" aria-live="polite" id="dialStatus">当前为 40%，旋钮角度由数值计算。</p></div>
+ </div></section>
+</main>
+<footer class="site-footer"><span>INDEPENDENT ASSET SPECIMENS · NO APP / NO BACKEND / NO EXTERNAL MEDIA</span><a href="../../docs/interactions/advanced-patterns-v018.md">原始行为契约</a></footer>
+</body></html>

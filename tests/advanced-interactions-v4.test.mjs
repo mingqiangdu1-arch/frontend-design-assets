@@ -1,0 +1,86 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import {TREE_NODES,validateTree,initialTreeState,visibleTreeRows,treeKey,toggleTreeBranch,renameTreeNode} from "../playground/advanced-interactions-v4/tree-model.mjs";
+import {ANCHORS,NOTES,validateAnnotations,projectAnnotations,placeAnnotationOverlay} from "../playground/advanced-interactions-v4/annotation-model.mjs";
+import {STORY,validateStory,initialStory,currentStory,storyChoose,storyBack,storyJump,storyOutline} from "../playground/advanced-interactions-v4/story-model.mjs";
+import {DIAL_CONFIG,validateDialConfig,dialSnap,valueAngle,dialStep,dialKey,dialDrag} from "../playground/advanced-interactions-v4/dial-model.mjs";
+
+test("IP-025 validates source tree parents, cycles, unique IDs and depth-5 branch",()=>{
+ assert.equal(validateTree(TREE_NODES),true);
+ const s=initialTreeState();
+ assert.equal(s.nodes.length,9);
+ const v=visibleTreeRows(s.nodes,s.expanded);
+ assert.equal(v.length,6);
+ assert.equal(v.find(x=>x.id==="variations").level,4);
+ assert.throws(()=>validateTree([{id:"a",parentId:"b"},{id:"b",parentId:"a"}]),/Cyclic/);
+ assert.throws(()=>validateTree([{id:"a",parentId:"missing"}]),/Missing parent/);
+ assert.throws(()=>validateTree([{id:"a",parentId:null},{id:"a",parentId:null}]),/Duplicate/);
+});
+test("IP-025 roving focus, expand, collapse-safe focus, selection/edit remain separate",()=>{
+ let s=initialTreeState();
+ s=treeKey(s,"ArrowDown");assert.equal(s.active,"themes");
+ s=treeKey(s,"ArrowRight");assert.equal(s.active,"style");
+ s=treeKey(s,"ArrowRight");assert.equal(s.active,"variations");
+ s=treeKey(s,"ArrowRight");assert.equal(s.expanded.includes("variations"),true);
+ s=treeKey(s,"ArrowRight");assert.equal(s.active,"draft");
+ s=treeKey(s,"Enter");assert.equal(s.selected,"draft");
+ s=toggleTreeBranch(s,"variations");assert.equal(s.active,"variations");
+ assert.equal(s.selected,"draft");assert.equal(visibleTreeRows(s.nodes,s.expanded).some(x=>x.id==="draft"),false);
+ s=treeKey(s,"F2");assert.equal(s.editing,"variations");
+ const fail=renameTreeNode(s,"variations"," ");assert.equal(fail.ok,false);assert.equal(fail.state,s);
+ const pass=renameTreeNode(s,"variations","章节结构");assert.equal(pass.ok,true);
+ assert.equal(pass.state.nodes.find(x=>x.id==="variations").name,"章节结构");
+ assert.equal(s.nodes.find(x=>x.id==="variations").name,"布局变体");
+});
+test("IP-027 keeps orphan notes and rejects unsafe/invalid annotation model",()=>{
+ assert.equal(validateAnnotations(NOTES),true);
+ const shown=projectAnnotations(NOTES,ANCHORS);
+ assert.deepEqual(shown.map(x=>x.orphan),[false,false,true]);
+ assert.throws(()=>validateAnnotations([NOTES[0],NOTES[0]]),/Invalid annotation/);
+ assert.equal(shown[2].anchorId,"missing-source");
+});
+test("IP-027 annotation placement chooses right/left/below and clamps to bounded container",()=>{
+ const container={left:0,right:600,top:0,bottom:500};
+ const overlay={width:180,height:90};
+ const at={left:220,right:240,top:200,bottom:230};
+ assert.equal(placeAnnotationOverlay(at,container,overlay).side,"right");
+ assert.equal(placeAnnotationOverlay({...at,left:530,right:555},container,overlay).side,"left");
+ const below=placeAnnotationOverlay({left:70,right:400,top:130,bottom:160},container,{width:250,height:90});
+ assert.equal(below.side,"below");
+ const cramped=placeAnnotationOverlay({left:170,right:400,top:440,bottom:470},{left:100,right:450,top:350,bottom:480},{width:280,height:110});
+ assert.equal(cramped.side,"clamped");
+ assert.ok(cramped.left>=100&&cramped.left<=170);
+ assert.ok(cramped.top>=350&&cramped.top<=370);
+ assert.throws(()=>placeAnnotationOverlay({...at,left:NaN},container,overlay),/Invalid geometry/);
+});
+test("IP-029 validates graph, reversible paths and cycle-protects local visits",()=>{
+ assert.equal(validateStory(STORY,"opening"),true);
+ assert.throws(()=>validateStory([{id:"a",choices:[{id:"b",to:"unknown",label:"wrong"}]}],"a"),/Invalid story edge/);
+ const s=initialStory();
+ assert.equal(currentStory(s).id,"opening");
+ const fail=storyChoose(s,"nonexistent");assert.equal(fail.changed,false);
+ let next=storyChoose(s,"observe");assert.equal(next.changed,true);
+ next=storyChoose(next.state,"verify");assert.equal(next.changed,true);
+ assert.deepEqual(next.state.path,["opening","evidence","outline"]);
+ const loop=storyChoose(next.state,"review");assert.equal(loop.changed,false);assert.equal(loop.reason,"cycle-protection");
+ let rewound=storyBack(next.state);assert.deepEqual(rewound.path,["opening","evidence"]);
+ rewound=storyJump(next.state,0);assert.deepEqual(rewound.path,["opening"]);
+ assert.equal(storyOutline(rewound).length,1);
+ const changed=storyChoose(rewound,"organize");
+ assert.deepEqual(changed.state.path,["opening","outline"]);
+ assert.deepEqual(s.path,["opening"]);
+});
+test("IP-030 dial uses finite exact step value as source truth, not DOM angle",()=>{
+ assert.equal(validateDialConfig(DIAL_CONFIG),true);
+ assert.throws(()=>validateDialConfig({...DIAL_CONFIG,step:7}),/Step must divide/);
+ assert.equal(dialSnap(37),35);assert.equal(dialSnap(-200),0);assert.equal(dialSnap(101),100);
+ assert.equal(valueAngle(0),-135);assert.equal(valueAngle(50),0);assert.equal(valueAngle(100),135);
+ assert.equal(dialStep(40,1),45);assert.equal(dialStep(40,-1,{coarse:true}),15);
+ assert.equal(dialKey(40,"ArrowRight",{shift:true}),65);
+ assert.equal(dialKey(40,"Home"),0);assert.equal(dialKey(40,"End"),100);
+ assert.equal(dialKey(40,"Enter"),40);
+ assert.equal(dialDrag(40,36),55);
+ assert.equal(dialDrag(40,-24),30);
+ assert.equal(dialDrag(40,11),40);
+ assert.throws(()=>dialDrag(40,Infinity),/Invalid drag/);
+});

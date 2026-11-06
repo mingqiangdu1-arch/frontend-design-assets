@@ -18,6 +18,7 @@
 | 2026 流行主题研究与预览 | [趋势对比](docs/styles/trend-research-2026.md) · [Trend Style Lab](playground/trend-style-lab/README.md) | Liquid Layer、Shape Expressive、Type-led Minimal、Organic Tactile：独立主题与可交互场景，不是 React 库兼容声明 |
 | 查找并复用 React 组件 | [组件登记](registry/components.json) · [组件源码](packages/ui/src/) · [组件文档](packages/ui/README.md) | 真实 TSX/CSS、API、四套显式兼容主题和适配限制 |
 | 参考页面结构素材 | [页面模板](registry/page-templates.json) · [组装指南](docs/assembly/README.md) · [独立 Demo](playground/page-blueprints/) | 可复用分区、构图和交互案例；真实页面开发须在外部项目进行 |
+| 独立高级交互原型 IV | [Atelier IV](playground/advanced-interactions-v4/README.md) · [交互契约](docs/interactions/advanced-patterns-v018.md) | 将 IP-025/027/029/030 的树形网格、语义标注、分支叙事、精密旋钮升级为可操作参考素材；非业务应用 |
 | 参考高级交互 | [交互文档](docs/interactions/) · [高级交互 Lab](playground/advanced-interactions/) | 指针/键盘/触摸/撤销行为设计与独立原型 |
 | 拓展艺术表现 | [Creative Directions](registry/creative-directions.json) · [Creative Style Lab](playground/creative-style-lab/) | 面向游戏、活动、阅读和其他类型的创意方向 |
 | 建立工作台或数据产品 | [SaaS 专题](docs/saas/README.md) · [工作台配方](recipes/workbench.md) | 操作列表、表单、筛选、布局与状态模型 |

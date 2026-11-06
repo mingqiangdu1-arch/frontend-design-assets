@@ -4502,7 +4502,7 @@
       "id": "IP-025",
       "type": "interaction",
       "name": "Hierarchical treegrid navigation, editing and collapse-safe focus",
-      "stage": "analyzed",
+      "stage": "prototype",
       "priority": "P1",
       "reuseKind": "behavior-pattern",
       "tags": [
@@ -4512,7 +4512,7 @@
         "focus",
         "inline-edit"
       ],
-      "path": "docs/interactions/advanced-patterns-v018.md",
+      "path": "playground/advanced-interactions-v4/tree-model.mjs",
       "details": "docs/interactions/advanced-patterns-v018.md",
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
       "styleIds": [],
@@ -4525,11 +4525,20 @@
         "REF-037"
       ],
       "license": "Original behavior specification; no third-party code copied",
-      "verified": "Original behavior specification only; no runnable UI, screen-reader or device verification.",
+      "verified": "Treegrid original hierarchy model and runnable keyboard/rename/collapse-safe specimen; no virtualization, production screen-reader audit or server editing.",
       "aliases": [
         "层级网格键盘导航",
-        "树形表格交互"
-      ]
+        "树形表格交互",
+        "树形网格键盘",
+        "row-first treegrid"
+      ],
+      "demo": "playground/advanced-interactions-v4/index.html",
+      "handoff": {
+        "entry": "playground/advanced-interactions-v4/README.md",
+        "stack": "standalone HTML/CSS/JS state model; no React component export",
+        "instructions": "Select only IP-025 state model and its named specimen, inspect historical interaction contract and copy the behavior into a separate target repository after accessibility/permission review.",
+        "limitations": "Not a product, production-ready widget or component-library export. Browser fixture data is local; no persistence, backend or cross-device assistive technology certification."
+      }
     },
     {
       "id": "IP-026",
@@ -4574,7 +4583,7 @@
       "id": "IP-027",
       "type": "interaction",
       "name": "Source-linked annotation pins with collision-aware overlay",
-      "stage": "analyzed",
+      "stage": "prototype",
       "priority": "P1",
       "reuseKind": "behavior-pattern",
       "tags": [
@@ -4584,7 +4593,7 @@
         "focus-return",
         "provenance"
       ],
-      "path": "docs/interactions/advanced-patterns-v018.md",
+      "path": "playground/advanced-interactions-v4/annotation-model.mjs",
       "details": "docs/interactions/advanced-patterns-v018.md",
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
       "styleIds": [],
@@ -4598,11 +4607,20 @@
         "IP-002"
       ],
       "license": "Original behavior specification; no third-party code copied",
-      "verified": "Original behavior specification only; no runnable UI, screen-reader or device verification.",
+      "verified": "Source-linked pins, orphan index and collision-aware nonmodal overlay in a runnable specimen; no persistence, authorization or external documents.",
       "aliases": [
         "证据标注",
-        "来源标记"
-      ]
+        "来源标记",
+        "语义标注",
+        "来源锚点"
+      ],
+      "demo": "playground/advanced-interactions-v4/index.html",
+      "handoff": {
+        "entry": "playground/advanced-interactions-v4/README.md",
+        "stack": "standalone HTML/CSS/JS state model; no React component export",
+        "instructions": "Select only IP-027 state model and its named specimen, inspect historical interaction contract and copy the behavior into a separate target repository after accessibility/permission review.",
+        "limitations": "Not a product, production-ready widget or component-library export. Browser fixture data is local; no persistence, backend or cross-device assistive technology certification."
+      }
     },
     {
       "id": "IP-028",
@@ -4647,7 +4665,7 @@
       "id": "IP-029",
       "type": "interaction",
       "name": "Branching story choice graph with backtrack and consequence",
-      "stage": "analyzed",
+      "stage": "prototype",
       "priority": "P1",
       "reuseKind": "behavior-pattern",
       "tags": [
@@ -4657,7 +4675,7 @@
         "graph",
         "backtrack"
       ],
-      "path": "docs/interactions/advanced-patterns-v018.md",
+      "path": "playground/advanced-interactions-v4/story-model.mjs",
       "details": "docs/interactions/advanced-patterns-v018.md",
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
       "styleIds": [],
@@ -4670,17 +4688,26 @@
         "IP-024"
       ],
       "license": "Original behavior specification; no third-party code copied",
-      "verified": "Original behavior specification only; no runnable UI, screen-reader or device verification.",
+      "verified": "Branching story with explicit choices, breadcrumb backtracking and cycle protection in local reference; no approval engine, server actions or save.",
       "aliases": [
         "分支叙事",
-        "剧情选择图"
-      ]
+        "剧情选择图",
+        "分支叙事回溯",
+        "reversible narrative"
+      ],
+      "demo": "playground/advanced-interactions-v4/index.html",
+      "handoff": {
+        "entry": "playground/advanced-interactions-v4/README.md",
+        "stack": "standalone HTML/CSS/JS state model; no React component export",
+        "instructions": "Select only IP-029 state model and its named specimen, inspect historical interaction contract and copy the behavior into a separate target repository after accessibility/permission review.",
+        "limitations": "Not a product, production-ready widget or component-library export. Browser fixture data is local; no persistence, backend or cross-device assistive technology certification."
+      }
     },
     {
       "id": "IP-030",
       "type": "interaction",
       "name": "Tactile rotary control with numeric and keyboard parity",
-      "stage": "analyzed",
+      "stage": "prototype",
       "priority": "P1",
       "reuseKind": "behavior-pattern",
       "tags": [
@@ -4690,7 +4717,7 @@
         "keyboard",
         "tactile"
       ],
-      "path": "docs/interactions/advanced-patterns-v018.md",
+      "path": "playground/advanced-interactions-v4/dial-model.mjs",
       "details": "docs/interactions/advanced-patterns-v018.md",
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
       "styleIds": [],
@@ -4703,11 +4730,20 @@
         "IP-028"
       ],
       "license": "Original behavior specification; no third-party code copied",
-      "verified": "Original behavior specification only; no runnable UI, screen-reader or device verification.",
+      "verified": "Numeric-first rotary dial with native range/number/keyboard and pointer cancel, runnable in a local specimen; no hardware, haptics or React package export.",
       "aliases": [
         "旋钮控制",
-        "精密参数调节"
-      ]
+        "精密参数调节",
+        "数字旋钮",
+        "precision rotary control"
+      ],
+      "demo": "playground/advanced-interactions-v4/index.html",
+      "handoff": {
+        "entry": "playground/advanced-interactions-v4/README.md",
+        "stack": "standalone HTML/CSS/JS state model; no React component export",
+        "instructions": "Select only IP-030 state model and its named specimen, inspect historical interaction contract and copy the behavior into a separate target repository after accessibility/permission review.",
+        "limitations": "Not a product, production-ready widget or component-library export. Browser fixture data is local; no persistence, backend or cross-device assistive technology certification."
+      }
     },
     {
       "id": "UI-028",

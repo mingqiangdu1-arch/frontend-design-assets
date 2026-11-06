@@ -29,6 +29,7 @@
 | 移动端、习惯养成、gamification、mobile | `TPL-003`、`styles/playful-pop/`、`docs/styles/README.md` | 检查 touch、窄屏与 reduced motion |
 | 电商商品页、product catalog、commerce | `TPL-006`、`styles/commerce-atelier/`、`recipes/product-first-commerce.md` | 以商品、规格、价格和筛选为核心 |
 | 知识库、编辑、文档阅读、knowledge base | `TPL-002`、`TPL-007`、`styles/editorial-warm/` | `TPL-002` 是独立静态示例；`TPL-007` 是 React 示例 |
+| 层级树形网格、来源标注、分支叙事、精密旋钮 / treegrid, annotation, story, rotary | `IP-025`、`IP-027`、`IP-029`、`IP-030`、`playground/advanced-interactions-v4/README.md` | 四个原生 JS 状态模型与独立可运行交互素材；不新增 React 公共导出，不接后端 |
 | 高级交互、drag/drop、时间线、scroll story | `docs/interactions/`、`IP-021`–`IP-024`、`playground/advanced-interactions-v2/`、`-v3/` | 复用交互契约，不复制演示页的固定外观 |
 | 去 AI 模板化、页面设计审查、unslop、hallmark | `docs/assembly/design-review-workflows.md`、`docs/research/unslop-hallmark.md` | 外部 Skill 为研究/可选工具，未作为本仓库依赖自动安装 |
 

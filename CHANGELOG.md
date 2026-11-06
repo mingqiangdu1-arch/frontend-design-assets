@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-06 · V0.29 four independent advanced interaction assets
+
+- Promoted four previously **analyzed-only** assets to isolated **prototype** references while preserving their stable IDs: **IP-025** keyboard-accessible row-first treegrid with collapse-safe focus/editing, **IP-027** semantic source annotation pins with orphan index and bounded detail overlay, **IP-029** reversible branching narrative with local cycle guard, and **IP-030** precision rotary control with native numeric/range/keyboard parity and pointer-cancel rollback.
+- Implemented four original state-model modules and a single [Interaction Atelier IV gallery](playground/advanced-interactions-v4/README.md). The gallery is **only a visual/interaction reference fixture**, not a business application, page generator, React library export or backend.
+- Added focused Node unit invariants and Chromium browser tests for keyboard selection, focus restoration, invalid input, orphan notes, story backtracking, pointer cancel, 390/768/1440 widths and reduced motion. Updated agent catalog aliases, prior research status and browser CI trigger.
+- Total registered assets **stay at 189**; four historical entries gain model/demo paths and accurate reference maturity. Existing 48 React components, 14 themes, package API, external dependencies and **Private** visibility remain unchanged.
+- The prototype stage is not evidence of screen-reader certification, cross-device human review, production security or server-backed behavior.
+
 ## 2026-11-06 · V0.28 original theme-to-page assembly handoffs
 
 - Added `registry/style-assembly.json`: **14 theme-specific page grammars, 57 distinct functional sections** describing structure, typography, interaction, responsive rules, accessibility and explicit anti-patterns, tied by real style IDs and selected template/XC/component references.
