@@ -2,6 +2,13 @@
 
 This repository is a **living multi-style, cross-application design asset library** — not an AI WORKFLOW PLATFORM kit.
 
+## V0.19 actual React UI component extension
+
+- The real React component catalog now has **23 exports**, including five new V0.19 implementations in `packages/ui/src/advanced.tsx`: `DataTable`, `TreeView`, `Combobox`, `Popover`, `DualRangeField`. The previously listed `UI-028..032` remain **research-only component anatomy**, NOT these production implementations.
+- Read `packages/ui/README.md` for controlled props, accessibility/input paths and limitations. Preserve explicit theme scope to the original four React-supported styles; other styles have no promised compatibility.
+- Browser and TypeScript CI cover a **limited reference implementation** with local fixtures only. DataTable does not sort its own data or fetch pages; TreeView lacks server/virtual hierarchy; Combobox is local-only; Popover is not portaled or collision-aware; DualRangeField uses independent native sliders, not a bespoke two-thumb canvas.
+- Make non-UI data/permission logic explicit in each real app. Do not claim npm publication, cross-browser/screen-reader coverage or production certification.
+
 ## V0.18 asset expansion — prefer source material over more orchestration
 
 - Browse the [new material index](docs/research/external-catalog-v018.md), [independent visual grammar studies](docs/styles/visual-studies-v018.md), [advanced interaction specs](docs/interactions/advanced-patterns-v018.md), and [component archetypes](docs/components/advanced-patterns-v018.md). These increase **actual creative/behavior vocabulary**; do not replace this round with a new scoring/planning tool.

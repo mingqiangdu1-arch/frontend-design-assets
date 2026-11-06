@@ -2,7 +2,8 @@ import * as React from "react";
 import {StateMatrix} from "./StateMatrix";
 import {createRoot} from "react-dom/client";
 import {ThemeSurface,Button,Badge,Card,TextField,TextAreaField,SelectField,CheckboxField,SwitchField,
- Tabs,Alert,Progress,Skeleton,Dialog,EmptyState,Avatar,DataList,Toast,type ThemeId,type Tone} from "../../../packages/ui/src/index";
+ Tabs,Alert,Progress,Skeleton,Dialog,EmptyState,Avatar,DataList,Toast,
+ DataTable,TreeView,Combobox,Popover,DualRangeField,type DataTableColumn,type DataTableSort,type ThemeId,type Tone} from "../../../packages/ui/src/index";
 import "../../../tokens/refined-light.css";
 import "../../../styles/precision-dark/tokens.css";
 import "../../../styles/editorial-warm/tokens.css";
@@ -19,6 +20,26 @@ const rows=[
  {id:"R-01",title:"用户研究与需求",subtitle:"产品团队 · 2026/10/26",meta:"今日",badge:<Badge tone="info">进行中</Badge>},
  {id:"R-02",title:"导航与视觉规范",subtitle:"设计团队 · 2026/10/24",meta:"2 天前",badge:<Badge tone="success">已完成</Badge>},
  {id:"R-03",title:"组件库验收",subtitle:"研发团队 · 2026/10/22",meta:"4 天前",badge:<Badge tone="warning">待验证</Badge>}
+];
+type ReviewRow={id:string;project:string;priority:number;state:string};
+const reviewRows:ReviewRow[]=[
+ {id:"Q-01",project:"Atlas Map",priority:3,state:"需审查"},
+ {id:"Q-02",project:"Workshop",priority:1,state:"已核对"},
+ {id:"Q-03",project:"Archive",priority:2,state:"待处理"}
+];
+const reviewColumns:DataTableColumn<ReviewRow>[]=[
+ {key:"project",header:"项目",sortable:true,cell:r=>r.project},
+ {key:"priority",header:"优先级",sortable:true,cell:r=>"P"+r.priority},
+ {key:"state",header:"状态",cell:r=>r.state}
+];
+const folderTree=[
+ {id:"docs",label:"设计资料",children:[
+  {id:"visual",label:"视觉研究"},
+  {id:"interaction",label:"高级交互",children:[
+   {id:"brush",label:"联动刷选"},{id:"range",label:"范围调节"}]}
+ ]},
+ {id:"examples",label:"应用示例"},
+ {id:"locked",label:"只读归档",disabled:true}
 ];
 function Specimen({title,id,caption,children}:{
  title:string;id:string;caption?:string;children:React.ReactNode
@@ -43,6 +64,19 @@ function App(){
  const [loading,setLoading]=React.useState(false);
  const [busy,setBusy]=React.useState(false);
  const [noticeTone,setNoticeTone]=React.useState<Tone>("info");
+ const [tableSort,setTableSort]=React.useState<DataTableSort>(null);
+ const [tableSelection,setTableSelection]=React.useState<string[]>([]);
+ const [treeOpen,setTreeOpen]=React.useState<string[]>([]);
+ const [treeSelected,setTreeSelected]=React.useState("docs");
+ const [city,setCity]=React.useState("tokyo");
+ const [popoverOpen,setPopoverOpen]=React.useState(false);
+ const [band,setBand]=React.useState<[number,number]>([20,65]);
+ const sortedReviewRows=React.useMemo(()=>!tableSort?reviewRows:
+  [...reviewRows].sort((a,b)=>{
+   const diff=tableSort.key==="priority"?a.priority-b.priority:
+    String(a[tableSort.key as "project"|"state"]).localeCompare(String(b[tableSort.key as "project"|"state"]));
+   return tableSort.direction==="asc"?diff:-diff;
+  }),[tableSort]);
  const validated=name.length>0&&name.trim().length<3;
  const runLoading=()=>{
   if(busy)return;setBusy(true);setLoading(true);
@@ -50,7 +84,7 @@ function App(){
  };
  return <div className="cg-app">
  <header className="cg-top">
-  <div className="cg-brand"><span className="cg-mark">◈</span><div><strong>Component Library</strong><small>Frontend Design Assets / v0.6</small></div></div>
+  <div className="cg-brand"><span className="cg-mark">◈</span><div><strong>Component Library</strong><small>Frontend Design Assets / v0.19</small></div></div>
   <a href="https://github.com/mingqiangdu1-arch/frontend-design-assets/tree/main/packages/ui" target="_blank" rel="noreferrer">GitHub 源码 ↗</a>
  </header>
  <div className="cg-picker" role="group" aria-label="选择组件预览风格">
@@ -61,7 +95,7 @@ function App(){
  <ThemeSurface theme={theme} className="cg-surface">
   <div className="cg-intro"><div><small>LIVE REACT / TYPESCRIPT COMPONENTS</small>
     <h1>组件不仅要好看，也要能直接组装。</h1>
-    <p>16 个可交互的基础组件，覆盖操作、输入、选择、信息呈现、数据与反馈。当前是参考实现，尚未进行生产集成认证。</p>
+    <p>23 个实际 React 组件，包括数据表格、树形导航、可搜索选择、弹出面板与双范围输入。当前是参考实现，尚未进行生产集成认证。</p>
    </div><Badge tone="neutral">{themes.find(x=>x.id===theme)?.label}</Badge>
   </div>
   <div className="cg-grid">
@@ -125,6 +159,41 @@ function App(){
    <Specimen id="data" title="Data List" caption="selectable records / empty state">
       <DataList items={rows} selectedId={selected} onSelect={setSelected} label="项目记录"/>
       <span className="cg-hint">当前选择：{rows.find(x=>x.id===selected)?.title}</span>
+   </Specimen>
+
+   <Specimen id="data-table" title="DataTable" caption="Controlled sort / row selection / native table">
+    <DataTable rows={sortedReviewRows} columns={reviewColumns} label="项目审查表"
+     sort={tableSort} onSortChange={setTableSort}
+     selectedIds={tableSelection} onSelectedIdsChange={setTableSelection}
+     selectLabel={row=>row.project}/>
+    <span className="cg-hint">当前已选：{tableSelection.join("、")||"无"} · 排序由上层控制，表格不执行远程查询</span>
+   </Specimen>
+   <Specimen id="tree-view" title="TreeView" caption="Controlled expand / keyboard tree navigation">
+    <TreeView label="素材目录" items={folderTree} expandedIds={treeOpen}
+     onExpandedIdsChange={setTreeOpen} selectedId={treeSelected} onSelect={setTreeSelected}/>
+    <span className="cg-hint">当前节点：{treeSelected} · 方向键、Home/End、Enter 可操作</span>
+   </Specimen>
+   <Specimen id="combobox" title="Combobox" caption="Type to filter / Arrow + Enter / Escape">
+    <Combobox label="目标城市" value={city} onValueChange={setCity}
+     options={[{value:"tokyo",label:"东京 Tokyo"},{value:"singapore",label:"新加坡 Singapore"},
+       {value:"shenzhen",label:"深圳 Shenzhen"},{value:"pending",label:"尚未开放",disabled:true}]}
+     hint="搜索、方向键与禁用选项演示；只在页面内保存"/>
+    <span className="cg-hint">已选择：{city}</span>
+   </Specimen>
+   <Specimen id="popover" title="Popover" caption="Controlled nonmodal dialog / Escape / outside click">
+    <div className="cg-row">
+     <Popover label="操作面板" trigger="更多操作" open={popoverOpen} onOpenChange={setPopoverOpen}>
+      <strong>当前条目</strong>
+      <p>此面板不是模态对话框，允许点击外部区域关闭。</p>
+      <button type="button" onClick={()=>{setPopoverOpen(false);setToast(true);}}>确认本地操作</button>
+     </Popover>
+     <span className="cg-hint">弹层为主题作用域内的受控组件</span>
+    </div>
+   </Specimen>
+   <Specimen id="dual-range" title="DualRangeField" caption="Min span / step clamp / native range and number">
+    <DualRangeField label="参数区间" min={0} max={100} step={5} minSpan={15}
+     value={band} onValueChange={setBand} unit="分"/>
+    <span className="cg-hint">当前区间：{band[0]}–{band[1]}；两端不会交叉</span>
    </Specimen>
    <Specimen id="cards" title="Cards & Empty" caption="modular composition">
      <Card heading="可组合信息卡片" description="不同风格的卡片有不同的信息密度和结构" footer={<><Button size="sm">创建</Button><Button size="sm" variant="ghost">了解更多</Button></>}>

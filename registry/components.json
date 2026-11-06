@@ -1,5 +1,5 @@
 {
-  "version": "0.12.0",
+  "version": "0.19.0",
   "package": "@frontend-design-assets/ui",
   "status": "reference-implemented; not production-certified",
   "source": "packages/ui/src/index.tsx",
@@ -263,6 +263,71 @@
       "interaction": "controlled or native as documented",
       "verified": "TypeScript + library/gallery build and 8 Chromium smoke checks passed (GitHub run 40284518385). Real target-app integration not completed.",
       "notion": "[private-notion-link-redacted]"
+    },
+    {
+      "id": "UI-033",
+      "exportName": "DataTable",
+      "category": "data",
+      "description": "Generic, controlled sortable data table with selectable rows and semantic table headers",
+      "source": "packages/ui/src/advanced.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "interaction": "controlled state and scoped keyboard/pointer behavior; details in packages/ui/README.md",
+      "verified": "V0.19 reference implementation; GitHub CI verification pending at registration time, no real-product or screen-reader certification."
+    },
+    {
+      "id": "UI-034",
+      "exportName": "TreeView",
+      "category": "navigation",
+      "description": "Controlled hierarchical tree with roving focus, arrow-key navigation and expansion",
+      "source": "packages/ui/src/advanced.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "interaction": "controlled state and scoped keyboard/pointer behavior; details in packages/ui/README.md",
+      "verified": "V0.19 reference implementation; GitHub CI verification pending at registration time, no real-product or screen-reader certification."
+    },
+    {
+      "id": "UI-035",
+      "exportName": "Combobox",
+      "category": "input",
+      "description": "Controlled searchable single select with keyboard listbox and disabled options",
+      "source": "packages/ui/src/advanced.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "interaction": "controlled state and scoped keyboard/pointer behavior; details in packages/ui/README.md",
+      "verified": "V0.19 reference implementation; GitHub CI verification pending at registration time, no real-product or screen-reader certification."
+    },
+    {
+      "id": "UI-036",
+      "exportName": "Popover",
+      "category": "overlay",
+      "description": "Controlled nonmodal anchored panel, outside dismissal and Escape focus return",
+      "source": "packages/ui/src/advanced.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "interaction": "controlled state and scoped keyboard/pointer behavior; details in packages/ui/README.md",
+      "verified": "V0.19 reference implementation; GitHub CI verification pending at registration time, no real-product or screen-reader certification."
+    },
+    {
+      "id": "UI-037",
+      "exportName": "DualRangeField",
+      "category": "input",
+      "description": "Controlled two-bound numeric and native range inputs with step/minSpan constraints",
+      "source": "packages/ui/src/advanced.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "interaction": "controlled state and scoped keyboard/pointer behavior; details in packages/ui/README.md",
+      "verified": "V0.19 reference implementation; GitHub CI verification pending at registration time, no real-product or screen-reader certification."
     }
   ],
   "stateMatrix": "registry/component-states.json",

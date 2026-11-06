@@ -12,7 +12,12 @@ for(const item of manifest.entries){
  const found=assets.find(x=>x.id===item.id);
  if(!found)throw Error("Missing indexed asset: "+item.id);
  if(found.exportName!==item.exportName)throw Error(item.id+" has mismatched export");
- if(!new RegExp("export (?:const|function) "+item.exportName+"\\b").test(source))throw Error(item.id+" is not exported from source");
+ const fileSource=get(item.source||"packages/ui/src/index.tsx");
+ if(!new RegExp("export (?:const|function) "+item.exportName+"\\b").test(fileSource))
+  throw Error(item.id+" is not implemented in "+item.source);
+ if(item.source!=="packages/ui/src/index.tsx"&&!new RegExp(
+  "export \\{[^}]*\\b"+item.exportName+"\\b[^}]*\\} from [\\\"']\\./advanced[\\\"']"
+ ).test(source))throw Error(item.id+" is not re-exported by the public UI index");
  if(found.stage==="production-ready")throw Error("Component incorrectly declared production ready: "+item.id);
 }
 for(const style of manifest.styleIds)if(!styles.includes(style))throw Error("Undeclared style "+style);

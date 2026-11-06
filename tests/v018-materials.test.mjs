@@ -9,9 +9,9 @@ const styles=read("registry/styles.json");
 const components=read("registry/components.json");
 const byId=new Map(assets.map(a=>[a.id,a]));
 test("v0.18 adds 20 indexed entries without claiming a registered style or React export",()=>{
- assert.equal(assets.length,153);
+ assert.ok(assets.length>=153,"V0.18 catalog entries must survive later additive batches");
  assert.equal(styles.styles.length,10);
- assert.equal(components.entries.length,18);
+ assert.ok(components.entries.length>=18,"Prior React exports must survive later additive batches");
  const ids=[...Array.from({length:9},(_,i)=>"REF-"+String(i+33).padStart(3,"0")),
   ...Array.from({length:6},(_,i)=>"IP-"+String(i+25).padStart(3,"0")),
   ...Array.from({length:5},(_,i)=>"UI-"+String(i+28).padStart(3,"0"))];

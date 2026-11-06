@@ -4502,6 +4502,263 @@
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
       "license": "Original component anatomy and state specification only",
       "verified": "Component archetype/reference only: NOT a React export, TSX/CSS implementation or production-ready UI."
+    },
+    {
+      "id": "UI-033",
+      "name": "data: DataTable",
+      "type": "component",
+      "exportName": "DataTable",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "table",
+        "sort",
+        "select",
+        "react",
+        "typescript",
+        "data"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/advanced.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "workspace",
+        "b2b-saas",
+        "data-tool",
+        "analytics-console"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original source code; React is peer dependency",
+      "verified": "V0.19 React/TypeScript implementation; automated CI to verify. No production, cross-browser or screen-reader certification.",
+      "aliases": [
+        "数据表格",
+        "排序",
+        "行选择"
+      ],
+      "handoff": {
+        "entry": "packages/ui/src/advanced.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Use controlled state in the target application; load only one supported theme and its scoped UI CSS. Consult README for input and keyboard boundaries.",
+        "limitations": "Reference-level UI only; no server pagination, complex virtualization, async loading or complete assistive-tech certification."
+      }
+    },
+    {
+      "id": "UI-034",
+      "name": "navigation: TreeView",
+      "type": "component",
+      "exportName": "TreeView",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "tree",
+        "hierarchy",
+        "keyboard",
+        "navigation",
+        "react"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/advanced.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "file-explorer",
+        "developer-tool",
+        "knowledge-base",
+        "workspace"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original source code; React is peer dependency",
+      "verified": "V0.19 React/TypeScript implementation; automated CI to verify. No production, cross-browser or screen-reader certification.",
+      "aliases": [
+        "树状目录",
+        "层级导航"
+      ],
+      "handoff": {
+        "entry": "packages/ui/src/advanced.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Use controlled state in the target application; load only one supported theme and its scoped UI CSS. Consult README for input and keyboard boundaries.",
+        "limitations": "Reference-level UI only; no server pagination, complex virtualization, async loading or complete assistive-tech certification."
+      }
+    },
+    {
+      "id": "UI-035",
+      "name": "input: Combobox",
+      "type": "component",
+      "exportName": "Combobox",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "searchable",
+        "combobox",
+        "select",
+        "input",
+        "react"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/advanced.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "forms",
+        "workspace",
+        "consumer-mobile",
+        "search"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original source code; React is peer dependency",
+      "verified": "V0.19 React/TypeScript implementation; automated CI to verify. No production, cross-browser or screen-reader certification.",
+      "aliases": [
+        "搜索选择",
+        "下拉搜索"
+      ],
+      "handoff": {
+        "entry": "packages/ui/src/advanced.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Use controlled state in the target application; load only one supported theme and its scoped UI CSS. Consult README for input and keyboard boundaries.",
+        "limitations": "Reference-level UI only; no server pagination, complex virtualization, async loading or complete assistive-tech certification."
+      }
+    },
+    {
+      "id": "UI-036",
+      "name": "overlay: Popover",
+      "type": "component",
+      "exportName": "Popover",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "popover",
+        "overlay",
+        "focus",
+        "dismiss",
+        "react"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/advanced.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "workspace",
+        "creative-tool",
+        "consumer-mobile"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original source code; React is peer dependency",
+      "verified": "V0.19 React/TypeScript implementation; automated CI to verify. No production, cross-browser or screen-reader certification.",
+      "aliases": [
+        "气泡面板",
+        "弹出操作"
+      ],
+      "handoff": {
+        "entry": "packages/ui/src/advanced.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Use controlled state in the target application; load only one supported theme and its scoped UI CSS. Consult README for input and keyboard boundaries.",
+        "limitations": "Reference-level UI only; no server pagination, complex virtualization, async loading or complete assistive-tech certification."
+      }
+    },
+    {
+      "id": "UI-037",
+      "name": "input: DualRangeField",
+      "type": "component",
+      "exportName": "DualRangeField",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "range",
+        "dual-thumb",
+        "numeric",
+        "precision",
+        "react"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/advanced.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "advanced-filter",
+        "parameter-editor",
+        "creative-tool",
+        "commerce-storefront"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original source code; React is peer dependency",
+      "verified": "V0.19 React/TypeScript implementation; automated CI to verify. No production, cross-browser or screen-reader certification.",
+      "aliases": [
+        "双向范围",
+        "数字滑块",
+        "精细调节"
+      ],
+      "handoff": {
+        "entry": "packages/ui/src/advanced.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Use controlled state in the target application; load only one supported theme and its scoped UI CSS. Consult README for input and keyboard boundaries.",
+        "limitations": "Reference-level UI only; no server pagination, complex virtualization, async loading or complete assistive-tech certification."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",

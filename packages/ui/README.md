@@ -46,9 +46,45 @@ The illustrative import `frontend-design-assets/styles/...` above is a repositor
 | Navigation | Tabs |
 | Feedback | Badge, Alert, Progress, Skeleton, EmptyState |
 | Overlays | Dialog, Toast |
-| Data | Avatar, DataList |
+| Data | Avatar, DataList, **DataTable** |
+| Navigation & hierarchy | **TreeView** |
+| Advanced input | **Combobox**, **DualRangeField** |
+| Interactive overlays | **Popover** |
 
-**18 exported React components.** All use style-scoped `fda-` CSS rather than globally overwriting buttons, forms, cards, etc. The names are also discoverable in `registry/components.json`.
+**23 exported React components (including five new in V0.19).** All use style-scoped `fda-` CSS rather than globally overwriting buttons, forms, cards, etc. The names are also discoverable in `registry/components.json`.
+
+## V0.19 advanced exports — real code with controlled state
+
+These five components live in [src/advanced.tsx](src/advanced.tsx), are re-exported from `index.tsx`, included in the ESM library build and shown in the four-theme gallery. They use original React/TypeScript + scoped token CSS; there is **no new dependency**.
+
+| Export | Essential props | Implementation/failure boundary |
+| --- | --- | --- |
+| `DataTable<T>` | `rows`, `columns`, `label`, controlled `sort/onSortChange`, `selectedIds/onSelectedIdsChange` | Native table with header buttons and row checkboxes. **Parent sorts/loads/paginates rows**, not this package; wide tables scroll in their own region. |
+| `TreeView` | `items`, `label`, `expandedIds/onExpandedIdsChange`, `selectedId/onSelect` | Roving focus, Up/Down/Left/Right/Home/End/Enter, controlled expansion; no treegrid editing, drag, async children or virtualization. |
+| `Combobox` | `label`, `options`, controlled `value/onValueChange` | Filterable single selection, input/listbox, arrows/Enter/Escape and disabled results. **Local option arrays only**; not an async autocomplete or multi-select. |
+| `Popover` | `label`, `trigger`, `open/onOpenChange`, `children` | Nonmodal anchored dialog; focuses first interactive child, Escape restores trigger and outside click closes. **No portal, collision detection or focus trap**; keep content in a non-clipping container. |
+| `DualRangeField` | `label`, `min/max/step/minSpan`, controlled `value/onValueChange` | Two native sliders plus number inputs; clamps values before callback to preserve minSpan. **No overlaid dual-thumb gesture**, decimal entry UX beyond native input, or remote persistence. |
+
+```tsx
+import {DataTable,Combobox,DualRangeField} from "@frontend-design-assets/ui";
+
+const [sort,setSort]=useState<DataTableSort>(null);
+const [selectedIds,setSelectedIds]=useState<string[]>([]);
+const [location,setLocation]=useState("tokyo");
+const [bounds,setBounds]=useState<[number,number]>([20,65]);
+
+<DataTable label="Records" rows={sortedRows} columns={columns}
+ sort={sort} onSortChange={setSort}
+ selectedIds={selectedIds} onSelectedIdsChange={setSelectedIds}/>
+<Combobox label="Location" value={location} onValueChange={setLocation}
+ options={[{value:"tokyo",label:"Tokyo"},{value:"seoul",label:"Seoul"}]}/>
+<DualRangeField label="Confidence" min={0} max={100} step={5} minSpan={15}
+ value={bounds} onValueChange={setBounds} unit="%"/>
+```
+
+The example assumes `useState`, `DataTableSort`, `columns` and `sortedRows` are imported/declared by the calling app. It illustrates an API contract, not an executable page. Import **only one** compatible theme's scoped tokens.
+
+**Accessibility review remains open:** mouse and Chromium keyboard smoke only, not a screen-reader certification. Tree focus/expansion and combobox active-descendant are reference behavior; test against the target screen readers and data volumes before adoption.
 
 ### Behavior decisions and limits
 

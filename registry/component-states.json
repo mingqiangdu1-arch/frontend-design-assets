@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "scope": "selected component states, not complete UI package certification",
+  "scope": "Selected component-state coverage of original 18 exports; V0.19 additional five exports are explicitly unreviewed in the state matrix but tested in the interactive gallery.",
   "styleIds": [
     "refined-light-saas",
     "precision-dark",
@@ -130,7 +130,12 @@
     "UI-015",
     "UI-016",
     "UI-025",
-    "UI-026"
+    "UI-026",
+    "UI-033",
+    "UI-034",
+    "UI-035",
+    "UI-036",
+    "UI-037"
   ],
   "maturity": "prototype",
   "visualBaselineStatus": "unapproved",

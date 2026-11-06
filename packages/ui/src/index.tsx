@@ -200,3 +200,7 @@ export function Toast({open,message,tone="neutral",onDismiss,action}:{
  <span>{message}</span>{action&&<button type="button" onClick={action.onClick}>{action.label}</button>}
  <button className="fda-toast__close" type="button" aria-label="关闭消息" onClick={onDismiss}>×</button></div>;
 }
+
+// Additional real React components; research-only UI-028..032 are separate assets.
+export {DataTable,TreeView,Combobox,Popover,DualRangeField} from "./advanced";
+export type {DataTableColumn,DataTableSort,DataTableProps,TreeViewItem,TreeViewProps,ComboboxOption,ComboboxProps,PopoverProps,DualRangeFieldProps} from "./advanced";

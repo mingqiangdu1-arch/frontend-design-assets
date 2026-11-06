@@ -133,3 +133,69 @@ button.fda-data-list__row[aria-pressed="true"]{background:var(--ui-selected)}
 [data-design-theme="playful-pop"] .fda-progress__track{height:13px;border:2px solid #fff;background:#dce8f6}
 @media(max-width:560px){.fda-data-list__row{flex-wrap:wrap}.fda-data-list__meta{margin-left:auto}}
 @media(prefers-reduced-motion:reduce){.fda-scope *{transition:none!important;animation:none!important}}
+
+
+/* V0.19 real advanced React exports; scoped to fda theme token contract. */
+.fda-table-scroll{max-width:100%;overflow-x:auto;border:1px solid var(--ui-border-soft);border-radius:var(--ui-card-radius)}
+.fda-table{width:100%;min-width:460px;border-collapse:collapse;color:var(--ui-text);background:var(--ui-surface);text-align:start;font-size:12px}
+.fda-table th,.fda-table td{padding:10px 13px;text-align:start;border-bottom:1px solid var(--ui-border-soft)}
+.fda-table th{font-weight:650;color:var(--ui-muted);background:var(--ui-subtle)}
+.fda-table tbody tr:last-child td{border-bottom:0}
+.fda-table tbody tr[data-selected="true"]{background:var(--ui-selected)}
+.fda-table__sort{display:inline-flex;align-items:center;gap:6px;border:0;color:inherit;background:none;padding:3px 0;font-weight:700}
+.fda-table__sort:hover{text-decoration:underline}
+.fda-table__checkbox{width:36px;text-align:center!important}
+.fda-table__checkbox input{width:16px;height:16px;vertical-align:middle;accent-color:var(--ui-focus)}
+.fda-table__empty{text-align:center!important;color:var(--ui-muted);padding:23px!important}
+
+.fda-tree{list-style:none;padding:5px;margin:0;border:1px solid var(--ui-border-soft);
+ border-radius:var(--ui-card-radius);background:var(--ui-surface)}
+.fda-tree__group{list-style:none;padding:0;margin:0}
+.fda-tree__item{list-style:none;outline:none}
+.fda-tree__row{display:flex;align-items:center;gap:8px;min-height:37px;padding:4px 10px 4px 8px;
+ border-radius:var(--ui-radius);font-size:12px;color:var(--ui-text);cursor:pointer}
+.fda-tree__item[data-selected="true"]>.fda-tree__row{background:var(--ui-selected);font-weight:650}
+.fda-tree__item[aria-disabled="true"]>.fda-tree__row{opacity:.5;cursor:default}
+.fda-tree__item:not([aria-disabled="true"])>.fda-tree__row:hover{background:var(--ui-subtle)}
+.fda-tree__item:focus-visible>.fda-tree__row{outline:2px solid var(--ui-focus);outline-offset:-2px}
+.fda-tree__toggle,.fda-tree__spacer{width:22px;height:25px;flex-shrink:0}
+.fda-tree__toggle{border:0;background:transparent;color:var(--ui-muted);padding:1px;font-size:15px}
+.fda-tree__label{min-width:0;overflow-wrap:anywhere}
+
+.fda-combobox{display:grid;gap:6px;position:relative;min-width:0}
+.fda-combobox>label{font-size:12px;font-weight:650}
+.fda-combobox__list{position:absolute;top:calc(100% + 3px);left:0;right:0;z-index:25;
+ max-height:215px;overflow:auto;list-style:none;margin:0;padding:5px;border:1px solid var(--ui-border);
+ background:var(--ui-surface);box-shadow:var(--ui-shadow,0 10px 30px #0002);
+ border-radius:var(--ui-radius)}
+.fda-combobox__option,.fda-combobox__empty{padding:9px 11px;font-size:12px;border-radius:var(--ui-radius)}
+.fda-combobox__option{cursor:pointer}
+.fda-combobox__option[data-active="true"],.fda-combobox__option:hover{background:var(--ui-selected)}
+.fda-combobox__option[aria-disabled="true"]{opacity:.45;cursor:not-allowed}
+.fda-combobox__empty{color:var(--ui-muted)}
+
+.fda-popover{position:relative;display:inline-block;max-width:100%}
+.fda-popover__trigger{background:var(--ui-surface);color:var(--ui-text);border:1px solid var(--ui-border);
+ border-radius:var(--ui-radius);padding:7px 13px;min-height:var(--ui-control-height);font-weight:650}
+.fda-popover__trigger[aria-expanded="true"]{background:var(--ui-selected)}
+.fda-popover__panel{position:absolute;z-index:30;top:calc(100% + 7px);left:0;
+ width:min(320px,calc(100vw - 52px));max-height:min(340px,65vh);overflow:auto;padding:16px;
+ border-radius:var(--ui-card-radius);color:var(--ui-text);background:var(--ui-surface);
+ border:1px solid var(--ui-border);box-shadow:var(--ui-shadow,0 15px 32px #0003)}
+.fda-popover__panel[data-align="end"]{left:auto;right:0}
+.fda-popover__panel:focus{outline:none}
+.fda-popover__panel strong{display:block;margin-bottom:8px}
+.fda-popover__panel p{margin:0 0 13px;font-size:12px;color:var(--ui-muted)}
+.fda-popover__panel button{color:var(--ui-text);background:var(--ui-subtle);border:1px solid var(--ui-border);
+ border-radius:var(--ui-radius);padding:7px 10px}
+
+.fda-dual-range{margin:0;border:1px solid var(--ui-border-soft);border-radius:var(--ui-radius);padding:11px 15px;
+ display:grid;gap:11px;min-width:0}
+.fda-dual-range legend{font-size:12px;font-weight:650;padding:0 6px}
+.fda-dual-range__controls,.fda-dual-range__sliders{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.fda-dual-range__controls label,.fda-dual-range__sliders label{display:grid;gap:4px;font-size:11px;color:var(--ui-muted)}
+.fda-dual-range__controls input{width:100%;min-width:0;border:1px solid var(--ui-border);
+ border-radius:var(--ui-radius);background:var(--ui-surface);color:var(--ui-text);padding:7px}
+.fda-dual-range__sliders input{width:100%;min-width:0;accent-color:var(--ui-focus)}
+.fda-dual-range:disabled{opacity:.6}
+@media(max-width:460px){.fda-dual-range__controls,.fda-dual-range__sliders{grid-template-columns:1fr}}

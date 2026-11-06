@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-06 · V0.19 actual React component expansion
+
+- Added 5 **implemented, typechecked, style-scoped** React exports: DataTable (controlled sort/selection), TreeView (hierarchy and keyboard focus), Combobox (searchable single selection), Popover (controlled nonmodal panel) and DualRangeField (clamped two-value native input). Registered as UI-033..037, distinct from UI-028..032 research sketches.
+- Shared four declared themes and explicit controlled APIs; interactive Gallery specimens and dedicated Chromium browser tests cover critical state/keyboard behavior and 390/768/1440px overflow.
+- Real React package catalog increased from 18 to 23 exports; master asset index 153 → 158. The historical selected-state matrix stays partial: newly added exports are explicitly marked not covered by the matrix itself.
+- No new upstream component code, npm dependencies, publication, server integrations, unapproved visual baseline or production/accessibility certification.
+
+
 ## 2026-11-06 · V0.18 material expansion: visual grammars, controls and special interactions
 
 - **20 new indexed research assets** (133 → 153): 9 references (7 verified upstream research links + 2 original visual-study entries), 6 advanced interaction contracts (IP-025..030), and 5 component morphology references (UI-028..032). No duplicate style names, asset IDs, or automatic theme compatibility.

@@ -41,3 +41,7 @@ html{min-width:320px}body{margin:0;background:#f1f2f5;font-family:system-ui,-app
 [data-design-theme="playful-pop"] .cg-spec__head h2{font-weight:850}
 @media(max-width:850px){.cg-grid{grid-template-columns:1fr}.cg-picker{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:550px){.cg-picker{padding:0 10px 10px}.cg-picker button{padding:8px;font-size:11px}.cg-picker button small{font-size:9px}.cg-dot{width:12px;height:12px}.cg-surface{padding:25px 12px}.cg-intro{flex-direction:column}.cg-spec__head{padding:15px;align-items:start}.cg-spec__body{padding:16px}.cg-form-grid{grid-template-columns:1fr}.cg-form-grid>.fda-field:last-child{grid-column:auto}}
+
+/* Expanded specimens must not clip real interactive dropdowns/popovers. */
+#combobox.cg-spec,#popover.cg-spec{overflow:visible;position:relative;z-index:4}
+#combobox .cg-spec__body,#popover .cg-spec__body{overflow:visible}
