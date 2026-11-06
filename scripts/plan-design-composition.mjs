@@ -3,6 +3,7 @@ import path from "node:path";
 import {pathToFileURL} from "node:url";
 import {buildHandoff,searchAssets} from "./find-assets.mjs";
 import {createExperienceDirections} from "./experience-compositions.mjs";
+import {validateFitConstraints} from "./evaluate-experience.mjs";
 
 // A deterministic planning helper, deliberately not a generative model,
 // runtime page composer, framework bridge or visual approval system.
@@ -91,12 +92,12 @@ function buildOption(template,style,components,registry,request,interactions){
    exampleUsesReactLibrary:Boolean(isReactDemo),adaptation:
     !template?"page-design-required":needsPort?"framework-port-required":"reference-only-no-port-claim"},
   components:candidates,interactions,
-  creativeAlternatives:createExperienceDirections({context:request.context,templateContexts:template?.applicationContexts||[],styleId:style.id,limit:request.concepts},registry.assets,registry.reusePolicies),
+  creativeAlternatives:createExperienceDirections({context:request.context,templateContexts:template?.applicationContexts||[],styleId:style.id,limit:request.concepts,fit:request.fit},registry.assets,registry.reusePolicies),
   warnings:notes
  };
 }
-export function planComposition({context="",intent="",style="",template="",stack="any",behaviors=[],concepts=2}={},data){
- const request={context:clean(context),intent:clean(intent),style:clean(style),template:clean(template),stack,behaviors,concepts:Number(concepts)};
+export function planComposition({context="",intent="",style="",template="",stack="any",behaviors=[],concepts=2,density="",device="",complexity="",expression=""}={},data){
+ const request={context:clean(context),intent:clean(intent),style:clean(style),template:clean(template),stack,behaviors,concepts:Number(concepts),fit:validateFitConstraints({density,device,complexity,expression})};
  if(!STACKS.has(stack))throw Error("Unknown stack: "+stack);
  if(!Number.isInteger(request.concepts)||request.concepts<0||request.concepts>4)throw Error("concept count must be between 0 and 4");
  if(!Array.isArray(behaviors)||behaviors.some(id=>typeof id!=="string"||!id.trim())||
@@ -145,11 +146,12 @@ export function planComposition({context="",intent="",style="",template="",stack
  ];
  if(!options.length)warnings.push("No registered style/template matches this context. Define a new art direction or provide --style explicitly; do not fall back to SaaS.");
  if(!request.template)warnings.push("No page template was selected. The options are candidates; confirm one before target implementation.");
+ if(Object.values(request.fit).some(Boolean))warnings.push("Fit scores are 0–2 ordinal matches per explicit preference, NOT empirical UX/visual quality grades. Even a leading hypothesis is not automatically selected.");
  if(request.template&&request.stack==="react"&&chosenTemplate.implementation!=="react-vite")
   warnings.push("Selected page is static, and a React version would require a separate port.");
  return {schemaVersion:"1.0",status:"planning-only",request,selection:selected,
   options,behaviorCandidates:interactions,
-  architectureAlternatives:options.length?[]:createExperienceDirections({context:request.context,templateContexts:chosenTemplate?.applicationContexts||[],styleId:resolvedStyle||"",limit:request.concepts},registry.assets,registry.reusePolicies),
+  architectureAlternatives:options.length?[]:createExperienceDirections({context:request.context,templateContexts:chosenTemplate?.applicationContexts||[],styleId:resolvedStyle||"",limit:request.concepts,fit:request.fit},registry.assets,registry.reusePolicies),
   alternatives:stylesFound.map(s=>({id:s.id,label:s.label,categoryMatch:s.categories.includes(request.context),
    reactComponentThemeSupported:components.styleIds.includes(s.id),documentation:s.documentation})),
   warnings};
@@ -160,6 +162,7 @@ export function toMarkdown(plan){
   "Context: "+(plan.request.context||"not specified"),
   "Intent: "+(plan.request.intent||"not specified"),
   "Target stack: "+plan.request.stack,
+  "Declared fit preferences: "+(Object.entries(plan.request.fit).filter(([,value])=>value).map(([axis,value])=>axis+"="+value).join(", ")||"none"),
   "Selection: "+(plan.selection.templateId||plan.selection.styleId||"unselected"),"",
   "## Candidate compositions"];
  for(const o of plan.options){
@@ -176,6 +179,11 @@ export function toMarkdown(plan){
    ...(o.creativeAlternatives.length?o.creativeAlternatives.flatMap(c=>[
      "#### "+c.id+" · "+c.title,
      "- Structure: "+c.spatialModel,
+     "- Preference fit: "+(c.fitEvaluation.score===null?"not assessed — no preferences":
+       c.fitEvaluation.score+"/"+c.fitEvaluation.maxScore+" preference match points ("+c.fitEvaluation.relative+"; heuristic, NOT verified quality)"),
+     ...(c.fitEvaluation.criteria||[]).map(d=>"- "+d.axis+": requested "+d.requested+", declared "+d.declared+" → "+d.fit+" ("+d.points+"/2)"),
+     "- Evidence (catalog hypothesis): "+c.fitEvaluation.evidence,
+     "- Tradeoff: "+c.fitEvaluation.tradeoff,
      "- Content priority: "+c.contentPriority.join(" → "),
      "- Sections: "+c.sections.join(" / "),
      "- Navigation: "+c.navigation,
@@ -193,6 +201,10 @@ export function toMarkdown(plan){
   for(const c of plan.architectureAlternatives){
    lines.push("### "+c.id+" · "+c.title,"- Structure: "+c.spatialModel,
     "- Content priority: "+c.contentPriority.join(" → "),
+    "- Preference fit: "+(c.fitEvaluation.score===null?"not assessed":
+      c.fitEvaluation.score+"/"+c.fitEvaluation.maxScore+" preference match points ("+c.fitEvaluation.relative+"; NOT a UX quality score)"),
+    ...(c.fitEvaluation.criteria||[]).map(d=>"- "+d.axis+": requested "+d.requested+", declared "+d.declared+" → "+d.fit+" ("+d.points+"/2)"),
+    "- Evidence: "+c.fitEvaluation.evidence,"- Tradeoff: "+c.fitEvaluation.tradeoff,
     "- Sections: "+c.sections.join(" / "),
     "- Navigation: "+c.navigation,
     "- Interaction: "+c.primaryInteraction,
@@ -207,9 +219,9 @@ export function toMarkdown(plan){
 function parseArgs(args){
  const out={};
  for(const arg of args){
-  if(!arg.startsWith("--")||!arg.includes("="))throw Error("Usage: --context=... [--intent=...] [--style=...] [--template=...] [--stack=any|react|static] [--behaviors=IP-021,IP-022] [--format=json|markdown]");
+  if(!arg.startsWith("--")||!arg.includes("="))throw Error("Usage: --context=... [--density=low|medium|high] [--device=mobile|responsive|desktop] [--complexity=simple|guided|expert] [--expression=restrained|expressive|immersive] [--format=json|markdown]");
   const i=arg.indexOf("="),key=arg.slice(2,i),value=arg.slice(i+1);
-  if(!["context","intent","style","template","stack","behaviors","format","concepts"].includes(key))throw Error("Unknown option: "+key);
+  if(!["context","intent","style","template","stack","behaviors","format","concepts","density","device","complexity","expression"].includes(key))throw Error("Unknown option: "+key);
   if(Object.hasOwn(out,key))throw Error("Duplicate option: "+key);
   out[key]=value;
  }

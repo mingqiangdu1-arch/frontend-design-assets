@@ -44,3 +44,28 @@ Each idea has an `XC-xxx` ID and real indexed interaction references. These **re
 The registry check validates uniqueness, required fields, at least two distinct architectures per context, referenced interaction IDs and the absence of a global default. Node tests cover known/unknown contexts, deterministic output and explicit style boundaries. **These checks do not certify visual quality or accessibility**. Actual product adoption requires device, usability and platform testing; asset collection does not require new browsers, Demo pages or deployments.
 
 Sources: [registry/experience-compositions.json](../../registry/experience-compositions.json) · [Existing planner](design-composition.md) · [Creative style grammar](../styles/creative-art-direction.md).
+
+## V0.17 preference-aware, explainable concept comparison (2026-11-06)
+
+This is a **conditional fit comparison**, not a prediction of conversion, a universal UX quality score, aesthetic measurement or an accessibility audit. Each of the 16 `XC-xxx` architecture research recipes declares an editable `fitProfile`:
+
+| Dimension | Accepted user constraint | What it means |
+| --- | --- | --- |
+| Content density | `--density=low|medium|high` | Amount of competing visible content the layout is intended to organize |
+| Device | `--device=mobile|responsive|desktop` | Design's primary spatial/input target, not a browser support guarantee |
+| Interaction complexity | `--complexity=simple|guided|expert` | User operation pattern; expert isn't inherently better than simple |
+| Visual expression | `--expression=restrained|expressive|immersive` | Proposed visual character; **not** a measured uniqueness or quality metric |
+
+All constraints are **optional and have no hidden defaults**. A profile includes a short catalog evidence note and a concrete tradeoff. Matches award 2 ordinal points per dimension, adjacent levels 1 point and opposite levels 0. Unspecified dimensions are excluded from the denominator. A request with one preference has maximum 2 points; four preferences have maximum 8. The score is deliberately called `fitEvaluation`, never a production quality or visual assessment.
+
+With no preferences, the existing recipe order is preserved, `fitEvaluation.score=null`, and the candidates are unranked. With user preferences, alternatives are ranked **within the matched context** and each criterion shows requested/declared level, fit (aligned/partial/conflict), evidence and tradeoff. Ties are explicit; a unique leader remains only a **conditional hypothesis**, not a chosen design. Weak or incompatible candidates cannot be presented as confident winners.
+
+```sh
+npm run design:compose -- --context=consumer-mobile --density=low --device=mobile --complexity=simple --expression=restrained --format=markdown
+npm run design:compose -- --context=consumer-mobile --density=medium --device=mobile --complexity=guided --expression=expressive --format=markdown
+npm run design:compose -- --context=creative-tool --device=desktop --complexity=expert --format=json
+```
+
+For the same mobile-learning context, the first request favors `XC-003` (one meaningful action) while the second favors `XC-004` (chapter progression). That reversal comes from **declared layout suitability**, not from an AI image comparison or collected user study. Each output preserves the less-fit design, its concrete alternative strengths, and target-app QA gaps.
+
+**Use in Codex:** articulate the user job and constraints, inspect both results, compare criterion-by-criterion, and explicitly justify which design direction to develop. Never equate the highest fit points with approval or erase the alternatives. Add real evidence (screenshots, usability research, accessibility testing, metrics) only when the target environment supports it.

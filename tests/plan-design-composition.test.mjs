@@ -111,3 +111,34 @@ test("concept count is bounded, opt-out works, and template-only can use declare
  assert.equal(cli.options[0].creativeAlternatives.length,2);
  assert.throws(()=>runCLI(["--context=workspace","--concepts=5"]),/concept count/);
 });
+
+test("conditional scoring changes architecture order but never chooses a visual theme",()=>{
+ const quick=planComposition({context:"consumer-mobile",density:"low",device:"mobile",complexity:"simple",expression:"restrained"},data);
+ const journey=planComposition({context:"consumer-mobile",density:"medium",device:"mobile",complexity:"guided",expression:"expressive"},data);
+ assert.equal(quick.selection.styleId,null);
+ assert.equal(journey.selection.styleId,null);
+ assert.deepEqual(quick.options[0].creativeAlternatives.map(x=>x.id),["XC-003","XC-004"]);
+ assert.deepEqual(journey.options[0].creativeAlternatives.map(x=>x.id),["XC-004","XC-003"]);
+ assert.equal(journey.options[0].creativeAlternatives[0].fitEvaluation.maxScore,8);
+ assert.ok(toMarkdown(journey).includes("preference match points"));
+ assert.ok(toMarkdown(journey).includes("Tradeoff:"));
+});
+test("unconstrained planning does not fabricate quality scores",()=>{
+ const x=planComposition({context:"consumer-mobile"},data);
+ assert.ok(x.options[0].creativeAlternatives.every(r=>r.fitEvaluation.score===null));
+ assert.ok(toMarkdown(x).includes("not assessed"));
+});
+test("architecture-only scenarios score without inventing visual support",()=>{
+ const x=planComposition({context:"creative-tool",device:"desktop",complexity:"expert"},data);
+ assert.equal(x.options.length,0);
+ assert.equal(x.selection.styleId,null);
+ assert.equal(x.architectureAlternatives[0].fitEvaluation.maxScore,4);
+ assert.ok(toMarkdown(x).includes("Preference fit"));
+});
+test("CLI accepts user constraints and rejects invalid value levels",()=>{
+ const x=JSON.parse(runCLI(["--context=consumer-mobile","--density=low","--device=mobile","--complexity=simple","--expression=restrained"]));
+ assert.equal(x.options[0].creativeAlternatives[0].id,"XC-003");
+ assert.equal(x.request.fit.density,"low");
+ assert.throws(()=>runCLI(["--context=consumer-mobile","--device=television"]),/Unknown device/);
+ assert.throws(()=>runCLI(["--context=consumer-mobile","--expression=best"]),/Unknown expression/);
+});

@@ -36,3 +36,7 @@ Codex input is in [REUSE-PROMPT.md](REUSE-PROMPT.md). Production review and targ
 ## Creative structure alternatives
 
 [Experience composition grammar](experience-compositions.md) adds two distinct task-first layouts to the existing `design:compose` response (default), without creating a new demo or additional runtime.
+
+## Explainable conditional comparison
+
+The same `design:compose` command accepts optional density/device/complexity/expression preferences. Its architecture results include preference-alignment evidence and tradeoffs; absence of preferences means no ranking. [Rubric](experience-compositions.md#v017-preference-aware-explainable-concept-comparison-2026-11-06).

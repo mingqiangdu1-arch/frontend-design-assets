@@ -2,6 +2,12 @@
 
 This repository is a **living multi-style, cross-application design asset library** — not an AI WORKFLOW PLATFORM kit.
 
+## V0.17 evidence-limited creative comparison (GitHub-first)
+
+- Before selecting among different `XC-xxx` layouts, read [the preference fit rubric](docs/assembly/experience-compositions.md). Where the actual product brief supplies preferences, call `npm run design:compose -- --context=<context> --device=mobile --density=low --complexity=simple --expression=restrained --format=markdown` with only truly grounded dimensions.
+- Every `fitEvaluation` is ordinal alignment of **declared research profiles** to **explicit user inputs**. If preferences are omitted, preserve unranked alternatives. Never invent a global default, calibrated UX score, aesthetic certification, performance result or automatically selected style.
+- Explain the leading/tied/weak hypothesis through the comparison's axis-by-axis matches and tradeoffs. Contrast information hierarchy, navigation effort and alternative strengths; keep contextual keyboard/mobile/reduced-motion and backend risks visible. Only empirical validation in the target product can confirm actual quality.
+
 ## V0.17 task-first creative alternatives (GitHub-first)
 
 - Read [docs/assembly/experience-compositions.md](docs/assembly/experience-compositions.md), then run `npm run design:compose -- --context=<declared-context> --concepts=2 --format=markdown`. The 16 original `XC-xxx` concepts are architecture **research**, not new React components, runnable templates or brand styles.

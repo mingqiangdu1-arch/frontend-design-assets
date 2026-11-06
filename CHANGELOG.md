@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-06 · V0.17 explainable preference-fit comparison
+
+- Annotated all 16 existing original architecture research recipes with a declared fit profile, concrete evidence and tradeoff: content density, primary device, interaction complexity and visual expression (not aesthetic quality).
+- Extended the existing `design:compose` CLI with four optional preference axes. `fitEvaluation` shows per-axis matched/partial/conflicting attributes and 0–2 ordinal alignment points per specified preference; unknown preferences fail closed, absent preferences leave alternatives unranked.
+- Explicit leading/tied/weak-fit and single-candidate distinctions. Added registry validation, focused deterministic unit tests and Codex documentation. No new assets, dependencies, browser demo, screenshots or product-ready claims.
+
+
 ## 2026-11-06 · V0.17 original task-first experience compositions
 
 - Added 16 source-grounded architecture **research recipes** across eight product families, 24 context tags and two distinct information structures per context; no new stylesheet, page implementation or production component.

@@ -56,3 +56,7 @@ Related: [lightweight asset handoff](asset-handoff.md), [template-only CLI](READ
 Existing `design:compose` now outputs two **research-only structural alternatives** by default in `options[].creativeAlternatives`, driven by exact context tags. They differ in information priority, sections, navigation, behavior, responsive reflow and accessibility fallback, not only visual style. Use `--concepts=0..4` to set the count. If no matching style exists, `architectureAlternatives` can still expose context-specific ideas without a fabricated page or CSS theme.
 
 See [experience recipes and examples](experience-compositions.md) and [the machine-readable index](../../registry/experience-compositions.json).
+
+## V0.17 explainable suitability criteria
+
+Use `--density=low|medium|high`, `--device=mobile|responsive|desktop`, `--complexity=simple|guided|expert` and `--expression=restrained|expressive|immersive` to compare the `XC-xxx` architecture ideas against **explicit user needs**. Omitted dimensions receive no points. The `fitEvaluation` output contains ordinal alignment details, profile evidence, tradeoffs, and honest tie/weak-fit labels. It does **not** choose a visual theme or establish usability quality. [Evaluation rubric and examples](experience-compositions.md).

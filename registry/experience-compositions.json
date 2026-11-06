@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "updatedAt": "2026-11-06",
   "purpose": "Original task-first alternative composition research. Not style profiles, runnable templates or React implementations.",
   "defaultRecipeId": null,
@@ -36,7 +36,15 @@
         "SAAS-004",
         "IP-009"
       ],
-      "stage": "research-brief-only"
+      "stage": "research-brief-only",
+      "fitProfile": {
+        "density": "high",
+        "device": "desktop",
+        "complexity": "expert",
+        "expression": "restrained",
+        "evidence": "Dense keyboard-readable queues and a contextual inspector favor frequent desktop triage.",
+        "tradeoff": "A mobile sheet preserves access but sacrifices simultaneous queue and evidence visibility."
+      }
     },
     {
       "id": "XC-002",
@@ -69,7 +77,15 @@
         "IP-004",
         "SAAS-009"
       ],
-      "stage": "research-brief-only"
+      "stage": "research-brief-only",
+      "fitProfile": {
+        "density": "medium",
+        "device": "responsive",
+        "complexity": "guided",
+        "expression": "restrained",
+        "evidence": "Sequential evidence and guarded decisions prioritize case depth over bulk throughput.",
+        "tradeoff": "One-case-at-a-time review can be slower for repetitive simple exceptions."
+      }
     },
     {
       "id": "XC-003",
@@ -101,7 +117,15 @@
         "IP-006",
         "IP-009"
       ],
-      "stage": "research-brief-only"
+      "stage": "research-brief-only",
+      "fitProfile": {
+        "density": "low",
+        "device": "mobile",
+        "complexity": "simple",
+        "expression": "restrained",
+        "evidence": "One primary mobile action minimizes choices and visual noise.",
+        "tradeoff": "The compact task focus hides the full learning journey until requested."
+      }
     },
     {
       "id": "XC-004",
@@ -133,7 +157,15 @@
         "IP-024",
         "IP-006"
       ],
-      "stage": "research-brief-only"
+      "stage": "research-brief-only",
+      "fitProfile": {
+        "density": "medium",
+        "device": "mobile",
+        "complexity": "guided",
+        "expression": "expressive",
+        "evidence": "Chapter paths make long-term progression visible through multiple milestones.",
+        "tradeoff": "Decorative paths need an accessible numbered-list fallback and consume screen space."
+      }
     },
     {
       "id": "XC-005",
@@ -165,7 +197,15 @@
         "IP-014",
         "IP-002"
       ],
-      "stage": "research-brief-only"
+      "stage": "research-brief-only",
+      "fitProfile": {
+        "density": "high",
+        "device": "responsive",
+        "complexity": "guided",
+        "expression": "restrained",
+        "evidence": "Indexed articles, facets and search expose many items for comparison and retrieval.",
+        "tradeoff": "Facets and dense indexes require careful narrow-screen disclosure and focus management."
+      }
     },
     {
       "id": "XC-006",
@@ -197,7 +237,15 @@
         "IP-024",
         "IP-005"
       ],
-      "stage": "research-brief-only"
+      "stage": "research-brief-only",
+      "fitProfile": {
+        "density": "low",
+        "device": "responsive",
+        "complexity": "simple",
+        "expression": "expressive",
+        "evidence": "A clear long-form narrative and chapter anchors support deep linear reading.",
+        "tradeoff": "Sequential pacing makes cross-document comparison less immediate."
+      }
     },
     {
       "id": "XC-007",
@@ -229,7 +277,15 @@
         "IP-015",
         "IP-003"
       ],
-      "stage": "research-brief-only"
+      "stage": "research-brief-only",
+      "fitProfile": {
+        "density": "medium",
+        "device": "responsive",
+        "complexity": "guided",
+        "expression": "restrained",
+        "evidence": "Product media, facet chips and quick variants prioritize broad visual discovery.",
+        "tradeoff": "A media grid may hide subtle attribute differences between similar products."
+      }
     },
     {
       "id": "XC-008",
@@ -261,7 +317,15 @@
         "IP-015",
         "IP-020"
       ],
-      "stage": "research-brief-only"
+      "stage": "research-brief-only",
+      "fitProfile": {
+        "density": "high",
+        "device": "desktop",
+        "complexity": "expert",
+        "expression": "restrained",
+        "evidence": "An attribute matrix displays many precise comparisons simultaneously.",
+        "tradeoff": "Wide comparison tables require substantial adaptation for narrow touch screens."
+      }
     },
     {
       "id": "XC-009",
@@ -293,7 +357,15 @@
         "IP-013",
         "IP-006"
       ],
-      "stage": "research-brief-only"
+      "stage": "research-brief-only",
+      "fitProfile": {
+        "density": "low",
+        "device": "responsive",
+        "complexity": "simple",
+        "expression": "expressive",
+        "evidence": "A headline-led poster directs attention to one message and a clear CTA.",
+        "tradeoff": "Statement-first pages carry less immediately scannable product detail."
+      }
     },
     {
       "id": "XC-010",
@@ -325,7 +397,15 @@
         "IP-020",
         "IP-024"
       ],
-      "stage": "research-brief-only"
+      "stage": "research-brief-only",
+      "fitProfile": {
+        "density": "medium",
+        "device": "responsive",
+        "complexity": "guided",
+        "expression": "expressive",
+        "evidence": "Annotated cases sequence problem, decision and measurable outcome.",
+        "tradeoff": "Detailed case narratives demand authentic process evidence and more reading time."
+      }
     },
     {
       "id": "XC-011",
@@ -357,7 +437,15 @@
         "IP-018",
         "IP-019"
       ],
-      "stage": "research-brief-only"
+      "stage": "research-brief-only",
+      "fitProfile": {
+        "density": "high",
+        "device": "desktop",
+        "complexity": "expert",
+        "expression": "immersive",
+        "evidence": "A spatial canvas permits direct manipulation of many objects and surrounding tools.",
+        "tradeoff": "Keyboard equivalents, precision controls and viewport performance are costly to implement."
+      }
     },
     {
       "id": "XC-012",
@@ -389,7 +477,15 @@
         "IP-023",
         "IP-021"
       ],
-      "stage": "research-brief-only"
+      "stage": "research-brief-only",
+      "fitProfile": {
+        "density": "high",
+        "device": "desktop",
+        "complexity": "expert",
+        "expression": "restrained",
+        "evidence": "Frame ruler, tracks and conflict history prioritize precise technical editing.",
+        "tradeoff": "High-density track controls are difficult to translate into touch-first workflows."
+      }
     },
     {
       "id": "XC-013",
@@ -421,7 +517,15 @@
         "IP-019",
         "IP-011"
       ],
-      "stage": "research-brief-only"
+      "stage": "research-brief-only",
+      "fitProfile": {
+        "density": "medium",
+        "device": "responsive",
+        "complexity": "guided",
+        "expression": "immersive",
+        "evidence": "A fictional mission map combines spatial exploration with clear objective status.",
+        "tradeoff": "World-map navigation needs text-list fallback and may burden first-time users."
+      }
     },
     {
       "id": "XC-014",
@@ -453,7 +557,15 @@
         "IP-024",
         "IP-006"
       ],
-      "stage": "research-brief-only"
+      "stage": "research-brief-only",
+      "fitProfile": {
+        "density": "low",
+        "device": "responsive",
+        "complexity": "guided",
+        "expression": "expressive",
+        "evidence": "Chronological chapters prioritize story comprehension over map navigation.",
+        "tradeoff": "Linear progression reduces freedom to jump among unrelated missions."
+      }
     },
     {
       "id": "XC-015",
@@ -485,7 +597,15 @@
         "IP-018",
         "IP-024"
       ],
-      "stage": "research-brief-only"
+      "stage": "research-brief-only",
+      "fitProfile": {
+        "density": "low",
+        "device": "desktop",
+        "complexity": "guided",
+        "expression": "immersive",
+        "evidence": "A spatial exhibit stage prioritizes exploration and the current artwork.",
+        "tradeoff": "Spatial navigation requires an accessible indexed route and careful motion/performance limits."
+      }
     },
     {
       "id": "XC-016",
@@ -517,7 +637,16 @@
         "IP-024",
         "IP-005"
       ],
-      "stage": "research-brief-only"
+      "stage": "research-brief-only",
+      "fitProfile": {
+        "density": "low",
+        "device": "responsive",
+        "complexity": "simple",
+        "expression": "restrained",
+        "evidence": "Curator-led chapters let visitors understand one exhibit at a time.",
+        "tradeoff": "A guided visit provides less non-linear discovery than an open gallery."
+      }
     }
-  ]
+  ],
+  "fitPolicy": "Research heuristics only. Scoring matches explicitly supplied constraints to declared qualitative recipe fit profiles; it is not observed usability, brand quality, accessibility certification, or an automatic choice."
 }
