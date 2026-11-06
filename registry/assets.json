@@ -6286,6 +6286,214 @@
         "高级条件筛选",
         "组合过滤面板"
       ]
+    },
+    {
+      "id": "UI-060",
+      "type": "component",
+      "name": "interaction: BeforeAfterCompare",
+      "exportName": "BeforeAfterCompare",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "before-after",
+        "comparison",
+        "slider",
+        "pointer",
+        "keyboard",
+        "creative",
+        "react"
+      ],
+      "aliases": [
+        "前后对比",
+        "图片对比滑块",
+        "设计效果对比",
+        "before after slider"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/cross-context.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "creative-tool",
+        "content-platform",
+        "design-research",
+        "commerce-storefront"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original source code; React is a peer dependency",
+      "verified": "V0.25 local original UI; requires CI, touch hardware and target-app visual/accessibility review.",
+      "handoff": {
+        "entry": "packages/ui/src/cross-context.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Supply owned/licensed visual panels and a controlled 0-100 percentage; pointer and keyboard range are parallel inputs.",
+        "limitations": "Visual-only comparison, with noninteractive clipped panels. No image upload, pixel diff, export, editing or media licensing."
+      }
+    },
+    {
+      "id": "UI-061",
+      "type": "component",
+      "name": "input: TagInput",
+      "exportName": "TagInput",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "tags",
+        "chips",
+        "text",
+        "validation",
+        "keyboard",
+        "react"
+      ],
+      "aliases": [
+        "标签输入",
+        "标签编辑器",
+        "多标签输入框",
+        "tag editor"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/cross-context.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "content-platform",
+        "workspace",
+        "creative-tool",
+        "commerce-storefront"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original source code; React is a peer dependency",
+      "verified": "V0.25 original controlled input; CI and full IME, accessibility and target app verification required.",
+      "handoff": {
+        "entry": "packages/ui/src/cross-context.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Pass a controlled tag array, handle onTagsChange and optional business validation in the host.",
+        "limitations": "No autocomplete, remote taxonomy, async uniqueness verification, access control or persistence."
+      }
+    },
+    {
+      "id": "UI-062",
+      "type": "component",
+      "name": "input: RatingInput",
+      "exportName": "RatingInput",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "rating",
+        "stars",
+        "feedback",
+        "radio",
+        "keyboard",
+        "consumer",
+        "react"
+      ],
+      "aliases": [
+        "星级评分",
+        "五星评价",
+        "评分选择",
+        "star rating"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/cross-context.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "consumer-mobile",
+        "commerce-storefront",
+        "content-platform",
+        "learning"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original source code; React is a peer dependency",
+      "verified": "V0.25 original native radio reference; CI and target-app keyboard/touch/accessibility verification required.",
+      "handoff": {
+        "entry": "packages/ui/src/cross-context.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Supply controlled 0..max score, use native radio semantics and perform persistence/moderation on the host.",
+        "limitations": "No server rating save, fraud prevention, review moderation or calculated aggregate rating; supplied values are local."
+      }
+    },
+    {
+      "id": "PR-017",
+      "type": "recipe",
+      "name": "Compare annotate feedback cross-context review composition",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "comparison",
+        "feedback",
+        "review",
+        "tags",
+        "rating",
+        "creative-tool",
+        "commerce"
+      ],
+      "aliases": [
+        "前后对比评价",
+        "设计方案对比与反馈",
+        "内容审阅打分",
+        "compare and review"
+      ],
+      "path": "recipes/compare-annotate-feedback.md",
+      "reuseKind": "composition-recipe",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-tool",
+        "content-platform",
+        "commerce-storefront",
+        "design-research"
+      ],
+      "dependencies": [
+        "UI-060",
+        "UI-061",
+        "UI-062"
+      ],
+      "license": "Original composition guide with no bundled external media",
+      "verified": "Conceptual implementation plan; no standalone application, submission backend or production validation.",
+      "handoff": {
+        "entry": "recipes/compare-annotate-feedback.md",
+        "stack": "cross-platform plan; React references available",
+        "instructions": "Inspect UI-060/061/062 and choose only the components compatible with the target's style, data and review process.",
+        "limitations": "No media processing, backend save, version control, review moderation or production accessibility approval."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",

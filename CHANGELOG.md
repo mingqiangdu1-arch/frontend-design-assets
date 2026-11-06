@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-06 · V0.25 cross-context comparison and feedback controls
+
+- Implemented three original controlled React/TypeScript/CSS exports: `BeforeAfterCompare` (`UI-060`, pointer comparison + native keyboard range), `TagInput` (`UI-061`, keyboard chips with limits, duplicate/length validation and IME guard), and `RatingInput` (`UI-062`, native radio stars + clear).
+- Added `PR-017` as a cross-context Compare → Annotate → Feedback composition recipe spanning creative, editorial and commerce applications, separate from components' real source.
+- Real UI exports **45 → 48**; registered assets **180 → 184**. Four existing explicitly supported themes only; no dependency, default theme, application backend or external media introduced.
+- Added three Gallery specimens and Playwright scenarios for pointer/range keyboard controls, tags/duplicate validation, native rating, and responsive 390/768/1440 across four themes. Historical selected-state matrix remains partial (12 covered, **36 uncovered**); browser smoke is not production/a11y approval.
+- Comparison layers are noninteractive supplied visuals, not image editing/diff; tags and rating are local UI state, not persisted reviews or content moderation.
+
 ## 2026-11-06 · V0.24 advanced React editing controls
 
 - Implemented four original TSX/CSS components: `EditableDataTable` (explicit per-cell edit, validation and commit/cancel), `SortableList` (HTML5 drag and button-based reordering), `FlowEditor` (controlled graph-node positioning and directed edge creation), `AdvancedFilterPanel` (composed text/select/multi/toggle/numeric range criteria). UI-056..059, separate from older research-only assets.

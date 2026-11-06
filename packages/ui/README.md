@@ -57,9 +57,41 @@ The illustrative import `frontend-design-assets/styles/...` above is a repositor
 | Data visualization | **Sparkline**, **InteractiveBarChart** |
 | Advanced data editors | **EditableDataTable**, **SortableList**, **FlowEditor**, **AdvancedFilterPanel** |
 | Date & file input | **DatePicker**, **FileUpload** |
+| Cross-context media & feedback | **BeforeAfterCompare**, **TagInput**, **RatingInput** |
 | Layout | **ResizablePanels**, **DashboardGrid** |
 
-**45 exported React components (including four new in V0.24).** All use style-scoped `fda-` CSS rather than globally overwriting buttons, forms, cards, etc. The names are also discoverable in `registry/components.json`.
+**48 exported React components (including three new in V0.25).** All use style-scoped `fda-` CSS rather than globally overwriting buttons, forms, cards, etc. The names are also discoverable in `registry/components.json`.
+
+## V0.25 cross-context visual review, tags and consumer feedback
+
+Three original React/TypeScript controls in [`src/cross-context.tsx`](src/cross-context.tsx) provide reusable behaviors outside traditional SaaS. They use four **explicitly supported** token scopes and no new dependencies. All data is controlled by the host application.
+
+| Component | Main API | Input and accessibility behavior | Important limits |
+| --- | --- | --- | --- |
+| `BeforeAfterCompare` (`UI-060`) | `label`, `before/after` visual nodes, `value` (0–100), `onValueChange` and optional labels/disabled | Pointer drag on a clipped preview plus a **native range input** for keyboard/touch alternatives; percentage is visible | Visual clipping only, **not** pixel difference, image editing, uploading, export, source licensing, or a safe container for interactive child controls |
+| `TagInput` (`UI-061`) | `label`, controlled `tags`, `onTagsChange`, `maxTags`, optional synchronous `validate` | Enter/comma add, Escape clear, empty Backspace remove, explicit buttons, duplicate detection and IME composition guard | No remote suggestion list, taxonomy governance, asynchronous validation, persistence or authorization |
+| `RatingInput` (`UI-062`) | `label`, controlled `value`, `onValueChange`, `max` (1–10), optional clear/disabled | **Native radio inputs** preserve keyboard selection and state; clearing returns 0 ("not rated") | No review submission, average score, trust assessment, anti-fraud, moderation or backend API |
+
+### Controlled comparison + feedback example
+
+```tsx
+import {useState} from "react";
+import {BeforeAfterCompare,TagInput,RatingInput} from "@frontend-design-assets/ui";
+
+function Review({before,after}:{before:React.ReactNode;after:React.ReactNode}){
+ const [position,setPosition]=useState(50);
+ const [tags,setTags]=useState<string[]>([]);
+ const [rating,setRating]=useState(0);
+ return <>
+  <BeforeAfterCompare label="Visual changes" before={before} after={after}
+   value={position} onValueChange={setPosition}/>
+  <TagInput label="Review tags" tags={tags} onTagsChange={setTags} maxTags={5}/>
+  <RatingInput label="My rating" value={rating} onValueChange={setRating}/>
+ </>;
+}
+```
+
+Comparison children are **display-only visual panels**; provide a separate accessible description/alternative for meaningful images, and ensure media rights and alignment are correct. Pointer tests are not physical-device touch certification. Rating input is the reviewer's controlled selection, not a third-party aggregate. This is **not** a full review workflow; see [PR-017 compare/annotate/feedback recipe](../../recipes/compare-annotate-feedback.md) for application-level integration, permissions and explicit submit/cancel requirements.
 
 ## V0.24 advanced editors, ordering, flow and complex filters
 

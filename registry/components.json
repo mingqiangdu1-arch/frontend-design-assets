@@ -1,5 +1,5 @@
 {
-  "version": "0.24.0",
+  "version": "0.25.0",
   "package": "@frontend-design-assets/ui",
   "status": "reference-implemented; not production-certified",
   "source": "packages/ui/src/index.tsx",
@@ -614,8 +614,47 @@
       "demo": "playground/component-gallery/index.html",
       "interaction": "controlled state; pointer/keyboard paths and host callbacks; see packages/ui/README.md",
       "verified": "V0.24 reference implementation; GitHub CI and target-app accessibility review required."
+    },
+    {
+      "id": "UI-060",
+      "exportName": "BeforeAfterCompare",
+      "category": "interaction",
+      "description": "Controlled visual before/after comparison with pointer drag and native keyboard range",
+      "interaction": "pointer drag/capture on supplied visual panels, native range for keyboard/touch alternative",
+      "source": "packages/ui/src/cross-context.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "verified": "V0.25 original reference implementation; CI and target-app keyboard/touch/a11y verification required. No production or package publication claim."
+    },
+    {
+      "id": "UI-061",
+      "exportName": "TagInput",
+      "category": "input",
+      "description": "Controlled chip input with Enter/comma add, Escape clear, Backspace remove, duplicates and validation",
+      "interaction": "controlled labels, input composition guard, keyboard editing and explicit remove buttons",
+      "source": "packages/ui/src/cross-context.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "verified": "V0.25 original reference implementation; CI and target-app keyboard/touch/a11y verification required. No production or package publication claim."
+    },
+    {
+      "id": "UI-062",
+      "exportName": "RatingInput",
+      "category": "input",
+      "description": "Controlled native radio-star rating with keyboard selection, explicit clear and disabled states",
+      "interaction": "native radio-group keyboard semantics; parent controls score and persistence",
+      "source": "packages/ui/src/cross-context.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "verified": "V0.25 original reference implementation; CI and target-app keyboard/touch/a11y verification required. No production or package publication claim."
     }
   ],
   "stateMatrix": "registry/component-states.json",
-  "stateCoverage": "Historical selected-state matrix covers 12 of 45 current React exports; 33 are not covered by that matrix. Separate Gallery smoke tests do not constitute full state, accessibility or production certification."
+  "stateCoverage": "Historical selected-state matrix covers 12 of 48 current React exports; 36 are not covered by that matrix. Gallery browser smoke is not production/a11y certification."
 }

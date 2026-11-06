@@ -19,6 +19,7 @@
 | 管理后台、运营台、SaaS workspace、admin | `docs/saas/README.md`、`registry/page-templates.json`、`recipes/saas-operational-list.md` | 页面研究与可执行组件需分别验证 |
 | 可复用 React 组件、button/form/dialog、UI library | `registry/components.json`、`packages/ui/README.md`、`packages/ui/src/` | 按 `exportName` 定位真实源码，需显式选择兼容主题 |
 | 表格、筛选、看板、编辑、data table / filters | `UI-033`、`UI-052`、`UI-053`、`UI-056`、`UI-059`，`packages/ui/src/data-ops.tsx`、`editors.tsx` | 数据状态、校验、权限和持久化由宿主应用负责 |
+| 视觉前后比较、标签、评分、comparison / review / rating | `UI-060`、`UI-061`、`UI-062`、`packages/ui/src/cross-context.tsx`、`recipes/compare-annotate-feedback.md` | 可交互 React 控件和跨场景组合配方；真实媒体授权、评审保存与后端审核需宿主实现 |
 | 工作流、步骤表单、节点编辑、flow editor | `UI-047`、`UI-058`、`packages/ui/src/workflows.tsx`、`editors.tsx` | 交互参考，不是服务端流程引擎 |
 | 页面结构、整页模板、layout、blueprint | `registry/page-templates.json`、`playground/page-blueprints/README.md`、`docs/assembly/README.md` | 模板 `implementation` 字段决定是静态实验还是 React |
 | 创意营销、portfolio、campaign、editorial | `styles/neo-brutalist/`、`styles/paper-rebellion/`、`registry/creative-directions.json` | 不强行使用标准 SaaS 卡片布局 |

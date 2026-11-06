@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "scope": "Historical selected state matrix covers 12 older React exports only; newer V0.19–V0.24 real exports are explicitly uncovered here, with separate Gallery browser tests.",
+  "scope": "Historical selected state matrix covers 12 older React exports only; newer V0.19–V0.25 exports are explicitly uncovered here, with separate Gallery browser tests.",
   "styleIds": [
     "refined-light-saas",
     "precision-dark",
@@ -157,7 +157,10 @@
     "UI-056",
     "UI-057",
     "UI-058",
-    "UI-059"
+    "UI-059",
+    "UI-060",
+    "UI-061",
+    "UI-062"
   ],
   "maturity": "prototype",
   "visualBaselineStatus": "unapproved",

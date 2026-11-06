@@ -224,3 +224,7 @@ export type {DataFilterOption,FilterableDataTableProps,KanbanColumn,KanbanCard,K
 // V0.24: controlled editors and advanced filtering with explicit integration boundaries.
 export {EditableDataTable,SortableList,FlowEditor,AdvancedFilterPanel} from "./editors";
 export type {EditableTableColumn,EditableDataTableProps,SortableListItem,SortableListProps,FlowNode,FlowEdge,FlowEditorProps,FilterRange,AdvancedFilterValue,AdvancedFilterOption,AdvancedFilterField,AdvancedFilterPanelProps} from "./editors";
+
+// V0.25 cross-context visual comparison, tag editing and consumer feedback.
+export {BeforeAfterCompare,TagInput,RatingInput} from "./cross-context";
+export type {BeforeAfterCompareProps,TagInputProps,RatingInputProps} from "./cross-context";

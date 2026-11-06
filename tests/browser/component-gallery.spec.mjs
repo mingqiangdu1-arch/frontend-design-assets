@@ -2,11 +2,11 @@ import {test,expect} from "@playwright/test";
 
 test.beforeEach(async({page})=>{await page.goto("/");});
 
-test("gallery presents 45 component exports and explicit themes",async({page})=>{
+test("gallery presents 48 component exports and explicit themes",async({page})=>{
  await expect(page.getByRole("heading",{name:/组件不仅要好看/})).toBeVisible();
  await expect(page.locator("[data-theme-button]")).toHaveCount(4);
  await expect(page.locator('[data-theme-button="refined-light-saas"]')).toHaveAttribute("aria-pressed","true");
- await expect(page.locator(".cg-spec")).toHaveCount(36);
+ await expect(page.locator(".cg-spec")).toHaveCount(39);
 });
 
 test("switching style updates scope and semantic background",async({page})=>{
@@ -548,6 +548,76 @@ test("V0.24 advanced editor specimens remain responsive across four style scopes
    await page.locator('[data-theme-button="'+theme+'"]').click();
    const x=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
    expect(x.scroll,theme+" at "+width).toBeLessThanOrEqual(x.client+1);
+  }
+ }
+});
+
+
+test("BeforeAfterCompare supports keyboard range and direct pointer comparison",async({page})=>{
+ const scope=page.locator("#before-after-compare");
+ const slider=scope.getByRole("slider",{name:"方案前后对比 比较位置"});
+ await expect(slider).toHaveValue("54");
+ await slider.focus();
+ await slider.press("ArrowRight");
+ await expect(slider).toHaveValue("55");
+ const stage=scope.locator(".fda-before-after__stage");
+ const box=await stage.boundingBox();
+ if(!box)throw Error("Comparison stage not visible");
+ await page.mouse.move(box.x+box.width*.76,box.y+box.height*.5);
+ await page.mouse.down();
+ await page.mouse.move(box.x+box.width*.78,box.y+box.height*.5);
+ await page.mouse.up();
+ const current=Number(await slider.inputValue());
+ expect(current).toBeGreaterThanOrEqual(75);
+ expect(current).toBeLessThanOrEqual(80);
+ await expect(scope.locator(".fda-before-after__panel--before")).toHaveCSS("clip-path",/inset/);
+});
+
+test("TagInput rejects duplicates, respects limits and supports keyboard removal",async({page})=>{
+ const scope=page.locator("#tag-input");
+ const input=scope.getByRole("textbox",{name:"文章标签"});
+ await input.fill("React");
+ await input.press("Enter");
+ await expect(scope.getByRole("alert")).toHaveText("标签已存在");
+ await expect(scope.locator(".fda-tag-input__tag")).toHaveCount(2);
+ await input.fill("这是一条超长的标签名称必须被校验");
+ await input.press("Enter");
+ await expect(scope.getByRole("alert")).toContainText("12 个字符");
+ await input.fill("内容");
+ await input.press("Enter");
+ await expect(scope.locator(".fda-tag-input__tag")).toHaveCount(3);
+ await input.fill("移动端");
+ await input.press(",");
+ await expect(scope.locator(".fda-tag-input__tag")).toHaveCount(4);
+ await expect(input).toBeDisabled();
+ await scope.getByRole("button",{name:"移除标签 移动端"}).click();
+ await expect(input).toBeEnabled();
+ await input.focus();
+ await input.press("Backspace");
+ await expect(scope.locator(".fda-tag-input__tag")).toHaveCount(2);
+});
+
+test("RatingInput uses native radio selection and permits explicit clearing",async({page})=>{
+ const scope=page.locator("#rating-input");
+ await scope.getByRole("radio",{name:"4 分"}).check();
+ await expect(scope.locator(".fda-rating__result")).toContainText("4 / 5");
+ await scope.getByRole("radio",{name:"4 分"}).press("ArrowLeft");
+ await expect(scope.getByRole("radio",{name:"3 分"})).toBeChecked();
+ await scope.getByRole("button",{name:"清除"}).click();
+ await expect(scope.locator(".fda-rating__result")).toContainText("尚未评分");
+ await expect(scope.getByRole("button",{name:"清除"})).toBeDisabled();
+});
+
+test("V0.25 controls fit narrow screens and all four explicit themes",async({page})=>{
+ for(const width of [390,768,1440]){
+  await page.setViewportSize({width,height:950});
+  for(const theme of ["refined-light-saas","precision-dark","editorial-warm","playful-pop"]){
+   await page.locator('[data-theme-button="'+theme+'"]').click();
+   await expect(page.locator("#before-after-compare .fda-before-after")).toBeVisible();
+   await expect(page.locator("#tag-input .fda-tag-input")).toBeVisible();
+   await expect(page.locator("#rating-input .fda-rating")).toBeVisible();
+   const horizontal=await page.evaluate(()=>[document.documentElement.scrollWidth,document.documentElement.clientWidth]);
+   expect(horizontal[0],theme+" "+width).toBeLessThanOrEqual(horizontal[1]+1);
   }
  }
 });

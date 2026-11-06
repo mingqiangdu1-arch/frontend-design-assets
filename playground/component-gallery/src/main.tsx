@@ -9,6 +9,7 @@ import {ThemeSurface,Button,Badge,Card,TextField,TextAreaField,SelectField,Check
  FormWizard,RepeatableFields,ValidationSummary,Sparkline,DashboardGrid,
  FilterableDataTable,KanbanBoard,ActivityTimeline,InteractiveBarChart,
  EditableDataTable,SortableList,FlowEditor,AdvancedFilterPanel,
+  BeforeAfterCompare,TagInput,RatingInput,
  type RepeatableFieldItem,type KanbanCard,type EditableTableColumn,type SortableListItem,
  type FlowNode,type FlowEdge,type AdvancedFilterValue,type DataTableColumn,type DataTableSort,type ThemeId,type Tone} from "../../../packages/ui/src/index";
 import "../../../tokens/refined-light.css";
@@ -131,6 +132,9 @@ function App(){
   keyword:"",status:"",tags:[],important:false,score:{min:null,max:null}
  });
  const [filterApplied,setFilterApplied]=React.useState(0);
+  const [comparison,setComparison]=React.useState(54);
+  const [contentTags,setContentTags]=React.useState<string[]>(["交互设计","React"]);
+  const [userRating,setUserRating]=React.useState(3);
  const sortedReviewRows=React.useMemo(()=>!tableSort?reviewRows:
   [...reviewRows].sort((a,b)=>{
    const diff=tableSort.key==="priority"?a.priority-b.priority:
@@ -144,7 +148,7 @@ function App(){
  };
  return <div className="cg-app">
  <header className="cg-top">
-  <div className="cg-brand"><span className="cg-mark">◈</span><div><strong>Component Library</strong><small>Frontend Design Assets / v0.24</small></div></div>
+  <div className="cg-brand"><span className="cg-mark">◈</span><div><strong>Component Library</strong><small>Frontend Design Assets / v0.25</small></div></div>
   <a href="https://github.com/mingqiangdu1-arch/frontend-design-assets/tree/main/packages/ui" target="_blank" rel="noreferrer">GitHub 源码 ↗</a>
  </header>
  <div className="cg-picker" role="group" aria-label="选择组件预览风格">
@@ -155,7 +159,7 @@ function App(){
  <ThemeSurface theme={theme} className="cg-surface">
   <div className="cg-intro"><div><small>LIVE REACT / TYPESCRIPT COMPONENTS</small>
     <h1>组件不仅要好看，也要能直接组装。</h1>
-    <p>45 个实际 React 组件，本轮新增单元格编辑、拖拽与键盘排序、节点流程编辑器以及多条件筛选面板。当前是参考实现，尚未进行生产集成认证。</p>
+    <p>48 个实际 React 组件，本轮增加前后视觉对比、标签输入和星级评分，覆盖创意工具、内容与消费端场景。当前仍为参考实现，尚未进行生产集成认证。</p>
    </div><Badge tone="neutral">{themes.find(x=>x.id===theme)?.label}</Badge>
   </div>
   <div className="cg-grid">
@@ -466,6 +470,27 @@ function App(){
      onReset={()=>setAdvancedValues({keyword:"",status:"",tags:[],
       important:false,score:{min:null,max:null}})}/>
     <span className="cg-hint">已执行本地筛选动作：{filterApplied} 次；宿主应用负责真实筛选。</span>
+   </Specimen>
+   <Specimen id="before-after-compare" title="BeforeAfterCompare" caption="Pointer drag / native range keyboard control">
+    <BeforeAfterCompare label="方案前后对比" value={comparison} onValueChange={setComparison}
+     beforeLabel="旧版" afterLabel="新版"
+     before={<div className="cg-compare-panel cg-compare-panel--before">
+      <strong>布局 A</strong><span>密集信息</span><span>灰度层级</span>
+     </div>}
+     after={<div className="cg-compare-panel cg-compare-panel--after">
+      <strong>布局 B</strong><span>重点明确</span><span>清晰对比</span>
+     </div>}/>
+    <span className="cg-hint">对比位置 {comparison}% · 拖动对比区域或使用原生滑块；演示内容为原创 CSS。</span>
+   </Specimen>
+   <Specimen id="tag-input" title="TagInput" caption="Controlled tags / duplicate detection / keyboard">
+    <TagInput label="文章标签" tags={contentTags} onTagsChange={setContentTags}
+     placeholder="输入新标签" maxTags={4}
+     validate={tag=>tag.length>12?"标签不能超过 12 个字符":undefined}/>
+    <span className="cg-hint">已选标签：{contentTags.join(" · ")||"无"} · 数据仅在当前页面。</span>
+   </Specimen>
+   <Specimen id="rating-input" title="RatingInput" caption="Native radio stars / clear / keyboard">
+    <RatingInput label="体验评分" value={userRating} onValueChange={setUserRating} max={5}/>
+    <span className="cg-hint">当前评分 {userRating} / 5 · 仅用于模拟反馈，不写入服务端。</span>
    </Specimen>
    <Specimen id="cards" title="Cards & Empty" caption="modular composition">
      <Card heading="可组合信息卡片" description="不同风格的卡片有不同的信息密度和结构" footer={<><Button size="sm">创建</Button><Button size="sm" variant="ghost">了解更多</Button></>}>

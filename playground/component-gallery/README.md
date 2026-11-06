@@ -1,6 +1,6 @@
 # Component Gallery · V0.6
 
-React/TypeScript gallery for [45 UI components](../../packages/ui/README.md), with four independent style scopes.
+React/TypeScript gallery for [48 UI components](../../packages/ui/README.md), with four independent style scopes.
 
 ## Run (Node 22+)
 
@@ -26,9 +26,20 @@ V0.6 CI successfully completed TypeScript and both builds, plus **8/8 Chromium g
 
 Historical [SaaS Labs](../saas-patterns/README.md) and [Style Explorer](../style-explorer/README.md) remain separate; this gallery is not an automatic replacement.
 
+
+## V0.25 cross-context controls
+
+Three new working Gallery specimens demonstrate:
+
+- `UI-060 BeforeAfterCompare`: original CSS panels, pointer drag, native range control, percentage feedback and four themed wrappers.
+- `UI-061 TagInput`: Enter/comma, duplicate/length errors, tag removal, count limit and controlled local list.
+- `UI-062 RatingInput`: native keyboard radio selection, visible star feedback and explicit clear operation.
+
+Browser scenarios exercise each behavior and 390/768/1440px width across all four supported themes. Source is in [`packages/ui/src/cross-context.tsx`](../../packages/ui/src/cross-context.tsx). This is not production, physical touch, screen reader or license certification; gallery media is original CSS rather than licensed stock photos.
+
 ## V0.12 Selected Component State Matrix
 
-Run `npm run dev:components`, then open `http://127.0.0.1:5174/?view=matrix`. The matrix tests **selected states for 12 of 45 actual React exports** across all four declared package themes. The thirty-three uncovered exports are listed in `registry/component-states.json`. It also includes a separate request-state fixture (idle/loading/empty/error/success), which is not a package export.
+Run `npm run dev:components`, then open `http://127.0.0.1:5174/?view=matrix`. The matrix tests **selected states for 12 of 48 actual React exports** across all four declared package themes. The thirty-six uncovered exports are listed in `registry/component-states.json`. It also includes a separate request-state fixture (idle/loading/empty/error/success), which is not a package export.
 
 Browser tests capture 12 screenshots at 390/768/1440 in `test-results/`. Use `npm run visual:capture` to produce unapproved SHA256 evidence; explicit human inspection and approval are still required. Read [Visual QA policy](../../docs/quality/visual-review.md).
 
