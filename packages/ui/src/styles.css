@@ -269,3 +269,69 @@ button.fda-data-list__row[aria-pressed="true"]{background:var(--ui-selected)}
 .fda-upload__error{color:var(--ui-danger);font-size:11px}
 @media(max-width:520px){.fda-resize[data-orientation="horizontal"]{min-height:150px}
  .fda-resize__pane{padding:10px}.fda-upload__drop{padding:10px}}
+
+
+/* V0.21 navigation and disclosure components, scoped to four explicit UI themes. */
+.fda-tooltip{position:relative;display:inline-flex;max-width:100%}
+.fda-tooltip__trigger{background:var(--ui-surface);color:var(--ui-text);border:1px solid var(--ui-border);
+ border-radius:var(--ui-radius);min-height:var(--ui-control-height);padding:6px 12px}
+.fda-tooltip__trigger:disabled{opacity:.55;cursor:not-allowed}
+.fda-tooltip__bubble{position:absolute;z-index:40;left:50%;width:max-content;max-width:min(270px,calc(100vw - 40px));
+ transform:translateX(-50%);border:1px solid var(--ui-border);
+ border-radius:var(--ui-radius);padding:8px 11px;background:var(--ui-text);color:var(--ui-surface);
+ font-size:11px;line-height:1.5;box-shadow:0 8px 22px #0002;pointer-events:none}
+.fda-tooltip__bubble[data-placement=top]{bottom:calc(100% + 7px)}
+.fda-tooltip__bubble[data-placement=bottom]{top:calc(100% + 7px)}
+
+.fda-breadcrumb{color:var(--ui-muted);font-size:12px;min-width:0}
+.fda-breadcrumb ol{list-style:none;padding:0;margin:0;display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.fda-breadcrumb li{display:inline-flex;align-items:center;gap:7px;min-width:0}
+.fda-breadcrumb a,.fda-breadcrumb button{border:0;padding:2px;background:none;color:var(--ui-focus);
+ font:inherit;text-decoration:none}
+.fda-breadcrumb a:hover,.fda-breadcrumb button:hover{text-decoration:underline}
+.fda-breadcrumb__sep{color:var(--ui-muted)}
+.fda-breadcrumb__current{font-weight:700;color:var(--ui-text);overflow-wrap:anywhere}
+.fda-breadcrumb__disabled{opacity:.5}
+
+.fda-pagination{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.fda-pagination__summary{font-size:11px;color:var(--ui-muted)}
+.fda-pagination__actions{display:flex;align-items:center;flex-wrap:wrap;gap:5px}
+.fda-pagination__actions button{min-width:33px;min-height:32px;padding:5px 8px;
+ border:1px solid var(--ui-border);border-radius:var(--ui-radius);
+ background:var(--ui-surface);color:var(--ui-text);font-size:12px}
+.fda-pagination__actions button[aria-current=page]{background:var(--ui-selected);
+ color:var(--ui-text);border-color:var(--ui-focus);font-weight:700}
+.fda-pagination__actions button:disabled:not([aria-current=page]){opacity:.4;cursor:not-allowed}
+.fda-pagination__ellipsis{color:var(--ui-muted);padding:0 5px}
+
+.fda-accordion{border:1px solid var(--ui-border-soft);border-radius:var(--ui-card-radius);
+ background:var(--ui-surface);overflow:hidden}
+.fda-accordion__item+.fda-accordion__item{border-top:1px solid var(--ui-border-soft)}
+.fda-accordion h3{margin:0;font-size:12px;font-weight:700}
+.fda-accordion h3 button{display:flex;align-items:center;justify-content:space-between;gap:12px;
+ width:100%;min-height:46px;text-align:left;padding:11px 14px;border:0;
+ background:transparent;color:var(--ui-text);font:inherit}
+.fda-accordion h3 button:hover:not(:disabled){background:var(--ui-subtle)}
+.fda-accordion h3 button:disabled{opacity:.48;cursor:not-allowed}
+.fda-accordion__panel{padding:4px 14px 15px;font-size:12px;color:var(--ui-muted)}
+.fda-accordion__panel[hidden]{display:none}
+
+.fda-sidebar{border:1px solid var(--ui-border-soft);border-radius:var(--ui-card-radius);
+ background:var(--ui-surface);min-width:0;max-width:100%;padding:8px}
+.fda-sidebar ul{margin:0;padding:0;list-style:none}
+.fda-sidebar ul[hidden]{display:none}
+.fda-sidebar__row{display:flex;gap:5px;align-items:start;min-width:0;
+ padding-inline-start:calc(var(--fda-sidebar-depth)*13px)}
+.fda-sidebar__toggle,.fda-sidebar__spacer{width:25px;min-width:25px;min-height:34px}
+.fda-sidebar__toggle{border:0;border-radius:var(--ui-radius);background:none;
+ color:var(--ui-muted)}
+.fda-sidebar__toggle:hover{background:var(--ui-subtle)}
+.fda-sidebar__toggle:disabled{opacity:.48}
+.fda-sidebar__link{display:grid;gap:1px;flex:1;min-height:34px;min-width:0;
+ padding:7px 9px;border:0;border-radius:var(--ui-radius);text-align:left;
+ color:var(--ui-text);background:transparent;font-size:12px;overflow-wrap:anywhere}
+.fda-sidebar__link small{color:var(--ui-muted);font-size:10px}
+.fda-sidebar__link:hover:not(:disabled){background:var(--ui-subtle)}
+.fda-sidebar__link[aria-current=page]{background:var(--ui-selected);
+ font-weight:700;color:var(--ui-text)}
+.fda-sidebar__link:disabled{opacity:.45;cursor:not-allowed}

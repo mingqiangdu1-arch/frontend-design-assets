@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-06 · V0.21 navigation and disclosure React UI expansion
+
+- Five implemented React/TSX/CSS exports: `Tooltip`, `Breadcrumb`, `Pagination`, `Accordion`, `SidebarNav`; registered UI-042..046, separate from research-only component concepts.
+- Cumulative real React component exports **27 → 32** and indexed assets **162 → 167**, with the same four explicitly supported UI themes and no new dependencies.
+- Added five live Gallery specimens, keyboard/focus/pagination/nested-navigation browser scenarios and 390/768/1440 responsive checks. Historical state-matrix coverage remains partial with five further IDs explicitly uncovered.
+- Reference implementation only: no portal/collision-aware tooltips, production router, server-side pagination, mobile drawer, npm publish, screen-reader/physical-device sign-off or production certification.
+
+
 ## 2026-11-06 · V0.20 React utility UI components
 
 - Four genuine new React/TypeScript/CSS exports: `CommandMenu`, `DatePicker` (native browser calendar), `ResizablePanels` (controlled pointer/keyboard splitter) and `FileUpload` (local selection, validation, removal only). Catalog: 23 → 27 React exports; 158 → 162 indexed assets.

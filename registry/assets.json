@@ -4949,6 +4949,243 @@
         "instructions": "Use controlled props, choose exactly one compatible theme, and explicitly implement target product effects/server boundary.",
         "limitations": "Reference UI only; native date control, single splitter, controlled local files (NO network upload), and no indexed/global shortcut handler."
       }
+    },
+    {
+      "id": "UI-042",
+      "type": "component",
+      "name": "feedback: Tooltip",
+      "exportName": "Tooltip",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "tooltip",
+        "hint",
+        "focus",
+        "hover",
+        "keyboard",
+        "react"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/navigation.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "workspace",
+        "form",
+        "creative-tool",
+        "consumer-mobile"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is a peer dependency",
+      "verified": "V0.21 React/TypeScript reference code with CI checks required; no real-product, physical-device or assistive-tech certification.",
+      "handoff": {
+        "entry": "packages/ui/src/navigation.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Load one of the four declared themes and handle controlled navigation/disclosure in the host product; test routing, responsive and assistive-technology behavior.",
+        "limitations": "No app router, popper collision engine, server paging, virtualization or production approval included."
+      }
+    },
+    {
+      "id": "UI-043",
+      "type": "component",
+      "name": "navigation: Breadcrumb",
+      "exportName": "Breadcrumb",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "breadcrumb",
+        "navigation",
+        "hierarchy",
+        "links",
+        "react"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/navigation.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "workspace",
+        "documentation",
+        "editor",
+        "commerce-storefront"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is a peer dependency",
+      "verified": "V0.21 React/TypeScript reference code with CI checks required; no real-product, physical-device or assistive-tech certification.",
+      "handoff": {
+        "entry": "packages/ui/src/navigation.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Load one of the four declared themes and handle controlled navigation/disclosure in the host product; test routing, responsive and assistive-technology behavior.",
+        "limitations": "No app router, popper collision engine, server paging, virtualization or production approval included."
+      }
+    },
+    {
+      "id": "UI-044",
+      "type": "component",
+      "name": "navigation: Pagination",
+      "exportName": "Pagination",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "pagination",
+        "data",
+        "navigation",
+        "page",
+        "react"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/navigation.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "workspace",
+        "data-tool",
+        "commerce-storefront",
+        "search"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is a peer dependency",
+      "verified": "V0.21 React/TypeScript reference code with CI checks required; no real-product, physical-device or assistive-tech certification.",
+      "handoff": {
+        "entry": "packages/ui/src/navigation.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Load one of the four declared themes and handle controlled navigation/disclosure in the host product; test routing, responsive and assistive-technology behavior.",
+        "limitations": "No app router, popper collision engine, server paging, virtualization or production approval included."
+      }
+    },
+    {
+      "id": "UI-045",
+      "type": "component",
+      "name": "disclosure: Accordion",
+      "exportName": "Accordion",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "accordion",
+        "disclosure",
+        "keyboard",
+        "content",
+        "react"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/navigation.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "documentation",
+        "faq",
+        "consumer-mobile",
+        "workspace"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is a peer dependency",
+      "verified": "V0.21 React/TypeScript reference code with CI checks required; no real-product, physical-device or assistive-tech certification.",
+      "handoff": {
+        "entry": "packages/ui/src/navigation.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Load one of the four declared themes and handle controlled navigation/disclosure in the host product; test routing, responsive and assistive-technology behavior.",
+        "limitations": "No app router, popper collision engine, server paging, virtualization or production approval included."
+      }
+    },
+    {
+      "id": "UI-046",
+      "type": "component",
+      "name": "navigation: SidebarNav",
+      "exportName": "SidebarNav",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "tags": [
+        "sidebar",
+        "navigation",
+        "nested",
+        "menu",
+        "hierarchy",
+        "react"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "path": "packages/ui/src/navigation.tsx",
+      "spec": "packages/ui/README.md",
+      "demo": "playground/component-gallery/index.html",
+      "reuseKind": "styled-implementation",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "workspace",
+        "documentation",
+        "admin-console",
+        "developer-tool"
+      ],
+      "dependencies": [
+        "DT-001",
+        "DT-002",
+        "DT-003",
+        "DT-004"
+      ],
+      "framework": "React >=19.2",
+      "license": "Original code; React is a peer dependency",
+      "verified": "V0.21 React/TypeScript reference code with CI checks required; no real-product, physical-device or assistive-tech certification.",
+      "handoff": {
+        "entry": "packages/ui/src/navigation.tsx",
+        "stack": "React/TypeScript",
+        "instructions": "Load one of the four declared themes and handle controlled navigation/disclosure in the host product; test routing, responsive and assistive-technology behavior.",
+        "limitations": "No app router, popper collision engine, server paging, virtualization or production approval included."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",

@@ -2,6 +2,12 @@
 
 This repository is a **living multi-style, cross-application design asset library** — not an AI WORKFLOW PLATFORM kit.
 
+## V0.21 navigation and disclosure extension
+
+- Five original **implemented** React exports in `packages/ui/src/navigation.tsx`: `Tooltip`, `Breadcrumb`, `Pagination`, `Accordion`, `SidebarNav` (UI-042..046). Total real React exports 32; asset index 167; four compatible UI theme scopes unchanged.
+- `Tooltip` is informational only, not an interactive floating dialog. `Breadcrumb` and `SidebarNav` do not invent application routing. `Pagination` does not fetch remote pages. `Accordion` only manages disclosed content via controlled IDs. All five require target-project behavior/a11y review.
+- Reuse the actual components through the public index or adapt original code, not the earlier research-only UI-028..032 archetypes. Avoid adding new orchestrators, new theme defaults, or global styles while growing this reusable component corpus.
+
 ## V0.20 actual React utility extension
 
 - The real React catalog now includes 27 exports, adding four V0.20 implementations in `packages/ui/src/utilities.tsx`: `CommandMenu`, `DatePicker`, `ResizablePanels`, `FileUpload` (`UI-038..041`). No new dependency or unregistered design style.

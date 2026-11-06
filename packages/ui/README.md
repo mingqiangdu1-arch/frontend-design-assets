@@ -47,14 +47,47 @@ The illustrative import `frontend-design-assets/styles/...` above is a repositor
 | Feedback | Badge, Alert, Progress, Skeleton, EmptyState |
 | Overlays | Dialog, Toast |
 | Data | Avatar, DataList, **DataTable** |
-| Navigation & hierarchy | **TreeView** |
+| Navigation & hierarchy | **TreeView**, **Breadcrumb**, **Pagination**, **SidebarNav** |
 | Advanced input | **Combobox**, **DualRangeField** |
 | Interactive overlays | **Popover** |
 | Commands | **CommandMenu** |
+| Disclosure & help | **Accordion**, **Tooltip** |
 | Date & file input | **DatePicker**, **FileUpload** |
 | Layout | **ResizablePanels** |
 
-**27 exported React components (including four new in V0.20).** All use style-scoped `fda-` CSS rather than globally overwriting buttons, forms, cards, etc. The names are also discoverable in `registry/components.json`.
+**32 exported React components (including five new in V0.21).** All use style-scoped `fda-` CSS rather than globally overwriting buttons, forms, cards, etc. The names are also discoverable in `registry/components.json`.
+
+## V0.21 navigation and disclosure exports — real React components
+
+Five original reference components live in [`src/navigation.tsx`](src/navigation.tsx), are re-exported in the package public entry, and reuse the **same four explicitly supported themes**. The behaviors use controlled inputs or native browser semantics; no new runtime dependency, default theme or third-party UI code is added.
+
+| Export | Main props | Practical behavior and boundary |
+| --- | --- | --- |
+| `Tooltip` (`UI-042`) | `label`, `content`, optional `placement/disabled` | A **noninteractive text tooltip** on hover/focus; Escape dismisses. Does not support HTML/tooltips with links, portal placement or collision avoidance. Use visible labels for critical instructions. |
+| `Breadcrumb` (`UI-043`) | `items`, optional `label/separator` | Semantic `nav`/ordered list, current-page marker, optional link or controlled action for ancestors. The app supplies routes or `onSelect`. |
+| `Pagination` (`UI-044`) | controlled `page`, `pageSize`, `totalItems`, `onPageChange` | Prev/Next, sparse page buttons, bounded counts and empty-state range. **Does not fetch or slice rows**; parent owns the data query and page state. |
+| `Accordion` (`UI-045`) | `items`, controlled `openIds/onOpenIdsChange` | Native buttons and labeled regions; Arrow Up/Down/Home/End focus navigation, multiple simultaneous expansion, disabled rows. Caller owns persistence and content. |
+| `SidebarNav` (`UI-046`) | hierarchical `items`, controlled `activeId/onNavigate`, `expandedIds/onExpandedIdsChange` | Nested semantic nav with independent disclosure controls and current-page selection. Native Tab/Enter operate the buttons; **not a treegrid, a router or mobile drawer**. |
+
+### Example controlled composition
+
+```tsx
+import {useState} from 'react';
+import {Accordion,Pagination} from '@frontend-design-assets/ui';
+
+function Page(){
+ const [expanded,setExpanded]=useState<string[]>([]);
+ const [page,setPage]=useState(1);
+ return <>
+   <Accordion items={[{id:'about',title:'About',content:'Details'}]}
+      openIds={expanded} onOpenIdsChange={setExpanded}/>
+   <Pagination label='Items' page={page} pageSize={10}
+      totalItems={87} onPageChange={setPage}/>
+ </>;
+}
+```
+
+Use the actual local package or monorepo alias; the package is **private/unpublished**. The example has local data only, not product routing. No production/a11y, screen-reader or mobile-device certification is implied.
 
 ## V0.20 utility exports — implemented code, local-only effects
 

@@ -2,11 +2,11 @@ import {test,expect} from "@playwright/test";
 
 test.beforeEach(async({page})=>{await page.goto("/");});
 
-test("gallery presents 27 component exports and explicit themes",async({page})=>{
+test("gallery presents 32 component exports and explicit themes",async({page})=>{
  await expect(page.getByRole("heading",{name:/组件不仅要好看/})).toBeVisible();
  await expect(page.locator("[data-theme-button]")).toHaveCount(4);
  await expect(page.locator('[data-theme-button="refined-light-saas"]')).toHaveAttribute("aria-pressed","true");
- await expect(page.locator(".cg-spec")).toHaveCount(18);
+ await expect(page.locator(".cg-spec")).toHaveCount(23);
 });
 
 test("switching style updates scope and semantic background",async({page})=>{
@@ -242,6 +242,76 @@ test("V0.20 gallery utilities fit four themes at mobile and desktop widths",asyn
    await page.locator('[data-theme-button="'+theme+'"]').click();
    const x=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
    expect(x.scroll,theme+" / "+width).toBeLessThanOrEqual(x.client+1);
+  }
+ }
+});
+
+
+test("Tooltip shows on pointer and focus, Escape dismisses, disabled trigger stays inert",async({page})=>{
+ const scope=page.locator("#tooltip"),button=scope.getByRole("button",{name:"查看说明"});
+ await button.hover();
+ await expect(scope.getByRole("tooltip")).toContainText("一段说明文字");
+ await button.focus();
+ await button.press("Escape");
+ await expect(scope.getByRole("tooltip")).toHaveCount(0);
+ await scope.getByRole("button",{name:"不可用提示"}).focus();
+ await expect(scope.getByRole("button",{name:"不可用提示"})).toBeDisabled();
+ await expect(scope.getByRole("tooltip")).toHaveCount(0);
+});
+
+test("Breadcrumb renders current-page semantics and local navigation actions",async({page})=>{
+ const nav=page.getByRole("navigation",{name:"素材路径"});
+ await expect(nav.getByText("导航组件")).toHaveAttribute("aria-current","page");
+ await nav.getByRole("button",{name:"UI 组件"}).click();
+ await expect(page.locator("#breadcrumb .cg-hint")).toContainText("components");
+});
+
+test("Pagination preserves explicit page state and respects first/last boundaries",async({page})=>{
+ const nav=page.getByRole("navigation",{name:"素材分页"});
+ await expect(nav.getByRole("button",{name:"上一页"})).toBeDisabled();
+ await expect(nav.getByRole("button",{name:"第 1 页"})).toHaveAttribute("aria-current","page");
+ await nav.getByRole("button",{name:"下一页"}).click();
+ await expect(nav.getByRole("button",{name:"第 2 页"})).toHaveAttribute("aria-current","page");
+ await nav.getByRole("button",{name:"第 9 页"}).click();
+ await expect(nav.getByRole("button",{name:"下一页"})).toBeDisabled();
+ await expect(page.locator("#pagination .cg-hint")).toContainText("9 / 9");
+ await expect(nav).toContainText("81–87 / 87 项");
+});
+
+test("Accordion maintains independent panels and supports arrow focus navigation",async({page})=>{
+ const scope=page.locator("#accordion"),first=scope.getByRole("button",{name:"如何复用组件？"});
+ const second=scope.getByRole("button",{name:"组件通过什么验证？"});
+ await expect(first).toHaveAttribute("aria-expanded","true");
+ await first.focus();
+ await first.press("ArrowDown");
+ await expect(second).toBeFocused();
+ await second.press("Enter");
+ await expect(second).toHaveAttribute("aria-expanded","true");
+ await expect(first).toHaveAttribute("aria-expanded","true");
+ await first.click();
+ await expect(first).toHaveAttribute("aria-expanded","false");
+ await expect(scope.getByRole("button",{name:"尚未开放的内容"})).toBeDisabled();
+});
+
+test("SidebarNav discloses three levels, changes page and disables archived sections",async({page})=>{
+ const nav=page.getByRole("navigation",{name:"多级工作区导航"});
+ await expect(nav.getByRole("button",{name:"产品工作区",exact:true})).toHaveAttribute("aria-current","page");
+ await nav.getByRole("button",{name:"展开设计资产"}).click();
+ await nav.getByRole("button",{name:"交互组件"}).click();
+ await expect(nav.getByRole("button",{name:"交互组件"})).toHaveAttribute("aria-current","page");
+ await expect(page.locator("#sidebar-nav .cg-hint")).toContainText("interactive");
+ await nav.getByRole("button",{name:"折叠设计资产"}).click();
+ await expect(nav.getByRole("button",{name:"交互组件"})).toBeHidden();
+ await expect(nav.getByRole("button",{name:"历史归档"})).toBeDisabled();
+});
+
+test("V0.21 navigation specimens avoid global overflow at mobile and desktop widths",async({page})=>{
+ for(const width of [390,768,1440]){
+  await page.setViewportSize({width,height:900});
+  for(const theme of ["refined-light-saas","precision-dark","editorial-warm","playful-pop"]){
+   await page.locator('[data-theme-button="'+theme+'"]').click();
+   const size=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
+   expect(size.scroll,theme+" / "+width).toBeLessThanOrEqual(size.client+1);
   }
  }
 });

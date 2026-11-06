@@ -208,3 +208,7 @@ export type {DataTableColumn,DataTableSort,DataTableProps,TreeViewItem,TreeViewP
 // V0.20 utility components with explicit controlled state and browser-native fallbacks.
 export {CommandMenu,DatePicker,ResizablePanels,FileUpload} from "./utilities";
 export type {CommandItem,CommandGroup,CommandMenuProps,DatePickerProps,ResizeOrientation,ResizablePanelsProps,FileRejectionReason,FileRejection,FileUploadProps} from "./utilities";
+
+// V0.21 navigation and disclosure controls, with explicitly supported themes.
+export {Tooltip,Breadcrumb,Pagination,Accordion,SidebarNav} from "./navigation";
+export type {TooltipProps,BreadcrumbItem,BreadcrumbProps,PaginationProps,AccordionItem,AccordionProps,SidebarNavItem,SidebarNavProps} from "./navigation";

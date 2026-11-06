@@ -1,5 +1,5 @@
 {
-  "version": "0.20.0",
+  "version": "0.21.0",
   "package": "@frontend-design-assets/ui",
   "status": "reference-implemented; not production-certified",
   "source": "packages/ui/src/index.tsx",
@@ -380,6 +380,71 @@
       "demo": "playground/component-gallery/index.html",
       "interaction": "controlled, keyboard/browser-native behavior; see packages/ui/README.md",
       "verified": "V0.20 reference implementation; GitHub CI verification pending at registration, no target integration or screen-reader certification."
+    },
+    {
+      "id": "UI-042",
+      "exportName": "Tooltip",
+      "category": "feedback",
+      "description": "Focus/hover text tooltip with Escape dismissal",
+      "source": "packages/ui/src/navigation.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "interaction": "controlled and/or native keyboard semantics; see packages/ui/README.md",
+      "verified": "V0.21 reference implementation; final CI verification pending, no production or screen-reader certification."
+    },
+    {
+      "id": "UI-043",
+      "exportName": "Breadcrumb",
+      "category": "navigation",
+      "description": "Semantic breadcrumb trail with current-page and optional navigation actions",
+      "source": "packages/ui/src/navigation.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "interaction": "controlled and/or native keyboard semantics; see packages/ui/README.md",
+      "verified": "V0.21 reference implementation; final CI verification pending, no production or screen-reader certification."
+    },
+    {
+      "id": "UI-044",
+      "exportName": "Pagination",
+      "category": "navigation",
+      "description": "Controlled pages, bounded Previous/Next and responsive ellipsis",
+      "source": "packages/ui/src/navigation.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "interaction": "controlled and/or native keyboard semantics; see packages/ui/README.md",
+      "verified": "V0.21 reference implementation; final CI verification pending, no production or screen-reader certification."
+    },
+    {
+      "id": "UI-045",
+      "exportName": "Accordion",
+      "category": "disclosure",
+      "description": "Controlled multiple-section disclosure with semantic headings and keyboard focus",
+      "source": "packages/ui/src/navigation.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "interaction": "controlled and/or native keyboard semantics; see packages/ui/README.md",
+      "verified": "V0.21 reference implementation; final CI verification pending, no production or screen-reader certification."
+    },
+    {
+      "id": "UI-046",
+      "exportName": "SidebarNav",
+      "category": "navigation",
+      "description": "Controlled multi-level sidebar with nested lists, active page and independent disclosure",
+      "source": "packages/ui/src/navigation.tsx",
+      "kind": "React TSX",
+      "framework": "React 19+",
+      "stage": "reference-implemented",
+      "demo": "playground/component-gallery/index.html",
+      "interaction": "controlled and/or native keyboard semantics; see packages/ui/README.md",
+      "verified": "V0.21 reference implementation; final CI verification pending, no production or screen-reader certification."
     }
   ],
   "stateMatrix": "registry/component-states.json",

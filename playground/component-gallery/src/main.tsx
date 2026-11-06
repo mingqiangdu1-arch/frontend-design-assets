@@ -4,7 +4,8 @@ import {createRoot} from "react-dom/client";
 import {ThemeSurface,Button,Badge,Card,TextField,TextAreaField,SelectField,CheckboxField,SwitchField,
  Tabs,Alert,Progress,Skeleton,Dialog,EmptyState,Avatar,DataList,Toast,
  DataTable,TreeView,Combobox,Popover,DualRangeField,
- CommandMenu,DatePicker,ResizablePanels,FileUpload,type DataTableColumn,type DataTableSort,type ThemeId,type Tone} from "../../../packages/ui/src/index";
+ CommandMenu,DatePicker,ResizablePanels,FileUpload,
+ Tooltip,Breadcrumb,Pagination,Accordion,SidebarNav,type DataTableColumn,type DataTableSort,type ThemeId,type Tone} from "../../../packages/ui/src/index";
 import "../../../tokens/refined-light.css";
 import "../../../styles/precision-dark/tokens.css";
 import "../../../styles/editorial-warm/tokens.css";
@@ -77,6 +78,11 @@ function App(){
  const [date,setDate]=React.useState("2026-11-06");
  const [splitSize,setSplitSize]=React.useState(45);
  const [localFiles,setLocalFiles]=React.useState<File[]>([]);
+ const [crumbAction,setCrumbAction]=React.useState("未操作");
+ const [currentPage,setCurrentPage]=React.useState(1);
+ const [openAccordion,setOpenAccordion]=React.useState<string[]>(["usage"]);
+ const [activeSection,setActiveSection]=React.useState("workspace");
+ const [openSidebar,setOpenSidebar]=React.useState<string[]>(["workspace"]);
  const sortedReviewRows=React.useMemo(()=>!tableSort?reviewRows:
   [...reviewRows].sort((a,b)=>{
    const diff=tableSort.key==="priority"?a.priority-b.priority:
@@ -90,7 +96,7 @@ function App(){
  };
  return <div className="cg-app">
  <header className="cg-top">
-  <div className="cg-brand"><span className="cg-mark">◈</span><div><strong>Component Library</strong><small>Frontend Design Assets / v0.20</small></div></div>
+  <div className="cg-brand"><span className="cg-mark">◈</span><div><strong>Component Library</strong><small>Frontend Design Assets / v0.21</small></div></div>
   <a href="https://github.com/mingqiangdu1-arch/frontend-design-assets/tree/main/packages/ui" target="_blank" rel="noreferrer">GitHub 源码 ↗</a>
  </header>
  <div className="cg-picker" role="group" aria-label="选择组件预览风格">
@@ -101,7 +107,7 @@ function App(){
  <ThemeSurface theme={theme} className="cg-surface">
   <div className="cg-intro"><div><small>LIVE REACT / TYPESCRIPT COMPONENTS</small>
     <h1>组件不仅要好看，也要能直接组装。</h1>
-    <p>27 个实际 React 组件，包括命令菜单、原生日期控件、可调整面板及仅本地校验的文件选择。当前是参考实现，尚未进行生产集成认证。</p>
+    <p>32 个实际 React 组件，本轮新增提示气泡、面包屑、分页、折叠内容与多层侧边导航。当前是参考实现，尚未进行生产集成认证。</p>
    </div><Badge tone="neutral">{themes.find(x=>x.id===theme)?.label}</Badge>
   </div>
   <div className="cg-grid">
@@ -234,6 +240,49 @@ function App(){
      accept=".txt,image/png" maxFiles={2} maxSizeBytes={1024}
      hint="最多 2 个文件，每个 ≤1KB，仅 TXT/PNG；不执行网络上传"/>
     <span className="cg-hint">已选文件数：{localFiles.length}</span>
+   </Specimen>
+
+   <Specimen id="tooltip" title="Tooltip" caption="Hover / focus / Escape / informational only">
+    <div className="cg-row">
+     <Tooltip label="查看说明" content="这是一段说明文字；悬停或聚焦显示，Escape 关闭。"/>
+     <Tooltip label="不可用提示" content="不会显示。" disabled/>
+     <span className="cg-hint">提示仅展示纯文本，不用于必需的交互操作</span>
+    </div>
+   </Specimen>
+   <Specimen id="breadcrumb" title="Breadcrumb" caption="Semantic navigation / current page">
+    <Breadcrumb label="素材路径" items={[
+     {id:"home",label:"素材库",onSelect:()=>setCrumbAction("home")},
+     {id:"components",label:"UI 组件",onSelect:()=>setCrumbAction("components")},
+     {id:"current",label:"导航组件"}
+    ]}/>
+    <span className="cg-hint">点击路径：{crumbAction} · 示例仅更新本地状态</span>
+   </Specimen>
+   <Specimen id="pagination" title="Pagination" caption="Controlled page / ellipsis / boundaries">
+    <Pagination label="素材分页" page={currentPage} pageSize={10} totalItems={87}
+     onPageChange={setCurrentPage}/>
+    <span className="cg-hint">当前页面：{currentPage} / 9 · 实际数据分页由业务层实现</span>
+   </Specimen>
+   <Specimen id="accordion" title="Accordion" caption="Controlled multi-open / Arrow, Home, End">
+    <Accordion label="常见问题" openIds={openAccordion} onOpenIdsChange={setOpenAccordion}
+     items={[
+      {id:"usage",title:"如何复用组件？",content:<p>加载声明兼容的主题，并通过受控属性接入业务数据。</p>},
+      {id:"quality",title:"组件通过什么验证？",content:<p>在仓库 CI 中完成 TypeScript、构建及关键浏览器测试。</p>},
+      {id:"locked",title:"尚未开放的内容",content:<p>已禁用，不允许展开。</p>,disabled:true}
+     ]}/>
+    <span className="cg-hint">展开项：{openAccordion.join("、")||"无"}</span>
+   </Specimen>
+   <Specimen id="sidebar-nav" title="SidebarNav" caption="Independent active page / nested disclosure">
+    <SidebarNav label="多级工作区导航" activeId={activeSection}
+     onNavigate={setActiveSection} expandedIds={openSidebar}
+     onExpandedIdsChange={setOpenSidebar} items={[
+      {id:"workspace",label:"产品工作区",children:[
+       {id:"design",label:"设计资产",children:[
+        {id:"tokens",label:"设计变量"},
+        {id:"interactive",label:"交互组件"}]},
+       {id:"research",label:"研究材料"}]},
+      {id:"archive",label:"历史归档",disabled:true}
+     ]}/>
+    <span className="cg-hint">当前页面：{activeSection} · 展开状态与页面选择相互独立</span>
    </Specimen>
    <Specimen id="cards" title="Cards & Empty" caption="modular composition">
      <Card heading="可组合信息卡片" description="不同风格的卡片有不同的信息密度和结构" footer={<><Button size="sm">创建</Button><Button size="sm" variant="ghost">了解更多</Button></>}>

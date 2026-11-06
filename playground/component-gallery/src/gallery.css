@@ -45,3 +45,7 @@ html{min-width:320px}body{margin:0;background:#f1f2f5;font-family:system-ui,-app
 /* Expanded specimens must not clip real interactive dropdowns/popovers. */
 #combobox.cg-spec,#popover.cg-spec{overflow:visible;position:relative;z-index:4}
 #combobox .cg-spec__body,#popover .cg-spec__body{overflow:visible}
+
+/* Noninteractive text tooltip may escape its specimen; preserve hover/focus visibility. */
+#tooltip.cg-spec{overflow:visible;position:relative;z-index:5}
+#tooltip .cg-spec__body{overflow:visible}
