@@ -2,6 +2,8 @@
 
 **跨应用类型、跨视觉风格、持续扩展的前端素材仓库。** 收录原创 React 组件、交互行为、页面模板、独立视觉体系与研究参考。不同应用可以采用不同美术方向；本仓库**没有全局默认主题**，也不意味着所有登记资产均已实现。
 
+**仓库边界：只积累、整理和验证可复用的前端素材。** 包括视觉主题、设计 Token、组件源码、交互模式、页面结构配方、参考 Demo 与检索索引。Demo 仅用于演示/验证素材，CLI 仅用于检索/选型/生成素材交接说明；**不在此开发实际业务产品、不建设页面生成器或应用脚手架、不承担部署上线**。当需要真实页面或产品时，在独立项目仓库中调用本仓库素材。
+
 > **Agent 使用入口：** [按任务检索素材（CATALOG）](CATALOG.md) · [Agent 工作规则（AGENTS）](AGENTS.md) · [轻量资产交接](docs/assembly/asset-handoff.md)
 >
 > **仓库现状：** 私有研究/参考实现仓库，尚非统一生产级组件包。未来公开前需完成 [发布准备检查](docs/publication-readiness.md)。
@@ -15,7 +17,7 @@
 | 浏览全部主题并排对比 | [主题图谱](playground/style-atlas/README.md) · [Agent 选型](docs/styles/theme-selection-v027.md) | 按场景、构图、材质、交互筛选 14 套主题，任选两套加载真实 Demo |
 | 2026 流行主题研究与预览 | [趋势对比](docs/styles/trend-research-2026.md) · [Trend Style Lab](playground/trend-style-lab/README.md) | Liquid Layer、Shape Expressive、Type-led Minimal、Organic Tactile：独立主题与可交互场景，不是 React 库兼容声明 |
 | 查找并复用 React 组件 | [组件登记](registry/components.json) · [组件源码](packages/ui/src/) · [组件文档](packages/ui/README.md) | 真实 TSX/CSS、API、四套显式兼容主题和适配限制 |
-| 组装完整页面 | [页面模板](registry/page-templates.json) · [组装指南](docs/assembly/README.md) · [独立 Demo](playground/page-blueprints/) | 页面分区、设计方向、实施清单；需区分静态与 React |
+| 参考页面结构素材 | [页面模板](registry/page-templates.json) · [组装指南](docs/assembly/README.md) · [独立 Demo](playground/page-blueprints/) | 可复用分区、构图和交互案例；真实页面开发须在外部项目进行 |
 | 参考高级交互 | [交互文档](docs/interactions/) · [高级交互 Lab](playground/advanced-interactions/) | 指针/键盘/触摸/撤销行为设计与独立原型 |
 | 拓展艺术表现 | [Creative Directions](registry/creative-directions.json) · [Creative Style Lab](playground/creative-style-lab/) | 面向游戏、活动、阅读和其他类型的创意方向 |
 | 建立工作台或数据产品 | [SaaS 专题](docs/saas/README.md) · [工作台配方](recipes/workbench.md) | 操作列表、表单、筛选、布局与状态模型 |

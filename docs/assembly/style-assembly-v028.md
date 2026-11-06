@@ -2,6 +2,12 @@
 
 The repository contains 14 original visual styles, seven registered runnable page templates and 16 **research-only** experience composition concepts. These are separate layers. This capability joins them **without falsely claiming** that a conceptual plan is a deployed page or a theme is supported by the existing React package.
 
+## Repository scope clarification (2026-11-06)
+
+**Asset accumulation only.** The 14 theme-to-page grammars, 57 section definitions, CLI handoffs and demo panel are reusable **reference materials** to index and illustrate a visual design vocabulary. They are not a roadmap toward a site generator, application scaffold, hosted preview service, customer-facing UI platform or business-product implementation **inside this repository**.
+
+Future contributions should add, improve, verify, document or classify reusable **assets**; temporary example pages may exist only as isolated inspection/interaction fixtures. A real site or product must be assembled in a separate destination repository. No repository-level default theme or automatic full-page construction is authorized.
+
 ## What is new
 
 - [Machine-readable style grammars](../../registry/style-assembly.json): **14 original, one-to-one style assemblies** containing 57 distinct page sections; each section specifies purpose, layout and interaction behavior. Typography, spacing, motion, accessibility, responsive and negative constraints vary by actual visual language.

@@ -2,6 +2,8 @@
 
 **Repo purpose:** a living, multi-style, multi-application frontend asset library. It is **not** an AI WORKFLOW PLATFORM implementation, universal UI theme, npm-published product, or collection of production-certified components.
 
+**Non-negotiable scope — asset accumulation only.** This repository exists to **collect, categorize, maintain, compare, validate and document reusable frontend assets**: style systems, tokens, components, interaction patterns, layout recipes, reference implementations and visual examples. Demos and CLI helpers are allowed **only to demonstrate, retrieve or verify assets**. Do **not** turn this repository into an application, product platform, deployment service, full-page generator or project scaffold; do not build features for a particular end-user business workflow here. Actual product/page implementation must happen in a separate target repository using selected assets. A request to "continue expanding" means expanding or curating the asset library, not building a finished application.
+
 **Start with [CATALOG.md](CATALOG.md).** It routes user tasks to relevant assets, while machine-readable registries remain authoritative. Do not read every historical note, gallery or demo up front.
 
 ## 1. Retrieve before generating
