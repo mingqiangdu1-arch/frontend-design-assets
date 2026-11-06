@@ -1,4 +1,4 @@
-# Cross-application style decision matrix · V0.5
+# Cross-application style decision matrix · V0.26
 
 This matrix is a **reasoned selection guide**, not a rule engine or a claim that any style is universally best. First identify user tasks, platform and content, then select candidates.
 
@@ -74,3 +74,16 @@ Earlier decisions deferred immersive WebGL/3D and retro-game-oriented styles wit
 | Aether Orbit | atmospheric spatial / quiet immersion | conceptual exhibitions, ambient portfolios, contemplative journeys | no WebGL dependency or autoplay, reduced motion |
 
 Task and audience still take priority over style. [The generative model brief](creative-art-direction.md) selects composition, texture, typography and interaction independently from constrained per-style grammars, avoiding the temptation to use one default template for every application.
+
+## V0.26 · 2026 trend-led expansion (independent theme proposals)
+
+Following the new explicit request to study **current popular design directions irrespective of personal tastes**, four distinct, task-backed research themes were implemented. The earlier V0.11 "do not add from fashion alone" rule is retained: these were selected by a coverage-gap and functional composition review, **not a claim that they rank highest in measured popularity**.
+
+| Theme | Task/structure priority | Visual/material grammar | Distinct from existing styles | Risk/required fallback |
+| --- | --- | --- | --- | --- |
+| `liquid-layer` / DT-011 | Visual scene + **floating functional navigation**, opaque below-the-fold information | Restrained translucent control material and large open scene | Aether Orbit is atmospheric storytelling, not accessible functional glass hierarchy | Prefer opaque nav when transparency is reduced or unsupported; don't blur article text |
+| `shape-expressive` / DT-012 | Immediate one-of-three focus choice; dominant asymmetric decision grouping | Expressive colored silhouettes, high-salience copy | Playful Pop is gamified/reward-based, not task-first shape grouping | No shape-only state communication; protect focus order and contrast |
+| `type-led-minimal` / DT-013 | Concise product narrative + side index + visible summary/depth | Oversized type and whitespace instead of routine cards | Editorial Warm optimizes deep reading, Neo Brutalist uses poster grid energy | Deep text must be available through semantic disclosure; no inaccessible kinetic text |
+| `organic-tactile` / DT-014 | Object/material-focused story + short notes + palette controls | Earthy shades and original soft CSS clay forms | Paper Rebellion is deliberate chaotic collage, Commerce Atelier is structured retail comparison | Avoid texture over body text, false environmental claims and unlicensed imagery |
+
+Source comparison and research confidence: [Trend research 2026](trend-research-2026.md). Implemented reference: [Trend Style Lab](../../playground/trend-style-lab/README.md). **All four are scoped original experimental HTML/CSS/JS, not React package themes**, and no default theme has been selected. Prefer full-page task selection over choosing a fashionable surface effect in isolation.

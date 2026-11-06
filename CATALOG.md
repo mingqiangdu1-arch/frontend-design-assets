@@ -15,8 +15,8 @@
 
 | 典型任务（中英关键词） | 优先入口 | 核心说明 |
 | --- | --- | --- |
-| 风格选型、视觉体系、art direction、theme | `registry/styles.json`、`docs/styles/decision-matrix.md`、`registry/creative-directions.json` | 10 套独立风格；React 包仅支持明确列出的 4 套 |
-| 管理后台、运营台、SaaS workspace、admin | `docs/saas/README.md`、`registry/page-templates.json`、`recipes/saas-operational-list.md` | 页面研究与可执行组件需分别验证 |
+| 风格选型、视觉体系、art direction、theme | `registry/styles.json`、`docs/styles/decision-matrix.md`、`registry/creative-directions.json` | 14 套独立风格；React 包仍仅支持明确列出的原有 4 套 |
+| 当前流行 UI 主题、2026 design trends、glass、expressive、organic、typography | `docs/styles/trend-research-2026.md`、`registry/styles.json`、`playground/trend-style-lab/README.md`、`DT-011`–`DT-014` | 四套原创独立 HTML/CSS 主题；依据任务选择，不等于现有 React 主题兼容 |\n| 管理后台、运营台、SaaS workspace、admin | `docs/saas/README.md`、`registry/page-templates.json`、`recipes/saas-operational-list.md` | 页面研究与可执行组件需分别验证 |
 | 可复用 React 组件、button/form/dialog、UI library | `registry/components.json`、`packages/ui/README.md`、`packages/ui/src/` | 按 `exportName` 定位真实源码，需显式选择兼容主题 |
 | 表格、筛选、看板、编辑、data table / filters | `UI-033`、`UI-052`、`UI-053`、`UI-056`、`UI-059`，`packages/ui/src/data-ops.tsx`、`editors.tsx` | 数据状态、校验、权限和持久化由宿主应用负责 |
 | 视觉前后比较、标签、评分、comparison / review / rating | `UI-060`、`UI-061`、`UI-062`、`packages/ui/src/cross-context.tsx`、`recipes/compare-annotate-feedback.md` | 可交互 React 控件和跨场景组合配方；真实媒体授权、评审保存与后端审核需宿主实现 |

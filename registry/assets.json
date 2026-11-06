@@ -6494,6 +6494,181 @@
         "instructions": "Inspect UI-060/061/062 and choose only the components compatible with the target's style, data and review process.",
         "limitations": "No media processing, backend save, version control, review moderation or production accessibility approval."
       }
+    },
+    {
+      "id": "DT-011",
+      "type": "token",
+      "name": "Liquid Layer / Functional Glass independent original style",
+      "stage": "prototype",
+      "reuseKind": "style-token",
+      "priority": "P1",
+      "tags": [
+        "2026",
+        "trend",
+        "visual-style",
+        "experimental",
+        "liquid-layer"
+      ],
+      "aliases": [
+        "液态玻璃",
+        "玻璃拟态",
+        "半透明悬浮导航",
+        "liquid glass",
+        "functional glass"
+      ],
+      "source": "https://developer.apple.com/design/human-interface-guidelines/materials",
+      "path": "styles/liquid-layer/tokens.css",
+      "details": "styles/liquid-layer/README.md",
+      "demo": "playground/trend-style-lab/index.html",
+      "styleIds": [
+        "liquid-layer"
+      ],
+      "applicationContexts": [
+        "creative-tool",
+        "media-gallery",
+        "travel-experience",
+        "spatial-dashboard"
+      ],
+      "dependencies": [],
+      "license": "Original independently drafted tokens/CSS; research links are not licensed media",
+      "verified": "Scoped JSON/CSS source and original independent interactive scene; subject to CI/browser checks, visual approval and target integration. Not React UI package compatible.",
+      "handoff": {
+        "entry": "styles/liquid-layer/README.md",
+        "stack": "HTML/CSS/JS independent style reference; adapt to target stack",
+        "instructions": "Read this style's layout, typography, material, motion and task context before selecting it; import only scoped tokens and design a page appropriate to the actual product.",
+        "limitations": "Independent experimental style, not a drop-in theme for existing packages/ui React components; no official third-party UI code, images or product certification."
+      }
+    },
+    {
+      "id": "DT-012",
+      "type": "token",
+      "name": "Shape Expressive / Task-first Color independent original style",
+      "stage": "prototype",
+      "reuseKind": "style-token",
+      "priority": "P1",
+      "tags": [
+        "2026",
+        "trend",
+        "visual-style",
+        "experimental",
+        "shape-expressive"
+      ],
+      "aliases": [
+        "表现力形状",
+        "Material Expressive 研究",
+        "动态形状UI",
+        "expressive mobile"
+      ],
+      "source": "https://research.google/pubs/usability-hasnt-peaked-exploring-how-expressive-design-overcomes-the-usability-plateau/",
+      "path": "styles/shape-expressive/tokens.css",
+      "details": "styles/shape-expressive/README.md",
+      "demo": "playground/trend-style-lab/index.html",
+      "styleIds": [
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "consumer-mobile",
+        "wellbeing-app",
+        "event-booking",
+        "personal-finance"
+      ],
+      "dependencies": [],
+      "license": "Original independently drafted tokens/CSS; research links are not licensed media",
+      "verified": "Scoped JSON/CSS source and original independent interactive scene; subject to CI/browser checks, visual approval and target integration. Not React UI package compatible.",
+      "handoff": {
+        "entry": "styles/shape-expressive/README.md",
+        "stack": "HTML/CSS/JS independent style reference; adapt to target stack",
+        "instructions": "Read this style's layout, typography, material, motion and task context before selecting it; import only scoped tokens and design a page appropriate to the actual product.",
+        "limitations": "Independent experimental style, not a drop-in theme for existing packages/ui React components; no official third-party UI code, images or product certification."
+      }
+    },
+    {
+      "id": "DT-013",
+      "type": "token",
+      "name": "Type-led Minimal / Radical Clarity independent original style",
+      "stage": "prototype",
+      "reuseKind": "style-token",
+      "priority": "P1",
+      "tags": [
+        "2026",
+        "trend",
+        "visual-style",
+        "experimental",
+        "type-led-minimal"
+      ],
+      "aliases": [
+        "大字极简",
+        "字体主导",
+        "极简品牌页",
+        "typography first",
+        "radical minimal"
+      ],
+      "source": "https://webflow.com/blog/web-design-trends-2026",
+      "path": "styles/type-led-minimal/tokens.css",
+      "details": "styles/type-led-minimal/README.md",
+      "demo": "playground/trend-style-lab/index.html",
+      "styleIds": [
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "brand-landing",
+        "product-story",
+        "studio-site",
+        "creative-portfolio"
+      ],
+      "dependencies": [],
+      "license": "Original independently drafted tokens/CSS; research links are not licensed media",
+      "verified": "Scoped JSON/CSS source and original independent interactive scene; subject to CI/browser checks, visual approval and target integration. Not React UI package compatible.",
+      "handoff": {
+        "entry": "styles/type-led-minimal/README.md",
+        "stack": "HTML/CSS/JS independent style reference; adapt to target stack",
+        "instructions": "Read this style's layout, typography, material, motion and task context before selecting it; import only scoped tokens and design a page appropriate to the actual product.",
+        "limitations": "Independent experimental style, not a drop-in theme for existing packages/ui React components; no official third-party UI code, images or product certification."
+      }
+    },
+    {
+      "id": "DT-014",
+      "type": "token",
+      "name": "Organic Tactile / Human Material independent original style",
+      "stage": "prototype",
+      "reuseKind": "style-token",
+      "priority": "P1",
+      "tags": [
+        "2026",
+        "trend",
+        "visual-style",
+        "experimental",
+        "organic-tactile"
+      ],
+      "aliases": [
+        "有机触感",
+        "自然系界面",
+        "柔和拟物",
+        "自然材质",
+        "organic design"
+      ],
+      "source": "https://www.adobe.com/express/learn/blog/design-trends-2026",
+      "path": "styles/organic-tactile/tokens.css",
+      "details": "styles/organic-tactile/README.md",
+      "demo": "playground/trend-style-lab/index.html",
+      "styleIds": [
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "wellbeing-app",
+        "sustainable-commerce",
+        "hospitality",
+        "food-story"
+      ],
+      "dependencies": [],
+      "license": "Original independently drafted tokens/CSS; research links are not licensed media",
+      "verified": "Scoped JSON/CSS source and original independent interactive scene; subject to CI/browser checks, visual approval and target integration. Not React UI package compatible.",
+      "handoff": {
+        "entry": "styles/organic-tactile/README.md",
+        "stack": "HTML/CSS/JS independent style reference; adapt to target stack",
+        "instructions": "Read this style's layout, typography, material, motion and task context before selecting it; import only scoped tokens and design a page appropriate to the actual product.",
+        "limitations": "Independent experimental style, not a drop-in theme for existing packages/ui React components; no official third-party UI code, images or product certification."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",

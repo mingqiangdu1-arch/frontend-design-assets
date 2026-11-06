@@ -1,0 +1,25 @@
+/* Original independent scoped Organic Tactile color tokens; no global :root, no React UI package mapping. */
+[data-design-theme="organic-tactile"]{
+ color-scheme:light;
+ --ds-canvas:#F4EEE3;
+ --ds-surface:#FFFAF2;
+ --ds-surface-raised:#E9DFC9;
+ --ds-sidebar:#E8DDC7;
+ --ds-border:#8D7B67;
+ --ds-text:#30291E;
+ --ds-text-secondary:#57493B;
+ --ds-text-muted:#6A5949;
+ --ds-accent:#305543;
+ --ds-accent-text:#FFFFFF;
+ --ds-selected:#DAE4D3;
+ --ds-success:#285C43;
+ --ds-danger:#9D3438;
+ --ds-warning:#7F510A;
+ --ds-font-ui:system-ui,-apple-system,"Segoe UI","PingFang SC",sans-serif;
+ --ds-font-display:Georgia,serif;
+ --ds-radius-control:20px;
+ --ds-radius-panel:36px;
+ --ds-motion-fast:160ms;
+ --ds-motion-medium:260ms;
+}
+@media (prefers-reduced-motion:reduce){[data-design-theme="organic-tactile"]{--ds-motion-fast:0ms;--ds-motion-medium:0ms;}}

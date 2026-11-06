@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Four independent original 2026 trend-inspired frontend UI scenes: translucent utility layer, expressive task shape, typography-first product, and tactile organic service.">
+<title>2026 Trend Style Lab · Frontend Design Assets</title>
+<link rel="stylesheet" href="../../styles/liquid-layer/tokens.css">
+<link rel="stylesheet" href="../../styles/shape-expressive/tokens.css">
+<link rel="stylesheet" href="../../styles/type-led-minimal/tokens.css">
+<link rel="stylesheet" href="../../styles/organic-tactile/tokens.css">
+<link rel="stylesheet" href="./lab.css">
+<script type="module" src="./app.mjs"></script></head>
+<body>
+<header class="trend-head"><a href="../../README.md" class="trend-mark">◈ FRONTEND / STYLE ATLAS</a>
+<nav aria-label="素材导航"><a href="../../registry/styles.json">主题索引</a><a href="../../CATALOG.md">Agent 检索</a><a href="../../docs/styles/README.md">设计规范</a></nav></header>
+<div class="trend-intro">
+ <span class="trend-eyebrow">ORIGINAL 2026 TREND STUDIES / NO DEFAULT THEME</span>
+ <h1>Four distinct design grammars.<br><span>Not four recolored dashboards.</span></h1>
+ <p>依据公开趋势研究形成独立的交互式设计研究。每套主题拥有自己的信息结构、视觉材质和控件行为；所有数据为本地虚构示例，不代表第三方官方设计系统。</p>
+ <div class="trend-switch" role="group" aria-label="选择趋势主题">
+  <button data-direction="liquid-layer" type="button" aria-pressed="false"><b>01 / Liquid Layer</b><small>Floating functional glass</small></button>
+  <button data-direction="shape-expressive" type="button" aria-pressed="false"><b>02 / Shape Expressive</b><small>Task-oriented shape hierarchy</small></button>
+  <button data-direction="type-led-minimal" type="button" aria-pressed="false"><b>03 / Type-led Minimal</b><small>Editorial brevity</small></button>
+  <button data-direction="organic-tactile" type="button" aria-pressed="false"><b>04 / Organic Tactile</b><small>Human material & warmth</small></button>
+ </div>
+</div>
+<main id="trendScenes">
+ <section class="trend-scene ll-scene" data-scene="liquid-layer" data-design-theme="liquid-layer" aria-label="Liquid Layer 透明功能层主题" hidden>
+  <div class="ll-shell" data-mode="coast" data-glass="on">
+   <div class="ll-sky"><span class="ll-horizon"></span><span class="ll-sun" aria-hidden="true"></span><span class="ll-island" aria-hidden="true"></span>
+    <div class="ll-kicker">VIEW / 001 · ORIGINAL CSS FIELD</div>
+    <div class="ll-copy"><span>THE OPEN SPACES COLLECTION</span><h2>Give the view<br>room to breathe.</h2><p>内容本身保持清楚，交互控件悬浮于画面上层。玻璃效果不是整个页面的默认材质。</p></div>
+    <div class="ll-toolbar" aria-label="风景显示控制">
+     <div class="ll-tabs" role="group" aria-label="选择光线场景"><button type="button" data-landscape="coast" aria-pressed="true">海岸日间</button><button type="button" data-landscape="dusk" aria-pressed="false">黄昏</button></div>
+     <label for="llGlass">透明效果 <input id="llGlass" type="checkbox" checked></label>
+    </div>
+    <div class="ll-status" id="llFeedback" role="status" aria-live="polite">海岸日间 · 功能层半透明</div>
+   </div>
+   <div class="ll-content"><article><span>01 / VISUAL DEPTH</span><h3>Let the scene lead.</h3><p>叙事信息使用不透明内容区；仅导航和临时控件采用可回退的半透明材质。</p></article>
+    <article><span>02 / ACCESSIBLE CONTROL</span><h3>Clarity stays.</h3><p>更换场景不会删除文本。用户可以关闭透明效果，且无需动画才能完成操作。</p></article></div>
+  </div>
+ </section>
+ <section class="trend-scene se-scene" data-scene="shape-expressive" data-design-theme="shape-expressive" aria-label="Shape Expressive 表现力形状主题" hidden>
+  <div class="se-shell" data-focus="plan">
+   <div class="se-head"><span class="se-brand">DAYFORM <i aria-hidden="true">✳</i></span><span>YOUR NEXT MOMENT / LOCAL DEMO</span></div>
+   <div class="se-body"><div class="se-copy"><span class="se-overline">LET'S MAKE TODAY COUNT</span>
+    <h2>A day that<br><em>moves</em> with<br>you.</h2><p>通过大尺度形状、优先级和可操作标签组织快速选择，而不是将复杂表单做成圆角卡片拼贴。</p>
+    <div class="se-step-status" aria-live="polite" id="seFeedback">当前重点：规划 · 先明确一件事</div>
+   </div>
+   <div class="se-actions"><span class="se-hint">CHOOSE ONE FOCUS / 01–03</span>
+    <div class="se-shape-grid" role="group" aria-label="选择今日重点">
+      <button class="se-choice se-choice--plan" type="button" data-shape-choice="plan" aria-pressed="true"><span>01</span><strong>规划<br>Plan</strong><small>明确目标</small></button>
+      <button class="se-choice se-choice--move" type="button" data-shape-choice="move" aria-pressed="false"><span>02</span><strong>行动<br>Move</strong><small>开始尝试</small></button>
+      <button class="se-choice se-choice--rest" type="button" data-shape-choice="rest" aria-pressed="false"><span>03</span><strong>休息<br>Pause</strong><small>留出空间</small></button>
+    </div>
+    <div class="se-progress"><span>YOUR FOCUS IS</span><b id="seFocus">PLAN</b><div class="se-dots" aria-hidden="true"><i></i><i></i><i></i></div></div>
+   </div></div>
+   <div class="se-footer"><span>SHAPES FOLLOW TASK SIGNIFICANCE</span><span>NO MATERIAL DESIGN LIBRARY INCLUDED</span></div>
+  </div>
+ </section>
+ <section class="trend-scene tm-scene" data-scene="type-led-minimal" data-design-theme="type-led-minimal" aria-label="Type-led Minimal 大字体极简主题" hidden>
+  <div class="tm-shell"><div class="tm-nav"><strong>FORM / FUNCTION</strong><span>IDEAS, MADE CLEAR.</span><a href="#tmOverview">EXPLORE THE SYSTEM <span aria-hidden="true">↗</span></a></div>
+  <div class="tm-body"><div class="tm-index" role="group" aria-label="切换品牌叙事"><span>INDEX / 001–003</span>
+    <button type="button" data-type-story="0" aria-pressed="true">01 / PURPOSE</button>
+    <button type="button" data-type-story="1" aria-pressed="false">02 / METHOD</button>
+    <button type="button" data-type-story="2" aria-pressed="false">03 / IMPACT</button></div>
+   <div class="tm-message"><span class="tm-kicker">STORY / <output id="tmPosition">01</output></span>
+    <h2 id="tmHeadline">Less<br>noise.<br><em>More meaning.</em></h2>
+    <p id="tmDescription">一个明确的信息，比十个争夺注意力的卡片更有力量。保留可见导航和完整的深入阅读路径。</p>
+    <a class="tm-cta" href="#tmOverview">了解设计逻辑 <span aria-hidden="true">↗</span></a>
+   </div></div>
+   <div class="tm-summary" id="tmOverview"><span>THE SHORT VERSION / TL;DR</span>
+    <div><strong>One idea.</strong><p>用大标题建立一眼可见的主题。</p></div>
+    <div><strong>Clear next step.</strong><p>使用原生链接和明确的操作入口。</p></div>
+    <div><strong>Depth on demand.</strong><details><summary>为什么不是隐藏所有内容？</summary><p>极简依靠编辑与层级，不是把功能做得不可发现。这里保留了语义化深入说明。</p></details></div>
+   </div>
+   <div class="tm-footer"><span id="tmFeedback" role="status" aria-live="polite">当前故事：Purpose</span><span>NO KINETIC TYPE REQUIRED TO READ</span></div>
+  </div>
+ </section>
+ <section class="trend-scene ot-scene" data-scene="organic-tactile" data-design-theme="organic-tactile" aria-label="Organic Tactile 有机材质主题" hidden>
+  <div class="ot-shell" data-material="moss"><div class="ot-nav"><strong>still / things</strong><span>SMALL RITUALS · ORIGINAL MATERIAL STUDY</span></div>
+   <div class="ot-body"><div class="ot-copy"><span class="ot-eyebrow">OBJECTS FOR EVERYDAY CALM</span>
+    <h2>Feel the<br><em>ordinary</em><br>again.</h2><p>自然材质、温暖光线与清楚文字并行。触感来自构图和反馈，而不通过噪点遮盖阅读内容。</p>
+    <div class="ot-material-select"><span>SELECT A MATERIAL PALETTE</span><div role="group" aria-label="选择材料色调">
+     <button data-material="moss" type="button" aria-pressed="true"><i class="ot-dot ot-dot--moss" aria-hidden="true"></i>苔藓 Moss</button>
+     <button data-material="clay" type="button" aria-pressed="false"><i class="ot-dot ot-dot--clay" aria-hidden="true"></i>陶土 Clay</button>
+     <button data-material="linen" type="button" aria-pressed="false"><i class="ot-dot ot-dot--linen" aria-hidden="true"></i>亚麻 Linen</button>
+    </div><p class="ot-feedback" id="otFeedback" role="status" aria-live="polite">当前色调：苔藓 · 原创 CSS 材质示意</p></div>
+   </div><div class="ot-object" role="img" aria-label="原创 CSS 绘制的圆润陶器与几何叶片概念造型，无真实商品照片"><div class="ot-arch"></div><div class="ot-vase"><div class="ot-vase-neck"></div></div><div class="ot-leaf ot-leaf--a"></div><div class="ot-leaf ot-leaf--b"></div><div class="ot-platform"></div><span>STUDY / FORM 01</span></div></div>
+   <div class="ot-notes"><article><span>01 / MATERIAL</span><strong>Warmth with structure.</strong><p>使用明确的信息层级，而非全屏柔焦。</p></article>
+    <article><span>02 / INTERACTION</span><strong>Touch, then understand.</strong><p>材料选择保留文字与焦点状态，按钮只影响本地预览。</p></article>
+    <article><span>03 / INTENTION</span><strong>Craft, not decoration.</strong><p>不伪造可持续性认证，不引入未获授权摄影。</p></article></div>
+  </div>
+ </section>
+</main>
+<footer class="trend-footer"><span>Independent theme proposals · original CSS illustrations · no vendor tokens</span><a href="../../docs/styles/trend-research-2026.md">2026 趋势与差异分析</a></footer>
+</body></html>

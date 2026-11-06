@@ -198,6 +198,86 @@
       },
       "demo": "playground/creative-style-lab/index.html",
       "licenseNote": "Original CSS illustration, design tokens and composition; no third-party pixel sprites, fonts, images or branded components."
+    },
+    {
+      "id": "liquid-layer",
+      "label": "Liquid Layer / Functional Glass",
+      "status": "design-proposal",
+      "origin": "Independent functional translucency study informed by Apple HIG and 2026 Figma/Webflow trends; no official Liquid Glass implementation",
+      "categories": [
+        "creative-tool",
+        "media-gallery",
+        "travel-experience",
+        "spatial-dashboard"
+      ],
+      "styleProfile": "styles/liquid-layer/style.json",
+      "documentation": "styles/liquid-layer/README.md",
+      "tokens": {
+        "css": "styles/liquid-layer/tokens.css",
+        "json": "styles/liquid-layer/tokens.json"
+      },
+      "demo": "playground/trend-style-lab/index.html",
+      "licenseNote": "Original tokens, visual grammar, CSS illustration and interaction code. Trend sources used as research, not copied vendor UI, fonts or assets."
+    },
+    {
+      "id": "shape-expressive",
+      "label": "Shape Expressive / Task-first Color",
+      "status": "design-proposal",
+      "origin": "Independent expressive mobile-task layout informed by Google CHI 2026 Material 3 Expressive study; not an implementation of Google's design system",
+      "categories": [
+        "consumer-mobile",
+        "wellbeing-app",
+        "event-booking",
+        "personal-finance"
+      ],
+      "styleProfile": "styles/shape-expressive/style.json",
+      "documentation": "styles/shape-expressive/README.md",
+      "tokens": {
+        "css": "styles/shape-expressive/tokens.css",
+        "json": "styles/shape-expressive/tokens.json"
+      },
+      "demo": "playground/trend-style-lab/index.html",
+      "licenseNote": "Original tokens, visual grammar, CSS illustration and interaction code. Trend sources used as research, not copied vendor UI, fonts or assets."
+    },
+    {
+      "id": "type-led-minimal",
+      "label": "Type-led Minimal / Radical Clarity",
+      "status": "design-proposal",
+      "origin": "Independent typographic product storytelling study grounded in Webflow 2026 minimal-copy/TLDR trends",
+      "categories": [
+        "brand-landing",
+        "product-story",
+        "studio-site",
+        "creative-portfolio"
+      ],
+      "styleProfile": "styles/type-led-minimal/style.json",
+      "documentation": "styles/type-led-minimal/README.md",
+      "tokens": {
+        "css": "styles/type-led-minimal/tokens.css",
+        "json": "styles/type-led-minimal/tokens.json"
+      },
+      "demo": "playground/trend-style-lab/index.html",
+      "licenseNote": "Original tokens, visual grammar, CSS illustration and interaction code. Trend sources used as research, not copied vendor UI, fonts or assets."
+    },
+    {
+      "id": "organic-tactile",
+      "label": "Organic Tactile / Human Material",
+      "status": "design-proposal",
+      "origin": "Independent organic/analog soft-material direction informed by Adobe 2026 creative/design forecasts",
+      "categories": [
+        "wellbeing-app",
+        "sustainable-commerce",
+        "hospitality",
+        "food-story"
+      ],
+      "styleProfile": "styles/organic-tactile/style.json",
+      "documentation": "styles/organic-tactile/README.md",
+      "tokens": {
+        "css": "styles/organic-tactile/tokens.css",
+        "json": "styles/organic-tactile/tokens.json"
+      },
+      "demo": "playground/trend-style-lab/index.html",
+      "licenseNote": "Original tokens, visual grammar, CSS illustration and interaction code. Trend sources used as research, not copied vendor UI, fonts or assets."
     }
   ]
 }

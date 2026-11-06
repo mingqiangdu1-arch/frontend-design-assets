@@ -1,0 +1,25 @@
+/* Original independent scoped Shape Expressive color tokens; no global :root, no React UI package mapping. */
+[data-design-theme="shape-expressive"]{
+ color-scheme:light;
+ --ds-canvas:#F7F4FF;
+ --ds-surface:#FFFFFF;
+ --ds-surface-raised:#EDE6F9;
+ --ds-sidebar:#EBE3F8;
+ --ds-border:#7E659C;
+ --ds-text:#28183D;
+ --ds-text-secondary:#4A365E;
+ --ds-text-muted:#655173;
+ --ds-accent:#592B91;
+ --ds-accent-text:#FFFFFF;
+ --ds-selected:#E8D7FC;
+ --ds-success:#206B4A;
+ --ds-danger:#9B2850;
+ --ds-warning:#795014;
+ --ds-font-ui:system-ui,-apple-system,"Segoe UI","PingFang SC",sans-serif;
+ --ds-font-display:system-ui,-apple-system,"Segoe UI",sans-serif;
+ --ds-radius-control:24px;
+ --ds-radius-panel:40px;
+ --ds-motion-fast:160ms;
+ --ds-motion-medium:260ms;
+}
+@media (prefers-reduced-motion:reduce){[data-design-theme="shape-expressive"]{--ds-motion-fast:0ms;--ds-motion-medium:0ms;}}

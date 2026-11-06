@@ -1,6 +1,19 @@
-# Multi-style research collection · V0.13
+# Multi-style research collection · V0.26
 
 The repository **does not have a default visual theme**. Visual styles are explicit, independently scoped alternatives. Shared UI behavior can be researched across styles, but implementation and layout are not assumed portable.
+
+## Current registered collection: 14 independent styles
+
+2026 trend study added four task-distinct, original scoped designs — **not** a silent React component package compatibility expansion. See [research and gap analysis](trend-research-2026.md), [interactive trend lab](../../playground/trend-style-lab/README.md) and the current [registry](../../registry/styles.json).
+
+| ID | Visual grammar | Appropriate tasks | Boundary |
+| --- | --- | --- | --- |
+| [`liquid-layer`](../../styles/liquid-layer/README.md) | Floating translucent control/nav over opaque content | creative previews, visual journeys | opacity fallback; not "glass on every card" |
+| [`shape-expressive`](../../styles/shape-expressive/README.md) | High-salience asymmetric shape choices | consumer/mobile task selection | research reinterpretation, not Google UI source |
+| [`type-led-minimal`](../../styles/type-led-minimal/README.md) | Hero-scale typography + index + concise TL;DR | product brands and studios | deep content must remain discoverable |
+| [`organic-tactile`](../../styles/organic-tactile/README.md) | Natural clay-like CSS illustration + grounded notes | wellbeing, hospitality, sustainable goods | no unsupported environmental claims |
+
+**Research-driven scope update:** an earlier V0.11 study deferred Liquid Glass and Material Expressive as individual themes because an implementation purpose was not established. This V0.26 task explicitly asks for contemporary **independent theme exploration**; it therefore implements original, distinct use-case-led sample pages, not a global brand skin or production-ready mobile SDK.
 
 ## Current independent style collections
 
@@ -30,7 +43,7 @@ See [Style Explorer](../../playground/style-explorer/index.html), [Demo README](
 - No official product tokens, vendor icons, proprietary artwork or external font files are bundled.
 - All new styles remain proposals/prototypes; automated semantic-token contrast checks and limited Chromium browser smoke checks are **not** screen-reader, cross-browser, target-project or real-world usability certification.
 
-## Future study shortlist (not implemented)
+## Historical shortlist (written before V0.26, retained for provenance)
 
 Alternative professional light/dark, bold brutalist web, commerce-focused product visual, glass/ambient creative tool, mobile native minimalist. Research only when explicitly requested; do not automatically build.
 
@@ -50,7 +63,7 @@ These links support studying aesthetic direction. **All new numeric values are o
 | --- | --- | --- | --- | --- |
 | `commerce-atelier` | [Commerce Atelier](../../styles/commerce-atelier/README.md) | warm stone/moss sans catalog aesthetic, big product visual slots, deliberate prices and filter states | retail storefront, visual product discovery | Standalone proposed Tokens and demo; not React package integrated |
 
-Do not promote glassmorphism, bento layouts, 3D effects or dynamic typography to separate repository-wide styles merely because they trend in 2026. They are **optional cross-style techniques** with performance/accessibility obligations; new styles require genuinely different user tasks and composition grammar. The original React component package still lists four supported themes only.
+Do not automatically promote glassmorphism, bento layouts, 3D effects or dynamic typography to repository-wide **default** styles merely because they trend in 2026. V0.26 adds task-specific independent research profiles after a new gap analysis; these are not universal components. They are **optional cross-style techniques** with performance/accessibility obligations; new styles require genuinely different user tasks and composition grammar. The original React component package still lists four supported themes only.
 
 ## V0.18 adjacent visual grammar research — not registered styles
 

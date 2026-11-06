@@ -1,0 +1,25 @@
+{
+  "id": "organic-tactile",
+  "displayName": "Organic Tactile",
+  "stage": "design-proposal",
+  "assetId": "DT-014",
+  "description": "Biophilic, low-noise tactile surfaces with rounded organic cutouts, paper-clay material cues and warm high-legibility content",
+  "categoryHints": [
+    "wellbeing-app",
+    "sustainable-commerce",
+    "food-story",
+    "hospitality"
+  ],
+  "sources": [
+    "https://www.adobe.com/express/learn/blog/design-trends-2026",
+    "https://business.adobe.com/resources/creative-trends-report.html",
+    "https://webflow.com/blog/web-design-trends-2026"
+  ],
+  "tokenFile": "tokens.json",
+  "cssFile": "tokens.css",
+  "documentation": "README.md",
+  "scopeSelector": "[data-design-theme=\"organic-tactile\"]",
+  "sample": "../../playground/trend-style-lab/index.html?style=organic-tactile",
+  "implementationStatus": "Standalone original scoped Token system and interactive HTML/CSS/JS mini-scene; React package compatibility not claimed; not production-ready",
+  "isDefault": false
+}

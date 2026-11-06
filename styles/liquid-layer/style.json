@@ -1,0 +1,25 @@
+{
+  "id": "liquid-layer",
+  "displayName": "Liquid Layer",
+  "stage": "design-proposal",
+  "assetId": "DT-011",
+  "description": "Translucent floating navigation over an opaque, content-first visual field; restrained glass is a functional layer, not a universal card treatment",
+  "categoryHints": [
+    "media-gallery",
+    "spatial-dashboard",
+    "creative-tool",
+    "travel-experience"
+  ],
+  "sources": [
+    "https://developer.apple.com/design/human-interface-guidelines/materials",
+    "https://www.figma.com/resource-library/web-design-trends/",
+    "https://webflow.com/blog/web-design-trends-2026"
+  ],
+  "tokenFile": "tokens.json",
+  "cssFile": "tokens.css",
+  "documentation": "README.md",
+  "scopeSelector": "[data-design-theme=\"liquid-layer\"]",
+  "sample": "../../playground/trend-style-lab/index.html?style=liquid-layer",
+  "implementationStatus": "Standalone original scoped Token system and interactive HTML/CSS/JS mini-scene; React package compatibility not claimed; not production-ready",
+  "isDefault": false
+}

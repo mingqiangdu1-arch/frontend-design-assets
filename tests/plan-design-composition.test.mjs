@@ -93,12 +93,13 @@ test("style-only experimental direction gets relevant architecture if context de
  assert.ok(x.options[0].creativeAlternatives.every(c=>c.styleId==="signal-noir"));
  assert.equal(planComposition({style:"signal-noir"},data).options[0].creativeAlternatives.length,0);
 });
-test("known architecture context without style avoids inventing visual compatibility",()=>{
+test("known context can suggest a newly registered style without auto-selecting it",()=>{
  const x=planComposition({context:"creative-tool"},data);
- assert.equal(x.options.length,0);
+ assert.equal(x.options.length,1);
+ assert.equal(x.options[0].style.id,"liquid-layer");
  assert.equal(x.selection.styleId,null);
- assert.equal(x.architectureAlternatives.length,2);
- assert.ok(toMarkdown(x).includes("Style-free architecture hypotheses"));
+ assert.equal(x.architectureAlternatives.length,0);
+ assert.ok(toMarkdown(x).includes("Selection: unselected"));
  assert.equal(planComposition({context:"entirely-unknown"},data).architectureAlternatives.length,0);
 });
 test("concept count is bounded, opt-out works, and template-only can use declared contexts",()=>{
@@ -128,11 +129,12 @@ test("unconstrained planning does not fabricate quality scores",()=>{
  assert.ok(x.options[0].creativeAlternatives.every(r=>r.fitEvaluation.score===null));
  assert.ok(toMarkdown(x).includes("not assessed"));
 });
-test("architecture-only scenarios score without inventing visual support",()=>{
+test("style-matched scenarios still score architecture hypotheses without auto-selecting a theme",()=>{
  const x=planComposition({context:"creative-tool",device:"desktop",complexity:"expert"},data);
- assert.equal(x.options.length,0);
+ assert.equal(x.options.length,1);
+ assert.equal(x.options[0].style.id,"liquid-layer");
  assert.equal(x.selection.styleId,null);
- assert.equal(x.architectureAlternatives[0].fitEvaluation.maxScore,4);
+ assert.equal(x.options[0].creativeAlternatives[0].fitEvaluation.maxScore,4);
  assert.ok(toMarkdown(x).includes("Preference fit"));
 });
 test("CLI accepts user constraints and rejects invalid value levels",()=>{

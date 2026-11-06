@@ -1,0 +1,24 @@
+{
+  "id": "type-led-minimal",
+  "displayName": "Type-led Minimal",
+  "stage": "design-proposal",
+  "assetId": "DT-013",
+  "description": "Radically concise content, oversized graphic typography and asymmetrical white-space-led product storytelling",
+  "categoryHints": [
+    "brand-landing",
+    "creative-portfolio",
+    "studio-site",
+    "product-story"
+  ],
+  "sources": [
+    "https://webflow.com/blog/web-design-trends-2026",
+    "https://www.figma.com/resource-library/web-design-trends/"
+  ],
+  "tokenFile": "tokens.json",
+  "cssFile": "tokens.css",
+  "documentation": "README.md",
+  "scopeSelector": "[data-design-theme=\"type-led-minimal\"]",
+  "sample": "../../playground/trend-style-lab/index.html?style=type-led-minimal",
+  "implementationStatus": "Standalone original scoped Token system and interactive HTML/CSS/JS mini-scene; React package compatibility not claimed; not production-ready",
+  "isDefault": false
+}

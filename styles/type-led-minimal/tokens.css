@@ -1,0 +1,25 @@
+/* Original independent scoped Type-led Minimal color tokens; no global :root, no React UI package mapping. */
+[data-design-theme="type-led-minimal"]{
+ color-scheme:light;
+ --ds-canvas:#F5F3EB;
+ --ds-surface:#FFFFFF;
+ --ds-surface-raised:#EAE9E0;
+ --ds-sidebar:#EBEBE3;
+ --ds-border:#7A7D70;
+ --ds-text:#181C19;
+ --ds-text-secondary:#454B46;
+ --ds-text-muted:#636B62;
+ --ds-accent:#193D32;
+ --ds-accent-text:#FFFFFF;
+ --ds-selected:#DDE8DD;
+ --ds-success:#28674B;
+ --ds-danger:#9E3034;
+ --ds-warning:#80540B;
+ --ds-font-ui:system-ui,-apple-system,"Segoe UI","PingFang SC",sans-serif;
+ --ds-font-display:system-ui,-apple-system,"Segoe UI",sans-serif;
+ --ds-radius-control:5px;
+ --ds-radius-panel:8px;
+ --ds-motion-fast:160ms;
+ --ds-motion-medium:260ms;
+}
+@media (prefers-reduced-motion:reduce){[data-design-theme="type-led-minimal"]{--ds-motion-fast:0ms;--ds-motion-medium:0ms;}}

@@ -1,0 +1,24 @@
+{
+  "id": "shape-expressive",
+  "displayName": "Shape Expressive",
+  "stage": "design-proposal",
+  "assetId": "DT-012",
+  "description": "Purposeful variable silhouettes, emphatic type hierarchy and contextual color blocks for task-first mobile experiences without cloning Material 3",
+  "categoryHints": [
+    "consumer-mobile",
+    "personal-finance",
+    "event-booking",
+    "wellbeing-app"
+  ],
+  "sources": [
+    "https://research.google/pubs/usability-hasnt-peaked-exploring-how-expressive-design-overcomes-the-usability-plateau/",
+    "https://www.figma.com/resource-library/web-design-trends/"
+  ],
+  "tokenFile": "tokens.json",
+  "cssFile": "tokens.css",
+  "documentation": "README.md",
+  "scopeSelector": "[data-design-theme=\"shape-expressive\"]",
+  "sample": "../../playground/trend-style-lab/index.html?style=shape-expressive",
+  "implementationStatus": "Standalone original scoped Token system and interactive HTML/CSS/JS mini-scene; React package compatibility not claimed; not production-ready",
+  "isDefault": false
+}

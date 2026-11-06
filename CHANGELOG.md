@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-06 · V0.26 four independent trend-informed style systems
+
+- Surveyed Figma 2026 Web UI trends, Webflow 2026 design trends, Adobe 2026 creative directions, Apple HIG Materials and Google CHI 2026 Expressive Design study; compared candidate directions against the ten existing independent profiles, without user/assistant aesthetic preference ranking.
+- Added four original style profiles: DT-011 `liquid-layer` (accessible floating functional glass over opaque content), DT-012 `shape-expressive` (mobile task-priority shapes), DT-013 `type-led-minimal` (oversized type + concise indexed story), DT-014 `organic-tactile` (warm material product/story scene). Each has `style.json`, `tokens.json`, `tokens.css` and a standalone `README.md`.
+- Added [Trend Style Lab](playground/trend-style-lab/README.md) with four distinct original HTML/CSS/JS layouts and working light/opacity, task-choice, story/disclosure, and material selection controls. Responsive 390/768/1440 and reduced-motion support; CSS artwork only, no external images or UI vendor code.
+- Indexed styles **10 → 14**, assets **184 → 188**; added machine-search aliases, design research/decision matrix, tests and CI trigger. Existing React package compatibility intentionally remains **four themes**, not silently expanded to fourteen.
+- New source is a research/prototype asset, **not** a complete Apple Liquid Glass or Google Material 3 Expressive implementation, WebGL engine, product-ready theme, full accessibility certification or user-preference default.
+
 ## 2026-11-06 · V0.25 cross-context comparison and feedback controls
 
 - Implemented three original controlled React/TypeScript/CSS exports: `BeforeAfterCompare` (`UI-060`, pointer comparison + native keyboard range), `TagInput` (`UI-061`, keyboard chips with limits, duplicate/length validation and IME guard), and `RatingInput` (`UI-062`, native radio stars + clear).

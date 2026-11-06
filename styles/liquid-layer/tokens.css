@@ -1,0 +1,25 @@
+/* Original independent scoped Liquid Layer color tokens; no global :root, no React UI package mapping. */
+[data-design-theme="liquid-layer"]{
+ color-scheme:light;
+ --ds-canvas:#EAF1F7;
+ --ds-surface:#FFFFFF;
+ --ds-surface-raised:#F1F6FC;
+ --ds-sidebar:#DFEAF4;
+ --ds-border:#6F8294;
+ --ds-text:#172B3B;
+ --ds-text-secondary:#3B5263;
+ --ds-text-muted:#4E6374;
+ --ds-accent:#1457A2;
+ --ds-accent-text:#FFFFFF;
+ --ds-selected:#D9E8F8;
+ --ds-success:#206D4B;
+ --ds-danger:#A52B3B;
+ --ds-warning:#785018;
+ --ds-font-ui:system-ui,-apple-system,"Segoe UI","PingFang SC",sans-serif;
+ --ds-font-display:system-ui,-apple-system,"Segoe UI",sans-serif;
+ --ds-radius-control:20px;
+ --ds-radius-panel:30px;
+ --ds-motion-fast:160ms;
+ --ds-motion-medium:260ms;
+}
+@media (prefers-reduced-motion:reduce){[data-design-theme="liquid-layer"]{--ds-motion-fast:0ms;--ds-motion-medium:0ms;}}
