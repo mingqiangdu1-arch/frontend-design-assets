@@ -140,6 +140,45 @@ if (/(?:^|\n)\s*:root\s*\{|(?:^|\n)\s*@import\b|url\s*\(/m.test(creativeCss) ||
 }
 console.log("Validated V0.32: 18 source-linked research patterns and six scoped CSS atoms.");
 
+// V0.34: sixteen creative research patterns, not assembled pages or React exports.
+const experienceArtifactsV034 = readJson("registry/experience-artifacts-v034.json");
+if (experienceArtifactsV034.schemaVersion !== "1.0" || !Array.isArray(experienceArtifactsV034.entries) ||
+    experienceArtifactsV034.entries.length !== 16 || experienceArtifactsV034.defaultTheme !== null) {
+  fail("V0.34 design-contract registry invalid");
+}
+const experienceIds = new Set(), experienceCounts = new Map();
+for (const item of experienceArtifactsV034.entries) {
+  if (experienceIds.has(item.id)) fail("Duplicate V0.34 research ID: "+item.id);
+  experienceIds.add(item.id);
+  experienceCounts.set(item.group,(experienceCounts.get(item.group)||0)+1);
+  const isInteraction = item.group === "creative-navigation" || item.group === "unconventional-interaction";
+  const asset = assetById.get(item.id);
+  if (!asset || asset.type !== (isInteraction ? "interaction" : "reference") ||
+      asset.reuseKind !== (isInteraction ? "behavior-pattern" : "design-reference") ||
+      asset.stage !== "analyzed" || asset.source !== item.source ||
+      asset.spec !== "registry/experience-artifacts-v034.json" ||
+      (isInteraction && asset.handoff?.mode !== "research-only") ||
+      item.adoption !== "research-only" || item.implementation !== "research-brief-only" ||
+      !Array.isArray(item.relatedAssets) || !item.relatedAssets.length ||
+      item.relatedAssets.some(id => !assetIds.has(id)) ||
+      !Array.isArray(item.aliases) || !item.aliases.length ||
+      !item.designContract || !item.stateContract || !item.accessibleFallback ||
+      !item.failureModes || !item.distinctFrom || !item.source?.startsWith("https://") ||
+      (asset.path && asset.path !== "styles/primitives/v034/creative-atoms.css")) {
+    fail("V0.34 research boundary/provenance mismatch: "+item.id);
+  }
+}
+for (const group of ["visual-storytelling","spatial-composition","creative-navigation","unconventional-interaction"])
+  if (experienceCounts.get(group) !== 4) fail("V0.34 group incomplete: "+group);
+assertFile("styles/primitives/v034/README.md","V0.34 source docs");
+assertFile("styles/primitives/v034/creative-atoms.css","V0.34 original CSS primitives");
+const css034 = fs.readFileSync("styles/primitives/v034/creative-atoms.css","utf8");
+if (/(?:^|\n)\s*:root\s*\{|(?:^|\n)\s*@import\b|url\s*\(/m.test(css034) ||
+    !css034.includes("prefers-reduced-motion") || !css034.includes("forced-colors")) {
+  fail("V0.34 atoms must be scoped, asset-free and degrade gracefully");
+}
+console.log("Validated V0.34: 16 original research briefs, four balanced categories, scoped CSS primitives.");
+
 const experienceSummary=validateExperienceRegistry(experienceRegistry,registry.assets);
 const applicationFiles = ["applications/examples/ai-workflow-platform.json"];
 for (const file of applicationFiles) {
