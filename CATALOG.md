@@ -33,6 +33,7 @@
 | 高级交互、drag/drop、时间线、scroll story | `docs/interactions/`、`IP-021`–`IP-024`、`playground/advanced-interactions-v2/`、`-v3/` | 复用交互契约，不复制演示页的固定外观 |
 | 专业画布、富文本、地图、WebGL、触摸手势 / advanced editor, geospatial, 3D, mobile gesture | `REF-042`–`REF-058`、`registry/specialized-resources-v030.json`、`docs/research/specialized-resources-v030.md` | 17 条外部来源研究档案，按能力缺口和许可证检索；**非已安装依赖或现成 React 导出** |
 | 3D 材质、数据可视化语义、移动手势契约 / material, chart, gesture | `REF-059..068`、`IP-031..035`、`registry/specialized-patterns-v031.json`、`docs/research/specialized-patterns-v031.md` | 15 个原创研究素材：状态、结构、降级、来源及风险；不提供可直接运行的组件或业务页面 |
+| 文档协同、富文本块编辑、字形和纹理、光谱遮罩 / collaborative editor, font, texture, creative effects | `IP-036..041`、`REF-069..080`、`registry/creative-primitives-v032.json`、`docs/research/creative-primitives-v032.md` | 18 份研究合同：操作状态、字体/贴图授权与视觉降级；6 个原创、无依赖 CSS 小原子，非编辑器组件或完整页面 |
 | 去 AI 模板化、页面设计审查、unslop、hallmark | `docs/assembly/design-review-workflows.md`、`docs/research/unslop-hallmark.md` | 外部 Skill 为研究/可选工具，未作为本仓库依赖自动安装 |
 
 上表的 ID 是**检索起点**而非默认推荐；只有打开注册条目并核对情境与成熟度，才能决定是否采用。
@@ -49,6 +50,13 @@
 - **专业数据表达**：`REF-064..068`（多图联动、密度聚合、溯源注释、地图图层语义、虚拟化定位）；应同时核查原始数值、来源、键盘访问与表格替代。
 - **移动交互行为**：`IP-031..035`（抽屉滚动仲裁、双指缩放、长按排序、侧滑撤销、有界回弹）；状态流与取消/降级要求见 `registry/specialized-patterns-v031.json`。
 - **重要边界**：以上均为 `analyzed` 的原创设计研究，非运行代码或经过物理设备验证的交互；要实现请在独立项目中确定框架、数据、许可与测试。
+
+## V0.32 编辑协同与视觉原材料选材
+
+- **编辑器和协作**：`IP-036..041` 提供指令弹层、并发评论锚点、临时在线状态、安全粘贴、撤销边界、块重排；与已有 Lexical / Tiptap / Yjs 外部参考 `REF-043..045` 分开，不误认为已集成编辑器。
+- **字体 / 贴图 / 纹理**：`REF-069..074` 提供 variable font、CJK-Latin fallback、按 family 许可、自托管边界、Poly Haven/ambientCG 来源、程序纹理。字体/媒体二进制一律未引入。
+- **特殊视觉效果**：`REF-075..080` 提供多层遮罩、SVG 扰动、滚动叙事、View Transition、光谱局部照明、动态文字；只有部分包含 [6 个独立 CSS 样例](styles/primitives/v032/README.md)。
+- 检索顺序：`registry/creative-primitives-v032.json` 查 `group`, `aliases`, `failureModes`, `accessibleFallback`, `relatedAssets` 和 `source` → 单个研究条目 → 可选 CSS 原子。所有新增 ID 均为 `analyzed`，不允许声称手机/读屏/浏览器或生产验证。
 
 ## 无需运行工具的 GitHub-only 检索
 
