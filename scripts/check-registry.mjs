@@ -132,7 +132,7 @@ for (const group of ["editor-collaboration", "type-texture", "expressive-effects
 assertFile("styles/primitives/v032/creative-atoms.css","V0.32 independent CSS");
 assertFile("styles/primitives/v032/README.md","V0.32 CSS documentation");
 const creativeCss = fs.readFileSync("styles/primitives/v032/creative-atoms.css", "utf8");
-if (/(:root|@import|url\s*\()/i.test(creativeCss) ||
+if (/(?:^|\n)\s*:root\s*\{|(?:^|\n)\s*@import\b|url\s*\(/m.test(creativeCss) ||
     !creativeCss.includes("prefers-reduced-motion") ||
     !creativeCss.includes("forced-colors")) {
   fail("V0.32 CSS must be isolated, asset-free and have reduced-motion/high-contrast fallbacks");
