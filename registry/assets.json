@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.2",
   "purpose": "Living cross-application, multi-style design asset repository; no repository-wide visual default.",
-  "updatedAt": "2026-11-06",
+  "updatedAt": "2026-11-10",
   "stageDefinitions": [
     "captured",
     "analyzed",
@@ -6769,11 +6769,623 @@
         "instructions": "Choose explicit style/context; inspect matching Style Assembly registry and read actual Token/Profile/Demo paths before implementing the target page.",
         "limitations": "No app scaffolding, generated source code, backend/real data, automatic React theme port, screen reader certification or external media licensing."
       }
+    },
+    {
+      "id": "REF-042",
+      "type": "reference",
+      "name": "React Flow / xyflow — specialized editor-canvas source",
+      "stage": "analyzed",
+      "priority": "P0",
+      "tags": [
+        "editor-canvas",
+        "external-source",
+        "research-only",
+        "workflow",
+        "visual-editor"
+      ],
+      "source": "https://github.com/xyflow/xyflow",
+      "license": "MIT",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "workflow",
+        "visual-editor"
+      ],
+      "aliases": [
+        "节点编辑器",
+        "流程设计",
+        "node editor"
+      ],
+      "details": "docs/research/specialized-resources-v030.md",
+      "spec": "registry/specialized-resources-v030.json",
+      "verified": "Reviewed upstream repository metadata and public project/licensing documents on 2026-11-10; research-only, not installed or integrated; recheck exact package/license before code reuse.",
+      "handoff": {
+        "entry": "docs/research/specialized-resources-v030.md",
+        "stack": "technology-neutral upstream research reference",
+        "instructions": "Use the source-specific focus, gap, and limitation in the specialized-resource index; compare with current UI/IP/REF assets before selecting for an independent destination project.",
+        "limitations": "官方商业使用说明支持 MIT；Pro 内容另核; no vendor source, images, binaries, or paid content imported."
+      }
+    },
+    {
+      "id": "REF-043",
+      "type": "reference",
+      "name": "Lexical — specialized editor-canvas source",
+      "stage": "analyzed",
+      "priority": "P0",
+      "tags": [
+        "editor-canvas",
+        "external-source",
+        "research-only",
+        "document",
+        "knowledge-base"
+      ],
+      "source": "https://github.com/meta/lexical",
+      "license": "MIT",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "document",
+        "knowledge-base"
+      ],
+      "aliases": [
+        "富文本",
+        "文档编辑器",
+        "rich text"
+      ],
+      "details": "docs/research/specialized-resources-v030.md",
+      "spec": "registry/specialized-resources-v030.json",
+      "verified": "Reviewed upstream repository metadata and public project/licensing documents on 2026-11-10; research-only, not installed or integrated; recheck exact package/license before code reuse.",
+      "handoff": {
+        "entry": "docs/research/specialized-resources-v030.md",
+        "stack": "technology-neutral upstream research reference",
+        "instructions": "Use the source-specific focus, gap, and limitation in the specialized-resource index; compare with current UI/IP/REF assets before selecting for an independent destination project.",
+        "limitations": "需独立研究粘贴、IME、屏幕阅读器及序列化; no vendor source, images, binaries, or paid content imported."
+      }
+    },
+    {
+      "id": "REF-044",
+      "type": "reference",
+      "name": "Tiptap core — specialized editor-canvas source",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "editor-canvas",
+        "external-source",
+        "research-only",
+        "document",
+        "knowledge-base"
+      ],
+      "source": "https://github.com/ueberdosis/tiptap",
+      "license": "MIT (core)",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "document",
+        "knowledge-base"
+      ],
+      "aliases": [
+        "块编辑",
+        "斜杠菜单",
+        "editor extensions"
+      ],
+      "details": "docs/research/specialized-resources-v030.md",
+      "spec": "registry/specialized-resources-v030.json",
+      "verified": "Reviewed upstream repository metadata and public project/licensing documents on 2026-11-10; research-only, not installed or integrated; recheck exact package/license before code reuse.",
+      "handoff": {
+        "entry": "docs/research/specialized-resources-v030.md",
+        "stack": "technology-neutral upstream research reference",
+        "instructions": "Use the source-specific focus, gap, and limitation in the specialized-resource index; compare with current UI/IP/REF assets before selecting for an independent destination project.",
+        "limitations": "付费扩展、云服务与模板单独核许可; no vendor source, images, binaries, or paid content imported."
+      }
+    },
+    {
+      "id": "REF-045",
+      "type": "reference",
+      "name": "Yjs — specialized editor-canvas source",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "editor-canvas",
+        "external-source",
+        "research-only",
+        "document",
+        "visual-editor"
+      ],
+      "source": "https://github.com/yjs/yjs",
+      "license": "MIT (LICENSE)",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "document",
+        "visual-editor"
+      ],
+      "aliases": [
+        "协同编辑",
+        "多人光标",
+        "CRDT"
+      ],
+      "details": "docs/research/specialized-resources-v030.md",
+      "spec": "registry/specialized-resources-v030.json",
+      "verified": "Reviewed upstream repository metadata and public project/licensing documents on 2026-11-10; research-only, not installed or integrated; recheck exact package/license before code reuse.",
+      "handoff": {
+        "entry": "docs/research/specialized-resources-v030.md",
+        "stack": "technology-neutral upstream research reference",
+        "instructions": "Use the source-specific focus, gap, and limitation in the specialized-resource index; compare with current UI/IP/REF assets before selecting for an independent destination project.",
+        "limitations": "传输服务、持久化和身份权限由宿主提供; no vendor source, images, binaries, or paid content imported."
+      }
+    },
+    {
+      "id": "REF-046",
+      "type": "reference",
+      "name": "Excalidraw — specialized editor-canvas source",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "editor-canvas",
+        "external-source",
+        "research-only",
+        "creative-tool",
+        "education"
+      ],
+      "source": "https://github.com/excalidraw/excalidraw",
+      "license": "MIT (repository)",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-tool",
+        "education"
+      ],
+      "aliases": [
+        "白板",
+        "手绘图",
+        "whiteboard"
+      ],
+      "details": "docs/research/specialized-resources-v030.md",
+      "spec": "registry/specialized-resources-v030.json",
+      "verified": "Reviewed upstream repository metadata and public project/licensing documents on 2026-11-10; research-only, not installed or integrated; recheck exact package/license before code reuse.",
+      "handoff": {
+        "entry": "docs/research/specialized-resources-v030.md",
+        "stack": "technology-neutral upstream research reference",
+        "instructions": "Use the source-specific focus, gap, and limitation in the specialized-resource index; compare with current UI/IP/REF assets before selecting for an independent destination project.",
+        "limitations": "案例、字体、在线服务与嵌入资源须单独审查; no vendor source, images, binaries, or paid content imported."
+      }
+    },
+    {
+      "id": "REF-047",
+      "type": "reference",
+      "name": "MapLibre GL JS — specialized geo-data source",
+      "stage": "analyzed",
+      "priority": "P0",
+      "tags": [
+        "geo-data",
+        "external-source",
+        "research-only",
+        "map",
+        "geospatial"
+      ],
+      "source": "https://github.com/maplibre/maplibre-gl-js",
+      "license": "BSD-3-Clause (LICENSE.txt)",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "map",
+        "geospatial"
+      ],
+      "aliases": [
+        "地图引擎",
+        "空间选择",
+        "vector map"
+      ],
+      "details": "docs/research/specialized-resources-v030.md",
+      "spec": "registry/specialized-resources-v030.json",
+      "verified": "Reviewed upstream repository metadata and public project/licensing documents on 2026-11-10; research-only, not installed or integrated; recheck exact package/license before code reuse.",
+      "handoff": {
+        "entry": "docs/research/specialized-resources-v030.md",
+        "stack": "technology-neutral upstream research reference",
+        "instructions": "Use the source-specific focus, gap, and limitation in the specialized-resource index; compare with current UI/IP/REF assets before selecting for an independent destination project.",
+        "limitations": "地图瓦片/数据服务、地图归属和 token 成本是独立授权; no vendor source, images, binaries, or paid content imported."
+      }
+    },
+    {
+      "id": "REF-048",
+      "type": "reference",
+      "name": "deck.gl — specialized geo-data source",
+      "stage": "analyzed",
+      "priority": "P0",
+      "tags": [
+        "geo-data",
+        "external-source",
+        "research-only",
+        "map",
+        "analytics"
+      ],
+      "source": "https://github.com/visgl/deck.gl",
+      "license": "MIT",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "map",
+        "analytics"
+      ],
+      "aliases": [
+        "地理可视化",
+        "热力图",
+        "GPU layers"
+      ],
+      "details": "docs/research/specialized-resources-v030.md",
+      "spec": "registry/specialized-resources-v030.json",
+      "verified": "Reviewed upstream repository metadata and public project/licensing documents on 2026-11-10; research-only, not installed or integrated; recheck exact package/license before code reuse.",
+      "handoff": {
+        "entry": "docs/research/specialized-resources-v030.md",
+        "stack": "technology-neutral upstream research reference",
+        "instructions": "Use the source-specific focus, gap, and limitation in the specialized-resource index; compare with current UI/IP/REF assets before selecting for an independent destination project.",
+        "limitations": "WebGL2、设备能力、GPU 内存和辅助数据表需验证; no vendor source, images, binaries, or paid content imported."
+      }
+    },
+    {
+      "id": "REF-049",
+      "type": "reference",
+      "name": "Apache ECharts — specialized geo-data source",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "geo-data",
+        "external-source",
+        "research-only",
+        "analytics",
+        "dashboard"
+      ],
+      "source": "https://github.com/apache/echarts",
+      "license": "Apache-2.0",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "analytics",
+        "dashboard"
+      ],
+      "aliases": [
+        "高级图表",
+        "交互图表",
+        "echarts"
+      ],
+      "details": "docs/research/specialized-resources-v030.md",
+      "spec": "registry/specialized-resources-v030.json",
+      "verified": "Reviewed upstream repository metadata and public project/licensing documents on 2026-11-10; research-only, not installed or integrated; recheck exact package/license before code reuse.",
+      "handoff": {
+        "entry": "docs/research/specialized-resources-v030.md",
+        "stack": "technology-neutral upstream research reference",
+        "instructions": "Use the source-specific focus, gap, and limitation in the specialized-resource index; compare with current UI/IP/REF assets before selecting for an independent destination project.",
+        "limitations": "数据一致性、可访问性、数据量和构建体积需独立验证; no vendor source, images, binaries, or paid content imported."
+      }
+    },
+    {
+      "id": "REF-050",
+      "type": "reference",
+      "name": "TanStack Virtual — specialized geo-data source",
+      "stage": "analyzed",
+      "priority": "P0",
+      "tags": [
+        "geo-data",
+        "external-source",
+        "research-only",
+        "data-grid",
+        "workspace"
+      ],
+      "source": "https://github.com/TanStack/virtual",
+      "license": "MIT",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "data-grid",
+        "workspace"
+      ],
+      "aliases": [
+        "虚拟滚动",
+        "海量表格",
+        "virtual list"
+      ],
+      "details": "docs/research/specialized-resources-v030.md",
+      "spec": "registry/specialized-resources-v030.json",
+      "verified": "Reviewed upstream repository metadata and public project/licensing documents on 2026-11-10; research-only, not installed or integrated; recheck exact package/license before code reuse.",
+      "handoff": {
+        "entry": "docs/research/specialized-resources-v030.md",
+        "stack": "technology-neutral upstream research reference",
+        "instructions": "Use the source-specific focus, gap, and limitation in the specialized-resource index; compare with current UI/IP/REF assets before selecting for an independent destination project.",
+        "limitations": "虚拟化影响焦点、屏幕阅读器、跳转定位和行身份; no vendor source, images, binaries, or paid content imported."
+      }
+    },
+    {
+      "id": "REF-051",
+      "type": "reference",
+      "name": "three.js — specialized 3d-spatial source",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "3d-spatial",
+        "external-source",
+        "research-only",
+        "creative-site",
+        "product-visual"
+      ],
+      "source": "https://github.com/mrdoob/three.js",
+      "license": "MIT",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-site",
+        "product-visual"
+      ],
+      "aliases": [
+        "三维网页",
+        "WebGL",
+        "threejs"
+      ],
+      "details": "docs/research/specialized-resources-v030.md",
+      "spec": "registry/specialized-resources-v030.json",
+      "verified": "Reviewed upstream repository metadata and public project/licensing documents on 2026-11-10; research-only, not installed or integrated; recheck exact package/license before code reuse.",
+      "handoff": {
+        "entry": "docs/research/specialized-resources-v030.md",
+        "stack": "technology-neutral upstream research reference",
+        "instructions": "Use the source-specific focus, gap, and limitation in the specialized-resource index; compare with current UI/IP/REF assets before selecting for an independent destination project.",
+        "limitations": "浏览器 GPU、设备发热、资源尺寸、2D fallback; no vendor source, images, binaries, or paid content imported."
+      }
+    },
+    {
+      "id": "REF-052",
+      "type": "reference",
+      "name": "React Three Fiber — specialized 3d-spatial source",
+      "stage": "analyzed",
+      "priority": "P0",
+      "tags": [
+        "3d-spatial",
+        "external-source",
+        "research-only",
+        "creative-site",
+        "product-visual"
+      ],
+      "source": "https://github.com/pmndrs/react-three-fiber",
+      "license": "MIT",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-site",
+        "product-visual"
+      ],
+      "aliases": [
+        "React 3D",
+        "R3F",
+        "空间交互"
+      ],
+      "details": "docs/research/specialized-resources-v030.md",
+      "spec": "registry/specialized-resources-v030.json",
+      "verified": "Reviewed upstream repository metadata and public project/licensing documents on 2026-11-10; research-only, not installed or integrated; recheck exact package/license before code reuse.",
+      "handoff": {
+        "entry": "docs/research/specialized-resources-v030.md",
+        "stack": "technology-neutral upstream research reference",
+        "instructions": "Use the source-specific focus, gap, and limitation in the specialized-resource index; compare with current UI/IP/REF assets before selecting for an independent destination project.",
+        "limitations": "React 19 对应 v9；v10 截至核查时为 alpha，避免默认采用; no vendor source, images, binaries, or paid content imported."
+      }
+    },
+    {
+      "id": "REF-053",
+      "type": "reference",
+      "name": "Drei — specialized 3d-spatial source",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "3d-spatial",
+        "external-source",
+        "research-only",
+        "creative-site",
+        "product-visual"
+      ],
+      "source": "https://github.com/pmndrs/drei",
+      "license": "MIT",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-site",
+        "product-visual"
+      ],
+      "aliases": [
+        "3D 工具",
+        "场景辅助",
+        "drei"
+      ],
+      "details": "docs/research/specialized-resources-v030.md",
+      "spec": "registry/specialized-resources-v030.json",
+      "verified": "Reviewed upstream repository metadata and public project/licensing documents on 2026-11-10; research-only, not installed or integrated; recheck exact package/license before code reuse.",
+      "handoff": {
+        "entry": "docs/research/specialized-resources-v030.md",
+        "stack": "technology-neutral upstream research reference",
+        "instructions": "Use the source-specific focus, gap, and limitation in the specialized-resource index; compare with current UI/IP/REF assets before selecting for an independent destination project.",
+        "limitations": "helper 的性能/可访问性需逐个核查; no vendor source, images, binaries, or paid content imported."
+      }
+    },
+    {
+      "id": "REF-054",
+      "type": "reference",
+      "name": "postprocessing — specialized 3d-spatial source",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "3d-spatial",
+        "external-source",
+        "research-only",
+        "creative-site",
+        "visual-experiment"
+      ],
+      "source": "https://github.com/pmndrs/postprocessing",
+      "license": "Zlib",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-site",
+        "visual-experiment"
+      ],
+      "aliases": [
+        "后期特效",
+        "屏幕空间效果",
+        "post fx"
+      ],
+      "details": "docs/research/specialized-resources-v030.md",
+      "spec": "registry/specialized-resources-v030.json",
+      "verified": "Reviewed upstream repository metadata and public project/licensing documents on 2026-11-10; research-only, not installed or integrated; recheck exact package/license before code reuse.",
+      "handoff": {
+        "entry": "docs/research/specialized-resources-v030.md",
+        "stack": "technology-neutral upstream research reference",
+        "instructions": "Use the source-specific focus, gap, and limitation in the specialized-resource index; compare with current UI/IP/REF assets before selecting for an independent destination project.",
+        "limitations": "复杂效果的性能预算与减少动态效果替代; no vendor source, images, binaries, or paid content imported."
+      }
+    },
+    {
+      "id": "REF-055",
+      "type": "reference",
+      "name": "use-gesture — specialized mobile-interaction source",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "mobile-interaction",
+        "external-source",
+        "research-only",
+        "mobile",
+        "creative-tool"
+      ],
+      "source": "https://github.com/pmndrs/use-gesture",
+      "license": "MIT",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "mobile",
+        "creative-tool"
+      ],
+      "aliases": [
+        "触摸手势",
+        "双指缩放",
+        "drag pinch"
+      ],
+      "details": "docs/research/specialized-resources-v030.md",
+      "spec": "registry/specialized-resources-v030.json",
+      "verified": "Reviewed upstream repository metadata and public project/licensing documents on 2026-11-10; research-only, not installed or integrated; recheck exact package/license before code reuse.",
+      "handoff": {
+        "entry": "docs/research/specialized-resources-v030.md",
+        "stack": "technology-neutral upstream research reference",
+        "instructions": "Use the source-specific focus, gap, and limitation in the specialized-resource index; compare with current UI/IP/REF assets before selecting for an independent destination project.",
+        "limitations": "默认分支最新代码提交较久；引入前复核维护/浏览器兼容; no vendor source, images, binaries, or paid content imported."
+      }
+    },
+    {
+      "id": "REF-056",
+      "type": "reference",
+      "name": "react-spring — specialized mobile-interaction source",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "mobile-interaction",
+        "external-source",
+        "research-only",
+        "mobile",
+        "creative-tool"
+      ],
+      "source": "https://github.com/pmndrs/react-spring",
+      "license": "MIT",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "mobile",
+        "creative-tool"
+      ],
+      "aliases": [
+        "回弹动画",
+        "手势动效",
+        "spring animation"
+      ],
+      "details": "docs/research/specialized-resources-v030.md",
+      "spec": "registry/specialized-resources-v030.json",
+      "verified": "Reviewed upstream repository metadata and public project/licensing documents on 2026-11-10; research-only, not installed or integrated; recheck exact package/license before code reuse.",
+      "handoff": {
+        "entry": "docs/research/specialized-resources-v030.md",
+        "stack": "technology-neutral upstream research reference",
+        "instructions": "Use the source-specific focus, gap, and limitation in the specialized-resource index; compare with current UI/IP/REF assets before selecting for an independent destination project.",
+        "limitations": "运动敏感和 reduced-motion、布局抖动仍需单独测试; no vendor source, images, binaries, or paid content imported."
+      }
+    },
+    {
+      "id": "REF-057",
+      "type": "reference",
+      "name": "dnd-kit — specialized mobile-interaction source",
+      "stage": "analyzed",
+      "priority": "P0",
+      "tags": [
+        "mobile-interaction",
+        "external-source",
+        "research-only",
+        "mobile",
+        "workspace"
+      ],
+      "source": "https://github.com/clauderic/dnd-kit",
+      "license": "MIT",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "mobile",
+        "workspace"
+      ],
+      "aliases": [
+        "移动拖放",
+        "排序",
+        "drag and drop"
+      ],
+      "details": "docs/research/specialized-resources-v030.md",
+      "spec": "registry/specialized-resources-v030.json",
+      "verified": "Reviewed upstream repository metadata and public project/licensing documents on 2026-11-10; research-only, not installed or integrated; recheck exact package/license before code reuse.",
+      "handoff": {
+        "entry": "docs/research/specialized-resources-v030.md",
+        "stack": "technology-neutral upstream research reference",
+        "instructions": "Use the source-specific focus, gap, and limitation in the specialized-resource index; compare with current UI/IP/REF assets before selecting for an independent destination project.",
+        "limitations": "拖放不是唯一操作路径；移动长按冲突、滚动和键盘须验证; no vendor source, images, binaries, or paid content imported."
+      }
+    },
+    {
+      "id": "REF-058",
+      "type": "reference",
+      "name": "React Aria / React Spectrum — specialized mobile-interaction source",
+      "stage": "analyzed",
+      "priority": "P0",
+      "tags": [
+        "mobile-interaction",
+        "external-source",
+        "research-only",
+        "mobile",
+        "workspace"
+      ],
+      "source": "https://github.com/adobe/react-spectrum",
+      "license": "Apache-2.0",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "mobile",
+        "workspace"
+      ],
+      "aliases": [
+        "移动弹层",
+        "焦点管理",
+        "React Aria"
+      ],
+      "details": "docs/research/specialized-resources-v030.md",
+      "spec": "registry/specialized-resources-v030.json",
+      "verified": "Reviewed upstream repository metadata and public project/licensing documents on 2026-11-10; research-only, not installed or integrated; recheck exact package/license before code reuse.",
+      "handoff": {
+        "entry": "docs/research/specialized-resources-v030.md",
+        "stack": "technology-neutral upstream research reference",
+        "instructions": "Use the source-specific focus, gap, and limitation in the specialized-resource index; compare with current UI/IP/REF assets before selecting for an independent destination project.",
+        "limitations": "将库级 API 与 Adobe 整套设计外观分开研究; no vendor source, images, binaries, or paid content imported."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",
   "styleRegistry": "registry/styles.json",
-  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee. V0.18 adds research-only visual studies outside registry/styles.json and component archetypes outside registry/components.json; IP-026/IP-028 only include headless pure models, not UI components.",
+  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee. V0.18 adds research-only visual studies outside registry/styles.json and component archetypes outside registry/components.json; IP-026/IP-028 only include headless pure models, not UI components. V0.30 adds 17 research-only external specialization references REF-042..058; these are not actual component exports or dependencies.",
   "reusePolicyVersion": "1.0",
   "reusePolicies": {
     "style-token": {
