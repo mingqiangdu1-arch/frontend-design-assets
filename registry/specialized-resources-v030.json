@@ -1,0 +1,438 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.30.0",
+  "reviewedOn": "2026-11-10",
+  "policy": "Research-only source catalog. External upstream links are not repository dependencies, licenses to redistribute media, automatic React compatibility, or installed components.",
+  "groups": [
+    {
+      "id": "editor-canvas",
+      "title": "专业编辑器与画布",
+      "desc": "富文本、图节点、手绘对象、同步状态；不组装编辑器应用"
+    },
+    {
+      "id": "geo-data",
+      "title": "数据可视化与地理空间",
+      "desc": "GPU 数据层、地图、复杂图形、虚拟化；不做业务图表"
+    },
+    {
+      "id": "3d-spatial",
+      "title": "3D / WebGL 视觉与空间交互",
+      "desc": "渲染技术、辅助构件、后处理；不引入通用 React 包"
+    },
+    {
+      "id": "mobile-interaction",
+      "title": "移动端触摸与原生交互",
+      "desc": "指针/触摸、动效、排序、可访问性；不做移动业务页面"
+    }
+  ],
+  "entries": [
+    {
+      "id": "REF-042",
+      "group": "editor-canvas",
+      "name": "React Flow / xyflow",
+      "source": "https://github.com/xyflow/xyflow",
+      "repository": "xyflow/xyflow",
+      "license": "MIT",
+      "priority": "P0",
+      "reviewedOn": "2026-11-10",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "focus": "节点画布、连线、框选、缩放、视口状态",
+      "gapVsExisting": "UI-058/IP-018 已有轻量节点和空间操作；补复杂图编辑器模型",
+      "limitations": "官方商业使用说明支持 MIT；Pro 内容另核",
+      "applicationContexts": [
+        "workflow",
+        "visual-editor"
+      ],
+      "aliases": [
+        "节点编辑器",
+        "流程设计",
+        "node editor"
+      ]
+    },
+    {
+      "id": "REF-043",
+      "group": "editor-canvas",
+      "name": "Lexical",
+      "source": "https://github.com/meta/lexical",
+      "repository": "meta/lexical",
+      "license": "MIT",
+      "priority": "P0",
+      "reviewedOn": "2026-11-10",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "focus": "文档编辑状态、可扩展节点、键盘选区、撤销历史",
+      "gapVsExisting": "现有表单控件不覆盖复杂富文本/文档语义",
+      "limitations": "需独立研究粘贴、IME、屏幕阅读器及序列化",
+      "applicationContexts": [
+        "document",
+        "knowledge-base"
+      ],
+      "aliases": [
+        "富文本",
+        "文档编辑器",
+        "rich text"
+      ]
+    },
+    {
+      "id": "REF-044",
+      "group": "editor-canvas",
+      "name": "Tiptap core",
+      "source": "https://github.com/ueberdosis/tiptap",
+      "repository": "ueberdosis/tiptap",
+      "license": "MIT (core)",
+      "priority": "P1",
+      "reviewedOn": "2026-11-10",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "focus": "Headless 富文本、扩展体系、协作编辑器 UI 形态",
+      "gapVsExisting": "与 Lexical 做架构对照，而非当作两套视觉库",
+      "limitations": "付费扩展、云服务与模板单独核许可",
+      "applicationContexts": [
+        "document",
+        "knowledge-base"
+      ],
+      "aliases": [
+        "块编辑",
+        "斜杠菜单",
+        "editor extensions"
+      ]
+    },
+    {
+      "id": "REF-045",
+      "group": "editor-canvas",
+      "name": "Yjs",
+      "source": "https://github.com/yjs/yjs",
+      "repository": "yjs/yjs",
+      "license": "MIT (LICENSE)",
+      "priority": "P1",
+      "reviewedOn": "2026-11-10",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "focus": "CRDT、多人协作状态、冲突与离线恢复",
+      "gapVsExisting": "为编辑器/白板补多人状态模型；本身不是 UI",
+      "limitations": "传输服务、持久化和身份权限由宿主提供",
+      "applicationContexts": [
+        "document",
+        "visual-editor"
+      ],
+      "aliases": [
+        "协同编辑",
+        "多人光标",
+        "CRDT"
+      ]
+    },
+    {
+      "id": "REF-046",
+      "group": "editor-canvas",
+      "name": "Excalidraw",
+      "source": "https://github.com/excalidraw/excalidraw",
+      "repository": "excalidraw/excalidraw",
+      "license": "MIT (repository)",
+      "priority": "P1",
+      "reviewedOn": "2026-11-10",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "focus": "手绘白板、自由画布、对象工具、选择和视图操作",
+      "gapVsExisting": "与 React Flow 区分自由形状编辑和节点图编辑",
+      "limitations": "案例、字体、在线服务与嵌入资源须单独审查",
+      "applicationContexts": [
+        "creative-tool",
+        "education"
+      ],
+      "aliases": [
+        "白板",
+        "手绘图",
+        "whiteboard"
+      ]
+    },
+    {
+      "id": "REF-047",
+      "group": "geo-data",
+      "name": "MapLibre GL JS",
+      "source": "https://github.com/maplibre/maplibre-gl-js",
+      "repository": "maplibre/maplibre-gl-js",
+      "license": "BSD-3-Clause (LICENSE.txt)",
+      "priority": "P0",
+      "reviewedOn": "2026-11-10",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "focus": "矢量瓦片、底图、地理交互、移动端地图操作",
+      "gapVsExisting": "补此前无专门地图渲染能力；与 IP-026 可联动",
+      "limitations": "地图瓦片/数据服务、地图归属和 token 成本是独立授权",
+      "applicationContexts": [
+        "map",
+        "geospatial"
+      ],
+      "aliases": [
+        "地图引擎",
+        "空间选择",
+        "vector map"
+      ]
+    },
+    {
+      "id": "REF-048",
+      "group": "geo-data",
+      "name": "deck.gl",
+      "source": "https://github.com/visgl/deck.gl",
+      "repository": "visgl/deck.gl",
+      "license": "MIT",
+      "priority": "P0",
+      "reviewedOn": "2026-11-10",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "focus": "GPU 图层、大规模点/面/轨迹、地图图表联动",
+      "gapVsExisting": "补 Observable Plot（REF-041）之外的 GPU 地理可视化",
+      "limitations": "WebGL2、设备能力、GPU 内存和辅助数据表需验证",
+      "applicationContexts": [
+        "map",
+        "analytics"
+      ],
+      "aliases": [
+        "地理可视化",
+        "热力图",
+        "GPU layers"
+      ]
+    },
+    {
+      "id": "REF-049",
+      "group": "geo-data",
+      "name": "Apache ECharts",
+      "source": "https://github.com/apache/echarts",
+      "repository": "apache/echarts",
+      "license": "Apache-2.0",
+      "priority": "P1",
+      "reviewedOn": "2026-11-10",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "focus": "复杂交互图表、系列、视图切换、无障碍替代思路",
+      "gapVsExisting": "相比 UI-055 简易条图增加完整可视化体系",
+      "limitations": "数据一致性、可访问性、数据量和构建体积需独立验证",
+      "applicationContexts": [
+        "analytics",
+        "dashboard"
+      ],
+      "aliases": [
+        "高级图表",
+        "交互图表",
+        "echarts"
+      ]
+    },
+    {
+      "id": "REF-050",
+      "group": "geo-data",
+      "name": "TanStack Virtual",
+      "source": "https://github.com/TanStack/virtual",
+      "repository": "TanStack/virtual",
+      "license": "MIT",
+      "priority": "P0",
+      "reviewedOn": "2026-11-10",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "focus": "大规模列表/网格虚拟化、动态尺寸、滚动定位",
+      "gapVsExisting": "补 UI-033/UI-052/UI-056 的大数据行为，不是新视觉 UI",
+      "limitations": "虚拟化影响焦点、屏幕阅读器、跳转定位和行身份",
+      "applicationContexts": [
+        "data-grid",
+        "workspace"
+      ],
+      "aliases": [
+        "虚拟滚动",
+        "海量表格",
+        "virtual list"
+      ]
+    },
+    {
+      "id": "REF-051",
+      "group": "3d-spatial",
+      "name": "three.js",
+      "source": "https://github.com/mrdoob/three.js",
+      "repository": "mrdoob/three.js",
+      "license": "MIT",
+      "priority": "P1",
+      "reviewedOn": "2026-11-10",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "focus": "底层 WebGL 场景、几何、材质、光照和渲染循环",
+      "gapVsExisting": "是三维视觉技术基础，不等于 React 组件包",
+      "limitations": "浏览器 GPU、设备发热、资源尺寸、2D fallback",
+      "applicationContexts": [
+        "creative-site",
+        "product-visual"
+      ],
+      "aliases": [
+        "三维网页",
+        "WebGL",
+        "threejs"
+      ]
+    },
+    {
+      "id": "REF-052",
+      "group": "3d-spatial",
+      "name": "React Three Fiber",
+      "source": "https://github.com/pmndrs/react-three-fiber",
+      "repository": "pmndrs/react-three-fiber",
+      "license": "MIT",
+      "priority": "P0",
+      "reviewedOn": "2026-11-10",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "focus": "React 声明式场景、交互对象、相机、事件与帧循环",
+      "gapVsExisting": "与 existing CSS-only 风格区分；可参考沉浸式交互结构",
+      "limitations": "React 19 对应 v9；v10 截至核查时为 alpha，避免默认采用",
+      "applicationContexts": [
+        "creative-site",
+        "product-visual"
+      ],
+      "aliases": [
+        "React 3D",
+        "R3F",
+        "空间交互"
+      ]
+    },
+    {
+      "id": "REF-053",
+      "group": "3d-spatial",
+      "name": "Drei",
+      "source": "https://github.com/pmndrs/drei",
+      "repository": "pmndrs/drei",
+      "license": "MIT",
+      "priority": "P1",
+      "reviewedOn": "2026-11-10",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "focus": "相机控制、常用 3D helpers、场景复用形态",
+      "gapVsExisting": "与 R3F 互补，非独立底层渲染器",
+      "limitations": "helper 的性能/可访问性需逐个核查",
+      "applicationContexts": [
+        "creative-site",
+        "product-visual"
+      ],
+      "aliases": [
+        "3D 工具",
+        "场景辅助",
+        "drei"
+      ]
+    },
+    {
+      "id": "REF-054",
+      "group": "3d-spatial",
+      "name": "postprocessing",
+      "source": "https://github.com/pmndrs/postprocessing",
+      "repository": "pmndrs/postprocessing",
+      "license": "Zlib",
+      "priority": "P1",
+      "reviewedOn": "2026-11-10",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "focus": "景深、Bloom、描边、像素化等 GPU 后处理",
+      "gapVsExisting": "补纯 CSS 动效缺少的着色器/后处理语言",
+      "limitations": "复杂效果的性能预算与减少动态效果替代",
+      "applicationContexts": [
+        "creative-site",
+        "visual-experiment"
+      ],
+      "aliases": [
+        "后期特效",
+        "屏幕空间效果",
+        "post fx"
+      ]
+    },
+    {
+      "id": "REF-055",
+      "group": "mobile-interaction",
+      "name": "use-gesture",
+      "source": "https://github.com/pmndrs/use-gesture",
+      "repository": "pmndrs/use-gesture",
+      "license": "MIT",
+      "priority": "P1",
+      "reviewedOn": "2026-11-10",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "focus": "触摸拖动、捏合、惯性与手势取消状态",
+      "gapVsExisting": "补 IP-018、拖拽和滑杆之外的真实多指事件契约",
+      "limitations": "默认分支最新代码提交较久；引入前复核维护/浏览器兼容",
+      "applicationContexts": [
+        "mobile",
+        "creative-tool"
+      ],
+      "aliases": [
+        "触摸手势",
+        "双指缩放",
+        "drag pinch"
+      ]
+    },
+    {
+      "id": "REF-056",
+      "group": "mobile-interaction",
+      "name": "react-spring",
+      "source": "https://github.com/pmndrs/react-spring",
+      "repository": "pmndrs/react-spring",
+      "license": "MIT",
+      "priority": "P1",
+      "reviewedOn": "2026-11-10",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "focus": "弹簧物理、手势响应、可中断动画、反馈节奏",
+      "gapVsExisting": "与现有 MOT presets 的轻量时长方案不同",
+      "limitations": "运动敏感和 reduced-motion、布局抖动仍需单独测试",
+      "applicationContexts": [
+        "mobile",
+        "creative-tool"
+      ],
+      "aliases": [
+        "回弹动画",
+        "手势动效",
+        "spring animation"
+      ]
+    },
+    {
+      "id": "REF-057",
+      "group": "mobile-interaction",
+      "name": "dnd-kit",
+      "source": "https://github.com/clauderic/dnd-kit",
+      "repository": "clauderic/dnd-kit",
+      "license": "MIT",
+      "priority": "P0",
+      "reviewedOn": "2026-11-10",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "focus": "拖放传感器、碰撞处理、列表排序、跨容器转移",
+      "gapVsExisting": "对照 UI-057/IP-021 的基础拖放与键盘替代",
+      "limitations": "拖放不是唯一操作路径；移动长按冲突、滚动和键盘须验证",
+      "applicationContexts": [
+        "mobile",
+        "workspace"
+      ],
+      "aliases": [
+        "移动拖放",
+        "排序",
+        "drag and drop"
+      ]
+    },
+    {
+      "id": "REF-058",
+      "group": "mobile-interaction",
+      "name": "React Aria / React Spectrum",
+      "source": "https://github.com/adobe/react-spectrum",
+      "repository": "adobe/react-spectrum",
+      "license": "Apache-2.0",
+      "priority": "P0",
+      "reviewedOn": "2026-11-10",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "focus": "触摸友好的 overlay、sheet 类模式、焦点管理与可访问性",
+      "gapVsExisting": "补 Dialog/Popover 等组件在移动端的语义与焦点契约",
+      "limitations": "将库级 API 与 Adobe 整套设计外观分开研究",
+      "applicationContexts": [
+        "mobile",
+        "workspace"
+      ],
+      "aliases": [
+        "移动弹层",
+        "焦点管理",
+        "React Aria"
+      ]
+    }
+  ]
+}
