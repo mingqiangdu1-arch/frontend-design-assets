@@ -7381,11 +7381,665 @@
         "instructions": "Use the source-specific focus, gap, and limitation in the specialized-resource index; compare with current UI/IP/REF assets before selecting for an independent destination project.",
         "limitations": "将库级 API 与 Adobe 整套设计外观分开研究; no vendor source, images, binaries, or paid content imported."
       }
+    },
+    {
+      "id": "REF-059",
+      "type": "reference",
+      "name": "Clearcoat layered surface / 清漆涂层表面",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "material-3d",
+        "original-study",
+        "research-only",
+        "涂层材质",
+        "清漆金属",
+        "clearcoat",
+        "layered material"
+      ],
+      "aliases": [
+        "涂层材质",
+        "清漆金属",
+        "clearcoat",
+        "layered material"
+      ],
+      "source": "https://threejs.org/docs/pages/MeshPhysicalMaterial.html",
+      "license": "Original research prose; upstream documents and code keep their own copyright and license",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "product-visual",
+        "creative-site"
+      ],
+      "dependencies": [
+        "REF-051",
+        "REF-052"
+      ],
+      "details": "docs/research/specialized-patterns-v031.md",
+      "spec": "registry/specialized-patterns-v031.json",
+      "verified": "Grounded in public upstream documentation reviewed 2026-11-10; design-contract-only. No runtime implementation, browser device check, measurements or production validation.",
+      "handoff": {
+        "entry": "docs/research/specialized-patterns-v031.md",
+        "stack": "technology- and theme-neutral research contract",
+        "instructions": "Find REF-059 in registry/specialized-patterns-v031.json. Inspect stateContract, fallback, risks and relatedAssets; copy no upstream source and implement only in the independent target application.",
+        "limitations": "Not a downloadable component, visual theme, model/texture asset, working interaction, or accessibility/performance certification."
+      }
+    },
+    {
+      "id": "REF-060",
+      "type": "reference",
+      "name": "Transmissive volume / 透射玻璃与折射实体",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "material-3d",
+        "original-study",
+        "research-only",
+        "透明玻璃",
+        "折射",
+        "transmission",
+        "refraction"
+      ],
+      "aliases": [
+        "透明玻璃",
+        "折射",
+        "transmission",
+        "refraction"
+      ],
+      "source": "https://threejs.org/docs/pages/MeshPhysicalMaterial.html",
+      "license": "Original research prose; upstream documents and code keep their own copyright and license",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "product-visual",
+        "digital-exhibition"
+      ],
+      "dependencies": [
+        "REF-051",
+        "REF-052"
+      ],
+      "details": "docs/research/specialized-patterns-v031.md",
+      "spec": "registry/specialized-patterns-v031.json",
+      "verified": "Grounded in public upstream documentation reviewed 2026-11-10; design-contract-only. No runtime implementation, browser device check, measurements or production validation.",
+      "handoff": {
+        "entry": "docs/research/specialized-patterns-v031.md",
+        "stack": "technology- and theme-neutral research contract",
+        "instructions": "Find REF-060 in registry/specialized-patterns-v031.json. Inspect stateContract, fallback, risks and relatedAssets; copy no upstream source and implement only in the independent target application.",
+        "limitations": "Not a downloadable component, visual theme, model/texture asset, working interaction, or accessibility/performance certification."
+      }
+    },
+    {
+      "id": "REF-061",
+      "type": "reference",
+      "name": "Iridescent foil / 虹彩薄膜",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "material-3d",
+        "original-study",
+        "research-only",
+        "虹彩",
+        "全息材质",
+        "iridescence",
+        "holographic foil"
+      ],
+      "aliases": [
+        "虹彩",
+        "全息材质",
+        "iridescence",
+        "holographic foil"
+      ],
+      "source": "https://threejs.org/docs/pages/MeshPhysicalMaterial.html",
+      "license": "Original research prose; upstream documents and code keep their own copyright and license",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-site",
+        "product-visual"
+      ],
+      "dependencies": [
+        "REF-051",
+        "REF-052"
+      ],
+      "details": "docs/research/specialized-patterns-v031.md",
+      "spec": "registry/specialized-patterns-v031.json",
+      "verified": "Grounded in public upstream documentation reviewed 2026-11-10; design-contract-only. No runtime implementation, browser device check, measurements or production validation.",
+      "handoff": {
+        "entry": "docs/research/specialized-patterns-v031.md",
+        "stack": "technology- and theme-neutral research contract",
+        "instructions": "Find REF-061 in registry/specialized-patterns-v031.json. Inspect stateContract, fallback, risks and relatedAssets; copy no upstream source and implement only in the independent target application.",
+        "limitations": "Not a downloadable component, visual theme, model/texture asset, working interaction, or accessibility/performance certification."
+      }
+    },
+    {
+      "id": "REF-062",
+      "type": "reference",
+      "name": "Matte clay volume / 哑光陶土体积",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "material-3d",
+        "original-study",
+        "research-only",
+        "哑光陶土",
+        "粘土材质",
+        "matte clay",
+        "soft 3d"
+      ],
+      "aliases": [
+        "哑光陶土",
+        "粘土材质",
+        "matte clay",
+        "soft 3d"
+      ],
+      "source": "https://threejs.org/docs/pages/MeshStandardMaterial.html",
+      "license": "Original research prose; upstream documents and code keep their own copyright and license",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-site",
+        "editorial"
+      ],
+      "dependencies": [
+        "REF-051",
+        "REF-052"
+      ],
+      "details": "docs/research/specialized-patterns-v031.md",
+      "spec": "registry/specialized-patterns-v031.json",
+      "verified": "Grounded in public upstream documentation reviewed 2026-11-10; design-contract-only. No runtime implementation, browser device check, measurements or production validation.",
+      "handoff": {
+        "entry": "docs/research/specialized-patterns-v031.md",
+        "stack": "technology- and theme-neutral research contract",
+        "instructions": "Find REF-062 in registry/specialized-patterns-v031.json. Inspect stateContract, fallback, risks and relatedAssets; copy no upstream source and implement only in the independent target application.",
+        "limitations": "Not a downloadable component, visual theme, model/texture asset, working interaction, or accessibility/performance certification."
+      }
+    },
+    {
+      "id": "REF-063",
+      "type": "reference",
+      "name": "Selective emissive halo / 局部发光与后处理",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "material-3d",
+        "original-study",
+        "research-only",
+        "Bloom",
+        "局部光晕",
+        "轮廓光",
+        "postprocessing"
+      ],
+      "aliases": [
+        "Bloom",
+        "局部光晕",
+        "轮廓光",
+        "postprocessing"
+      ],
+      "source": "https://github.com/pmndrs/postprocessing",
+      "license": "Original research prose; upstream documents and code keep their own copyright and license",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "digital-exhibition",
+        "creative-site"
+      ],
+      "dependencies": [
+        "REF-051",
+        "REF-054"
+      ],
+      "details": "docs/research/specialized-patterns-v031.md",
+      "spec": "registry/specialized-patterns-v031.json",
+      "verified": "Grounded in public upstream documentation reviewed 2026-11-10; design-contract-only. No runtime implementation, browser device check, measurements or production validation.",
+      "handoff": {
+        "entry": "docs/research/specialized-patterns-v031.md",
+        "stack": "technology- and theme-neutral research contract",
+        "instructions": "Find REF-063 in registry/specialized-patterns-v031.json. Inspect stateContract, fallback, risks and relatedAssets; copy no upstream source and implement only in the independent target application.",
+        "limitations": "Not a downloadable component, visual theme, model/texture asset, working interaction, or accessibility/performance certification."
+      }
+    },
+    {
+      "id": "REF-064",
+      "type": "reference",
+      "name": "Linked chart, filter and source table / 图表与数据表联动",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "data-visual",
+        "original-study",
+        "research-only",
+        "联动刷选",
+        "图表联动",
+        "linked brushing",
+        "cross-filter"
+      ],
+      "aliases": [
+        "联动刷选",
+        "图表联动",
+        "linked brushing",
+        "cross-filter"
+      ],
+      "source": "https://deck.gl/docs/developer-guide/interactivity",
+      "license": "Original research prose; upstream documents and code keep their own copyright and license",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "analytics",
+        "research"
+      ],
+      "dependencies": [
+        "REF-041",
+        "REF-049",
+        "IP-026",
+        "UI-033"
+      ],
+      "details": "docs/research/specialized-patterns-v031.md",
+      "spec": "registry/specialized-patterns-v031.json",
+      "verified": "Grounded in public upstream documentation reviewed 2026-11-10; design-contract-only. No runtime implementation, browser device check, measurements or production validation.",
+      "handoff": {
+        "entry": "docs/research/specialized-patterns-v031.md",
+        "stack": "technology- and theme-neutral research contract",
+        "instructions": "Find REF-064 in registry/specialized-patterns-v031.json. Inspect stateContract, fallback, risks and relatedAssets; copy no upstream source and implement only in the independent target application.",
+        "limitations": "Not a downloadable component, visual theme, model/texture asset, working interaction, or accessibility/performance certification."
+      }
+    },
+    {
+      "id": "REF-065",
+      "type": "reference",
+      "name": "Density aggregation with drill-through / 密度聚合与明细追溯",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "data-visual",
+        "original-study",
+        "research-only",
+        "六边形热力图",
+        "密度聚合",
+        "hexbin",
+        "spatial aggregation"
+      ],
+      "aliases": [
+        "六边形热力图",
+        "密度聚合",
+        "hexbin",
+        "spatial aggregation"
+      ],
+      "source": "https://deck.gl/docs/api-reference/aggregation-layers/overview",
+      "license": "Original research prose; upstream documents and code keep their own copyright and license",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "geospatial",
+        "analytics"
+      ],
+      "dependencies": [
+        "REF-047",
+        "REF-048"
+      ],
+      "details": "docs/research/specialized-patterns-v031.md",
+      "spec": "registry/specialized-patterns-v031.json",
+      "verified": "Grounded in public upstream documentation reviewed 2026-11-10; design-contract-only. No runtime implementation, browser device check, measurements or production validation.",
+      "handoff": {
+        "entry": "docs/research/specialized-patterns-v031.md",
+        "stack": "technology- and theme-neutral research contract",
+        "instructions": "Find REF-065 in registry/specialized-patterns-v031.json. Inspect stateContract, fallback, risks and relatedAssets; copy no upstream source and implement only in the independent target application.",
+        "limitations": "Not a downloadable component, visual theme, model/texture asset, working interaction, or accessibility/performance certification."
+      }
+    },
+    {
+      "id": "REF-066",
+      "type": "reference",
+      "name": "Uncertainty and provenance annotation / 不确定性与溯源注释",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "data-visual",
+        "original-study",
+        "research-only",
+        "证据标注",
+        "数据来源",
+        "uncertainty",
+        "data provenance"
+      ],
+      "aliases": [
+        "证据标注",
+        "数据来源",
+        "uncertainty",
+        "data provenance"
+      ],
+      "source": "https://apache.github.io/echarts-handbook/en/best-practices/aria/",
+      "license": "Original research prose; upstream documents and code keep their own copyright and license",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "research",
+        "analytics"
+      ],
+      "dependencies": [
+        "REF-041",
+        "REF-049",
+        "IP-027"
+      ],
+      "details": "docs/research/specialized-patterns-v031.md",
+      "spec": "registry/specialized-patterns-v031.json",
+      "verified": "Grounded in public upstream documentation reviewed 2026-11-10; design-contract-only. No runtime implementation, browser device check, measurements or production validation.",
+      "handoff": {
+        "entry": "docs/research/specialized-patterns-v031.md",
+        "stack": "technology- and theme-neutral research contract",
+        "instructions": "Find REF-066 in registry/specialized-patterns-v031.json. Inspect stateContract, fallback, risks and relatedAssets; copy no upstream source and implement only in the independent target application.",
+        "limitations": "Not a downloadable component, visual theme, model/texture asset, working interaction, or accessibility/performance certification."
+      }
+    },
+    {
+      "id": "REF-067",
+      "type": "reference",
+      "name": "Map layer legend and value semantics / 地图图层图例与数值语义",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "data-visual",
+        "original-study",
+        "research-only",
+        "地图图例",
+        "地理图层",
+        "map layer legend",
+        "choropleth"
+      ],
+      "aliases": [
+        "地图图例",
+        "地理图层",
+        "map layer legend",
+        "choropleth"
+      ],
+      "source": "https://deck.gl/docs/api-reference/layers",
+      "license": "Original research prose; upstream documents and code keep their own copyright and license",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "geospatial",
+        "digital-exhibition"
+      ],
+      "dependencies": [
+        "REF-047",
+        "REF-048",
+        "IP-026"
+      ],
+      "details": "docs/research/specialized-patterns-v031.md",
+      "spec": "registry/specialized-patterns-v031.json",
+      "verified": "Grounded in public upstream documentation reviewed 2026-11-10; design-contract-only. No runtime implementation, browser device check, measurements or production validation.",
+      "handoff": {
+        "entry": "docs/research/specialized-patterns-v031.md",
+        "stack": "technology- and theme-neutral research contract",
+        "instructions": "Find REF-067 in registry/specialized-patterns-v031.json. Inspect stateContract, fallback, risks and relatedAssets; copy no upstream source and implement only in the independent target application.",
+        "limitations": "Not a downloadable component, visual theme, model/texture asset, working interaction, or accessibility/performance certification."
+      }
+    },
+    {
+      "id": "REF-068",
+      "type": "reference",
+      "name": "Virtualized dense record navigation / 虚拟化数据定位",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "data-visual",
+        "original-study",
+        "research-only",
+        "虚拟表格",
+        "长列表导航",
+        "virtual table",
+        "scroll to item"
+      ],
+      "aliases": [
+        "虚拟表格",
+        "长列表导航",
+        "virtual table",
+        "scroll to item"
+      ],
+      "source": "https://tanstack.com/virtual/latest/docs/introduction",
+      "license": "Original research prose; upstream documents and code keep their own copyright and license",
+      "reuseKind": "design-reference",
+      "styleIds": [],
+      "applicationContexts": [
+        "workspace",
+        "data-grid"
+      ],
+      "dependencies": [
+        "REF-050",
+        "UI-033",
+        "UI-056"
+      ],
+      "details": "docs/research/specialized-patterns-v031.md",
+      "spec": "registry/specialized-patterns-v031.json",
+      "verified": "Grounded in public upstream documentation reviewed 2026-11-10; design-contract-only. No runtime implementation, browser device check, measurements or production validation.",
+      "handoff": {
+        "entry": "docs/research/specialized-patterns-v031.md",
+        "stack": "technology- and theme-neutral research contract",
+        "instructions": "Find REF-068 in registry/specialized-patterns-v031.json. Inspect stateContract, fallback, risks and relatedAssets; copy no upstream source and implement only in the independent target application.",
+        "limitations": "Not a downloadable component, visual theme, model/texture asset, working interaction, or accessibility/performance certification."
+      }
+    },
+    {
+      "id": "IP-031",
+      "type": "interaction",
+      "name": "Bottom sheet and nested scroll arbitration / 底部抽屉与嵌套滚动协调",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "mobile-touch",
+        "original-study",
+        "research-only",
+        "底部抽屉",
+        "滚动穿透",
+        "bottom sheet",
+        "nested scroll"
+      ],
+      "aliases": [
+        "底部抽屉",
+        "滚动穿透",
+        "bottom sheet",
+        "nested scroll"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/overscroll-behavior",
+      "license": "Original research prose; upstream documents and code keep their own copyright and license",
+      "reuseKind": "behavior-pattern",
+      "styleIds": [],
+      "applicationContexts": [
+        "mobile",
+        "consumer-mobile"
+      ],
+      "dependencies": [
+        "REF-058",
+        "REF-055"
+      ],
+      "details": "docs/research/specialized-patterns-v031.md",
+      "spec": "registry/specialized-patterns-v031.json",
+      "verified": "Grounded in public upstream documentation reviewed 2026-11-10; design-contract-only. No runtime implementation, browser device check, measurements or production validation.",
+      "handoff": {
+        "entry": "docs/research/specialized-patterns-v031.md",
+        "stack": "technology- and theme-neutral research contract",
+        "instructions": "Find IP-031 in registry/specialized-patterns-v031.json. Inspect stateContract, fallback, risks and relatedAssets; copy no upstream source and implement only in the independent target application.",
+        "limitations": "Not a downloadable component, visual theme, model/texture asset, working interaction, or accessibility/performance certification."
+      }
+    },
+    {
+      "id": "IP-032",
+      "type": "interaction",
+      "name": "Pinch-pan gesture coordination / 双指缩放与平移协调",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "mobile-touch",
+        "original-study",
+        "research-only",
+        "双指缩放",
+        "手势冲突",
+        "pinch zoom",
+        "gesture arbitration"
+      ],
+      "aliases": [
+        "双指缩放",
+        "手势冲突",
+        "pinch zoom",
+        "gesture arbitration"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events",
+      "license": "Original research prose; upstream documents and code keep their own copyright and license",
+      "reuseKind": "behavior-pattern",
+      "styleIds": [],
+      "applicationContexts": [
+        "mobile",
+        "visual-editor"
+      ],
+      "dependencies": [
+        "REF-055",
+        "REF-047",
+        "IP-018"
+      ],
+      "details": "docs/research/specialized-patterns-v031.md",
+      "spec": "registry/specialized-patterns-v031.json",
+      "verified": "Grounded in public upstream documentation reviewed 2026-11-10; design-contract-only. No runtime implementation, browser device check, measurements or production validation.",
+      "handoff": {
+        "entry": "docs/research/specialized-patterns-v031.md",
+        "stack": "technology- and theme-neutral research contract",
+        "instructions": "Find IP-032 in registry/specialized-patterns-v031.json. Inspect stateContract, fallback, risks and relatedAssets; copy no upstream source and implement only in the independent target application.",
+        "limitations": "Not a downloadable component, visual theme, model/texture asset, working interaction, or accessibility/performance certification."
+      }
+    },
+    {
+      "id": "IP-033",
+      "type": "interaction",
+      "name": "Long-press reorder with keyboard parity / 长按排序和键盘等效",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "mobile-touch",
+        "original-study",
+        "research-only",
+        "长按拖拽",
+        "触摸排序",
+        "long-press reorder",
+        "accessible drag"
+      ],
+      "aliases": [
+        "长按拖拽",
+        "触摸排序",
+        "long-press reorder",
+        "accessible drag"
+      ],
+      "source": "https://react-aria.adobe.com/useDrag",
+      "license": "Original research prose; upstream documents and code keep their own copyright and license",
+      "reuseKind": "behavior-pattern",
+      "styleIds": [],
+      "applicationContexts": [
+        "mobile",
+        "workspace"
+      ],
+      "dependencies": [
+        "REF-057",
+        "REF-058",
+        "IP-021",
+        "UI-057"
+      ],
+      "details": "docs/research/specialized-patterns-v031.md",
+      "spec": "registry/specialized-patterns-v031.json",
+      "verified": "Grounded in public upstream documentation reviewed 2026-11-10; design-contract-only. No runtime implementation, browser device check, measurements or production validation.",
+      "handoff": {
+        "entry": "docs/research/specialized-patterns-v031.md",
+        "stack": "technology- and theme-neutral research contract",
+        "instructions": "Find IP-033 in registry/specialized-patterns-v031.json. Inspect stateContract, fallback, risks and relatedAssets; copy no upstream source and implement only in the independent target application.",
+        "limitations": "Not a downloadable component, visual theme, model/texture asset, working interaction, or accessibility/performance certification."
+      }
+    },
+    {
+      "id": "IP-034",
+      "type": "interaction",
+      "name": "Swipe-to-reveal with guarded commit / 滑动操作与可撤销提交",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "mobile-touch",
+        "original-study",
+        "research-only",
+        "侧滑操作",
+        "滑动撤销",
+        "swipe action",
+        "undo"
+      ],
+      "aliases": [
+        "侧滑操作",
+        "滑动撤销",
+        "swipe action",
+        "undo"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/API/Element/pointercancel_event",
+      "license": "Original research prose; upstream documents and code keep their own copyright and license",
+      "reuseKind": "behavior-pattern",
+      "styleIds": [],
+      "applicationContexts": [
+        "mobile",
+        "consumer-mobile"
+      ],
+      "dependencies": [
+        "REF-055",
+        "REF-058"
+      ],
+      "details": "docs/research/specialized-patterns-v031.md",
+      "spec": "registry/specialized-patterns-v031.json",
+      "verified": "Grounded in public upstream documentation reviewed 2026-11-10; design-contract-only. No runtime implementation, browser device check, measurements or production validation.",
+      "handoff": {
+        "entry": "docs/research/specialized-patterns-v031.md",
+        "stack": "technology- and theme-neutral research contract",
+        "instructions": "Find IP-034 in registry/specialized-patterns-v031.json. Inspect stateContract, fallback, risks and relatedAssets; copy no upstream source and implement only in the independent target application.",
+        "limitations": "Not a downloadable component, visual theme, model/texture asset, working interaction, or accessibility/performance certification."
+      }
+    },
+    {
+      "id": "IP-035",
+      "type": "interaction",
+      "name": "Bounded tactile response / 有界物理反馈",
+      "stage": "analyzed",
+      "priority": "P1",
+      "tags": [
+        "mobile-touch",
+        "original-study",
+        "research-only",
+        "弹簧回弹",
+        "触觉动效",
+        "spring feedback",
+        "bounded motion"
+      ],
+      "aliases": [
+        "弹簧回弹",
+        "触觉动效",
+        "spring feedback",
+        "bounded motion"
+      ],
+      "source": "https://www.react-spring.dev/docs",
+      "license": "Original research prose; upstream documents and code keep their own copyright and license",
+      "reuseKind": "behavior-pattern",
+      "styleIds": [],
+      "applicationContexts": [
+        "mobile",
+        "creative-tool"
+      ],
+      "dependencies": [
+        "REF-056",
+        "REF-058",
+        "IP-030"
+      ],
+      "details": "docs/research/specialized-patterns-v031.md",
+      "spec": "registry/specialized-patterns-v031.json",
+      "verified": "Grounded in public upstream documentation reviewed 2026-11-10; design-contract-only. No runtime implementation, browser device check, measurements or production validation.",
+      "handoff": {
+        "entry": "docs/research/specialized-patterns-v031.md",
+        "stack": "technology- and theme-neutral research contract",
+        "instructions": "Find IP-035 in registry/specialized-patterns-v031.json. Inspect stateContract, fallback, risks and relatedAssets; copy no upstream source and implement only in the independent target application.",
+        "limitations": "Not a downloadable component, visual theme, model/texture asset, working interaction, or accessibility/performance certification."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",
   "styleRegistry": "registry/styles.json",
-  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee. V0.18 adds research-only visual studies outside registry/styles.json and component archetypes outside registry/components.json; IP-026/IP-028 only include headless pure models, not UI components. V0.30 adds 17 research-only external specialization references REF-042..058; these are not actual component exports or dependencies.",
+  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee. V0.18 adds research-only visual studies outside registry/styles.json and component archetypes outside registry/components.json; IP-026/IP-028 only include headless pure models, not UI components. V0.30 adds 17 research-only external specialization references REF-042..058; these are not actual component exports or dependencies. V0.31 adds 15 original design studies REF-059..068 and IP-031..035 as analyzed/research-only; not deployed components, runtime dependencies, or new styles.",
   "reusePolicyVersion": "1.0",
   "reusePolicies": {
     "style-token": {
