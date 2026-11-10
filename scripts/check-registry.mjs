@@ -47,6 +47,7 @@ for (const asset of registry.assets) {
   for (const id of asset.styleIds) if (!styleIds.has(id)) fail(asset.id + " has unknown style: " + id);
   if (asset.aliases && (!Array.isArray(asset.aliases) || asset.aliases.some(a=>typeof a!=="string"||!a.trim()))) fail(asset.id+" invalid search aliases");
   if (asset.handoff) {
+    if (asset.handoff.mode !== undefined && asset.handoff.mode !== "research-only") fail(asset.id+" invalid restrictive handoff mode");
     if (typeof asset.handoff.entry!=="string" || !asset.handoff.entry.trim()) fail(asset.id+" handoff entry missing");
     assertFile(asset.handoff.entry, asset.id + ".handoff.entry");
     for (const key of ["stack","instructions","limitations"]) {
