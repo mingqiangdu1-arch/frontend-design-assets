@@ -21,6 +21,10 @@
 4. Inspect the selected item's **source + specification + demo**, as appropriate. Read `styleIds`, `stage`, `reuseKind`, `dependencies` and `verified` before suggesting reuse. Prefer explicit IDs and paths over guesses.
 5. Handoff a **small shortlist**: IDs, why each fits, exact source paths, compatible themes, required adaptation, validation gaps and alternative options. Do not pretend the selection tool generated or modified a target app.
 
+### V0.32: editorial, raw visual resources, isolated CSS atoms
+
+For rich-text/collaboration, use `registry/creative-primitives-v032.json` (`IP-036..041`) as **interaction design contracts** only, not as an installed Lexical/Tiptap/Yjs editor. For typography, CC0 textures, and visual effects (`REF-069..080`), use their **per-family/per-item provenance and anti-pattern metadata**; do not copy external fonts or images into this repository. Only selected **original, opt-in** CSS classes in `styles/primitives/v032/creative-atoms.css` are source-level references, and they have not been certified on target apps or hardware. No new default theme, React public export, or page assembly is implied.
+
 ## 2. Know exactly what can be reused
 
 | Kind / stage | What it provides | What it does **not** prove |
