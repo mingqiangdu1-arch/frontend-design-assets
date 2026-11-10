@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-10 · V0.30 specialized upstream source index (research-only)
+
+- Curated 17 newly checked external source projects as `REF-042..058` in four groups: editor/canvas (5), geo/data (4), 3D/WebGL (4), mobile interactions (4). Added [structured catalog](registry/specialized-resources-v030.json) and [comparison note](docs/research/specialized-resources-v030.md), including code-license boundaries, current-project gap, context and Chinese/English lookup aliases.
+- Registered 17 `analyzed / design-reference` assets in `registry/assets.json` (189 → **206**) without changing existing ID semantics, 14 themes, 48 actual React exports, 7 templates or 4 explicit React-compatible themes.
+- Extended Agent navigation in `CATALOG.md` and the registry/README entrypoint. External source links do **not** vendor code, add dependencies, redistribute media, instantiate a component, assemble pages or certify production integration.
+- V0.30 specifically flags upstream license boundaries (e.g. Tiptap core vs paid services, map-tile/data providers, 3D GPU fallback, gesture accessibility). Any future implementation must verify package versions, licenses and behavior independently.
+
 ## 2026-11-06 · V0.29 four independent advanced interaction assets
 
 - Promoted four previously **analyzed-only** assets to isolated **prototype** references while preserving their stable IDs: **IP-025** keyboard-accessible row-first treegrid with collapse-safe focus/editing, **IP-027** semantic source annotation pins with orphan index and bounded detail overlay, **IP-029** reversible branching narrative with local cycle guard, and **IP-030** precision rotary control with native numeric/range/keyboard parity and pointer-cancel rollback.
