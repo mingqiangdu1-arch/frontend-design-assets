@@ -162,7 +162,7 @@
 - **交互与状态**：press→respond→settle/cancel→rest；重复输入不累积无意义动画。
 - **无障碍 / 低性能替代**：瞬时状态更新、静态颜色/文字反馈；系统 reduced-motion 优先。
 - **风险与排除条件**：无限弹跳、视觉噪声、低帧率下迟滞、滑动取消未回滚。
-- **关联已有资产**：`REF-056`、`REF-058`、`IP-030`；**官方来源**：[阅读原始参考](https://r3f.docs.pmnd.rs/advanced/scaling-performance)。
+- **关联已有资产**：`REF-056`、`REF-058`、`IP-030`；**官方来源**：[阅读原始参考](https://www.react-spring.dev/docs)。
 
 ## 防止错误复用的通用规则
 
