@@ -31,9 +31,16 @@
 | 知识库、编辑、文档阅读、knowledge base | `TPL-002`、`TPL-007`、`styles/editorial-warm/` | `TPL-002` 是独立静态示例；`TPL-007` 是 React 示例 |
 | 层级树形网格、来源标注、分支叙事、精密旋钮 / treegrid, annotation, story, rotary | `IP-025`、`IP-027`、`IP-029`、`IP-030`、`playground/advanced-interactions-v4/README.md` | 四个原生 JS 状态模型与独立可运行交互素材；不新增 React 公共导出，不接后端 |
 | 高级交互、drag/drop、时间线、scroll story | `docs/interactions/`、`IP-021`–`IP-024`、`playground/advanced-interactions-v2/`、`-v3/` | 复用交互契约，不复制演示页的固定外观 |
+| 专业画布、富文本、地图、WebGL、触摸手势 / advanced editor, geospatial, 3D, mobile gesture | `REF-042`–`REF-058`、`registry/specialized-resources-v030.json`、`docs/research/specialized-resources-v030.md` | 17 条外部来源研究档案，按能力缺口和许可证检索；**非已安装依赖或现成 React 导出** |
 | 去 AI 模板化、页面设计审查、unslop、hallmark | `docs/assembly/design-review-workflows.md`、`docs/research/unslop-hallmark.md` | 外部 Skill 为研究/可选工具，未作为本仓库依赖自动安装 |
 
 上表的 ID 是**检索起点**而非默认推荐；只有打开注册条目并核对情境与成熟度，才能决定是否采用。
+
+## 专业资源检索（V0.30，只有研究来源）
+
+- 需要无限画布、文档编辑或协作时，先查 `REF-042..046`（编辑器和画布）；地图、复杂图表、大型数据列表查 `REF-047..050`；3D 和 WebGL 查 `REF-051..054`；移动端手势、触摸动效与可访问拖拽查 `REF-055..058`。
+- 对每项按 `registry/specialized-resources-v030.json` 的 `gapVsExisting`、`focus`、`limitations`、`license` 和 `applicationContexts` 评估；若原仓库已有行为参考，优先返回两者差异，不自动替换或拷贝第三方库。
+- 以上均属于 **analyzed / research-only**，不能当作组件包公共导出、已兼容 React 主题、获许可的第三方素材或通过实测的集成成果。
 
 ## 无需运行工具的 GitHub-only 检索
 
