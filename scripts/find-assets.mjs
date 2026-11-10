@@ -31,7 +31,8 @@ export function buildHandoff(asset,policies={}){
  return {
   mode,
   entry:asset.handoff?.entry||asset.path||asset.spec||asset.details||null,
-  relatedFiles:unique([asset.path,asset.spec,asset.details,asset.demo].filter(Boolean)),
+  relatedFiles:unique([asset.path,asset.spec,asset.details,asset.visualSpecimen,asset.demo].filter(Boolean)),
+  visualEvidence:asset.visualSpecimenEvidence||null,
   stack:asset.handoff?.stack||asset.framework||null,
   instructions:asset.handoff?.instructions||policy.guidance||"Inspect the original asset and adapt it to the target application's contracts.",
   limitations:asset.handoff?.limitations||asset.verified||"No destination project verification recorded.",
