@@ -19,6 +19,9 @@ const text=v=>String(v??"").toLocaleLowerCase();
 const unique=values=>[...new Set(values.filter(Boolean))];
 
 export function reuseMode(asset,policies={}){
+ // An explicitly reviewed handoff may narrow reuse, never silently promote it.
+ const override=asset.handoff?.mode;
+ if(override==="research-only")return override;
  return policies[asset.reuseKind]?.mode||FALLBACK_MODES[asset.reuseKind]||"research-only";
 }
 
