@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.32.0",
+  "updatedAt": "2026-11-10",
+  "scope": "Curated original patterns and external provenance for editor collaboration, raw visual material, and expressive effects. Not a page builder or bundled third-party asset collection.",
+  "sourcePolicy": "Research-only. External media/font libraries are linked, not imported. Confirm exact license and item metadata in each target app.",
+  "groups": [
+    {
+      "id": "editor-collaboration",
+      "title": "编辑器与多人协同交互",
+      "intent": "富文本、长文档、协作光标、评论和结构化块编辑"
+    },
+    {
+      "id": "type-texture",
+      "title": "字形、材质与视觉原材料",
+      "intent": "变体字体、中英文混排、字体许可、PBR 与程序纹理"
+    },
+    {
+      "id": "expressive-effects",
+      "title": "可降级的特殊视觉效果",
+      "intent": "遮罩、折射、时间线、视图转场、局部光照和动效文字"
+    }
+  ],
+  "entries": [
+    {
+      "id": "IP-036",
+      "group": "editor-collaboration",
+      "name": "Contextual slash and mention palette / 上下文指令与提及菜单",
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "priority": "P1",
+      "reviewedOn": "2026-11-10",
+      "scenario": "文档编辑、知识协作、长内容输入",
+      "designContract": "只在有效文本选择/块位置打开；输入字符触发但不覆盖输入法组合输入",
+      "stateContract": "closed→triggered→querying→results|empty→selected|dismissed；异步响应仅接受最新 query",
+      "accessibleFallback": "方向键、Home/End、Enter、Escape；菜单关闭后光标回原选择范围",
+      "failureModes": "IME composition 被误判命令、过期异步结果覆盖、弹层在 scroll/resize 后错位",
+      "relatedAssets": [
+        "REF-043",
+        "REF-044"
+      ],
+      "source": "https://tiptap.dev/docs/editor/api/utilities/suggestion",
+      "aliases": [
+        "斜杠菜单",
+        "富文本命令",
+        "slash command",
+        "mentions"
+      ],
+      "applicationContexts": [
+        "document",
+        "knowledge-base"
+      ],
+      "provenance": "Original research synthesis based on the linked upstream documentation; no upstream code, media, or font binaries bundled.",
+      "licenseBoundary": "Original research text; the linked upstream resources retain their respective terms.",
+      "implementation": "research-brief-only"
+    },
+    {
+      "id": "IP-037",
+      "group": "editor-collaboration",
+      "name": "Anchored comments under concurrent edits / 协同修改中的锚定评论",
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "priority": "P1",
+      "reviewedOn": "2026-11-10",
+      "scenario": "协作批注、设计文档、文内反馈",
+      "designContract": "评论关联语义文段和稳定相对位置，区分锚点丢失/原文已改/权限变化",
+      "stateContract": "selected-range→comment-draft→attached→remote-edit-rebased|orphaned→resolved|reanchored",
+      "accessibleFallback": "可键盘定位评论和关联内容；失效锚点提供可检索独立评论索引",
+      "failureModes": "用普通整数偏移保存锚点、文段删除后错误指向其他文字、评论与源内容不同步",
+      "relatedAssets": [
+        "REF-045",
+        "IP-027"
+      ],
+      "source": "https://github.com/yjs/docs/blob/main/api/relative-positions.md",
+      "aliases": [
+        "协同批注",
+        "相对位置",
+        "anchored comments",
+        "relative positions"
+      ],
+      "applicationContexts": [
+        "document",
+        "review"
+      ],
+      "provenance": "Original research synthesis based on the linked upstream documentation; no upstream code, media, or font binaries bundled.",
+      "licenseBoundary": "Original research text; the linked upstream resources retain their respective terms.",
+      "implementation": "research-brief-only"
+    },
+    {
+      "id": "IP-038",
+      "group": "editor-collaboration",
+      "name": "Ephemeral multiuser awareness / 低干扰协同在线状态",
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "priority": "P1",
+      "reviewedOn": "2026-11-10",
+      "scenario": "共享文档、白板、多人浏览",
+      "designContract": "presence 属于临时网络态，不等于持久文档；颜色、名字、状态合并成适度提示",
+      "stateContract": "offline→connecting→online→inactive|reconnecting→offline；缺席和权限撤销清除遥测显示",
+      "accessibleFallback": "文本参与者列表和身份标签；移动端及窄屏隐藏不必要彩色光标",
+      "failureModes": "在线状态过期变幽灵光标、把光标坐标当个人永久活动日志、颜色作为唯一身份",
+      "relatedAssets": [
+        "REF-045",
+        "REF-043"
+      ],
+      "source": "https://docs.yjs.dev/api/about-awareness",
+      "aliases": [
+        "多人光标",
+        "协作在线",
+        "presence",
+        "awareness"
+      ],
+      "applicationContexts": [
+        "document",
+        "visual-editor"
+      ],
+      "provenance": "Original research synthesis based on the linked upstream documentation; no upstream code, media, or font binaries bundled.",
+      "licenseBoundary": "Original research text; the linked upstream resources retain their respective terms.",
+      "implementation": "research-brief-only"
+    },
+    {
+      "id": "IP-039",
+      "group": "editor-collaboration",
+      "name": "Paste and IME-safe schema import / 安全粘贴与输入法友好导入",
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "priority": "P1",
+      "reviewedOn": "2026-11-10",
+      "scenario": "编辑器跨应用粘贴、富文本数据清洗",
+      "designContract": "明确 HTML/纯文本优先级及 schema 允许项；粘贴数据作为未信任内容处理",
+      "stateContract": "beforeinput→composition?→paste-parsed→preview|rejected→single-undoable-commit",
+      "accessibleFallback": "纯文本粘贴与可见失败提示；输入法组合期间不运行快捷命令",
+      "failureModes": "将粘贴 HTML 直接插 DOM、清洗掉用户内容、中文输入法拼写未完成被提交",
+      "relatedAssets": [
+        "REF-043",
+        "REF-044"
+      ],
+      "source": "https://lexical.dev/docs/intro",
+      "aliases": [
+        "粘贴清洗",
+        "中文输入法",
+        "paste sanitation",
+        "IME"
+      ],
+      "applicationContexts": [
+        "document",
+        "workspace"
+      ],
+      "provenance": "Original research synthesis based on the linked upstream documentation; no upstream code, media, or font binaries bundled.",
+      "licenseBoundary": "Original research text; the linked upstream resources retain their respective terms.",
+      "implementation": "research-brief-only"
+    },
+    {
+      "id": "IP-040",
+      "group": "editor-collaboration",
+      "name": "Local undo and remote transactions / 本地撤销与远端事务",
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "priority": "P1",
+      "reviewedOn": "2026-11-10",
+      "scenario": "多人共同编辑、版本记录",
+      "designContract": "区分本地可撤销编辑、他人提交和单个组合操作；撤销提示反馈结果而非保证恢复同一视觉位置",
+      "stateContract": "clean→local-change→remote-change→local-undo|redo→conflict-review",
+      "accessibleFallback": "清晰历史提示、版本差异和可恢复旧版本；键盘 Undo/Redo",
+      "failureModes": "撤销意外删除别人新增内容、跨设备隐藏状态回滚、Undo 与 CRDT 更新顺序误解",
+      "relatedAssets": [
+        "REF-043",
+        "REF-045"
+      ],
+      "source": "https://docs.yjs.dev/getting-started/a-collaborative-editor",
+      "aliases": [
+        "协同撤销",
+        "编辑历史",
+        "local undo",
+        "remote transaction"
+      ],
+      "applicationContexts": [
+        "document",
+        "knowledge-base"
+      ],
+      "provenance": "Original research synthesis based on the linked upstream documentation; no upstream code, media, or font binaries bundled.",
+      "licenseBoundary": "Original research text; the linked upstream resources retain their respective terms.",
+      "implementation": "research-brief-only"
+    },
+    {
+      "id": "IP-041",
+      "group": "editor-collaboration",
+      "name": "Block drag handle with selection parity / 文档块拖拽及选区等效",
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "priority": "P1",
+      "reviewedOn": "2026-11-10",
+      "scenario": "长文档重排、编辑器对象定位",
+      "designContract": "把块选择和文本选择解耦；拖拽辅助柄出现时保留文本焦点，移动后修复相对选区",
+      "stateContract": "idle→block-focus→grab→move-preview→commit|cancel→restore-focus",
+      "accessibleFallback": "可见的上移/下移操作、块导航/键盘位次选择",
+      "failureModes": "拖动一块误含跨段落文字、鼠标悬停才能发现移动操作、折叠内容后定位错误",
+      "relatedAssets": [
+        "REF-043",
+        "REF-044",
+        "IP-033",
+        "REF-028"
+      ],
+      "source": "https://www.w3.org/WAI/ARIA/apg/patterns/listbox/examples/listbox-rearrangeable/",
+      "aliases": [
+        "块拖拽",
+        "多块选中",
+        "block handle",
+        "accessible reorder"
+      ],
+      "applicationContexts": [
+        "document",
+        "visual-editor"
+      ],
+      "provenance": "Original research synthesis based on the linked upstream documentation; no upstream code, media, or font binaries bundled.",
+      "licenseBoundary": "Original research text; the linked upstream resources retain their respective terms.",
+      "implementation": "research-brief-only"
+    },
+    {
+      "id": "REF-069",
+      "group": "type-texture",
+      "name": "Variable type axis palette / 可变字体轴与字重范围",
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "priority": "P1",
+      "reviewedOn": "2026-11-10",
+      "scenario": "内容设计、视觉系统、长文案与品牌展示",
+      "designContract": "按字库真实轴记录 wght/wdth/opsz；提供排版样张、允许范围和光学字号说明",
+      "stateContract": "body→display→compact；在不同字号下比较字重、宽度、字距与断行",
+      "accessibleFallback": "浏览器系统字体族及静态字体档位；字重和对比仍满足阅读要求",
+      "failureModes": "将未知自定义轴当通用、只靠字宽动画表达信息、无权打包字体",
+      "relatedAssets": [
+        "DT-013"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Fonts/Variable_fonts",
+      "aliases": [
+        "可变字体",
+        "字体轴",
+        "variable font",
+        "optical size"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "creative-site"
+      ],
+      "provenance": "Original research synthesis based on the linked upstream documentation; no upstream code, media, or font binaries bundled.",
+      "licenseBoundary": "Original research text; external font/material files have separate per-source and possibly per-family licensing.",
+      "implementation": "research-brief-only"
+    },
+    {
+      "id": "REF-070",
+      "group": "type-texture",
+      "name": "CJK–Latin fallback and subset specimen / 中英混排与字库分片",
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "priority": "P1",
+      "reviewedOn": "2026-11-10",
+      "scenario": "中文内容系统、多语言产品、数据可视化",
+      "designContract": "字体栈按 CJK/Latin/digits/icon 确定角色，逐组合测试行高、标点与字宽；记录 unicode-range 策略",
+      "stateContract": "zh-CN→en-US→mixed-numeric→fallback；检查小字号和粗体的字形缺失",
+      "accessibleFallback": "系统 CJK 字体优先；不开启强制远程大字库，使用真实可用字符",
+      "failureModes": "字体子集漏字、数字位置偏移、多语言 fallback 风格失配",
+      "relatedAssets": [
+        "DT-013",
+        "REF-069"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/%40font-face/unicode-range",
+      "aliases": [
+        "中文字体",
+        "中英混排",
+        "CJK",
+        "fallback stack"
+      ],
+      "applicationContexts": [
+        "knowledge-base",
+        "editorial"
+      ],
+      "provenance": "Original research synthesis based on the linked upstream documentation; no upstream code, media, or font binaries bundled.",
+      "licenseBoundary": "Original research text; external font/material files have separate per-source and possibly per-family licensing.",
+      "implementation": "research-brief-only"
+    },
+    {
+      "id": "REF-071",
+      "group": "type-texture",
+      "name": "Font provenance and self-host checklist / 字体来源、授权与自托管清单",
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "priority": "P1",
+      "reviewedOn": "2026-11-10",
+      "scenario": "开放素材仓库、网站发布、可复用 UI 字体资源",
+      "designContract": "为每个具体 family 单独记录版权方、许可、保留字体名、字重/语言覆盖和可分发条件",
+      "stateContract": "candidate→license-checked→family-verified→bundled-in-target|link-only",
+      "accessibleFallback": "系统字体作为默认降级，断网/加载失败时保留可读内容",
+      "failureModes": "误以为 Google Fonts/Fontsource 全部同一许可、上传未授权二进制、修改保留字体名",
+      "relatedAssets": [
+        "REF-069",
+        "REF-070"
+      ],
+      "source": "https://github.com/google/fonts/blob/main/README.md",
+      "aliases": [
+        "字体许可",
+        "字体自托管",
+        "font licensing",
+        "fontsource"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "workspace"
+      ],
+      "provenance": "Original research synthesis based on the linked upstream documentation; no upstream code, media, or font binaries bundled.",
+      "licenseBoundary": "Original research text; external font/material files have separate per-source and possibly per-family licensing.",
+      "implementation": "research-brief-only"
+    },
+    {
+      "id": "REF-072",
+      "group": "type-texture",
+      "name": "Poly Haven CC0 PBR and HDRI source / CC0 物理材质和环境光照来源",
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "priority": "P1",
+      "reviewedOn": "2026-11-10",
+      "scenario": "材质情绪版、低成本三维建模资料、纹理参考",
+      "designContract": "只记录经官网证明 CC0 的原始纹理/HDRI 来源；标注 albedo/normal/roughness 与色彩空间",
+      "stateContract": "candidate→per-asset-provenance→resolution-budget→external-target-use",
+      "accessibleFallback": "仅用原创文字和低成本渐变描述材料；在外部目标项目再拉取资源",
+      "failureModes": "官网资产 CC0 不等于所有站点标志/网页截图可再分发；高分辨率 texture 显存开销大",
+      "relatedAssets": [
+        "REF-051",
+        "REF-059",
+        "REF-060"
+      ],
+      "source": "https://polyhaven.com/license",
+      "aliases": [
+        "PBR 纹理",
+        "环境贴图",
+        "HDRI",
+        "CC0 texture"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "product-visual"
+      ],
+      "provenance": "Original research synthesis based on the linked upstream documentation; no upstream code, media, or font binaries bundled.",
+      "licenseBoundary": "Original research text; external font/material files have separate per-source and possibly per-family licensing.",
+      "implementation": "research-brief-only"
+    },
+    {
+      "id": "REF-073",
+      "group": "type-texture",
+      "name": "ambientCG CC0 material metadata / ambientCG 材质通道参考",
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "priority": "P1",
+      "reviewedOn": "2026-11-10",
+      "scenario": "布料、纸张、石材、建筑与产品材质选型",
+      "designContract": "按材质频道、尺寸、真实物理尺度、贴图通道及引用日期整理外链，不归档二进制",
+      "stateContract": "research→material-family→channel-check→external-export",
+      "accessibleFallback": "程序 CSS 噪点/低分辨率单色纹理占位",
+      "failureModes": "官网 CC0 资源与外部衍生示例不是同一许可；缺失通道或比例尺不得假定",
+      "relatedAssets": [
+        "REF-051",
+        "REF-062",
+        "REF-072"
+      ],
+      "source": "https://ambientcg.com/",
+      "aliases": [
+        "免费材质",
+        "贴图素材",
+        "ambientCG",
+        "PBR material"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "product-visual"
+      ],
+      "provenance": "Original research synthesis based on the linked upstream documentation; no upstream code, media, or font binaries bundled.",
+      "licenseBoundary": "Original research text; external font/material files have separate per-source and possibly per-family licensing.",
+      "implementation": "research-brief-only"
+    },
+    {
+      "id": "REF-074",
+      "group": "type-texture",
+      "name": "Procedural grain and print halftone / 程序噪点与印刷网点纹理",
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "priority": "P1",
+      "reviewedOn": "2026-11-10",
+      "scenario": "编辑式视觉、艺术作品集、复古印刷画面",
+      "designContract": "用 SVG turbulence / CSS 渐变参数描述频率、覆盖范围、透明度和密度；文字层始终独立",
+      "stateContract": "calm→grain-density-adjust→print-style；纹理变化不影响语义内容",
+      "accessibleFallback": "无滤镜纯底色、静态低对比纹理",
+      "failureModes": "极强噪点降低可读性、全屏 SVG 动态滤镜消耗性能、复刻第三方风格但无来源",
+      "relatedAssets": [
+        "DT-009",
+        "REF-062"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/feTurbulence",
+      "aliases": [
+        "颗粒纹理",
+        "半色调",
+        "procedural grain",
+        "halftone"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "creative-site"
+      ],
+      "provenance": "Original research synthesis based on the linked upstream documentation; no upstream code, media, or font binaries bundled.",
+      "licenseBoundary": "Original research text; external font/material files have separate per-source and possibly per-family licensing.",
+      "implementation": "research-brief-only"
+    },
+    {
+      "id": "REF-075",
+      "group": "expressive-effects",
+      "name": "Layered mask reveal / 多遮罩揭示",
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "priority": "P1",
+      "reviewedOn": "2026-11-10",
+      "scenario": "图片画廊、实验性作品集、局部信息强调",
+      "designContract": "用 mask-image / mask-composite 建立透明度与形状逻辑；内容仍保留真实 DOM",
+      "stateContract": "hidden-visual→reveal→visible→reset；遮罩只做视觉，不操控访问控制",
+      "accessibleFallback": "无 mask 支持显示完整图片与标题；隐藏内容有明确可见替代",
+      "failureModes": "用视觉遮罩隐藏敏感/权限内容、遮罩导致焦点对象不可见、浏览器差异未测",
+      "relatedAssets": [
+        "REF-038",
+        "IP-029"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Masking/Mask_properties",
+      "aliases": [
+        "蒙版揭示",
+        "剪纸转场",
+        "layered mask",
+        "mask reveal"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "digital-exhibition"
+      ],
+      "provenance": "Original research synthesis based on the linked upstream documentation; no upstream code, media, or font binaries bundled.",
+      "licenseBoundary": "Original research text; the linked upstream resources retain their respective terms.",
+      "implementation": "research-brief-only"
+    },
+    {
+      "id": "REF-076",
+      "group": "expressive-effects",
+      "name": "Controlled SVG displacement / 有界 SVG 折射与扰动",
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "priority": "P1",
+      "reviewedOn": "2026-11-10",
+      "scenario": "画面转换、创意图片交互、局部材质表现",
+      "designContract": "通过 feTurbulence / feDisplacementMap 原理控制 scale、频率、合成区域；只作用装饰影像",
+      "stateContract": "static→hover-preview→brief-distort→rest；不绑定关键状态表达",
+      "accessibleFallback": "静止原图或 CSS opacity 过渡；强制降低动效环境禁用 displacement 动画",
+      "failureModes": "全屏实时滤镜、UI 文本可读性损伤、GPU 降级缺失",
+      "relatedAssets": [
+        "REF-060",
+        "REF-063"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/feDisplacementMap",
+      "aliases": [
+        "扭曲效果",
+        "画面折射",
+        "displacement",
+        "svg filter"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "digital-exhibition"
+      ],
+      "provenance": "Original research synthesis based on the linked upstream documentation; no upstream code, media, or font binaries bundled.",
+      "licenseBoundary": "Original research text; the linked upstream resources retain their respective terms.",
+      "implementation": "research-brief-only"
+    },
+    {
+      "id": "REF-077",
+      "group": "expressive-effects",
+      "name": "Scroll-linked reversible narrative / 滚动驱动的可逆叙事",
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "priority": "P1",
+      "reviewedOn": "2026-11-10",
+      "scenario": "长篇叙事、产品分镜、编辑图文",
+      "designContract": "视口进度仅驱动装饰进度/阶段高亮；正文顺序与滚动分离",
+      "stateContract": "pre-section→in-view→passed→reverse-scroll；历史状态可逆",
+      "accessibleFallback": "普通文章顺序阅读、静态章节目录与跳转链接",
+      "failureModes": "scroll-snap 锁住用户、无 reduced-motion、仅视差提供信息",
+      "relatedAssets": [
+        "IP-029",
+        "REF-027"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Scroll-driven_animations/Timelines",
+      "aliases": [
+        "卷轴叙事",
+        "滚动时间线",
+        "scroll-linked animation",
+        "scroll story"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "creative-site"
+      ],
+      "provenance": "Original research synthesis based on the linked upstream documentation; no upstream code, media, or font binaries bundled.",
+      "licenseBoundary": "Original research text; the linked upstream resources retain their respective terms.",
+      "implementation": "research-brief-only"
+    },
+    {
+      "id": "REF-078",
+      "group": "expressive-effects",
+      "name": "View transition context continuity / 视图过渡与焦点延续",
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "priority": "P1",
+      "reviewedOn": "2026-11-10",
+      "scenario": "列表到详情、内容切换、导航保持上下文",
+      "designContract": "共享元素名称与动画仅增强视觉连续；数据、URL、焦点与可访问结构单独正确更新",
+      "stateContract": "before→navigation-request→new-content-ready→transition|skip→focus-restored",
+      "accessibleFallback": "直接更新视图和地址、显式返回导航、原生 focus management",
+      "failureModes": "旧快照触发误点、焦点丢失、读屏重复、不能用 View Transition 当路由器",
+      "relatedAssets": [
+        "REF-027",
+        "IP-029"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API",
+      "aliases": [
+        "共享元素转场",
+        "视图过渡",
+        "view transition",
+        "continuity"
+      ],
+      "applicationContexts": [
+        "workspace",
+        "creative-site"
+      ],
+      "provenance": "Original research synthesis based on the linked upstream documentation; no upstream code, media, or font binaries bundled.",
+      "licenseBoundary": "Original research text; the linked upstream resources retain their respective terms.",
+      "implementation": "research-brief-only"
+    },
+    {
+      "id": "REF-079",
+      "group": "expressive-effects",
+      "name": "Localized spotlight and spectral surface / 局部聚光与光谱表面",
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "priority": "P1",
+      "reviewedOn": "2026-11-10",
+      "scenario": "素材展示、交互画布、层叠材质实验",
+      "designContract": "径向或锥形渐变局部增强；光斑绝不遮盖标签和焦点环；悬浮只是附加反馈",
+      "stateContract": "idle→pointer-follow→focus-keyboard→rest；可禁用持续 pointer 更新",
+      "accessibleFallback": "固定光晕背景/边框高亮；移动端无 hover 的状态不缺功能",
+      "failureModes": "cursor tracking 强制高频同步布局、全屏眩光、假装高光即按钮",
+      "relatedAssets": [
+        "REF-061",
+        "REF-063"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/gradient/radial-gradient",
+      "aliases": [
+        "光谱渐变",
+        "局部聚光",
+        "spotlight",
+        "spectral gradient"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "product-visual"
+      ],
+      "provenance": "Original research synthesis based on the linked upstream documentation; no upstream code, media, or font binaries bundled.",
+      "licenseBoundary": "Original research text; the linked upstream resources retain their respective terms.",
+      "implementation": "research-brief-only"
+    },
+    {
+      "id": "REF-080",
+      "group": "expressive-effects",
+      "name": "Kinetic typography with readable DOM / 可读文本的动态排印",
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "priority": "P1",
+      "reviewedOn": "2026-11-10",
+      "scenario": "编辑式标题、展览导语和创意海报",
+      "designContract": "文字保留单一真实 DOM 内容；通过有限入场时序和字重/透明度变化强化层级",
+      "stateContract": "pre-entry→revealing→settled；重复访问可跳过不必要动画",
+      "accessibleFallback": "完整静态文字、支持手动停止、reduced-motion 无关键帧",
+      "failureModes": "复制多层文字导致读屏重复、字母逐个隐藏导致选区破碎、持续闪烁",
+      "relatedAssets": [
+        "DT-013",
+        "REF-069",
+        "MOT-002"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API",
+      "aliases": [
+        "动态排版",
+        "动效标题",
+        "kinetic typography",
+        "type motion"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "digital-exhibition"
+      ],
+      "provenance": "Original research synthesis based on the linked upstream documentation; no upstream code, media, or font binaries bundled.",
+      "licenseBoundary": "Original research text; the linked upstream resources retain their respective terms.",
+      "implementation": "research-brief-only"
+    }
+  ]
+}
