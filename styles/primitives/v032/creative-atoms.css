@@ -1,0 +1,81 @@
+/* V0.32 · Original, stand-alone CSS visual atoms (not a theme or component package).
+ * Each class is opt-in. No :root overrides, font downloads, 3rd-party images,
+ * JavaScript listeners, React dependencies, or forced continuous animation.
+ * Colors are intentionally overridable using --fda32-* custom properties.
+ */
+
+.fda32-print-grain {
+  background-color: var(--fda32-grain-paper, #f3efe6);
+  background-image:
+    repeating-linear-gradient(
+      97deg,
+      transparent 0 3px,
+      rgb(48 44 38 / 2.8%) 3px 4px
+    ),
+    repeating-linear-gradient(
+      7deg,
+      transparent 0 5px,
+      rgb(48 44 38 / 2%) 5px 6px
+    );
+}
+
+.fda32-halftone {
+  background-color: var(--fda32-halftone-surface, #f7f2e9);
+  background-image: radial-gradient(
+    circle,
+    var(--fda32-halftone-ink, rgb(28 36 43 / 22%)) 0 0.8px,
+    transparent 1px
+  );
+  background-size: var(--fda32-halftone-step, 8px)
+                   var(--fda32-halftone-step, 8px);
+}
+
+/* The native content remains in the DOM. Unsupported masks expose all pixels. */
+.fda32-soft-edge-mask {
+  -webkit-mask-image: linear-gradient(
+    90deg, transparent, black 14%, black 86%, transparent
+  );
+  mask-image: linear-gradient(
+    90deg, transparent, black 14%, black 86%, transparent
+  );
+}
+
+.fda32-spectral-wash {
+  background-color: var(--fda32-wash-base, #171c31);
+  background-image:
+    radial-gradient(
+      circle at var(--fda32-light-x, 70%) var(--fda32-light-y, 25%),
+      var(--fda32-wash-a, rgb(123 146 252 / 40%)) 0,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 18% 78%,
+      var(--fda32-wash-b, rgb(165 94 180 / 23%)) 0,
+      transparent 58%
+    );
+}
+
+/* Animation is opt-in; meaningful text should stay as actual selectable DOM. */
+.fda32-once-reveal {
+  animation: fda32-once-reveal 460ms cubic-bezier(.2,.75,.2,1) both;
+}
+@keyframes fda32-once-reveal {
+  from { opacity: .001; transform: translateY(.25rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fda32-optical-type {
+  font-optical-sizing: auto;
+  font-kerning: normal;
+  text-wrap: pretty;
+}
+
+/* Reduced motion and system color modes keep content readable without effects. */
+@media (prefers-reduced-motion: reduce) {
+  .fda32-once-reveal { animation: none; }
+}
+@media (forced-colors: active) {
+  .fda32-print-grain,
+  .fda32-halftone,
+  .fda32-spectral-wash { background-image: none; }
+}
