@@ -35,6 +35,7 @@
 | 3D 材质、数据可视化语义、移动手势契约 / material, chart, gesture | `REF-059..068`、`IP-031..035`、`registry/specialized-patterns-v031.json`、`docs/research/specialized-patterns-v031.md` | 15 个原创研究素材：状态、结构、降级、来源及风险；不提供可直接运行的组件或业务页面 |
 | 文档协同、富文本块编辑、字形和纹理、光谱遮罩 / collaborative editor, font, texture, creative effects | `IP-036..041`、`REF-069..080`、`registry/creative-primitives-v032.json`、`docs/research/creative-primitives-v032.md` | 18 份研究合同：操作状态、字体/贴图授权与视觉降级；6 个原创、无依赖 CSS 小原子，非编辑器组件或完整页面 |
 | 双线叙事、页边注、空间构图、星图导航、环形操作、探索式交互 / editorial story, radial nav, spatial index | `REF-081..088`、`IP-042..049`、`registry/experience-artifacts-v034.json`、`docs/research/experience-artifacts-v034.md` | 16 份任务型原创研究素材；另有 6 个独立 CSS 布局/装饰原子，非可运行导航或整页实现 |
+| 视觉状态样张、桌面/移动构图对比、焦点高亮参考 / static state SVG, desktop mobile | `registry/state-specimens-v035.json`、`styles/specimens/v035/`、`docs/research/state-specimens-v035.md` | 8 份原创独立 SVG，按已有 V0.34 资产 ID 查找；是示意图，不是实际响应式截图或可操作导航 |
 | 去 AI 模板化、页面设计审查、unslop、hallmark | `docs/assembly/design-review-workflows.md`、`docs/research/unslop-hallmark.md` | 外部 Skill 为研究/可选工具，未作为本仓库依赖自动安装 |
 
 上表的 ID 是**检索起点**而非默认推荐；只有打开注册条目并核对情境与成熟度，才能决定是否采用。
@@ -80,6 +81,12 @@ node scripts/plan-design-composition.mjs --context=knowledge-base --stack=react 
 ```
 
 注意：检索 CLI 支持 `--type=component|interaction|page-template|...` 和 `--stage=reference-implemented|prototype|...`，并能识别**已登记中文别名出现在较长句子内**的情况，但仍然是基于名称/标签/别名的**词项匹配**，不是语义搜索。中英文同义词覆盖不完整时，可以先用本页关键词路由，再查精确 ID；没有匹配不代表资产不存在。CLI 是选材/规划工具，**不会构建或修改目标项目**。
+
+## V0.35：独立静态视觉状态样张
+
+- 对 `REF-081`、`REF-082`、`REF-085`、`IP-042`、`IP-043`、`IP-044`、`IP-046`、`IP-047`，可通过 `asset.visualSpecimen` 或 [V0.35 状态索引](registry/state-specimens-v035.json) 查看并列的桌面/移动 SVG 示意。静态 SVG 仅说明构图与示意选中状态，不等于实际触控/焦点/响应式实现。
+- `scripts/find-assets.mjs` 的 `handoffResolved.relatedFiles` 会包含可用的 `visualSpecimen`；此字段不能改变 `research-only` 或 `analyzed` 的成熟度。要用可运行组件仍按 `registry/components.json` 核对。
+- 原创静态图源码在 [单项 SVG 目录](styles/specimens/v035/README.md)。不要把 SVG 的画面当成浏览器截图、性能证据或符合可访问性规范的成品。
 
 ## V0.34：创意叙事与空间交互素材检索
 
