@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-10 · V0.32 editor, type, material and expressive-effect library research
+
+- Added **18 original analyzed-stage research contracts**: six collaborative-editor behavior patterns (`IP-036..041`), six font/texture provenance and typography materials (`REF-069..074`), six expressive effect studies (`REF-075..080`). Total registry **221 → 239**; no existing ID, style or React export semantics changed.
+- Added [structured v0.32 index](registry/creative-primitives-v032.json) and [research handbook](docs/research/creative-primitives-v032.md). Each entry records task context, selection contract, interaction state, negative examples, accessible fallback, source evidence and related existing assets.
+- Added six [stand-alone CSS visual atoms](styles/primitives/v032/README.md): print grain, halftone, soft edge mask, spectral wash, one-shot motion reveal and optical type. All are opt-in/scoped, no dependencies, font/media files, new themes, app/page assembly or runtime editor.
+- Per-family font-license and material-asset restrictions are explicit: Google Fonts / Fontsource licenses differ by family, Poly Haven/ambientCG assets may be CC0 when sourced from their official content, while website branding, text and third-party media require independent review.
+- Extended the Agent catalog, repository registry documentation and registry checker for source, ID, fallback and reference consistency. No physical-device, accessibility, performance or editor integration test is asserted.
+
 ## 2026-11-10 · V0.31 material, data and mobile interaction research contracts
 
 - Added 15 **original research-only** pattern studies: five 3D material/lighting references (`REF-059..063`), five professional data-experience references (`REF-064..068`), and five mobile touch behavior contracts (`IP-031..035`). Every entry records context, composition, interaction states, fallback, risk, upstream evidence and links to prior assets.
