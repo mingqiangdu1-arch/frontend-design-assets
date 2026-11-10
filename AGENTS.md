@@ -11,6 +11,7 @@
 1. Identify the user's **task** (visual direction, React implementation, interaction behavior, page composition, quality review), **application context**, **device**, **stack** and any existing style; avoid questions when the information is already supplied.
 2. Read only the matching index:
    - `registry/assets.json`: all stable IDs, lifecycle stages, tags/aliases, contexts, styles, provenance, `reuseKind`, dependency and handoff metadata.
+   - `registry/state-specimens-v035.json` and optional `asset.visualSpecimen`: original static SVG desktop/mobile **concept** images for a few V0.34 research assets. A visual example does not upgrade `analyzed / research-only` or provide working navigation, responsive test evidence, or keyboard behavior.
    - `registry/components.json`: actual exported React reference components, public export name and source.
    - `registry/styles.json` + `registry/style-facets.json`: 14 independent themes and task/layout/material/interaction evidence; `defaultStyleId: null` is intentional. Use `scripts/select-style.mjs` or `playground/style-atlas/` for no-default, original-demo comparisons.
    - `registry/style-assembly.json`: per-theme page architectures and real template/component references. After selecting a theme, use `scripts/build-style-brief.mjs --style=<id> --format=markdown` for a planning handoff, not a generated website.
