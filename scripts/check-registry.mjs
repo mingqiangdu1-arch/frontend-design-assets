@@ -64,6 +64,41 @@ for (const asset of registry.assets) {
     if (!assetIds.has(id)) fail(asset.id + " has unknown dependency: " + id);
   }
 }
+// Research catalogs are original briefs/upstream links, never auto-installed UI packages.
+const assetById = new Map(registry.assets.map(asset => [asset.id, asset]));
+const upstreamSources = readJson("registry/specialized-resources-v030.json");
+const specializedPatterns = readJson("registry/specialized-patterns-v031.json");
+if (!Array.isArray(upstreamSources.entries) || !Array.isArray(specializedPatterns.entries)) fail("Specialized research entries missing");
+const sourceIds = new Set(), patternIds = new Set();
+for (const item of upstreamSources.entries) {
+  if (sourceIds.has(item.id)) fail("Duplicate V0.30 source: "+item.id);
+  sourceIds.add(item.id);
+  const asset = assetById.get(item.id);
+  if (!asset || asset.type !== "reference" || asset.stage !== "analyzed" ||
+      asset.reuseKind !== "design-reference" || asset.source !== item.source ||
+      item.adoption !== "research-only" || !item.license || !item.limitations) {
+    fail("Specialized source metadata mismatched: "+item.id);
+  }
+}
+for (const item of specializedPatterns.entries) {
+  if (patternIds.has(item.id)) fail("Duplicate V0.31 pattern: "+item.id);
+  patternIds.add(item.id);
+  const asset = assetById.get(item.id);
+  const expectedKind = item.category === "mobile-touch" ? "behavior-pattern" : "design-reference";
+  const expectedType = item.category === "mobile-touch" ? "interaction" : "reference";
+  if (!asset || asset.type !== expectedType || asset.reuseKind !== expectedKind ||
+      asset.stage !== "analyzed" || item.adoption !== "research-only" ||
+      asset.source !== item.primarySource || asset.spec !== "registry/specialized-patterns-v031.json" ||
+      !Array.isArray(item.aliases) || !item.aliases.length ||
+      !Array.isArray(item.applicationContexts) || !item.applicationContexts.length ||
+      !item.composition || !item.stateContract || !item.fallback || !item.risks ||
+      !Array.isArray(item.relatedAssets) || !item.relatedAssets.length ||
+      item.relatedAssets.some(id => !assetIds.has(id))) {
+    fail("Specialized pattern metadata mismatched: "+item.id);
+  }
+}
+console.log("Validated specialized catalogs: "+sourceIds.size+" upstream references, "+patternIds.size+" original research contracts.");
+
 const experienceSummary=validateExperienceRegistry(experienceRegistry,registry.assets);
 const applicationFiles = ["applications/examples/ai-workflow-platform.json"];
 for (const file of applicationFiles) {
