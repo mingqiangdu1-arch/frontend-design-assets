@@ -93,3 +93,29 @@ test("CLI includes type and stage in structured criteria and rejects unsupported
  assert.ok(data.results.some(a=>a.id==="UI-056"));
  assert.deepEqual(JSON.parse(runCLI(["--type=nonexistent","--json"])).results,[]);
 });
+
+test("V0.31 and V0.32 analyzed interaction briefs remain research-only, not ready-to-adapt code",()=>{
+ const briefIds=["IP-031","IP-032","IP-033","IP-034","IP-035","IP-036","IP-037","IP-038","IP-039","IP-040","IP-041"];
+ const json=JSON.parse(runCLI(["--reuse=research-only","--goal=behavior","--json"]));
+ const selected=new Map(json.results.map(a=>[a.id,a]));
+ // Search uses a bounded top-N, so verify exact IDs individually instead of assuming all appear.
+ for(const id of briefIds){
+  const result=JSON.parse(runCLI(["--intent="+id,"--json"])).results.find(x=>x.id===id);
+  assert.ok(result,"missing "+id);
+  assert.equal(result.handoffResolved.mode,"research-only",id);
+  assert.equal(result.handoff.mode,"research-only",id);
+  assert.equal(result.stage,"analyzed",id);
+  assert.equal(result.handoffResolved.relatedFiles.includes(result.spec),true,id);
+ }
+ const prototype=JSON.parse(runCLI(["--intent=IP-030","--json"])).results.find(x=>x.id==="IP-030");
+ assert.equal(prototype.handoffResolved.mode,"adapt-required");
+ const implemented=JSON.parse(runCLI(["--intent=UI-058","--json"])).results.find(x=>x.id==="UI-058");
+ assert.equal(implemented.handoffResolved.mode,"copyable-source");
+});
+test("explicit research-only override cannot promote sources or make a component installable",()=>{
+ const researched={...fixtures[2],handoff:{mode:"research-only",entry:"docs/research/foo.md"}};
+ assert.deepEqual(searchAssets([researched],{reuse:"research-only"}).map(x=>x.id),["IP-002"]);
+ assert.deepEqual(searchAssets([researched],{reuse:"adapt-required"}),[]);
+ const promoted={...fixtures[2],handoff:{mode:"copyable-source"}};
+ assert.equal(searchAssets([promoted],{reuse:"copyable-source"}).length,0);
+});
