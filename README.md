@@ -20,6 +20,7 @@
 | 参考页面结构素材 | [页面模板](registry/page-templates.json) · [组装指南](docs/assembly/README.md) · [独立 Demo](playground/page-blueprints/) | 可复用分区、构图和交互案例；真实页面开发须在外部项目进行 |
 | 检索外部专项技术与视觉资源 | [V0.30 专题资源](docs/research/specialized-resources-v030.md) · [结构化资源索引](registry/specialized-resources-v030.json) | 17 个画布/富文本、地图数据、3D 与移动交互来源；只做研究与素材交接，不安装到本库 |
 | 参考 3D 材质、数据图层与移动手势设计契约 | [V0.31 专项研究](docs/research/specialized-patterns-v031.md) · [机器索引](registry/specialized-patterns-v031.json) | 15 个原创研究素材，包含交互状态、低性能/无障碍替代和上游证据；未实现或集成 |
+| 字体/纹理、内容协同和特殊效果素材 | [V0.32 研究目录](docs/research/creative-primitives-v032.md) · [检索索引](registry/creative-primitives-v032.json) · [独立 CSS 原子](styles/primitives/v032/README.md) | 18 条研究型资产与 6 个可选、无依赖的 CSS 小素材；不进行页面组装或引入外部媒体 |
 | 独立高级交互原型 IV | [Atelier IV](playground/advanced-interactions-v4/README.md) · [交互契约](docs/interactions/advanced-patterns-v018.md) | 将 IP-025/027/029/030 的树形网格、语义标注、分支叙事、精密旋钮升级为可操作参考素材；非业务应用 |
 | 参考高级交互 | [交互文档](docs/interactions/) · [高级交互 Lab](playground/advanced-interactions/) | 指针/键盘/触摸/撤销行为设计与独立原型 |
 | 拓展艺术表现 | [Creative Directions](registry/creative-directions.json) · [Creative Style Lab](playground/creative-style-lab/) | 面向游戏、活动、阅读和其他类型的创意方向 |
