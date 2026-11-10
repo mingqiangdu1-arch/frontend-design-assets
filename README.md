@@ -20,6 +20,7 @@
 | 参考页面结构素材 | [页面模板](registry/page-templates.json) · [组装指南](docs/assembly/README.md) · [独立 Demo](playground/page-blueprints/) | 可复用分区、构图和交互案例；真实页面开发须在外部项目进行 |
 | 检索外部专项技术与视觉资源 | [V0.30 专题资源](docs/research/specialized-resources-v030.md) · [结构化资源索引](registry/specialized-resources-v030.json) | 17 个画布/富文本、地图数据、3D 与移动交互来源；只做研究与素材交接，不安装到本库 |
 | 参考 3D 材质、数据图层与移动手势设计契约 | [V0.31 专项研究](docs/research/specialized-patterns-v031.md) · [机器索引](registry/specialized-patterns-v031.json) | 15 个原创研究素材，包含交互状态、低性能/无障碍替代和上游证据；未实现或集成 |
+| 查看独立状态视觉样张（桌面与移动示意） | [V0.35 八份原创 SVG](styles/specimens/v035/README.md) · [状态索引](registry/state-specimens-v035.json) | 让 Agent 直观看到构图、焦点、选中与可回退状态；是静态研究图，不是整个页面或已实现交互 |
 | 创意叙事、空间布局、星图导航与非传统交互 | [V0.34 研究规范](docs/research/experience-artifacts-v034.md) · [任务索引](registry/experience-artifacts-v034.json) · [独立 CSS 原子](styles/primitives/v034/README.md) | 16 个原创研究素材、6 个可选布局/装饰原子；无完整导航代码或页面组装 |
 | 字体/纹理、内容协同和特殊效果素材 | [V0.32 研究目录](docs/research/creative-primitives-v032.md) · [检索索引](registry/creative-primitives-v032.json) · [独立 CSS 原子](styles/primitives/v032/README.md) | 18 条研究型资产与 6 个可选、无依赖的 CSS 小素材；不进行页面组装或引入外部媒体 |
 | 独立高级交互原型 IV | [Atelier IV](playground/advanced-interactions-v4/README.md) · [交互契约](docs/interactions/advanced-patterns-v018.md) | 将 IP-025/027/029/030 的树形网格、语义标注、分支叙事、精密旋钮升级为可操作参考素材；非业务应用 |
