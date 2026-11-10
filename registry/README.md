@@ -22,6 +22,12 @@ This directory is the **authoritative index** for choosing existing design refer
 
 Task-based entry: [../CATALOG.md](../CATALOG.md). Agent operating rules: [../AGENTS.md](../AGENTS.md).
 
+## V0.33 research handoff override
+
+- Per-asset `handoff.mode: research-only` can **restrict** a broad reuse policy where a behavior-pattern entry has only research notes (currently `IP-031..041`). It cannot promote an asset to `copyable-source` or imply a working interaction.
+- The CLI `reuseMode()` and its search filters honor this override. Real prototypes such as `IP-030` remain `adapt-required`, and public React exports require `registry/components.json` evidence.
+- Read [retrieval trust and classification QA](../docs/research/retrieval-trust-v033.md) for concrete test cases.
+
 ## Do not confuse the three separate classifications
 
 - `type` says **what an asset represents**: `component`, `interaction`, `reference`, `recipe`, `archive`, `token`, `page-template`, `motion`. A `type: "component"` record alone **does not prove** a React implementation exists; consult `components.json.entries`.
