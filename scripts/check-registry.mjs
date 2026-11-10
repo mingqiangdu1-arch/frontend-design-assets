@@ -99,6 +99,46 @@ for (const item of specializedPatterns.entries) {
 }
 console.log("Validated specialized catalogs: "+sourceIds.size+" upstream references, "+patternIds.size+" original research contracts.");
 
+// V0.32 must remain a source-linked research catalog, not installed external media/components.
+const creativePrimitives = readJson("registry/creative-primitives-v032.json");
+if (creativePrimitives.schemaVersion !== "1.0" || !Array.isArray(creativePrimitives.entries) ||
+    creativePrimitives.entries.length !== 18) fail("V0.32 contract catalog must contain 18 studies");
+const creativeCounts = new Map();
+const creativeIds = new Set();
+for (const item of creativePrimitives.entries) {
+  if (creativeIds.has(item.id)) fail("Duplicate V0.32 research ID: " + item.id);
+  creativeIds.add(item.id);
+  creativeCounts.set(item.group, (creativeCounts.get(item.group)||0) + 1);
+  const asset = assetById.get(item.id);
+  const isEditor = item.group === "editor-collaboration";
+  if (!asset || asset.stage !== "analyzed" || asset.type !== (isEditor?"interaction":"reference") ||
+      asset.reuseKind !== (isEditor?"behavior-pattern":"design-reference") ||
+      item.adoption !== "research-only" || asset.source !== item.source ||
+      asset.spec !== "registry/creative-primitives-v032.json" ||
+      !Array.isArray(item.aliases) || !item.aliases.length ||
+      !Array.isArray(item.applicationContexts) || !item.applicationContexts.length ||
+      !Array.isArray(item.relatedAssets) || !item.relatedAssets.length ||
+      item.relatedAssets.some(id => !assetIds.has(id)) ||
+      !item.designContract || !item.stateContract || !item.accessibleFallback ||
+      !item.failureModes || !item.source.startsWith("https://") ||
+      !item.licenseBoundary || !item.provenance ||
+      !item.implementation || item.implementation !== "research-brief-only") {
+    fail("V0.32 asset mismatch, incomplete provenance or unsafe implementation claim: "+item.id);
+  }
+}
+for (const group of ["editor-collaboration", "type-texture", "expressive-effects"]) {
+  if (creativeCounts.get(group)!==6) fail("V0.32 category must have six studies: "+group);
+}
+assertFile("styles/primitives/v032/creative-atoms.css","V0.32 independent CSS");
+assertFile("styles/primitives/v032/README.md","V0.32 CSS documentation");
+const creativeCss = fs.readFileSync("styles/primitives/v032/creative-atoms.css", "utf8");
+if (/(:root|@import|url\s*\()/i.test(creativeCss) ||
+    !creativeCss.includes("prefers-reduced-motion") ||
+    !creativeCss.includes("forced-colors")) {
+  fail("V0.32 CSS must be isolated, asset-free and have reduced-motion/high-contrast fallbacks");
+}
+console.log("Validated V0.32: 18 source-linked research patterns and six scoped CSS atoms.");
+
 const experienceSummary=validateExperienceRegistry(experienceRegistry,registry.assets);
 const applicationFiles = ["applications/examples/ai-workflow-platform.json"];
 for (const file of applicationFiles) {
