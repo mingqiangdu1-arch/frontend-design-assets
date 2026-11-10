@@ -56,7 +56,7 @@ for (const asset of registry.assets) {
   }
   if (asset.demoStyleId && !styleIds.has(asset.demoStyleId)) fail(asset.id + " has unknown demo style");
   if (["style-token","styled-implementation"].includes(asset.reuseKind) && !asset.styleIds.length) fail(asset.id + " must bind explicit styles");
-  for (const key of ["path","spec","details","demo"]) {
+  for (const key of ["path","spec","details","demo","visualSpecimen"]) {
     if (asset[key]) assertFile(asset[key], asset.id + "." + key);
   }
 }
@@ -178,6 +178,39 @@ if (/(?:^|\n)\s*:root\s*\{|(?:^|\n)\s*@import\b|url\s*\(/m.test(css034) ||
   fail("V0.34 atoms must be scoped, asset-free and degrade gracefully");
 }
 console.log("Validated V0.34: 16 original research briefs, four balanced categories, scoped CSS primitives.");
+
+// V0.35: references are static SVG state illustrations, not runnable UI or tested screenshots.
+const v035 = readJson("registry/state-specimens-v035.json");
+if (v035.schemaVersion !== "1.0" || v035.status !== "static-illustration-only" ||
+    v035.viewportsAreConceptsNotCaptures !== true || v035.assetsAdded !== 0 ||
+    !Array.isArray(v035.specimens) || v035.specimens.length !== 8) fail("Invalid V0.35 specimen contract");
+const v035Ids = new Set(), v034Ids = new Set(experienceArtifactsV034.entries.map(entry=>entry.id));
+for (const s of v035.specimens) {
+  if (v035Ids.has(s.assetId) || !v034Ids.has(s.assetId)) fail("Duplicate/unregistered V0.35 ID: "+s.assetId);
+  v035Ids.add(s.assetId);
+  const asset = assetById.get(s.assetId);
+  if (!asset || asset.stage !== "analyzed" || asset.visualSpecimen !== s.svg ||
+      asset.visualSpecimenEvidence !== "original-static-svg-concept-not-browser-render-or-functional-state" ||
+      (asset.handoff?.mode !== "research-only" && asset.reuseKind === "behavior-pattern") ||
+      s.lifecycle !== "analyzed" || s.reuseMode !== "research-only" ||
+      s.evidence !== "original-static-vector-study-not-rendered-app" ||
+      JSON.stringify(s.targetViewportWidths) !== JSON.stringify([1440,390]) ||
+      !s.state || !s.focusExample || !s.mobileFallback ||
+      !s.svg.startsWith("styles/specimens/v035/") || !s.svg.endsWith(".svg")) {
+    fail("V0.35 specimen identity or evidence mismatch: "+s.assetId);
+  }
+  assertFile(s.svg, s.assetId+".visualSpecimen");
+  const svg = fs.readFileSync(s.svg,"utf8");
+  if (!svg.startsWith("<svg ") || !svg.trimEnd().endsWith("</svg>") ||
+      !svg.includes("<title ") || !svg.includes("<desc ") ||
+      !svg.includes("DESKTOP LAYOUT CONCEPT") || !svg.includes("MOBILE LAYOUT CONCEPT") ||
+      /<script\b|<foreignObject\b|<image\b|(?:xlink:)?href\s*=|@import\b|url\s*\(/i.test(svg)) {
+    fail("V0.35 standalone SVG must be static, self-contained and visibly labeled: "+s.assetId);
+  }
+}
+assertFile("docs/research/state-specimens-v035.md","V0.35 research notes");
+assertFile("styles/specimens/v035/README.md","V0.35 specimen catalog");
+console.log("Validated V0.35: 8 research-only dual-viewport static SVG specimens, no new asset IDs.");
 
 const experienceSummary=validateExperienceRegistry(experienceRegistry,registry.assets);
 const applicationFiles = ["applications/examples/ai-workflow-platform.json"];
