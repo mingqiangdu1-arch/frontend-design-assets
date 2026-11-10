@@ -8792,11 +8792,697 @@
         "instructions": "Inspect REF-080 in registry/creative-primitives-v032.json for states, provenance, reuse boundaries, fallback and failure modes. If an original CSS atom is relevant, use only that class in the independent target project and test it.",
         "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification."
       }
+    },
+    {
+      "id": "REF-081",
+      "type": "reference",
+      "name": "Paired evidence narrative / 双线并行叙事",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v034",
+        "visual-storytelling",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "双线叙事",
+        "对照阅读",
+        "paired narrative",
+        "split editorial"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout/Subgrid",
+      "license": "Original technical research and independently written optional style atoms; external projects retain their own code, media, font and screenshot rights",
+      "styleIds": [],
+      "applicationContexts": [
+        "editorial",
+        "research"
+      ],
+      "dependencies": [
+        "IP-029",
+        "REF-077",
+        "DT-013"
+      ],
+      "details": "docs/research/experience-artifacts-v034.md",
+      "spec": "registry/experience-artifacts-v034.json",
+      "path": "styles/primitives/v034/creative-atoms.css",
+      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification.",
+      "handoff": {
+        "entry": "docs/research/experience-artifacts-v034.md",
+        "stack": "technology-neutral original research; isolated optional CSS visual/layout atom",
+        "instructions": "Look up REF-081 in registry/experience-artifacts-v034.json, verify distinctFrom/relatedAssets, stateContract, accessibleFallback and failureModes before selecting. An optional isolated CSS primitive exists but does not provide the underlying interaction. Source/license and target device must be reviewed separately.",
+        "limitations": "No assembled app, page blueprint, live navigation, React export, auto-compatible theme, downloaded third-party source or target-device verification."
+      }
+    },
+    {
+      "id": "REF-082",
+      "type": "reference",
+      "name": "Evidence marginalia / 证据页边注",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v034",
+        "visual-storytelling",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "页边注",
+        "研究注释",
+        "marginalia",
+        "source rail"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout/Subgrid",
+      "license": "Original technical research and independently written optional style atoms; external projects retain their own code, media, font and screenshot rights",
+      "styleIds": [],
+      "applicationContexts": [
+        "editorial",
+        "digital-exhibition"
+      ],
+      "dependencies": [
+        "IP-027",
+        "REF-066",
+        "REF-078"
+      ],
+      "details": "docs/research/experience-artifacts-v034.md",
+      "spec": "registry/experience-artifacts-v034.json",
+      "path": "styles/primitives/v034/creative-atoms.css",
+      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification.",
+      "handoff": {
+        "entry": "docs/research/experience-artifacts-v034.md",
+        "stack": "technology-neutral original research; isolated optional CSS visual/layout atom",
+        "instructions": "Look up REF-082 in registry/experience-artifacts-v034.json, verify distinctFrom/relatedAssets, stateContract, accessibleFallback and failureModes before selecting. An optional isolated CSS primitive exists but does not provide the underlying interaction. Source/license and target device must be reviewed separately.",
+        "limitations": "No assembled app, page blueprint, live navigation, React export, auto-compatible theme, downloaded third-party source or target-device verification."
+      }
+    },
+    {
+      "id": "REF-083",
+      "type": "reference",
+      "name": "Contact-sheet chapter sequence / 胶片接触印样章节",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v034",
+        "visual-storytelling",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "胶片目录",
+        "分镜索引",
+        "contact sheet",
+        "chapter filmstrip"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-snap-type",
+      "license": "Original technical research and independently written optional style atoms; external projects retain their own code, media, font and screenshot rights",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-portfolio",
+        "digital-exhibition"
+      ],
+      "dependencies": [
+        "IP-023",
+        "REF-077",
+        "TPL-002"
+      ],
+      "details": "docs/research/experience-artifacts-v034.md",
+      "spec": "registry/experience-artifacts-v034.json",
+      "path": "styles/primitives/v034/creative-atoms.css",
+      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification.",
+      "handoff": {
+        "entry": "docs/research/experience-artifacts-v034.md",
+        "stack": "technology-neutral original research; isolated optional CSS visual/layout atom",
+        "instructions": "Look up REF-083 in registry/experience-artifacts-v034.json, verify distinctFrom/relatedAssets, stateContract, accessibleFallback and failureModes before selecting. An optional isolated CSS primitive exists but does not provide the underlying interaction. Source/license and target device must be reviewed separately.",
+        "limitations": "No assembled app, page blueprint, live navigation, React export, auto-compatible theme, downloaded third-party source or target-device verification."
+      }
+    },
+    {
+      "id": "REF-084",
+      "type": "reference",
+      "name": "Cutaway chapter anatomy / 剖面式章节解读",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v034",
+        "visual-storytelling",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "视觉剖面",
+        "解剖式说明",
+        "cutaway story",
+        "anatomy editorial"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/clip-path",
+      "license": "Original technical research and independently written optional style atoms; external projects retain their own code, media, font and screenshot rights",
+      "styleIds": [],
+      "applicationContexts": [
+        "education",
+        "product-visual"
+      ],
+      "dependencies": [
+        "REF-075",
+        "REF-067",
+        "REF-062"
+      ],
+      "details": "docs/research/experience-artifacts-v034.md",
+      "spec": "registry/experience-artifacts-v034.json",
+      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification.",
+      "handoff": {
+        "entry": "docs/research/experience-artifacts-v034.md",
+        "stack": "technology-neutral original research",
+        "instructions": "Look up REF-084 in registry/experience-artifacts-v034.json, verify distinctFrom/relatedAssets, stateContract, accessibleFallback and failureModes before selecting. No executable implementation exists. Source/license and target device must be reviewed separately.",
+        "limitations": "No assembled app, page blueprint, live navigation, React export, auto-compatible theme, downloaded third-party source or target-device verification."
+      }
+    },
+    {
+      "id": "REF-085",
+      "type": "reference",
+      "name": "Asymmetric editorial subgrid / 非对称同轨编辑网格",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v034",
+        "spatial-composition",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "非对称网格",
+        "编辑布局",
+        "asymmetric grid",
+        "subgrid editorial"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout/Subgrid",
+      "license": "Original technical research and independently written optional style atoms; external projects retain their own code, media, font and screenshot rights",
+      "styleIds": [],
+      "applicationContexts": [
+        "editorial",
+        "creative-portfolio"
+      ],
+      "dependencies": [
+        "DT-013",
+        "DT-009",
+        "TPL-002"
+      ],
+      "details": "docs/research/experience-artifacts-v034.md",
+      "spec": "registry/experience-artifacts-v034.json",
+      "path": "styles/primitives/v034/creative-atoms.css",
+      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification.",
+      "handoff": {
+        "entry": "docs/research/experience-artifacts-v034.md",
+        "stack": "technology-neutral original research; isolated optional CSS visual/layout atom",
+        "instructions": "Look up REF-085 in registry/experience-artifacts-v034.json, verify distinctFrom/relatedAssets, stateContract, accessibleFallback and failureModes before selecting. An optional isolated CSS primitive exists but does not provide the underlying interaction. Source/license and target device must be reviewed separately.",
+        "limitations": "No assembled app, page blueprint, live navigation, React export, auto-compatible theme, downloaded third-party source or target-device verification."
+      }
+    },
+    {
+      "id": "REF-086",
+      "type": "reference",
+      "name": "Legible depth layers / 可读层叠深度",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v034",
+        "spatial-composition",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "深度层级",
+        "层叠卡片",
+        "depth layers",
+        "occlusion"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/isolation",
+      "license": "Original technical research and independently written optional style atoms; external projects retain their own code, media, font and screenshot rights",
+      "styleIds": [],
+      "applicationContexts": [
+        "digital-exhibition",
+        "creative-site"
+      ],
+      "dependencies": [
+        "REF-063",
+        "REF-075",
+        "REF-079"
+      ],
+      "details": "docs/research/experience-artifacts-v034.md",
+      "spec": "registry/experience-artifacts-v034.json",
+      "path": "styles/primitives/v034/creative-atoms.css",
+      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification.",
+      "handoff": {
+        "entry": "docs/research/experience-artifacts-v034.md",
+        "stack": "technology-neutral original research; isolated optional CSS visual/layout atom",
+        "instructions": "Look up REF-086 in registry/experience-artifacts-v034.json, verify distinctFrom/relatedAssets, stateContract, accessibleFallback and failureModes before selecting. An optional isolated CSS primitive exists but does not provide the underlying interaction. Source/license and target device must be reviewed separately.",
+        "limitations": "No assembled app, page blueprint, live navigation, React export, auto-compatible theme, downloaded third-party source or target-device verification."
+      }
+    },
+    {
+      "id": "REF-087",
+      "type": "reference",
+      "name": "Whitespace-axis composition / 留白与文字轴线构图",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v034",
+        "spatial-composition",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "留白构图",
+        "文字轴线",
+        "negative space",
+        "type axis"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout",
+      "license": "Original technical research and independently written optional style atoms; external projects retain their own code, media, font and screenshot rights",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-site",
+        "editorial"
+      ],
+      "dependencies": [
+        "DT-013",
+        "REF-069",
+        "REF-080"
+      ],
+      "details": "docs/research/experience-artifacts-v034.md",
+      "spec": "registry/experience-artifacts-v034.json",
+      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification.",
+      "handoff": {
+        "entry": "docs/research/experience-artifacts-v034.md",
+        "stack": "technology-neutral original research",
+        "instructions": "Look up REF-087 in registry/experience-artifacts-v034.json, verify distinctFrom/relatedAssets, stateContract, accessibleFallback and failureModes before selecting. No executable implementation exists. Source/license and target device must be reviewed separately.",
+        "limitations": "No assembled app, page blueprint, live navigation, React export, auto-compatible theme, downloaded third-party source or target-device verification."
+      }
+    },
+    {
+      "id": "REF-088",
+      "type": "reference",
+      "name": "Constellation guide geometry / 星图索引引导线",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v034",
+        "spatial-composition",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "星图布局",
+        "节点构图",
+        "constellation layout",
+        "spatial index geometry"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/gradient/radial-gradient",
+      "license": "Original technical research and independently written optional style atoms; external projects retain their own code, media, font and screenshot rights",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-portfolio",
+        "digital-exhibition"
+      ],
+      "dependencies": [
+        "REF-039",
+        "REF-047",
+        "REF-061"
+      ],
+      "details": "docs/research/experience-artifacts-v034.md",
+      "spec": "registry/experience-artifacts-v034.json",
+      "path": "styles/primitives/v034/creative-atoms.css",
+      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification.",
+      "handoff": {
+        "entry": "docs/research/experience-artifacts-v034.md",
+        "stack": "technology-neutral original research; isolated optional CSS visual/layout atom",
+        "instructions": "Look up REF-088 in registry/experience-artifacts-v034.json, verify distinctFrom/relatedAssets, stateContract, accessibleFallback and failureModes before selecting. An optional isolated CSS primitive exists but does not provide the underlying interaction. Source/license and target device must be reviewed separately.",
+        "limitations": "No assembled app, page blueprint, live navigation, React export, auto-compatible theme, downloaded third-party source or target-device verification."
+      }
+    },
+    {
+      "id": "IP-042",
+      "type": "interaction",
+      "name": "Constellation index with text parity / 星图索引与文字目录等效",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "v034",
+        "creative-navigation",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "星图导航",
+        "项目星图",
+        "constellation navigation",
+        "spatial explorer"
+      ],
+      "source": "https://www.w3.org/WAI/ARIA/apg/patterns/treeview/",
+      "license": "Original technical research and independently written optional style atoms; external projects retain their own code, media, font and screenshot rights",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-portfolio",
+        "digital-exhibition"
+      ],
+      "dependencies": [
+        "REF-088",
+        "IP-018",
+        "REF-028"
+      ],
+      "details": "docs/research/experience-artifacts-v034.md",
+      "spec": "registry/experience-artifacts-v034.json",
+      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification.",
+      "handoff": {
+        "entry": "docs/research/experience-artifacts-v034.md",
+        "mode": "research-only",
+        "stack": "technology-neutral original research",
+        "instructions": "Look up IP-042 in registry/experience-artifacts-v034.json, verify distinctFrom/relatedAssets, stateContract, accessibleFallback and failureModes before selecting. No executable implementation exists. Source/license and target device must be reviewed separately.",
+        "limitations": "No assembled app, page blueprint, live navigation, React export, auto-compatible theme, downloaded third-party source or target-device verification."
+      }
+    },
+    {
+      "id": "IP-043",
+      "type": "interaction",
+      "name": "Radial action compass with list fallback / 环形操作罗盘",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "v034",
+        "creative-navigation",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "环形菜单",
+        "操作罗盘",
+        "radial menu",
+        "action compass"
+      ],
+      "source": "https://www.w3.org/WAI/ARIA/apg/patterns/menu-button/",
+      "license": "Original technical research and independently written optional style atoms; external projects retain their own code, media, font and screenshot rights",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-tool",
+        "mobile"
+      ],
+      "dependencies": [
+        "IP-030",
+        "IP-035",
+        "REF-058"
+      ],
+      "details": "docs/research/experience-artifacts-v034.md",
+      "spec": "registry/experience-artifacts-v034.json",
+      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification.",
+      "handoff": {
+        "entry": "docs/research/experience-artifacts-v034.md",
+        "mode": "research-only",
+        "stack": "technology-neutral original research",
+        "instructions": "Look up IP-043 in registry/experience-artifacts-v034.json, verify distinctFrom/relatedAssets, stateContract, accessibleFallback and failureModes before selecting. No executable implementation exists. Source/license and target device must be reviewed separately.",
+        "limitations": "No assembled app, page blueprint, live navigation, React export, auto-compatible theme, downloaded third-party source or target-device verification."
+      }
+    },
+    {
+      "id": "IP-044",
+      "type": "interaction",
+      "name": "Persistent chapter orientation rail / 可恢复章节方位轨",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "v034",
+        "creative-navigation",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "章节导航",
+        "读书轨",
+        "chapter rail",
+        "reader wayfinding"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/API/History_API",
+      "license": "Original technical research and independently written optional style atoms; external projects retain their own code, media, font and screenshot rights",
+      "styleIds": [],
+      "applicationContexts": [
+        "editorial",
+        "knowledge-base"
+      ],
+      "dependencies": [
+        "REF-077",
+        "IP-029",
+        "REF-078"
+      ],
+      "details": "docs/research/experience-artifacts-v034.md",
+      "spec": "registry/experience-artifacts-v034.json",
+      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification.",
+      "handoff": {
+        "entry": "docs/research/experience-artifacts-v034.md",
+        "mode": "research-only",
+        "stack": "technology-neutral original research",
+        "instructions": "Look up IP-044 in registry/experience-artifacts-v034.json, verify distinctFrom/relatedAssets, stateContract, accessibleFallback and failureModes before selecting. No executable implementation exists. Source/license and target device must be reviewed separately.",
+        "limitations": "No assembled app, page blueprint, live navigation, React export, auto-compatible theme, downloaded third-party source or target-device verification."
+      }
+    },
+    {
+      "id": "IP-045",
+      "type": "interaction",
+      "name": "Anchor-tethered context switch / 锚点上下文切换",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "v034",
+        "creative-navigation",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "锚点弹层",
+        "空间上下文",
+        "anchor menu",
+        "tethered panel"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Anchor_positioning/Using",
+      "license": "Original technical research and independently written optional style atoms; external projects retain their own code, media, font and screenshot rights",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-tool",
+        "visual-editor"
+      ],
+      "dependencies": [
+        "IP-027",
+        "REF-027",
+        "REF-058"
+      ],
+      "details": "docs/research/experience-artifacts-v034.md",
+      "spec": "registry/experience-artifacts-v034.json",
+      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification.",
+      "handoff": {
+        "entry": "docs/research/experience-artifacts-v034.md",
+        "mode": "research-only",
+        "stack": "technology-neutral original research",
+        "instructions": "Look up IP-045 in registry/experience-artifacts-v034.json, verify distinctFrom/relatedAssets, stateContract, accessibleFallback and failureModes before selecting. No executable implementation exists. Source/license and target device must be reviewed separately.",
+        "limitations": "No assembled app, page blueprint, live navigation, React export, auto-compatible theme, downloaded third-party source or target-device verification."
+      }
+    },
+    {
+      "id": "IP-046",
+      "type": "interaction",
+      "name": "Frame scrub with explicit seek / 档案帧逐格探索",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "v034",
+        "unconventional-interaction",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "逐帧探索",
+        "拖拽预览",
+        "frame scrubber",
+        "seek preview"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events",
+      "license": "Original technical research and independently written optional style atoms; external projects retain their own code, media, font and screenshot rights",
+      "styleIds": [],
+      "applicationContexts": [
+        "digital-exhibition",
+        "creative-portfolio"
+      ],
+      "dependencies": [
+        "IP-023",
+        "REF-083",
+        "IP-032"
+      ],
+      "details": "docs/research/experience-artifacts-v034.md",
+      "spec": "registry/experience-artifacts-v034.json",
+      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification.",
+      "handoff": {
+        "entry": "docs/research/experience-artifacts-v034.md",
+        "mode": "research-only",
+        "stack": "technology-neutral original research",
+        "instructions": "Look up IP-046 in registry/experience-artifacts-v034.json, verify distinctFrom/relatedAssets, stateContract, accessibleFallback and failureModes before selecting. No executable implementation exists. Source/license and target device must be reviewed separately.",
+        "limitations": "No assembled app, page blueprint, live navigation, React export, auto-compatible theme, downloaded third-party source or target-device verification."
+      }
+    },
+    {
+      "id": "IP-047",
+      "type": "interaction",
+      "name": "Semantic inspection lens / 语义检查透镜",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "v034",
+        "unconventional-interaction",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "信息透镜",
+        "图层检查",
+        "inspection lens",
+        "semantic layer"
+      ],
+      "source": "https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/",
+      "license": "Original technical research and independently written optional style atoms; external projects retain their own code, media, font and screenshot rights",
+      "styleIds": [],
+      "applicationContexts": [
+        "education",
+        "digital-exhibition"
+      ],
+      "dependencies": [
+        "IP-026",
+        "REF-067",
+        "REF-084"
+      ],
+      "details": "docs/research/experience-artifacts-v034.md",
+      "spec": "registry/experience-artifacts-v034.json",
+      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification.",
+      "handoff": {
+        "entry": "docs/research/experience-artifacts-v034.md",
+        "mode": "research-only",
+        "stack": "technology-neutral original research",
+        "instructions": "Look up IP-047 in registry/experience-artifacts-v034.json, verify distinctFrom/relatedAssets, stateContract, accessibleFallback and failureModes before selecting. No executable implementation exists. Source/license and target device must be reviewed separately.",
+        "limitations": "No assembled app, page blueprint, live navigation, React export, auto-compatible theme, downloaded third-party source or target-device verification."
+      }
+    },
+    {
+      "id": "IP-048",
+      "type": "interaction",
+      "name": "Reversible collection shuffle / 可逆空间分组",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "v034",
+        "unconventional-interaction",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "空间重排",
+        "收藏洗牌",
+        "collection shuffle",
+        "reversible grouping"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API",
+      "license": "Original technical research and independently written optional style atoms; external projects retain their own code, media, font and screenshot rights",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-portfolio",
+        "knowledge-base"
+      ],
+      "dependencies": [
+        "IP-021",
+        "IP-035",
+        "REF-088"
+      ],
+      "details": "docs/research/experience-artifacts-v034.md",
+      "spec": "registry/experience-artifacts-v034.json",
+      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification.",
+      "handoff": {
+        "entry": "docs/research/experience-artifacts-v034.md",
+        "mode": "research-only",
+        "stack": "technology-neutral original research",
+        "instructions": "Look up IP-048 in registry/experience-artifacts-v034.json, verify distinctFrom/relatedAssets, stateContract, accessibleFallback and failureModes before selecting. No executable implementation exists. Source/license and target device must be reviewed separately.",
+        "limitations": "No assembled app, page blueprint, live navigation, React export, auto-compatible theme, downloaded third-party source or target-device verification."
+      }
+    },
+    {
+      "id": "IP-049",
+      "type": "interaction",
+      "name": "Constrained depth parallax with explicit target / 有界深度偏移",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "v034",
+        "unconventional-interaction",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "深度视差",
+        "响应式悬浮",
+        "parallax focus",
+        "depth interaction"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transform",
+      "license": "Original technical research and independently written optional style atoms; external projects retain their own code, media, font and screenshot rights",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-site",
+        "product-visual"
+      ],
+      "dependencies": [
+        "REF-086",
+        "IP-035",
+        "REF-079"
+      ],
+      "details": "docs/research/experience-artifacts-v034.md",
+      "spec": "registry/experience-artifacts-v034.json",
+      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification.",
+      "handoff": {
+        "entry": "docs/research/experience-artifacts-v034.md",
+        "mode": "research-only",
+        "stack": "technology-neutral original research",
+        "instructions": "Look up IP-049 in registry/experience-artifacts-v034.json, verify distinctFrom/relatedAssets, stateContract, accessibleFallback and failureModes before selecting. No executable implementation exists. Source/license and target device must be reviewed separately.",
+        "limitations": "No assembled app, page blueprint, live navigation, React export, auto-compatible theme, downloaded third-party source or target-device verification."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",
   "styleRegistry": "registry/styles.json",
-  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee. V0.18 adds research-only visual studies outside registry/styles.json and component archetypes outside registry/components.json; IP-026/IP-028 only include headless pure models, not UI components. V0.30 adds 17 research-only external specialization references REF-042..058; these are not actual component exports or dependencies. V0.31 adds 15 original design studies REF-059..068 and IP-031..035 as analyzed/research-only; not deployed components, runtime dependencies, or new styles. V0.32: 18 original research contracts IP-036..041 / REF-069..080; four visual entries link separate opt-in CSS samples but are not certified UI implementations.",
+  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee. V0.18 adds research-only visual studies outside registry/styles.json and component archetypes outside registry/components.json; IP-026/IP-028 only include headless pure models, not UI components. V0.30 adds 17 research-only external specialization references REF-042..058; these are not actual component exports or dependencies. V0.31 adds 15 original design studies REF-059..068 and IP-031..035 as analyzed/research-only; not deployed components, runtime dependencies, or new styles. V0.32: 18 original research contracts IP-036..041 / REF-069..080; four visual entries link separate opt-in CSS samples but are not certified UI implementations. V0.34 adds 16 task-first original research studies (REF-081..088 and IP-042..049), with 6 optional scoped CSS visual/layout atoms; IP research remains explicitly research-only.",
   "reusePolicyVersion": "1.0",
   "reusePolicies": {
     "style-token": {
