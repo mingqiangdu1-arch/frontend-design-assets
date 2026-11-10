@@ -1,0 +1,83 @@
+/* V0.34 original, independent opt-in visual/layout atoms.
+ * Not a page, theme or navigation component. Source order and accessible controls
+ * must be authored separately in the destination application.
+ * No global tokens, remote assets, imported code, keyframe motion or font files.
+ */
+
+/* Two readable story columns. Document DOM order remains the source of truth. */
+.fda34-paired-reading {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: var(--fda34-reading-gap, clamp(1rem, 4vw, 4rem));
+  row-gap: var(--fda34-reading-row-gap, 1.5rem);
+  align-items: start;
+}
+
+/* A main text lane and a note lane; do not use visual placement to reorder meaning. */
+.fda34-note-rail {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(9rem, 24%);
+  gap: var(--fda34-note-gap, 1.25rem);
+  align-items: start;
+}
+
+/* Optional contact-sheet strip: proximity snap avoids trapping scroll intent. */
+.fda34-contact-strip {
+  display: flex;
+  gap: var(--fda34-strip-gap, .75rem);
+  overflow-x: auto;
+  max-width: 100%;
+  padding-block: .25rem .75rem;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: x proximity;
+}
+.fda34-contact-stop {
+  flex: 0 0 var(--fda34-stop-width, clamp(10rem, 26vw, 19rem));
+  min-width: 0;
+  scroll-snap-align: start;
+}
+
+/* The track system is opt-in; item placement/content are intentionally absent. */
+.fda34-editorial-tracks {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--fda34-track-gap, clamp(.5rem, 1.5vw, 1.5rem));
+}
+.fda34-track-children {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  min-width: 0;
+}
+@supports (grid-template-columns: subgrid) {
+  .fda34-track-children { grid-template-columns: subgrid; }
+}
+
+/* Decoration, not an interactive focus/permission indicator. */
+.fda34-depth-surface {
+  position: relative;
+  isolation: isolate;
+  box-shadow: var(--fda34-depth-shadow, 0 .75rem 2.25rem rgb(27 36 53 / 12%));
+}
+
+/* Abstract orbits: never imply real coordinates or data relationships. */
+.fda34-orbit-guide {
+  background-image:
+    repeating-radial-gradient(circle at center,
+      transparent 0 2.75rem,
+      var(--fda34-orbit-line, rgb(55 70 87 / 14%)) 2.8rem 2.85rem,
+      transparent 2.9rem 5.4rem);
+}
+
+/* Always readable without wide layouts or browser-dependent effects. */
+@media (max-width: 47rem) {
+  .fda34-paired-reading,
+  .fda34-note-rail { grid-template-columns: minmax(0, 1fr); }
+  .fda34-editorial-tracks { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fda34-contact-strip { scroll-behavior: auto; scroll-snap-type: none; }
+}
+@media (forced-colors: active) {
+  .fda34-orbit-guide { background-image: none; }
+  .fda34-depth-surface { box-shadow: none; outline: 1px solid CanvasText; }
+}
