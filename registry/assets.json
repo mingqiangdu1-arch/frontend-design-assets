@@ -8035,11 +8035,757 @@
         "instructions": "Find IP-035 in registry/specialized-patterns-v031.json. Inspect stateContract, fallback, risks and relatedAssets; copy no upstream source and implement only in the independent target application.",
         "limitations": "Not a downloadable component, visual theme, model/texture asset, working interaction, or accessibility/performance certification."
       }
+    },
+    {
+      "id": "IP-036",
+      "type": "interaction",
+      "name": "Contextual slash and mention palette / 上下文指令与提及菜单",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "editor-collaboration",
+        "v032",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "斜杠菜单",
+        "富文本命令",
+        "slash command",
+        "mentions"
+      ],
+      "source": "https://tiptap.dev/docs/editor/api/utilities/suggestion",
+      "license": "Original research text; linked references and third-party fonts, textures and other media remain under individual upstream terms",
+      "styleIds": [],
+      "applicationContexts": [
+        "document",
+        "knowledge-base"
+      ],
+      "dependencies": [
+        "REF-043",
+        "REF-044"
+      ],
+      "details": "docs/research/creative-primitives-v032.md",
+      "spec": "registry/creative-primitives-v032.json",
+      "verified": "Original design-contract and upstream documentation review as of 2026-11-10. No editor running example, external media/typography import, browser/device test, licensing legal review, or production certification.",
+      "handoff": {
+        "entry": "docs/research/creative-primitives-v032.md",
+        "stack": "technology-neutral creative research; optional isolated CSS atoms for selected visual effects",
+        "instructions": "Inspect IP-036 in registry/creative-primitives-v032.json for states, provenance, reuse boundaries, fallback and failure modes. If an original CSS atom is relevant, use only that class in the independent target project and test it.",
+        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification."
+      }
+    },
+    {
+      "id": "IP-037",
+      "type": "interaction",
+      "name": "Anchored comments under concurrent edits / 协同修改中的锚定评论",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "editor-collaboration",
+        "v032",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "协同批注",
+        "相对位置",
+        "anchored comments",
+        "relative positions"
+      ],
+      "source": "https://github.com/yjs/docs/blob/main/api/relative-positions.md",
+      "license": "Original research text; linked references and third-party fonts, textures and other media remain under individual upstream terms",
+      "styleIds": [],
+      "applicationContexts": [
+        "document",
+        "review"
+      ],
+      "dependencies": [
+        "REF-045",
+        "IP-027"
+      ],
+      "details": "docs/research/creative-primitives-v032.md",
+      "spec": "registry/creative-primitives-v032.json",
+      "verified": "Original design-contract and upstream documentation review as of 2026-11-10. No editor running example, external media/typography import, browser/device test, licensing legal review, or production certification.",
+      "handoff": {
+        "entry": "docs/research/creative-primitives-v032.md",
+        "stack": "technology-neutral creative research; optional isolated CSS atoms for selected visual effects",
+        "instructions": "Inspect IP-037 in registry/creative-primitives-v032.json for states, provenance, reuse boundaries, fallback and failure modes. If an original CSS atom is relevant, use only that class in the independent target project and test it.",
+        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification."
+      }
+    },
+    {
+      "id": "IP-038",
+      "type": "interaction",
+      "name": "Ephemeral multiuser awareness / 低干扰协同在线状态",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "editor-collaboration",
+        "v032",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "多人光标",
+        "协作在线",
+        "presence",
+        "awareness"
+      ],
+      "source": "https://docs.yjs.dev/api/about-awareness",
+      "license": "Original research text; linked references and third-party fonts, textures and other media remain under individual upstream terms",
+      "styleIds": [],
+      "applicationContexts": [
+        "document",
+        "visual-editor"
+      ],
+      "dependencies": [
+        "REF-045",
+        "REF-043"
+      ],
+      "details": "docs/research/creative-primitives-v032.md",
+      "spec": "registry/creative-primitives-v032.json",
+      "verified": "Original design-contract and upstream documentation review as of 2026-11-10. No editor running example, external media/typography import, browser/device test, licensing legal review, or production certification.",
+      "handoff": {
+        "entry": "docs/research/creative-primitives-v032.md",
+        "stack": "technology-neutral creative research; optional isolated CSS atoms for selected visual effects",
+        "instructions": "Inspect IP-038 in registry/creative-primitives-v032.json for states, provenance, reuse boundaries, fallback and failure modes. If an original CSS atom is relevant, use only that class in the independent target project and test it.",
+        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification."
+      }
+    },
+    {
+      "id": "IP-039",
+      "type": "interaction",
+      "name": "Paste and IME-safe schema import / 安全粘贴与输入法友好导入",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "editor-collaboration",
+        "v032",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "粘贴清洗",
+        "中文输入法",
+        "paste sanitation",
+        "IME"
+      ],
+      "source": "https://lexical.dev/docs/intro",
+      "license": "Original research text; linked references and third-party fonts, textures and other media remain under individual upstream terms",
+      "styleIds": [],
+      "applicationContexts": [
+        "document",
+        "workspace"
+      ],
+      "dependencies": [
+        "REF-043",
+        "REF-044"
+      ],
+      "details": "docs/research/creative-primitives-v032.md",
+      "spec": "registry/creative-primitives-v032.json",
+      "verified": "Original design-contract and upstream documentation review as of 2026-11-10. No editor running example, external media/typography import, browser/device test, licensing legal review, or production certification.",
+      "handoff": {
+        "entry": "docs/research/creative-primitives-v032.md",
+        "stack": "technology-neutral creative research; optional isolated CSS atoms for selected visual effects",
+        "instructions": "Inspect IP-039 in registry/creative-primitives-v032.json for states, provenance, reuse boundaries, fallback and failure modes. If an original CSS atom is relevant, use only that class in the independent target project and test it.",
+        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification."
+      }
+    },
+    {
+      "id": "IP-040",
+      "type": "interaction",
+      "name": "Local undo and remote transactions / 本地撤销与远端事务",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "editor-collaboration",
+        "v032",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "协同撤销",
+        "编辑历史",
+        "local undo",
+        "remote transaction"
+      ],
+      "source": "https://docs.yjs.dev/getting-started/a-collaborative-editor",
+      "license": "Original research text; linked references and third-party fonts, textures and other media remain under individual upstream terms",
+      "styleIds": [],
+      "applicationContexts": [
+        "document",
+        "knowledge-base"
+      ],
+      "dependencies": [
+        "REF-043",
+        "REF-045"
+      ],
+      "details": "docs/research/creative-primitives-v032.md",
+      "spec": "registry/creative-primitives-v032.json",
+      "verified": "Original design-contract and upstream documentation review as of 2026-11-10. No editor running example, external media/typography import, browser/device test, licensing legal review, or production certification.",
+      "handoff": {
+        "entry": "docs/research/creative-primitives-v032.md",
+        "stack": "technology-neutral creative research; optional isolated CSS atoms for selected visual effects",
+        "instructions": "Inspect IP-040 in registry/creative-primitives-v032.json for states, provenance, reuse boundaries, fallback and failure modes. If an original CSS atom is relevant, use only that class in the independent target project and test it.",
+        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification."
+      }
+    },
+    {
+      "id": "IP-041",
+      "type": "interaction",
+      "name": "Block drag handle with selection parity / 文档块拖拽及选区等效",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "editor-collaboration",
+        "v032",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "块拖拽",
+        "多块选中",
+        "block handle",
+        "accessible reorder"
+      ],
+      "source": "https://www.w3.org/WAI/ARIA/apg/patterns/listbox/examples/listbox-rearrangeable/",
+      "license": "Original research text; linked references and third-party fonts, textures and other media remain under individual upstream terms",
+      "styleIds": [],
+      "applicationContexts": [
+        "document",
+        "visual-editor"
+      ],
+      "dependencies": [
+        "REF-043",
+        "REF-044",
+        "IP-033",
+        "REF-028"
+      ],
+      "details": "docs/research/creative-primitives-v032.md",
+      "spec": "registry/creative-primitives-v032.json",
+      "verified": "Original design-contract and upstream documentation review as of 2026-11-10. No editor running example, external media/typography import, browser/device test, licensing legal review, or production certification.",
+      "handoff": {
+        "entry": "docs/research/creative-primitives-v032.md",
+        "stack": "technology-neutral creative research; optional isolated CSS atoms for selected visual effects",
+        "instructions": "Inspect IP-041 in registry/creative-primitives-v032.json for states, provenance, reuse boundaries, fallback and failure modes. If an original CSS atom is relevant, use only that class in the independent target project and test it.",
+        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification."
+      }
+    },
+    {
+      "id": "REF-069",
+      "type": "reference",
+      "name": "Variable type axis palette / 可变字体轴与字重范围",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "type-texture",
+        "v032",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "可变字体",
+        "字体轴",
+        "variable font",
+        "optical size"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Fonts/Variable_fonts",
+      "license": "Original research text; linked references and third-party fonts, textures and other media remain under individual upstream terms",
+      "styleIds": [],
+      "applicationContexts": [
+        "editorial",
+        "creative-site"
+      ],
+      "dependencies": [
+        "DT-013"
+      ],
+      "details": "docs/research/creative-primitives-v032.md",
+      "spec": "registry/creative-primitives-v032.json",
+      "verified": "Original design-contract and upstream documentation review as of 2026-11-10. No editor running example, external media/typography import, browser/device test, licensing legal review, or production certification.",
+      "handoff": {
+        "entry": "docs/research/creative-primitives-v032.md",
+        "stack": "technology-neutral creative research; optional isolated CSS atoms for selected visual effects",
+        "instructions": "Inspect REF-069 in registry/creative-primitives-v032.json for states, provenance, reuse boundaries, fallback and failure modes. If an original CSS atom is relevant, use only that class in the independent target project and test it.",
+        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification."
+      }
+    },
+    {
+      "id": "REF-070",
+      "type": "reference",
+      "name": "CJK–Latin fallback and subset specimen / 中英混排与字库分片",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "type-texture",
+        "v032",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "中文字体",
+        "中英混排",
+        "CJK",
+        "fallback stack"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/%40font-face/unicode-range",
+      "license": "Original research text; linked references and third-party fonts, textures and other media remain under individual upstream terms",
+      "styleIds": [],
+      "applicationContexts": [
+        "knowledge-base",
+        "editorial"
+      ],
+      "dependencies": [
+        "DT-013",
+        "REF-069"
+      ],
+      "details": "docs/research/creative-primitives-v032.md",
+      "spec": "registry/creative-primitives-v032.json",
+      "verified": "Original design-contract and upstream documentation review as of 2026-11-10. No editor running example, external media/typography import, browser/device test, licensing legal review, or production certification.",
+      "handoff": {
+        "entry": "docs/research/creative-primitives-v032.md",
+        "stack": "technology-neutral creative research; optional isolated CSS atoms for selected visual effects",
+        "instructions": "Inspect REF-070 in registry/creative-primitives-v032.json for states, provenance, reuse boundaries, fallback and failure modes. If an original CSS atom is relevant, use only that class in the independent target project and test it.",
+        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification."
+      }
+    },
+    {
+      "id": "REF-071",
+      "type": "reference",
+      "name": "Font provenance and self-host checklist / 字体来源、授权与自托管清单",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "type-texture",
+        "v032",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "字体许可",
+        "字体自托管",
+        "font licensing",
+        "fontsource"
+      ],
+      "source": "https://github.com/google/fonts/blob/main/README.md",
+      "license": "Original research text; linked references and third-party fonts, textures and other media remain under individual upstream terms",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-site",
+        "workspace"
+      ],
+      "dependencies": [
+        "REF-069",
+        "REF-070"
+      ],
+      "details": "docs/research/creative-primitives-v032.md",
+      "spec": "registry/creative-primitives-v032.json",
+      "verified": "Original design-contract and upstream documentation review as of 2026-11-10. No editor running example, external media/typography import, browser/device test, licensing legal review, or production certification.",
+      "handoff": {
+        "entry": "docs/research/creative-primitives-v032.md",
+        "stack": "technology-neutral creative research; optional isolated CSS atoms for selected visual effects",
+        "instructions": "Inspect REF-071 in registry/creative-primitives-v032.json for states, provenance, reuse boundaries, fallback and failure modes. If an original CSS atom is relevant, use only that class in the independent target project and test it.",
+        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification."
+      }
+    },
+    {
+      "id": "REF-072",
+      "type": "reference",
+      "name": "Poly Haven CC0 PBR and HDRI source / CC0 物理材质和环境光照来源",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "type-texture",
+        "v032",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "PBR 纹理",
+        "环境贴图",
+        "HDRI",
+        "CC0 texture"
+      ],
+      "source": "https://polyhaven.com/license",
+      "license": "Original research text; linked references and third-party fonts, textures and other media remain under individual upstream terms",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-site",
+        "product-visual"
+      ],
+      "dependencies": [
+        "REF-051",
+        "REF-059",
+        "REF-060"
+      ],
+      "details": "docs/research/creative-primitives-v032.md",
+      "spec": "registry/creative-primitives-v032.json",
+      "verified": "Original design-contract and upstream documentation review as of 2026-11-10. No editor running example, external media/typography import, browser/device test, licensing legal review, or production certification.",
+      "handoff": {
+        "entry": "docs/research/creative-primitives-v032.md",
+        "stack": "technology-neutral creative research; optional isolated CSS atoms for selected visual effects",
+        "instructions": "Inspect REF-072 in registry/creative-primitives-v032.json for states, provenance, reuse boundaries, fallback and failure modes. If an original CSS atom is relevant, use only that class in the independent target project and test it.",
+        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification."
+      }
+    },
+    {
+      "id": "REF-073",
+      "type": "reference",
+      "name": "ambientCG CC0 material metadata / ambientCG 材质通道参考",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "type-texture",
+        "v032",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "免费材质",
+        "贴图素材",
+        "ambientCG",
+        "PBR material"
+      ],
+      "source": "https://ambientcg.com/",
+      "license": "Original research text; linked references and third-party fonts, textures and other media remain under individual upstream terms",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-site",
+        "product-visual"
+      ],
+      "dependencies": [
+        "REF-051",
+        "REF-062",
+        "REF-072"
+      ],
+      "details": "docs/research/creative-primitives-v032.md",
+      "spec": "registry/creative-primitives-v032.json",
+      "verified": "Original design-contract and upstream documentation review as of 2026-11-10. No editor running example, external media/typography import, browser/device test, licensing legal review, or production certification.",
+      "handoff": {
+        "entry": "docs/research/creative-primitives-v032.md",
+        "stack": "technology-neutral creative research; optional isolated CSS atoms for selected visual effects",
+        "instructions": "Inspect REF-073 in registry/creative-primitives-v032.json for states, provenance, reuse boundaries, fallback and failure modes. If an original CSS atom is relevant, use only that class in the independent target project and test it.",
+        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification."
+      }
+    },
+    {
+      "id": "REF-074",
+      "type": "reference",
+      "name": "Procedural grain and print halftone / 程序噪点与印刷网点纹理",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "type-texture",
+        "v032",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "颗粒纹理",
+        "半色调",
+        "procedural grain",
+        "halftone"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/feTurbulence",
+      "license": "Original research text; linked references and third-party fonts, textures and other media remain under individual upstream terms",
+      "styleIds": [],
+      "applicationContexts": [
+        "editorial",
+        "creative-site"
+      ],
+      "dependencies": [
+        "DT-009",
+        "REF-062"
+      ],
+      "details": "docs/research/creative-primitives-v032.md",
+      "spec": "registry/creative-primitives-v032.json",
+      "path": "styles/primitives/v032/creative-atoms.css",
+      "verified": "Original design-contract and upstream documentation review as of 2026-11-10. No editor running example, external media/typography import, browser/device test, licensing legal review, or production certification.",
+      "handoff": {
+        "entry": "docs/research/creative-primitives-v032.md",
+        "stack": "technology-neutral creative research; optional isolated CSS atoms for selected visual effects",
+        "instructions": "Inspect REF-074 in registry/creative-primitives-v032.json for states, provenance, reuse boundaries, fallback and failure modes. If an original CSS atom is relevant, use only that class in the independent target project and test it.",
+        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification."
+      }
+    },
+    {
+      "id": "REF-075",
+      "type": "reference",
+      "name": "Layered mask reveal / 多遮罩揭示",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "expressive-effects",
+        "v032",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "蒙版揭示",
+        "剪纸转场",
+        "layered mask",
+        "mask reveal"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Masking/Mask_properties",
+      "license": "Original research text; linked references and third-party fonts, textures and other media remain under individual upstream terms",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-site",
+        "digital-exhibition"
+      ],
+      "dependencies": [
+        "REF-038",
+        "IP-029"
+      ],
+      "details": "docs/research/creative-primitives-v032.md",
+      "spec": "registry/creative-primitives-v032.json",
+      "path": "styles/primitives/v032/creative-atoms.css",
+      "verified": "Original design-contract and upstream documentation review as of 2026-11-10. No editor running example, external media/typography import, browser/device test, licensing legal review, or production certification.",
+      "handoff": {
+        "entry": "docs/research/creative-primitives-v032.md",
+        "stack": "technology-neutral creative research; optional isolated CSS atoms for selected visual effects",
+        "instructions": "Inspect REF-075 in registry/creative-primitives-v032.json for states, provenance, reuse boundaries, fallback and failure modes. If an original CSS atom is relevant, use only that class in the independent target project and test it.",
+        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification."
+      }
+    },
+    {
+      "id": "REF-076",
+      "type": "reference",
+      "name": "Controlled SVG displacement / 有界 SVG 折射与扰动",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "expressive-effects",
+        "v032",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "扭曲效果",
+        "画面折射",
+        "displacement",
+        "svg filter"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/feDisplacementMap",
+      "license": "Original research text; linked references and third-party fonts, textures and other media remain under individual upstream terms",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-site",
+        "digital-exhibition"
+      ],
+      "dependencies": [
+        "REF-060",
+        "REF-063"
+      ],
+      "details": "docs/research/creative-primitives-v032.md",
+      "spec": "registry/creative-primitives-v032.json",
+      "verified": "Original design-contract and upstream documentation review as of 2026-11-10. No editor running example, external media/typography import, browser/device test, licensing legal review, or production certification.",
+      "handoff": {
+        "entry": "docs/research/creative-primitives-v032.md",
+        "stack": "technology-neutral creative research; optional isolated CSS atoms for selected visual effects",
+        "instructions": "Inspect REF-076 in registry/creative-primitives-v032.json for states, provenance, reuse boundaries, fallback and failure modes. If an original CSS atom is relevant, use only that class in the independent target project and test it.",
+        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification."
+      }
+    },
+    {
+      "id": "REF-077",
+      "type": "reference",
+      "name": "Scroll-linked reversible narrative / 滚动驱动的可逆叙事",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "expressive-effects",
+        "v032",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "卷轴叙事",
+        "滚动时间线",
+        "scroll-linked animation",
+        "scroll story"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Scroll-driven_animations/Timelines",
+      "license": "Original research text; linked references and third-party fonts, textures and other media remain under individual upstream terms",
+      "styleIds": [],
+      "applicationContexts": [
+        "editorial",
+        "creative-site"
+      ],
+      "dependencies": [
+        "IP-029",
+        "REF-027"
+      ],
+      "details": "docs/research/creative-primitives-v032.md",
+      "spec": "registry/creative-primitives-v032.json",
+      "verified": "Original design-contract and upstream documentation review as of 2026-11-10. No editor running example, external media/typography import, browser/device test, licensing legal review, or production certification.",
+      "handoff": {
+        "entry": "docs/research/creative-primitives-v032.md",
+        "stack": "technology-neutral creative research; optional isolated CSS atoms for selected visual effects",
+        "instructions": "Inspect REF-077 in registry/creative-primitives-v032.json for states, provenance, reuse boundaries, fallback and failure modes. If an original CSS atom is relevant, use only that class in the independent target project and test it.",
+        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification."
+      }
+    },
+    {
+      "id": "REF-078",
+      "type": "reference",
+      "name": "View transition context continuity / 视图过渡与焦点延续",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "expressive-effects",
+        "v032",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "共享元素转场",
+        "视图过渡",
+        "view transition",
+        "continuity"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API",
+      "license": "Original research text; linked references and third-party fonts, textures and other media remain under individual upstream terms",
+      "styleIds": [],
+      "applicationContexts": [
+        "workspace",
+        "creative-site"
+      ],
+      "dependencies": [
+        "REF-027",
+        "IP-029"
+      ],
+      "details": "docs/research/creative-primitives-v032.md",
+      "spec": "registry/creative-primitives-v032.json",
+      "verified": "Original design-contract and upstream documentation review as of 2026-11-10. No editor running example, external media/typography import, browser/device test, licensing legal review, or production certification.",
+      "handoff": {
+        "entry": "docs/research/creative-primitives-v032.md",
+        "stack": "technology-neutral creative research; optional isolated CSS atoms for selected visual effects",
+        "instructions": "Inspect REF-078 in registry/creative-primitives-v032.json for states, provenance, reuse boundaries, fallback and failure modes. If an original CSS atom is relevant, use only that class in the independent target project and test it.",
+        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification."
+      }
+    },
+    {
+      "id": "REF-079",
+      "type": "reference",
+      "name": "Localized spotlight and spectral surface / 局部聚光与光谱表面",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "expressive-effects",
+        "v032",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "光谱渐变",
+        "局部聚光",
+        "spotlight",
+        "spectral gradient"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/gradient/radial-gradient",
+      "license": "Original research text; linked references and third-party fonts, textures and other media remain under individual upstream terms",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-site",
+        "product-visual"
+      ],
+      "dependencies": [
+        "REF-061",
+        "REF-063"
+      ],
+      "details": "docs/research/creative-primitives-v032.md",
+      "spec": "registry/creative-primitives-v032.json",
+      "path": "styles/primitives/v032/creative-atoms.css",
+      "verified": "Original design-contract and upstream documentation review as of 2026-11-10. No editor running example, external media/typography import, browser/device test, licensing legal review, or production certification.",
+      "handoff": {
+        "entry": "docs/research/creative-primitives-v032.md",
+        "stack": "technology-neutral creative research; optional isolated CSS atoms for selected visual effects",
+        "instructions": "Inspect REF-079 in registry/creative-primitives-v032.json for states, provenance, reuse boundaries, fallback and failure modes. If an original CSS atom is relevant, use only that class in the independent target project and test it.",
+        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification."
+      }
+    },
+    {
+      "id": "REF-080",
+      "type": "reference",
+      "name": "Kinetic typography with readable DOM / 可读文本的动态排印",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "expressive-effects",
+        "v032",
+        "original-research",
+        "task-first",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "动态排版",
+        "动效标题",
+        "kinetic typography",
+        "type motion"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API",
+      "license": "Original research text; linked references and third-party fonts, textures and other media remain under individual upstream terms",
+      "styleIds": [],
+      "applicationContexts": [
+        "editorial",
+        "digital-exhibition"
+      ],
+      "dependencies": [
+        "DT-013",
+        "REF-069",
+        "MOT-001"
+      ],
+      "details": "docs/research/creative-primitives-v032.md",
+      "spec": "registry/creative-primitives-v032.json",
+      "path": "styles/primitives/v032/creative-atoms.css",
+      "verified": "Original design-contract and upstream documentation review as of 2026-11-10. No editor running example, external media/typography import, browser/device test, licensing legal review, or production certification.",
+      "handoff": {
+        "entry": "docs/research/creative-primitives-v032.md",
+        "stack": "technology-neutral creative research; optional isolated CSS atoms for selected visual effects",
+        "instructions": "Inspect REF-080 in registry/creative-primitives-v032.json for states, provenance, reuse boundaries, fallback and failure modes. If an original CSS atom is relevant, use only that class in the independent target project and test it.",
+        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",
   "styleRegistry": "registry/styles.json",
-  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee. V0.18 adds research-only visual studies outside registry/styles.json and component archetypes outside registry/components.json; IP-026/IP-028 only include headless pure models, not UI components. V0.30 adds 17 research-only external specialization references REF-042..058; these are not actual component exports or dependencies. V0.31 adds 15 original design studies REF-059..068 and IP-031..035 as analyzed/research-only; not deployed components, runtime dependencies, or new styles.",
+  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee. V0.18 adds research-only visual studies outside registry/styles.json and component archetypes outside registry/components.json; IP-026/IP-028 only include headless pure models, not UI components. V0.30 adds 17 research-only external specialization references REF-042..058; these are not actual component exports or dependencies. V0.31 adds 15 original design studies REF-059..068 and IP-031..035 as analyzed/research-only; not deployed components, runtime dependencies, or new styles. V0.32: 18 original research contracts IP-036..041 / REF-069..080; four visual entries link separate opt-in CSS samples but are not certified UI implementations.",
   "reusePolicyVersion": "1.0",
   "reusePolicies": {
     "style-token": {
