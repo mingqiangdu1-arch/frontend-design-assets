@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-10 · V0.33 asset retrieval trust and classification hardening
+
+- Audited existing V0.32 content instead of duplicating 18 editor/type/texture/expressive research studies. Discovered 11 research-only interaction briefs (`IP-031..041`) were being reported as `adapt-required` by the generic `behavior-pattern` handoff rule.
+- Added explicit restrictive per-asset `handoff.mode: research-only` in the registry, respected by `scripts/find-assets.mjs` search/filter/handoff output. Reject invalid handoff overrides in registry validation; never allow metadata to elevate research to source-code reuse.
+- Added focused regressions for all 11 research IDs and for preserving `IP-030` prototype and `UI-058` actual code classifications; see [retrieval trust QA](docs/research/retrieval-trust-v033.md).
+- No new assets (total **239**), themes, React exports, external packages, downloadable media, page assembly or project implementation.
+
 ## 2026-11-10 · V0.32 editor, type, material and expressive-effect library research
 
 - Added **18 original analyzed-stage research contracts**: six collaborative-editor behavior patterns (`IP-036..041`), six font/texture provenance and typography materials (`REF-069..074`), six expressive effect studies (`REF-075..080`). Total registry **221 → 239**; no existing ID, style or React export semantics changed.
