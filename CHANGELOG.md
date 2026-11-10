@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-10 · V0.35 standalone dual-viewport visual state specimens
+
+- Added **eight original standalone SVG visual/state illustrations** keyed to existing V0.34 assets `REF-081`, `REF-082`, `REF-085`, `IP-042`, `IP-043`, `IP-044`, `IP-046`, `IP-047`. Each illustrates desktop and mobile **conceptual** layouts plus a representative selection/focus/return state without assembling a page or application.
+- Added [indexed state specimen contracts](registry/state-specimens-v035.json), [visual specimens](styles/specimens/v035/README.md), and [scope/quality guidance](docs/research/state-specimens-v035.md). Extended `assets.json.visualSpecimen` and `scripts/find-assets.mjs` handoff relatedFiles to make actual image references discoverable while preserving `analyzed / research-only`.
+- Added registry checks, pure Node tests and Chromium standalone-SVG smoke verification; tests only establish the drawing is parsed/renderable and self-contained, **not** device-responsiveness, user interaction, screen-reader compliance or production integration.
+- Total stable asset IDs **remain 255**; no React exports, themes, installed dependencies, third-party screenshots, logos, fonts, live services or complete pages added.
+
 ## 2026-11-10 · V0.34 visual storytelling, spatial composition and experimental navigation research
 
 - Added **16 original research contracts** in four balanced groups: narrative `REF-081..084`, spatial `REF-085..088`, creative navigation `IP-042..045`, unconventional interaction `IP-046..049`. Asset index **239 → 255**. Each entry specifies original design rationale, state, fallback, failure modes, differences from existing assets and official technical reference.
