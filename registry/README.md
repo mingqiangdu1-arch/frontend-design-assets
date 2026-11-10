@@ -13,6 +13,7 @@ This directory is the **authoritative index** for choosing existing design refer
 | `style-facets.json` | One-to-one theme selection facets: task aliases, structural layout, material, interaction, device and density; references real demo paths. Pair with `scripts/style-match.mjs` and `scripts/select-style.mjs` for explainable matching, not an ML style rank. |
 | `specialized-resources-v030.json` | 17 个专项外部资源的来源、许可证、既有资产补位和可检索标签（REF-042..058）；与 assets.json 一一对应，只是研究来源，不是导出组件 |
 | `specialized-patterns-v031.json` | V0.31 的 15 个研究型视觉/数据/移动行为契约（REF-059..068、IP-031..035）；只含原创建议、状态、来源和降级，不是代码或新 styleIds |
+| `state-specimens-v035.json` | 为八个既有 V0.34 研究 ID 添加独立桌面/移动原创 SVG 示例。`assets.json.visualSpecimen` 表示只读图形文件，不能作为 React export、运行交互或浏览器截图证据 |
 | `experience-artifacts-v034.json` | V0.34 创意叙事、空间布局、非传统导航与交互 16 份原创研究合同（REF-081..088、IP-042..049），关联可选的 6 个独立布局/视觉 CSS 原子；非页面或 React 实现 |
 | `creative-primitives-v032.json` | 18 个 V0.32 研究型素材（`IP-036..041` / `REF-069..080`），覆盖协同编辑器状态、字体/纹理来源和特殊视觉效果的降级契约；仅 6 个关联独立 CSS class 作为原创样例 |
 | `page-templates.json` | Independent full-page references; inspect `implementation` to distinguish static JavaScript from React integration |
@@ -22,6 +23,12 @@ This directory is the **authoritative index** for choosing existing design refer
 | Other JSON files | Focused motion/visual quality/research metadata |
 
 Task-based entry: [../CATALOG.md](../CATALOG.md). Agent operating rules: [../AGENTS.md](../AGENTS.md).
+
+## V0.35 static illustration contract
+
+- `visualSpecimen` is an optional path for **original static vector layout/state studies**. It never overrides the artifact lifecycle or reuse policy; `visualSpecimenEvidence` explicitly states the evidence level.
+- Agent `handoffResolved.relatedFiles` includes this SVG path when present. Compare the illustration with V0.34 `stateContract` before using it as a design reference; verify actual behavior in the independent target product.
+- [V0.35 specimens](../styles/specimens/v035/README.md) · [research note](../docs/research/state-specimens-v035.md).
 
 ## V0.33 research handoff override
 
