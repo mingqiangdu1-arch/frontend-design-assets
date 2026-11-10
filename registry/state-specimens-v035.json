@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.35.0",
+  "updatedAt": "2026-11-10",
+  "scope": "Eight original dual-viewport static SVG states supporting existing V0.34 research IDs. Source-only vector reference, not a page, screenshots, exported UI component, usable interaction, tested responsive layout or new license.",
+  "status": "static-illustration-only",
+  "viewportsAreConceptsNotCaptures": true,
+  "assetsAdded": 0,
+  "specimens": [
+    {
+      "assetId": "REF-081",
+      "group": "visual-storytelling",
+      "kind": "layout",
+      "title": "Paired reading / 双线阅读",
+      "state": "comparison anchor selected",
+      "targetViewportWidths": [
+        1440,
+        390
+      ],
+      "desktop": "conceptual-layout-1440",
+      "mobile": "conceptual-layout-390",
+      "focusExample": "对照点 B-02",
+      "mobileFallback": "A → B 连贯串行",
+      "svg": "styles/specimens/v035/REF-081.svg",
+      "documentation": "docs/research/state-specimens-v035.md",
+      "reviewedOn": "2026-11-10",
+      "lifecycle": "analyzed",
+      "reuseMode": "research-only",
+      "evidence": "original-static-vector-study-not-rendered-app",
+      "limitations": "No tested layout/CSS, actual keyboard behavior, focus management, responsive screenshot, screen-reader audit, navigation, product data or production integration."
+    },
+    {
+      "assetId": "REF-082",
+      "group": "visual-storytelling",
+      "kind": "layout",
+      "title": "Evidence marginalia / 证据页边注",
+      "state": "note referenced and focused",
+      "targetViewportWidths": [
+        1440,
+        390
+      ],
+      "desktop": "conceptual-layout-1440",
+      "mobile": "conceptual-layout-390",
+      "focusExample": "来源注 03",
+      "mobileFallback": "正文后接证据来源",
+      "svg": "styles/specimens/v035/REF-082.svg",
+      "documentation": "docs/research/state-specimens-v035.md",
+      "reviewedOn": "2026-11-10",
+      "lifecycle": "analyzed",
+      "reuseMode": "research-only",
+      "evidence": "original-static-vector-study-not-rendered-app",
+      "limitations": "No tested layout/CSS, actual keyboard behavior, focus management, responsive screenshot, screen-reader audit, navigation, product data or production integration."
+    },
+    {
+      "assetId": "REF-085",
+      "group": "spatial-composition",
+      "kind": "layout",
+      "title": "Asymmetric editorial grid / 非对称网格",
+      "state": "editorial hierarchy preserved",
+      "targetViewportWidths": [
+        1440,
+        390
+      ],
+      "desktop": "conceptual-layout-1440",
+      "mobile": "conceptual-layout-390",
+      "focusExample": "卡片条目 02",
+      "mobileFallback": "源顺序单栏重排",
+      "svg": "styles/specimens/v035/REF-085.svg",
+      "documentation": "docs/research/state-specimens-v035.md",
+      "reviewedOn": "2026-11-10",
+      "lifecycle": "analyzed",
+      "reuseMode": "research-only",
+      "evidence": "original-static-vector-study-not-rendered-app",
+      "limitations": "No tested layout/CSS, actual keyboard behavior, focus management, responsive screenshot, screen-reader audit, navigation, product data or production integration."
+    },
+    {
+      "assetId": "IP-042",
+      "group": "creative-navigation",
+      "kind": "interaction-state",
+      "title": "Constellation navigator / 星图导航",
+      "state": "node 03 selected with index parity",
+      "targetViewportWidths": [
+        1440,
+        390
+      ],
+      "desktop": "conceptual-layout-1440",
+      "mobile": "conceptual-layout-390",
+      "focusExample": "节点 03 — 同名目录",
+      "mobileFallback": "目录优先，可显式切换",
+      "svg": "styles/specimens/v035/IP-042.svg",
+      "documentation": "docs/research/state-specimens-v035.md",
+      "reviewedOn": "2026-11-10",
+      "lifecycle": "analyzed",
+      "reuseMode": "research-only",
+      "evidence": "original-static-vector-study-not-rendered-app",
+      "limitations": "No tested layout/CSS, actual keyboard behavior, focus management, responsive screenshot, screen-reader audit, navigation, product data or production integration."
+    },
+    {
+      "assetId": "IP-043",
+      "group": "creative-navigation",
+      "kind": "interaction-state",
+      "title": "Radial compass / 环形操作罗盘",
+      "state": "menu open and focus on third action",
+      "targetViewportWidths": [
+        1440,
+        390
+      ],
+      "desktop": "conceptual-layout-1440",
+      "mobile": "conceptual-layout-390",
+      "focusExample": "操作 03",
+      "mobileFallback": "可见列表与大触点",
+      "svg": "styles/specimens/v035/IP-043.svg",
+      "documentation": "docs/research/state-specimens-v035.md",
+      "reviewedOn": "2026-11-10",
+      "lifecycle": "analyzed",
+      "reuseMode": "research-only",
+      "evidence": "original-static-vector-study-not-rendered-app",
+      "limitations": "No tested layout/CSS, actual keyboard behavior, focus management, responsive screenshot, screen-reader audit, navigation, product data or production integration."
+    },
+    {
+      "assetId": "IP-044",
+      "group": "creative-navigation",
+      "kind": "interaction-state",
+      "title": "Chapter orientation rail / 章节方位轨",
+      "state": "chapter 03 selected; back origin preserved",
+      "targetViewportWidths": [
+        1440,
+        390
+      ],
+      "desktop": "conceptual-layout-1440",
+      "mobile": "conceptual-layout-390",
+      "focusExample": "章节 03 / 返回来源",
+      "mobileFallback": "章目录加返回链接",
+      "svg": "styles/specimens/v035/IP-044.svg",
+      "documentation": "docs/research/state-specimens-v035.md",
+      "reviewedOn": "2026-11-10",
+      "lifecycle": "analyzed",
+      "reuseMode": "research-only",
+      "evidence": "original-static-vector-study-not-rendered-app",
+      "limitations": "No tested layout/CSS, actual keyboard behavior, focus management, responsive screenshot, screen-reader audit, navigation, product data or production integration."
+    },
+    {
+      "assetId": "IP-046",
+      "group": "unconventional-interaction",
+      "kind": "interaction-state",
+      "title": "Frame scrubber / 帧逐格探索",
+      "state": "frame 04 preview; frame 03 committed",
+      "targetViewportWidths": [
+        1440,
+        390
+      ],
+      "desktop": "conceptual-layout-1440",
+      "mobile": "conceptual-layout-390",
+      "focusExample": "预览 04，已选 03",
+      "mobileFallback": "前后帧按钮、直接选择",
+      "svg": "styles/specimens/v035/IP-046.svg",
+      "documentation": "docs/research/state-specimens-v035.md",
+      "reviewedOn": "2026-11-10",
+      "lifecycle": "analyzed",
+      "reuseMode": "research-only",
+      "evidence": "original-static-vector-study-not-rendered-app",
+      "limitations": "No tested layout/CSS, actual keyboard behavior, focus management, responsive screenshot, screen-reader audit, navigation, product data or production integration."
+    },
+    {
+      "assetId": "IP-047",
+      "group": "unconventional-interaction",
+      "kind": "interaction-state",
+      "title": "Semantic inspection / 语义透镜",
+      "state": "layer B selected, source list visible",
+      "targetViewportWidths": [
+        1440,
+        390
+      ],
+      "desktop": "conceptual-layout-1440",
+      "mobile": "conceptual-layout-390",
+      "focusExample": "图层 B → 证据记录",
+      "mobileFallback": "层列表代替悬浮透镜",
+      "svg": "styles/specimens/v035/IP-047.svg",
+      "documentation": "docs/research/state-specimens-v035.md",
+      "reviewedOn": "2026-11-10",
+      "lifecycle": "analyzed",
+      "reuseMode": "research-only",
+      "evidence": "original-static-vector-study-not-rendered-app",
+      "limitations": "No tested layout/CSS, actual keyboard behavior, focus management, responsive screenshot, screen-reader audit, navigation, product data or production integration."
+    }
+  ]
+}
