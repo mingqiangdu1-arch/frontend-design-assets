@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-10 · V0.34 visual storytelling, spatial composition and experimental navigation research
+
+- Added **16 original research contracts** in four balanced groups: narrative `REF-081..084`, spatial `REF-085..088`, creative navigation `IP-042..045`, unconventional interaction `IP-046..049`. Asset index **239 → 255**. Each entry specifies original design rationale, state, fallback, failure modes, differences from existing assets and official technical reference.
+- Added [structured V0.34 research catalog](registry/experience-artifacts-v034.json), [written study](docs/research/experience-artifacts-v034.md), and [six standalone layout/visual CSS atoms](styles/primitives/v034/README.md) (paired reading, note rail, contact strip, editorial tracks, depth plane, orbit guide). No complete HTML page, React component, third-party media, fonts or external package is introduced.
+- All new interactions have explicit per-asset `handoff.mode: research-only`, consistent with V0.33 classification; optional CSS atoms do not make their conceptual interaction implemented. No new `styleId` or claimed React theme compatibility.
+- Added V0.34-specific registry checks and [unit tests](tests/experience-artifacts-v034.test.mjs) for group completeness, dependency IDs, conservative reuse classification, lexical discovery and CSS isolation/forced-color/reduced-motion markers. GitHub CI verifies only its existing test coverage, not production/device/accessibility certification.
+
 ## 2026-11-10 · V0.33 asset retrieval trust and classification hardening
 
 - Audited existing V0.32 content instead of duplicating 18 editor/type/texture/expressive research studies. Discovered 11 research-only interaction briefs (`IP-031..041`) were being reported as `adapt-required` by the generic `behavior-pattern` handoff rule.
