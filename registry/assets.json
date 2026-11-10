@@ -8828,13 +8828,15 @@
       "details": "docs/research/experience-artifacts-v034.md",
       "spec": "registry/experience-artifacts-v034.json",
       "path": "styles/primitives/v034/creative-atoms.css",
-      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification.",
+      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification. V0.35: original standalone desktop/mobile concept vector attached; not a browser screenshot or interactive verification.",
       "handoff": {
         "entry": "docs/research/experience-artifacts-v034.md",
         "stack": "technology-neutral original research; isolated optional CSS visual/layout atom",
         "instructions": "Look up REF-081 in registry/experience-artifacts-v034.json, verify distinctFrom/relatedAssets, stateContract, accessibleFallback and failureModes before selecting. An optional isolated CSS primitive exists but does not provide the underlying interaction. Source/license and target device must be reviewed separately.",
         "limitations": "No assembled app, page blueprint, live navigation, React export, auto-compatible theme, downloaded third-party source or target-device verification."
-      }
+      },
+      "visualSpecimen": "styles/specimens/v035/REF-081.svg",
+      "visualSpecimenEvidence": "original-static-svg-concept-not-browser-render-or-functional-state"
     },
     {
       "id": "REF-082",
@@ -8871,13 +8873,15 @@
       "details": "docs/research/experience-artifacts-v034.md",
       "spec": "registry/experience-artifacts-v034.json",
       "path": "styles/primitives/v034/creative-atoms.css",
-      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification.",
+      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification. V0.35: original standalone desktop/mobile concept vector attached; not a browser screenshot or interactive verification.",
       "handoff": {
         "entry": "docs/research/experience-artifacts-v034.md",
         "stack": "technology-neutral original research; isolated optional CSS visual/layout atom",
         "instructions": "Look up REF-082 in registry/experience-artifacts-v034.json, verify distinctFrom/relatedAssets, stateContract, accessibleFallback and failureModes before selecting. An optional isolated CSS primitive exists but does not provide the underlying interaction. Source/license and target device must be reviewed separately.",
         "limitations": "No assembled app, page blueprint, live navigation, React export, auto-compatible theme, downloaded third-party source or target-device verification."
-      }
+      },
+      "visualSpecimen": "styles/specimens/v035/REF-082.svg",
+      "visualSpecimenEvidence": "original-static-svg-concept-not-browser-render-or-functional-state"
     },
     {
       "id": "REF-083",
@@ -8999,13 +9003,15 @@
       "details": "docs/research/experience-artifacts-v034.md",
       "spec": "registry/experience-artifacts-v034.json",
       "path": "styles/primitives/v034/creative-atoms.css",
-      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification.",
+      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification. V0.35: original standalone desktop/mobile concept vector attached; not a browser screenshot or interactive verification.",
       "handoff": {
         "entry": "docs/research/experience-artifacts-v034.md",
         "stack": "technology-neutral original research; isolated optional CSS visual/layout atom",
         "instructions": "Look up REF-085 in registry/experience-artifacts-v034.json, verify distinctFrom/relatedAssets, stateContract, accessibleFallback and failureModes before selecting. An optional isolated CSS primitive exists but does not provide the underlying interaction. Source/license and target device must be reviewed separately.",
         "limitations": "No assembled app, page blueprint, live navigation, React export, auto-compatible theme, downloaded third-party source or target-device verification."
-      }
+      },
+      "visualSpecimen": "styles/specimens/v035/REF-085.svg",
+      "visualSpecimenEvidence": "original-static-svg-concept-not-browser-render-or-functional-state"
     },
     {
       "id": "REF-086",
@@ -9169,14 +9175,16 @@
       ],
       "details": "docs/research/experience-artifacts-v034.md",
       "spec": "registry/experience-artifacts-v034.json",
-      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification.",
+      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification. V0.35: original standalone desktop/mobile concept vector attached; not a browser screenshot or interactive verification.",
       "handoff": {
         "entry": "docs/research/experience-artifacts-v034.md",
         "mode": "research-only",
         "stack": "technology-neutral original research",
         "instructions": "Look up IP-042 in registry/experience-artifacts-v034.json, verify distinctFrom/relatedAssets, stateContract, accessibleFallback and failureModes before selecting. No executable implementation exists. Source/license and target device must be reviewed separately.",
         "limitations": "No assembled app, page blueprint, live navigation, React export, auto-compatible theme, downloaded third-party source or target-device verification."
-      }
+      },
+      "visualSpecimen": "styles/specimens/v035/IP-042.svg",
+      "visualSpecimenEvidence": "original-static-svg-concept-not-browser-render-or-functional-state"
     },
     {
       "id": "IP-043",
@@ -9212,14 +9220,16 @@
       ],
       "details": "docs/research/experience-artifacts-v034.md",
       "spec": "registry/experience-artifacts-v034.json",
-      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification.",
+      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification. V0.35: original standalone desktop/mobile concept vector attached; not a browser screenshot or interactive verification.",
       "handoff": {
         "entry": "docs/research/experience-artifacts-v034.md",
         "mode": "research-only",
         "stack": "technology-neutral original research",
         "instructions": "Look up IP-043 in registry/experience-artifacts-v034.json, verify distinctFrom/relatedAssets, stateContract, accessibleFallback and failureModes before selecting. No executable implementation exists. Source/license and target device must be reviewed separately.",
         "limitations": "No assembled app, page blueprint, live navigation, React export, auto-compatible theme, downloaded third-party source or target-device verification."
-      }
+      },
+      "visualSpecimen": "styles/specimens/v035/IP-043.svg",
+      "visualSpecimenEvidence": "original-static-svg-concept-not-browser-render-or-functional-state"
     },
     {
       "id": "IP-044",
@@ -9255,14 +9265,16 @@
       ],
       "details": "docs/research/experience-artifacts-v034.md",
       "spec": "registry/experience-artifacts-v034.json",
-      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification.",
+      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification. V0.35: original standalone desktop/mobile concept vector attached; not a browser screenshot or interactive verification.",
       "handoff": {
         "entry": "docs/research/experience-artifacts-v034.md",
         "mode": "research-only",
         "stack": "technology-neutral original research",
         "instructions": "Look up IP-044 in registry/experience-artifacts-v034.json, verify distinctFrom/relatedAssets, stateContract, accessibleFallback and failureModes before selecting. No executable implementation exists. Source/license and target device must be reviewed separately.",
         "limitations": "No assembled app, page blueprint, live navigation, React export, auto-compatible theme, downloaded third-party source or target-device verification."
-      }
+      },
+      "visualSpecimen": "styles/specimens/v035/IP-044.svg",
+      "visualSpecimenEvidence": "original-static-svg-concept-not-browser-render-or-functional-state"
     },
     {
       "id": "IP-045",
@@ -9341,14 +9353,16 @@
       ],
       "details": "docs/research/experience-artifacts-v034.md",
       "spec": "registry/experience-artifacts-v034.json",
-      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification.",
+      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification. V0.35: original standalone desktop/mobile concept vector attached; not a browser screenshot or interactive verification.",
       "handoff": {
         "entry": "docs/research/experience-artifacts-v034.md",
         "mode": "research-only",
         "stack": "technology-neutral original research",
         "instructions": "Look up IP-046 in registry/experience-artifacts-v034.json, verify distinctFrom/relatedAssets, stateContract, accessibleFallback and failureModes before selecting. No executable implementation exists. Source/license and target device must be reviewed separately.",
         "limitations": "No assembled app, page blueprint, live navigation, React export, auto-compatible theme, downloaded third-party source or target-device verification."
-      }
+      },
+      "visualSpecimen": "styles/specimens/v035/IP-046.svg",
+      "visualSpecimenEvidence": "original-static-svg-concept-not-browser-render-or-functional-state"
     },
     {
       "id": "IP-047",
@@ -9384,14 +9398,16 @@
       ],
       "details": "docs/research/experience-artifacts-v034.md",
       "spec": "registry/experience-artifacts-v034.json",
-      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification.",
+      "verified": "Original design-contract linked to public technical references reviewed 2026-11-10; no interactive implementation, device/browser matrix, production QA, external imagery acquisition or accessibility certification. V0.35: original standalone desktop/mobile concept vector attached; not a browser screenshot or interactive verification.",
       "handoff": {
         "entry": "docs/research/experience-artifacts-v034.md",
         "mode": "research-only",
         "stack": "technology-neutral original research",
         "instructions": "Look up IP-047 in registry/experience-artifacts-v034.json, verify distinctFrom/relatedAssets, stateContract, accessibleFallback and failureModes before selecting. No executable implementation exists. Source/license and target device must be reviewed separately.",
         "limitations": "No assembled app, page blueprint, live navigation, React export, auto-compatible theme, downloaded third-party source or target-device verification."
-      }
+      },
+      "visualSpecimen": "styles/specimens/v035/IP-047.svg",
+      "visualSpecimenEvidence": "original-static-svg-concept-not-browser-render-or-functional-state"
     },
     {
       "id": "IP-048",
@@ -9482,7 +9498,7 @@
   ],
   "referenceImplementationRoot": "components/reference",
   "styleRegistry": "registry/styles.json",
-  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee. V0.18 adds research-only visual studies outside registry/styles.json and component archetypes outside registry/components.json; IP-026/IP-028 only include headless pure models, not UI components. V0.30 adds 17 research-only external specialization references REF-042..058; these are not actual component exports or dependencies. V0.31 adds 15 original design studies REF-059..068 and IP-031..035 as analyzed/research-only; not deployed components, runtime dependencies, or new styles. V0.32: 18 original research contracts IP-036..041 / REF-069..080; four visual entries link separate opt-in CSS samples but are not certified UI implementations. V0.34 adds 16 task-first original research studies (REF-081..088 and IP-042..049), with 6 optional scoped CSS visual/layout atoms; IP research remains explicitly research-only.",
+  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee. V0.18 adds research-only visual studies outside registry/styles.json and component archetypes outside registry/components.json; IP-026/IP-028 only include headless pure models, not UI components. V0.30 adds 17 research-only external specialization references REF-042..058; these are not actual component exports or dependencies. V0.31 adds 15 original design studies REF-059..068 and IP-031..035 as analyzed/research-only; not deployed components, runtime dependencies, or new styles. V0.32: 18 original research contracts IP-036..041 / REF-069..080; four visual entries link separate opt-in CSS samples but are not certified UI implementations. V0.34 adds 16 task-first original research studies (REF-081..088 and IP-042..049), with 6 optional scoped CSS visual/layout atoms; IP research remains explicitly research-only. V0.35 adds eight original static dual-viewport SVG specimens attached to existing IDs only; registered asset count stays 255 and lifecycle stages remain analyzed.",
   "reusePolicyVersion": "1.0",
   "reusePolicies": {
     "style-token": {
