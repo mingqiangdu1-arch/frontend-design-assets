@@ -80,6 +80,12 @@ node scripts/plan-design-composition.mjs --context=knowledge-base --stack=react 
 
 注意：检索 CLI 支持 `--type=component|interaction|page-template|...` 和 `--stage=reference-implemented|prototype|...`，并能识别**已登记中文别名出现在较长句子内**的情况，但仍然是基于名称/标签/别名的**词项匹配**，不是语义搜索。中英文同义词覆盖不完整时，可以先用本页关键词路由，再查精确 ID；没有匹配不代表资产不存在。CLI 是选材/规划工具，**不会构建或修改目标项目**。
 
+## V0.33：研究交互与可运行源码的检索边界
+
+- `IP-031..041` 全部是**研究契约**，明确标记 `handoff.mode: research-only`；根据 `spec` 查状态和风险，不能按 `behavior-pattern` 的通用 `adapt-required` 等级假定有源码。
+- 有独立原型源码的 `IP-030` 仍为 `adapt-required`；拥有实际 React 源码的 `UI-058` 仍为 `copyable-source`。检索时优先在 `handoffResolved.mode` 和实际 `path` 层面判别，不按 ID 前缀想当然推断。
+- 新增 [研究素材交接等级验收说明](docs/research/retrieval-trust-v033.md)，以及 `tests/find-assets.test.mjs` 的精确 ID 回归测试；这不是现场实施/设备验证。
+
 ## 冲突与保守规则
 
 - `copyable-source` = 可查看并适配的源代码，**不是**生产就绪或已发布 npm 包。
