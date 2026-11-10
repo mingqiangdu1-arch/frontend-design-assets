@@ -198,7 +198,7 @@
 - **状态合同**：pre-entry→revealing→settled；重复访问可跳过不必要动画。
 - **可访问与简化替代**：完整静态文字、支持手动停止、reduced-motion 无关键帧。
 - **反例 / 主要风险**：复制多层文字导致读屏重复、字母逐个隐藏导致选区破碎、持续闪烁。
-- **现有素材关联**：`DT-013`、`REF-069`、`MOT-002`；**上游依据**：[官方原始资料](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API)。
+- **现有素材关联**：`DT-013`、`REF-069`、`MOT-001`；**上游依据**：[官方原始资料](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API)。
 
 ## 来源与许可矩阵（不代表文件已导入）
 
