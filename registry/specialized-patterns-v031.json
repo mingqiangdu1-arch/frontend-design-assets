@@ -1,0 +1,482 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.31.0",
+  "updatedAt": "2026-11-10",
+  "purpose": "Original, task-retrievable material, data visualization and mobile gesture research contracts. No runtime code, media, copied vendor source or page assembly.",
+  "evidenceLevel": "studied-official-documentation-no-physical-device-or-target-app-testing",
+  "categories": [
+    {
+      "id": "material-3d",
+      "title": "3D 材质、后处理与材质表现"
+    },
+    {
+      "id": "data-visual",
+      "title": "数据图形、图层、数值与证据体验"
+    },
+    {
+      "id": "mobile-touch",
+      "title": "移动触摸、滚动及可恢复交互"
+    }
+  ],
+  "entries": [
+    {
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "reviewedOn": "2026-11-10",
+      "kind": "original-design-study",
+      "id": "REF-059",
+      "category": "material-3d",
+      "title": "Clearcoat layered surface / 清漆涂层表面",
+      "contexts": "实体商品细节、精密器材与可旋转展示",
+      "composition": "基础材质 + 独立清漆层；分离粗糙度、反射、环境照明",
+      "stateContract": "idle→rotate-preview→selected-detail；高光是材质信息而非点击状态",
+      "fallback": "静态多角度图与不依赖反射的文字说明",
+      "risks": "额外 per-pixel 着色；限制高光面积、低端模式用 StandardMaterial",
+      "relatedAssets": [
+        "REF-051",
+        "REF-052"
+      ],
+      "primarySource": "https://threejs.org/docs/pages/MeshPhysicalMaterial.html",
+      "aliases": [
+        "涂层材质",
+        "清漆金属",
+        "clearcoat",
+        "layered material"
+      ],
+      "applicationContexts": [
+        "product-visual",
+        "creative-site"
+      ],
+      "scope": "design-contract-not-source-code"
+    },
+    {
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "reviewedOn": "2026-11-10",
+      "kind": "original-design-study",
+      "id": "REF-060",
+      "category": "material-3d",
+      "title": "Transmissive volume / 透射玻璃与折射实体",
+      "contexts": "透明器皿、科技展示、有限量的材质焦点",
+      "composition": "区分物理 transmission 与 CSS alpha；可阅读的背景、主体轮廓、独立 UI 信息层",
+      "stateContract": "idle→focus-object→camera-move→rest；不能依赖透射显示文本",
+      "fallback": "不透明轮廓 + 静态图 + 文本规格；prefers-reduced-motion 静止",
+      "risks": "多层透明渲染开销高；避免全屏折射、文字覆盖、虚假视觉层级",
+      "relatedAssets": [
+        "REF-051",
+        "REF-052"
+      ],
+      "primarySource": "https://threejs.org/docs/pages/MeshPhysicalMaterial.html",
+      "aliases": [
+        "透明玻璃",
+        "折射",
+        "transmission",
+        "refraction"
+      ],
+      "applicationContexts": [
+        "product-visual",
+        "digital-exhibition"
+      ],
+      "scope": "design-contract-not-source-code"
+    },
+    {
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "reviewedOn": "2026-11-10",
+      "kind": "original-design-study",
+      "id": "REF-061",
+      "category": "material-3d",
+      "title": "Iridescent foil / 虹彩薄膜",
+      "contexts": "创意活动与限定产品的材质识别",
+      "composition": "随视角变化的虹彩层，深浅关系稳定；重要状态始终用文本或形状冗余编码",
+      "stateContract": "still→user-angle-change→stable; 非强制循环色彩闪动",
+      "fallback": "固定单色渐变/静态纹理图，选择状态使用显式轮廓",
+      "risks": "色相变化易掩盖可读性与状态；低性能设备降级",
+      "relatedAssets": [
+        "REF-051",
+        "REF-052"
+      ],
+      "primarySource": "https://threejs.org/docs/pages/MeshPhysicalMaterial.html",
+      "aliases": [
+        "虹彩",
+        "全息材质",
+        "iridescence",
+        "holographic foil"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "product-visual"
+      ],
+      "scope": "design-contract-not-source-code"
+    },
+    {
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "reviewedOn": "2026-11-10",
+      "kind": "original-design-study",
+      "id": "REF-062",
+      "category": "material-3d",
+      "title": "Matte clay volume / 哑光陶土体积",
+      "contexts": "产品叙事、插画式 3D 物件和温和视觉系统",
+      "composition": "metalness/roughness 的基础物理材质；暖哑光、柔和阴影和明确剪影",
+      "stateContract": "rest→small-rotation→rest；交互反馈靠位移或说明而非仅细微阴影",
+      "fallback": "普通二维轮廓插画或系统阴影图块",
+      "risks": "阴影贴图和模型复杂度控制；不把装饰物件当 UI 控件",
+      "relatedAssets": [
+        "REF-051",
+        "REF-052"
+      ],
+      "primarySource": "https://threejs.org/docs/pages/MeshStandardMaterial.html",
+      "aliases": [
+        "哑光陶土",
+        "粘土材质",
+        "matte clay",
+        "soft 3d"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "editorial"
+      ],
+      "scope": "design-contract-not-source-code"
+    },
+    {
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "reviewedOn": "2026-11-10",
+      "kind": "original-design-study",
+      "id": "REF-063",
+      "category": "material-3d",
+      "title": "Selective emissive halo / 局部发光与后处理",
+      "contexts": "互动展览、空间高亮和少量视觉锚点",
+      "composition": "先定位真实选择对象；后处理 glow/bloom 只负责视觉强化，不承载状态本身",
+      "stateContract": "idle→hover/focus→selected→reset；不可持续自动闪烁",
+      "fallback": "原生 outline / CSS 边框，背景不支持 GPU 时保持可见焦点",
+      "risks": "过曝、发热与持续重绘；大面积 bloom 会损伤文本对比",
+      "relatedAssets": [
+        "REF-051",
+        "REF-054"
+      ],
+      "primarySource": "https://github.com/pmndrs/postprocessing",
+      "aliases": [
+        "Bloom",
+        "局部光晕",
+        "轮廓光",
+        "postprocessing"
+      ],
+      "applicationContexts": [
+        "digital-exhibition",
+        "creative-site"
+      ],
+      "scope": "design-contract-not-source-code"
+    },
+    {
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "reviewedOn": "2026-11-10",
+      "kind": "original-design-study",
+      "id": "REF-064",
+      "category": "data-visual",
+      "title": "Linked chart, filter and source table / 图表与数据表联动",
+      "contexts": "分析台、研究报告和探索式数据筛选",
+      "composition": "单一 record ID 集合驱动多图/筛选/表格；笔刷与选择分离",
+      "stateContract": "idle→brush-preview→committed-selection→clear/undo；列表准确显示被选记录数",
+      "fallback": "常规筛选表、输入精确区间、按 ID 导航到选中条目",
+      "risks": "图表与表数据源/粒度不一致、丢焦点、屏读结果未同步",
+      "relatedAssets": [
+        "REF-041",
+        "REF-049",
+        "IP-026",
+        "UI-033"
+      ],
+      "primarySource": "https://deck.gl/docs/developer-guide/interactivity",
+      "aliases": [
+        "联动刷选",
+        "图表联动",
+        "linked brushing",
+        "cross-filter"
+      ],
+      "applicationContexts": [
+        "analytics",
+        "research"
+      ],
+      "scope": "design-contract-not-source-code"
+    },
+    {
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "reviewedOn": "2026-11-10",
+      "kind": "original-design-study",
+      "id": "REF-065",
+      "category": "data-visual",
+      "title": "Density aggregation with drill-through / 密度聚合与明细追溯",
+      "contexts": "大规模地理点云、空间分布和热点研究",
+      "composition": "原始点/网格/六边形/热力图是不同问题；显示聚合单位、时间窗和算法",
+      "stateContract": "overview→bin-highlight→bin-selected→detail-list→back",
+      "fallback": "按区域排序的数据明细表，保留选择对应的来源记录",
+      "risks": "GPU 聚合小样本未必快，且某些模式无法直接反查 bin 内点；不可伪造明细",
+      "relatedAssets": [
+        "REF-047",
+        "REF-048"
+      ],
+      "primarySource": "https://deck.gl/docs/api-reference/aggregation-layers/overview",
+      "aliases": [
+        "六边形热力图",
+        "密度聚合",
+        "hexbin",
+        "spatial aggregation"
+      ],
+      "applicationContexts": [
+        "geospatial",
+        "analytics"
+      ],
+      "scope": "design-contract-not-source-code"
+    },
+    {
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "reviewedOn": "2026-11-10",
+      "kind": "original-design-study",
+      "id": "REF-066",
+      "category": "data-visual",
+      "title": "Uncertainty and provenance annotation / 不确定性与溯源注释",
+      "contexts": "统计图表、证据仪表和公开数据报道",
+      "composition": "数据版本/来源/分母/置信范围与视觉标注绑定；不混淆解释和原始值",
+      "stateContract": "normal→annotation-focus→source-inspection→return；悬浮注释可键盘抵达",
+      "fallback": "文本注释索引、原始值表、来源链接和单位说明",
+      "risks": "误导性截断轴、只靠色彩区分类别、缺失数据被填补为真实值",
+      "relatedAssets": [
+        "REF-041",
+        "REF-049",
+        "IP-027"
+      ],
+      "primarySource": "https://apache.github.io/echarts-handbook/en/best-practices/aria/",
+      "aliases": [
+        "证据标注",
+        "数据来源",
+        "uncertainty",
+        "data provenance"
+      ],
+      "applicationContexts": [
+        "research",
+        "analytics"
+      ],
+      "scope": "design-contract-not-source-code"
+    },
+    {
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "reviewedOn": "2026-11-10",
+      "kind": "original-design-study",
+      "id": "REF-067",
+      "category": "data-visual",
+      "title": "Map layer legend and value semantics / 地图图层图例与数值语义",
+      "contexts": "多图层地理展示、专题地图与编辑型地图",
+      "composition": "图例、坐标/投影、颜色刻度、边界含义随图层选择同步",
+      "stateContract": "layers-off→layers-on→focus-feature→filter-layer→restore",
+      "fallback": "文字位置索引 + 对应记录表；地图不能作为唯一结果导航",
+      "risks": "误用不同比例尺或地理投影造成错误对比；数据源和瓦片授予单独核查",
+      "relatedAssets": [
+        "REF-047",
+        "REF-048",
+        "IP-026"
+      ],
+      "primarySource": "https://deck.gl/docs/api-reference/layers",
+      "aliases": [
+        "地图图例",
+        "地理图层",
+        "map layer legend",
+        "choropleth"
+      ],
+      "applicationContexts": [
+        "geospatial",
+        "digital-exhibition"
+      ],
+      "scope": "design-contract-not-source-code"
+    },
+    {
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "reviewedOn": "2026-11-10",
+      "kind": "original-design-study",
+      "id": "REF-068",
+      "category": "data-visual",
+      "title": "Virtualized dense record navigation / 虚拟化数据定位",
+      "contexts": "海量明细表、日志台、带图表的长列表",
+      "composition": "虚拟化窗口、稳定行标识、定位索引、选择保持和自适应高度",
+      "stateContract": "search→scroll-to-result→select→data-refresh→restore-focus",
+      "fallback": "普通分页、完整可下载表或不虚拟化的精简列表",
+      "risks": "索引与真实 ID 脱节、失焦、键盘导航跳行、动态行高抖动",
+      "relatedAssets": [
+        "REF-050",
+        "UI-033",
+        "UI-056"
+      ],
+      "primarySource": "https://tanstack.com/virtual/latest/docs/introduction",
+      "aliases": [
+        "虚拟表格",
+        "长列表导航",
+        "virtual table",
+        "scroll to item"
+      ],
+      "applicationContexts": [
+        "workspace",
+        "data-grid"
+      ],
+      "scope": "design-contract-not-source-code"
+    },
+    {
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "reviewedOn": "2026-11-10",
+      "kind": "original-design-study",
+      "id": "IP-031",
+      "category": "mobile-touch",
+      "title": "Bottom sheet and nested scroll arbitration / 底部抽屉与嵌套滚动协调",
+      "contexts": "手机筛选、确认、上下文详情和短表单",
+      "composition": "抓手区域与内容滚动区域分离；内容可滚动时不截获主滚动意图",
+      "stateContract": "closed→drag-opening→open→content-scroll→dismiss/cancel；背景滚动锁与焦点恢复",
+      "fallback": "原生 dialog / 全屏表单 / 明确关闭按钮",
+      "risks": "触摸方向竞争、底部安全区、虚拟键盘、滚动穿透",
+      "relatedAssets": [
+        "REF-058",
+        "REF-055"
+      ],
+      "primarySource": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/overscroll-behavior",
+      "aliases": [
+        "底部抽屉",
+        "滚动穿透",
+        "bottom sheet",
+        "nested scroll"
+      ],
+      "applicationContexts": [
+        "mobile",
+        "consumer-mobile"
+      ],
+      "scope": "design-contract-not-source-code"
+    },
+    {
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "reviewedOn": "2026-11-10",
+      "kind": "original-design-study",
+      "id": "IP-032",
+      "category": "mobile-touch",
+      "title": "Pinch-pan gesture coordination / 双指缩放与平移协调",
+      "contexts": "地图、自由画布、图片探索及编辑场景",
+      "composition": "区分单指平移、双指缩放、宿主页面滚动；Pointer IDs 与捕获生命周期",
+      "stateContract": "idle→one-pointer→two-pointer→cancel-one→resume/stop",
+      "fallback": "可见缩放按钮、重置视图、方向控制和数值缩放字段",
+      "risks": "触发系统滚动/缩放、pointercancel 未回滚、鼠标和触摸坐标错乱",
+      "relatedAssets": [
+        "REF-055",
+        "REF-047",
+        "IP-018"
+      ],
+      "primarySource": "https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events",
+      "aliases": [
+        "双指缩放",
+        "手势冲突",
+        "pinch zoom",
+        "gesture arbitration"
+      ],
+      "applicationContexts": [
+        "mobile",
+        "visual-editor"
+      ],
+      "scope": "design-contract-not-source-code"
+    },
+    {
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "reviewedOn": "2026-11-10",
+      "kind": "original-design-study",
+      "id": "IP-033",
+      "category": "mobile-touch",
+      "title": "Long-press reorder with keyboard parity / 长按排序和键盘等效",
+      "contexts": "移动卡片重排、列表组织和编辑选择",
+      "composition": "短点按打开、长按激活排序；拖动反馈不得替代可见移动按钮",
+      "stateContract": "idle→arming→dragging→drop/cancel→undo；键盘拖放与按钮上下移同一状态模型",
+      "fallback": "移动上/下按钮、选择目标位次的菜单",
+      "risks": "滚动与长按误判、松手未释放、跨容器撤销不一致",
+      "relatedAssets": [
+        "REF-057",
+        "REF-058",
+        "IP-021",
+        "UI-057"
+      ],
+      "primarySource": "https://react-aria.adobe.com/useDrag",
+      "aliases": [
+        "长按拖拽",
+        "触摸排序",
+        "long-press reorder",
+        "accessible drag"
+      ],
+      "applicationContexts": [
+        "mobile",
+        "workspace"
+      ],
+      "scope": "design-contract-not-source-code"
+    },
+    {
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "reviewedOn": "2026-11-10",
+      "kind": "original-design-study",
+      "id": "IP-034",
+      "category": "mobile-touch",
+      "title": "Swipe-to-reveal with guarded commit / 滑动操作与可撤销提交",
+      "contexts": "邮件/任务列表局部操作、待办和内容收藏",
+      "composition": "滑动是可选快捷入口，露出可见明确操作；破坏性动作单独确认",
+      "stateContract": "idle→swiping→threshold→action-exposed→committed/undo; cancel→original",
+      "fallback": "按钮或菜单执行同样动作；误触可显式撤销",
+      "risks": "滑动与系统导航/横向滚动冲突、误删、屏读无入口",
+      "relatedAssets": [
+        "REF-055",
+        "REF-058"
+      ],
+      "primarySource": "https://developer.mozilla.org/en-US/docs/Web/API/Element/pointercancel_event",
+      "aliases": [
+        "侧滑操作",
+        "滑动撤销",
+        "swipe action",
+        "undo"
+      ],
+      "applicationContexts": [
+        "mobile",
+        "consumer-mobile"
+      ],
+      "scope": "design-contract-not-source-code"
+    },
+    {
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "reviewedOn": "2026-11-10",
+      "kind": "original-design-study",
+      "id": "IP-035",
+      "category": "mobile-touch",
+      "title": "Bounded tactile response / 有界物理反馈",
+      "contexts": "轻量交互奖励、移动开关和可触摸控制",
+      "composition": "弹簧反馈对应明确状态变化，阻尼和持续时间可被中断；文字状态始终可见",
+      "stateContract": "press→respond→settle/cancel→rest；重复输入不累积无意义动画",
+      "fallback": "瞬时状态更新、静态颜色/文字反馈；系统 reduced-motion 优先",
+      "risks": "无限弹跳、视觉噪声、低帧率下迟滞、滑动取消未回滚",
+      "relatedAssets": [
+        "REF-056",
+        "REF-058",
+        "IP-030"
+      ],
+      "primarySource": "https://r3f.docs.pmnd.rs/advanced/scaling-performance",
+      "aliases": [
+        "弹簧回弹",
+        "触觉动效",
+        "spring feedback",
+        "bounded motion"
+      ],
+      "applicationContexts": [
+        "mobile",
+        "creative-tool"
+      ],
+      "scope": "design-contract-not-source-code"
+    }
+  ]
+}
