@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-10 · V0.31 material, data and mobile interaction research contracts
+
+- Added 15 **original research-only** pattern studies: five 3D material/lighting references (`REF-059..063`), five professional data-experience references (`REF-064..068`), and five mobile touch behavior contracts (`IP-031..035`). Every entry records context, composition, interaction states, fallback, risk, upstream evidence and links to prior assets.
+- Added [machine-readable specifications](registry/specialized-patterns-v031.json) and [full comparison notes](docs/research/specialized-patterns-v031.md); synchronized task-first Agent catalog and registry navigation. Registry expanded **206 → 221** entries, all 15 new items at `analyzed` maturity.
+- No React exports, style IDs, shipped templates, vendor source, 3D models, media files, npm dependencies, page assembly or project deployment added. Physical-device and target-app implementation validation remain out of scope.
+- Registry check extended to verify that V0.30 sources and V0.31 design studies remain aligned with catalog IDs and provenance/limitations metadata, to prevent research-only artifacts from being mistaken for implemented code.
+
 ## 2026-11-10 · V0.30 specialized upstream source index (research-only)
 
 - Curated 17 newly checked external source projects as `REF-042..058` in four groups: editor/canvas (5), geo/data (4), 3D/WebGL (4), mobile interactions (4). Added [structured catalog](registry/specialized-resources-v030.json) and [comparison note](docs/research/specialized-resources-v030.md), including code-license boundaries, current-project gap, context and Chinese/English lookup aliases.
