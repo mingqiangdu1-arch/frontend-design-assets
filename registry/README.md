@@ -13,6 +13,7 @@ This directory is the **authoritative index** for choosing existing design refer
 | `style-facets.json` | One-to-one theme selection facets: task aliases, structural layout, material, interaction, device and density; references real demo paths. Pair with `scripts/style-match.mjs` and `scripts/select-style.mjs` for explainable matching, not an ML style rank. |
 | `specialized-resources-v030.json` | 17 个专项外部资源的来源、许可证、既有资产补位和可检索标签（REF-042..058）；与 assets.json 一一对应，只是研究来源，不是导出组件 |
 | `specialized-patterns-v031.json` | V0.31 的 15 个研究型视觉/数据/移动行为契约（REF-059..068、IP-031..035）；只含原创建议、状态、来源和降级，不是代码或新 styleIds |
+| `experience-artifacts-v034.json` | V0.34 创意叙事、空间布局、非传统导航与交互 16 份原创研究合同（REF-081..088、IP-042..049），关联可选的 6 个独立布局/视觉 CSS 原子；非页面或 React 实现 |
 | `creative-primitives-v032.json` | 18 个 V0.32 研究型素材（`IP-036..041` / `REF-069..080`），覆盖协同编辑器状态、字体/纹理来源和特殊视觉效果的降级契约；仅 6 个关联独立 CSS class 作为原创样例 |
 | `page-templates.json` | Independent full-page references; inspect `implementation` to distinguish static JavaScript from React integration |
 | `component-states.json` | Historical selected-state matrix, intentionally partial |
