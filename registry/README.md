@@ -11,6 +11,7 @@ This directory is the **authoritative index** for choosing existing design refer
 | `styles.json` | Independent style IDs, token/spec/demo entrypoints; **no repository default** |
 | `style-assembly.json` | Fourteen per-style page structure and interaction handoffs; real template, experience-recipe and React-export references. Used by `scripts/style-assembly.mjs`; not generated production pages. |
 | `style-facets.json` | One-to-one theme selection facets: task aliases, structural layout, material, interaction, device and density; references real demo paths. Pair with `scripts/style-match.mjs` and `scripts/select-style.mjs` for explainable matching, not an ML style rank. |
+| `specialized-resources-v030.json` | 17 个专项外部资源的来源、许可证、既有资产补位和可检索标签（REF-042..058）；与 assets.json 一一对应，只是研究来源，不是导出组件 |
 | `page-templates.json` | Independent full-page references; inspect `implementation` to distinguish static JavaScript from React integration |
 | `component-states.json` | Historical selected-state matrix, intentionally partial |
 | `creative-directions.json` | Distinct expressive visual directions, not interchangeable CSS |
