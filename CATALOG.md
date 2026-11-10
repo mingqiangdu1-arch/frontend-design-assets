@@ -32,6 +32,7 @@
 | 层级树形网格、来源标注、分支叙事、精密旋钮 / treegrid, annotation, story, rotary | `IP-025`、`IP-027`、`IP-029`、`IP-030`、`playground/advanced-interactions-v4/README.md` | 四个原生 JS 状态模型与独立可运行交互素材；不新增 React 公共导出，不接后端 |
 | 高级交互、drag/drop、时间线、scroll story | `docs/interactions/`、`IP-021`–`IP-024`、`playground/advanced-interactions-v2/`、`-v3/` | 复用交互契约，不复制演示页的固定外观 |
 | 专业画布、富文本、地图、WebGL、触摸手势 / advanced editor, geospatial, 3D, mobile gesture | `REF-042`–`REF-058`、`registry/specialized-resources-v030.json`、`docs/research/specialized-resources-v030.md` | 17 条外部来源研究档案，按能力缺口和许可证检索；**非已安装依赖或现成 React 导出** |
+| 3D 材质、数据可视化语义、移动手势契约 / material, chart, gesture | `REF-059..068`、`IP-031..035`、`registry/specialized-patterns-v031.json`、`docs/research/specialized-patterns-v031.md` | 15 个原创研究素材：状态、结构、降级、来源及风险；不提供可直接运行的组件或业务页面 |
 | 去 AI 模板化、页面设计审查、unslop、hallmark | `docs/assembly/design-review-workflows.md`、`docs/research/unslop-hallmark.md` | 外部 Skill 为研究/可选工具，未作为本仓库依赖自动安装 |
 
 上表的 ID 是**检索起点**而非默认推荐；只有打开注册条目并核对情境与成熟度，才能决定是否采用。
@@ -41,6 +42,13 @@
 - 需要无限画布、文档编辑或协作时，先查 `REF-042..046`（编辑器和画布）；地图、复杂图表、大型数据列表查 `REF-047..050`；3D 和 WebGL 查 `REF-051..054`；移动端手势、触摸动效与可访问拖拽查 `REF-055..058`。
 - 对每项按 `registry/specialized-resources-v030.json` 的 `gapVsExisting`、`focus`、`limitations`、`license` 和 `applicationContexts` 评估；若原仓库已有行为参考，优先返回两者差异，不自动替换或拷贝第三方库。
 - 以上均属于 **analyzed / research-only**，不能当作组件包公共导出、已兼容 React 主题、获许可的第三方素材或通过实测的集成成果。
+
+## V0.31 专项素材快速检索（研究档案）
+
+- **实体材质与后处理**：`REF-059..063`（清漆、透射玻璃、虹彩、哑光实体、局部光晕）；不要因颜色近似就当成可替换的 CSS 主题。
+- **专业数据表达**：`REF-064..068`（多图联动、密度聚合、溯源注释、地图图层语义、虚拟化定位）；应同时核查原始数值、来源、键盘访问与表格替代。
+- **移动交互行为**：`IP-031..035`（抽屉滚动仲裁、双指缩放、长按排序、侧滑撤销、有界回弹）；状态流与取消/降级要求见 `registry/specialized-patterns-v031.json`。
+- **重要边界**：以上均为 `analyzed` 的原创设计研究，非运行代码或经过物理设备验证的交互；要实现请在独立项目中确定框架、数据、许可与测试。
 
 ## 无需运行工具的 GitHub-only 检索
 
