@@ -34,6 +34,7 @@
 | 专业画布、富文本、地图、WebGL、触摸手势 / advanced editor, geospatial, 3D, mobile gesture | `REF-042`–`REF-058`、`registry/specialized-resources-v030.json`、`docs/research/specialized-resources-v030.md` | 17 条外部来源研究档案，按能力缺口和许可证检索；**非已安装依赖或现成 React 导出** |
 | 3D 材质、数据可视化语义、移动手势契约 / material, chart, gesture | `REF-059..068`、`IP-031..035`、`registry/specialized-patterns-v031.json`、`docs/research/specialized-patterns-v031.md` | 15 个原创研究素材：状态、结构、降级、来源及风险；不提供可直接运行的组件或业务页面 |
 | 文档协同、富文本块编辑、字形和纹理、光谱遮罩 / collaborative editor, font, texture, creative effects | `IP-036..041`、`REF-069..080`、`registry/creative-primitives-v032.json`、`docs/research/creative-primitives-v032.md` | 18 份研究合同：操作状态、字体/贴图授权与视觉降级；6 个原创、无依赖 CSS 小原子，非编辑器组件或完整页面 |
+| 双线叙事、页边注、空间构图、星图导航、环形操作、探索式交互 / editorial story, radial nav, spatial index | `REF-081..088`、`IP-042..049`、`registry/experience-artifacts-v034.json`、`docs/research/experience-artifacts-v034.md` | 16 份任务型原创研究素材；另有 6 个独立 CSS 布局/装饰原子，非可运行导航或整页实现 |
 | 去 AI 模板化、页面设计审查、unslop、hallmark | `docs/assembly/design-review-workflows.md`、`docs/research/unslop-hallmark.md` | 外部 Skill 为研究/可选工具，未作为本仓库依赖自动安装 |
 
 上表的 ID 是**检索起点**而非默认推荐；只有打开注册条目并核对情境与成熟度，才能决定是否采用。
@@ -79,6 +80,14 @@ node scripts/plan-design-composition.mjs --context=knowledge-base --stack=react 
 ```
 
 注意：检索 CLI 支持 `--type=component|interaction|page-template|...` 和 `--stage=reference-implemented|prototype|...`，并能识别**已登记中文别名出现在较长句子内**的情况，但仍然是基于名称/标签/别名的**词项匹配**，不是语义搜索。中英文同义词覆盖不完整时，可以先用本页关键词路由，再查精确 ID；没有匹配不代表资产不存在。CLI 是选材/规划工具，**不会构建或修改目标项目**。
+
+## V0.34：创意叙事与空间交互素材检索
+
+- **视觉叙事**：`REF-081..084`（双线并行、证据页边注、胶片章节、剖面章节）；区别既有滚动叙事或分支剧情。
+- **空间构图**：`REF-085..088`（非对称 subgrid、层叠深度、留白轴线、抽象星图）；不宣称真实地理坐标或通用主题兼容。
+- **创意导航**：`IP-042..045`（星图索引、环形操作罗盘、章节返回轨、锚点上下文导航）；保留普通文字目录、URL、键盘和焦点路径。
+- **非传统交互**：`IP-046..049`（逐帧探索、语义透镜、可逆分组、克制视差）；这些只是 `research-only`，不能被当作已实现 JS 交互。
+- 详情按 [V0.34 结构化目录](registry/experience-artifacts-v034.json) 的 `distinctFrom`、`stateContract`、`accessibleFallback`、`failureModes` 检索。可按需取 [6 个原创 CSS 原子](styles/primitives/v034/README.md)，其类名只改变外观/布局，不带导航事件。
 
 ## V0.33：研究交互与可运行源码的检索边界
 
