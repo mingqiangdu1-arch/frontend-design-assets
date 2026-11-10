@@ -1,0 +1,560 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.34.0",
+  "updatedAt": "2026-11-10",
+  "scope": "Task-first original research for visual storytelling, spatial composition, creative navigation, unconventional interaction. No page assembly, package install, media download or third-party UI duplication.",
+  "defaultTheme": null,
+  "evidenceLevel": "official-web-docs-and-visual-reference-reviewed-no-browser-or-device-implementation-test",
+  "groups": [
+    {
+      "id": "visual-storytelling",
+      "title": "视觉叙事",
+      "description": "双线阅读、证据页边注、分镜序列和剖面式叙事；内容结构优先"
+    },
+    {
+      "id": "spatial-composition",
+      "title": "空间构图",
+      "description": "非对称同轨网格、可读层叠、留白轴线与抽象星图"
+    },
+    {
+      "id": "creative-navigation",
+      "title": "创意导航",
+      "description": "星图导航、环形罗盘、章节方位轨、锚定上下文菜单"
+    },
+    {
+      "id": "unconventional-interaction",
+      "title": "非传统交互",
+      "description": "逐帧探索、语义透镜、可逆分组与有界深度反馈"
+    }
+  ],
+  "entries": [
+    {
+      "id": "REF-081",
+      "group": "visual-storytelling",
+      "name": "Paired evidence narrative / 双线并行叙事",
+      "scenario": "研究型案例、两方视角、作品解析",
+      "designContract": "两条同级叙事列分别使用显式章节 ID，跨列以对照编号建立关系；DOM 阅读顺序保持线性",
+      "stateContract": "chapter-A→compare-anchor-B→return-to-A；不强制并排滚动同步",
+      "accessibleFallback": "窄屏依原章节顺序串行呈现，两方视角提供明确标题和互跳链接",
+      "failureModes": "两列被强制同步滚动、对比编号无文本、移动端阅读顺序跳跃",
+      "distinctFrom": "不同于 IP-029 分支叙事：这里允许独立阅读，不要求故事节点状态机",
+      "relatedAssets": [
+        "IP-029",
+        "REF-077",
+        "DT-013"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout/Subgrid",
+      "aliases": [
+        "双线叙事",
+        "对照阅读",
+        "paired narrative",
+        "split editorial"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "research"
+      ],
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "implementation": "research-brief-only",
+      "reviewedOn": "2026-11-10",
+      "provenance": "Original research synthesis with linked official technical references; no original external site screenshots, code, image or font files redistributed.",
+      "licenseBoundary": "Original research text; third-party examples remain governed by their own licenses and terms."
+    },
+    {
+      "id": "REF-082",
+      "group": "visual-storytelling",
+      "name": "Evidence marginalia / 证据页边注",
+      "scenario": "研究展览、调查报道、带来源的案例说明",
+      "designContract": "正文、侧注、来源号三者同属语义阅读序列；桌面可错列呈现，证据不能仅在浮层内",
+      "stateContract": "read→reference-jump→note→return；章节锚点保持可回退",
+      "accessibleFallback": "侧注在窄屏插入正文后，来源提供可点击/键盘可达链接",
+      "failureModes": "仅靠色彩连线、侧注脱离原文造成误引、浮动提示遮挡正文",
+      "distinctFrom": "不同于 IP-027 的可移动标注编辑器：仅整理出版物级的文内证据层",
+      "relatedAssets": [
+        "IP-027",
+        "REF-066",
+        "REF-078"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout/Subgrid",
+      "aliases": [
+        "页边注",
+        "研究注释",
+        "marginalia",
+        "source rail"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "digital-exhibition"
+      ],
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "implementation": "research-brief-only",
+      "reviewedOn": "2026-11-10",
+      "provenance": "Original research synthesis with linked official technical references; no original external site screenshots, code, image or font files redistributed.",
+      "licenseBoundary": "Original research text; third-party examples remain governed by their own licenses and terms."
+    },
+    {
+      "id": "REF-083",
+      "group": "visual-storytelling",
+      "name": "Contact-sheet chapter sequence / 胶片接触印样章节",
+      "scenario": "摄影档案、影像项目、作品集叙事",
+      "designContract": "缩略图章节序列按日期/主题标号，不要求大图与滚动同步；关键元信息始终可见",
+      "stateContract": "select-frame→detail→back-to-frame；默认停留最后焦点章节",
+      "accessibleFallback": "缩略图可键盘逐个访问；列表或目录可替代横向画廊",
+      "failureModes": "强制 scroll snap 困住阅读、缩略图无可读标题、宽度固定导致窄屏溢出",
+      "distinctFrom": "不同于 IP-023 多轨时间线编辑：这是内容章节的导览素材，不提供剪辑行为",
+      "relatedAssets": [
+        "IP-023",
+        "REF-077",
+        "TPL-002"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-snap-type",
+      "aliases": [
+        "胶片目录",
+        "分镜索引",
+        "contact sheet",
+        "chapter filmstrip"
+      ],
+      "applicationContexts": [
+        "creative-portfolio",
+        "digital-exhibition"
+      ],
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "implementation": "research-brief-only",
+      "reviewedOn": "2026-11-10",
+      "provenance": "Original research synthesis with linked official technical references; no original external site screenshots, code, image or font files redistributed.",
+      "licenseBoundary": "Original research text; third-party examples remain governed by their own licenses and terms."
+    },
+    {
+      "id": "REF-084",
+      "group": "visual-storytelling",
+      "name": "Cutaway chapter anatomy / 剖面式章节解读",
+      "scenario": "工艺解释、产品拆解、建筑/知识展示",
+      "designContract": "主视觉切面与分层文本解释关联，先给完整概念，再逐块说明材质/数据/来源",
+      "stateContract": "overview→section-focused→overview；被遮挡细节只能作为装饰层",
+      "accessibleFallback": "纯文字层级大纲/编号描述 + 无特效的完整图",
+      "failureModes": "用遮罩隐藏真实权限/内容、过多不透明叠层、切面与真实物理尺度不对应",
+      "distinctFrom": "不同于 REF-075 视觉蒙版揭示：强调信息结构与标注次序而不是滤镜动画",
+      "relatedAssets": [
+        "REF-075",
+        "REF-067",
+        "REF-062"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/clip-path",
+      "aliases": [
+        "视觉剖面",
+        "解剖式说明",
+        "cutaway story",
+        "anatomy editorial"
+      ],
+      "applicationContexts": [
+        "education",
+        "product-visual"
+      ],
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "implementation": "research-brief-only",
+      "reviewedOn": "2026-11-10",
+      "provenance": "Original research synthesis with linked official technical references; no original external site screenshots, code, image or font files redistributed.",
+      "licenseBoundary": "Original research text; third-party examples remain governed by their own licenses and terms."
+    },
+    {
+      "id": "REF-085",
+      "group": "spatial-composition",
+      "name": "Asymmetric editorial subgrid / 非对称同轨编辑网格",
+      "scenario": "设计杂志、展览索引、可读作品列表",
+      "designContract": "外部多栏非对称节奏，内部标题/来源/摘要沿共享 track 对齐；不得依靠绝对定位排序内容",
+      "stateContract": "desktop-wide→tablet-reflow→single-column；阅读次序固定",
+      "accessibleFallback": "普通单列 grid/块流；无 subgrid 时使用普通 grid 对齐",
+      "failureModes": "视觉排列与 DOM 次序分歧、跨栏过度溢出、假 Masonry 破坏焦点路径",
+      "distinctFrom": "不同于既有 14 套主题：仅跨主题布局语法，不产生新的 styleId",
+      "relatedAssets": [
+        "DT-013",
+        "DT-009",
+        "TPL-002"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout/Subgrid",
+      "aliases": [
+        "非对称网格",
+        "编辑布局",
+        "asymmetric grid",
+        "subgrid editorial"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "creative-portfolio"
+      ],
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "implementation": "research-brief-only",
+      "reviewedOn": "2026-11-10",
+      "provenance": "Original research synthesis with linked official technical references; no original external site screenshots, code, image or font files redistributed.",
+      "licenseBoundary": "Original research text; third-party examples remain governed by their own licenses and terms."
+    },
+    {
+      "id": "REF-086",
+      "group": "spatial-composition",
+      "name": "Legible depth layers / 可读层叠深度",
+      "scenario": "展览卡片、媒体展示、少量层叠资料",
+      "designContract": "装饰深度与可交互内容分层；用明确投影/遮挡规则营造前后感，保持真实 DOM 次序",
+      "stateContract": "rest→focus-foreground→open-detail→close；焦点环始终在可见图层",
+      "accessibleFallback": "普通单层卡片与显式层级标题；禁用 GPU/阴影时维持内容",
+      "failureModes": "视觉遮挡可交互按钮、负 z-index 内容不可见、位置响应后丢焦点",
+      "distinctFrom": "不同于 3D REF-059..063：这里是 DOM/CSS 层叠关系，不需要 WebGL",
+      "relatedAssets": [
+        "REF-063",
+        "REF-075",
+        "REF-079"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/isolation",
+      "aliases": [
+        "深度层级",
+        "层叠卡片",
+        "depth layers",
+        "occlusion"
+      ],
+      "applicationContexts": [
+        "digital-exhibition",
+        "creative-site"
+      ],
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "implementation": "research-brief-only",
+      "reviewedOn": "2026-11-10",
+      "provenance": "Original research synthesis with linked official technical references; no original external site screenshots, code, image or font files redistributed.",
+      "licenseBoundary": "Original research text; third-party examples remain governed by their own licenses and terms."
+    },
+    {
+      "id": "REF-087",
+      "group": "spatial-composition",
+      "name": "Whitespace-axis composition / 留白与文字轴线构图",
+      "scenario": "展览导语、文化活动、长文封面",
+      "designContract": "标题、章号、引文、索引在显式轴线上定位；留白承担层级，而不被误当可点击热区",
+      "stateContract": "large→compact→mobile; 主操作保持可见而非依赖巨大空白",
+      "accessibleFallback": "紧凑线性排版；高倍缩放可换行并保持完整语义",
+      "failureModes": "为了画面感将正文绝对定位、100vh 锁住可读文字、忽略中文换行",
+      "distinctFrom": "不是 DT-013 新主题，仅是独立排版构图策略，文本保持可选择",
+      "relatedAssets": [
+        "DT-013",
+        "REF-069",
+        "REF-080"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout",
+      "aliases": [
+        "留白构图",
+        "文字轴线",
+        "negative space",
+        "type axis"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "editorial"
+      ],
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "implementation": "research-brief-only",
+      "reviewedOn": "2026-11-10",
+      "provenance": "Original research synthesis with linked official technical references; no original external site screenshots, code, image or font files redistributed.",
+      "licenseBoundary": "Original research text; third-party examples remain governed by their own licenses and terms."
+    },
+    {
+      "id": "REF-088",
+      "group": "spatial-composition",
+      "name": "Constellation guide geometry / 星图索引引导线",
+      "scenario": "创意作品集、城市档案、空间型目录",
+      "designContract": "用径向参考线、坐标标号和分组解释建立空间隐喻；实际可操作项目顺序由语义导航承载",
+      "stateContract": "overview→hover-neighbor→focus-item；连接线仅装饰，不表示真实关系",
+      "accessibleFallback": "有分组文字目录、可达列表，窄屏可取消径向布局",
+      "failureModes": "伪造真实地点坐标、用连接线表达不存在的关系、依赖 hover 才能发现项目",
+      "distinctFrom": "不同于 REF-047 地理地图：此为抽象视觉索引，不能当作地图或具定位精度",
+      "relatedAssets": [
+        "REF-039",
+        "REF-047",
+        "REF-061"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/gradient/radial-gradient",
+      "aliases": [
+        "星图布局",
+        "节点构图",
+        "constellation layout",
+        "spatial index geometry"
+      ],
+      "applicationContexts": [
+        "creative-portfolio",
+        "digital-exhibition"
+      ],
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "implementation": "research-brief-only",
+      "reviewedOn": "2026-11-10",
+      "provenance": "Original research synthesis with linked official technical references; no original external site screenshots, code, image or font files redistributed.",
+      "licenseBoundary": "Original research text; third-party examples remain governed by their own licenses and terms."
+    },
+    {
+      "id": "IP-042",
+      "group": "creative-navigation",
+      "name": "Constellation index with text parity / 星图索引与文字目录等效",
+      "scenario": "沉浸作品导航、创意分类浏览",
+      "designContract": "空间节点可建立层级关系，但每个节点必须映射到可键盘访问的同名文字链接与 URL",
+      "stateContract": "overview→filter-cluster→focus-node→open-item→return；返回时恢复筛选和焦点",
+      "accessibleFallback": "提供索引切换、搜索、普通分类目录；小屏默认索引视图",
+      "failureModes": "无障碍仅用旋转手势、节点重叠不可点击、位置变化丢导航上下文",
+      "distinctFrom": "区别 REF-088 纯视觉构图：本条聚焦导航状态，不能直接借用真实网站 UI",
+      "relatedAssets": [
+        "REF-088",
+        "IP-018",
+        "REF-028"
+      ],
+      "source": "https://www.w3.org/WAI/ARIA/apg/patterns/treeview/",
+      "aliases": [
+        "星图导航",
+        "项目星图",
+        "constellation navigation",
+        "spatial explorer"
+      ],
+      "applicationContexts": [
+        "creative-portfolio",
+        "digital-exhibition"
+      ],
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "implementation": "research-brief-only",
+      "reviewedOn": "2026-11-10",
+      "provenance": "Original research synthesis with linked official technical references; no original external site screenshots, code, image or font files redistributed.",
+      "licenseBoundary": "Original research text; third-party examples remain governed by their own licenses and terms."
+    },
+    {
+      "id": "IP-043",
+      "group": "creative-navigation",
+      "name": "Radial action compass with list fallback / 环形操作罗盘",
+      "scenario": "创意工具、触控编辑器的次要指令入口",
+      "designContract": "少量同组操作围绕激活点摆放，重要功能仍有列表/键盘入口；禁用时说明原因",
+      "stateContract": "idle→open→focus-segment→activate|cancel→restore-focus",
+      "accessibleFallback": "标准 toolbar/menu 或明确按钮列表，触控大目标且有文本标签",
+      "failureModes": "用纯角度猜含义、圆环挡住附近操作、指针方向难精确操作",
+      "distinctFrom": "与 IP-030 旋钮不同：旋钮修改连续数值，本模式选择离散操作",
+      "relatedAssets": [
+        "IP-030",
+        "IP-035",
+        "REF-058"
+      ],
+      "source": "https://www.w3.org/WAI/ARIA/apg/patterns/menu-button/",
+      "aliases": [
+        "环形菜单",
+        "操作罗盘",
+        "radial menu",
+        "action compass"
+      ],
+      "applicationContexts": [
+        "creative-tool",
+        "mobile"
+      ],
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "implementation": "research-brief-only",
+      "reviewedOn": "2026-11-10",
+      "provenance": "Original research synthesis with linked official technical references; no original external site screenshots, code, image or font files redistributed.",
+      "licenseBoundary": "Original research text; third-party examples remain governed by their own licenses and terms."
+    },
+    {
+      "id": "IP-044",
+      "group": "creative-navigation",
+      "name": "Persistent chapter orientation rail / 可恢复章节方位轨",
+      "scenario": "非线性长内容、画册、章节收藏",
+      "designContract": "章节 ID、标题、阅读位置与返回路线分别保存；进度只反馈位置而不强制滚动",
+      "stateContract": "enter→jump-chapter→deep-link→back-to-origin→restore-focus",
+      "accessibleFallback": "原生目录 + 章节跳转 + 返回链接；保留浏览器历史语义",
+      "failureModes": "仅变换章节数字却不更新 URL、章间导航夺取焦点、进度条谎称完成",
+      "distinctFrom": "与 REF-077 滚动叙事不同：关注跨章节定向与回程，不要求滚动驱动动画",
+      "relatedAssets": [
+        "REF-077",
+        "IP-029",
+        "REF-078"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/API/History_API",
+      "aliases": [
+        "章节导航",
+        "读书轨",
+        "chapter rail",
+        "reader wayfinding"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "knowledge-base"
+      ],
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "implementation": "research-brief-only",
+      "reviewedOn": "2026-11-10",
+      "provenance": "Original research synthesis with linked official technical references; no original external site screenshots, code, image or font files redistributed.",
+      "licenseBoundary": "Original research text; third-party examples remain governed by their own licenses and terms."
+    },
+    {
+      "id": "IP-045",
+      "group": "creative-navigation",
+      "name": "Anchor-tethered context switch / 锚点上下文切换",
+      "scenario": "作品图注、图片注释、局部场景导航",
+      "designContract": "选定对象与操作面板显式绑定，优先保持可见；支持多项重复节点的作用域隔离",
+      "stateContract": "closed→anchor-selected→panel-open→reposition→dismiss→focus-restored",
+      "accessibleFallback": "普通 Popover/DOM 相邻按钮与菜单；无 anchor positioning 时可用静态 inline panel",
+      "failureModes": "重复 anchor-name 误绑定最后一个节点、溢出视口、只在 hover 时出现",
+      "distinctFrom": "不同于 IP-027 资料来源注释：这里只解决导航面板空间定位与返回",
+      "relatedAssets": [
+        "IP-027",
+        "REF-027",
+        "REF-058"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Anchor_positioning/Using",
+      "aliases": [
+        "锚点弹层",
+        "空间上下文",
+        "anchor menu",
+        "tethered panel"
+      ],
+      "applicationContexts": [
+        "creative-tool",
+        "visual-editor"
+      ],
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "implementation": "research-brief-only",
+      "reviewedOn": "2026-11-10",
+      "provenance": "Original research synthesis with linked official technical references; no original external site screenshots, code, image or font files redistributed.",
+      "licenseBoundary": "Original research text; third-party examples remain governed by their own licenses and terms."
+    },
+    {
+      "id": "IP-046",
+      "group": "unconventional-interaction",
+      "name": "Frame scrub with explicit seek / 档案帧逐格探索",
+      "scenario": "动效档案、交互分镜、作品回顾",
+      "designContract": "拖动只能改变预览帧，真实状态以明确选中帧和文字时间/序号同步",
+      "stateContract": "idle→drag-preview→seek-confirmed|cancel→selected-frame",
+      "accessibleFallback": "键盘前后帧按钮、跳转输入、可点击有标题缩略图",
+      "failureModes": "滑动时播放不可控音视频、没有定位、帧选中状态与预览不同步",
+      "distinctFrom": "不同于 IP-023 多轨时间轴编辑器：不改变时间轴内容，也不要求播放器",
+      "relatedAssets": [
+        "IP-023",
+        "REF-083",
+        "IP-032"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events",
+      "aliases": [
+        "逐帧探索",
+        "拖拽预览",
+        "frame scrubber",
+        "seek preview"
+      ],
+      "applicationContexts": [
+        "digital-exhibition",
+        "creative-portfolio"
+      ],
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "implementation": "research-brief-only",
+      "reviewedOn": "2026-11-10",
+      "provenance": "Original research synthesis with linked official technical references; no original external site screenshots, code, image or font files redistributed.",
+      "licenseBoundary": "Original research text; third-party examples remain governed by their own licenses and terms."
+    },
+    {
+      "id": "IP-047",
+      "group": "unconventional-interaction",
+      "name": "Semantic inspection lens / 语义检查透镜",
+      "scenario": "科学插画、标注资料、产品层级探索",
+      "designContract": "模式是明确筛选/显隐层，不是物理放大镜；镜下信息也能在标题列表中定位",
+      "stateContract": "overview→inspect-mode→layer-targeted→detail-extracted→overview",
+      "accessibleFallback": "可选择图层的表格、图层列表和静态注释；触控可点选而非悬浮",
+      "failureModes": "透镜悬浮是唯一读数方式、掩盖重要信息、模式退出后筛选丢失",
+      "distinctFrom": "区别 IP-026 图表联动：聚焦注释/概念层的检查模式，不做数据刷选",
+      "relatedAssets": [
+        "IP-026",
+        "REF-067",
+        "REF-084"
+      ],
+      "source": "https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/",
+      "aliases": [
+        "信息透镜",
+        "图层检查",
+        "inspection lens",
+        "semantic layer"
+      ],
+      "applicationContexts": [
+        "education",
+        "digital-exhibition"
+      ],
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "implementation": "research-brief-only",
+      "reviewedOn": "2026-11-10",
+      "provenance": "Original research synthesis with linked official technical references; no original external site screenshots, code, image or font files redistributed.",
+      "licenseBoundary": "Original research text; third-party examples remain governed by their own licenses and terms."
+    },
+    {
+      "id": "IP-048",
+      "group": "unconventional-interaction",
+      "name": "Reversible collection shuffle / 可逆空间分组",
+      "scenario": "数字展览、收藏管理、探索式作品浏览",
+      "designContract": "分组是视图状态不是数据更改；清晰显示当前分类/排序，可一次切回默认序列",
+      "stateContract": "default-order→group-preview→group-applied→undo|restore-order",
+      "accessibleFallback": "普通列表和选项筛选；键盘/屏读中保持条目数、组名和稳定 ID",
+      "failureModes": "位置变化导致用户以为内容消失、动画代替真实排序、还原后焦点丢失",
+      "distinctFrom": "不同于 IP-021 拖放编辑：此处只是浏览模式分组，不更改条目所属关系",
+      "relatedAssets": [
+        "IP-021",
+        "IP-035",
+        "REF-088"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API",
+      "aliases": [
+        "空间重排",
+        "收藏洗牌",
+        "collection shuffle",
+        "reversible grouping"
+      ],
+      "applicationContexts": [
+        "creative-portfolio",
+        "knowledge-base"
+      ],
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "implementation": "research-brief-only",
+      "reviewedOn": "2026-11-10",
+      "provenance": "Original research synthesis with linked official technical references; no original external site screenshots, code, image or font files redistributed.",
+      "licenseBoundary": "Original research text; third-party examples remain governed by their own licenses and terms."
+    },
+    {
+      "id": "IP-049",
+      "group": "unconventional-interaction",
+      "name": "Constrained depth parallax with explicit target / 有界深度偏移",
+      "scenario": "互动海报、单品细节、可点选立体层",
+      "designContract": "视差只装饰当前焦点或选择对象，真实操作目标永远使用稳定 DOM 控件",
+      "stateContract": "rest→pointer-depth-preview→focus-target→activate|cancel→rest",
+      "accessibleFallback": "关闭视差和 reduced-motion；静态层级与明确按钮保持完整功能",
+      "failureModes": "跟随光标高频重排、视觉漂浮遮挡点击热区、动效产生眩晕",
+      "distinctFrom": "区别 REF-086 深度布局（静态分层）：本条记录输入驱动状态与中断策略",
+      "relatedAssets": [
+        "REF-086",
+        "IP-035",
+        "REF-079"
+      ],
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transform",
+      "aliases": [
+        "深度视差",
+        "响应式悬浮",
+        "parallax focus",
+        "depth interaction"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "product-visual"
+      ],
+      "stage": "analyzed",
+      "adoption": "research-only",
+      "implementation": "research-brief-only",
+      "reviewedOn": "2026-11-10",
+      "provenance": "Original research synthesis with linked official technical references; no original external site screenshots, code, image or font files redistributed.",
+      "licenseBoundary": "Original research text; third-party examples remain governed by their own licenses and terms."
+    }
+  ]
+}
