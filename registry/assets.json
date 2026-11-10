@@ -7857,7 +7857,8 @@
         "entry": "docs/research/specialized-patterns-v031.md",
         "stack": "technology- and theme-neutral research contract",
         "instructions": "Find IP-031 in registry/specialized-patterns-v031.json. Inspect stateContract, fallback, risks and relatedAssets; copy no upstream source and implement only in the independent target application.",
-        "limitations": "Not a downloadable component, visual theme, model/texture asset, working interaction, or accessibility/performance certification."
+        "limitations": "Not a downloadable component, visual theme, model/texture asset, working interaction, or accessibility/performance certification.",
+        "mode": "research-only"
       }
     },
     {
@@ -7901,7 +7902,8 @@
         "entry": "docs/research/specialized-patterns-v031.md",
         "stack": "technology- and theme-neutral research contract",
         "instructions": "Find IP-032 in registry/specialized-patterns-v031.json. Inspect stateContract, fallback, risks and relatedAssets; copy no upstream source and implement only in the independent target application.",
-        "limitations": "Not a downloadable component, visual theme, model/texture asset, working interaction, or accessibility/performance certification."
+        "limitations": "Not a downloadable component, visual theme, model/texture asset, working interaction, or accessibility/performance certification.",
+        "mode": "research-only"
       }
     },
     {
@@ -7946,7 +7948,8 @@
         "entry": "docs/research/specialized-patterns-v031.md",
         "stack": "technology- and theme-neutral research contract",
         "instructions": "Find IP-033 in registry/specialized-patterns-v031.json. Inspect stateContract, fallback, risks and relatedAssets; copy no upstream source and implement only in the independent target application.",
-        "limitations": "Not a downloadable component, visual theme, model/texture asset, working interaction, or accessibility/performance certification."
+        "limitations": "Not a downloadable component, visual theme, model/texture asset, working interaction, or accessibility/performance certification.",
+        "mode": "research-only"
       }
     },
     {
@@ -7989,7 +7992,8 @@
         "entry": "docs/research/specialized-patterns-v031.md",
         "stack": "technology- and theme-neutral research contract",
         "instructions": "Find IP-034 in registry/specialized-patterns-v031.json. Inspect stateContract, fallback, risks and relatedAssets; copy no upstream source and implement only in the independent target application.",
-        "limitations": "Not a downloadable component, visual theme, model/texture asset, working interaction, or accessibility/performance certification."
+        "limitations": "Not a downloadable component, visual theme, model/texture asset, working interaction, or accessibility/performance certification.",
+        "mode": "research-only"
       }
     },
     {
@@ -8033,7 +8037,8 @@
         "entry": "docs/research/specialized-patterns-v031.md",
         "stack": "technology- and theme-neutral research contract",
         "instructions": "Find IP-035 in registry/specialized-patterns-v031.json. Inspect stateContract, fallback, risks and relatedAssets; copy no upstream source and implement only in the independent target application.",
-        "limitations": "Not a downloadable component, visual theme, model/texture asset, working interaction, or accessibility/performance certification."
+        "limitations": "Not a downloadable component, visual theme, model/texture asset, working interaction, or accessibility/performance certification.",
+        "mode": "research-only"
       }
     },
     {
@@ -8074,7 +8079,8 @@
         "entry": "docs/research/creative-primitives-v032.md",
         "stack": "technology-neutral creative research; optional isolated CSS atoms for selected visual effects",
         "instructions": "Inspect IP-036 in registry/creative-primitives-v032.json for states, provenance, reuse boundaries, fallback and failure modes. If an original CSS atom is relevant, use only that class in the independent target project and test it.",
-        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification."
+        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification.",
+        "mode": "research-only"
       }
     },
     {
@@ -8115,7 +8121,8 @@
         "entry": "docs/research/creative-primitives-v032.md",
         "stack": "technology-neutral creative research; optional isolated CSS atoms for selected visual effects",
         "instructions": "Inspect IP-037 in registry/creative-primitives-v032.json for states, provenance, reuse boundaries, fallback and failure modes. If an original CSS atom is relevant, use only that class in the independent target project and test it.",
-        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification."
+        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification.",
+        "mode": "research-only"
       }
     },
     {
@@ -8156,7 +8163,8 @@
         "entry": "docs/research/creative-primitives-v032.md",
         "stack": "technology-neutral creative research; optional isolated CSS atoms for selected visual effects",
         "instructions": "Inspect IP-038 in registry/creative-primitives-v032.json for states, provenance, reuse boundaries, fallback and failure modes. If an original CSS atom is relevant, use only that class in the independent target project and test it.",
-        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification."
+        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification.",
+        "mode": "research-only"
       }
     },
     {
@@ -8197,7 +8205,8 @@
         "entry": "docs/research/creative-primitives-v032.md",
         "stack": "technology-neutral creative research; optional isolated CSS atoms for selected visual effects",
         "instructions": "Inspect IP-039 in registry/creative-primitives-v032.json for states, provenance, reuse boundaries, fallback and failure modes. If an original CSS atom is relevant, use only that class in the independent target project and test it.",
-        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification."
+        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification.",
+        "mode": "research-only"
       }
     },
     {
@@ -8238,7 +8247,8 @@
         "entry": "docs/research/creative-primitives-v032.md",
         "stack": "technology-neutral creative research; optional isolated CSS atoms for selected visual effects",
         "instructions": "Inspect IP-040 in registry/creative-primitives-v032.json for states, provenance, reuse boundaries, fallback and failure modes. If an original CSS atom is relevant, use only that class in the independent target project and test it.",
-        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification."
+        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification.",
+        "mode": "research-only"
       }
     },
     {
@@ -8281,7 +8291,8 @@
         "entry": "docs/research/creative-primitives-v032.md",
         "stack": "technology-neutral creative research; optional isolated CSS atoms for selected visual effects",
         "instructions": "Inspect IP-041 in registry/creative-primitives-v032.json for states, provenance, reuse boundaries, fallback and failure modes. If an original CSS atom is relevant, use only that class in the independent target project and test it.",
-        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification."
+        "limitations": "No application page, no actual rich-text editor integration, no downloadable fonts, no imported CC0 files, no target React theme integration or cross-device accessibility certification.",
+        "mode": "research-only"
       }
     },
     {
