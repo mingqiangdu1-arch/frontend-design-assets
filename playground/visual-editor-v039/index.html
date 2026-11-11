@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Original isolated editable-block interaction specimen: reorder, property schema and undo/redo">
+<title>Visual Editor Interaction Lab V0.39</title>
+<link rel="stylesheet" href="./styles.css"><script type="module" src="./app.mjs"></script></head>
+<body class="ve39"><a class="ve39-skip" href="#ve39-main">跳到交互素材</a>
+<header class="ve39-header"><a href="../../CATALOG.md">◈ FRONTEND DESIGN ASSETS <span>/ INTERACTION V0.39</span></a><span>ORIGINAL · INDEPENDENT REFERENCE</span></header>
+<main id="ve39-main" class="ve39-main">
+<section class="ve39-hero"><p class="ve39-eyebrow">VISUAL EDITOR BEHAVIOR REFERENCES</p>
+<h1>自由调整结构，<em>不丢掉控制。</em></h1>
+<p>三个独立、可复用的状态模型：区块排序、Schema 属性编辑、选择与撤销。全部使用原创虚构内容，不是完整网页搭建器。</p></section>
+<section class="ve39-lab" aria-label="原创区块编辑交互标本">
+<div class="ve39-toolbar"><div><p class="ve39-eyebrow">ISOLATED MATERIAL LAB</p><h2>编辑行为标本 <small>仅本地内存</small></h2></div>
+<div class="ve39-actions"><button id="undoBtn" type="button">撤销</button><button id="redoBtn" type="button">重做</button><button id="resetBtn" type="button">重置</button><button id="exportBtn" type="button">查看 Schema JSON</button></div></div>
+<p id="historyStatus" role="status" aria-live="polite" class="ve39-feedback">等待操作。</p>
+<div class="ve39-workspace">
+<section id="sortable" aria-labelledby="sortTitle" class="ve39-canvas"><span class="ve39-step">01 / IP-060</span><h3 id="sortTitle">拖拽区块排序</h3><p class="ve39-help">将区块拖到目标前，也可通过“上移、下移”按钮操作；选中后在右侧编辑。</p>
+<ol id="blockList" aria-label="可排序区块列表" class="ve39-blocks"></ol></section>
+<aside id="inspector" aria-labelledby="inspectorTitle" class="ve39-inspector"><span class="ve39-step">02 / IP-061</span><h3 id="inspectorTitle">属性检查器</h3>
+<p id="selectedInfo" class="ve39-help">待选区块。</p><form id="propsForm" novalidate><div id="propsFields" class="ve39-fields"></div><button id="saveProps" type="submit" class="ve39-primary">保存当前属性</button></form>
+<p id="propsFeedback" role="status" aria-live="polite" class="ve39-feedback">修改只影响本地模型。</p></aside></div>
+<section aria-labelledby="previewTitle" class="ve39-preview"><span class="ve39-step">03 / IP-062</span><h3 id="previewTitle">预览与历史</h3><p id="orderInfo" class="ve39-help">尚无操作。</p><div id="previewBlocks" class="ve39-preview-items"></div><pre id="schemaOutput" class="ve39-json" aria-label="只读 JSON 结构" hidden></pre></section>
+</section>
+<section class="ve39-notes"><h2>素材边界</h2><p>这个标本只操作少量白名单区块；没有嵌套组件、远程协作、发布、身份权限、数据库、AI Agent 或任意 JSX 执行。鼠标拖拽另有键盘按钮替代，真正投入业务前仍需测试触屏、读屏和数据持久化。</p></section>
+<footer class="ve39-foot">FRONTEND DESIGN ASSETS · SOURCE MATERIAL ONLY</footer>
+</main></body></html>

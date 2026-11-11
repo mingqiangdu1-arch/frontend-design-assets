@@ -142,6 +142,33 @@ for (const sample of community.curatedCases) {
 assertFile("docs/research/community-sources-v036.md","V0.36 research report");
 console.log("Validated V0.36: 12 upstream source dossiers + 4 original research patterns, no promoted components.");
 
+// V0.39: independently executable visual editor reference models, not page builder exports.
+const visualModels=readJson("registry/visual-editor-v039.json");
+if(visualModels.schemaVersion!=="1.0"||visualModels.status!=="prototype-only"||
+   visualModels.reactExportsAdded!==0||visualModels.thirdPartyCodeImported!==false||
+   !Array.isArray(visualModels.entries)||visualModels.entries.length!==3)fail("V0.39 registry invalid");
+const v039Ids=new Set();
+for(const item of visualModels.entries){
+ if(v039Ids.has(item.id))fail("Duplicate V0.39 id "+item.id);v039Ids.add(item.id);
+ const asset=assetById.get(item.id);
+ if(!asset||asset.type!=="interaction"||asset.stage!=="prototype"||
+    asset.reuseKind!=="behavior-pattern"||asset.handoff?.mode==="research-only"||
+    asset.path!==item.source||asset.demo!==item.demo||
+    asset.spec!=="registry/visual-editor-v039.json"||
+    item.stage!=="prototype"||item.reuse!=="adapt-required"||
+    item.license!=="original-code"||item.sourceIncludesThirdPartyCode!==false||
+    !Array.isArray(item.exports)||item.exports.length<2||
+    !item.dependencies.every(id=>assetIds.has(id)||v039Ids.has(id)))fail("V0.39 asset mismatch: "+item.id);
+ for(const f of [item.source,item.demo,item.unitTest,item.browserTest])assertFile(f,"V0.39 "+item.id);
+ const code=fs.readFileSync(item.source,"utf8");
+ for(const fn of item.exports)if(!code.includes("export function "+fn+"("))fail("Missing V0.39 function "+item.id+"/"+fn);
+}
+for(const f of visualModels.files)assertFile(f,"V0.39 file");
+const css039=fs.readFileSync("playground/visual-editor-v039/styles.css","utf8");
+if(/(?:^|\n)\s*:root\s*\{|@import\b|url\s*\(/i.test(css039)||
+   !css039.includes("prefers-reduced-motion")||!css039.includes("forced-colors"))fail("V0.39 CSS scope/fallback");
+console.log("Validated V0.39: 3 original visual editor models with isolated demo and tests.");
+
 // V0.38: original standalone model specimens, not installed components or backend permissions.
 const agentPrototypes=readJson("registry/agent-interactions-v038.json");
 if (agentPrototypes.schemaVersion!=="1.0"||agentPrototypes.status!=="prototype-only"||

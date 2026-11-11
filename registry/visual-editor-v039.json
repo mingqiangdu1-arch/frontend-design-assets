@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.39.0",
+  "reviewedOn": "2026-11-11",
+  "status": "prototype-only",
+  "scope": "Original flat-block editor reference behaviors only; no production page-builder app",
+  "reactExportsAdded": 0,
+  "thirdPartyCodeImported": false,
+  "hostedService": false,
+  "files": [
+    "registry/visual-editor-v039.json",
+    "playground/visual-editor-v039/index.html",
+    "playground/visual-editor-v039/README.md",
+    "docs/research/visual-editor-v039.md",
+    "playground/visual-editor-v039/styles.css",
+    "playground/visual-editor-v039/app.mjs",
+    "playground/visual-editor-v039/block-schema.mjs",
+    "playground/visual-editor-v039/reorder-model.mjs",
+    "playground/visual-editor-v039/editor-history.mjs",
+    "tests/visual-editor-v039.test.mjs",
+    "tests/browser/visual-editor-v039.spec.mjs"
+  ],
+  "entries": [
+    {
+      "id": "IP-060",
+      "title": "Immutable visual block ordering / 可排序区块结构",
+      "source": "playground/visual-editor-v039/reorder-model.mjs",
+      "stage": "prototype",
+      "reuse": "adapt-required",
+      "exports": [
+        "reorderBlocks",
+        "stepBlock"
+      ],
+      "dependencies": [
+        "IP-021",
+        "IP-050",
+        "REF-094"
+      ],
+      "demo": "playground/visual-editor-v039/index.html",
+      "unitTest": "tests/visual-editor-v039.test.mjs",
+      "browserTest": "tests/browser/visual-editor-v039.spec.mjs",
+      "features": [
+        "Immutable before/after drop placement with stable IDs",
+        "Keyboard/touch button alternative to HTML5 drag and drop",
+        "No-op boundary moves leave history unchanged"
+      ],
+      "limitations": "Flat ordered fixture blocks only; no nested dropzones, cross-container moves, mobile drag gesture certification or remote changes.",
+      "license": "original-code",
+      "sourceIncludesThirdPartyCode": false
+    },
+    {
+      "id": "IP-061",
+      "title": "Typed block property inspector / 类型化区块属性检查器",
+      "source": "playground/visual-editor-v039/block-schema.mjs",
+      "stage": "prototype",
+      "reuse": "adapt-required",
+      "exports": [
+        "validateBlocks",
+        "updateBlockProps",
+        "exportBlockSchema",
+        "importBlockSchema"
+      ],
+      "dependencies": [
+        "IP-050",
+        "REF-094",
+        "REF-099"
+      ],
+      "demo": "playground/visual-editor-v039/index.html",
+      "unitTest": "tests/visual-editor-v039.test.mjs",
+      "browserTest": "tests/browser/visual-editor-v039.spec.mjs",
+      "features": [
+        "Three explicit block types with typed field whitelist",
+        "Atomic props patch and bounded title/text validation",
+        "Versioned JSON serialization and validation; no executed HTML"
+      ],
+      "limitations": "Only 3 fixture block kinds, 1–12 flat blocks, small text/select/boolean fields; not shadcn registry or arbitrary React code.",
+      "license": "original-code",
+      "sourceIncludesThirdPartyCode": false
+    },
+    {
+      "id": "IP-062",
+      "title": "Selection and reversible local editor history / 编辑选择与撤销重做",
+      "source": "playground/visual-editor-v039/editor-history.mjs",
+      "stage": "prototype",
+      "reuse": "adapt-required",
+      "exports": [
+        "createEditor",
+        "selectBlock",
+        "commitBlocks",
+        "moveSelected",
+        "dropBlock",
+        "editSelectedProps",
+        "undoEditor",
+        "redoEditor",
+        "historySummary"
+      ],
+      "dependencies": [
+        "IP-040",
+        "IP-021",
+        "IP-060",
+        "IP-061"
+      ],
+      "demo": "playground/visual-editor-v039/index.html",
+      "unitTest": "tests/visual-editor-v039.test.mjs",
+      "browserTest": "tests/browser/visual-editor-v039.spec.mjs",
+      "features": [
+        "Selection-only changes do not generate history entries",
+        "Transactions snapshot selected block and exact typed props",
+        "Redo invalidated on a divergent edit; history bounded to 30"
+      ],
+      "limitations": "Local in-memory history only; no server transaction, collaboration, persistence, remote undo or audit logs.",
+      "license": "original-code",
+      "sourceIncludesThirdPartyCode": false
+    }
+  ]
+}

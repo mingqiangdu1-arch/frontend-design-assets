@@ -53,6 +53,10 @@ jobs:
           node --check playground/agent-interactions-v038/approval-model.mjs
           node --check playground/agent-interactions-v038/clarification-model.mjs
           node --check playground/agent-interactions-v038/app.mjs
+          node --check playground/visual-editor-v039/block-schema.mjs
+          node --check playground/visual-editor-v039/reorder-model.mjs
+          node --check playground/visual-editor-v039/editor-history.mjs
+          node --check playground/visual-editor-v039/app.mjs
           node --check scripts/compose-page.mjs
           node --check scripts/check-page-templates.mjs
           node --check playground/asset-explorer/model.mjs

@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-11 · V0.39 standalone visual editor reference primitives
+
+- Added three original and runnable ESM visual editor prototypes: `IP-060` stable flat-block reorder (HTML5 drag/drop + keyboard button alternative), `IP-061` strict typed property schema and atomic inspector patch, and `IP-062` reversible selection-aware local history with undo/redo branch safety.
+- Added a self-contained [interactive fixture](playground/visual-editor-v039/index.html), [machine manifest](registry/visual-editor-v039.json), [usage notes](playground/visual-editor-v039/README.md), [research note](docs/research/visual-editor-v039.md), model and browser regression tests.
+- Registry count **287 → 290**. No existing research ID changed, no React component exports, npm packages, new style IDs, third-party media/code, backend/API or assembled public page builder.
+- Local JSON export is read-only. Mobile up/down buttons are an alternative to desktop HTML5 drag; no claims of cross-device drag, assistive-technology certification or durable persistence.
+
+
 ## 2026-11-11 · V0.38 original Agent interaction prototypes
 
 - Added **3 original, independently executable ESM models**: IP-057 monotonic tool state and partial failure, IP-058 hash-bound local patch approval/conflict/fictional receipt, and IP-059 question/draft preservation and retry/nonce handling. The earlier research-only IP-054..056 remain unchanged.

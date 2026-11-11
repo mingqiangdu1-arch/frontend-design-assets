@@ -10861,11 +10861,144 @@
         "instructions": "Use playground/agent-interactions-v038/clarification-model.mjs as the executable reference; read docs/research/agent-interactions-v038.md and matching tests, compare with IP-056 design contract, then adapt in a separate destination repository.",
         "limitations": "No file upload, remote Agent, server nonce store, storage or cross-device recovery."
       }
+    },
+    {
+      "id": "IP-060",
+      "type": "interaction",
+      "name": "Immutable visual block ordering / 可排序区块结构",
+      "stage": "prototype",
+      "priority": "P0",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "v039",
+        "original-editor-reference",
+        "standalone-esm",
+        "behavior-prototype"
+      ],
+      "aliases": [
+        "可视化区块排序",
+        "拖拽区块上下移",
+        "block reorder",
+        "drop before"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original standalone ESM, HTML and CSS specimen; no third-party component code or media copied",
+      "styleIds": [],
+      "applicationContexts": [
+        "visual-editor",
+        "creative-tool",
+        "page-builder"
+      ],
+      "dependencies": [
+        "IP-021",
+        "IP-050",
+        "REF-094"
+      ],
+      "path": "playground/visual-editor-v039/reorder-model.mjs",
+      "details": "docs/research/visual-editor-v039.md",
+      "spec": "registry/visual-editor-v039.json",
+      "demo": "playground/visual-editor-v039/index.html",
+      "verified": "Original deterministic ESM model, standalone interactive fixture, Node and Chromium test coverage added 2026-11-11; target-app, touch, a11y and production validation still required.",
+      "handoff": {
+        "entry": "playground/visual-editor-v039/README.md",
+        "stack": "standalone HTML/CSS/JS and pure ESM state models; not a React public export",
+        "instructions": "Inspect IP-060 in registry/visual-editor-v039.json, read playground/visual-editor-v039/reorder-model.mjs, its isolated DOM fixture and tests; reuse in a separate destination project only after adapting to framework, permissions and persistence.",
+        "limitations": "Flat ordered fixture blocks only; no nested dropzones, cross-container moves, mobile drag gesture certification or remote changes."
+      }
+    },
+    {
+      "id": "IP-061",
+      "type": "interaction",
+      "name": "Typed block property inspector / 类型化区块属性检查器",
+      "stage": "prototype",
+      "priority": "P0",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "v039",
+        "original-editor-reference",
+        "standalone-esm",
+        "behavior-prototype"
+      ],
+      "aliases": [
+        "属性面板字段校验",
+        "可配置区块 Schema",
+        "typed props inspector",
+        "editable block fields"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original standalone ESM, HTML and CSS specimen; no third-party component code or media copied",
+      "styleIds": [],
+      "applicationContexts": [
+        "visual-editor",
+        "design-system",
+        "page-builder"
+      ],
+      "dependencies": [
+        "IP-050",
+        "REF-094",
+        "REF-099"
+      ],
+      "path": "playground/visual-editor-v039/block-schema.mjs",
+      "details": "docs/research/visual-editor-v039.md",
+      "spec": "registry/visual-editor-v039.json",
+      "demo": "playground/visual-editor-v039/index.html",
+      "verified": "Original deterministic ESM model, standalone interactive fixture, Node and Chromium test coverage added 2026-11-11; target-app, touch, a11y and production validation still required.",
+      "handoff": {
+        "entry": "playground/visual-editor-v039/README.md",
+        "stack": "standalone HTML/CSS/JS and pure ESM state models; not a React public export",
+        "instructions": "Inspect IP-061 in registry/visual-editor-v039.json, read playground/visual-editor-v039/block-schema.mjs, its isolated DOM fixture and tests; reuse in a separate destination project only after adapting to framework, permissions and persistence.",
+        "limitations": "Only 3 fixture block kinds, 1–12 flat blocks, small text/select/boolean fields; not shadcn registry or arbitrary React code."
+      }
+    },
+    {
+      "id": "IP-062",
+      "type": "interaction",
+      "name": "Selection and reversible local editor history / 编辑选择与撤销重做",
+      "stage": "prototype",
+      "priority": "P0",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "v039",
+        "original-editor-reference",
+        "standalone-esm",
+        "behavior-prototype"
+      ],
+      "aliases": [
+        "区块选择与撤销",
+        "画布本地历史",
+        "undo redo editor",
+        "history branching"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original standalone ESM, HTML and CSS specimen; no third-party component code or media copied",
+      "styleIds": [],
+      "applicationContexts": [
+        "visual-editor",
+        "workspace",
+        "creative-tool"
+      ],
+      "dependencies": [
+        "IP-040",
+        "IP-021",
+        "IP-060",
+        "IP-061"
+      ],
+      "path": "playground/visual-editor-v039/editor-history.mjs",
+      "details": "docs/research/visual-editor-v039.md",
+      "spec": "registry/visual-editor-v039.json",
+      "demo": "playground/visual-editor-v039/index.html",
+      "verified": "Original deterministic ESM model, standalone interactive fixture, Node and Chromium test coverage added 2026-11-11; target-app, touch, a11y and production validation still required.",
+      "handoff": {
+        "entry": "playground/visual-editor-v039/README.md",
+        "stack": "standalone HTML/CSS/JS and pure ESM state models; not a React public export",
+        "instructions": "Inspect IP-062 in registry/visual-editor-v039.json, read playground/visual-editor-v039/editor-history.mjs, its isolated DOM fixture and tests; reuse in a separate destination project only after adapting to framework, permissions and persistence.",
+        "limitations": "Local in-memory history only; no server transaction, collaboration, persistence, remote undo or audit logs."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",
   "styleRegistry": "registry/styles.json",
-  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee. V0.18 adds research-only visual studies outside registry/styles.json and component archetypes outside registry/components.json; IP-026/IP-028 only include headless pure models, not UI components. V0.30 adds 17 research-only external specialization references REF-042..058; these are not actual component exports or dependencies. V0.31 adds 15 original design studies REF-059..068 and IP-031..035 as analyzed/research-only; not deployed components, runtime dependencies, or new styles. V0.32: 18 original research contracts IP-036..041 / REF-069..080; four visual entries link separate opt-in CSS samples but are not certified UI implementations. V0.34 adds 16 task-first original research studies (REF-081..088 and IP-042..049), with 6 optional scoped CSS visual/layout atoms; IP research remains explicitly research-only. V0.35 adds eight original static dual-viewport SVG specimens attached to existing IDs only; registered asset count stays 255 and lifecycle stages remain analyzed. V0.36 adds 12 community/editor/agent upstream reference entries REF-089..100 and 4 independent source-governance behavior contracts IP-050..053. All are analyzed/research-only; neither an installable shadcn registry nor an existing editor integration. V0.37 adds 10 item-level source-anchored component/block dossiers REF-101..110 and 3 original Agent interaction contracts IP-054..056; all analyzed/research-only, without installed/copyable code. Three 21st.dev community items remain unregistered candidates awaiting exact item-level links/licensing. V0.38 adds 3 original standalone interaction prototypes IP-057..059 with inspected ESM source, live DOM specimen and focused tests. Previous IP-054..056 remain analyzed/research-only. No React export/theme/third-party dependency added.",
+  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee. V0.18 adds research-only visual studies outside registry/styles.json and component archetypes outside registry/components.json; IP-026/IP-028 only include headless pure models, not UI components. V0.30 adds 17 research-only external specialization references REF-042..058; these are not actual component exports or dependencies. V0.31 adds 15 original design studies REF-059..068 and IP-031..035 as analyzed/research-only; not deployed components, runtime dependencies, or new styles. V0.32: 18 original research contracts IP-036..041 / REF-069..080; four visual entries link separate opt-in CSS samples but are not certified UI implementations. V0.34 adds 16 task-first original research studies (REF-081..088 and IP-042..049), with 6 optional scoped CSS visual/layout atoms; IP research remains explicitly research-only. V0.35 adds eight original static dual-viewport SVG specimens attached to existing IDs only; registered asset count stays 255 and lifecycle stages remain analyzed. V0.36 adds 12 community/editor/agent upstream reference entries REF-089..100 and 4 independent source-governance behavior contracts IP-050..053. All are analyzed/research-only; neither an installable shadcn registry nor an existing editor integration. V0.37 adds 10 item-level source-anchored component/block dossiers REF-101..110 and 3 original Agent interaction contracts IP-054..056; all analyzed/research-only, without installed/copyable code. Three 21st.dev community items remain unregistered candidates awaiting exact item-level links/licensing. V0.38 adds 3 original standalone interaction prototypes IP-057..059 with inspected ESM source, live DOM specimen and focused tests. Previous IP-054..056 remain analyzed/research-only. No React export/theme/third-party dependency added. V0.39 adds three ORIGINAL standalone visual block editor interaction prototypes IP-060..062 (reorder, typed props/schema, local selection undo/redo). All have ESM source/demo/test fixtures, but no new React exports, default themes, external packages, nested page builder or server persistence.",
   "reusePolicyVersion": "1.0",
   "reusePolicies": {
     "style-token": {
