@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Three original Agent interaction references: tool timeline, patch review, draft-safe clarification.">
+<title>Agent Interaction Atelier · V0.38</title>
+<link rel="stylesheet" href="./styles.css">
+<script type="module" src="./app.mjs"></script>
+</head>
+<body class="ai38">
+<a class="ai38-skip" href="#ai38-main">跳到交互素材</a>
+<header class="ai38-header"><a href="../../CATALOG.md">◈ FRONTEND DESIGN ASSETS <span>/ V0.38 LAB</span></a><span>ORIGINAL · FRAMEWORK-FREE · LOCAL DEMO</span></header>
+<main id="ai38-main" class="ai38-main">
+<section class="ai38-hero">
+<p class="ai38-kicker">INTERACTION CONTRACTS / V0.38</p>
+<h1>状态清楚，<em>才有可信的 Agent 交互。</em></h1>
+<p>三个可独立复用的状态模型。工具调用、写入授权和澄清问答采用原创虚构数据；没有连接真实 AI、账号、文件系统、存储或服务端。</p>
+<div class="ai38-links"><a href="#timeline">01 工具进度</a><a href="#approval">02 变更审批</a><a href="#clarification">03 澄清草稿</a></div>
+</section>
+<div class="ai38-grid">
+<section class="ai38-panel" id="timeline" aria-labelledby="timelineTitle">
+<div class="ai38-head"><span class="ai38-number">01 / IP-057</span><h2 id="timelineTitle">工具时间线</h2><p>逐项状态独立，失败不会被全局“完成”遮盖。迟到事件不可反写结果。</p></div>
+<div class="ai38-metric"><strong id="timelinePhase">尚未开始</strong><small id="timelineCounts">0 / 3 已结束</small></div>
+<ol class="ai38-tools" id="timelineRows">
+<li><b>检索公开资料</b><span id="tool-research">排队中</span><div><button type="button" data-tool-id="research" data-next="running">开始</button><button type="button" data-tool-id="research" data-next="succeeded">完成</button><button type="button" data-tool-id="research" data-next="failed">失败</button></div></li>
+<li><b>分析候选素材</b><span id="tool-inspect">排队中</span><div><button type="button" data-tool-id="inspect" data-next="running">开始</button><button type="button" data-tool-id="inspect" data-next="succeeded">完成</button><button type="button" data-tool-id="inspect" data-next="failed">失败</button></div></li>
+<li><b>生成复用说明</b><span id="tool-handoff">排队中</span><div><button type="button" data-tool-id="handoff" data-next="running">开始</button><button type="button" data-tool-id="handoff" data-next="succeeded">完成</button><button type="button" data-tool-id="handoff" data-next="failed">失败</button></div></li>
+</ol>
+<div class="ai38-footer"><button id="timelineReset" type="button">重置时间线</button><p id="timelineFeedback" role="status" aria-live="polite">所有操作仅更改页面内状态。</p></div>
+</section>
+<section class="ai38-panel" id="approval" aria-labelledby="approvalTitle">
+<div class="ai38-head"><span class="ai38-number">02 / IP-058</span><h2 id="approvalTitle">Diff 与审批</h2><p>“用户批准”和“文件写入成功”是不同事件。本演示不修改真实文件。</p></div>
+<div class="ai38-metric"><strong id="approvalPhase">未发起提案</strong><small id="approvalReceipt">无执行回执</small></div>
+<pre id="approvalDiff" class="ai38-diff" aria-label="虚构补丁预览">src/demo-config.txt
+- contrast: muted
++ contrast: accessible
++ reduce-motion: enabled</pre>
+<label class="ai38-field">目标文件版本（模拟）<input id="approvalVersion" type="text" value="v1" autocomplete="off"></label>
+<div class="ai38-actions"><button type="button" id="approvalPropose">提出修改</button><button type="button" id="approvalApprove">同意</button><button type="button" id="approvalReject">拒绝</button><button type="button" id="approvalApply">模拟写入回执</button><button type="button" id="approvalReset">重置</button></div>
+<p class="ai38-warning">安全边界：真实权限、版本比较、patch/hash 验证必须由服务端重新执行，前端状态不是授权依据。</p>
+<p id="approvalFeedback" role="status" aria-live="polite">等待提交虚构补丁。</p>
+</section>
+<section class="ai38-panel ai38-wide" id="clarification" aria-labelledby="clarificationTitle">
+<div class="ai38-head"><span class="ai38-number">03 / IP-059</span><h2 id="clarificationTitle">不丢草稿的澄清</h2><p>Agent 插入结构化问题时，原输入与附件名称保持原样；失败后可重试或退出。</p></div>
+<div class="ai38-dual">
+<div><label class="ai38-field">原有未发送草稿<textarea id="draftText" rows="4">先完成界面状态设计，再逐项核查素材许可。</textarea></label><p class="ai38-caption">模拟附件：<strong id="draftAttachment">design-notes.md</strong>（仅文件名，不上传文件）</p></div>
+<div class="ai38-question">
+<p class="ai38-qtitle">澄清卡片 <span id="questionPhase">待激活</span></p>
+<div id="questionPrompt" hidden><p id="questionText">是否优先考虑键盘可访问性？</p><label><input type="radio" name="clarificationAnswer" value="优先"> 优先</label><label><input type="radio" name="clarificationAnswer" value="稍后"> 稍后</label></div>
+<p id="questionResponse" class="ai38-caption">尚无回答回执。</p>
+<div class="ai38-actions"><button type="button" id="questionAsk">发起澄清</button><button type="button" id="questionSubmit">提交回答</button><button type="button" id="questionAccept">模拟确认接收</button><button type="button" id="questionDismiss">退出澄清</button></div>
+</div>
+</div>
+<p id="questionFeedback" role="status" aria-live="polite">原草稿可继续编辑。</p>
+</section>
+</div>
+<footer class="ai38-bottom">独立素材实验室 · 无默认主题 · 无生产级 Agent 接口 · 原创代码，禁止误用前端演示状态进行服务端授权</footer>
+</main>
+</body>
+</html>

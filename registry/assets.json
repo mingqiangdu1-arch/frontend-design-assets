@@ -10728,11 +10728,144 @@
         "instructions": "Inspect IP-056 in registry/component-dossiers-v037.json; apply the design, states, controls and fallbacks only in a separate target application, and test with real backend authorization.",
         "limitations": "Not an implemented approval service, chat runtime, component, working editor, or safe live tool bridge."
       }
+    },
+    {
+      "id": "IP-057",
+      "type": "interaction",
+      "name": "Agent tool event timeline / Agent 工具事件时间线",
+      "stage": "prototype",
+      "priority": "P0",
+      "tags": [
+        "original-standalone-implementation",
+        "v038",
+        "progress",
+        "event-order",
+        "partial-failure"
+      ],
+      "aliases": [
+        "工具调用状态",
+        "流式进度可视化",
+        "agent timeline",
+        "tool event status"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original independently authored ESM/DOM reference, no third-party source or media imported",
+      "reuseKind": "behavior-pattern",
+      "styleIds": [],
+      "applicationContexts": [
+        "ai-app",
+        "developer-tools"
+      ],
+      "dependencies": [
+        "IP-054",
+        "REF-108",
+        "REF-110"
+      ],
+      "path": "playground/agent-interactions-v038/timeline-model.mjs",
+      "spec": "registry/agent-interactions-v038.json",
+      "details": "docs/research/agent-interactions-v038.md",
+      "demo": "playground/agent-interactions-v038/index.html",
+      "verified": "Original ESM state model, independent local specimen and focused Node/Playwright tests written 2026-11-11; CI/target-device evidence must be independently verified. Not production-certified.",
+      "handoff": {
+        "entry": "playground/agent-interactions-v038/README.md",
+        "stack": "standalone HTML/CSS/JS ESM interaction model; no React public export",
+        "instructions": "Use playground/agent-interactions-v038/timeline-model.mjs as the executable reference; read docs/research/agent-interactions-v038.md and matching tests, compare with IP-054 design contract, then adapt in a separate destination repository.",
+        "limitations": "Local-only deterministic model. No actual transport, remote cancellation, persistence, or multi-user state."
+      }
+    },
+    {
+      "id": "IP-058",
+      "type": "interaction",
+      "name": "Patch approval local preview / 补丁修改与审批预览",
+      "stage": "prototype",
+      "priority": "P0",
+      "tags": [
+        "original-standalone-implementation",
+        "v038",
+        "approval",
+        "version-conflict",
+        "patch"
+      ],
+      "aliases": [
+        "人工批准变更",
+        "补丁写入确认",
+        "patch approval",
+        "diff review"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original independently authored ESM/DOM reference, no third-party source or media imported",
+      "reuseKind": "behavior-pattern",
+      "styleIds": [],
+      "applicationContexts": [
+        "developer-tools",
+        "ai-app"
+      ],
+      "dependencies": [
+        "IP-055",
+        "REF-106",
+        "IP-051"
+      ],
+      "path": "playground/agent-interactions-v038/approval-model.mjs",
+      "spec": "registry/agent-interactions-v038.json",
+      "details": "docs/research/agent-interactions-v038.md",
+      "demo": "playground/agent-interactions-v038/index.html",
+      "verified": "Original ESM state model, independent local specimen and focused Node/Playwright tests written 2026-11-11; CI/target-device evidence must be independently verified. Not production-certified.",
+      "handoff": {
+        "entry": "playground/agent-interactions-v038/README.md",
+        "stack": "standalone HTML/CSS/JS ESM interaction model; no React public export",
+        "instructions": "Use playground/agent-interactions-v038/approval-model.mjs as the executable reference; read docs/research/agent-interactions-v038.md and matching tests, compare with IP-055 design contract, then adapt in a separate destination repository.",
+        "limitations": "Local demonstration only: no real file I/O, auth, cryptographic hash calculation or trusted server receipt."
+      }
+    },
+    {
+      "id": "IP-059",
+      "type": "interaction",
+      "name": "Draft-preserving clarification / 澄清问答保留草稿",
+      "stage": "prototype",
+      "priority": "P0",
+      "tags": [
+        "original-standalone-implementation",
+        "v038",
+        "clarification",
+        "draft-preserve",
+        "nonce"
+      ],
+      "aliases": [
+        "澄清不中断草稿",
+        "问答草稿恢复",
+        "clarification draft",
+        "question recovery"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original independently authored ESM/DOM reference, no third-party source or media imported",
+      "reuseKind": "behavior-pattern",
+      "styleIds": [],
+      "applicationContexts": [
+        "ai-app",
+        "onboarding",
+        "workflow"
+      ],
+      "dependencies": [
+        "IP-056",
+        "REF-107",
+        "REF-109"
+      ],
+      "path": "playground/agent-interactions-v038/clarification-model.mjs",
+      "spec": "registry/agent-interactions-v038.json",
+      "details": "docs/research/agent-interactions-v038.md",
+      "demo": "playground/agent-interactions-v038/index.html",
+      "verified": "Original ESM state model, independent local specimen and focused Node/Playwright tests written 2026-11-11; CI/target-device evidence must be independently verified. Not production-certified.",
+      "handoff": {
+        "entry": "playground/agent-interactions-v038/README.md",
+        "stack": "standalone HTML/CSS/JS ESM interaction model; no React public export",
+        "instructions": "Use playground/agent-interactions-v038/clarification-model.mjs as the executable reference; read docs/research/agent-interactions-v038.md and matching tests, compare with IP-056 design contract, then adapt in a separate destination repository.",
+        "limitations": "No file upload, remote Agent, server nonce store, storage or cross-device recovery."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",
   "styleRegistry": "registry/styles.json",
-  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee. V0.18 adds research-only visual studies outside registry/styles.json and component archetypes outside registry/components.json; IP-026/IP-028 only include headless pure models, not UI components. V0.30 adds 17 research-only external specialization references REF-042..058; these are not actual component exports or dependencies. V0.31 adds 15 original design studies REF-059..068 and IP-031..035 as analyzed/research-only; not deployed components, runtime dependencies, or new styles. V0.32: 18 original research contracts IP-036..041 / REF-069..080; four visual entries link separate opt-in CSS samples but are not certified UI implementations. V0.34 adds 16 task-first original research studies (REF-081..088 and IP-042..049), with 6 optional scoped CSS visual/layout atoms; IP research remains explicitly research-only. V0.35 adds eight original static dual-viewport SVG specimens attached to existing IDs only; registered asset count stays 255 and lifecycle stages remain analyzed. V0.36 adds 12 community/editor/agent upstream reference entries REF-089..100 and 4 independent source-governance behavior contracts IP-050..053. All are analyzed/research-only; neither an installable shadcn registry nor an existing editor integration. V0.37 adds 10 item-level source-anchored component/block dossiers REF-101..110 and 3 original Agent interaction contracts IP-054..056; all analyzed/research-only, without installed/copyable code. Three 21st.dev community items remain unregistered candidates awaiting exact item-level links/licensing.",
+  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee. V0.18 adds research-only visual studies outside registry/styles.json and component archetypes outside registry/components.json; IP-026/IP-028 only include headless pure models, not UI components. V0.30 adds 17 research-only external specialization references REF-042..058; these are not actual component exports or dependencies. V0.31 adds 15 original design studies REF-059..068 and IP-031..035 as analyzed/research-only; not deployed components, runtime dependencies, or new styles. V0.32: 18 original research contracts IP-036..041 / REF-069..080; four visual entries link separate opt-in CSS samples but are not certified UI implementations. V0.34 adds 16 task-first original research studies (REF-081..088 and IP-042..049), with 6 optional scoped CSS visual/layout atoms; IP research remains explicitly research-only. V0.35 adds eight original static dual-viewport SVG specimens attached to existing IDs only; registered asset count stays 255 and lifecycle stages remain analyzed. V0.36 adds 12 community/editor/agent upstream reference entries REF-089..100 and 4 independent source-governance behavior contracts IP-050..053. All are analyzed/research-only; neither an installable shadcn registry nor an existing editor integration. V0.37 adds 10 item-level source-anchored component/block dossiers REF-101..110 and 3 original Agent interaction contracts IP-054..056; all analyzed/research-only, without installed/copyable code. Three 21st.dev community items remain unregistered candidates awaiting exact item-level links/licensing. V0.38 adds 3 original standalone interaction prototypes IP-057..059 with inspected ESM source, live DOM specimen and focused tests. Previous IP-054..056 remain analyzed/research-only. No React export/theme/third-party dependency added.",
   "reusePolicyVersion": "1.0",
   "reusePolicies": {
     "style-token": {

@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-11 · V0.38 original Agent interaction prototypes
+
+- Added **3 original, independently executable ESM models**: IP-057 monotonic tool state and partial failure, IP-058 hash-bound local patch approval/conflict/fictional receipt, and IP-059 question/draft preservation and retry/nonce handling. The earlier research-only IP-054..056 remain unchanged.
+- Added [interactive standalone specimens](playground/agent-interactions-v038/index.html), [usage notes](playground/agent-interactions-v038/README.md), [source registry](registry/agent-interactions-v038.json), [research-to-code mapping](docs/research/agent-interactions-v038.md), Node tests and Playwright browser tests.
+- Registry count **284 → 287**, without any React public export, new theme, third-party dependency, hosted Agent, product page assembly or real file-system write.
+- Any approval/write receipt rendered here is **local-demo-only**; a backend must re-authenticate, recheck the patch and base revision, actually write and audit the result.
+
+
 ## 2026-11-11 · V0.37 item-level component/block dossiers and original Agent state contracts
 
 - Deepened V0.36 sources into **10 pinned, license-scoped file/registry dossiers**: official shadcn `dashboard-01`, `sidebar-07`, `sidebar-13`, `login-04` and Agent Elements `agent-chat`, `edit-tool`, `question-tool`, `tool-group`, `input-bar`, `mcp-tool` (REF-101..110). Each records observed dependency/file metadata, candidate interaction states, responsiveness/fallback guidance, existing-ID overlap and fixed upstream commit.

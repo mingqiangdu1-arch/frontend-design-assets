@@ -142,6 +142,32 @@ for (const sample of community.curatedCases) {
 assertFile("docs/research/community-sources-v036.md","V0.36 research report");
 console.log("Validated V0.36: 12 upstream source dossiers + 4 original research patterns, no promoted components.");
 
+// V0.38: original standalone model specimens, not installed components or backend permissions.
+const agentPrototypes=readJson("registry/agent-interactions-v038.json");
+if (agentPrototypes.schemaVersion!=="1.0"||agentPrototypes.status!=="prototype-only"||
+    agentPrototypes.reactExportsAdded!==0||agentPrototypes.thirdPartyCodeImported!==false||
+    !Array.isArray(agentPrototypes.entries)||agentPrototypes.entries.length!==3) fail("V0.38 prototype registry invalid");
+const v038Ids=new Set();
+for(const item of agentPrototypes.entries){
+ if(v038Ids.has(item.id))fail("Duplicate V0.38 ID "+item.id);v038Ids.add(item.id);
+ const asset=assetById.get(item.id);
+ if(!asset||asset.type!=="interaction"||asset.stage!=="prototype"||
+    asset.reuseKind!=="behavior-pattern"||asset.handoff?.mode==="research-only"||
+    asset.path!==item.source||asset.demo!==item.demonstration||
+    asset.spec!=="registry/agent-interactions-v038.json"||
+    !asset.dependencies.includes(item.predecessorResearchId)||
+    item.sourceIncludesThirdPartyCode!==false||item.license!=="original-code"||
+    !Array.isArray(item.exportedFunctions)||item.exportedFunctions.length<3)fail("V0.38 model registration invalid "+item.id);
+ for(const f of [item.source,item.demonstration,item.nodeTest,item.browserTest])assertFile(f,"V0.38 "+item.id);
+ const code=fs.readFileSync(item.source,"utf8");
+ for(const fn of item.exportedFunctions)if(!code.includes("export function "+fn+"("))fail("Missing original model export "+item.id+"/"+fn);
+}
+for(const f of agentPrototypes.files)assertFile(f,"V0.38 recorded file");
+const css038=fs.readFileSync("playground/agent-interactions-v038/styles.css","utf8");
+if(/(?:^|\n)\s*:root\s*\{|@import\b|url\s*\(/i.test(css038)||
+   !css038.includes("prefers-reduced-motion")||!css038.includes("forced-colors"))fail("V0.38 CSS scope/quality check");
+console.log("Validated V0.38: 3 original standalone executable models and associated tests.");
+
 // V0.37: item-level source study; real upstream code/visuals remain outside this repo.
 const componentDossiers = readJson("registry/component-dossiers-v037.json");
 if (componentDossiers.schemaVersion !== "1.0" || componentDossiers.status !== "research-only" ||

@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.38.0",
+  "reviewedOn": "2026-11-11",
+  "scope": "Original independently executable, standalone model references. Not an AI product or third-party runtime import.",
+  "status": "prototype-only",
+  "reactExportsAdded": 0,
+  "thirdPartyCodeImported": false,
+  "hostedServices": false,
+  "files": [
+    "registry/agent-interactions-v038.json",
+    "playground/agent-interactions-v038/index.html",
+    "playground/agent-interactions-v038/README.md",
+    "docs/research/agent-interactions-v038.md",
+    "playground/agent-interactions-v038/app.mjs",
+    "playground/agent-interactions-v038/styles.css",
+    "tests/agent-interactions-v038.test.mjs",
+    "tests/browser/agent-interactions-v038.spec.mjs"
+  ],
+  "entries": [
+    {
+      "id": "IP-057",
+      "stage": "prototype",
+      "reuse": "adapt-required",
+      "source": "playground/agent-interactions-v038/timeline-model.mjs",
+      "predecessorResearchId": "IP-054",
+      "dependencies": [
+        "IP-054",
+        "REF-108",
+        "REF-110"
+      ],
+      "exportedFunctions": [
+        "createTimeline",
+        "applyToolEvent",
+        "timelineSummary"
+      ],
+      "demonstration": "playground/agent-interactions-v038/index.html",
+      "nodeTest": "tests/agent-interactions-v038.test.mjs",
+      "browserTest": "tests/browser/agent-interactions-v038.spec.mjs",
+      "designChecks": [
+        "stale event sequence ignored",
+        "terminal result preserved",
+        "partial failure summary explicit"
+      ],
+      "limitations": "Local-only deterministic model. No actual transport, remote cancellation, persistence, or multi-user state.",
+      "license": "original-code",
+      "sourceIncludesThirdPartyCode": false
+    },
+    {
+      "id": "IP-058",
+      "stage": "prototype",
+      "reuse": "adapt-required",
+      "source": "playground/agent-interactions-v038/approval-model.mjs",
+      "predecessorResearchId": "IP-055",
+      "dependencies": [
+        "IP-055",
+        "REF-106",
+        "IP-051"
+      ],
+      "exportedFunctions": [
+        "createApproval",
+        "proposePatch",
+        "decidePatch",
+        "markPatchResult"
+      ],
+      "demonstration": "playground/agent-interactions-v038/index.html",
+      "nodeTest": "tests/agent-interactions-v038.test.mjs",
+      "browserTest": "tests/browser/agent-interactions-v038.spec.mjs",
+      "designChecks": [
+        "hash mismatch rejected",
+        "rejection prevents apply",
+        "base version mismatch reports conflict"
+      ],
+      "limitations": "Local demonstration only: no real file I/O, auth, cryptographic hash calculation or trusted server receipt.",
+      "license": "original-code",
+      "sourceIncludesThirdPartyCode": false
+    },
+    {
+      "id": "IP-059",
+      "stage": "prototype",
+      "reuse": "adapt-required",
+      "source": "playground/agent-interactions-v038/clarification-model.mjs",
+      "predecessorResearchId": "IP-056",
+      "dependencies": [
+        "IP-056",
+        "REF-107",
+        "REF-109"
+      ],
+      "exportedFunctions": [
+        "createClarification",
+        "changeDraft",
+        "askQuestion",
+        "chooseAnswer",
+        "submitAnswer",
+        "finishQuestion",
+        "dismissQuestion"
+      ],
+      "demonstration": "playground/agent-interactions-v038/index.html",
+      "nodeTest": "tests/agent-interactions-v038.test.mjs",
+      "browserTest": "tests/browser/agent-interactions-v038.spec.mjs",
+      "designChecks": [
+        "draft survives accepted answer",
+        "duplicate nonce idempotent",
+        "failed submission can retry"
+      ],
+      "limitations": "No file upload, remote Agent, server nonce store, storage or cross-device recovery.",
+      "license": "original-code",
+      "sourceIncludesThirdPartyCode": false
+    }
+  ]
+}
