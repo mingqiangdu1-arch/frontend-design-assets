@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Original bounded Registry-to-block metadata and nested slot rule reference; preview and confirm local commands.">
+<title>Registry × Slot Contract Lab · V0.40</title>
+<link rel="stylesheet" href="./styles.css"><script type="module" src="./app.mjs"></script>
+</head>
+<body class="rs40">
+<a class="rs40-skip" href="#mainContent">跳转至模型标本</a>
+<header class="rs40-head"><a href="../../CATALOG.md">◈ FRONTEND DESIGN ASSETS <span>/ CONTRACT LAB 0.40</span></a><span>ORIGINAL MODEL · NO VENDOR CODE</span></header>
+<main id="mainContent" class="rs40-main">
+<section class="rs40-hero"><p class="rs40-eyebrow">SOURCE MAPPING / CONSTRAINED SLOTS / SAFE PREVIEW</p>
+<h1>复用区块之前，<em>先验证结构。</em></h1>
+<p>三个独立原创模型，研究从受控 Registry 元数据创建区块、限制嵌套容器，以及预览后提交。这里只操作虚构区块数据，不运行外部组件、不创建网站、不连接 Agent。</p>
+</section>
+<section class="rs40-lab" aria-label="区块元数据与 Slot 规则标本">
+<div class="rs40-top"><div><span class="rs40-eyebrow">DOCUMENT SNAPSHOT / LOCAL ONLY</span><h2>嵌套区块规则实验</h2></div><div class="rs40-top-tools"><span id="revision" class="rs40-revision">Revision 1</span><button id="reset" type="button">重置素材</button></div></div>
+<p role="status" aria-live="polite" id="status" class="rs40-status">等待本地操作。</p>
+<div class="rs40-grid">
+<section class="rs40-panel" aria-labelledby="mapTitle">
+<span class="rs40-step">01 · IP-063</span><h3 id="mapTitle">受控 Registry 映射</h3>
+<p>只允许登记在本地的原创 Fixture 映射。外部仓库条目需要另行核对权利、类型和依赖。</p>
+<label class="rs40-field">素材来源<select id="source"></select></label>
+<label class="rs40-field">新区块 ID<input id="newId" value="feature-new" maxlength="50"></label>
+<label class="rs40-field">放入 Slot<select id="insertTarget"><option value="stack-one:items">stack-one / items</option><option value="section-one:content">section-one / content</option><option value="section-two:content">section-two / content</option></select></label>
+<button id="previewInsert" type="button" class="rs40-primary">预览插入</button>
+<p class="rs40-note">外部 shadcn / 社区 Registry 的链接或源码不会被直接装入当前标本。</p>
+</section>
+<section class="rs40-panel" aria-labelledby="slotTitle">
+<span class="rs40-step">02 · IP-064</span><h3 id="slotTitle">有限嵌套 Slot</h3>
+<p>Section 只能容纳 Hero、Feature、Stack；Stack 仅可容纳 Feature、Quote。最多三级，且必须独占父节点。</p>
+<label class="rs40-field">移动已有节点<select id="moveId"><option value="feature-two">feature-two / Feature</option><option value="hero-one">hero-one / Hero</option><option value="stack-one">stack-one / Stack</option></select></label>
+<label class="rs40-field">目标 Slot<select id="moveTarget"><option value="stack-one:items">stack-one / items</option><option value="section-two:content">section-two / content</option><option value="section-one:content">section-one / content</option></select></label>
+<button id="previewMove" type="button">预览移动</button>
+<div class="rs40-divider"></div>
+<label class="rs40-field">Section 布局<select id="layout"><option value="vertical">vertical / 竖向</option><option value="split">split / 分栏</option></select></label>
+<button id="previewEdit" type="button">预览修改 section-one 属性</button>
+</section>
+<section class="rs40-panel rs40-full" aria-labelledby="planTitle">
+<span class="rs40-step">03 · IP-065</span><h3 id="planTitle">命令预览与显式确认</h3>
+<p>预览不改变真实本地状态；确认会重新计算结果并校验 Snapshot、Revision 和原始命令。此处的确认只是本地状态演示，不能代替服务端权限。</p>
+<div class="rs40-three">
+<div><h4>当前嵌套树</h4><ol id="tree" class="rs40-tree" aria-label="区块层级结构"></ol></div>
+<div><h4>待确认变化</h4><pre id="preview" class="rs40-preview" aria-label="命令变化预览">尚未生成预览。</pre><div class="rs40-actions"><button type="button" id="confirm" class="rs40-primary" disabled>确认本地操作</button><button type="button" id="discard" disabled>丢弃预览</button></div></div>
+<div><h4>最近本地结构</h4><pre id="currentJSON" class="rs40-preview" aria-label="当前文件数据">加载中。</pre></div>
+</div>
+</section>
+</div></section>
+<section class="rs40-bottom"><h2>研究边界</h2><p>非页面编辑器产品：没有安装外部 Registry、React 组件运行时、嵌套拖拽、真实文件写入、鉴权、远端协作或网站发布。模型仅作为目标项目的安全结构与交互参考；实用系统需额外验证真实来源授权和客户端/服务端一致性。</p></section>
+<footer class="rs40-foot">FRONTEND DESIGN ASSETS · STRUCTURE STUDY · NO EXTERNAL COMPONENTS</footer>
+</main></body></html>

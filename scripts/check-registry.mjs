@@ -142,6 +142,33 @@ for (const sample of community.curatedCases) {
 assertFile("docs/research/community-sources-v036.md","V0.36 research report");
 console.log("Validated V0.36: 12 upstream source dossiers + 4 original research patterns, no promoted components.");
 
+// V0.40: original allowlisted metadata and slot reference models only.
+const slotModels=readJson("registry/registry-slots-v040.json");
+if(slotModels.schemaVersion!=="1.0"||slotModels.status!=="prototype-only"||
+   slotModels.reactExportsAdded!==0||slotModels.thirdPartyCodeImported!==false||
+   !Array.isArray(slotModels.entries)||slotModels.entries.length!==3)fail("V0.40 registry contract invalid");
+const v040Ids=new Set();
+for(const item of slotModels.entries){
+ if(v040Ids.has(item.id))fail("V0.40 duplicate entry "+item.id);v040Ids.add(item.id);
+ const asset=assetById.get(item.id);
+ if(!asset||asset.type!=="interaction"||asset.stage!=="prototype"||
+    asset.reuseKind!=="behavior-pattern"||asset.handoff?.mode==="research-only"||
+    asset.path!==item.source||asset.demo!==item.demo||
+    asset.spec!=="registry/registry-slots-v040.json"||
+    item.stage!=="prototype"||item.reuse!=="adapt-required"||
+    item.license!=="original-code"||item.sourceIncludesThirdPartyCode!==false||
+    !Array.isArray(item.exports)||item.exports.length<3||
+    !item.dependencies.every(id=>assetIds.has(id)||v040Ids.has(id)))fail("V0.40 model registration mismatch "+item.id);
+ for(const f of [item.source,item.demo,item.unitTest,item.browserTest])assertFile(f,"V0.40 "+item.id);
+ const source=fs.readFileSync(item.source,"utf8");
+ for(const fn of item.exports)if(!source.includes("export function "+fn+"("))fail("V0.40 missing function "+item.id+"/"+fn);
+}
+for(const f of slotModels.files)assertFile(f,"V0.40 manifest path");
+const style40=fs.readFileSync("playground/registry-slots-v040/styles.css","utf8");
+if(/(?:^|\n)\s*:root\s*\{|@import\b|url\s*\(/i.test(style40)||
+   !style40.includes("prefers-reduced-motion")||!style40.includes("forced-colors"))fail("V0.40 isolated CSS contract violated");
+console.log("Validated V0.40: 3 source-pinned original reference models and focused tests.");
+
 // V0.39: independently executable visual editor reference models, not page builder exports.
 const visualModels=readJson("registry/visual-editor-v039.json");
 if(visualModels.schemaVersion!=="1.0"||visualModels.status!=="prototype-only"||

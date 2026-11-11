@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.40.0",
+  "reviewedOn": "2026-11-11",
+  "status": "prototype-only",
+  "scope": "Metadata mapping, strictly bounded nested slots and local preview contract only; not a website editor or shadcn runtime.",
+  "reactExportsAdded": 0,
+  "thirdPartyCodeImported": false,
+  "hostedServices": false,
+  "files": [
+    "registry/registry-slots-v040.json",
+    "playground/registry-slots-v040/index.html",
+    "playground/registry-slots-v040/README.md",
+    "docs/research/registry-slots-v040.md",
+    "playground/registry-slots-v040/styles.css",
+    "playground/registry-slots-v040/app.mjs",
+    "playground/registry-slots-v040/registry-adapter.mjs",
+    "playground/registry-slots-v040/slot-tree.mjs",
+    "playground/registry-slots-v040/command-preview.mjs",
+    "tests/registry-slots-v040.test.mjs",
+    "tests/browser/registry-slots-v040.spec.mjs"
+  ],
+  "entries": [
+    {
+      "id": "IP-063",
+      "title": "Curated Registry metadata to block schema adapter / Registry 元数据白名单映射",
+      "source": "playground/registry-slots-v040/registry-adapter.mjs",
+      "stage": "prototype",
+      "reuse": "adapt-required",
+      "exports": [
+        "listCuratedMappings",
+        "mapRegistryIntent",
+        "inspectExternalRegistry"
+      ],
+      "dependencies": [
+        "IP-050",
+        "IP-061",
+        "REF-092",
+        "REF-094"
+      ],
+      "demo": "playground/registry-slots-v040/index.html",
+      "unitTest": "tests/registry-slots-v040.test.mjs",
+      "browserTest": "tests/browser/registry-slots-v040.spec.mjs",
+      "features": [
+        "Three original curated fixture identifiers map to existing V0.39 typed blocks",
+        "Unexpected external sources and unknown props fail closed",
+        "Unreviewed external items are inspect-only, never code imports"
+      ],
+      "limitations": "Fixture-only metadata adapter; not shadcn registry-item.json implementation, vendor source installer, remote fetch or code licensing engine.",
+      "license": "original-code",
+      "sourceIncludesThirdPartyCode": false
+    },
+    {
+      "id": "IP-064",
+      "title": "Constrained nested slot document tree / 受限层级 Slot 文档",
+      "source": "playground/registry-slots-v040/slot-tree.mjs",
+      "stage": "prototype",
+      "reuse": "adapt-required",
+      "exports": [
+        "seedSlotDocument",
+        "validateSlotDocument",
+        "insertIntoSlot",
+        "moveIntoSlot",
+        "updateSlotProps",
+        "describeSlotTree"
+      ],
+      "dependencies": [
+        "IP-060",
+        "IP-061",
+        "IP-063",
+        "REF-099"
+      ],
+      "demo": "playground/registry-slots-v040/index.html",
+      "unitTest": "tests/registry-slots-v040.test.mjs",
+      "browserTest": "tests/browser/registry-slots-v040.spec.mjs",
+      "features": [
+        "Root Section with bounded Section/Stack slot typing",
+        "At most depth three, unique parent ownership and 12 total nodes",
+        "Immutable insert/reparent and typed prop updates with validation"
+      ],
+      "limitations": "Only simple fixture section/stack hierarchy; no true browser nesting gestures, arbitrary components, collaboration or nested page output.",
+      "license": "original-code",
+      "sourceIncludesThirdPartyCode": false
+    },
+    {
+      "id": "IP-065",
+      "title": "Local preview and confirmed editor command plan / 编辑命令预览确认",
+      "source": "playground/registry-slots-v040/command-preview.mjs",
+      "stage": "prototype",
+      "reuse": "adapt-required",
+      "exports": [
+        "createCommandSession",
+        "previewCommand",
+        "confirmCommand"
+      ],
+      "dependencies": [
+        "IP-051",
+        "IP-058",
+        "IP-062",
+        "IP-064"
+      ],
+      "demo": "playground/registry-slots-v040/index.html",
+      "unitTest": "tests/registry-slots-v040.test.mjs",
+      "browserTest": "tests/browser/registry-slots-v040.spec.mjs",
+      "features": [
+        "Read-only preview for insert/move/edit, no mutation before confirmation",
+        "Explicit confirmation with current revision/source snapshot check",
+        "Recompute preview and detect tampering, return local-only revision update"
+      ],
+      "limitations": "No authentic approvals, signing, cryptographic digest, server authorization, remote writing, persistent revision store or Agent execution.",
+      "license": "original-code",
+      "sourceIncludesThirdPartyCode": false
+    }
+  ]
+}

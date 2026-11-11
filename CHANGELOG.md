@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-11 · V0.40 curated Registry mapping, bounded nested slots and local preview
+
+- Added **three original executable ESM models**: IP-063 whitelist-only Registry metadata → existing V0.39 Block schema; IP-064 bounded Section/Stack slot types, ownership, depth, capacity and immutable move; IP-065 local `insert/move/edit` preview with explicit confirm, revision and snapshot checks.
+- Added [independent interactive contract lab](playground/registry-slots-v040/index.html), [machine catalog](registry/registry-slots-v040.json), [reference README](playground/registry-slots-v040/README.md), [research documentation](docs/research/registry-slots-v040.md), Node tests and Playwright browser tests.
+- Asset registry **290 → 293**, preserving research-only historical IDs, 48 React exports, 14 themes and existing app packages. No vendor code/media fetched, registry installer, complete page builder or actual backend authorization.
+- All source mapping uses **original local fixture metadata only**; external items require separate item-level provenance and license checks. The preview/confirm token is not secure server permission or a persistent edit.
+
+
 ## 2026-11-11 · V0.39 standalone visual editor reference primitives
 
 - Added three original and runnable ESM visual editor prototypes: `IP-060` stable flat-block reorder (HTML5 drag/drop + keyboard button alternative), `IP-061` strict typed property schema and atomic inspector patch, and `IP-062` reversible selection-aware local history with undo/redo branch safety.
