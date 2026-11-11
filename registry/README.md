@@ -11,6 +11,7 @@ This directory is the **authoritative index** for choosing existing design refer
 | `styles.json` | Independent style IDs, token/spec/demo entrypoints; **no repository default** |
 | `style-assembly.json` | Fourteen per-style page structure and interaction handoffs; real template, experience-recipe and React-export references. Used by `scripts/style-assembly.mjs`; not generated production pages. |
 | `style-facets.json` | One-to-one theme selection facets: task aliases, structural layout, material, interaction, device and density; references real demo paths. Pair with `scripts/style-match.mjs` and `scripts/select-style.mjs` for explainable matching, not an ML style rank. |
+| `registry-metadata-v041.json` | IP-066..068 原创只读 shadcn `registry-item.json` 元数据子集解析、限定已审条目依赖拓扑和内部元数据格式迁移。附固定上游提交/条目来源、测试和独立演示；无安装或组件运行许可结论 |
 | `registry-slots-v040.json` | 原创执行级模型 IP-063..065：Registry 元数据 Fixture 映射、三层 Slot 文档、不触碰服务端的预览确认；附源文件、独立 DOM 演示与 Node/Browser 测试 |
 | `visual-editor-v039.json` | IP-060..062 三个原创可执行可视化区块原型：扁平区块排序、严格属性 Schema、选择/本地撤销重做。源码/演示/测试均可追踪；不是 React 包导出或完整编辑器产品 |
 | `agent-interactions-v038.json` | 三个独立可运行的原创 Agent 状态原型 IP-057..059，附源码、独立浏览器 Demo、Node/Playwright 测试；stage=prototype / adapt-required，非第三方 React 组件 |

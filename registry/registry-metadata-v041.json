@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.41.0",
+  "reviewedOn": "2026-11-11",
+  "status": "prototype-only",
+  "scope": "Read-only metadata subset compatibility study, not official schema certification or executable third-party Registry integration.",
+  "reactExportsAdded": 0,
+  "thirdPartyCodeImported": false,
+  "hostedServices": false,
+  "upstream": {
+    "repository": "shadcn-ui/ui",
+    "commit": "8ab27715521cbd4f87ae6886cd989cbb678f6de7",
+    "licenseUrl": "https://github.com/shadcn-ui/ui/blob/8ab27715521cbd4f87ae6886cd989cbb678f6de7/LICENSE.md",
+    "itemSchemaDocs": "https://ui.shadcn.com/docs/registry/registry-item-json",
+    "sourcePaths": [
+      "apps/v4/registry/new-york-v4/ui/_registry.ts",
+      "apps/v4/registry/new-york-v4/blocks/_registry.ts"
+    ],
+    "itemsReviewed": [
+      "button",
+      "alert-dialog",
+      "login-04"
+    ],
+    "sourceCodeCopied": false
+  },
+  "files": [
+    "registry/registry-metadata-v041.json",
+    "playground/registry-metadata-v041/index.html",
+    "playground/registry-metadata-v041/README.md",
+    "docs/research/registry-metadata-v041.md",
+    "playground/registry-metadata-v041/styles.css",
+    "playground/registry-metadata-v041/app.mjs",
+    "playground/registry-metadata-v041/official-metadata-fixtures.json",
+    "playground/registry-metadata-v041/registry-item-parser.mjs",
+    "playground/registry-metadata-v041/dependency-graph.mjs",
+    "playground/registry-metadata-v041/metadata-migration.mjs",
+    "tests/registry-metadata-v041.test.mjs",
+    "tests/browser/registry-metadata-v041.spec.mjs"
+  ],
+  "entries": [
+    {
+      "id": "IP-066",
+      "title": "Read-only official shadcn Registry metadata subset parser / 官方 Registry 只读元数据解析",
+      "source": "playground/registry-metadata-v041/registry-item-parser.mjs",
+      "stage": "prototype",
+      "reuse": "adapt-required",
+      "exports": [
+        "parseNpmDependency",
+        "classifyRegistryAddress",
+        "parseRegistryMetadata"
+      ],
+      "dependencies": [
+        "IP-063",
+        "REF-092",
+        "REF-101"
+      ],
+      "demo": "playground/registry-metadata-v041/index.html",
+      "unitTest": "tests/registry-metadata-v041.test.mjs",
+      "browserTest": "tests/browser/registry-metadata-v041.spec.mjs",
+      "actualCapability": "Official item metadata is normalized without importing or preserving files[].content; source commit and path required.",
+      "limitations": "Deliberate subset, not complete upstream JSON Schema; not an installer, executable component, source-code download, license checker or filesystem writer.",
+      "sourceIncludesThirdPartyCode": false,
+      "license": "original-code"
+    },
+    {
+      "id": "IP-067",
+      "title": "Source-pinned Registry dependency inventory and graph / 固定来源依赖图",
+      "source": "playground/registry-metadata-v041/dependency-graph.mjs",
+      "stage": "prototype",
+      "reuse": "adapt-required",
+      "exports": [
+        "buildRegistryDependencyGraph",
+        "compareDependencySnapshots"
+      ],
+      "dependencies": [
+        "IP-066",
+        "REF-101",
+        "REF-104"
+      ],
+      "demo": "playground/registry-metadata-v041/index.html",
+      "unitTest": "tests/registry-metadata-v041.test.mjs",
+      "browserTest": "tests/browser/registry-metadata-v041.spec.mjs",
+      "actualCapability": "Topologically sorts only explicitly reviewed local item metadata; unresolved external references and npm version conflicts are visible.",
+      "limitations": "No dynamic Registry resolution, remote requests, package installation, dependency vulnerability scan or completed host graph proof.",
+      "sourceIncludesThirdPartyCode": false,
+      "license": "original-code"
+    },
+    {
+      "id": "IP-068",
+      "title": "Internal registry metadata snapshot migration and diff / 内部元数据快照迁移比对",
+      "source": "playground/registry-metadata-v041/metadata-migration.mjs",
+      "stage": "prototype",
+      "reuse": "adapt-required",
+      "exports": [
+        "makeInternalSnapshot",
+        "migrateInternalSnapshot",
+        "compareInternalSnapshots"
+      ],
+      "dependencies": [
+        "IP-066",
+        "IP-067",
+        "IP-063"
+      ],
+      "demo": "playground/registry-metadata-v041/index.html",
+      "unitTest": "tests/registry-metadata-v041.test.mjs",
+      "browserTest": "tests/browser/registry-metadata-v041.spec.mjs",
+      "actualCapability": "Migrates this library's own metadata envelope formatVersion 1.0 to 2.0; compares source file lists, dependencies and pinned revisions.",
+      "limitations": "NOT shadcn upstream schema version migration or automated component upgrades; no source rewriting, project migration or version compatibility proof.",
+      "sourceIncludesThirdPartyCode": false,
+      "license": "original-code"
+    }
+  ]
+}

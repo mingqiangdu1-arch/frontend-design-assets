@@ -61,6 +61,10 @@ jobs:
           node --check playground/registry-slots-v040/slot-tree.mjs
           node --check playground/registry-slots-v040/command-preview.mjs
           node --check playground/registry-slots-v040/app.mjs
+          node --check playground/registry-metadata-v041/registry-item-parser.mjs
+          node --check playground/registry-metadata-v041/dependency-graph.mjs
+          node --check playground/registry-metadata-v041/metadata-migration.mjs
+          node --check playground/registry-metadata-v041/app.mjs
           node --check scripts/compose-page.mjs
           node --check scripts/check-page-templates.mjs
           node --check playground/asset-explorer/model.mjs

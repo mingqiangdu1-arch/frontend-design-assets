@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Original read-only registry-item.json metadata compatibility study and pinned source fixtures.">
+<title>Registry Metadata Interoperability · V0.41</title>
+<link rel="stylesheet" href="./styles.css"><script type="module" src="./app.mjs"></script>
+</head><body class="rm41"><a class="rm41-skip" href="#main">跳转至元数据素材</a>
+<header class="rm41-header"><a href="../../CATALOG.md">◈ FRONTEND DESIGN ASSETS <span>/ COMPATIBILITY LAB 0.41</span></a><span>PINNED OFFICIAL METADATA · READ ONLY</span></header>
+<main id="main" class="rm41-main">
+<section class="rm41-hero"><p class="rm41-overline">REGISTRY-ITEM · DEPENDENCIES · INTERNAL SNAPSHOTS</p>
+<h1>理解组件来源，<em>再考虑如何复用。</em></h1>
+<p>三份来自同一固定 GitHub Commit 的 shadcn 官方 Registry 条目元数据，用原创解析器测试依赖边界、目标文件风险和内部格式迁移。全部只读，无组件安装、外部代码获取或网页生成。</p></section>
+<div class="rm41-rail"><span>PINNED REVISION</span><code id="commitId">—</code><span id="sourceNotice">正在读取本地 Metadata fixture…</span></div>
+<div class="rm41-grid">
+<section class="rm41-panel" id="item" aria-labelledby="itemTitle"><p class="rm41-kicker">01 / IP-066 · METADATA ADAPTER</p><h2 id="itemTitle">Registry 条目解析</h2><label for="itemSelect" class="rm41-label">官方条目<select id="itemSelect" disabled><option>加载中</option></select></label>
+<p id="typeLine" class="rm41-sublabel">只解析名称、类型、依赖和文件路径。</p>
+<div id="fileList" class="rm41-file-list"></div>
+<div class="rm41-actions"><a id="upstream" target="_blank" rel="noopener noreferrer" href="https://github.com/shadcn-ui/ui">查看官方固定版本定义</a></div>
+</section>
+<section class="rm41-panel" id="graph" aria-labelledby="graphTitle"><p class="rm41-kicker">02 / IP-067 · LOCAL DEPENDENCY GRAPH</p><h2 id="graphTitle">依赖拆分</h2>
+<div class="rm41-metric"><strong id="localCount">0</strong><small>已知本地条目</small><strong id="unresolvedCount">0</strong><small>未解析 Registry 地址</small></div>
+<div id="dependencyDetails"></div>
+<p class="rm41-caption">不会访问 URL、安装 npm 包或递归加载未知 Registry。未出现在受审清单的 Registry 依赖始终标记为未解析。</p>
+</section>
+<section class="rm41-panel rm41-wide" id="migration" aria-labelledby="migrationTitle"><p class="rm41-kicker">03 / IP-068 · INTERNAL METADATA FORMAT</p><h2 id="migrationTitle">内部格式演进和版本差异</h2>
+<p>这里的 V1→V2 只代表**本资产库自己的元数据快照版本**，不是 shadcn 上游 Schema 已升级。模拟修改不属于官方源文件。</p>
+<div class="rm41-actions">
+<button type="button" id="migrate">演示内部 V1 → V2 迁移</button>
+<button type="button" id="diff">模拟依赖变化并比较</button>
+<button type="button" id="resetOutput">清除结果</button>
+</div><pre id="analysisOutput" class="rm41-code" aria-label="元数据处理结果">请先选择条目。</pre>
+</section>
+</div>
+<p class="rm41-status" id="status" role="status" aria-live="polite">所有数据均为本地、只读的元数据研究。</p>
+<section class="rm41-notes"><h2>复用边界</h2><p>研究并不产生任何可安装的组件。官方仓库 MIT 许可证与实际第三方依赖、图片及用户提交素材的可复用权必须分别核查。目标应用接入前还需要运行时框架、依赖安全、样式兼容、目标文件路径、版本迁移和无障碍测试。</p></section>
+<footer class="rm41-footer">FRONTEND DESIGN ASSETS · NO INSTALLER · NO VENDOR CODE · NO PUBLIC BUILDER</footer>
+</main></body></html>

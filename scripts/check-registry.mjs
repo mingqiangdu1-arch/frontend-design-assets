@@ -142,6 +142,39 @@ for (const sample of community.curatedCases) {
 assertFile("docs/research/community-sources-v036.md","V0.36 research report");
 console.log("Validated V0.36: 12 upstream source dossiers + 4 original research patterns, no promoted components.");
 
+// V0.41: Original pinned shadcn metadata reader. Does not install any third-party code.
+const metadata41=readJson("registry/registry-metadata-v041.json");
+const fixtures41=readJson("playground/registry-metadata-v041/official-metadata-fixtures.json");
+if(metadata41.schemaVersion!=="1.0"||metadata41.status!=="prototype-only"||
+   metadata41.reactExportsAdded!==0||metadata41.thirdPartyCodeImported!==false||
+   !Array.isArray(metadata41.entries)||metadata41.entries.length!==3||
+   metadata41.upstream.commit!=="8ab27715521cbd4f87ae6886cd989cbb678f6de7"||
+   fixtures41.commit!==metadata41.upstream.commit||fixtures41.records.length!==3||
+   metadata41.upstream.sourceCodeCopied!==false)fail("V0.41 source provenance invalid");
+const v041Ids=new Set();
+for(const item of metadata41.entries){
+ if(v041Ids.has(item.id))fail("Duplicate V0.41 ID "+item.id);v041Ids.add(item.id);
+ const asset=assetById.get(item.id);
+ if(!asset||asset.type!=="interaction"||asset.stage!=="prototype"||
+   asset.reuseKind!=="behavior-pattern"||asset.handoff?.mode==="research-only"||
+   asset.path!==item.source||asset.demo!==item.demo||
+   asset.spec!=="registry/registry-metadata-v041.json"||
+   item.stage!=="prototype"||item.reuse!=="adapt-required"||item.license!=="original-code"||
+   item.sourceIncludesThirdPartyCode!==false||!Array.isArray(item.exports)||item.exports.length<2||
+   !item.dependencies.every(id=>assetIds.has(id)||v041Ids.has(id)))fail("V0.41 indexed source mismatch "+item.id);
+ for(const f of [item.source,item.demo,item.unitTest,item.browserTest])assertFile(f,"V0.41 "+item.id);
+ const source=fs.readFileSync(item.source,"utf8");
+ for(const fn of item.exports)if(!source.includes("export function "+fn+"("))fail("V0.41 original source export missing "+item.id+"/"+fn);
+}
+for(const f of metadata41.files)assertFile(f,"V0.41 manifest path");
+for(const f of fixtures41.records)if(!f.sourceFile.startsWith("apps/v4/registry/new-york-v4/")||
+    f.item.$schema!=="https://ui.shadcn.com/schema/registry-item.json"||
+    f.item.files.some(x=>Object.hasOwn(x,"content")))fail("V0.41 metadata fixture includes unreviewed code/schema");
+const style41=fs.readFileSync("playground/registry-metadata-v041/styles.css","utf8");
+if(/(?:^|\n)\s*:root\s*\{|@import\b|url\s*\(/i.test(style41)||
+   !style41.includes("prefers-reduced-motion")||!style41.includes("forced-colors"))fail("V0.41 CSS leakage/fallback");
+console.log("Validated V0.41: 3 original read-only metadata models; 3 pinned upstream metadata facts, no imported source.");
+
 // V0.40: original allowlisted metadata and slot reference models only.
 const slotModels=readJson("registry/registry-slots-v040.json");
 if(slotModels.schemaVersion!=="1.0"||slotModels.status!=="prototype-only"||

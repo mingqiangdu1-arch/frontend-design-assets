@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "1.0",
+  "reviewedOn": "2026-11-11",
+  "upstream": "shadcn-ui/ui",
+  "commit": "8ab27715521cbd4f87ae6886cd989cbb678f6de7",
+  "licenseEvidence": "https://github.com/shadcn-ui/ui/blob/8ab27715521cbd4f87ae6886cd989cbb678f6de7/LICENSE.md",
+  "licenseScope": "Repository MIT license confirmed at pinned commit; not a rights audit of media or third-party components.",
+  "usage": "Original manually transcribed Registry metadata facts only. No TSX code, CSS, screenshots, compiled JSON code content or other upstream files copied.",
+  "records": [
+    {
+      "registryId": "button",
+      "sourceFile": "apps/v4/registry/new-york-v4/ui/_registry.ts",
+      "item": {
+        "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+        "name": "button",
+        "type": "registry:ui",
+        "dependencies": [
+          "radix-ui"
+        ],
+        "files": [
+          {
+            "path": "ui/button.tsx",
+            "type": "registry:ui"
+          }
+        ]
+      }
+    },
+    {
+      "registryId": "alert-dialog",
+      "sourceFile": "apps/v4/registry/new-york-v4/ui/_registry.ts",
+      "item": {
+        "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+        "name": "alert-dialog",
+        "type": "registry:ui",
+        "dependencies": [
+          "radix-ui"
+        ],
+        "registryDependencies": [
+          "button"
+        ],
+        "files": [
+          {
+            "path": "ui/alert-dialog.tsx",
+            "type": "registry:ui"
+          }
+        ]
+      }
+    },
+    {
+      "registryId": "login-04",
+      "sourceFile": "apps/v4/registry/new-york-v4/blocks/_registry.ts",
+      "item": {
+        "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+        "name": "login-04",
+        "type": "registry:block",
+        "description": "A login page with form and image.",
+        "registryDependencies": [
+          "button",
+          "card",
+          "input",
+          "label",
+          "field"
+        ],
+        "files": [
+          {
+            "path": "blocks/login-04/page.tsx",
+            "type": "registry:page",
+            "target": "app/login/page.tsx"
+          },
+          {
+            "path": "blocks/login-04/components/login-form.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": [
+          "authentication",
+          "login"
+        ]
+      }
+    }
+  ]
+}

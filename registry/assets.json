@@ -11129,11 +11129,143 @@
         "instructions": "Inspect IP-065 in registry/registry-slots-v040.json, source playground/registry-slots-v040/command-preview.mjs, focused tests and demo. Adapt only the relevant model after real registry item license, app schema, security and UX checks.",
         "limitations": "No authentic approvals, signing, cryptographic digest, server authorization, remote writing, persistent revision store or Agent execution."
       }
+    },
+    {
+      "id": "IP-066",
+      "type": "interaction",
+      "name": "Read-only official shadcn Registry metadata subset parser / 官方 Registry 只读元数据解析",
+      "stage": "prototype",
+      "priority": "P0",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "v041",
+        "original-readonly-metadata",
+        "pinned-official-registry",
+        "no-executable-vendor-code"
+      ],
+      "aliases": [
+        "shadcn registry-item json 解析",
+        "注册项元数据检查",
+        "Registry type file target",
+        "read-only source manifest"
+      ],
+      "source": "https://github.com/shadcn-ui/ui/blob/8ab27715521cbd4f87ae6886cd989cbb678f6de7/apps/v4/registry/new-york-v4/ui/_registry.ts",
+      "license": "Original ESM source; upstream shadcn MIT repository license is repository-scoped only; no third-party code/media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "design-system",
+        "developer-tools",
+        "visual-editor"
+      ],
+      "dependencies": [
+        "IP-063",
+        "REF-092",
+        "REF-101"
+      ],
+      "path": "playground/registry-metadata-v041/registry-item-parser.mjs",
+      "details": "docs/research/registry-metadata-v041.md",
+      "spec": "registry/registry-metadata-v041.json",
+      "demo": "playground/registry-metadata-v041/index.html",
+      "verified": "Independent original read-only metadata model and source-pinned official Registry metadata fixtures, with Node/Chromium tests authored 2026-11-11; target runtime, full official schema compliance and production safety not certified.",
+      "handoff": {
+        "entry": "playground/registry-metadata-v041/README.md",
+        "stack": "framework-neutral ESM parser/analysis only, independent HTML demo; not a React export, Registry installer or app generator",
+        "instructions": "Use playground/registry-metadata-v041/registry-item-parser.mjs and registry/registry-metadata-v041.json for metadata study. Verify pinned upstream commit/file, per-item rights, exact target schema and run own host tests before any code use.",
+        "limitations": "Deliberate subset, not complete upstream JSON Schema; not an installer, executable component, source-code download, license checker or filesystem writer."
+      }
+    },
+    {
+      "id": "IP-067",
+      "type": "interaction",
+      "name": "Source-pinned Registry dependency inventory and graph / 固定来源依赖图",
+      "stage": "prototype",
+      "priority": "P0",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "v041",
+        "original-readonly-metadata",
+        "pinned-official-registry",
+        "no-executable-vendor-code"
+      ],
+      "aliases": [
+        "Registry 依赖图谱",
+        "npm 与 Registry 依赖区分",
+        "dependency source graph",
+        "unresolved registryDependencies"
+      ],
+      "source": "https://github.com/shadcn-ui/ui/blob/8ab27715521cbd4f87ae6886cd989cbb678f6de7/apps/v4/registry/new-york-v4/ui/_registry.ts",
+      "license": "Original ESM source; upstream shadcn MIT repository license is repository-scoped only; no third-party code/media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "developer-tools",
+        "design-system",
+        "knowledge-base"
+      ],
+      "dependencies": [
+        "IP-066",
+        "REF-101",
+        "REF-104"
+      ],
+      "path": "playground/registry-metadata-v041/dependency-graph.mjs",
+      "details": "docs/research/registry-metadata-v041.md",
+      "spec": "registry/registry-metadata-v041.json",
+      "demo": "playground/registry-metadata-v041/index.html",
+      "verified": "Independent original read-only metadata model and source-pinned official Registry metadata fixtures, with Node/Chromium tests authored 2026-11-11; target runtime, full official schema compliance and production safety not certified.",
+      "handoff": {
+        "entry": "playground/registry-metadata-v041/README.md",
+        "stack": "framework-neutral ESM parser/analysis only, independent HTML demo; not a React export, Registry installer or app generator",
+        "instructions": "Use playground/registry-metadata-v041/dependency-graph.mjs and registry/registry-metadata-v041.json for metadata study. Verify pinned upstream commit/file, per-item rights, exact target schema and run own host tests before any code use.",
+        "limitations": "No dynamic Registry resolution, remote requests, package installation, dependency vulnerability scan or completed host graph proof."
+      }
+    },
+    {
+      "id": "IP-068",
+      "type": "interaction",
+      "name": "Internal registry metadata snapshot migration and diff / 内部元数据快照迁移比对",
+      "stage": "prototype",
+      "priority": "P0",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "v041",
+        "original-readonly-metadata",
+        "pinned-official-registry",
+        "no-executable-vendor-code"
+      ],
+      "aliases": [
+        "内部资产 Schema 迁移",
+        "元数据版本差异",
+        "internal metadata migration",
+        "registry source version diff"
+      ],
+      "source": "https://github.com/shadcn-ui/ui/blob/8ab27715521cbd4f87ae6886cd989cbb678f6de7/apps/v4/registry/new-york-v4/ui/_registry.ts",
+      "license": "Original ESM source; upstream shadcn MIT repository license is repository-scoped only; no third-party code/media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "design-system",
+        "developer-tools",
+        "knowledge-base"
+      ],
+      "dependencies": [
+        "IP-066",
+        "IP-067",
+        "IP-063"
+      ],
+      "path": "playground/registry-metadata-v041/metadata-migration.mjs",
+      "details": "docs/research/registry-metadata-v041.md",
+      "spec": "registry/registry-metadata-v041.json",
+      "demo": "playground/registry-metadata-v041/index.html",
+      "verified": "Independent original read-only metadata model and source-pinned official Registry metadata fixtures, with Node/Chromium tests authored 2026-11-11; target runtime, full official schema compliance and production safety not certified.",
+      "handoff": {
+        "entry": "playground/registry-metadata-v041/README.md",
+        "stack": "framework-neutral ESM parser/analysis only, independent HTML demo; not a React export, Registry installer or app generator",
+        "instructions": "Use playground/registry-metadata-v041/metadata-migration.mjs and registry/registry-metadata-v041.json for metadata study. Verify pinned upstream commit/file, per-item rights, exact target schema and run own host tests before any code use.",
+        "limitations": "NOT shadcn upstream schema version migration or automated component upgrades; no source rewriting, project migration or version compatibility proof."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",
   "styleRegistry": "registry/styles.json",
-  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee. V0.18 adds research-only visual studies outside registry/styles.json and component archetypes outside registry/components.json; IP-026/IP-028 only include headless pure models, not UI components. V0.30 adds 17 research-only external specialization references REF-042..058; these are not actual component exports or dependencies. V0.31 adds 15 original design studies REF-059..068 and IP-031..035 as analyzed/research-only; not deployed components, runtime dependencies, or new styles. V0.32: 18 original research contracts IP-036..041 / REF-069..080; four visual entries link separate opt-in CSS samples but are not certified UI implementations. V0.34 adds 16 task-first original research studies (REF-081..088 and IP-042..049), with 6 optional scoped CSS visual/layout atoms; IP research remains explicitly research-only. V0.35 adds eight original static dual-viewport SVG specimens attached to existing IDs only; registered asset count stays 255 and lifecycle stages remain analyzed. V0.36 adds 12 community/editor/agent upstream reference entries REF-089..100 and 4 independent source-governance behavior contracts IP-050..053. All are analyzed/research-only; neither an installable shadcn registry nor an existing editor integration. V0.37 adds 10 item-level source-anchored component/block dossiers REF-101..110 and 3 original Agent interaction contracts IP-054..056; all analyzed/research-only, without installed/copyable code. Three 21st.dev community items remain unregistered candidates awaiting exact item-level links/licensing. V0.38 adds 3 original standalone interaction prototypes IP-057..059 with inspected ESM source, live DOM specimen and focused tests. Previous IP-054..056 remain analyzed/research-only. No React export/theme/third-party dependency added. V0.39 adds three ORIGINAL standalone visual block editor interaction prototypes IP-060..062 (reorder, typed props/schema, local selection undo/redo). All have ESM source/demo/test fixtures, but no new React exports, default themes, external packages, nested page builder or server persistence. V0.40 introduces 3 ORIGINAL bounded registry/slot/preview executable prototypes IP-063..065, all adapted source models with Node/Chromium fixtures. Unknown vendor Registry items remain inspection-only; no public React export, installer, production builder, file write or new theme.",
+  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee. V0.18 adds research-only visual studies outside registry/styles.json and component archetypes outside registry/components.json; IP-026/IP-028 only include headless pure models, not UI components. V0.30 adds 17 research-only external specialization references REF-042..058; these are not actual component exports or dependencies. V0.31 adds 15 original design studies REF-059..068 and IP-031..035 as analyzed/research-only; not deployed components, runtime dependencies, or new styles. V0.32: 18 original research contracts IP-036..041 / REF-069..080; four visual entries link separate opt-in CSS samples but are not certified UI implementations. V0.34 adds 16 task-first original research studies (REF-081..088 and IP-042..049), with 6 optional scoped CSS visual/layout atoms; IP research remains explicitly research-only. V0.35 adds eight original static dual-viewport SVG specimens attached to existing IDs only; registered asset count stays 255 and lifecycle stages remain analyzed. V0.36 adds 12 community/editor/agent upstream reference entries REF-089..100 and 4 independent source-governance behavior contracts IP-050..053. All are analyzed/research-only; neither an installable shadcn registry nor an existing editor integration. V0.37 adds 10 item-level source-anchored component/block dossiers REF-101..110 and 3 original Agent interaction contracts IP-054..056; all analyzed/research-only, without installed/copyable code. Three 21st.dev community items remain unregistered candidates awaiting exact item-level links/licensing. V0.38 adds 3 original standalone interaction prototypes IP-057..059 with inspected ESM source, live DOM specimen and focused tests. Previous IP-054..056 remain analyzed/research-only. No React export/theme/third-party dependency added. V0.39 adds three ORIGINAL standalone visual block editor interaction prototypes IP-060..062 (reorder, typed props/schema, local selection undo/redo). All have ESM source/demo/test fixtures, but no new React exports, default themes, external packages, nested page builder or server persistence. V0.40 introduces 3 ORIGINAL bounded registry/slot/preview executable prototypes IP-063..065, all adapted source models with Node/Chromium fixtures. Unknown vendor Registry items remain inspection-only; no public React export, installer, production builder, file write or new theme. V0.41 adds IP-066..068 ORIGINAL read-only Registry metadata parser, local dependency graph and this-library-only internal snapshot migration. Three pinned official metadata facts are reviewed with tests; NO upstream code, installers, host integration, new React exports or style themes.",
   "reusePolicyVersion": "1.0",
   "reusePolicies": {
     "style-token": {

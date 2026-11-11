@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-11 · V0.41 shadcn Registry metadata interoperability (read-only)
+
+- Added 3 **original executable analysis models**: IP-066 common-field `registry-item.json` metadata subset parser with content stripping/path checks; IP-067 pinned local dependency graph and unresolved source reporting; IP-068 internal normalized metadata format V1→V2 migration + diff. This is **not** shadcn's schema migration.
+- Curated three [source-pinned official metadata facts](playground/registry-metadata-v041/official-metadata-fixtures.json) from `shadcn-ui/ui` commit `8ab27715521cbd4f87ae6886cd989cbb678f6de7`: `button`, `alert-dialog`, `login-04` (no TSX, CSS, screenshots, fonts or compiled Registry code copied).
+- Added a [standalone interactive metadata lab](playground/registry-metadata-v041/index.html), [machine manifest](registry/registry-metadata-v041.json), [technical research](docs/research/registry-metadata-v041.md), Node and Chromium tests and strict CI syntax checks.
+- Registry **293 → 296**; no npm install, public React exports, new themes, source downloads, backend writes, website builder, security audit or production readiness claim. Upstream MIT source does not imply third-party media licenses.
+
+
 ## 2026-11-11 · V0.40 curated Registry mapping, bounded nested slots and local preview
 
 - Added **three original executable ESM models**: IP-063 whitelist-only Registry metadata → existing V0.39 Block schema; IP-064 bounded Section/Stack slot types, ownership, depth, capacity and immutable move; IP-065 local `insert/move/edit` preview with explicit confirm, revision and snapshot checks.
