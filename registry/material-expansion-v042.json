@@ -1,0 +1,545 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.42.0",
+  "reviewedOn": "2026-11-11",
+  "purpose": "REAL MATERIAL EXPANSION: 13 verified distinct upstream resource catalogs and 6 authored reusable CSS visual effects; no new workflow, installer, production UI app or repeated test framework.",
+  "status": "mixed-research-and-original-source",
+  "repoSourceCount": 13,
+  "originalCssCount": 6,
+  "reactExportsAdded": 0,
+  "newThemeCount": 0,
+  "importedThirdPartyCode": false,
+  "files": [
+    "registry/material-expansion-v042.json",
+    "docs/research/material-expansion-v042.md",
+    "styles/primitives/v042/material-effects.css",
+    "styles/primitives/v042/README.md",
+    "playground/material-effects-v042/index.html"
+  ],
+  "sourceEntries": [
+    {
+      "id": "REF-111",
+      "name": "Cult UI / animated shadcn-compatible components",
+      "group": "animated-ui",
+      "github": "nolly-studio/cult-ui",
+      "source": "https://github.com/nolly-studio/cult-ui",
+      "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+      "repositoryLicense": "MIT",
+      "permissionScope": "Repository license from GitHub public metadata; code/media/content rights and paid plans must be checked separately",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "priority": "P0",
+      "sourcePattern": "shadcn registry components; shift-card, globe, Kanban, fluted-glass and device mockup examples; source-first selection",
+      "studyDirections": [
+        "shift card",
+        "glass",
+        "animated card",
+        "globe"
+      ],
+      "applicationContexts": [
+        "landing-page",
+        "creative-tool",
+        "dashboard"
+      ],
+      "adoptionRisks": "Tailwind v4 and Motion likely; check item-level dependency and visuals",
+      "upstreamCodeImported": false,
+      "componentExported": false
+    },
+    {
+      "id": "REF-112",
+      "name": "Motion Primitives / restrained interface motion",
+      "group": "motion-atoms",
+      "github": "ibelick/motion-primitives",
+      "source": "https://github.com/ibelick/motion-primitives",
+      "sourceCommit": "120f64f6ca60348e251f929e9c81f11ccbe45eda",
+      "repositoryLicense": "MIT",
+      "permissionScope": "Repository license from GitHub public metadata; code/media/content rights and paid plans must be checked separately",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "priority": "P0",
+      "sourcePattern": "Low-level composable micro-interactions and transitions suited to calm product interfaces rather than full promotional blocks",
+      "studyDirections": [
+        "microinteraction",
+        "motion primitive",
+        "subtle animation"
+      ],
+      "applicationContexts": [
+        "saas",
+        "developer-tool",
+        "documentation"
+      ],
+      "adoptionRisks": "Project README notes beta; verify per-component API and reduced-motion before adoption",
+      "upstreamCodeImported": false,
+      "componentExported": false
+    },
+    {
+      "id": "REF-113",
+      "name": "Spectrum UI / broad animated component catalog",
+      "group": "animated-ui",
+      "github": "arihantcodes/spectrum-ui",
+      "source": "https://github.com/arihantcodes/spectrum-ui",
+      "sourceCommit": "acdc998c64829f8ae037be48e3c273ccc8d71f60",
+      "repositoryLicense": "Apache-2.0",
+      "permissionScope": "Repository license from GitHub public metadata; code/media/content rights and paid plans must be checked separately",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "priority": "P0",
+      "sourcePattern": "Large React/Tailwind/Motion component and page-block source; browse concrete snippets and MCP descriptions as optional discovery surface",
+      "studyDirections": [
+        "component discovery",
+        "animated UI",
+        "MCP catalog"
+      ],
+      "applicationContexts": [
+        "creative-tool",
+        "landing-page",
+        "portfolio"
+      ],
+      "adoptionRisks": "Project describes derivatives/usage of other UI libraries: license and attribution must be checked for each reused component",
+      "upstreamCodeImported": false,
+      "componentExported": false
+    },
+    {
+      "id": "REF-114",
+      "name": "Magic UI / motion-forward landing accents",
+      "group": "marketing-effects",
+      "github": "magicuidesign/magicui",
+      "source": "https://github.com/magicuidesign/magicui",
+      "sourceCommit": "1ac985adca3cdfab9b1739253fd14209687c4e9c",
+      "repositoryLicense": "MIT",
+      "permissionScope": "Repository license from GitHub public metadata; code/media/content rights and paid plans must be checked separately",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "priority": "P0",
+      "sourcePattern": "Marketing presentation details and decorative animated UI; investigate bento-grid, highlighted text and hero effects as individual parts",
+      "studyDirections": [
+        "bento grid",
+        "hero effect",
+        "motion cards"
+      ],
+      "applicationContexts": [
+        "landing-page",
+        "portfolio",
+        "campaign"
+      ],
+      "adoptionRisks": "Free repository license is not the same as separate premium templates; evaluate performance and motion reduction",
+      "upstreamCodeImported": false,
+      "componentExported": false
+    },
+    {
+      "id": "REF-115",
+      "name": "Fancy Components / playful microinteraction kit",
+      "group": "playful-interaction",
+      "github": "danielpetho/fancy",
+      "source": "https://github.com/danielpetho/fancy",
+      "sourceCommit": "f9f62c61207b2dd3210476dd98af3c9a5be24094",
+      "repositoryLicense": "MIT",
+      "permissionScope": "Repository license from GitHub public metadata; code/media/content rights and paid plans must be checked separately",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "priority": "P1",
+      "sourcePattern": "Experimental playful React affordances and microinteractions, useful for unexpected menus, buttons and tactile feedback",
+      "studyDirections": [
+        "playful interaction",
+        "experimental button",
+        "hover"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "indie-game",
+        "portfolio"
+      ],
+      "adoptionRisks": "Avoid sacrificing keyboard accessibility or copying full documentation site; inspect individual source and dependencies",
+      "upstreamCodeImported": false,
+      "componentExported": false
+    },
+    {
+      "id": "REF-116",
+      "name": "Number Flow / animated numeric typography",
+      "group": "data-motion",
+      "github": "barvian/number-flow",
+      "source": "https://github.com/barvian/number-flow",
+      "sourceCommit": "c5906cf35c86583e756a6b91e043291c10b416e0",
+      "repositoryLicense": "MIT",
+      "permissionScope": "Repository license from GitHub public metadata; code/media/content rights and paid plans must be checked separately",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "priority": "P0",
+      "sourcePattern": "One-purpose animated number transitions for changing KPIs, quantities, clocks, counters across React/Vue/Svelte/JS",
+      "studyDirections": [
+        "number transition",
+        "counter",
+        "KPI typography"
+      ],
+      "applicationContexts": [
+        "analytics",
+        "commerce",
+        "finance"
+      ],
+      "adoptionRisks": "Check locale, decimals, sign, large updates, reduced motion and framework-specific API",
+      "upstreamCodeImported": false,
+      "componentExported": false
+    },
+    {
+      "id": "REF-117",
+      "name": "visx / low-level chart primitives",
+      "group": "dataviz-primitives",
+      "github": "airbnb/visx",
+      "source": "https://github.com/airbnb/visx",
+      "sourceCommit": "485c0359664ee8e612992defb16e1f035ed40b23",
+      "repositoryLicense": "MIT",
+      "permissionScope": "Repository license from GitHub public metadata; code/media/content rights and paid plans must be checked separately",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "priority": "P0",
+      "sourcePattern": "Composable D3 + React visualization geometry and chart foundations; source-level shapes and axes instead of preset dashboards",
+      "studyDirections": [
+        "SVG geometry",
+        "React chart",
+        "custom axis"
+      ],
+      "applicationContexts": [
+        "analytics",
+        "data-story",
+        "scientific-app"
+      ],
+      "adoptionRisks": "README states visx v4 needs React 18 or 19; check package composition and accessibility",
+      "upstreamCodeImported": false,
+      "componentExported": false
+    },
+    {
+      "id": "REF-118",
+      "name": "Nivo / ready-made React data visualization",
+      "group": "dataviz-components",
+      "github": "plouc/nivo",
+      "source": "https://github.com/plouc/nivo",
+      "sourceCommit": "0dae2c32052a573f9f1d66ec1b453b572119b265",
+      "repositoryLicense": "MIT",
+      "permissionScope": "Repository license from GitHub public metadata; code/media/content rights and paid plans must be checked separately",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "priority": "P0",
+      "sourcePattern": "Declarative interactive React charts built above D3, including chart variants and a public playground",
+      "studyDirections": [
+        "data viz",
+        "responsive chart",
+        "react"
+      ],
+      "applicationContexts": [
+        "analytics",
+        "report",
+        "dashboard"
+      ],
+      "adoptionRisks": "Check selected @nivo package, SSR support, performance and component license independently",
+      "upstreamCodeImported": false,
+      "componentExported": false
+    },
+    {
+      "id": "REF-119",
+      "name": "Unovis / cross-framework visualization",
+      "group": "dataviz-crossframework",
+      "github": "f5/unovis",
+      "source": "https://github.com/f5/unovis",
+      "sourceCommit": "002633e531a70cc27b88ebf68a4e48d1d4abbaad",
+      "repositoryLicense": "Apache-2.0",
+      "permissionScope": "Repository license from GitHub public metadata; code/media/content rights and paid plans must be checked separately",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "priority": "P0",
+      "sourcePattern": "Charts, maps and network graph visuals with framework adapters and vanilla TS options",
+      "studyDirections": [
+        "chart",
+        "network graph",
+        "map diagram"
+      ],
+      "applicationContexts": [
+        "analytics",
+        "network",
+        "map"
+      ],
+      "adoptionRisks": "Check adapters, dataset scale, required map assets and license of any imagery/data",
+      "upstreamCodeImported": false,
+      "componentExported": false
+    },
+    {
+      "id": "REF-120",
+      "name": "Theatre.js / editable motion timeline concepts",
+      "group": "motion-sequencing",
+      "github": "theatre-js/theatre",
+      "source": "https://github.com/theatre-js/theatre",
+      "sourceCommit": "6ea82b938ea49609489f6377ded693ccc6ee8f5b",
+      "repositoryLicense": "Apache-2.0",
+      "permissionScope": "Repository license from GitHub public metadata; code/media/content rights and paid plans must be checked separately",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "priority": "P1",
+      "sourcePattern": "Web motion timeline/editor and parameter sequencing vocabulary as design material for expressive transitions",
+      "studyDirections": [
+        "animation timeline",
+        "keyframe",
+        "motion editor"
+      ],
+      "applicationContexts": [
+        "creative-tool",
+        "storytelling",
+        "3d"
+      ],
+      "adoptionRisks": "Pinned repository commit is from 2024; validate current maintenance and integration separately; no editor embedded",
+      "upstreamCodeImported": false,
+      "componentExported": false
+    },
+    {
+      "id": "REF-121",
+      "name": "React Spring / spring-based interface dynamics",
+      "group": "motion-engine",
+      "github": "pmndrs/react-spring",
+      "source": "https://github.com/pmndrs/react-spring",
+      "sourceCommit": "83e476061290532ab517c4d4dfd60de21589e78e",
+      "repositoryLicense": "MIT",
+      "permissionScope": "Repository license from GitHub public metadata; code/media/content rights and paid plans must be checked separately",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "priority": "P1",
+      "sourcePattern": "Cross-platform spring physics motion engine; reusable gesture and transition recipes rather than finished shadcn components",
+      "studyDirections": [
+        "spring motion",
+        "physics",
+        "gesture"
+      ],
+      "applicationContexts": [
+        "mobile",
+        "creative-site",
+        "desktop-editor"
+      ],
+      "adoptionRisks": "Motion engine not a ready-to-use UI component gallery; tune overshoot, cancellations and reduced motion",
+      "upstreamCodeImported": false,
+      "componentExported": false
+    },
+    {
+      "id": "REF-122",
+      "name": "Arwes / sci-fi interface grammar",
+      "group": "futurist-ui",
+      "github": "arwes/arwes",
+      "source": "https://github.com/arwes/arwes",
+      "sourceCommit": "bdbaa0324900ee978d42036d1304a053c1fe54b5",
+      "repositoryLicense": "MIT",
+      "permissionScope": "Repository license from GitHub public metadata; code/media/content rights and paid plans must be checked separately",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "priority": "P1",
+      "sourcePattern": "Science-fiction UI framework for cockpit HUD, animated frame and fictional control surface visual vocabulary",
+      "studyDirections": [
+        "sci-fi UI",
+        "HUD",
+        "futuristic frame"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "simulation",
+        "portfolio"
+      ],
+      "adoptionRisks": "Specialized visual grammar; check active branch/version and avoid forcing into ordinary enterprise interfaces",
+      "upstreamCodeImported": false,
+      "componentExported": false
+    },
+    {
+      "id": "REF-123",
+      "name": "Vaul / mobile sheet gesture reference",
+      "group": "mobile-gesture",
+      "github": "emilkowalski/vaul",
+      "source": "https://github.com/emilkowalski/vaul",
+      "sourceCommit": "3e97aac6a38e4481bade71d7233ed6002e80f9b0",
+      "repositoryLicense": "MIT",
+      "permissionScope": "Repository license from GitHub public metadata; code/media/content rights and paid plans must be checked separately",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "priority": "P2",
+      "sourcePattern": "React drawer and bottom-sheet interaction reference with mobile touch handling",
+      "studyDirections": [
+        "drawer",
+        "bottom sheet",
+        "swipe"
+      ],
+      "applicationContexts": [
+        "mobile",
+        "commerce",
+        "form"
+      ],
+      "adoptionRisks": "Repository README explicitly says unmaintained; use study-only and prefer maintained options for production",
+      "upstreamCodeImported": false,
+      "componentExported": false
+    }
+  ],
+  "originalEffects": [
+    {
+      "id": "FX-001",
+      "name": "Fluted acrylic pane / 条纹亚克力",
+      "cssClass": "fx42-fluted-pane",
+      "source": "styles/primitives/v042/material-effects.css",
+      "demo": "playground/material-effects-v042/index.html",
+      "group": "glass-acrylic",
+      "styleIds": [
+        "liquid-layer",
+        "organic-tactile"
+      ],
+      "aliases": [
+        "glass ribbing",
+        "acrylic",
+        "ridges"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "workspace"
+      ],
+      "implementation": "original standalone CSS source",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "adaptation": "Copy the selected class and its @media fallbacks only; test legibility, contrast, overlays and target-device CSS support",
+      "noExternalDependency": true,
+      "notReactPublicExport": true
+    },
+    {
+      "id": "FX-002",
+      "name": "Static prism frame / 静态光谱边框",
+      "cssClass": "fx42-prism-frame",
+      "source": "styles/primitives/v042/material-effects.css",
+      "demo": "playground/material-effects-v042/index.html",
+      "group": "spectral-frame",
+      "styleIds": [
+        "aether-orbit",
+        "signal-noir"
+      ],
+      "aliases": [
+        "prism",
+        "rainbow border",
+        "spectral"
+      ],
+      "applicationContexts": [
+        "portfolio",
+        "creative-tool"
+      ],
+      "implementation": "original standalone CSS source",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "adaptation": "Copy the selected class and its @media fallbacks only; test legibility, contrast, overlays and target-device CSS support",
+      "noExternalDependency": true,
+      "notReactPublicExport": true
+    },
+    {
+      "id": "FX-003",
+      "name": "Perforated ticket / 撕线票券",
+      "cssClass": "fx42-perforated-ticket",
+      "source": "styles/primitives/v042/material-effects.css",
+      "demo": "playground/material-effects-v042/index.html",
+      "group": "ticket-material",
+      "styleIds": [
+        "commerce-atelier",
+        "organic-tactile"
+      ],
+      "aliases": [
+        "ticket",
+        "coupon",
+        "perforation"
+      ],
+      "applicationContexts": [
+        "commerce",
+        "event",
+        "mobile"
+      ],
+      "implementation": "original standalone CSS source",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "adaptation": "Copy the selected class and its @media fallbacks only; test legibility, contrast, overlays and target-device CSS support",
+      "noExternalDependency": true,
+      "notReactPublicExport": true
+    },
+    {
+      "id": "FX-004",
+      "name": "Offset-print stamp / 印刷印章",
+      "cssClass": "fx42-ink-stamp",
+      "source": "styles/primitives/v042/material-effects.css",
+      "demo": "playground/material-effects-v042/index.html",
+      "group": "print-stamp",
+      "styleIds": [
+        "paper-rebellion",
+        "editorial-warm"
+      ],
+      "aliases": [
+        "stamp",
+        "ink",
+        "editorial marker"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "portfolio",
+        "magazine"
+      ],
+      "implementation": "original standalone CSS source",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "adaptation": "Copy the selected class and its @media fallbacks only; test legibility, contrast, overlays and target-device CSS support",
+      "noExternalDependency": true,
+      "notReactPublicExport": true
+    },
+    {
+      "id": "FX-005",
+      "name": "Orbit chapter marker / 轨道章节标识",
+      "cssClass": "fx42-orbit-marker",
+      "source": "styles/primitives/v042/material-effects.css",
+      "demo": "playground/material-effects-v042/index.html",
+      "group": "orbit-indicator",
+      "styleIds": [
+        "aether-orbit",
+        "signal-noir"
+      ],
+      "aliases": [
+        "orbit",
+        "chapter marker",
+        "minimal motion"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "storytelling"
+      ],
+      "implementation": "original standalone CSS source",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "adaptation": "Copy the selected class and its @media fallbacks only; test legibility, contrast, overlays and target-device CSS support",
+      "noExternalDependency": true,
+      "notReactPublicExport": true
+    },
+    {
+      "id": "FX-006",
+      "name": "Editorial margin note / 杂志边注",
+      "cssClass": "fx42-margin-note",
+      "source": "styles/primitives/v042/material-effects.css",
+      "demo": "playground/material-effects-v042/index.html",
+      "group": "editorial-annotation",
+      "styleIds": [
+        "editorial-warm",
+        "type-led-minimal"
+      ],
+      "aliases": [
+        "margin note",
+        "annotation",
+        "typography"
+      ],
+      "applicationContexts": [
+        "knowledge-base",
+        "editorial",
+        "research"
+      ],
+      "implementation": "original standalone CSS source",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "adaptation": "Copy the selected class and its @media fallbacks only; test legibility, contrast, overlays and target-device CSS support",
+      "noExternalDependency": true,
+      "notReactPublicExport": true
+    }
+  ],
+  "provenanceNotes": [
+    "Repo commits and repository licenses verified using public GitHub metadata on 2026-11-11.",
+    "13 external repos indexed as references, not installed source or derivative code; media/individual component rights must be checked separately.",
+    "Six CSS atoms authored independently and included as actual source files; no external media, fonts or runtime imports."
+  ]
+}

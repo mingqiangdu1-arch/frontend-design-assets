@@ -11261,11 +11261,755 @@
         "instructions": "Use playground/registry-metadata-v041/metadata-migration.mjs and registry/registry-metadata-v041.json for metadata study. Verify pinned upstream commit/file, per-item rights, exact target schema and run own host tests before any code use.",
         "limitations": "NOT shadcn upstream schema version migration or automated component upgrades; no source rewriting, project migration or version compatibility proof."
       }
+    },
+    {
+      "id": "REF-111",
+      "type": "reference",
+      "name": "Cult UI / animated shadcn-compatible components",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v042",
+        "upstream-material-source",
+        "animated-ui",
+        "curated-no-code-import"
+      ],
+      "aliases": [
+        "shift card",
+        "glass",
+        "animated card",
+        "globe"
+      ],
+      "source": "https://github.com/nolly-studio/cult-ui",
+      "license": "Upstream GitHub repository reports MIT; no individual vendor code, icons, fonts, screenshots or media imported. Repository license from GitHub public metadata; code/media/content rights and paid plans must be checked separately",
+      "styleIds": [],
+      "applicationContexts": [
+        "landing-page",
+        "creative-tool",
+        "dashboard"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v042.md",
+      "spec": "registry/material-expansion-v042.json",
+      "verified": "Github repo nolly-studio/cult-ui current repository/license and commit d71b1428b811c2779d46ea41b7ef8c9f9c9991c2 checked 2026-11-11; research-only. No upstream component runtime or per-item license certification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v042.md",
+        "mode": "research-only",
+        "stack": "External source discovery; inspect exact upstream repo/items before implementing",
+        "instructions": "Consult REF-111 in registry/material-expansion-v042.json and specific pinned upstream d71b1428b811c2779d46ea41b7ef8c9f9c9991c2; choose one pattern and verify item dependency, authorship, license, targets before any project use.",
+        "limitations": "Tailwind v4 and Motion likely; check item-level dependency and visuals"
+      }
+    },
+    {
+      "id": "REF-112",
+      "type": "reference",
+      "name": "Motion Primitives / restrained interface motion",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v042",
+        "upstream-material-source",
+        "motion-atoms",
+        "curated-no-code-import"
+      ],
+      "aliases": [
+        "microinteraction",
+        "motion primitive",
+        "subtle animation"
+      ],
+      "source": "https://github.com/ibelick/motion-primitives",
+      "license": "Upstream GitHub repository reports MIT; no individual vendor code, icons, fonts, screenshots or media imported. Repository license from GitHub public metadata; code/media/content rights and paid plans must be checked separately",
+      "styleIds": [],
+      "applicationContexts": [
+        "saas",
+        "developer-tool",
+        "documentation"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v042.md",
+      "spec": "registry/material-expansion-v042.json",
+      "verified": "Github repo ibelick/motion-primitives current repository/license and commit 120f64f6ca60348e251f929e9c81f11ccbe45eda checked 2026-11-11; research-only. No upstream component runtime or per-item license certification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v042.md",
+        "mode": "research-only",
+        "stack": "External source discovery; inspect exact upstream repo/items before implementing",
+        "instructions": "Consult REF-112 in registry/material-expansion-v042.json and specific pinned upstream 120f64f6ca60348e251f929e9c81f11ccbe45eda; choose one pattern and verify item dependency, authorship, license, targets before any project use.",
+        "limitations": "Project README notes beta; verify per-component API and reduced-motion before adoption"
+      }
+    },
+    {
+      "id": "REF-113",
+      "type": "reference",
+      "name": "Spectrum UI / broad animated component catalog",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v042",
+        "upstream-material-source",
+        "animated-ui",
+        "curated-no-code-import"
+      ],
+      "aliases": [
+        "component discovery",
+        "animated UI",
+        "MCP catalog"
+      ],
+      "source": "https://github.com/arihantcodes/spectrum-ui",
+      "license": "Upstream GitHub repository reports Apache-2.0; no individual vendor code, icons, fonts, screenshots or media imported. Repository license from GitHub public metadata; code/media/content rights and paid plans must be checked separately",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-tool",
+        "landing-page",
+        "portfolio"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v042.md",
+      "spec": "registry/material-expansion-v042.json",
+      "verified": "Github repo arihantcodes/spectrum-ui current repository/license and commit acdc998c64829f8ae037be48e3c273ccc8d71f60 checked 2026-11-11; research-only. No upstream component runtime or per-item license certification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v042.md",
+        "mode": "research-only",
+        "stack": "External source discovery; inspect exact upstream repo/items before implementing",
+        "instructions": "Consult REF-113 in registry/material-expansion-v042.json and specific pinned upstream acdc998c64829f8ae037be48e3c273ccc8d71f60; choose one pattern and verify item dependency, authorship, license, targets before any project use.",
+        "limitations": "Project describes derivatives/usage of other UI libraries: license and attribution must be checked for each reused component"
+      }
+    },
+    {
+      "id": "REF-114",
+      "type": "reference",
+      "name": "Magic UI / motion-forward landing accents",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v042",
+        "upstream-material-source",
+        "marketing-effects",
+        "curated-no-code-import"
+      ],
+      "aliases": [
+        "bento grid",
+        "hero effect",
+        "motion cards"
+      ],
+      "source": "https://github.com/magicuidesign/magicui",
+      "license": "Upstream GitHub repository reports MIT; no individual vendor code, icons, fonts, screenshots or media imported. Repository license from GitHub public metadata; code/media/content rights and paid plans must be checked separately",
+      "styleIds": [],
+      "applicationContexts": [
+        "landing-page",
+        "portfolio",
+        "campaign"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v042.md",
+      "spec": "registry/material-expansion-v042.json",
+      "verified": "Github repo magicuidesign/magicui current repository/license and commit 1ac985adca3cdfab9b1739253fd14209687c4e9c checked 2026-11-11; research-only. No upstream component runtime or per-item license certification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v042.md",
+        "mode": "research-only",
+        "stack": "External source discovery; inspect exact upstream repo/items before implementing",
+        "instructions": "Consult REF-114 in registry/material-expansion-v042.json and specific pinned upstream 1ac985adca3cdfab9b1739253fd14209687c4e9c; choose one pattern and verify item dependency, authorship, license, targets before any project use.",
+        "limitations": "Free repository license is not the same as separate premium templates; evaluate performance and motion reduction"
+      }
+    },
+    {
+      "id": "REF-115",
+      "type": "reference",
+      "name": "Fancy Components / playful microinteraction kit",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v042",
+        "upstream-material-source",
+        "playful-interaction",
+        "curated-no-code-import"
+      ],
+      "aliases": [
+        "playful interaction",
+        "experimental button",
+        "hover"
+      ],
+      "source": "https://github.com/danielpetho/fancy",
+      "license": "Upstream GitHub repository reports MIT; no individual vendor code, icons, fonts, screenshots or media imported. Repository license from GitHub public metadata; code/media/content rights and paid plans must be checked separately",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-site",
+        "indie-game",
+        "portfolio"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v042.md",
+      "spec": "registry/material-expansion-v042.json",
+      "verified": "Github repo danielpetho/fancy current repository/license and commit f9f62c61207b2dd3210476dd98af3c9a5be24094 checked 2026-11-11; research-only. No upstream component runtime or per-item license certification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v042.md",
+        "mode": "research-only",
+        "stack": "External source discovery; inspect exact upstream repo/items before implementing",
+        "instructions": "Consult REF-115 in registry/material-expansion-v042.json and specific pinned upstream f9f62c61207b2dd3210476dd98af3c9a5be24094; choose one pattern and verify item dependency, authorship, license, targets before any project use.",
+        "limitations": "Avoid sacrificing keyboard accessibility or copying full documentation site; inspect individual source and dependencies"
+      }
+    },
+    {
+      "id": "REF-116",
+      "type": "reference",
+      "name": "Number Flow / animated numeric typography",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v042",
+        "upstream-material-source",
+        "data-motion",
+        "curated-no-code-import"
+      ],
+      "aliases": [
+        "number transition",
+        "counter",
+        "KPI typography"
+      ],
+      "source": "https://github.com/barvian/number-flow",
+      "license": "Upstream GitHub repository reports MIT; no individual vendor code, icons, fonts, screenshots or media imported. Repository license from GitHub public metadata; code/media/content rights and paid plans must be checked separately",
+      "styleIds": [],
+      "applicationContexts": [
+        "analytics",
+        "commerce",
+        "finance"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v042.md",
+      "spec": "registry/material-expansion-v042.json",
+      "verified": "Github repo barvian/number-flow current repository/license and commit c5906cf35c86583e756a6b91e043291c10b416e0 checked 2026-11-11; research-only. No upstream component runtime or per-item license certification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v042.md",
+        "mode": "research-only",
+        "stack": "External source discovery; inspect exact upstream repo/items before implementing",
+        "instructions": "Consult REF-116 in registry/material-expansion-v042.json and specific pinned upstream c5906cf35c86583e756a6b91e043291c10b416e0; choose one pattern and verify item dependency, authorship, license, targets before any project use.",
+        "limitations": "Check locale, decimals, sign, large updates, reduced motion and framework-specific API"
+      }
+    },
+    {
+      "id": "REF-117",
+      "type": "reference",
+      "name": "visx / low-level chart primitives",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v042",
+        "upstream-material-source",
+        "dataviz-primitives",
+        "curated-no-code-import"
+      ],
+      "aliases": [
+        "SVG geometry",
+        "React chart",
+        "custom axis"
+      ],
+      "source": "https://github.com/airbnb/visx",
+      "license": "Upstream GitHub repository reports MIT; no individual vendor code, icons, fonts, screenshots or media imported. Repository license from GitHub public metadata; code/media/content rights and paid plans must be checked separately",
+      "styleIds": [],
+      "applicationContexts": [
+        "analytics",
+        "data-story",
+        "scientific-app"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v042.md",
+      "spec": "registry/material-expansion-v042.json",
+      "verified": "Github repo airbnb/visx current repository/license and commit 485c0359664ee8e612992defb16e1f035ed40b23 checked 2026-11-11; research-only. No upstream component runtime or per-item license certification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v042.md",
+        "mode": "research-only",
+        "stack": "External source discovery; inspect exact upstream repo/items before implementing",
+        "instructions": "Consult REF-117 in registry/material-expansion-v042.json and specific pinned upstream 485c0359664ee8e612992defb16e1f035ed40b23; choose one pattern and verify item dependency, authorship, license, targets before any project use.",
+        "limitations": "README states visx v4 needs React 18 or 19; check package composition and accessibility"
+      }
+    },
+    {
+      "id": "REF-118",
+      "type": "reference",
+      "name": "Nivo / ready-made React data visualization",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v042",
+        "upstream-material-source",
+        "dataviz-components",
+        "curated-no-code-import"
+      ],
+      "aliases": [
+        "data viz",
+        "responsive chart",
+        "react"
+      ],
+      "source": "https://github.com/plouc/nivo",
+      "license": "Upstream GitHub repository reports MIT; no individual vendor code, icons, fonts, screenshots or media imported. Repository license from GitHub public metadata; code/media/content rights and paid plans must be checked separately",
+      "styleIds": [],
+      "applicationContexts": [
+        "analytics",
+        "report",
+        "dashboard"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v042.md",
+      "spec": "registry/material-expansion-v042.json",
+      "verified": "Github repo plouc/nivo current repository/license and commit 0dae2c32052a573f9f1d66ec1b453b572119b265 checked 2026-11-11; research-only. No upstream component runtime or per-item license certification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v042.md",
+        "mode": "research-only",
+        "stack": "External source discovery; inspect exact upstream repo/items before implementing",
+        "instructions": "Consult REF-118 in registry/material-expansion-v042.json and specific pinned upstream 0dae2c32052a573f9f1d66ec1b453b572119b265; choose one pattern and verify item dependency, authorship, license, targets before any project use.",
+        "limitations": "Check selected @nivo package, SSR support, performance and component license independently"
+      }
+    },
+    {
+      "id": "REF-119",
+      "type": "reference",
+      "name": "Unovis / cross-framework visualization",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v042",
+        "upstream-material-source",
+        "dataviz-crossframework",
+        "curated-no-code-import"
+      ],
+      "aliases": [
+        "chart",
+        "network graph",
+        "map diagram"
+      ],
+      "source": "https://github.com/f5/unovis",
+      "license": "Upstream GitHub repository reports Apache-2.0; no individual vendor code, icons, fonts, screenshots or media imported. Repository license from GitHub public metadata; code/media/content rights and paid plans must be checked separately",
+      "styleIds": [],
+      "applicationContexts": [
+        "analytics",
+        "network",
+        "map"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v042.md",
+      "spec": "registry/material-expansion-v042.json",
+      "verified": "Github repo f5/unovis current repository/license and commit 002633e531a70cc27b88ebf68a4e48d1d4abbaad checked 2026-11-11; research-only. No upstream component runtime or per-item license certification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v042.md",
+        "mode": "research-only",
+        "stack": "External source discovery; inspect exact upstream repo/items before implementing",
+        "instructions": "Consult REF-119 in registry/material-expansion-v042.json and specific pinned upstream 002633e531a70cc27b88ebf68a4e48d1d4abbaad; choose one pattern and verify item dependency, authorship, license, targets before any project use.",
+        "limitations": "Check adapters, dataset scale, required map assets and license of any imagery/data"
+      }
+    },
+    {
+      "id": "REF-120",
+      "type": "reference",
+      "name": "Theatre.js / editable motion timeline concepts",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v042",
+        "upstream-material-source",
+        "motion-sequencing",
+        "curated-no-code-import"
+      ],
+      "aliases": [
+        "animation timeline",
+        "keyframe",
+        "motion editor"
+      ],
+      "source": "https://github.com/theatre-js/theatre",
+      "license": "Upstream GitHub repository reports Apache-2.0; no individual vendor code, icons, fonts, screenshots or media imported. Repository license from GitHub public metadata; code/media/content rights and paid plans must be checked separately",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-tool",
+        "storytelling",
+        "3d"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v042.md",
+      "spec": "registry/material-expansion-v042.json",
+      "verified": "Github repo theatre-js/theatre current repository/license and commit 6ea82b938ea49609489f6377ded693ccc6ee8f5b checked 2026-11-11; research-only. No upstream component runtime or per-item license certification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v042.md",
+        "mode": "research-only",
+        "stack": "External source discovery; inspect exact upstream repo/items before implementing",
+        "instructions": "Consult REF-120 in registry/material-expansion-v042.json and specific pinned upstream 6ea82b938ea49609489f6377ded693ccc6ee8f5b; choose one pattern and verify item dependency, authorship, license, targets before any project use.",
+        "limitations": "Pinned repository commit is from 2024; validate current maintenance and integration separately; no editor embedded"
+      }
+    },
+    {
+      "id": "REF-121",
+      "type": "reference",
+      "name": "React Spring / spring-based interface dynamics",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v042",
+        "upstream-material-source",
+        "motion-engine",
+        "curated-no-code-import"
+      ],
+      "aliases": [
+        "spring motion",
+        "physics",
+        "gesture"
+      ],
+      "source": "https://github.com/pmndrs/react-spring",
+      "license": "Upstream GitHub repository reports MIT; no individual vendor code, icons, fonts, screenshots or media imported. Repository license from GitHub public metadata; code/media/content rights and paid plans must be checked separately",
+      "styleIds": [],
+      "applicationContexts": [
+        "mobile",
+        "creative-site",
+        "desktop-editor"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v042.md",
+      "spec": "registry/material-expansion-v042.json",
+      "verified": "Github repo pmndrs/react-spring current repository/license and commit 83e476061290532ab517c4d4dfd60de21589e78e checked 2026-11-11; research-only. No upstream component runtime or per-item license certification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v042.md",
+        "mode": "research-only",
+        "stack": "External source discovery; inspect exact upstream repo/items before implementing",
+        "instructions": "Consult REF-121 in registry/material-expansion-v042.json and specific pinned upstream 83e476061290532ab517c4d4dfd60de21589e78e; choose one pattern and verify item dependency, authorship, license, targets before any project use.",
+        "limitations": "Motion engine not a ready-to-use UI component gallery; tune overshoot, cancellations and reduced motion"
+      }
+    },
+    {
+      "id": "REF-122",
+      "type": "reference",
+      "name": "Arwes / sci-fi interface grammar",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v042",
+        "upstream-material-source",
+        "futurist-ui",
+        "curated-no-code-import"
+      ],
+      "aliases": [
+        "sci-fi UI",
+        "HUD",
+        "futuristic frame"
+      ],
+      "source": "https://github.com/arwes/arwes",
+      "license": "Upstream GitHub repository reports MIT; no individual vendor code, icons, fonts, screenshots or media imported. Repository license from GitHub public metadata; code/media/content rights and paid plans must be checked separately",
+      "styleIds": [],
+      "applicationContexts": [
+        "game-companion",
+        "simulation",
+        "portfolio"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v042.md",
+      "spec": "registry/material-expansion-v042.json",
+      "verified": "Github repo arwes/arwes current repository/license and commit bdbaa0324900ee978d42036d1304a053c1fe54b5 checked 2026-11-11; research-only. No upstream component runtime or per-item license certification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v042.md",
+        "mode": "research-only",
+        "stack": "External source discovery; inspect exact upstream repo/items before implementing",
+        "instructions": "Consult REF-122 in registry/material-expansion-v042.json and specific pinned upstream bdbaa0324900ee978d42036d1304a053c1fe54b5; choose one pattern and verify item dependency, authorship, license, targets before any project use.",
+        "limitations": "Specialized visual grammar; check active branch/version and avoid forcing into ordinary enterprise interfaces"
+      }
+    },
+    {
+      "id": "REF-123",
+      "type": "reference",
+      "name": "Vaul / mobile sheet gesture reference",
+      "stage": "analyzed",
+      "priority": "P2",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v042",
+        "upstream-material-source",
+        "mobile-gesture",
+        "curated-no-code-import"
+      ],
+      "aliases": [
+        "drawer",
+        "bottom sheet",
+        "swipe"
+      ],
+      "source": "https://github.com/emilkowalski/vaul",
+      "license": "Upstream GitHub repository reports MIT; no individual vendor code, icons, fonts, screenshots or media imported. Repository license from GitHub public metadata; code/media/content rights and paid plans must be checked separately",
+      "styleIds": [],
+      "applicationContexts": [
+        "mobile",
+        "commerce",
+        "form"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v042.md",
+      "spec": "registry/material-expansion-v042.json",
+      "verified": "Github repo emilkowalski/vaul current repository/license and commit 3e97aac6a38e4481bade71d7233ed6002e80f9b0 checked 2026-11-11; research-only. No upstream component runtime or per-item license certification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v042.md",
+        "mode": "research-only",
+        "stack": "External source discovery; inspect exact upstream repo/items before implementing",
+        "instructions": "Consult REF-123 in registry/material-expansion-v042.json and specific pinned upstream 3e97aac6a38e4481bade71d7233ed6002e80f9b0; choose one pattern and verify item dependency, authorship, license, targets before any project use.",
+        "limitations": "Repository README explicitly says unmaintained; use study-only and prefer maintained options for production"
+      }
+    },
+    {
+      "id": "FX-001",
+      "type": "component",
+      "name": "Fluted acrylic pane / 条纹亚克力",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v042",
+        "original-css-source",
+        "standalone-effect",
+        "glass-acrylic"
+      ],
+      "aliases": [
+        "glass ribbing",
+        "acrylic",
+        "ridges"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original CSS and HTML authored for this repository; no third-party component code or external media included.",
+      "styleIds": [
+        "liquid-layer",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "workspace"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v042/material-effects.css",
+      "details": "styles/primitives/v042/README.md",
+      "spec": "registry/material-expansion-v042.json",
+      "demo": "playground/material-effects-v042/index.html",
+      "verified": "Original standalone CSS with independent HTML specimen and reduced-motion/forced-colors fallback authored 2026-11-11; no production app or cross-browser audit.",
+      "handoff": {
+        "entry": "styles/primitives/v042/README.md",
+        "stack": "Native CSS, standalone opt-in class; NOT a React exported component",
+        "instructions": "Copy only fx42-fluted-pane and related reduced-motion/forced-colors CSS from styles/primitives/v042/material-effects.css; explicitly choose compatible theme and test before shipping.",
+        "limitations": "CSS visual-only reference, not npm module or guaranteed mobile/accessibility/browser certified component; requires target styling adaptation."
+      }
+    },
+    {
+      "id": "FX-002",
+      "type": "component",
+      "name": "Static prism frame / 静态光谱边框",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v042",
+        "original-css-source",
+        "standalone-effect",
+        "spectral-frame"
+      ],
+      "aliases": [
+        "prism",
+        "rainbow border",
+        "spectral"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original CSS and HTML authored for this repository; no third-party component code or external media included.",
+      "styleIds": [
+        "aether-orbit",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "portfolio",
+        "creative-tool"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v042/material-effects.css",
+      "details": "styles/primitives/v042/README.md",
+      "spec": "registry/material-expansion-v042.json",
+      "demo": "playground/material-effects-v042/index.html",
+      "verified": "Original standalone CSS with independent HTML specimen and reduced-motion/forced-colors fallback authored 2026-11-11; no production app or cross-browser audit.",
+      "handoff": {
+        "entry": "styles/primitives/v042/README.md",
+        "stack": "Native CSS, standalone opt-in class; NOT a React exported component",
+        "instructions": "Copy only fx42-prism-frame and related reduced-motion/forced-colors CSS from styles/primitives/v042/material-effects.css; explicitly choose compatible theme and test before shipping.",
+        "limitations": "CSS visual-only reference, not npm module or guaranteed mobile/accessibility/browser certified component; requires target styling adaptation."
+      }
+    },
+    {
+      "id": "FX-003",
+      "type": "component",
+      "name": "Perforated ticket / 撕线票券",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v042",
+        "original-css-source",
+        "standalone-effect",
+        "ticket-material"
+      ],
+      "aliases": [
+        "ticket",
+        "coupon",
+        "perforation"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original CSS and HTML authored for this repository; no third-party component code or external media included.",
+      "styleIds": [
+        "commerce-atelier",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "commerce",
+        "event",
+        "mobile"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v042/material-effects.css",
+      "details": "styles/primitives/v042/README.md",
+      "spec": "registry/material-expansion-v042.json",
+      "demo": "playground/material-effects-v042/index.html",
+      "verified": "Original standalone CSS with independent HTML specimen and reduced-motion/forced-colors fallback authored 2026-11-11; no production app or cross-browser audit.",
+      "handoff": {
+        "entry": "styles/primitives/v042/README.md",
+        "stack": "Native CSS, standalone opt-in class; NOT a React exported component",
+        "instructions": "Copy only fx42-perforated-ticket and related reduced-motion/forced-colors CSS from styles/primitives/v042/material-effects.css; explicitly choose compatible theme and test before shipping.",
+        "limitations": "CSS visual-only reference, not npm module or guaranteed mobile/accessibility/browser certified component; requires target styling adaptation."
+      }
+    },
+    {
+      "id": "FX-004",
+      "type": "component",
+      "name": "Offset-print stamp / 印刷印章",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v042",
+        "original-css-source",
+        "standalone-effect",
+        "print-stamp"
+      ],
+      "aliases": [
+        "stamp",
+        "ink",
+        "editorial marker"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original CSS and HTML authored for this repository; no third-party component code or external media included.",
+      "styleIds": [
+        "paper-rebellion",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "portfolio",
+        "magazine"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v042/material-effects.css",
+      "details": "styles/primitives/v042/README.md",
+      "spec": "registry/material-expansion-v042.json",
+      "demo": "playground/material-effects-v042/index.html",
+      "verified": "Original standalone CSS with independent HTML specimen and reduced-motion/forced-colors fallback authored 2026-11-11; no production app or cross-browser audit.",
+      "handoff": {
+        "entry": "styles/primitives/v042/README.md",
+        "stack": "Native CSS, standalone opt-in class; NOT a React exported component",
+        "instructions": "Copy only fx42-ink-stamp and related reduced-motion/forced-colors CSS from styles/primitives/v042/material-effects.css; explicitly choose compatible theme and test before shipping.",
+        "limitations": "CSS visual-only reference, not npm module or guaranteed mobile/accessibility/browser certified component; requires target styling adaptation."
+      }
+    },
+    {
+      "id": "FX-005",
+      "type": "component",
+      "name": "Orbit chapter marker / 轨道章节标识",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v042",
+        "original-css-source",
+        "standalone-effect",
+        "orbit-indicator"
+      ],
+      "aliases": [
+        "orbit",
+        "chapter marker",
+        "minimal motion"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original CSS and HTML authored for this repository; no third-party component code or external media included.",
+      "styleIds": [
+        "aether-orbit",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "storytelling"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v042/material-effects.css",
+      "details": "styles/primitives/v042/README.md",
+      "spec": "registry/material-expansion-v042.json",
+      "demo": "playground/material-effects-v042/index.html",
+      "verified": "Original standalone CSS with independent HTML specimen and reduced-motion/forced-colors fallback authored 2026-11-11; no production app or cross-browser audit.",
+      "handoff": {
+        "entry": "styles/primitives/v042/README.md",
+        "stack": "Native CSS, standalone opt-in class; NOT a React exported component",
+        "instructions": "Copy only fx42-orbit-marker and related reduced-motion/forced-colors CSS from styles/primitives/v042/material-effects.css; explicitly choose compatible theme and test before shipping.",
+        "limitations": "CSS visual-only reference, not npm module or guaranteed mobile/accessibility/browser certified component; requires target styling adaptation."
+      }
+    },
+    {
+      "id": "FX-006",
+      "type": "component",
+      "name": "Editorial margin note / 杂志边注",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v042",
+        "original-css-source",
+        "standalone-effect",
+        "editorial-annotation"
+      ],
+      "aliases": [
+        "margin note",
+        "annotation",
+        "typography"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original CSS and HTML authored for this repository; no third-party component code or external media included.",
+      "styleIds": [
+        "editorial-warm",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "knowledge-base",
+        "editorial",
+        "research"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v042/material-effects.css",
+      "details": "styles/primitives/v042/README.md",
+      "spec": "registry/material-expansion-v042.json",
+      "demo": "playground/material-effects-v042/index.html",
+      "verified": "Original standalone CSS with independent HTML specimen and reduced-motion/forced-colors fallback authored 2026-11-11; no production app or cross-browser audit.",
+      "handoff": {
+        "entry": "styles/primitives/v042/README.md",
+        "stack": "Native CSS, standalone opt-in class; NOT a React exported component",
+        "instructions": "Copy only fx42-margin-note and related reduced-motion/forced-colors CSS from styles/primitives/v042/material-effects.css; explicitly choose compatible theme and test before shipping.",
+        "limitations": "CSS visual-only reference, not npm module or guaranteed mobile/accessibility/browser certified component; requires target styling adaptation."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",
   "styleRegistry": "registry/styles.json",
-  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee. V0.18 adds research-only visual studies outside registry/styles.json and component archetypes outside registry/components.json; IP-026/IP-028 only include headless pure models, not UI components. V0.30 adds 17 research-only external specialization references REF-042..058; these are not actual component exports or dependencies. V0.31 adds 15 original design studies REF-059..068 and IP-031..035 as analyzed/research-only; not deployed components, runtime dependencies, or new styles. V0.32: 18 original research contracts IP-036..041 / REF-069..080; four visual entries link separate opt-in CSS samples but are not certified UI implementations. V0.34 adds 16 task-first original research studies (REF-081..088 and IP-042..049), with 6 optional scoped CSS visual/layout atoms; IP research remains explicitly research-only. V0.35 adds eight original static dual-viewport SVG specimens attached to existing IDs only; registered asset count stays 255 and lifecycle stages remain analyzed. V0.36 adds 12 community/editor/agent upstream reference entries REF-089..100 and 4 independent source-governance behavior contracts IP-050..053. All are analyzed/research-only; neither an installable shadcn registry nor an existing editor integration. V0.37 adds 10 item-level source-anchored component/block dossiers REF-101..110 and 3 original Agent interaction contracts IP-054..056; all analyzed/research-only, without installed/copyable code. Three 21st.dev community items remain unregistered candidates awaiting exact item-level links/licensing. V0.38 adds 3 original standalone interaction prototypes IP-057..059 with inspected ESM source, live DOM specimen and focused tests. Previous IP-054..056 remain analyzed/research-only. No React export/theme/third-party dependency added. V0.39 adds three ORIGINAL standalone visual block editor interaction prototypes IP-060..062 (reorder, typed props/schema, local selection undo/redo). All have ESM source/demo/test fixtures, but no new React exports, default themes, external packages, nested page builder or server persistence. V0.40 introduces 3 ORIGINAL bounded registry/slot/preview executable prototypes IP-063..065, all adapted source models with Node/Chromium fixtures. Unknown vendor Registry items remain inspection-only; no public React export, installer, production builder, file write or new theme. V0.41 adds IP-066..068 ORIGINAL read-only Registry metadata parser, local dependency graph and this-library-only internal snapshot migration. Three pinned official metadata facts are reviewed with tests; NO upstream code, installers, host integration, new React exports or style themes.",
+  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee. V0.18 adds research-only visual studies outside registry/styles.json and component archetypes outside registry/components.json; IP-026/IP-028 only include headless pure models, not UI components. V0.30 adds 17 research-only external specialization references REF-042..058; these are not actual component exports or dependencies. V0.31 adds 15 original design studies REF-059..068 and IP-031..035 as analyzed/research-only; not deployed components, runtime dependencies, or new styles. V0.32: 18 original research contracts IP-036..041 / REF-069..080; four visual entries link separate opt-in CSS samples but are not certified UI implementations. V0.34 adds 16 task-first original research studies (REF-081..088 and IP-042..049), with 6 optional scoped CSS visual/layout atoms; IP research remains explicitly research-only. V0.35 adds eight original static dual-viewport SVG specimens attached to existing IDs only; registered asset count stays 255 and lifecycle stages remain analyzed. V0.36 adds 12 community/editor/agent upstream reference entries REF-089..100 and 4 independent source-governance behavior contracts IP-050..053. All are analyzed/research-only; neither an installable shadcn registry nor an existing editor integration. V0.37 adds 10 item-level source-anchored component/block dossiers REF-101..110 and 3 original Agent interaction contracts IP-054..056; all analyzed/research-only, without installed/copyable code. Three 21st.dev community items remain unregistered candidates awaiting exact item-level links/licensing. V0.38 adds 3 original standalone interaction prototypes IP-057..059 with inspected ESM source, live DOM specimen and focused tests. Previous IP-054..056 remain analyzed/research-only. No React export/theme/third-party dependency added. V0.39 adds three ORIGINAL standalone visual block editor interaction prototypes IP-060..062 (reorder, typed props/schema, local selection undo/redo). All have ESM source/demo/test fixtures, but no new React exports, default themes, external packages, nested page builder or server persistence. V0.40 introduces 3 ORIGINAL bounded registry/slot/preview executable prototypes IP-063..065, all adapted source models with Node/Chromium fixtures. Unknown vendor Registry items remain inspection-only; no public React export, installer, production builder, file write or new theme. V0.41 adds IP-066..068 ORIGINAL read-only Registry metadata parser, local dependency graph and this-library-only internal snapshot migration. Three pinned official metadata facts are reviewed with tests; NO upstream code, installers, host integration, new React exports or style themes. V0.42 re-centered on material accumulation: added 13 source-pinned external UI/motion/dataviz/gesture references REF-111..123 plus six ORIGINAL reusable CSS visual atoms FX-001..006, no new React exports, no new default style, no product builder and no copied upstream components.",
   "reusePolicyVersion": "1.0",
   "reusePolicies": {
     "style-token": {

@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-11 · V0.42 material-first expansion (not infrastructure-first)
+
+- Reoriented repetitive "continue" from additional test/registry machinery to **actual asset breadth**: 13 new verified, source-pinned independent external libraries/sources `REF-111..123` across animated UI, motion primitives, data visualization, motion timelines, sci-fi materials and mobile sheets.
+- Added **six original copyable CSS visual atoms** `FX-001..006`: fluted acrylic, static prism border, perforated ticket, ink stamp, orbit marker and editorial margin note. All have isolated CSS source, scoped classes, themed opt-in and an HTML specimen; no JS runtime or external images/fonts.
+- Added [new source/rights/usage catalog](registry/material-expansion-v042.json), [material study](docs/research/material-expansion-v042.md) and [CSS specimen](playground/material-effects-v042/index.html). Total assets **296 → 315**. No React public export, new default style, third-party source copied or application builder.
+- Existing registry validation continues; **no new full Node/Playwright test suite** was created. The goal here is meaningful new material, not repeating infrastructure work.
+
+
 ## 2026-11-11 · V0.41 shadcn Registry metadata interoperability (read-only)
 
 - Added 3 **original executable analysis models**: IP-066 common-field `registry-item.json` metadata subset parser with content stripping/path checks; IP-067 pinned local dependency graph and unresolved source reporting; IP-068 internal normalized metadata format V1→V2 migration + diff. This is **not** shadcn's schema migration.
