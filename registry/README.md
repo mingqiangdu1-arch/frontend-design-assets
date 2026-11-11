@@ -11,6 +11,7 @@ This directory is the **authoritative index** for choosing existing design refer
 | `styles.json` | Independent style IDs, token/spec/demo entrypoints; **no repository default** |
 | `style-assembly.json` | Fourteen per-style page structure and interaction handoffs; real template, experience-recipe and React-export references. Used by `scripts/style-assembly.mjs`; not generated production pages. |
 | `style-facets.json` | One-to-one theme selection facets: task aliases, structural layout, material, interaction, device and density; references real demo paths. Pair with `scripts/style-match.mjs` and `scripts/select-style.mjs` for explainable matching, not an ML style rank. |
+| `component-dossiers-v037.json` | 深挖 10 个真实上游 Block/组件的源码路径、固定版本、依赖和结构（REF-101..110），另含 3 个原创 Agent 行为合同（IP-054..056）与 3 个权限未核的社区候选；**全部研究型，无可运行新导出** |
 | `community-sources-v036.json` | 12 个前端社区、标准注册表、视觉编辑器和 Agent 工作流来源，以及 4 个独立交互/复现研究契约（REF-089..100、IP-050..053）；均为 analyzed/research-only，不可当作可安装组件或已实现 API |
 | `specialized-resources-v030.json` | 17 个专项外部资源的来源、许可证、既有资产补位和可检索标签（REF-042..058）；与 assets.json 一一对应，只是研究来源，不是导出组件 |
 | `specialized-patterns-v031.json` | V0.31 的 15 个研究型视觉/数据/移动行为契约（REF-059..068、IP-031..035）；只含原创建议、状态、来源和降级，不是代码或新 styleIds |

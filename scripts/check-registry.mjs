@@ -142,6 +142,47 @@ for (const sample of community.curatedCases) {
 assertFile("docs/research/community-sources-v036.md","V0.36 research report");
 console.log("Validated V0.36: 12 upstream source dossiers + 4 original research patterns, no promoted components.");
 
+// V0.37: item-level source study; real upstream code/visuals remain outside this repo.
+const componentDossiers = readJson("registry/component-dossiers-v037.json");
+if (componentDossiers.schemaVersion !== "1.0" || componentDossiers.status !== "research-only" ||
+    !Array.isArray(componentDossiers.dossiers) || componentDossiers.dossiers.length !== 10 ||
+    !Array.isArray(componentDossiers.patterns) || componentDossiers.patterns.length !== 3 ||
+    !Array.isArray(componentDossiers.candidateQueue) || componentDossiers.candidateQueue.length !== 3) fail("V0.37 dossier size/status mismatch");
+const dossierIds = new Set();
+for (const item of [...componentDossiers.dossiers,...componentDossiers.patterns]) {
+  if (dossierIds.has(item.id)) fail("Duplicate V0.37 id "+item.id);
+  dossierIds.add(item.id);
+  const asset=assetById.get(item.id);
+  const isPattern=componentDossiers.patterns.includes(item);
+  if (!asset || asset.stage !== "analyzed" || asset.source !== item.source ||
+      asset.spec !== "registry/component-dossiers-v037.json" ||
+      asset.handoff?.mode !== "research-only" ||
+      asset.type !== (isPattern?"interaction":"reference") ||
+      asset.reuseKind !== (isPattern?"behavior-pattern":"design-reference") ||
+      !Array.isArray(item.related) || !item.related.length ||
+      item.related.some(id=>!assetIds.has(id))) fail("V0.37 catalog/registry mismatch "+item.id);
+  if (!isPattern && (!item.licenseEvidence.startsWith("https://github.com/") ||
+      !/^[0-9a-f]{40}$/.test(item.upstreamCommit) ||
+      !item.source.includes(item.upstreamCommit) ||
+      !Array.isArray(item.filePaths) || !item.filePaths.length ||
+      !Array.isArray(item.installTargets) || !item.installTargets.length ||
+      !Array.isArray(item.states) || !item.states.length ||
+      !Array.isArray(item.responsive) || !item.responsive.length ||
+      !item.fallback || !item.distinct || !item.observed ||
+      item.imported !== false || item.suggestedStatesNotUpstreamVerified !== true ||
+      item.reuseMode !== "research-only")) fail("V0.37 incomplete provenance or unproven safety "+item.id);
+  if (isPattern && (item.implementation !== "original-research-only" ||
+      !item.contract || !item.states || !item.controls || !item.fallback || !item.failures)) fail("V0.37 incomplete behavior "+item.id);
+}
+for (const item of componentDossiers.candidateQueue) {
+  if (dossierIds.has(item.sourceRef) || !assetIds.has(item.sourceRef) ||
+      !item.collectionUrl.startsWith("https://") ||
+      item.licenseStatus !== "author-item-license-unknown" ||
+      item.status !== "collection-listed-item-permalink-unverified") fail("V0.37 unsafe marketplace candidate");
+}
+assertFile("docs/research/component-dossiers-v037.md","V0.37 source dossier documentation");
+console.log("Validated V0.37: 10 item-level upstream dossiers, 3 original patterns, 3 unlicensed marketplace candidates.");
+
 // V0.32 must remain a source-linked research catalog, not installed external media/components.
 const creativePrimitives = readJson("registry/creative-primitives-v032.json");
 if (creativePrimitives.schemaVersion !== "1.0" || !Array.isArray(creativePrimitives.entries) ||

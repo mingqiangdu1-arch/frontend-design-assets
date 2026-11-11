@@ -1,0 +1,1006 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.37.0",
+  "reviewedOn": "2026-11-11",
+  "status": "research-only",
+  "sourceScope": "shadcn official blocks and MIT repo at recorded commit; 21st Agent Elements MIT repo registry at recorded commit; 21st.dev multi-author items are candidate-only with no exact permalink or license.",
+  "provenanceRule": "Observed upstream field/path/dependency facts are separate from independent suggested design and fallback states; never present a proposal as upstream behavior or a research item as installed source.",
+  "sourceCommits": {
+    "shadcn-ui/ui": "8ab27715521cbd4f87ae6886cd989cbb678f6de7",
+    "21st-dev/agent-elements": "b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37"
+  },
+  "qualityGates": [
+    "Stable upstream file/registry link and reviewed commit are required for indexed source-level dossiers.",
+    "Source and license evidence are repository-scoped; upstream media and community contributions require separate checks.",
+    "Existing component names and actual public exports remain unchanged; do not auto-install or run third-party components.",
+    "Alias/intent retrieval must include candidate ID, behavior, limitations and next-step license review.",
+    "Only promote to runnable after checking actual code, dependency versions, host installation target, media rights and accessibility at target app."
+  ],
+  "dossiers": [
+    {
+      "id": "REF-101",
+      "family": "shadcn-blocks",
+      "name": "shadcn dashboard-01 — multi-pane analytics block",
+      "slug": "dashboard-01",
+      "canonical": "https://ui.shadcn.com/blocks/dashboard",
+      "source": "https://github.com/shadcn-ui/ui/blob/8ab27715521cbd4f87ae6886cd989cbb678f6de7/apps/v4/registry/new-york-v4/blocks/dashboard-01/page.tsx",
+      "licenseEvidence": "https://github.com/shadcn-ui/ui/blob/8ab27715521cbd4f87ae6886cd989cbb678f6de7/LICENSE.md",
+      "upstreamCommit": "8ab27715521cbd4f87ae6886cd989cbb678f6de7",
+      "author": "shadcn (repository)",
+      "filePaths": [
+        "apps/v4/registry/new-york-v4/blocks/dashboard-01/page.tsx",
+        "apps/v4/registry/new-york-v4/blocks/dashboard-01/data.json",
+        "apps/v4/registry/new-york-v4/blocks/dashboard-01/components/app-sidebar.tsx",
+        "apps/v4/registry/new-york-v4/blocks/dashboard-01/components/chart-area-interactive.tsx",
+        "apps/v4/registry/new-york-v4/blocks/dashboard-01/components/data-table.tsx",
+        "apps/v4/registry/new-york-v4/blocks/dashboard-01/components/nav-documents.tsx",
+        "apps/v4/registry/new-york-v4/blocks/dashboard-01/components/nav-main.tsx",
+        "apps/v4/registry/new-york-v4/blocks/dashboard-01/components/nav-secondary.tsx",
+        "apps/v4/registry/new-york-v4/blocks/dashboard-01/components/nav-user.tsx",
+        "apps/v4/registry/new-york-v4/blocks/dashboard-01/components/section-cards.tsx",
+        "apps/v4/registry/new-york-v4/blocks/dashboard-01/components/site-header.tsx"
+      ],
+      "installTargets": [
+        "app/dashboard/page.tsx",
+        "app/dashboard/data.json"
+      ],
+      "upstreamDeps": [
+        "@dnd-kit/core",
+        "@dnd-kit/modifiers",
+        "@dnd-kit/sortable",
+        "@dnd-kit/utilities",
+        "@tabler/icons-react",
+        "@tanstack/react-table",
+        "zod"
+      ],
+      "registryDeps": [
+        "sidebar",
+        "breadcrumb",
+        "separator",
+        "label",
+        "chart",
+        "card",
+        "select",
+        "tabs",
+        "table",
+        "toggle-group",
+        "badge",
+        "button",
+        "checkbox",
+        "dropdown-menu",
+        "drawer",
+        "input",
+        "avatar",
+        "sheet",
+        "sonner"
+      ],
+      "structuralParts": [
+        "app-sidebar",
+        "site-header",
+        "section-cards",
+        "chart-area-interactive",
+        "data-table"
+      ],
+      "observed": "Official registry declares a multi-file registry:block for a sidebar, chart and interactive data table; includes explicit route/data targets.",
+      "study": "把导航、指标、动态图表与可排序/过滤数据表当成可独立替换的 Block；明确页内共享筛选与断点布局并不自动成立",
+      "states": [
+        "loading",
+        "empty",
+        "filtering",
+        "row-selected",
+        "error"
+      ],
+      "responsive": [
+        "导航窄屏折叠",
+        "图表宽度约束",
+        "表格横向滚动与列简化"
+      ],
+      "fallback": "图表提供文本/表格替代，拖拽排序应有键盘控件；数据接口和权限由宿主接管",
+      "distinct": "现有 UI-033/UI-055 是控件；dashboard-01 是多文件页面区块组合，不当作单一运行组件",
+      "related": [
+        "REF-093",
+        "UI-033",
+        "UI-055",
+        "PR-018"
+      ],
+      "aliases": [
+        "shadcn dashboard-01",
+        "指标卡数据表组合",
+        "dashboard chart table"
+      ],
+      "contexts": [
+        "dashboard",
+        "analytics",
+        "workspace"
+      ],
+      "priority": "P0",
+      "stage": "analyzed",
+      "reuseMode": "research-only",
+      "imported": false,
+      "implementation": "metadata-and-independent-design-study-only",
+      "licenseScope": "MIT upstream repository code; verify each file and media independently",
+      "observedEvidence": {
+        "repository": "shadcn-ui/ui",
+        "commit": "8ab27715521cbd4f87ae6886cd989cbb678f6de7",
+        "source": "https://github.com/shadcn-ui/ui/blob/8ab27715521cbd4f87ae6886cd989cbb678f6de7/apps/v4/registry/new-york-v4/blocks/dashboard-01/page.tsx",
+        "license": "https://github.com/shadcn-ui/ui/blob/8ab27715521cbd4f87ae6886cd989cbb678f6de7/LICENSE.md",
+        "description": "Official registry declares a multi-file registry:block for a sidebar, chart and interactive data table; includes explicit route/data targets."
+      },
+      "suggestedStatesNotUpstreamVerified": true,
+      "upstreamFilePathsScope": "complete-declared-block-files",
+      "registryDepsScope": "complete-declared-registry-dependencies"
+    },
+    {
+      "id": "REF-102",
+      "family": "shadcn-blocks",
+      "name": "shadcn sidebar-07 — collapsible icon navigation",
+      "slug": "sidebar-07",
+      "canonical": "https://ui.shadcn.com/blocks/sidebar",
+      "source": "https://github.com/shadcn-ui/ui/blob/8ab27715521cbd4f87ae6886cd989cbb678f6de7/apps/v4/registry/new-york-v4/blocks/sidebar-07/page.tsx",
+      "licenseEvidence": "https://github.com/shadcn-ui/ui/blob/8ab27715521cbd4f87ae6886cd989cbb678f6de7/LICENSE.md",
+      "upstreamCommit": "8ab27715521cbd4f87ae6886cd989cbb678f6de7",
+      "author": "shadcn (repository)",
+      "filePaths": [
+        "apps/v4/registry/new-york-v4/blocks/sidebar-07/page.tsx",
+        "apps/v4/registry/new-york-v4/blocks/sidebar-07/components/app-sidebar.tsx",
+        "apps/v4/registry/new-york-v4/blocks/sidebar-07/components/nav-main.tsx",
+        "apps/v4/registry/new-york-v4/blocks/sidebar-07/components/nav-projects.tsx",
+        "apps/v4/registry/new-york-v4/blocks/sidebar-07/components/nav-user.tsx",
+        "apps/v4/registry/new-york-v4/blocks/sidebar-07/components/team-switcher.tsx"
+      ],
+      "installTargets": [
+        "app/dashboard/page.tsx"
+      ],
+      "upstreamDeps": [],
+      "registryDeps": [
+        "sidebar",
+        "breadcrumb",
+        "separator",
+        "collapsible",
+        "dropdown-menu",
+        "avatar"
+      ],
+      "structuralParts": [
+        "app-sidebar",
+        "nav-main",
+        "nav-projects",
+        "nav-user",
+        "team-switcher"
+      ],
+      "observed": "Official registry records collapsible-to-icon sidebar with nested navigation, user and team sections, with six source files.",
+      "study": "拆分 icon 模式、展开导航树、团队切换、用户操作，不把收起操作等同于完全移除导航",
+      "states": [
+        "expanded",
+        "icon-only",
+        "submenu-open",
+        "focus-restored"
+      ],
+      "responsive": [
+        "图标下保留 tooltip 或 label",
+        "窄屏抽屉语义另验",
+        "保持激活项和键盘定位"
+      ],
+      "fallback": "可操作的标签和菜单语义；图标-only 模式不得依赖悬停才能理解导航",
+      "distinct": "IP-008 是可调整面板行为；本项是多级信息架构和双形态导航 Block",
+      "related": [
+        "REF-093",
+        "IP-008",
+        "TPL-007"
+      ],
+      "aliases": [
+        "shadcn sidebar-07",
+        "折叠图标侧栏",
+        "navigation rail"
+      ],
+      "contexts": [
+        "workspace",
+        "dashboard",
+        "developer-tools"
+      ],
+      "priority": "P0",
+      "stage": "analyzed",
+      "reuseMode": "research-only",
+      "imported": false,
+      "implementation": "metadata-and-independent-design-study-only",
+      "licenseScope": "MIT upstream repository code; verify each file and media independently",
+      "observedEvidence": {
+        "repository": "shadcn-ui/ui",
+        "commit": "8ab27715521cbd4f87ae6886cd989cbb678f6de7",
+        "source": "https://github.com/shadcn-ui/ui/blob/8ab27715521cbd4f87ae6886cd989cbb678f6de7/apps/v4/registry/new-york-v4/blocks/sidebar-07/page.tsx",
+        "license": "https://github.com/shadcn-ui/ui/blob/8ab27715521cbd4f87ae6886cd989cbb678f6de7/LICENSE.md",
+        "description": "Official registry records collapsible-to-icon sidebar with nested navigation, user and team sections, with six source files."
+      },
+      "suggestedStatesNotUpstreamVerified": true,
+      "upstreamFilePathsScope": "complete-declared-block-files",
+      "registryDepsScope": "complete-declared-registry-dependencies"
+    },
+    {
+      "id": "REF-103",
+      "family": "shadcn-blocks",
+      "name": "shadcn sidebar-13 — sidebar inside a dialog",
+      "slug": "sidebar-13",
+      "canonical": "https://ui.shadcn.com/blocks/sidebar",
+      "source": "https://github.com/shadcn-ui/ui/blob/8ab27715521cbd4f87ae6886cd989cbb678f6de7/apps/v4/registry/new-york-v4/blocks/sidebar-13/page.tsx",
+      "licenseEvidence": "https://github.com/shadcn-ui/ui/blob/8ab27715521cbd4f87ae6886cd989cbb678f6de7/LICENSE.md",
+      "upstreamCommit": "8ab27715521cbd4f87ae6886cd989cbb678f6de7",
+      "author": "shadcn (repository)",
+      "filePaths": [
+        "apps/v4/registry/new-york-v4/blocks/sidebar-13/page.tsx",
+        "apps/v4/registry/new-york-v4/blocks/sidebar-13/components/settings-dialog.tsx"
+      ],
+      "installTargets": [
+        "app/dashboard/page.tsx"
+      ],
+      "upstreamDeps": [],
+      "registryDeps": [
+        "sidebar",
+        "breadcrumb",
+        "button",
+        "dialog"
+      ],
+      "structuralParts": [
+        "modal trigger",
+        "settings-dialog",
+        "sidebar navigation",
+        "dialog content panel"
+      ],
+      "observed": "Official shadcn registry calls sidebar-13 'A sidebar in a dialog' with page.tsx and settings-dialog.tsx.",
+      "study": "在设置/偏好弹层内部使用导航分区，强调 modal focus trap、层级滚动和关闭恢复而非普通左侧持久栏",
+      "states": [
+        "closed",
+        "opened",
+        "section-switched",
+        "dismissed"
+      ],
+      "responsive": [
+        "窄屏可退化全屏 Sheet/路由",
+        "滚动区域独立且不截断动作"
+      ],
+      "fallback": "键盘 Escape、关闭按钮、背景不可点击与关闭后焦点恢复",
+      "distinct": "与 REF-102 的常驻侧边栏不同：二级导航位于模态上下文，需专门焦点与历史策略",
+      "related": [
+        "REF-093",
+        "REF-102",
+        "IP-008"
+      ],
+      "aliases": [
+        "shadcn sidebar-13",
+        "弹窗内侧栏",
+        "settings dialog sidebar"
+      ],
+      "contexts": [
+        "settings",
+        "workspace",
+        "knowledge-base"
+      ],
+      "priority": "P1",
+      "stage": "analyzed",
+      "reuseMode": "research-only",
+      "imported": false,
+      "implementation": "metadata-and-independent-design-study-only",
+      "licenseScope": "MIT upstream repository code; verify each file and media independently",
+      "observedEvidence": {
+        "repository": "shadcn-ui/ui",
+        "commit": "8ab27715521cbd4f87ae6886cd989cbb678f6de7",
+        "source": "https://github.com/shadcn-ui/ui/blob/8ab27715521cbd4f87ae6886cd989cbb678f6de7/apps/v4/registry/new-york-v4/blocks/sidebar-13/page.tsx",
+        "license": "https://github.com/shadcn-ui/ui/blob/8ab27715521cbd4f87ae6886cd989cbb678f6de7/LICENSE.md",
+        "description": "Official shadcn registry calls sidebar-13 'A sidebar in a dialog' with page.tsx and settings-dialog.tsx."
+      },
+      "suggestedStatesNotUpstreamVerified": true,
+      "upstreamFilePathsScope": "complete-declared-block-files",
+      "registryDepsScope": "complete-declared-registry-dependencies"
+    },
+    {
+      "id": "REF-104",
+      "family": "shadcn-blocks",
+      "name": "shadcn login-04 — split media authentication block",
+      "slug": "login-04",
+      "canonical": "https://ui.shadcn.com/blocks/login",
+      "source": "https://github.com/shadcn-ui/ui/blob/8ab27715521cbd4f87ae6886cd989cbb678f6de7/apps/v4/registry/new-york-v4/blocks/login-04/page.tsx",
+      "licenseEvidence": "https://github.com/shadcn-ui/ui/blob/8ab27715521cbd4f87ae6886cd989cbb678f6de7/LICENSE.md",
+      "upstreamCommit": "8ab27715521cbd4f87ae6886cd989cbb678f6de7",
+      "author": "shadcn (repository)",
+      "filePaths": [
+        "apps/v4/registry/new-york-v4/blocks/login-04/page.tsx",
+        "apps/v4/registry/new-york-v4/blocks/login-04/components/login-form.tsx"
+      ],
+      "installTargets": [
+        "app/login/page.tsx"
+      ],
+      "upstreamDeps": [],
+      "registryDeps": [
+        "button",
+        "card",
+        "input",
+        "label",
+        "field"
+      ],
+      "structuralParts": [
+        "media region",
+        "login form",
+        "validation labels",
+        "form action"
+      ],
+      "observed": "Official registry describes a login page with form and image, with a page route and a dedicated login-form file.",
+      "study": "双栏媒体与表单主次层级；用于可选账户入口的视觉参考，**不默认强制网站用户登录**",
+      "states": [
+        "idle",
+        "validating",
+        "invalid",
+        "submitting",
+        "failed",
+        "success"
+      ],
+      "responsive": [
+        "移动端简化/隐藏装饰图不遮挡表单",
+        "输入缩放、键盘遮挡和错误布局"
+      ],
+      "fallback": "不加载装饰媒体时仍有完整字段/提交与辅助文本；媒体版权须逐项核查",
+      "distinct": "与 REF-093/已有页面布局相比，新增登录表单和视觉叙事并排的 Block 解剖，但不是身份系统",
+      "related": [
+        "REF-093",
+        "REF-100",
+        "IP-052"
+      ],
+      "aliases": [
+        "shadcn login-04",
+        "双栏登录页",
+        "form image layout"
+      ],
+      "contexts": [
+        "authentication",
+        "marketing-site",
+        "workspace"
+      ],
+      "priority": "P2",
+      "stage": "analyzed",
+      "reuseMode": "research-only",
+      "imported": false,
+      "implementation": "metadata-and-independent-design-study-only",
+      "licenseScope": "MIT upstream repository code; verify each file and media independently",
+      "observedEvidence": {
+        "repository": "shadcn-ui/ui",
+        "commit": "8ab27715521cbd4f87ae6886cd989cbb678f6de7",
+        "source": "https://github.com/shadcn-ui/ui/blob/8ab27715521cbd4f87ae6886cd989cbb678f6de7/apps/v4/registry/new-york-v4/blocks/login-04/page.tsx",
+        "license": "https://github.com/shadcn-ui/ui/blob/8ab27715521cbd4f87ae6886cd989cbb678f6de7/LICENSE.md",
+        "description": "Official registry describes a login page with form and image, with a page route and a dedicated login-form file."
+      },
+      "suggestedStatesNotUpstreamVerified": true,
+      "upstreamFilePathsScope": "complete-declared-block-files",
+      "registryDepsScope": "complete-declared-registry-dependencies"
+    },
+    {
+      "id": "REF-105",
+      "family": "agent-elements",
+      "name": "Agent Elements agent-chat — composite conversational shell",
+      "slug": "agent-chat",
+      "canonical": "https://agent-elements.21st.dev/docs",
+      "source": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/public/r/agent-chat.json",
+      "licenseEvidence": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/LICENSE",
+      "upstreamCommit": "b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37",
+      "author": "21st.dev (repository)",
+      "filePaths": [
+        "registry/agent-elements/components/agent-chat.tsx",
+        "registry/agent-elements/components/tools/tool-renderer.tsx",
+        "registry/agent-elements/components/question/question-prompt.tsx"
+      ],
+      "installTargets": [
+        "components/agent-elements/agent-chat.tsx"
+      ],
+      "upstreamDeps": [
+        "@base-ui/react",
+        "@tabler/icons-react",
+        "ai",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "registryDeps": [
+        "attachment-button",
+        "bash-tool",
+        "edit-tool",
+        "error-message",
+        "file-attachment",
+        "generic-tool",
+        "input-bar",
+        "markdown",
+        "mcp-tool",
+        "message-list",
+        "plan-tool",
+        "question-tool",
+        "search-tool",
+        "send-button",
+        "spiral-loader",
+        "suggestions",
+        "text-shimmer",
+        "thinking-tool",
+        "todo-tool",
+        "tool-group",
+        "user-message"
+      ],
+      "structuralParts": [
+        "MessageList",
+        "InputBar",
+        "tool renderer",
+        "question prompt",
+        "empty state"
+      ],
+      "observed": "Official registry agent-chat requires many transitive registry items and supports messages/status, onSend/onStop and toolRenderers; registry type registry:ui.",
+      "study": "分离会话显示与消息/工具状态、草稿状态和停止操作；不得把 composable shell 误当成后端 Agent runtime",
+      "states": [
+        "idle",
+        "submitted",
+        "streaming",
+        "stopped",
+        "tool-pending",
+        "error"
+      ],
+      "responsive": [
+        "消息长行换行和图片约束",
+        "输入栏固定时处理移动键盘与可用高度"
+      ],
+      "fallback": "屏幕阅读器 live region 节流；工具调用错误可文字展开；onStop 语义由宿主实现",
+      "distinct": "现有 UI-047 更偏产品流程；REF-105 为会话-工具渲染桥接的复合前端壳",
+      "related": [
+        "REF-090",
+        "UI-047",
+        "IP-050"
+      ],
+      "aliases": [
+        "AgentChat",
+        "AI 聊天壳",
+        "多工具聊天流"
+      ],
+      "contexts": [
+        "ai-app",
+        "developer-tools",
+        "customer-support"
+      ],
+      "priority": "P0",
+      "stage": "analyzed",
+      "reuseMode": "research-only",
+      "imported": false,
+      "implementation": "metadata-and-independent-design-study-only",
+      "licenseScope": "MIT upstream repository code; verify each file and media independently",
+      "observedEvidence": {
+        "repository": "21st-dev/agent-elements",
+        "commit": "b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37",
+        "source": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/public/r/agent-chat.json",
+        "license": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/LICENSE",
+        "description": "Official registry agent-chat requires many transitive registry items and supports messages/status, onSend/onStop and toolRenderers; registry type registry:ui."
+      },
+      "suggestedStatesNotUpstreamVerified": true,
+      "upstreamFilePathsScope": "selected-primary-and-supporting",
+      "registryDepsScope": "complete-declared-registry-dependencies"
+    },
+    {
+      "id": "REF-106",
+      "family": "agent-elements",
+      "name": "Agent Elements edit-tool — diff and approval card",
+      "slug": "edit-tool",
+      "canonical": "https://agent-elements.21st.dev/docs",
+      "source": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/public/r/edit-tool.json",
+      "licenseEvidence": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/LICENSE",
+      "upstreamCommit": "b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37",
+      "author": "21st.dev (repository)",
+      "filePaths": [
+        "registry/agent-elements/components/tools/edit-tool.tsx",
+        "registry/agent-elements/components/tools/tool-approval-footer.tsx",
+        "registry/agent-elements/utils/tool-adapters.ts"
+      ],
+      "installTargets": [
+        "components/agent-elements/tools/edit-tool.tsx"
+      ],
+      "upstreamDeps": [
+        "@pierre/diffs",
+        "@tabler/icons-react",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "registryDeps": [
+        "text-shimmer"
+      ],
+      "structuralParts": [
+        "file label",
+        "diff preview",
+        "approval footer",
+        "tool timeline state"
+      ],
+      "observed": "Registry includes edit-tool.tsx, approval footer and diff dependency; component source accepts an approval field. No backend write implied.",
+      "study": "改动范围预览与拒绝/批准必须明确分离；diff 展示不代表代码真正提交成功",
+      "states": [
+        "proposal",
+        "diff-ready",
+        "approval-pending",
+        "approved",
+        "rejected",
+        "apply-failed"
+      ],
+      "responsive": [
+        "长行 diff 横向滚动",
+        "小屏切换 unified diff 和文件摘要"
+      ],
+      "fallback": "可复制的文字 diff 摘要、危险操作二次确认和审核后状态回执",
+      "distinct": "IP-040 是本地撤销/远端事务；本项强调可见补丁与人类审核组件形态",
+      "related": [
+        "REF-090",
+        "REF-105",
+        "IP-040",
+        "IP-051"
+      ],
+      "aliases": [
+        "EditTool",
+        "代码差异审核",
+        "AI diff approval"
+      ],
+      "contexts": [
+        "developer-tools",
+        "ai-app",
+        "code-review"
+      ],
+      "priority": "P0",
+      "stage": "analyzed",
+      "reuseMode": "research-only",
+      "imported": false,
+      "implementation": "metadata-and-independent-design-study-only",
+      "licenseScope": "MIT upstream repository code; verify each file and media independently",
+      "observedEvidence": {
+        "repository": "21st-dev/agent-elements",
+        "commit": "b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37",
+        "source": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/public/r/edit-tool.json",
+        "license": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/LICENSE",
+        "description": "Registry includes edit-tool.tsx, approval footer and diff dependency; component source accepts an approval field. No backend write implied."
+      },
+      "suggestedStatesNotUpstreamVerified": true,
+      "upstreamFilePathsScope": "selected-primary-and-supporting",
+      "registryDepsScope": "complete-declared-registry-dependencies"
+    },
+    {
+      "id": "REF-107",
+      "family": "agent-elements",
+      "name": "Agent Elements question-tool — structured clarification",
+      "slug": "question-tool",
+      "canonical": "https://agent-elements.21st.dev/docs",
+      "source": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/public/r/question-tool.json",
+      "licenseEvidence": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/LICENSE",
+      "upstreamCommit": "b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37",
+      "author": "21st.dev (repository)",
+      "filePaths": [
+        "registry/agent-elements/components/question/question-tool.tsx",
+        "registry/agent-elements/components/question/question-prompt.tsx"
+      ],
+      "installTargets": [
+        "components/agent-elements/question/question-tool.tsx"
+      ],
+      "upstreamDeps": [
+        "@tabler/icons-react",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "registryDeps": [],
+      "structuralParts": [
+        "question prompt",
+        "choice controls",
+        "answer submission"
+      ],
+      "observed": "Question tool registry provides dedicated question-tool.tsx and question-prompt.tsx; source exposes onSubmit flow and disabled states.",
+      "study": "Agent 向用户提出单选/多选/文本问题；无重复提交、明确回到对话上下文，并提供回答被采纳的反馈",
+      "states": [
+        "waiting",
+        "selecting",
+        "submitting",
+        "accepted",
+        "failed",
+        "expired"
+      ],
+      "responsive": [
+        "窄屏选项纵向排列",
+        "长问题和选项滚动时保留确认区"
+      ],
+      "fallback": "键盘可达的选项、回显所选答案；Agent 超时不能静默丢弃用户输入",
+      "distinct": "IP-036 是文档编辑触发菜单；此项是 AI 对话工作流中结构化澄清工具",
+      "related": [
+        "REF-090",
+        "REF-105",
+        "IP-036"
+      ],
+      "aliases": [
+        "QuestionTool",
+        "单选多选澄清卡",
+        "clarification question"
+      ],
+      "contexts": [
+        "ai-app",
+        "workflow",
+        "onboarding"
+      ],
+      "priority": "P0",
+      "stage": "analyzed",
+      "reuseMode": "research-only",
+      "imported": false,
+      "implementation": "metadata-and-independent-design-study-only",
+      "licenseScope": "MIT upstream repository code; verify each file and media independently",
+      "observedEvidence": {
+        "repository": "21st-dev/agent-elements",
+        "commit": "b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37",
+        "source": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/public/r/question-tool.json",
+        "license": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/LICENSE",
+        "description": "Question tool registry provides dedicated question-tool.tsx and question-prompt.tsx; source exposes onSubmit flow and disabled states."
+      },
+      "suggestedStatesNotUpstreamVerified": true,
+      "upstreamFilePathsScope": "selected-primary-and-supporting",
+      "registryDepsScope": "complete-declared-registry-dependencies"
+    },
+    {
+      "id": "REF-108",
+      "family": "agent-elements",
+      "name": "Agent Elements tool-group — grouped execution timeline",
+      "slug": "tool-group",
+      "canonical": "https://agent-elements.21st.dev/docs",
+      "source": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/public/r/tool-group.json",
+      "licenseEvidence": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/LICENSE",
+      "upstreamCommit": "b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37",
+      "author": "21st.dev (repository)",
+      "filePaths": [
+        "registry/agent-elements/components/tools/tool-group.tsx",
+        "registry/agent-elements/components/tools/tool-registry.ts",
+        "registry/agent-elements/components/tools/tool-row-base.tsx"
+      ],
+      "installTargets": [
+        "components/agent-elements/tools/tool-group.tsx"
+      ],
+      "upstreamDeps": [
+        "@base-ui/react",
+        "@tabler/icons-react",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "registryDeps": [
+        "generic-tool",
+        "text-shimmer"
+      ],
+      "structuralParts": [
+        "group summary",
+        "tool rows",
+        "expandable details",
+        "completion state"
+      ],
+      "observed": "Registry tool-group contains tool-group, tool-registry and tool-row-base plus registry dependencies generic-tool and text-shimmer.",
+      "study": "可折叠的多步工具进度、逐步错误与输出摘要；避免用单个完成灯表示全部子任务均成功",
+      "states": [
+        "collapsed",
+        "expanded",
+        "running",
+        "partial-failure",
+        "completed",
+        "cancelled"
+      ],
+      "responsive": [
+        "折叠长路径和工具参数",
+        "移动端以摘要优先而非强迫展示所有日志"
+      ],
+      "fallback": "全文本工具清单及状态标签、暂停后留存已完成步骤",
+      "distinct": "相较 UI-054 ActivityTimeline 是任务/工具事件的语义分组与状态滚动，不是业务时间线",
+      "related": [
+        "REF-090",
+        "REF-105",
+        "UI-054",
+        "IP-051"
+      ],
+      "aliases": [
+        "ToolGroup",
+        "工具调用分组",
+        "agent execution timeline"
+      ],
+      "contexts": [
+        "ai-app",
+        "developer-tools",
+        "workflow"
+      ],
+      "priority": "P0",
+      "stage": "analyzed",
+      "reuseMode": "research-only",
+      "imported": false,
+      "implementation": "metadata-and-independent-design-study-only",
+      "licenseScope": "MIT upstream repository code; verify each file and media independently",
+      "observedEvidence": {
+        "repository": "21st-dev/agent-elements",
+        "commit": "b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37",
+        "source": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/public/r/tool-group.json",
+        "license": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/LICENSE",
+        "description": "Registry tool-group contains tool-group, tool-registry and tool-row-base plus registry dependencies generic-tool and text-shimmer."
+      },
+      "suggestedStatesNotUpstreamVerified": true,
+      "upstreamFilePathsScope": "selected-primary-and-supporting",
+      "registryDepsScope": "complete-declared-registry-dependencies"
+    },
+    {
+      "id": "REF-109",
+      "family": "agent-elements",
+      "name": "Agent Elements input-bar — multimodal chat composer",
+      "slug": "input-bar",
+      "canonical": "https://agent-elements.21st.dev/docs",
+      "source": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/public/r/input-bar.json",
+      "licenseEvidence": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/LICENSE",
+      "upstreamCommit": "b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37",
+      "author": "21st.dev (repository)",
+      "filePaths": [
+        "registry/agent-elements/components/input-bar.tsx",
+        "registry/agent-elements/components/input/input-typing.tsx",
+        "registry/agent-elements/components/question/question-prompt.tsx"
+      ],
+      "installTargets": [
+        "components/agent-elements/input-bar.tsx"
+      ],
+      "upstreamDeps": [
+        "@tabler/icons-react",
+        "ai",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "registryDeps": [
+        "attachment-button",
+        "file-attachment",
+        "send-button",
+        "suggestions"
+      ],
+      "structuralParts": [
+        "composer textarea",
+        "attachments",
+        "suggestions",
+        "send/stop",
+        "question prompt"
+      ],
+      "observed": "Official registry declares InputBar with dependencies on attachment/button/suggestions and the React source contains onSend/onStop/status and controlled change hooks.",
+      "study": "输入框与附件状态分离，streaming 时显示 Stop 并保留草稿，不能把前端附件 chip 当成服务端已上传",
+      "states": [
+        "empty",
+        "composing",
+        "with-attachment",
+        "sending",
+        "streaming",
+        "stopped",
+        "upload-error"
+      ],
+      "responsive": [
+        "键盘上推与安全区",
+        "附件列宽收缩、长文本可展开"
+      ],
+      "fallback": "提交和停止必须键盘可用；附件拒绝原因可读；未上传成功不得显示已发送",
+      "distinct": "常规表单组件缺少流式模型、附件和模型/模式上下文；以消息编辑器粒度研究",
+      "related": [
+        "REF-090",
+        "REF-105",
+        "IP-039"
+      ],
+      "aliases": [
+        "InputBar",
+        "附件聊天输入栏",
+        "AI composer"
+      ],
+      "contexts": [
+        "ai-app",
+        "customer-support",
+        "developer-tools"
+      ],
+      "priority": "P0",
+      "stage": "analyzed",
+      "reuseMode": "research-only",
+      "imported": false,
+      "implementation": "metadata-and-independent-design-study-only",
+      "licenseScope": "MIT upstream repository code; verify each file and media independently",
+      "observedEvidence": {
+        "repository": "21st-dev/agent-elements",
+        "commit": "b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37",
+        "source": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/public/r/input-bar.json",
+        "license": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/LICENSE",
+        "description": "Official registry declares InputBar with dependencies on attachment/button/suggestions and the React source contains onSend/onStop/status and controlled change hooks."
+      },
+      "suggestedStatesNotUpstreamVerified": true,
+      "upstreamFilePathsScope": "selected-primary-and-supporting",
+      "registryDepsScope": "complete-declared-registry-dependencies"
+    },
+    {
+      "id": "REF-110",
+      "family": "agent-elements",
+      "name": "Agent Elements mcp-tool — inspectable MCP result row",
+      "slug": "mcp-tool",
+      "canonical": "https://agent-elements.21st.dev/docs",
+      "source": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/public/r/mcp-tool.json",
+      "licenseEvidence": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/LICENSE",
+      "upstreamCommit": "b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37",
+      "author": "21st.dev (repository)",
+      "filePaths": [
+        "registry/agent-elements/components/tools/mcp-tool.tsx",
+        "registry/agent-elements/components/tools/tool-registry.ts",
+        "registry/agent-elements/components/tools/tool-row-base.tsx"
+      ],
+      "installTargets": [
+        "components/agent-elements/tools/mcp-tool.tsx"
+      ],
+      "upstreamDeps": [
+        "@base-ui/react",
+        "@streamdown/code",
+        "@tabler/icons-react",
+        "clsx",
+        "streamdown",
+        "tailwind-merge"
+      ],
+      "registryDeps": [
+        "text-shimmer"
+      ],
+      "structuralParts": [
+        "tool identity",
+        "input summary",
+        "structured output",
+        "error fallback"
+      ],
+      "observed": "Registry MCP tool includes mcp-tool.tsx, normalizer and tool-row base, dependencies streamdown and code renderer; source exposes unwrapMcpOutput.",
+      "study": "把 MCP 响应的结构化内容、异常和工具身份分别显示，避免把工具的 HTML/文本内容直接作为可信页面执行",
+      "states": [
+        "requested",
+        "running",
+        "result",
+        "malformed-output",
+        "failed"
+      ],
+      "responsive": [
+        "长 JSON 内容换行或可滚动",
+        "输出摘要与完整展开分离"
+      ],
+      "fallback": "作为纯文本/代码块显示未知内容，禁执行 HTML，敏感字段在展示前脱敏",
+      "distinct": "IP-051 是 Agent 调用画布权限，McpTool 研究工具**响应内容**的渲染与诊断",
+      "related": [
+        "REF-090",
+        "REF-108",
+        "IP-051"
+      ],
+      "aliases": [
+        "McpTool",
+        "MCP 工具输出卡",
+        "structured tool result"
+      ],
+      "contexts": [
+        "ai-app",
+        "developer-tools",
+        "knowledge-base"
+      ],
+      "priority": "P1",
+      "stage": "analyzed",
+      "reuseMode": "research-only",
+      "imported": false,
+      "implementation": "metadata-and-independent-design-study-only",
+      "licenseScope": "MIT upstream repository code; verify each file and media independently",
+      "observedEvidence": {
+        "repository": "21st-dev/agent-elements",
+        "commit": "b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37",
+        "source": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/public/r/mcp-tool.json",
+        "license": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/LICENSE",
+        "description": "Registry MCP tool includes mcp-tool.tsx, normalizer and tool-row base, dependencies streamdown and code renderer; source exposes unwrapMcpOutput."
+      },
+      "suggestedStatesNotUpstreamVerified": true,
+      "upstreamFilePathsScope": "selected-primary-and-supporting",
+      "registryDepsScope": "complete-declared-registry-dependencies"
+    }
+  ],
+  "patterns": [
+    {
+      "id": "IP-054",
+      "name": "Streaming tool timeline with atomic result status / 流式工具链状态",
+      "source": "https://github.com/21st-dev/agent-elements",
+      "related": [
+        "REF-105",
+        "REF-108",
+        "REF-110",
+        "IP-051"
+      ],
+      "aliases": [
+        "流式工具进度",
+        "多工具时间线",
+        "tool progress state"
+      ],
+      "contexts": [
+        "ai-app",
+        "developer-tools"
+      ],
+      "contract": "会话流式生成与多个工具的进度必须保持独立身份、序号和结果：展示时既可折叠摘要，也可展开各项输入/输出",
+      "states": "message-submitted → stream-open → tool-started → per-tool-success|per-tool-failed|cancelled → stream-closed → acknowledged",
+      "controls": "工具行有唯一 ID 与稳定顺序；最后一次有效事件覆盖过期事件；取消后保留已完成结果和失败原因",
+      "fallback": "text-only 序列与屏幕阅读器节流 announce；滚动位置由读者选择，不能在阅读历史时强制跳底",
+      "failures": "乱序 tool delta 覆盖最终响应、部分失败被计为整体成功、HTML 输出污染、重复渲染导致动态内容跳动",
+      "diff": "IP-040 的协同撤销并非流式工具事件状态；此项要求 per-tool identity 与 partial failure 正确",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "implementation": "original-research-only"
+    },
+    {
+      "id": "IP-055",
+      "name": "Diff proposal and approval authority separation / 代码变更审阅授权",
+      "source": "https://github.com/21st-dev/agent-elements",
+      "related": [
+        "REF-106",
+        "IP-051",
+        "IP-040"
+      ],
+      "aliases": [
+        "审核代码修改",
+        "diff approve reject",
+        "补丁权限"
+      ],
+      "contexts": [
+        "developer-tools",
+        "ai-app"
+      ],
+      "contract": "Agent 建议修改、可读 diff、用户批准与后端实际写入应是四种分离状态；单个目标文件版本或 hash 构成并发保护",
+      "states": "draft → diff-ready → permission-check → approved|rejected → apply-pending → applied|conflict|failed → undo-requested",
+      "controls": "拒绝不得落盘；批准绑定具体 patch hash 和文件集合；重复回调幂等；写入后需记录实际 commit/operation id",
+      "fallback": "文件太大时先输出文件级摘要和可下载 patch；网络断线显示未确认状态不伪造已应用",
+      "failures": "diff preview 与真正写入文件不一致、批准后 patch 被调包、权限在提交时失效、失败显示成功",
+      "diff": "REF-106 是上游可视化卡片，本项是原创可复用的人机写入操作契约",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "implementation": "original-research-only"
+    },
+    {
+      "id": "IP-056",
+      "name": "Structured clarification with draft continuity / 澄清不中断输入",
+      "source": "https://github.com/21st-dev/agent-elements",
+      "related": [
+        "REF-107",
+        "REF-109",
+        "IP-050",
+        "IP-036"
+      ],
+      "aliases": [
+        "问答保留草稿",
+        "澄清任务恢复",
+        "agent question flow"
+      ],
+      "contexts": [
+        "ai-app",
+        "workflow",
+        "onboarding"
+      ],
+      "contract": "Agent 提问不能破坏用户已有输入草稿或附件；每个问题有 questionId、合法答案域、提交幂等键与过期策略",
+      "states": "draft-active → question-offered → answer-editing → submitting → accepted|validation-error|expired → draft-restored|next-question",
+      "controls": "单选与多选语义不同；提交禁用须显示原因；回答保存后恢复光标和原草稿；允许明确跳过但不默认造答案",
+      "fallback": "非交互环境允许纯文本结构化答复；网络异常时保留临时答案并可重试，屏幕阅读器播报确认",
+      "failures": "重新打开后重复提交、问卷状态覆盖聊天输入、附件丢失、旧问题被新问题错误复用、提交后无回执",
+      "diff": "REF-107 是上游问题组件，本项聚焦问题-草稿-恢复的跨组件合同",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "implementation": "original-research-only"
+    }
+  ],
+  "candidateQueue": [
+    {
+      "candidateKey": "community-ai-tool-call-edu-calvo",
+      "label": "AI Tool Call by Edu Calvo",
+      "collectionUrl": "https://21st.dev/community/components/explore/ai-agent-registry",
+      "sourceRef": "REF-089",
+      "why": "社区中针对工具调用状态的独立视觉方向",
+      "status": "collection-listed-item-permalink-unverified",
+      "licenseStatus": "author-item-license-unknown",
+      "nextAction": "Locate exact public item permalink and author license; compare with REF-108/110 before assigning a stable ID"
+    },
+    {
+      "candidateKey": "community-approval-card-theshanelevine",
+      "label": "Approval Card by theshanelevine",
+      "collectionUrl": "https://21st.dev/community/components/explore/ai-agent-registry",
+      "sourceRef": "REF-089",
+      "why": "人工批准/拒绝 UI 的不同视觉方案",
+      "status": "collection-listed-item-permalink-unverified",
+      "licenseStatus": "author-item-license-unknown",
+      "nextAction": "Confirm exact item, source and allowed derivative terms; compare with REF-106 and IP-055"
+    },
+    {
+      "candidateKey": "community-agent-processing-arun",
+      "label": "AI Agent Processing States by Arun Dass",
+      "collectionUrl": "https://21st.dev/community/components/explore/ai-agent-registry",
+      "sourceRef": "REF-089",
+      "why": "长任务运行反馈与动态图形视觉研究",
+      "status": "collection-listed-item-permalink-unverified",
+      "licenseStatus": "author-item-license-unknown",
+      "nextAction": "Confirm concrete item and motion fallback before adding indexed design asset"
+    }
+  ]
+}

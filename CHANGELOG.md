@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-11 · V0.37 item-level component/block dossiers and original Agent state contracts
+
+- Deepened V0.36 sources into **10 pinned, license-scoped file/registry dossiers**: official shadcn `dashboard-01`, `sidebar-07`, `sidebar-13`, `login-04` and Agent Elements `agent-chat`, `edit-tool`, `question-tool`, `tool-group`, `input-bar`, `mcp-tool` (REF-101..110). Each records observed dependency/file metadata, candidate interaction states, responsiveness/fallback guidance, existing-ID overlap and fixed upstream commit.
+- Added **3 original research-only Agent interaction contracts** (IP-054..056): partial tool stream state, patch approval authority, clarification/unsent-draft continuity. 21st.dev marketplace community entries remain **three unlicensed/permalink-unverified candidates**, not claimed as reusable source code.
+- Added [machine-readable dossiers](registry/component-dossiers-v037.json) and [detailed research notes](docs/research/component-dossiers-v037.md); updated Agent task navigation, registry mapping and focused regression validation. Stable asset count **271 → 284**.
+- Strictly **no imported third-party source, CSS, screenshot, font, installed dependency or complete app**; original suggested state rules are explicitly not claims about upstream behavior or production verification.
+
+
 ## 2026-11-11 · V0.36 community source watchlist and Agent-ready research contracts
 
 - Added **12 research-only upstream source dossiers** (REF-089..100), covering 21st.dev marketplace and Agent Elements, shadcn Registry/Blocks, Puck, GrapesJS WebMCP, Onlook, Webstudio, Plasmic, Craft.js and Swebsy. Each records permitted collection scope, item-level license uncertainty, no-code-import policy, concrete topics and overlap with existing assets.

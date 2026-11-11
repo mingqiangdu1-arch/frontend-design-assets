@@ -10169,11 +10169,570 @@
         "instructions": "Read IP-053 from registry/community-sources-v036.json; review state flow, fallback, safety risks and PR-018 是已有风格布局交接；本项要求来源与依赖锁定、可导入快照的证据; no implementation or deployment exists.",
         "limitations": "Research design only: no working editor, Agent integration, persistent share service, automatic version pinning or installed code."
       }
+    },
+    {
+      "id": "REF-101",
+      "type": "reference",
+      "name": "shadcn dashboard-01 — multi-pane analytics block",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v037",
+        "component-dossier",
+        "shadcn-blocks",
+        "source-verified",
+        "no-runtime-import"
+      ],
+      "aliases": [
+        "shadcn dashboard-01",
+        "指标卡数据表组合",
+        "dashboard chart table"
+      ],
+      "source": "https://github.com/shadcn-ui/ui/blob/8ab27715521cbd4f87ae6886cd989cbb678f6de7/apps/v4/registry/new-york-v4/blocks/dashboard-01/page.tsx",
+      "license": "Original analysis and recommended behavioral states only; upstream MIT code license is repository-scoped. No vendor code, image, font, API service or hosted community material copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "dashboard",
+        "analytics",
+        "workspace"
+      ],
+      "dependencies": [
+        "REF-093",
+        "UI-033",
+        "UI-055",
+        "PR-018"
+      ],
+      "details": "docs/research/component-dossiers-v037.md",
+      "spec": "registry/component-dossiers-v037.json",
+      "verified": "Source files and registries reviewed at upstream commit 8ab27715521cbd4f87ae6886cd989cbb678f6de7 on 2026-11-11; observed facts are separated from proposed states. Individual media/assets and host integration not verified. No components executed/imported.",
+      "handoff": {
+        "entry": "docs/research/component-dossiers-v037.md",
+        "mode": "research-only",
+        "stack": "upstream React/TSX metadata research; target application must independently select runtime and license",
+        "instructions": "Look up REF-101 in registry/component-dossiers-v037.json; use observed metadata and file paths for provenance; distinguish recommended interaction checks from observed behavior. Review rights/target install path before implementing.",
+        "limitations": "No compiled package, screenshot, copied code, component gallery, auto-compatible theme, browser accessibility evidence, or deployment. The source path points to upstream."
+      }
+    },
+    {
+      "id": "REF-102",
+      "type": "reference",
+      "name": "shadcn sidebar-07 — collapsible icon navigation",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v037",
+        "component-dossier",
+        "shadcn-blocks",
+        "source-verified",
+        "no-runtime-import"
+      ],
+      "aliases": [
+        "shadcn sidebar-07",
+        "折叠图标侧栏",
+        "navigation rail"
+      ],
+      "source": "https://github.com/shadcn-ui/ui/blob/8ab27715521cbd4f87ae6886cd989cbb678f6de7/apps/v4/registry/new-york-v4/blocks/sidebar-07/page.tsx",
+      "license": "Original analysis and recommended behavioral states only; upstream MIT code license is repository-scoped. No vendor code, image, font, API service or hosted community material copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "workspace",
+        "dashboard",
+        "developer-tools"
+      ],
+      "dependencies": [
+        "REF-093",
+        "IP-008",
+        "TPL-007"
+      ],
+      "details": "docs/research/component-dossiers-v037.md",
+      "spec": "registry/component-dossiers-v037.json",
+      "verified": "Source files and registries reviewed at upstream commit 8ab27715521cbd4f87ae6886cd989cbb678f6de7 on 2026-11-11; observed facts are separated from proposed states. Individual media/assets and host integration not verified. No components executed/imported.",
+      "handoff": {
+        "entry": "docs/research/component-dossiers-v037.md",
+        "mode": "research-only",
+        "stack": "upstream React/TSX metadata research; target application must independently select runtime and license",
+        "instructions": "Look up REF-102 in registry/component-dossiers-v037.json; use observed metadata and file paths for provenance; distinguish recommended interaction checks from observed behavior. Review rights/target install path before implementing.",
+        "limitations": "No compiled package, screenshot, copied code, component gallery, auto-compatible theme, browser accessibility evidence, or deployment. The source path points to upstream."
+      }
+    },
+    {
+      "id": "REF-103",
+      "type": "reference",
+      "name": "shadcn sidebar-13 — sidebar inside a dialog",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v037",
+        "component-dossier",
+        "shadcn-blocks",
+        "source-verified",
+        "no-runtime-import"
+      ],
+      "aliases": [
+        "shadcn sidebar-13",
+        "弹窗内侧栏",
+        "settings dialog sidebar"
+      ],
+      "source": "https://github.com/shadcn-ui/ui/blob/8ab27715521cbd4f87ae6886cd989cbb678f6de7/apps/v4/registry/new-york-v4/blocks/sidebar-13/page.tsx",
+      "license": "Original analysis and recommended behavioral states only; upstream MIT code license is repository-scoped. No vendor code, image, font, API service or hosted community material copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "settings",
+        "workspace",
+        "knowledge-base"
+      ],
+      "dependencies": [
+        "REF-093",
+        "REF-102",
+        "IP-008"
+      ],
+      "details": "docs/research/component-dossiers-v037.md",
+      "spec": "registry/component-dossiers-v037.json",
+      "verified": "Source files and registries reviewed at upstream commit 8ab27715521cbd4f87ae6886cd989cbb678f6de7 on 2026-11-11; observed facts are separated from proposed states. Individual media/assets and host integration not verified. No components executed/imported.",
+      "handoff": {
+        "entry": "docs/research/component-dossiers-v037.md",
+        "mode": "research-only",
+        "stack": "upstream React/TSX metadata research; target application must independently select runtime and license",
+        "instructions": "Look up REF-103 in registry/component-dossiers-v037.json; use observed metadata and file paths for provenance; distinguish recommended interaction checks from observed behavior. Review rights/target install path before implementing.",
+        "limitations": "No compiled package, screenshot, copied code, component gallery, auto-compatible theme, browser accessibility evidence, or deployment. The source path points to upstream."
+      }
+    },
+    {
+      "id": "REF-104",
+      "type": "reference",
+      "name": "shadcn login-04 — split media authentication block",
+      "stage": "analyzed",
+      "priority": "P2",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v037",
+        "component-dossier",
+        "shadcn-blocks",
+        "source-verified",
+        "no-runtime-import"
+      ],
+      "aliases": [
+        "shadcn login-04",
+        "双栏登录页",
+        "form image layout"
+      ],
+      "source": "https://github.com/shadcn-ui/ui/blob/8ab27715521cbd4f87ae6886cd989cbb678f6de7/apps/v4/registry/new-york-v4/blocks/login-04/page.tsx",
+      "license": "Original analysis and recommended behavioral states only; upstream MIT code license is repository-scoped. No vendor code, image, font, API service or hosted community material copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "authentication",
+        "marketing-site",
+        "workspace"
+      ],
+      "dependencies": [
+        "REF-093",
+        "REF-100",
+        "IP-052"
+      ],
+      "details": "docs/research/component-dossiers-v037.md",
+      "spec": "registry/component-dossiers-v037.json",
+      "verified": "Source files and registries reviewed at upstream commit 8ab27715521cbd4f87ae6886cd989cbb678f6de7 on 2026-11-11; observed facts are separated from proposed states. Individual media/assets and host integration not verified. No components executed/imported.",
+      "handoff": {
+        "entry": "docs/research/component-dossiers-v037.md",
+        "mode": "research-only",
+        "stack": "upstream React/TSX metadata research; target application must independently select runtime and license",
+        "instructions": "Look up REF-104 in registry/component-dossiers-v037.json; use observed metadata and file paths for provenance; distinguish recommended interaction checks from observed behavior. Review rights/target install path before implementing.",
+        "limitations": "No compiled package, screenshot, copied code, component gallery, auto-compatible theme, browser accessibility evidence, or deployment. The source path points to upstream."
+      }
+    },
+    {
+      "id": "REF-105",
+      "type": "reference",
+      "name": "Agent Elements agent-chat — composite conversational shell",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v037",
+        "component-dossier",
+        "agent-elements",
+        "source-verified",
+        "no-runtime-import"
+      ],
+      "aliases": [
+        "AgentChat",
+        "AI 聊天壳",
+        "多工具聊天流"
+      ],
+      "source": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/public/r/agent-chat.json",
+      "license": "Original analysis and recommended behavioral states only; upstream MIT code license is repository-scoped. No vendor code, image, font, API service or hosted community material copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "ai-app",
+        "developer-tools",
+        "customer-support"
+      ],
+      "dependencies": [
+        "REF-090",
+        "UI-047",
+        "IP-050"
+      ],
+      "details": "docs/research/component-dossiers-v037.md",
+      "spec": "registry/component-dossiers-v037.json",
+      "verified": "Source files and registries reviewed at upstream commit b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37 on 2026-11-11; observed facts are separated from proposed states. Individual media/assets and host integration not verified. No components executed/imported.",
+      "handoff": {
+        "entry": "docs/research/component-dossiers-v037.md",
+        "mode": "research-only",
+        "stack": "upstream React/TSX metadata research; target application must independently select runtime and license",
+        "instructions": "Look up REF-105 in registry/component-dossiers-v037.json; use observed metadata and file paths for provenance; distinguish recommended interaction checks from observed behavior. Review rights/target install path before implementing.",
+        "limitations": "No compiled package, screenshot, copied code, component gallery, auto-compatible theme, browser accessibility evidence, or deployment. The source path points to upstream."
+      }
+    },
+    {
+      "id": "REF-106",
+      "type": "reference",
+      "name": "Agent Elements edit-tool — diff and approval card",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v037",
+        "component-dossier",
+        "agent-elements",
+        "source-verified",
+        "no-runtime-import"
+      ],
+      "aliases": [
+        "EditTool",
+        "代码差异审核",
+        "AI diff approval"
+      ],
+      "source": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/public/r/edit-tool.json",
+      "license": "Original analysis and recommended behavioral states only; upstream MIT code license is repository-scoped. No vendor code, image, font, API service or hosted community material copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "developer-tools",
+        "ai-app",
+        "code-review"
+      ],
+      "dependencies": [
+        "REF-090",
+        "REF-105",
+        "IP-040",
+        "IP-051"
+      ],
+      "details": "docs/research/component-dossiers-v037.md",
+      "spec": "registry/component-dossiers-v037.json",
+      "verified": "Source files and registries reviewed at upstream commit b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37 on 2026-11-11; observed facts are separated from proposed states. Individual media/assets and host integration not verified. No components executed/imported.",
+      "handoff": {
+        "entry": "docs/research/component-dossiers-v037.md",
+        "mode": "research-only",
+        "stack": "upstream React/TSX metadata research; target application must independently select runtime and license",
+        "instructions": "Look up REF-106 in registry/component-dossiers-v037.json; use observed metadata and file paths for provenance; distinguish recommended interaction checks from observed behavior. Review rights/target install path before implementing.",
+        "limitations": "No compiled package, screenshot, copied code, component gallery, auto-compatible theme, browser accessibility evidence, or deployment. The source path points to upstream."
+      }
+    },
+    {
+      "id": "REF-107",
+      "type": "reference",
+      "name": "Agent Elements question-tool — structured clarification",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v037",
+        "component-dossier",
+        "agent-elements",
+        "source-verified",
+        "no-runtime-import"
+      ],
+      "aliases": [
+        "QuestionTool",
+        "单选多选澄清卡",
+        "clarification question"
+      ],
+      "source": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/public/r/question-tool.json",
+      "license": "Original analysis and recommended behavioral states only; upstream MIT code license is repository-scoped. No vendor code, image, font, API service or hosted community material copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "ai-app",
+        "workflow",
+        "onboarding"
+      ],
+      "dependencies": [
+        "REF-090",
+        "REF-105",
+        "IP-036"
+      ],
+      "details": "docs/research/component-dossiers-v037.md",
+      "spec": "registry/component-dossiers-v037.json",
+      "verified": "Source files and registries reviewed at upstream commit b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37 on 2026-11-11; observed facts are separated from proposed states. Individual media/assets and host integration not verified. No components executed/imported.",
+      "handoff": {
+        "entry": "docs/research/component-dossiers-v037.md",
+        "mode": "research-only",
+        "stack": "upstream React/TSX metadata research; target application must independently select runtime and license",
+        "instructions": "Look up REF-107 in registry/component-dossiers-v037.json; use observed metadata and file paths for provenance; distinguish recommended interaction checks from observed behavior. Review rights/target install path before implementing.",
+        "limitations": "No compiled package, screenshot, copied code, component gallery, auto-compatible theme, browser accessibility evidence, or deployment. The source path points to upstream."
+      }
+    },
+    {
+      "id": "REF-108",
+      "type": "reference",
+      "name": "Agent Elements tool-group — grouped execution timeline",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v037",
+        "component-dossier",
+        "agent-elements",
+        "source-verified",
+        "no-runtime-import"
+      ],
+      "aliases": [
+        "ToolGroup",
+        "工具调用分组",
+        "agent execution timeline"
+      ],
+      "source": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/public/r/tool-group.json",
+      "license": "Original analysis and recommended behavioral states only; upstream MIT code license is repository-scoped. No vendor code, image, font, API service or hosted community material copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "ai-app",
+        "developer-tools",
+        "workflow"
+      ],
+      "dependencies": [
+        "REF-090",
+        "REF-105",
+        "UI-054",
+        "IP-051"
+      ],
+      "details": "docs/research/component-dossiers-v037.md",
+      "spec": "registry/component-dossiers-v037.json",
+      "verified": "Source files and registries reviewed at upstream commit b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37 on 2026-11-11; observed facts are separated from proposed states. Individual media/assets and host integration not verified. No components executed/imported.",
+      "handoff": {
+        "entry": "docs/research/component-dossiers-v037.md",
+        "mode": "research-only",
+        "stack": "upstream React/TSX metadata research; target application must independently select runtime and license",
+        "instructions": "Look up REF-108 in registry/component-dossiers-v037.json; use observed metadata and file paths for provenance; distinguish recommended interaction checks from observed behavior. Review rights/target install path before implementing.",
+        "limitations": "No compiled package, screenshot, copied code, component gallery, auto-compatible theme, browser accessibility evidence, or deployment. The source path points to upstream."
+      }
+    },
+    {
+      "id": "REF-109",
+      "type": "reference",
+      "name": "Agent Elements input-bar — multimodal chat composer",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v037",
+        "component-dossier",
+        "agent-elements",
+        "source-verified",
+        "no-runtime-import"
+      ],
+      "aliases": [
+        "InputBar",
+        "附件聊天输入栏",
+        "AI composer"
+      ],
+      "source": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/public/r/input-bar.json",
+      "license": "Original analysis and recommended behavioral states only; upstream MIT code license is repository-scoped. No vendor code, image, font, API service or hosted community material copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "ai-app",
+        "customer-support",
+        "developer-tools"
+      ],
+      "dependencies": [
+        "REF-090",
+        "REF-105",
+        "IP-039"
+      ],
+      "details": "docs/research/component-dossiers-v037.md",
+      "spec": "registry/component-dossiers-v037.json",
+      "verified": "Source files and registries reviewed at upstream commit b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37 on 2026-11-11; observed facts are separated from proposed states. Individual media/assets and host integration not verified. No components executed/imported.",
+      "handoff": {
+        "entry": "docs/research/component-dossiers-v037.md",
+        "mode": "research-only",
+        "stack": "upstream React/TSX metadata research; target application must independently select runtime and license",
+        "instructions": "Look up REF-109 in registry/component-dossiers-v037.json; use observed metadata and file paths for provenance; distinguish recommended interaction checks from observed behavior. Review rights/target install path before implementing.",
+        "limitations": "No compiled package, screenshot, copied code, component gallery, auto-compatible theme, browser accessibility evidence, or deployment. The source path points to upstream."
+      }
+    },
+    {
+      "id": "REF-110",
+      "type": "reference",
+      "name": "Agent Elements mcp-tool — inspectable MCP result row",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v037",
+        "component-dossier",
+        "agent-elements",
+        "source-verified",
+        "no-runtime-import"
+      ],
+      "aliases": [
+        "McpTool",
+        "MCP 工具输出卡",
+        "structured tool result"
+      ],
+      "source": "https://github.com/21st-dev/agent-elements/blob/b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37/public/r/mcp-tool.json",
+      "license": "Original analysis and recommended behavioral states only; upstream MIT code license is repository-scoped. No vendor code, image, font, API service or hosted community material copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "ai-app",
+        "developer-tools",
+        "knowledge-base"
+      ],
+      "dependencies": [
+        "REF-090",
+        "REF-108",
+        "IP-051"
+      ],
+      "details": "docs/research/component-dossiers-v037.md",
+      "spec": "registry/component-dossiers-v037.json",
+      "verified": "Source files and registries reviewed at upstream commit b04b36cb6381a1dd1a0e86cc7c90564ddcd56d37 on 2026-11-11; observed facts are separated from proposed states. Individual media/assets and host integration not verified. No components executed/imported.",
+      "handoff": {
+        "entry": "docs/research/component-dossiers-v037.md",
+        "mode": "research-only",
+        "stack": "upstream React/TSX metadata research; target application must independently select runtime and license",
+        "instructions": "Look up REF-110 in registry/component-dossiers-v037.json; use observed metadata and file paths for provenance; distinguish recommended interaction checks from observed behavior. Review rights/target install path before implementing.",
+        "limitations": "No compiled package, screenshot, copied code, component gallery, auto-compatible theme, browser accessibility evidence, or deployment. The source path points to upstream."
+      }
+    },
+    {
+      "id": "IP-054",
+      "type": "interaction",
+      "name": "Streaming tool timeline with atomic result status / 流式工具链状态",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "v037",
+        "original-interaction-contract",
+        "agent-user-workflow",
+        "research-only"
+      ],
+      "aliases": [
+        "流式工具进度",
+        "多工具时间线",
+        "tool progress state"
+      ],
+      "source": "https://github.com/21st-dev/agent-elements",
+      "license": "Original analysis and recommended behavioral states only; upstream MIT code license is repository-scoped. No vendor code, image, font, API service or hosted community material copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "ai-app",
+        "developer-tools"
+      ],
+      "dependencies": [
+        "REF-105",
+        "REF-108",
+        "REF-110",
+        "IP-051"
+      ],
+      "details": "docs/research/component-dossiers-v037.md",
+      "spec": "registry/component-dossiers-v037.json",
+      "verified": "Original proposed interaction contract derived from reviewed upstream metadata; no executable implementation, device/browser or security test, 2026-11-11.",
+      "handoff": {
+        "entry": "docs/research/component-dossiers-v037.md",
+        "mode": "research-only",
+        "stack": "framework-neutral interaction and protocol study",
+        "instructions": "Inspect IP-054 in registry/component-dossiers-v037.json; apply the design, states, controls and fallbacks only in a separate target application, and test with real backend authorization.",
+        "limitations": "Not an implemented approval service, chat runtime, component, working editor, or safe live tool bridge."
+      }
+    },
+    {
+      "id": "IP-055",
+      "type": "interaction",
+      "name": "Diff proposal and approval authority separation / 代码变更审阅授权",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "v037",
+        "original-interaction-contract",
+        "agent-user-workflow",
+        "research-only"
+      ],
+      "aliases": [
+        "审核代码修改",
+        "diff approve reject",
+        "补丁权限"
+      ],
+      "source": "https://github.com/21st-dev/agent-elements",
+      "license": "Original analysis and recommended behavioral states only; upstream MIT code license is repository-scoped. No vendor code, image, font, API service or hosted community material copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "developer-tools",
+        "ai-app"
+      ],
+      "dependencies": [
+        "REF-106",
+        "IP-051",
+        "IP-040"
+      ],
+      "details": "docs/research/component-dossiers-v037.md",
+      "spec": "registry/component-dossiers-v037.json",
+      "verified": "Original proposed interaction contract derived from reviewed upstream metadata; no executable implementation, device/browser or security test, 2026-11-11.",
+      "handoff": {
+        "entry": "docs/research/component-dossiers-v037.md",
+        "mode": "research-only",
+        "stack": "framework-neutral interaction and protocol study",
+        "instructions": "Inspect IP-055 in registry/component-dossiers-v037.json; apply the design, states, controls and fallbacks only in a separate target application, and test with real backend authorization.",
+        "limitations": "Not an implemented approval service, chat runtime, component, working editor, or safe live tool bridge."
+      }
+    },
+    {
+      "id": "IP-056",
+      "type": "interaction",
+      "name": "Structured clarification with draft continuity / 澄清不中断输入",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "v037",
+        "original-interaction-contract",
+        "agent-user-workflow",
+        "research-only"
+      ],
+      "aliases": [
+        "问答保留草稿",
+        "澄清任务恢复",
+        "agent question flow"
+      ],
+      "source": "https://github.com/21st-dev/agent-elements",
+      "license": "Original analysis and recommended behavioral states only; upstream MIT code license is repository-scoped. No vendor code, image, font, API service or hosted community material copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "ai-app",
+        "workflow",
+        "onboarding"
+      ],
+      "dependencies": [
+        "REF-107",
+        "REF-109",
+        "IP-050",
+        "IP-036"
+      ],
+      "details": "docs/research/component-dossiers-v037.md",
+      "spec": "registry/component-dossiers-v037.json",
+      "verified": "Original proposed interaction contract derived from reviewed upstream metadata; no executable implementation, device/browser or security test, 2026-11-11.",
+      "handoff": {
+        "entry": "docs/research/component-dossiers-v037.md",
+        "mode": "research-only",
+        "stack": "framework-neutral interaction and protocol study",
+        "instructions": "Inspect IP-056 in registry/component-dossiers-v037.json; apply the design, states, controls and fallbacks only in a separate target application, and test with real backend authorization.",
+        "limitations": "Not an implemented approval service, chat runtime, component, working editor, or safe live tool bridge."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",
   "styleRegistry": "registry/styles.json",
-  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee. V0.18 adds research-only visual studies outside registry/styles.json and component archetypes outside registry/components.json; IP-026/IP-028 only include headless pure models, not UI components. V0.30 adds 17 research-only external specialization references REF-042..058; these are not actual component exports or dependencies. V0.31 adds 15 original design studies REF-059..068 and IP-031..035 as analyzed/research-only; not deployed components, runtime dependencies, or new styles. V0.32: 18 original research contracts IP-036..041 / REF-069..080; four visual entries link separate opt-in CSS samples but are not certified UI implementations. V0.34 adds 16 task-first original research studies (REF-081..088 and IP-042..049), with 6 optional scoped CSS visual/layout atoms; IP research remains explicitly research-only. V0.35 adds eight original static dual-viewport SVG specimens attached to existing IDs only; registered asset count stays 255 and lifecycle stages remain analyzed. V0.36 adds 12 community/editor/agent upstream reference entries REF-089..100 and 4 independent source-governance behavior contracts IP-050..053. All are analyzed/research-only; neither an installable shadcn registry nor an existing editor integration.",
+  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee. V0.18 adds research-only visual studies outside registry/styles.json and component archetypes outside registry/components.json; IP-026/IP-028 only include headless pure models, not UI components. V0.30 adds 17 research-only external specialization references REF-042..058; these are not actual component exports or dependencies. V0.31 adds 15 original design studies REF-059..068 and IP-031..035 as analyzed/research-only; not deployed components, runtime dependencies, or new styles. V0.32: 18 original research contracts IP-036..041 / REF-069..080; four visual entries link separate opt-in CSS samples but are not certified UI implementations. V0.34 adds 16 task-first original research studies (REF-081..088 and IP-042..049), with 6 optional scoped CSS visual/layout atoms; IP research remains explicitly research-only. V0.35 adds eight original static dual-viewport SVG specimens attached to existing IDs only; registered asset count stays 255 and lifecycle stages remain analyzed. V0.36 adds 12 community/editor/agent upstream reference entries REF-089..100 and 4 independent source-governance behavior contracts IP-050..053. All are analyzed/research-only; neither an installable shadcn registry nor an existing editor integration. V0.37 adds 10 item-level source-anchored component/block dossiers REF-101..110 and 3 original Agent interaction contracts IP-054..056; all analyzed/research-only, without installed/copyable code. Three 21st.dev community items remain unregistered candidates awaiting exact item-level links/licensing.",
   "reusePolicyVersion": "1.0",
   "reusePolicies": {
     "style-token": {
