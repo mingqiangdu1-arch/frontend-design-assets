@@ -1,0 +1,712 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.36.0",
+  "reviewedOn": "2026-11-11",
+  "status": "research-only",
+  "policy": "Source watchlist and original research patterns; no code, screenshots, images, fonts, third-party component archives, API keys, runtime dependencies or applications imported. Per-item licensing and current technical compatibility must be rechecked before any reuse.",
+  "collectionRules": [
+    "Use official docs, public repository README, release notes and documented registries first; do not crawl protected content or bypass account/paywall limits.",
+    "De-duplicate by canonical URL, ID, capability and relation to existing source/behavior; source discovery alone is not a new runnable asset.",
+    "Treat marketplace items, source repositories, plugin packages, screenshots, fonts and external images as separate rights objects.",
+    "Only promote a source beyond reference-only after author/version/license/attribution/dependencies/security and runnable quality review.",
+    "No background monitoring or automatic uploads implied by this catalog."
+  ],
+  "groups": [
+    {
+      "id": "community-design",
+      "name": "组件社区与完整区块",
+      "purpose": "组件/Block/主题与复合交互的发现，不批量复制"
+    },
+    {
+      "id": "registry-agent",
+      "name": "标准化注册表与 Agent 安装",
+      "purpose": "机器可检索的元数据、依赖、版本与交接"
+    },
+    {
+      "id": "visual-editor",
+      "name": "可视化编辑与源码映射",
+      "purpose": "拖拽、props、slots、持久化、编辑器工具接口"
+    },
+    {
+      "id": "guest-agent",
+      "name": "匿名优先与外部 Agent 工作流",
+      "purpose": "本地工作区、权限、导出、复现"
+    }
+  ],
+  "sources": [
+    {
+      "id": "REF-089",
+      "name": "21st.dev creator marketplace",
+      "group": "community-design",
+      "source": "https://21st.dev/",
+      "repository": null,
+      "licenseScope": "Community contributions: per-author, per-item terms unverified",
+      "rightsBoundary": "Only public link, category, short original analysis and provenance; no component code, thumbnails or screenshots imported",
+      "collectionMethod": "Public manual browse; select individual author/item permalink before any reuse",
+      "focus": "多作者 React/Tailwind Hero、导航、Shader、AI Chat、动效与组合区块的差异化发现",
+      "distinctFrom": "REF-033/035 是特定效果项目；本项记录多作者社区发现和不同作品的权利边界",
+      "relatedAssets": [
+        "REF-033",
+        "REF-035"
+      ],
+      "aliases": [
+        "21st.dev",
+        "组件社区",
+        "UI marketplace",
+        "前端灵感社区"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "landing-page",
+        "ui-discovery"
+      ],
+      "priority": "P0",
+      "sampleDirections": [
+        "交互式 Hero 与动效状态",
+        "背景/Shader 的性能与动效降级",
+        "AI Chat 区块状态与可访问替代"
+      ],
+      "reviewedOn": "2026-11-11",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "implementation": "reference-links-and-original-research-only",
+      "redistributableCodeVerified": false,
+      "previewMediaRightsVerified": false
+    },
+    {
+      "id": "REF-090",
+      "name": "21st Agent Elements component kit",
+      "group": "community-design",
+      "source": "https://github.com/21st-dev/agent-elements",
+      "repository": "21st-dev/agent-elements",
+      "licenseScope": "MIT repository LICENSE verified 2026-11-11; embedded media/third-party integrations separately",
+      "rightsBoundary": "Research-only in this round; MIT source can be assessed item by item with copyright notice if later imported",
+      "collectionMethod": "Official README and source review, no copying or installation",
+      "focus": "聊天流、流式 markdown、工具执行卡片、审批/澄清面板的复合组件设计",
+      "distinctFrom": "现有 UI 组件有基础控件与工作流，但缺少 Agent 工具响应的完整展现分类",
+      "relatedAssets": [
+        "UI-047",
+        "IP-036"
+      ],
+      "aliases": [
+        "Agent Elements",
+        "工具调用卡片",
+        "流式聊天组件",
+        "agent chat blocks"
+      ],
+      "applicationContexts": [
+        "ai-app",
+        "developer-tools"
+      ],
+      "priority": "P0",
+      "sampleDirections": [
+        "Tool-card 执行中/错误/完成三态",
+        "Clarification 与 approval 状态",
+        "流式消息与附件响应性"
+      ],
+      "reviewedOn": "2026-11-11",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "implementation": "reference-links-and-original-research-only",
+      "redistributableCodeVerified": false,
+      "previewMediaRightsVerified": false
+    },
+    {
+      "id": "REF-091",
+      "name": "21st private registry CLI contract",
+      "group": "registry-agent",
+      "source": "https://github.com/21st-dev/registry",
+      "repository": "21st-dev/registry",
+      "licenseScope": "MIT CLI repository; hosted marketplace contents require separate item review",
+      "rightsBoundary": "CLI documented conventions may be studied; no remote publishing, authentication or component redistribution",
+      "collectionMethod": "Official CLI README and 21st.json convention; no keys, no login",
+      "focus": "组件目录、demos、preview 与 registry 元数据；AI Skill 驱动的 search/install/publish 工作流",
+      "distinctFrom": "REF-089 是内容发现，此项是机器注册表/CLI 协议，不能把商店内容当成库本身许可证",
+      "relatedAssets": [
+        "REF-089",
+        "PR-018"
+      ],
+      "aliases": [
+        "21st registry",
+        "21st.json",
+        "AI 组件注册表",
+        "agent install workflow"
+      ],
+      "applicationContexts": [
+        "design-infrastructure",
+        "ai-coding"
+      ],
+      "priority": "P0",
+      "sampleDirections": [
+        "组件和 demo 文件分离的发布清单",
+        "private/unlisted/public 可见性差异",
+        "带出处和版本的 agent 安装交接"
+      ],
+      "reviewedOn": "2026-11-11",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "implementation": "reference-links-and-original-research-only",
+      "redistributableCodeVerified": false,
+      "previewMediaRightsVerified": false
+    },
+    {
+      "id": "REF-092",
+      "name": "shadcn registry item and MCP standard",
+      "group": "registry-agent",
+      "source": "https://ui.shadcn.com/docs/registry/registry-item-json",
+      "repository": "shadcn-ui/ui",
+      "licenseScope": "Documentation/schema study; registry specification does not license every third-party item",
+      "rightsBoundary": "Schema facts and links only; do not copy third-party registry files without per-item evidence",
+      "collectionMethod": "Official registry-item.json, GitHub registries and MCP documentation",
+      "focus": "registry:block/page/ui/theme 分类、npm 依赖、registryDependencies、文件 target、Agent 安装契约",
+      "distinctFrom": "当前自有 assets.json 不是 shadcn registry；本项明确外部协议映射而非宣称已经兼容",
+      "relatedAssets": [
+        "PR-018",
+        "REF-091"
+      ],
+      "aliases": [
+        "shadcn registry",
+        "registry-item.json",
+        "MCP 组件安装",
+        "GitHub registry"
+      ],
+      "applicationContexts": [
+        "design-infrastructure",
+        "ai-coding"
+      ],
+      "priority": "P0",
+      "sampleDirections": [
+        "registry:block 的多文件与依赖记录",
+        "target 路径与跨工程映射",
+        "MCP 搜索与安装所需的描述质量"
+      ],
+      "reviewedOn": "2026-11-11",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "implementation": "reference-links-and-original-research-only",
+      "redistributableCodeVerified": false,
+      "previewMediaRightsVerified": false
+    },
+    {
+      "id": "REF-093",
+      "name": "shadcn blocks as compositional patterns",
+      "group": "community-design",
+      "source": "https://ui.shadcn.com/blocks",
+      "repository": "shadcn-ui/ui",
+      "licenseScope": "Official blocks; verify exact block source, author, assets and license before copying",
+      "rightsBoundary": "Capture original block morphology/interaction descriptions; no imported vendor block source in this round",
+      "collectionMethod": "Official blocks showcase with manual selection for next phase",
+      "focus": "仪表盘、认证、侧栏、页面区块、表单组成与多密度布局",
+      "distinctFrom": "与基础 UI 按钮/卡片不同，关注区块粒度、结构组合和响应式变化；不重复登记现有 UI 导出",
+      "relatedAssets": [
+        "UI-033",
+        "TPL-007",
+        "PR-018"
+      ],
+      "aliases": [
+        "shadcn blocks",
+        "页面区块",
+        "可组合布局",
+        "dashboard blocks"
+      ],
+      "applicationContexts": [
+        "dashboard",
+        "landing-page",
+        "workspace"
+      ],
+      "priority": "P0",
+      "sampleDirections": [
+        "Sidebar + workspace 双栏模式",
+        "Form + validation 状态组合",
+        "移动端区块顺序和导航降级"
+      ],
+      "reviewedOn": "2026-11-11",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "implementation": "reference-links-and-original-research-only",
+      "redistributableCodeVerified": false,
+      "previewMediaRightsVerified": false
+    },
+    {
+      "id": "REF-094",
+      "name": "Puck configurable React canvas",
+      "group": "visual-editor",
+      "source": "https://puckeditor.com/docs",
+      "repository": "puckeditor/puck",
+      "licenseScope": "MIT editor core LICENSE verified 2026-11-11; hosted/AI add-ons separately",
+      "rightsBoundary": "Only editor contracts, official docs URLs and original interpretations; no code imported",
+      "collectionMethod": "Official React editor docs, component config/fields/root/dropzones",
+      "focus": "React 组件作为拖拽 Block、props 字段、嵌套 DropZone、JSON 作品结构",
+      "distinctFrom": "REF-042 React Flow 是节点图；Puck 研究任意 React 页面区块的属性/嵌套与数据模式",
+      "relatedAssets": [
+        "REF-042",
+        "IP-021",
+        "PR-018"
+      ],
+      "aliases": [
+        "Puck",
+        "React 拖拽编辑器",
+        "属性面板",
+        "editable block schema"
+      ],
+      "applicationContexts": [
+        "visual-editor",
+        "page-builder"
+      ],
+      "priority": "P0",
+      "sampleDirections": [
+        "可编辑 props 与 schema 校验",
+        "容器 slot/dropzone 约束",
+        "Root 元数据与页面数据迁移"
+      ],
+      "reviewedOn": "2026-11-11",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "implementation": "reference-links-and-original-research-only",
+      "redistributableCodeVerified": false,
+      "previewMediaRightsVerified": false
+    },
+    {
+      "id": "REF-095",
+      "name": "GrapesJS WebMCP browser agent bridge",
+      "group": "visual-editor",
+      "source": "https://grapesjs.com/blog/webmcp-ai-browser-agents",
+      "repository": "GrapesJS/grapesjs",
+      "licenseScope": "GrapesJS core BSD-3-Clause LICENSE reviewed; separate WebMCP plugin license not verified",
+      "rightsBoundary": "Research browser Agent tool model only; do not bundle plugin until license/compatibility validated",
+      "collectionMethod": "Official Nov 3 2026 announcement and GrapesJS API documentation",
+      "focus": "浏览器 Agent 发现结构化编辑工具、按权限读取或修改画布、工具集过滤和 iframe 边界",
+      "distinctFrom": "与 UI-058 的画布操作相比增加 browser agent ↔ editor API 的可发现性和授权分层",
+      "relatedAssets": [
+        "UI-058",
+        "IP-040",
+        "REF-094"
+      ],
+      "aliases": [
+        "GrapesJS WebMCP",
+        "浏览器 Agent 画布",
+        "编辑器工具协议"
+      ],
+      "applicationContexts": [
+        "visual-editor",
+        "ai-coding"
+      ],
+      "priority": "P0",
+      "sampleDirections": [
+        "只读 inspect 与受限 write 分组",
+        "tool schema/能力发现",
+        "iframe 工具注册及不支持浏览器的降级"
+      ],
+      "reviewedOn": "2026-11-11",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "implementation": "reference-links-and-original-research-only",
+      "redistributableCodeVerified": false,
+      "previewMediaRightsVerified": false
+    },
+    {
+      "id": "REF-096",
+      "name": "Onlook visual editing on source code",
+      "group": "visual-editor",
+      "source": "https://github.com/onlook-dev/onlook",
+      "repository": "onlook-dev/onlook",
+      "licenseScope": "Repository-level license not confirmed; next hosted product distinct from original OSS repo",
+      "rightsBoundary": "Reference-only; no source/media extraction and no assumption hosted product is open-source",
+      "collectionMethod": "Original GitHub README and documented code-first editing workflow",
+      "focus": "React/Tailwind 可视化编辑与源码关联、可追踪修改、开发者文件上下文",
+      "distinctFrom": "Puck 的 JSON→React 渲染模型与 Onlook 的已有源码可视化编辑是不同问题",
+      "relatedAssets": [
+        "REF-094",
+        "PR-018"
+      ],
+      "aliases": [
+        "Onlook",
+        "可视化修改源码",
+        "design-to-code"
+      ],
+      "applicationContexts": [
+        "developer-tools",
+        "visual-editor"
+      ],
+      "priority": "P1",
+      "sampleDirections": [
+        "可编辑节点到源码路径的映射",
+        "未知组件的只读退化",
+        "变更确认/撤销与格式保留"
+      ],
+      "reviewedOn": "2026-11-11",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "implementation": "reference-links-and-original-research-only",
+      "redistributableCodeVerified": false,
+      "previewMediaRightsVerified": false
+    },
+    {
+      "id": "REF-097",
+      "name": "Webstudio page design system model",
+      "group": "visual-editor",
+      "source": "https://github.com/webstudio-is/webstudio",
+      "repository": "webstudio-is/webstudio",
+      "licenseScope": "AGPL-3.0 repository LICENSE verified 2026-11-11; review each package/hosted service",
+      "rightsBoundary": "Research-only; no library code vendoring or implied proprietary reuse rights",
+      "collectionMethod": "Official README and public documentation only",
+      "focus": "设计 Tokens、断点/响应式样式、页面结构与发布边界、视觉搭建操作",
+      "distinctFrom": "现有主题主要是静态视觉语法；本项研究编辑中的结构化样式继承和跨断点覆盖",
+      "relatedAssets": [
+        "REF-094",
+        "DT-014"
+      ],
+      "aliases": [
+        "Webstudio",
+        "响应式可视化搭建",
+        "style inheritance"
+      ],
+      "applicationContexts": [
+        "page-builder",
+        "visual-editor"
+      ],
+      "priority": "P1",
+      "sampleDirections": [
+        "跨断点样式来源与覆盖优先级",
+        "嵌套结构与语义元素",
+        "编辑预览与发布结果边界"
+      ],
+      "reviewedOn": "2026-11-11",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "implementation": "reference-links-and-original-research-only",
+      "redistributableCodeVerified": false,
+      "previewMediaRightsVerified": false
+    },
+    {
+      "id": "REF-098",
+      "name": "Plasmic React component composition",
+      "group": "visual-editor",
+      "source": "https://github.com/plasmicapp/plasmic",
+      "repository": "plasmicapp/plasmic",
+      "licenseScope": "Monorepo/package licenses require per-package check; hosted features separately",
+      "rightsBoundary": "Pattern study only; not a redistributable component source",
+      "collectionMethod": "Official public repository and component/content docs",
+      "focus": "外部 React 组件暴露可编辑参数、slot 嵌套、数据绑定与复杂页面内容模型",
+      "distinctFrom": "Puck 关注可嵌入编辑器；此项关注复杂宿主组件的可配置边界和编辑约束",
+      "relatedAssets": [
+        "REF-094",
+        "IP-039"
+      ],
+      "aliases": [
+        "Plasmic",
+        "可配置 React 组件",
+        "嵌套 slot",
+        "组件注册"
+      ],
+      "applicationContexts": [
+        "page-builder",
+        "design-system"
+      ],
+      "priority": "P2",
+      "sampleDirections": [
+        "可暴露属性 allowlist",
+        "嵌套子组件插槽规则",
+        "外部数据绑定的预览态"
+      ],
+      "reviewedOn": "2026-11-11",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "implementation": "reference-links-and-original-research-only",
+      "redistributableCodeVerified": false,
+      "previewMediaRightsVerified": false
+    },
+    {
+      "id": "REF-099",
+      "name": "Craft.js React editor node primitives",
+      "group": "visual-editor",
+      "source": "https://github.com/prevwong/craft.js",
+      "repository": "prevwong/craft.js",
+      "licenseScope": "MIT repository LICENSE verified 2026-11-11; individual examples/media separately",
+      "rightsBoundary": "Original architecture research only; no vendored code this round",
+      "collectionMethod": "Official repo/docs; node tree, drag handles, editable components",
+      "focus": "React 编辑器底层节点模型、拖放连接、选中态、嵌套与序列化",
+      "distinctFrom": "Puck 面向可嵌入的成品编辑器，Craft.js 更偏底层自定义编辑行为",
+      "relatedAssets": [
+        "REF-094",
+        "IP-021",
+        "IP-040"
+      ],
+      "aliases": [
+        "Craft.js",
+        "拖拽节点树",
+        "React editor framework"
+      ],
+      "applicationContexts": [
+        "visual-editor",
+        "creative-tool"
+      ],
+      "priority": "P2",
+      "sampleDirections": [
+        "选中节点与拖拽句柄状态",
+        "合法父子节点约束",
+        "序列化/重放的版本边界"
+      ],
+      "reviewedOn": "2026-11-11",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "implementation": "reference-links-and-original-research-only",
+      "redistributableCodeVerified": false,
+      "previewMediaRightsVerified": false
+    },
+    {
+      "id": "REF-100",
+      "name": "Swebsy guest-first visual builder workflow",
+      "group": "guest-agent",
+      "source": "https://swebsy.com/",
+      "repository": null,
+      "licenseScope": "No verified reusable source license; service/experience reference only",
+      "rightsBoundary": "Do not scrape private UI, copy site graphics, or assume its builder code is reusable",
+      "collectionMethod": "Public website/product documentation manual study; no authentication or data export executed",
+      "focus": "访客本地草稿、无需账号的浏览器搭建、外部 Agent 修改、HTML/CSS/JS 导出",
+      "distinctFrom": "当前本仓库没有游客工作区研究；它是网站流程参考而非组件源码包",
+      "relatedAssets": [
+        "IP-040",
+        "PR-018"
+      ],
+      "aliases": [
+        "Swebsy",
+        "免登录搭建",
+        "local first editor",
+        "agent builder"
+      ],
+      "applicationContexts": [
+        "page-builder",
+        "creative-tool"
+      ],
+      "priority": "P1",
+      "sampleDirections": [
+        "匿名草稿保存/恢复/清除",
+        "只读分享与写入权限分离",
+        "导出页面依赖与安全提示"
+      ],
+      "reviewedOn": "2026-11-11",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "implementation": "reference-links-and-original-research-only",
+      "redistributableCodeVerified": false,
+      "previewMediaRightsVerified": false
+    }
+  ],
+  "patterns": [
+    {
+      "id": "IP-050",
+      "name": "Registry item to editable block mapping / 注册表转可编辑区块",
+      "source": "https://ui.shadcn.com/docs/registry/registry-item-json",
+      "relatedAssets": [
+        "REF-092",
+        "REF-094",
+        "REF-093"
+      ],
+      "applicationContexts": [
+        "visual-editor",
+        "design-infrastructure"
+      ],
+      "aliases": [
+        "registry to block",
+        "组件映射",
+        "属性白名单",
+        "可编辑资产契约"
+      ],
+      "designContract": "用 manifest 将可安装源文件、依赖和预览 props 映射到编辑器的可选区块，不把研究条目伪装成可运行组件",
+      "stateContract": "candidate→license-and-runtime-reviewed→schema-mapped→previewable|blocked→versioned-handoff",
+      "accessibleFallback": "缺少 propsSchema、预览隔离或权利证据时仅链接文档；不渲染未知代码",
+      "failureModes": "组件缺失、依赖版本错配、slot 不受控、外部 JS 执行、来源授权未核",
+      "distinctFrom": "IP-039 解决粘贴内容安全；本项定义资产索引到可编辑区块的发布准入",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "implementation": "research-brief-only"
+    },
+    {
+      "id": "IP-051",
+      "name": "Permission-gated Agent canvas commands / 授权分层画布命令",
+      "source": "https://grapesjs.com/blog/webmcp-ai-browser-agents",
+      "relatedAssets": [
+        "REF-095",
+        "IP-040",
+        "UI-058"
+      ],
+      "applicationContexts": [
+        "visual-editor",
+        "ai-app"
+      ],
+      "aliases": [
+        "agent canvas commands",
+        "Agent 编辑权限",
+        "只读工具",
+        "可撤销编辑命令"
+      ],
+      "designContract": "给 Agent 的 inspect/mutate/replace-export 工具单独分级授权，以可验证的节点命令和事务回执替代屏幕坐标脚本",
+      "stateContract": "discover→read-only-inspect→permission-check→preview-patch→confirmed-commit|denied→undo|audit",
+      "accessibleFallback": "不支持 WebMCP 时允许显式导出 JSON/手动应用，不暗中模拟不可审计写操作",
+      "failureModes": "越权写入、HTML 注入、隐式全量重置、他人并发修改、工具 schema 不匹配",
+      "distinctFrom": "IP-040 讨论协同 Undo；本项重点是外部 Agent 工具发现和权限护栏",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "implementation": "research-brief-only"
+    },
+    {
+      "id": "IP-052",
+      "name": "Guest-first recoverable workspaces / 可恢复游客草稿",
+      "source": "https://swebsy.com/",
+      "relatedAssets": [
+        "REF-100",
+        "IP-040",
+        "PR-018"
+      ],
+      "applicationContexts": [
+        "page-builder",
+        "creative-tool"
+      ],
+      "aliases": [
+        "游客模式",
+        "匿名草稿",
+        "local first workspace",
+        "无需登录编辑"
+      ],
+      "designContract": "访客创建页面时保存本地 Schema 与资源版本，明确草稿、只读分享快照和可写编辑密钥的边界",
+      "stateContract": "guest-new→editing→local-saved→exported|shared-readonly→restored|cleared|expired",
+      "accessibleFallback": "IndexedDB 不可用时提供 JSON 下载和导入；分享链接不应默认授予写入权",
+      "failureModes": "清缓存丢数据、分享链接泄漏、匿名公开上传滥用、过期版本不能恢复",
+      "distinctFrom": "现有页面示例强调视觉结构；本项聚焦不强制登录时的恢复与访问控制",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "implementation": "research-brief-only"
+    },
+    {
+      "id": "IP-053",
+      "name": "Pinned provenance for reproducible remix / 锁版本作品复现清单",
+      "source": "https://ui.shadcn.com/docs/registry/github",
+      "relatedAssets": [
+        "REF-092",
+        "REF-091",
+        "REF-096",
+        "PR-018"
+      ],
+      "applicationContexts": [
+        "design-infrastructure",
+        "ai-coding"
+      ],
+      "aliases": [
+        "作品复现",
+        "版本锁定",
+        "remix manifest",
+        "source pinning"
+      ],
+      "designContract": "分离原始素材 ID、发布版本/commit、资源授权、Token 和工作区局部改动，支持跨项目可追踪复现",
+      "stateContract": "draft→validated-snapshot→dependency-locked→exported→import-tested|incompatible→migration-review",
+      "accessibleFallback": "依赖或媒体不可访问时生成差异报告和静态参考，不宣称像素级一致",
+      "failureModes": "未锁定的 GitHub head、字体/图片跨域变化、依赖未授权、响应式断点漂移",
+      "distinctFrom": "PR-018 是已有风格布局交接；本项要求来源与依赖锁定、可导入快照的证据",
+      "adoption": "research-only",
+      "stage": "analyzed",
+      "implementation": "research-brief-only"
+    }
+  ],
+  "curatedCases": [
+    {
+      "key": "v036-21st-scroll-media-hero",
+      "sourceId": "REF-089",
+      "name": "Scroll media expansion hero",
+      "evidenceUrl": "https://21st.dev/community/components",
+      "visibleEvidence": "Public community gallery shows this named candidate; individual author and item permalink were not established in this round.",
+      "study": "滚动进入视口→媒体展开→标题/动作区同步变形；标记 sticky、滚动撤销和 reduced-motion 方案",
+      "distinctFrom": [
+        "IP-023",
+        "REF-079"
+      ],
+      "rights": "not-cleared-for-code-or-media-mirroring",
+      "reviewState": "public-gallery-observation-only"
+    },
+    {
+      "key": "v036-21st-agent-chat",
+      "sourceId": "REF-089",
+      "name": "Agent Chat by Serafim",
+      "evidenceUrl": "https://21st.dev/community/components/explore/chat-components",
+      "visibleEvidence": "Named candidate and author appear on public curated chat collection; individual code/license are not verified.",
+      "study": "AI 聊天的消息栈、工具回复容器、输入区模式与移动端高度变更",
+      "distinctFrom": [
+        "UI-047",
+        "REF-090"
+      ],
+      "rights": "not-cleared-for-code-or-media-mirroring",
+      "reviewState": "public-gallery-observation-only"
+    },
+    {
+      "key": "v036-shadcn-dashboard-01",
+      "sourceId": "REF-093",
+      "name": "dashboard-01",
+      "evidenceUrl": "https://ui.shadcn.com/blocks/dashboard",
+      "visibleEvidence": "Official block gallery displays dashboard-01: sidebar, section cards, charts and data table with a multi-file breakdown.",
+      "study": "Sidebar / SiteHeader / SectionCards / ChartAreaInteractive / DataTable 的组合和数据边界",
+      "distinctFrom": [
+        "UI-033",
+        "UI-055",
+        "PR-018"
+      ],
+      "rights": "item-and-media-license-recheck-before-code-import",
+      "reviewState": "official-block-documentation-reviewed"
+    },
+    {
+      "key": "v036-shadcn-sidebar-07",
+      "sourceId": "REF-093",
+      "name": "sidebar-07",
+      "evidenceUrl": "https://ui.shadcn.com/blocks/sidebar",
+      "visibleEvidence": "Official sidebar page lists sidebar-07 as a sidebar that collapses to icons.",
+      "study": "宽窄状态、图标折叠、焦点恢复、tooltip 和移动触摸替代",
+      "distinctFrom": [
+        "IP-008",
+        "TPL-007"
+      ],
+      "rights": "item-and-media-license-recheck-before-code-import",
+      "reviewState": "official-block-documentation-reviewed"
+    },
+    {
+      "key": "v036-agent-elements-toolgroup",
+      "sourceId": "REF-090",
+      "name": "Agent Elements — ToolGroup and McpTool",
+      "evidenceUrl": "https://github.com/21st-dev/agent-elements",
+      "visibleEvidence": "Official MIT repository README lists ToolGroup and McpTool as available tool cards.",
+      "study": "工具调用聚合、进度、失败重试、读写批准与工具输出降级",
+      "distinctFrom": [
+        "UI-047",
+        "IP-036"
+      ],
+      "rights": "mit-repository-but-not-copied-and-media-dependencies-need-review",
+      "reviewState": "official-readme-and-repository-license-reviewed"
+    },
+    {
+      "key": "v036-puck-dropzone",
+      "sourceId": "REF-094",
+      "name": "Puck DropZone nested block model",
+      "evidenceUrl": "https://puckeditor.com/docs/api-reference/components",
+      "visibleEvidence": "Official Puck API describes DropZone for nested component editing.",
+      "study": "合法嵌套、空 DropZone 提示、属性面板与保存 Schema 一致性",
+      "distinctFrom": [
+        "IP-021",
+        "REF-042"
+      ],
+      "rights": "mit-editor-core-but-example-source-not-copied",
+      "reviewState": "official-docs-reviewed"
+    },
+    {
+      "key": "v036-grapesjs-webmcp-tools",
+      "sourceId": "REF-095",
+      "name": "GrapesJS WebMCP getTools permission filters",
+      "evidenceUrl": "https://grapesjs.com/blog/webmcp-ai-browser-agents",
+      "visibleEvidence": "2026-11-03 announcement documents getTools filtering and experimental browser support.",
+      "study": "inspect/edit 工具分组、可发现的 JSON schema、可回放命令与无支持环境降级",
+      "distinctFrom": [
+        "UI-058",
+        "IP-040"
+      ],
+      "rights": "webmcp-plugin-license-needs-separate-review",
+      "reviewState": "official-announcement-reviewed"
+    }
+  ]
+}

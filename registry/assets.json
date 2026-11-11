@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.2",
   "purpose": "Living cross-application, multi-style design asset repository; no repository-wide visual default.",
-  "updatedAt": "2026-11-10",
+  "updatedAt": "2026-11-11",
   "stageDefinitions": [
     "captured",
     "analyzed",
@@ -9494,11 +9494,686 @@
         "instructions": "Look up IP-049 in registry/experience-artifacts-v034.json, verify distinctFrom/relatedAssets, stateContract, accessibleFallback and failureModes before selecting. No executable implementation exists. Source/license and target device must be reviewed separately.",
         "limitations": "No assembled app, page blueprint, live navigation, React export, auto-compatible theme, downloaded third-party source or target-device verification."
       }
+    },
+    {
+      "id": "REF-089",
+      "type": "reference",
+      "name": "21st.dev creator marketplace",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v036",
+        "community-source",
+        "community-design",
+        "upstream-research",
+        "no-code-import"
+      ],
+      "aliases": [
+        "21st.dev",
+        "组件社区",
+        "UI marketplace",
+        "前端灵感社区"
+      ],
+      "source": "https://21st.dev/",
+      "license": "Original research notes only. Upstream authors retain source code, media and trademarks; no third-party assets copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-site",
+        "landing-page",
+        "ui-discovery"
+      ],
+      "dependencies": [
+        "REF-033",
+        "REF-035"
+      ],
+      "details": "docs/research/community-sources-v036.md",
+      "spec": "registry/community-sources-v036.json",
+      "verified": "Official public docs and/or license evidence reviewed 2026-11-11 to the stated scope; not an exhaustive item-level license, maintenance or runtime audit. No external code, visuals or assets imported.",
+      "handoff": {
+        "entry": "docs/research/community-sources-v036.md",
+        "mode": "research-only",
+        "stack": "upstream research; no installed runtime or theme compatibility",
+        "instructions": "Read REF-089 from registry/community-sources-v036.json; select 交互式 Hero 与动效状态 or other task-matched study; verify individual source rights, exact version and the differences from REF-033, REF-035 before attempting reuse.",
+        "limitations": "Not a downloadable component, approved screenshot, packaged dependency, verified official API integration or permission to mirror external marketplace content."
+      }
+    },
+    {
+      "id": "REF-090",
+      "type": "reference",
+      "name": "21st Agent Elements component kit",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v036",
+        "community-source",
+        "community-design",
+        "upstream-research",
+        "no-code-import"
+      ],
+      "aliases": [
+        "Agent Elements",
+        "工具调用卡片",
+        "流式聊天组件",
+        "agent chat blocks"
+      ],
+      "source": "https://github.com/21st-dev/agent-elements",
+      "license": "Original research notes only. Upstream authors retain source code, media and trademarks; no third-party assets copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "ai-app",
+        "developer-tools"
+      ],
+      "dependencies": [
+        "UI-047",
+        "IP-036"
+      ],
+      "details": "docs/research/community-sources-v036.md",
+      "spec": "registry/community-sources-v036.json",
+      "verified": "Official public docs and/or license evidence reviewed 2026-11-11 to the stated scope; not an exhaustive item-level license, maintenance or runtime audit. No external code, visuals or assets imported.",
+      "handoff": {
+        "entry": "docs/research/community-sources-v036.md",
+        "mode": "research-only",
+        "stack": "upstream research; no installed runtime or theme compatibility",
+        "instructions": "Read REF-090 from registry/community-sources-v036.json; select Tool-card 执行中/错误/完成三态 or other task-matched study; verify individual source rights, exact version and the differences from UI-047, IP-036 before attempting reuse.",
+        "limitations": "Not a downloadable component, approved screenshot, packaged dependency, verified official API integration or permission to mirror external marketplace content."
+      }
+    },
+    {
+      "id": "REF-091",
+      "type": "reference",
+      "name": "21st private registry CLI contract",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v036",
+        "community-source",
+        "registry-agent",
+        "upstream-research",
+        "no-code-import"
+      ],
+      "aliases": [
+        "21st registry",
+        "21st.json",
+        "AI 组件注册表",
+        "agent install workflow"
+      ],
+      "source": "https://github.com/21st-dev/registry",
+      "license": "Original research notes only. Upstream authors retain source code, media and trademarks; no third-party assets copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "design-infrastructure",
+        "ai-coding"
+      ],
+      "dependencies": [
+        "REF-089",
+        "PR-018"
+      ],
+      "details": "docs/research/community-sources-v036.md",
+      "spec": "registry/community-sources-v036.json",
+      "verified": "Official public docs and/or license evidence reviewed 2026-11-11 to the stated scope; not an exhaustive item-level license, maintenance or runtime audit. No external code, visuals or assets imported.",
+      "handoff": {
+        "entry": "docs/research/community-sources-v036.md",
+        "mode": "research-only",
+        "stack": "upstream research; no installed runtime or theme compatibility",
+        "instructions": "Read REF-091 from registry/community-sources-v036.json; select 组件和 demo 文件分离的发布清单 or other task-matched study; verify individual source rights, exact version and the differences from REF-089, PR-018 before attempting reuse.",
+        "limitations": "Not a downloadable component, approved screenshot, packaged dependency, verified official API integration or permission to mirror external marketplace content."
+      }
+    },
+    {
+      "id": "REF-092",
+      "type": "reference",
+      "name": "shadcn registry item and MCP standard",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v036",
+        "community-source",
+        "registry-agent",
+        "upstream-research",
+        "no-code-import"
+      ],
+      "aliases": [
+        "shadcn registry",
+        "registry-item.json",
+        "MCP 组件安装",
+        "GitHub registry"
+      ],
+      "source": "https://ui.shadcn.com/docs/registry/registry-item-json",
+      "license": "Original research notes only. Upstream authors retain source code, media and trademarks; no third-party assets copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "design-infrastructure",
+        "ai-coding"
+      ],
+      "dependencies": [
+        "PR-018",
+        "REF-091"
+      ],
+      "details": "docs/research/community-sources-v036.md",
+      "spec": "registry/community-sources-v036.json",
+      "verified": "Official public docs and/or license evidence reviewed 2026-11-11 to the stated scope; not an exhaustive item-level license, maintenance or runtime audit. No external code, visuals or assets imported.",
+      "handoff": {
+        "entry": "docs/research/community-sources-v036.md",
+        "mode": "research-only",
+        "stack": "upstream research; no installed runtime or theme compatibility",
+        "instructions": "Read REF-092 from registry/community-sources-v036.json; select registry:block 的多文件与依赖记录 or other task-matched study; verify individual source rights, exact version and the differences from PR-018, REF-091 before attempting reuse.",
+        "limitations": "Not a downloadable component, approved screenshot, packaged dependency, verified official API integration or permission to mirror external marketplace content."
+      }
+    },
+    {
+      "id": "REF-093",
+      "type": "reference",
+      "name": "shadcn blocks as compositional patterns",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v036",
+        "community-source",
+        "community-design",
+        "upstream-research",
+        "no-code-import"
+      ],
+      "aliases": [
+        "shadcn blocks",
+        "页面区块",
+        "可组合布局",
+        "dashboard blocks"
+      ],
+      "source": "https://ui.shadcn.com/blocks",
+      "license": "Original research notes only. Upstream authors retain source code, media and trademarks; no third-party assets copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "dashboard",
+        "landing-page",
+        "workspace"
+      ],
+      "dependencies": [
+        "UI-033",
+        "TPL-007",
+        "PR-018"
+      ],
+      "details": "docs/research/community-sources-v036.md",
+      "spec": "registry/community-sources-v036.json",
+      "verified": "Official public docs and/or license evidence reviewed 2026-11-11 to the stated scope; not an exhaustive item-level license, maintenance or runtime audit. No external code, visuals or assets imported.",
+      "handoff": {
+        "entry": "docs/research/community-sources-v036.md",
+        "mode": "research-only",
+        "stack": "upstream research; no installed runtime or theme compatibility",
+        "instructions": "Read REF-093 from registry/community-sources-v036.json; select Sidebar + workspace 双栏模式 or other task-matched study; verify individual source rights, exact version and the differences from UI-033, TPL-007, PR-018 before attempting reuse.",
+        "limitations": "Not a downloadable component, approved screenshot, packaged dependency, verified official API integration or permission to mirror external marketplace content."
+      }
+    },
+    {
+      "id": "REF-094",
+      "type": "reference",
+      "name": "Puck configurable React canvas",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v036",
+        "community-source",
+        "visual-editor",
+        "upstream-research",
+        "no-code-import"
+      ],
+      "aliases": [
+        "Puck",
+        "React 拖拽编辑器",
+        "属性面板",
+        "editable block schema"
+      ],
+      "source": "https://puckeditor.com/docs",
+      "license": "Original research notes only. Upstream authors retain source code, media and trademarks; no third-party assets copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "visual-editor",
+        "page-builder"
+      ],
+      "dependencies": [
+        "REF-042",
+        "IP-021",
+        "PR-018"
+      ],
+      "details": "docs/research/community-sources-v036.md",
+      "spec": "registry/community-sources-v036.json",
+      "verified": "Official public docs and/or license evidence reviewed 2026-11-11 to the stated scope; not an exhaustive item-level license, maintenance or runtime audit. No external code, visuals or assets imported.",
+      "handoff": {
+        "entry": "docs/research/community-sources-v036.md",
+        "mode": "research-only",
+        "stack": "upstream research; no installed runtime or theme compatibility",
+        "instructions": "Read REF-094 from registry/community-sources-v036.json; select 可编辑 props 与 schema 校验 or other task-matched study; verify individual source rights, exact version and the differences from REF-042, IP-021, PR-018 before attempting reuse.",
+        "limitations": "Not a downloadable component, approved screenshot, packaged dependency, verified official API integration or permission to mirror external marketplace content."
+      }
+    },
+    {
+      "id": "REF-095",
+      "type": "reference",
+      "name": "GrapesJS WebMCP browser agent bridge",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v036",
+        "community-source",
+        "visual-editor",
+        "upstream-research",
+        "no-code-import"
+      ],
+      "aliases": [
+        "GrapesJS WebMCP",
+        "浏览器 Agent 画布",
+        "编辑器工具协议"
+      ],
+      "source": "https://grapesjs.com/blog/webmcp-ai-browser-agents",
+      "license": "Original research notes only. Upstream authors retain source code, media and trademarks; no third-party assets copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "visual-editor",
+        "ai-coding"
+      ],
+      "dependencies": [
+        "UI-058",
+        "IP-040",
+        "REF-094"
+      ],
+      "details": "docs/research/community-sources-v036.md",
+      "spec": "registry/community-sources-v036.json",
+      "verified": "Official public docs and/or license evidence reviewed 2026-11-11 to the stated scope; not an exhaustive item-level license, maintenance or runtime audit. No external code, visuals or assets imported.",
+      "handoff": {
+        "entry": "docs/research/community-sources-v036.md",
+        "mode": "research-only",
+        "stack": "upstream research; no installed runtime or theme compatibility",
+        "instructions": "Read REF-095 from registry/community-sources-v036.json; select 只读 inspect 与受限 write 分组 or other task-matched study; verify individual source rights, exact version and the differences from UI-058, IP-040, REF-094 before attempting reuse.",
+        "limitations": "Not a downloadable component, approved screenshot, packaged dependency, verified official API integration or permission to mirror external marketplace content."
+      }
+    },
+    {
+      "id": "REF-096",
+      "type": "reference",
+      "name": "Onlook visual editing on source code",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v036",
+        "community-source",
+        "visual-editor",
+        "upstream-research",
+        "no-code-import"
+      ],
+      "aliases": [
+        "Onlook",
+        "可视化修改源码",
+        "design-to-code"
+      ],
+      "source": "https://github.com/onlook-dev/onlook",
+      "license": "Original research notes only. Upstream authors retain source code, media and trademarks; no third-party assets copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "developer-tools",
+        "visual-editor"
+      ],
+      "dependencies": [
+        "REF-094",
+        "PR-018"
+      ],
+      "details": "docs/research/community-sources-v036.md",
+      "spec": "registry/community-sources-v036.json",
+      "verified": "Official public docs and/or license evidence reviewed 2026-11-11 to the stated scope; not an exhaustive item-level license, maintenance or runtime audit. No external code, visuals or assets imported.",
+      "handoff": {
+        "entry": "docs/research/community-sources-v036.md",
+        "mode": "research-only",
+        "stack": "upstream research; no installed runtime or theme compatibility",
+        "instructions": "Read REF-096 from registry/community-sources-v036.json; select 可编辑节点到源码路径的映射 or other task-matched study; verify individual source rights, exact version and the differences from REF-094, PR-018 before attempting reuse.",
+        "limitations": "Not a downloadable component, approved screenshot, packaged dependency, verified official API integration or permission to mirror external marketplace content."
+      }
+    },
+    {
+      "id": "REF-097",
+      "type": "reference",
+      "name": "Webstudio page design system model",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v036",
+        "community-source",
+        "visual-editor",
+        "upstream-research",
+        "no-code-import"
+      ],
+      "aliases": [
+        "Webstudio",
+        "响应式可视化搭建",
+        "style inheritance"
+      ],
+      "source": "https://github.com/webstudio-is/webstudio",
+      "license": "Original research notes only. Upstream authors retain source code, media and trademarks; no third-party assets copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "page-builder",
+        "visual-editor"
+      ],
+      "dependencies": [
+        "REF-094",
+        "DT-014"
+      ],
+      "details": "docs/research/community-sources-v036.md",
+      "spec": "registry/community-sources-v036.json",
+      "verified": "Official public docs and/or license evidence reviewed 2026-11-11 to the stated scope; not an exhaustive item-level license, maintenance or runtime audit. No external code, visuals or assets imported.",
+      "handoff": {
+        "entry": "docs/research/community-sources-v036.md",
+        "mode": "research-only",
+        "stack": "upstream research; no installed runtime or theme compatibility",
+        "instructions": "Read REF-097 from registry/community-sources-v036.json; select 跨断点样式来源与覆盖优先级 or other task-matched study; verify individual source rights, exact version and the differences from REF-094, DT-014 before attempting reuse.",
+        "limitations": "Not a downloadable component, approved screenshot, packaged dependency, verified official API integration or permission to mirror external marketplace content."
+      }
+    },
+    {
+      "id": "REF-098",
+      "type": "reference",
+      "name": "Plasmic React component composition",
+      "stage": "analyzed",
+      "priority": "P2",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v036",
+        "community-source",
+        "visual-editor",
+        "upstream-research",
+        "no-code-import"
+      ],
+      "aliases": [
+        "Plasmic",
+        "可配置 React 组件",
+        "嵌套 slot",
+        "组件注册"
+      ],
+      "source": "https://github.com/plasmicapp/plasmic",
+      "license": "Original research notes only. Upstream authors retain source code, media and trademarks; no third-party assets copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "page-builder",
+        "design-system"
+      ],
+      "dependencies": [
+        "REF-094",
+        "IP-039"
+      ],
+      "details": "docs/research/community-sources-v036.md",
+      "spec": "registry/community-sources-v036.json",
+      "verified": "Official public docs and/or license evidence reviewed 2026-11-11 to the stated scope; not an exhaustive item-level license, maintenance or runtime audit. No external code, visuals or assets imported.",
+      "handoff": {
+        "entry": "docs/research/community-sources-v036.md",
+        "mode": "research-only",
+        "stack": "upstream research; no installed runtime or theme compatibility",
+        "instructions": "Read REF-098 from registry/community-sources-v036.json; select 可暴露属性 allowlist or other task-matched study; verify individual source rights, exact version and the differences from REF-094, IP-039 before attempting reuse.",
+        "limitations": "Not a downloadable component, approved screenshot, packaged dependency, verified official API integration or permission to mirror external marketplace content."
+      }
+    },
+    {
+      "id": "REF-099",
+      "type": "reference",
+      "name": "Craft.js React editor node primitives",
+      "stage": "analyzed",
+      "priority": "P2",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v036",
+        "community-source",
+        "visual-editor",
+        "upstream-research",
+        "no-code-import"
+      ],
+      "aliases": [
+        "Craft.js",
+        "拖拽节点树",
+        "React editor framework"
+      ],
+      "source": "https://github.com/prevwong/craft.js",
+      "license": "Original research notes only. Upstream authors retain source code, media and trademarks; no third-party assets copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "visual-editor",
+        "creative-tool"
+      ],
+      "dependencies": [
+        "REF-094",
+        "IP-021",
+        "IP-040"
+      ],
+      "details": "docs/research/community-sources-v036.md",
+      "spec": "registry/community-sources-v036.json",
+      "verified": "Official public docs and/or license evidence reviewed 2026-11-11 to the stated scope; not an exhaustive item-level license, maintenance or runtime audit. No external code, visuals or assets imported.",
+      "handoff": {
+        "entry": "docs/research/community-sources-v036.md",
+        "mode": "research-only",
+        "stack": "upstream research; no installed runtime or theme compatibility",
+        "instructions": "Read REF-099 from registry/community-sources-v036.json; select 选中节点与拖拽句柄状态 or other task-matched study; verify individual source rights, exact version and the differences from REF-094, IP-021, IP-040 before attempting reuse.",
+        "limitations": "Not a downloadable component, approved screenshot, packaged dependency, verified official API integration or permission to mirror external marketplace content."
+      }
+    },
+    {
+      "id": "REF-100",
+      "type": "reference",
+      "name": "Swebsy guest-first visual builder workflow",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v036",
+        "community-source",
+        "guest-agent",
+        "upstream-research",
+        "no-code-import"
+      ],
+      "aliases": [
+        "Swebsy",
+        "免登录搭建",
+        "local first editor",
+        "agent builder"
+      ],
+      "source": "https://swebsy.com/",
+      "license": "Original research notes only. Upstream authors retain source code, media and trademarks; no third-party assets copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "page-builder",
+        "creative-tool"
+      ],
+      "dependencies": [
+        "IP-040",
+        "PR-018"
+      ],
+      "details": "docs/research/community-sources-v036.md",
+      "spec": "registry/community-sources-v036.json",
+      "verified": "Official public docs and/or license evidence reviewed 2026-11-11 to the stated scope; not an exhaustive item-level license, maintenance or runtime audit. No external code, visuals or assets imported.",
+      "handoff": {
+        "entry": "docs/research/community-sources-v036.md",
+        "mode": "research-only",
+        "stack": "upstream research; no installed runtime or theme compatibility",
+        "instructions": "Read REF-100 from registry/community-sources-v036.json; select 匿名草稿保存/恢复/清除 or other task-matched study; verify individual source rights, exact version and the differences from IP-040, PR-018 before attempting reuse.",
+        "limitations": "Not a downloadable component, approved screenshot, packaged dependency, verified official API integration or permission to mirror external marketplace content."
+      }
+    },
+    {
+      "id": "IP-050",
+      "type": "interaction",
+      "name": "Registry item to editable block mapping / 注册表转可编辑区块",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "v036",
+        "asset-to-agent",
+        "original-research",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "registry to block",
+        "组件映射",
+        "属性白名单",
+        "可编辑资产契约"
+      ],
+      "source": "https://ui.shadcn.com/docs/registry/registry-item-json",
+      "license": "Original research notes only. Upstream authors retain source code, media and trademarks; no third-party assets copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "visual-editor",
+        "design-infrastructure"
+      ],
+      "dependencies": [
+        "REF-092",
+        "REF-094",
+        "REF-093"
+      ],
+      "details": "docs/research/community-sources-v036.md",
+      "spec": "registry/community-sources-v036.json",
+      "verified": "Original behavior contract researched 2026-11-11; not coded, installed, browser-tested, security-reviewed, accessible-certified or production-integrated.",
+      "handoff": {
+        "entry": "docs/research/community-sources-v036.md",
+        "mode": "research-only",
+        "stack": "framework-neutral behavior research",
+        "instructions": "Read IP-050 from registry/community-sources-v036.json; review state flow, fallback, safety risks and IP-039 解决粘贴内容安全；本项定义资产索引到可编辑区块的发布准入; no implementation or deployment exists.",
+        "limitations": "Research design only: no working editor, Agent integration, persistent share service, automatic version pinning or installed code."
+      }
+    },
+    {
+      "id": "IP-051",
+      "type": "interaction",
+      "name": "Permission-gated Agent canvas commands / 授权分层画布命令",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "v036",
+        "asset-to-agent",
+        "original-research",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "agent canvas commands",
+        "Agent 编辑权限",
+        "只读工具",
+        "可撤销编辑命令"
+      ],
+      "source": "https://grapesjs.com/blog/webmcp-ai-browser-agents",
+      "license": "Original research notes only. Upstream authors retain source code, media and trademarks; no third-party assets copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "visual-editor",
+        "ai-app"
+      ],
+      "dependencies": [
+        "REF-095",
+        "IP-040",
+        "UI-058"
+      ],
+      "details": "docs/research/community-sources-v036.md",
+      "spec": "registry/community-sources-v036.json",
+      "verified": "Original behavior contract researched 2026-11-11; not coded, installed, browser-tested, security-reviewed, accessible-certified or production-integrated.",
+      "handoff": {
+        "entry": "docs/research/community-sources-v036.md",
+        "mode": "research-only",
+        "stack": "framework-neutral behavior research",
+        "instructions": "Read IP-051 from registry/community-sources-v036.json; review state flow, fallback, safety risks and IP-040 讨论协同 Undo；本项重点是外部 Agent 工具发现和权限护栏; no implementation or deployment exists.",
+        "limitations": "Research design only: no working editor, Agent integration, persistent share service, automatic version pinning or installed code."
+      }
+    },
+    {
+      "id": "IP-052",
+      "type": "interaction",
+      "name": "Guest-first recoverable workspaces / 可恢复游客草稿",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "v036",
+        "asset-to-agent",
+        "original-research",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "游客模式",
+        "匿名草稿",
+        "local first workspace",
+        "无需登录编辑"
+      ],
+      "source": "https://swebsy.com/",
+      "license": "Original research notes only. Upstream authors retain source code, media and trademarks; no third-party assets copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "page-builder",
+        "creative-tool"
+      ],
+      "dependencies": [
+        "REF-100",
+        "IP-040",
+        "PR-018"
+      ],
+      "details": "docs/research/community-sources-v036.md",
+      "spec": "registry/community-sources-v036.json",
+      "verified": "Original behavior contract researched 2026-11-11; not coded, installed, browser-tested, security-reviewed, accessible-certified or production-integrated.",
+      "handoff": {
+        "entry": "docs/research/community-sources-v036.md",
+        "mode": "research-only",
+        "stack": "framework-neutral behavior research",
+        "instructions": "Read IP-052 from registry/community-sources-v036.json; review state flow, fallback, safety risks and 现有页面示例强调视觉结构；本项聚焦不强制登录时的恢复与访问控制; no implementation or deployment exists.",
+        "limitations": "Research design only: no working editor, Agent integration, persistent share service, automatic version pinning or installed code."
+      }
+    },
+    {
+      "id": "IP-053",
+      "type": "interaction",
+      "name": "Pinned provenance for reproducible remix / 锁版本作品复现清单",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "behavior-pattern",
+      "tags": [
+        "v036",
+        "asset-to-agent",
+        "original-research",
+        "no-page-assembly"
+      ],
+      "aliases": [
+        "作品复现",
+        "版本锁定",
+        "remix manifest",
+        "source pinning"
+      ],
+      "source": "https://ui.shadcn.com/docs/registry/github",
+      "license": "Original research notes only. Upstream authors retain source code, media and trademarks; no third-party assets copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "design-infrastructure",
+        "ai-coding"
+      ],
+      "dependencies": [
+        "REF-092",
+        "REF-091",
+        "REF-096",
+        "PR-018"
+      ],
+      "details": "docs/research/community-sources-v036.md",
+      "spec": "registry/community-sources-v036.json",
+      "verified": "Original behavior contract researched 2026-11-11; not coded, installed, browser-tested, security-reviewed, accessible-certified or production-integrated.",
+      "handoff": {
+        "entry": "docs/research/community-sources-v036.md",
+        "mode": "research-only",
+        "stack": "framework-neutral behavior research",
+        "instructions": "Read IP-053 from registry/community-sources-v036.json; review state flow, fallback, safety risks and PR-018 是已有风格布局交接；本项要求来源与依赖锁定、可导入快照的证据; no implementation or deployment exists.",
+        "limitations": "Research design only: no working editor, Agent integration, persistent share service, automatic version pinning or installed code."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",
   "styleRegistry": "registry/styles.json",
-  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee. V0.18 adds research-only visual studies outside registry/styles.json and component archetypes outside registry/components.json; IP-026/IP-028 only include headless pure models, not UI components. V0.30 adds 17 research-only external specialization references REF-042..058; these are not actual component exports or dependencies. V0.31 adds 15 original design studies REF-059..068 and IP-031..035 as analyzed/research-only; not deployed components, runtime dependencies, or new styles. V0.32: 18 original research contracts IP-036..041 / REF-069..080; four visual entries link separate opt-in CSS samples but are not certified UI implementations. V0.34 adds 16 task-first original research studies (REF-081..088 and IP-042..049), with 6 optional scoped CSS visual/layout atoms; IP research remains explicitly research-only. V0.35 adds eight original static dual-viewport SVG specimens attached to existing IDs only; registered asset count stays 255 and lifecycle stages remain analyzed.",
+  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee. V0.18 adds research-only visual studies outside registry/styles.json and component archetypes outside registry/components.json; IP-026/IP-028 only include headless pure models, not UI components. V0.30 adds 17 research-only external specialization references REF-042..058; these are not actual component exports or dependencies. V0.31 adds 15 original design studies REF-059..068 and IP-031..035 as analyzed/research-only; not deployed components, runtime dependencies, or new styles. V0.32: 18 original research contracts IP-036..041 / REF-069..080; four visual entries link separate opt-in CSS samples but are not certified UI implementations. V0.34 adds 16 task-first original research studies (REF-081..088 and IP-042..049), with 6 optional scoped CSS visual/layout atoms; IP research remains explicitly research-only. V0.35 adds eight original static dual-viewport SVG specimens attached to existing IDs only; registered asset count stays 255 and lifecycle stages remain analyzed. V0.36 adds 12 community/editor/agent upstream reference entries REF-089..100 and 4 independent source-governance behavior contracts IP-050..053. All are analyzed/research-only; neither an installable shadcn registry nor an existing editor integration.",
   "reusePolicyVersion": "1.0",
   "reusePolicies": {
     "style-token": {

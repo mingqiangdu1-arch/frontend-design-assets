@@ -15,7 +15,7 @@ test("V0.35 adds illustrations to exactly eight historical IDs, not new implemen
  assert.equal(specs.specimens.length,8);
  assert.equal(new Set(specs.specimens.map(x=>x.assetId)).size,8);
  assert.equal(specs.viewportsAreConceptsNotCaptures,true);
- assert.equal(registry.assets.length,255);
+ assert.equal(registry.assets.filter(asset=>asset.visualSpecimen && allowed.has(asset.id)).length,8);
  for(const sample of specs.specimens){
   assert.ok(allowed.has(sample.assetId),sample.assetId);
   const asset=assetById.get(sample.assetId);

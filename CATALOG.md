@@ -36,6 +36,7 @@
 | 文档协同、富文本块编辑、字形和纹理、光谱遮罩 / collaborative editor, font, texture, creative effects | `IP-036..041`、`REF-069..080`、`registry/creative-primitives-v032.json`、`docs/research/creative-primitives-v032.md` | 18 份研究合同：操作状态、字体/贴图授权与视觉降级；6 个原创、无依赖 CSS 小原子，非编辑器组件或完整页面 |
 | 双线叙事、页边注、空间构图、星图导航、环形操作、探索式交互 / editorial story, radial nav, spatial index | `REF-081..088`、`IP-042..049`、`registry/experience-artifacts-v034.json`、`docs/research/experience-artifacts-v034.md` | 16 份任务型原创研究素材；另有 6 个独立 CSS 布局/装饰原子，非可运行导航或整页实现 |
 | 视觉状态样张、桌面/移动构图对比、焦点高亮参考 / static state SVG, desktop mobile | `registry/state-specimens-v035.json`、`styles/specimens/v035/`、`docs/research/state-specimens-v035.md` | 8 份原创独立 SVG，按已有 V0.34 资产 ID 查找；是示意图，不是实际响应式截图或可操作导航 |
+| 组件社区/Block 来源、shadcn Registry、Agent 编辑与免登录复现 / community source, editor, MCP, remix | `REF-089..100`、`IP-050..053`、`registry/community-sources-v036.json`、`docs/research/community-sources-v036.md` | 12 个可信来源研究入口 + 4 个原创页面/Agent/游客协议研究；只标注素材价值、访问方式、许可边界与差异，不表示已采集第三方代码或建立网站 |
 | 去 AI 模板化、页面设计审查、unslop、hallmark | `docs/assembly/design-review-workflows.md`、`docs/research/unslop-hallmark.md` | 外部 Skill 为研究/可选工具，未作为本仓库依赖自动安装 |
 
 上表的 ID 是**检索起点**而非默认推荐；只有打开注册条目并核对情境与成熟度，才能决定是否采用。

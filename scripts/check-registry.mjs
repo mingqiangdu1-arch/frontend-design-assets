@@ -100,6 +100,48 @@ for (const item of specializedPatterns.entries) {
 }
 console.log("Validated specialized catalogs: "+sourceIds.size+" upstream references, "+patternIds.size+" original research contracts.");
 
+// V0.36: source watchlist and behavior contracts are reference-only, not runnable assets.
+const community = readJson("registry/community-sources-v036.json");
+if (community.schemaVersion !== "1.0" || community.status !== "research-only" ||
+    !Array.isArray(community.sources) || community.sources.length !== 12 ||
+    !Array.isArray(community.patterns) || community.patterns.length !== 4) fail("Invalid V0.36 source watchlist");
+const communityIds = new Set();
+for (const entry of [...community.sources, ...community.patterns]) {
+  if (communityIds.has(entry.id)) fail("Duplicate V0.36 ID: "+entry.id);
+  communityIds.add(entry.id);
+  const asset=assetById.get(entry.id);
+  const pattern=community.patterns.includes(entry);
+  if (!asset || asset.type !== (pattern?"interaction":"reference") ||
+      asset.reuseKind !== (pattern?"behavior-pattern":"design-reference") ||
+      asset.source !== entry.source || asset.stage !== "analyzed" ||
+      asset.handoff?.mode !== "research-only" ||
+      asset.spec !== "registry/community-sources-v036.json" ||
+      entry.adoption !== "research-only" || !entry.source.startsWith("https://") ||
+      !Array.isArray(entry.relatedAssets) || !entry.relatedAssets.length ||
+      entry.relatedAssets.some(id=>!assetIds.has(id))) fail("V0.36 mismatched/unverified entry: "+entry.id);
+  if (!pattern && (entry.redistributableCodeVerified !== false ||
+      entry.previewMediaRightsVerified !== false || !entry.licenseScope ||
+      !entry.rightsBoundary || !entry.distinctFrom || !entry.collectionMethod ||
+      !Array.isArray(entry.sampleDirections) || !entry.sampleDirections.length)) {
+    fail("V0.36 source rights or provenance incomplete: "+entry.id);
+  }
+  if (pattern && (!entry.designContract || !entry.stateContract || !entry.accessibleFallback || !entry.failureModes || !entry.distinctFrom || entry.implementation !== "research-brief-only")) {
+    fail("V0.36 pattern lacks state/fallback/safety: "+entry.id);
+  }
+}
+if (!Array.isArray(community.curatedCases) || community.curatedCases.length !== 7) fail("Missing V0.36 concrete case studies");
+const caseKeys = new Set();
+for (const sample of community.curatedCases) {
+  if (caseKeys.has(sample.key) || !communityIds.has(sample.sourceId) ||
+      !sample.evidenceUrl?.startsWith("https://") || !sample.visibleEvidence ||
+      !sample.study || !sample.rights || !sample.reviewState ||
+      !Array.isArray(sample.distinctFrom) ||
+      sample.distinctFrom.some(id=>!assetIds.has(id))) fail("Unverifiable V0.36 sample "+sample.key);
+  caseKeys.add(sample.key);
+}
+assertFile("docs/research/community-sources-v036.md","V0.36 research report");
+console.log("Validated V0.36: 12 upstream source dossiers + 4 original research patterns, no promoted components.");
+
 // V0.32 must remain a source-linked research catalog, not installed external media/components.
 const creativePrimitives = readJson("registry/creative-primitives-v032.json");
 if (creativePrimitives.schemaVersion !== "1.0" || !Array.isArray(creativePrimitives.entries) ||

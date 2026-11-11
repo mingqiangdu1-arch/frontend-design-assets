@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-11 · V0.36 community source watchlist and Agent-ready research contracts
+
+- Added **12 research-only upstream source dossiers** (REF-089..100), covering 21st.dev marketplace and Agent Elements, shadcn Registry/Blocks, Puck, GrapesJS WebMCP, Onlook, Webstudio, Plasmic, Craft.js and Swebsy. Each records permitted collection scope, item-level license uncertainty, no-code-import policy, concrete topics and overlap with existing assets.
+- Added **4 original research-only contracts** (IP-050..053): registry-to-editable-block mapping, permission-gated Agent canvas commands, guest-first recoverable drafts and pinned provenance for remix. No editable page builder, hosted integration or runtime asset is supplied.
+- [Machine index](registry/community-sources-v036.json) · [research notes](docs/research/community-sources-v036.md). Connected `registry/assets.json`, `CATALOG.md`, `registry/README.md` and registry validation/tests; stable asset count **255 → 271**.
+- No third-party component code, media, fonts, screenshots, installable npm dependencies, automatic scraping, site builder or product deployment added. Published core-license evidence does not license community works or plugin services.
+
+
 ## 2026-11-10 · V0.35 standalone dual-viewport visual state specimens
 
 - Added **eight original standalone SVG visual/state illustrations** keyed to existing V0.34 assets `REF-081`, `REF-082`, `REF-085`, `IP-042`, `IP-043`, `IP-044`, `IP-046`, `IP-047`. Each illustrates desktop and mobile **conceptual** layouts plus a representative selection/focus/return state without assembling a page or application.
