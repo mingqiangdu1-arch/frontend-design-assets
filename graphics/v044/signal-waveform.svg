@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="t d">
+<title id="t">Signal Waveform — original telemetry visualization illustration</title>
+<desc id="d">A neon oscilloscope-style waveform with a highlighted pulse event on a cyan gridded technical panel; illustration, not live data.</desc>
+<defs><pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#436878" stroke-width=".8"/></pattern><linearGradient id="line"><stop stop-color="#59e3c0"/><stop offset=".55" stop-color="#e0e985"/><stop offset="1" stop-color="#79b5f0"/></linearGradient></defs>
+<rect width="640" height="360" fill="#0c2431"/><rect x="26" y="25" width="588" height="310" rx="12" fill="#0e2d3a" stroke="#548e91" stroke-width="2"/>
+<rect x="43" y="42" width="554" height="276" fill="url(#grid)"/>
+<g stroke="#659ea2" stroke-width="1" stroke-opacity=".5"><path d="M43 180H597"/><path d="M320 42V318"/></g>
+<path d="M43 190H89L104 179 119 202 140 177 156 188 180 185 200 189 213 104 235 256 252 71 270 219 285 181H334L353 153 375 205 400 180 425 185 455 140 479 230 498 185H542L561 168 579 181H597" fill="none" stroke="url(#line)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="252" cy="71" r="9" fill="#f2e688" stroke="#fff6c3" stroke-width="3"/>
+<path d="M252 50V42 M267 71H294" stroke="#e3e999" stroke-width="2" stroke-dasharray="3 4"/>
+<g fill="#91d4cf"><circle cx="66" cy="63" r="3"/><circle cx="576" cy="295" r="3"/></g>
+</svg>

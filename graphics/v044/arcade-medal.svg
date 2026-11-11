@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="t d">
+<title id="t">Arcade Medal — original pixel geometry illustration</title>
+<desc id="d">A chunky retro game medal in gold, lavender and deep purple with a faceted star emblem and ribbon tails.</desc>
+<rect width="640" height="360" fill="#ede5fa"/>
+<g transform="translate(320 180)">
+<path d="M-90 39-139 151-74 126-34 174 6 76Z" fill="#7554ac" stroke="#392856" stroke-width="6"/>
+<path d="M90 39 139 151 74 126 34 174 -6 76Z" fill="#aa7ed1" stroke="#392856" stroke-width="6"/>
+<path d="M-88 -112H88V-91H108V-71H128V71H108V91H88V112H-88V91H-108V71H-128V-71H-108V-91H-88Z" fill="#f4bf64" stroke="#3a2c55" stroke-width="8"/>
+<path d="M-80 -80H80V-59H98V59H80V80H-80V59H-98V-59H-80Z" fill="#eaa751" stroke="#f9dd9b" stroke-width="7"/>
+<path d="M0 -62 18 -18 67 -18 30 12 44 62 0 34 -44 62 -30 12 -67 -18 -18 -18Z" fill="#46335f" stroke="#b999ed" stroke-width="5"/>
+<path d="M0 -42 10 -13 41 -13 19 7 28 38 0 19 -28 38 -19 7 -41 -13 -10 -13Z" fill="#e8cc7f"/>
+</g>
+<g fill="#9675bc"><rect x="94" y="70" width="11" height="11"/><rect x="546" y="258" width="13" height="13"/><rect x="145" y="280" width="8" height="8"/></g>
+</svg>

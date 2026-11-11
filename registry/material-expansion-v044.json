@@ -1,0 +1,501 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.44.0",
+  "date": "2026-11-11",
+  "focus": "MATERIAL-ONLY: 12 ORIGINAL standalone CSS controls/navigation/HUD atoms, six ORIGINAL standalone SVG illustrations; no external code, new site app, installer or test suite.",
+  "previousAssetCount": 337,
+  "expectedAssetCount": 355,
+  "newAssetCount": 18,
+  "addedReactExports": 0,
+  "addedThemeCount": 0,
+  "addedTestSuites": 0,
+  "thirdPartyCodeCopied": false,
+  "sourceFiles": [
+    "registry/material-expansion-v044.json",
+    "docs/research/material-expansion-v044.md",
+    "styles/primitives/v044/interface-atoms.css",
+    "styles/primitives/v044/README.md",
+    "playground/interface-atoms-v044/index.html",
+    "graphics/v044/README.md",
+    "playground/vector-studies-v044/index.html",
+    "graphics/v044/radar-scope.svg",
+    "graphics/v044/circuit-traces.svg",
+    "graphics/v044/arcade-medal.svg",
+    "graphics/v044/signal-waveform.svg",
+    "graphics/v044/compass-rose.svg",
+    "graphics/v044/isometric-cluster.svg"
+  ],
+  "cssAtoms": [
+    {
+      "id": "FX-015",
+      "name": "Angular cut-corner action / 斜切行动按钮",
+      "className": "fx44-cut-button",
+      "styleIds": [
+        "signal-noir",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "developer-tool"
+      ],
+      "aliases": [
+        "cut corner CTA",
+        "斜切按钮",
+        "战术按钮"
+      ],
+      "description": "原生按钮/链接承载科幻斜切动作外观",
+      "source": "styles/primitives/v044/interface-atoms.css",
+      "readme": "styles/primitives/v044/README.md",
+      "demo": "playground/interface-atoms-v044/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-016",
+      "name": "Native segmented radio picker / 原生分段单选器",
+      "className": "fx44-segmented",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "productivity",
+        "creative-tool"
+      ],
+      "aliases": [
+        "segmented radio",
+        "分段选项",
+        "单选器"
+      ],
+      "description": "真实 fieldset/radio 组合，不需要应用状态脚本",
+      "source": "styles/primitives/v044/interface-atoms.css",
+      "readme": "styles/primitives/v044/README.md",
+      "demo": "playground/interface-atoms-v044/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-017",
+      "name": "Compass directional anchor navigation / 方向罗盘导航",
+      "className": "fx44-compass-nav",
+      "styleIds": [
+        "aether-orbit",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "portfolio",
+        "creative-site"
+      ],
+      "aliases": [
+        "compass navigation",
+        "罗盘菜单",
+        "方向导航"
+      ],
+      "description": "四向锚点导航、可聚焦真实链接",
+      "source": "styles/primitives/v044/interface-atoms.css",
+      "readme": "styles/primitives/v044/README.md",
+      "demo": "playground/interface-atoms-v044/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-018",
+      "name": "Ordered visual step rail / 有序步骤轨道",
+      "className": "fx44-progress-rail",
+      "styleIds": [
+        "refined-light-saas",
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "form",
+        "onboarding"
+      ],
+      "aliases": [
+        "progress stepper",
+        "步骤导航",
+        "step rail"
+      ],
+      "description": "有序步骤、当前步骤和已完成标记",
+      "source": "styles/primitives/v044/interface-atoms.css",
+      "readme": "styles/primitives/v044/README.md",
+      "demo": "playground/interface-atoms-v044/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-019",
+      "name": "Telemetry status card / 遥测指标卡",
+      "className": "fx44-telemetry",
+      "styleIds": [
+        "precision-dark",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "analytics",
+        "developer-tool"
+      ],
+      "aliases": [
+        "telemetry",
+        "指标卡",
+        "tech dashboard"
+      ],
+      "description": "原生 output 的技术指标展示框架，实际数值由宿主提供",
+      "source": "styles/primitives/v044/interface-atoms.css",
+      "readme": "styles/primitives/v044/README.md",
+      "demo": "playground/interface-atoms-v044/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-020",
+      "name": "Static HUD reticle / 静态瞄准环",
+      "className": "fx44-reticle",
+      "styleIds": [
+        "pixel-arcade",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "simulation"
+      ],
+      "aliases": [
+        "HUD reticle",
+        "准星",
+        "仪表环"
+      ],
+      "description": "静态 CSS 准星装饰素材，非真实监测系统",
+      "source": "styles/primitives/v044/interface-atoms.css",
+      "readme": "styles/primitives/v044/README.md",
+      "demo": "playground/interface-atoms-v044/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-021",
+      "name": "Native disclosure shell / 原生折叠面板",
+      "className": "fx44-disclosure",
+      "styleIds": [
+        "editorial-warm",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "knowledge-base",
+        "productivity"
+      ],
+      "aliases": [
+        "disclosure",
+        "details summary",
+        "原生手风琴"
+      ],
+      "description": "details/summary 原生展开收起与焦点支持",
+      "source": "styles/primitives/v044/interface-atoms.css",
+      "readme": "styles/primitives/v044/README.md",
+      "demo": "playground/interface-atoms-v044/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-022",
+      "name": "Chronological event timeline / 时间事件节点轨道",
+      "className": "fx44-event-timeline",
+      "styleIds": [
+        "type-led-minimal",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "changelog",
+        "research"
+      ],
+      "aliases": [
+        "event timeline",
+        "时间线",
+        "milestone"
+      ],
+      "description": "基于 ol/time 的可访问时间线框架",
+      "source": "styles/primitives/v044/interface-atoms.css",
+      "readme": "styles/primitives/v044/README.md",
+      "demo": "playground/interface-atoms-v044/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-023",
+      "name": "Native filter toggle chips / 原生筛选标签",
+      "className": "fx44-filter-chip",
+      "styleIds": [
+        "playful-pop",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "commerce",
+        "catalog"
+      ],
+      "aliases": [
+        "filter chip",
+        "复选标签",
+        "多选分类"
+      ],
+      "description": "原生 checkbox 可切换的胶囊筛选外观，无自动业务过滤",
+      "source": "styles/primitives/v044/interface-atoms.css",
+      "readme": "styles/primitives/v044/README.md",
+      "demo": "playground/interface-atoms-v044/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-024",
+      "name": "Semantic terminal viewport / 终端输出面板",
+      "className": "fx44-terminal",
+      "styleIds": [
+        "precision-dark",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "developer-tool",
+        "ai-app"
+      ],
+      "aliases": [
+        "terminal UI",
+        "log view",
+        "终端卡"
+      ],
+      "description": "只读代码/日志外观，搭配真实 pre/code，不执行内容",
+      "source": "styles/primitives/v044/interface-atoms.css",
+      "readme": "styles/primitives/v044/README.md",
+      "demo": "playground/interface-atoms-v044/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-025",
+      "name": "Native level meter HUD / 原生等级仪表",
+      "className": "fx44-level-meter",
+      "styleIds": [
+        "pixel-arcade",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "analytics"
+      ],
+      "aliases": [
+        "meter",
+        "energy level",
+        "游戏能量槽"
+      ],
+      "description": "真实 meter 承载语义数值，五格仅为装饰",
+      "source": "styles/primitives/v044/interface-atoms.css",
+      "readme": "styles/primitives/v044/README.md",
+      "demo": "playground/interface-atoms-v044/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-026",
+      "name": "Pixel arcade badge / 像素游戏徽章",
+      "className": "fx44-pixel-badge",
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "event"
+      ],
+      "aliases": [
+        "pixel badge",
+        "像素徽章",
+        "游戏等级"
+      ],
+      "description": "低分辨率像素边角徽章，语义仍是可选取文字",
+      "source": "styles/primitives/v044/interface-atoms.css",
+      "readme": "styles/primitives/v044/README.md",
+      "demo": "playground/interface-atoms-v044/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "notReactExport": true
+    }
+  ],
+  "vectorGraphics": [
+    {
+      "id": "VG-007",
+      "name": "Radar Scope / 雷达扫描盘",
+      "file": "radar-scope.svg",
+      "styleIds": [
+        "signal-noir",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "simulation",
+        "game-companion"
+      ],
+      "aliases": [
+        "radar",
+        "雷达盘",
+        "scan scope"
+      ],
+      "description": "静态扫描扇区、同心雷达圈与信号点",
+      "source": "graphics/v044/radar-scope.svg",
+      "readme": "graphics/v044/README.md",
+      "demo": "playground/vector-studies-v044/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "format": "SVG",
+      "notReactExport": true
+    },
+    {
+      "id": "VG-008",
+      "name": "Circuit Traces / 电路走线图",
+      "file": "circuit-traces.svg",
+      "styleIds": [
+        "precision-dark",
+        "aether-orbit"
+      ],
+      "applicationContexts": [
+        "hardware",
+        "developer-tool"
+      ],
+      "aliases": [
+        "circuit art",
+        "PCB",
+        "电路图"
+      ],
+      "description": "电路板布线、中央处理器与连接点",
+      "source": "graphics/v044/circuit-traces.svg",
+      "readme": "graphics/v044/README.md",
+      "demo": "playground/vector-studies-v044/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "format": "SVG",
+      "notReactExport": true
+    },
+    {
+      "id": "VG-009",
+      "name": "Arcade Medal / 像素奖章",
+      "file": "arcade-medal.svg",
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "gamification"
+      ],
+      "aliases": [
+        "arcade medal",
+        "pixel trophy",
+        "像素勋章"
+      ],
+      "description": "像素风金色成就奖牌与彩色飘带",
+      "source": "graphics/v044/arcade-medal.svg",
+      "readme": "graphics/v044/README.md",
+      "demo": "playground/vector-studies-v044/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "format": "SVG",
+      "notReactExport": true
+    },
+    {
+      "id": "VG-010",
+      "name": "Signal Waveform / 合成波形",
+      "file": "signal-waveform.svg",
+      "styleIds": [
+        "signal-noir",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "analytics",
+        "tech-brand"
+      ],
+      "aliases": [
+        "waveform",
+        "oscilloscope",
+        "信号波形"
+      ],
+      "description": "合成示意图中的 oscilloscope 波形和峰值标记",
+      "source": "graphics/v044/signal-waveform.svg",
+      "readme": "graphics/v044/README.md",
+      "demo": "playground/vector-studies-v044/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "format": "SVG",
+      "notReactExport": true
+    },
+    {
+      "id": "VG-011",
+      "name": "Compass Rose / 罗盘玫瑰",
+      "file": "compass-rose.svg",
+      "styleIds": [
+        "editorial-warm",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "maps",
+        "storytelling"
+      ],
+      "aliases": [
+        "compass rose",
+        "八向罗盘",
+        "导航纹章"
+      ],
+      "description": "黄铜色八向罗盘图腾",
+      "source": "graphics/v044/compass-rose.svg",
+      "readme": "graphics/v044/README.md",
+      "demo": "playground/vector-studies-v044/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "format": "SVG",
+      "notReactExport": true
+    },
+    {
+      "id": "VG-012",
+      "name": "Isometric Cluster / 等轴方块簇",
+      "file": "isometric-cluster.svg",
+      "styleIds": [
+        "shape-expressive",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "creative-tool",
+        "education"
+      ],
+      "aliases": [
+        "isometric cubes",
+        "等轴方块",
+        "模块立方"
+      ],
+      "description": "四个彩色立体模块的矢量组合",
+      "source": "graphics/v044/isometric-cluster.svg",
+      "readme": "graphics/v044/README.md",
+      "demo": "playground/vector-studies-v044/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "format": "SVG",
+      "notReactExport": true
+    }
+  ],
+  "copyPolicy": "Native source is available as individual classes / files. Production browser/a11y/security testing belongs to target project."
+}

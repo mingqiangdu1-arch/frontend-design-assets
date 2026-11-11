@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="t d">
+<title id="t">Isometric Cluster — original modular cube stack</title>
+<desc id="d">A geometric assembly of four isometric cube blocks on a sand-colored drafting surface, in teal, coral and mustard hues.</desc>
+<rect width="640" height="360" fill="#f4ebda"/>
+<g stroke="#2e4d52" stroke-width="2" stroke-linejoin="round">
+<g transform="translate(320 135)"><path d="M0 -66 59 -33 0 0 -59 -33Z" fill="#a3d4ba"/><path d="M-59 -33 0 0V67L-59 34Z" fill="#4a938a"/><path d="M59 -33 0 0V67L59 34Z" fill="#2d7777"/></g>
+<g transform="translate(200 202)"><path d="M0 -66 59 -33 0 0 -59 -33Z" fill="#f5bc8e"/><path d="M-59 -33 0 0V67L-59 34Z" fill="#d47871"/><path d="M59 -33 0 0V67L59 34Z" fill="#ae5862"/></g>
+<g transform="translate(440 202)"><path d="M0 -66 59 -33 0 0 -59 -33Z" fill="#ecdb86"/><path d="M-59 -33 0 0V67L-59 34Z" fill="#c5af60"/><path d="M59 -33 0 0V67L59 34Z" fill="#8f8952"/></g>
+<g transform="translate(320 269)"><path d="M0 -66 59 -33 0 0 -59 -33Z" fill="#a2bfd3"/><path d="M-59 -33 0 0V67L-59 34Z" fill="#688fab"/><path d="M59 -33 0 0V67L59 34Z" fill="#476c88"/></g>
+</g>
+<g stroke="#81999b" stroke-width="1" fill="none" stroke-dasharray="4 6"><path d="M74 310H566M320 18V344M98 45H542"/></g>
+</svg>

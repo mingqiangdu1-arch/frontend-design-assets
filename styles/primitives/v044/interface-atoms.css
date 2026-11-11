@@ -1,0 +1,183 @@
+/* V0.44 · 12 ORIGINAL independent CSS interface atoms (FX-015..026).
+ * Source-level materials only: opt into one .fx44-* class and its descendants.
+ * No global variables, JS dependencies, external fonts/icons, downloaded media or runtime framework.
+ * Preserve reduced-motion, forced-colors and keyboard-focus fallbacks when extracting.
+ */
+
+/* FX-015: angular CTA. Real <button> or <a>, not a fake clickable div. */
+.fx44-cut-button{
+  display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
+  min-height:2.75rem;padding:.65rem 1.3rem;border:1px solid var(--fx44-cut-edge,#7dcbb2);
+  clip-path:polygon(0 0,calc(100% - 15px) 0,100% 15px,100% 100%,15px 100%,0 calc(100% - 15px));
+  background:var(--fx44-cut-bg,#154c48);color:var(--fx44-cut-ink,#eefcf2);
+  font:800 .81rem/1.2 ui-monospace,Consolas,monospace;letter-spacing:.06em;text-decoration:none;
+  cursor:pointer;transition:background-color .18s ease,transform .18s ease;
+}
+.fx44-cut-button:hover:not(:disabled){background:var(--fx44-cut-hover,#226e64);transform:translateY(-1px)}
+.fx44-cut-button:focus-visible{outline:3px solid #124d86;outline-offset:4px;clip-path:none}
+.fx44-cut-button:disabled{opacity:.46;cursor:not-allowed}
+
+/* FX-016: functional native-radio segmented control with correct keyboard semantics. */
+.fx44-segmented{
+  display:inline-flex;flex-wrap:wrap;gap:.28rem;max-width:100%;margin:0;padding:.3rem;border:1px solid #c6d3d0;
+  border-radius:.7rem;background:var(--fx44-segment-bg,#e8eeec);
+}
+.fx44-segmented > legend{font:700 .78rem/1.3 system-ui,sans-serif;color:#395651;padding:0 .45rem .32rem}
+.fx44-segmented label{position:relative;display:inline-flex;cursor:pointer}
+.fx44-segmented input{
+  position:absolute;opacity:0;width:1px;height:1px;margin:0;top:50%;left:50%;
+}
+.fx44-segmented label > span{
+  display:block;min-width:3.3rem;padding:.55rem .8rem;border:1px solid transparent;border-radius:.44rem;
+  color:var(--fx44-segment-ink,#3c5654);text-align:center;font:700 .8rem/1.2 system-ui,sans-serif;
+  transition:background-color .16s ease,color .16s ease;
+}
+.fx44-segmented input:checked + span{background:var(--fx44-segment-selected,#284d50);color:#fff;box-shadow:0 2px 5px rgb(25 45 41 / 15%)}
+.fx44-segmented input:focus-visible + span{outline:3px solid #1785a5;outline-offset:2px}
+.fx44-segmented input:disabled + span{opacity:.5;cursor:not-allowed}
+
+/* FX-017: directional compass NAV with actual link destinations. */
+.fx44-compass-nav{
+  width:min(100%,19rem);aspect-ratio:1.45;display:grid;grid-template-columns:1fr 1.35fr 1fr;
+  grid-template-rows:1fr 1.3fr 1fr;align-items:center;justify-items:center;gap:.45rem;
+  padding:.8rem;border:1px solid var(--fx44-compass-line,#8caca8);
+  border-radius:1.2rem;background:var(--fx44-compass-bg,#142f35);
+  color:var(--fx44-compass-ink,#e6faf2);
+}
+.fx44-compass-nav::before{
+  content:"NAV";grid-column:2;grid-row:2;display:grid;place-items:center;width:3.8rem;height:3.8rem;
+  border:1px dashed #8bd4be;border-radius:50%;font:800 .8rem ui-monospace,monospace;color:#a7e9d9;
+}
+.fx44-compass-nav a{
+  display:inline-flex;align-items:center;justify-content:center;padding:.25rem .4rem;min-width:2.4rem;
+  min-height:2.4rem;border-radius:.5rem;color:inherit;text-decoration:none;font:750 .74rem/1.1 ui-monospace,monospace;
+}
+.fx44-compass-nav a[data-dir="north"]{grid-column:2;grid-row:1}
+.fx44-compass-nav a[data-dir="south"]{grid-column:2;grid-row:3}
+.fx44-compass-nav a[data-dir="west"]{grid-column:1;grid-row:2}
+.fx44-compass-nav a[data-dir="east"]{grid-column:3;grid-row:2}
+.fx44-compass-nav a:hover,.fx44-compass-nav a:focus-visible{background:#347b76;color:white}
+.fx44-compass-nav a:focus-visible{outline:3px solid #d3eaa3;outline-offset:2px}
+
+/* FX-018: ordered progress steps; state is data-state and aria-current=step, host owns updates. */
+.fx44-progress-rail{list-style:none;display:flex;gap:0;margin:0;padding:0;min-width:0;color:var(--fx44-step-ink,#27404b)}
+.fx44-progress-rail > li{position:relative;display:grid;align-content:start;justify-items:center;text-align:center;gap:.45rem;
+  flex:1;min-width:0;padding:0 .2rem;font:700 .7rem/1.35 system-ui,sans-serif}
+.fx44-progress-rail > li::before{content:attr(data-step);display:grid;place-items:center;
+  width:2rem;height:2rem;border:2px solid #b0c5c2;border-radius:50%;background:#ecf1ed;
+  color:#56716e;font:800 .85rem/1 ui-monospace,monospace;z-index:1}
+.fx44-progress-rail > li:not(:last-child)::after{content:"";position:absolute;top:.96rem;left:calc(50% + 1.05rem);
+  width:calc(100% - 2.1rem);border-top:2px solid #baccc6}
+.fx44-progress-rail > li[data-state="done"]::before{content:"✓";background:#2a8070;border-color:#2a8070;color:white}
+.fx44-progress-rail > li[aria-current="step"]::before{background:#183e42;border-color:#183e42;color:#e2fff3}
+.fx44-progress-rail > li[data-state="done"]::after{border-color:#438d7e}
+
+/* FX-019: telemetry card, real text+output, CSS adds only visual frame. */
+.fx44-telemetry{
+  position:relative;overflow:hidden;padding:1.2rem;border:1px solid var(--fx44-telemetry-edge,#437478);
+  border-radius:.6rem;background:var(--fx44-telemetry-bg,#101f2a);color:var(--fx44-telemetry-ink,#dcf7ef);
+  box-shadow:inset 0 0 0 3px rgb(134 234 219 / 4%);
+}
+.fx44-telemetry::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:repeating-linear-gradient(0deg,transparent 0 19px,rgb(152 218 213 / 5%) 20px 21px)}
+.fx44-telemetry small{display:block;color:#94cfc4;letter-spacing:.16em;font:700 .67rem/1.4 ui-monospace,monospace}
+.fx44-telemetry output{display:block;margin:.2rem 0;font:800 clamp(1.6rem,4vw,2.8rem)/1.15 ui-monospace,monospace;letter-spacing:-.05em}
+.fx44-telemetry .fx44-telemetry-track{height:.46rem;max-width:100%;overflow:hidden;border:1px solid #527875;background:#263942;border-radius:1rem}
+.fx44-telemetry .fx44-telemetry-track > span{display:block;width:var(--fx44-telemetry-fill,64%);height:100%;background:#83d7b8}
+
+/* FX-020: CSS-only static HUD reticle; decorative: needs separate accessible description. */
+.fx44-reticle{
+  position:relative;display:grid;place-items:center;width:min(100%,11rem);aspect-ratio:1;
+  border:1px solid var(--fx44-reticle-line,#459d89);border-radius:50%;background:
+    linear-gradient(90deg,transparent calc(50% - .5px),rgb(125 209 191 / 45%) 50%,transparent calc(50% + .5px)),
+    linear-gradient(transparent calc(50% - .5px),rgb(125 209 191 / 45%) 50%,transparent calc(50% + .5px)),
+    var(--fx44-reticle-bg,#122c30);color:var(--fx44-reticle-ink,#c8f7e7);
+}
+.fx44-reticle::before{content:"";position:absolute;inset:15%;border:2px dashed currentColor;border-radius:50%;opacity:.65}
+.fx44-reticle::after{content:"";position:absolute;inset:35%;border:2px solid currentColor;border-radius:50%;opacity:.75}
+.fx44-reticle > span{position:relative;z-index:1;padding:.15rem;background:#122c30;font:800 .68rem/1 ui-monospace,monospace}
+
+/* FX-021: native HTML details disclosure, no faux chevron or JS. */
+.fx44-disclosure{
+  overflow:hidden;border:1px solid var(--fx44-disclose-line,#b8c8c3);
+  border-radius:.75rem;background:var(--fx44-disclose-bg,#f9fcf7);color:var(--fx44-disclose-ink,#273b38)
+}
+.fx44-disclosure > summary{position:relative;cursor:pointer;padding:1rem 2.8rem 1rem 1rem;list-style:none;font:750 .94rem/1.4 system-ui,sans-serif}
+.fx44-disclosure > summary::-webkit-details-marker{display:none}
+.fx44-disclosure > summary::after{content:"+";position:absolute;right:1rem;top:.75rem;font:800 1.3rem/1.3 ui-monospace,monospace}
+.fx44-disclosure[open] > summary::after{content:"−"}
+.fx44-disclosure[open] > summary{border-bottom:1px solid var(--fx44-disclose-line,#b8c8c3)}
+.fx44-disclosure > :not(summary){margin:0;padding:1rem;color:#4d655e}
+.fx44-disclosure > summary:focus-visible{outline:3px solid #1e7f9c;outline-offset:-4px}
+
+/* FX-022: chronological event timeline, naturally ordered list. */
+.fx44-event-timeline{list-style:none;position:relative;margin:0;padding:0 0 0 1.5rem;
+  border-left:2px solid var(--fx44-timeline-rail,#80aaa7);color:var(--fx44-timeline-ink,#24404b)}
+.fx44-event-timeline > li{position:relative;padding:0 0 1.2rem 1rem;min-height:3.2rem}
+.fx44-event-timeline > li:last-child{padding-bottom:0}
+.fx44-event-timeline > li::before{content:"";position:absolute;left:-1.94rem;top:.35rem;
+  width:.72rem;height:.72rem;border:2px solid #5c9893;border-radius:50%;background:#f5f9f4}
+.fx44-event-timeline > li[data-state="current"]::before{background:#247f75;box-shadow:0 0 0 3px #d0e8e1}
+.fx44-event-timeline time{display:block;color:#627a80;font:750 .68rem/1.3 ui-monospace,monospace}
+.fx44-event-timeline strong{font-size:.9rem}.fx44-event-timeline p{margin:.2rem 0 0;font-size:.78rem;line-height:1.5;color:#536971}
+
+/* FX-023: togglable filter chips using native checkbox; no hidden state mutation. */
+.fx44-filter-chip{display:inline-flex;align-items:center;cursor:pointer;position:relative}
+.fx44-filter-chip > input{position:absolute;width:1px;height:1px;opacity:0;top:50%;left:50%}
+.fx44-filter-chip > span{display:inline-flex;align-items:center;gap:.4rem;padding:.55rem .9rem;
+  min-height:2.5rem;border:1px solid var(--fx44-chip-line,#a9bfba);border-radius:100px;
+  color:var(--fx44-chip-ink,#335752);background:var(--fx44-chip-bg,#f7faf8);
+  font:700 .78rem/1.2 system-ui,sans-serif;transition:background-color .15s ease}
+.fx44-filter-chip > span::before{content:"+";font:850 .95rem/1 ui-monospace,monospace}
+.fx44-filter-chip > input:checked + span{background:#235f57;color:#fff;border-color:#235f57}
+.fx44-filter-chip > input:checked + span::before{content:"✓"}
+.fx44-filter-chip > input:focus-visible + span{outline:3px solid #1989ae;outline-offset:3px}
+.fx44-filter-chip > input:disabled + span{opacity:.5;cursor:not-allowed}
+
+/* FX-024: terminal data pane with semantic pre/code and CSS shell only. */
+.fx44-terminal{overflow:hidden;max-width:100%;border-radius:.8rem;background:#17202b;border:1px solid #53667b;color:#cfedde}
+.fx44-terminal > header{display:flex;align-items:center;gap:.5rem;padding:.7rem 1rem;border-bottom:1px solid #3c4b57;
+  background:#23313e;color:#a9c5ce;font:750 .72rem/1.2 ui-monospace,monospace}
+.fx44-terminal > header::before{content:"";width:.55rem;height:.55rem;border-radius:50%;background:#89cc9b;box-shadow:1rem 0 #f1ca74,2rem 0 #de8a83;margin-right:2rem}
+.fx44-terminal pre{margin:0;padding:1rem;max-width:100%;overflow-x:auto;white-space:pre-wrap;overflow-wrap:anywhere;
+  font:500 .8rem/1.6 ui-monospace,Consolas,monospace}
+.fx44-terminal code{color:inherit}
+
+/* FX-025: native <meter> HUD — visible real value; marks are purely decorative. */
+.fx44-level-meter{display:grid;gap:.55rem;min-width:0;padding:1rem;border:1px solid #426868;
+  border-radius:.65rem;background:#173333;color:#e0fff3;font:750 .76rem/1.2 ui-monospace,monospace}
+.fx44-level-meter > label{display:flex;justify-content:space-between;gap:1rem;letter-spacing:.09em}
+.fx44-level-meter meter{width:100%;height:1.2rem;accent-color:#80c9a7}
+.fx44-level-meter .fx44-meter-segments{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.4rem}
+.fx44-level-meter .fx44-meter-segments > i{display:block;height:.35rem;background:#315550;transform:skewX(-15deg)}
+.fx44-level-meter[data-level="1"] .fx44-meter-segments > i:nth-child(-n+1),
+.fx44-level-meter[data-level="2"] .fx44-meter-segments > i:nth-child(-n+2),
+.fx44-level-meter[data-level="3"] .fx44-meter-segments > i:nth-child(-n+3),
+.fx44-level-meter[data-level="4"] .fx44-meter-segments > i:nth-child(-n+4),
+.fx44-level-meter[data-level="5"] .fx44-meter-segments > i:nth-child(-n+5){background:#8cd7ad}
+
+/* FX-026: arcade pixel badge; static ornamental label, never semantic status by color alone. */
+.fx44-pixel-badge{
+  display:inline-flex;align-items:center;justify-content:center;position:relative;
+  padding:.5rem .8rem;min-height:2.5rem;border:3px solid var(--fx44-pixel-border,#302c58);
+  border-radius:0;background:var(--fx44-pixel-bg,#f1d98c);color:var(--fx44-pixel-ink,#28213e);
+  box-shadow:4px 4px 0 var(--fx44-pixel-shadow,#7357a8);
+  font:900 .77rem/1 ui-monospace,Consolas,monospace;letter-spacing:.1em;text-transform:uppercase;
+}
+.fx44-pixel-badge::before,.fx44-pixel-badge::after{content:"";position:absolute;width:5px;height:5px;background:var(--fx44-pixel-border,#302c58)}
+.fx44-pixel-badge::before{top:-8px;left:12px}.fx44-pixel-badge::after{bottom:-8px;right:12px}
+
+@media (prefers-reduced-motion: reduce) {
+  .fx44-cut-button,.fx44-segmented label > span,.fx44-filter-chip > span{transition:none}
+}
+@media (forced-colors: active) {
+  .fx44-cut-button,.fx44-compass-nav,.fx44-telemetry,.fx44-reticle,.fx44-disclosure,
+  .fx44-terminal,.fx44-level-meter,.fx44-pixel-badge{background:Canvas;color:CanvasText;border:1px solid CanvasText;box-shadow:none}
+  .fx44-cut-button{clip-path:none}
+  .fx44-segmented > label > span,.fx44-filter-chip > span{border:1px solid CanvasText;background:Canvas;color:CanvasText}
+  .fx44-segmented input:checked+span,.fx44-filter-chip input:checked+span{outline:2px solid Highlight;outline-offset:-3px;background:Canvas;color:CanvasText}
+  .fx44-reticle::before,.fx44-reticle::after,.fx44-telemetry::before{display:none}
+  .fx44-terminal > header{background:Canvas;color:CanvasText}
+  .fx44-progress-rail > li::before,.fx44-event-timeline > li::before{background:Canvas;color:CanvasText;border-color:CanvasText}
+  .fx44-level-meter .fx44-meter-segments > i{border:1px solid CanvasText;background:Canvas}
+}

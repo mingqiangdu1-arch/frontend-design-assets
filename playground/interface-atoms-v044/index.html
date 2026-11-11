@@ -1,0 +1,67 @@
+<!doctype html><html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Twelve original standalone CSS control/navigation/HUD specimens; no external assets, JS, or application backend.">
+<title>Navigation & HUD Interface Atoms · V0.44</title>
+<link rel="stylesheet" href="../../styles/primitives/v044/interface-atoms.css">
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f3f5f2;color:#1c343c;font:15px/1.5 system-ui,"PingFang SC",sans-serif}
+main{max-width:1230px;padding:34px 18px 65px;margin:auto}h1{font-size:clamp(31px,4.8vw,57px);line-height:1.13;letter-spacing:-.05em;margin:12px 0 16px}
+header>p{max-width:800px;color:#5c7177}.lab{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;margin:32px 0}
+.tile{background:white;border:1px solid #d9e4e0;border-radius:14px;padding:18px;min-width:0}
+.tile h2{font-size:17px;margin:1px 0 6px}.tile>p{font-size:12px;color:#607579;margin:0;min-height:38px}
+.sample{min-height:196px;margin:13px 0;display:flex;justify-content:center;align-items:center;
+padding:15px;overflow:hidden;border-radius:10px;background:#edf2ef;min-width:0}
+.sample > *{max-width:100%;min-width:0}.code{font:600 12px/1.6 ui-monospace,Consolas,monospace;background:#edf5ef;
+padding:.3rem .55rem;color:#32685f;border-radius:6px;overflow-wrap:anywhere}
+.sample .long{max-width:310px;width:100%}.dark-sample{background:#1e3239}
+header a{color:#22695d}#principles{max-width:760px;margin-top:40px;color:#52686f}
+a:focus-visible{outline:3px solid #1985a5;outline-offset:3px}
+@media(max-width:930px){.lab{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){main{padding:20px 12px 40px}.lab{grid-template-columns:1fr}.tile>p{min-height:0}}
+@media(forced-colors:active){.tile,.sample{border:1px solid CanvasText}}
+</style></head><body><main>
+<header><small>FRONTEND DESIGN ASSETS / ORIGINAL CSS CONTROL MATERIALS / 0.44</small>
+<h1>Twelve independent interface atoms.</h1>
+<p>12 个可独立搬用的导航、工具与 HUD 组件视觉源码。示例中的单选、复选、展开收起和页内链接是真实原生交互；其他样例仅展示外观与标记法，不声称拥有应用级状态逻辑。</p></header>
+<div class="lab">
+<section class="tile" id="cta"><h2>FX-015 · Angular action</h2><p>适合科技产品、游戏内操作与特殊 CTA。</p>
+<div class="sample dark-sample"><a class="fx44-cut-button" href="#principles">OPEN / DETAILS ↗</a></div><code class="code">.fx44-cut-button</code></section>
+<section class="tile"><h2>FX-016 · Segmented radio</h2><p>真实、可操作的单选状态；不需要脚本。</p>
+<div class="sample"><fieldset class="fx44-segmented"><legend>密度</legend><label><input type="radio" name="density44" checked><span>紧凑</span></label><label><input type="radio" name="density44"><span>标准</span></label><label><input type="radio" name="density44"><span>宽松</span></label></fieldset></div>
+<code class="code">.fx44-segmented</code></section>
+<section class="tile"><h2>FX-017 · Compass navigation</h2><p>方向罗盘形导航；链接跳转到实际样例锚点。</p>
+<div class="sample"><nav class="fx44-compass-nav" aria-label="方向样例导航"><a href="#cta" data-dir="north">N</a><a href="#principles" data-dir="west">W</a><a href="#principles" data-dir="east">E</a><a href="#principles" data-dir="south">S</a></nav></div>
+<code class="code">.fx44-compass-nav</code></section>
+<section class="tile"><h2>FX-018 · Step rail</h2><p>带当前步骤与已完成状态的有序进度轨道。</p>
+<div class="sample"><ol class="fx44-progress-rail long"><li data-state="done" data-step="1">Discover</li><li data-state="done" data-step="2">Select</li><li data-state="current" data-step="3" aria-current="step">Review</li><li data-state="upcoming" data-step="4">Apply</li></ol></div>
+<code class="code">.fx44-progress-rail</code></section>
+<section class="tile"><h2>FX-019 · Telemetry card</h2><p>科技/性能指标面板，数据需由目标项目提供。</p>
+<div class="sample"><section class="fx44-telemetry long" aria-label="遥测指标演示"><small>LATENCY / DEMO</small><output aria-label="示例延迟">24 ms</output><div aria-hidden="true" class="fx44-telemetry-track"><span style="--fx44-telemetry-fill:62%"></span></div><small>STABLE / SYNTHETIC</small></section></div>
+<code class="code">.fx44-telemetry</code></section>
+<section class="tile"><h2>FX-020 · HUD reticle</h2><p>静态雷达准星；不暗示实际定位或探测能力。</p>
+<div class="sample dark-sample"><div class="fx44-reticle" role="img" aria-label="装饰性瞄准环示例"><span>LOCK</span></div></div>
+<code class="code">.fx44-reticle</code></section>
+<section class="tile"><h2>FX-021 · Native disclosure</h2><p>details + summary，点击、键盘均可收展。</p>
+<div class="sample"><details class="fx44-disclosure long"><summary>查看素材的复用边界</summary><p>本组件只负责外观和原生内容展开；授权与业务数据由使用方确认。</p></details></div>
+<code class="code">.fx44-disclosure</code></section>
+<section class="tile"><h2>FX-022 · Event timeline</h2><p>有序时间节点和时间语义，适合日志、发布记录。</p>
+<div class="sample"><ol class="fx44-event-timeline long"><li><time datetime="2026-10-01">OCT 01</time><strong>Source selected</strong><p>Visual asset reference</p></li><li data-state="current"><time datetime="2026-11-11">NOV 11</time><strong>Material ready</strong><p>Original CSS sample</p></li></ol></div>
+<code class="code">.fx44-event-timeline</code></section>
+<section class="tile"><h2>FX-023 · Filter chips</h2><p>原生 checkbox，可切换多选视觉状态。</p>
+<div class="sample"><div style="display:flex;flex-wrap:wrap;gap:9px;max-width:300px"><label class="fx44-filter-chip"><input type="checkbox" checked><span>Components</span></label><label class="fx44-filter-chip"><input type="checkbox"><span>Effects</span></label><label class="fx44-filter-chip"><input type="checkbox" checked><span>Vectors</span></label></div></div>
+<code class="code">.fx44-filter-chip</code></section>
+<section class="tile"><h2>FX-024 · Terminal panel</h2><p>日志/代码片段展示外观，不执行内容。</p>
+<div class="sample"><section class="fx44-terminal long" aria-label="终端输出示例"><header>ASSET INDEX / READ ONLY</header><pre><code>assets: 12
+mode: sample-only
+status: reference</code></pre></section></div>
+<code class="code">.fx44-terminal</code></section>
+<section class="tile"><h2>FX-025 · Level meter</h2><p>原生 meter 表达数值；格子是辅助装饰。</p>
+<div class="sample dark-sample"><div class="fx44-level-meter long" data-level="3"><label for="battery44"><span>ENERGY</span><span>3 / 5</span></label><meter id="battery44" min="0" max="5" value="3">3 of 5</meter><div class="fx44-meter-segments" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div></div></div>
+<code class="code">.fx44-level-meter</code></section>
+<section class="tile"><h2>FX-026 · Pixel badge</h2><p>静态复古像素徽章，不以颜色单独表达状态。</p>
+<div class="sample"><span class="fx44-pixel-badge">LEVEL / 09</span></div>
+<code class="code">.fx44-pixel-badge</code></section>
+</div>
+<section id="principles"><h2>如何使用</h2><p>每个样张对应一段可复制的原生 CSS 源码与最小 HTML 标记，不是整个网页模板；单独搬运时保持原生交互语义、focus-visible、减少动效和强制颜色支持。某些示例数字及阶段仅为虚构展示，不代表真实数据或业务功能。</p>
+<p><a href="../../styles/primitives/v044/README.md">阅读素材说明</a></p></section>
+</main></body></html>

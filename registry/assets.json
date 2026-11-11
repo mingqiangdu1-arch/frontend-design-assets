@@ -12901,11 +12901,749 @@
         "instructions": "Reference graphics/v043/constellation-map.svg as an individual image. For decorative use set empty HTML alt; for meaningful use add context-specific alt and test color/contrast.",
         "limitations": "Vector graphic only; not a font, icon library, animation engine or complete page layout."
       }
+    },
+    {
+      "id": "FX-015",
+      "type": "component",
+      "name": "Angular cut-corner action / 斜切行动按钮",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v044",
+        "original-css-source",
+        "independent-interface-material",
+        "no-external-runtime"
+      ],
+      "aliases": [
+        "cut corner CTA",
+        "斜切按钮",
+        "战术按钮"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original native CSS and HTML written for this repository, without copied vendor source, image, font or external asset.",
+      "styleIds": [
+        "signal-noir",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "developer-tool"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v044/interface-atoms.css",
+      "details": "styles/primitives/v044/README.md",
+      "spec": "registry/material-expansion-v044.json",
+      "demo": "playground/interface-atoms-v044/index.html",
+      "verified": "Original source-level CSS class and isolated semantic HTML specimen authored 2026-11-11; real keyboard/production/browser compatibility must be checked by target project.",
+      "handoff": {
+        "entry": "styles/primitives/v044/README.md",
+        "stack": "Vanilla CSS/HTML only; not a published or exported React component",
+        "instructions": "Copy only .fx44-cut-button and its descendants plus reduced-motion and forced-colors rules from styles/primitives/v044/interface-atoms.css; reuse matching minimal semantic HTML, test in target.",
+        "limitations": "Visual/UI reference; state/data updates, business actions, runtime authorization and production accessibility are host responsibilities."
+      }
+    },
+    {
+      "id": "FX-016",
+      "type": "component",
+      "name": "Native segmented radio picker / 原生分段单选器",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v044",
+        "original-css-source",
+        "independent-interface-material",
+        "no-external-runtime"
+      ],
+      "aliases": [
+        "segmented radio",
+        "分段选项",
+        "单选器"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original native CSS and HTML written for this repository, without copied vendor source, image, font or external asset.",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "productivity",
+        "creative-tool"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v044/interface-atoms.css",
+      "details": "styles/primitives/v044/README.md",
+      "spec": "registry/material-expansion-v044.json",
+      "demo": "playground/interface-atoms-v044/index.html",
+      "verified": "Original source-level CSS class and isolated semantic HTML specimen authored 2026-11-11; real keyboard/production/browser compatibility must be checked by target project.",
+      "handoff": {
+        "entry": "styles/primitives/v044/README.md",
+        "stack": "Vanilla CSS/HTML only; not a published or exported React component",
+        "instructions": "Copy only .fx44-segmented and its descendants plus reduced-motion and forced-colors rules from styles/primitives/v044/interface-atoms.css; reuse matching minimal semantic HTML, test in target.",
+        "limitations": "Visual/UI reference; state/data updates, business actions, runtime authorization and production accessibility are host responsibilities."
+      }
+    },
+    {
+      "id": "FX-017",
+      "type": "component",
+      "name": "Compass directional anchor navigation / 方向罗盘导航",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v044",
+        "original-css-source",
+        "independent-interface-material",
+        "no-external-runtime"
+      ],
+      "aliases": [
+        "compass navigation",
+        "罗盘菜单",
+        "方向导航"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original native CSS and HTML written for this repository, without copied vendor source, image, font or external asset.",
+      "styleIds": [
+        "aether-orbit",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "portfolio",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v044/interface-atoms.css",
+      "details": "styles/primitives/v044/README.md",
+      "spec": "registry/material-expansion-v044.json",
+      "demo": "playground/interface-atoms-v044/index.html",
+      "verified": "Original source-level CSS class and isolated semantic HTML specimen authored 2026-11-11; real keyboard/production/browser compatibility must be checked by target project.",
+      "handoff": {
+        "entry": "styles/primitives/v044/README.md",
+        "stack": "Vanilla CSS/HTML only; not a published or exported React component",
+        "instructions": "Copy only .fx44-compass-nav and its descendants plus reduced-motion and forced-colors rules from styles/primitives/v044/interface-atoms.css; reuse matching minimal semantic HTML, test in target.",
+        "limitations": "Visual/UI reference; state/data updates, business actions, runtime authorization and production accessibility are host responsibilities."
+      }
+    },
+    {
+      "id": "FX-018",
+      "type": "component",
+      "name": "Ordered visual step rail / 有序步骤轨道",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v044",
+        "original-css-source",
+        "independent-interface-material",
+        "no-external-runtime"
+      ],
+      "aliases": [
+        "progress stepper",
+        "步骤导航",
+        "step rail"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original native CSS and HTML written for this repository, without copied vendor source, image, font or external asset.",
+      "styleIds": [
+        "refined-light-saas",
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "form",
+        "onboarding"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v044/interface-atoms.css",
+      "details": "styles/primitives/v044/README.md",
+      "spec": "registry/material-expansion-v044.json",
+      "demo": "playground/interface-atoms-v044/index.html",
+      "verified": "Original source-level CSS class and isolated semantic HTML specimen authored 2026-11-11; real keyboard/production/browser compatibility must be checked by target project.",
+      "handoff": {
+        "entry": "styles/primitives/v044/README.md",
+        "stack": "Vanilla CSS/HTML only; not a published or exported React component",
+        "instructions": "Copy only .fx44-progress-rail and its descendants plus reduced-motion and forced-colors rules from styles/primitives/v044/interface-atoms.css; reuse matching minimal semantic HTML, test in target.",
+        "limitations": "Visual/UI reference; state/data updates, business actions, runtime authorization and production accessibility are host responsibilities."
+      }
+    },
+    {
+      "id": "FX-019",
+      "type": "component",
+      "name": "Telemetry status card / 遥测指标卡",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v044",
+        "original-css-source",
+        "independent-interface-material",
+        "no-external-runtime"
+      ],
+      "aliases": [
+        "telemetry",
+        "指标卡",
+        "tech dashboard"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original native CSS and HTML written for this repository, without copied vendor source, image, font or external asset.",
+      "styleIds": [
+        "precision-dark",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "analytics",
+        "developer-tool"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v044/interface-atoms.css",
+      "details": "styles/primitives/v044/README.md",
+      "spec": "registry/material-expansion-v044.json",
+      "demo": "playground/interface-atoms-v044/index.html",
+      "verified": "Original source-level CSS class and isolated semantic HTML specimen authored 2026-11-11; real keyboard/production/browser compatibility must be checked by target project.",
+      "handoff": {
+        "entry": "styles/primitives/v044/README.md",
+        "stack": "Vanilla CSS/HTML only; not a published or exported React component",
+        "instructions": "Copy only .fx44-telemetry and its descendants plus reduced-motion and forced-colors rules from styles/primitives/v044/interface-atoms.css; reuse matching minimal semantic HTML, test in target.",
+        "limitations": "Visual/UI reference; state/data updates, business actions, runtime authorization and production accessibility are host responsibilities."
+      }
+    },
+    {
+      "id": "FX-020",
+      "type": "component",
+      "name": "Static HUD reticle / 静态瞄准环",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v044",
+        "original-css-source",
+        "independent-interface-material",
+        "no-external-runtime"
+      ],
+      "aliases": [
+        "HUD reticle",
+        "准星",
+        "仪表环"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original native CSS and HTML written for this repository, without copied vendor source, image, font or external asset.",
+      "styleIds": [
+        "pixel-arcade",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "simulation"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v044/interface-atoms.css",
+      "details": "styles/primitives/v044/README.md",
+      "spec": "registry/material-expansion-v044.json",
+      "demo": "playground/interface-atoms-v044/index.html",
+      "verified": "Original source-level CSS class and isolated semantic HTML specimen authored 2026-11-11; real keyboard/production/browser compatibility must be checked by target project.",
+      "handoff": {
+        "entry": "styles/primitives/v044/README.md",
+        "stack": "Vanilla CSS/HTML only; not a published or exported React component",
+        "instructions": "Copy only .fx44-reticle and its descendants plus reduced-motion and forced-colors rules from styles/primitives/v044/interface-atoms.css; reuse matching minimal semantic HTML, test in target.",
+        "limitations": "Visual/UI reference; state/data updates, business actions, runtime authorization and production accessibility are host responsibilities."
+      }
+    },
+    {
+      "id": "FX-021",
+      "type": "component",
+      "name": "Native disclosure shell / 原生折叠面板",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v044",
+        "original-css-source",
+        "independent-interface-material",
+        "no-external-runtime"
+      ],
+      "aliases": [
+        "disclosure",
+        "details summary",
+        "原生手风琴"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original native CSS and HTML written for this repository, without copied vendor source, image, font or external asset.",
+      "styleIds": [
+        "editorial-warm",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "knowledge-base",
+        "productivity"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v044/interface-atoms.css",
+      "details": "styles/primitives/v044/README.md",
+      "spec": "registry/material-expansion-v044.json",
+      "demo": "playground/interface-atoms-v044/index.html",
+      "verified": "Original source-level CSS class and isolated semantic HTML specimen authored 2026-11-11; real keyboard/production/browser compatibility must be checked by target project.",
+      "handoff": {
+        "entry": "styles/primitives/v044/README.md",
+        "stack": "Vanilla CSS/HTML only; not a published or exported React component",
+        "instructions": "Copy only .fx44-disclosure and its descendants plus reduced-motion and forced-colors rules from styles/primitives/v044/interface-atoms.css; reuse matching minimal semantic HTML, test in target.",
+        "limitations": "Visual/UI reference; state/data updates, business actions, runtime authorization and production accessibility are host responsibilities."
+      }
+    },
+    {
+      "id": "FX-022",
+      "type": "component",
+      "name": "Chronological event timeline / 时间事件节点轨道",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v044",
+        "original-css-source",
+        "independent-interface-material",
+        "no-external-runtime"
+      ],
+      "aliases": [
+        "event timeline",
+        "时间线",
+        "milestone"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original native CSS and HTML written for this repository, without copied vendor source, image, font or external asset.",
+      "styleIds": [
+        "type-led-minimal",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "changelog",
+        "research"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v044/interface-atoms.css",
+      "details": "styles/primitives/v044/README.md",
+      "spec": "registry/material-expansion-v044.json",
+      "demo": "playground/interface-atoms-v044/index.html",
+      "verified": "Original source-level CSS class and isolated semantic HTML specimen authored 2026-11-11; real keyboard/production/browser compatibility must be checked by target project.",
+      "handoff": {
+        "entry": "styles/primitives/v044/README.md",
+        "stack": "Vanilla CSS/HTML only; not a published or exported React component",
+        "instructions": "Copy only .fx44-event-timeline and its descendants plus reduced-motion and forced-colors rules from styles/primitives/v044/interface-atoms.css; reuse matching minimal semantic HTML, test in target.",
+        "limitations": "Visual/UI reference; state/data updates, business actions, runtime authorization and production accessibility are host responsibilities."
+      }
+    },
+    {
+      "id": "FX-023",
+      "type": "component",
+      "name": "Native filter toggle chips / 原生筛选标签",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v044",
+        "original-css-source",
+        "independent-interface-material",
+        "no-external-runtime"
+      ],
+      "aliases": [
+        "filter chip",
+        "复选标签",
+        "多选分类"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original native CSS and HTML written for this repository, without copied vendor source, image, font or external asset.",
+      "styleIds": [
+        "playful-pop",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "commerce",
+        "catalog"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v044/interface-atoms.css",
+      "details": "styles/primitives/v044/README.md",
+      "spec": "registry/material-expansion-v044.json",
+      "demo": "playground/interface-atoms-v044/index.html",
+      "verified": "Original source-level CSS class and isolated semantic HTML specimen authored 2026-11-11; real keyboard/production/browser compatibility must be checked by target project.",
+      "handoff": {
+        "entry": "styles/primitives/v044/README.md",
+        "stack": "Vanilla CSS/HTML only; not a published or exported React component",
+        "instructions": "Copy only .fx44-filter-chip and its descendants plus reduced-motion and forced-colors rules from styles/primitives/v044/interface-atoms.css; reuse matching minimal semantic HTML, test in target.",
+        "limitations": "Visual/UI reference; state/data updates, business actions, runtime authorization and production accessibility are host responsibilities."
+      }
+    },
+    {
+      "id": "FX-024",
+      "type": "component",
+      "name": "Semantic terminal viewport / 终端输出面板",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v044",
+        "original-css-source",
+        "independent-interface-material",
+        "no-external-runtime"
+      ],
+      "aliases": [
+        "terminal UI",
+        "log view",
+        "终端卡"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original native CSS and HTML written for this repository, without copied vendor source, image, font or external asset.",
+      "styleIds": [
+        "precision-dark",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "developer-tool",
+        "ai-app"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v044/interface-atoms.css",
+      "details": "styles/primitives/v044/README.md",
+      "spec": "registry/material-expansion-v044.json",
+      "demo": "playground/interface-atoms-v044/index.html",
+      "verified": "Original source-level CSS class and isolated semantic HTML specimen authored 2026-11-11; real keyboard/production/browser compatibility must be checked by target project.",
+      "handoff": {
+        "entry": "styles/primitives/v044/README.md",
+        "stack": "Vanilla CSS/HTML only; not a published or exported React component",
+        "instructions": "Copy only .fx44-terminal and its descendants plus reduced-motion and forced-colors rules from styles/primitives/v044/interface-atoms.css; reuse matching minimal semantic HTML, test in target.",
+        "limitations": "Visual/UI reference; state/data updates, business actions, runtime authorization and production accessibility are host responsibilities."
+      }
+    },
+    {
+      "id": "FX-025",
+      "type": "component",
+      "name": "Native level meter HUD / 原生等级仪表",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v044",
+        "original-css-source",
+        "independent-interface-material",
+        "no-external-runtime"
+      ],
+      "aliases": [
+        "meter",
+        "energy level",
+        "游戏能量槽"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original native CSS and HTML written for this repository, without copied vendor source, image, font or external asset.",
+      "styleIds": [
+        "pixel-arcade",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "analytics"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v044/interface-atoms.css",
+      "details": "styles/primitives/v044/README.md",
+      "spec": "registry/material-expansion-v044.json",
+      "demo": "playground/interface-atoms-v044/index.html",
+      "verified": "Original source-level CSS class and isolated semantic HTML specimen authored 2026-11-11; real keyboard/production/browser compatibility must be checked by target project.",
+      "handoff": {
+        "entry": "styles/primitives/v044/README.md",
+        "stack": "Vanilla CSS/HTML only; not a published or exported React component",
+        "instructions": "Copy only .fx44-level-meter and its descendants plus reduced-motion and forced-colors rules from styles/primitives/v044/interface-atoms.css; reuse matching minimal semantic HTML, test in target.",
+        "limitations": "Visual/UI reference; state/data updates, business actions, runtime authorization and production accessibility are host responsibilities."
+      }
+    },
+    {
+      "id": "FX-026",
+      "type": "component",
+      "name": "Pixel arcade badge / 像素游戏徽章",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v044",
+        "original-css-source",
+        "independent-interface-material",
+        "no-external-runtime"
+      ],
+      "aliases": [
+        "pixel badge",
+        "像素徽章",
+        "游戏等级"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original native CSS and HTML written for this repository, without copied vendor source, image, font or external asset.",
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "event"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v044/interface-atoms.css",
+      "details": "styles/primitives/v044/README.md",
+      "spec": "registry/material-expansion-v044.json",
+      "demo": "playground/interface-atoms-v044/index.html",
+      "verified": "Original source-level CSS class and isolated semantic HTML specimen authored 2026-11-11; real keyboard/production/browser compatibility must be checked by target project.",
+      "handoff": {
+        "entry": "styles/primitives/v044/README.md",
+        "stack": "Vanilla CSS/HTML only; not a published or exported React component",
+        "instructions": "Copy only .fx44-pixel-badge and its descendants plus reduced-motion and forced-colors rules from styles/primitives/v044/interface-atoms.css; reuse matching minimal semantic HTML, test in target.",
+        "limitations": "Visual/UI reference; state/data updates, business actions, runtime authorization and production accessibility are host responsibilities."
+      }
+    },
+    {
+      "id": "VG-007",
+      "type": "component",
+      "name": "Radar Scope / 雷达扫描盘",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v044",
+        "original-svg",
+        "technical-illustration",
+        "standalone-vector"
+      ],
+      "aliases": [
+        "radar",
+        "雷达盘",
+        "scan scope"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original SVG vector source created for this repository; no copied vendor imagery, fonts, external links or scripts.",
+      "styleIds": [
+        "signal-noir",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "simulation",
+        "game-companion"
+      ],
+      "dependencies": [],
+      "path": "graphics/v044/radar-scope.svg",
+      "details": "graphics/v044/README.md",
+      "spec": "registry/material-expansion-v044.json",
+      "demo": "playground/vector-studies-v044/index.html",
+      "verified": "Standalone original SVG with viewBox and accessible title/description authored 2026-11-11; illustration is not a live instrument, chart or certified accessible output.",
+      "handoff": {
+        "entry": "graphics/v044/README.md",
+        "stack": "Self-contained standalone SVG source, not a React UI component",
+        "instructions": "Reference graphics/v044/radar-scope.svg directly as <img> or adapt inline; set context-specific alt for informative use and empty alt for purely decorative usage.",
+        "limitations": "Original vector illustration only; no dynamic sensor data, chart API, real mapping, product/app integration or production certification."
+      }
+    },
+    {
+      "id": "VG-008",
+      "type": "component",
+      "name": "Circuit Traces / 电路走线图",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v044",
+        "original-svg",
+        "technical-illustration",
+        "standalone-vector"
+      ],
+      "aliases": [
+        "circuit art",
+        "PCB",
+        "电路图"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original SVG vector source created for this repository; no copied vendor imagery, fonts, external links or scripts.",
+      "styleIds": [
+        "precision-dark",
+        "aether-orbit"
+      ],
+      "applicationContexts": [
+        "hardware",
+        "developer-tool"
+      ],
+      "dependencies": [],
+      "path": "graphics/v044/circuit-traces.svg",
+      "details": "graphics/v044/README.md",
+      "spec": "registry/material-expansion-v044.json",
+      "demo": "playground/vector-studies-v044/index.html",
+      "verified": "Standalone original SVG with viewBox and accessible title/description authored 2026-11-11; illustration is not a live instrument, chart or certified accessible output.",
+      "handoff": {
+        "entry": "graphics/v044/README.md",
+        "stack": "Self-contained standalone SVG source, not a React UI component",
+        "instructions": "Reference graphics/v044/circuit-traces.svg directly as <img> or adapt inline; set context-specific alt for informative use and empty alt for purely decorative usage.",
+        "limitations": "Original vector illustration only; no dynamic sensor data, chart API, real mapping, product/app integration or production certification."
+      }
+    },
+    {
+      "id": "VG-009",
+      "type": "component",
+      "name": "Arcade Medal / 像素奖章",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v044",
+        "original-svg",
+        "technical-illustration",
+        "standalone-vector"
+      ],
+      "aliases": [
+        "arcade medal",
+        "pixel trophy",
+        "像素勋章"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original SVG vector source created for this repository; no copied vendor imagery, fonts, external links or scripts.",
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "gamification"
+      ],
+      "dependencies": [],
+      "path": "graphics/v044/arcade-medal.svg",
+      "details": "graphics/v044/README.md",
+      "spec": "registry/material-expansion-v044.json",
+      "demo": "playground/vector-studies-v044/index.html",
+      "verified": "Standalone original SVG with viewBox and accessible title/description authored 2026-11-11; illustration is not a live instrument, chart or certified accessible output.",
+      "handoff": {
+        "entry": "graphics/v044/README.md",
+        "stack": "Self-contained standalone SVG source, not a React UI component",
+        "instructions": "Reference graphics/v044/arcade-medal.svg directly as <img> or adapt inline; set context-specific alt for informative use and empty alt for purely decorative usage.",
+        "limitations": "Original vector illustration only; no dynamic sensor data, chart API, real mapping, product/app integration or production certification."
+      }
+    },
+    {
+      "id": "VG-010",
+      "type": "component",
+      "name": "Signal Waveform / 合成波形",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v044",
+        "original-svg",
+        "technical-illustration",
+        "standalone-vector"
+      ],
+      "aliases": [
+        "waveform",
+        "oscilloscope",
+        "信号波形"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original SVG vector source created for this repository; no copied vendor imagery, fonts, external links or scripts.",
+      "styleIds": [
+        "signal-noir",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "analytics",
+        "tech-brand"
+      ],
+      "dependencies": [],
+      "path": "graphics/v044/signal-waveform.svg",
+      "details": "graphics/v044/README.md",
+      "spec": "registry/material-expansion-v044.json",
+      "demo": "playground/vector-studies-v044/index.html",
+      "verified": "Standalone original SVG with viewBox and accessible title/description authored 2026-11-11; illustration is not a live instrument, chart or certified accessible output.",
+      "handoff": {
+        "entry": "graphics/v044/README.md",
+        "stack": "Self-contained standalone SVG source, not a React UI component",
+        "instructions": "Reference graphics/v044/signal-waveform.svg directly as <img> or adapt inline; set context-specific alt for informative use and empty alt for purely decorative usage.",
+        "limitations": "Original vector illustration only; no dynamic sensor data, chart API, real mapping, product/app integration or production certification."
+      }
+    },
+    {
+      "id": "VG-011",
+      "type": "component",
+      "name": "Compass Rose / 罗盘玫瑰",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v044",
+        "original-svg",
+        "technical-illustration",
+        "standalone-vector"
+      ],
+      "aliases": [
+        "compass rose",
+        "八向罗盘",
+        "导航纹章"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original SVG vector source created for this repository; no copied vendor imagery, fonts, external links or scripts.",
+      "styleIds": [
+        "editorial-warm",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "maps",
+        "storytelling"
+      ],
+      "dependencies": [],
+      "path": "graphics/v044/compass-rose.svg",
+      "details": "graphics/v044/README.md",
+      "spec": "registry/material-expansion-v044.json",
+      "demo": "playground/vector-studies-v044/index.html",
+      "verified": "Standalone original SVG with viewBox and accessible title/description authored 2026-11-11; illustration is not a live instrument, chart or certified accessible output.",
+      "handoff": {
+        "entry": "graphics/v044/README.md",
+        "stack": "Self-contained standalone SVG source, not a React UI component",
+        "instructions": "Reference graphics/v044/compass-rose.svg directly as <img> or adapt inline; set context-specific alt for informative use and empty alt for purely decorative usage.",
+        "limitations": "Original vector illustration only; no dynamic sensor data, chart API, real mapping, product/app integration or production certification."
+      }
+    },
+    {
+      "id": "VG-012",
+      "type": "component",
+      "name": "Isometric Cluster / 等轴方块簇",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v044",
+        "original-svg",
+        "technical-illustration",
+        "standalone-vector"
+      ],
+      "aliases": [
+        "isometric cubes",
+        "等轴方块",
+        "模块立方"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original SVG vector source created for this repository; no copied vendor imagery, fonts, external links or scripts.",
+      "styleIds": [
+        "shape-expressive",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "creative-tool",
+        "education"
+      ],
+      "dependencies": [],
+      "path": "graphics/v044/isometric-cluster.svg",
+      "details": "graphics/v044/README.md",
+      "spec": "registry/material-expansion-v044.json",
+      "demo": "playground/vector-studies-v044/index.html",
+      "verified": "Standalone original SVG with viewBox and accessible title/description authored 2026-11-11; illustration is not a live instrument, chart or certified accessible output.",
+      "handoff": {
+        "entry": "graphics/v044/README.md",
+        "stack": "Self-contained standalone SVG source, not a React UI component",
+        "instructions": "Reference graphics/v044/isometric-cluster.svg directly as <img> or adapt inline; set context-specific alt for informative use and empty alt for purely decorative usage.",
+        "limitations": "Original vector illustration only; no dynamic sensor data, chart API, real mapping, product/app integration or production certification."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",
   "styleRegistry": "registry/styles.json",
-  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee. V0.18 adds research-only visual studies outside registry/styles.json and component archetypes outside registry/components.json; IP-026/IP-028 only include headless pure models, not UI components. V0.30 adds 17 research-only external specialization references REF-042..058; these are not actual component exports or dependencies. V0.31 adds 15 original design studies REF-059..068 and IP-031..035 as analyzed/research-only; not deployed components, runtime dependencies, or new styles. V0.32: 18 original research contracts IP-036..041 / REF-069..080; four visual entries link separate opt-in CSS samples but are not certified UI implementations. V0.34 adds 16 task-first original research studies (REF-081..088 and IP-042..049), with 6 optional scoped CSS visual/layout atoms; IP research remains explicitly research-only. V0.35 adds eight original static dual-viewport SVG specimens attached to existing IDs only; registered asset count stays 255 and lifecycle stages remain analyzed. V0.36 adds 12 community/editor/agent upstream reference entries REF-089..100 and 4 independent source-governance behavior contracts IP-050..053. All are analyzed/research-only; neither an installable shadcn registry nor an existing editor integration. V0.37 adds 10 item-level source-anchored component/block dossiers REF-101..110 and 3 original Agent interaction contracts IP-054..056; all analyzed/research-only, without installed/copyable code. Three 21st.dev community items remain unregistered candidates awaiting exact item-level links/licensing. V0.38 adds 3 original standalone interaction prototypes IP-057..059 with inspected ESM source, live DOM specimen and focused tests. Previous IP-054..056 remain analyzed/research-only. No React export/theme/third-party dependency added. V0.39 adds three ORIGINAL standalone visual block editor interaction prototypes IP-060..062 (reorder, typed props/schema, local selection undo/redo). All have ESM source/demo/test fixtures, but no new React exports, default themes, external packages, nested page builder or server persistence. V0.40 introduces 3 ORIGINAL bounded registry/slot/preview executable prototypes IP-063..065, all adapted source models with Node/Chromium fixtures. Unknown vendor Registry items remain inspection-only; no public React export, installer, production builder, file write or new theme. V0.41 adds IP-066..068 ORIGINAL read-only Registry metadata parser, local dependency graph and this-library-only internal snapshot migration. Three pinned official metadata facts are reviewed with tests; NO upstream code, installers, host integration, new React exports or style themes. V0.42 re-centered on material accumulation: added 13 source-pinned external UI/motion/dataviz/gesture references REF-111..123 plus six ORIGINAL reusable CSS visual atoms FX-001..006, no new React exports, no new default style, no product builder and no copied upstream components. V0.43 material-only growth: 8 truly individual upstream TSX source refs REF-124..131, eight ORIGINAL CSS source atoms FX-007..014, six ORIGINAL standalone vector SVG files VG-001..006. No new tests, installer, React public exports, themes or product builder.",
+  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee. V0.18 adds research-only visual studies outside registry/styles.json and component archetypes outside registry/components.json; IP-026/IP-028 only include headless pure models, not UI components. V0.30 adds 17 research-only external specialization references REF-042..058; these are not actual component exports or dependencies. V0.31 adds 15 original design studies REF-059..068 and IP-031..035 as analyzed/research-only; not deployed components, runtime dependencies, or new styles. V0.32: 18 original research contracts IP-036..041 / REF-069..080; four visual entries link separate opt-in CSS samples but are not certified UI implementations. V0.34 adds 16 task-first original research studies (REF-081..088 and IP-042..049), with 6 optional scoped CSS visual/layout atoms; IP research remains explicitly research-only. V0.35 adds eight original static dual-viewport SVG specimens attached to existing IDs only; registered asset count stays 255 and lifecycle stages remain analyzed. V0.36 adds 12 community/editor/agent upstream reference entries REF-089..100 and 4 independent source-governance behavior contracts IP-050..053. All are analyzed/research-only; neither an installable shadcn registry nor an existing editor integration. V0.37 adds 10 item-level source-anchored component/block dossiers REF-101..110 and 3 original Agent interaction contracts IP-054..056; all analyzed/research-only, without installed/copyable code. Three 21st.dev community items remain unregistered candidates awaiting exact item-level links/licensing. V0.38 adds 3 original standalone interaction prototypes IP-057..059 with inspected ESM source, live DOM specimen and focused tests. Previous IP-054..056 remain analyzed/research-only. No React export/theme/third-party dependency added. V0.39 adds three ORIGINAL standalone visual block editor interaction prototypes IP-060..062 (reorder, typed props/schema, local selection undo/redo). All have ESM source/demo/test fixtures, but no new React exports, default themes, external packages, nested page builder or server persistence. V0.40 introduces 3 ORIGINAL bounded registry/slot/preview executable prototypes IP-063..065, all adapted source models with Node/Chromium fixtures. Unknown vendor Registry items remain inspection-only; no public React export, installer, production builder, file write or new theme. V0.41 adds IP-066..068 ORIGINAL read-only Registry metadata parser, local dependency graph and this-library-only internal snapshot migration. Three pinned official metadata facts are reviewed with tests; NO upstream code, installers, host integration, new React exports or style themes. V0.42 re-centered on material accumulation: added 13 source-pinned external UI/motion/dataviz/gesture references REF-111..123 plus six ORIGINAL reusable CSS visual atoms FX-001..006, no new React exports, no new default style, no product builder and no copied upstream components. V0.43 material-only growth: 8 truly individual upstream TSX source refs REF-124..131, eight ORIGINAL CSS source atoms FX-007..014, six ORIGINAL standalone vector SVG files VG-001..006. No new tests, installer, React public exports, themes or product builder. V0.44 adds 12 truly ORIGINAL copyable standalone CSS control/nav/HUD atoms FX-015..026 and six independent vector files VG-007..012. No new external reference catalogs, test suites, JS/React exports, themes, installer or product-site assembly.",
   "reusePolicyVersion": "1.0",
   "reusePolicies": {
     "style-token": {

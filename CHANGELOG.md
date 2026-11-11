@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-11 · V0.44 tangible navigation, control, HUD and technical vector materials
+
+- Added **twelve original standalone CSS/HTML component atoms** FX-015..026: cut-corner action, native radio segmented control, directional anchor compass, progress rail, telemetry card, decorative HUD reticle, native disclosure, event timeline, checkbox filter chips, terminal shell, native `meter` HUD and pixel badge.
+- Added **six original independent SVG illustrations** VG-007..012: radar scope, circuit traces, pixel arcade medal, synthetic signal waveform, compass rose and isometric cube cluster.
+- Each source file has a targeted demo and written usage/adaptation notes: [CSS samples](playground/interface-atoms-v044/index.html), [vector gallery](playground/vector-studies-v044/index.html), [registry](registry/material-expansion-v044.json), [design notes](docs/research/material-expansion-v044.md).
+- Asset count **337 → 355**; no upstream components copied, new tests, React public exports, style IDs, framework dependencies, site builder, install mechanism or production certification. Material-first policy retained.
+
+
 ## 2026-11-11 · V0.43 component-specific sources and original portable visual media
 
 - Added **8 original native CSS component materials** FX-007..014: topographic texture, arched media window, folded paper, diagonal ribbon, reveal caption, mechanical native checkbox switch, ink underline and static isometric grid, each with independent class and light standalone gallery.
