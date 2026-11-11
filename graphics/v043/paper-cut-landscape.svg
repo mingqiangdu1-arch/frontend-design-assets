@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="t d">
+<title id="t">Paper Cut Landscape — original layered cutout</title><desc id="d">Cut-paper sunrise over layered hills, using six flat pastel color planes and a stylized river.</desc>
+<rect width="640" height="360" fill="#f6e8d8"/>
+<circle cx="468" cy="101" r="65" fill="#eaa75f"/>
+<path d="M0 175 Q140 74 280 171 T640 148 V360 H0Z" fill="#bdc9aa"/>
+<path d="M0 209 Q112 130 257 219 Q390 146 640 212 V360 H0Z" fill="#7fac98"/>
+<path d="M0 258 Q160 198 300 260 Q475 193 640 258 V360 H0Z" fill="#4c877f"/>
+<path d="M0 294 Q143 245 256 293 Q390 244 640 293 V360 H0 Z" fill="#2b6568"/>
+<path d="M325 360 Q267 322 298 297 Q354 262 440 263 Q475 258 499 237 Q455 262 379 266 Q306 276 285 307 Q272 333 288 360Z" fill="#e5dfc8" opacity=".98"/>
+<g fill="#244e50"><path d="M115 248v-63m0 11-19-27m19 44 23-40" stroke="#244e50" stroke-width="4" stroke-linecap="round"/><path d="M544 272v-83m0 24-25-35m25 46 26-31" stroke="#244e50" stroke-width="5" stroke-linecap="round"/></g>
+<path d="M0 330 Q165 280 310 331 T640 319" stroke="#b1d3c1" stroke-width="2" fill="none" opacity=".4"/>
+</svg>

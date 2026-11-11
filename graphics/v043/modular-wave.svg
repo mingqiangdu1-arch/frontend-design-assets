@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="t d">
+<title id="t">Modular Wave — original geometric composition</title><desc id="d">Overlapping gridded bands, bold terraces and staggered ribbons in cobalt, peach, coral and cream.</desc>
+<rect width="640" height="360" fill="#ede7da"/>
+<path d="M0 245 60 230 120 238 180 215 240 227 300 208 360 225 420 202 480 218 540 195 600 208 640 191 V360 H0 Z" fill="#b6c9c5"/>
+<g fill="none" stroke-linecap="round" stroke-width="22">
+<path d="M-30 153 Q70 31 161 143 T341 137 T526 118 T680 99" stroke="#35498c"/>
+<path d="M-30 189 Q69 67 160 179 T341 173 T526 154 T680 135" stroke="#f4a98f"/>
+<path d="M-30 225 Q69 103 160 215 T341 209 T526 190 T680 171" stroke="#d8625c"/>
+</g>
+<g fill="#efe8d7"><circle cx="95" cy="67" r="20"/><rect x="437" y="263" width="88" height="55" rx="9"/></g>
+<g stroke="#334984" stroke-width="2" fill="none"><path d="M22 275 H618 M22 290 H618" stroke-dasharray="4 10"/><path d="M560 24 V90 M542 57 H578"/></g>
+</svg>

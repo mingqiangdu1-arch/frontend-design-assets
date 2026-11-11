@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-11-11 · V0.43 component-specific sources and original portable visual media
+
+- Added **8 original native CSS component materials** FX-007..014: topographic texture, arched media window, folded paper, diagonal ribbon, reveal caption, mechanical native checkbox switch, ink underline and static isometric grid, each with independent class and light standalone gallery.
+- Added **6 actual original SVG files** VG-001..006: wireframe dome, sunburst seal, orbital rings, modular wave, paper-cut landscape and constellation map. Each is portable, self-contained and linked from a separate vector-material preview.
+- Curated **8 exact, Git-commit-pinned component source and docs locations** REF-124..131 (Cult UI, Magic UI, Motion Primitives, Fancy Components), rather than whole-repository repeats. These remain references; no vendor code or third-party media copied.
+- Updated [machine registry](registry/material-expansion-v043.json), [source and design notes](docs/research/material-expansion-v043.md), [CSS docs](styles/primitives/v043/README.md), [SVG docs](graphics/v043/README.md), and task/catalog navigation. Total assets **315 → 337**.
+- **No new Node/Playwright test suite**, React exports, default themes, dependencies, product builder, installer or remote system. Existing registry/file CI still checks that catalog references exist.
+
+
 ## 2026-11-11 · V0.42 material-first expansion (not infrastructure-first)
 
 - Reoriented repetitive "continue" from additional test/registry machinery to **actual asset breadth**: 13 new verified, source-pinned independent external libraries/sources `REF-111..123` across animated UI, motion primitives, data visualization, motion timelines, sci-fi materials and mobile sheets.

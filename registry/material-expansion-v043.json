@@ -1,0 +1,639 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.43.0",
+  "date": "2026-11-11",
+  "focus": "MATERIAL-ONLY: 8 verified individual upstream component source locations + 8 ORIGINAL CSS atoms + 6 ORIGINAL portable SVG graphics.",
+  "previousAssetCount": 315,
+  "newEntryCount": 22,
+  "reactExportsAdded": 0,
+  "themeIdsAdded": 0,
+  "newTestSuites": 0,
+  "upstreamCodeCopied": false,
+  "files": [
+    "registry/material-expansion-v043.json",
+    "docs/research/material-expansion-v043.md",
+    "styles/primitives/v043/creative-components.css",
+    "styles/primitives/v043/README.md",
+    "playground/creative-components-v043/index.html",
+    "graphics/v043/README.md",
+    "playground/vector-studies-v043/index.html",
+    "graphics/v043/wireframe-dome.svg",
+    "graphics/v043/sunburst-seal.svg",
+    "graphics/v043/orbital-loops.svg",
+    "graphics/v043/modular-wave.svg",
+    "graphics/v043/paper-cut-landscape.svg",
+    "graphics/v043/constellation-map.svg"
+  ],
+  "pinnedComponentReferences": [
+    {
+      "title": "Cult UI Dynamic Island / 多状态浮岛",
+      "project": "nolly-studio/cult-ui",
+      "commit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+      "parent": "REF-111",
+      "file": "apps/www/registry/default/ui/dynamic-island.tsx",
+      "docs": "apps/www/content/docs/components/dynamic-island.mdx",
+      "family": "animated-shell",
+      "usage": "多个尺寸预设与浮岛容器状态，研究短内容→扩展面板的过渡组织",
+      "props": "SizePresets, motion/react, context/reducer",
+      "caution": "涉及多种宽度与移动高度规则；需另外验证触摸、键盘、关闭与信息密度",
+      "contexts": [
+        "mobile",
+        "creative-tool",
+        "workspace"
+      ],
+      "aliases": [
+        "dynamic island",
+        "浮岛",
+        "膨胀面板"
+      ],
+      "id": "REF-124",
+      "source": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/registry/default/ui/dynamic-island.tsx",
+      "documentation": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/content/docs/components/dynamic-island.mdx",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "codeCopied": false,
+      "repositorySource": "nolly-studio/cult-ui",
+      "versionPin": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+      "rights": "Link and original summary only; repository license does not automatically cover external fonts, image assets, or separately sold works."
+    },
+    {
+      "title": "Cult UI Shift Card / 分层内容切换卡",
+      "project": "nolly-studio/cult-ui",
+      "commit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+      "parent": "REF-111",
+      "file": "apps/www/registry/default/ui/shift-card.tsx",
+      "docs": "apps/www/content/docs/components/shift-card.mdx",
+      "family": "animated-card",
+      "usage": "top/middle/bottom 与 hover 内容分离的动态卡片结构",
+      "props": "topContent, middleContent, topAnimateContent, bottomContent",
+      "caution": "交互需适配 focus-visible/触摸与 motion preferences；不当作通用卡片组件导出",
+      "contexts": [
+        "portfolio",
+        "commerce",
+        "campaign"
+      ],
+      "aliases": [
+        "shift-card",
+        "分层切换",
+        "动态卡片"
+      ],
+      "id": "REF-125",
+      "source": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/registry/default/ui/shift-card.tsx",
+      "documentation": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/content/docs/components/shift-card.mdx",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "codeCopied": false,
+      "repositorySource": "nolly-studio/cult-ui",
+      "versionPin": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+      "rights": "Link and original summary only; repository license does not automatically cover external fonts, image assets, or separately sold works."
+    },
+    {
+      "title": "Magic UI Bento Grid / 不对称故事卡布局",
+      "project": "magicuidesign/magicui",
+      "commit": "1ac985adca3cdfab9b1739253fd14209687c4e9c",
+      "parent": "REF-114",
+      "file": "apps/www/registry/magicui/bento-grid.tsx",
+      "docs": "apps/www/content/docs/components/bento-grid.mdx",
+      "family": "layout-block",
+      "usage": "BentoGrid 容器与带图标、背景、CTA 的 BentoCard 组合粒度",
+      "props": "name, description, background, Icon, href, cta",
+      "caution": "上游组件依赖 Button、Icon、cn 和 CSS 栅格尺寸；按内容层级重排，而不是整页搬运",
+      "contexts": [
+        "landing-page",
+        "portfolio",
+        "product-showcase"
+      ],
+      "aliases": [
+        "bento grid",
+        "不对称宫格",
+        "叙事卡片"
+      ],
+      "id": "REF-126",
+      "source": "https://github.com/magicuidesign/magicui/blob/1ac985adca3cdfab9b1739253fd14209687c4e9c/apps/www/registry/magicui/bento-grid.tsx",
+      "documentation": "https://github.com/magicuidesign/magicui/blob/1ac985adca3cdfab9b1739253fd14209687c4e9c/apps/www/content/docs/components/bento-grid.mdx",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "codeCopied": false,
+      "repositorySource": "magicuidesign/magicui",
+      "versionPin": "1ac985adca3cdfab9b1739253fd14209687c4e9c",
+      "rights": "Link and original summary only; repository license does not automatically cover external fonts, image assets, or separately sold works."
+    },
+    {
+      "title": "Magic UI Marquee / 方向可控内容跑马灯",
+      "project": "magicuidesign/magicui",
+      "commit": "1ac985adca3cdfab9b1739253fd14209687c4e9c",
+      "parent": "REF-114",
+      "file": "apps/www/registry/magicui/marquee.tsx",
+      "docs": "apps/www/content/docs/components/marquee.mdx",
+      "family": "motion-strip",
+      "usage": "reverse、vertical、pauseOnHover、repeat 四类控制，适合 LOGO/案例展示轨道",
+      "props": "reverse, vertical, pauseOnHover, repeat",
+      "caution": "重复 DOM 和持续移动影响读屏、性能与 reduced-motion；重要内容不能只靠滚动展示",
+      "contexts": [
+        "campaign",
+        "landing-page",
+        "portfolio"
+      ],
+      "aliases": [
+        "marquee",
+        "滚动轨道",
+        "品牌条带"
+      ],
+      "id": "REF-127",
+      "source": "https://github.com/magicuidesign/magicui/blob/1ac985adca3cdfab9b1739253fd14209687c4e9c/apps/www/registry/magicui/marquee.tsx",
+      "documentation": "https://github.com/magicuidesign/magicui/blob/1ac985adca3cdfab9b1739253fd14209687c4e9c/apps/www/content/docs/components/marquee.mdx",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "codeCopied": false,
+      "repositorySource": "magicuidesign/magicui",
+      "versionPin": "1ac985adca3cdfab9b1739253fd14209687c4e9c",
+      "rights": "Link and original summary only; repository license does not automatically cover external fonts, image assets, or separately sold works."
+    },
+    {
+      "title": "Motion Primitives Text Morph / 字符身份映射变形",
+      "project": "ibelick/motion-primitives",
+      "commit": "120f64f6ca60348e251f929e9c81f11ccbe45eda",
+      "parent": "REF-112",
+      "file": "components/core/text-morph.tsx",
+      "docs": "app/docs/text-morph/page.mdx",
+      "family": "kinetic-type",
+      "usage": "根据字符与重复次数创建稳定键并转场的短文本更新模式",
+      "props": "children, as, variants, transition",
+      "caution": "字符拆分动画需提供整体语义文本与 reduced-motion 适配，非长文连续排版工具",
+      "contexts": [
+        "landing-page",
+        "dashboard",
+        "creative-site"
+      ],
+      "aliases": [
+        "text morph",
+        "字形过渡",
+        "字符匹配动画"
+      ],
+      "id": "REF-128",
+      "source": "https://github.com/ibelick/motion-primitives/blob/120f64f6ca60348e251f929e9c81f11ccbe45eda/components/core/text-morph.tsx",
+      "documentation": "https://github.com/ibelick/motion-primitives/blob/120f64f6ca60348e251f929e9c81f11ccbe45eda/app/docs/text-morph/page.mdx",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "codeCopied": false,
+      "repositorySource": "ibelick/motion-primitives",
+      "versionPin": "120f64f6ca60348e251f929e9c81f11ccbe45eda",
+      "rights": "Link and original summary only; repository license does not automatically cover external fonts, image assets, or separately sold works."
+    },
+    {
+      "title": "Motion Primitives Text Shimmer Wave / 波浪字形着色",
+      "project": "ibelick/motion-primitives",
+      "commit": "120f64f6ca60348e251f929e9c81f11ccbe45eda",
+      "parent": "REF-112",
+      "file": "components/core/text-shimmer-wave.tsx",
+      "docs": "app/docs/text-shimmer-wave/page.mdx",
+      "family": "kinetic-type",
+      "usage": "字符波浪、透视距离、缩放与时长参数构成的动效文字样式",
+      "props": "duration, zDistance, xDistance, yDistance, spread, scaleDistance, rotateYDistance",
+      "caution": "需要 motion/react；对频闪/阅读场景使用减动效和完整可访问文本",
+      "contexts": [
+        "campaign",
+        "creative-site",
+        "brand"
+      ],
+      "aliases": [
+        "text shimmer wave",
+        "波浪发光文字",
+        "逐字动效"
+      ],
+      "id": "REF-129",
+      "source": "https://github.com/ibelick/motion-primitives/blob/120f64f6ca60348e251f929e9c81f11ccbe45eda/components/core/text-shimmer-wave.tsx",
+      "documentation": "https://github.com/ibelick/motion-primitives/blob/120f64f6ca60348e251f929e9c81f11ccbe45eda/app/docs/text-shimmer-wave/page.mdx",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "codeCopied": false,
+      "repositorySource": "ibelick/motion-primitives",
+      "versionPin": "120f64f6ca60348e251f929e9c81f11ccbe45eda",
+      "rights": "Link and original summary only; repository license does not automatically cover external fonts, image assets, or separately sold works."
+    },
+    {
+      "title": "Fancy Components Scramble Hover / 鼠标悬停文字扰码",
+      "project": "danielpetho/fancy",
+      "commit": "f9f62c61207b2dd3210476dd98af3c9a5be24094",
+      "parent": "REF-115",
+      "file": "src/fancy/components/text/scramble-hover.tsx",
+      "docs": "src/content/docs/components/text/scramble-hover.mdx",
+      "family": "experimental-type",
+      "usage": "字符串扰码/逐步恢复，带逐段揭示与速度等参数",
+      "props": "scrambleSpeed, maxIterations, sequential, revealDirection",
+      "caution": "hover 为主要触发；读屏不应读乱码，键盘与减少动效路径需单独提供",
+      "contexts": [
+        "portfolio",
+        "game-companion",
+        "creative-site"
+      ],
+      "aliases": [
+        "scramble hover",
+        "扰码文字",
+        "故障解码"
+      ],
+      "id": "REF-130",
+      "source": "https://github.com/danielpetho/fancy/blob/f9f62c61207b2dd3210476dd98af3c9a5be24094/src/fancy/components/text/scramble-hover.tsx",
+      "documentation": "https://github.com/danielpetho/fancy/blob/f9f62c61207b2dd3210476dd98af3c9a5be24094/src/content/docs/components/text/scramble-hover.mdx",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "codeCopied": false,
+      "repositorySource": "danielpetho/fancy",
+      "versionPin": "f9f62c61207b2dd3210476dd98af3c9a5be24094",
+      "rights": "Link and original summary only; repository license does not automatically cover external fonts, image assets, or separately sold works."
+    },
+    {
+      "title": "Fancy Components Variable Font Cursor Proximity / 字轴邻近响应",
+      "project": "danielpetho/fancy",
+      "commit": "f9f62c61207b2dd3210476dd98af3c9a5be24094",
+      "parent": "REF-115",
+      "file": "src/fancy/components/text/variable-font-cursor-proximity.tsx",
+      "docs": "src/content/docs/components/text/variable-font-cursor-proximity.mdx",
+      "family": "variable-type",
+      "usage": "鼠标靠近不同字符时逐字变化可变字体轴，适用于创意标题与字形实验",
+      "props": "fromFontVariationSettings, toFontVariationSettings, cursor proximity",
+      "caution": "必须自行选用支持对应轴且已授权的 variable font；包含 mouse hook/motion，触摸和性能需重做",
+      "contexts": [
+        "typography",
+        "creative-site",
+        "portfolio"
+      ],
+      "aliases": [
+        "variable font cursor",
+        "可变字体鼠标感应",
+        "字轴动态"
+      ],
+      "id": "REF-131",
+      "source": "https://github.com/danielpetho/fancy/blob/f9f62c61207b2dd3210476dd98af3c9a5be24094/src/fancy/components/text/variable-font-cursor-proximity.tsx",
+      "documentation": "https://github.com/danielpetho/fancy/blob/f9f62c61207b2dd3210476dd98af3c9a5be24094/src/content/docs/components/text/variable-font-cursor-proximity.mdx",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "codeCopied": false,
+      "repositorySource": "danielpetho/fancy",
+      "versionPin": "f9f62c61207b2dd3210476dd98af3c9a5be24094",
+      "rights": "Link and original summary only; repository license does not automatically cover external fonts, image assets, or separately sold works."
+    }
+  ],
+  "cssAtoms": [
+    {
+      "id": "FX-007",
+      "name": "Topographic contour surface / 等高线底纹",
+      "className": "fx43-topographic",
+      "source": "styles/primitives/v043/creative-components.css",
+      "readme": "styles/primitives/v043/README.md",
+      "demo": "playground/creative-components-v043/index.html",
+      "styleIds": [
+        "signal-noir",
+        "organic-tactile"
+      ],
+      "contexts": [
+        "maps",
+        "technical-report"
+      ],
+      "aliases": [
+        "topographic",
+        "contours",
+        "地形线"
+      ],
+      "description": "静态等高线纹理，无远程贴图",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "importsVendorCode": false,
+      "requiredRuntime": []
+    },
+    {
+      "id": "FX-008",
+      "name": "Arched image window / 拱形媒体窗口",
+      "className": "fx43-arch-window",
+      "source": "styles/primitives/v043/creative-components.css",
+      "readme": "styles/primitives/v043/README.md",
+      "demo": "playground/creative-components-v043/index.html",
+      "styleIds": [
+        "editorial-warm",
+        "organic-tactile"
+      ],
+      "contexts": [
+        "gallery",
+        "lifestyle"
+      ],
+      "aliases": [
+        "arch photo",
+        "拱形裁切",
+        "画廊"
+      ],
+      "description": "支持任意已授权 img/SVG 内容的拱形裁切容器",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "importsVendorCode": false,
+      "requiredRuntime": []
+    },
+    {
+      "id": "FX-009",
+      "name": "Folded paper note / 折角便笺",
+      "className": "fx43-folded-paper",
+      "source": "styles/primitives/v043/creative-components.css",
+      "readme": "styles/primitives/v043/README.md",
+      "demo": "playground/creative-components-v043/index.html",
+      "styleIds": [
+        "paper-rebellion",
+        "editorial-warm"
+      ],
+      "contexts": [
+        "knowledge-base",
+        "portfolio"
+      ],
+      "aliases": [
+        "folded paper",
+        "便签",
+        "折角卡"
+      ],
+      "description": "原生 CSS 折角卡片",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "importsVendorCode": false,
+      "requiredRuntime": []
+    },
+    {
+      "id": "FX-010",
+      "name": "Corner ribbon tile / 斜角角标",
+      "className": "fx43-ribbon-tile",
+      "source": "styles/primitives/v043/creative-components.css",
+      "readme": "styles/primitives/v043/README.md",
+      "demo": "playground/creative-components-v043/index.html",
+      "styleIds": [
+        "commerce-atelier",
+        "playful-pop"
+      ],
+      "contexts": [
+        "commerce",
+        "event"
+      ],
+      "aliases": [
+        "corner ribbon",
+        "斜角标签",
+        "商品角标"
+      ],
+      "description": "独立斜角装饰标签，不阻挡真实控件",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "importsVendorCode": false,
+      "requiredRuntime": []
+    },
+    {
+      "id": "FX-011",
+      "name": "Reveal-on-focus caption / 焦点说明图",
+      "className": "fx43-reveal-figure",
+      "source": "styles/primitives/v043/creative-components.css",
+      "readme": "styles/primitives/v043/README.md",
+      "demo": "playground/creative-components-v043/index.html",
+      "styleIds": [
+        "type-led-minimal",
+        "signal-noir"
+      ],
+      "contexts": [
+        "gallery",
+        "portfolio"
+      ],
+      "aliases": [
+        "image caption",
+        "焦点显现",
+        "交互图说"
+      ],
+      "description": "Hover、focus 与无 hover 设备显示图片说明",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "importsVendorCode": false,
+      "requiredRuntime": []
+    },
+    {
+      "id": "FX-012",
+      "name": "Mechanical CSS checkbox switch / 机械拨片开关",
+      "className": "fx43-switch",
+      "source": "styles/primitives/v043/creative-components.css",
+      "readme": "styles/primitives/v043/README.md",
+      "demo": "playground/creative-components-v043/index.html",
+      "styleIds": [
+        "precision-dark",
+        "signal-noir"
+      ],
+      "contexts": [
+        "device-controls",
+        "creative-tool"
+      ],
+      "aliases": [
+        "mechanical switch",
+        "原生开关",
+        "机械按钮"
+      ],
+      "description": "利用真实 checkbox 实现可操作拨片",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "importsVendorCode": false,
+      "requiredRuntime": []
+    },
+    {
+      "id": "FX-013",
+      "name": "Ink sweep underline / 墨迹扫线",
+      "className": "fx43-ink-link",
+      "source": "styles/primitives/v043/creative-components.css",
+      "readme": "styles/primitives/v043/README.md",
+      "demo": "playground/creative-components-v043/index.html",
+      "styleIds": [
+        "editorial-warm",
+        "type-led-minimal"
+      ],
+      "contexts": [
+        "editorial",
+        "navigation"
+      ],
+      "aliases": [
+        "ink underline",
+        "悬停下划线",
+        "导航"
+      ],
+      "description": "键盘可见的短链接墨迹下划线",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "importsVendorCode": false,
+      "requiredRuntime": []
+    },
+    {
+      "id": "FX-014",
+      "name": "Isometric drafting grid / 等轴制图网格",
+      "className": "fx43-isometric-grid",
+      "source": "styles/primitives/v043/creative-components.css",
+      "readme": "styles/primitives/v043/README.md",
+      "demo": "playground/creative-components-v043/index.html",
+      "styleIds": [
+        "aether-orbit",
+        "precision-dark"
+      ],
+      "contexts": [
+        "game",
+        "developer-tool"
+      ],
+      "aliases": [
+        "isometric grid",
+        "等轴网格",
+        "3D 背景"
+      ],
+      "description": "无需 Canvas/WebGL 的静态等轴制图纹理",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "importsVendorCode": false,
+      "requiredRuntime": []
+    }
+  ],
+  "vectorGraphics": [
+    {
+      "id": "VG-001",
+      "name": "Wireframe dome / 线框穹顶",
+      "file": "wireframe-dome.svg",
+      "source": "graphics/v043/wireframe-dome.svg",
+      "readme": "graphics/v043/README.md",
+      "demo": "playground/vector-studies-v043/index.html",
+      "styleIds": [
+        "signal-noir",
+        "aether-orbit"
+      ],
+      "contexts": [
+        "sci-fi",
+        "technical"
+      ],
+      "aliases": [
+        "wireframe dome",
+        "线框穹顶"
+      ],
+      "description": "原创线框球壳与地平线",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "externalResources": false,
+      "format": "SVG 640x360"
+    },
+    {
+      "id": "VG-002",
+      "name": "Sunburst seal / 放射徽章",
+      "file": "sunburst-seal.svg",
+      "source": "graphics/v043/sunburst-seal.svg",
+      "readme": "graphics/v043/README.md",
+      "demo": "playground/vector-studies-v043/index.html",
+      "styleIds": [
+        "paper-rebellion",
+        "editorial-warm"
+      ],
+      "contexts": [
+        "editorial",
+        "heritage"
+      ],
+      "aliases": [
+        "sunburst",
+        "放射徽章"
+      ],
+      "description": "原创放射锯齿徽章图形",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "externalResources": false,
+      "format": "SVG 640x360"
+    },
+    {
+      "id": "VG-003",
+      "name": "Orbital loops / 星轨环",
+      "file": "orbital-loops.svg",
+      "source": "graphics/v043/orbital-loops.svg",
+      "readme": "graphics/v043/README.md",
+      "demo": "playground/vector-studies-v043/index.html",
+      "styleIds": [
+        "aether-orbit",
+        "precision-dark"
+      ],
+      "contexts": [
+        "cosmic",
+        "creative-site"
+      ],
+      "aliases": [
+        "orbit art",
+        "星轨环"
+      ],
+      "description": "原创空间环带和球体",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "externalResources": false,
+      "format": "SVG 640x360"
+    },
+    {
+      "id": "VG-004",
+      "name": "Modular wave / 模块波纹",
+      "file": "modular-wave.svg",
+      "source": "graphics/v043/modular-wave.svg",
+      "readme": "graphics/v043/README.md",
+      "demo": "playground/vector-studies-v043/index.html",
+      "styleIds": [
+        "playful-pop",
+        "shape-expressive"
+      ],
+      "contexts": [
+        "campaign",
+        "abstract"
+      ],
+      "aliases": [
+        "modular wave",
+        "模块波纹"
+      ],
+      "description": "原创抽象叠加色带",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "externalResources": false,
+      "format": "SVG 640x360"
+    },
+    {
+      "id": "VG-005",
+      "name": "Paper-cut landscape / 剪纸景观",
+      "file": "paper-cut-landscape.svg",
+      "source": "graphics/v043/paper-cut-landscape.svg",
+      "readme": "graphics/v043/README.md",
+      "demo": "playground/vector-studies-v043/index.html",
+      "styleIds": [
+        "organic-tactile",
+        "editorial-warm"
+      ],
+      "contexts": [
+        "culture",
+        "lifestyle"
+      ],
+      "aliases": [
+        "paper-cut landscape",
+        "剪纸山水"
+      ],
+      "description": "原创剪纸风格山丘和河流",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "externalResources": false,
+      "format": "SVG 640x360"
+    },
+    {
+      "id": "VG-006",
+      "name": "Constellation map / 星图网络",
+      "file": "constellation-map.svg",
+      "source": "graphics/v043/constellation-map.svg",
+      "readme": "graphics/v043/README.md",
+      "demo": "playground/vector-studies-v043/index.html",
+      "styleIds": [
+        "signal-noir",
+        "aether-orbit"
+      ],
+      "contexts": [
+        "data-story",
+        "space"
+      ],
+      "aliases": [
+        "constellation",
+        "星图网络"
+      ],
+      "description": "原创节点网格与连线",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "externalResources": false,
+      "format": "SVG 640x360"
+    }
+  ]
+}

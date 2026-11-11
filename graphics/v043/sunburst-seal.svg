@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="t d">
+<title id="t">Sunburst Seal — original editorial badge</title><desc id="d">A bold serrated golden seal with an engraved central circle on an ivory canvas, with fine red corner details.</desc>
+<rect width="640" height="360" fill="#f5e8d3"/>
+<g stroke="#ad6450" fill="none" opacity=".6"><path d="M45 54 H126 M45 54 V114"/><path d="M595 54 H514 M595 54 V114"/><path d="M45 306 H126 M45 306 V246"/><path d="M595 306 H514 M595 306 V246"/></g>
+<g transform="translate(320 180)">
+<path d="M0 -137 20 -112 47 -132 57 -99 91 -115 89 -81 124 -85 111 -54 145 -43 122 -16 153 8 123 25 145 55 112 66 120 101 87 93 77 126 48 107 27 139 0 117 -27 139 -48 107 -77 126 -87 93 -120 101 -112 66 -145 55 -123 25 -153 8 -122 -16 -145 -43 -111 -54 -124 -85 -89 -81 -91 -115 -57 -99 -47 -132 -20 -112 Z" fill="#e2ad50" stroke="#a85b37" stroke-width="2"/>
+<circle r="96" fill="#f1cb79" stroke="#9a5439" stroke-width="3"/>
+<circle r="85" fill="none" stroke="#9a5439" stroke-width="1.5" stroke-dasharray="2 7"/>
+<circle r="62" fill="#edb65b" stroke="#a8583b" stroke-width="1"/>
+<path d="M0 -45 13 -14 46 -14 21 6 29 40 0 21 -29 40 -21 6 -46 -14 -13 -14 Z" fill="#8d4e36"/>
+<circle r="8" fill="#f5d98a"/>
+</g>
+</svg>

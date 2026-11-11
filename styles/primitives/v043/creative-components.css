@@ -1,0 +1,191 @@
+/* Original V0.43 creative components. Each .fx43-* asset is opt-in, framework-free,
+   and independent of global :root, downloaded assets, or runtime JS.
+   Copy the selected rule plus reduced-motion/forced-colors media rules. */
+
+/* FX-007 · Topographic contours — fine-line surface for editorial/technical cards. */
+.fx43-topographic {
+  color: var(--fx43-topo-ink, #daf5e9);
+  background-color: var(--fx43-topo-base, #193b34);
+  background-image:
+    repeating-radial-gradient(ellipse 78% 57% at 64% 38%,
+      transparent 0 12px, var(--fx43-topo-line, rgb(167 224 208 / 28%)) 12.5px 13.5px,
+      transparent 14px 29px),
+    linear-gradient(145deg, transparent, rgb(8 25 28 / 25%));
+  background-blend-mode: normal;
+}
+
+/* FX-008 · Arch image window — figure-friendly crop without complex masking. */
+.fx43-arch-window {
+  overflow: hidden;
+  border-radius: 47% 47% 1.2rem 1.2rem / 43% 43% 1.2rem 1.2rem;
+  background: var(--fx43-arch-bg, #decab4);
+  border: 1px solid var(--fx43-arch-edge, #aa927a);
+  isolation: isolate;
+}
+.fx43-arch-window > img,
+.fx43-arch-window > svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* FX-009 · Folded-corner paper — no blocked text or extra HTML node. */
+.fx43-folded-paper {
+  position: relative;
+  background: var(--fx43-paper, #f7eedb);
+  color: var(--fx43-paper-ink, #483b36);
+  border: 1px solid var(--fx43-paper-line, #d7c6ac);
+  clip-path: polygon(0 0, calc(100% - var(--fx43-fold-size, 26px)) 0,
+    100% var(--fx43-fold-size, 26px), 100% 100%, 0 100%);
+  box-shadow: 0 5px 0 rgb(61 44 38 / 4%);
+}
+.fx43-folded-paper::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: var(--fx43-fold-size, 26px);
+  height: var(--fx43-fold-size, 26px);
+  pointer-events: none;
+  background: linear-gradient(225deg, #fff 0 49%, #c8b395 50% 60%, transparent 61%);
+}
+
+/* FX-010 · Diagonal ribbon / label placed on a tile, not over controls. */
+.fx43-ribbon-tile {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+.fx43-ribbon-tile::after {
+  content: attr(data-ribbon);
+  position: absolute;
+  z-index: 1;
+  top: 1.05rem;
+  right: -3.1rem;
+  transform: rotate(39deg);
+  display: block;
+  min-width: 11rem;
+  text-align: center;
+  padding: .4rem .9rem;
+  background: var(--fx43-ribbon-bg, #f2ce72);
+  color: var(--fx43-ribbon-ink, #2e2c22);
+  font: 750 .68rem/1.25 system-ui, sans-serif;
+  letter-spacing: .07em;
+  pointer-events: none;
+}
+
+/* FX-011 · Focus-reveal image caption, visible for hover and keyboard focus. */
+.fx43-reveal-figure {
+  position: relative;
+  overflow: hidden;
+  background: var(--fx43-figure-bg, #273f45);
+  color: var(--fx43-figure-ink, #fff);
+}
+.fx43-reveal-figure > img,
+.fx43-reveal-figure > svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.fx43-reveal-figure > figcaption {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  padding: 2.2rem 1.1rem 1rem;
+  background: linear-gradient(transparent, rgb(0 0 0 / 82%));
+  color: #fff;
+  opacity: 0;
+  transform: translateY(.7rem);
+  transition: transform .25s ease, opacity .25s ease;
+}
+.fx43-reveal-figure:hover > figcaption,
+.fx43-reveal-figure:focus-within > figcaption,
+.fx43-reveal-figure:focus-visible > figcaption {opacity: 1;transform: translateY(0);}
+
+/* FX-012 · Native checkbox-driven mechanical switch; never hides input from focus. */
+.fx43-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: .72rem;
+  cursor: pointer;
+  color: var(--fx43-switch-ink, #23353c);
+  font: 700 .85rem/1.3 system-ui, sans-serif;
+}
+.fx43-switch > input {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  flex: 0 0 auto;
+  position: relative;
+  display: inline-block;
+  width: 3.65rem;
+  height: 1.9rem;
+  margin: 0;
+  border: 2px solid var(--fx43-switch-frame, #657c7e);
+  border-radius: .35rem;
+  background: var(--fx43-switch-off, #d3dedb);
+  box-shadow: inset 0 2px 4px rgb(20 42 46 / 20%);
+  transition: background-color .15s ease;
+}
+.fx43-switch > input::before {
+  content: "";
+  position: absolute;
+  inset: 3px auto 3px 3px;
+  width: calc(50% - 4px);
+  background: #fff;
+  border: 1px solid #74918c;
+  border-radius: .16rem;
+  box-shadow: 1px 2px 2px rgb(18 42 41 / 23%);
+  transition: transform .15s ease;
+}
+.fx43-switch > input:checked {background: var(--fx43-switch-on, #4a9b7a);}
+.fx43-switch > input:checked::before {transform: translateX(1.65rem);}
+.fx43-switch > input:focus-visible {outline: 3px solid var(--fx43-switch-focus, #147aab);outline-offset: 3px;}
+
+/* FX-013 · Underline ink sweep: explicitly interactive links only. */
+.fx43-ink-link {
+  position: relative;
+  display: inline;
+  color: var(--fx43-link-ink, currentColor);
+  text-decoration: none;
+  background-image: linear-gradient(var(--fx43-link-fill, #edb878), var(--fx43-link-fill, #edb878));
+  background-repeat: no-repeat;
+  background-position: left 100%;
+  background-size: 100% .1em;
+  transition: background-size .22s ease-out;
+}
+.fx43-ink-link:hover,
+.fx43-ink-link:focus-visible {background-size: 100% .48em;}
+.fx43-ink-link:focus-visible {outline: 2px solid currentColor;outline-offset: 3px;}
+
+/* FX-014 · Isometric drafting grid: static, no external shader or canvas. */
+.fx43-isometric-grid {
+  background-color: var(--fx43-iso-base, #202d39);
+  background-image:
+    linear-gradient(30deg, transparent 48.7%, var(--fx43-iso-line, rgb(173 224 240 / 18%)) 49.5% 50.5%, transparent 51.3%),
+    linear-gradient(150deg, transparent 48.7%, var(--fx43-iso-line, rgb(173 224 240 / 18%)) 49.5% 50.5%, transparent 51.3%),
+    linear-gradient(90deg, transparent 48.7%, var(--fx43-iso-line, rgb(173 224 240 / 18%)) 49.5% 50.5%, transparent 51.3%);
+  background-size: 52px 30px;
+  color: var(--fx43-iso-ink, #e5f3f7);
+}
+@media (prefers-reduced-motion: reduce) {
+  .fx43-switch > input,
+  .fx43-switch > input::before,
+  .fx43-ink-link,
+  .fx43-reveal-figure > figcaption {transition: none;}
+}
+@media (hover: none) {
+  .fx43-reveal-figure > figcaption {opacity: 1;transform: none;}
+}
+@media (forced-colors: active) {
+  .fx43-topographic,.fx43-isometric-grid,.fx43-folded-paper,
+  .fx43-ribbon-tile,.fx43-reveal-figure,.fx43-arch-window {
+    background: Canvas; color: CanvasText; border: 1px solid CanvasText;
+  }
+  .fx43-reveal-figure > figcaption {opacity: 1;transform: none;background: Canvas;color: CanvasText;}
+  .fx43-switch > input {appearance: auto;-webkit-appearance: auto;width: 1.5rem;height: 1.5rem;box-shadow:none;}
+  .fx43-switch > input::before,.fx43-ribbon-tile::after,.fx43-folded-paper::before {display:none;}
+  .fx43-ink-link {text-decoration: underline;background:none;}
+}

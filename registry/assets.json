@@ -12005,11 +12005,907 @@
         "instructions": "Copy only fx42-margin-note and related reduced-motion/forced-colors CSS from styles/primitives/v042/material-effects.css; explicitly choose compatible theme and test before shipping.",
         "limitations": "CSS visual-only reference, not npm module or guaranteed mobile/accessibility/browser certified component; requires target styling adaptation."
       }
+    },
+    {
+      "id": "REF-124",
+      "type": "reference",
+      "name": "Cult UI Dynamic Island / 多状态浮岛",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v043",
+        "source-pinned-component",
+        "component-specific",
+        "no-code-import",
+        "animated-shell"
+      ],
+      "aliases": [
+        "dynamic island",
+        "浮岛",
+        "膨胀面板"
+      ],
+      "source": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/registry/default/ui/dynamic-island.tsx",
+      "license": "Upstream repository-level MIT license verified in V0.42 REF parent; this item is a pinned research link only. Individual media/font/third-party rights require review; no source copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "mobile",
+        "creative-tool",
+        "workspace"
+      ],
+      "dependencies": [
+        "REF-111"
+      ],
+      "details": "docs/research/material-expansion-v043.md",
+      "spec": "registry/material-expansion-v043.json",
+      "verified": "Actual pinned TSX file and documentation file checked through GitHub 2026-11-11. Exact upstream source exists; not installed, linted, rendered or runtime verified in this repo.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v043.md",
+        "mode": "research-only",
+        "stack": "Pinned third-party React/TSX component reference; source is not checked into this repository",
+        "instructions": "Open https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/registry/default/ui/dynamic-island.tsx and https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/content/docs/components/dynamic-island.mdx; inspect component props/dependencies/copyright and copy only with item-level rights review into a separate target app.",
+        "limitations": "涉及多种宽度与移动高度规则；需另外验证触摸、键盘、关闭与信息密度"
+      }
+    },
+    {
+      "id": "REF-125",
+      "type": "reference",
+      "name": "Cult UI Shift Card / 分层内容切换卡",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v043",
+        "source-pinned-component",
+        "component-specific",
+        "no-code-import",
+        "animated-card"
+      ],
+      "aliases": [
+        "shift-card",
+        "分层切换",
+        "动态卡片"
+      ],
+      "source": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/registry/default/ui/shift-card.tsx",
+      "license": "Upstream repository-level MIT license verified in V0.42 REF parent; this item is a pinned research link only. Individual media/font/third-party rights require review; no source copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "portfolio",
+        "commerce",
+        "campaign"
+      ],
+      "dependencies": [
+        "REF-111"
+      ],
+      "details": "docs/research/material-expansion-v043.md",
+      "spec": "registry/material-expansion-v043.json",
+      "verified": "Actual pinned TSX file and documentation file checked through GitHub 2026-11-11. Exact upstream source exists; not installed, linted, rendered or runtime verified in this repo.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v043.md",
+        "mode": "research-only",
+        "stack": "Pinned third-party React/TSX component reference; source is not checked into this repository",
+        "instructions": "Open https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/registry/default/ui/shift-card.tsx and https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/content/docs/components/shift-card.mdx; inspect component props/dependencies/copyright and copy only with item-level rights review into a separate target app.",
+        "limitations": "交互需适配 focus-visible/触摸与 motion preferences；不当作通用卡片组件导出"
+      }
+    },
+    {
+      "id": "REF-126",
+      "type": "reference",
+      "name": "Magic UI Bento Grid / 不对称故事卡布局",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v043",
+        "source-pinned-component",
+        "component-specific",
+        "no-code-import",
+        "layout-block"
+      ],
+      "aliases": [
+        "bento grid",
+        "不对称宫格",
+        "叙事卡片"
+      ],
+      "source": "https://github.com/magicuidesign/magicui/blob/1ac985adca3cdfab9b1739253fd14209687c4e9c/apps/www/registry/magicui/bento-grid.tsx",
+      "license": "Upstream repository-level MIT license verified in V0.42 REF parent; this item is a pinned research link only. Individual media/font/third-party rights require review; no source copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "landing-page",
+        "portfolio",
+        "product-showcase"
+      ],
+      "dependencies": [
+        "REF-114"
+      ],
+      "details": "docs/research/material-expansion-v043.md",
+      "spec": "registry/material-expansion-v043.json",
+      "verified": "Actual pinned TSX file and documentation file checked through GitHub 2026-11-11. Exact upstream source exists; not installed, linted, rendered or runtime verified in this repo.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v043.md",
+        "mode": "research-only",
+        "stack": "Pinned third-party React/TSX component reference; source is not checked into this repository",
+        "instructions": "Open https://github.com/magicuidesign/magicui/blob/1ac985adca3cdfab9b1739253fd14209687c4e9c/apps/www/registry/magicui/bento-grid.tsx and https://github.com/magicuidesign/magicui/blob/1ac985adca3cdfab9b1739253fd14209687c4e9c/apps/www/content/docs/components/bento-grid.mdx; inspect component props/dependencies/copyright and copy only with item-level rights review into a separate target app.",
+        "limitations": "上游组件依赖 Button、Icon、cn 和 CSS 栅格尺寸；按内容层级重排，而不是整页搬运"
+      }
+    },
+    {
+      "id": "REF-127",
+      "type": "reference",
+      "name": "Magic UI Marquee / 方向可控内容跑马灯",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v043",
+        "source-pinned-component",
+        "component-specific",
+        "no-code-import",
+        "motion-strip"
+      ],
+      "aliases": [
+        "marquee",
+        "滚动轨道",
+        "品牌条带"
+      ],
+      "source": "https://github.com/magicuidesign/magicui/blob/1ac985adca3cdfab9b1739253fd14209687c4e9c/apps/www/registry/magicui/marquee.tsx",
+      "license": "Upstream repository-level MIT license verified in V0.42 REF parent; this item is a pinned research link only. Individual media/font/third-party rights require review; no source copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "campaign",
+        "landing-page",
+        "portfolio"
+      ],
+      "dependencies": [
+        "REF-114"
+      ],
+      "details": "docs/research/material-expansion-v043.md",
+      "spec": "registry/material-expansion-v043.json",
+      "verified": "Actual pinned TSX file and documentation file checked through GitHub 2026-11-11. Exact upstream source exists; not installed, linted, rendered or runtime verified in this repo.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v043.md",
+        "mode": "research-only",
+        "stack": "Pinned third-party React/TSX component reference; source is not checked into this repository",
+        "instructions": "Open https://github.com/magicuidesign/magicui/blob/1ac985adca3cdfab9b1739253fd14209687c4e9c/apps/www/registry/magicui/marquee.tsx and https://github.com/magicuidesign/magicui/blob/1ac985adca3cdfab9b1739253fd14209687c4e9c/apps/www/content/docs/components/marquee.mdx; inspect component props/dependencies/copyright and copy only with item-level rights review into a separate target app.",
+        "limitations": "重复 DOM 和持续移动影响读屏、性能与 reduced-motion；重要内容不能只靠滚动展示"
+      }
+    },
+    {
+      "id": "REF-128",
+      "type": "reference",
+      "name": "Motion Primitives Text Morph / 字符身份映射变形",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v043",
+        "source-pinned-component",
+        "component-specific",
+        "no-code-import",
+        "kinetic-type"
+      ],
+      "aliases": [
+        "text morph",
+        "字形过渡",
+        "字符匹配动画"
+      ],
+      "source": "https://github.com/ibelick/motion-primitives/blob/120f64f6ca60348e251f929e9c81f11ccbe45eda/components/core/text-morph.tsx",
+      "license": "Upstream repository-level MIT license verified in V0.42 REF parent; this item is a pinned research link only. Individual media/font/third-party rights require review; no source copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "landing-page",
+        "dashboard",
+        "creative-site"
+      ],
+      "dependencies": [
+        "REF-112"
+      ],
+      "details": "docs/research/material-expansion-v043.md",
+      "spec": "registry/material-expansion-v043.json",
+      "verified": "Actual pinned TSX file and documentation file checked through GitHub 2026-11-11. Exact upstream source exists; not installed, linted, rendered or runtime verified in this repo.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v043.md",
+        "mode": "research-only",
+        "stack": "Pinned third-party React/TSX component reference; source is not checked into this repository",
+        "instructions": "Open https://github.com/ibelick/motion-primitives/blob/120f64f6ca60348e251f929e9c81f11ccbe45eda/components/core/text-morph.tsx and https://github.com/ibelick/motion-primitives/blob/120f64f6ca60348e251f929e9c81f11ccbe45eda/app/docs/text-morph/page.mdx; inspect component props/dependencies/copyright and copy only with item-level rights review into a separate target app.",
+        "limitations": "字符拆分动画需提供整体语义文本与 reduced-motion 适配，非长文连续排版工具"
+      }
+    },
+    {
+      "id": "REF-129",
+      "type": "reference",
+      "name": "Motion Primitives Text Shimmer Wave / 波浪字形着色",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v043",
+        "source-pinned-component",
+        "component-specific",
+        "no-code-import",
+        "kinetic-type"
+      ],
+      "aliases": [
+        "text shimmer wave",
+        "波浪发光文字",
+        "逐字动效"
+      ],
+      "source": "https://github.com/ibelick/motion-primitives/blob/120f64f6ca60348e251f929e9c81f11ccbe45eda/components/core/text-shimmer-wave.tsx",
+      "license": "Upstream repository-level MIT license verified in V0.42 REF parent; this item is a pinned research link only. Individual media/font/third-party rights require review; no source copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "campaign",
+        "creative-site",
+        "brand"
+      ],
+      "dependencies": [
+        "REF-112"
+      ],
+      "details": "docs/research/material-expansion-v043.md",
+      "spec": "registry/material-expansion-v043.json",
+      "verified": "Actual pinned TSX file and documentation file checked through GitHub 2026-11-11. Exact upstream source exists; not installed, linted, rendered or runtime verified in this repo.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v043.md",
+        "mode": "research-only",
+        "stack": "Pinned third-party React/TSX component reference; source is not checked into this repository",
+        "instructions": "Open https://github.com/ibelick/motion-primitives/blob/120f64f6ca60348e251f929e9c81f11ccbe45eda/components/core/text-shimmer-wave.tsx and https://github.com/ibelick/motion-primitives/blob/120f64f6ca60348e251f929e9c81f11ccbe45eda/app/docs/text-shimmer-wave/page.mdx; inspect component props/dependencies/copyright and copy only with item-level rights review into a separate target app.",
+        "limitations": "需要 motion/react；对频闪/阅读场景使用减动效和完整可访问文本"
+      }
+    },
+    {
+      "id": "REF-130",
+      "type": "reference",
+      "name": "Fancy Components Scramble Hover / 鼠标悬停文字扰码",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v043",
+        "source-pinned-component",
+        "component-specific",
+        "no-code-import",
+        "experimental-type"
+      ],
+      "aliases": [
+        "scramble hover",
+        "扰码文字",
+        "故障解码"
+      ],
+      "source": "https://github.com/danielpetho/fancy/blob/f9f62c61207b2dd3210476dd98af3c9a5be24094/src/fancy/components/text/scramble-hover.tsx",
+      "license": "Upstream repository-level MIT license verified in V0.42 REF parent; this item is a pinned research link only. Individual media/font/third-party rights require review; no source copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "portfolio",
+        "game-companion",
+        "creative-site"
+      ],
+      "dependencies": [
+        "REF-115"
+      ],
+      "details": "docs/research/material-expansion-v043.md",
+      "spec": "registry/material-expansion-v043.json",
+      "verified": "Actual pinned TSX file and documentation file checked through GitHub 2026-11-11. Exact upstream source exists; not installed, linted, rendered or runtime verified in this repo.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v043.md",
+        "mode": "research-only",
+        "stack": "Pinned third-party React/TSX component reference; source is not checked into this repository",
+        "instructions": "Open https://github.com/danielpetho/fancy/blob/f9f62c61207b2dd3210476dd98af3c9a5be24094/src/fancy/components/text/scramble-hover.tsx and https://github.com/danielpetho/fancy/blob/f9f62c61207b2dd3210476dd98af3c9a5be24094/src/content/docs/components/text/scramble-hover.mdx; inspect component props/dependencies/copyright and copy only with item-level rights review into a separate target app.",
+        "limitations": "hover 为主要触发；读屏不应读乱码，键盘与减少动效路径需单独提供"
+      }
+    },
+    {
+      "id": "REF-131",
+      "type": "reference",
+      "name": "Fancy Components Variable Font Cursor Proximity / 字轴邻近响应",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v043",
+        "source-pinned-component",
+        "component-specific",
+        "no-code-import",
+        "variable-type"
+      ],
+      "aliases": [
+        "variable font cursor",
+        "可变字体鼠标感应",
+        "字轴动态"
+      ],
+      "source": "https://github.com/danielpetho/fancy/blob/f9f62c61207b2dd3210476dd98af3c9a5be24094/src/fancy/components/text/variable-font-cursor-proximity.tsx",
+      "license": "Upstream repository-level MIT license verified in V0.42 REF parent; this item is a pinned research link only. Individual media/font/third-party rights require review; no source copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "typography",
+        "creative-site",
+        "portfolio"
+      ],
+      "dependencies": [
+        "REF-115"
+      ],
+      "details": "docs/research/material-expansion-v043.md",
+      "spec": "registry/material-expansion-v043.json",
+      "verified": "Actual pinned TSX file and documentation file checked through GitHub 2026-11-11. Exact upstream source exists; not installed, linted, rendered or runtime verified in this repo.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v043.md",
+        "mode": "research-only",
+        "stack": "Pinned third-party React/TSX component reference; source is not checked into this repository",
+        "instructions": "Open https://github.com/danielpetho/fancy/blob/f9f62c61207b2dd3210476dd98af3c9a5be24094/src/fancy/components/text/variable-font-cursor-proximity.tsx and https://github.com/danielpetho/fancy/blob/f9f62c61207b2dd3210476dd98af3c9a5be24094/src/content/docs/components/text/variable-font-cursor-proximity.mdx; inspect component props/dependencies/copyright and copy only with item-level rights review into a separate target app.",
+        "limitations": "必须自行选用支持对应轴且已授权的 variable font；包含 mouse hook/motion，触摸和性能需重做"
+      }
+    },
+    {
+      "id": "FX-007",
+      "type": "component",
+      "name": "Topographic contour surface / 等高线底纹",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v043",
+        "original-css-source",
+        "independent-material",
+        "no-runtime"
+      ],
+      "aliases": [
+        "topographic",
+        "contours",
+        "地形线"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original CSS and HTML only; no third-party code, fonts or images copied.",
+      "styleIds": [
+        "signal-noir",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "maps",
+        "technical-report"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v043/creative-components.css",
+      "details": "styles/primitives/v043/README.md",
+      "spec": "registry/material-expansion-v043.json",
+      "demo": "playground/creative-components-v043/index.html",
+      "verified": "Independent original CSS class and standalone HTML usage in source; no target-project accessibility/visual certification.",
+      "handoff": {
+        "entry": "styles/primitives/v043/README.md",
+        "stack": "Native CSS and semantic HTML example; not a published React component",
+        "instructions": "Use fx43-topographic from styles/primitives/v043/creative-components.css and keep relevant prefers-reduced-motion/forced-colors rules. Verify app semantics and style.",
+        "limitations": "Source-level visual component only; not tested in production host or published as a package."
+      }
+    },
+    {
+      "id": "FX-008",
+      "type": "component",
+      "name": "Arched image window / 拱形媒体窗口",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v043",
+        "original-css-source",
+        "independent-material",
+        "no-runtime"
+      ],
+      "aliases": [
+        "arch photo",
+        "拱形裁切",
+        "画廊"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original CSS and HTML only; no third-party code, fonts or images copied.",
+      "styleIds": [
+        "editorial-warm",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "gallery",
+        "lifestyle"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v043/creative-components.css",
+      "details": "styles/primitives/v043/README.md",
+      "spec": "registry/material-expansion-v043.json",
+      "demo": "playground/creative-components-v043/index.html",
+      "verified": "Independent original CSS class and standalone HTML usage in source; no target-project accessibility/visual certification.",
+      "handoff": {
+        "entry": "styles/primitives/v043/README.md",
+        "stack": "Native CSS and semantic HTML example; not a published React component",
+        "instructions": "Use fx43-arch-window from styles/primitives/v043/creative-components.css and keep relevant prefers-reduced-motion/forced-colors rules. Verify app semantics and style.",
+        "limitations": "Source-level visual component only; not tested in production host or published as a package."
+      }
+    },
+    {
+      "id": "FX-009",
+      "type": "component",
+      "name": "Folded paper note / 折角便笺",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v043",
+        "original-css-source",
+        "independent-material",
+        "no-runtime"
+      ],
+      "aliases": [
+        "folded paper",
+        "便签",
+        "折角卡"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original CSS and HTML only; no third-party code, fonts or images copied.",
+      "styleIds": [
+        "paper-rebellion",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "knowledge-base",
+        "portfolio"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v043/creative-components.css",
+      "details": "styles/primitives/v043/README.md",
+      "spec": "registry/material-expansion-v043.json",
+      "demo": "playground/creative-components-v043/index.html",
+      "verified": "Independent original CSS class and standalone HTML usage in source; no target-project accessibility/visual certification.",
+      "handoff": {
+        "entry": "styles/primitives/v043/README.md",
+        "stack": "Native CSS and semantic HTML example; not a published React component",
+        "instructions": "Use fx43-folded-paper from styles/primitives/v043/creative-components.css and keep relevant prefers-reduced-motion/forced-colors rules. Verify app semantics and style.",
+        "limitations": "Source-level visual component only; not tested in production host or published as a package."
+      }
+    },
+    {
+      "id": "FX-010",
+      "type": "component",
+      "name": "Corner ribbon tile / 斜角角标",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v043",
+        "original-css-source",
+        "independent-material",
+        "no-runtime"
+      ],
+      "aliases": [
+        "corner ribbon",
+        "斜角标签",
+        "商品角标"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original CSS and HTML only; no third-party code, fonts or images copied.",
+      "styleIds": [
+        "commerce-atelier",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "commerce",
+        "event"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v043/creative-components.css",
+      "details": "styles/primitives/v043/README.md",
+      "spec": "registry/material-expansion-v043.json",
+      "demo": "playground/creative-components-v043/index.html",
+      "verified": "Independent original CSS class and standalone HTML usage in source; no target-project accessibility/visual certification.",
+      "handoff": {
+        "entry": "styles/primitives/v043/README.md",
+        "stack": "Native CSS and semantic HTML example; not a published React component",
+        "instructions": "Use fx43-ribbon-tile from styles/primitives/v043/creative-components.css and keep relevant prefers-reduced-motion/forced-colors rules. Verify app semantics and style.",
+        "limitations": "Source-level visual component only; not tested in production host or published as a package."
+      }
+    },
+    {
+      "id": "FX-011",
+      "type": "component",
+      "name": "Reveal-on-focus caption / 焦点说明图",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v043",
+        "original-css-source",
+        "independent-material",
+        "no-runtime"
+      ],
+      "aliases": [
+        "image caption",
+        "焦点显现",
+        "交互图说"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original CSS and HTML only; no third-party code, fonts or images copied.",
+      "styleIds": [
+        "type-led-minimal",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "gallery",
+        "portfolio"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v043/creative-components.css",
+      "details": "styles/primitives/v043/README.md",
+      "spec": "registry/material-expansion-v043.json",
+      "demo": "playground/creative-components-v043/index.html",
+      "verified": "Independent original CSS class and standalone HTML usage in source; no target-project accessibility/visual certification.",
+      "handoff": {
+        "entry": "styles/primitives/v043/README.md",
+        "stack": "Native CSS and semantic HTML example; not a published React component",
+        "instructions": "Use fx43-reveal-figure from styles/primitives/v043/creative-components.css and keep relevant prefers-reduced-motion/forced-colors rules. Verify app semantics and style.",
+        "limitations": "Source-level visual component only; not tested in production host or published as a package."
+      }
+    },
+    {
+      "id": "FX-012",
+      "type": "component",
+      "name": "Mechanical CSS checkbox switch / 机械拨片开关",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v043",
+        "original-css-source",
+        "independent-material",
+        "no-runtime"
+      ],
+      "aliases": [
+        "mechanical switch",
+        "原生开关",
+        "机械按钮"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original CSS and HTML only; no third-party code, fonts or images copied.",
+      "styleIds": [
+        "precision-dark",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "device-controls",
+        "creative-tool"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v043/creative-components.css",
+      "details": "styles/primitives/v043/README.md",
+      "spec": "registry/material-expansion-v043.json",
+      "demo": "playground/creative-components-v043/index.html",
+      "verified": "Independent original CSS class and standalone HTML usage in source; no target-project accessibility/visual certification.",
+      "handoff": {
+        "entry": "styles/primitives/v043/README.md",
+        "stack": "Native CSS and semantic HTML example; not a published React component",
+        "instructions": "Use fx43-switch from styles/primitives/v043/creative-components.css and keep relevant prefers-reduced-motion/forced-colors rules. Verify app semantics and style.",
+        "limitations": "Source-level visual component only; not tested in production host or published as a package."
+      }
+    },
+    {
+      "id": "FX-013",
+      "type": "component",
+      "name": "Ink sweep underline / 墨迹扫线",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v043",
+        "original-css-source",
+        "independent-material",
+        "no-runtime"
+      ],
+      "aliases": [
+        "ink underline",
+        "悬停下划线",
+        "导航"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original CSS and HTML only; no third-party code, fonts or images copied.",
+      "styleIds": [
+        "editorial-warm",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "navigation"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v043/creative-components.css",
+      "details": "styles/primitives/v043/README.md",
+      "spec": "registry/material-expansion-v043.json",
+      "demo": "playground/creative-components-v043/index.html",
+      "verified": "Independent original CSS class and standalone HTML usage in source; no target-project accessibility/visual certification.",
+      "handoff": {
+        "entry": "styles/primitives/v043/README.md",
+        "stack": "Native CSS and semantic HTML example; not a published React component",
+        "instructions": "Use fx43-ink-link from styles/primitives/v043/creative-components.css and keep relevant prefers-reduced-motion/forced-colors rules. Verify app semantics and style.",
+        "limitations": "Source-level visual component only; not tested in production host or published as a package."
+      }
+    },
+    {
+      "id": "FX-014",
+      "type": "component",
+      "name": "Isometric drafting grid / 等轴制图网格",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v043",
+        "original-css-source",
+        "independent-material",
+        "no-runtime"
+      ],
+      "aliases": [
+        "isometric grid",
+        "等轴网格",
+        "3D 背景"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original CSS and HTML only; no third-party code, fonts or images copied.",
+      "styleIds": [
+        "aether-orbit",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "game",
+        "developer-tool"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v043/creative-components.css",
+      "details": "styles/primitives/v043/README.md",
+      "spec": "registry/material-expansion-v043.json",
+      "demo": "playground/creative-components-v043/index.html",
+      "verified": "Independent original CSS class and standalone HTML usage in source; no target-project accessibility/visual certification.",
+      "handoff": {
+        "entry": "styles/primitives/v043/README.md",
+        "stack": "Native CSS and semantic HTML example; not a published React component",
+        "instructions": "Use fx43-isometric-grid from styles/primitives/v043/creative-components.css and keep relevant prefers-reduced-motion/forced-colors rules. Verify app semantics and style.",
+        "limitations": "Source-level visual component only; not tested in production host or published as a package."
+      }
+    },
+    {
+      "id": "VG-001",
+      "type": "component",
+      "name": "Wireframe dome / 线框穹顶",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v043",
+        "original-svg",
+        "vector-illustration",
+        "standalone-art"
+      ],
+      "aliases": [
+        "wireframe dome",
+        "线框穹顶"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG vector illustration; no external source/media/fonts.",
+      "styleIds": [
+        "signal-noir",
+        "aether-orbit"
+      ],
+      "applicationContexts": [
+        "sci-fi",
+        "technical"
+      ],
+      "dependencies": [],
+      "path": "graphics/v043/wireframe-dome.svg",
+      "details": "graphics/v043/README.md",
+      "spec": "registry/material-expansion-v043.json",
+      "demo": "playground/vector-studies-v043/index.html",
+      "verified": "Independent inline SVG source with title, description, viewBox and gallery file reference authored 2026-11-11; no live app approval/asset size audit.",
+      "handoff": {
+        "entry": "graphics/v043/README.md",
+        "stack": "Static SVG standalone vector source; can use as media or adapt shape geometry, not a React export",
+        "instructions": "Reference graphics/v043/wireframe-dome.svg as an individual image. For decorative use set empty HTML alt; for meaningful use add context-specific alt and test color/contrast.",
+        "limitations": "Vector graphic only; not a font, icon library, animation engine or complete page layout."
+      }
+    },
+    {
+      "id": "VG-002",
+      "type": "component",
+      "name": "Sunburst seal / 放射徽章",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v043",
+        "original-svg",
+        "vector-illustration",
+        "standalone-art"
+      ],
+      "aliases": [
+        "sunburst",
+        "放射徽章"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG vector illustration; no external source/media/fonts.",
+      "styleIds": [
+        "paper-rebellion",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "heritage"
+      ],
+      "dependencies": [],
+      "path": "graphics/v043/sunburst-seal.svg",
+      "details": "graphics/v043/README.md",
+      "spec": "registry/material-expansion-v043.json",
+      "demo": "playground/vector-studies-v043/index.html",
+      "verified": "Independent inline SVG source with title, description, viewBox and gallery file reference authored 2026-11-11; no live app approval/asset size audit.",
+      "handoff": {
+        "entry": "graphics/v043/README.md",
+        "stack": "Static SVG standalone vector source; can use as media or adapt shape geometry, not a React export",
+        "instructions": "Reference graphics/v043/sunburst-seal.svg as an individual image. For decorative use set empty HTML alt; for meaningful use add context-specific alt and test color/contrast.",
+        "limitations": "Vector graphic only; not a font, icon library, animation engine or complete page layout."
+      }
+    },
+    {
+      "id": "VG-003",
+      "type": "component",
+      "name": "Orbital loops / 星轨环",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v043",
+        "original-svg",
+        "vector-illustration",
+        "standalone-art"
+      ],
+      "aliases": [
+        "orbit art",
+        "星轨环"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG vector illustration; no external source/media/fonts.",
+      "styleIds": [
+        "aether-orbit",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "cosmic",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "graphics/v043/orbital-loops.svg",
+      "details": "graphics/v043/README.md",
+      "spec": "registry/material-expansion-v043.json",
+      "demo": "playground/vector-studies-v043/index.html",
+      "verified": "Independent inline SVG source with title, description, viewBox and gallery file reference authored 2026-11-11; no live app approval/asset size audit.",
+      "handoff": {
+        "entry": "graphics/v043/README.md",
+        "stack": "Static SVG standalone vector source; can use as media or adapt shape geometry, not a React export",
+        "instructions": "Reference graphics/v043/orbital-loops.svg as an individual image. For decorative use set empty HTML alt; for meaningful use add context-specific alt and test color/contrast.",
+        "limitations": "Vector graphic only; not a font, icon library, animation engine or complete page layout."
+      }
+    },
+    {
+      "id": "VG-004",
+      "type": "component",
+      "name": "Modular wave / 模块波纹",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v043",
+        "original-svg",
+        "vector-illustration",
+        "standalone-art"
+      ],
+      "aliases": [
+        "modular wave",
+        "模块波纹"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG vector illustration; no external source/media/fonts.",
+      "styleIds": [
+        "playful-pop",
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "campaign",
+        "abstract"
+      ],
+      "dependencies": [],
+      "path": "graphics/v043/modular-wave.svg",
+      "details": "graphics/v043/README.md",
+      "spec": "registry/material-expansion-v043.json",
+      "demo": "playground/vector-studies-v043/index.html",
+      "verified": "Independent inline SVG source with title, description, viewBox and gallery file reference authored 2026-11-11; no live app approval/asset size audit.",
+      "handoff": {
+        "entry": "graphics/v043/README.md",
+        "stack": "Static SVG standalone vector source; can use as media or adapt shape geometry, not a React export",
+        "instructions": "Reference graphics/v043/modular-wave.svg as an individual image. For decorative use set empty HTML alt; for meaningful use add context-specific alt and test color/contrast.",
+        "limitations": "Vector graphic only; not a font, icon library, animation engine or complete page layout."
+      }
+    },
+    {
+      "id": "VG-005",
+      "type": "component",
+      "name": "Paper-cut landscape / 剪纸景观",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v043",
+        "original-svg",
+        "vector-illustration",
+        "standalone-art"
+      ],
+      "aliases": [
+        "paper-cut landscape",
+        "剪纸山水"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG vector illustration; no external source/media/fonts.",
+      "styleIds": [
+        "organic-tactile",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "culture",
+        "lifestyle"
+      ],
+      "dependencies": [],
+      "path": "graphics/v043/paper-cut-landscape.svg",
+      "details": "graphics/v043/README.md",
+      "spec": "registry/material-expansion-v043.json",
+      "demo": "playground/vector-studies-v043/index.html",
+      "verified": "Independent inline SVG source with title, description, viewBox and gallery file reference authored 2026-11-11; no live app approval/asset size audit.",
+      "handoff": {
+        "entry": "graphics/v043/README.md",
+        "stack": "Static SVG standalone vector source; can use as media or adapt shape geometry, not a React export",
+        "instructions": "Reference graphics/v043/paper-cut-landscape.svg as an individual image. For decorative use set empty HTML alt; for meaningful use add context-specific alt and test color/contrast.",
+        "limitations": "Vector graphic only; not a font, icon library, animation engine or complete page layout."
+      }
+    },
+    {
+      "id": "VG-006",
+      "type": "component",
+      "name": "Constellation map / 星图网络",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v043",
+        "original-svg",
+        "vector-illustration",
+        "standalone-art"
+      ],
+      "aliases": [
+        "constellation",
+        "星图网络"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG vector illustration; no external source/media/fonts.",
+      "styleIds": [
+        "signal-noir",
+        "aether-orbit"
+      ],
+      "applicationContexts": [
+        "data-story",
+        "space"
+      ],
+      "dependencies": [],
+      "path": "graphics/v043/constellation-map.svg",
+      "details": "graphics/v043/README.md",
+      "spec": "registry/material-expansion-v043.json",
+      "demo": "playground/vector-studies-v043/index.html",
+      "verified": "Independent inline SVG source with title, description, viewBox and gallery file reference authored 2026-11-11; no live app approval/asset size audit.",
+      "handoff": {
+        "entry": "graphics/v043/README.md",
+        "stack": "Static SVG standalone vector source; can use as media or adapt shape geometry, not a React export",
+        "instructions": "Reference graphics/v043/constellation-map.svg as an individual image. For decorative use set empty HTML alt; for meaningful use add context-specific alt and test color/contrast.",
+        "limitations": "Vector graphic only; not a font, icon library, animation engine or complete page layout."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",
   "styleRegistry": "registry/styles.json",
-  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee. V0.18 adds research-only visual studies outside registry/styles.json and component archetypes outside registry/components.json; IP-026/IP-028 only include headless pure models, not UI components. V0.30 adds 17 research-only external specialization references REF-042..058; these are not actual component exports or dependencies. V0.31 adds 15 original design studies REF-059..068 and IP-031..035 as analyzed/research-only; not deployed components, runtime dependencies, or new styles. V0.32: 18 original research contracts IP-036..041 / REF-069..080; four visual entries link separate opt-in CSS samples but are not certified UI implementations. V0.34 adds 16 task-first original research studies (REF-081..088 and IP-042..049), with 6 optional scoped CSS visual/layout atoms; IP research remains explicitly research-only. V0.35 adds eight original static dual-viewport SVG specimens attached to existing IDs only; registered asset count stays 255 and lifecycle stages remain analyzed. V0.36 adds 12 community/editor/agent upstream reference entries REF-089..100 and 4 independent source-governance behavior contracts IP-050..053. All are analyzed/research-only; neither an installable shadcn registry nor an existing editor integration. V0.37 adds 10 item-level source-anchored component/block dossiers REF-101..110 and 3 original Agent interaction contracts IP-054..056; all analyzed/research-only, without installed/copyable code. Three 21st.dev community items remain unregistered candidates awaiting exact item-level links/licensing. V0.38 adds 3 original standalone interaction prototypes IP-057..059 with inspected ESM source, live DOM specimen and focused tests. Previous IP-054..056 remain analyzed/research-only. No React export/theme/third-party dependency added. V0.39 adds three ORIGINAL standalone visual block editor interaction prototypes IP-060..062 (reorder, typed props/schema, local selection undo/redo). All have ESM source/demo/test fixtures, but no new React exports, default themes, external packages, nested page builder or server persistence. V0.40 introduces 3 ORIGINAL bounded registry/slot/preview executable prototypes IP-063..065, all adapted source models with Node/Chromium fixtures. Unknown vendor Registry items remain inspection-only; no public React export, installer, production builder, file write or new theme. V0.41 adds IP-066..068 ORIGINAL read-only Registry metadata parser, local dependency graph and this-library-only internal snapshot migration. Three pinned official metadata facts are reviewed with tests; NO upstream code, installers, host integration, new React exports or style themes. V0.42 re-centered on material accumulation: added 13 source-pinned external UI/motion/dataviz/gesture references REF-111..123 plus six ORIGINAL reusable CSS visual atoms FX-001..006, no new React exports, no new default style, no product builder and no copied upstream components.",
+  "classificationNote": "Empty styleIds means a reference/pattern is not pre-bound to a theme; it does not mean implementation portability is verified. applicationContexts are search hints, not a compatibility guarantee. V0.18 adds research-only visual studies outside registry/styles.json and component archetypes outside registry/components.json; IP-026/IP-028 only include headless pure models, not UI components. V0.30 adds 17 research-only external specialization references REF-042..058; these are not actual component exports or dependencies. V0.31 adds 15 original design studies REF-059..068 and IP-031..035 as analyzed/research-only; not deployed components, runtime dependencies, or new styles. V0.32: 18 original research contracts IP-036..041 / REF-069..080; four visual entries link separate opt-in CSS samples but are not certified UI implementations. V0.34 adds 16 task-first original research studies (REF-081..088 and IP-042..049), with 6 optional scoped CSS visual/layout atoms; IP research remains explicitly research-only. V0.35 adds eight original static dual-viewport SVG specimens attached to existing IDs only; registered asset count stays 255 and lifecycle stages remain analyzed. V0.36 adds 12 community/editor/agent upstream reference entries REF-089..100 and 4 independent source-governance behavior contracts IP-050..053. All are analyzed/research-only; neither an installable shadcn registry nor an existing editor integration. V0.37 adds 10 item-level source-anchored component/block dossiers REF-101..110 and 3 original Agent interaction contracts IP-054..056; all analyzed/research-only, without installed/copyable code. Three 21st.dev community items remain unregistered candidates awaiting exact item-level links/licensing. V0.38 adds 3 original standalone interaction prototypes IP-057..059 with inspected ESM source, live DOM specimen and focused tests. Previous IP-054..056 remain analyzed/research-only. No React export/theme/third-party dependency added. V0.39 adds three ORIGINAL standalone visual block editor interaction prototypes IP-060..062 (reorder, typed props/schema, local selection undo/redo). All have ESM source/demo/test fixtures, but no new React exports, default themes, external packages, nested page builder or server persistence. V0.40 introduces 3 ORIGINAL bounded registry/slot/preview executable prototypes IP-063..065, all adapted source models with Node/Chromium fixtures. Unknown vendor Registry items remain inspection-only; no public React export, installer, production builder, file write or new theme. V0.41 adds IP-066..068 ORIGINAL read-only Registry metadata parser, local dependency graph and this-library-only internal snapshot migration. Three pinned official metadata facts are reviewed with tests; NO upstream code, installers, host integration, new React exports or style themes. V0.42 re-centered on material accumulation: added 13 source-pinned external UI/motion/dataviz/gesture references REF-111..123 plus six ORIGINAL reusable CSS visual atoms FX-001..006, no new React exports, no new default style, no product builder and no copied upstream components. V0.43 material-only growth: 8 truly individual upstream TSX source refs REF-124..131, eight ORIGINAL CSS source atoms FX-007..014, six ORIGINAL standalone vector SVG files VG-001..006. No new tests, installer, React public exports, themes or product builder.",
   "reusePolicyVersion": "1.0",
   "reusePolicies": {
     "style-token": {

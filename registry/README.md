@@ -11,6 +11,7 @@ This directory is the **authoritative index** for choosing existing design refer
 | `styles.json` | Independent style IDs, token/spec/demo entrypoints; **no repository default** |
 | `style-assembly.json` | Fourteen per-style page structure and interaction handoffs; real template, experience-recipe and React-export references. Used by `scripts/style-assembly.mjs`; not generated production pages. |
 | `style-facets.json` | One-to-one theme selection facets: task aliases, structural layout, material, interaction, device and density; references real demo paths. Pair with `scripts/style-match.mjs` and `scripts/select-style.mjs` for explainable matching, not an ML style rank. |
+| `material-expansion-v043.json` | 8 个源码路径确证的具体上游动态组件 REF-124..131、8 个原创原生 CSS 组件 FX-007..014、6 个原创可编辑 SVG 图形 VG-001..006；区分 research-only 与 copyable-source，实物文件和轻量预览均有 |
 | `material-expansion-v042.json` | 本轮 13 个来源确证的多样化前端资源 + 6 个确有原始 CSS 源码的视觉效果：外部 REF-111..123 仅研究型，原创 FX-001..006 是可拆用参考；不是 npm/React 导出或合成产品 |
 | `registry-metadata-v041.json` | IP-066..068 原创只读 shadcn `registry-item.json` 元数据子集解析、限定已审条目依赖拓扑和内部元数据格式迁移。附固定上游提交/条目来源、测试和独立演示；无安装或组件运行许可结论 |
 | `registry-slots-v040.json` | 原创执行级模型 IP-063..065：Registry 元数据 Fixture 映射、三层 Slot 文档、不触碰服务端的预览确认；附源文件、独立 DOM 演示与 Node/Browser 测试 |

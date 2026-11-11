@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="t d">
+<title id="t">Orbital Loops — original spatial illustration</title><desc id="d">Three elegant tilted elliptical orbit rings around an illuminated central sphere, with two small planets.</desc>
+<defs>
+<radialGradient id="background" cx=".48" cy=".38" r=".9"><stop stop-color="#292346"/><stop offset="1" stop-color="#10152b"/></radialGradient>
+<radialGradient id="planet" cx=".3" cy=".25"><stop stop-color="#e3c3fb"/><stop offset=".5" stop-color="#a787e8"/><stop offset="1" stop-color="#473773"/></radialGradient>
+<linearGradient id="ring"><stop stop-color="#70d6ea"/><stop offset=".5" stop-color="#c0aaf8"/><stop offset="1" stop-color="#fbce97"/></linearGradient>
+</defs>
+<rect width="640" height="360" fill="url(#background)"/>
+<g transform="translate(320 180)" fill="none">
+<ellipse rx="232" ry="63" transform="rotate(-24)" stroke="url(#ring)" stroke-width="3"/>
+<ellipse rx="205" ry="82" transform="rotate(38)" stroke="url(#ring)" stroke-width="1.6" opacity=".68"/>
+<ellipse rx="148" ry="107" transform="rotate(-64)" stroke="#9cafff" stroke-width="1.4" opacity=".58"/>
+<circle r="66" fill="url(#planet)" stroke="#dbccf7" stroke-opacity=".55"/>
+<path d="M-49 -43 Q22 -60 57 -3" stroke="#f2e5ff" stroke-opacity=".65" stroke-width="3"/>
+<path d="M-53 31 Q9 72 53 29" stroke="#443777" stroke-width="5" opacity=".7"/>
+<circle cx="-203" cy="-33" r="12" fill="#f9ce99" stroke="#ffeacf" stroke-width="2"/>
+<circle cx="190" cy="68" r="7" fill="#8de1e3" stroke="#d5feff" stroke-width="2"/>
+</g>
+<g fill="#b9d5ef" opacity=".75"><circle cx="74" cy="51" r="1.7"/><circle cx="548" cy="85" r="2"/><circle cx="574" cy="278" r="1.5"/><circle cx="130" cy="289" r="1.5"/></g>
+</svg>

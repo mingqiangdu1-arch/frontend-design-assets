@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="t d">
+<title id="t">Constellation Map — original linked point field</title><desc id="d">An original constellation of connected turquoise and gold points set against a navy drafting grid.</desc>
+<defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0 H0 V32" fill="none" stroke="#6f91aa" stroke-opacity=".16" stroke-width="1"/></pattern></defs>
+<rect width="640" height="360" fill="#101e31"/><rect width="640" height="360" fill="url(#grid)"/>
+<g stroke="#63c9c5" stroke-width="1.9" stroke-opacity=".74" fill="none">
+<path d="M77 246 146 168 228 194 302 91 399 143 520 86 567 214 455 284 352 238 228 194 174 288 77 246"/>
+<path d="M146 168 202 82 302 91 M399 143 455 284 M352 238 302 91" stroke-dasharray="4 8" opacity=".52"/>
+</g>
+<g fill="#91e4d9" stroke="#102f3e" stroke-width="3">
+<circle cx="77" cy="246" r="8"/><circle cx="146" cy="168" r="5"/><circle cx="228" cy="194" r="8"/><circle cx="302" cy="91" r="10"/><circle cx="399" cy="143" r="7"/><circle cx="520" cy="86" r="8"/><circle cx="567" cy="214" r="5"/><circle cx="455" cy="284" r="9"/><circle cx="352" cy="238" r="6"/><circle cx="174" cy="288" r="5"/><circle cx="202" cy="82" r="5"/>
+</g>
+<g fill="none" stroke="#f2c785" stroke-width="1.5"><circle cx="302" cy="91" r="18"/><circle cx="455" cy="284" r="17"/><circle cx="520" cy="86" r="15"/></g>
+</svg>
