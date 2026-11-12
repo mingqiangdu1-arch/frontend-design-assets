@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-11-12 · V0.46 original form, comparison, data and expressive design materials
+
+- Added **12 independent original native CSS/HTML component atoms** FX-037..048: email validation, file chooser, native color input, search shortcut strip, range-driven before/after comparison, histogram, calendar intensity grid, semantic code diff, state notice, native progress, poster typography and perforated ticket card.
+- Added one original **local ESM compare-range adapter** for FX-041 with native range input and live visual reveal; no external media, third-party code or application state.
+- Added **6 original standalone SVG files** VG-017..022: spectral ribbons, editorial ticket, analog dial, halftone orbit, botanical blueprint and 3-shot storyboard.
+- [Structured catalog](registry/material-expansion-v046.json) · [CSS source](styles/primitives/v046/form-data-experiment.css) · [CSS interaction specimens](playground/form-data-experiment-v046/index.html) · [SVG source](graphics/v046/) · [research](docs/research/material-expansion-v046.md).
+- Asset catalog **374 → 392**; no new React exports, themes, third-party packages, full page builder or new test suite. Production-device, a11y and host data behavior remain unverified.
+
+
 ## 2026-11-12 · V0.45 mobile, audio and interface state materials
 
 - Added **10 original native CSS source atoms** FX-027..036: safe-area bottom tabs, touch scroll-snap rail, press feedback, native disclosure action row, synthetic waveform range control, transcript cue links, voice status indicator, map cluster marker, empty-state action and reduced-motion skeleton.

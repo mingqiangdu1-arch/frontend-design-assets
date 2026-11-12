@@ -1,0 +1,423 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.46.0",
+  "date": "2026-11-12",
+  "focus": "Material-only: 12 original opt-in CSS atoms incl. one local range JS adapter; 6 standalone original SVGs. Form, data and expressive visual sources, not a website product.",
+  "previousAssetCount": 374,
+  "newAssetCount": 18,
+  "expectedAssetCount": 392,
+  "reactExportsAdded": 0,
+  "stylesAdded": 0,
+  "testSuitesAdded": 0,
+  "thirdPartyCodeCopied": false,
+  "sourceFiles": [
+    "registry/material-expansion-v046.json",
+    "docs/research/material-expansion-v046.md",
+    "styles/primitives/v046/form-data-experiment.css",
+    "styles/primitives/v046/compare-range.js",
+    "styles/primitives/v046/README.md",
+    "playground/form-data-experiment-v046/index.html",
+    "graphics/v046/README.md",
+    "playground/vector-studies-v046/index.html",
+    "graphics/v046/spectral-ribbons.svg",
+    "graphics/v046/editorial-ticket.svg",
+    "graphics/v046/instrument-dial.svg",
+    "graphics/v046/halftone-orbit.svg",
+    "graphics/v046/botanical-blueprint.svg",
+    "graphics/v046/storyboard-frames.svg"
+  ],
+  "cssAtoms": [
+    {
+      "id": "FX-037",
+      "name": "Native validated email field / 原生邮箱验证字段",
+      "className": "fx46-email-field",
+      "styleIds": [
+        "refined-light-saas",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "forms",
+        "workspace"
+      ],
+      "aliases": [
+        "email validation",
+        "输入校验",
+        "邮箱表单"
+      ],
+      "source": "styles/primitives/v046/form-data-experiment.css",
+      "optionalJS": null,
+      "readme": "styles/primitives/v046/README.md",
+      "demo": "playground/form-data-experiment-v046/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "limitation": "Browser email semantics, required constraints, visible helper and :user-invalid styling. Host supplies submit/cross-field rules.",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-038",
+      "name": "Native file chooser tile / 原生文件选取区",
+      "className": "fx46-file-tile",
+      "styleIds": [
+        "refined-light-saas",
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "forms",
+        "creative-tool"
+      ],
+      "aliases": [
+        "file picker",
+        "文件上传入口",
+        "选择文件"
+      ],
+      "source": "styles/primitives/v046/form-data-experiment.css",
+      "optionalJS": null,
+      "readme": "styles/primitives/v046/README.md",
+      "demo": "playground/form-data-experiment-v046/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "limitation": "Real input[type=file] and focus-visible; no drag/drop, upload API, storage or malware checks.",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-039",
+      "name": "Chromatic color well / 原生调色盘",
+      "className": "fx46-color-well",
+      "styleIds": [
+        "shape-expressive",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "creative-tool",
+        "forms"
+      ],
+      "aliases": [
+        "color picker",
+        "取色器",
+        "颜色控件"
+      ],
+      "source": "styles/primitives/v046/form-data-experiment.css",
+      "optionalJS": null,
+      "readme": "styles/primitives/v046/README.md",
+      "demo": "playground/form-data-experiment-v046/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "limitation": "Real input[type=color] exposed with label; no persistent palette, synchronization or contrast checker.",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-040",
+      "name": "Command-key search strip / 搜索快捷键条",
+      "className": "fx46-search-strip",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "knowledge-base",
+        "workspace"
+      ],
+      "aliases": [
+        "search field",
+        "搜索框",
+        "shortcut hint"
+      ],
+      "source": "styles/primitives/v046/form-data-experiment.css",
+      "optionalJS": null,
+      "readme": "styles/primitives/v046/README.md",
+      "demo": "playground/form-data-experiment-v046/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "limitation": "Native search input; decorative kbd hint does not implement Command-K activation, suggestions or search.",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-041",
+      "name": "Range-operated comparison window / 可操作前后对照",
+      "className": "fx46-compare",
+      "styleIds": [
+        "shape-expressive",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "portfolio",
+        "creative-tool"
+      ],
+      "aliases": [
+        "before after",
+        "前后对比",
+        "图像揭示"
+      ],
+      "source": "styles/primitives/v046/form-data-experiment.css",
+      "optionalJS": "styles/primitives/v046/compare-range.js",
+      "readme": "styles/primitives/v046/README.md",
+      "demo": "playground/form-data-experiment-v046/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html-local-js",
+      "limitation": "Original local JS binds native range to CSS clip and percent output; actual images and persistence supplied by host; not shipped as React.",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-042",
+      "name": "Accessible mini histogram / 语义直方条",
+      "className": "fx46-histogram",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "analytics",
+        "data-story"
+      ],
+      "aliases": [
+        "histogram",
+        "频数分布",
+        "小型柱图"
+      ],
+      "source": "styles/primitives/v046/form-data-experiment.css",
+      "optionalJS": null,
+      "readme": "styles/primitives/v046/README.md",
+      "demo": "playground/form-data-experiment-v046/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "limitation": "Semantic figure and authored values; bars are static CSS lengths, no scale interpolation or data binding.",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-043",
+      "name": "Calendar intensity matrix / 日历强度矩阵",
+      "className": "fx46-heatmap",
+      "styleIds": [
+        "refined-light-saas",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "analytics",
+        "personal-dashboard"
+      ],
+      "aliases": [
+        "calendar heatmap",
+        "日历热力",
+        "活跃度"
+      ],
+      "source": "styles/primitives/v046/form-data-experiment.css",
+      "optionalJS": null,
+      "readme": "styles/primitives/v046/README.md",
+      "demo": "playground/form-data-experiment-v046/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "limitation": "Fixed sample value cells include text label for intensity; real day/value mapping and hover tooltips require host.",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-044",
+      "name": "Semantic inline diff viewport / 语义差异视图",
+      "className": "fx46-code-diff",
+      "styleIds": [
+        "precision-dark",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "developer-tool",
+        "review"
+      ],
+      "aliases": [
+        "code diff",
+        "文本对比",
+        "增删标记"
+      ],
+      "source": "styles/primitives/v046/form-data-experiment.css",
+      "optionalJS": null,
+      "readme": "styles/primitives/v046/README.md",
+      "demo": "playground/form-data-experiment-v046/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "limitation": "Native ins/del wrapped in pre/code; diff calculation, trusted content escaping and approval flow require host.",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-045",
+      "name": "Bordered state notice / 边框状态通知",
+      "className": "fx46-state-notice",
+      "styleIds": [
+        "refined-light-saas",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "workspace",
+        "forms"
+      ],
+      "aliases": [
+        "state notice",
+        "反馈条",
+        "错误提示"
+      ],
+      "source": "styles/primitives/v046/form-data-experiment.css",
+      "optionalJS": null,
+      "readme": "styles/primitives/v046/README.md",
+      "demo": "playground/form-data-experiment-v046/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "limitation": "Visible role=status sample with text/icon; no timers, dismiss, server event or assertive alert priority.",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-046",
+      "name": "Native completion progress / 原生完成进度条",
+      "className": "fx46-task-progress",
+      "styleIds": [
+        "refined-light-saas",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "onboarding",
+        "workspace"
+      ],
+      "aliases": [
+        "progress bar",
+        "完成进度",
+        "载入百分比"
+      ],
+      "source": "styles/primitives/v046/form-data-experiment.css",
+      "optionalJS": null,
+      "readme": "styles/primitives/v046/README.md",
+      "demo": "playground/form-data-experiment-v046/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "limitation": "Native progress element has meaningful value/maximum and label; real progress source is the host.",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-047",
+      "name": "Oversized typography poster / 超大排印海报",
+      "className": "fx46-type-poster",
+      "styleIds": [
+        "type-led-minimal",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "campaign"
+      ],
+      "aliases": [
+        "type poster",
+        "视觉海报",
+        "排版"
+      ],
+      "source": "styles/primitives/v046/form-data-experiment.css",
+      "optionalJS": null,
+      "readme": "styles/primitives/v046/README.md",
+      "demo": "playground/form-data-experiment-v046/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "limitation": "Original opt-in CSS typography arrangement; host provides accessible heading and content; no font licensed/transferred.",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-048",
+      "name": "Perforated coupon card / 冲孔票券卡片",
+      "className": "fx46-ticket",
+      "styleIds": [
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "commerce",
+        "campaign"
+      ],
+      "aliases": [
+        "ticket card",
+        "撕票",
+        "优惠券"
+      ],
+      "source": "styles/primitives/v046/form-data-experiment.css",
+      "optionalJS": null,
+      "readme": "styles/primitives/v046/README.md",
+      "demo": "playground/form-data-experiment-v046/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "limitation": "Decorative punch-hole card with semantic coupon text; not a redemption mechanism or pricing policy.",
+      "notReactExport": true
+    }
+  ],
+  "vectorIllustrations": [
+    {
+      "id": "VG-017",
+      "name": "Spectral ribbons / 光谱丝带",
+      "source": "graphics/v046/spectral-ribbons.svg",
+      "readme": "graphics/v046/README.md",
+      "demo": "playground/vector-studies-v046/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "static-original-svg",
+      "limitations": "Illustrative only; host supplies actual data and accessible alt."
+    },
+    {
+      "id": "VG-018",
+      "name": "Editorial ticket plate / 编辑票券插画",
+      "source": "graphics/v046/editorial-ticket.svg",
+      "readme": "graphics/v046/README.md",
+      "demo": "playground/vector-studies-v046/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "static-original-svg",
+      "limitations": "Illustrative only; host supplies actual data and accessible alt."
+    },
+    {
+      "id": "VG-019",
+      "name": "Analog instrument dial / 仪表刻盘",
+      "source": "graphics/v046/instrument-dial.svg",
+      "readme": "graphics/v046/README.md",
+      "demo": "playground/vector-studies-v046/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "static-original-svg",
+      "limitations": "Illustrative only; host supplies actual data and accessible alt."
+    },
+    {
+      "id": "VG-020",
+      "name": "Halftone orbit field / 网点环场",
+      "source": "graphics/v046/halftone-orbit.svg",
+      "readme": "graphics/v046/README.md",
+      "demo": "playground/vector-studies-v046/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "static-original-svg",
+      "limitations": "Illustrative only; host supplies actual data and accessible alt."
+    },
+    {
+      "id": "VG-021",
+      "name": "Botanical blueprint / 植物蓝图",
+      "source": "graphics/v046/botanical-blueprint.svg",
+      "readme": "graphics/v046/README.md",
+      "demo": "playground/vector-studies-v046/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "static-original-svg",
+      "limitations": "Illustrative only; host supplies actual data and accessible alt."
+    },
+    {
+      "id": "VG-022",
+      "name": "Story contact sheet / 分镜接触样张",
+      "source": "graphics/v046/storyboard-frames.svg",
+      "readme": "graphics/v046/README.md",
+      "demo": "playground/vector-studies-v046/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "static-original-svg",
+      "limitations": "Illustrative only; host supplies actual data and accessible alt."
+    }
+  ]
+}

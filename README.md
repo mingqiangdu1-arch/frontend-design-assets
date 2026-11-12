@@ -17,6 +17,7 @@
 | 浏览全部主题并排对比 | [主题图谱](playground/style-atlas/README.md) · [Agent 选型](docs/styles/theme-selection-v027.md) | 按场景、构图、材质、交互筛选 14 套主题，任选两套加载真实 Demo |
 | 2026 流行主题研究与预览 | [趋势对比](docs/styles/trend-research-2026.md) · [Trend Style Lab](playground/trend-style-lab/README.md) | Liquid Layer、Shape Expressive、Type-led Minimal、Organic Tactile：独立主题与可交互场景，不是 React 库兼容声明 |
 | 移动端、音频与状态视觉素材 | [V0.45 研究](docs/research/material-expansion-v045.md) · [CSS 原子](styles/primitives/v045/README.md) · [原创矢量](graphics/v045/README.md) | 10 个原生 CSS 组件 + 4 个独立 SVG + 5 个固定版本上游研究来源；不是音频录制器、地图引擎或页面生成器 |
+| 表单、数据与实验排印素材 | [V0.46 研究](docs/research/material-expansion-v046.md) · [CSS/JS 原件](styles/primitives/v046/README.md) · [原创 SVG](graphics/v046/README.md) | 12 个独立 CSS 组件（含可操作范围对比滑块）与 6 个原创 SVG；没有业务页面或 React 包新增 |
 | 查找并复用 React 组件 | [组件登记](registry/components.json) · [组件源码](packages/ui/src/) · [组件文档](packages/ui/README.md) | 真实 TSX/CSS、API、四套显式兼容主题和适配限制 |
 | 参考页面结构素材 | [页面模板](registry/page-templates.json) · [组装指南](docs/assembly/README.md) · [独立 Demo](playground/page-blueprints/) | 可复用分区、构图和交互案例；真实页面开发须在外部项目进行 |
 | 检索外部专项技术与视觉资源 | [V0.30 专题资源](docs/research/specialized-resources-v030.md) · [结构化资源索引](registry/specialized-resources-v030.json) | 17 个画布/富文本、地图数据、3D 与移动交互来源；只做研究与素材交接，不安装到本库 |

@@ -14399,6 +14399,750 @@
         "instructions": "Use graphics/v045/empty-state-garden.svg as a standalone visual; set appropriate alt text and adjust colors for host context.",
         "limitations": "Decorative illustration only, not functioning mobile gesture, geodata, real audio or empty-state logic."
       }
+    },
+    {
+      "id": "FX-037",
+      "type": "component",
+      "name": "Native validated email field / 原生邮箱验证字段",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v046",
+        "original-css-source",
+        "standalone-interface-material",
+        "native-html",
+        "css-only"
+      ],
+      "aliases": [
+        "email validation",
+        "输入校验",
+        "邮箱表单"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original CSS/HTML written for this repository; FX-041 includes original local JS. No vendor code, fonts, media or library dependencies.",
+      "styleIds": [
+        "refined-light-saas",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "forms",
+        "workspace"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v046/form-data-experiment.css",
+      "details": "styles/primitives/v046/README.md",
+      "spec": "registry/material-expansion-v046.json",
+      "demo": "playground/form-data-experiment-v046/index.html",
+      "verified": "Source-level original material and example markup committed 2026-11-12. Not tested in target app or production certified.",
+      "handoff": {
+        "entry": "styles/primitives/v046/README.md",
+        "stack": "Native CSS/HTML; not a public React export",
+        "instructions": "Extract .fx46-email-field selectors, HTML example, applicable accessibility and forced-colors rules.",
+        "limitations": "Browser email semantics, required constraints, visible helper and :user-invalid styling. Host supplies submit/cross-field rules."
+      }
+    },
+    {
+      "id": "FX-038",
+      "type": "component",
+      "name": "Native file chooser tile / 原生文件选取区",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v046",
+        "original-css-source",
+        "standalone-interface-material",
+        "native-html",
+        "css-only"
+      ],
+      "aliases": [
+        "file picker",
+        "文件上传入口",
+        "选择文件"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original CSS/HTML written for this repository; FX-041 includes original local JS. No vendor code, fonts, media or library dependencies.",
+      "styleIds": [
+        "refined-light-saas",
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "forms",
+        "creative-tool"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v046/form-data-experiment.css",
+      "details": "styles/primitives/v046/README.md",
+      "spec": "registry/material-expansion-v046.json",
+      "demo": "playground/form-data-experiment-v046/index.html",
+      "verified": "Source-level original material and example markup committed 2026-11-12. Not tested in target app or production certified.",
+      "handoff": {
+        "entry": "styles/primitives/v046/README.md",
+        "stack": "Native CSS/HTML; not a public React export",
+        "instructions": "Extract .fx46-file-tile selectors, HTML example, applicable accessibility and forced-colors rules.",
+        "limitations": "Real input[type=file] and focus-visible; no drag/drop, upload API, storage or malware checks."
+      }
+    },
+    {
+      "id": "FX-039",
+      "type": "component",
+      "name": "Chromatic color well / 原生调色盘",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v046",
+        "original-css-source",
+        "standalone-interface-material",
+        "native-html",
+        "css-only"
+      ],
+      "aliases": [
+        "color picker",
+        "取色器",
+        "颜色控件"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original CSS/HTML written for this repository; FX-041 includes original local JS. No vendor code, fonts, media or library dependencies.",
+      "styleIds": [
+        "shape-expressive",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "creative-tool",
+        "forms"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v046/form-data-experiment.css",
+      "details": "styles/primitives/v046/README.md",
+      "spec": "registry/material-expansion-v046.json",
+      "demo": "playground/form-data-experiment-v046/index.html",
+      "verified": "Source-level original material and example markup committed 2026-11-12. Not tested in target app or production certified.",
+      "handoff": {
+        "entry": "styles/primitives/v046/README.md",
+        "stack": "Native CSS/HTML; not a public React export",
+        "instructions": "Extract .fx46-color-well selectors, HTML example, applicable accessibility and forced-colors rules.",
+        "limitations": "Real input[type=color] exposed with label; no persistent palette, synchronization or contrast checker."
+      }
+    },
+    {
+      "id": "FX-040",
+      "type": "component",
+      "name": "Command-key search strip / 搜索快捷键条",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v046",
+        "original-css-source",
+        "standalone-interface-material",
+        "native-html",
+        "css-only"
+      ],
+      "aliases": [
+        "search field",
+        "搜索框",
+        "shortcut hint"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original CSS/HTML written for this repository; FX-041 includes original local JS. No vendor code, fonts, media or library dependencies.",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "knowledge-base",
+        "workspace"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v046/form-data-experiment.css",
+      "details": "styles/primitives/v046/README.md",
+      "spec": "registry/material-expansion-v046.json",
+      "demo": "playground/form-data-experiment-v046/index.html",
+      "verified": "Source-level original material and example markup committed 2026-11-12. Not tested in target app or production certified.",
+      "handoff": {
+        "entry": "styles/primitives/v046/README.md",
+        "stack": "Native CSS/HTML; not a public React export",
+        "instructions": "Extract .fx46-search-strip selectors, HTML example, applicable accessibility and forced-colors rules.",
+        "limitations": "Native search input; decorative kbd hint does not implement Command-K activation, suggestions or search."
+      }
+    },
+    {
+      "id": "FX-041",
+      "type": "component",
+      "name": "Range-operated comparison window / 可操作前后对照",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v046",
+        "original-css-source",
+        "standalone-interface-material",
+        "native-html",
+        "optional-original-js"
+      ],
+      "aliases": [
+        "before after",
+        "前后对比",
+        "图像揭示"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original CSS/HTML written for this repository; FX-041 includes original local JS. No vendor code, fonts, media or library dependencies.",
+      "styleIds": [
+        "shape-expressive",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "portfolio",
+        "creative-tool"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v046/form-data-experiment.css",
+      "details": "styles/primitives/v046/README.md",
+      "spec": "registry/material-expansion-v046.json",
+      "demo": "playground/form-data-experiment-v046/index.html",
+      "verified": "Source-level original material and example markup committed 2026-11-12. Not tested in target app or production certified.",
+      "handoff": {
+        "entry": "styles/primitives/v046/README.md",
+        "stack": "Native CSS/HTML plus standalone local JS helper",
+        "instructions": "Extract .fx46-compare selectors, HTML example, applicable accessibility and forced-colors rules. Include styles/primitives/v046/compare-range.js for live range-to-reveal binding.",
+        "limitations": "Original local JS binds native range to CSS clip and percent output; actual images and persistence supplied by host; not shipped as React."
+      }
+    },
+    {
+      "id": "FX-042",
+      "type": "component",
+      "name": "Accessible mini histogram / 语义直方条",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v046",
+        "original-css-source",
+        "standalone-interface-material",
+        "native-html",
+        "css-only"
+      ],
+      "aliases": [
+        "histogram",
+        "频数分布",
+        "小型柱图"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original CSS/HTML written for this repository; FX-041 includes original local JS. No vendor code, fonts, media or library dependencies.",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "analytics",
+        "data-story"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v046/form-data-experiment.css",
+      "details": "styles/primitives/v046/README.md",
+      "spec": "registry/material-expansion-v046.json",
+      "demo": "playground/form-data-experiment-v046/index.html",
+      "verified": "Source-level original material and example markup committed 2026-11-12. Not tested in target app or production certified.",
+      "handoff": {
+        "entry": "styles/primitives/v046/README.md",
+        "stack": "Native CSS/HTML; not a public React export",
+        "instructions": "Extract .fx46-histogram selectors, HTML example, applicable accessibility and forced-colors rules.",
+        "limitations": "Semantic figure and authored values; bars are static CSS lengths, no scale interpolation or data binding."
+      }
+    },
+    {
+      "id": "FX-043",
+      "type": "component",
+      "name": "Calendar intensity matrix / 日历强度矩阵",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v046",
+        "original-css-source",
+        "standalone-interface-material",
+        "native-html",
+        "css-only"
+      ],
+      "aliases": [
+        "calendar heatmap",
+        "日历热力",
+        "活跃度"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original CSS/HTML written for this repository; FX-041 includes original local JS. No vendor code, fonts, media or library dependencies.",
+      "styleIds": [
+        "refined-light-saas",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "analytics",
+        "personal-dashboard"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v046/form-data-experiment.css",
+      "details": "styles/primitives/v046/README.md",
+      "spec": "registry/material-expansion-v046.json",
+      "demo": "playground/form-data-experiment-v046/index.html",
+      "verified": "Source-level original material and example markup committed 2026-11-12. Not tested in target app or production certified.",
+      "handoff": {
+        "entry": "styles/primitives/v046/README.md",
+        "stack": "Native CSS/HTML; not a public React export",
+        "instructions": "Extract .fx46-heatmap selectors, HTML example, applicable accessibility and forced-colors rules.",
+        "limitations": "Fixed sample value cells include text label for intensity; real day/value mapping and hover tooltips require host."
+      }
+    },
+    {
+      "id": "FX-044",
+      "type": "component",
+      "name": "Semantic inline diff viewport / 语义差异视图",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v046",
+        "original-css-source",
+        "standalone-interface-material",
+        "native-html",
+        "css-only"
+      ],
+      "aliases": [
+        "code diff",
+        "文本对比",
+        "增删标记"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original CSS/HTML written for this repository; FX-041 includes original local JS. No vendor code, fonts, media or library dependencies.",
+      "styleIds": [
+        "precision-dark",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "developer-tool",
+        "review"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v046/form-data-experiment.css",
+      "details": "styles/primitives/v046/README.md",
+      "spec": "registry/material-expansion-v046.json",
+      "demo": "playground/form-data-experiment-v046/index.html",
+      "verified": "Source-level original material and example markup committed 2026-11-12. Not tested in target app or production certified.",
+      "handoff": {
+        "entry": "styles/primitives/v046/README.md",
+        "stack": "Native CSS/HTML; not a public React export",
+        "instructions": "Extract .fx46-code-diff selectors, HTML example, applicable accessibility and forced-colors rules.",
+        "limitations": "Native ins/del wrapped in pre/code; diff calculation, trusted content escaping and approval flow require host."
+      }
+    },
+    {
+      "id": "FX-045",
+      "type": "component",
+      "name": "Bordered state notice / 边框状态通知",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v046",
+        "original-css-source",
+        "standalone-interface-material",
+        "native-html",
+        "css-only"
+      ],
+      "aliases": [
+        "state notice",
+        "反馈条",
+        "错误提示"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original CSS/HTML written for this repository; FX-041 includes original local JS. No vendor code, fonts, media or library dependencies.",
+      "styleIds": [
+        "refined-light-saas",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "workspace",
+        "forms"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v046/form-data-experiment.css",
+      "details": "styles/primitives/v046/README.md",
+      "spec": "registry/material-expansion-v046.json",
+      "demo": "playground/form-data-experiment-v046/index.html",
+      "verified": "Source-level original material and example markup committed 2026-11-12. Not tested in target app or production certified.",
+      "handoff": {
+        "entry": "styles/primitives/v046/README.md",
+        "stack": "Native CSS/HTML; not a public React export",
+        "instructions": "Extract .fx46-state-notice selectors, HTML example, applicable accessibility and forced-colors rules.",
+        "limitations": "Visible role=status sample with text/icon; no timers, dismiss, server event or assertive alert priority."
+      }
+    },
+    {
+      "id": "FX-046",
+      "type": "component",
+      "name": "Native completion progress / 原生完成进度条",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v046",
+        "original-css-source",
+        "standalone-interface-material",
+        "native-html",
+        "css-only"
+      ],
+      "aliases": [
+        "progress bar",
+        "完成进度",
+        "载入百分比"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original CSS/HTML written for this repository; FX-041 includes original local JS. No vendor code, fonts, media or library dependencies.",
+      "styleIds": [
+        "refined-light-saas",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "onboarding",
+        "workspace"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v046/form-data-experiment.css",
+      "details": "styles/primitives/v046/README.md",
+      "spec": "registry/material-expansion-v046.json",
+      "demo": "playground/form-data-experiment-v046/index.html",
+      "verified": "Source-level original material and example markup committed 2026-11-12. Not tested in target app or production certified.",
+      "handoff": {
+        "entry": "styles/primitives/v046/README.md",
+        "stack": "Native CSS/HTML; not a public React export",
+        "instructions": "Extract .fx46-task-progress selectors, HTML example, applicable accessibility and forced-colors rules.",
+        "limitations": "Native progress element has meaningful value/maximum and label; real progress source is the host."
+      }
+    },
+    {
+      "id": "FX-047",
+      "type": "component",
+      "name": "Oversized typography poster / 超大排印海报",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v046",
+        "original-css-source",
+        "standalone-interface-material",
+        "native-html",
+        "css-only"
+      ],
+      "aliases": [
+        "type poster",
+        "视觉海报",
+        "排版"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original CSS/HTML written for this repository; FX-041 includes original local JS. No vendor code, fonts, media or library dependencies.",
+      "styleIds": [
+        "type-led-minimal",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "campaign"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v046/form-data-experiment.css",
+      "details": "styles/primitives/v046/README.md",
+      "spec": "registry/material-expansion-v046.json",
+      "demo": "playground/form-data-experiment-v046/index.html",
+      "verified": "Source-level original material and example markup committed 2026-11-12. Not tested in target app or production certified.",
+      "handoff": {
+        "entry": "styles/primitives/v046/README.md",
+        "stack": "Native CSS/HTML; not a public React export",
+        "instructions": "Extract .fx46-type-poster selectors, HTML example, applicable accessibility and forced-colors rules.",
+        "limitations": "Original opt-in CSS typography arrangement; host provides accessible heading and content; no font licensed/transferred."
+      }
+    },
+    {
+      "id": "FX-048",
+      "type": "component",
+      "name": "Perforated coupon card / 冲孔票券卡片",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v046",
+        "original-css-source",
+        "standalone-interface-material",
+        "native-html",
+        "css-only"
+      ],
+      "aliases": [
+        "ticket card",
+        "撕票",
+        "优惠券"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original CSS/HTML written for this repository; FX-041 includes original local JS. No vendor code, fonts, media or library dependencies.",
+      "styleIds": [
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "commerce",
+        "campaign"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v046/form-data-experiment.css",
+      "details": "styles/primitives/v046/README.md",
+      "spec": "registry/material-expansion-v046.json",
+      "demo": "playground/form-data-experiment-v046/index.html",
+      "verified": "Source-level original material and example markup committed 2026-11-12. Not tested in target app or production certified.",
+      "handoff": {
+        "entry": "styles/primitives/v046/README.md",
+        "stack": "Native CSS/HTML; not a public React export",
+        "instructions": "Extract .fx46-ticket selectors, HTML example, applicable accessibility and forced-colors rules.",
+        "limitations": "Decorative punch-hole card with semantic coupon text; not a redemption mechanism or pricing policy."
+      }
+    },
+    {
+      "id": "VG-017",
+      "type": "component",
+      "name": "Spectral ribbons / 光谱丝带",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v046",
+        "original-svg",
+        "editable-vector",
+        "standalone-art"
+      ],
+      "aliases": [
+        "Spectral ribbons",
+        "光谱丝带"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original standalone SVG with editable paths, no external fonts/images/scripts.",
+      "styleIds": [
+        "signal-noir",
+        "aether-orbit"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "brand"
+      ],
+      "dependencies": [],
+      "path": "graphics/v046/spectral-ribbons.svg",
+      "details": "graphics/v046/README.md",
+      "spec": "registry/material-expansion-v046.json",
+      "demo": "playground/vector-studies-v046/index.html",
+      "verified": "Original self-contained SVG source with title, desc and viewBox committed 2026-11-12; no production review.",
+      "handoff": {
+        "entry": "graphics/v046/README.md",
+        "stack": "Editable vector source, not media processing or a public React component",
+        "instructions": "Copy graphics/v046/spectral-ribbons.svg or reference as image and supply contextual alt/decorative status.",
+        "limitations": "Illustrative only; host supplies actual data and accessible alt."
+      }
+    },
+    {
+      "id": "VG-018",
+      "type": "component",
+      "name": "Editorial ticket plate / 编辑票券插画",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v046",
+        "original-svg",
+        "editable-vector",
+        "standalone-art"
+      ],
+      "aliases": [
+        "Editorial ticket plate",
+        "编辑票券插画"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original standalone SVG with editable paths, no external fonts/images/scripts.",
+      "styleIds": [
+        "editorial-warm",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "campaign"
+      ],
+      "dependencies": [],
+      "path": "graphics/v046/editorial-ticket.svg",
+      "details": "graphics/v046/README.md",
+      "spec": "registry/material-expansion-v046.json",
+      "demo": "playground/vector-studies-v046/index.html",
+      "verified": "Original self-contained SVG source with title, desc and viewBox committed 2026-11-12; no production review.",
+      "handoff": {
+        "entry": "graphics/v046/README.md",
+        "stack": "Editable vector source, not media processing or a public React component",
+        "instructions": "Copy graphics/v046/editorial-ticket.svg or reference as image and supply contextual alt/decorative status.",
+        "limitations": "Illustrative only; host supplies actual data and accessible alt."
+      }
+    },
+    {
+      "id": "VG-019",
+      "type": "component",
+      "name": "Analog instrument dial / 仪表刻盘",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v046",
+        "original-svg",
+        "editable-vector",
+        "standalone-art"
+      ],
+      "aliases": [
+        "Analog instrument dial",
+        "仪表刻盘"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original standalone SVG with editable paths, no external fonts/images/scripts.",
+      "styleIds": [
+        "precision-dark",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "technical"
+      ],
+      "dependencies": [],
+      "path": "graphics/v046/instrument-dial.svg",
+      "details": "graphics/v046/README.md",
+      "spec": "registry/material-expansion-v046.json",
+      "demo": "playground/vector-studies-v046/index.html",
+      "verified": "Original self-contained SVG source with title, desc and viewBox committed 2026-11-12; no production review.",
+      "handoff": {
+        "entry": "graphics/v046/README.md",
+        "stack": "Editable vector source, not media processing or a public React component",
+        "instructions": "Copy graphics/v046/instrument-dial.svg or reference as image and supply contextual alt/decorative status.",
+        "limitations": "Illustrative only; host supplies actual data and accessible alt."
+      }
+    },
+    {
+      "id": "VG-020",
+      "type": "component",
+      "name": "Halftone orbit field / 网点环场",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v046",
+        "original-svg",
+        "editable-vector",
+        "standalone-art"
+      ],
+      "aliases": [
+        "Halftone orbit field",
+        "网点环场"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original standalone SVG with editable paths, no external fonts/images/scripts.",
+      "styleIds": [
+        "playful-pop",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "poster",
+        "campaign"
+      ],
+      "dependencies": [],
+      "path": "graphics/v046/halftone-orbit.svg",
+      "details": "graphics/v046/README.md",
+      "spec": "registry/material-expansion-v046.json",
+      "demo": "playground/vector-studies-v046/index.html",
+      "verified": "Original self-contained SVG source with title, desc and viewBox committed 2026-11-12; no production review.",
+      "handoff": {
+        "entry": "graphics/v046/README.md",
+        "stack": "Editable vector source, not media processing or a public React component",
+        "instructions": "Copy graphics/v046/halftone-orbit.svg or reference as image and supply contextual alt/decorative status.",
+        "limitations": "Illustrative only; host supplies actual data and accessible alt."
+      }
+    },
+    {
+      "id": "VG-021",
+      "type": "component",
+      "name": "Botanical blueprint / 植物蓝图",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v046",
+        "original-svg",
+        "editable-vector",
+        "standalone-art"
+      ],
+      "aliases": [
+        "Botanical blueprint",
+        "植物蓝图"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original standalone SVG with editable paths, no external fonts/images/scripts.",
+      "styleIds": [
+        "organic-tactile",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "lifestyle",
+        "education"
+      ],
+      "dependencies": [],
+      "path": "graphics/v046/botanical-blueprint.svg",
+      "details": "graphics/v046/README.md",
+      "spec": "registry/material-expansion-v046.json",
+      "demo": "playground/vector-studies-v046/index.html",
+      "verified": "Original self-contained SVG source with title, desc and viewBox committed 2026-11-12; no production review.",
+      "handoff": {
+        "entry": "graphics/v046/README.md",
+        "stack": "Editable vector source, not media processing or a public React component",
+        "instructions": "Copy graphics/v046/botanical-blueprint.svg or reference as image and supply contextual alt/decorative status.",
+        "limitations": "Illustrative only; host supplies actual data and accessible alt."
+      }
+    },
+    {
+      "id": "VG-022",
+      "type": "component",
+      "name": "Story contact sheet / 分镜接触样张",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v046",
+        "original-svg",
+        "editable-vector",
+        "standalone-art"
+      ],
+      "aliases": [
+        "Story contact sheet",
+        "分镜接触样张"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original standalone SVG with editable paths, no external fonts/images/scripts.",
+      "styleIds": [
+        "type-led-minimal",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "storytelling",
+        "portfolio"
+      ],
+      "dependencies": [],
+      "path": "graphics/v046/storyboard-frames.svg",
+      "details": "graphics/v046/README.md",
+      "spec": "registry/material-expansion-v046.json",
+      "demo": "playground/vector-studies-v046/index.html",
+      "verified": "Original self-contained SVG source with title, desc and viewBox committed 2026-11-12; no production review.",
+      "handoff": {
+        "entry": "graphics/v046/README.md",
+        "stack": "Editable vector source, not media processing or a public React component",
+        "instructions": "Copy graphics/v046/storyboard-frames.svg or reference as image and supply contextual alt/decorative status.",
+        "limitations": "Illustrative only; host supplies actual data and accessible alt."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",
