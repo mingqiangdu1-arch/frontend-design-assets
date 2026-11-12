@@ -17753,6 +17753,778 @@
         "instructions": "Use graphics/v049/frames/pixel-stitch-frame.svg as independent source over host-owned background or media, adapting preserveAspectRatio and decorative alt.",
         "limitations": "Decorative frame only, not physical print template; drafting marks are illustrative without calibrated dimensions."
       }
+    },
+    {
+      "id": "FX-070",
+      "type": "component",
+      "name": "Risograph dot-duotone print specimen / 孔版双色印刷样张",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v050",
+        "original-css-source",
+        "print-editorial",
+        "evidence-visualization",
+        "independent-material",
+        "static-illustrative-data"
+      ],
+      "aliases": [
+        "risograph duotone",
+        "孔版印刷",
+        "双色网点"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original standalone native HTML/CSS (one original inline SVG specimen for FX-074). No third-party media/font, licensed graphic, API, dependency or runtime package.",
+      "styleIds": [
+        "paper-rebellion",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "poster",
+        "campaign",
+        "editorial"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v050/print-evidence-atoms.css",
+      "details": "styles/primitives/v050/README.md",
+      "spec": "registry/material-expansion-v050.json",
+      "demo": "playground/print-evidence-v050/index.html",
+      "verified": "Source specimen and selector exist; authored 2026-11-12. Data visuals are explicitly fictional and static. Browser/production/assistive tech validation outstanding.",
+      "handoff": {
+        "entry": "styles/primitives/v050/README.md",
+        "stack": "Opt-in native HTML/CSS, with original inline SVG for slopegraph; no React package export",
+        "instructions": "Extract CSS for .fx50-riso-duo, matching semantic markup from playground/print-evidence-v050/index.html, and narrow-screen/forced-colors rules. Reconcile any host data and true source citations.",
+        "limitations": "Original CSS radial-gradient dots and registration offset over a real heading, not actual print separation or a rasterized photograph."
+      }
+    },
+    {
+      "id": "FX-071",
+      "type": "component",
+      "name": "Newspaper column reading lead / 报纸分栏导语",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v050",
+        "original-css-source",
+        "print-editorial",
+        "evidence-visualization",
+        "independent-material",
+        "static-illustrative-data"
+      ],
+      "aliases": [
+        "newspaper columns",
+        "报纸分栏",
+        "masthead"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original standalone native HTML/CSS (one original inline SVG specimen for FX-074). No third-party media/font, licensed graphic, API, dependency or runtime package.",
+      "styleIds": [
+        "editorial-warm",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "longform",
+        "culture"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v050/print-evidence-atoms.css",
+      "details": "styles/primitives/v050/README.md",
+      "spec": "registry/material-expansion-v050.json",
+      "demo": "playground/print-evidence-v050/index.html",
+      "verified": "Source specimen and selector exist; authored 2026-11-12. Data visuals are explicitly fictional and static. Browser/production/assistive tech validation outstanding.",
+      "handoff": {
+        "entry": "styles/primitives/v050/README.md",
+        "stack": "Opt-in native HTML/CSS, with original inline SVG for slopegraph; no React package export",
+        "instructions": "Extract CSS for .fx50-news-lead, matching semantic markup from playground/print-evidence-v050/index.html, and narrow-screen/forced-colors rules. Reconcile any host data and true source citations.",
+        "limitations": "Real heading, text, newspaper-like CSS columns and responsive single-column layout. Reading order remains DOM-linear; host supplies editorial text."
+      }
+    },
+    {
+      "id": "FX-072",
+      "type": "component",
+      "name": "Layered paper cut collage / 手工剪贴层景",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v050",
+        "original-css-source",
+        "print-editorial",
+        "evidence-visualization",
+        "independent-material",
+        "static-illustrative-data"
+      ],
+      "aliases": [
+        "paper collage",
+        "纸片拼贴",
+        "torn-paper cutout"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original standalone native HTML/CSS (one original inline SVG specimen for FX-074). No third-party media/font, licensed graphic, API, dependency or runtime package.",
+      "styleIds": [
+        "paper-rebellion",
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "campaign",
+        "portfolio",
+        "illustration"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v050/print-evidence-atoms.css",
+      "details": "styles/primitives/v050/README.md",
+      "spec": "registry/material-expansion-v050.json",
+      "demo": "playground/print-evidence-v050/index.html",
+      "verified": "Source specimen and selector exist; authored 2026-11-12. Data visuals are explicitly fictional and static. Browser/production/assistive tech validation outstanding.",
+      "handoff": {
+        "entry": "styles/primitives/v050/README.md",
+        "stack": "Opt-in native HTML/CSS, with original inline SVG for slopegraph; no React package export",
+        "instructions": "Extract CSS for .fx50-paper-collage, matching semantic markup from playground/print-evidence-v050/index.html, and narrow-screen/forced-colors rules. Reconcile any host data and true source citations.",
+        "limitations": "Independent CSS colored geometric paper shapes; no external photo, drag controls, licensed scanned paper, or editable collage workspace."
+      }
+    },
+    {
+      "id": "FX-073",
+      "type": "component",
+      "name": "Bracketed annotation figure / 括号式图注证据卡",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v050",
+        "original-css-source",
+        "print-editorial",
+        "evidence-visualization",
+        "independent-material",
+        "static-illustrative-data"
+      ],
+      "aliases": [
+        "figure bracket",
+        "证据标注",
+        "annotated diagram"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original standalone native HTML/CSS (one original inline SVG specimen for FX-074). No third-party media/font, licensed graphic, API, dependency or runtime package.",
+      "styleIds": [
+        "editorial-warm",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "research",
+        "education",
+        "data-story"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v050/print-evidence-atoms.css",
+      "details": "styles/primitives/v050/README.md",
+      "spec": "registry/material-expansion-v050.json",
+      "demo": "playground/print-evidence-v050/index.html",
+      "verified": "Source specimen and selector exist; authored 2026-11-12. Data visuals are explicitly fictional and static. Browser/production/assistive tech validation outstanding.",
+      "handoff": {
+        "entry": "styles/primitives/v050/README.md",
+        "stack": "Opt-in native HTML/CSS, with original inline SVG for slopegraph; no React package export",
+        "instructions": "Extract CSS for .fx50-annotation-figure, matching semantic markup from playground/print-evidence-v050/index.html, and narrow-screen/forced-colors rules. Reconcile any host data and true source citations.",
+        "limitations": "Semantic figure/caption plus text labels; visual trace is static sample, no true source record or chart calculation."
+      }
+    },
+    {
+      "id": "FX-074",
+      "type": "component",
+      "name": "Two-category slopegraph / 双类变化斜率图",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v050",
+        "original-css-source",
+        "print-editorial",
+        "evidence-visualization",
+        "independent-material",
+        "static-illustrative-data"
+      ],
+      "aliases": [
+        "slopegraph",
+        "斜率对比图",
+        "paired change"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original standalone native HTML/CSS (one original inline SVG specimen for FX-074). No third-party media/font, licensed graphic, API, dependency or runtime package.",
+      "styleIds": [
+        "refined-light-saas",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "research",
+        "analytics",
+        "data-story"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v050/print-evidence-atoms.css",
+      "details": "styles/primitives/v050/README.md",
+      "spec": "registry/material-expansion-v050.json",
+      "demo": "playground/print-evidence-v050/index.html",
+      "verified": "Source specimen and selector exist; authored 2026-11-12. Data visuals are explicitly fictional and static. Browser/production/assistive tech validation outstanding.",
+      "handoff": {
+        "entry": "styles/primitives/v050/README.md",
+        "stack": "Opt-in native HTML/CSS, with original inline SVG for slopegraph; no React package export",
+        "instructions": "Extract CSS for .fx50-slopegraph, matching semantic markup from playground/print-evidence-v050/index.html, and narrow-screen/forced-colors rules. Reconcile any host data and true source citations.",
+        "limitations": "Actual inline SVG connects two illustrative static paired values with adjacent text; no charting library, live dataset, numeric scale engine, or inferred causal conclusion."
+      }
+    },
+    {
+      "id": "FX-075",
+      "type": "component",
+      "name": "Uncertainty interval rails / 不确定性区间轨",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v050",
+        "original-css-source",
+        "print-editorial",
+        "evidence-visualization",
+        "independent-material",
+        "static-illustrative-data"
+      ],
+      "aliases": [
+        "uncertainty interval",
+        "置信区间视觉",
+        "error bars"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original standalone native HTML/CSS (one original inline SVG specimen for FX-074). No third-party media/font, licensed graphic, API, dependency or runtime package.",
+      "styleIds": [
+        "precision-dark",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "research",
+        "data-story",
+        "report"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v050/print-evidence-atoms.css",
+      "details": "styles/primitives/v050/README.md",
+      "spec": "registry/material-expansion-v050.json",
+      "demo": "playground/print-evidence-v050/index.html",
+      "verified": "Source specimen and selector exist; authored 2026-11-12. Data visuals are explicitly fictional and static. Browser/production/assistive tech validation outstanding.",
+      "handoff": {
+        "entry": "styles/primitives/v050/README.md",
+        "stack": "Opt-in native HTML/CSS, with original inline SVG for slopegraph; no React package export",
+        "instructions": "Extract CSS for .fx50-interval-rail, matching semantic markup from playground/print-evidence-v050/index.html, and narrow-screen/forced-colors rules. Reconcile any host data and true source citations.",
+        "limitations": "Explicit low/center/high sample values are mirrored by bounded CSS positions on one static 0–100 axis; not computed confidence intervals or probability assertions."
+      }
+    },
+    {
+      "id": "FX-076",
+      "type": "component",
+      "name": "Paired dumbbell comparison rows / 哑铃差异对照条",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v050",
+        "original-css-source",
+        "print-editorial",
+        "evidence-visualization",
+        "independent-material",
+        "static-illustrative-data"
+      ],
+      "aliases": [
+        "dumbbell chart",
+        "哑铃对比",
+        "paired dots"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original standalone native HTML/CSS (one original inline SVG specimen for FX-074). No third-party media/font, licensed graphic, API, dependency or runtime package.",
+      "styleIds": [
+        "refined-light-saas",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "analytics",
+        "data-story",
+        "comparison"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v050/print-evidence-atoms.css",
+      "details": "styles/primitives/v050/README.md",
+      "spec": "registry/material-expansion-v050.json",
+      "demo": "playground/print-evidence-v050/index.html",
+      "verified": "Source specimen and selector exist; authored 2026-11-12. Data visuals are explicitly fictional and static. Browser/production/assistive tech validation outstanding.",
+      "handoff": {
+        "entry": "styles/primitives/v050/README.md",
+        "stack": "Opt-in native HTML/CSS, with original inline SVG for slopegraph; no React package export",
+        "instructions": "Extract CSS for .fx50-dumbbell, matching semantic markup from playground/print-evidence-v050/index.html, and narrow-screen/forced-colors rules. Reconcile any host data and true source citations.",
+        "limitations": "Native list of static numeric pair samples drawn on consistent 0–100 CSS scale; host must update text and geometry together."
+      }
+    },
+    {
+      "id": "FX-077",
+      "type": "component",
+      "name": "Source provenance bibliography ribbon / 来源证据索引条",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v050",
+        "original-css-source",
+        "print-editorial",
+        "evidence-visualization",
+        "independent-material",
+        "static-illustrative-data"
+      ],
+      "aliases": [
+        "source rail",
+        "引用来源",
+        "footnote provenance"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original standalone native HTML/CSS (one original inline SVG specimen for FX-074). No third-party media/font, licensed graphic, API, dependency or runtime package.",
+      "styleIds": [
+        "type-led-minimal",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "research",
+        "editorial",
+        "report"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v050/print-evidence-atoms.css",
+      "details": "styles/primitives/v050/README.md",
+      "spec": "registry/material-expansion-v050.json",
+      "demo": "playground/print-evidence-v050/index.html",
+      "verified": "Source specimen and selector exist; authored 2026-11-12. Data visuals are explicitly fictional and static. Browser/production/assistive tech validation outstanding.",
+      "handoff": {
+        "entry": "styles/primitives/v050/README.md",
+        "stack": "Opt-in native HTML/CSS, with original inline SVG for slopegraph; no React package export",
+        "instructions": "Extract CSS for .fx50-source-ribbon, matching semantic markup from playground/print-evidence-v050/index.html, and narrow-screen/forced-colors rules. Reconcile any host data and true source citations.",
+        "limitations": "Genuine anchor references to local specimen source notes with navigable targets; does not verify external citations or download publications."
+      }
+    },
+    {
+      "id": "VG-063",
+      "type": "component",
+      "name": "Ink mist / 喷墨雾点透明层",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v050",
+        "original-svg",
+        "print-texture-overlay",
+        "transparent-svg",
+        "standalone-art"
+      ],
+      "aliases": [
+        "Ink mist",
+        "透明叠层",
+        "ink-mist-overlay"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original deterministic vector marks on transparent SVG. No copied paper photograph, external assets, script or embedded font.",
+      "styleIds": [
+        "paper-rebellion",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "overlay",
+        "print"
+      ],
+      "dependencies": [],
+      "path": "graphics/v050/overlays/ink-mist-overlay.svg",
+      "details": "graphics/v050/README.md",
+      "spec": "registry/material-expansion-v050.json",
+      "demo": "playground/print-overlays-v050/index.html",
+      "verified": "Original self-contained SVG, transparent background, title, desc, viewBox, no external references; target-device visual QA pending.",
+      "handoff": {
+        "entry": "graphics/v050/README.md",
+        "stack": "Standalone transparent 640×360 SVG overlay",
+        "instructions": "Reference graphics/v050/overlays/ink-mist-overlay.svg above licensed host images or background. For decorative use set host img alt=''.",
+        "limitations": "Visual print-style overlay only; not color-managed prepress separation or calibrated print output."
+      }
+    },
+    {
+      "id": "VG-064",
+      "type": "component",
+      "name": "Pigment laydown / 颜料铺墨透明层",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v050",
+        "original-svg",
+        "print-texture-overlay",
+        "transparent-svg",
+        "standalone-art"
+      ],
+      "aliases": [
+        "Pigment laydown",
+        "透明叠层",
+        "ink-laydown-overlay"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original deterministic vector marks on transparent SVG. No copied paper photograph, external assets, script or embedded font.",
+      "styleIds": [
+        "organic-tactile",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "overlay",
+        "print"
+      ],
+      "dependencies": [],
+      "path": "graphics/v050/overlays/ink-laydown-overlay.svg",
+      "details": "graphics/v050/README.md",
+      "spec": "registry/material-expansion-v050.json",
+      "demo": "playground/print-overlays-v050/index.html",
+      "verified": "Original self-contained SVG, transparent background, title, desc, viewBox, no external references; target-device visual QA pending.",
+      "handoff": {
+        "entry": "graphics/v050/README.md",
+        "stack": "Standalone transparent 640×360 SVG overlay",
+        "instructions": "Reference graphics/v050/overlays/ink-laydown-overlay.svg above licensed host images or background. For decorative use set host img alt=''.",
+        "limitations": "Visual print-style overlay only; not color-managed prepress separation or calibrated print output."
+      }
+    },
+    {
+      "id": "VG-065",
+      "type": "component",
+      "name": "Registration crosshairs / 套印定位标透明层",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v050",
+        "original-svg",
+        "print-texture-overlay",
+        "transparent-svg",
+        "standalone-art"
+      ],
+      "aliases": [
+        "Registration crosshairs",
+        "透明叠层",
+        "print-register-marks"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original deterministic vector marks on transparent SVG. No copied paper photograph, external assets, script or embedded font.",
+      "styleIds": [
+        "precision-dark",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "overlay",
+        "print"
+      ],
+      "dependencies": [],
+      "path": "graphics/v050/overlays/print-register-marks.svg",
+      "details": "graphics/v050/README.md",
+      "spec": "registry/material-expansion-v050.json",
+      "demo": "playground/print-overlays-v050/index.html",
+      "verified": "Original self-contained SVG, transparent background, title, desc, viewBox, no external references; target-device visual QA pending.",
+      "handoff": {
+        "entry": "graphics/v050/README.md",
+        "stack": "Standalone transparent 640×360 SVG overlay",
+        "instructions": "Reference graphics/v050/overlays/print-register-marks.svg above licensed host images or background. For decorative use set host img alt=''.",
+        "limitations": "Visual print-style overlay only; not color-managed prepress separation or calibrated print output."
+      }
+    },
+    {
+      "id": "VG-066",
+      "type": "component",
+      "name": "Fold & crease / 折页压痕透明层",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v050",
+        "original-svg",
+        "print-texture-overlay",
+        "transparent-svg",
+        "standalone-art"
+      ],
+      "aliases": [
+        "Fold & crease",
+        "透明叠层",
+        "fold-and-crease-lines"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original deterministic vector marks on transparent SVG. No copied paper photograph, external assets, script or embedded font.",
+      "styleIds": [
+        "editorial-warm",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "overlay",
+        "stationery"
+      ],
+      "dependencies": [],
+      "path": "graphics/v050/overlays/fold-and-crease-lines.svg",
+      "details": "graphics/v050/README.md",
+      "spec": "registry/material-expansion-v050.json",
+      "demo": "playground/print-overlays-v050/index.html",
+      "verified": "Original self-contained SVG, transparent background, title, desc, viewBox, no external references; target-device visual QA pending.",
+      "handoff": {
+        "entry": "graphics/v050/README.md",
+        "stack": "Standalone transparent 640×360 SVG overlay",
+        "instructions": "Reference graphics/v050/overlays/fold-and-crease-lines.svg above licensed host images or background. For decorative use set host img alt=''.",
+        "limitations": "Visual print-style overlay only; not color-managed prepress separation or calibrated print output."
+      }
+    },
+    {
+      "id": "VG-067",
+      "type": "component",
+      "name": "Branching route schema / 分流路径示意",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v050",
+        "original-svg",
+        "conceptual-data-diagram",
+        "source-not-evidence",
+        "standalone-art"
+      ],
+      "aliases": [
+        "Branching route schema",
+        "数据叙事示意",
+        "branching-route-schema"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original SVG conceptual illustration; no source dataset, empirical claim, copied diagram or outside code.",
+      "styleIds": [
+        "precision-dark",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "infographic",
+        "data-story"
+      ],
+      "dependencies": [],
+      "path": "graphics/v050/diagrams/branching-route-schema.svg",
+      "details": "graphics/v050/README.md",
+      "spec": "registry/material-expansion-v050.json",
+      "demo": "playground/story-diagrams-v050/index.html",
+      "verified": "Standalone SVG title/desc/viewBox; labels are conceptual only. No visual or academic validation.",
+      "handoff": {
+        "entry": "graphics/v050/README.md",
+        "stack": "Standalone 640×360 conceptual SVG, not a statistical chart engine",
+        "instructions": "Reference graphics/v050/diagrams/branching-route-schema.svg only as conceptual schematic, or adapt geometry while supplying verified data, meaningful description and provenance externally.",
+        "limitations": "Conceptual diagram. No real measurements, research results, quantified flow, dates or statistical confidence."
+      }
+    },
+    {
+      "id": "VG-068",
+      "type": "component",
+      "name": "Evidence stack schema / 来源证据叠层图",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v050",
+        "original-svg",
+        "conceptual-data-diagram",
+        "source-not-evidence",
+        "standalone-art"
+      ],
+      "aliases": [
+        "Evidence stack schema",
+        "数据叙事示意",
+        "evidence-stack-schema"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original SVG conceptual illustration; no source dataset, empirical claim, copied diagram or outside code.",
+      "styleIds": [
+        "editorial-warm",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "infographic",
+        "research"
+      ],
+      "dependencies": [],
+      "path": "graphics/v050/diagrams/evidence-stack-schema.svg",
+      "details": "graphics/v050/README.md",
+      "spec": "registry/material-expansion-v050.json",
+      "demo": "playground/story-diagrams-v050/index.html",
+      "verified": "Standalone SVG title/desc/viewBox; labels are conceptual only. No visual or academic validation.",
+      "handoff": {
+        "entry": "graphics/v050/README.md",
+        "stack": "Standalone 640×360 conceptual SVG, not a statistical chart engine",
+        "instructions": "Reference graphics/v050/diagrams/evidence-stack-schema.svg only as conceptual schematic, or adapt geometry while supplying verified data, meaningful description and provenance externally.",
+        "limitations": "Conceptual diagram. No real measurements, research results, quantified flow, dates or statistical confidence."
+      }
+    },
+    {
+      "id": "VG-069",
+      "type": "component",
+      "name": "Parallel narrative tracks / 双线叙事图",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v050",
+        "original-svg",
+        "conceptual-data-diagram",
+        "source-not-evidence",
+        "standalone-art"
+      ],
+      "aliases": [
+        "Parallel narrative tracks",
+        "数据叙事示意",
+        "parallel-narrative-schema"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original SVG conceptual illustration; no source dataset, empirical claim, copied diagram or outside code.",
+      "styleIds": [
+        "aether-orbit",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "infographic",
+        "storytelling"
+      ],
+      "dependencies": [],
+      "path": "graphics/v050/diagrams/parallel-narrative-schema.svg",
+      "details": "graphics/v050/README.md",
+      "spec": "registry/material-expansion-v050.json",
+      "demo": "playground/story-diagrams-v050/index.html",
+      "verified": "Standalone SVG title/desc/viewBox; labels are conceptual only. No visual or academic validation.",
+      "handoff": {
+        "entry": "graphics/v050/README.md",
+        "stack": "Standalone 640×360 conceptual SVG, not a statistical chart engine",
+        "instructions": "Reference graphics/v050/diagrams/parallel-narrative-schema.svg only as conceptual schematic, or adapt geometry while supplying verified data, meaningful description and provenance externally.",
+        "limitations": "Conceptual diagram. No real measurements, research results, quantified flow, dates or statistical confidence."
+      }
+    },
+    {
+      "id": "VG-070",
+      "type": "component",
+      "name": "Milestone annotation stages / 关键节点注解图",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v050",
+        "original-svg",
+        "conceptual-data-diagram",
+        "source-not-evidence",
+        "standalone-art"
+      ],
+      "aliases": [
+        "Milestone annotation stages",
+        "数据叙事示意",
+        "milestone-annotation-schema"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original SVG conceptual illustration; no source dataset, empirical claim, copied diagram or outside code.",
+      "styleIds": [
+        "precision-dark",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "infographic",
+        "education"
+      ],
+      "dependencies": [],
+      "path": "graphics/v050/diagrams/milestone-annotation-schema.svg",
+      "details": "graphics/v050/README.md",
+      "spec": "registry/material-expansion-v050.json",
+      "demo": "playground/story-diagrams-v050/index.html",
+      "verified": "Standalone SVG title/desc/viewBox; labels are conceptual only. No visual or academic validation.",
+      "handoff": {
+        "entry": "graphics/v050/README.md",
+        "stack": "Standalone 640×360 conceptual SVG, not a statistical chart engine",
+        "instructions": "Reference graphics/v050/diagrams/milestone-annotation-schema.svg only as conceptual schematic, or adapt geometry while supplying verified data, meaningful description and provenance externally.",
+        "limitations": "Conceptual diagram. No real measurements, research results, quantified flow, dates or statistical confidence."
+      }
+    },
+    {
+      "id": "VG-071",
+      "type": "component",
+      "name": "Portrait cut-paper vignette / 纵向剪纸插画",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v050",
+        "original-svg",
+        "independently-composed-art",
+        "multi-ratio",
+        "cut-paper"
+      ],
+      "aliases": [
+        "Portrait cut-paper vignette",
+        "剪纸插画",
+        "portrait-cutpaper-vignette"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-composed vector geometry, independent responsive aspect ratio. No raster photograph, externally sourced fonts or images.",
+      "styleIds": [
+        "paper-rebellion",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "mobile-cover",
+        "poster"
+      ],
+      "dependencies": [],
+      "path": "graphics/v050/vignettes/portrait-cutpaper-vignette.svg",
+      "details": "graphics/v050/README.md",
+      "spec": "registry/material-expansion-v050.json",
+      "demo": "playground/vignettes-v050/index.html",
+      "verified": "Two independent authored compositions and SVG viewBoxes for portrait/landscape; target site/device QA pending.",
+      "handoff": {
+        "entry": "graphics/v050/README.md",
+        "stack": "Standalone vector art, separately composed portrait and landscape variants",
+        "instructions": "Use graphics/v050/vignettes/portrait-cutpaper-vignette.svg for relevant target aspect ratio, supply contextual alt or empty decorative alt in host.",
+        "limitations": "Decorative original composition only, not image crop/auto-layout engine, video or product hero assembly."
+      }
+    },
+    {
+      "id": "VG-072",
+      "type": "component",
+      "name": "Landscape cut-paper vignette / 横向剪纸插画",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v050",
+        "original-svg",
+        "independently-composed-art",
+        "multi-ratio",
+        "cut-paper"
+      ],
+      "aliases": [
+        "Landscape cut-paper vignette",
+        "剪纸插画",
+        "landscape-cutpaper-vignette"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-composed vector geometry, independent responsive aspect ratio. No raster photograph, externally sourced fonts or images.",
+      "styleIds": [
+        "paper-rebellion",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "hero-banner",
+        "campaign"
+      ],
+      "dependencies": [],
+      "path": "graphics/v050/vignettes/landscape-cutpaper-vignette.svg",
+      "details": "graphics/v050/README.md",
+      "spec": "registry/material-expansion-v050.json",
+      "demo": "playground/vignettes-v050/index.html",
+      "verified": "Two independent authored compositions and SVG viewBoxes for portrait/landscape; target site/device QA pending.",
+      "handoff": {
+        "entry": "graphics/v050/README.md",
+        "stack": "Standalone vector art, separately composed portrait and landscape variants",
+        "instructions": "Use graphics/v050/vignettes/landscape-cutpaper-vignette.svg for relevant target aspect ratio, supply contextual alt or empty decorative alt in host.",
+        "limitations": "Decorative original composition only, not image crop/auto-layout engine, video or product hero assembly."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",

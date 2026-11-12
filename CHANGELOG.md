@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-11-12 · V0.50 print art, evidence graphics and independently composed illustrations
+
+- Added **8 standalone original HTML/CSS material atoms** FX-070..077: duotone risograph dots, newspaper lead columns, layered paper cut collage, semantic annotated figure, inline-SVG two-series slopegraph, static uncertainty-range rails, paired dumbbell chart and navigable local provenance ribbon.
+- Added **4 fully transparent original print-overlay SVG source files** VG-063..066: deterministic ink speckles, pigment laydown, conceptual registration marks and fold/crease lines.
+- Added **4 original conceptual evidence-story SVG diagrams** VG-067..070: branching routes, evidence layers, paired narratives and stage annotations. Explicitly *not* sourced or measured data.
+- Added **two independently hand-composed cut-paper illustrations** VG-071..072 (portrait 320×480, landscape 640×360), rather than auto-scaling one source.
+- [Registry](registry/material-expansion-v050.json) · [CSS originals](styles/primitives/v050/) · [SVG originals](graphics/v050/) · [research](docs/research/material-expansion-v050.md) · [sample gallery](playground/print-evidence-v050/index.html).
+- Catalog **453 → 471**. No runtime JS, new public React export/theme, external fonts/assets, app builder, new tests or unrelated product work. The sample numeric visualizations explicitly use invented 0–100 values, with no statistical claim; production browser/a11y reviews pending.
+
+
 ## 2026-11-12 · V0.49 creative editor atoms, monoline icons and transparent overlays
 
 - Added **7 independently extractable original native CSS/HTML editor-control atoms** FX-063..069: real gradient angle range, two-axis focal marker, native radio palette switch, checkbox print safe-area guide, native select CSS blend-mode study, native range grid density and hover/focus orbit tracer. Four specific controls have a small local ESM adapter; no editor engine or app state.

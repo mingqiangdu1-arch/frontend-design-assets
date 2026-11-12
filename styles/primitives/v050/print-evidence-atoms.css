@@ -1,0 +1,59 @@
+/* V0.50 • 8 independent original print, editorial and evidence-graphic fragments.
+   Opt-in .fx50-* only. No reset, external font, external images, JS, or dependencies.
+   All charts show explicit static illustrative values, not actual statistics. */
+.fx50-riso-duo{position:relative;isolation:isolate;overflow:hidden;width:min(100%,27rem);min-height:14rem;padding:1.4rem 1.65rem;background:#efcfad;color:#2a3c44;border:2px solid #9d8674;border-radius:.15rem;font:800 .75rem/1.3 ui-monospace,monospace;letter-spacing:.09em}
+.fx50-riso-duo:before{content:"";position:absolute;inset:0;z-index:-1;opacity:.65;background-image:radial-gradient(#bc655c 1.8px,transparent 2px),radial-gradient(#337f86 1.7px,transparent 2px);background-size:15px 15px,16px 16px;background-position:2px 1px,7px 8px;mask-image:linear-gradient(125deg,#0008,#000 76%)}
+.fx50-riso-duo h3{position:relative;z-index:1;margin:.6rem 0 1rem;max-width:9ch;color:#183f53;text-shadow:3px 3px 0 #cb7770;font:950 clamp(2.7rem,6vw,4rem)/.88 system-ui,sans-serif;letter-spacing:-.09em;overflow-wrap:anywhere}
+.fx50-riso-duo small{display:block;font:800 .68rem/1.4 ui-monospace,monospace;letter-spacing:.17em}
+.fx50-news-lead{width:min(100%,33rem);padding:1.2rem 1.35rem;background:#f2eddb;border-top:8px double #3f4640;border-bottom:2px solid #3f4640;color:#283d3b}
+.fx50-news-lead .eyebrow{display:block;text-align:center;font:750 .7rem ui-monospace,monospace;letter-spacing:.2em;border-bottom:1px solid #958c78;padding-bottom:.6rem}
+.fx50-news-lead h2{font:900 clamp(1.75rem,5vw,2.6rem)/1.04 Georgia,serif;letter-spacing:-.06em;text-align:center;margin:.85rem 0}
+.fx50-news-lead .dek{font:italic 600 .92rem/1.5 Georgia,serif;text-align:center;margin:0 0 1rem}
+.fx50-news-lead .body{column-count:2;column-gap:1.35rem;column-rule:1px solid #9a9e90;font:500 .84rem/1.6 Georgia,serif;text-align:left}
+.fx50-news-lead .body p{margin:0 0 .6rem}
+.fx50-paper-collage{position:relative;isolation:isolate;overflow:hidden;width:min(100%,27rem);aspect-ratio:1.65;background:#eadfc7;border:1px solid #bcb39c}
+.fx50-paper-collage .sheet{position:absolute;display:grid;place-items:center;color:#273f45;text-align:center;font:950 clamp(1.3rem,4vw,2.4rem)/.94 system-ui;letter-spacing:-.08em}
+.fx50-paper-collage .back{inset:14% 20% 18% 9%;background:#648e83;clip-path:polygon(5% 0,100% 6%,92% 100%,0 93%);transform:rotate(-9deg)}
+.fx50-paper-collage .mid{inset:11% 9% 16% 31%;background:#d7876d;clip-path:polygon(0 12%,86% 0,100% 91%,12% 100%);transform:rotate(7deg)}
+.fx50-paper-collage .front{inset:30% 24% 20% 23%;background:#f5dca5;clip-path:polygon(0 0,94% 7%,100% 90%,9% 100%);transform:rotate(-4deg)}
+.fx50-paper-collage .tape{position:absolute;z-index:4;left:37%;top:14%;width:31%;height:15%;background:rgb(252 248 220 / 68%);border:1px solid rgb(190 170 132 / 40%);transform:rotate(-15deg);pointer-events:none}
+.fx50-annotation-figure{width:min(100%,27rem);margin:0;padding:1.1rem 1.25rem;background:#fbf4e6;border:1px solid #ccbea3;color:#34494a;font:500 .83rem/1.5 system-ui}
+.fx50-annotation-figure .canvas{position:relative;min-height:9rem;background:linear-gradient(145deg,#f2d7bd,#c4d8d1);border:1px solid #afc4bb;border-radius:.3rem;overflow:hidden}
+.fx50-annotation-figure .shape{position:absolute;left:25%;top:16%;width:50%;height:67%;background:#cf8974;clip-path:polygon(50% 0,100% 80%,15% 100%,0 34%)}
+.fx50-annotation-figure .pin{position:absolute;left:50%;top:47%;width:15%;height:0;border-top:2px solid #275f62;transform:translateX(-10%)}
+.fx50-annotation-figure .pin:after{content:"";position:absolute;right:0;top:-5px;width:8px;height:8px;border-radius:50%;background:#275f62}
+.fx50-annotation-figure .tag{position:absolute;right:5%;top:35%;padding:.3rem .45rem;background:#204e5c;color:white;font:750 .7rem ui-monospace,monospace}
+.fx50-annotation-figure figcaption{margin-top:.7rem;display:grid;gap:.35rem}
+.fx50-annotation-figure figcaption strong{font-size:.84rem}
+.fx50-annotation-figure figcaption small{color:#5c6b69}
+.fx50-slopegraph{width:min(100%,28rem);margin:0;padding:1.1rem 1.2rem;border:1px solid #bbcfcb;border-radius:.8rem;background:#f7faf6;color:#25474a;font:600 .8rem/1.45 system-ui}
+.fx50-slopegraph figcaption{margin-bottom:.5rem;font-weight:800}
+.fx50-slopegraph svg{display:block;width:100%;height:auto;overflow:visible}
+.fx50-slopegraph svg .guide{stroke:#a8bfbb;stroke-dasharray:4 5}.fx50-slopegraph svg .series-a{stroke:#c8795d}.fx50-slopegraph svg .series-b{stroke:#2d8b82}
+.fx50-slopegraph svg text{fill:#395b58;font:700 14px system-ui}.fx50-slopegraph small{display:block;margin-top:.5rem;color:#597571}
+.fx50-interval-rail{width:min(100%,28rem);margin:0;padding:1.1rem 1.2rem;border:1px solid #5f8484;border-radius:.8rem;background:#193e4b;color:#e8f6ed;font:600 .8rem/1.45 system-ui}
+.fx50-interval-rail figcaption{margin-bottom:1rem;font-weight:850}
+.fx50-interval-rail ul{display:grid;gap:.8rem;margin:0;padding:0;list-style:none}
+.fx50-interval-rail li{display:grid;gap:.4rem}.fx50-interval-rail .row{display:flex;justify-content:space-between;gap:.4rem}
+.fx50-interval-rail .track{position:relative;height:1rem;border:1px solid #6d9a99;border-radius:.3rem;background:linear-gradient(90deg,#2d5b67,#294c5c)}
+.fx50-interval-rail .range{position:absolute;left:var(--lo);width:calc(var(--hi) - var(--lo));top:50%;height:5px;background:#9ce1c1;transform:translateY(-50%);border-radius:2px}
+.fx50-interval-rail .range:before,.fx50-interval-rail .range:after{content:"";position:absolute;top:-5px;width:2px;height:15px;background:#9ce1c1}.fx50-interval-rail .range:after{right:0}
+.fx50-interval-rail .center{position:absolute;left:var(--mid);top:50%;width:.8rem;height:.8rem;border:2px solid #193e4b;background:#ffd18a;border-radius:50%;transform:translate(-50%,-50%)}
+.fx50-interval-rail small{display:block;margin-top:.7rem;color:#a8c9c5}
+.fx50-dumbbell{width:min(100%,28rem);margin:0;padding:1.1rem 1.2rem;border:1px solid #d2c4af;border-radius:.8rem;background:#fcf7ed;color:#384d48;font:600 .8rem/1.45 system-ui}
+.fx50-dumbbell figcaption{font-weight:850;margin-bottom:1rem}.fx50-dumbbell ol{padding:0;margin:0;list-style:none;display:grid;gap:1rem}
+.fx50-dumbbell .values{display:flex;justify-content:space-between;gap:.6rem;flex-wrap:wrap;margin-bottom:.3rem;font-size:.76rem}
+.fx50-dumbbell .rail{height:1.1rem;position:relative;background:linear-gradient(#b9c6c2,#b9c6c2) center/100% 1px no-repeat}
+.fx50-dumbbell .span{position:absolute;left:var(--left);width:calc(var(--right) - var(--left));top:50%;height:4px;background:#85a4a0;transform:translateY(-50%)}
+.fx50-dumbbell .dot{position:absolute;left:var(--left);top:50%;height:.88rem;width:.88rem;border-radius:50%;background:#ca735c;transform:translate(-50%,-50%);border:2px solid #fff}
+.fx50-dumbbell .dot.after{left:var(--right);background:#267f7f}
+.fx50-dumbbell .legend{display:flex;gap:1rem;margin-top:.85rem;color:#61716d;font-size:.7rem}.fx50-dumbbell .legend b{color:#ca735c}
+.fx50-source-ribbon{width:min(100%,30rem);padding:1.1rem 1.25rem;background:#f4efe2;border-left:4px solid #508b82;color:#3e5651;font:550 .8rem/1.45 system-ui}
+.fx50-source-ribbon h3{margin:0 0 .75rem;font:850 .92rem system-ui}.fx50-source-ribbon ol{list-style:none;padding:0;margin:0;display:grid;gap:.6rem}
+.fx50-source-ribbon a{display:flex;align-items:center;gap:.7rem;border-bottom:1px dotted #b6aca0;padding:.3rem 0;color:#245e5b;text-decoration:none}
+.fx50-source-ribbon a:is(:hover,:focus-visible){text-decoration:underline}
+.fx50-source-ribbon a:focus-visible{outline:3px solid #337ca1;outline-offset:3px}
+.fx50-source-ribbon .id{display:inline-grid;place-items:center;width:2.5rem;height:1.6rem;flex:none;background:#d5e1d7;font:800 .7rem ui-monospace,monospace}
+.fx50-source-ribbon .note{margin:.9rem 0 0;font-size:.7rem;color:#5d736e}
+@media(max-width:540px){.fx50-news-lead .body{column-count:1}.fx50-news-lead{padding:1rem}.fx50-riso-duo h3{font-size:2.75rem}}
+@media(forced-colors:active){.fx50-riso-duo,.fx50-news-lead,.fx50-paper-collage,.fx50-annotation-figure,.fx50-slopegraph,.fx50-interval-rail,.fx50-dumbbell,.fx50-source-ribbon{background:Canvas;color:CanvasText;border:1px solid CanvasText}.fx50-slopegraph svg text{fill:CanvasText}.fx50-dumbbell .rail,.fx50-interval-rail .track{outline:1px solid CanvasText}.fx50-dumbbell .dot,.fx50-interval-rail .center{background:Highlight}}

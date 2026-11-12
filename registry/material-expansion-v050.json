@@ -1,0 +1,449 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.50.0",
+  "date": "2026-11-12",
+  "focus": "Material-only: 8 original print/editorial/semantic evidence visualization CSS/HTML atoms; 4 original transparent print overlays, 4 original conceptual narrative diagrams, 2 independently authored portrait and landscape SVG vignettes.",
+  "previousAssetCount": 453,
+  "newAssetCount": 18,
+  "expectedAssetCount": 471,
+  "reactExportsAdded": 0,
+  "styleIdsAdded": 0,
+  "testSuitesAdded": 0,
+  "externalMediaCopied": false,
+  "thirdPartyCodeCopied": false,
+  "sourceFiles": [
+    "registry/material-expansion-v050.json",
+    "docs/research/material-expansion-v050.md",
+    "styles/primitives/v050/print-evidence-atoms.css",
+    "styles/primitives/v050/README.md",
+    "playground/print-evidence-v050/index.html",
+    "graphics/v050/README.md",
+    "playground/print-overlays-v050/index.html",
+    "playground/story-diagrams-v050/index.html",
+    "playground/vignettes-v050/index.html",
+    "graphics/v050/overlays/ink-mist-overlay.svg",
+    "graphics/v050/overlays/ink-laydown-overlay.svg",
+    "graphics/v050/overlays/print-register-marks.svg",
+    "graphics/v050/overlays/fold-and-crease-lines.svg",
+    "graphics/v050/diagrams/branching-route-schema.svg",
+    "graphics/v050/diagrams/evidence-stack-schema.svg",
+    "graphics/v050/diagrams/parallel-narrative-schema.svg",
+    "graphics/v050/diagrams/milestone-annotation-schema.svg",
+    "graphics/v050/vignettes/portrait-cutpaper-vignette.svg",
+    "graphics/v050/vignettes/landscape-cutpaper-vignette.svg"
+  ],
+  "cssAtoms": [
+    {
+      "id": "FX-070",
+      "name": "Risograph dot-duotone print specimen / 孔版双色印刷样张",
+      "className": "fx50-riso-duo",
+      "aliases": [
+        "risograph duotone",
+        "孔版印刷",
+        "双色网点"
+      ],
+      "applicationContexts": [
+        "poster",
+        "campaign",
+        "editorial"
+      ],
+      "styleIds": [
+        "paper-rebellion",
+        "editorial-warm"
+      ],
+      "limitations": "Original CSS radial-gradient dots and registration offset over a real heading, not actual print separation or a rasterized photograph.",
+      "source": "styles/primitives/v050/print-evidence-atoms.css",
+      "readme": "styles/primitives/v050/README.md",
+      "demo": "playground/print-evidence-v050/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-html-css-with-static-original-inline-svg-for-FX074",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-071",
+      "name": "Newspaper column reading lead / 报纸分栏导语",
+      "className": "fx50-news-lead",
+      "aliases": [
+        "newspaper columns",
+        "报纸分栏",
+        "masthead"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "longform",
+        "culture"
+      ],
+      "styleIds": [
+        "editorial-warm",
+        "type-led-minimal"
+      ],
+      "limitations": "Real heading, text, newspaper-like CSS columns and responsive single-column layout. Reading order remains DOM-linear; host supplies editorial text.",
+      "source": "styles/primitives/v050/print-evidence-atoms.css",
+      "readme": "styles/primitives/v050/README.md",
+      "demo": "playground/print-evidence-v050/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-html-css-with-static-original-inline-svg-for-FX074",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-072",
+      "name": "Layered paper cut collage / 手工剪贴层景",
+      "className": "fx50-paper-collage",
+      "aliases": [
+        "paper collage",
+        "纸片拼贴",
+        "torn-paper cutout"
+      ],
+      "applicationContexts": [
+        "campaign",
+        "portfolio",
+        "illustration"
+      ],
+      "styleIds": [
+        "paper-rebellion",
+        "shape-expressive"
+      ],
+      "limitations": "Independent CSS colored geometric paper shapes; no external photo, drag controls, licensed scanned paper, or editable collage workspace.",
+      "source": "styles/primitives/v050/print-evidence-atoms.css",
+      "readme": "styles/primitives/v050/README.md",
+      "demo": "playground/print-evidence-v050/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-html-css-with-static-original-inline-svg-for-FX074",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-073",
+      "name": "Bracketed annotation figure / 括号式图注证据卡",
+      "className": "fx50-annotation-figure",
+      "aliases": [
+        "figure bracket",
+        "证据标注",
+        "annotated diagram"
+      ],
+      "applicationContexts": [
+        "research",
+        "education",
+        "data-story"
+      ],
+      "styleIds": [
+        "editorial-warm",
+        "precision-dark"
+      ],
+      "limitations": "Semantic figure/caption plus text labels; visual trace is static sample, no true source record or chart calculation.",
+      "source": "styles/primitives/v050/print-evidence-atoms.css",
+      "readme": "styles/primitives/v050/README.md",
+      "demo": "playground/print-evidence-v050/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-html-css-with-static-original-inline-svg-for-FX074",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-074",
+      "name": "Two-category slopegraph / 双类变化斜率图",
+      "className": "fx50-slopegraph",
+      "aliases": [
+        "slopegraph",
+        "斜率对比图",
+        "paired change"
+      ],
+      "applicationContexts": [
+        "research",
+        "analytics",
+        "data-story"
+      ],
+      "styleIds": [
+        "refined-light-saas",
+        "type-led-minimal"
+      ],
+      "limitations": "Actual inline SVG connects two illustrative static paired values with adjacent text; no charting library, live dataset, numeric scale engine, or inferred causal conclusion.",
+      "source": "styles/primitives/v050/print-evidence-atoms.css",
+      "readme": "styles/primitives/v050/README.md",
+      "demo": "playground/print-evidence-v050/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-html-css-with-static-original-inline-svg-for-FX074",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-075",
+      "name": "Uncertainty interval rails / 不确定性区间轨",
+      "className": "fx50-interval-rail",
+      "aliases": [
+        "uncertainty interval",
+        "置信区间视觉",
+        "error bars"
+      ],
+      "applicationContexts": [
+        "research",
+        "data-story",
+        "report"
+      ],
+      "styleIds": [
+        "precision-dark",
+        "refined-light-saas"
+      ],
+      "limitations": "Explicit low/center/high sample values are mirrored by bounded CSS positions on one static 0–100 axis; not computed confidence intervals or probability assertions.",
+      "source": "styles/primitives/v050/print-evidence-atoms.css",
+      "readme": "styles/primitives/v050/README.md",
+      "demo": "playground/print-evidence-v050/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-html-css-with-static-original-inline-svg-for-FX074",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-076",
+      "name": "Paired dumbbell comparison rows / 哑铃差异对照条",
+      "className": "fx50-dumbbell",
+      "aliases": [
+        "dumbbell chart",
+        "哑铃对比",
+        "paired dots"
+      ],
+      "applicationContexts": [
+        "analytics",
+        "data-story",
+        "comparison"
+      ],
+      "styleIds": [
+        "refined-light-saas",
+        "editorial-warm"
+      ],
+      "limitations": "Native list of static numeric pair samples drawn on consistent 0–100 CSS scale; host must update text and geometry together.",
+      "source": "styles/primitives/v050/print-evidence-atoms.css",
+      "readme": "styles/primitives/v050/README.md",
+      "demo": "playground/print-evidence-v050/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-html-css-with-static-original-inline-svg-for-FX074",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-077",
+      "name": "Source provenance bibliography ribbon / 来源证据索引条",
+      "className": "fx50-source-ribbon",
+      "aliases": [
+        "source rail",
+        "引用来源",
+        "footnote provenance"
+      ],
+      "applicationContexts": [
+        "research",
+        "editorial",
+        "report"
+      ],
+      "styleIds": [
+        "type-led-minimal",
+        "editorial-warm"
+      ],
+      "limitations": "Genuine anchor references to local specimen source notes with navigable targets; does not verify external citations or download publications.",
+      "source": "styles/primitives/v050/print-evidence-atoms.css",
+      "readme": "styles/primitives/v050/README.md",
+      "demo": "playground/print-evidence-v050/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-html-css-with-static-original-inline-svg-for-FX074",
+      "notReactExport": true
+    }
+  ],
+  "printOverlays": [
+    {
+      "id": "VG-063",
+      "name": "Ink mist / 喷墨雾点透明层",
+      "source": "graphics/v050/overlays/ink-mist-overlay.svg",
+      "readme": "graphics/v050/README.md",
+      "demo": "playground/print-overlays-v050/index.html",
+      "viewBox": "0 0 640 360",
+      "transparent": true,
+      "styleIds": [
+        "paper-rebellion",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "overlay",
+        "print"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source"
+    },
+    {
+      "id": "VG-064",
+      "name": "Pigment laydown / 颜料铺墨透明层",
+      "source": "graphics/v050/overlays/ink-laydown-overlay.svg",
+      "readme": "graphics/v050/README.md",
+      "demo": "playground/print-overlays-v050/index.html",
+      "viewBox": "0 0 640 360",
+      "transparent": true,
+      "styleIds": [
+        "organic-tactile",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "overlay",
+        "print"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source"
+    },
+    {
+      "id": "VG-065",
+      "name": "Registration crosshairs / 套印定位标透明层",
+      "source": "graphics/v050/overlays/print-register-marks.svg",
+      "readme": "graphics/v050/README.md",
+      "demo": "playground/print-overlays-v050/index.html",
+      "viewBox": "0 0 640 360",
+      "transparent": true,
+      "styleIds": [
+        "precision-dark",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "overlay",
+        "print"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source"
+    },
+    {
+      "id": "VG-066",
+      "name": "Fold & crease / 折页压痕透明层",
+      "source": "graphics/v050/overlays/fold-and-crease-lines.svg",
+      "readme": "graphics/v050/README.md",
+      "demo": "playground/print-overlays-v050/index.html",
+      "viewBox": "0 0 640 360",
+      "transparent": true,
+      "styleIds": [
+        "editorial-warm",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "overlay",
+        "stationery"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source"
+    }
+  ],
+  "conceptDiagrams": [
+    {
+      "id": "VG-067",
+      "name": "Branching route schema / 分流路径示意",
+      "source": "graphics/v050/diagrams/branching-route-schema.svg",
+      "readme": "graphics/v050/README.md",
+      "demo": "playground/story-diagrams-v050/index.html",
+      "viewBox": "0 0 640 360",
+      "conceptualOnly": true,
+      "styleIds": [
+        "precision-dark",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "infographic",
+        "data-story"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source"
+    },
+    {
+      "id": "VG-068",
+      "name": "Evidence stack schema / 来源证据叠层图",
+      "source": "graphics/v050/diagrams/evidence-stack-schema.svg",
+      "readme": "graphics/v050/README.md",
+      "demo": "playground/story-diagrams-v050/index.html",
+      "viewBox": "0 0 640 360",
+      "conceptualOnly": true,
+      "styleIds": [
+        "editorial-warm",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "infographic",
+        "research"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source"
+    },
+    {
+      "id": "VG-069",
+      "name": "Parallel narrative tracks / 双线叙事图",
+      "source": "graphics/v050/diagrams/parallel-narrative-schema.svg",
+      "readme": "graphics/v050/README.md",
+      "demo": "playground/story-diagrams-v050/index.html",
+      "viewBox": "0 0 640 360",
+      "conceptualOnly": true,
+      "styleIds": [
+        "aether-orbit",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "infographic",
+        "storytelling"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source"
+    },
+    {
+      "id": "VG-070",
+      "name": "Milestone annotation stages / 关键节点注解图",
+      "source": "graphics/v050/diagrams/milestone-annotation-schema.svg",
+      "readme": "graphics/v050/README.md",
+      "demo": "playground/story-diagrams-v050/index.html",
+      "viewBox": "0 0 640 360",
+      "conceptualOnly": true,
+      "styleIds": [
+        "precision-dark",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "infographic",
+        "education"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source"
+    }
+  ],
+  "vignettes": [
+    {
+      "id": "VG-071",
+      "name": "Portrait cut-paper vignette / 纵向剪纸插画",
+      "source": "graphics/v050/vignettes/portrait-cutpaper-vignette.svg",
+      "readme": "graphics/v050/README.md",
+      "demo": "playground/vignettes-v050/index.html",
+      "viewBox": "0 0 320 480",
+      "independentlyComposed": true,
+      "styleIds": [
+        "paper-rebellion",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "mobile-cover",
+        "poster"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source"
+    },
+    {
+      "id": "VG-072",
+      "name": "Landscape cut-paper vignette / 横向剪纸插画",
+      "source": "graphics/v050/vignettes/landscape-cutpaper-vignette.svg",
+      "readme": "graphics/v050/README.md",
+      "demo": "playground/vignettes-v050/index.html",
+      "viewBox": "0 0 640 360",
+      "independentlyComposed": true,
+      "styleIds": [
+        "paper-rebellion",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "hero-banner",
+        "campaign"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source"
+    }
+  ]
+}
