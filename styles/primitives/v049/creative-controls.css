@@ -1,0 +1,48 @@
+/* V0.49 • Seven independent native creator-control and motion specimens.
+ * All CSS is opt-in via .fx49-*; no global reset, externally licensed media/font,
+ * React export or app builder. Local JS only adapts values for FX-063/064/067/068.
+ */
+.fx49-gradient-angle{--fx49-angle:135deg;display:grid;gap:.75rem;width:min(100%,25rem);padding:1rem;background:#f8f0e7;border:1px solid #d4ae9f;border-radius:.9rem;color:#413f4f;font:650 .85rem/1.4 system-ui,sans-serif}
+.fx49-gradient-angle .view{min-height:8.5rem;border:3px solid #fff;border-radius:.65rem;background:linear-gradient(var(--fx49-angle),#f3aa85 0%,#e8d18f 38%,#5a8dc4 100%);box-shadow:0 0 0 1px #d9c3b3}
+.fx49-gradient-angle label{display:flex;align-items:center;justify-content:space-between;gap:.5rem}.fx49-gradient-angle output{font:800 .76rem ui-monospace,monospace}
+.fx49-gradient-angle input[type=range]{width:100%;accent-color:#8f6a97;cursor:ew-resize}.fx49-gradient-angle input:focus-visible{outline:3px solid #3378a1;outline-offset:3px}
+.fx49-focal-target{--fx49-focal-x:50%;--fx49-focal-y:50%;display:grid;gap:.7rem;width:min(100%,25rem);padding:1rem;background:#ebf3f0;border:1px solid #abcac0;border-radius:.9rem;color:#234a4e;font:650 .8rem/1.4 system-ui,sans-serif}
+.fx49-focal-target .canvas{position:relative;aspect-ratio:1.85;border-radius:.6rem;overflow:hidden;background:radial-gradient(circle at 45% 45%,#f6d9ac 0 17%,transparent 18%),linear-gradient(130deg,#194b6d,#6cc6ad 59%,#e7ca86)}
+.fx49-focal-target .marker{position:absolute;left:var(--fx49-focal-x);top:var(--fx49-focal-y);width:2.1rem;aspect-ratio:1;border:2px solid white;border-radius:50%;transform:translate(-50%,-50%);box-shadow:0 0 0 1px #214d55,0 0 0 4px rgb(255 255 255 / 40%);pointer-events:none}
+.fx49-focal-target .marker:before,.fx49-focal-target .marker:after{content:"";position:absolute;left:50%;top:50%;background:white;transform:translate(-50%,-50%)}.fx49-focal-target .marker:before{width:1px;height:120%}.fx49-focal-target .marker:after{width:120%;height:1px}
+.fx49-focal-target .axis{display:grid;grid-template-columns:1.5rem 1fr 2.8rem;gap:.6rem;align-items:center}.fx49-focal-target input{min-width:0;width:100%;accent-color:#286d79}.fx49-focal-target input:focus-visible{outline:3px solid #3378a1;outline-offset:3px}
+.fx49-focal-target output{text-align:right;font:750 .73rem ui-monospace,monospace}
+.fx49-palette-choice{width:min(100%,24rem);border:1px solid #d1b7a4;border-radius:1rem;padding:1rem;color:#513e3b;font:650 .83rem system-ui,sans-serif}
+.fx49-palette-choice legend{padding:0 .3rem;font-weight:850}.fx49-palette-choice .options{display:flex;gap:.4rem;flex-wrap:wrap;margin:.5rem 0 1rem}
+.fx49-palette-choice label{display:flex;align-items:center;gap:.28rem;padding:.42rem .65rem;background:#f5e8dc;border:1px solid #d8bfa8;border-radius:999px;cursor:pointer}
+.fx49-palette-choice input{accent-color:#8c6556}.fx49-palette-choice input:focus-visible{outline:3px solid #317ea2;outline-offset:3px}
+.fx49-palette-choice .swatch{display:grid;place-items:center;min-height:7.5rem;border-radius:.6rem;background:linear-gradient(135deg,#f2b08a,#6a859a);color:#fff;font:950 2.2rem/1 system-ui;letter-spacing:-.06em}
+.fx49-palette-choice:has(input[value="forest"]:checked) .swatch{background:linear-gradient(145deg,#204b4a,#9bc7a5);color:#f1e4bd}
+.fx49-palette-choice:has(input[value="mono"]:checked) .swatch{background:linear-gradient(145deg,#22262c,#b5b1a4);color:#f8f7f0}
+.fx49-safe-area{width:min(100%,25rem);padding:1rem;border:1px solid #d4d0bb;border-radius:1rem;background:#f0efe5;color:#3e5550;font:650 .84rem system-ui,sans-serif}
+.fx49-safe-area label{display:flex;align-items:center;gap:.55rem;margin-bottom:.75rem;cursor:pointer}
+.fx49-safe-area input{accent-color:#2c887d}.fx49-safe-area input:focus-visible{outline:3px solid #357b9f;outline-offset:3px}
+.fx49-safe-area .artboard{position:relative;display:grid;place-items:center;min-height:12rem;background:#ecc8ae;border:2px solid #bb9178;border-radius:.2rem;overflow:hidden}
+.fx49-safe-area .artboard:before{content:"";position:absolute;inset:9%;border:2px dashed #326c69;opacity:0;pointer-events:none}
+.fx49-safe-area:has(input:checked) .artboard:before{opacity:1}
+.fx49-safe-area .artboard strong{position:relative;z-index:1;font:900 clamp(2rem,6vw,3.3rem)/.9 system-ui;letter-spacing:-.08em;color:#6c4650}
+.fx49-safe-area .artboard small{position:absolute;bottom:1.2rem;font:700 .65rem ui-monospace,monospace;letter-spacing:.2em;color:#7d5c56}
+.fx49-blend-lab{--fx49-blend:multiply;display:grid;gap:.75rem;width:min(100%,25rem);padding:1rem;border:1px solid #bec9d6;border-radius:1rem;background:#eaf0f6;color:#273d52;font:650 .83rem system-ui,sans-serif}
+.fx49-blend-lab label{display:flex;align-items:center;justify-content:space-between;gap:.7rem}.fx49-blend-lab select{min-width:0;padding:.45rem .65rem;border:1px solid #869aaa;border-radius:.45rem;background:white;color:#273d52;font:650 .79rem system-ui}
+.fx49-blend-lab select:focus-visible{outline:3px solid #2c80a7;outline-offset:2px}
+.fx49-blend-lab .canvas{position:relative;min-height:10rem;isolation:isolate;overflow:hidden;border-radius:.65rem;background:linear-gradient(145deg,#527ca9,#e3ca8a)}
+.fx49-blend-lab .layer{position:absolute;left:27%;top:12%;width:48%;height:82%;border-radius:38% 62% 72% 28%;transform:rotate(32deg);background:linear-gradient(60deg,#e65b69,#5ad3bd);mix-blend-mode:var(--fx49-blend)}
+.fx49-blend-lab small{font-size:.71rem;color:#647d88;font-weight:500}
+.fx49-grid-density{--fx49-cell:24px;display:grid;gap:.7rem;width:min(100%,25rem);padding:1rem;border:1px solid #bdd1cd;border-radius:1rem;background:#ecf3f2;color:#315658;font:650 .83rem system-ui}
+.fx49-grid-density .grid-view{position:relative;height:9rem;background-color:#264e60;background-image:linear-gradient(to right,transparent calc(100% - 1px),#84a6ac calc(100% - 1px)),linear-gradient(to bottom,transparent calc(100% - 1px),#84a6ac calc(100% - 1px));background-size:var(--fx49-cell) var(--fx49-cell);border-radius:.7rem;overflow:hidden}
+.fx49-grid-density .grid-view:after{content:"GRID";position:absolute;left:1rem;bottom:.7rem;font:850 2rem system-ui;letter-spacing:.08em;color:#e8d39c}
+.fx49-grid-density label{display:flex;justify-content:space-between}.fx49-grid-density input{width:100%;accent-color:#286c72}.fx49-grid-density input:focus-visible{outline:3px solid #2d7da0;outline-offset:3px}
+.fx49-grid-density output{font:750 .72rem ui-monospace,monospace}
+.fx49-orbit-tracer{--fx49-trail:#b5dfc2;position:relative;width:min(100%,23rem);min-height:8rem;padding:1rem 2rem;border:2px solid #6ca9a7;border-radius:3rem;background:#153f50;color:#f6ead2;font:850 1.3rem/1.2 system-ui;letter-spacing:-.04em;cursor:pointer;isolation:isolate}
+.fx49-orbit-tracer:before{content:"";position:absolute;inset:9px;border:2px dashed #699ca0;border-radius:2.3rem;pointer-events:none}
+.fx49-orbit-tracer:after{content:"✦";position:absolute;z-index:1;left:calc(50% - .6rem);top:0;color:var(--fx49-trail);font:900 1.2rem system-ui;transform-origin:50% 3.9rem;pointer-events:none}
+.fx49-orbit-tracer:is(:hover,:focus-visible):after{animation:fx49-sweep 2.4s ease-in-out infinite alternate}
+.fx49-orbit-tracer:focus-visible{outline:3px solid #e5b267;outline-offset:4px}
+@keyframes fx49-sweep{from{transform:rotate(-65deg)}to{transform:rotate(65deg)}}
+@media(prefers-reduced-motion:reduce){.fx49-orbit-tracer:is(:hover,:focus-visible):after{animation:none!important}.fx49-orbit-tracer:after{transform:none}}
+@media(forced-colors:active){.fx49-gradient-angle,.fx49-focal-target,.fx49-palette-choice,.fx49-safe-area,.fx49-blend-lab,.fx49-grid-density,.fx49-orbit-tracer{color:CanvasText;background:Canvas;border:2px solid CanvasText}.fx49-focal-target .marker,.fx49-safe-area .artboard:before{border:2px dashed Highlight}.fx49-palette-choice .swatch{background:Canvas;color:CanvasText}.fx49-grid-density .grid-view{border:2px solid CanvasText}}

@@ -16779,6 +16779,980 @@
         "instructions": "Copy graphics/v048/icons/tier-podium.svg independently; provide contextual alt on the host and adjust SVG colors/sizing if needed.",
         "limitations": "Illustrative icon only. Target app owns keyboard behavior, accessible names, icon scaling, contrast and domain-state logic."
       }
+    },
+    {
+      "id": "FX-063",
+      "type": "component",
+      "name": "Gradient-angle scrubbing station / 渐变角度调节",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v049",
+        "original-css-source",
+        "creator-control",
+        "native-html",
+        "local-js-adapter",
+        "independent-material"
+      ],
+      "aliases": [
+        "gradient angle",
+        "渐变角度",
+        "CSS 调色渐变"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original opt-in CSS/HTML; FX-063, FX-064, FX-067 and FX-068 optionally use a small original local JS adapter. No vendor source/media/font/dependency.",
+      "styleIds": [
+        "shape-expressive",
+        "liquid-layer"
+      ],
+      "applicationContexts": [
+        "creative-tool",
+        "design-specimen"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v049/creative-controls.css",
+      "details": "styles/primitives/v049/README.md",
+      "spec": "registry/material-expansion-v049.json",
+      "demo": "playground/creative-controls-v049/index.html",
+      "verified": "Original source and local specimen committed 2026-11-12; no production browser/device/accessibility certification.",
+      "handoff": {
+        "entry": "styles/primitives/v049/README.md",
+        "stack": "Native HTML/CSS plus tiny optional JS; no React export",
+        "instructions": "Copy .fx49-gradient-angle and its descendants with matching HTML in playground/creative-controls-v049/index.html. Include scoped local adapter styles/primitives/v049/creative-controls.js. Keep forced-color/reduced-motion styles.",
+        "limitations": "Native range 0–360 drives CSS gradient angle and output via tiny original local JS. No gradient-stop editor or saved configuration."
+      }
+    },
+    {
+      "id": "FX-064",
+      "type": "component",
+      "name": "Two-axis focal point target / 双轴视觉焦点",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v049",
+        "original-css-source",
+        "creator-control",
+        "native-html",
+        "local-js-adapter",
+        "independent-material"
+      ],
+      "aliases": [
+        "focal position",
+        "图像焦点定位",
+        "two axis controls"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original opt-in CSS/HTML; FX-063, FX-064, FX-067 and FX-068 optionally use a small original local JS adapter. No vendor source/media/font/dependency.",
+      "styleIds": [
+        "shape-expressive",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "media-tool",
+        "editor",
+        "creative-tool"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v049/creative-controls.css",
+      "details": "styles/primitives/v049/README.md",
+      "spec": "registry/material-expansion-v049.json",
+      "demo": "playground/creative-controls-v049/index.html",
+      "verified": "Original source and local specimen committed 2026-11-12; no production browser/device/accessibility certification.",
+      "handoff": {
+        "entry": "styles/primitives/v049/README.md",
+        "stack": "Native HTML/CSS plus tiny optional JS; no React export",
+        "instructions": "Copy .fx49-focal-target and its descendants with matching HTML in playground/creative-controls-v049/index.html. Include scoped local adapter styles/primitives/v049/creative-controls.js. Keep forced-color/reduced-motion styles.",
+        "limitations": "Two native range fields update CSS 2D focal marker and percent outputs; demo uses original gradients, not image cropping or object recognition."
+      }
+    },
+    {
+      "id": "FX-065",
+      "type": "component",
+      "name": "Native three-palette visual switch / 原生三态色盘",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v049",
+        "original-css-source",
+        "creator-control",
+        "native-html",
+        "css-only",
+        "independent-material"
+      ],
+      "aliases": [
+        "palette radio",
+        "三态色盘",
+        "radio palette preview"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original opt-in CSS/HTML; FX-063, FX-064, FX-067 and FX-068 optionally use a small original local JS adapter. No vendor source/media/font/dependency.",
+      "styleIds": [
+        "editorial-warm",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "creative-tool",
+        "design-specimen"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v049/creative-controls.css",
+      "details": "styles/primitives/v049/README.md",
+      "spec": "registry/material-expansion-v049.json",
+      "demo": "playground/creative-controls-v049/index.html",
+      "verified": "Original source and local specimen committed 2026-11-12; no production browser/device/accessibility certification.",
+      "handoff": {
+        "entry": "styles/primitives/v049/README.md",
+        "stack": "Native HTML/CSS; no React export",
+        "instructions": "Copy .fx49-palette-choice and its descendants with matching HTML in playground/creative-controls-v049/index.html. Keep forced-color/reduced-motion styles.",
+        "limitations": "CSS :has radio state changes a sample artboard; no theme persistence or external document writes. Requires browser support for :has."
+      }
+    },
+    {
+      "id": "FX-066",
+      "type": "component",
+      "name": "Opt-in print safe-area guide / 可切换排版安全线",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v049",
+        "original-css-source",
+        "creator-control",
+        "native-html",
+        "css-only",
+        "independent-material"
+      ],
+      "aliases": [
+        "print bleed",
+        "安全边距",
+        "artboard overlay"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original opt-in CSS/HTML; FX-063, FX-064, FX-067 and FX-068 optionally use a small original local JS adapter. No vendor source/media/font/dependency.",
+      "styleIds": [
+        "type-led-minimal",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "print-preview",
+        "creative-tool"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v049/creative-controls.css",
+      "details": "styles/primitives/v049/README.md",
+      "spec": "registry/material-expansion-v049.json",
+      "demo": "playground/creative-controls-v049/index.html",
+      "verified": "Original source and local specimen committed 2026-11-12; no production browser/device/accessibility certification.",
+      "handoff": {
+        "entry": "styles/primitives/v049/README.md",
+        "stack": "Native HTML/CSS; no React export",
+        "instructions": "Copy .fx49-safe-area and its descendants with matching HTML in playground/creative-controls-v049/index.html. Keep forced-color/reduced-motion styles.",
+        "limitations": "Native checkbox toggles sample guide overlay locally, not a calibrated print trim/bleed validator or a document layout editor."
+      }
+    },
+    {
+      "id": "FX-067",
+      "type": "component",
+      "name": "Layer blending microscope / 图层混合观察窗",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v049",
+        "original-css-source",
+        "creator-control",
+        "native-html",
+        "local-js-adapter",
+        "independent-material"
+      ],
+      "aliases": [
+        "blend modes",
+        "图层混合模式",
+        "mix blend test"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original opt-in CSS/HTML; FX-063, FX-064, FX-067 and FX-068 optionally use a small original local JS adapter. No vendor source/media/font/dependency.",
+      "styleIds": [
+        "signal-noir",
+        "liquid-layer"
+      ],
+      "applicationContexts": [
+        "creative-tool",
+        "graphics",
+        "editor"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v049/creative-controls.css",
+      "details": "styles/primitives/v049/README.md",
+      "spec": "registry/material-expansion-v049.json",
+      "demo": "playground/creative-controls-v049/index.html",
+      "verified": "Original source and local specimen committed 2026-11-12; no production browser/device/accessibility certification.",
+      "handoff": {
+        "entry": "styles/primitives/v049/README.md",
+        "stack": "Native HTML/CSS plus tiny optional JS; no React export",
+        "instructions": "Copy .fx49-blend-lab and its descendants with matching HTML in playground/creative-controls-v049/index.html. Include scoped local adapter styles/primitives/v049/creative-controls.js. Keep forced-color/reduced-motion styles.",
+        "limitations": "Native select switches CSS mix-blend-mode among explicit safe options; background is original gradients, not image compositing/export."
+      }
+    },
+    {
+      "id": "FX-068",
+      "type": "component",
+      "name": "Modular grid density ruler / 栅格密度尺",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v049",
+        "original-css-source",
+        "creator-control",
+        "native-html",
+        "local-js-adapter",
+        "independent-material"
+      ],
+      "aliases": [
+        "grid density",
+        "网格密度",
+        "background grid ruler"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original opt-in CSS/HTML; FX-063, FX-064, FX-067 and FX-068 optionally use a small original local JS adapter. No vendor source/media/font/dependency.",
+      "styleIds": [
+        "precision-dark",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "design-specimen",
+        "graphics",
+        "editor"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v049/creative-controls.css",
+      "details": "styles/primitives/v049/README.md",
+      "spec": "registry/material-expansion-v049.json",
+      "demo": "playground/creative-controls-v049/index.html",
+      "verified": "Original source and local specimen committed 2026-11-12; no production browser/device/accessibility certification.",
+      "handoff": {
+        "entry": "styles/primitives/v049/README.md",
+        "stack": "Native HTML/CSS plus tiny optional JS; no React export",
+        "instructions": "Copy .fx49-grid-density and its descendants with matching HTML in playground/creative-controls-v049/index.html. Include scoped local adapter styles/primitives/v049/creative-controls.js. Keep forced-color/reduced-motion styles.",
+        "limitations": "Native range adjusts repeat-grid CSS background-size and text output; not a snapping, alignment or vector editor engine."
+      }
+    },
+    {
+      "id": "FX-069",
+      "type": "component",
+      "name": "Focus-activated orbit tracer / 聚焦轨迹动画",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v049",
+        "original-css-source",
+        "creator-control",
+        "native-html",
+        "css-only",
+        "independent-material"
+      ],
+      "aliases": [
+        "path tracer",
+        "轨迹动效",
+        "focus motion"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original opt-in CSS/HTML; FX-063, FX-064, FX-067 and FX-068 optionally use a small original local JS adapter. No vendor source/media/font/dependency.",
+      "styleIds": [
+        "aether-orbit",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "portfolio",
+        "special-interaction"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v049/creative-controls.css",
+      "details": "styles/primitives/v049/README.md",
+      "spec": "registry/material-expansion-v049.json",
+      "demo": "playground/creative-controls-v049/index.html",
+      "verified": "Original source and local specimen committed 2026-11-12; no production browser/device/accessibility certification.",
+      "handoff": {
+        "entry": "styles/primitives/v049/README.md",
+        "stack": "Native HTML/CSS; no React export",
+        "instructions": "Copy .fx49-orbit-tracer and its descendants with matching HTML in playground/creative-controls-v049/index.html. Keep forced-color/reduced-motion styles.",
+        "limitations": "Original self-contained CSS animated dot travels around a rounded path only when button is hovered/focused; no timeline, background effect or service API."
+      }
+    },
+    {
+      "id": "VG-047",
+      "type": "component",
+      "name": "Angle Dial / 角度盘",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v049",
+        "original-svg",
+        "technical-monoline-icon",
+        "64x64",
+        "standalone-art"
+      ],
+      "aliases": [
+        "angle-dial",
+        "angle dial"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG stroked vector. No font, copied vendor icon pack or external media.",
+      "styleIds": [
+        "precision-dark",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "creative-tool",
+        "editor",
+        "design-specimen"
+      ],
+      "dependencies": [],
+      "path": "graphics/v049/icons/angle-dial.svg",
+      "details": "graphics/v049/README.md",
+      "spec": "registry/material-expansion-v049.json",
+      "demo": "playground/technical-icons-v049/index.html",
+      "verified": "Original 64×64 SVG with title, desc, viewBox and self-contained vectors committed 2026-11-12; not production or design-system certified.",
+      "handoff": {
+        "entry": "graphics/v049/README.md",
+        "stack": "Single standalone monoline SVG source, not React export/icon font",
+        "instructions": "Reference graphics/v049/icons/angle-dial.svg independently. Provide host contextual alt text or empty alt for decorative use.",
+        "limitations": "Technical art icon only; not functional edit command, input or layout geometry validator."
+      }
+    },
+    {
+      "id": "VG-048",
+      "type": "component",
+      "name": "Focal Pin / 焦点针",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v049",
+        "original-svg",
+        "technical-monoline-icon",
+        "64x64",
+        "standalone-art"
+      ],
+      "aliases": [
+        "focal-pin",
+        "focus pinpoint"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG stroked vector. No font, copied vendor icon pack or external media.",
+      "styleIds": [
+        "precision-dark",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "creative-tool",
+        "editor",
+        "design-specimen"
+      ],
+      "dependencies": [],
+      "path": "graphics/v049/icons/focal-pin.svg",
+      "details": "graphics/v049/README.md",
+      "spec": "registry/material-expansion-v049.json",
+      "demo": "playground/technical-icons-v049/index.html",
+      "verified": "Original 64×64 SVG with title, desc, viewBox and self-contained vectors committed 2026-11-12; not production or design-system certified.",
+      "handoff": {
+        "entry": "graphics/v049/README.md",
+        "stack": "Single standalone monoline SVG source, not React export/icon font",
+        "instructions": "Reference graphics/v049/icons/focal-pin.svg independently. Provide host contextual alt text or empty alt for decorative use.",
+        "limitations": "Technical art icon only; not functional edit command, input or layout geometry validator."
+      }
+    },
+    {
+      "id": "VG-049",
+      "type": "component",
+      "name": "Gradient Steps / 渐变阶",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v049",
+        "original-svg",
+        "technical-monoline-icon",
+        "64x64",
+        "standalone-art"
+      ],
+      "aliases": [
+        "gradient-steps",
+        "gradient stepping"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG stroked vector. No font, copied vendor icon pack or external media.",
+      "styleIds": [
+        "precision-dark",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "creative-tool",
+        "editor",
+        "design-specimen"
+      ],
+      "dependencies": [],
+      "path": "graphics/v049/icons/gradient-steps.svg",
+      "details": "graphics/v049/README.md",
+      "spec": "registry/material-expansion-v049.json",
+      "demo": "playground/technical-icons-v049/index.html",
+      "verified": "Original 64×64 SVG with title, desc, viewBox and self-contained vectors committed 2026-11-12; not production or design-system certified.",
+      "handoff": {
+        "entry": "graphics/v049/README.md",
+        "stack": "Single standalone monoline SVG source, not React export/icon font",
+        "instructions": "Reference graphics/v049/icons/gradient-steps.svg independently. Provide host contextual alt text or empty alt for decorative use.",
+        "limitations": "Technical art icon only; not functional edit command, input or layout geometry validator."
+      }
+    },
+    {
+      "id": "VG-050",
+      "type": "component",
+      "name": "Crop Safe / 裁切线",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v049",
+        "original-svg",
+        "technical-monoline-icon",
+        "64x64",
+        "standalone-art"
+      ],
+      "aliases": [
+        "crop-safe",
+        "crop outline"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG stroked vector. No font, copied vendor icon pack or external media.",
+      "styleIds": [
+        "precision-dark",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "creative-tool",
+        "editor",
+        "design-specimen"
+      ],
+      "dependencies": [],
+      "path": "graphics/v049/icons/crop-safe.svg",
+      "details": "graphics/v049/README.md",
+      "spec": "registry/material-expansion-v049.json",
+      "demo": "playground/technical-icons-v049/index.html",
+      "verified": "Original 64×64 SVG with title, desc, viewBox and self-contained vectors committed 2026-11-12; not production or design-system certified.",
+      "handoff": {
+        "entry": "graphics/v049/README.md",
+        "stack": "Single standalone monoline SVG source, not React export/icon font",
+        "instructions": "Reference graphics/v049/icons/crop-safe.svg independently. Provide host contextual alt text or empty alt for decorative use.",
+        "limitations": "Technical art icon only; not functional edit command, input or layout geometry validator."
+      }
+    },
+    {
+      "id": "VG-051",
+      "type": "component",
+      "name": "Layer Blend / 混合层",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v049",
+        "original-svg",
+        "technical-monoline-icon",
+        "64x64",
+        "standalone-art"
+      ],
+      "aliases": [
+        "layer-blend",
+        "layer blending"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG stroked vector. No font, copied vendor icon pack or external media.",
+      "styleIds": [
+        "precision-dark",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "creative-tool",
+        "editor",
+        "design-specimen"
+      ],
+      "dependencies": [],
+      "path": "graphics/v049/icons/layer-blend.svg",
+      "details": "graphics/v049/README.md",
+      "spec": "registry/material-expansion-v049.json",
+      "demo": "playground/technical-icons-v049/index.html",
+      "verified": "Original 64×64 SVG with title, desc, viewBox and self-contained vectors committed 2026-11-12; not production or design-system certified.",
+      "handoff": {
+        "entry": "graphics/v049/README.md",
+        "stack": "Single standalone monoline SVG source, not React export/icon font",
+        "instructions": "Reference graphics/v049/icons/layer-blend.svg independently. Provide host contextual alt text or empty alt for decorative use.",
+        "limitations": "Technical art icon only; not functional edit command, input or layout geometry validator."
+      }
+    },
+    {
+      "id": "VG-052",
+      "type": "component",
+      "name": "Grid Dots / 网格锚点",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v049",
+        "original-svg",
+        "technical-monoline-icon",
+        "64x64",
+        "standalone-art"
+      ],
+      "aliases": [
+        "grid-dots",
+        "grid vertex"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG stroked vector. No font, copied vendor icon pack or external media.",
+      "styleIds": [
+        "precision-dark",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "creative-tool",
+        "editor",
+        "design-specimen"
+      ],
+      "dependencies": [],
+      "path": "graphics/v049/icons/grid-dots.svg",
+      "details": "graphics/v049/README.md",
+      "spec": "registry/material-expansion-v049.json",
+      "demo": "playground/technical-icons-v049/index.html",
+      "verified": "Original 64×64 SVG with title, desc, viewBox and self-contained vectors committed 2026-11-12; not production or design-system certified.",
+      "handoff": {
+        "entry": "graphics/v049/README.md",
+        "stack": "Single standalone monoline SVG source, not React export/icon font",
+        "instructions": "Reference graphics/v049/icons/grid-dots.svg independently. Provide host contextual alt text or empty alt for decorative use.",
+        "limitations": "Technical art icon only; not functional edit command, input or layout geometry validator."
+      }
+    },
+    {
+      "id": "VG-053",
+      "type": "component",
+      "name": "Bezier Handles / 贝塞尔把手",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v049",
+        "original-svg",
+        "technical-monoline-icon",
+        "64x64",
+        "standalone-art"
+      ],
+      "aliases": [
+        "bezier-handles",
+        "curve path"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG stroked vector. No font, copied vendor icon pack or external media.",
+      "styleIds": [
+        "precision-dark",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "creative-tool",
+        "editor",
+        "design-specimen"
+      ],
+      "dependencies": [],
+      "path": "graphics/v049/icons/bezier-handles.svg",
+      "details": "graphics/v049/README.md",
+      "spec": "registry/material-expansion-v049.json",
+      "demo": "playground/technical-icons-v049/index.html",
+      "verified": "Original 64×64 SVG with title, desc, viewBox and self-contained vectors committed 2026-11-12; not production or design-system certified.",
+      "handoff": {
+        "entry": "graphics/v049/README.md",
+        "stack": "Single standalone monoline SVG source, not React export/icon font",
+        "instructions": "Reference graphics/v049/icons/bezier-handles.svg independently. Provide host contextual alt text or empty alt for decorative use.",
+        "limitations": "Technical art icon only; not functional edit command, input or layout geometry validator."
+      }
+    },
+    {
+      "id": "VG-054",
+      "type": "component",
+      "name": "Align Baseline / 基线对齐",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v049",
+        "original-svg",
+        "technical-monoline-icon",
+        "64x64",
+        "standalone-art"
+      ],
+      "aliases": [
+        "align-baseline",
+        "baseline alignment"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG stroked vector. No font, copied vendor icon pack or external media.",
+      "styleIds": [
+        "precision-dark",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "creative-tool",
+        "editor",
+        "design-specimen"
+      ],
+      "dependencies": [],
+      "path": "graphics/v049/icons/align-baseline.svg",
+      "details": "graphics/v049/README.md",
+      "spec": "registry/material-expansion-v049.json",
+      "demo": "playground/technical-icons-v049/index.html",
+      "verified": "Original 64×64 SVG with title, desc, viewBox and self-contained vectors committed 2026-11-12; not production or design-system certified.",
+      "handoff": {
+        "entry": "graphics/v049/README.md",
+        "stack": "Single standalone monoline SVG source, not React export/icon font",
+        "instructions": "Reference graphics/v049/icons/align-baseline.svg independently. Provide host contextual alt text or empty alt for decorative use.",
+        "limitations": "Technical art icon only; not functional edit command, input or layout geometry validator."
+      }
+    },
+    {
+      "id": "VG-055",
+      "type": "component",
+      "name": "Perspective Box / 透视框",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v049",
+        "original-svg",
+        "technical-monoline-icon",
+        "64x64",
+        "standalone-art"
+      ],
+      "aliases": [
+        "perspective-box",
+        "perspective wire cube"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG stroked vector. No font, copied vendor icon pack or external media.",
+      "styleIds": [
+        "precision-dark",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "creative-tool",
+        "editor",
+        "design-specimen"
+      ],
+      "dependencies": [],
+      "path": "graphics/v049/icons/perspective-box.svg",
+      "details": "graphics/v049/README.md",
+      "spec": "registry/material-expansion-v049.json",
+      "demo": "playground/technical-icons-v049/index.html",
+      "verified": "Original 64×64 SVG with title, desc, viewBox and self-contained vectors committed 2026-11-12; not production or design-system certified.",
+      "handoff": {
+        "entry": "graphics/v049/README.md",
+        "stack": "Single standalone monoline SVG source, not React export/icon font",
+        "instructions": "Reference graphics/v049/icons/perspective-box.svg independently. Provide host contextual alt text or empty alt for decorative use.",
+        "limitations": "Technical art icon only; not functional edit command, input or layout geometry validator."
+      }
+    },
+    {
+      "id": "VG-056",
+      "type": "component",
+      "name": "Mask Shape / 蒙版窗",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v049",
+        "original-svg",
+        "technical-monoline-icon",
+        "64x64",
+        "standalone-art"
+      ],
+      "aliases": [
+        "mask-shape",
+        "mask frame"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG stroked vector. No font, copied vendor icon pack or external media.",
+      "styleIds": [
+        "precision-dark",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "creative-tool",
+        "editor",
+        "design-specimen"
+      ],
+      "dependencies": [],
+      "path": "graphics/v049/icons/mask-shape.svg",
+      "details": "graphics/v049/README.md",
+      "spec": "registry/material-expansion-v049.json",
+      "demo": "playground/technical-icons-v049/index.html",
+      "verified": "Original 64×64 SVG with title, desc, viewBox and self-contained vectors committed 2026-11-12; not production or design-system certified.",
+      "handoff": {
+        "entry": "graphics/v049/README.md",
+        "stack": "Single standalone monoline SVG source, not React export/icon font",
+        "instructions": "Reference graphics/v049/icons/mask-shape.svg independently. Provide host contextual alt text or empty alt for decorative use.",
+        "limitations": "Technical art icon only; not functional edit command, input or layout geometry validator."
+      }
+    },
+    {
+      "id": "VG-057",
+      "type": "component",
+      "name": "Inspect Lens / 检视透镜",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v049",
+        "original-svg",
+        "technical-monoline-icon",
+        "64x64",
+        "standalone-art"
+      ],
+      "aliases": [
+        "inspect-lens",
+        "inspection magnifier"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG stroked vector. No font, copied vendor icon pack or external media.",
+      "styleIds": [
+        "precision-dark",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "creative-tool",
+        "editor",
+        "design-specimen"
+      ],
+      "dependencies": [],
+      "path": "graphics/v049/icons/inspect-lens.svg",
+      "details": "graphics/v049/README.md",
+      "spec": "registry/material-expansion-v049.json",
+      "demo": "playground/technical-icons-v049/index.html",
+      "verified": "Original 64×64 SVG with title, desc, viewBox and self-contained vectors committed 2026-11-12; not production or design-system certified.",
+      "handoff": {
+        "entry": "graphics/v049/README.md",
+        "stack": "Single standalone monoline SVG source, not React export/icon font",
+        "instructions": "Reference graphics/v049/icons/inspect-lens.svg independently. Provide host contextual alt text or empty alt for decorative use.",
+        "limitations": "Technical art icon only; not functional edit command, input or layout geometry validator."
+      }
+    },
+    {
+      "id": "VG-058",
+      "type": "component",
+      "name": "Path Node / 路径节点",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v049",
+        "original-svg",
+        "technical-monoline-icon",
+        "64x64",
+        "standalone-art"
+      ],
+      "aliases": [
+        "path-node",
+        "vector node selection"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG stroked vector. No font, copied vendor icon pack or external media.",
+      "styleIds": [
+        "precision-dark",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "creative-tool",
+        "editor",
+        "design-specimen"
+      ],
+      "dependencies": [],
+      "path": "graphics/v049/icons/path-node.svg",
+      "details": "graphics/v049/README.md",
+      "spec": "registry/material-expansion-v049.json",
+      "demo": "playground/technical-icons-v049/index.html",
+      "verified": "Original 64×64 SVG with title, desc, viewBox and self-contained vectors committed 2026-11-12; not production or design-system certified.",
+      "handoff": {
+        "entry": "graphics/v049/README.md",
+        "stack": "Single standalone monoline SVG source, not React export/icon font",
+        "instructions": "Reference graphics/v049/icons/path-node.svg independently. Provide host contextual alt text or empty alt for decorative use.",
+        "limitations": "Technical art icon only; not functional edit command, input or layout geometry validator."
+      }
+    },
+    {
+      "id": "VG-059",
+      "type": "component",
+      "name": "Art-deco rails / 艺术装饰双轨边框",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v049",
+        "original-svg",
+        "transparent-overlay-frame",
+        "640x360",
+        "independent-art"
+      ],
+      "aliases": [
+        "art-deco-rails",
+        "paired symmetrical copper and emerald rails"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original vector-only transparent decorative border. No copyrighted photos, imported fonts/scripts or embedded external media.",
+      "styleIds": [
+        "editorial-warm",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "poster"
+      ],
+      "dependencies": [],
+      "path": "graphics/v049/frames/art-deco-rails.svg",
+      "details": "graphics/v049/README.md",
+      "spec": "registry/material-expansion-v049.json",
+      "demo": "playground/overlay-frames-v049/index.html",
+      "verified": "Original transparent 640×360 SVG with title, desc and viewBox committed 2026-11-12; no target-app visual QA.",
+      "handoff": {
+        "entry": "graphics/v049/README.md",
+        "stack": "Independent transparent SVG overlay, not compositing app",
+        "instructions": "Use graphics/v049/frames/art-deco-rails.svg as independent source over host-owned background or media, adapting preserveAspectRatio and decorative alt.",
+        "limitations": "Decorative frame only, not physical print template; drafting marks are illustrative without calibrated dimensions."
+      }
+    },
+    {
+      "id": "VG-060",
+      "type": "component",
+      "name": "Technical registration / 工程套版框",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v049",
+        "original-svg",
+        "transparent-overlay-frame",
+        "640x360",
+        "independent-art"
+      ],
+      "aliases": [
+        "technical-registration",
+        "measuring ticks and crop registers"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original vector-only transparent decorative border. No copyrighted photos, imported fonts/scripts or embedded external media.",
+      "styleIds": [
+        "precision-dark",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "print-preview",
+        "design-specimen"
+      ],
+      "dependencies": [],
+      "path": "graphics/v049/frames/technical-registration.svg",
+      "details": "graphics/v049/README.md",
+      "spec": "registry/material-expansion-v049.json",
+      "demo": "playground/overlay-frames-v049/index.html",
+      "verified": "Original transparent 640×360 SVG with title, desc and viewBox committed 2026-11-12; no target-app visual QA.",
+      "handoff": {
+        "entry": "graphics/v049/README.md",
+        "stack": "Independent transparent SVG overlay, not compositing app",
+        "instructions": "Use graphics/v049/frames/technical-registration.svg as independent source over host-owned background or media, adapting preserveAspectRatio and decorative alt.",
+        "limitations": "Decorative frame only, not physical print template; drafting marks are illustrative without calibrated dimensions."
+      }
+    },
+    {
+      "id": "VG-061",
+      "type": "component",
+      "name": "Botanical vine corners / 植物蔓枝边角",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v049",
+        "original-svg",
+        "transparent-overlay-frame",
+        "640x360",
+        "independent-art"
+      ],
+      "aliases": [
+        "vine-corners",
+        "four organic leaf corner ornaments"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original vector-only transparent decorative border. No copyrighted photos, imported fonts/scripts or embedded external media.",
+      "styleIds": [
+        "organic-tactile",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "stationery",
+        "lifestyle"
+      ],
+      "dependencies": [],
+      "path": "graphics/v049/frames/vine-corners.svg",
+      "details": "graphics/v049/README.md",
+      "spec": "registry/material-expansion-v049.json",
+      "demo": "playground/overlay-frames-v049/index.html",
+      "verified": "Original transparent 640×360 SVG with title, desc and viewBox committed 2026-11-12; no target-app visual QA.",
+      "handoff": {
+        "entry": "graphics/v049/README.md",
+        "stack": "Independent transparent SVG overlay, not compositing app",
+        "instructions": "Use graphics/v049/frames/vine-corners.svg as independent source over host-owned background or media, adapting preserveAspectRatio and decorative alt.",
+        "limitations": "Decorative frame only, not physical print template; drafting marks are illustrative without calibrated dimensions."
+      }
+    },
+    {
+      "id": "VG-062",
+      "type": "component",
+      "name": "Pixel stitch perimeter / 像素绣边",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v049",
+        "original-svg",
+        "transparent-overlay-frame",
+        "640x360",
+        "independent-art"
+      ],
+      "aliases": [
+        "pixel-stitch-frame",
+        "blocky repeat accents and open center"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original vector-only transparent decorative border. No copyrighted photos, imported fonts/scripts or embedded external media.",
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "pixel-editor"
+      ],
+      "dependencies": [],
+      "path": "graphics/v049/frames/pixel-stitch-frame.svg",
+      "details": "graphics/v049/README.md",
+      "spec": "registry/material-expansion-v049.json",
+      "demo": "playground/overlay-frames-v049/index.html",
+      "verified": "Original transparent 640×360 SVG with title, desc and viewBox committed 2026-11-12; no target-app visual QA.",
+      "handoff": {
+        "entry": "graphics/v049/README.md",
+        "stack": "Independent transparent SVG overlay, not compositing app",
+        "instructions": "Use graphics/v049/frames/pixel-stitch-frame.svg as independent source over host-owned background or media, adapting preserveAspectRatio and decorative alt.",
+        "limitations": "Decorative frame only, not physical print template; drafting marks are illustrative without calibrated dimensions."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",

@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-11-12 · V0.49 creative editor atoms, monoline icons and transparent overlays
+
+- Added **7 independently extractable original native CSS/HTML editor-control atoms** FX-063..069: real gradient angle range, two-axis focal marker, native radio palette switch, checkbox print safe-area guide, native select CSS blend-mode study, native range grid density and hover/focus orbit tracer. Four specific controls have a small local ESM adapter; no editor engine or app state.
+- Added **12 standalone original technical-monoline SVG pictograms** VG-047..058 (64×64), visually distinct from the previous round's colorful game icons, each with semantic title/description and editable vector strokes.
+- Added **4 original standalone transparent SVG frame/overlay sources** VG-059..062 (640×360): art deco, drafting registration, organic vine and pixel perimeter; no embedded media.
+- [Registry](registry/material-expansion-v049.json) · [CSS/JS sources](styles/primitives/v049/) · [original SVGs](graphics/v049/) · [research](docs/research/material-expansion-v049.md) · [interactive native specimens](playground/creative-controls-v049/index.html).
+- Asset catalog **430 → 453**. No new React public exports, style IDs, full editor/builder, third-party packages or heavy test suite. Source-level checks only; browser/device and accessibility review pending.
+
+
 ## 2026-11-12 · V0.48 original gameful microinteractions and illustrated icon family
 
 - Added **8 standalone native HTML/CSS atoms** FX-055..062: hover orbital achievement badge, conic experience ring with native progress semantics, selectable clipped-corner inventory checkbox, native quest details disclosure, styled native resource meter, hover reward starburst, focus-aware kinetic underline anchor and native portal-mode checkbox toggle.

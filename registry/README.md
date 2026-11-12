@@ -11,6 +11,7 @@ This directory is the **authoritative index** for choosing existing design refer
 | `styles.json` | Independent style IDs, token/spec/demo entrypoints; **no repository default** |
 | `style-assembly.json` | Fourteen per-style page structure and interaction handoffs; real template, experience-recipe and React-export references. Used by `scripts/style-assembly.mjs`; not generated production pages. |
 | `style-facets.json` | One-to-one theme selection facets: task aliases, structural layout, material, interaction, device and density; references real demo paths. Pair with `scripts/style-match.mjs` and `scripts/select-style.mjs` for explainable matching, not an ML style rank. |
+| `material-expansion-v049.json` | 7 项独立原创创意编辑微控件 FX-063..069（4 项局部 JS 适配）与 12 项技术线性图标 SVG VG-047..058、4 项透明装饰框角 VG-059..062；均需按原始源码与宿主边界取用 |
 | `material-expansion-v048.json` | 8 个原创游戏化/动效/语义控件 FX-055..062 与 12 个独立原创小型 SVG 图标 VG-035..046；源代码独立可复用，不代表游戏业务、生产级组件或 npm 包 |
 | `material-expansion-v047.json` | 6 项原创实验排印/材质/导航 CSS 源码 FX-049..054 + 8 项周期自包含的 SVG 纹理图案 VG-023..030 + 4 份 SVG 场景 VG-031..034；均是素材原件而非应用，FX-050 可选单独 Pointer JS |
 | `material-expansion-v046.json` | 12 个原创表单/数据/对比/排印 CSS 原子 FX-037..048，6 个原创独立 SVG VG-017..022；含一个局部前后对比 JS 适配器，没有 React 包导出 |

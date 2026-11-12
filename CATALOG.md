@@ -25,6 +25,7 @@
 | 视觉前后比较、标签、评分、comparison / review / rating | `UI-060`、`UI-061`、`UI-062`、`packages/ui/src/cross-context.tsx`、`recipes/compare-annotate-feedback.md` | 可交互 React 控件和跨场景组合配方；真实媒体授权、评审保存与后端审核需宿主实现 |
 | 工作流、步骤表单、节点编辑、flow editor | `UI-047`、`UI-058`、`packages/ui/src/workflows.tsx`、`editors.tsx` | 交互参考，不是服务端流程引擎 |
 | 页面结构、整页模板、layout、blueprint | `registry/page-templates.json`、`playground/page-blueprints/README.md`、`docs/assembly/README.md` | 模板 `implementation` 字段决定是静态实验还是 React |
+| 创意编辑微控件、原生滑块调整、设计工具线性图标、透明框边 / creative-controls, blend, focal, crop guide, monoline icons, overlay frames | `FX-063`–`FX-069`、`VG-047`–`VG-062`、`registry/material-expansion-v049.json` | 7 个独立原创 CSS/HTML 控件（4 个含可选局部 JS）、12 个原创线性技术 SVG、4 份透明叠加边框；非完整画布编辑器或设计工具产品 |
 | 游戏化界面、原生语义微交互、任务/奖励视觉、原创建模感小图标 / gameful, achievement, quest, inventory, animated badge, icon assets | `FX-055`–`FX-062`、`VG-035`–`VG-046`、`registry/material-expansion-v048.json` | 8 项 CSS 原子（动效只在 hover/focus 触发，降低运动模式静态），12 份原创单独 SVG 小图标；无 JS、无游戏业务、无新主题/React 公开组件 |
 | 高级实验排版、纹理图案、全息效果、原创 SVG / expressive typography, repeatable background, holo surface | `FX-049`–`FX-054`、`VG-023`–`VG-034`、`registry/material-expansion-v047.json` | 6 个独立原创 CSS 原子（全息卡含可选 Pointer JS）、8 个周期可整除 256 的 SVG 平铺图案、4 个场景原图；只做可复制的素材，不提供完整主题或成品页面 |
 | 创意营销、portfolio、campaign、editorial | `styles/neo-brutalist/`、`styles/paper-rebellion/`、`registry/creative-directions.json` | 不强行使用标准 SaaS 卡片布局 |
