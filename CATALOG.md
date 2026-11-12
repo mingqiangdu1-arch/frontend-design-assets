@@ -26,6 +26,7 @@
 | 工作流、步骤表单、节点编辑、flow editor | `UI-047`、`UI-058`、`packages/ui/src/workflows.tsx`、`editors.tsx` | 交互参考，不是服务端流程引擎 |
 | 页面结构、整页模板、layout、blueprint | `registry/page-templates.json`、`playground/page-blueprints/README.md`、`docs/assembly/README.md` | 模板 `implementation` 字段决定是静态实验还是 React |
 | 创意营销、portfolio、campaign、editorial | `styles/neo-brutalist/`、`styles/paper-rebellion/`、`registry/creative-directions.json` | 不强行使用标准 SaaS 卡片布局 |
+| 移动底栏、手势卡轨、语音波形、转写、空状态、骨架屏 / mobile audio feedback | `FX-027`–`FX-036`、`VG-013`–`VG-016`、`REF-132`–`REF-136`、`registry/material-expansion-v045.json` | 10 个原创 CSS 源码、4 个独立 SVG、5 个固定版本第三方研究链接；区分原生可用行为与示意状态，不组装页面 |
 | 移动端、习惯养成、gamification、mobile | `TPL-003`、`styles/playful-pop/`、`docs/styles/README.md` | 检查 touch、窄屏与 reduced motion |
 | 电商商品页、product catalog、commerce | `TPL-006`、`styles/commerce-atelier/`、`recipes/product-first-commerce.md` | 以商品、规格、价格和筛选为核心 |
 | 知识库、编辑、文档阅读、knowledge base | `TPL-002`、`TPL-007`、`styles/editorial-warm/` | `TPL-002` 是独立静态示例；`TPL-007` 是 React 示例 |

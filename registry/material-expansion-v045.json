@@ -1,0 +1,445 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.45.0",
+  "date": "2026-11-12",
+  "focus": "Material-first mobile, audio, feedback: 10 original native CSS source atoms, 4 original SVG files, 5 pinned upstream research references; no application assembly.",
+  "previousAssetCount": 355,
+  "newAssetCount": 19,
+  "expectedAssetCount": 374,
+  "addReactExports": 0,
+  "addThemes": 0,
+  "addTestSuites": 0,
+  "upstreamCodeCopied": false,
+  "sourceFiles": [
+    "registry/material-expansion-v045.json",
+    "docs/research/material-expansion-v045.md",
+    "styles/primitives/v045/mobile-audio-states.css",
+    "styles/primitives/v045/README.md",
+    "playground/mobile-audio-states-v045/index.html",
+    "graphics/v045/README.md",
+    "playground/vector-materials-v045/index.html",
+    "graphics/v045/touch-gesture-arcs.svg",
+    "graphics/v045/audio-annotation-grid.svg",
+    "graphics/v045/clustered-map-pins.svg",
+    "graphics/v045/empty-state-garden.svg"
+  ],
+  "upstreamReferences": [
+    {
+      "id": "REF-132",
+      "name": "Magic Spells Sheet / 原生 dialog 手势底部抽屉",
+      "repo": "magic-spells/sheet",
+      "revision": "d4eac61d29b8532e0d7c6ebe787cbb3203d1ed26",
+      "license": "MIT",
+      "source": "https://github.com/magic-spells/sheet/blob/d4eac61d29b8532e0d7c6ebe787cbb3203d1ed26/README.md",
+      "kind": "mobile-sheet",
+      "status": "research-only",
+      "caution": "Uses custom elements + native dialog semantics and engine dependencies; target must assess scroll arbitration, focus return and safe areas; distinct from existing Vaul reference."
+    },
+    {
+      "id": "REF-133",
+      "name": "WaveSurfer.js / 波形音频播放与插件",
+      "repo": "katspaugh/wavesurfer.js",
+      "revision": "66742bade56d51c43ce881dfdc1c107ba6acaaeb",
+      "license": "BSD-3-Clause",
+      "source": "https://github.com/katspaugh/wavesurfer.js/blob/66742bade56d51c43ce881dfdc1c107ba6acaaeb/README.md",
+      "kind": "audio-player",
+      "status": "research-only",
+      "caution": "Playback and decoded peaks require actual audio resources; assess file size, CORS and Regions plugin rather than treat FX-031 bars as source data."
+    },
+    {
+      "id": "REF-134",
+      "name": "Waveform Playlist / 多轨音频编辑",
+      "repo": "naomiaro/waveform-playlist",
+      "revision": "fc1f42b3318f101676a234a25ae1905266b6da8a",
+      "license": "MIT",
+      "source": "https://github.com/naomiaro/waveform-playlist/blob/fc1f42b3318f101676a234a25ae1905266b6da8a/README.md",
+      "kind": "audio-editor",
+      "status": "research-only",
+      "caution": "React, Tone.js, @dnd-kit and optional playout plugins require dependency, CPU and large-file assessment; not installed in this repo."
+    },
+    {
+      "id": "REF-135",
+      "name": "Pinky UI / 软质磁性微交互",
+      "repo": "florash/Pinky-UI",
+      "revision": "93e60f1ad5fbe66c34f51ff00395ac36c77585c8",
+      "license": "MIT",
+      "source": "https://github.com/florash/Pinky-UI/blob/93e60f1ad5fbe66c34f51ff00395ac36c77585c8/README.md",
+      "kind": "tactile-motion",
+      "status": "research-only",
+      "caution": "Upstream README explicitly says @pinky-ui packages not yet published on npm; research its source, keyboard paths and reduced-motion alternatives before adoption."
+    },
+    {
+      "id": "REF-136",
+      "name": "Peaks.js / 音频标注波形历史入口",
+      "repo": "bbc/peaks.js",
+      "revision": "15af1586a96c39e7fe452c80c5cea019ea071c85",
+      "license": "LGPL-3.0",
+      "source": "https://github.com/bbc/peaks.js/blob/15af1586a96c39e7fe452c80c5cea019ea071c85/README.md",
+      "kind": "annotated-waveform",
+      "status": "research-only",
+      "caution": "README explicitly moves ongoing development to codeberg.org/chrisn/peaks.js; GitHub pin is historical. Check upstream maintenance location and LGPL obligations before implementation."
+    }
+  ],
+  "cssAtoms": [
+    {
+      "id": "FX-027",
+      "name": "Safe-area mobile bottom navigation / 安全区底部导航",
+      "className": "fx45-bottom-nav",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "mobile",
+        "consumer-app"
+      ],
+      "aliases": [
+        "bottom tabs",
+        "底部导航",
+        "安全区"
+      ],
+      "limitation": "Native anchors and aria-current work; host supplies routing and real destinations.",
+      "source": "styles/primitives/v045/mobile-audio-states.css",
+      "readme": "styles/primitives/v045/README.md",
+      "demo": "playground/mobile-audio-states-v045/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-028",
+      "name": "Native touch scroll-snap rail / 原生滑动吸附卡轨",
+      "className": "fx45-snap-rail",
+      "styleIds": [
+        "shape-expressive",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "mobile",
+        "portfolio"
+      ],
+      "aliases": [
+        "scroll snap",
+        "滑动吸附",
+        "移动卡轨"
+      ],
+      "limitation": "Horizontal browser scroll-snap works; no programmatic carousel navigation.",
+      "source": "styles/primitives/v045/mobile-audio-states.css",
+      "readme": "styles/primitives/v045/README.md",
+      "demo": "playground/mobile-audio-states-v045/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-029",
+      "name": "Tactile press feedback link / 触感按压反馈",
+      "className": "fx45-press-button",
+      "styleIds": [
+        "playful-pop",
+        "pixel-arcade"
+      ],
+      "applicationContexts": [
+        "mobile",
+        "campaign"
+      ],
+      "aliases": [
+        "press feedback",
+        "按压动画",
+        "轻触反馈"
+      ],
+      "limitation": "CSS :active feedback only, no native haptics, press-and-hold detection or host click handlers.",
+      "source": "styles/primitives/v045/mobile-audio-states.css",
+      "readme": "styles/primitives/v045/README.md",
+      "demo": "playground/mobile-audio-states-v045/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-030",
+      "name": "Native disclosure action row / 可展开行操作",
+      "className": "fx45-action-row",
+      "styleIds": [
+        "refined-light-saas",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "mobile",
+        "productivity"
+      ],
+      "aliases": [
+        "row actions",
+        "操作展开",
+        "侧滑替代"
+      ],
+      "limitation": "Native details/summary works; not an implemented swipe-to-reveal gesture.",
+      "source": "styles/primitives/v045/mobile-audio-states.css",
+      "readme": "styles/primitives/v045/README.md",
+      "demo": "playground/mobile-audio-states-v045/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-031",
+      "name": "Waveform range position control / 波形进度滑杆",
+      "className": "fx45-wave-scrubber",
+      "styleIds": [
+        "signal-noir",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "audio",
+        "creative-tool"
+      ],
+      "aliases": [
+        "audio waveform",
+        "波形进度",
+        "scrubber"
+      ],
+      "limitation": "Native range changes its value; waveform heights synthetic and not connected to sound.",
+      "source": "styles/primitives/v045/mobile-audio-states.css",
+      "readme": "styles/primitives/v045/README.md",
+      "demo": "playground/mobile-audio-states-v045/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-032",
+      "name": "Transcript cue list / 转写时间锚点",
+      "className": "fx45-transcript-cues",
+      "styleIds": [
+        "type-led-minimal",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "audio",
+        "knowledge-base"
+      ],
+      "aliases": [
+        "transcript",
+        "字幕时间点",
+        "语音转写"
+      ],
+      "limitation": "Timestamp anchors only; synchronization with a media clock is host work.",
+      "source": "styles/primitives/v045/mobile-audio-states.css",
+      "readme": "styles/primitives/v045/README.md",
+      "demo": "playground/mobile-audio-states-v045/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-033",
+      "name": "Voice session indicator / 语音状态指示",
+      "className": "fx45-voice-status",
+      "styleIds": [
+        "precision-dark",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "audio",
+        "creative-tool"
+      ],
+      "aliases": [
+        "recording status",
+        "语音录制",
+        "麦克风"
+      ],
+      "limitation": "Illustrative output; no recording API, permission or real elapsed timer.",
+      "source": "styles/primitives/v045/mobile-audio-states.css",
+      "readme": "styles/primitives/v045/README.md",
+      "demo": "playground/mobile-audio-states-v045/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-034",
+      "name": "Map marker cluster graphic / 地图聚合点",
+      "className": "fx45-map-cluster",
+      "styleIds": [
+        "refined-light-saas",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "maps",
+        "travel"
+      ],
+      "aliases": [
+        "map cluster",
+        "聚合地图标记",
+        "地图点位"
+      ],
+      "limitation": "Static visual marker; no geospatial coordinates, cluster logic or interaction.",
+      "source": "styles/primitives/v045/mobile-audio-states.css",
+      "readme": "styles/primitives/v045/README.md",
+      "demo": "playground/mobile-audio-states-v045/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-035",
+      "name": "Empty-state action card / 空状态引导卡",
+      "className": "fx45-empty-state",
+      "styleIds": [
+        "organic-tactile",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "workspace",
+        "content"
+      ],
+      "aliases": [
+        "empty state",
+        "无数据",
+        "空状态"
+      ],
+      "limitation": "Real CTA anchor; host provides destination, condition and data source.",
+      "source": "styles/primitives/v045/mobile-audio-states.css",
+      "readme": "styles/primitives/v045/README.md",
+      "demo": "playground/mobile-audio-states-v045/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-036",
+      "name": "Reduced-motion loading skeleton / 降动效骨架屏",
+      "className": "fx45-skeleton",
+      "styleIds": [
+        "refined-light-saas",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "workspace",
+        "commerce"
+      ],
+      "aliases": [
+        "skeleton",
+        "骨架屏",
+        "加载占位"
+      ],
+      "limitation": "Visual loading placeholder; expose separate accessible message and hide on real load completion.",
+      "source": "styles/primitives/v045/mobile-audio-states.css",
+      "readme": "styles/primitives/v045/README.md",
+      "demo": "playground/mobile-audio-states-v045/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "notReactExport": true
+    }
+  ],
+  "vectorIllustrations": [
+    {
+      "id": "VG-013",
+      "name": "Touch gesture arcs / 触控手势轨迹",
+      "file": "touch-gesture-arcs.svg",
+      "styleIds": [
+        "signal-noir",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "mobile",
+        "interactive-media"
+      ],
+      "aliases": [
+        "gesture illustration",
+        "手势轨迹"
+      ],
+      "source": "graphics/v045/touch-gesture-arcs.svg",
+      "readme": "graphics/v045/README.md",
+      "demo": "playground/vector-materials-v045/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "static-original-svg"
+    },
+    {
+      "id": "VG-014",
+      "name": "Audio annotation grid / 音频分段标记",
+      "file": "audio-annotation-grid.svg",
+      "styleIds": [
+        "signal-noir",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "audio",
+        "media"
+      ],
+      "aliases": [
+        "waveform marks",
+        "分段波形"
+      ],
+      "source": "graphics/v045/audio-annotation-grid.svg",
+      "readme": "graphics/v045/README.md",
+      "demo": "playground/vector-materials-v045/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "static-original-svg"
+    },
+    {
+      "id": "VG-015",
+      "name": "Map pin constellation / 地图聚合标记",
+      "file": "clustered-map-pins.svg",
+      "styleIds": [
+        "refined-light-saas",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "maps",
+        "travel"
+      ],
+      "aliases": [
+        "map pins",
+        "地图聚合图"
+      ],
+      "source": "graphics/v045/clustered-map-pins.svg",
+      "readme": "graphics/v045/README.md",
+      "demo": "playground/vector-materials-v045/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "static-original-svg"
+    },
+    {
+      "id": "VG-016",
+      "name": "Empty state garden / 空状态插画",
+      "file": "empty-state-garden.svg",
+      "styleIds": [
+        "organic-tactile",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "content",
+        "workspace"
+      ],
+      "aliases": [
+        "empty-state art",
+        "植物插画"
+      ],
+      "source": "graphics/v045/empty-state-garden.svg",
+      "readme": "graphics/v045/README.md",
+      "demo": "playground/vector-materials-v045/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "static-original-svg"
+    }
+  ],
+  "limitations": [
+    "CSS swipe row is native disclosure, not a gesture engine",
+    "CSS synthetic waveform is not live media playback",
+    "Voice status and map marker are illustrative",
+    "No production a11y or mobile device certification"
+  ]
+}

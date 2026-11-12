@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-11-12 · V0.45 mobile, audio and interface state materials
+
+- Added **10 original native CSS source atoms** FX-027..036: safe-area bottom tabs, touch scroll-snap rail, press feedback, native disclosure action row, synthetic waveform range control, transcript cue links, voice status indicator, map cluster marker, empty-state action and reduced-motion skeleton.
+- Added **4 independent original SVG vectors** VG-013..016: gesture arcs, audio annotation grid, abstract map cluster and empty-state garden. Each has editable vector source and independent illustration gallery.
+- Registered **5 pin-to-commit external research references** REF-132..136: Magic Spells Sheet, WaveSurfer.js, Waveform Playlist, Pinky UI and legacy Peaks.js; recorded source licenses/dependencies and the Peaks.js Codeberg relocation. No third-party code/media copied.
+- [Machine directory](registry/material-expansion-v045.json) · [CSS examples](playground/mobile-audio-states-v045/index.html) · [SVG gallery](playground/vector-materials-v045/index.html) · [research](docs/research/material-expansion-v045.md).
+- Registry **355 → 374**. No new page/app builder, production component export, theme, framework install or test suite. Native behaviors and static illustrations are explicitly differentiated.
+
+
 ## 2026-11-11 · V0.44 tangible navigation, control, HUD and technical vector materials
 
 - Added **twelve original standalone CSS/HTML component atoms** FX-015..026: cut-corner action, native radio segmented control, directional anchor compass, progress rail, telemetry card, decorative HUD reticle, native disclosure, event timeline, checkbox filter chips, terminal shell, native `meter` HUD and pixel badge.

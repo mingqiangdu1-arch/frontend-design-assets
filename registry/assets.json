@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.2",
   "purpose": "Living cross-application, multi-style design asset repository; no repository-wide visual default.",
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-12",
   "stageDefinitions": [
     "captured",
     "analyzed",
@@ -13638,6 +13638,766 @@
         "stack": "Self-contained standalone SVG source, not a React UI component",
         "instructions": "Reference graphics/v044/isometric-cluster.svg directly as <img> or adapt inline; set context-specific alt for informative use and empty alt for purely decorative usage.",
         "limitations": "Original vector illustration only; no dynamic sensor data, chart API, real mapping, product/app integration or production certification."
+      }
+    },
+    {
+      "id": "REF-132",
+      "type": "reference",
+      "name": "Magic Spells Sheet / 原生 dialog 手势底部抽屉",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v045",
+        "source-pinned",
+        "research-only",
+        "mobile-sheet"
+      ],
+      "aliases": [
+        "mobile sheet",
+        "底部弹层",
+        "snap points"
+      ],
+      "source": "https://github.com/magic-spells/sheet/blob/d4eac61d29b8532e0d7c6ebe787cbb3203d1ed26/README.md",
+      "license": "Upstream repository declares MIT; this repository stores a research link and original summary only; third-party media/code require rights review.",
+      "styleIds": [],
+      "applicationContexts": [
+        "mobile",
+        "web-components",
+        "dialog"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v045.md",
+      "spec": "registry/material-expansion-v045.json",
+      "verified": "Pinned GitHub README path checked via connected repository and repository-level license metadata 2026-11-12. Not built, installed or behavior-tested in this repository.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v045.md",
+        "mode": "research-only",
+        "stack": "External source-pinned repository reference (no code/media copied)",
+        "instructions": "Review https://github.com/magic-spells/sheet/blob/d4eac61d29b8532e0d7c6ebe787cbb3203d1ed26/README.md, its dependency and license obligations; implement only in a separate target repository with host-specific validation.",
+        "limitations": "Uses custom elements + native dialog semantics and engine dependencies; target must assess scroll arbitration, focus return and safe areas; distinct from existing Vaul reference."
+      }
+    },
+    {
+      "id": "REF-133",
+      "type": "reference",
+      "name": "WaveSurfer.js / 波形音频播放与插件",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v045",
+        "source-pinned",
+        "research-only",
+        "audio-player"
+      ],
+      "aliases": [
+        "wavesurfer",
+        "音频波形播放",
+        "音频区域"
+      ],
+      "source": "https://github.com/katspaugh/wavesurfer.js/blob/66742bade56d51c43ce881dfdc1c107ba6acaaeb/README.md",
+      "license": "Upstream repository declares BSD-3-Clause; this repository stores a research link and original summary only; third-party media/code require rights review.",
+      "styleIds": [],
+      "applicationContexts": [
+        "audio",
+        "media",
+        "education"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v045.md",
+      "spec": "registry/material-expansion-v045.json",
+      "verified": "Pinned GitHub README path checked via connected repository and repository-level license metadata 2026-11-12. Not built, installed or behavior-tested in this repository.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v045.md",
+        "mode": "research-only",
+        "stack": "External source-pinned repository reference (no code/media copied)",
+        "instructions": "Review https://github.com/katspaugh/wavesurfer.js/blob/66742bade56d51c43ce881dfdc1c107ba6acaaeb/README.md, its dependency and license obligations; implement only in a separate target repository with host-specific validation.",
+        "limitations": "Playback and decoded peaks require actual audio resources; assess file size, CORS and Regions plugin rather than treat FX-031 bars as source data."
+      }
+    },
+    {
+      "id": "REF-134",
+      "type": "reference",
+      "name": "Waveform Playlist / 多轨音频编辑",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v045",
+        "source-pinned",
+        "research-only",
+        "audio-editor"
+      ],
+      "aliases": [
+        "multitrack editor",
+        "多轨音频",
+        "clip trimming"
+      ],
+      "source": "https://github.com/naomiaro/waveform-playlist/blob/fc1f42b3318f101676a234a25ae1905266b6da8a/README.md",
+      "license": "Upstream repository declares MIT; this repository stores a research link and original summary only; third-party media/code require rights review.",
+      "styleIds": [],
+      "applicationContexts": [
+        "audio",
+        "creative-tool",
+        "media"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v045.md",
+      "spec": "registry/material-expansion-v045.json",
+      "verified": "Pinned GitHub README path checked via connected repository and repository-level license metadata 2026-11-12. Not built, installed or behavior-tested in this repository.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v045.md",
+        "mode": "research-only",
+        "stack": "External source-pinned repository reference (no code/media copied)",
+        "instructions": "Review https://github.com/naomiaro/waveform-playlist/blob/fc1f42b3318f101676a234a25ae1905266b6da8a/README.md, its dependency and license obligations; implement only in a separate target repository with host-specific validation.",
+        "limitations": "React, Tone.js, @dnd-kit and optional playout plugins require dependency, CPU and large-file assessment; not installed in this repo."
+      }
+    },
+    {
+      "id": "REF-135",
+      "type": "reference",
+      "name": "Pinky UI / 软质磁性微交互",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v045",
+        "source-pinned",
+        "research-only",
+        "tactile-motion"
+      ],
+      "aliases": [
+        "jelly motion",
+        "软质动效",
+        "magnetic effect"
+      ],
+      "source": "https://github.com/florash/Pinky-UI/blob/93e60f1ad5fbe66c34f51ff00395ac36c77585c8/README.md",
+      "license": "Upstream repository declares MIT; this repository stores a research link and original summary only; third-party media/code require rights review.",
+      "styleIds": [],
+      "applicationContexts": [
+        "mobile",
+        "creative-site",
+        "portfolio"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v045.md",
+      "spec": "registry/material-expansion-v045.json",
+      "verified": "Pinned GitHub README path checked via connected repository and repository-level license metadata 2026-11-12. Not built, installed or behavior-tested in this repository.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v045.md",
+        "mode": "research-only",
+        "stack": "External source-pinned repository reference (no code/media copied)",
+        "instructions": "Review https://github.com/florash/Pinky-UI/blob/93e60f1ad5fbe66c34f51ff00395ac36c77585c8/README.md, its dependency and license obligations; implement only in a separate target repository with host-specific validation.",
+        "limitations": "Upstream README explicitly says @pinky-ui packages not yet published on npm; research its source, keyboard paths and reduced-motion alternatives before adoption."
+      }
+    },
+    {
+      "id": "REF-136",
+      "type": "reference",
+      "name": "Peaks.js / 音频标注波形历史入口",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v045",
+        "source-pinned",
+        "research-only",
+        "annotated-waveform"
+      ],
+      "aliases": [
+        "audio marker",
+        "音频片段标记",
+        "waveform annotation"
+      ],
+      "source": "https://github.com/bbc/peaks.js/blob/15af1586a96c39e7fe452c80c5cea019ea071c85/README.md",
+      "license": "Upstream repository declares LGPL-3.0; this repository stores a research link and original summary only; third-party media/code require rights review.",
+      "styleIds": [],
+      "applicationContexts": [
+        "audio",
+        "research",
+        "media"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v045.md",
+      "spec": "registry/material-expansion-v045.json",
+      "verified": "Pinned GitHub README path checked via connected repository and repository-level license metadata 2026-11-12. Not built, installed or behavior-tested in this repository.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v045.md",
+        "mode": "research-only",
+        "stack": "External source-pinned repository reference (no code/media copied)",
+        "instructions": "Review https://github.com/bbc/peaks.js/blob/15af1586a96c39e7fe452c80c5cea019ea071c85/README.md, its dependency and license obligations; implement only in a separate target repository with host-specific validation.",
+        "limitations": "README explicitly moves ongoing development to codeberg.org/chrisn/peaks.js; GitHub pin is historical. Check upstream maintenance location and LGPL obligations before implementation."
+      }
+    },
+    {
+      "id": "FX-027",
+      "type": "component",
+      "name": "Safe-area mobile bottom navigation / 安全区底部导航",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v045",
+        "original-css-source",
+        "independent-interface-material",
+        "native-css-html"
+      ],
+      "aliases": [
+        "bottom tabs",
+        "底部导航",
+        "安全区"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored CSS and HTML; no external code, media or font copied.",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "mobile",
+        "consumer-app"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v045/mobile-audio-states.css",
+      "details": "styles/primitives/v045/README.md",
+      "spec": "registry/material-expansion-v045.json",
+      "demo": "playground/mobile-audio-states-v045/index.html",
+      "verified": "Authored standalone original CSS and example HTML committed 2026-11-12; no production keyboard, touch, performance or a11y certification.",
+      "handoff": {
+        "entry": "styles/primitives/v045/README.md",
+        "stack": "Native CSS and semantic HTML sample, not React public export",
+        "instructions": "Extract .fx45-bottom-nav and matching descendants plus reduced-motion/forced-colors fallbacks.",
+        "limitations": "Native anchors and aria-current work; host supplies routing and real destinations."
+      }
+    },
+    {
+      "id": "FX-028",
+      "type": "component",
+      "name": "Native touch scroll-snap rail / 原生滑动吸附卡轨",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v045",
+        "original-css-source",
+        "independent-interface-material",
+        "native-css-html"
+      ],
+      "aliases": [
+        "scroll snap",
+        "滑动吸附",
+        "移动卡轨"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored CSS and HTML; no external code, media or font copied.",
+      "styleIds": [
+        "shape-expressive",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "mobile",
+        "portfolio"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v045/mobile-audio-states.css",
+      "details": "styles/primitives/v045/README.md",
+      "spec": "registry/material-expansion-v045.json",
+      "demo": "playground/mobile-audio-states-v045/index.html",
+      "verified": "Authored standalone original CSS and example HTML committed 2026-11-12; no production keyboard, touch, performance or a11y certification.",
+      "handoff": {
+        "entry": "styles/primitives/v045/README.md",
+        "stack": "Native CSS and semantic HTML sample, not React public export",
+        "instructions": "Extract .fx45-snap-rail and matching descendants plus reduced-motion/forced-colors fallbacks.",
+        "limitations": "Horizontal browser scroll-snap works; no programmatic carousel navigation."
+      }
+    },
+    {
+      "id": "FX-029",
+      "type": "component",
+      "name": "Tactile press feedback link / 触感按压反馈",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v045",
+        "original-css-source",
+        "independent-interface-material",
+        "native-css-html"
+      ],
+      "aliases": [
+        "press feedback",
+        "按压动画",
+        "轻触反馈"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored CSS and HTML; no external code, media or font copied.",
+      "styleIds": [
+        "playful-pop",
+        "pixel-arcade"
+      ],
+      "applicationContexts": [
+        "mobile",
+        "campaign"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v045/mobile-audio-states.css",
+      "details": "styles/primitives/v045/README.md",
+      "spec": "registry/material-expansion-v045.json",
+      "demo": "playground/mobile-audio-states-v045/index.html",
+      "verified": "Authored standalone original CSS and example HTML committed 2026-11-12; no production keyboard, touch, performance or a11y certification.",
+      "handoff": {
+        "entry": "styles/primitives/v045/README.md",
+        "stack": "Native CSS and semantic HTML sample, not React public export",
+        "instructions": "Extract .fx45-press-button and matching descendants plus reduced-motion/forced-colors fallbacks.",
+        "limitations": "CSS :active feedback only, no native haptics, press-and-hold detection or host click handlers."
+      }
+    },
+    {
+      "id": "FX-030",
+      "type": "component",
+      "name": "Native disclosure action row / 可展开行操作",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v045",
+        "original-css-source",
+        "independent-interface-material",
+        "native-css-html"
+      ],
+      "aliases": [
+        "row actions",
+        "操作展开",
+        "侧滑替代"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored CSS and HTML; no external code, media or font copied.",
+      "styleIds": [
+        "refined-light-saas",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "mobile",
+        "productivity"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v045/mobile-audio-states.css",
+      "details": "styles/primitives/v045/README.md",
+      "spec": "registry/material-expansion-v045.json",
+      "demo": "playground/mobile-audio-states-v045/index.html",
+      "verified": "Authored standalone original CSS and example HTML committed 2026-11-12; no production keyboard, touch, performance or a11y certification.",
+      "handoff": {
+        "entry": "styles/primitives/v045/README.md",
+        "stack": "Native CSS and semantic HTML sample, not React public export",
+        "instructions": "Extract .fx45-action-row and matching descendants plus reduced-motion/forced-colors fallbacks.",
+        "limitations": "Native details/summary works; not an implemented swipe-to-reveal gesture."
+      }
+    },
+    {
+      "id": "FX-031",
+      "type": "component",
+      "name": "Waveform range position control / 波形进度滑杆",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v045",
+        "original-css-source",
+        "independent-interface-material",
+        "native-css-html"
+      ],
+      "aliases": [
+        "audio waveform",
+        "波形进度",
+        "scrubber"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored CSS and HTML; no external code, media or font copied.",
+      "styleIds": [
+        "signal-noir",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "audio",
+        "creative-tool"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v045/mobile-audio-states.css",
+      "details": "styles/primitives/v045/README.md",
+      "spec": "registry/material-expansion-v045.json",
+      "demo": "playground/mobile-audio-states-v045/index.html",
+      "verified": "Authored standalone original CSS and example HTML committed 2026-11-12; no production keyboard, touch, performance or a11y certification.",
+      "handoff": {
+        "entry": "styles/primitives/v045/README.md",
+        "stack": "Native CSS and semantic HTML sample, not React public export",
+        "instructions": "Extract .fx45-wave-scrubber and matching descendants plus reduced-motion/forced-colors fallbacks.",
+        "limitations": "Native range changes its value; waveform heights synthetic and not connected to sound."
+      }
+    },
+    {
+      "id": "FX-032",
+      "type": "component",
+      "name": "Transcript cue list / 转写时间锚点",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v045",
+        "original-css-source",
+        "independent-interface-material",
+        "native-css-html"
+      ],
+      "aliases": [
+        "transcript",
+        "字幕时间点",
+        "语音转写"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored CSS and HTML; no external code, media or font copied.",
+      "styleIds": [
+        "type-led-minimal",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "audio",
+        "knowledge-base"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v045/mobile-audio-states.css",
+      "details": "styles/primitives/v045/README.md",
+      "spec": "registry/material-expansion-v045.json",
+      "demo": "playground/mobile-audio-states-v045/index.html",
+      "verified": "Authored standalone original CSS and example HTML committed 2026-11-12; no production keyboard, touch, performance or a11y certification.",
+      "handoff": {
+        "entry": "styles/primitives/v045/README.md",
+        "stack": "Native CSS and semantic HTML sample, not React public export",
+        "instructions": "Extract .fx45-transcript-cues and matching descendants plus reduced-motion/forced-colors fallbacks.",
+        "limitations": "Timestamp anchors only; synchronization with a media clock is host work."
+      }
+    },
+    {
+      "id": "FX-033",
+      "type": "component",
+      "name": "Voice session indicator / 语音状态指示",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v045",
+        "original-css-source",
+        "independent-interface-material",
+        "native-css-html"
+      ],
+      "aliases": [
+        "recording status",
+        "语音录制",
+        "麦克风"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored CSS and HTML; no external code, media or font copied.",
+      "styleIds": [
+        "precision-dark",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "audio",
+        "creative-tool"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v045/mobile-audio-states.css",
+      "details": "styles/primitives/v045/README.md",
+      "spec": "registry/material-expansion-v045.json",
+      "demo": "playground/mobile-audio-states-v045/index.html",
+      "verified": "Authored standalone original CSS and example HTML committed 2026-11-12; no production keyboard, touch, performance or a11y certification.",
+      "handoff": {
+        "entry": "styles/primitives/v045/README.md",
+        "stack": "Native CSS and semantic HTML sample, not React public export",
+        "instructions": "Extract .fx45-voice-status and matching descendants plus reduced-motion/forced-colors fallbacks.",
+        "limitations": "Illustrative output; no recording API, permission or real elapsed timer."
+      }
+    },
+    {
+      "id": "FX-034",
+      "type": "component",
+      "name": "Map marker cluster graphic / 地图聚合点",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v045",
+        "original-css-source",
+        "independent-interface-material",
+        "native-css-html"
+      ],
+      "aliases": [
+        "map cluster",
+        "聚合地图标记",
+        "地图点位"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored CSS and HTML; no external code, media or font copied.",
+      "styleIds": [
+        "refined-light-saas",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "maps",
+        "travel"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v045/mobile-audio-states.css",
+      "details": "styles/primitives/v045/README.md",
+      "spec": "registry/material-expansion-v045.json",
+      "demo": "playground/mobile-audio-states-v045/index.html",
+      "verified": "Authored standalone original CSS and example HTML committed 2026-11-12; no production keyboard, touch, performance or a11y certification.",
+      "handoff": {
+        "entry": "styles/primitives/v045/README.md",
+        "stack": "Native CSS and semantic HTML sample, not React public export",
+        "instructions": "Extract .fx45-map-cluster and matching descendants plus reduced-motion/forced-colors fallbacks.",
+        "limitations": "Static visual marker; no geospatial coordinates, cluster logic or interaction."
+      }
+    },
+    {
+      "id": "FX-035",
+      "type": "component",
+      "name": "Empty-state action card / 空状态引导卡",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v045",
+        "original-css-source",
+        "independent-interface-material",
+        "native-css-html"
+      ],
+      "aliases": [
+        "empty state",
+        "无数据",
+        "空状态"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored CSS and HTML; no external code, media or font copied.",
+      "styleIds": [
+        "organic-tactile",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "workspace",
+        "content"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v045/mobile-audio-states.css",
+      "details": "styles/primitives/v045/README.md",
+      "spec": "registry/material-expansion-v045.json",
+      "demo": "playground/mobile-audio-states-v045/index.html",
+      "verified": "Authored standalone original CSS and example HTML committed 2026-11-12; no production keyboard, touch, performance or a11y certification.",
+      "handoff": {
+        "entry": "styles/primitives/v045/README.md",
+        "stack": "Native CSS and semantic HTML sample, not React public export",
+        "instructions": "Extract .fx45-empty-state and matching descendants plus reduced-motion/forced-colors fallbacks.",
+        "limitations": "Real CTA anchor; host provides destination, condition and data source."
+      }
+    },
+    {
+      "id": "FX-036",
+      "type": "component",
+      "name": "Reduced-motion loading skeleton / 降动效骨架屏",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v045",
+        "original-css-source",
+        "independent-interface-material",
+        "native-css-html"
+      ],
+      "aliases": [
+        "skeleton",
+        "骨架屏",
+        "加载占位"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored CSS and HTML; no external code, media or font copied.",
+      "styleIds": [
+        "refined-light-saas",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "workspace",
+        "commerce"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v045/mobile-audio-states.css",
+      "details": "styles/primitives/v045/README.md",
+      "spec": "registry/material-expansion-v045.json",
+      "demo": "playground/mobile-audio-states-v045/index.html",
+      "verified": "Authored standalone original CSS and example HTML committed 2026-11-12; no production keyboard, touch, performance or a11y certification.",
+      "handoff": {
+        "entry": "styles/primitives/v045/README.md",
+        "stack": "Native CSS and semantic HTML sample, not React public export",
+        "instructions": "Extract .fx45-skeleton and matching descendants plus reduced-motion/forced-colors fallbacks.",
+        "limitations": "Visual loading placeholder; expose separate accessible message and hide on real load completion."
+      }
+    },
+    {
+      "id": "VG-013",
+      "type": "component",
+      "name": "Touch gesture arcs / 触控手势轨迹",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v045",
+        "original-svg",
+        "vector-illustration",
+        "static"
+      ],
+      "aliases": [
+        "gesture illustration",
+        "手势轨迹"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG design; no external font, image or script.",
+      "styleIds": [
+        "signal-noir",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "mobile",
+        "interactive-media"
+      ],
+      "dependencies": [],
+      "path": "graphics/v045/touch-gesture-arcs.svg",
+      "details": "graphics/v045/README.md",
+      "spec": "registry/material-expansion-v045.json",
+      "demo": "playground/vector-materials-v045/index.html",
+      "verified": "Original static SVG source with viewBox/title/description authored 2026-11-12; no target use validation.",
+      "handoff": {
+        "entry": "graphics/v045/README.md",
+        "stack": "Independent SVG source, not a library export",
+        "instructions": "Use graphics/v045/touch-gesture-arcs.svg as a standalone visual; set appropriate alt text and adjust colors for host context.",
+        "limitations": "Decorative illustration only, not functioning mobile gesture, geodata, real audio or empty-state logic."
+      }
+    },
+    {
+      "id": "VG-014",
+      "type": "component",
+      "name": "Audio annotation grid / 音频分段标记",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v045",
+        "original-svg",
+        "vector-illustration",
+        "static"
+      ],
+      "aliases": [
+        "waveform marks",
+        "分段波形"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG design; no external font, image or script.",
+      "styleIds": [
+        "signal-noir",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "audio",
+        "media"
+      ],
+      "dependencies": [],
+      "path": "graphics/v045/audio-annotation-grid.svg",
+      "details": "graphics/v045/README.md",
+      "spec": "registry/material-expansion-v045.json",
+      "demo": "playground/vector-materials-v045/index.html",
+      "verified": "Original static SVG source with viewBox/title/description authored 2026-11-12; no target use validation.",
+      "handoff": {
+        "entry": "graphics/v045/README.md",
+        "stack": "Independent SVG source, not a library export",
+        "instructions": "Use graphics/v045/audio-annotation-grid.svg as a standalone visual; set appropriate alt text and adjust colors for host context.",
+        "limitations": "Decorative illustration only, not functioning mobile gesture, geodata, real audio or empty-state logic."
+      }
+    },
+    {
+      "id": "VG-015",
+      "type": "component",
+      "name": "Map pin constellation / 地图聚合标记",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v045",
+        "original-svg",
+        "vector-illustration",
+        "static"
+      ],
+      "aliases": [
+        "map pins",
+        "地图聚合图"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG design; no external font, image or script.",
+      "styleIds": [
+        "refined-light-saas",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "maps",
+        "travel"
+      ],
+      "dependencies": [],
+      "path": "graphics/v045/clustered-map-pins.svg",
+      "details": "graphics/v045/README.md",
+      "spec": "registry/material-expansion-v045.json",
+      "demo": "playground/vector-materials-v045/index.html",
+      "verified": "Original static SVG source with viewBox/title/description authored 2026-11-12; no target use validation.",
+      "handoff": {
+        "entry": "graphics/v045/README.md",
+        "stack": "Independent SVG source, not a library export",
+        "instructions": "Use graphics/v045/clustered-map-pins.svg as a standalone visual; set appropriate alt text and adjust colors for host context.",
+        "limitations": "Decorative illustration only, not functioning mobile gesture, geodata, real audio or empty-state logic."
+      }
+    },
+    {
+      "id": "VG-016",
+      "type": "component",
+      "name": "Empty state garden / 空状态插画",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v045",
+        "original-svg",
+        "vector-illustration",
+        "static"
+      ],
+      "aliases": [
+        "empty-state art",
+        "植物插画"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG design; no external font, image or script.",
+      "styleIds": [
+        "organic-tactile",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "content",
+        "workspace"
+      ],
+      "dependencies": [],
+      "path": "graphics/v045/empty-state-garden.svg",
+      "details": "graphics/v045/README.md",
+      "spec": "registry/material-expansion-v045.json",
+      "demo": "playground/vector-materials-v045/index.html",
+      "verified": "Original static SVG source with viewBox/title/description authored 2026-11-12; no target use validation.",
+      "handoff": {
+        "entry": "graphics/v045/README.md",
+        "stack": "Independent SVG source, not a library export",
+        "instructions": "Use graphics/v045/empty-state-garden.svg as a standalone visual; set appropriate alt text and adjust colors for host context.",
+        "limitations": "Decorative illustration only, not functioning mobile gesture, geodata, real audio or empty-state logic."
       }
     }
   ],
