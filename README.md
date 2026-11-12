@@ -19,6 +19,7 @@
 | 移动端、音频与状态视觉素材 | [V0.45 研究](docs/research/material-expansion-v045.md) · [CSS 原子](styles/primitives/v045/README.md) · [原创矢量](graphics/v045/README.md) | 10 个原生 CSS 组件 + 4 个独立 SVG + 5 个固定版本上游研究来源；不是音频录制器、地图引擎或页面生成器 |
 | 表单、数据与实验排印素材 | [V0.46 研究](docs/research/material-expansion-v046.md) · [CSS/JS 原件](styles/primitives/v046/README.md) · [原创 SVG](graphics/v046/README.md) | 12 个独立 CSS 组件（含可操作范围对比滑块）与 6 个原创 SVG；没有业务页面或 React 包新增 |
 | 实验排印、全息材质、可重复背景 | [V0.47 研究](docs/research/material-expansion-v047.md) · [6 项 CSS 素材](styles/primitives/v047/README.md) · [12 项原创 SVG](graphics/v047/README.md) | 色差标题、指针响应全息卡、印章/首字/媒体形状、章节导航，以及 8 份平铺纹理、4 份场景矢量源文件 |
+| 特殊图标、游戏化组件、CSS 微动效 | [V0.48 研究](docs/research/material-expansion-v048.md) · [8 项原创 CSS](styles/primitives/v048/README.md) · [12 份独立 SVG](graphics/v048/README.md) | 轻量动画、原生任务/开关/物品选择、环形经验和资源状态；12 份原创 64×64 游戏风格矢量图标，非游戏业务平台 |
 | 查找并复用 React 组件 | [组件登记](registry/components.json) · [组件源码](packages/ui/src/) · [组件文档](packages/ui/README.md) | 真实 TSX/CSS、API、四套显式兼容主题和适配限制 |
 | 参考页面结构素材 | [页面模板](registry/page-templates.json) · [组装指南](docs/assembly/README.md) · [独立 Demo](playground/page-blueprints/) | 可复用分区、构图和交互案例；真实页面开发须在外部项目进行 |
 | 检索外部专项技术与视觉资源 | [V0.30 专题资源](docs/research/specialized-resources-v030.md) · [结构化资源索引](registry/specialized-resources-v030.json) | 17 个画布/富文本、地图数据、3D 与移动交互来源；只做研究与素材交接，不安装到本库 |

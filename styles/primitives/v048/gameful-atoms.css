@@ -1,0 +1,60 @@
+/* V0.48 · 8 original scoped gameful/motion CSS material atoms.
+   Independent HTML/CSS source, no global reset/tokens, third-party fonts or JS.
+   Motion is hover/focus-activated only. Reduced motion and forced colors supported. */
+.fx48-orbit-seal{display:grid;place-items:center;position:relative;isolation:isolate;width:min(100%,13rem);aspect-ratio:1;border-radius:50%;background:#182f49;color:#effde8;font:800 .85rem/1.1 system-ui,sans-serif;letter-spacing:.065em;overflow:hidden}
+.fx48-orbit-seal:before{content:"";position:absolute;inset:12%;border:2px dashed #edc580;border-radius:50%;opacity:.85}
+.fx48-orbit-seal .orbital{position:absolute;inset:4%;border:2px solid #61b9ae;border-radius:50%;transform:rotate(-24deg)}
+.fx48-orbit-seal .orbital:before,.fx48-orbit-seal .orbital:after{content:"";position:absolute;width:1.15rem;aspect-ratio:1;border:3px solid #1b4652;background:#ffc978;border-radius:50%;top:-.6rem;left:calc(50% - .6rem)}
+.fx48-orbit-seal .orbital:after{top:auto;left:auto;bottom:-.6rem;right:calc(50% - .6rem);background:#83e3c0}
+.fx48-orbit-seal:is(:hover,:focus-within) .orbital{animation:fx48-orbit 6s linear infinite}
+.fx48-orbit-seal strong{z-index:1;display:grid;place-items:center;width:51%;aspect-ratio:1;border:2px solid #9ccbd1;border-radius:50%;background:#315c62;text-align:center;font-size:clamp(.83rem,2.5vw,1.18rem)}
+.fx48-xp-ring{--fx48-p:72%;display:grid;place-items:center;width:11.5rem;aspect-ratio:1;position:relative;background:conic-gradient(#f6c373 var(--fx48-p),#325665 0);border-radius:50%;color:#e5f8ef;box-shadow:0 0 0 7px #18364a;font:700 .82rem/1.25 system-ui,sans-serif}
+.fx48-xp-ring:before{content:"";position:absolute;inset:18px;border-radius:50%;background:#203e4e}
+.fx48-xp-ring .info{z-index:1;display:grid;justify-items:center;gap:.3rem}
+.fx48-xp-ring strong{font-size:1.8rem;letter-spacing:-.05em}
+.fx48-xp-ring small{font:700 .7rem ui-monospace,monospace;color:#b3d3c7}
+.fx48-xp-ring progress{position:absolute;width:1px;height:1px;opacity:0;overflow:hidden}
+.fx48-inventory{display:grid;gap:.7rem;width:min(100%,15rem);font:650 .85rem system-ui,sans-serif;color:#234d51}
+.fx48-inventory label{position:relative;display:flex;align-items:center;gap:1rem;padding:.95rem 1.2rem;border:2px solid #548488;background:linear-gradient(115deg,#d6eee2,#ecf4df);clip-path:polygon(0 15px,15px 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,0 100%);cursor:pointer}
+.fx48-inventory input{width:1.3rem;height:1.3rem;margin:0;accent-color:#1e716b;flex:none}
+.fx48-inventory input:focus-visible{outline:3px solid #246d8f;outline-offset:4px}
+.fx48-inventory label:has(input:checked){background:#1c4a56;color:#f4ffe4;outline:3px solid #d8a95e;outline-offset:2px}
+.fx48-inventory .gem{font:950 1.7rem/1 system-ui;color:#d88768}
+.fx48-inventory label:has(input:checked) .gem{color:#f6ca88}
+.fx48-inventory small{display:block;font-size:.73rem;font-weight:500;opacity:.8}
+.fx48-quest-clue{width:min(100%,24rem);padding:1.2rem;background:#f4e9d1;border:2px solid #a28961;color:#3f463e;box-shadow:5px 5px 0 #b9a98e;clip-path:polygon(0 0,96% 0,100% 8%,100% 100%,4% 100%,0 92%);font:600 .86rem/1.5 Georgia,serif}
+.fx48-quest-clue summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:1rem;cursor:pointer;font:800 1.05rem/1.35 Georgia,serif}
+.fx48-quest-clue summary::-webkit-details-marker{display:none}
+.fx48-quest-clue summary:after{content:"＋";font:800 1.35rem/1 system-ui,sans-serif}
+.fx48-quest-clue[open] summary:after{content:"−"}
+.fx48-quest-clue summary:focus-visible{outline:3px solid #2e7b84;outline-offset:3px}
+.fx48-quest-clue p{margin:1rem 0 0;padding-top:.8rem;border-top:1px dashed #9a826a}
+.fx48-quest-clue small{display:block;margin-top:.5rem;color:#736757}
+.fx48-health-meter{width:min(100%,24rem);display:grid;gap:.75rem;padding:1rem 1.2rem;border:2px solid #5d817f;background:#1b3d4c;border-radius:.7rem;color:#e4f6ee;font:750 .83rem system-ui,sans-serif}
+.fx48-health-meter .head{display:flex;align-items:center;justify-content:space-between;gap:.7rem}
+.fx48-health-meter .value{color:#f9d799;font:800 .78rem ui-monospace,monospace}
+.fx48-health-meter meter{display:block;width:100%;height:1.5rem;accent-color:#8fe0a8}
+.fx48-health-meter meter::-webkit-meter-bar{background:#294d5a;border:1px solid #7b9996;border-radius:3px}
+.fx48-health-meter meter::-webkit-meter-optimum-value{background:repeating-linear-gradient(90deg,#a4db9b 0 17px,#2a5860 17px 20px);border-radius:2px}
+.fx48-health-meter meter::-moz-meter-bar{background:#a4db9b}
+.fx48-health-meter small{font-size:.68rem;color:#a2c4c1;font-weight:500}
+.fx48-reward-burst{display:grid;place-items:center;position:relative;width:min(100%,13rem);aspect-ratio:1;isolation:isolate;color:#2f4144;font:850 1.1rem/1.2 system-ui,sans-serif;text-align:center}
+.fx48-reward-burst:before{content:"";position:absolute;inset:2%;z-index:-1;background:#f2ca77;clip-path:polygon(50% 0,61% 22%,80% 5%,78% 32%,100% 32%,84% 51%,100% 70%,76% 70%,81% 96%,58% 81%,50% 100%,41% 80%,19% 97%,24% 70%,0 68%,16% 50%,0 31%,24% 31%,20% 5%,40% 22%);transform:rotate(-4deg);transition:transform .35s ease}
+.fx48-reward-burst:after{content:"";position:absolute;inset:15%;border:2px dotted #a9694a;border-radius:50%;z-index:-1}
+.fx48-reward-burst:hover:before{transform:rotate(12deg) scale(1.04)}
+.fx48-reward-burst small{display:block;font:800 .7rem ui-monospace,monospace;letter-spacing:.12em}
+.fx48-kinetic-link{position:relative;display:inline-block;max-width:100%;padding:.35rem .05rem;color:#244d56;text-decoration:none;font:850 clamp(1.1rem,3vw,1.55rem)/1.4 system-ui,sans-serif;letter-spacing:-.04em}
+.fx48-kinetic-link:after{content:"";position:absolute;bottom:.13rem;left:0;width:100%;height:3px;background:#db746a;transform:scaleX(.25);transform-origin:left;transition:transform .32s cubic-bezier(.2,.8,.2,1)}
+.fx48-kinetic-link:is(:hover,:focus-visible):after{transform:scaleX(1)}
+.fx48-kinetic-link:focus-visible{outline:3px solid #357c94;outline-offset:3px}
+.fx48-portal-switch{display:grid;gap:.55rem;width:min(100%,18rem);color:#32565b;font:700 .85rem system-ui,sans-serif}
+.fx48-portal-switch .wrap{display:flex;align-items:center;gap:1rem;cursor:pointer}
+.fx48-portal-switch input{width:1.15rem;height:1.15rem;accent-color:#2a7775}
+.fx48-portal-switch input:focus-visible{outline:3px solid #307d97;outline-offset:3px}
+.fx48-portal-switch .gate{position:relative;display:grid;place-items:center;width:5rem;height:5.5rem;flex:none;border:5px solid #416d75;border-radius:46% 46% 9% 9%;background:radial-gradient(circle at 50% 35%,#bad1cd,#4a7f86 70%);box-shadow:inset 0 0 0 3px #d6e4d8;transition:background .2s,border-color .2s}
+.fx48-portal-switch .gate:after{content:"I";color:#f6f2d0;font:900 1.9rem Georgia,serif}
+.fx48-portal-switch input:checked + .gate{background:radial-gradient(circle at 50% 45%,#ffddb5,#b37fa6 54%,#493c8a 95%);border-color:#705a98}
+.fx48-portal-switch input:checked + .gate:after{content:"II"}
+@keyframes fx48-orbit{to{transform:rotate(336deg)}}
+@media(prefers-reduced-motion:reduce){.fx48-orbit-seal .orbital{animation:none!important}.fx48-reward-burst:before,.fx48-kinetic-link:after,.fx48-portal-switch .gate{transition:none!important}.fx48-reward-burst:hover:before{transform:none}}
+@media(forced-colors:active){.fx48-orbit-seal,.fx48-xp-ring,.fx48-inventory label,.fx48-quest-clue,.fx48-health-meter,.fx48-reward-burst,.fx48-portal-switch .gate{background:Canvas;color:CanvasText;border:2px solid CanvasText}.fx48-kinetic-link:after{background:CanvasText}.fx48-inventory label:has(input:checked){outline:3px solid Highlight}.fx48-health-meter meter{color:Highlight}}

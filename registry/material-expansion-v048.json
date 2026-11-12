@@ -1,0 +1,567 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.48.0",
+  "date": "2026-11-12",
+  "focus": "Material-only original 8 gameful native CSS/HTML atoms (some hover-activated motion, no JS) and 12 fully independent original 64x64 illustrated game-style SVG icons; no product platform.",
+  "previousAssetCount": 410,
+  "newAssetCount": 20,
+  "expectedAssetCount": 430,
+  "reactExportsAdded": 0,
+  "styleIdsAdded": 0,
+  "testSuitesAdded": 0,
+  "thirdPartyCodeCopied": false,
+  "externalMediaCopied": false,
+  "sourceFiles": [
+    "registry/material-expansion-v048.json",
+    "docs/research/material-expansion-v048.md",
+    "styles/primitives/v048/gameful-atoms.css",
+    "styles/primitives/v048/README.md",
+    "playground/gameful-atoms-v048/index.html",
+    "graphics/v048/README.md",
+    "playground/gameful-icons-v048/index.html",
+    "graphics/v048/icons/aurora-crystal.svg",
+    "graphics/v048/icons/quest-scroll.svg",
+    "graphics/v048/icons/thunder-core.svg",
+    "graphics/v048/icons/guild-crest.svg",
+    "graphics/v048/icons/portal-gate.svg",
+    "graphics/v048/icons/vault-key.svg",
+    "graphics/v048/icons/star-compass.svg",
+    "graphics/v048/icons/royal-seal.svg",
+    "graphics/v048/icons/prism-spark.svg",
+    "graphics/v048/icons/sand-hourglass.svg",
+    "graphics/v048/icons/alchemy-flask.svg",
+    "graphics/v048/icons/tier-podium.svg"
+  ],
+  "cssAtoms": [
+    {
+      "id": "FX-055",
+      "name": "Hover-activated orbital achievement / 悬停轨道成就徽章",
+      "className": "fx48-orbit-seal",
+      "aliases": [
+        "orbit badge",
+        "成就轨道",
+        "旋转勋章"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "creator-profile",
+        "gamification"
+      ],
+      "styleIds": [
+        "aether-orbit",
+        "pixel-arcade"
+      ],
+      "source": "styles/primitives/v048/gameful-atoms.css",
+      "readme": "styles/primitives/v048/README.md",
+      "demo": "playground/gameful-atoms-v048/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html-no-js",
+      "limitation": "Original orbit ring animation triggers only on hover/focus, reduced-motion stops it. Static achievement art; not a live award system.",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-056",
+      "name": "Conic experience meter / 圆环经验进度",
+      "className": "fx48-xp-ring",
+      "aliases": [
+        "XP ring",
+        "环形经验值",
+        "radial progress"
+      ],
+      "applicationContexts": [
+        "gamification",
+        "learning",
+        "dashboard"
+      ],
+      "styleIds": [
+        "playful-pop",
+        "precision-dark"
+      ],
+      "source": "styles/primitives/v048/gameful-atoms.css",
+      "readme": "styles/primitives/v048/README.md",
+      "demo": "playground/gameful-atoms-v048/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html-no-js",
+      "limitation": "Static sample has a real semantic native progress element and a matching decorative conic ring; host must synchronize values.",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-057",
+      "name": "Clip-corner inventory selection / 剪角物品栏选择",
+      "className": "fx48-inventory",
+      "aliases": [
+        "inventory slot",
+        "物品选择",
+        "道具格"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "creative-tool",
+        "gamification"
+      ],
+      "styleIds": [
+        "pixel-arcade",
+        "signal-noir"
+      ],
+      "source": "styles/primitives/v048/gameful-atoms.css",
+      "readme": "styles/primitives/v048/README.md",
+      "demo": "playground/gameful-atoms-v048/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html-no-js",
+      "limitation": "Genuine native checkbox toggles selection. No drag-and-drop, game economy, inventory persistence or reward logic.",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-058",
+      "name": "Native quest clue reveal / 原生任务线索展开",
+      "className": "fx48-quest-clue",
+      "aliases": [
+        "quest card",
+        "任务线索卡",
+        "riddle disclosure"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "learning",
+        "storytelling"
+      ],
+      "styleIds": [
+        "editorial-warm",
+        "pixel-arcade"
+      ],
+      "source": "styles/primitives/v048/gameful-atoms.css",
+      "readme": "styles/primitives/v048/README.md",
+      "demo": "playground/gameful-atoms-v048/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html-no-js",
+      "limitation": "Real details/summary disclosure with semantic keyboard behavior; not a card-flip engine or quest tracker.",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-059",
+      "name": "Native health resource meter / 原生资源计量条",
+      "className": "fx48-health-meter",
+      "aliases": [
+        "health bar",
+        "能量条",
+        "resource meter"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "dashboard",
+        "gamification"
+      ],
+      "styleIds": [
+        "signal-noir",
+        "pixel-arcade"
+      ],
+      "source": "styles/primitives/v048/gameful-atoms.css",
+      "readme": "styles/primitives/v048/README.md",
+      "demo": "playground/gameful-atoms-v048/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html-no-js",
+      "limitation": "Real HTML meter with sample 72/100 and CSS-only fallback labels. Host updates value and contextual semantics.",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-060",
+      "name": "Hover reward starburst / 悬停奖励放射贴花",
+      "className": "fx48-reward-burst",
+      "aliases": [
+        "starburst badge",
+        "奖励星芒",
+        "flash medal"
+      ],
+      "applicationContexts": [
+        "campaign",
+        "game-companion",
+        "gamification"
+      ],
+      "styleIds": [
+        "playful-pop",
+        "shape-expressive"
+      ],
+      "source": "styles/primitives/v048/gameful-atoms.css",
+      "readme": "styles/primitives/v048/README.md",
+      "demo": "playground/gameful-atoms-v048/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html-no-js",
+      "limitation": "Original CSS clip-path burst rotates only on pointer hover; readable foreground remains static; no prize claim or award logic.",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-061",
+      "name": "Kinetic underline text link / 动态轨迹文字链接",
+      "className": "fx48-kinetic-link",
+      "aliases": [
+        "motion underline",
+        "动感文字导航",
+        "animated link"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "portfolio",
+        "editorial"
+      ],
+      "styleIds": [
+        "type-led-minimal",
+        "paper-rebellion"
+      ],
+      "source": "styles/primitives/v048/gameful-atoms.css",
+      "readme": "styles/primitives/v048/README.md",
+      "demo": "playground/gameful-atoms-v048/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html-no-js",
+      "limitation": "Real native anchor with animated underline on hover/focus, static high-contrast reduced-motion fallback. Host supplies meaningful target.",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-062",
+      "name": "Native portal-theme toggle / 原生传送门模式切换",
+      "className": "fx48-portal-switch",
+      "aliases": [
+        "fantasy toggle",
+        "门户切换",
+        "portal switch"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "creative-tool",
+        "gamification"
+      ],
+      "styleIds": [
+        "aether-orbit",
+        "signal-noir"
+      ],
+      "source": "styles/primitives/v048/gameful-atoms.css",
+      "readme": "styles/primitives/v048/README.md",
+      "demo": "playground/gameful-atoms-v048/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html-no-js",
+      "limitation": "Real checkbox controls local visual state via adjacent sibling CSS. No application theme persistence or remote effects.",
+      "notReactExport": true
+    }
+  ],
+  "originalIcons": [
+    {
+      "id": "VG-035",
+      "name": "Aurora crystal / 极光晶簇",
+      "aliases": [
+        "晶体图标",
+        "crystal icon"
+      ],
+      "concept": "faceted cyan coral jewel",
+      "source": "graphics/v048/icons/aurora-crystal.svg",
+      "readme": "graphics/v048/README.md",
+      "demo": "playground/gameful-icons-v048/index.html",
+      "viewBox": "0 0 64 64",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-svg",
+      "applicationContexts": [
+        "game-companion",
+        "gamification",
+        "creative-site"
+      ],
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "notReactExport": true
+    },
+    {
+      "id": "VG-036",
+      "name": "Quest scroll / 任务卷轴",
+      "aliases": [
+        "任务卷轴",
+        "quest icon"
+      ],
+      "concept": "ribbon-and-seal parchment scroll",
+      "source": "graphics/v048/icons/quest-scroll.svg",
+      "readme": "graphics/v048/README.md",
+      "demo": "playground/gameful-icons-v048/index.html",
+      "viewBox": "0 0 64 64",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-svg",
+      "applicationContexts": [
+        "game-companion",
+        "gamification",
+        "creative-site"
+      ],
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "notReactExport": true
+    },
+    {
+      "id": "VG-037",
+      "name": "Thunder core / 雷电核心",
+      "aliases": [
+        "雷电核心",
+        "energy icon"
+      ],
+      "concept": "lightning held by hexagonal core",
+      "source": "graphics/v048/icons/thunder-core.svg",
+      "readme": "graphics/v048/README.md",
+      "demo": "playground/gameful-icons-v048/index.html",
+      "viewBox": "0 0 64 64",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-svg",
+      "applicationContexts": [
+        "game-companion",
+        "gamification",
+        "creative-site"
+      ],
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "notReactExport": true
+    },
+    {
+      "id": "VG-038",
+      "name": "Guild crest / 公会纹章",
+      "aliases": [
+        "公会图标",
+        "crest"
+      ],
+      "concept": "shaped shield branch crescent",
+      "source": "graphics/v048/icons/guild-crest.svg",
+      "readme": "graphics/v048/README.md",
+      "demo": "playground/gameful-icons-v048/index.html",
+      "viewBox": "0 0 64 64",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-svg",
+      "applicationContexts": [
+        "game-companion",
+        "gamification",
+        "creative-site"
+      ],
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "notReactExport": true
+    },
+    {
+      "id": "VG-039",
+      "name": "Portal gate / 传送门拱",
+      "aliases": [
+        "传送门图标",
+        "gate icon"
+      ],
+      "concept": "lit elliptical passage within arch",
+      "source": "graphics/v048/icons/portal-gate.svg",
+      "readme": "graphics/v048/README.md",
+      "demo": "playground/gameful-icons-v048/index.html",
+      "viewBox": "0 0 64 64",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-svg",
+      "applicationContexts": [
+        "game-companion",
+        "gamification",
+        "creative-site"
+      ],
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "notReactExport": true
+    },
+    {
+      "id": "VG-040",
+      "name": "Vault key / 秘藏宝钥",
+      "aliases": [
+        "宝藏钥匙",
+        "key icon"
+      ],
+      "concept": "stepped copper key ring",
+      "source": "graphics/v048/icons/vault-key.svg",
+      "readme": "graphics/v048/README.md",
+      "demo": "playground/gameful-icons-v048/index.html",
+      "viewBox": "0 0 64 64",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-svg",
+      "applicationContexts": [
+        "game-companion",
+        "gamification",
+        "creative-site"
+      ],
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "notReactExport": true
+    },
+    {
+      "id": "VG-041",
+      "name": "Star compass / 星罗指针",
+      "aliases": [
+        "星盘",
+        "compass icon"
+      ],
+      "concept": "4-point navigational prism",
+      "source": "graphics/v048/icons/star-compass.svg",
+      "readme": "graphics/v048/README.md",
+      "demo": "playground/gameful-icons-v048/index.html",
+      "viewBox": "0 0 64 64",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-svg",
+      "applicationContexts": [
+        "game-companion",
+        "gamification",
+        "creative-site"
+      ],
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "notReactExport": true
+    },
+    {
+      "id": "VG-042",
+      "name": "Royal seal / 皇冠封印",
+      "aliases": [
+        "勋章封印",
+        "seal icon"
+      ],
+      "concept": "compact ribbon and crown token",
+      "source": "graphics/v048/icons/royal-seal.svg",
+      "readme": "graphics/v048/README.md",
+      "demo": "playground/gameful-icons-v048/index.html",
+      "viewBox": "0 0 64 64",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-svg",
+      "applicationContexts": [
+        "game-companion",
+        "gamification",
+        "creative-site"
+      ],
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "notReactExport": true
+    },
+    {
+      "id": "VG-043",
+      "name": "Prism spark / 棱镜星屑",
+      "aliases": [
+        "棱镜图标",
+        "prism icon"
+      ],
+      "concept": "triangular prism emitting streaks",
+      "source": "graphics/v048/icons/prism-spark.svg",
+      "readme": "graphics/v048/README.md",
+      "demo": "playground/gameful-icons-v048/index.html",
+      "viewBox": "0 0 64 64",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-svg",
+      "applicationContexts": [
+        "game-companion",
+        "gamification",
+        "creative-site"
+      ],
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "notReactExport": true
+    },
+    {
+      "id": "VG-044",
+      "name": "Sand hourglass / 时之沙漏",
+      "aliases": [
+        "沙漏计时",
+        "hourglass icon"
+      ],
+      "concept": "angular hourglass with shifting coral grains",
+      "source": "graphics/v048/icons/sand-hourglass.svg",
+      "readme": "graphics/v048/README.md",
+      "demo": "playground/gameful-icons-v048/index.html",
+      "viewBox": "0 0 64 64",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-svg",
+      "applicationContexts": [
+        "game-companion",
+        "gamification",
+        "creative-site"
+      ],
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "notReactExport": true
+    },
+    {
+      "id": "VG-045",
+      "name": "Alchemy flask / 炼金药瓶",
+      "aliases": [
+        "药剂瓶",
+        "potion icon"
+      ],
+      "concept": "coral liquid chemistry potion",
+      "source": "graphics/v048/icons/alchemy-flask.svg",
+      "readme": "graphics/v048/README.md",
+      "demo": "playground/gameful-icons-v048/index.html",
+      "viewBox": "0 0 64 64",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-svg",
+      "applicationContexts": [
+        "game-companion",
+        "gamification",
+        "creative-site"
+      ],
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "notReactExport": true
+    },
+    {
+      "id": "VG-046",
+      "name": "Tier podium / 成就领奖台",
+      "aliases": [
+        "排行榜图标",
+        "podium icon"
+      ],
+      "concept": "three-level podium with hovering laurels",
+      "source": "graphics/v048/icons/tier-podium.svg",
+      "readme": "graphics/v048/README.md",
+      "demo": "playground/gameful-icons-v048/index.html",
+      "viewBox": "0 0 64 64",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-svg",
+      "applicationContexts": [
+        "game-companion",
+        "gamification",
+        "creative-site"
+      ],
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "notReactExport": true
+    }
+  ]
+}

@@ -15903,6 +15903,882 @@
         "instructions": "Reference graphics/v047/scenes/optical-portal.svg in an img/media context or adapt original shape geometry; choose meaningful or decorative alt text.",
         "limitations": "Static artistic concept only; not sensor data, WebGL physics, video playback or complete page."
       }
+    },
+    {
+      "id": "FX-055",
+      "type": "component",
+      "name": "Hover-activated orbital achievement / 悬停轨道成就徽章",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v048",
+        "original-css-source",
+        "gameful-ui",
+        "native-html",
+        "independent-material",
+        "reduced-motion",
+        "hover-activated-motion"
+      ],
+      "aliases": [
+        "orbit badge",
+        "成就轨道",
+        "旋转勋章"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original standalone CSS and HTML, no copied vendor code, image/font, service logic, external library, or JavaScript.",
+      "styleIds": [
+        "aether-orbit",
+        "pixel-arcade"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "creator-profile",
+        "gamification"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v048/gameful-atoms.css",
+      "details": "styles/primitives/v048/README.md",
+      "spec": "registry/material-expansion-v048.json",
+      "demo": "playground/gameful-atoms-v048/index.html",
+      "verified": "Original CSS selectors and HTML specimen available on 2026-11-12; source-level inspection only, production/browser/accessibility certification pending.",
+      "handoff": {
+        "entry": "styles/primitives/v048/README.md",
+        "stack": "Scoped CSS and native HTML; no JS or public React export",
+        "instructions": "Copy selectors under .fx48-orbit-seal, corresponding markup from playground/gameful-atoms-v048/index.html and reduced-motion/forced-colors fallbacks. Keep host logic separate.",
+        "limitations": "Original orbit ring animation triggers only on hover/focus, reduced-motion stops it. Static achievement art; not a live award system."
+      }
+    },
+    {
+      "id": "FX-056",
+      "type": "component",
+      "name": "Conic experience meter / 圆环经验进度",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v048",
+        "original-css-source",
+        "gameful-ui",
+        "native-html",
+        "independent-material",
+        "reduced-motion",
+        "semantic-html"
+      ],
+      "aliases": [
+        "XP ring",
+        "环形经验值",
+        "radial progress"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original standalone CSS and HTML, no copied vendor code, image/font, service logic, external library, or JavaScript.",
+      "styleIds": [
+        "playful-pop",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "gamification",
+        "learning",
+        "dashboard"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v048/gameful-atoms.css",
+      "details": "styles/primitives/v048/README.md",
+      "spec": "registry/material-expansion-v048.json",
+      "demo": "playground/gameful-atoms-v048/index.html",
+      "verified": "Original CSS selectors and HTML specimen available on 2026-11-12; source-level inspection only, production/browser/accessibility certification pending.",
+      "handoff": {
+        "entry": "styles/primitives/v048/README.md",
+        "stack": "Scoped CSS and native HTML; no JS or public React export",
+        "instructions": "Copy selectors under .fx48-xp-ring, corresponding markup from playground/gameful-atoms-v048/index.html and reduced-motion/forced-colors fallbacks. Keep host logic separate.",
+        "limitations": "Static sample has a real semantic native progress element and a matching decorative conic ring; host must synchronize values."
+      }
+    },
+    {
+      "id": "FX-057",
+      "type": "component",
+      "name": "Clip-corner inventory selection / 剪角物品栏选择",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v048",
+        "original-css-source",
+        "gameful-ui",
+        "native-html",
+        "independent-material",
+        "reduced-motion",
+        "semantic-html"
+      ],
+      "aliases": [
+        "inventory slot",
+        "物品选择",
+        "道具格"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original standalone CSS and HTML, no copied vendor code, image/font, service logic, external library, or JavaScript.",
+      "styleIds": [
+        "pixel-arcade",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "creative-tool",
+        "gamification"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v048/gameful-atoms.css",
+      "details": "styles/primitives/v048/README.md",
+      "spec": "registry/material-expansion-v048.json",
+      "demo": "playground/gameful-atoms-v048/index.html",
+      "verified": "Original CSS selectors and HTML specimen available on 2026-11-12; source-level inspection only, production/browser/accessibility certification pending.",
+      "handoff": {
+        "entry": "styles/primitives/v048/README.md",
+        "stack": "Scoped CSS and native HTML; no JS or public React export",
+        "instructions": "Copy selectors under .fx48-inventory, corresponding markup from playground/gameful-atoms-v048/index.html and reduced-motion/forced-colors fallbacks. Keep host logic separate.",
+        "limitations": "Genuine native checkbox toggles selection. No drag-and-drop, game economy, inventory persistence or reward logic."
+      }
+    },
+    {
+      "id": "FX-058",
+      "type": "component",
+      "name": "Native quest clue reveal / 原生任务线索展开",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v048",
+        "original-css-source",
+        "gameful-ui",
+        "native-html",
+        "independent-material",
+        "reduced-motion",
+        "semantic-html"
+      ],
+      "aliases": [
+        "quest card",
+        "任务线索卡",
+        "riddle disclosure"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original standalone CSS and HTML, no copied vendor code, image/font, service logic, external library, or JavaScript.",
+      "styleIds": [
+        "editorial-warm",
+        "pixel-arcade"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "learning",
+        "storytelling"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v048/gameful-atoms.css",
+      "details": "styles/primitives/v048/README.md",
+      "spec": "registry/material-expansion-v048.json",
+      "demo": "playground/gameful-atoms-v048/index.html",
+      "verified": "Original CSS selectors and HTML specimen available on 2026-11-12; source-level inspection only, production/browser/accessibility certification pending.",
+      "handoff": {
+        "entry": "styles/primitives/v048/README.md",
+        "stack": "Scoped CSS and native HTML; no JS or public React export",
+        "instructions": "Copy selectors under .fx48-quest-clue, corresponding markup from playground/gameful-atoms-v048/index.html and reduced-motion/forced-colors fallbacks. Keep host logic separate.",
+        "limitations": "Real details/summary disclosure with semantic keyboard behavior; not a card-flip engine or quest tracker."
+      }
+    },
+    {
+      "id": "FX-059",
+      "type": "component",
+      "name": "Native health resource meter / 原生资源计量条",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v048",
+        "original-css-source",
+        "gameful-ui",
+        "native-html",
+        "independent-material",
+        "reduced-motion",
+        "semantic-html"
+      ],
+      "aliases": [
+        "health bar",
+        "能量条",
+        "resource meter"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original standalone CSS and HTML, no copied vendor code, image/font, service logic, external library, or JavaScript.",
+      "styleIds": [
+        "signal-noir",
+        "pixel-arcade"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "dashboard",
+        "gamification"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v048/gameful-atoms.css",
+      "details": "styles/primitives/v048/README.md",
+      "spec": "registry/material-expansion-v048.json",
+      "demo": "playground/gameful-atoms-v048/index.html",
+      "verified": "Original CSS selectors and HTML specimen available on 2026-11-12; source-level inspection only, production/browser/accessibility certification pending.",
+      "handoff": {
+        "entry": "styles/primitives/v048/README.md",
+        "stack": "Scoped CSS and native HTML; no JS or public React export",
+        "instructions": "Copy selectors under .fx48-health-meter, corresponding markup from playground/gameful-atoms-v048/index.html and reduced-motion/forced-colors fallbacks. Keep host logic separate.",
+        "limitations": "Real HTML meter with sample 72/100 and CSS-only fallback labels. Host updates value and contextual semantics."
+      }
+    },
+    {
+      "id": "FX-060",
+      "type": "component",
+      "name": "Hover reward starburst / 悬停奖励放射贴花",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v048",
+        "original-css-source",
+        "gameful-ui",
+        "native-html",
+        "independent-material",
+        "reduced-motion",
+        "hover-activated-motion"
+      ],
+      "aliases": [
+        "starburst badge",
+        "奖励星芒",
+        "flash medal"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original standalone CSS and HTML, no copied vendor code, image/font, service logic, external library, or JavaScript.",
+      "styleIds": [
+        "playful-pop",
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "campaign",
+        "game-companion",
+        "gamification"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v048/gameful-atoms.css",
+      "details": "styles/primitives/v048/README.md",
+      "spec": "registry/material-expansion-v048.json",
+      "demo": "playground/gameful-atoms-v048/index.html",
+      "verified": "Original CSS selectors and HTML specimen available on 2026-11-12; source-level inspection only, production/browser/accessibility certification pending.",
+      "handoff": {
+        "entry": "styles/primitives/v048/README.md",
+        "stack": "Scoped CSS and native HTML; no JS or public React export",
+        "instructions": "Copy selectors under .fx48-reward-burst, corresponding markup from playground/gameful-atoms-v048/index.html and reduced-motion/forced-colors fallbacks. Keep host logic separate.",
+        "limitations": "Original CSS clip-path burst rotates only on pointer hover; readable foreground remains static; no prize claim or award logic."
+      }
+    },
+    {
+      "id": "FX-061",
+      "type": "component",
+      "name": "Kinetic underline text link / 动态轨迹文字链接",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v048",
+        "original-css-source",
+        "gameful-ui",
+        "native-html",
+        "independent-material",
+        "reduced-motion",
+        "hover-activated-motion"
+      ],
+      "aliases": [
+        "motion underline",
+        "动感文字导航",
+        "animated link"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original standalone CSS and HTML, no copied vendor code, image/font, service logic, external library, or JavaScript.",
+      "styleIds": [
+        "type-led-minimal",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "portfolio",
+        "editorial"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v048/gameful-atoms.css",
+      "details": "styles/primitives/v048/README.md",
+      "spec": "registry/material-expansion-v048.json",
+      "demo": "playground/gameful-atoms-v048/index.html",
+      "verified": "Original CSS selectors and HTML specimen available on 2026-11-12; source-level inspection only, production/browser/accessibility certification pending.",
+      "handoff": {
+        "entry": "styles/primitives/v048/README.md",
+        "stack": "Scoped CSS and native HTML; no JS or public React export",
+        "instructions": "Copy selectors under .fx48-kinetic-link, corresponding markup from playground/gameful-atoms-v048/index.html and reduced-motion/forced-colors fallbacks. Keep host logic separate.",
+        "limitations": "Real native anchor with animated underline on hover/focus, static high-contrast reduced-motion fallback. Host supplies meaningful target."
+      }
+    },
+    {
+      "id": "FX-062",
+      "type": "component",
+      "name": "Native portal-theme toggle / 原生传送门模式切换",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v048",
+        "original-css-source",
+        "gameful-ui",
+        "native-html",
+        "independent-material",
+        "reduced-motion",
+        "semantic-html"
+      ],
+      "aliases": [
+        "fantasy toggle",
+        "门户切换",
+        "portal switch"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original standalone CSS and HTML, no copied vendor code, image/font, service logic, external library, or JavaScript.",
+      "styleIds": [
+        "aether-orbit",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "creative-tool",
+        "gamification"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v048/gameful-atoms.css",
+      "details": "styles/primitives/v048/README.md",
+      "spec": "registry/material-expansion-v048.json",
+      "demo": "playground/gameful-atoms-v048/index.html",
+      "verified": "Original CSS selectors and HTML specimen available on 2026-11-12; source-level inspection only, production/browser/accessibility certification pending.",
+      "handoff": {
+        "entry": "styles/primitives/v048/README.md",
+        "stack": "Scoped CSS and native HTML; no JS or public React export",
+        "instructions": "Copy selectors under .fx48-portal-switch, corresponding markup from playground/gameful-atoms-v048/index.html and reduced-motion/forced-colors fallbacks. Keep host logic separate.",
+        "limitations": "Real checkbox controls local visual state via adjacent sibling CSS. No application theme persistence or remote effects."
+      }
+    },
+    {
+      "id": "VG-035",
+      "type": "component",
+      "name": "Aurora crystal / 极光晶簇",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v048",
+        "original-svg",
+        "gameful-icon",
+        "editable-vector",
+        "independent-file",
+        "64x64"
+      ],
+      "aliases": [
+        "晶体图标",
+        "crystal icon"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG vector path illustration; no externally imported icon font, trademark, image, external scripts or library source.",
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "gamification",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "graphics/v048/icons/aurora-crystal.svg",
+      "details": "graphics/v048/README.md",
+      "spec": "registry/material-expansion-v048.json",
+      "demo": "playground/gameful-icons-v048/index.html",
+      "verified": "Original SVG file with title, desc, viewBox and self-contained shapes created 2026-11-12. Not tested in target apps.",
+      "handoff": {
+        "entry": "graphics/v048/README.md",
+        "stack": "Single standalone 64×64 color SVG file; not icon-font, React export, third-party icon pack or gameplay feature",
+        "instructions": "Copy graphics/v048/icons/aurora-crystal.svg independently; provide contextual alt on the host and adjust SVG colors/sizing if needed.",
+        "limitations": "Illustrative icon only. Target app owns keyboard behavior, accessible names, icon scaling, contrast and domain-state logic."
+      }
+    },
+    {
+      "id": "VG-036",
+      "type": "component",
+      "name": "Quest scroll / 任务卷轴",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v048",
+        "original-svg",
+        "gameful-icon",
+        "editable-vector",
+        "independent-file",
+        "64x64"
+      ],
+      "aliases": [
+        "任务卷轴",
+        "quest icon"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG vector path illustration; no externally imported icon font, trademark, image, external scripts or library source.",
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "gamification",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "graphics/v048/icons/quest-scroll.svg",
+      "details": "graphics/v048/README.md",
+      "spec": "registry/material-expansion-v048.json",
+      "demo": "playground/gameful-icons-v048/index.html",
+      "verified": "Original SVG file with title, desc, viewBox and self-contained shapes created 2026-11-12. Not tested in target apps.",
+      "handoff": {
+        "entry": "graphics/v048/README.md",
+        "stack": "Single standalone 64×64 color SVG file; not icon-font, React export, third-party icon pack or gameplay feature",
+        "instructions": "Copy graphics/v048/icons/quest-scroll.svg independently; provide contextual alt on the host and adjust SVG colors/sizing if needed.",
+        "limitations": "Illustrative icon only. Target app owns keyboard behavior, accessible names, icon scaling, contrast and domain-state logic."
+      }
+    },
+    {
+      "id": "VG-037",
+      "type": "component",
+      "name": "Thunder core / 雷电核心",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v048",
+        "original-svg",
+        "gameful-icon",
+        "editable-vector",
+        "independent-file",
+        "64x64"
+      ],
+      "aliases": [
+        "雷电核心",
+        "energy icon"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG vector path illustration; no externally imported icon font, trademark, image, external scripts or library source.",
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "gamification",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "graphics/v048/icons/thunder-core.svg",
+      "details": "graphics/v048/README.md",
+      "spec": "registry/material-expansion-v048.json",
+      "demo": "playground/gameful-icons-v048/index.html",
+      "verified": "Original SVG file with title, desc, viewBox and self-contained shapes created 2026-11-12. Not tested in target apps.",
+      "handoff": {
+        "entry": "graphics/v048/README.md",
+        "stack": "Single standalone 64×64 color SVG file; not icon-font, React export, third-party icon pack or gameplay feature",
+        "instructions": "Copy graphics/v048/icons/thunder-core.svg independently; provide contextual alt on the host and adjust SVG colors/sizing if needed.",
+        "limitations": "Illustrative icon only. Target app owns keyboard behavior, accessible names, icon scaling, contrast and domain-state logic."
+      }
+    },
+    {
+      "id": "VG-038",
+      "type": "component",
+      "name": "Guild crest / 公会纹章",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v048",
+        "original-svg",
+        "gameful-icon",
+        "editable-vector",
+        "independent-file",
+        "64x64"
+      ],
+      "aliases": [
+        "公会图标",
+        "crest"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG vector path illustration; no externally imported icon font, trademark, image, external scripts or library source.",
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "gamification",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "graphics/v048/icons/guild-crest.svg",
+      "details": "graphics/v048/README.md",
+      "spec": "registry/material-expansion-v048.json",
+      "demo": "playground/gameful-icons-v048/index.html",
+      "verified": "Original SVG file with title, desc, viewBox and self-contained shapes created 2026-11-12. Not tested in target apps.",
+      "handoff": {
+        "entry": "graphics/v048/README.md",
+        "stack": "Single standalone 64×64 color SVG file; not icon-font, React export, third-party icon pack or gameplay feature",
+        "instructions": "Copy graphics/v048/icons/guild-crest.svg independently; provide contextual alt on the host and adjust SVG colors/sizing if needed.",
+        "limitations": "Illustrative icon only. Target app owns keyboard behavior, accessible names, icon scaling, contrast and domain-state logic."
+      }
+    },
+    {
+      "id": "VG-039",
+      "type": "component",
+      "name": "Portal gate / 传送门拱",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v048",
+        "original-svg",
+        "gameful-icon",
+        "editable-vector",
+        "independent-file",
+        "64x64"
+      ],
+      "aliases": [
+        "传送门图标",
+        "gate icon"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG vector path illustration; no externally imported icon font, trademark, image, external scripts or library source.",
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "gamification",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "graphics/v048/icons/portal-gate.svg",
+      "details": "graphics/v048/README.md",
+      "spec": "registry/material-expansion-v048.json",
+      "demo": "playground/gameful-icons-v048/index.html",
+      "verified": "Original SVG file with title, desc, viewBox and self-contained shapes created 2026-11-12. Not tested in target apps.",
+      "handoff": {
+        "entry": "graphics/v048/README.md",
+        "stack": "Single standalone 64×64 color SVG file; not icon-font, React export, third-party icon pack or gameplay feature",
+        "instructions": "Copy graphics/v048/icons/portal-gate.svg independently; provide contextual alt on the host and adjust SVG colors/sizing if needed.",
+        "limitations": "Illustrative icon only. Target app owns keyboard behavior, accessible names, icon scaling, contrast and domain-state logic."
+      }
+    },
+    {
+      "id": "VG-040",
+      "type": "component",
+      "name": "Vault key / 秘藏宝钥",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v048",
+        "original-svg",
+        "gameful-icon",
+        "editable-vector",
+        "independent-file",
+        "64x64"
+      ],
+      "aliases": [
+        "宝藏钥匙",
+        "key icon"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG vector path illustration; no externally imported icon font, trademark, image, external scripts or library source.",
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "gamification",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "graphics/v048/icons/vault-key.svg",
+      "details": "graphics/v048/README.md",
+      "spec": "registry/material-expansion-v048.json",
+      "demo": "playground/gameful-icons-v048/index.html",
+      "verified": "Original SVG file with title, desc, viewBox and self-contained shapes created 2026-11-12. Not tested in target apps.",
+      "handoff": {
+        "entry": "graphics/v048/README.md",
+        "stack": "Single standalone 64×64 color SVG file; not icon-font, React export, third-party icon pack or gameplay feature",
+        "instructions": "Copy graphics/v048/icons/vault-key.svg independently; provide contextual alt on the host and adjust SVG colors/sizing if needed.",
+        "limitations": "Illustrative icon only. Target app owns keyboard behavior, accessible names, icon scaling, contrast and domain-state logic."
+      }
+    },
+    {
+      "id": "VG-041",
+      "type": "component",
+      "name": "Star compass / 星罗指针",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v048",
+        "original-svg",
+        "gameful-icon",
+        "editable-vector",
+        "independent-file",
+        "64x64"
+      ],
+      "aliases": [
+        "星盘",
+        "compass icon"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG vector path illustration; no externally imported icon font, trademark, image, external scripts or library source.",
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "gamification",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "graphics/v048/icons/star-compass.svg",
+      "details": "graphics/v048/README.md",
+      "spec": "registry/material-expansion-v048.json",
+      "demo": "playground/gameful-icons-v048/index.html",
+      "verified": "Original SVG file with title, desc, viewBox and self-contained shapes created 2026-11-12. Not tested in target apps.",
+      "handoff": {
+        "entry": "graphics/v048/README.md",
+        "stack": "Single standalone 64×64 color SVG file; not icon-font, React export, third-party icon pack or gameplay feature",
+        "instructions": "Copy graphics/v048/icons/star-compass.svg independently; provide contextual alt on the host and adjust SVG colors/sizing if needed.",
+        "limitations": "Illustrative icon only. Target app owns keyboard behavior, accessible names, icon scaling, contrast and domain-state logic."
+      }
+    },
+    {
+      "id": "VG-042",
+      "type": "component",
+      "name": "Royal seal / 皇冠封印",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v048",
+        "original-svg",
+        "gameful-icon",
+        "editable-vector",
+        "independent-file",
+        "64x64"
+      ],
+      "aliases": [
+        "勋章封印",
+        "seal icon"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG vector path illustration; no externally imported icon font, trademark, image, external scripts or library source.",
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "gamification",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "graphics/v048/icons/royal-seal.svg",
+      "details": "graphics/v048/README.md",
+      "spec": "registry/material-expansion-v048.json",
+      "demo": "playground/gameful-icons-v048/index.html",
+      "verified": "Original SVG file with title, desc, viewBox and self-contained shapes created 2026-11-12. Not tested in target apps.",
+      "handoff": {
+        "entry": "graphics/v048/README.md",
+        "stack": "Single standalone 64×64 color SVG file; not icon-font, React export, third-party icon pack or gameplay feature",
+        "instructions": "Copy graphics/v048/icons/royal-seal.svg independently; provide contextual alt on the host and adjust SVG colors/sizing if needed.",
+        "limitations": "Illustrative icon only. Target app owns keyboard behavior, accessible names, icon scaling, contrast and domain-state logic."
+      }
+    },
+    {
+      "id": "VG-043",
+      "type": "component",
+      "name": "Prism spark / 棱镜星屑",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v048",
+        "original-svg",
+        "gameful-icon",
+        "editable-vector",
+        "independent-file",
+        "64x64"
+      ],
+      "aliases": [
+        "棱镜图标",
+        "prism icon"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG vector path illustration; no externally imported icon font, trademark, image, external scripts or library source.",
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "gamification",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "graphics/v048/icons/prism-spark.svg",
+      "details": "graphics/v048/README.md",
+      "spec": "registry/material-expansion-v048.json",
+      "demo": "playground/gameful-icons-v048/index.html",
+      "verified": "Original SVG file with title, desc, viewBox and self-contained shapes created 2026-11-12. Not tested in target apps.",
+      "handoff": {
+        "entry": "graphics/v048/README.md",
+        "stack": "Single standalone 64×64 color SVG file; not icon-font, React export, third-party icon pack or gameplay feature",
+        "instructions": "Copy graphics/v048/icons/prism-spark.svg independently; provide contextual alt on the host and adjust SVG colors/sizing if needed.",
+        "limitations": "Illustrative icon only. Target app owns keyboard behavior, accessible names, icon scaling, contrast and domain-state logic."
+      }
+    },
+    {
+      "id": "VG-044",
+      "type": "component",
+      "name": "Sand hourglass / 时之沙漏",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v048",
+        "original-svg",
+        "gameful-icon",
+        "editable-vector",
+        "independent-file",
+        "64x64"
+      ],
+      "aliases": [
+        "沙漏计时",
+        "hourglass icon"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG vector path illustration; no externally imported icon font, trademark, image, external scripts or library source.",
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "gamification",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "graphics/v048/icons/sand-hourglass.svg",
+      "details": "graphics/v048/README.md",
+      "spec": "registry/material-expansion-v048.json",
+      "demo": "playground/gameful-icons-v048/index.html",
+      "verified": "Original SVG file with title, desc, viewBox and self-contained shapes created 2026-11-12. Not tested in target apps.",
+      "handoff": {
+        "entry": "graphics/v048/README.md",
+        "stack": "Single standalone 64×64 color SVG file; not icon-font, React export, third-party icon pack or gameplay feature",
+        "instructions": "Copy graphics/v048/icons/sand-hourglass.svg independently; provide contextual alt on the host and adjust SVG colors/sizing if needed.",
+        "limitations": "Illustrative icon only. Target app owns keyboard behavior, accessible names, icon scaling, contrast and domain-state logic."
+      }
+    },
+    {
+      "id": "VG-045",
+      "type": "component",
+      "name": "Alchemy flask / 炼金药瓶",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v048",
+        "original-svg",
+        "gameful-icon",
+        "editable-vector",
+        "independent-file",
+        "64x64"
+      ],
+      "aliases": [
+        "药剂瓶",
+        "potion icon"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG vector path illustration; no externally imported icon font, trademark, image, external scripts or library source.",
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "gamification",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "graphics/v048/icons/alchemy-flask.svg",
+      "details": "graphics/v048/README.md",
+      "spec": "registry/material-expansion-v048.json",
+      "demo": "playground/gameful-icons-v048/index.html",
+      "verified": "Original SVG file with title, desc, viewBox and self-contained shapes created 2026-11-12. Not tested in target apps.",
+      "handoff": {
+        "entry": "graphics/v048/README.md",
+        "stack": "Single standalone 64×64 color SVG file; not icon-font, React export, third-party icon pack or gameplay feature",
+        "instructions": "Copy graphics/v048/icons/alchemy-flask.svg independently; provide contextual alt on the host and adjust SVG colors/sizing if needed.",
+        "limitations": "Illustrative icon only. Target app owns keyboard behavior, accessible names, icon scaling, contrast and domain-state logic."
+      }
+    },
+    {
+      "id": "VG-046",
+      "type": "component",
+      "name": "Tier podium / 成就领奖台",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v048",
+        "original-svg",
+        "gameful-icon",
+        "editable-vector",
+        "independent-file",
+        "64x64"
+      ],
+      "aliases": [
+        "排行榜图标",
+        "podium icon"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG vector path illustration; no externally imported icon font, trademark, image, external scripts or library source.",
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "gamification",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "graphics/v048/icons/tier-podium.svg",
+      "details": "graphics/v048/README.md",
+      "spec": "registry/material-expansion-v048.json",
+      "demo": "playground/gameful-icons-v048/index.html",
+      "verified": "Original SVG file with title, desc, viewBox and self-contained shapes created 2026-11-12. Not tested in target apps.",
+      "handoff": {
+        "entry": "graphics/v048/README.md",
+        "stack": "Single standalone 64×64 color SVG file; not icon-font, React export, third-party icon pack or gameplay feature",
+        "instructions": "Copy graphics/v048/icons/tier-podium.svg independently; provide contextual alt on the host and adjust SVG colors/sizing if needed.",
+        "limitations": "Illustrative icon only. Target app owns keyboard behavior, accessible names, icon scaling, contrast and domain-state logic."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",

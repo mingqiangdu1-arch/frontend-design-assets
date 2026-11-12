@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-11-12 · V0.48 original gameful microinteractions and illustrated icon family
+
+- Added **8 standalone native HTML/CSS atoms** FX-055..062: hover orbital achievement badge, conic experience ring with native progress semantics, selectable clipped-corner inventory checkbox, native quest details disclosure, styled native resource meter, hover reward starburst, focus-aware kinetic underline anchor and native portal-mode checkbox toggle.
+- Added **12 fully independent original 64×64 SVG icon files** VG-035..046: aurora crystal, quest scroll, thunder core, guild crest, portal gate, vault key, star compass, royal seal, prism spark, hourglass, alchemy flask and tiered podium.
+- Samples have reduced-motion/forced-colors considerations where applicable; no JS runtime, external media/font/icon pack, default theme, React export, game/reward backend, application platform or additional test framework.
+- [Structured index](registry/material-expansion-v048.json) · [native CSS sources](styles/primitives/v048/) · [icon SVG source files](graphics/v048/icons/) · [research](docs/research/material-expansion-v048.md) · [live native specimens](playground/gameful-atoms-v048/index.html) · [icon gallery](playground/gameful-icons-v048/index.html).
+- Catalog **410 → 430**. Validation restricted to asset path/index/source consistency, with target-device/browser/a11y and visual QA pending.
+
+
 ## 2026-11-12 · V0.47 expressive typography, repeatable surface patterns and vector scenes
 
 - Added **six original CSS/HTML visual materials** FX-049..054: chromatic echo title, accessible pointer-responsive holographic link card (tiny optional local JS), paper stamp label, organic blob media viewport, editorial drop cap and real chapter anchor spine.
