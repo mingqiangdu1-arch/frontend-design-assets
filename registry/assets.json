@@ -15143,6 +15143,766 @@
         "instructions": "Copy graphics/v046/storyboard-frames.svg or reference as image and supply contextual alt/decorative status.",
         "limitations": "Illustrative only; host supplies actual data and accessible alt."
       }
+    },
+    {
+      "id": "FX-049",
+      "type": "component",
+      "name": "Chromatic echo typography / 色差重影排印",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v047",
+        "original-css-source",
+        "expressive-visual",
+        "independent-material",
+        "css-only"
+      ],
+      "aliases": [
+        "chromatic text",
+        "RGB split typography",
+        "色差文字",
+        "双色字影"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original HTML/CSS; FX-050 optionally uses original short local JS. No copied vendor source, media, fonts or license-restricted graphics.",
+      "styleIds": [
+        "signal-noir",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "creative-site",
+        "music-brand"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v047/expressive-atoms.css",
+      "details": "styles/primitives/v047/README.md",
+      "spec": "registry/material-expansion-v047.json",
+      "demo": "playground/expressive-atoms-v047/index.html",
+      "verified": "Original CSS source, standalone HTML specimen and item-level docs checked for presence on 2026-11-12; no live app/mobile/visual accessibility certification.",
+      "handoff": {
+        "entry": "styles/primitives/v047/README.md",
+        "stack": "Native CSS + semantic HTML; not React export",
+        "instructions": "Select .fx47-chromatic-type CSS selectors and semantic HTML sample. Preserve scoped fallbacks.",
+        "limitations": "Decorative text-shadow on real accessible HTML heading. No duplicate content or motion."
+      }
+    },
+    {
+      "id": "FX-050",
+      "type": "component",
+      "name": "Pointer-responsive holographic card / 指针响应全息卡",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v047",
+        "original-css-source",
+        "expressive-visual",
+        "independent-material",
+        "original-pointer-js"
+      ],
+      "aliases": [
+        "holographic tilt",
+        "全息卡片",
+        "鼠标倾斜",
+        "specular card"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original HTML/CSS; FX-050 optionally uses original short local JS. No copied vendor source, media, fonts or license-restricted graphics.",
+      "styleIds": [
+        "aether-orbit",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "portfolio",
+        "creative-site",
+        "game-companion"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v047/expressive-atoms.css",
+      "details": "styles/primitives/v047/README.md",
+      "spec": "registry/material-expansion-v047.json",
+      "demo": "playground/expressive-atoms-v047/index.html",
+      "verified": "Original CSS source, standalone HTML specimen and item-level docs checked for presence on 2026-11-12; no live app/mobile/visual accessibility certification.",
+      "handoff": {
+        "entry": "styles/primitives/v047/README.md",
+        "stack": "Native CSS + optional local ESM pointer adapter; not React export",
+        "instructions": "Select .fx47-holo-card CSS selectors and semantic HTML sample. Add original helper styles/primitives/v047/holo-card.js to enable pointer movement; respect reduced-motion. Preserve scoped fallbacks.",
+        "limitations": "Original bounded pointer-based tilt with local JS; anchor remains keyboard accessible, static reduced-motion mode. Not a gyroscope or real 3D model."
+      }
+    },
+    {
+      "id": "FX-051",
+      "type": "component",
+      "name": "Rubber stamp label / 橡皮印章标签",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v047",
+        "original-css-source",
+        "expressive-visual",
+        "independent-material",
+        "css-only"
+      ],
+      "aliases": [
+        "rubber stamp",
+        "档案印章",
+        "复古标签"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original HTML/CSS; FX-050 optionally uses original short local JS. No copied vendor source, media, fonts or license-restricted graphics.",
+      "styleIds": [
+        "editorial-warm",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "campaign",
+        "heritage"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v047/expressive-atoms.css",
+      "details": "styles/primitives/v047/README.md",
+      "spec": "registry/material-expansion-v047.json",
+      "demo": "playground/expressive-atoms-v047/index.html",
+      "verified": "Original CSS source, standalone HTML specimen and item-level docs checked for presence on 2026-11-12; no live app/mobile/visual accessibility certification.",
+      "handoff": {
+        "entry": "styles/primitives/v047/README.md",
+        "stack": "Native CSS + semantic HTML; not React export",
+        "instructions": "Select .fx47-stamp-label CSS selectors and semantic HTML sample. Preserve scoped fallbacks.",
+        "limitations": "CSS-only decorative label with readable DOM text; no custom font or stamp background image."
+      }
+    },
+    {
+      "id": "FX-052",
+      "type": "component",
+      "name": "Organic blob viewport / 有机形态媒体窗口",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v047",
+        "original-css-source",
+        "expressive-visual",
+        "independent-material",
+        "css-only"
+      ],
+      "aliases": [
+        "blob mask",
+        "流体裁切",
+        "不规则媒体窗口"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original HTML/CSS; FX-050 optionally uses original short local JS. No copied vendor source, media, fonts or license-restricted graphics.",
+      "styleIds": [
+        "organic-tactile",
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "lifestyle",
+        "portfolio",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v047/expressive-atoms.css",
+      "details": "styles/primitives/v047/README.md",
+      "spec": "registry/material-expansion-v047.json",
+      "demo": "playground/expressive-atoms-v047/index.html",
+      "verified": "Original CSS source, standalone HTML specimen and item-level docs checked for presence on 2026-11-12; no live app/mobile/visual accessibility certification.",
+      "handoff": {
+        "entry": "styles/primitives/v047/README.md",
+        "stack": "Native CSS + semantic HTML; not React export",
+        "instructions": "Select .fx47-blob-frame CSS selectors and semantic HTML sample. Preserve scoped fallbacks.",
+        "limitations": "Standalone CSS clipped visual sample; host replaces gradient with owned images/media and supplies appropriate alt text."
+      }
+    },
+    {
+      "id": "FX-053",
+      "type": "component",
+      "name": "Letterpress editorial drop cap / 活版首字下沉",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v047",
+        "original-css-source",
+        "expressive-visual",
+        "independent-material",
+        "css-only"
+      ],
+      "aliases": [
+        "drop cap",
+        "首字下沉",
+        "活版文章"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original HTML/CSS; FX-050 optionally uses original short local JS. No copied vendor source, media, fonts or license-restricted graphics.",
+      "styleIds": [
+        "editorial-warm",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "culture",
+        "reading"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v047/expressive-atoms.css",
+      "details": "styles/primitives/v047/README.md",
+      "spec": "registry/material-expansion-v047.json",
+      "demo": "playground/expressive-atoms-v047/index.html",
+      "verified": "Original CSS source, standalone HTML specimen and item-level docs checked for presence on 2026-11-12; no live app/mobile/visual accessibility certification.",
+      "handoff": {
+        "entry": "styles/primitives/v047/README.md",
+        "stack": "Native CSS + semantic HTML; not React export",
+        "instructions": "Select .fx47-dropcap CSS selectors and semantic HTML sample. Preserve scoped fallbacks.",
+        "limitations": "Semantic paragraph with CSS ::first-letter; needs target-language typography and responsive line-wrap review."
+      }
+    },
+    {
+      "id": "FX-054",
+      "type": "component",
+      "name": "Numbered chapter spine navigation / 编号章节侧脊导航",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v047",
+        "original-css-source",
+        "expressive-visual",
+        "independent-material",
+        "css-only"
+      ],
+      "aliases": [
+        "chapter spine",
+        "章节锚点",
+        "目录侧脊"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original HTML/CSS; FX-050 optionally uses original short local JS. No copied vendor source, media, fonts or license-restricted graphics.",
+      "styleIds": [
+        "type-led-minimal",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "portfolio",
+        "editorial",
+        "longform"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v047/expressive-atoms.css",
+      "details": "styles/primitives/v047/README.md",
+      "spec": "registry/material-expansion-v047.json",
+      "demo": "playground/expressive-atoms-v047/index.html",
+      "verified": "Original CSS source, standalone HTML specimen and item-level docs checked for presence on 2026-11-12; no live app/mobile/visual accessibility certification.",
+      "handoff": {
+        "entry": "styles/primitives/v047/README.md",
+        "stack": "Native CSS + semantic HTML; not React export",
+        "instructions": "Select .fx47-chapter-spine CSS selectors and semantic HTML sample. Preserve scoped fallbacks.",
+        "limitations": "Native semantic nav/ordered list/anchor targets; no automatic active-section detection or scrollspy."
+      }
+    },
+    {
+      "id": "VG-023",
+      "type": "component",
+      "name": "Microdot Field / 细点织理",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v047",
+        "original-svg",
+        "seamless-repeat-intent",
+        "surface-pattern",
+        "editable-vector",
+        "independent-material"
+      ],
+      "aliases": [
+        "微点纹理",
+        "microdot pattern"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG tile/pattern definition; no third-party texture, image or font.",
+      "styleIds": [
+        "type-led-minimal",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "background",
+        "editorial"
+      ],
+      "dependencies": [],
+      "path": "graphics/v047/patterns/microdot-field.svg",
+      "details": "graphics/v047/README.md",
+      "spec": "registry/material-expansion-v047.json",
+      "demo": "playground/surface-patterns-v047/index.html",
+      "verified": "Self-contained SVG with title/desc and 256×256 viewBox; repeated internal pattern period divides 256; visual edge checks in destination not performed.",
+      "handoff": {
+        "entry": "graphics/v047/README.md",
+        "stack": "Standalone SVG pattern source; use as background-image or img",
+        "instructions": "Use graphics/v047/patterns/microdot-field.svg independently; adjust background-size to desired texture density and review visible seams on target displays.",
+        "limitations": "Original wallpaper/surface material only. Not a product theme, shader, raster photo or guaranteed device-specific visual baseline."
+      }
+    },
+    {
+      "id": "VG-024",
+      "type": "component",
+      "name": "Herringbone Trace / 人字斜纹",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v047",
+        "original-svg",
+        "seamless-repeat-intent",
+        "surface-pattern",
+        "editable-vector",
+        "independent-material"
+      ],
+      "aliases": [
+        "人字纹",
+        "herringbone texture"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG tile/pattern definition; no third-party texture, image or font.",
+      "styleIds": [
+        "editorial-warm",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "surface",
+        "fashion"
+      ],
+      "dependencies": [],
+      "path": "graphics/v047/patterns/herringbone-trace.svg",
+      "details": "graphics/v047/README.md",
+      "spec": "registry/material-expansion-v047.json",
+      "demo": "playground/surface-patterns-v047/index.html",
+      "verified": "Self-contained SVG with title/desc and 256×256 viewBox; repeated internal pattern period divides 256; visual edge checks in destination not performed.",
+      "handoff": {
+        "entry": "graphics/v047/README.md",
+        "stack": "Standalone SVG pattern source; use as background-image or img",
+        "instructions": "Use graphics/v047/patterns/herringbone-trace.svg independently; adjust background-size to desired texture density and review visible seams on target displays.",
+        "limitations": "Original wallpaper/surface material only. Not a product theme, shader, raster photo or guaranteed device-specific visual baseline."
+      }
+    },
+    {
+      "id": "VG-025",
+      "type": "component",
+      "name": "Diamond Lozenge / 菱格织纹",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v047",
+        "original-svg",
+        "seamless-repeat-intent",
+        "surface-pattern",
+        "editable-vector",
+        "independent-material"
+      ],
+      "aliases": [
+        "菱形背景",
+        "diamond lattice"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG tile/pattern definition; no third-party texture, image or font.",
+      "styleIds": [
+        "paper-rebellion",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "poster",
+        "surface"
+      ],
+      "dependencies": [],
+      "path": "graphics/v047/patterns/diamond-lozenge.svg",
+      "details": "graphics/v047/README.md",
+      "spec": "registry/material-expansion-v047.json",
+      "demo": "playground/surface-patterns-v047/index.html",
+      "verified": "Self-contained SVG with title/desc and 256×256 viewBox; repeated internal pattern period divides 256; visual edge checks in destination not performed.",
+      "handoff": {
+        "entry": "graphics/v047/README.md",
+        "stack": "Standalone SVG pattern source; use as background-image or img",
+        "instructions": "Use graphics/v047/patterns/diamond-lozenge.svg independently; adjust background-size to desired texture density and review visible seams on target displays.",
+        "limitations": "Original wallpaper/surface material only. Not a product theme, shader, raster photo or guaranteed device-specific visual baseline."
+      }
+    },
+    {
+      "id": "VG-026",
+      "type": "component",
+      "name": "Halfmoon Lattice / 半月阵列",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v047",
+        "original-svg",
+        "seamless-repeat-intent",
+        "surface-pattern",
+        "editable-vector",
+        "independent-material"
+      ],
+      "aliases": [
+        "半月图案",
+        "scallop arches"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG tile/pattern definition; no third-party texture, image or font.",
+      "styleIds": [
+        "organic-tactile",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "background",
+        "campaign"
+      ],
+      "dependencies": [],
+      "path": "graphics/v047/patterns/halfmoon-lattice.svg",
+      "details": "graphics/v047/README.md",
+      "spec": "registry/material-expansion-v047.json",
+      "demo": "playground/surface-patterns-v047/index.html",
+      "verified": "Self-contained SVG with title/desc and 256×256 viewBox; repeated internal pattern period divides 256; visual edge checks in destination not performed.",
+      "handoff": {
+        "entry": "graphics/v047/README.md",
+        "stack": "Standalone SVG pattern source; use as background-image or img",
+        "instructions": "Use graphics/v047/patterns/halfmoon-lattice.svg independently; adjust background-size to desired texture density and review visible seams on target displays.",
+        "limitations": "Original wallpaper/surface material only. Not a product theme, shader, raster photo or guaranteed device-specific visual baseline."
+      }
+    },
+    {
+      "id": "VG-027",
+      "type": "component",
+      "name": "Crossstitch Pixel / 十字绣像素",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v047",
+        "original-svg",
+        "seamless-repeat-intent",
+        "surface-pattern",
+        "editable-vector",
+        "independent-material"
+      ],
+      "aliases": [
+        "像素织物",
+        "cross stitch"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG tile/pattern definition; no third-party texture, image or font.",
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "surface"
+      ],
+      "dependencies": [],
+      "path": "graphics/v047/patterns/crossstitch-pixels.svg",
+      "details": "graphics/v047/README.md",
+      "spec": "registry/material-expansion-v047.json",
+      "demo": "playground/surface-patterns-v047/index.html",
+      "verified": "Self-contained SVG with title/desc and 256×256 viewBox; repeated internal pattern period divides 256; visual edge checks in destination not performed.",
+      "handoff": {
+        "entry": "graphics/v047/README.md",
+        "stack": "Standalone SVG pattern source; use as background-image or img",
+        "instructions": "Use graphics/v047/patterns/crossstitch-pixels.svg independently; adjust background-size to desired texture density and review visible seams on target displays.",
+        "limitations": "Original wallpaper/surface material only. Not a product theme, shader, raster photo or guaranteed device-specific visual baseline."
+      }
+    },
+    {
+      "id": "VG-028",
+      "type": "component",
+      "name": "Modular Trace / 模块导线纹",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v047",
+        "original-svg",
+        "seamless-repeat-intent",
+        "surface-pattern",
+        "editable-vector",
+        "independent-material"
+      ],
+      "aliases": [
+        "科技背景",
+        "modular trace texture"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG tile/pattern definition; no third-party texture, image or font.",
+      "styleIds": [
+        "precision-dark",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "developer-tool",
+        "background"
+      ],
+      "dependencies": [],
+      "path": "graphics/v047/patterns/modular-trace.svg",
+      "details": "graphics/v047/README.md",
+      "spec": "registry/material-expansion-v047.json",
+      "demo": "playground/surface-patterns-v047/index.html",
+      "verified": "Self-contained SVG with title/desc and 256×256 viewBox; repeated internal pattern period divides 256; visual edge checks in destination not performed.",
+      "handoff": {
+        "entry": "graphics/v047/README.md",
+        "stack": "Standalone SVG pattern source; use as background-image or img",
+        "instructions": "Use graphics/v047/patterns/modular-trace.svg independently; adjust background-size to desired texture density and review visible seams on target displays.",
+        "limitations": "Original wallpaper/surface material only. Not a product theme, shader, raster photo or guaranteed device-specific visual baseline."
+      }
+    },
+    {
+      "id": "VG-029",
+      "type": "component",
+      "name": "Broken Checker / 断续棋盘格",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v047",
+        "original-svg",
+        "seamless-repeat-intent",
+        "surface-pattern",
+        "editable-vector",
+        "independent-material"
+      ],
+      "aliases": [
+        "断格纹理",
+        "checkerboard"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG tile/pattern definition; no third-party texture, image or font.",
+      "styleIds": [
+        "paper-rebellion",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "campaign",
+        "poster"
+      ],
+      "dependencies": [],
+      "path": "graphics/v047/patterns/broken-checker.svg",
+      "details": "graphics/v047/README.md",
+      "spec": "registry/material-expansion-v047.json",
+      "demo": "playground/surface-patterns-v047/index.html",
+      "verified": "Self-contained SVG with title/desc and 256×256 viewBox; repeated internal pattern period divides 256; visual edge checks in destination not performed.",
+      "handoff": {
+        "entry": "graphics/v047/README.md",
+        "stack": "Standalone SVG pattern source; use as background-image or img",
+        "instructions": "Use graphics/v047/patterns/broken-checker.svg independently; adjust background-size to desired texture density and review visible seams on target displays.",
+        "limitations": "Original wallpaper/surface material only. Not a product theme, shader, raster photo or guaranteed device-specific visual baseline."
+      }
+    },
+    {
+      "id": "VG-030",
+      "type": "component",
+      "name": "Contour Waves / 连续等高线",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v047",
+        "original-svg",
+        "seamless-repeat-intent",
+        "surface-pattern",
+        "editable-vector",
+        "independent-material"
+      ],
+      "aliases": [
+        "波纹背景",
+        "contour line tile"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG tile/pattern definition; no third-party texture, image or font.",
+      "styleIds": [
+        "aether-orbit",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "surface"
+      ],
+      "dependencies": [],
+      "path": "graphics/v047/patterns/contour-waves.svg",
+      "details": "graphics/v047/README.md",
+      "spec": "registry/material-expansion-v047.json",
+      "demo": "playground/surface-patterns-v047/index.html",
+      "verified": "Self-contained SVG with title/desc and 256×256 viewBox; repeated internal pattern period divides 256; visual edge checks in destination not performed.",
+      "handoff": {
+        "entry": "graphics/v047/README.md",
+        "stack": "Standalone SVG pattern source; use as background-image or img",
+        "instructions": "Use graphics/v047/patterns/contour-waves.svg independently; adjust background-size to desired texture density and review visible seams on target displays.",
+        "limitations": "Original wallpaper/surface material only. Not a product theme, shader, raster photo or guaranteed device-specific visual baseline."
+      }
+    },
+    {
+      "id": "VG-031",
+      "type": "component",
+      "name": "Glass Relief / 浮雕玻璃形态",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v047",
+        "original-svg",
+        "vector-scene",
+        "abstract-art",
+        "independent-material"
+      ],
+      "aliases": [
+        "glass bas relief",
+        "玻璃浮雕"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original vector drawing and editable geometry; no external source, image, model, font or scripts.",
+      "styleIds": [
+        "liquid-layer",
+        "aether-orbit"
+      ],
+      "applicationContexts": [
+        "hero-art",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "graphics/v047/scenes/glass-relief.svg",
+      "details": "graphics/v047/README.md",
+      "spec": "registry/material-expansion-v047.json",
+      "demo": "playground/vector-scenes-v047/index.html",
+      "verified": "Self-contained SVG source with title/description and 640×360 viewBox authored 2026-11-12; production design review remains outstanding.",
+      "handoff": {
+        "entry": "graphics/v047/README.md",
+        "stack": "Original independent SVG scene source; not runtime 3D or a React component",
+        "instructions": "Reference graphics/v047/scenes/glass-relief.svg in an img/media context or adapt original shape geometry; choose meaningful or decorative alt text.",
+        "limitations": "Static artistic concept only; not sensor data, WebGL physics, video playback or complete page."
+      }
+    },
+    {
+      "id": "VG-032",
+      "type": "component",
+      "name": "Paper Architecture / 折纸建筑层景",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v047",
+        "original-svg",
+        "vector-scene",
+        "abstract-art",
+        "independent-material"
+      ],
+      "aliases": [
+        "paper architecture",
+        "纸构建筑"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original vector drawing and editable geometry; no external source, image, model, font or scripts.",
+      "styleIds": [
+        "editorial-warm",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "culture",
+        "editorial"
+      ],
+      "dependencies": [],
+      "path": "graphics/v047/scenes/paper-architecture.svg",
+      "details": "graphics/v047/README.md",
+      "spec": "registry/material-expansion-v047.json",
+      "demo": "playground/vector-scenes-v047/index.html",
+      "verified": "Self-contained SVG source with title/description and 640×360 viewBox authored 2026-11-12; production design review remains outstanding.",
+      "handoff": {
+        "entry": "graphics/v047/README.md",
+        "stack": "Original independent SVG scene source; not runtime 3D or a React component",
+        "instructions": "Reference graphics/v047/scenes/paper-architecture.svg in an img/media context or adapt original shape geometry; choose meaningful or decorative alt text.",
+        "limitations": "Static artistic concept only; not sensor data, WebGL physics, video playback or complete page."
+      }
+    },
+    {
+      "id": "VG-033",
+      "type": "component",
+      "name": "Pixel Flora / 像素植物机械",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v047",
+        "original-svg",
+        "vector-scene",
+        "abstract-art",
+        "independent-material"
+      ],
+      "aliases": [
+        "pixel plant",
+        "像素植物"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original vector drawing and editable geometry; no external source, image, model, font or scripts.",
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "graphics/v047/scenes/pixel-flora.svg",
+      "details": "graphics/v047/README.md",
+      "spec": "registry/material-expansion-v047.json",
+      "demo": "playground/vector-scenes-v047/index.html",
+      "verified": "Self-contained SVG source with title/description and 640×360 viewBox authored 2026-11-12; production design review remains outstanding.",
+      "handoff": {
+        "entry": "graphics/v047/README.md",
+        "stack": "Original independent SVG scene source; not runtime 3D or a React component",
+        "instructions": "Reference graphics/v047/scenes/pixel-flora.svg in an img/media context or adapt original shape geometry; choose meaningful or decorative alt text.",
+        "limitations": "Static artistic concept only; not sensor data, WebGL physics, video playback or complete page."
+      }
+    },
+    {
+      "id": "VG-034",
+      "type": "component",
+      "name": "Optical Portal / 视错觉空间入口",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v047",
+        "original-svg",
+        "vector-scene",
+        "abstract-art",
+        "independent-material"
+      ],
+      "aliases": [
+        "optical portal",
+        "几何空间洞"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original vector drawing and editable geometry; no external source, image, model, font or scripts.",
+      "styleIds": [
+        "signal-noir",
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "poster",
+        "brand"
+      ],
+      "dependencies": [],
+      "path": "graphics/v047/scenes/optical-portal.svg",
+      "details": "graphics/v047/README.md",
+      "spec": "registry/material-expansion-v047.json",
+      "demo": "playground/vector-scenes-v047/index.html",
+      "verified": "Self-contained SVG source with title/description and 640×360 viewBox authored 2026-11-12; production design review remains outstanding.",
+      "handoff": {
+        "entry": "graphics/v047/README.md",
+        "stack": "Original independent SVG scene source; not runtime 3D or a React component",
+        "instructions": "Reference graphics/v047/scenes/optical-portal.svg in an img/media context or adapt original shape geometry; choose meaningful or decorative alt text.",
+        "limitations": "Static artistic concept only; not sensor data, WebGL physics, video playback or complete page."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",

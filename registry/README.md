@@ -11,6 +11,7 @@ This directory is the **authoritative index** for choosing existing design refer
 | `styles.json` | Independent style IDs, token/spec/demo entrypoints; **no repository default** |
 | `style-assembly.json` | Fourteen per-style page structure and interaction handoffs; real template, experience-recipe and React-export references. Used by `scripts/style-assembly.mjs`; not generated production pages. |
 | `style-facets.json` | One-to-one theme selection facets: task aliases, structural layout, material, interaction, device and density; references real demo paths. Pair with `scripts/style-match.mjs` and `scripts/select-style.mjs` for explainable matching, not an ML style rank. |
+| `material-expansion-v047.json` | 6 项原创实验排印/材质/导航 CSS 源码 FX-049..054 + 8 项周期自包含的 SVG 纹理图案 VG-023..030 + 4 份 SVG 场景 VG-031..034；均是素材原件而非应用，FX-050 可选单独 Pointer JS |
 | `material-expansion-v046.json` | 12 个原创表单/数据/对比/排印 CSS 原子 FX-037..048，6 个原创独立 SVG VG-017..022；含一个局部前后对比 JS 适配器，没有 React 包导出 |
 | `material-expansion-v045.json` | 10 个原创移动端/音频/状态原生 CSS 组件 FX-027..036、4 个 SVG VG-013..016、5 个固定版本研究链接 REF-132..136；源码与预览分别可追踪，不增 React 公共导出 |
 | `material-expansion-v044.json` | 12 个原创原生 CSS 界面组件 FX-015..026 与 6 个可单独使用的 SVG 图形 VG-007..012；全部真实存在、可引用、按主题标签独立检索。仅保留既有基础校验，没有新增测试框架或 React 包导出 |

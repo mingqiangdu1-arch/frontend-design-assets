@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-11-12 · V0.47 expressive typography, repeatable surface patterns and vector scenes
+
+- Added **six original CSS/HTML visual materials** FX-049..054: chromatic echo title, accessible pointer-responsive holographic link card (tiny optional local JS), paper stamp label, organic blob media viewport, editorial drop cap and real chapter anchor spine.
+- Added **eight truly repeatable self-contained SVG pattern sources** VG-023..030: microdot, herringbone, diamond lattice, halfmoon arcs, crossstitch pixels, modular traces, broken checker and contour waves. SVG pattern periods (32/64) exactly divide the 256×256 source bounds.
+- Added **four standalone original 640×360 vector scenes** VG-031..034: glass relief, paper architecture, pixel flora and optical portal.
+- [Structured source index](registry/material-expansion-v047.json) · [CSS sources](styles/primitives/v047/) · [surface tile gallery](playground/surface-patterns-v047/index.html) · [scenes](graphics/v047/scenes/) · [research](docs/research/material-expansion-v047.md).
+- Catalog **392 → 410**; no new React public exports, style IDs, third-party dependencies, application features, editor/builder or test suite. Basic path/schema and tile-period checks only; no real device/visual/a11y sign-off.
+
+
 ## 2026-11-12 · V0.46 original form, comparison, data and expressive design materials
 
 - Added **12 independent original native CSS/HTML component atoms** FX-037..048: email validation, file chooser, native color input, search shortcut strip, range-driven before/after comparison, histogram, calendar intensity grid, semantic code diff, state notice, native progress, poster typography and perforated ticket card.

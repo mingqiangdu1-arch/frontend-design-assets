@@ -1,0 +1,30 @@
+/* V0.47 · ORIGINAL typographic / material / navigation fragments.
+ * No global tokens or remote media. Each .fx47-* class family is opt-in.
+ * FX-050 uses an optional local JS adapter; all other examples are CSS-only.
+ */
+.fx47-chromatic-type{display:inline-block;max-width:100%;margin:0;color:var(--fx47-chroma-ink,#f7f3df);background:var(--fx47-chroma-bg,#162c36);padding:.55em .65em;border-radius:.14em;overflow-wrap:anywhere;font:950 clamp(2.1rem,6vw,4rem)/.95 system-ui,sans-serif;letter-spacing:-.07em;text-shadow:-.065em .035em #ee638c,.066em -.035em #5bded4;isolation:isolate}
+.fx47-chromatic-type span{display:block;font:700 .16em/1.2 ui-monospace,monospace;letter-spacing:.18em;text-shadow:none;margin:.8em 0 0}
+.fx47-holo-card{--fx47-x:50%;--fx47-y:50%;--fx47-rx:0deg;--fx47-ry:0deg;position:relative;isolation:isolate;display:flex;flex-direction:column;justify-content:space-between;gap:2.5rem;width:min(100%,19rem);min-height:13rem;padding:1.4rem;overflow:hidden;border-radius:1.15rem;border:1px solid #a3cfce;background:linear-gradient(135deg,#212d50 0%,#144a55 52%,#40305f 100%);color:#f2fcf7;text-decoration:none;box-shadow:0 13px 28px rgb(19 42 56 / 22%);font:650 .82rem/1.4 system-ui,sans-serif;transform:perspective(600px) rotateX(var(--fx47-rx)) rotateY(var(--fx47-ry));transition:transform .18s ease,box-shadow .18s ease}
+.fx47-holo-card:before{content:"";position:absolute;inset:-70%;z-index:-1;pointer-events:none;background:conic-gradient(from 30deg,#f7c87b99,#69b2fb70,#eaa7e195,#74edca88,#f7c87b99);transform:rotate(24deg);opacity:.62;mix-blend-mode:screen}
+.fx47-holo-card:after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(circle at var(--fx47-x) var(--fx47-y),rgb(255 255 255 / 38%),transparent 40%);opacity:.75}
+.fx47-holo-card strong{font-size:1.4rem;line-height:1.1;font-weight:850;letter-spacing:-.04em}
+.fx47-holo-card small{font:700 .65rem ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase}
+.fx47-holo-card:focus-visible{outline:3px solid #20638f;outline-offset:5px;transform:none}
+.fx47-holo-card:hover{box-shadow:0 18px 37px rgb(20 45 60 / 28%)}
+.fx47-stamp-label{display:inline-block;max-width:100%;padding:.45em .75em;border:.18em double currentColor;outline:1px dotted currentColor;outline-offset:-.34em;background:var(--fx47-stamp-bg,#f0e7d5);color:var(--fx47-stamp-ink,#9a4737);font:900 clamp(1rem,3.6vw,1.45rem)/1.1 ui-monospace,Consolas,monospace;letter-spacing:.075em;text-transform:uppercase;transform:rotate(-5deg);text-align:center;box-shadow:3px 3px 0 rgb(120 80 60 / 13%);overflow-wrap:anywhere}
+.fx47-blob-frame{display:grid;gap:.6rem;margin:0;width:min(100%,20rem);color:#2e5650;font:650 .82rem/1.4 system-ui}
+.fx47-blob-frame .art{width:100%;aspect-ratio:1.35;background:radial-gradient(circle at 70% 28%,#ffe2a5 0 12%,transparent 13%),radial-gradient(ellipse at 37% 58%,#e87e6a 0 32%,transparent 33%),linear-gradient(35deg,#2f828a,#bdd5a2);clip-path:polygon(12% 2%,63% 0,94% 18%,100% 59%,79% 94%,34% 100%,2% 77%,0 29%);border-radius:34% 60% 30% 46% / 36% 25% 61% 45%;transform:rotate(-2deg)}
+.fx47-blob-frame figcaption{text-align:center;color:#4d6c67}
+.fx47-dropcap{max-width:30rem;padding:1.1rem 1.25rem 1.4rem;border-block:1px solid #bba98c;background:#f7f1e4;color:#2d3b38;font:500 1rem/1.65 Georgia,serif}
+.fx47-dropcap p{margin:0;text-wrap:pretty}.fx47-dropcap p::first-letter{float:left;margin:.035em .14em 0 0;color:#a64d3c;font:800 4.4em/.77 Georgia,serif}
+.fx47-dropcap small{display:block;margin-top:1rem;border-top:1px solid #c6b9a5;padding-top:.5rem;color:#815d4d;font:700 .73rem ui-monospace,monospace;letter-spacing:.08em}
+.fx47-chapter-spine{width:min(100%,23rem);font:650 .87rem/1.4 system-ui,sans-serif}
+.fx47-chapter-spine ol{margin:0;padding:0;list-style:none;border-left:2px solid #9ab2a7}
+.fx47-chapter-spine li{margin:0 0 .35rem -.05rem}
+.fx47-chapter-spine a{display:flex;align-items:center;gap:1rem;min-height:3.25rem;padding:.5rem .6rem .5rem 0;border-left:4px solid transparent;color:#294a4b;text-decoration:none;transition:background-color .18s,color .18s}
+.fx47-chapter-spine a:is(:hover,:focus-visible){background:#edf5ef;color:#1a6256;border-left-color:#24766c;outline-offset:3px}
+.fx47-chapter-spine a:focus-visible{outline:3px solid #2a7d98}
+.fx47-chapter-spine .num{display:grid;place-items:center;flex:none;width:2.5rem;height:2.5rem;margin-left:-1.3rem;background:#e8eddf;border:1px solid #71938a;border-radius:50%;font:850 .75rem ui-monospace,monospace}
+.fx47-chapter-spine strong{display:block}.fx47-chapter-spine small{display:block;font-size:.7rem;color:#68817b;margin-top:.2rem}
+@media(prefers-reduced-motion:reduce){.fx47-holo-card{transition:none!important;transform:none!important}.fx47-holo-card:before{transform:none!important}.fx47-chapter-spine a{transition:none}}
+@media(forced-colors:active){.fx47-chromatic-type,.fx47-holo-card,.fx47-stamp-label,.fx47-blob-frame .art,.fx47-dropcap,.fx47-chapter-spine .num{background:Canvas;color:CanvasText;border:1px solid CanvasText}.fx47-chromatic-type{text-shadow:none}.fx47-holo-card:before,.fx47-holo-card:after{display:none}.fx47-chapter-spine a:is(:hover,:focus-visible){outline:2px solid Highlight}}

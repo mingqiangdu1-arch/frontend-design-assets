@@ -1,0 +1,468 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.47.0",
+  "date": "2026-11-12",
+  "focus": "Material-first: 6 original expressive CSS/HTML atoms with one optional local pointer JS, 8 reusable repeating SVG patterns and 4 independent vector scenes.",
+  "previousAssetCount": 392,
+  "newAssetCount": 18,
+  "expectedAssetCount": 410,
+  "reactExportsAdded": 0,
+  "styleIdsAdded": 0,
+  "testSuitesAdded": 0,
+  "externalMediaCopied": false,
+  "thirdPartyCodeCopied": false,
+  "sourceFiles": [
+    "registry/material-expansion-v047.json",
+    "docs/research/material-expansion-v047.md",
+    "styles/primitives/v047/expressive-atoms.css",
+    "styles/primitives/v047/holo-card.js",
+    "styles/primitives/v047/README.md",
+    "playground/expressive-atoms-v047/index.html",
+    "graphics/v047/README.md",
+    "playground/surface-patterns-v047/index.html",
+    "playground/vector-scenes-v047/index.html",
+    "graphics/v047/patterns/microdot-field.svg",
+    "graphics/v047/patterns/herringbone-trace.svg",
+    "graphics/v047/patterns/diamond-lozenge.svg",
+    "graphics/v047/patterns/halfmoon-lattice.svg",
+    "graphics/v047/patterns/crossstitch-pixels.svg",
+    "graphics/v047/patterns/modular-trace.svg",
+    "graphics/v047/patterns/broken-checker.svg",
+    "graphics/v047/patterns/contour-waves.svg",
+    "graphics/v047/scenes/glass-relief.svg",
+    "graphics/v047/scenes/paper-architecture.svg",
+    "graphics/v047/scenes/pixel-flora.svg",
+    "graphics/v047/scenes/optical-portal.svg"
+  ],
+  "cssAtoms": [
+    {
+      "id": "FX-049",
+      "name": "Chromatic echo typography / 色差重影排印",
+      "className": "fx47-chromatic-type",
+      "contexts": [
+        "editorial",
+        "creative-site",
+        "music-brand"
+      ],
+      "styles": [
+        "signal-noir",
+        "type-led-minimal"
+      ],
+      "aliases": [
+        "chromatic text",
+        "RGB split typography",
+        "色差文字",
+        "双色字影"
+      ],
+      "limit": "Decorative text-shadow on real accessible HTML heading. No duplicate content or motion.",
+      "source": "styles/primitives/v047/expressive-atoms.css",
+      "readme": "styles/primitives/v047/README.md",
+      "demo": "playground/expressive-atoms-v047/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-050",
+      "name": "Pointer-responsive holographic card / 指针响应全息卡",
+      "className": "fx47-holo-card",
+      "contexts": [
+        "portfolio",
+        "creative-site",
+        "game-companion"
+      ],
+      "styles": [
+        "aether-orbit",
+        "precision-dark"
+      ],
+      "aliases": [
+        "holographic tilt",
+        "全息卡片",
+        "鼠标倾斜",
+        "specular card"
+      ],
+      "limit": "Original bounded pointer-based tilt with local JS; anchor remains keyboard accessible, static reduced-motion mode. Not a gyroscope or real 3D model.",
+      "optionalJS": "styles/primitives/v047/holo-card.js",
+      "source": "styles/primitives/v047/expressive-atoms.css",
+      "readme": "styles/primitives/v047/README.md",
+      "demo": "playground/expressive-atoms-v047/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html-local-js",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-051",
+      "name": "Rubber stamp label / 橡皮印章标签",
+      "className": "fx47-stamp-label",
+      "contexts": [
+        "editorial",
+        "campaign",
+        "heritage"
+      ],
+      "styles": [
+        "editorial-warm",
+        "paper-rebellion"
+      ],
+      "aliases": [
+        "rubber stamp",
+        "档案印章",
+        "复古标签"
+      ],
+      "limit": "CSS-only decorative label with readable DOM text; no custom font or stamp background image.",
+      "source": "styles/primitives/v047/expressive-atoms.css",
+      "readme": "styles/primitives/v047/README.md",
+      "demo": "playground/expressive-atoms-v047/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-052",
+      "name": "Organic blob viewport / 有机形态媒体窗口",
+      "className": "fx47-blob-frame",
+      "contexts": [
+        "lifestyle",
+        "portfolio",
+        "creative-site"
+      ],
+      "styles": [
+        "organic-tactile",
+        "shape-expressive"
+      ],
+      "aliases": [
+        "blob mask",
+        "流体裁切",
+        "不规则媒体窗口"
+      ],
+      "limit": "Standalone CSS clipped visual sample; host replaces gradient with owned images/media and supplies appropriate alt text.",
+      "source": "styles/primitives/v047/expressive-atoms.css",
+      "readme": "styles/primitives/v047/README.md",
+      "demo": "playground/expressive-atoms-v047/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-053",
+      "name": "Letterpress editorial drop cap / 活版首字下沉",
+      "className": "fx47-dropcap",
+      "contexts": [
+        "editorial",
+        "culture",
+        "reading"
+      ],
+      "styles": [
+        "editorial-warm",
+        "type-led-minimal"
+      ],
+      "aliases": [
+        "drop cap",
+        "首字下沉",
+        "活版文章"
+      ],
+      "limit": "Semantic paragraph with CSS ::first-letter; needs target-language typography and responsive line-wrap review.",
+      "source": "styles/primitives/v047/expressive-atoms.css",
+      "readme": "styles/primitives/v047/README.md",
+      "demo": "playground/expressive-atoms-v047/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-054",
+      "name": "Numbered chapter spine navigation / 编号章节侧脊导航",
+      "className": "fx47-chapter-spine",
+      "contexts": [
+        "portfolio",
+        "editorial",
+        "longform"
+      ],
+      "styles": [
+        "type-led-minimal",
+        "paper-rebellion"
+      ],
+      "aliases": [
+        "chapter spine",
+        "章节锚点",
+        "目录侧脊"
+      ],
+      "limit": "Native semantic nav/ordered list/anchor targets; no automatic active-section detection or scrollspy.",
+      "source": "styles/primitives/v047/expressive-atoms.css",
+      "readme": "styles/primitives/v047/README.md",
+      "demo": "playground/expressive-atoms-v047/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html",
+      "notReactExport": true
+    }
+  ],
+  "repeatablePatterns": [
+    {
+      "id": "VG-023",
+      "name": "Microdot Field / 细点织理",
+      "aliases": [
+        "微点纹理",
+        "microdot pattern"
+      ],
+      "styleIds": [
+        "type-led-minimal",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "background",
+        "editorial"
+      ],
+      "source": "graphics/v047/patterns/microdot-field.svg",
+      "tilePeriod": 32,
+      "size": "256x256",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "demo": "playground/surface-patterns-v047/index.html"
+    },
+    {
+      "id": "VG-024",
+      "name": "Herringbone Trace / 人字斜纹",
+      "aliases": [
+        "人字纹",
+        "herringbone texture"
+      ],
+      "styleIds": [
+        "editorial-warm",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "surface",
+        "fashion"
+      ],
+      "source": "graphics/v047/patterns/herringbone-trace.svg",
+      "tilePeriod": 32,
+      "size": "256x256",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "demo": "playground/surface-patterns-v047/index.html"
+    },
+    {
+      "id": "VG-025",
+      "name": "Diamond Lozenge / 菱格织纹",
+      "aliases": [
+        "菱形背景",
+        "diamond lattice"
+      ],
+      "styleIds": [
+        "paper-rebellion",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "poster",
+        "surface"
+      ],
+      "source": "graphics/v047/patterns/diamond-lozenge.svg",
+      "tilePeriod": 64,
+      "size": "256x256",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "demo": "playground/surface-patterns-v047/index.html"
+    },
+    {
+      "id": "VG-026",
+      "name": "Halfmoon Lattice / 半月阵列",
+      "aliases": [
+        "半月图案",
+        "scallop arches"
+      ],
+      "styleIds": [
+        "organic-tactile",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "background",
+        "campaign"
+      ],
+      "source": "graphics/v047/patterns/halfmoon-lattice.svg",
+      "tilePeriod": 64,
+      "size": "256x256",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "demo": "playground/surface-patterns-v047/index.html"
+    },
+    {
+      "id": "VG-027",
+      "name": "Crossstitch Pixel / 十字绣像素",
+      "aliases": [
+        "像素织物",
+        "cross stitch"
+      ],
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "surface"
+      ],
+      "source": "graphics/v047/patterns/crossstitch-pixels.svg",
+      "tilePeriod": 32,
+      "size": "256x256",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "demo": "playground/surface-patterns-v047/index.html"
+    },
+    {
+      "id": "VG-028",
+      "name": "Modular Trace / 模块导线纹",
+      "aliases": [
+        "科技背景",
+        "modular trace texture"
+      ],
+      "styleIds": [
+        "precision-dark",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "developer-tool",
+        "background"
+      ],
+      "source": "graphics/v047/patterns/modular-trace.svg",
+      "tilePeriod": 64,
+      "size": "256x256",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "demo": "playground/surface-patterns-v047/index.html"
+    },
+    {
+      "id": "VG-029",
+      "name": "Broken Checker / 断续棋盘格",
+      "aliases": [
+        "断格纹理",
+        "checkerboard"
+      ],
+      "styleIds": [
+        "paper-rebellion",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "campaign",
+        "poster"
+      ],
+      "source": "graphics/v047/patterns/broken-checker.svg",
+      "tilePeriod": 64,
+      "size": "256x256",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "demo": "playground/surface-patterns-v047/index.html"
+    },
+    {
+      "id": "VG-030",
+      "name": "Contour Waves / 连续等高线",
+      "aliases": [
+        "波纹背景",
+        "contour line tile"
+      ],
+      "styleIds": [
+        "aether-orbit",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "surface"
+      ],
+      "source": "graphics/v047/patterns/contour-waves.svg",
+      "tilePeriod": 64,
+      "size": "256x256",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "demo": "playground/surface-patterns-v047/index.html"
+    }
+  ],
+  "vectorScenes": [
+    {
+      "id": "VG-031",
+      "name": "Glass Relief / 浮雕玻璃形态",
+      "aliases": [
+        "glass bas relief",
+        "玻璃浮雕"
+      ],
+      "styleIds": [
+        "liquid-layer",
+        "aether-orbit"
+      ],
+      "applicationContexts": [
+        "hero-art",
+        "creative-site"
+      ],
+      "source": "graphics/v047/scenes/glass-relief.svg",
+      "size": "640x360",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "demo": "playground/vector-scenes-v047/index.html"
+    },
+    {
+      "id": "VG-032",
+      "name": "Paper Architecture / 折纸建筑层景",
+      "aliases": [
+        "paper architecture",
+        "纸构建筑"
+      ],
+      "styleIds": [
+        "editorial-warm",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "culture",
+        "editorial"
+      ],
+      "source": "graphics/v047/scenes/paper-architecture.svg",
+      "size": "640x360",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "demo": "playground/vector-scenes-v047/index.html"
+    },
+    {
+      "id": "VG-033",
+      "name": "Pixel Flora / 像素植物机械",
+      "aliases": [
+        "pixel plant",
+        "像素植物"
+      ],
+      "styleIds": [
+        "pixel-arcade",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "game-companion",
+        "creative-site"
+      ],
+      "source": "graphics/v047/scenes/pixel-flora.svg",
+      "size": "640x360",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "demo": "playground/vector-scenes-v047/index.html"
+    },
+    {
+      "id": "VG-034",
+      "name": "Optical Portal / 视错觉空间入口",
+      "aliases": [
+        "optical portal",
+        "几何空间洞"
+      ],
+      "styleIds": [
+        "signal-noir",
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "poster",
+        "brand"
+      ],
+      "source": "graphics/v047/scenes/optical-portal.svg",
+      "size": "640x360",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "demo": "playground/vector-scenes-v047/index.html"
+    }
+  ]
+}
