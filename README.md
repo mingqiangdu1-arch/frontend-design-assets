@@ -23,6 +23,7 @@
 | 创意编辑微控件、线性设计图标、透明边框 | [V0.49 研究](docs/research/material-expansion-v049.md) · [7 项编辑控件源码](styles/primitives/v049/README.md) · [16 份独立 SVG](graphics/v049/README.md) | 渐变角度、二维焦点、色盘、印刷安全线、混合模式、网格密度、轨迹微动效；技术线图标及多风格装饰边框 |
 | 原创印刷质感、数据叙事图与双比例插画 | [V0.50 研究](docs/research/material-expansion-v050.md) · [8 个 CSS 原件](styles/primitives/v050/README.md) · [10 个独立 SVG](graphics/v050/README.md) | 双色孔版印刷风格、报纸分栏、剪贴图、斜率／区间／哑铃比较图、证据索引；透明印刷覆盖层、概念图和独立横竖构图 |
 | 实验动效、非标准排版、SVG 透明遮罩 | [V0.51 研究](docs/research/material-expansion-v051.md) · [7 项独立 CSS/交互](styles/primitives/v051/README.md) · [8 个 SVG 原件](graphics/v051/README.md) | 文字循环带、错行标题、指针光圈、原生翻面按钮、CSS 滚读轨、剪角链接、竖排书脊；4 个 alpha mask-image 与 4 个自包含 SVG 动效 |
+| 原创程序化绘图、伪 3D CSS、空间插画 | [V0.52 研究](docs/research/material-expansion-v052.md) · [5 个 Canvas 算法 + 4 项 CSS](styles/primitives/v052/README.md) · [6 份原创 SVG](graphics/v052/README.md) | 确定性种子等高线、扰动三角镶片、李萨如光轨、点描沙丘、等距体素城景、亚克力叠层、原生折页门、材质色盘和伪 3D 矢量场景 |
 | 查找并复用 React 组件 | [组件登记](registry/components.json) · [组件源码](packages/ui/src/) · [组件文档](packages/ui/README.md) | 真实 TSX/CSS、API、四套显式兼容主题和适配限制 |
 | 参考页面结构素材 | [页面模板](registry/page-templates.json) · [组装指南](docs/assembly/README.md) · [独立 Demo](playground/page-blueprints/) | 可复用分区、构图和交互案例；真实页面开发须在外部项目进行 |
 | 检索外部专项技术与视觉资源 | [V0.30 专题资源](docs/research/specialized-resources-v030.md) · [结构化资源索引](registry/specialized-resources-v030.json) | 17 个画布/富文本、地图数据、3D 与移动交互来源；只做研究与素材交接，不安装到本库 |

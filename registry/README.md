@@ -11,6 +11,7 @@ This directory is the **authoritative index** for choosing existing design refer
 | `styles.json` | Independent style IDs, token/spec/demo entrypoints; **no repository default** |
 | `style-assembly.json` | Fourteen per-style page structure and interaction handoffs; real template, experience-recipe and React-export references. Used by `scripts/style-assembly.mjs`; not generated production pages. |
 | `style-facets.json` | One-to-one theme selection facets: task aliases, structural layout, material, interaction, device and density; references real demo paths. Pair with `scripts/style-match.mjs` and `scripts/select-style.mjs` for explainable matching, not an ML style rank. |
+| `material-expansion-v052.json` | 5 个可复现种子的原生 Canvas 2D 绘图算法 FX-085..089 + 4 个独立空间 CSS 原件 FX-090..093 + 6 个独立 SVG 伪 3D 场景 VG-081..086；示例无真实三维引擎、生产级设备认证 |
 | `material-expansion-v051.json` | 7 个原创动效/特殊版式原子 FX-078..084，4 个 CSS mask-image 专用白形 SVG VG-073..076，4 个自包含 CSS 悬停动画 SVG VG-077..080；含减少动效与按源文件提取边界 |
 | `material-expansion-v050.json` | V0.50 新增 8 个印刷／编辑排版／证据图形 CSS/HTML 原件 FX-070..077、4 个独立透明印刷覆盖 SVG VG-063..066、4 个概念图 VG-067..070、2 个横竖分别构图 SVG VG-071..072；静态假设数据不等于真实证据 |
 | `material-expansion-v049.json` | 7 项独立原创创意编辑微控件 FX-063..069（4 项局部 JS 适配）与 12 项技术线性图标 SVG VG-047..058、4 项透明装饰框角 VG-059..062；均需按原始源码与宿主边界取用 |

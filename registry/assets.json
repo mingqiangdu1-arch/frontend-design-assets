@@ -19188,6 +19188,657 @@
         "instructions": "Use graphics/v051/motion/ripple-emblem-motion.svg decoratively as img or SVG, choose alt semantics. Hover motion is decoration, not keyboard action. Test target browser SVG CSS behavior.",
         "limitations": "Hover-only decorative SVG animation, not keyboard-triggered when used as img, and not production cross-browser certified."
       }
+    },
+    {
+      "id": "FX-085",
+      "type": "component",
+      "name": "Seeded contour harmonics / 种子谐波等高线",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v052",
+        "original-canvas",
+        "seeded-procedural",
+        "deterministic-art",
+        "standalone-source",
+        "replayable-seed"
+      ],
+      "aliases": [
+        "contour",
+        "程序绘图",
+        "Seeded contour harmonics"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original local JavaScript 2D Canvas drawing algorithms and seeded PRNG; no third-party code, fonts, images, packages or dataset.",
+      "styleIds": [
+        "organic-tactile",
+        "aether-orbit"
+      ],
+      "applicationContexts": [
+        "generative-art",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v052/procedural-figures.js",
+      "details": "styles/primitives/v052/README.md",
+      "spec": "registry/material-expansion-v052.json",
+      "demo": "playground/procedural-depth-v052/index.html",
+      "verified": "Original Canvas renderer, source algorithm, native button and seed controls committed 2026-11-12; actual browser/device performance and production rendering not tested.",
+      "handoff": {
+        "entry": "styles/primitives/v052/README.md",
+        "stack": "Native 2D Canvas + original deterministic JS and opt-in scoped CSS; no React export",
+        "instructions": "Use styles/primitives/v052/procedural-figures.js `data-kind=\"contour\"` plus matching playground/procedural-depth-v052/index.html and canvas CSS. Keep semantic text alternative and seed replay.",
+        "limitations": "Seeded static 2D harmonic paths, not GIS topography, height measurements or a shader."
+      }
+    },
+    {
+      "id": "FX-086",
+      "type": "component",
+      "name": "Jittered triangle relief / 扰动三角镶片",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v052",
+        "original-canvas",
+        "seeded-procedural",
+        "deterministic-art",
+        "standalone-source",
+        "replayable-seed"
+      ],
+      "aliases": [
+        "facets",
+        "程序绘图",
+        "Jittered triangle relief"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original local JavaScript 2D Canvas drawing algorithms and seeded PRNG; no third-party code, fonts, images, packages or dataset.",
+      "styleIds": [
+        "shape-expressive",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "generative-art",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v052/procedural-figures.js",
+      "details": "styles/primitives/v052/README.md",
+      "spec": "registry/material-expansion-v052.json",
+      "demo": "playground/procedural-depth-v052/index.html",
+      "verified": "Original Canvas renderer, source algorithm, native button and seed controls committed 2026-11-12; actual browser/device performance and production rendering not tested.",
+      "handoff": {
+        "entry": "styles/primitives/v052/README.md",
+        "stack": "Native 2D Canvas + original deterministic JS and opt-in scoped CSS; no React export",
+        "instructions": "Use styles/primitives/v052/procedural-figures.js `data-kind=\"facets\"` plus matching playground/procedural-depth-v052/index.html and canvas CSS. Keep semantic text alternative and seed replay.",
+        "limitations": "Triangles from a seeded jittered rectangular grid, not a Delaunay mesh solver or 3D object."
+      }
+    },
+    {
+      "id": "FX-087",
+      "type": "component",
+      "name": "Lissajous light trails / 李萨如光轨",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v052",
+        "original-canvas",
+        "seeded-procedural",
+        "deterministic-art",
+        "standalone-source",
+        "replayable-seed"
+      ],
+      "aliases": [
+        "lissajous",
+        "程序绘图",
+        "Lissajous light trails"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original local JavaScript 2D Canvas drawing algorithms and seeded PRNG; no third-party code, fonts, images, packages or dataset.",
+      "styleIds": [
+        "precision-dark",
+        "aether-orbit"
+      ],
+      "applicationContexts": [
+        "generative-art",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v052/procedural-figures.js",
+      "details": "styles/primitives/v052/README.md",
+      "spec": "registry/material-expansion-v052.json",
+      "demo": "playground/procedural-depth-v052/index.html",
+      "verified": "Original Canvas renderer, source algorithm, native button and seed controls committed 2026-11-12; actual browser/device performance and production rendering not tested.",
+      "handoff": {
+        "entry": "styles/primitives/v052/README.md",
+        "stack": "Native 2D Canvas + original deterministic JS and opt-in scoped CSS; no React export",
+        "instructions": "Use styles/primitives/v052/procedural-figures.js `data-kind=\"lissajous\"` plus matching playground/procedural-depth-v052/index.html and canvas CSS. Keep semantic text alternative and seed replay.",
+        "limitations": "Original parametric 2D curves, not an oscilloscope or audio-connected signal."
+      }
+    },
+    {
+      "id": "FX-088",
+      "type": "component",
+      "name": "Stipple dune field / 沙丘点描场",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v052",
+        "original-canvas",
+        "seeded-procedural",
+        "deterministic-art",
+        "standalone-source",
+        "replayable-seed"
+      ],
+      "aliases": [
+        "stipple",
+        "程序绘图",
+        "Stipple dune field"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original local JavaScript 2D Canvas drawing algorithms and seeded PRNG; no third-party code, fonts, images, packages or dataset.",
+      "styleIds": [
+        "editorial-warm",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "generative-art",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v052/procedural-figures.js",
+      "details": "styles/primitives/v052/README.md",
+      "spec": "registry/material-expansion-v052.json",
+      "demo": "playground/procedural-depth-v052/index.html",
+      "verified": "Original Canvas renderer, source algorithm, native button and seed controls committed 2026-11-12; actual browser/device performance and production rendering not tested.",
+      "handoff": {
+        "entry": "styles/primitives/v052/README.md",
+        "stack": "Native 2D Canvas + original deterministic JS and opt-in scoped CSS; no React export",
+        "instructions": "Use styles/primitives/v052/procedural-figures.js `data-kind=\"stipple\"` plus matching playground/procedural-depth-v052/index.html and canvas CSS. Keep semantic text alternative and seed replay.",
+        "limitations": "Seeded decorative particle density, not physical sand simulation or photograph."
+      }
+    },
+    {
+      "id": "FX-089",
+      "type": "component",
+      "name": "Projected voxel skyline / 投影体素城景",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v052",
+        "original-canvas",
+        "seeded-procedural",
+        "deterministic-art",
+        "standalone-source",
+        "replayable-seed"
+      ],
+      "aliases": [
+        "voxel",
+        "程序绘图",
+        "Projected voxel skyline"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original local JavaScript 2D Canvas drawing algorithms and seeded PRNG; no third-party code, fonts, images, packages or dataset.",
+      "styleIds": [
+        "pixel-arcade",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "generative-art",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v052/procedural-figures.js",
+      "details": "styles/primitives/v052/README.md",
+      "spec": "registry/material-expansion-v052.json",
+      "demo": "playground/procedural-depth-v052/index.html",
+      "verified": "Original Canvas renderer, source algorithm, native button and seed controls committed 2026-11-12; actual browser/device performance and production rendering not tested.",
+      "handoff": {
+        "entry": "styles/primitives/v052/README.md",
+        "stack": "Native 2D Canvas + original deterministic JS and opt-in scoped CSS; no React export",
+        "instructions": "Use styles/primitives/v052/procedural-figures.js `data-kind=\"voxel\"` plus matching playground/procedural-depth-v052/index.html and canvas CSS. Keep semantic text alternative and seed replay.",
+        "limitations": "Pseudodepth 2D isometric cube projection, not a 3D mesh engine."
+      }
+    },
+    {
+      "id": "FX-090",
+      "type": "component",
+      "name": "Acrylic depth slabs / 亚克力叠层",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v052",
+        "original-css-source",
+        "pseudo-3d",
+        "native-html",
+        "independent-material",
+        "no-js"
+      ],
+      "aliases": [
+        "fx52-acrylic-stack",
+        "Acrylic depth slabs",
+        "亚克力叠层"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original opt-in CSS and native HTML only, no vendor assets, third-party 3D models, font or JavaScript framework.",
+      "styleIds": [
+        "liquid-layer",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "design-specimen"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v052/procedural-and-depth.css",
+      "details": "styles/primitives/v052/README.md",
+      "spec": "registry/material-expansion-v052.json",
+      "demo": "playground/procedural-depth-v052/index.html",
+      "verified": "Original CSS class and native specimen committed 2026-11-12, not design QA or production accessibility certified.",
+      "handoff": {
+        "entry": "styles/primitives/v052/README.md",
+        "stack": "Native HTML/CSS perspective/source only; not actual 3D/WebGL mesh",
+        "instructions": "Copy .fx52-acrylic-stack, descendants, relevant reduced-motion/forced-colors rules, plus standalone native markup from playground/procedural-depth-v052/index.html.",
+        "limitations": "CSS-perspective translucent slabs, not optical refraction or a true 3D model."
+      }
+    },
+    {
+      "id": "FX-091",
+      "type": "component",
+      "name": "Origami gate fold / 原生折页门",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v052",
+        "original-css-source",
+        "pseudo-3d",
+        "native-html",
+        "independent-material",
+        "no-js"
+      ],
+      "aliases": [
+        "fx52-fold-gate",
+        "Origami gate fold",
+        "原生折页门"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original opt-in CSS and native HTML only, no vendor assets, third-party 3D models, font or JavaScript framework.",
+      "styleIds": [
+        "paper-rebellion",
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "design-specimen"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v052/procedural-and-depth.css",
+      "details": "styles/primitives/v052/README.md",
+      "spec": "registry/material-expansion-v052.json",
+      "demo": "playground/procedural-depth-v052/index.html",
+      "verified": "Original CSS class and native specimen committed 2026-11-12, not design QA or production accessibility certified.",
+      "handoff": {
+        "entry": "styles/primitives/v052/README.md",
+        "stack": "Native HTML/CSS perspective/source only; not actual 3D/WebGL mesh",
+        "instructions": "Copy .fx52-fold-gate, descendants, relevant reduced-motion/forced-colors rules, plus standalone native markup from playground/procedural-depth-v052/index.html.",
+        "limitations": "Native checkbox reveals an underlay by hinged CSS panels, not persisted document editing."
+      }
+    },
+    {
+      "id": "FX-092",
+      "type": "component",
+      "name": "Perspective swatch selector / 透视材质色盘",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v052",
+        "original-css-source",
+        "pseudo-3d",
+        "native-html",
+        "independent-material",
+        "no-js"
+      ],
+      "aliases": [
+        "fx52-perspective-palette",
+        "Perspective swatch selector",
+        "透视材质色盘"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original opt-in CSS and native HTML only, no vendor assets, third-party 3D models, font or JavaScript framework.",
+      "styleIds": [
+        "shape-expressive",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "design-specimen"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v052/procedural-and-depth.css",
+      "details": "styles/primitives/v052/README.md",
+      "spec": "registry/material-expansion-v052.json",
+      "demo": "playground/procedural-depth-v052/index.html",
+      "verified": "Original CSS class and native specimen committed 2026-11-12, not design QA or production accessibility certified.",
+      "handoff": {
+        "entry": "styles/primitives/v052/README.md",
+        "stack": "Native HTML/CSS perspective/source only; not actual 3D/WebGL mesh",
+        "instructions": "Copy .fx52-perspective-palette, descendants, relevant reduced-motion/forced-colors rules, plus standalone native markup from playground/procedural-depth-v052/index.html.",
+        "limitations": "Three real radio states change a CSS material plate via :has; no WebGL or theme persistence."
+      }
+    },
+    {
+      "id": "FX-093",
+      "type": "component",
+      "name": "Extruded type illusion / 错视挤出排字",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v052",
+        "original-css-source",
+        "pseudo-3d",
+        "native-html",
+        "independent-material",
+        "no-js"
+      ],
+      "aliases": [
+        "fx52-anamorphic-title",
+        "Extruded type illusion",
+        "错视挤出排字"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original opt-in CSS and native HTML only, no vendor assets, third-party 3D models, font or JavaScript framework.",
+      "styleIds": [
+        "type-led-minimal",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "design-specimen"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v052/procedural-and-depth.css",
+      "details": "styles/primitives/v052/README.md",
+      "spec": "registry/material-expansion-v052.json",
+      "demo": "playground/procedural-depth-v052/index.html",
+      "verified": "Original CSS class and native specimen committed 2026-11-12, not design QA or production accessibility certified.",
+      "handoff": {
+        "entry": "styles/primitives/v052/README.md",
+        "stack": "Native HTML/CSS perspective/source only; not actual 3D/WebGL mesh",
+        "instructions": "Copy .fx52-anamorphic-title, descendants, relevant reduced-motion/forced-colors rules, plus standalone native markup from playground/procedural-depth-v052/index.html.",
+        "limitations": "Single semantic heading with original CSS stacked shadow; no 3D mesh or external font."
+      }
+    },
+    {
+      "id": "VG-081",
+      "type": "component",
+      "name": "Acrylic monoliths / 亚克力几何碑",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v052",
+        "original-svg",
+        "faux-3d",
+        "illustration",
+        "standalone-vector",
+        "no-dependencies"
+      ],
+      "aliases": [
+        "Acrylic monoliths",
+        "亚克力几何碑",
+        "acrylic-monoliths"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored 2D pseudo-3D SVG vector illustration; no external image/script/font, copyrighted media or 3D model.",
+      "styleIds": [
+        "liquid-layer",
+        "aether-orbit"
+      ],
+      "applicationContexts": [
+        "pseudo-3d-art",
+        "illustration",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "graphics/v052/scenes/acrylic-monoliths.svg",
+      "details": "graphics/v052/README.md",
+      "spec": "registry/material-expansion-v052.json",
+      "demo": "playground/depth-scenes-v052/index.html",
+      "verified": "Original self-contained 640×360 SVG with title, desc, viewBox and vector geometry authored 2026-11-12. Target browser/design QA pending.",
+      "handoff": {
+        "entry": "graphics/v052/README.md",
+        "stack": "Independent original 640x360 static SVG art; not mesh, realtime camera, physics or WebGL",
+        "instructions": "Use graphics/v052/scenes/acrylic-monoliths.svg as independent media, select meaningful or empty decorative alt on host, adapt vector shapes only with appropriate design review.",
+        "limitations": "Original vector translucent layered pseudo-3D faceted pillars; not a true optical simulation."
+      }
+    },
+    {
+      "id": "VG-082",
+      "type": "component",
+      "name": "Clay loop knot / 陶土环结",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v052",
+        "original-svg",
+        "faux-3d",
+        "illustration",
+        "standalone-vector",
+        "no-dependencies"
+      ],
+      "aliases": [
+        "Clay loop knot",
+        "陶土环结",
+        "clay-loop-knot"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored 2D pseudo-3D SVG vector illustration; no external image/script/font, copyrighted media or 3D model.",
+      "styleIds": [
+        "organic-tactile",
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "pseudo-3d-art",
+        "illustration",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "graphics/v052/scenes/clay-loop-knot.svg",
+      "details": "graphics/v052/README.md",
+      "spec": "registry/material-expansion-v052.json",
+      "demo": "playground/depth-scenes-v052/index.html",
+      "verified": "Original self-contained 640×360 SVG with title, desc, viewBox and vector geometry authored 2026-11-12. Target browser/design QA pending.",
+      "handoff": {
+        "entry": "graphics/v052/README.md",
+        "stack": "Independent original 640x360 static SVG art; not mesh, realtime camera, physics or WebGL",
+        "instructions": "Use graphics/v052/scenes/clay-loop-knot.svg as independent media, select meaningful or empty decorative alt on host, adapt vector shapes only with appropriate design review.",
+        "limitations": "Original broad strokes simulate a soft knot with highlights and shadows; no 3D mesh."
+      }
+    },
+    {
+      "id": "VG-083",
+      "type": "component",
+      "name": "Cubist shelter / 立体派庇护所",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v052",
+        "original-svg",
+        "faux-3d",
+        "illustration",
+        "standalone-vector",
+        "no-dependencies"
+      ],
+      "aliases": [
+        "Cubist shelter",
+        "立体派庇护所",
+        "cubist-shelter"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored 2D pseudo-3D SVG vector illustration; no external image/script/font, copyrighted media or 3D model.",
+      "styleIds": [
+        "editorial-warm",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "pseudo-3d-art",
+        "illustration",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "graphics/v052/scenes/cubist-shelter.svg",
+      "details": "graphics/v052/README.md",
+      "spec": "registry/material-expansion-v052.json",
+      "demo": "playground/depth-scenes-v052/index.html",
+      "verified": "Original self-contained 640×360 SVG with title, desc, viewBox and vector geometry authored 2026-11-12. Target browser/design QA pending.",
+      "handoff": {
+        "entry": "graphics/v052/README.md",
+        "stack": "Independent original 640x360 static SVG art; not mesh, realtime camera, physics or WebGL",
+        "instructions": "Use graphics/v052/scenes/cubist-shelter.svg as independent media, select meaningful or empty decorative alt on host, adapt vector shapes only with appropriate design review.",
+        "limitations": "Hand-authored stacked architectural polygons with occlusion, not architecturally measured."
+      }
+    },
+    {
+      "id": "VG-084",
+      "type": "component",
+      "name": "Layered terrain / 层积地形剖面",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v052",
+        "original-svg",
+        "faux-3d",
+        "illustration",
+        "standalone-vector",
+        "no-dependencies"
+      ],
+      "aliases": [
+        "Layered terrain",
+        "层积地形剖面",
+        "layered-terrain-cutaway"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored 2D pseudo-3D SVG vector illustration; no external image/script/font, copyrighted media or 3D model.",
+      "styleIds": [
+        "organic-tactile",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "pseudo-3d-art",
+        "illustration",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "graphics/v052/scenes/layered-terrain-cutaway.svg",
+      "details": "graphics/v052/README.md",
+      "spec": "registry/material-expansion-v052.json",
+      "demo": "playground/depth-scenes-v052/index.html",
+      "verified": "Original self-contained 640×360 SVG with title, desc, viewBox and vector geometry authored 2026-11-12. Target browser/design QA pending.",
+      "handoff": {
+        "entry": "graphics/v052/README.md",
+        "stack": "Independent original 640x360 static SVG art; not mesh, realtime camera, physics or WebGL",
+        "instructions": "Use graphics/v052/scenes/layered-terrain-cutaway.svg as independent media, select meaningful or empty decorative alt on host, adapt vector shapes only with appropriate design review.",
+        "limitations": "Illustrative strata with layered hand-curved silhouettes; not sourced geological measurement."
+      }
+    },
+    {
+      "id": "VG-085",
+      "type": "component",
+      "name": "Light corridor / 光之回廊",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v052",
+        "original-svg",
+        "faux-3d",
+        "illustration",
+        "standalone-vector",
+        "no-dependencies"
+      ],
+      "aliases": [
+        "Light corridor",
+        "光之回廊",
+        "light-corridor"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored 2D pseudo-3D SVG vector illustration; no external image/script/font, copyrighted media or 3D model.",
+      "styleIds": [
+        "signal-noir",
+        "aether-orbit"
+      ],
+      "applicationContexts": [
+        "pseudo-3d-art",
+        "illustration",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "graphics/v052/scenes/light-corridor.svg",
+      "details": "graphics/v052/README.md",
+      "spec": "registry/material-expansion-v052.json",
+      "demo": "playground/depth-scenes-v052/index.html",
+      "verified": "Original self-contained 640×360 SVG with title, desc, viewBox and vector geometry authored 2026-11-12. Target browser/design QA pending.",
+      "handoff": {
+        "entry": "graphics/v052/README.md",
+        "stack": "Independent original 640x360 static SVG art; not mesh, realtime camera, physics or WebGL",
+        "instructions": "Use graphics/v052/scenes/light-corridor.svg as independent media, select meaningful or empty decorative alt on host, adapt vector shapes only with appropriate design review.",
+        "limitations": "Nested neon perspective frames with vanishing geometry; not a ray-traced tunnel."
+      }
+    },
+    {
+      "id": "VG-086",
+      "type": "component",
+      "name": "Ceramic turntable / 陶瓷环叠雕塑",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v052",
+        "original-svg",
+        "faux-3d",
+        "illustration",
+        "standalone-vector",
+        "no-dependencies"
+      ],
+      "aliases": [
+        "Ceramic turntable",
+        "陶瓷环叠雕塑",
+        "ceramic-turntable"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored 2D pseudo-3D SVG vector illustration; no external image/script/font, copyrighted media or 3D model.",
+      "styleIds": [
+        "organic-tactile",
+        "liquid-layer"
+      ],
+      "applicationContexts": [
+        "pseudo-3d-art",
+        "illustration",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "graphics/v052/scenes/ceramic-turntable.svg",
+      "details": "graphics/v052/README.md",
+      "spec": "registry/material-expansion-v052.json",
+      "demo": "playground/depth-scenes-v052/index.html",
+      "verified": "Original self-contained 640×360 SVG with title, desc, viewBox and vector geometry authored 2026-11-12. Target browser/design QA pending.",
+      "handoff": {
+        "entry": "graphics/v052/README.md",
+        "stack": "Independent original 640x360 static SVG art; not mesh, realtime camera, physics or WebGL",
+        "instructions": "Use graphics/v052/scenes/ceramic-turntable.svg as independent media, select meaningful or empty decorative alt on host, adapt vector shapes only with appropriate design review.",
+        "limitations": "Matte ellipse ring stacks with simple vector shading, not actual rotational 3D geometry."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",

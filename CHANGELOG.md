@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-11-12 · V0.52 original generative Canvas sources and pseudo-3D visual materials
+
+- Added **5 real seeded native 2D Canvas drawing algorithms** FX-085..089: harmonic contours, jittered triangle facets, parametric Lissajous trails, stipple dunes and isometric projected voxel skyline. Each has a standalone matching HTML specimen, seed, real native reroll button, bounded DPR and local original JS; no WebGL or continuous animation loop.
+- Added **4 independently scoped CSS/HTML pseudo-spatial atoms** FX-090..093: acrylic depth slabs, real checkbox origami fold, native radio CSS perspective palette and semantic extruded type illusion.
+- Added **6 original independent 640×360 pseudo-3D vector scenes** VG-081..086: acrylic monoliths, clay loop knot, cubist shelter, abstract layered terrain, light corridor and ceramic turntable, all authored vector shapes with title/desc and no external media.
+- [Machine index](registry/material-expansion-v052.json) · [Canvas + CSS originals](styles/primitives/v052/) · [SVG originals](graphics/v052/scenes/) · [research](docs/research/material-expansion-v052.md) · [standalone gallery](playground/procedural-depth-v052/index.html).
+- Catalog **486 → 501**. No new React public exports, style IDs, runtime packages, full builder, copied images/fonts, new tests or external data services. Basic source checks only; no production browser/real-device/a11y approval implied.
+
+
 ## 2026-11-12 · V0.51 original kinetic interface atoms, reusable SVG masks and hover motion vectors
 
 - Added **7 original opt-in CSS/semantic HTML motion/material families** FX-078..084: accessible pauseable ticker with aria-hidden duplicate, staggered real-text headline, pointer aperture CSS mask reveal, native pressed-state flip tile, progressive CSS scroll timeline reading rail, morphing cut-corner anchor and vertical writing-mode marginal spine. Two local isolated JS adapters only for aperture and flip.

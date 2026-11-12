@@ -1,0 +1,38 @@
+/* V0.52 original opt-in material atoms. No global reset or framework. */
+.fx52-procedural-figure{width:min(100%,30rem);margin:0;display:grid;gap:.7rem;color:#285158;font:650 .8rem/1.4 system-ui}
+.fx52-procedural-figure canvas{display:block;width:100%;height:auto;aspect-ratio:16/9;border:1px solid #abc9c5;border-radius:.7rem;background:#203d51}
+.fx52-procedural-figure figcaption{display:flex;gap:.65rem;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.fx52-procedural-figure button{padding:.45rem .8rem;border:1px solid #548884;border-radius:.5rem;background:#e6f2e8;color:#244f54;font:700 .73rem system-ui;cursor:pointer}
+.fx52-procedural-figure button:focus-visible{outline:3px solid #287a9d;outline-offset:3px}
+.fx52-procedural-figure output{font:700 .7rem ui-monospace,monospace;color:#486e6a}
+.fx52-acrylic-stack{position:relative;isolation:isolate;overflow:hidden;width:min(100%,25rem);aspect-ratio:1.65;perspective:650px;border-radius:1rem;background:#1a344e}
+.fx52-acrylic-stack .slab{position:absolute;inset:18% 15%;border:2px solid rgb(255 255 255 / 65%);border-radius:1rem;box-shadow:10px 12px 0 rgb(24 57 76 / 40%);transform:rotateX(50deg) rotateZ(-25deg)}
+.fx52-acrylic-stack .slab:nth-child(1){background:linear-gradient(145deg,#7dc6c4a9,#c1d4ed6b);translate:-13% -16%}
+.fx52-acrylic-stack .slab:nth-child(2){background:linear-gradient(145deg,#eeb991a9,#e9d4be6b)}
+.fx52-acrylic-stack .slab:nth-child(3){background:linear-gradient(145deg,#c6afe6aa,#79b1c06b);translate:13% 16%}
+.fx52-acrylic-stack strong{position:absolute;left:8%;bottom:9%;color:#fff8e7;font:900 clamp(1.2rem,4vw,1.7rem)/1 system-ui;letter-spacing:-.05em}
+.fx52-fold-gate{display:grid;gap:.65rem;width:min(100%,25rem);color:#30535a;font:700 .84rem system-ui}
+.fx52-fold-gate label{display:flex;align-items:center;gap:.6rem;cursor:pointer}.fx52-fold-gate input{accent-color:#2c7c78;width:1.1rem;height:1.1rem}
+.fx52-fold-gate input:focus-visible{outline:3px solid #237a9c;outline-offset:3px}
+.fx52-fold-gate .stage{position:relative;display:grid;place-items:center;min-height:12rem;overflow:hidden;perspective:600px;border:2px solid #b6987b;border-radius:.4rem;background:#f7dfb8}
+.fx52-fold-gate .stage p{max-width:13rem;text-align:center;color:#345860;font:850 1.3rem/1.2 Georgia,serif}
+.fx52-fold-gate .panel{position:absolute;inset-block:0;width:50%;background:linear-gradient(120deg,#bd806d,#e5ab82);transition:transform .5s ease;backface-visibility:hidden}
+.fx52-fold-gate .panel.left{left:0;transform-origin:left center}
+.fx52-fold-gate .panel.right{right:0;transform-origin:right center}
+.fx52-fold-gate .panel:after{content:"";position:absolute;inset:10%;border:2px solid #f2d4aa}
+.fx52-fold-gate:has(input:checked) .panel.left{transform:rotateY(-100deg)}
+.fx52-fold-gate:has(input:checked) .panel.right{transform:rotateY(100deg)}
+.fx52-perspective-palette{width:min(100%,25rem);padding:1rem;border:1px solid #b3c9c2;border-radius:1rem;background:#eef3e9;color:#34565a;font:650 .82rem system-ui}
+.fx52-perspective-palette legend{font-weight:900;padding:0 .3rem}
+.fx52-perspective-palette .options{display:flex;gap:.7rem;flex-wrap:wrap;margin:.75rem 0}
+.fx52-perspective-palette label{display:flex;align-items:center;gap:.3rem;cursor:pointer}
+.fx52-perspective-palette input{accent-color:#367c7c}
+.fx52-perspective-palette input:focus-visible{outline:3px solid #287d99;outline-offset:2px}
+.fx52-perspective-palette .stage{height:9.5rem;position:relative;overflow:hidden;background:#263d52;border-radius:.7rem;perspective:500px}
+.fx52-perspective-palette .plate{position:absolute;inset:12% 25%;border:2px solid #f2ebd9;border-radius:.7rem;box-shadow:9px 10px 0 #1a2f43;transform:rotateX(43deg) rotateZ(-21deg);background:linear-gradient(130deg,#e3a77c,#ae706e);transition:transform .3s,background .3s}
+.fx52-perspective-palette:has(input[value="jade"]:checked) .plate{background:linear-gradient(130deg,#9ddfc5,#478a87);transform:rotateX(55deg) rotateZ(15deg)}
+.fx52-perspective-palette:has(input[value="ice"]:checked) .plate{background:linear-gradient(140deg,#d5e8ed,#729bc2);transform:rotateX(37deg) rotateZ(0)}
+.fx52-anamorphic-title{width:min(100%,28rem);margin:0;padding:1.5rem 1rem;overflow:hidden;background:#e7dec8;border:1px solid #b8b19c;color:#244e54;font:950 clamp(2.6rem,7vw,4.6rem)/.98 system-ui;letter-spacing:-.08em;transform:skewY(-4deg);overflow-wrap:anywhere}
+.fx52-anamorphic-title span{text-shadow:1px 1px #d48a72,2px 2px #d48a72,3px 3px #d48a72,4px 4px #d48a72,5px 5px #d48a72,6px 6px #bf765e,7px 7px #ac6757}
+@media(prefers-reduced-motion:reduce){.fx52-fold-gate .panel,.fx52-perspective-palette .plate{transition:none!important}}
+@media(forced-colors:active){.fx52-procedural-figure canvas,.fx52-acrylic-stack,.fx52-fold-gate .stage,.fx52-perspective-palette .stage,.fx52-anamorphic-title{background:Canvas;color:CanvasText;border:2px solid CanvasText}.fx52-anamorphic-title span{text-shadow:none}.fx52-fold-gate .panel{background:Canvas;border:2px solid Highlight}.fx52-perspective-palette .plate{background:Canvas;border-color:Highlight}}

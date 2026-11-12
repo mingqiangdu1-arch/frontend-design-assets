@@ -1,0 +1,347 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.52.0",
+  "date": "2026-11-12",
+  "focus": "5 executable deterministic Canvas renderers, 4 independent faux-spatial CSS/HTML materials and 6 editable original pseudo-3D SVG scenes; no product app.",
+  "previousAssetCount": 486,
+  "newAssetCount": 15,
+  "expectedAssetCount": 501,
+  "reactExportsAdded": 0,
+  "styleIdsAdded": 0,
+  "testSuitesAdded": 0,
+  "thirdPartyCodeCopied": false,
+  "externalMediaCopied": false,
+  "sourceFiles": [
+    "registry/material-expansion-v052.json",
+    "docs/research/material-expansion-v052.md",
+    "styles/primitives/v052/procedural-and-depth.css",
+    "styles/primitives/v052/procedural-figures.js",
+    "styles/primitives/v052/README.md",
+    "playground/procedural-depth-v052/index.html",
+    "graphics/v052/README.md",
+    "playground/depth-scenes-v052/index.html",
+    "graphics/v052/scenes/acrylic-monoliths.svg",
+    "graphics/v052/scenes/clay-loop-knot.svg",
+    "graphics/v052/scenes/cubist-shelter.svg",
+    "graphics/v052/scenes/layered-terrain-cutaway.svg",
+    "graphics/v052/scenes/light-corridor.svg",
+    "graphics/v052/scenes/ceramic-turntable.svg"
+  ],
+  "proceduralCanvas": [
+    {
+      "id": "FX-085",
+      "kind": "contour",
+      "name": "Seeded contour harmonics / 种子谐波等高线",
+      "limitations": "Seeded static 2D harmonic paths, not GIS topography, height measurements or a shader.",
+      "styleIds": [
+        "organic-tactile",
+        "aether-orbit"
+      ],
+      "applicationContexts": [
+        "generative-art",
+        "creative-site"
+      ],
+      "source": "styles/primitives/v052/procedural-figures.js",
+      "css": "styles/primitives/v052/procedural-and-depth.css",
+      "readme": "styles/primitives/v052/README.md",
+      "demo": "playground/procedural-depth-v052/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "deterministic-native-2d-canvas"
+    },
+    {
+      "id": "FX-086",
+      "kind": "facets",
+      "name": "Jittered triangle relief / 扰动三角镶片",
+      "limitations": "Triangles from a seeded jittered rectangular grid, not a Delaunay mesh solver or 3D object.",
+      "styleIds": [
+        "shape-expressive",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "generative-art",
+        "creative-site"
+      ],
+      "source": "styles/primitives/v052/procedural-figures.js",
+      "css": "styles/primitives/v052/procedural-and-depth.css",
+      "readme": "styles/primitives/v052/README.md",
+      "demo": "playground/procedural-depth-v052/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "deterministic-native-2d-canvas"
+    },
+    {
+      "id": "FX-087",
+      "kind": "lissajous",
+      "name": "Lissajous light trails / 李萨如光轨",
+      "limitations": "Original parametric 2D curves, not an oscilloscope or audio-connected signal.",
+      "styleIds": [
+        "precision-dark",
+        "aether-orbit"
+      ],
+      "applicationContexts": [
+        "generative-art",
+        "creative-site"
+      ],
+      "source": "styles/primitives/v052/procedural-figures.js",
+      "css": "styles/primitives/v052/procedural-and-depth.css",
+      "readme": "styles/primitives/v052/README.md",
+      "demo": "playground/procedural-depth-v052/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "deterministic-native-2d-canvas"
+    },
+    {
+      "id": "FX-088",
+      "kind": "stipple",
+      "name": "Stipple dune field / 沙丘点描场",
+      "limitations": "Seeded decorative particle density, not physical sand simulation or photograph.",
+      "styleIds": [
+        "editorial-warm",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "generative-art",
+        "creative-site"
+      ],
+      "source": "styles/primitives/v052/procedural-figures.js",
+      "css": "styles/primitives/v052/procedural-and-depth.css",
+      "readme": "styles/primitives/v052/README.md",
+      "demo": "playground/procedural-depth-v052/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "deterministic-native-2d-canvas"
+    },
+    {
+      "id": "FX-089",
+      "kind": "voxel",
+      "name": "Projected voxel skyline / 投影体素城景",
+      "limitations": "Pseudodepth 2D isometric cube projection, not a 3D mesh engine.",
+      "styleIds": [
+        "pixel-arcade",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "generative-art",
+        "creative-site"
+      ],
+      "source": "styles/primitives/v052/procedural-figures.js",
+      "css": "styles/primitives/v052/procedural-and-depth.css",
+      "readme": "styles/primitives/v052/README.md",
+      "demo": "playground/procedural-depth-v052/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "deterministic-native-2d-canvas"
+    }
+  ],
+  "spatialCss": [
+    {
+      "id": "FX-090",
+      "className": "fx52-acrylic-stack",
+      "name": "Acrylic depth slabs / 亚克力叠层",
+      "limitations": "CSS-perspective translucent slabs, not optical refraction or a true 3D model.",
+      "styleIds": [
+        "liquid-layer",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "design-specimen"
+      ],
+      "source": "styles/primitives/v052/procedural-and-depth.css",
+      "readme": "styles/primitives/v052/README.md",
+      "demo": "playground/procedural-depth-v052/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html-no-js"
+    },
+    {
+      "id": "FX-091",
+      "className": "fx52-fold-gate",
+      "name": "Origami gate fold / 原生折页门",
+      "limitations": "Native checkbox reveals an underlay by hinged CSS panels, not persisted document editing.",
+      "styleIds": [
+        "paper-rebellion",
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "design-specimen"
+      ],
+      "source": "styles/primitives/v052/procedural-and-depth.css",
+      "readme": "styles/primitives/v052/README.md",
+      "demo": "playground/procedural-depth-v052/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html-no-js"
+    },
+    {
+      "id": "FX-092",
+      "className": "fx52-perspective-palette",
+      "name": "Perspective swatch selector / 透视材质色盘",
+      "limitations": "Three real radio states change a CSS material plate via :has; no WebGL or theme persistence.",
+      "styleIds": [
+        "shape-expressive",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "design-specimen"
+      ],
+      "source": "styles/primitives/v052/procedural-and-depth.css",
+      "readme": "styles/primitives/v052/README.md",
+      "demo": "playground/procedural-depth-v052/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html-no-js"
+    },
+    {
+      "id": "FX-093",
+      "className": "fx52-anamorphic-title",
+      "name": "Extruded type illusion / 错视挤出排字",
+      "limitations": "Single semantic heading with original CSS stacked shadow; no 3D mesh or external font.",
+      "styleIds": [
+        "type-led-minimal",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "design-specimen"
+      ],
+      "source": "styles/primitives/v052/procedural-and-depth.css",
+      "readme": "styles/primitives/v052/README.md",
+      "demo": "playground/procedural-depth-v052/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-css-html-no-js"
+    }
+  ],
+  "depthScenes": [
+    {
+      "id": "VG-081",
+      "name": "Acrylic monoliths / 亚克力几何碑",
+      "source": "graphics/v052/scenes/acrylic-monoliths.svg",
+      "styleIds": [
+        "liquid-layer",
+        "aether-orbit"
+      ],
+      "applicationContexts": [
+        "pseudo-3d-art",
+        "illustration",
+        "creative-site"
+      ],
+      "readme": "graphics/v052/README.md",
+      "demo": "playground/depth-scenes-v052/index.html",
+      "viewBox": "0 0 640 360",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-static-svg",
+      "limitations": "Original vector translucent layered pseudo-3D faceted pillars; not a true optical simulation."
+    },
+    {
+      "id": "VG-082",
+      "name": "Clay loop knot / 陶土环结",
+      "source": "graphics/v052/scenes/clay-loop-knot.svg",
+      "styleIds": [
+        "organic-tactile",
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "pseudo-3d-art",
+        "illustration",
+        "creative-site"
+      ],
+      "readme": "graphics/v052/README.md",
+      "demo": "playground/depth-scenes-v052/index.html",
+      "viewBox": "0 0 640 360",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-static-svg",
+      "limitations": "Original broad strokes simulate a soft knot with highlights and shadows; no 3D mesh."
+    },
+    {
+      "id": "VG-083",
+      "name": "Cubist shelter / 立体派庇护所",
+      "source": "graphics/v052/scenes/cubist-shelter.svg",
+      "styleIds": [
+        "editorial-warm",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "pseudo-3d-art",
+        "illustration",
+        "creative-site"
+      ],
+      "readme": "graphics/v052/README.md",
+      "demo": "playground/depth-scenes-v052/index.html",
+      "viewBox": "0 0 640 360",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-static-svg",
+      "limitations": "Hand-authored stacked architectural polygons with occlusion, not architecturally measured."
+    },
+    {
+      "id": "VG-084",
+      "name": "Layered terrain / 层积地形剖面",
+      "source": "graphics/v052/scenes/layered-terrain-cutaway.svg",
+      "styleIds": [
+        "organic-tactile",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "pseudo-3d-art",
+        "illustration",
+        "creative-site"
+      ],
+      "readme": "graphics/v052/README.md",
+      "demo": "playground/depth-scenes-v052/index.html",
+      "viewBox": "0 0 640 360",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-static-svg",
+      "limitations": "Illustrative strata with layered hand-curved silhouettes; not sourced geological measurement."
+    },
+    {
+      "id": "VG-085",
+      "name": "Light corridor / 光之回廊",
+      "source": "graphics/v052/scenes/light-corridor.svg",
+      "styleIds": [
+        "signal-noir",
+        "aether-orbit"
+      ],
+      "applicationContexts": [
+        "pseudo-3d-art",
+        "illustration",
+        "creative-site"
+      ],
+      "readme": "graphics/v052/README.md",
+      "demo": "playground/depth-scenes-v052/index.html",
+      "viewBox": "0 0 640 360",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-static-svg",
+      "limitations": "Nested neon perspective frames with vanishing geometry; not a ray-traced tunnel."
+    },
+    {
+      "id": "VG-086",
+      "name": "Ceramic turntable / 陶瓷环叠雕塑",
+      "source": "graphics/v052/scenes/ceramic-turntable.svg",
+      "styleIds": [
+        "organic-tactile",
+        "liquid-layer"
+      ],
+      "applicationContexts": [
+        "pseudo-3d-art",
+        "illustration",
+        "creative-site"
+      ],
+      "readme": "graphics/v052/README.md",
+      "demo": "playground/depth-scenes-v052/index.html",
+      "viewBox": "0 0 640 360",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-static-svg",
+      "limitations": "Matte ellipse ring stacks with simple vector shading, not actual rotational 3D geometry."
+    }
+  ]
+}
