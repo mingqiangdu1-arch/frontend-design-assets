@@ -1,0 +1,399 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.51.0",
+  "date": "2026-11-12",
+  "focus": "Original material-only: 7 opt-in kinetic HTML/CSS atoms with two local adapter cases, 4 standalone reusable SVG alpha masks, and 4 standalone self-contained hover-only SVG motion illustrations.",
+  "previousAssetCount": 471,
+  "newAssetCount": 15,
+  "expectedAssetCount": 486,
+  "reactExportsAdded": 0,
+  "styleIdsAdded": 0,
+  "testSuitesAdded": 0,
+  "externalMediaCopied": false,
+  "thirdPartyCodeCopied": false,
+  "sourceFiles": [
+    "registry/material-expansion-v051.json",
+    "docs/research/material-expansion-v051.md",
+    "styles/primitives/v051/kinetic-visuals.css",
+    "styles/primitives/v051/motion-adapters.js",
+    "styles/primitives/v051/README.md",
+    "playground/kinetic-visuals-v051/index.html",
+    "graphics/v051/README.md",
+    "playground/shape-masks-v051/index.html",
+    "playground/svg-motion-v051/index.html",
+    "graphics/v051/masks/scalloped-window-mask.svg",
+    "graphics/v051/masks/ticket-notch-mask.svg",
+    "graphics/v051/masks/ripped-paper-mask.svg",
+    "graphics/v051/masks/keyhole-portal-mask.svg",
+    "graphics/v051/motion/orbit-wreath-motion.svg",
+    "graphics/v051/motion/breathing-rosace-motion.svg",
+    "graphics/v051/motion/pendulum-label-motion.svg",
+    "graphics/v051/motion/ripple-emblem-motion.svg"
+  ],
+  "cssAtoms": [
+    {
+      "id": "FX-078",
+      "name": "Accessible looped editorial ticker / 可暂停循环文字带",
+      "className": "fx51-loop-ticker",
+      "aliases": [
+        "repeating ticker",
+        "文字循环带",
+        "pure css marquee"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "campaign",
+        "editorial"
+      ],
+      "styleIds": [
+        "paper-rebellion",
+        "type-led-minimal"
+      ],
+      "source": "styles/primitives/v051/kinetic-visuals.css",
+      "optionalJS": null,
+      "readme": "styles/primitives/v051/README.md",
+      "demo": "playground/kinetic-visuals-v051/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-html-css",
+      "limitations": "Original CSS horizontal loop with the second segment aria-hidden. Pauses on hover/focus and removes animation under reduced motion; duplicated decorative text is not a feed or live announcement.",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-079",
+      "name": "Kinetic staggered headline / 错行滑移排印",
+      "className": "fx51-stagger-type",
+      "aliases": [
+        "stagger typography",
+        "交错标题",
+        "kinetic heading"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "portfolio",
+        "poster"
+      ],
+      "styleIds": [
+        "type-led-minimal",
+        "shape-expressive"
+      ],
+      "source": "styles/primitives/v051/kinetic-visuals.css",
+      "optionalJS": null,
+      "readme": "styles/primitives/v051/README.md",
+      "demo": "playground/kinetic-visuals-v051/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-html-css",
+      "limitations": "Real DOM heading with independently offset text lines on hover/focus-within; no text splitting algorithm or variable font installation.",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-080",
+      "name": "Pointer aperture color reveal / 指针光圈揭示",
+      "className": "fx51-aperture-reveal",
+      "aliases": [
+        "pointer spotlight reveal",
+        "光圈遮罩",
+        "局部揭示"
+      ],
+      "applicationContexts": [
+        "creative-tool",
+        "portfolio",
+        "visual-experiment"
+      ],
+      "styleIds": [
+        "aether-orbit",
+        "liquid-layer"
+      ],
+      "source": "styles/primitives/v051/kinetic-visuals.css",
+      "optionalJS": "styles/primitives/v051/motion-adapters.js",
+      "readme": "styles/primitives/v051/README.md",
+      "demo": "playground/kinetic-visuals-v051/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-html-css-local-js",
+      "limitations": "Optional original local Pointer Event script moves a radial mask over two original gradient layers; keyboard focus reveals the full layer. Does not compare photos or process uploaded images.",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-081",
+      "name": "Native toggle flip information tile / 可切换双面信息牌",
+      "className": "fx51-flip-tile",
+      "aliases": [
+        "flip card toggle",
+        "双面翻转",
+        "aria pressed tile"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "education",
+        "portfolio"
+      ],
+      "styleIds": [
+        "shape-expressive",
+        "editorial-warm"
+      ],
+      "source": "styles/primitives/v051/kinetic-visuals.css",
+      "optionalJS": "styles/primitives/v051/motion-adapters.js",
+      "readme": "styles/primitives/v051/README.md",
+      "demo": "playground/kinetic-visuals-v051/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-html-css-local-js",
+      "limitations": "Real button toggles accessible aria-pressed, label and local 3D card orientation via a short JS adapter; no content fetching, state storage or hidden web app.",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-082",
+      "name": "Progressive CSS scroll reader strip / CSS 滚读进度轨",
+      "className": "fx51-scroll-rail",
+      "aliases": [
+        "scroll timeline progress",
+        "浏览进度轨",
+        "scroll-driven native"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "reading",
+        "longform"
+      ],
+      "styleIds": [
+        "type-led-minimal",
+        "refined-light-saas"
+      ],
+      "source": "styles/primitives/v051/kinetic-visuals.css",
+      "optionalJS": null,
+      "readme": "styles/primitives/v051/README.md",
+      "demo": "playground/kinetic-visuals-v051/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-html-css",
+      "limitations": "CSS scroll() timeline drives a 0–100% decorative track in supporting browsers; unsupported browsers and reduced-motion show a static guide, not an accurate progress status.",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-083",
+      "name": "Morphing cut-corner anchor / 变形剪角链接",
+      "className": "fx51-morph-link",
+      "aliases": [
+        "clip path morph",
+        "剪角变形",
+        "motion CTA"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "campaign",
+        "portfolio"
+      ],
+      "styleIds": [
+        "shape-expressive",
+        "playful-pop"
+      ],
+      "source": "styles/primitives/v051/kinetic-visuals.css",
+      "optionalJS": null,
+      "readme": "styles/primitives/v051/README.md",
+      "demo": "playground/kinetic-visuals-v051/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-html-css",
+      "limitations": "Real native anchor changes polygon outline on hover/focus with reduced-motion static fallback; target URL must be changed by host.",
+      "notReactExport": true
+    },
+    {
+      "id": "FX-084",
+      "name": "Vertical marginalia spine / 竖排页边注书脊",
+      "className": "fx51-vertical-spine",
+      "aliases": [
+        "vertical marginalia",
+        "竖排书脊",
+        "writing-mode"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "culture",
+        "reading"
+      ],
+      "styleIds": [
+        "editorial-warm",
+        "type-led-minimal"
+      ],
+      "source": "styles/primitives/v051/kinetic-visuals.css",
+      "optionalJS": null,
+      "readme": "styles/primitives/v051/README.md",
+      "demo": "playground/kinetic-visuals-v051/index.html",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-html-css",
+      "limitations": "Semantic heading/paragraph with CSS writing-mode label; naturally stacks at narrow width. Editorial text and localization are supplied by host.",
+      "notReactExport": true
+    }
+  ],
+  "svgMasks": [
+    {
+      "id": "VG-073",
+      "name": "Scalloped window mask / 花边窗遮罩",
+      "source": "graphics/v051/masks/scalloped-window-mask.svg",
+      "readme": "graphics/v051/README.md",
+      "demo": "playground/shape-masks-v051/index.html",
+      "viewBox": "0 0 320 240",
+      "applicationContexts": [
+        "visual-design",
+        "media-mask",
+        "creative-site"
+      ],
+      "styleIds": [
+        "shape-expressive",
+        "paper-rebellion"
+      ],
+      "type": "mask-image-white-alpha",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source"
+    },
+    {
+      "id": "VG-074",
+      "name": "Ticket-notch mask / 半月缺口遮罩",
+      "source": "graphics/v051/masks/ticket-notch-mask.svg",
+      "readme": "graphics/v051/README.md",
+      "demo": "playground/shape-masks-v051/index.html",
+      "viewBox": "0 0 320 240",
+      "applicationContexts": [
+        "visual-design",
+        "media-mask",
+        "creative-site"
+      ],
+      "styleIds": [
+        "shape-expressive",
+        "paper-rebellion"
+      ],
+      "type": "mask-image-white-alpha",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source"
+    },
+    {
+      "id": "VG-075",
+      "name": "Ripped-paper mask / 锯齿纸缘遮罩",
+      "source": "graphics/v051/masks/ripped-paper-mask.svg",
+      "readme": "graphics/v051/README.md",
+      "demo": "playground/shape-masks-v051/index.html",
+      "viewBox": "0 0 320 240",
+      "applicationContexts": [
+        "visual-design",
+        "media-mask",
+        "creative-site"
+      ],
+      "styleIds": [
+        "shape-expressive",
+        "paper-rebellion"
+      ],
+      "type": "mask-image-white-alpha",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source"
+    },
+    {
+      "id": "VG-076",
+      "name": "Keyhole portal mask / 钥匙孔门型遮罩",
+      "source": "graphics/v051/masks/keyhole-portal-mask.svg",
+      "readme": "graphics/v051/README.md",
+      "demo": "playground/shape-masks-v051/index.html",
+      "viewBox": "0 0 320 240",
+      "applicationContexts": [
+        "visual-design",
+        "media-mask",
+        "creative-site"
+      ],
+      "styleIds": [
+        "shape-expressive",
+        "paper-rebellion"
+      ],
+      "type": "mask-image-white-alpha",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source"
+    }
+  ],
+  "svgMotion": [
+    {
+      "id": "VG-077",
+      "name": "Orbit wreath motion / 轨迹花环",
+      "source": "graphics/v051/motion/orbit-wreath-motion.svg",
+      "readme": "graphics/v051/README.md",
+      "demo": "playground/svg-motion-v051/index.html",
+      "viewBox": "0 0 640 360",
+      "applicationContexts": [
+        "creative-site",
+        "motion-design",
+        "decorative-art"
+      ],
+      "styleIds": [
+        "aether-orbit",
+        "shape-expressive"
+      ],
+      "type": "svg-self-contained-hover-animation",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "limitations": "Hover-only decorative SVG animation, not keyboard-triggered when used as img, and not production cross-browser certified."
+    },
+    {
+      "id": "VG-078",
+      "name": "Breathing rosace / 呼吸花窗",
+      "source": "graphics/v051/motion/breathing-rosace-motion.svg",
+      "readme": "graphics/v051/README.md",
+      "demo": "playground/svg-motion-v051/index.html",
+      "viewBox": "0 0 640 360",
+      "applicationContexts": [
+        "creative-site",
+        "motion-design",
+        "decorative-art"
+      ],
+      "styleIds": [
+        "aether-orbit",
+        "shape-expressive"
+      ],
+      "type": "svg-self-contained-hover-animation",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "limitations": "Hover-only decorative SVG animation, not keyboard-triggered when used as img, and not production cross-browser certified."
+    },
+    {
+      "id": "VG-079",
+      "name": "Pendulum label / 摆锤标签",
+      "source": "graphics/v051/motion/pendulum-label-motion.svg",
+      "readme": "graphics/v051/README.md",
+      "demo": "playground/svg-motion-v051/index.html",
+      "viewBox": "0 0 640 360",
+      "applicationContexts": [
+        "creative-site",
+        "motion-design",
+        "decorative-art"
+      ],
+      "styleIds": [
+        "aether-orbit",
+        "shape-expressive"
+      ],
+      "type": "svg-self-contained-hover-animation",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "limitations": "Hover-only decorative SVG animation, not keyboard-triggered when used as img, and not production cross-browser certified."
+    },
+    {
+      "id": "VG-080",
+      "name": "Ripple emblem / 水纹徽记",
+      "source": "graphics/v051/motion/ripple-emblem-motion.svg",
+      "readme": "graphics/v051/README.md",
+      "demo": "playground/svg-motion-v051/index.html",
+      "viewBox": "0 0 640 360",
+      "applicationContexts": [
+        "creative-site",
+        "motion-design",
+        "decorative-art"
+      ],
+      "styleIds": [
+        "aether-orbit",
+        "shape-expressive"
+      ],
+      "type": "svg-self-contained-hover-animation",
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "limitations": "Hover-only decorative SVG animation, not keyboard-triggered when used as img, and not production cross-browser certified."
+    }
+  ]
+}

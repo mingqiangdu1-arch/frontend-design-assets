@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-11-12 · V0.51 original kinetic interface atoms, reusable SVG masks and hover motion vectors
+
+- Added **7 original opt-in CSS/semantic HTML motion/material families** FX-078..084: accessible pauseable ticker with aria-hidden duplicate, staggered real-text headline, pointer aperture CSS mask reveal, native pressed-state flip tile, progressive CSS scroll timeline reading rail, morphing cut-corner anchor and vertical writing-mode marginal spine. Two local isolated JS adapters only for aperture and flip.
+- Added **4 original standalone 320×240 SVG white-alpha mask-image sources** VG-073..076: scallop, ticket notch, jagged torn edge and keyhole. Demo actually consumes them with CSS `mask-image:url(...)`.
+- Added **4 self-contained original 640×360 SVG hover-animation sources** VG-077..080 with embedded keyframes plus `prefers-reduced-motion` static fallback: orbit wreath, breathing rosace, pendulum label and ripple emblem. Hover-only decoration in external img, not an accessible action.
+- [Machine index](registry/material-expansion-v051.json) · [native CSS sources](styles/primitives/v051/) · [SVG source families](graphics/v051/) · [research](docs/research/material-expansion-v051.md).
+- Catalog **471 → 486**. No React public export, new theme, external package, copied image/font, editor/builder product or test framework. Source-level consistency only; device/browser/assistive-tech and visual approval pending.
+
+
 ## 2026-11-12 · V0.50 print art, evidence graphics and independently composed illustrations
 
 - Added **8 standalone original HTML/CSS material atoms** FX-070..077: duotone risograph dots, newspaper lead columns, layered paper cut collage, semantic annotated figure, inline-SVG two-series slopegraph, static uncertainty-range rails, paired dumbbell chart and navigable local provenance ribbon.

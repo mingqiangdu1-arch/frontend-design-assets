@@ -18525,6 +18525,669 @@
         "instructions": "Use graphics/v050/vignettes/landscape-cutpaper-vignette.svg for relevant target aspect ratio, supply contextual alt or empty decorative alt in host.",
         "limitations": "Decorative original composition only, not image crop/auto-layout engine, video or product hero assembly."
       }
+    },
+    {
+      "id": "FX-078",
+      "type": "component",
+      "name": "Accessible looped editorial ticker / 可暂停循环文字带",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v051",
+        "original-css-source",
+        "motion-visual",
+        "native-html",
+        "independent-material",
+        "reduced-motion",
+        "css-only"
+      ],
+      "aliases": [
+        "repeating ticker",
+        "文字循环带",
+        "pure css marquee"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original opt-in HTML/CSS, with optional small original local JavaScript only for FX-080/081. No vendor animations, copied font, image assets or external library.",
+      "styleIds": [
+        "paper-rebellion",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "campaign",
+        "editorial"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v051/kinetic-visuals.css",
+      "details": "styles/primitives/v051/README.md",
+      "spec": "registry/material-expansion-v051.json",
+      "demo": "playground/kinetic-visuals-v051/index.html",
+      "verified": "Original source CSS, sample markup and relevant adapter committed 2026-11-12. Actual browser/device/a11y outcomes unverified.",
+      "handoff": {
+        "entry": "styles/primitives/v051/README.md",
+        "stack": "Scoped native HTML/CSS, no public React export",
+        "instructions": "Extract only .fx51-loop-ticker selectors, matching semantic markup from playground/kinetic-visuals-v051/index.html, and responsive/reduced-motion/forced-colors fallbacks.",
+        "limitations": "Original CSS horizontal loop with the second segment aria-hidden. Pauses on hover/focus and removes animation under reduced motion; duplicated decorative text is not a feed or live announcement."
+      }
+    },
+    {
+      "id": "FX-079",
+      "type": "component",
+      "name": "Kinetic staggered headline / 错行滑移排印",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v051",
+        "original-css-source",
+        "motion-visual",
+        "native-html",
+        "independent-material",
+        "reduced-motion",
+        "css-only"
+      ],
+      "aliases": [
+        "stagger typography",
+        "交错标题",
+        "kinetic heading"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original opt-in HTML/CSS, with optional small original local JavaScript only for FX-080/081. No vendor animations, copied font, image assets or external library.",
+      "styleIds": [
+        "type-led-minimal",
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "portfolio",
+        "poster"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v051/kinetic-visuals.css",
+      "details": "styles/primitives/v051/README.md",
+      "spec": "registry/material-expansion-v051.json",
+      "demo": "playground/kinetic-visuals-v051/index.html",
+      "verified": "Original source CSS, sample markup and relevant adapter committed 2026-11-12. Actual browser/device/a11y outcomes unverified.",
+      "handoff": {
+        "entry": "styles/primitives/v051/README.md",
+        "stack": "Scoped native HTML/CSS, no public React export",
+        "instructions": "Extract only .fx51-stagger-type selectors, matching semantic markup from playground/kinetic-visuals-v051/index.html, and responsive/reduced-motion/forced-colors fallbacks.",
+        "limitations": "Real DOM heading with independently offset text lines on hover/focus-within; no text splitting algorithm or variable font installation."
+      }
+    },
+    {
+      "id": "FX-080",
+      "type": "component",
+      "name": "Pointer aperture color reveal / 指针光圈揭示",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v051",
+        "original-css-source",
+        "motion-visual",
+        "native-html",
+        "independent-material",
+        "reduced-motion",
+        "local-js-adapter"
+      ],
+      "aliases": [
+        "pointer spotlight reveal",
+        "光圈遮罩",
+        "局部揭示"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original opt-in HTML/CSS, with optional small original local JavaScript only for FX-080/081. No vendor animations, copied font, image assets or external library.",
+      "styleIds": [
+        "aether-orbit",
+        "liquid-layer"
+      ],
+      "applicationContexts": [
+        "creative-tool",
+        "portfolio",
+        "visual-experiment"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v051/kinetic-visuals.css",
+      "details": "styles/primitives/v051/README.md",
+      "spec": "registry/material-expansion-v051.json",
+      "demo": "playground/kinetic-visuals-v051/index.html",
+      "verified": "Original source CSS, sample markup and relevant adapter committed 2026-11-12. Actual browser/device/a11y outcomes unverified.",
+      "handoff": {
+        "entry": "styles/primitives/v051/README.md",
+        "stack": "Native HTML/CSS with one original local JS behavior; not a React public export",
+        "instructions": "Extract only .fx51-aperture-reveal selectors, matching semantic markup from playground/kinetic-visuals-v051/index.html, and responsive/reduced-motion/forced-colors fallbacks. Include applicable loop from styles/primitives/v051/motion-adapters.js.",
+        "limitations": "Optional original local Pointer Event script moves a radial mask over two original gradient layers; keyboard focus reveals the full layer. Does not compare photos or process uploaded images."
+      }
+    },
+    {
+      "id": "FX-081",
+      "type": "component",
+      "name": "Native toggle flip information tile / 可切换双面信息牌",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v051",
+        "original-css-source",
+        "motion-visual",
+        "native-html",
+        "independent-material",
+        "reduced-motion",
+        "local-js-adapter"
+      ],
+      "aliases": [
+        "flip card toggle",
+        "双面翻转",
+        "aria pressed tile"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original opt-in HTML/CSS, with optional small original local JavaScript only for FX-080/081. No vendor animations, copied font, image assets or external library.",
+      "styleIds": [
+        "shape-expressive",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "education",
+        "portfolio"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v051/kinetic-visuals.css",
+      "details": "styles/primitives/v051/README.md",
+      "spec": "registry/material-expansion-v051.json",
+      "demo": "playground/kinetic-visuals-v051/index.html",
+      "verified": "Original source CSS, sample markup and relevant adapter committed 2026-11-12. Actual browser/device/a11y outcomes unverified.",
+      "handoff": {
+        "entry": "styles/primitives/v051/README.md",
+        "stack": "Native HTML/CSS with one original local JS behavior; not a React public export",
+        "instructions": "Extract only .fx51-flip-tile selectors, matching semantic markup from playground/kinetic-visuals-v051/index.html, and responsive/reduced-motion/forced-colors fallbacks. Include applicable loop from styles/primitives/v051/motion-adapters.js.",
+        "limitations": "Real button toggles accessible aria-pressed, label and local 3D card orientation via a short JS adapter; no content fetching, state storage or hidden web app."
+      }
+    },
+    {
+      "id": "FX-082",
+      "type": "component",
+      "name": "Progressive CSS scroll reader strip / CSS 滚读进度轨",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v051",
+        "original-css-source",
+        "motion-visual",
+        "native-html",
+        "independent-material",
+        "reduced-motion",
+        "css-only"
+      ],
+      "aliases": [
+        "scroll timeline progress",
+        "浏览进度轨",
+        "scroll-driven native"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original opt-in HTML/CSS, with optional small original local JavaScript only for FX-080/081. No vendor animations, copied font, image assets or external library.",
+      "styleIds": [
+        "type-led-minimal",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "reading",
+        "longform"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v051/kinetic-visuals.css",
+      "details": "styles/primitives/v051/README.md",
+      "spec": "registry/material-expansion-v051.json",
+      "demo": "playground/kinetic-visuals-v051/index.html",
+      "verified": "Original source CSS, sample markup and relevant adapter committed 2026-11-12. Actual browser/device/a11y outcomes unverified.",
+      "handoff": {
+        "entry": "styles/primitives/v051/README.md",
+        "stack": "Scoped native HTML/CSS, no public React export",
+        "instructions": "Extract only .fx51-scroll-rail selectors, matching semantic markup from playground/kinetic-visuals-v051/index.html, and responsive/reduced-motion/forced-colors fallbacks.",
+        "limitations": "CSS scroll() timeline drives a 0–100% decorative track in supporting browsers; unsupported browsers and reduced-motion show a static guide, not an accurate progress status."
+      }
+    },
+    {
+      "id": "FX-083",
+      "type": "component",
+      "name": "Morphing cut-corner anchor / 变形剪角链接",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v051",
+        "original-css-source",
+        "motion-visual",
+        "native-html",
+        "independent-material",
+        "reduced-motion",
+        "css-only"
+      ],
+      "aliases": [
+        "clip path morph",
+        "剪角变形",
+        "motion CTA"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original opt-in HTML/CSS, with optional small original local JavaScript only for FX-080/081. No vendor animations, copied font, image assets or external library.",
+      "styleIds": [
+        "shape-expressive",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "campaign",
+        "portfolio"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v051/kinetic-visuals.css",
+      "details": "styles/primitives/v051/README.md",
+      "spec": "registry/material-expansion-v051.json",
+      "demo": "playground/kinetic-visuals-v051/index.html",
+      "verified": "Original source CSS, sample markup and relevant adapter committed 2026-11-12. Actual browser/device/a11y outcomes unverified.",
+      "handoff": {
+        "entry": "styles/primitives/v051/README.md",
+        "stack": "Scoped native HTML/CSS, no public React export",
+        "instructions": "Extract only .fx51-morph-link selectors, matching semantic markup from playground/kinetic-visuals-v051/index.html, and responsive/reduced-motion/forced-colors fallbacks.",
+        "limitations": "Real native anchor changes polygon outline on hover/focus with reduced-motion static fallback; target URL must be changed by host."
+      }
+    },
+    {
+      "id": "FX-084",
+      "type": "component",
+      "name": "Vertical marginalia spine / 竖排页边注书脊",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v051",
+        "original-css-source",
+        "motion-visual",
+        "native-html",
+        "independent-material",
+        "reduced-motion",
+        "css-only"
+      ],
+      "aliases": [
+        "vertical marginalia",
+        "竖排书脊",
+        "writing-mode"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original opt-in HTML/CSS, with optional small original local JavaScript only for FX-080/081. No vendor animations, copied font, image assets or external library.",
+      "styleIds": [
+        "editorial-warm",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "culture",
+        "reading"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v051/kinetic-visuals.css",
+      "details": "styles/primitives/v051/README.md",
+      "spec": "registry/material-expansion-v051.json",
+      "demo": "playground/kinetic-visuals-v051/index.html",
+      "verified": "Original source CSS, sample markup and relevant adapter committed 2026-11-12. Actual browser/device/a11y outcomes unverified.",
+      "handoff": {
+        "entry": "styles/primitives/v051/README.md",
+        "stack": "Scoped native HTML/CSS, no public React export",
+        "instructions": "Extract only .fx51-vertical-spine selectors, matching semantic markup from playground/kinetic-visuals-v051/index.html, and responsive/reduced-motion/forced-colors fallbacks.",
+        "limitations": "Semantic heading/paragraph with CSS writing-mode label; naturally stacks at narrow width. Editorial text and localization are supplied by host."
+      }
+    },
+    {
+      "id": "VG-073",
+      "type": "component",
+      "name": "Scalloped window mask / 花边窗遮罩",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v051",
+        "original-svg",
+        "alpha-mask",
+        "mask-image-source",
+        "standalone-vector"
+      ],
+      "aliases": [
+        "Scalloped window mask",
+        "花边窗遮罩",
+        "scalloped-window-mask"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained white-alpha vector mask, fully transparent background and no external media/fonts/scripts.",
+      "styleIds": [
+        "shape-expressive",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "visual-design",
+        "media-mask",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "graphics/v051/masks/scalloped-window-mask.svg",
+      "details": "graphics/v051/README.md",
+      "spec": "registry/material-expansion-v051.json",
+      "demo": "playground/shape-masks-v051/index.html",
+      "verified": "Original 320×240 source file with title/desc/viewBox, referenced by a real CSS mask-image sample; no target-browser QA.",
+      "handoff": {
+        "entry": "graphics/v051/README.md",
+        "stack": "Standalone SVG alpha source for CSS mask-image, not embedded colored illustration",
+        "instructions": "Use CSS mask-image:url(...) with graphics/v051/masks/scalloped-window-mask.svg, then set mask-repeat:no-repeat and mask-size/position in the target. The source only supplies opaque alpha shape.",
+        "limitations": "Transparent alpha mask geometry only; host must supply texture/media, appropriate subject alt text and browser mask support."
+      }
+    },
+    {
+      "id": "VG-074",
+      "type": "component",
+      "name": "Ticket-notch mask / 半月缺口遮罩",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v051",
+        "original-svg",
+        "alpha-mask",
+        "mask-image-source",
+        "standalone-vector"
+      ],
+      "aliases": [
+        "Ticket-notch mask",
+        "半月缺口遮罩",
+        "ticket-notch-mask"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained white-alpha vector mask, fully transparent background and no external media/fonts/scripts.",
+      "styleIds": [
+        "shape-expressive",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "visual-design",
+        "media-mask",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "graphics/v051/masks/ticket-notch-mask.svg",
+      "details": "graphics/v051/README.md",
+      "spec": "registry/material-expansion-v051.json",
+      "demo": "playground/shape-masks-v051/index.html",
+      "verified": "Original 320×240 source file with title/desc/viewBox, referenced by a real CSS mask-image sample; no target-browser QA.",
+      "handoff": {
+        "entry": "graphics/v051/README.md",
+        "stack": "Standalone SVG alpha source for CSS mask-image, not embedded colored illustration",
+        "instructions": "Use CSS mask-image:url(...) with graphics/v051/masks/ticket-notch-mask.svg, then set mask-repeat:no-repeat and mask-size/position in the target. The source only supplies opaque alpha shape.",
+        "limitations": "Transparent alpha mask geometry only; host must supply texture/media, appropriate subject alt text and browser mask support."
+      }
+    },
+    {
+      "id": "VG-075",
+      "type": "component",
+      "name": "Ripped-paper mask / 锯齿纸缘遮罩",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v051",
+        "original-svg",
+        "alpha-mask",
+        "mask-image-source",
+        "standalone-vector"
+      ],
+      "aliases": [
+        "Ripped-paper mask",
+        "锯齿纸缘遮罩",
+        "ripped-paper-mask"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained white-alpha vector mask, fully transparent background and no external media/fonts/scripts.",
+      "styleIds": [
+        "shape-expressive",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "visual-design",
+        "media-mask",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "graphics/v051/masks/ripped-paper-mask.svg",
+      "details": "graphics/v051/README.md",
+      "spec": "registry/material-expansion-v051.json",
+      "demo": "playground/shape-masks-v051/index.html",
+      "verified": "Original 320×240 source file with title/desc/viewBox, referenced by a real CSS mask-image sample; no target-browser QA.",
+      "handoff": {
+        "entry": "graphics/v051/README.md",
+        "stack": "Standalone SVG alpha source for CSS mask-image, not embedded colored illustration",
+        "instructions": "Use CSS mask-image:url(...) with graphics/v051/masks/ripped-paper-mask.svg, then set mask-repeat:no-repeat and mask-size/position in the target. The source only supplies opaque alpha shape.",
+        "limitations": "Transparent alpha mask geometry only; host must supply texture/media, appropriate subject alt text and browser mask support."
+      }
+    },
+    {
+      "id": "VG-076",
+      "type": "component",
+      "name": "Keyhole portal mask / 钥匙孔门型遮罩",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v051",
+        "original-svg",
+        "alpha-mask",
+        "mask-image-source",
+        "standalone-vector"
+      ],
+      "aliases": [
+        "Keyhole portal mask",
+        "钥匙孔门型遮罩",
+        "keyhole-portal-mask"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained white-alpha vector mask, fully transparent background and no external media/fonts/scripts.",
+      "styleIds": [
+        "shape-expressive",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "visual-design",
+        "media-mask",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "graphics/v051/masks/keyhole-portal-mask.svg",
+      "details": "graphics/v051/README.md",
+      "spec": "registry/material-expansion-v051.json",
+      "demo": "playground/shape-masks-v051/index.html",
+      "verified": "Original 320×240 source file with title/desc/viewBox, referenced by a real CSS mask-image sample; no target-browser QA.",
+      "handoff": {
+        "entry": "graphics/v051/README.md",
+        "stack": "Standalone SVG alpha source for CSS mask-image, not embedded colored illustration",
+        "instructions": "Use CSS mask-image:url(...) with graphics/v051/masks/keyhole-portal-mask.svg, then set mask-repeat:no-repeat and mask-size/position in the target. The source only supplies opaque alpha shape.",
+        "limitations": "Transparent alpha mask geometry only; host must supply texture/media, appropriate subject alt text and browser mask support."
+      }
+    },
+    {
+      "id": "VG-077",
+      "type": "component",
+      "name": "Orbit wreath motion / 轨迹花环",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v051",
+        "original-svg",
+        "self-contained-css-motion",
+        "svg-hover-only",
+        "reduced-motion",
+        "standalone-vector"
+      ],
+      "aliases": [
+        "Orbit wreath motion",
+        "轨迹花环",
+        "orbit-wreath-motion"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG vector source with embedded original hover-triggered CSS keyframe and reduced-motion fallback; no external scripts, images, licensed fonts or animation packages.",
+      "styleIds": [
+        "aether-orbit",
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "motion-design",
+        "decorative-art"
+      ],
+      "dependencies": [],
+      "path": "graphics/v051/motion/orbit-wreath-motion.svg",
+      "details": "graphics/v051/README.md",
+      "spec": "registry/material-expansion-v051.json",
+      "demo": "playground/svg-motion-v051/index.html",
+      "verified": "Original SVG source includes title/desc, self-contained hover CSS keyframes and reduced motion static fallback; browser/device rendering untested.",
+      "handoff": {
+        "entry": "graphics/v051/README.md",
+        "stack": "Standalone decorative SVG image with embedded hover-only CSS motion; not interactive command or JS",
+        "instructions": "Use graphics/v051/motion/orbit-wreath-motion.svg decoratively as img or SVG, choose alt semantics. Hover motion is decoration, not keyboard action. Test target browser SVG CSS behavior.",
+        "limitations": "Hover-only decorative SVG animation, not keyboard-triggered when used as img, and not production cross-browser certified."
+      }
+    },
+    {
+      "id": "VG-078",
+      "type": "component",
+      "name": "Breathing rosace / 呼吸花窗",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v051",
+        "original-svg",
+        "self-contained-css-motion",
+        "svg-hover-only",
+        "reduced-motion",
+        "standalone-vector"
+      ],
+      "aliases": [
+        "Breathing rosace",
+        "呼吸花窗",
+        "breathing-rosace-motion"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG vector source with embedded original hover-triggered CSS keyframe and reduced-motion fallback; no external scripts, images, licensed fonts or animation packages.",
+      "styleIds": [
+        "aether-orbit",
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "motion-design",
+        "decorative-art"
+      ],
+      "dependencies": [],
+      "path": "graphics/v051/motion/breathing-rosace-motion.svg",
+      "details": "graphics/v051/README.md",
+      "spec": "registry/material-expansion-v051.json",
+      "demo": "playground/svg-motion-v051/index.html",
+      "verified": "Original SVG source includes title/desc, self-contained hover CSS keyframes and reduced motion static fallback; browser/device rendering untested.",
+      "handoff": {
+        "entry": "graphics/v051/README.md",
+        "stack": "Standalone decorative SVG image with embedded hover-only CSS motion; not interactive command or JS",
+        "instructions": "Use graphics/v051/motion/breathing-rosace-motion.svg decoratively as img or SVG, choose alt semantics. Hover motion is decoration, not keyboard action. Test target browser SVG CSS behavior.",
+        "limitations": "Hover-only decorative SVG animation, not keyboard-triggered when used as img, and not production cross-browser certified."
+      }
+    },
+    {
+      "id": "VG-079",
+      "type": "component",
+      "name": "Pendulum label / 摆锤标签",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v051",
+        "original-svg",
+        "self-contained-css-motion",
+        "svg-hover-only",
+        "reduced-motion",
+        "standalone-vector"
+      ],
+      "aliases": [
+        "Pendulum label",
+        "摆锤标签",
+        "pendulum-label-motion"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG vector source with embedded original hover-triggered CSS keyframe and reduced-motion fallback; no external scripts, images, licensed fonts or animation packages.",
+      "styleIds": [
+        "aether-orbit",
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "motion-design",
+        "decorative-art"
+      ],
+      "dependencies": [],
+      "path": "graphics/v051/motion/pendulum-label-motion.svg",
+      "details": "graphics/v051/README.md",
+      "spec": "registry/material-expansion-v051.json",
+      "demo": "playground/svg-motion-v051/index.html",
+      "verified": "Original SVG source includes title/desc, self-contained hover CSS keyframes and reduced motion static fallback; browser/device rendering untested.",
+      "handoff": {
+        "entry": "graphics/v051/README.md",
+        "stack": "Standalone decorative SVG image with embedded hover-only CSS motion; not interactive command or JS",
+        "instructions": "Use graphics/v051/motion/pendulum-label-motion.svg decoratively as img or SVG, choose alt semantics. Hover motion is decoration, not keyboard action. Test target browser SVG CSS behavior.",
+        "limitations": "Hover-only decorative SVG animation, not keyboard-triggered when used as img, and not production cross-browser certified."
+      }
+    },
+    {
+      "id": "VG-080",
+      "type": "component",
+      "name": "Ripple emblem / 水纹徽记",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v051",
+        "original-svg",
+        "self-contained-css-motion",
+        "svg-hover-only",
+        "reduced-motion",
+        "standalone-vector"
+      ],
+      "aliases": [
+        "Ripple emblem",
+        "水纹徽记",
+        "ripple-emblem-motion"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original self-contained SVG vector source with embedded original hover-triggered CSS keyframe and reduced-motion fallback; no external scripts, images, licensed fonts or animation packages.",
+      "styleIds": [
+        "aether-orbit",
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "motion-design",
+        "decorative-art"
+      ],
+      "dependencies": [],
+      "path": "graphics/v051/motion/ripple-emblem-motion.svg",
+      "details": "graphics/v051/README.md",
+      "spec": "registry/material-expansion-v051.json",
+      "demo": "playground/svg-motion-v051/index.html",
+      "verified": "Original SVG source includes title/desc, self-contained hover CSS keyframes and reduced motion static fallback; browser/device rendering untested.",
+      "handoff": {
+        "entry": "graphics/v051/README.md",
+        "stack": "Standalone decorative SVG image with embedded hover-only CSS motion; not interactive command or JS",
+        "instructions": "Use graphics/v051/motion/ripple-emblem-motion.svg decoratively as img or SVG, choose alt semantics. Hover motion is decoration, not keyboard action. Test target browser SVG CSS behavior.",
+        "limitations": "Hover-only decorative SVG animation, not keyboard-triggered when used as img, and not production cross-browser certified."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",
