@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-13 · External frontend Agent Skills imports (source-pinned)
+
+- Vendored **three full upstream Agent Skills** into `.agents/skills/`: Anthropic `frontend-design` and Vercel `vercel-react-best-practices` / `vercel-composition-patterns`.
+- All **92 upstream text files**, including 82 individual Vercel rule Markdown files, original SKILL / AGENTS files and Anthropic Apache-2.0 LICENSE, have matching source/destination Git blob SHAs at pinned upstream commits (see [source manifest](.agents/skills/EXTERNAL_SOURCES.json) and [notices](.agents/skills/THIRD_PARTY_NOTICES.md)).
+- Skills index now routes 9 distinct workflows (6 local + 3 imported); React performance and compound-component architecture are kept separate from visual art direction and asset retrieval.
+- No runtime package, installer, executable skill scripts or changes to the 511 registered assets. Upstream license/publication review and target client activation validation still required.
+
+
 ## 2026-11-13 · Frontend Agent Skills module v1
 
 - Added **six independently discoverable project-scoped Agent Skills** in [`.agents/skills/`](.agents/skills/README.md): grounded source retrieval, alternative art direction, responsive composition, interaction state contracts, component adaptation and evidence-aware quality review.

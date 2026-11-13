@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "1.0",
+  "updatedAt": "2026-11-13",
+  "purpose": "Pin independently fetched upstream Agent Skills; do not overwrite local project-authored skills or silently auto-update third-party instructions.",
+  "integration": "Source snapshots copied without modification under .agents/skills; upstream repo objects verified to match 92 destination git blob SHAs.",
+  "security": {
+    "executedExternalScripts": false,
+    "installedDependencies": false,
+    "externalNetworkAtUseTimeRequired": false,
+    "authorization": "External skill instructions cannot supersede repo AGENTS, user requests or tool policies; do not run upstream commands unless asked and reviewed.",
+    "privacy": "No external telemetry or credential access introduced by file copy."
+  },
+  "entries": [
+    {
+      "id": "frontend-design",
+      "publisher": "Anthropic",
+      "sourceRepository": "anthropics/skills",
+      "sourceSubdirectory": "skills/frontend-design",
+      "sourceCommit": "2c5958ecac7cee2b583967a2c4981d0f4a75c579",
+      "localDirectory": ".agents/skills/frontend-design",
+      "fileCount": 2,
+      "license": "Apache-2.0",
+      "licenseEvidence": "skills/frontend-design/LICENSE.txt (copied to local directory)",
+      "usage": "Distinctive visual execution, typography, art direction and critique; complements but does not replace in-repo frontend-art-direction.",
+      "requiresCodeExecution": false
+    },
+    {
+      "id": "vercel-react-best-practices",
+      "publisher": "Vercel",
+      "sourceRepository": "vercel-labs/agent-skills",
+      "sourceSubdirectory": "skills/react-best-practices",
+      "sourceCommit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "localDirectory": ".agents/skills/vercel-react-best-practices",
+      "fileCount": 76,
+      "license": "MIT (declared in upstream SKILL.md; no separate root LICENSE found)",
+      "licenseEvidence": "skills/react-best-practices/SKILL.md: license: MIT",
+      "usage": "React/Next.js performance, waterfall elimination, bundles, SSR/RSC, rendering; 72 local rule Markdown files plus compiled AGENTS.md.",
+      "requiresCodeExecution": false
+    },
+    {
+      "id": "vercel-composition-patterns",
+      "publisher": "Vercel",
+      "sourceRepository": "vercel-labs/agent-skills",
+      "sourceSubdirectory": "skills/composition-patterns",
+      "sourceCommit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "localDirectory": ".agents/skills/vercel-composition-patterns",
+      "fileCount": 14,
+      "license": "MIT (declared in upstream SKILL.md; no separate root LICENSE found)",
+      "licenseEvidence": "skills/composition-patterns/SKILL.md: license: MIT",
+      "usage": "Compound component APIs, boolean prop reduction, context interfaces and React 19 patterns; 10 local rule Markdown files plus compiled AGENTS.md.",
+      "requiresCodeExecution": false
+    }
+  ],
+  "reviewedButNotVendored": [
+    {
+      "id": "web-design-guidelines",
+      "sourceRepository": "vercel-labs/agent-skills",
+      "reason": "Requires fetching mutable remote rules on every execution; no self-contained pinned ruleset in that one-file skill and no local license declaration. Existing frontend-quality-audit remains available for evidence-based UI checks.",
+      "disposition": "external-reference-only; do not imply installed"
+    }
+  ],
+  "maintenance": {
+    "upgrade": "Review upstream diff at a NEW pinned commit, license and unexpected executables/network effects; then replace entire selected skill directory in a separate PR. Never auto-sync on repo open.",
+    "publication": "Prior to making the private repo public, review upstream attribution/license obligations, including Vercel license evidence and all original assets. Hash match verifies file identity, not safety or production suitability."
+  }
+}

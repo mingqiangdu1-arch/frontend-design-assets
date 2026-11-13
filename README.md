@@ -10,7 +10,7 @@
 
 ## Agent Skills · 可复用前端技能
 
-新模块：[**Frontend Agent Skills（6 项）**](.agents/skills/README.md) 支持 Agent 按需执行素材精确检索、设计方向探索、响应式构图、交互契约、组件跨项目复用和质量审查。Codex 在本仓库工作时可从 `.agents/skills/` 发现技能；每项有独立 `SKILL.md` 与实例。**技能是工作方法，不是新的 React 导出、UI 组件，也不会在仓库内构建业务应用**。
+技能模块：[**Frontend Agent Skills（9 项：6 自建 + 3 外部引入）**](.agents/skills/README.md) 支持素材精确检索、视觉探索、响应式构图、交互契约、组件迁移与审查，并新增 Anthropic 的视觉实现指导、Vercel React/Next.js 性能实践及 React 组合模式。第三方完整规则已按提交固定并保留 [来源及许可信息](.agents/skills/THIRD_PARTY_NOTICES.md)。Codex 在本仓库工作时可从 `.agents/skills/` 发现技能；每项有独立 `SKILL.md` 与实例。**技能是工作方法，不是新的 React 导出、UI 组件，也不会在仓库内构建业务应用**。
 
 ## 按目标找到资产
 
