@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-13 · Frontend Agent Skills module v1
+
+- Added **six independently discoverable project-scoped Agent Skills** in [`.agents/skills/`](.agents/skills/README.md): grounded source retrieval, alternative art direction, responsive composition, interaction state contracts, component adaptation and evidence-aware quality review.
+- Each SKILL.md has specification-aligned YAML metadata plus a focused, optional worked example in `references/`; the index provides task-first selection and explains Codex local discovery versus other agent tooling.
+- Skills reference existing original sources and registries rather than forking asset metadata or creating another application. **No new `assets.json` entries, React exports, themes, executables or package dependencies.** Validation described in the PR; no claim that skills auto-run in GitHub or all external clients.
+
+
 ## 2026-11-13 · V0.53 original responsive composition and editorial SVG sources
 
 - Added **6 independent scoped responsive CSS/HTML composition primitives** FX-094..099: offset editorial cover, staggered wayfinding, native keyboard-focusable scroll-snap media reel, accessible-order caption mosaic, dual editorial narrative and semantic field-note steps. Each has real CSS selectors and inspectable individual markup, not a whole generated site.

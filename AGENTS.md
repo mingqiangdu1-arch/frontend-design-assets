@@ -6,7 +6,7 @@
 
 **Continuation rule — material-first.** When a user says "继续" after asset-expansion rounds, prioritize genuinely **new reusable visual materials** (specific components, style treatments, animations, typography, graphics, clearly licensed public sources and original snippets). Do not spend consecutive rounds building more registry compatibility tools, tests, redundant behavior contracts or application demos just to increase the count. Checks remain proportionate: only ensure basic registry/source consistency; do not mistake test volume for more materials. Use `registry/material-expansion-v042.json` (external REF-111..123 + original FX-001..006) as the first example of this rule. The repo stays a materials repository, not a website builder.
 
-**Start with [DISCOVER.md](DISCOVER.md).** Separate **source/reference retrieval** from **open-ended design direction**. Use [CATALOG.md](CATALOG.md) only for deeper task/version lookup. Machine-readable registries remain authoritative; do not load all histories, galleries or the entire large asset registry up front.
+**Start with [DISCOVER.md](DISCOVER.md).** For repeatable frontend tasks, use the matching [repo-scoped skill](.agents/skills/README.md) from `.agents/skills/` (source retrieval, art direction, adaptive layout, interaction contract, component adaptation, or quality audit). Load only the relevant `SKILL.md` and optional reference; skills are workflows, not new source assets. Separate **source/reference retrieval** from **open-ended design direction**. Use [CATALOG.md](CATALOG.md) only for deeper task/version lookup. Machine-readable registries remain authoritative; do not load all histories, galleries or the entire large asset registry up front.
 
 ## 1. Retrieve before generating
 

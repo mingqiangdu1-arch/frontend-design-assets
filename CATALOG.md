@@ -2,6 +2,8 @@
 
 **目的**：本页是按具体任务和版本展开的**深度检索目录**。首次访问请先读 [DISCOVER.md：找可引用素材 / 探索设计方向](DISCOVER.md)，按需再进入本页；不需要先浏览所有旧版本。最新条目数量与状态，以 `registry/*.json` 为准，不要把本页当作同步的计数器。
 
+**任务需要可重复执行的方法时**：先查看 [Frontend Agent Skills](.agents/skills/README.md)，按具体任务只加载其中一项 `SKILL.md`；本 CATALOG 仍负责素材和源码定位，不把技能当作已实现组件。
+
 ## 检索顺序
 
 1. **判断目标**：视觉方向（visual） / 可执行 React 组件（implementation） / 交互行为（behavior） / 页面结构（composition） / 设计审查（review）。

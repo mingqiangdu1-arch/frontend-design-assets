@@ -8,6 +8,10 @@
 >
 > **仓库现状：** 私有研究/参考实现仓库，尚非统一生产级组件包。未来公开前需完成 [发布准备检查](docs/publication-readiness.md)。
 
+## Agent Skills · 可复用前端技能
+
+新模块：[**Frontend Agent Skills（6 项）**](.agents/skills/README.md) 支持 Agent 按需执行素材精确检索、设计方向探索、响应式构图、交互契约、组件跨项目复用和质量审查。Codex 在本仓库工作时可从 `.agents/skills/` 发现技能；每项有独立 `SKILL.md` 与实例。**技能是工作方法，不是新的 React 导出、UI 组件，也不会在仓库内构建业务应用**。
+
 ## 按目标找到资产
 
 | 我想做…… | 入口 | 能获得什么 |
