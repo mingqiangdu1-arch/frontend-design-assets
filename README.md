@@ -16,9 +16,9 @@
 | 用选定主题规划页面 | [页面搭建配方](docs/assembly/style-assembly-v028.md) · [CLI](scripts/build-style-brief.mjs) · [Theme Atlas](playground/style-atlas/) | 14 套主题对应 57 个分区设计；真实模板、源文件和验收清单保持关联 |
 | 浏览全部主题并排对比 | [主题图谱](playground/style-atlas/README.md) · [Agent 选型](docs/styles/theme-selection-v027.md) | 按场景、构图、材质、交互筛选 14 套主题，任选两套加载真实 Demo |
 | 2026 流行主题研究与预览 | [趋势对比](docs/styles/trend-research-2026.md) · [Trend Style Lab](playground/trend-style-lab/README.md) | Liquid Layer、Shape Expressive、Type-led Minimal、Organic Tactile：独立主题与可交互场景，不是 React 库兼容声明 |
-| 查找独立 CSS / 原生 JS / Canvas 素材 | [按任务检索](CATALOG.md) · [原件目录](styles/primitives/) · [最近一轮 V0.52](styles/primitives/v052/README.md) | `FX-*` 系列包含可按类/函数提取的原创视觉、动效、控件和程序绘图；必须检查各项交互和适配边界 |
-| 查找原创 SVG、图标、纹理和场景图 | [图形原件](graphics/) · [V0.52 图形说明](graphics/v052/README.md) · [素材登记](registry/README.md) | `VG-*` 等独立矢量原件可逐项查源文件；图形示意与可运行交互、真实数据或 3D 引擎不可混同 |
-| 回溯版本素材、研究来源和许可 | [历次研究](docs/research/) · [逐版机器索引](registry/README.md) · [变更历史](CHANGELOG.md) | V0.42–V0.52 的原件与研究按版本保留；外部来源默认只供研究，不代表已安装或获复制授权 |
+| 查找独立 CSS / 原生 JS / Canvas 素材 | [按任务检索](CATALOG.md) · [原件目录](styles/primitives/) · [最近一轮 V0.53](styles/primitives/v053/README.md) | `FX-*` 系列包含可按类/函数提取的原创视觉、动效、控件和程序绘图；必须检查各项交互和适配边界 |
+| 查找原创 SVG、图标、纹理和场景图 | [图形原件](graphics/) · [V0.53 图形说明](graphics/v053/README.md) · [素材登记](registry/README.md) | `VG-*` 等独立矢量原件可逐项查源文件；图形示意与可运行交互、真实数据或 3D 引擎不可混同 |
+| 回溯版本素材、研究来源和许可 | [历次研究](docs/research/) · [逐版机器索引](registry/README.md) · [变更历史](CHANGELOG.md) | V0.42–V0.53 的原件与研究按版本保留；外部来源默认只供研究，不代表已安装或获复制授权 |
 | 查找并复用 React 组件 | [组件登记](registry/components.json) · [组件源码](packages/ui/src/) · [组件文档](packages/ui/README.md) | 真实 TSX/CSS、API、四套显式兼容主题和适配限制 |
 | 参考页面结构素材 | [页面模板](registry/page-templates.json) · [组装指南](docs/assembly/README.md) · [独立 Demo](playground/page-blueprints/) | 可复用分区、构图和交互案例；真实页面开发须在外部项目进行 |
 | 检索外部专项技术与视觉资源 | [V0.30 专题资源](docs/research/specialized-resources-v030.md) · [结构化资源索引](registry/specialized-resources-v030.json) | 17 个画布/富文本、地图数据、3D 与移动交互来源；只做研究与素材交接，不安装到本库 |

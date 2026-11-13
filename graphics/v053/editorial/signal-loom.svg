@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc"><title id="title">Signal loom · 信号织带</title><desc id="desc">A standalone transparent abstract media art source with rounded parallel copper bars woven through curved aqua, blue and rose ribbons.</desc>
+<defs><linearGradient id="bandA" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#65d1c4"/><stop offset="1" stop-color="#15697c"/></linearGradient><linearGradient id="bandB" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b4b8fa"/><stop offset="1" stop-color="#605fae"/></linearGradient></defs>
+<ellipse cx="324" cy="316" rx="245" ry="25" fill="#193e50" opacity=".1"/>
+<g transform="rotate(-9 320 170)"><path d="M160 55V281M220 55V281M280 55V281M340 55V281M400 55V281M460 55V281" stroke="#e2a36f" stroke-width="23" stroke-linecap="round" opacity=".88"/>
+<path d="M85 103C168 34 226 169 318 102S466 41 554 113" stroke="#183f5f" stroke-width="38" fill="none" stroke-linecap="round" opacity=".25" transform="translate(5 9)"/>
+<path d="M85 103C168 34 226 169 318 102S466 41 554 113" stroke="url(#bandA)" stroke-width="33" fill="none" stroke-linecap="round"/>
+<path d="M77 171C166 242 246 97 335 174S459 254 551 167" stroke="#233f53" stroke-width="38" fill="none" stroke-linecap="round" opacity=".21" transform="translate(4 8)"/>
+<path d="M77 171C166 242 246 97 335 174S459 254 551 167" stroke="url(#bandB)" stroke-width="32" fill="none" stroke-linecap="round"/>
+<path d="M89 246C174 189 227 315 337 246S461 193 555 252" stroke="#e98d9b" stroke-width="31" fill="none" stroke-linecap="round"/>
+<path d="M150 57V76M220 85v28M280 115v28M340 63v28M400 58v30M460 77v29" stroke="#ffe5c5" stroke-width="8" stroke-linecap="round" opacity=".65"/>
+</g><circle cx="95" cy="102" r="10" fill="#d97d53"/><circle cx="554" cy="257" r="10" fill="#365f85"/></svg>

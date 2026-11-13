@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc"><title id="title">Field atlas · 折页观察图册</title><desc id="desc">A transparent vector illustration of an unfolded three-panel field atlas with abstract terrain marks, route dots, a compass and original ink annotations.</desc>
+<ellipse cx="321" cy="318" rx="256" ry="22" fill="#3d594b" opacity=".14"/>
+<g transform="translate(75 30)"><path d="M0 18L156 0 316 26 480 1V267L319 289 157 266 0 286Z" fill="#ecdfbc" stroke="#a39676" stroke-width="4"/><path d="M156 0L157 266 319 289 316 26Z" fill="#f7e9ca"/><path d="M0 18l156-18 1 266L0 286z" fill="#d9dcc0" opacity=".9"/><path d="M316 26L480 1V267L319 289z" fill="#c7d6c7"/><path d="M156 0l1 266m159-240 3 263" stroke="#a39676" stroke-dasharray="7 8" stroke-width="3" fill="none"/>
+<path d="M5 181Q75 136 144 172T303 130 471 164" fill="none" stroke="#7ea08b" stroke-width="27" opacity=".65"/><path d="M6 181Q75 136 144 172T303 130 471 164" fill="none" stroke="#f9f1d7" stroke-width="5" stroke-dasharray="5 9"/>
+<path d="M30 71q24-50 69-15t22 77m52-26q42-77 97-20t15 91m65-105q35-50 83-10t22 85" stroke="#679b91" stroke-width="4" fill="none" opacity=".85"/>
+<path d="M25 231h91m-91 12h74m75-25h110m-110 12h78m103-11h96m-96 13h67" stroke="#b4a884" stroke-width="6" stroke-linecap="round"/>
+<circle cx="89" cy="175" r="16" fill="#ca7655" stroke="#f9e9c5" stroke-width="5"/><circle cx="248" cy="146" r="13" fill="#ca7655" stroke="#f9e9c5" stroke-width="5"/><circle cx="396" cy="167" r="16" fill="#ca7655" stroke="#f9e9c5" stroke-width="5"/>
+<g transform="translate(380 35)"><circle cx="25" cy="25" r="22" fill="#f7e9ca" stroke="#527c73" stroke-width="3"/><path d="M25 7l7 18-7 18-7-18z" fill="#bc6b4e"/><circle cx="25" cy="25" r="3" fill="#527c73"/></g>
+</g><path d="M82 40l19-8 9 20-18 8" fill="#f7b872"/></svg>

@@ -1,0 +1,77 @@
+/* V0.53 · six ORIGINAL, independently copyable responsive composition primitives.
+   Scope is limited to .fx53-*; no font, image, script, framework or global reset. */
+.fx53-offset-stage,.fx53-wayfinding,.fx53-media-reel,.fx53-caption-mosaic,.fx53-tension-panel,.fx53-field-notes{--fx53-ink:#17253a;--fx53-muted:#59697a;--fx53-paper:#f9f7f1;color:var(--fx53-ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.fx53-offset-stage *, .fx53-wayfinding *, .fx53-media-reel *, .fx53-caption-mosaic *, .fx53-tension-panel *, .fx53-field-notes *{box-sizing:border-box}
+.fx53-offset-stage{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);min-height:310px;background:#eeeae2;overflow:hidden;border:1px solid #d8d2c6}
+.fx53-offset-stage__visual{position:relative;min-height:280px;background:radial-gradient(circle at 80% 18%,#e8ba68 0 10%,transparent 10.5%),linear-gradient(130deg,#365f62 0 43%,#bad5bf 43% 59%,#e9a274 59%);isolation:isolate}
+.fx53-offset-stage__visual:before{content:"";position:absolute;inset:17% 24% 14% 16%;border:24px solid #f5e5c2;border-left-width:42px;transform:rotate(-12deg);box-shadow:16px 18px 0 #1f4047}
+.fx53-offset-stage__visual:after{content:"";position:absolute;width:28%;aspect-ratio:1;border-radius:50%;left:43%;top:31%;background:radial-gradient(circle at 35% 30%,#ffc68a,#bf513b 68%,#7a2c2a);z-index:1}
+.fx53-offset-stage__marker{position:absolute;left:1rem;bottom:1rem;z-index:2;color:white;font-size:.68rem;letter-spacing:.18em;font-weight:750;text-transform:uppercase}
+.fx53-offset-stage__copy{display:flex;flex-direction:column;justify-content:flex-end;gap:1rem;padding:clamp(1.1rem,4vw,2.8rem);position:relative}
+.fx53-offset-stage__copy:before{content:"";width:58px;border-top:3px solid #c76a42}
+.fx53-offset-stage__eyebrow{font-size:.7rem;text-transform:uppercase;letter-spacing:.17em;font-weight:750}
+.fx53-offset-stage__copy h3{font-size:clamp(1.8rem,4vw,3.5rem);line-height:.99;letter-spacing:-.055em;margin:0;max-width:12ch}
+.fx53-offset-stage__copy p{margin:0;max-width:36ch;color:#4f5c61;line-height:1.55}
+
+/* FX-095 staggered wayfinding: visual rhythm without changing reading order. */
+.fx53-wayfinding{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(.65rem,1.6vw,1.5rem);align-items:start;padding:1rem;background:#f8f5f0;border:1px solid #e4ddd2}
+.fx53-wayfinding__step{position:relative;display:flex;flex-direction:column;justify-content:space-between;min-height:226px;padding:1.15rem;background:#dddbd0;clip-path:polygon(0 0,100% 0,100% 89%,86% 100%,0 100%)}
+.fx53-wayfinding__step:nth-child(2){margin-top:2.2rem;background:#dbe8d4}
+.fx53-wayfinding__step:nth-child(3){margin-top:4.4rem;background:#f6d6b5}
+.fx53-wayfinding__number{font-size:clamp(3rem,8vw,6rem);font-weight:850;line-height:1;letter-spacing:-.1em;opacity:.48}
+.fx53-wayfinding__step h3{font-size:clamp(1.1rem,2vw,1.55rem);line-height:1.05;margin:0 0 .45rem}
+.fx53-wayfinding__step p{margin:0;font-size:.78rem;line-height:1.45;max-width:22ch}
+
+/* FX-096 horizontal independent reel. Keyboard scroll with tabindex on container. */
+.fx53-media-reel{padding:1rem;background:#151e29;color:#eaf3f0}
+.fx53-media-reel__track{display:flex;gap:.85rem;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:x mandatory;padding:.1rem .1rem 1.1rem;scrollbar-color:#7eb9ae #283849}
+.fx53-media-reel__track:focus-visible{outline:3px solid #a8e4de;outline-offset:2px}
+.fx53-media-reel__item{flex:0 0 clamp(210px,43%,360px);scroll-snap-align:start;margin:0}
+.fx53-media-reel__art{aspect-ratio:4/3;position:relative;overflow:hidden;background:linear-gradient(135deg,#6a9d99,#c4dad0)}
+.fx53-media-reel__art:before{content:"";position:absolute;width:65%;aspect-ratio:1;left:17%;top:20%;border-radius:42% 58% 46% 54%;background:#f5c183;box-shadow:30px 16px 0 #e87359;transform:rotate(-12deg)}
+.fx53-media-reel__item:nth-child(2) .fx53-media-reel__art{background:linear-gradient(140deg,#d7abc3,#60447a)}
+.fx53-media-reel__item:nth-child(2) .fx53-media-reel__art:before{border-radius:0;transform:rotate(35deg);background:#ffd6b2;box-shadow:30px 16px 0 #c35a74}
+.fx53-media-reel__item:nth-child(3) .fx53-media-reel__art{background:linear-gradient(140deg,#c9d2ed,#739bc1)}
+.fx53-media-reel__item:nth-child(3) .fx53-media-reel__art:before{border-radius:50%;background:#fff1c1;box-shadow:35px 0 0 #315a9c}
+.fx53-media-reel__item figcaption{display:flex;justify-content:space-between;gap:.8rem;margin-top:.65rem;font-size:.85rem}
+.fx53-media-reel__item figcaption span:last-child{color:#a7bfbc;font-variant-numeric:tabular-nums}
+
+/* FX-097 original grid, not CSS masonry: ordered figures with editorial aspect ratios. */
+.fx53-caption-mosaic{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-template-rows:150px 150px;gap:.7rem}
+.fx53-caption-mosaic figure{position:relative;min-width:0;margin:0;overflow:hidden;background:#e2d5c2}
+.fx53-caption-mosaic figure:first-child{grid-row:span 2;background:linear-gradient(125deg,#e4a264,#c96948)}
+.fx53-caption-mosaic figure:nth-child(2){grid-column:span 2;background:linear-gradient(150deg,#86b8b0,#244d6b)}
+.fx53-caption-mosaic figure:nth-child(3){background:linear-gradient(135deg,#dcc3ea,#927aa9)}
+.fx53-caption-mosaic figure:nth-child(4){background:linear-gradient(135deg,#c7ca8f,#65764a)}
+.fx53-caption-mosaic figure:before{content:"";position:absolute;width:64%;aspect-ratio:1;top:10%;left:22%;border:18px solid #fff8dfbb;border-radius:50% 20% 50% 20%;transform:rotate(-25deg)}
+.fx53-caption-mosaic figcaption{position:absolute;bottom:.6rem;left:.6rem;right:.6rem;background:#fffdf4eb;padding:.35rem .55rem;font-weight:750;font-size:.75rem;letter-spacing:.01em}
+
+/* FX-098 contrast plate is a parallel editorial comparison, not an interactive slider. */
+.fx53-tension-panel{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;background:#ecede9;border:1px solid #cfd6d0}
+.fx53-tension-panel__side{padding:clamp(1rem,3.5vw,2rem);min-height:250px;display:flex;flex-direction:column;justify-content:space-between;gap:1.5rem}
+.fx53-tension-panel__side:first-child{background:#213c42;color:#edf0e8}
+.fx53-tension-panel__side:last-child{background:#e9dec6;color:#284344}
+.fx53-tension-panel__tag{font-size:.72rem;letter-spacing:.18em;font-weight:800;text-transform:uppercase}
+.fx53-tension-panel__side h3{margin:0;line-height:1.04;font-size:clamp(1.65rem,3vw,3rem);max-width:14ch;letter-spacing:-.04em}
+.fx53-tension-panel__side p{font-size:.82rem;line-height:1.5;margin:0;max-width:36ch;opacity:.88}
+.fx53-tension-panel__side:first-child .fx53-tension-panel__tag{color:#b2cfbc}
+.fx53-tension-panel__side:last-child .fx53-tension-panel__tag{color:#835a32}
+
+/* FX-099 annotated field-note trail: ordered steps; visual links are decorative only. */
+.fx53-field-notes{margin:0;padding:1.2rem;list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.8rem;background:#f2f0e7;border:1px solid #d5d2c8}
+.fx53-field-notes__item{position:relative;min-height:168px;padding:1rem;background:#fffef7;border:1px solid #d6d1c5;box-shadow:4px 5px 0 #d8d4ca;transform:rotate(var(--tilt,0deg))}
+.fx53-field-notes__item:nth-child(2){--tilt:1deg}
+.fx53-field-notes__item:nth-child(3){--tilt:-1.2deg}
+.fx53-field-notes__item:nth-child(4){--tilt:.7deg}
+.fx53-field-notes__item:not(:last-child):after{content:"";position:absolute;left:calc(100% + 5px);top:35px;width:calc(.8rem + 3px);border-top:2px dashed #bd866c;z-index:2;transform:rotate(calc(-1 * var(--tilt,0deg)))}
+.fx53-field-notes__no{display:block;color:#b05e43;font-size:.7rem;font-weight:800;letter-spacing:.14em;margin-bottom:1.2rem}
+.fx53-field-notes__item strong{display:block;font-size:1rem;line-height:1.2;margin-bottom:.5rem}
+.fx53-field-notes__item p{margin:0;font-size:.76rem;line-height:1.5;color:#536366}
+@media(max-width:760px){
+ .fx53-offset-stage{grid-template-columns:1fr}.fx53-offset-stage__visual{min-height:225px}.fx53-offset-stage__copy{padding:1.2rem}
+ .fx53-wayfinding{grid-template-columns:1fr}.fx53-wayfinding__step{min-height:132px;clip-path:none}.fx53-wayfinding__step:nth-child(n){margin:0}.fx53-wayfinding__number{font-size:2.7rem}
+ .fx53-caption-mosaic{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(3,140px)}.fx53-caption-mosaic figure:first-child{grid-row:span 2}.fx53-caption-mosaic figure:nth-child(2){grid-column:auto}.fx53-caption-mosaic figure:nth-child(4){grid-column:span 2}
+ .fx53-field-notes{grid-template-columns:repeat(2,minmax(0,1fr))}.fx53-field-notes__item:after{display:none}
+}
+@media(max-width:480px){.fx53-tension-panel{grid-template-columns:1fr}.fx53-tension-panel__side{min-height:180px}.fx53-field-notes{grid-template-columns:1fr}.fx53-media-reel__item{flex-basis:82%}.fx53-caption-mosaic{grid-template-rows:repeat(3,122px)}}
+@media(prefers-reduced-motion:reduce){.fx53-media-reel__track{scroll-behavior:auto}}

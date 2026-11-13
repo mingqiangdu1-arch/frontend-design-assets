@@ -25,6 +25,7 @@
 | 视觉前后比较、标签、评分、comparison / review / rating | `UI-060`、`UI-061`、`UI-062`、`packages/ui/src/cross-context.tsx`、`recipes/compare-annotate-feedback.md` | 可交互 React 控件和跨场景组合配方；真实媒体授权、评审保存与后端审核需宿主实现 |
 | 工作流、步骤表单、节点编辑、flow editor | `UI-047`、`UI-058`、`packages/ui/src/workflows.tsx`、`editors.tsx` | 交互参考，不是服务端流程引擎 |
 | 页面结构、整页模板、layout、blueprint | `registry/page-templates.json`、`playground/page-blueprints/README.md`、`docs/assembly/README.md` | 模板 `implementation` 字段决定是静态实验还是 React |
+| 图文编排、内容封面、作品集拼版、横向画廊、创意研究插画 / editorial layout, scroll-snap reel, composition atoms | `FX-094`–`FX-099`、`VG-087`–`VG-090`、`registry/material-expansion-v053.json` | 六个原创独立 CSS/HTML 响应式编排原件 + 四幅原创透明 SVG 插画；原件和 demo 可逐项引用，没有业务页面、图库服务或新的 React 导出 |
 | 程序化美术、可复现种子 Canvas、2D 伪三维、空间材料 / seeded generative art, canvas drawing, pseudo-3D CSS, isometric svg | `FX-085`–`FX-093`、`VG-081`–`VG-086`、`registry/material-expansion-v052.json` | 五个原创 Canvas 2D 渲染算法（带真实原生种子刷新）+ 四个空间 CSS 原件（两个原生输入状态）+ 六个独立伪 3D SVG；不含真实地形/信号数据、WebGL、网格模型或产品编辑器 |
 | 独立实验动效、hover SVG、CSS 遮罩、文字循环带、滚动驱动、非规则版式 / kinetic typography, alpha-mask, hover SVG, scroll timeline | `FX-078`–`FX-084`、`VG-073`–`VG-080`、`registry/material-expansion-v051.json` | 7 个真实 CSS/HTML/小型局部 JS 动效与编排原件，4 个 SVG 透明白形遮罩，4 个内嵌 CSS 动画的 SVG 图片；SVG 动画仅装饰，移动端与无障碍须自行验证 |
 | 数据叙事、统计示意、报告插图、印刷拼贴、原创透明叠层、横竖比插画 / print, editorial, slopegraph, interval, dumbbell, evidence, transparent graphic | `FX-070`–`FX-077`、`VG-063`–`VG-072`、`registry/material-expansion-v050.json` | 8 个原创 CSS/HTML 视觉原子 + 4 份透明印刷质感图 + 4 份概念示意图 + 2 份独立纵横构图 SVG；图表值全部虚构，不能冒充统计证据 |

@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-13 · V0.53 original responsive composition and editorial SVG sources
+
+- Added **6 independent scoped responsive CSS/HTML composition primitives** FX-094..099: offset editorial cover, staggered wayfinding, native keyboard-focusable scroll-snap media reel, accessible-order caption mosaic, dual editorial narrative and semantic field-note steps. Each has real CSS selectors and inspectable individual markup, not a whole generated site.
+- Added **4 standalone original transparent 640×360 SVG illustrations** VG-087..090: reading lens, studio pinboard, signal loom and imaginary field atlas. All use original paths/gradients, no imported media, script or fonts.
+- [Machine index](registry/material-expansion-v053.json) · [CSS sources](styles/primitives/v053/) · [independent SVGs](graphics/v053/editorial/) · [HTML gallery](playground/composition-v053/index.html).
+- Catalog **501 → 511**. No new React public exports, default styles, third-party packages, app builder, product pages, tests or runtime dependencies. Browser and target-device production validation not claimed.
+
+
 ## 2026-11-12 · V0.52 original generative Canvas sources and pseudo-3D visual materials
 
 - Added **5 real seeded native 2D Canvas drawing algorithms** FX-085..089: harmonic contours, jittered triangle facets, parametric Lissajous trails, stipple dunes and isometric projected voxel skyline. Each has a standalone matching HTML specimen, seed, real native reroll button, bounded DPR and local original JS; no WebGL or continuous animation loop.

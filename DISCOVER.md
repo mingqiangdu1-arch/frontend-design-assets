@@ -9,7 +9,7 @@
 | “找一个能参考/改造的组件、图形或动效” | **A. 精确选材** | 2–5 个候选：ID、具体源码/外链、Demo、可用边界、替代项 |
 | “还没有确定风格，先看看可以怎么设计” | **B. 方向探索** | 2–3 个**有区别**的方向：结构、视觉语言、交互特点、已有依据 |
 | “已有产品或截图，想参考或复现” | **先 B 后 A** | 先提取布局/材质/密度/交互约束，再逐项找实现素材；不能声称已精确复刻 |
-| “仓库里都有什么” | [完整任务索引](CATALOG.md) | 按类别给入口，不读取全量注册表、不罗列 501 项 |
+| “仓库里都有什么” | [完整任务索引](CATALOG.md) | 按类别给入口，不读取全量注册表、不罗列全部资产 |
 
 ### A · 找到可参考或可引用的实物
 
@@ -20,9 +20,9 @@
 | **SVG、图标、纹理、插画** | [材料系列索引](registry/README.md) → 对应 `VG-*` | [`graphics/`](graphics/) 中单个原图/相应版权与用途说明；不要把静态示意当成动态组件 |
 | **交互行为/可操作原型** | [交互研究](docs/interactions/) → `IP-*` | 对应 `path/spec/demo` 和 `handoff.mode`；行为合同、原型与可复用源码要区分 |
 | **第三方现成项目/外部设计参考** | [来源档案](docs/research/sources.md) · [具体组件研究](docs/research/component-dossiers-v037.md) · [专项资源](registry/specialized-resources-v030.json) | 原作者、固定源码路径/版本、许可、访问状态；外部 REF 默认**不能直接复制** |
-| **页面结构/布局案例** | [页面模板](registry/page-templates.json) · [页面配方](recipes/) | `implementation` 和源 Demo；不是可直接部署的整页产品 |
+| **页面结构/布局案例** | [V0.53 独立图文布局](styles/primitives/v053/README.md) · [原始预览](playground/composition-v053/index.html) · [页面模板](registry/page-templates.json) · [页面配方](recipes/) | 6 种可独立复制的 CSS 图文编排原件；不是可直接部署的整页产品 |
 
-**GitHub-only（无需安装依赖）**：先看对应小索引，找到准确 ID → 查同名条目 / 指向的原文件 → 最多打开必要的源码、说明、Demo。避免预先读取约 780 KB 的 `registry/assets.json` 或整个 `playground/`。只有需要全库字段交叉匹配时才读 `registry/assets.json`。
+**GitHub-only（无需安装依赖）**：先看对应小索引，找到准确 ID → 查同名条目 / 指向的原文件 → 最多打开必要的源码、说明、Demo。避免预先读取较大的 `registry/assets.json` 或整个 `playground/`。只有需要全库字段交叉匹配时才读 `registry/assets.json`。
 
 **本地有 Node 时**可选用已有词项检索器（不是语义搜索，也不会生成页面）：
 
@@ -35,6 +35,7 @@ node scripts/find-assets.mjs --intent="拖拽排序" --type=interaction --goal=b
 **典型定位范例（仅示意路径）**：
 - `UI-060` → `packages/ui/src/cross-context.tsx`：真实 React 前后对比组件；仍需检查依赖及宿主适配。
 - `FX-090` → `styles/primitives/v052/procedural-and-depth.css`：独立 CSS 亚克力叠层参考；不是真 3D 渲染。
+- `FX-097` → `styles/primitives/v053/composition-atoms.css`：独立图注优先拼版 CSS；可参考构图，不是 React Gallery。
 - `VG-081` → `graphics/v052/scenes/acrylic-monoliths.svg`：独立原创 SVG 场景。
 - `IP-060` → `playground/visual-editor-v039/reorder-model.mjs`：原型级区块排序模型；非整套编辑器。
 - `REF-124` → `docs/research/material-expansion-v043.md`：上游动态浮岛的研究入口；非本仓库导出源码。

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.2",
   "purpose": "Living cross-application, multi-style design asset repository; no repository-wide visual default.",
-  "updatedAt": "2026-11-12",
+  "updatedAt": "2026-11-13",
   "stageDefinitions": [
     "captured",
     "analyzed",
@@ -19838,6 +19838,462 @@
         "stack": "Independent original 640x360 static SVG art; not mesh, realtime camera, physics or WebGL",
         "instructions": "Use graphics/v052/scenes/ceramic-turntable.svg as independent media, select meaningful or empty decorative alt on host, adapt vector shapes only with appropriate design review.",
         "limitations": "Matte ellipse ring stacks with simple vector shading, not actual rotational 3D geometry."
+      }
+    },
+    {
+      "id": "FX-094",
+      "type": "component",
+      "name": "Offset editorial cover / 错位图文封面",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v053",
+        "original-css",
+        "responsive-composition",
+        "standalone-layout",
+        "content-first",
+        "no-dependencies",
+        "fx53-offset-stage"
+      ],
+      "aliases": [
+        "错位图文首屏",
+        "错层封面",
+        "split editorial cover",
+        "offset hero"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored scoped CSS and illustrative HTML; no third-party media, fonts, package or copied upstream code.",
+      "styleIds": [
+        "editorial-warm",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "portfolio",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v053/composition-atoms.css",
+      "details": "styles/primitives/v053/README.md",
+      "spec": "registry/material-expansion-v053.json",
+      "demo": "playground/composition-v053/index.html",
+      "verified": "Original scoped CSS implementation and HTML specimen supplied 2026-11-13; external browser/host integration QA not recorded.",
+      "handoff": {
+        "entry": "styles/primitives/v053/composition-atoms.css",
+        "stack": "Standalone original responsive CSS + HTML specimen for .fx53-offset-stage; not a React public export",
+        "instructions": "Copy only the .fx53-offset-stage CSS family and the matching semantic HTML specimen from playground/composition-v053/index.html; verify host responsiveness, accessibility, visual appearance and content.",
+        "limitations": "Original responsive split composition using illustrative CSS geometry, not licensed photography or a whole landing page."
+      }
+    },
+    {
+      "id": "FX-095",
+      "type": "component",
+      "name": "Staggered wayfinding cards / 错阶导航信息卡",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v053",
+        "original-css",
+        "responsive-composition",
+        "standalone-layout",
+        "content-first",
+        "no-dependencies",
+        "fx53-wayfinding"
+      ],
+      "aliases": [
+        "错阶版式",
+        "阶梯导航卡片",
+        "staggered steps",
+        "offset cards"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored scoped CSS and illustrative HTML; no third-party media, fonts, package or copied upstream code.",
+      "styleIds": [
+        "neo-brutalist",
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "campaign",
+        "portfolio",
+        "content-navigation"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v053/composition-atoms.css",
+      "details": "styles/primitives/v053/README.md",
+      "spec": "registry/material-expansion-v053.json",
+      "demo": "playground/composition-v053/index.html",
+      "verified": "Original scoped CSS implementation and HTML specimen supplied 2026-11-13; external browser/host integration QA not recorded.",
+      "handoff": {
+        "entry": "styles/primitives/v053/composition-atoms.css",
+        "stack": "Standalone original responsive CSS + HTML specimen for .fx53-wayfinding; not a React public export",
+        "instructions": "Copy only the .fx53-wayfinding CSS family and the matching semantic HTML specimen from playground/composition-v053/index.html; verify host responsiveness, accessibility, visual appearance and content.",
+        "limitations": "Three readable CSS-staggered content cards, not route changes, real navigation state or a task workflow."
+      }
+    },
+    {
+      "id": "FX-096",
+      "type": "component",
+      "name": "Native media reel / 原生横向媒体画廊",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v053",
+        "original-css",
+        "responsive-composition",
+        "standalone-layout",
+        "content-first",
+        "no-dependencies",
+        "fx53-media-reel"
+      ],
+      "aliases": [
+        "可横向滚动图片画廊",
+        "原生媒体轨",
+        "horizontal media rail",
+        "scroll snap gallery"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored scoped CSS and illustrative HTML; no third-party media, fonts, package or copied upstream code.",
+      "styleIds": [
+        "precision-dark",
+        "commerce-atelier"
+      ],
+      "applicationContexts": [
+        "portfolio",
+        "media-gallery",
+        "commerce"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v053/composition-atoms.css",
+      "details": "styles/primitives/v053/README.md",
+      "spec": "registry/material-expansion-v053.json",
+      "demo": "playground/composition-v053/index.html",
+      "verified": "Original scoped CSS implementation and HTML specimen supplied 2026-11-13; external browser/host integration QA not recorded.",
+      "handoff": {
+        "entry": "styles/primitives/v053/composition-atoms.css",
+        "stack": "Standalone original responsive CSS + HTML specimen for .fx53-media-reel; not a React public export",
+        "instructions": "Copy only the .fx53-media-reel CSS family and the matching semantic HTML specimen from playground/composition-v053/index.html; verify host responsiveness, accessibility, visual appearance and content.",
+        "limitations": "Keyboard-focusable native horizontal scrolling and CSS scroll-snap, not JS carousel controls or external image loading."
+      }
+    },
+    {
+      "id": "FX-097",
+      "type": "component",
+      "name": "Caption-first art mosaic / 图注优先拼版",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v053",
+        "original-css",
+        "responsive-composition",
+        "standalone-layout",
+        "content-first",
+        "no-dependencies",
+        "fx53-caption-mosaic"
+      ],
+      "aliases": [
+        "图注网格",
+        "作品集图片拼版",
+        "caption mosaic",
+        "editorial grid"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored scoped CSS and illustrative HTML; no third-party media, fonts, package or copied upstream code.",
+      "styleIds": [
+        "paper-rebellion",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "portfolio",
+        "editorial",
+        "gallery"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v053/composition-atoms.css",
+      "details": "styles/primitives/v053/README.md",
+      "spec": "registry/material-expansion-v053.json",
+      "demo": "playground/composition-v053/index.html",
+      "verified": "Original scoped CSS implementation and HTML specimen supplied 2026-11-13; external browser/host integration QA not recorded.",
+      "handoff": {
+        "entry": "styles/primitives/v053/composition-atoms.css",
+        "stack": "Standalone original responsive CSS + HTML specimen for .fx53-caption-mosaic; not a React public export",
+        "instructions": "Copy only the .fx53-caption-mosaic CSS family and the matching semantic HTML specimen from playground/composition-v053/index.html; verify host responsiveness, accessibility, visual appearance and content.",
+        "limitations": "Four ordered semantic figures in a responsive CSS grid, not masonry, an image loader or a draggable layout."
+      }
+    },
+    {
+      "id": "FX-098",
+      "type": "component",
+      "name": "Parallel narrative tension / 双栏对照叙事版",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v053",
+        "original-css",
+        "responsive-composition",
+        "standalone-layout",
+        "content-first",
+        "no-dependencies",
+        "fx53-tension-panel"
+      ],
+      "aliases": [
+        "左右对照叙事",
+        "双栏反差封面",
+        "contrast plate",
+        "two-sided editorial"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored scoped CSS and illustrative HTML; no third-party media, fonts, package or copied upstream code.",
+      "styleIds": [
+        "type-led-minimal",
+        "neo-brutalist"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "brand-story",
+        "portfolio"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v053/composition-atoms.css",
+      "details": "styles/primitives/v053/README.md",
+      "spec": "registry/material-expansion-v053.json",
+      "demo": "playground/composition-v053/index.html",
+      "verified": "Original scoped CSS implementation and HTML specimen supplied 2026-11-13; external browser/host integration QA not recorded.",
+      "handoff": {
+        "entry": "styles/primitives/v053/composition-atoms.css",
+        "stack": "Standalone original responsive CSS + HTML specimen for .fx53-tension-panel; not a React public export",
+        "instructions": "Copy only the .fx53-tension-panel CSS family and the matching semantic HTML specimen from playground/composition-v053/index.html; verify host responsiveness, accessibility, visual appearance and content.",
+        "limitations": "Two static contrasting narratives, not an interactive image-comparison slider or measured before/after results."
+      }
+    },
+    {
+      "id": "FX-099",
+      "type": "component",
+      "name": "Field-note progression / 便笺式有序路径",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v053",
+        "original-css",
+        "responsive-composition",
+        "standalone-layout",
+        "content-first",
+        "no-dependencies",
+        "fx53-field-notes"
+      ],
+      "aliases": [
+        "便利贴流程",
+        "研究笔记路径",
+        "notebook path",
+        "field notes sequence"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored scoped CSS and illustrative HTML; no third-party media, fonts, package or copied upstream code.",
+      "styleIds": [
+        "organic-tactile",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "research-story",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v053/composition-atoms.css",
+      "details": "styles/primitives/v053/README.md",
+      "spec": "registry/material-expansion-v053.json",
+      "demo": "playground/composition-v053/index.html",
+      "verified": "Original scoped CSS implementation and HTML specimen supplied 2026-11-13; external browser/host integration QA not recorded.",
+      "handoff": {
+        "entry": "styles/primitives/v053/composition-atoms.css",
+        "stack": "Standalone original responsive CSS + HTML specimen for .fx53-field-notes; not a React public export",
+        "instructions": "Copy only the .fx53-field-notes CSS family and the matching semantic HTML specimen from playground/composition-v053/index.html; verify host responsiveness, accessibility, visual appearance and content.",
+        "limitations": "Semantic ordered list with decorative connectors/rotation; no state machine, live task management or workflow backend."
+      }
+    },
+    {
+      "id": "VG-087",
+      "type": "component",
+      "name": "Reading lens / 纸质检视镜",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v053",
+        "original-svg",
+        "standalone-vector",
+        "editorial-illustration",
+        "transparent-background",
+        "no-dependencies"
+      ],
+      "aliases": [
+        "资料检视插画",
+        "阅读放大镜",
+        "reading lens",
+        "research illustration"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored vector SVG; no external script, font, raster photo, copyrighted illustration or external icon.",
+      "styleIds": [
+        "editorial-warm",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "knowledge-base",
+        "editorial"
+      ],
+      "dependencies": [],
+      "path": "graphics/v053/editorial/reading-lens.svg",
+      "details": "graphics/v053/README.md",
+      "spec": "registry/material-expansion-v053.json",
+      "demo": "playground/composition-v053/index.html",
+      "verified": "Original independent 640x360 SVG with title/desc and vector geometry supplied 2026-11-13; target display and browser visual QA pending.",
+      "handoff": {
+        "entry": "graphics/v053/editorial/reading-lens.svg",
+        "stack": "Self-contained original editable 640x360 static SVG; no runtime or network dependency",
+        "instructions": "Reference graphics/v053/editorial/reading-lens.svg as single graphic media with contextual alt or decorative empty alt; adapt artwork if needed and validate host display.",
+        "limitations": "Original decorative illustration; not scanning, document analysis or functional magnification."
+      }
+    },
+    {
+      "id": "VG-088",
+      "type": "component",
+      "name": "Studio pinboard / 创作灵感板",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v053",
+        "original-svg",
+        "standalone-vector",
+        "editorial-illustration",
+        "transparent-background",
+        "no-dependencies"
+      ],
+      "aliases": [
+        "灵感板插画",
+        "设计工作室便签",
+        "studio pinboard",
+        "moodboard illustration"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored vector SVG; no external script, font, raster photo, copyrighted illustration or external icon.",
+      "styleIds": [
+        "paper-rebellion",
+        "neo-brutalist"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "creative-site",
+        "portfolio"
+      ],
+      "dependencies": [],
+      "path": "graphics/v053/editorial/studio-pinboard.svg",
+      "details": "graphics/v053/README.md",
+      "spec": "registry/material-expansion-v053.json",
+      "demo": "playground/composition-v053/index.html",
+      "verified": "Original independent 640x360 SVG with title/desc and vector geometry supplied 2026-11-13; target display and browser visual QA pending.",
+      "handoff": {
+        "entry": "graphics/v053/editorial/studio-pinboard.svg",
+        "stack": "Self-contained original editable 640x360 static SVG; no runtime or network dependency",
+        "instructions": "Reference graphics/v053/editorial/studio-pinboard.svg as single graphic media with contextual alt or decorative empty alt; adapt artwork if needed and validate host display.",
+        "limitations": "Original static pinned-note visual, not a drag-and-drop editor or editable moodboard."
+      }
+    },
+    {
+      "id": "VG-089",
+      "type": "component",
+      "name": "Signal loom / 信号织带",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v053",
+        "original-svg",
+        "standalone-vector",
+        "editorial-illustration",
+        "transparent-background",
+        "no-dependencies"
+      ],
+      "aliases": [
+        "编织信号插画",
+        "抽象带状曲线",
+        "woven ribbons",
+        "signal loom"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored vector SVG; no external script, font, raster photo, copyrighted illustration or external icon.",
+      "styleIds": [
+        "signal-noir",
+        "liquid-layer"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "creative-site",
+        "technical-story"
+      ],
+      "dependencies": [],
+      "path": "graphics/v053/editorial/signal-loom.svg",
+      "details": "graphics/v053/README.md",
+      "spec": "registry/material-expansion-v053.json",
+      "demo": "playground/composition-v053/index.html",
+      "verified": "Original independent 640x360 SVG with title/desc and vector geometry supplied 2026-11-13; target display and browser visual QA pending.",
+      "handoff": {
+        "entry": "graphics/v053/editorial/signal-loom.svg",
+        "stack": "Self-contained original editable 640x360 static SVG; no runtime or network dependency",
+        "instructions": "Reference graphics/v053/editorial/signal-loom.svg as single graphic media with contextual alt or decorative empty alt; adapt artwork if needed and validate host display.",
+        "limitations": "Original abstract weaving/ribbon art; no real network, audio, signal or telemetry semantics."
+      }
+    },
+    {
+      "id": "VG-090",
+      "type": "component",
+      "name": "Field atlas / 折页观察图册",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v053",
+        "original-svg",
+        "standalone-vector",
+        "editorial-illustration",
+        "transparent-background",
+        "no-dependencies"
+      ],
+      "aliases": [
+        "折页地图插画",
+        "探索地理插画",
+        "folded map illustration",
+        "field atlas"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored vector SVG; no external script, font, raster photo, copyrighted illustration or external icon.",
+      "styleIds": [
+        "organic-tactile",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "exploration",
+        "editorial"
+      ],
+      "dependencies": [],
+      "path": "graphics/v053/editorial/field-atlas.svg",
+      "details": "graphics/v053/README.md",
+      "spec": "registry/material-expansion-v053.json",
+      "demo": "playground/composition-v053/index.html",
+      "verified": "Original independent 640x360 SVG with title/desc and vector geometry supplied 2026-11-13; target display and browser visual QA pending.",
+      "handoff": {
+        "entry": "graphics/v053/editorial/field-atlas.svg",
+        "stack": "Self-contained original editable 640x360 static SVG; no runtime or network dependency",
+        "instructions": "Reference graphics/v053/editorial/field-atlas.svg as single graphic media with contextual alt or decorative empty alt; adapt artwork if needed and validate host display.",
+        "limitations": "Original fictional route/atlas illustration, not measured geography, live navigation or GIS data."
       }
     }
   ],
