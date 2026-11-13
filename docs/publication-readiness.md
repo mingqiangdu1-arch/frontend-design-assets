@@ -1,15 +1,22 @@
 # 公开发布前审查清单 · Publication readiness
 
-**当前结论（2026-11-06，main 快照）**：仓库仍为 `private`。**尚不建议直接切换为 Public**。此文件是发布门禁与风险清单，不代表已经完成法律/安全审计。
+**当前结论（2026-11-13，main 元数据和目录审查）**：仓库仍为 `private`。**尚不建议直接切换为 Public**。本页是发布门禁与风险清单，不代表完成法律、安全、视觉或移动端验收。
 
 ## 快速盘点（仅代表本轮仓库检查）
 
-- 318 个文件、62 个目录，共 380 个 Git tree 条目。
-- 180 个注册资产，含 45 个实际 React 导出、10 套视觉风格、7 个页面模板。研究/原型/参考实现与生产就绪是不同状态；当前没有项目声称生产认证。
+- 623 个文件、137 个目录，共 760 个 Git tree 条目（2026-11-13 主分支）。
+- 501 个注册资产，含 48 个实际 React 公共导出、14 套独立视觉风格、7 个页面模板。研究/原型/参考实现与生产就绪是不同状态；不宣称生产认证。
 - `registry/assets.json` 中 **106 个资产含 `notion` 字段**，且根 README 和部分文档有 Notion 深链接。公开仓库会暴露页面 ID/工作区结构线索；其页面是否可访问还取决于 Notion 权限。
 - **仓库根目录未发现 LICENSE 文件**。注册表中约 100 个资产缺少逐条 `license` 字段，这不能自动推导为侵权，但表明出处与复用许可尚未完备。
 - `applications/examples/ai-workflow-platform.json` 是个人项目相关的应用配置示例；示例中的名称、决策、候选 ID、Notion 链接应独立评估。
 - 本次目录检查未发现明显命名为 `.env`、credential 或私钥的文件；**尚未完成逐文件内容、Git 历史、CI 变量、Issue/PR/构建产物的秘密扫描**。
+
+## 本次索引一致性审查（2026-11-13）
+
+- `registry/assets.json` 的 **501 个资产 ID 均唯一**；按 `path`、`spec`、`details`、`demo`、`visualSpecimen` 核对的 **1,439 处本地路径引用**未发现失效目标。
+- 主分支早期文档整理时，原有五份入口/检查文档共 93 处本地 Markdown 链接可解析；**本轮新增 `DISCOVER.md` 快速入口后**，整理分支上的六份入口/检查文档共 **118 处本地 Markdown 链接**，均在该分支 Git tree 中可解析（分支 624 文件、主分支基线 623 文件）。
+- 仓库的 **623 个文件未发现相同 blob SHA**；这仅排除字节完全相同的文件，不代表内容、视觉或行为不存在近似重复。
+- **未执行**完整构建、浏览器回归、许可证逐项审查、历史敏感信息扫描或人工视觉验收。上述结果不能作为公开或生产发布许可。
 
 ## P0：切 Public 之前必须处理
 
@@ -27,9 +34,9 @@
 
 - 为贡献者提供 `CONTRIBUTING.md`：资产 ID、`stage`、`reuseKind`、来源、许可、验收证据、PR 流程。
 - 将新手入口控制在 README + [Agent Catalog](../CATALOG.md)；详细版本记录集中在 `CHANGELOG.md` / `archive/`。逐步缩短 `AGENTS.md` 的重复版本叙述，但保留关键行为边界和安全原则。
-- 修改元数据滞后：`registry/components.json.stateCoverage` 历史叙述应明确「旧矩阵只覆盖 12 个导出；当前共有 45 个 React 导出」，防止误解。根 `package.json` 的 `version: 0.13.0` 与注册表 V0.24.0 需明确版本是否独立，而不是草率同步。
+- 校正历史元数据范围：`registry/components.json.stateCoverage` 的旧矩阵只覆盖部分导出；当前共有 48 个 React 公共导出。根 `package.json` 的 `version: 0.13.0` 与 `registry/components.json` 的 `version: 0.25.0` 应明确版本语义独立，不要为数字一致而盲目同步。
 - 为高价值条目增加中英文 `aliases`、任务/场景标签、必要依赖、准确源路径与最小 Demo；检索回退应明确「无匹配」，不能伪造生产覆盖。
-- 对外宣传采用 **living design lab / design references / experimental React components**，不要宣称所有 180 条资产可运行、跨风格无缝复用，或已完成视觉/无障碍认证。
+- 对外宣传采用 **living design lab / design references / experimental React components**，不要宣称所有 501 条资产可运行、跨风格无缝复用，或已完成视觉/无障碍认证。
 
 ## 什么应该留在公开主仓库、归档或移出
 

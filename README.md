@@ -4,7 +4,7 @@
 
 **仓库边界：只积累、整理和验证可复用的前端素材。** 包括视觉主题、设计 Token、组件源码、交互模式、页面结构配方、参考 Demo 与检索索引。Demo 仅用于演示/验证素材，CLI 仅用于检索/选型/生成素材交接说明；**不在此开发实际业务产品、不建设页面生成器或应用脚手架、不承担部署上线**。当需要真实页面或产品时，在独立项目仓库中调用本仓库素材。
 
-> **Agent 使用入口：** [按任务检索素材（CATALOG）](CATALOG.md) · [Agent 工作规则（AGENTS）](AGENTS.md) · [轻量资产交接](docs/assembly/asset-handoff.md)
+> **Agent 使用入口：** [Agent 两条快速路径：找素材 / 找方向（DISCOVER）](DISCOVER.md) · [按任务深查素材（CATALOG）](CATALOG.md) · [Agent 工作规则（AGENTS）](AGENTS.md) · [轻量资产交接](docs/assembly/asset-handoff.md)
 >
 > **仓库现状：** 私有研究/参考实现仓库，尚非统一生产级组件包。未来公开前需完成 [发布准备检查](docs/publication-readiness.md)。
 
@@ -16,14 +16,9 @@
 | 用选定主题规划页面 | [页面搭建配方](docs/assembly/style-assembly-v028.md) · [CLI](scripts/build-style-brief.mjs) · [Theme Atlas](playground/style-atlas/) | 14 套主题对应 57 个分区设计；真实模板、源文件和验收清单保持关联 |
 | 浏览全部主题并排对比 | [主题图谱](playground/style-atlas/README.md) · [Agent 选型](docs/styles/theme-selection-v027.md) | 按场景、构图、材质、交互筛选 14 套主题，任选两套加载真实 Demo |
 | 2026 流行主题研究与预览 | [趋势对比](docs/styles/trend-research-2026.md) · [Trend Style Lab](playground/trend-style-lab/README.md) | Liquid Layer、Shape Expressive、Type-led Minimal、Organic Tactile：独立主题与可交互场景，不是 React 库兼容声明 |
-| 移动端、音频与状态视觉素材 | [V0.45 研究](docs/research/material-expansion-v045.md) · [CSS 原子](styles/primitives/v045/README.md) · [原创矢量](graphics/v045/README.md) | 10 个原生 CSS 组件 + 4 个独立 SVG + 5 个固定版本上游研究来源；不是音频录制器、地图引擎或页面生成器 |
-| 表单、数据与实验排印素材 | [V0.46 研究](docs/research/material-expansion-v046.md) · [CSS/JS 原件](styles/primitives/v046/README.md) · [原创 SVG](graphics/v046/README.md) | 12 个独立 CSS 组件（含可操作范围对比滑块）与 6 个原创 SVG；没有业务页面或 React 包新增 |
-| 实验排印、全息材质、可重复背景 | [V0.47 研究](docs/research/material-expansion-v047.md) · [6 项 CSS 素材](styles/primitives/v047/README.md) · [12 项原创 SVG](graphics/v047/README.md) | 色差标题、指针响应全息卡、印章/首字/媒体形状、章节导航，以及 8 份平铺纹理、4 份场景矢量源文件 |
-| 特殊图标、游戏化组件、CSS 微动效 | [V0.48 研究](docs/research/material-expansion-v048.md) · [8 项原创 CSS](styles/primitives/v048/README.md) · [12 份独立 SVG](graphics/v048/README.md) | 轻量动画、原生任务/开关/物品选择、环形经验和资源状态；12 份原创 64×64 游戏风格矢量图标，非游戏业务平台 |
-| 创意编辑微控件、线性设计图标、透明边框 | [V0.49 研究](docs/research/material-expansion-v049.md) · [7 项编辑控件源码](styles/primitives/v049/README.md) · [16 份独立 SVG](graphics/v049/README.md) | 渐变角度、二维焦点、色盘、印刷安全线、混合模式、网格密度、轨迹微动效；技术线图标及多风格装饰边框 |
-| 原创印刷质感、数据叙事图与双比例插画 | [V0.50 研究](docs/research/material-expansion-v050.md) · [8 个 CSS 原件](styles/primitives/v050/README.md) · [10 个独立 SVG](graphics/v050/README.md) | 双色孔版印刷风格、报纸分栏、剪贴图、斜率／区间／哑铃比较图、证据索引；透明印刷覆盖层、概念图和独立横竖构图 |
-| 实验动效、非标准排版、SVG 透明遮罩 | [V0.51 研究](docs/research/material-expansion-v051.md) · [7 项独立 CSS/交互](styles/primitives/v051/README.md) · [8 个 SVG 原件](graphics/v051/README.md) | 文字循环带、错行标题、指针光圈、原生翻面按钮、CSS 滚读轨、剪角链接、竖排书脊；4 个 alpha mask-image 与 4 个自包含 SVG 动效 |
-| 原创程序化绘图、伪 3D CSS、空间插画 | [V0.52 研究](docs/research/material-expansion-v052.md) · [5 个 Canvas 算法 + 4 项 CSS](styles/primitives/v052/README.md) · [6 份原创 SVG](graphics/v052/README.md) | 确定性种子等高线、扰动三角镶片、李萨如光轨、点描沙丘、等距体素城景、亚克力叠层、原生折页门、材质色盘和伪 3D 矢量场景 |
+| 查找独立 CSS / 原生 JS / Canvas 素材 | [按任务检索](CATALOG.md) · [原件目录](styles/primitives/) · [最近一轮 V0.52](styles/primitives/v052/README.md) | `FX-*` 系列包含可按类/函数提取的原创视觉、动效、控件和程序绘图；必须检查各项交互和适配边界 |
+| 查找原创 SVG、图标、纹理和场景图 | [图形原件](graphics/) · [V0.52 图形说明](graphics/v052/README.md) · [素材登记](registry/README.md) | `VG-*` 等独立矢量原件可逐项查源文件；图形示意与可运行交互、真实数据或 3D 引擎不可混同 |
+| 回溯版本素材、研究来源和许可 | [历次研究](docs/research/) · [逐版机器索引](registry/README.md) · [变更历史](CHANGELOG.md) | V0.42–V0.52 的原件与研究按版本保留；外部来源默认只供研究，不代表已安装或获复制授权 |
 | 查找并复用 React 组件 | [组件登记](registry/components.json) · [组件源码](packages/ui/src/) · [组件文档](packages/ui/README.md) | 真实 TSX/CSS、API、四套显式兼容主题和适配限制 |
 | 参考页面结构素材 | [页面模板](registry/page-templates.json) · [组装指南](docs/assembly/README.md) · [独立 Demo](playground/page-blueprints/) | 可复用分区、构图和交互案例；真实页面开发须在外部项目进行 |
 | 检索外部专项技术与视觉资源 | [V0.30 专题资源](docs/research/specialized-resources-v030.md) · [结构化资源索引](registry/specialized-resources-v030.json) | 17 个画布/富文本、地图数据、3D 与移动交互来源；只做研究与素材交接，不安装到本库 |
@@ -42,7 +37,7 @@
 
 ## Agent / GitHub-only 最短路径
 
-1. 阅读 [CATALOG.md](CATALOG.md) 找到任务类别，再从相关注册表筛选候选 ID。
+1. **先读 [DISCOVER.md](DISCOVER.md)** 判断是「找原件」还是「找方向」；仅当需要更细的历史/类型路由时进入 [CATALOG.md](CATALOG.md)。
 2. 查看 `stage`、`reuseKind`、`styleIds`、`applicationContexts`、`dependencies`、`path/spec/demo`。
 3. 只读取选定候选的源码与规范，返回「可复用什么 / 需要适配什么 / 尚未验证什么」。
 

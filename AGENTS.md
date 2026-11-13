@@ -6,7 +6,7 @@
 
 **Continuation rule — material-first.** When a user says "继续" after asset-expansion rounds, prioritize genuinely **new reusable visual materials** (specific components, style treatments, animations, typography, graphics, clearly licensed public sources and original snippets). Do not spend consecutive rounds building more registry compatibility tools, tests, redundant behavior contracts or application demos just to increase the count. Checks remain proportionate: only ensure basic registry/source consistency; do not mistake test volume for more materials. Use `registry/material-expansion-v042.json` (external REF-111..123 + original FX-001..006) as the first example of this rule. The repo stays a materials repository, not a website builder.
 
-**Start with [CATALOG.md](CATALOG.md).** It routes user tasks to relevant assets, while machine-readable registries remain authoritative. Do not read every historical note, gallery or demo up front.
+**Start with [DISCOVER.md](DISCOVER.md).** Separate **source/reference retrieval** from **open-ended design direction**. Use [CATALOG.md](CATALOG.md) only for deeper task/version lookup. Machine-readable registries remain authoritative; do not load all histories, galleries or the entire large asset registry up front.
 
 ## 1. Retrieve before generating
 
@@ -24,9 +24,7 @@
 4. Inspect the selected item's **source + specification + demo**, as appropriate. Read `styleIds`, `stage`, `reuseKind`, `dependencies` and `verified` before suggesting reuse. Prefer explicit IDs and paths over guesses.
 5. Handoff a **small shortlist**: IDs, why each fits, exact source paths, compatible themes, required adaptation, validation gaps and alternative options. Do not pretend the selection tool generated or modified a target app.
 
-### V0.32: editorial, raw visual resources, isolated CSS atoms
-
-For rich-text/collaboration, use `registry/creative-primitives-v032.json` (`IP-036..041`) as **interaction design contracts** only, not as an installed Lexical/Tiptap/Yjs editor. For typography, CC0 textures, and visual effects (`REF-069..080`), use their **per-family/per-item provenance and anti-pattern metadata**; do not copy external fonts or images into this repository. Only selected **original, opt-in** CSS classes in `styles/primitives/v032/creative-atoms.css` are source-level references, and they have not been certified on target apps or hardware. No new default theme, React public export, or page assembly is implied.
+For version-specific research and material families, follow [CATALOG.md](CATALOG.md) and the matching `docs/research/` entry; historical notes do not add repository-wide runtime or style defaults.
 
 ## 2. Know exactly what can be reused
 
@@ -71,7 +69,7 @@ For rich-text/collaboration, use `registry/creative-primitives-v032.json` (`IP-0
 
 | Need | Read next |
 | --- | --- |
-| Task-based discovery | [CATALOG.md](CATALOG.md) / [asset handoff](docs/assembly/asset-handoff.md) |
+| Two-path quick discovery | [DISCOVER.md](DISCOVER.md) / [task catalog](CATALOG.md) / [asset handoff](docs/assembly/asset-handoff.md) |
 | React component API and demo | [packages/ui/README.md](packages/ui/README.md) / [component gallery](playground/component-gallery/README.md) |
 | Distinct visual directions | [docs/styles/README.md](docs/styles/README.md) / [decision matrix](docs/styles/decision-matrix.md) |
 | Advanced interaction contracts | [docs/interactions/](docs/interactions/) |
