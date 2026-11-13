@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-11-13 · External frontend Skills round 2: Tailwind, animation, charts and icon systems
+
+- Imported **six additional upstream Agent Skills** to `.agents/skills/`: PaulRBerg `tailwind-css`; Emil Kowalski `animate` and `animation-performance`; GreenSock `gsap-core`; SvaraNova `data-visualization`; and Shadcn Labs `icon-set-generator`.
+- Retained all **25 upstream original skill files** at pinned source commits, with local MIT license notices for each imported skill. Source/destination blob SHA comparison confirms unmodified files; import includes references, motion recipes, the icon-set Chinese translation, two optional Python validator/preview scripts and evaluation fixtures.
+- Skills total **9 → 15** (6 local + 9 external). Added task routing, provenance and script safety boundaries; no auto-execution, dependency installs, asset registry changes or new React exports.
+- [External source manifest](.agents/skills/EXTERNAL_SOURCES.json) · [Licensing notices](.agents/skills/THIRD_PARTY_NOTICES.md) · [Skill navigation](.agents/skills/README.md).
+- No real Codex auto-trigger, browser outcome or destination-project integration tested.
+
+
 ## 2026-11-13 · External frontend Agent Skills imports (source-pinned)
 
 - Vendored **three full upstream Agent Skills** into `.agents/skills/`: Anthropic `frontend-design` and Vercel `vercel-react-best-practices` / `vercel-composition-patterns`.

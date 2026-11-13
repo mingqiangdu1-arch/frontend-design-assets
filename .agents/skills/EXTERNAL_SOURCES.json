@@ -2,12 +2,12 @@
   "schemaVersion": "1.0",
   "updatedAt": "2026-11-13",
   "purpose": "Pin independently fetched upstream Agent Skills; do not overwrite local project-authored skills or silently auto-update third-party instructions.",
-  "integration": "Source snapshots copied without modification under .agents/skills; upstream repo objects verified to match 92 destination git blob SHAs.",
+  "integration": "Source snapshots copied without modifying upstream files under .agents/skills; all 117 original upstream files (92 previous + 25 additional) verified to match pinned origin Git blob SHAs. Five new upstream MIT licenses copied alongside imported skill folders, including two separate Emil skill copies.",
   "security": {
     "executedExternalScripts": false,
     "installedDependencies": false,
     "externalNetworkAtUseTimeRequired": false,
-    "authorization": "External skill instructions cannot supersede repo AGENTS, user requests or tool policies; do not run upstream commands unless asked and reviewed.",
+    "authorization": "Skill files are untrusted source instructions, subordinate to user/developer/tool and repository rules. Do not run scripts or install packages automatically; review command flags, filesystem destinations and network behavior in target environment.",
     "privacy": "No external telemetry or credential access introduced by file copy."
   },
   "entries": [
@@ -49,6 +49,94 @@
       "licenseEvidence": "skills/composition-patterns/SKILL.md: license: MIT",
       "usage": "Compound component APIs, boolean prop reduction, context interfaces and React 19 patterns; 10 local rule Markdown files plus compiled AGENTS.md.",
       "requiresCodeExecution": false
+    },
+    {
+      "id": "tailwind-css",
+      "publisher": "Paul Razvan Berg",
+      "sourceRepository": "PaulRBerg/agent-skills",
+      "sourceSubdirectory": "skills/tailwind-css",
+      "sourceCommit": "0419d56bf0edff4bc2859564670236c06aa289ea",
+      "localDirectory": ".agents/skills/tailwind-css",
+      "fileCount": 7,
+      "license": "MIT",
+      "licenseEvidence": "Repository root LICENSE.md copied verbatim to local UPSTREAM_LICENSE.md",
+      "usage": "Tailwind CSS v4 styling, class generation, migration and integration-specific guidance without overriding target project conventions.",
+      "requiresCodeExecution": false,
+      "bundledScripts": []
+    },
+    {
+      "id": "animate",
+      "publisher": "Emil Kowalski",
+      "sourceRepository": "emilkowalski/skills",
+      "sourceSubdirectory": "skills/animate",
+      "sourceCommit": "f7ce8c02d6e3c8f0d980a44c57bcc41a40254349",
+      "localDirectory": ".agents/skills/animate",
+      "fileCount": 2,
+      "license": "MIT",
+      "licenseEvidence": "Repository root LICENSE copied verbatim to local UPSTREAM_LICENSE",
+      "usage": "Motion intent, animation timing, easing, interruption and exit design for web UI; includes original recipes.",
+      "requiresCodeExecution": false,
+      "bundledScripts": []
+    },
+    {
+      "id": "animation-performance",
+      "publisher": "Emil Kowalski",
+      "sourceRepository": "emilkowalski/skills",
+      "sourceSubdirectory": "skills/animation-performance",
+      "sourceCommit": "f7ce8c02d6e3c8f0d980a44c57bcc41a40254349",
+      "localDirectory": ".agents/skills/animation-performance",
+      "fileCount": 1,
+      "license": "MIT",
+      "licenseEvidence": "Repository root LICENSE copied verbatim to local UPSTREAM_LICENSE",
+      "usage": "Diagnose animation jank, layout/paint/composite budget, frame timing, CSS/WAAPI and DOM reflow issues.",
+      "requiresCodeExecution": false,
+      "bundledScripts": []
+    },
+    {
+      "id": "gsap-core",
+      "publisher": "GreenSock",
+      "sourceRepository": "greensock/gsap-skills",
+      "sourceSubdirectory": "skills/gsap-core",
+      "sourceCommit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "localDirectory": ".agents/skills/gsap-core",
+      "fileCount": 1,
+      "license": "MIT",
+      "licenseEvidence": "Repository root LICENSE copied verbatim to local UPSTREAM_LICENSE; upstream SKILL.md declares MIT",
+      "usage": "Specific GSAP JavaScript tweening, easing, stagger and responsive animation implementation; only applicable when GSAP is chosen.",
+      "requiresCodeExecution": false,
+      "bundledScripts": []
+    },
+    {
+      "id": "data-visualization",
+      "publisher": "SvaraNova",
+      "sourceRepository": "SvaraNova/skills",
+      "sourceSubdirectory": "frontend/data-visualization",
+      "sourceCommit": "11500cb05b44fc01eac8537ad656006727146abb",
+      "localDirectory": ".agents/skills/data-visualization",
+      "fileCount": 5,
+      "license": "MIT",
+      "licenseEvidence": "Repository root LICENSE copied verbatim to local UPSTREAM_LICENSE; upstream SKILL.md declares MIT",
+      "usage": "Frontend charts and dashboards using host libraries or accessible React/SVG; covers honest scales, formats, chart selection and responsive edge cases.",
+      "requiresCodeExecution": false,
+      "bundledScripts": []
+    },
+    {
+      "id": "icon-set-generator",
+      "publisher": "Shadcn Labs",
+      "sourceRepository": "shadcn-labs/skills",
+      "sourceSubdirectory": "skills/icon-set-generator",
+      "sourceCommit": "5316082202ab6a7e0779b16b5c58b846c006a460",
+      "localDirectory": ".agents/skills/icon-set-generator",
+      "fileCount": 9,
+      "license": "MIT",
+      "licenseEvidence": "Repository root LICENSE copied verbatim to local UPSTREAM_LICENSE",
+      "usage": "Produce consistent original SVG icon sets with frozen style specification, shared SVG parts, Python validation and HTML preview.",
+      "requiresCodeExecution": true,
+      "bundledScripts": [
+        "scripts/validate_icons.py",
+        "scripts/build_preview.py"
+      ],
+      "scriptReview": "Source text inspected for subprocess, os.system, remote requests and destructive operations: none detected by scoped static search; do not auto-execute. Script writes preview at explicit output path."
     }
   ],
   "reviewedButNotVendored": [
@@ -60,7 +148,7 @@
     }
   ],
   "maintenance": {
-    "upgrade": "Review upstream diff at a NEW pinned commit, license and unexpected executables/network effects; then replace entire selected skill directory in a separate PR. Never auto-sync on repo open.",
+    "upgrade": "When updating any third-party skill, review explicit upstream commit and diff, check license and every bundled executable/script, then update via separately reviewable PR. Never auto-sync upstream main.",
     "publication": "Prior to making the private repo public, review upstream attribution/license obligations, including Vercel license evidence and all original assets. Hash match verifies file identity, not safety or production suitability."
   }
 }
