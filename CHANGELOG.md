@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-20 · V0.54 fixed-source GitHub expansion and existing-style deepening
+
+- Added **12 concrete source-file dossiers** `REF-137..148`: ThreeUI, affectUI, Paper Shaders, BoldKit, mdxcn, Morphicons, pixelfx, Oat, islandcn, Plasma UI, Canvas UI and Pxlkit. Each item points at verified files on a pinned Git commit rather than a generic homepage.
+- Explicitly mapped the study to existing styles (e.g. liquid-layer, aether-orbit, neo-brutalist, precision-dark, editorial-warm and pixel-arcade) without claiming compatible runtime exports.
+- [Machine index](registry/material-expansion-v054.json) · [source/license analysis](docs/research/material-expansion-v054.md) · [Agent routes](DISCOVER.md). Catalog **511 → 523**; 7 P0 / 5 P1 references.
+- License guardrails: Canvas UI MIT + Commons Clause disallows library redistribution, and Pxlkit's asset license differs from its MIT code. Both are links and original analysis only.
+- No third-party code/media copied, new React exports, themes, dependencies, full app, demo or test suite. Source/path consistency checked; no upstream runtime or cross-browser validation claimed.
+
 ## 2026-11-13 · External frontend Skills round 2: Tailwind, animation, charts and icon systems
 
 - Imported **six additional upstream Agent Skills** to `.agents/skills/`: PaulRBerg `tailwind-css`; Emil Kowalski `animate` and `animation-performance`; GreenSock `gsap-core`; SvaraNova `data-visualization`; and Shadcn Labs `icon-set-generator`.

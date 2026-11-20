@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.2",
   "purpose": "Living cross-application, multi-style design asset repository; no repository-wide visual default.",
-  "updatedAt": "2026-11-13",
+  "updatedAt": "2026-11-20",
   "stageDefinitions": [
     "captured",
     "analyzed",
@@ -20294,6 +20294,501 @@
         "stack": "Self-contained original editable 640x360 static SVG; no runtime or network dependency",
         "instructions": "Reference graphics/v053/editorial/field-atlas.svg as single graphic media with contextual alt or decorative empty alt; adapt artwork if needed and validate host display.",
         "limitations": "Original fictional route/atlas illustration, not measured geography, live navigation or GIS data."
+      }
+    },
+    {
+      "id": "REF-137",
+      "type": "reference",
+      "name": "ThreeUI · Liquid Metal Button & Constellation Field",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v054",
+        "pinned-upstream-source",
+        "research-only",
+        "shader",
+        "webgl",
+        "interactive-material"
+      ],
+      "aliases": [
+        "三维空间控件",
+        "液态金属按钮",
+        "constellation field",
+        "shader button"
+      ],
+      "source": "https://github.com/MengTo/threeui/blob/68802d5428071ada5c20db8094b1649e6bb770ed/src/shaders/liquid-metal-button/LiquidMetalButton.tsx",
+      "license": "MIT, Community source only; Pro/Beta components not included; only source URLs and original analysis stored, no third-party component or media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "portfolio",
+        "creative-site",
+        "immersive-ui"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v054.md",
+      "spec": "registry/material-expansion-v054.json",
+      "verified": "Upstream MengTo/threeui commit 68802d5428071ada5c20db8094b1649e6bb770ed and 2 exact source paths checked 2026-11-20; research-only, not installed/runtime-validated.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v054.md",
+        "mode": "research-only",
+        "stack": "GitHub commit-pinned upstream source; review in target project",
+        "instructions": "Inspect https://github.com/MengTo/threeui/blob/68802d5428071ada5c20db8094b1649e6bb770ed/src/shaders/liquid-metal-button/LiquidMetalButton.tsx and additional paths in registry/material-expansion-v054.json (REF-137), then check dependencies, rights and keyboard/mobile/reduced-motion in the target project before adaptation.",
+        "limitations": "Community 和 Pro 边界、WebGL 回退、性能及 reduced-motion 需目标端复核"
+      }
+    },
+    {
+      "id": "REF-138",
+      "type": "reference",
+      "name": "affectUI · Decision Inbox & Tool Call Card",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v054",
+        "pinned-upstream-source",
+        "research-only",
+        "agent-ui",
+        "decision-state",
+        "tool-call",
+        "approval"
+      ],
+      "aliases": [
+        "Agent 决策收件箱",
+        "工具调用卡",
+        "human approval",
+        "decision inbox"
+      ],
+      "source": "https://github.com/flohoeller/affectui/blob/00b94de356c13705717a5fef20a64cc508de2ac0/components/decision-inbox.tsx",
+      "license": "MIT; repository free components, Pro content separate; only source URLs and original analysis stored, no third-party component or media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "agent-workspace",
+        "developer-tool",
+        "dashboard"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v054.md",
+      "spec": "registry/material-expansion-v054.json",
+      "verified": "Upstream flohoeller/affectui commit 00b94de356c13705717a5fef20a64cc508de2ac0 and 3 exact source paths checked 2026-11-20; research-only, not installed/runtime-validated.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v054.md",
+        "mode": "research-only",
+        "stack": "GitHub commit-pinned upstream source; review in target project",
+        "instructions": "Inspect https://github.com/flohoeller/affectui/blob/00b94de356c13705717a5fef20a64cc508de2ac0/components/decision-inbox.tsx and additional paths in registry/material-expansion-v054.json (REF-138), then check dependencies, rights and keyboard/mobile/reduced-motion in the target project before adaptation.",
+        "limitations": "操作回调只是前端表现；真实权限、持久化、状态竞争由目标项目承担"
+      }
+    },
+    {
+      "id": "REF-139",
+      "type": "reference",
+      "name": "Paper Shaders · Mesh Gradient & Fluted Glass",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v054",
+        "pinned-upstream-source",
+        "research-only",
+        "canvas-shader",
+        "mesh-gradient",
+        "fluted-glass"
+      ],
+      "aliases": [
+        "动态网格渐变",
+        "条纹玻璃",
+        "mesh gradient",
+        "fluted glass"
+      ],
+      "source": "https://github.com/paper-design/shaders/blob/e7003a2d4e6e932e30b8fa11ec1239e6ea48e16a/packages/shaders-react/src/shaders/mesh-gradient.tsx",
+      "license": "Apache-2.0; preserve notices when distributing source; only source URLs and original analysis stored, no third-party component or media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "visual-background",
+        "editorial",
+        "portfolio"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v054.md",
+      "spec": "registry/material-expansion-v054.json",
+      "verified": "Upstream paper-design/shaders commit e7003a2d4e6e932e30b8fa11ec1239e6ea48e16a and 3 exact source paths checked 2026-11-20; research-only, not installed/runtime-validated.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v054.md",
+        "mode": "research-only",
+        "stack": "GitHub commit-pinned upstream source; review in target project",
+        "instructions": "Inspect https://github.com/paper-design/shaders/blob/e7003a2d4e6e932e30b8fa11ec1239e6ea48e16a/packages/shaders-react/src/shaders/mesh-gradient.tsx and additional paths in registry/material-expansion-v054.json (REF-139), then check dependencies, rights and keyboard/mobile/reduced-motion in the target project before adaptation.",
+        "limitations": "README 提示 0.0.x 可能有破坏性变更；需锁版本和处理设备降级"
+      }
+    },
+    {
+      "id": "REF-140",
+      "type": "reference",
+      "name": "BoldKit · ASCII Shapes & Brutalist Data Charts",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v054",
+        "pinned-upstream-source",
+        "research-only",
+        "brutalist",
+        "ascii-shapes",
+        "chart-skin"
+      ],
+      "aliases": [
+        "粗野主义图表",
+        "ASCII 图形",
+        "硬阴影 UI",
+        "neobrutalism"
+      ],
+      "source": "https://github.com/ANIBIT14/boldkit/blob/cfade93d0da82d03736b604c643a00c95ff207b4/registry/default/ui/ascii-shapes.tsx",
+      "license": "MIT; verify any nested media/asset notices; only source URLs and original analysis stored, no third-party component or media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "dashboard",
+        "marketing",
+        "developer-tool"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v054.md",
+      "spec": "registry/material-expansion-v054.json",
+      "verified": "Upstream ANIBIT14/boldkit commit cfade93d0da82d03736b604c643a00c95ff207b4 and 3 exact source paths checked 2026-11-20; research-only, not installed/runtime-validated.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v054.md",
+        "mode": "research-only",
+        "stack": "GitHub commit-pinned upstream source; review in target project",
+        "instructions": "Inspect https://github.com/ANIBIT14/boldkit/blob/cfade93d0da82d03736b604c643a00c95ff207b4/registry/default/ui/ascii-shapes.tsx and additional paths in registry/material-expansion-v054.json (REF-140), then check dependencies, rights and keyboard/mobile/reduced-motion in the target project before adaptation.",
+        "limitations": "shadcn/Tailwind/宿主路径别名依赖；需要单项适配，不应整体安装到本仓库"
+      }
+    },
+    {
+      "id": "REF-141",
+      "type": "reference",
+      "name": "mdxcn · Graph Timeline & Terminal",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v054",
+        "pinned-upstream-source",
+        "research-only",
+        "mdx",
+        "timeline",
+        "content-composition"
+      ],
+      "aliases": [
+        "MDX 时间线",
+        "终端文档块",
+        "graph timeline",
+        "technical documentation"
+      ],
+      "source": "https://github.com/shadcn-labs/mdxcn/blob/884eba5356762cf49f8828db8f861dc2f33d65e4/registry/default/graph-timeline/graph-timeline.tsx",
+      "license": "MIT; check each registry item's dependencies; only source URLs and original analysis stored, no third-party component or media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "documentation",
+        "editorial",
+        "knowledge-base"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v054.md",
+      "spec": "registry/material-expansion-v054.json",
+      "verified": "Upstream shadcn-labs/mdxcn commit 884eba5356762cf49f8828db8f861dc2f33d65e4 and 3 exact source paths checked 2026-11-20; research-only, not installed/runtime-validated.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v054.md",
+        "mode": "research-only",
+        "stack": "GitHub commit-pinned upstream source; review in target project",
+        "instructions": "Inspect https://github.com/shadcn-labs/mdxcn/blob/884eba5356762cf49f8828db8f861dc2f33d65e4/registry/default/graph-timeline/graph-timeline.tsx and additional paths in registry/material-expansion-v054.json (REF-141), then check dependencies, rights and keyboard/mobile/reduced-motion in the target project before adaptation.",
+        "limitations": "GraphTimeline 依赖本仓库其他 graph-frame 与 motion 模块，单文件非独立可运行"
+      }
+    },
+    {
+      "id": "REF-142",
+      "type": "reference",
+      "name": "Morphicons · SVG State Morphing",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v054",
+        "pinned-upstream-source",
+        "research-only",
+        "svg",
+        "morph",
+        "state-transition"
+      ],
+      "aliases": [
+        "图标形变",
+        "菜单关闭过渡",
+        "SVG morph",
+        "animated icon"
+      ],
+      "source": "https://github.com/guillermolg00/morphicons/blob/8c3e3c7cd717b2381f8f35cf6c245afd80d8d7df/src/react/index.tsx",
+      "license": "MIT; only source URLs and original analysis stored, no third-party component or media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "navigation",
+        "creative-tool",
+        "microinteraction"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v054.md",
+      "spec": "registry/material-expansion-v054.json",
+      "verified": "Upstream guillermolg00/morphicons commit 8c3e3c7cd717b2381f8f35cf6c245afd80d8d7df and 3 exact source paths checked 2026-11-20; research-only, not installed/runtime-validated.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v054.md",
+        "mode": "research-only",
+        "stack": "GitHub commit-pinned upstream source; review in target project",
+        "instructions": "Inspect https://github.com/guillermolg00/morphicons/blob/8c3e3c7cd717b2381f8f35cf6c245afd80d8d7df/src/react/index.tsx and additional paths in registry/material-expansion-v054.json (REF-142), then check dependencies, rights and keyboard/mobile/reduced-motion in the target project before adaptation.",
+        "limitations": "复杂路径与图标数据类型需单项评估；不要把效果写成任意 SVG 都无损可变"
+      }
+    },
+    {
+      "id": "REF-143",
+      "type": "reference",
+      "name": "pixelfx · Quest Complete & Pixel Dissolve",
+      "stage": "analyzed",
+      "priority": "P0",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v054",
+        "pinned-upstream-source",
+        "research-only",
+        "pixel-art",
+        "canvas",
+        "reward-feedback",
+        "transition"
+      ],
+      "aliases": [
+        "像素任务完成",
+        "像素溶解转场",
+        "pixel reward",
+        "quest complete"
+      ],
+      "source": "https://github.com/patch-gg/pixelfx/blob/5294518ce7c72e48b6100a744596e0acf57f2826/src/fx/ui/quest-complete.js",
+      "license": "MIT; source includes adaptation attribution for referenced art-effects methods; only source URLs and original analysis stored, no third-party component or media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "game-ui",
+        "celebration",
+        "interactive-story"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v054.md",
+      "spec": "registry/material-expansion-v054.json",
+      "verified": "Upstream patch-gg/pixelfx commit 5294518ce7c72e48b6100a744596e0acf57f2826 and 3 exact source paths checked 2026-11-20; research-only, not installed/runtime-validated.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v054.md",
+        "mode": "research-only",
+        "stack": "GitHub commit-pinned upstream source; review in target project",
+        "instructions": "Inspect https://github.com/patch-gg/pixelfx/blob/5294518ce7c72e48b6100a744596e0acf57f2826/src/fx/ui/quest-complete.js and additional paths in registry/material-expansion-v054.json (REF-143), then check dependencies, rights and keyboard/mobile/reduced-motion in the target project before adaptation.",
+        "limitations": "依赖其绘制核心与 Canvas 循环；非无依赖的 CSS 原子，需要 FPS/暂停/设备测试"
+      }
+    },
+    {
+      "id": "REF-144",
+      "type": "reference",
+      "name": "Oat UI · Semantic Table & Sidebar",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v054",
+        "pinned-upstream-source",
+        "research-only",
+        "semantic-html",
+        "css",
+        "zero-dependency"
+      ],
+      "aliases": [
+        "原生语义控件",
+        "零依赖表格",
+        "semantic HTML",
+        "native sidebar"
+      ],
+      "source": "https://github.com/knadh/oat/blob/9e9338096548347644b5c4c5f800e5af058440fe/src/css/table.css",
+      "license": "MIT; only source URLs and original analysis stored, no third-party component or media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "admin",
+        "form",
+        "lightweight-tool"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v054.md",
+      "spec": "registry/material-expansion-v054.json",
+      "verified": "Upstream knadh/oat commit 9e9338096548347644b5c4c5f800e5af058440fe and 3 exact source paths checked 2026-11-20; research-only, not installed/runtime-validated.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v054.md",
+        "mode": "research-only",
+        "stack": "GitHub commit-pinned upstream source; review in target project",
+        "instructions": "Inspect https://github.com/knadh/oat/blob/9e9338096548347644b5c4c5f800e5af058440fe/src/css/table.css and additional paths in registry/material-expansion-v054.json (REF-144), then check dependencies, rights and keyboard/mobile/reduced-motion in the target project before adaptation.",
+        "limitations": "引用 CSS 层/自定义属性有环境假设，需按文件搭配而非单拷贝"
+      }
+    },
+    {
+      "id": "REF-145",
+      "type": "reference",
+      "name": "islandcn · Activity Stack & Upload Preset",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v054",
+        "pinned-upstream-source",
+        "research-only",
+        "dynamic-island",
+        "activity-state",
+        "spring"
+      ],
+      "aliases": [
+        "多活动浮岛",
+        "上传状态胶囊",
+        "activity stack",
+        "dynamic island"
+      ],
+      "source": "https://github.com/opencoredev/islandcn/blob/d9ed4d24a79a8eac05f4550976442d9781532f92/lib/island/store.ts",
+      "license": "MIT; only source URLs and original analysis stored, no third-party component or media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "status-display",
+        "media",
+        "mobile-ui"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v054.md",
+      "spec": "registry/material-expansion-v054.json",
+      "verified": "Upstream opencoredev/islandcn commit d9ed4d24a79a8eac05f4550976442d9781532f92 and 3 exact source paths checked 2026-11-20; research-only, not installed/runtime-validated.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v054.md",
+        "mode": "research-only",
+        "stack": "GitHub commit-pinned upstream source; review in target project",
+        "instructions": "Inspect https://github.com/opencoredev/islandcn/blob/d9ed4d24a79a8eac05f4550976442d9781532f92/lib/island/store.ts and additional paths in registry/material-expansion-v054.json (REF-145), then check dependencies, rights and keyboard/mobile/reduced-motion in the target project before adaptation.",
+        "limitations": "系统级浮层、定时器、可访问性、SSR 与移动设备性能需宿主验证"
+      }
+    },
+    {
+      "id": "REF-146",
+      "type": "reference",
+      "name": "Plasma UI · Liquid Snap Workspace",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v054",
+        "pinned-upstream-source",
+        "research-only",
+        "liquid-glass",
+        "webgl",
+        "drag",
+        "grid-snap"
+      ],
+      "aliases": [
+        "液态吸附布局",
+        "融合面板",
+        "liquid glass workspace",
+        "surface tension"
+      ],
+      "source": "https://github.com/CruxGarden/plasma-ui/blob/8a93bee4780eba47eefcb5d9725ffe782d8421f6/src/Plasma.tsx",
+      "license": "MIT; only source URLs and original analysis stored, no third-party component or media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-tool",
+        "workspace",
+        "experimental-ui"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v054.md",
+      "spec": "registry/material-expansion-v054.json",
+      "verified": "Upstream CruxGarden/plasma-ui commit 8a93bee4780eba47eefcb5d9725ffe782d8421f6 and 3 exact source paths checked 2026-11-20; research-only, not installed/runtime-validated.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v054.md",
+        "mode": "research-only",
+        "stack": "GitHub commit-pinned upstream source; review in target project",
+        "instructions": "Inspect https://github.com/CruxGarden/plasma-ui/blob/8a93bee4780eba47eefcb5d9725ffe782d8421f6/src/Plasma.tsx and additional paths in registry/material-expansion-v054.json (REF-146), then check dependencies, rights and keyboard/mobile/reduced-motion in the target project before adaptation.",
+        "limitations": "上游明确 pre-1.0、GPU-heavy 且移动端效果差；先研究不要生产引用"
+      }
+    },
+    {
+      "id": "REF-147",
+      "type": "reference",
+      "name": "Canvas UI · Glass & Displacement References",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v054",
+        "pinned-upstream-source",
+        "research-only",
+        "canvas",
+        "shader",
+        "license-restricted"
+      ],
+      "aliases": [
+        "Canvas 交互玻璃",
+        "WebGPU 置换",
+        "html over canvas",
+        "webgl effects"
+      ],
+      "source": "https://github.com/DavidHDev/canvas-ui/blob/6d46250b4360fddec0e3bc87425564fa4f4cda18/src/app/(shell)/docs/components/glass/page.tsx",
+      "license": "MIT + Commons Clause; cannot resell, sublicense or redistribute components as standalone/bundled/ported library; only source URLs and original analysis stored, no third-party component or media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-site",
+        "visual-effect",
+        "portfolio"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v054.md",
+      "spec": "registry/material-expansion-v054.json",
+      "verified": "Upstream DavidHDev/canvas-ui commit 6d46250b4360fddec0e3bc87425564fa4f4cda18 and 3 exact source paths checked 2026-11-20; research-only, not installed/runtime-validated.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v054.md",
+        "mode": "research-only",
+        "stack": "GitHub commit-pinned upstream source; review in target project",
+        "instructions": "Inspect https://github.com/DavidHDev/canvas-ui/blob/6d46250b4360fddec0e3bc87425564fa4f4cda18/src/app/(shell)/docs/components/glass/page.tsx and additional paths in registry/material-expansion-v054.json (REF-147), then check dependencies, rights and keyboard/mobile/reduced-motion in the target project before adaptation.",
+        "limitations": "本素材仓库不可复制或重新分发其组件代码；仅记录研究链接与原创观察"
+      }
+    },
+    {
+      "id": "REF-148",
+      "type": "reference",
+      "name": "Pxlkit · Voxel Text & Pixel UI Licensing",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v054",
+        "pinned-upstream-source",
+        "research-only",
+        "pixel-ui",
+        "voxel",
+        "split-license"
+      ],
+      "aliases": [
+        "像素 UI 图标",
+        "voxel title",
+        "retro interface",
+        "pixel icon kit"
+      ],
+      "source": "https://github.com/Joangeldelarosa/pxlkit/blob/b8e466934244875909983d65d8a43fbb4407a2c4/apps/web/src/components/hero/VoxelText.tsx",
+      "license": "Code MIT; icons/art under separate attribution license, and standalone asset-pack redistribution prohibited; only source URLs and original analysis stored, no third-party component or media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "game-ui",
+        "landing-page",
+        "illustration"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v054.md",
+      "spec": "registry/material-expansion-v054.json",
+      "verified": "Upstream Joangeldelarosa/pxlkit commit b8e466934244875909983d65d8a43fbb4407a2c4 and 3 exact source paths checked 2026-11-20; research-only, not installed/runtime-validated.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v054.md",
+        "mode": "research-only",
+        "stack": "GitHub commit-pinned upstream source; review in target project",
+        "instructions": "Inspect https://github.com/Joangeldelarosa/pxlkit/blob/b8e466934244875909983d65d8a43fbb4407a2c4/apps/web/src/components/hero/VoxelText.tsx and additional paths in registry/material-expansion-v054.json (REF-148), then check dependencies, rights and keyboard/mobile/reduced-motion in the target project before adaptation.",
+        "limitations": "不得复制图标包/艺术素材至本素材仓库；源文件和素材许可分别核查"
       }
     }
   ],

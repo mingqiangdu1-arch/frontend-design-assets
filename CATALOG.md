@@ -4,6 +4,12 @@
 
 **任务需要可重复执行的方法时**：先查看 [Frontend Agent Skills](.agents/skills/README.md)，按具体任务只加载其中一项 `SKILL.md`；本 CATALOG 仍负责素材和源码定位，不把技能当作已实现组件。
 
+## V0.54 · 近期 GitHub 原件与已有风格深化
+
+- [结构化来源](registry/material-expansion-v054.json) · [具体文件与许可](docs/research/material-expansion-v054.md)：`REF-137..148`，涵盖 Shader、Agent 状态、MDX 叙事、Neo-brutalist 图表、图标形变、像素反馈和原生语义控件。
+- 来源均固定 Git commit 并指向具体上游文件；`styleDeepeningTargets` 是**研究方向**而非已实现 React 兼容。Canvas UI/Pxlkit 存在额外再分发限制。
+- 全部为 `research-only`；请按任务选择一个实际源文件再研究，不安装整套组件库。
+
 ## 检索顺序
 
 1. **判断目标**：视觉方向（visual） / 可执行 React 组件（implementation） / 交互行为（behavior） / 页面结构（composition） / 设计审查（review）。

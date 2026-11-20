@@ -20,7 +20,7 @@
 | **原生 CSS/HTML/JavaScript/Canvas 原件** | [材料系列索引](registry/README.md) → 对应 `registry/material-expansion-v0xx.json` 的 `FX-*` | 对应 [`styles/primitives/`](styles/primitives/) 源码、README 和独立 Demo；不是默认已集成 React |
 | **SVG、图标、纹理、插画** | [材料系列索引](registry/README.md) → 对应 `VG-*` | [`graphics/`](graphics/) 中单个原图/相应版权与用途说明；不要把静态示意当成动态组件 |
 | **交互行为/可操作原型** | [交互研究](docs/interactions/) → `IP-*` | 对应 `path/spec/demo` 和 `handoff.mode`；行为合同、原型与可复用源码要区分 |
-| **第三方现成项目/外部设计参考** | [来源档案](docs/research/sources.md) · [具体组件研究](docs/research/component-dossiers-v037.md) · [专项资源](registry/specialized-resources-v030.json) | 原作者、固定源码路径/版本、许可、访问状态；外部 REF 默认**不能直接复制** |
+| **第三方现成项目/外部设计参考** | [来源档案](docs/research/sources.md) · [具体组件研究](docs/research/component-dossiers-v037.md) · [专项资源](registry/specialized-resources-v030.json) · [V0.54 固定源码级近期参考](registry/material-expansion-v054.json) | 原作者、固定源码路径/版本、许可、访问状态；外部 REF 默认**不能直接复制** |
 | **页面结构/布局案例** | [V0.53 独立图文布局](styles/primitives/v053/README.md) · [原始预览](playground/composition-v053/index.html) · [页面模板](registry/page-templates.json) · [页面配方](recipes/) | 6 种可独立复制的 CSS 图文编排原件；不是可直接部署的整页产品 |
 
 **GitHub-only（无需安装依赖）**：先看对应小索引，找到准确 ID → 查同名条目 / 指向的原文件 → 最多打开必要的源码、说明、Demo。避免预先读取较大的 `registry/assets.json` 或整个 `playground/`。只有需要全库字段交叉匹配时才读 `registry/assets.json`。
