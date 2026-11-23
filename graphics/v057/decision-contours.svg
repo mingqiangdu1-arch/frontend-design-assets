@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Decision contours</title><desc id="desc">Decorative nested irregular contour rings with a small central diamond, not a risk map, elevation model or statistical result.</desc>
+<defs>
+<linearGradient id="ground" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#142b37"/><stop offset="1" stop-color="#284a52"/></linearGradient>
+<linearGradient id="core" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d5e9d4"/><stop offset="1" stop-color="#6bb7a1"/></linearGradient>
+</defs>
+<rect width="640" height="360" rx="20" fill="url(#ground)"/>
+<g fill="none" stroke-width="2">
+<path d="M53 204Q79 68 207 54Q345 24 460 70Q599 117 587 220Q570 313 417 324Q271 352 146 302Q56 274 53 204Z" stroke="#739e9d" stroke-opacity=".5"/>
+<path d="M94 204Q109 96 230 92Q343 62 441 109Q552 142 544 223Q520 288 400 291Q273 315 170 274Q98 253 94 204Z" stroke="#80b0aa" stroke-opacity=".65"/>
+<path d="M143 203Q159 133 244 129Q343 105 416 146Q488 161 492 219Q484 269 390 260Q284 280 196 249Q154 236 143 203Z" stroke="#92c5b3" stroke-opacity=".8"/>
+<path d="M194 205Q213 163 267 161Q345 141 401 180Q447 191 439 230Q421 245 385 235Q294 258 232 229Q201 225 194 205Z" stroke="#b4d9c5"/>
+</g>
+<path d="M315 168L372 200 326 253 278 209Z" fill="url(#core)" stroke="#e7fff4" stroke-width="3"/>
+<path d="M326 253L315 168M278 209L372 200" stroke="#fff" stroke-opacity=".65"/>
+<g fill="#a5c6bf"><circle cx="144" cy="203" r="5"/><circle cx="492" cy="219" r="5"/><circle cx="460" cy="70" r="5"/></g>
+<path d="M52 39h50M52 39v48M588 320h-50M588 320v-48" fill="none" stroke="#a1d6c6" stroke-width="2" opacity=".6"/>
+</svg>

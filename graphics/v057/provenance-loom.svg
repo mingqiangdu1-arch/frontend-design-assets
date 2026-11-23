@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Provenance loom</title><desc id="desc">Original three-thread decorative weaving into a quiet central capsule, a visual metaphor for source provenance without real data lineage.</desc>
+<defs><linearGradient id="paper" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#f6f0df"/><stop offset="1" stop-color="#dfebe6"/></linearGradient>
+<linearGradient id="capsule" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#324955"/><stop offset="1" stop-color="#627d80"/></linearGradient></defs>
+<rect width="640" height="360" rx="20" fill="url(#paper)"/>
+<g stroke="#bdcbc4" stroke-opacity=".7" fill="none"><path d="M40 66H600M40 294H600M61 45V313M579 45V313"/><path d="M100 180H540" stroke-dasharray="4 10"/></g>
+<g fill="none" stroke-width="22" stroke-linecap="round" opacity=".96">
+<path d="M72 88C171 87 163 165 256 164S362 165 405 180" stroke="#bd765c"/>
+<path d="M72 182C191 184 195 186 264 184S361 180 405 180" stroke="#3d8992"/>
+<path d="M72 274C181 278 178 201 262 199S363 195 405 180" stroke="#ad9d5c"/>
+</g>
+<g fill="none" stroke="#f4f3eb" stroke-width="3" opacity=".7">
+<path d="M73 88C171 87 163 165 256 164S362 165 405 180"/>
+<path d="M73 182C191 184 195 186 264 184S361 180 405 180"/>
+<path d="M73 274C181 278 178 201 262 199S363 195 405 180"/>
+</g>
+<rect x="403" y="133" width="172" height="94" rx="45" fill="url(#capsule)" stroke="#243e4c" stroke-width="3"/>
+<circle cx="461" cy="180" r="22" fill="#b5d2c5"/><path d="M451 181l8 8 13-18" fill="none" stroke="#32545b" stroke-width="4" stroke-linecap="round"/>
+<path d="M493 168h44M493 179h61M493 190h31" fill="none" stroke="#e9f4ee" stroke-width="4" stroke-linecap="round"/>
+<g fill="#fdfbf5" stroke="#765d4d" stroke-width="2"><circle cx="71" cy="88" r="13"/><circle cx="71" cy="182" r="13"/><circle cx="71" cy="274" r="13"/></g>
+</svg>

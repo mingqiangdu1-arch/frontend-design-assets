@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>V0.57 · Analytical micro-visualizations</title>
+<link rel="stylesheet" href="../../styles/primitives/v057/analytical-atoms.css">
+<style>
+body{margin:0;background:#eef1f3;color:#27333e;font:16px/1.6 system-ui}
+main{max-width:1200px;margin:auto;padding:clamp(1rem,3vw,2.5rem)}
+h1{font-size:clamp(1.7rem,4vw,2.55rem);line-height:1.2}
+.intro{max-width:70ch;color:#4c6170}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:1rem}
+.sample{background:#fff;padding:1.25rem;border:1px solid #d9e1e6;border-radius:.7rem;min-width:0}
+.sample h2{margin:.1rem 0 1rem;font-size:1rem}
+.sample details{font-size:.77rem;margin-top:1rem;border-top:1px solid #e2e9ef;padding-top:.65rem}
+.sample summary{cursor:pointer;font-weight:700}
+.sample table{width:100%;border-collapse:collapse;font-size:.77rem}
+.sample details td,.sample details th{border-bottom:1px solid #e1e5eb;text-align:left;padding:.3rem}
+.vectors{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,350px),1fr));gap:1rem}
+.vectors figure{margin:0;padding:.7rem;background:white;border:1px solid #d9e1e6;border-radius:.7rem}
+.vectors img{display:block;width:100%;height:auto}
+.vectors figcaption{font-size:.77rem;color:#526475;padding:.5rem 0 0}
+</style></head><body><main>
+<h1>Analytical micro-visualizations · V0.57</h1>
+<p class="intro">六种原创独立源码素材，旁附可阅读的演示数据表。所有数字都是虚构示例，视觉比例由作者手动设置，未接数据源或分析引擎。颜色仅辅助表达，不能替代数据。</p>
+<section class="gallery" aria-label="Six analytic source specimens">
+<article class="sample"><h2>FX-112 · 累计增减瀑布</h2>
+<div class="fx57-waterfall"><div class="fx57-waterfall__plot" aria-hidden="true">
+ <div class="fx57-waterfall__col" data-sign="total"><span class="fx57-waterfall__bar" style="--base:0;--size:45"></span></div>
+ <div class="fx57-waterfall__col" data-sign="positive"><span class="fx57-waterfall__bar" style="--base:45;--size:20"></span></div>
+ <div class="fx57-waterfall__col" data-sign="negative"><span class="fx57-waterfall__bar" style="--base:53;--size:12"></span></div>
+ <div class="fx57-waterfall__col" data-sign="positive"><span class="fx57-waterfall__bar" style="--base:53;--size:7"></span></div>
+ <div class="fx57-waterfall__col" data-sign="total"><span class="fx57-waterfall__bar" style="--base:0;--size:60"></span></div>
+ </div><ol class="fx57-waterfall__labels"><li>起点<strong>45</strong></li><li>新增<strong>+20</strong></li><li>损耗<strong>−12</strong></li><li>修正<strong>+7</strong></li><li>终值<strong>60</strong></li></ol></div>
+ <details><summary>读取数值和累计关系</summary><p>45 + 20 − 12 + 7 = 60，全部为虚构单位。负向柱起点为 53、终点为 65，颜色表示下降。</p></details>
+</article>
+<article class="sample"><h2>FX-113 · 双向观点分布</h2>
+<div class="fx57-diverge">
+ <div class="fx57-diverge__row"><span class="fx57-diverge__label">易于使用</span><div class="fx57-diverge__plot" aria-hidden="true" style="--negative:20;--positive:65"><i class="fx57-diverge__negative"></i><i class="fx57-diverge__positive"></i></div></div>
+ <div class="fx57-diverge__row"><span class="fx57-diverge__label">任务清晰</span><div class="fx57-diverge__plot" aria-hidden="true" style="--negative:42;--positive:38"><i class="fx57-diverge__negative"></i><i class="fx57-diverge__positive"></i></div></div>
+ <p class="fx57-diverge__key">红：负向；绿：正向。中立不绘出，中心线是 0，左右半宽各代表 100%。</p></div>
+ <details><summary>读取原始比例</summary><table><thead><tr><th>问题</th><th>负向</th><th>中立</th><th>正向</th></tr></thead><tbody><tr><td>易于使用</td><td>20%</td><td>15%</td><td>65%</td></tr><tr><td>任务清晰</td><td>42%</td><td>20%</td><td>38%</td></tr></tbody></table></details>
+</article>
+<article class="sample"><h2>FX-114 · 目标基准 Bullet</h2>
+<div class="fx57-bullet">
+ <div class="fx57-bullet__row"><span class="fx57-bullet__name">交付完成</span><div class="fx57-bullet__rail" aria-hidden="true" style="--actual:76;--target:85"><div class="fx57-bullet__actual"></div><i class="fx57-bullet__target"></i></div><span class="fx57-bullet__value">实际 76 / 目标 85</span></div>
+ <div class="fx57-bullet__row"><span class="fx57-bullet__name">审阅覆盖</span><div class="fx57-bullet__rail" aria-hidden="true" style="--actual:91;--target:80"><div class="fx57-bullet__actual"></div><i class="fx57-bullet__target"></i></div><span class="fx57-bullet__value">实际 91 / 目标 80</span></div></div>
+ <details><summary>解释指标</summary><p>均为虚构的 0–100 无量纲数值；深色条表示实际、竖线表示目标。背景分档仅作为视觉示例，不对应业务阈值。</p></details>
+</article>
+<article class="sample"><h2>FX-115 · 分批次留存矩阵</h2>
+<div class="fx57-cohort"><table><caption>模拟用户群留存（%）</caption><thead><tr><th scope="col">起始月</th><th scope="col">M0</th><th scope="col">M1</th><th scope="col">M2</th><th scope="col">M3</th></tr></thead><tbody>
+<tr><th scope="row">1 月</th><td data-high style="--shade:90">90</td><td style="--shade:63">63</td><td style="--shade:42">42</td><td style="--shade:31">31</td></tr>
+<tr><th scope="row">2 月</th><td data-high style="--shade:86">86</td><td style="--shade:59">59</td><td style="--shade:38">38</td><td data-na aria-label="无数据">—</td></tr>
+<tr><th scope="row">3 月</th><td data-high style="--shade:88">88</td><td style="--shade:66">66</td><td data-na aria-label="无数据">—</td><td data-na aria-label="无数据">—</td></tr>
+</tbody></table><p class="fx57-cohort__note">表格本身可读。颜色仅重复显示在单元格中的数字；空单元格不是 0。</p></div>
+</article>
+<article class="sample"><h2>FX-116 · 决策二维象限</h2>
+<div class="fx57-quadrant"><div class="fx57-quadrant__plot" aria-hidden="true">
+<i class="fx57-quadrant__point" data-label="A" style="--x:18;--y:73;--color:#c86d65"></i>
+<i class="fx57-quadrant__point" data-label="B" style="--x:76;--y:80;--color:#328c7a"></i>
+<i class="fx57-quadrant__point" data-label="C" style="--x:68;--y:22;--color:#3e78a7"></i>
+<i class="fx57-quadrant__point" data-label="D" style="--x:28;--y:34;--color:#ba9658"></i>
+</div><p class="fx57-quadrant__axis"><span>投入低</span><span>投入高</span></p><p class="fx57-quadrant__axis"><span>纵轴：价值低 → 价值高；中心为示例阈值 50</span></p></div>
+<details><summary>读取候选坐标</summary><table><thead><tr><th>候选</th><th>投入 X</th><th>价值 Y</th></tr></thead><tbody><tr><td>A</td><td>18</td><td>73</td></tr><tr><td>B</td><td>76</td><td>80</td></tr><tr><td>C</td><td>68</td><td>22</td></tr><tr><td>D</td><td>28</td><td>34</td></tr></tbody></table></details>
+</article>
+<article class="sample"><h2>FX-117 · 固定比例区块</h2>
+<div class="fx57-treemap"><div class="fx57-treemap__plot" aria-hidden="true">
+<div class="fx57-treemap__tile fx57-treemap__tile--a" style="--tile:#35768a"><strong>内容</strong><span>50%</span></div>
+<div class="fx57-treemap__tile fx57-treemap__tile--b" style="--tile:#8964a5"><strong>技术</strong><span>30%</span></div>
+<div class="fx57-treemap__tile fx57-treemap__tile--c" style="--tile:#bb8054"><strong>设计</strong><span>12%</span></div>
+<div class="fx57-treemap__tile fx57-treemap__tile--d" style="--tile:#528a6c"><strong>其他</strong><span>8%</span></div>
+</div><p class="fx57-treemap__note">固定 10×5 格，区块占比 50/30/12/8%，不是可动态计算的 Treemap。</p></div>
+<details><summary>读取分类比例</summary><table><thead><tr><th>分类</th><th>比例</th></tr></thead><tbody><tr><td>内容</td><td>50%</td></tr><tr><td>技术</td><td>30%</td></tr><tr><td>设计</td><td>12%</td></tr><tr><td>其他</td><td>8%</td></tr></tbody></table></details>
+</article>
+</section>
+<h2>Standalone graphic assets · 非数据证据</h2>
+<div class="vectors">
+<figure><img src="../../graphics/v057/decision-contours.svg" alt="Decorative concentric decision contours"><figcaption>VG-099 · 决策等高轮廓</figcaption></figure>
+<figure><img src="../../graphics/v057/metric-constellation.svg" alt="Decorative points connected in a fictional metric constellation"><figcaption>VG-100 · 指标星群</figcaption></figure>
+<figure><img src="../../graphics/v057/provenance-loom.svg" alt="Decorative branching ribbons converging toward a central line"><figcaption>VG-101 · 来源织带</figcaption></figure>
+<figure><img src="../../graphics/v057/interval-architecture.svg" alt="Decorative geometric blocks and transparent interval framing"><figcaption>VG-102 · 区间构筑</figcaption></figure>
+</div>
+</main></body></html>

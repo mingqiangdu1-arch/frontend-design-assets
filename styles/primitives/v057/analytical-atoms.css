@@ -1,0 +1,95 @@
+/* V0.57 · Original analytic visual atoms. All classes scoped to .fx57-*.
+   Static example geometry is supplied by semantic HTML and CSS variables.
+   No data fetching, chart library, external font, timers or global reset. */
+
+/* FX-112 · Contribution waterfall: --base and --size are values on a 0..100 scale. */
+.fx57-waterfall{--pos:#17847a;--neg:#c65f65;--total:#4d6284;max-width:35rem;font:400 .82rem/1.4 system-ui;color:#253345}
+.fx57-waterfall__plot{height:12rem;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.6rem;
+  padding:.6rem .65rem 0;border:1px solid #dce2e8;border-radius:.5rem .5rem 0 0;
+  background:repeating-linear-gradient(to top,#e9edf2 0 1px,transparent 1px 20%),#fbfcfe}
+.fx57-waterfall__col{position:relative;min-width:0;border-left:1px dashed #e0e4e9}
+.fx57-waterfall__bar{position:absolute;left:9%;width:82%;bottom:calc(var(--base,0)*1%);
+  height:calc(var(--size,0)*1%);min-height:1px;border-radius:3px 3px 1px 1px;background:var(--pos)}
+.fx57-waterfall__col[data-sign="negative"] .fx57-waterfall__bar{background:var(--neg)}
+.fx57-waterfall__col[data-sign="total"] .fx57-waterfall__bar{background:var(--total)}
+.fx57-waterfall__labels{list-style:none;margin:0;padding:.6rem .45rem;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:.6rem;background:#f2f5f8;border:1px solid #dce2e8;border-top:0;border-radius:0 0 .5rem .5rem;text-align:center}
+.fx57-waterfall__labels li{min-width:0;font-size:.68rem;overflow-wrap:anywhere}
+.fx57-waterfall__labels strong{display:block;font-variant-numeric:tabular-nums;font-size:.82rem}
+
+/* FX-113 · Diverging opinion percentages; each bar half is 50% plot width.
+   --negative and --positive store percentages of all respondents, not relative segment sizes. */
+.fx57-diverge{max-width:38rem;font:400 .85rem/1.5 system-ui;color:#273543}
+.fx57-diverge__row{display:grid;grid-template-columns:minmax(6rem,33%) minmax(0,1fr);
+  gap:1rem;align-items:center;padding:.6rem 0;border-bottom:1px solid #e3e9ed}
+.fx57-diverge__label{font-weight:650;overflow-wrap:anywhere}
+.fx57-diverge__plot{height:1.2rem;position:relative;border-radius:.2rem;background:#f0f3f5;
+  background-image:linear-gradient(to right,transparent calc(50% - .5px),#75808a calc(50% - .5px),#75808a calc(50% + .5px),transparent calc(50% + .5px))}
+.fx57-diverge__negative,.fx57-diverge__positive{position:absolute;top:.15rem;height:.9rem}
+.fx57-diverge__negative{right:50%;width:calc(var(--negative,0)*.5%);background:#cf6971;border-radius:3px 0 0 3px}
+.fx57-diverge__positive{left:50%;width:calc(var(--positive,0)*.5%);background:#238d80;border-radius:0 3px 3px 0}
+.fx57-diverge__key{font-size:.72rem;color:#53616c;margin:.7rem 0}
+
+/* FX-114 · Benchmark bullet: actual horizontal bar and independent target position. */
+.fx57-bullet{max-width:38rem;font:400 .85rem/1.5 system-ui;color:#26384c}
+.fx57-bullet__row{display:grid;grid-template-columns:minmax(6rem,31%) minmax(0,1fr);
+  gap:.5rem 1rem;align-items:center;padding:.7rem 0;border-bottom:1px solid #e6e9ed}
+.fx57-bullet__name{font-weight:650}
+.fx57-bullet__rail{position:relative;height:1.8rem;border-radius:.15rem;
+  background:linear-gradient(to right,#e5cdd2 0 40%,#ebdfc6 40% 70%,#d6e7de 70% 100%)}
+.fx57-bullet__actual{position:absolute;left:0;top:.56rem;width:calc(var(--actual,0)*1%);height:.7rem;
+  background:#465b77;border-radius:0 2px 2px 0}
+.fx57-bullet__target{position:absolute;left:calc(var(--target,0)*1%);height:1.8rem;width:3px;top:0;background:#101a2e}
+.fx57-bullet__target::after{content:"";position:absolute;top:-.26rem;left:-.27rem;
+  border-left:.32rem solid transparent;border-right:.32rem solid transparent;border-top:.3rem solid #101a2e}
+.fx57-bullet__value{font-size:.72rem;color:#5c6572;grid-column:2;font-variant-numeric:tabular-nums}
+
+/* FX-115 · Cohort retention: CSS treatment applied to actual semantic table cells.
+   --shade is manually synchronized to the displayed percentage (0..100). */
+.fx57-cohort{--ink:#243746;max-width:38rem;overflow-x:auto;color:var(--ink);
+  font:400 .8rem/1.5 system-ui}
+.fx57-cohort table{border-collapse:separate;border-spacing:3px;min-width:28rem;width:100%;text-align:center}
+.fx57-cohort caption{text-align:left;font-weight:700;font-size:.92rem;margin-bottom:.5rem}
+.fx57-cohort th{font-size:.7rem;letter-spacing:.02em;background:#edf1f3;padding:.55rem .35rem}
+.fx57-cohort tbody th{text-align:left;white-space:nowrap}
+.fx57-cohort td{padding:.65rem .4rem;font-variant-numeric:tabular-nums;font-weight:650;
+  background:color-mix(in srgb,#258878 calc(var(--shade,0)*1%),#f0f5f4)}
+.fx57-cohort td[data-high]{color:#fff;background:color-mix(in srgb,#125950 calc(var(--shade,0)*1%),#f0f5f4)}
+.fx57-cohort td[data-na]{background:#f1f2f4;color:#79818a;font-weight:400}
+.fx57-cohort__note{font-size:.72rem;color:#596876}
+
+/* FX-116 · Decision quadrant, illustrative points are manually positioned with --x and --y (0..100). */
+.fx57-quadrant{max-width:33rem;color:#253747;font:400 .85rem/1.5 system-ui}
+.fx57-quadrant__plot{position:relative;aspect-ratio:1.5/1;min-height:13rem;
+  border:1px solid #cdd9e1;border-radius:.45rem;overflow:hidden;
+  background:linear-gradient(90deg,#ebf2ee 0 50%,#edf3f8 50% 100%)}
+.fx57-quadrant__plot::before,.fx57-quadrant__plot::after{content:"";position:absolute;background:#95a7b0;z-index:1}
+.fx57-quadrant__plot::before{left:50%;top:0;width:1px;height:100%}
+.fx57-quadrant__plot::after{top:50%;left:0;height:1px;width:100%}
+.fx57-quadrant__point{position:absolute;left:calc(var(--x,50)*1%);bottom:calc(var(--y,50)*1%);
+  width:.85rem;height:.85rem;transform:translate(-50%,50%);border-radius:50%;
+  background:var(--color,#c45c64);border:2px solid white;box-shadow:0 1px 4px #0003;z-index:2}
+.fx57-quadrant__point::after{content:attr(data-label);position:absolute;left:50%;top:-1.3rem;transform:translateX(-50%);font:700 .68rem/1.2 system-ui;color:#1e3847}
+.fx57-quadrant__axis{display:flex;justify-content:space-between;gap:.5rem;
+  font-size:.73rem;margin-top:.4rem;color:#4e6570}
+
+/* FX-117 · Unit tile composition: manually specified grid areas, not a treemap algorithm. */
+.fx57-treemap{max-width:34rem;color:#223747;font:400 .85rem/1.4 system-ui}
+.fx57-treemap__plot{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));
+  grid-template-rows:repeat(5,minmax(0,1fr));gap:4px;aspect-ratio:1.6/1;
+  background:#eff3f6;border:1px solid #d9e1e7;padding:4px;border-radius:.45rem}
+.fx57-treemap__tile{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;
+  padding:clamp(.3rem,1vw,.8rem);min-width:0;min-height:0;overflow:hidden;
+  background:var(--tile,#3b8095);color:#fff;border-radius:.3rem}
+.fx57-treemap__tile strong{font-size:clamp(.7rem,1.5vw,1rem);overflow-wrap:anywhere}
+.fx57-treemap__tile span{font-size:clamp(.65rem,1.2vw,.85rem);font-variant-numeric:tabular-nums}
+.fx57-treemap__tile--a{grid-area:1/1/6/6}
+.fx57-treemap__tile--b{grid-area:1/6/4/11}
+.fx57-treemap__tile--c{grid-area:4/6/6/9}
+.fx57-treemap__tile--d{grid-area:4/9/6/11}
+.fx57-treemap__note{font-size:.7rem;color:#637380}
+@media(max-width:520px){
+  .fx57-diverge__row,.fx57-bullet__row{grid-template-columns:1fr;gap:.3rem}
+  .fx57-bullet__value{grid-column:1}
+  .fx57-treemap__tile{padding:.25rem}
+}

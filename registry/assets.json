@@ -21670,6 +21670,446 @@
         "instructions": "Use graphics/v056/ink-stone-orbit.svg as image/media with alt or decorative empty alt, and verify in target host.",
         "limitations": "Fictional geometry, not astronomy, measured orbital data or geographical information."
       }
+    },
+    {
+      "id": "FX-112",
+      "type": "component",
+      "name": "Contribution waterfall / 增减贡献瀑布图",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v057",
+        "original-chart-css",
+        "static-chart-reference",
+        "independent-material",
+        "no-dependencies",
+        "fx57-waterfall"
+      ],
+      "aliases": [
+        "瀑布贡献",
+        "contribution waterfall",
+        "cumulative changes"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original scoped HTML/CSS and fictional fixtures; no copied third-party code or external fonts/media.",
+      "styleIds": [
+        "precision-dark",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "analytics",
+        "financial-report",
+        "research-story"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v057/analytical-atoms.css",
+      "details": "styles/primitives/v057/README.md",
+      "spec": "registry/material-expansion-v057.json",
+      "demo": "playground/analytics-v057/index.html",
+      "verified": "Original source and independent specimen authored 2026-11-23; path/structure validation only. Browser/contrast/accessibility/real data visual QA is not claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v057/analytical-atoms.css",
+        "stack": "Static hand-authored semantic HTML/CSS visual material, no JS chart engine or React export",
+        "instructions": "Use only the .fx57-waterfall family and the associated semantic example in playground/analytics-v057/index.html. Replace fictional numbers and check all manual CSS value geometry, table and labels.",
+        "limitations": "Manual 0..100 positions and totals; no automated scale computation or actual business data."
+      }
+    },
+    {
+      "id": "FX-113",
+      "type": "component",
+      "name": "Diverging sentiment distribution / 双向观点分布",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v057",
+        "original-chart-css",
+        "static-chart-reference",
+        "independent-material",
+        "no-dependencies",
+        "fx57-diverge"
+      ],
+      "aliases": [
+        "双向李克特",
+        "diverging Likert",
+        "sentiment distribution"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original scoped HTML/CSS and fictional fixtures; no copied third-party code or external fonts/media.",
+      "styleIds": [
+        "refined-light-saas",
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "survey",
+        "ux-research",
+        "dashboard"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v057/analytical-atoms.css",
+      "details": "styles/primitives/v057/README.md",
+      "spec": "registry/material-expansion-v057.json",
+      "demo": "playground/analytics-v057/index.html",
+      "verified": "Original source and independent specimen authored 2026-11-23; path/structure validation only. Browser/contrast/accessibility/real data visual QA is not claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v057/analytical-atoms.css",
+        "stack": "Static hand-authored semantic HTML/CSS visual material, no JS chart engine or React export",
+        "instructions": "Use only the .fx57-diverge family and the associated semantic example in playground/analytics-v057/index.html. Replace fictional numbers and check all manual CSS value geometry, table and labels.",
+        "limitations": "Neutral values shown in source table, omitted from two painted bars; values must be kept synchronized with the display."
+      }
+    },
+    {
+      "id": "FX-114",
+      "type": "component",
+      "name": "Target benchmark bullet / 目标基准子弹图",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v057",
+        "original-chart-css",
+        "static-chart-reference",
+        "independent-material",
+        "no-dependencies",
+        "fx57-bullet"
+      ],
+      "aliases": [
+        "子弹图",
+        "bullet benchmark",
+        "target comparison"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original scoped HTML/CSS and fictional fixtures; no copied third-party code or external fonts/media.",
+      "styleIds": [
+        "precision-dark",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "dashboard",
+        "performance-review",
+        "analytics"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v057/analytical-atoms.css",
+      "details": "styles/primitives/v057/README.md",
+      "spec": "registry/material-expansion-v057.json",
+      "demo": "playground/analytics-v057/index.html",
+      "verified": "Original source and independent specimen authored 2026-11-23; path/structure validation only. Browser/contrast/accessibility/real data visual QA is not claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v057/analytical-atoms.css",
+        "stack": "Static hand-authored semantic HTML/CSS visual material, no JS chart engine or React export",
+        "instructions": "Use only the .fx57-bullet family and the associated semantic example in playground/analytics-v057/index.html. Replace fictional numbers and check all manual CSS value geometry, table and labels.",
+        "limitations": "Threshold bands are illustrative and not calibrated risk thresholds or real-time metrics."
+      }
+    },
+    {
+      "id": "FX-115",
+      "type": "component",
+      "name": "Cohort retention matrix / 分批次留存矩阵",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v057",
+        "original-chart-css",
+        "static-chart-reference",
+        "independent-material",
+        "no-dependencies",
+        "fx57-cohort"
+      ],
+      "aliases": [
+        "分群留存",
+        "cohort retention heatmap",
+        "cohort matrix"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original scoped HTML/CSS and fictional fixtures; no copied third-party code or external fonts/media.",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "product-analytics",
+        "retention-report",
+        "research"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v057/analytical-atoms.css",
+      "details": "styles/primitives/v057/README.md",
+      "spec": "registry/material-expansion-v057.json",
+      "demo": "playground/analytics-v057/index.html",
+      "verified": "Original source and independent specimen authored 2026-11-23; path/structure validation only. Browser/contrast/accessibility/real data visual QA is not claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v057/analytical-atoms.css",
+        "stack": "Static hand-authored semantic HTML/CSS visual material, no JS chart engine or React export",
+        "instructions": "Use only the .fx57-cohort family and the associated semantic example in playground/analytics-v057/index.html. Replace fictional numbers and check all manual CSS value geometry, table and labels.",
+        "limitations": "Synthetic values; semantic static HTML table and color-mix enhancement, not retention calculation."
+      }
+    },
+    {
+      "id": "FX-116",
+      "type": "component",
+      "name": "Illustrative decision quadrant / 二维决策象限",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v057",
+        "original-chart-css",
+        "static-chart-reference",
+        "independent-material",
+        "no-dependencies",
+        "fx57-quadrant"
+      ],
+      "aliases": [
+        "决策象限",
+        "impact effort quadrant",
+        "2D choice plot"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original scoped HTML/CSS and fictional fixtures; no copied third-party code or external fonts/media.",
+      "styleIds": [
+        "precision-dark",
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "prioritization",
+        "planning",
+        "analytics"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v057/analytical-atoms.css",
+      "details": "styles/primitives/v057/README.md",
+      "spec": "registry/material-expansion-v057.json",
+      "demo": "playground/analytics-v057/index.html",
+      "verified": "Original source and independent specimen authored 2026-11-23; path/structure validation only. Browser/contrast/accessibility/real data visual QA is not claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v057/analytical-atoms.css",
+        "stack": "Static hand-authored semantic HTML/CSS visual material, no JS chart engine or React export",
+        "instructions": "Use only the .fx57-quadrant family and the associated semantic example in playground/analytics-v057/index.html. Replace fictional numbers and check all manual CSS value geometry, table and labels.",
+        "limitations": "Coordinates hand-authored in CSS; no automated scoring, scatter layout engine or decision recommendation."
+      }
+    },
+    {
+      "id": "FX-117",
+      "type": "component",
+      "name": "Fixed proportional unit mosaic / 固定比例单元区块",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v057",
+        "original-chart-css",
+        "static-chart-reference",
+        "independent-material",
+        "no-dependencies",
+        "fx57-treemap"
+      ],
+      "aliases": [
+        "面积分配",
+        "static treemap",
+        "proportional tiles"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original scoped HTML/CSS and fictional fixtures; no copied third-party code or external fonts/media.",
+      "styleIds": [
+        "neo-brutalist",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "report",
+        "dashboard",
+        "allocation"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v057/analytical-atoms.css",
+      "details": "styles/primitives/v057/README.md",
+      "spec": "registry/material-expansion-v057.json",
+      "demo": "playground/analytics-v057/index.html",
+      "verified": "Original source and independent specimen authored 2026-11-23; path/structure validation only. Browser/contrast/accessibility/real data visual QA is not claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v057/analytical-atoms.css",
+        "stack": "Static hand-authored semantic HTML/CSS visual material, no JS chart engine or React export",
+        "instructions": "Use only the .fx57-treemap family and the associated semantic example in playground/analytics-v057/index.html. Replace fictional numbers and check all manual CSS value geometry, table and labels.",
+        "limitations": "Fixed 10x5 grid; not a data-driven treemap packer. The values and grid areas must match manually."
+      }
+    },
+    {
+      "id": "VG-099",
+      "type": "component",
+      "name": "Decision contours / 决策轮廓艺术",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v057",
+        "original-vector",
+        "decorative-illustration",
+        "independent-material",
+        "no-dependencies",
+        "standalone-svg"
+      ],
+      "aliases": [
+        "抽象等高线",
+        "decision contours art",
+        "contour ring"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored vector SVG; no external code, fonts, media or imports.",
+      "styleIds": [
+        "signal-noir",
+        "aether-orbit"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "analytics-theme",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "graphics/v057/decision-contours.svg",
+      "details": "graphics/v057/README.md",
+      "spec": "registry/material-expansion-v057.json",
+      "demo": "playground/analytics-v057/index.html",
+      "verified": "Original source and independent specimen authored 2026-11-23; path/structure validation only. Browser/contrast/accessibility/real data visual QA is not claimed.",
+      "handoff": {
+        "entry": "graphics/v057/decision-contours.svg",
+        "stack": "Original standalone 640x360 decorative SVG without data semantics",
+        "instructions": "Reuse graphics/v057/decision-contours.svg as a decorative/vector illustration with contextual alt or empty alt and inspect host display.",
+        "limitations": "Decorative artwork; neither calibrated risk/elevation surfaces nor measured data."
+      }
+    },
+    {
+      "id": "VG-100",
+      "type": "component",
+      "name": "Metric constellation / 指标星群插画",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v057",
+        "original-vector",
+        "decorative-illustration",
+        "independent-material",
+        "no-dependencies",
+        "standalone-svg"
+      ],
+      "aliases": [
+        "指标星图",
+        "network constellation",
+        "data nodes artwork"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored vector SVG; no external code, fonts, media or imports.",
+      "styleIds": [
+        "signal-noir",
+        "aether-orbit"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "analytics-theme",
+        "developer-tool"
+      ],
+      "dependencies": [],
+      "path": "graphics/v057/metric-constellation.svg",
+      "details": "graphics/v057/README.md",
+      "spec": "registry/material-expansion-v057.json",
+      "demo": "playground/analytics-v057/index.html",
+      "verified": "Original source and independent specimen authored 2026-11-23; path/structure validation only. Browser/contrast/accessibility/real data visual QA is not claimed.",
+      "handoff": {
+        "entry": "graphics/v057/metric-constellation.svg",
+        "stack": "Original standalone 640x360 decorative SVG without data semantics",
+        "instructions": "Reuse graphics/v057/metric-constellation.svg as a decorative/vector illustration with contextual alt or empty alt and inspect host display.",
+        "limitations": "Fictional graphic, not actual network edges, metric correlations or live monitoring."
+      }
+    },
+    {
+      "id": "VG-101",
+      "type": "component",
+      "name": "Provenance loom / 来源织带图",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v057",
+        "original-vector",
+        "decorative-illustration",
+        "independent-material",
+        "no-dependencies",
+        "standalone-svg"
+      ],
+      "aliases": [
+        "来源织带",
+        "data provenance art",
+        "branching ribbons"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored vector SVG; no external code, fonts, media or imports.",
+      "styleIds": [
+        "editorial-warm",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "research-story",
+        "documentation"
+      ],
+      "dependencies": [],
+      "path": "graphics/v057/provenance-loom.svg",
+      "details": "graphics/v057/README.md",
+      "spec": "registry/material-expansion-v057.json",
+      "demo": "playground/analytics-v057/index.html",
+      "verified": "Original source and independent specimen authored 2026-11-23; path/structure validation only. Browser/contrast/accessibility/real data visual QA is not claimed.",
+      "handoff": {
+        "entry": "graphics/v057/provenance-loom.svg",
+        "stack": "Original standalone 640x360 decorative SVG without data semantics",
+        "instructions": "Reuse graphics/v057/provenance-loom.svg as a decorative/vector illustration with contextual alt or empty alt and inspect host display.",
+        "limitations": "A visual metaphor, not validated lineage or real evidence accreditation."
+      }
+    },
+    {
+      "id": "VG-102",
+      "type": "component",
+      "name": "Interval architecture / 区间构筑图",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v057",
+        "original-vector",
+        "decorative-illustration",
+        "independent-material",
+        "no-dependencies",
+        "standalone-svg"
+      ],
+      "aliases": [
+        "透明区间图形",
+        "interval architecture",
+        "analytic geometric art"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored vector SVG; no external code, fonts, media or imports.",
+      "styleIds": [
+        "precision-dark",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "report",
+        "portfolio"
+      ],
+      "dependencies": [],
+      "path": "graphics/v057/interval-architecture.svg",
+      "details": "graphics/v057/README.md",
+      "spec": "registry/material-expansion-v057.json",
+      "demo": "playground/analytics-v057/index.html",
+      "verified": "Original source and independent specimen authored 2026-11-23; path/structure validation only. Browser/contrast/accessibility/real data visual QA is not claimed.",
+      "handoff": {
+        "entry": "graphics/v057/interval-architecture.svg",
+        "stack": "Original standalone 640x360 decorative SVG without data semantics",
+        "instructions": "Reuse graphics/v057/interval-architecture.svg as a decorative/vector illustration with contextual alt or empty alt and inspect host display.",
+        "limitations": "Decorative shapes, not numerical confidence intervals or an evidence chart."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",

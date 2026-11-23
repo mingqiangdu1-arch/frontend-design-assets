@@ -7,7 +7,10 @@ This directory is the **authoritative index** for choosing existing design refer
 | File | Source of truth for |
 | --- | --- |
 | `assets.json` | Every stable asset ID, its identity/type/lifecycle/source/reuse constraints, tags, aliases, context, style, dependencies, and handoff |
-| `material-expansion-v056.json` | `FX-106..111` 六套中英日混排/CJK 排版的真正原生 HTML/CSS 源码和 `VG-095..098` 四幅无外部字体 SVG；明确浏览器原生能力与字体/换行/语言支持的边界 |\n| `material-expansion-v055.json` | FX-100..105 六种原创触感 CSS/HTML 局部原件 + VG-091..094 四幅独立原创 640×360 SVG；每条指向可用的真实源文件和样张，原生控件与静态视觉有明确边界 |\n| `material-expansion-v054.json` | REF-137..148 real, commit-pinned upstream source paths, license boundaries and deepening targets for existing visual styles |
+| `material-expansion-v057.json` | `FX-112..117` 六套带语义数值说明的原创静态 HTML/CSS 分析可视化原件，`VG-099..102` 四幅只作装饰的原创 SVG；数据虚构、图形坐标由作者手动同步，不是计算引擎 |
+| `material-expansion-v056.json` | `FX-106..111` 六套中英日混排/CJK 排版的真正原生 HTML/CSS 源码和 `VG-095..098` 四幅无外部字体 SVG；明确浏览器原生能力与字体/换行/语言支持的边界 |
+| `material-expansion-v055.json` | FX-100..105 六种原创触感 CSS/HTML 局部原件 + VG-091..094 四幅独立原创 640×360 SVG；每条指向可用的真实源文件和样张，原生控件与静态视觉有明确边界 |
+| `material-expansion-v054.json` | REF-137..148 real, commit-pinned upstream source paths, license boundaries and deepening targets for existing visual styles |
 | `components.json` | **Actual public React component exports** (one entry per real component); source and gallery references |
 | `styles.json` | Independent style IDs, token/spec/demo entrypoints; **no repository default** |
 | `style-assembly.json` | Fourteen per-style page structure and interaction handoffs; real template, experience-recipe and React-export references. Used by `scripts/style-assembly.mjs`; not generated production pages. |

@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-23 · V0.57 original semantic analytics micro-visualizations and decorative vectors
+
+- Added **six original standalone CSS/semantic HTML chart materials** `FX-112..117`: cumulative waterfall, diverging sentiment distribution, bullet target benchmark, semantic cohort retention table, qualitative decision quadrant and fixed-grid proportional treemap-like mosaic. All samples use fictional numeric values and visibly readable explanations/tables; position and color are manually authored, not an analytics engine.
+- Added **four hand-authored independent SVG originals** `VG-099..102`: decision contours, metric constellation, provenance loom and interval architecture. All are decorative analogies without measured-data semantics.
+- [Machine-readable index](registry/material-expansion-v057.json) · [CSS/HTML source](styles/primitives/v057/README.md) · [SVG originals](graphics/v057/README.md) · [independent specimen gallery](playground/analytics-v057/index.html). Catalog **543 → 553**.
+- No new React exports, default theme, external packages, fonts, business application, data API or testing framework. Verified source paths and registry IDs only; real browser and host accessibility/visual QA not claimed.
+
 ## 2026-11-23 · V0.56 original multiscript typography and wordless editorial vectors
 
 - Added **six original standalone scoped CSS/semantic HTML primitives** `FX-106..111`: vertical CJK cover, native ruby pronunciation annotation, bilingual line-pair layout, strict CJK line-break study, tabular numerals and punctuation-led pullquote. No translation model, audio, webfont or global CSS reset.

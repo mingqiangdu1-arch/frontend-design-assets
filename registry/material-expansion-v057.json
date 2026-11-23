@@ -1,0 +1,240 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.57.0",
+  "date": "2026-11-23",
+  "focus": "Six original scoped static analytics HTML/CSS chart-material specimens with visible semantic explanations and four standalone decorative SVGs; no real data, calculation engine or assembled application.",
+  "previousAssetCount": 543,
+  "newAssetCount": 10,
+  "expectedAssetCount": 553,
+  "reactExportsAdded": 0,
+  "styleIdsAdded": 0,
+  "thirdPartyCodeCopied": false,
+  "externalMediaCopied": false,
+  "chartEnginesAdded": 0,
+  "testSuitesAdded": 0,
+  "sourceFiles": [
+    "registry/material-expansion-v057.json",
+    "styles/primitives/v057/analytical-atoms.css",
+    "styles/primitives/v057/README.md",
+    "playground/analytics-v057/index.html",
+    "graphics/v057/README.md",
+    "graphics/v057/decision-contours.svg",
+    "graphics/v057/metric-constellation.svg",
+    "graphics/v057/provenance-loom.svg",
+    "graphics/v057/interval-architecture.svg"
+  ],
+  "cssAtoms": [
+    {
+      "id": "FX-112",
+      "name": "Contribution waterfall / 增减贡献瀑布图",
+      "className": "fx57-waterfall",
+      "source": "styles/primitives/v057/analytical-atoms.css",
+      "readme": "styles/primitives/v057/README.md",
+      "demo": "playground/analytics-v057/index.html",
+      "styleIds": [
+        "precision-dark",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "analytics",
+        "financial-report",
+        "research-story"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "static-scoped-semantic-html-css",
+      "limitations": "Manual 0..100 positions and totals; no automated scale computation or actual business data."
+    },
+    {
+      "id": "FX-113",
+      "name": "Diverging sentiment distribution / 双向观点分布",
+      "className": "fx57-diverge",
+      "source": "styles/primitives/v057/analytical-atoms.css",
+      "readme": "styles/primitives/v057/README.md",
+      "demo": "playground/analytics-v057/index.html",
+      "styleIds": [
+        "refined-light-saas",
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "survey",
+        "ux-research",
+        "dashboard"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "static-scoped-semantic-html-css",
+      "limitations": "Neutral values shown in source table, omitted from two painted bars; values must be kept synchronized with the display."
+    },
+    {
+      "id": "FX-114",
+      "name": "Target benchmark bullet / 目标基准子弹图",
+      "className": "fx57-bullet",
+      "source": "styles/primitives/v057/analytical-atoms.css",
+      "readme": "styles/primitives/v057/README.md",
+      "demo": "playground/analytics-v057/index.html",
+      "styleIds": [
+        "precision-dark",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "dashboard",
+        "performance-review",
+        "analytics"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "static-scoped-semantic-html-css",
+      "limitations": "Threshold bands are illustrative and not calibrated risk thresholds or real-time metrics."
+    },
+    {
+      "id": "FX-115",
+      "name": "Cohort retention matrix / 分批次留存矩阵",
+      "className": "fx57-cohort",
+      "source": "styles/primitives/v057/analytical-atoms.css",
+      "readme": "styles/primitives/v057/README.md",
+      "demo": "playground/analytics-v057/index.html",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "product-analytics",
+        "retention-report",
+        "research"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "static-scoped-semantic-html-css",
+      "limitations": "Synthetic values; semantic static HTML table and color-mix enhancement, not retention calculation."
+    },
+    {
+      "id": "FX-116",
+      "name": "Illustrative decision quadrant / 二维决策象限",
+      "className": "fx57-quadrant",
+      "source": "styles/primitives/v057/analytical-atoms.css",
+      "readme": "styles/primitives/v057/README.md",
+      "demo": "playground/analytics-v057/index.html",
+      "styleIds": [
+        "precision-dark",
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "prioritization",
+        "planning",
+        "analytics"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "static-scoped-semantic-html-css",
+      "limitations": "Coordinates hand-authored in CSS; no automated scoring, scatter layout engine or decision recommendation."
+    },
+    {
+      "id": "FX-117",
+      "name": "Fixed proportional unit mosaic / 固定比例单元区块",
+      "className": "fx57-treemap",
+      "source": "styles/primitives/v057/analytical-atoms.css",
+      "readme": "styles/primitives/v057/README.md",
+      "demo": "playground/analytics-v057/index.html",
+      "styleIds": [
+        "neo-brutalist",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "report",
+        "dashboard",
+        "allocation"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "static-scoped-semantic-html-css",
+      "limitations": "Fixed 10x5 grid; not a data-driven treemap packer. The values and grid areas must match manually."
+    }
+  ],
+  "decorativeSvg": [
+    {
+      "id": "VG-099",
+      "name": "Decision contours / 决策轮廓艺术",
+      "source": "graphics/v057/decision-contours.svg",
+      "readme": "graphics/v057/README.md",
+      "demo": "playground/analytics-v057/index.html",
+      "viewBox": "0 0 640 360",
+      "styleIds": [
+        "signal-noir",
+        "aether-orbit"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "analytics-theme",
+        "creative-site"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-decorative-svg",
+      "limitations": "Decorative artwork; neither calibrated risk/elevation surfaces nor measured data."
+    },
+    {
+      "id": "VG-100",
+      "name": "Metric constellation / 指标星群插画",
+      "source": "graphics/v057/metric-constellation.svg",
+      "readme": "graphics/v057/README.md",
+      "demo": "playground/analytics-v057/index.html",
+      "viewBox": "0 0 640 360",
+      "styleIds": [
+        "signal-noir",
+        "aether-orbit"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "analytics-theme",
+        "developer-tool"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-decorative-svg",
+      "limitations": "Fictional graphic, not actual network edges, metric correlations or live monitoring."
+    },
+    {
+      "id": "VG-101",
+      "name": "Provenance loom / 来源织带图",
+      "source": "graphics/v057/provenance-loom.svg",
+      "readme": "graphics/v057/README.md",
+      "demo": "playground/analytics-v057/index.html",
+      "viewBox": "0 0 640 360",
+      "styleIds": [
+        "editorial-warm",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "research-story",
+        "documentation"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-decorative-svg",
+      "limitations": "A visual metaphor, not validated lineage or real evidence accreditation."
+    },
+    {
+      "id": "VG-102",
+      "name": "Interval architecture / 区间构筑图",
+      "source": "graphics/v057/interval-architecture.svg",
+      "readme": "graphics/v057/README.md",
+      "demo": "playground/analytics-v057/index.html",
+      "viewBox": "0 0 640 360",
+      "styleIds": [
+        "precision-dark",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "report",
+        "portfolio"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-decorative-svg",
+      "limitations": "Decorative shapes, not numerical confidence intervals or an evidence chart."
+    }
+  ]
+}

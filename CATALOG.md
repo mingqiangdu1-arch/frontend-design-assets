@@ -4,7 +4,27 @@
 
 **任务需要可重复执行的方法时**：先查看 [Frontend Agent Skills](.agents/skills/README.md)，按具体任务只加载其中一项 `SKILL.md`；本 CATALOG 仍负责素材和源码定位，不把技能当作已实现组件。
 
-## V0.56 · 中英日原生混排与阅读素材\n\n- [V0.56 机器索引](registry/material-expansion-v056.json) · [CSS/HTML 源文件](styles/primitives/v056/multiscript-atoms.css) · [真实语义样张](playground/multiscript-v056/index.html) · [原创 SVG](graphics/v056/README.md)。\n- `FX-106..111`：纵排章节标题、浏览器原生 ruby/rt 注音、双语语段配对、日文禁则换行示例、等宽数字信息账本、CJK 标点式引语。`VG-095..098`：卷轴窗口、双轨交织、藏书票叠层、墨石轨迹。\n- 适用多语言阅读、知识库、文档和作品集。字体由目标系统选择；不导入字体二进制、不实现翻译/音频/排版引擎，也不宣称全浏览器兼容或 React 已导出。\n\n## V0.55 · 原创触感 CSS / 物理感图形素材\n\n- [V0.55 机器索引](registry/material-expansion-v055.json) · [FX-100..105 原始 CSS](styles/primitives/v055/tactile-atoms.css) · [语义 HTML 标本](playground/materials-v055/index.html) · [4 幅原生 SVG](graphics/v055/README.md)。\n- 六个物理材质方向包括蚀刻铭牌、静态频谱、真实 radio 触感选择、馆藏标签、CSS 棱镜边框、原生 details 展开卡；四个 VG 原件为棱镜观测台、植物电路、虚构线路图、陶土浮雕。\n- **真正的原始素材，而非第三方链接**；但 UI 交互限于 HTML 原生控件，样张里的图表/线路并非真实数据。无新增 React export、主题、依赖、业务产品或全新校验框架。\n\n## V0.54 · 近期 GitHub 原件与已有风格深化
+## V0.57 · 原创分析图表原件与装饰性矢量
+
+- [原件索引](registry/material-expansion-v057.json) · [CSS/HTML 源码](styles/primitives/v057/analytical-atoms.css) · [含数据说明的独立示例](playground/analytics-v057/index.html) · [无数据语义 SVG](graphics/v057/README.md)。
+- `FX-112..117`：增减贡献瀑布、双向观点分布、目标基准 bullet、留存矩阵、二维决策象限、固定比例矩形区块。源码均是静态/原生 HTML/CSS，数值由可读表格或明文说明提供并需手动同步，不含计算引擎或 API。
+- `VG-099..102`：决策等高轮廓、指标星群、来源织带、区间构筑。纯原创插画并非实测数据或真正统计可视化。
+- 用于数据工作台、研究报告、产品分析与专业 SaaS 的局部设计参考。无 React 包导出、第三方图库、测试框架或业务页面。
+
+
+## V0.56 · 中英日原生混排与阅读素材
+
+- [V0.56 机器索引](registry/material-expansion-v056.json) · [CSS/HTML 源文件](styles/primitives/v056/multiscript-atoms.css) · [真实语义样张](playground/multiscript-v056/index.html) · [原创 SVG](graphics/v056/README.md)。
+- `FX-106..111`：纵排章节标题、浏览器原生 ruby/rt 注音、双语语段配对、日文禁则换行示例、等宽数字信息账本、CJK 标点式引语。`VG-095..098`：卷轴窗口、双轨交织、藏书票叠层、墨石轨迹。
+- 适用多语言阅读、知识库、文档和作品集。字体由目标系统选择；不导入字体二进制、不实现翻译/音频/排版引擎，也不宣称全浏览器兼容或 React 已导出。
+
+## V0.55 · 原创触感 CSS / 物理感图形素材
+
+- [V0.55 机器索引](registry/material-expansion-v055.json) · [FX-100..105 原始 CSS](styles/primitives/v055/tactile-atoms.css) · [语义 HTML 标本](playground/materials-v055/index.html) · [4 幅原生 SVG](graphics/v055/README.md)。
+- 六个物理材质方向包括蚀刻铭牌、静态频谱、真实 radio 触感选择、馆藏标签、CSS 棱镜边框、原生 details 展开卡；四个 VG 原件为棱镜观测台、植物电路、虚构线路图、陶土浮雕。
+- **真正的原始素材，而非第三方链接**；但 UI 交互限于 HTML 原生控件，样张里的图表/线路并非真实数据。无新增 React export、主题、依赖、业务产品或全新校验框架。
+
+## V0.54 · 近期 GitHub 原件与已有风格深化
 
 - [结构化来源](registry/material-expansion-v054.json) · [具体文件与许可](docs/research/material-expansion-v054.md)：`REF-137..148`，涵盖 Shader、Agent 状态、MDX 叙事、Neo-brutalist 图表、图标形变、像素反馈和原生语义控件。
 - 来源均固定 Git commit 并指向具体上游文件；`styleDeepeningTargets` 是**研究方向**而非已实现 React 兼容。Canvas UI/Pxlkit 存在额外再分发限制。
