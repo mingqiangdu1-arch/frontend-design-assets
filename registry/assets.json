@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.2",
   "purpose": "Living cross-application, multi-style design asset repository; no repository-wide visual default.",
-  "updatedAt": "2026-11-20",
+  "updatedAt": "2026-11-23",
   "stageDefinitions": [
     "captured",
     "analyzed",
@@ -20789,6 +20789,446 @@
         "stack": "GitHub commit-pinned upstream source; review in target project",
         "instructions": "Inspect https://github.com/Joangeldelarosa/pxlkit/blob/b8e466934244875909983d65d8a43fbb4407a2c4/apps/web/src/components/hero/VoxelText.tsx and additional paths in registry/material-expansion-v054.json (REF-148), then check dependencies, rights and keyboard/mobile/reduced-motion in the target project before adaptation.",
         "limitations": "不得复制图标包/艺术素材至本素材仓库；源文件和素材许可分别核查"
+      }
+    },
+    {
+      "id": "FX-100",
+      "type": "component",
+      "name": "Etched maker plaque / 金属蚀刻铭牌",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v055",
+        "original-css",
+        "independent-material",
+        "native-html-css",
+        "no-dependencies",
+        "fx55-etched-label"
+      ],
+      "aliases": [
+        "金属铭牌",
+        "instrument label",
+        "etched plate"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored scoped HTML/CSS; no copied source, external fonts/media or third-party dependencies.",
+      "styleIds": [
+        "precision-dark",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "portfolio",
+        "instrument-ui",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v055/tactile-atoms.css",
+      "details": "styles/primitives/v055/README.md",
+      "spec": "registry/material-expansion-v055.json",
+      "demo": "playground/materials-v055/index.html",
+      "verified": "Original file and matching specimen checked at source level 2026-11-23; no real browser/device/target-host acceptance test claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v055/tactile-atoms.css",
+        "stack": "Original isolated HTML/CSS family and independent specimen; no React public export",
+        "instructions": "Extract only the .fx55-etched-label CSS family and matching semantic HTML from playground/materials-v055/index.html; review host keyboard, contrast and responsive rendering.",
+        "limitations": "Selectable real text and illustrative CSS surface, not a physical engraved asset."
+      }
+    },
+    {
+      "id": "FX-101",
+      "type": "component",
+      "name": "Static spectral equalizer / 静态频谱刻度",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v055",
+        "original-css",
+        "independent-material",
+        "native-html-css",
+        "no-dependencies",
+        "fx55-signal-equalizer"
+      ],
+      "aliases": [
+        "静态频谱",
+        "signal bars",
+        "equalizer illustration"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored scoped HTML/CSS; no copied source, external fonts/media or third-party dependencies.",
+      "styleIds": [
+        "signal-noir",
+        "pixel-arcade"
+      ],
+      "applicationContexts": [
+        "music-ui",
+        "creative-tool",
+        "experimental-visual"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v055/tactile-atoms.css",
+      "details": "styles/primitives/v055/README.md",
+      "spec": "registry/material-expansion-v055.json",
+      "demo": "playground/materials-v055/index.html",
+      "verified": "Original file and matching specimen checked at source level 2026-11-23; no real browser/device/target-host acceptance test claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v055/tactile-atoms.css",
+        "stack": "Original isolated HTML/CSS family and independent specimen; no React public export",
+        "instructions": "Extract only the .fx55-signal-equalizer CSS family and matching semantic HTML from playground/materials-v055/index.html; review host keyboard, contrast and responsive rendering.",
+        "limitations": "Fictional bar heights; not an audio analyzer, live telemetry or data-connected chart."
+      }
+    },
+    {
+      "id": "FX-102",
+      "type": "component",
+      "name": "Tactile radio selector / 机械触感单选控件",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v055",
+        "original-css",
+        "independent-material",
+        "native-html-css",
+        "no-dependencies",
+        "fx55-selector"
+      ],
+      "aliases": [
+        "触感按钮",
+        "native radio selector",
+        "tactile choice"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored scoped HTML/CSS; no copied source, external fonts/media or third-party dependencies.",
+      "styleIds": [
+        "organic-tactile",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "form",
+        "settings",
+        "creative-tool"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v055/tactile-atoms.css",
+      "details": "styles/primitives/v055/README.md",
+      "spec": "registry/material-expansion-v055.json",
+      "demo": "playground/materials-v055/index.html",
+      "verified": "Original file and matching specimen checked at source level 2026-11-23; no real browser/device/target-host acceptance test claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v055/tactile-atoms.css",
+        "stack": "Original isolated HTML/CSS family and independent specimen; no React public export",
+        "instructions": "Extract only the .fx55-selector CSS family and matching semantic HTML from playground/materials-v055/index.html; review host keyboard, contrast and responsive rendering.",
+        "limitations": "Native radio semantics, no persistence or form submission logic; host accessibility and screen readers still require integration review."
+      }
+    },
+    {
+      "id": "FX-103",
+      "type": "component",
+      "name": "Museum object label / 博物馆式藏品说明牌",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v055",
+        "original-css",
+        "independent-material",
+        "native-html-css",
+        "no-dependencies",
+        "fx55-museum-tag"
+      ],
+      "aliases": [
+        "博物馆标签",
+        "catalog label",
+        "museum object"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored scoped HTML/CSS; no copied source, external fonts/media or third-party dependencies.",
+      "styleIds": [
+        "editorial-warm",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "museum",
+        "archive",
+        "editorial"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v055/tactile-atoms.css",
+      "details": "styles/primitives/v055/README.md",
+      "spec": "registry/material-expansion-v055.json",
+      "demo": "playground/materials-v055/index.html",
+      "verified": "Original file and matching specimen checked at source level 2026-11-23; no real browser/device/target-host acceptance test claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v055/tactile-atoms.css",
+        "stack": "Original isolated HTML/CSS family and independent specimen; no React public export",
+        "instructions": "Extract only the .fx55-museum-tag CSS family and matching semantic HTML from playground/materials-v055/index.html; review host keyboard, contrast and responsive rendering.",
+        "limitations": "Static semantic object description; no asset database, collection logic or localization handling."
+      }
+    },
+    {
+      "id": "FX-104",
+      "type": "component",
+      "name": "CSS prism edge / 棱镜光边容器",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v055",
+        "original-css",
+        "independent-material",
+        "native-html-css",
+        "no-dependencies",
+        "fx55-prism-edge"
+      ],
+      "aliases": [
+        "彩色棱镜边框",
+        "prism highlight",
+        "CSS refractive surface"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored scoped HTML/CSS; no copied source, external fonts/media or third-party dependencies.",
+      "styleIds": [
+        "liquid-layer",
+        "aether-orbit"
+      ],
+      "applicationContexts": [
+        "portfolio",
+        "creative-site",
+        "status-visual"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v055/tactile-atoms.css",
+      "details": "styles/primitives/v055/README.md",
+      "spec": "registry/material-expansion-v055.json",
+      "demo": "playground/materials-v055/index.html",
+      "verified": "Original file and matching specimen checked at source level 2026-11-23; no real browser/device/target-host acceptance test claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v055/tactile-atoms.css",
+        "stack": "Original isolated HTML/CSS family and independent specimen; no React public export",
+        "instructions": "Extract only the .fx55-prism-edge CSS family and matching semantic HTML from playground/materials-v055/index.html; review host keyboard, contrast and responsive rendering.",
+        "limitations": "Original CSS gradient art; no WebGL, realistic optical refraction or performance-measured shader."
+      }
+    },
+    {
+      "id": "FX-105",
+      "type": "component",
+      "name": "Native folded disclosure / 折页原生展开卡",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v055",
+        "original-css",
+        "independent-material",
+        "native-html-css",
+        "no-dependencies",
+        "fx55-folded-panel"
+      ],
+      "aliases": [
+        "折页详情",
+        "native details",
+        "folded disclosure"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored scoped HTML/CSS; no copied source, external fonts/media or third-party dependencies.",
+      "styleIds": [
+        "paper-rebellion",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "knowledge-base",
+        "editorial",
+        "research-notes"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v055/tactile-atoms.css",
+      "details": "styles/primitives/v055/README.md",
+      "spec": "registry/material-expansion-v055.json",
+      "demo": "playground/materials-v055/index.html",
+      "verified": "Original file and matching specimen checked at source level 2026-11-23; no real browser/device/target-host acceptance test claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v055/tactile-atoms.css",
+        "stack": "Original isolated HTML/CSS family and independent specimen; no React public export",
+        "instructions": "Extract only the .fx55-folded-panel CSS family and matching semantic HTML from playground/materials-v055/index.html; review host keyboard, contrast and responsive rendering.",
+        "limitations": "Native details/summary state only; no remote content, persistence, backend or keyboard/device certification."
+      }
+    },
+    {
+      "id": "VG-091",
+      "type": "component",
+      "name": "Prism observatory / 棱镜观测台",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v055",
+        "original-svg",
+        "independent-material",
+        "standalone-vector",
+        "no-dependencies",
+        "static-illustration"
+      ],
+      "aliases": [
+        "玻璃棱镜插画",
+        "prism observatory",
+        "orbital glass"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored vector SVG; no third-party media, fonts, scripts or imports.",
+      "styleIds": [
+        "aether-orbit",
+        "liquid-layer"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "immersive-ui",
+        "portfolio"
+      ],
+      "dependencies": [],
+      "path": "graphics/v055/prism-observatory.svg",
+      "details": "graphics/v055/README.md",
+      "spec": "registry/material-expansion-v055.json",
+      "demo": "playground/materials-v055/index.html",
+      "verified": "Original file and matching specimen checked at source level 2026-11-23; no real browser/device/target-host acceptance test claimed.",
+      "handoff": {
+        "entry": "graphics/v055/prism-observatory.svg",
+        "stack": "Self-contained editable original SVG scene with 640x360 viewBox",
+        "instructions": "Use graphics/v055/prism-observatory.svg as image/vector; provide meaningful alt or decorative empty alt and verify in target host.",
+        "limitations": "Static original geometry, not GPU or physically correct optical simulation."
+      }
+    },
+    {
+      "id": "VG-092",
+      "type": "component",
+      "name": "Botanical circuit / 植物电路插画",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v055",
+        "original-svg",
+        "independent-material",
+        "standalone-vector",
+        "no-dependencies",
+        "static-illustration"
+      ],
+      "aliases": [
+        "植物电路",
+        "botanical circuit",
+        "green tech motif"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored vector SVG; no third-party media, fonts, scripts or imports.",
+      "styleIds": [
+        "organic-tactile",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "eco-tech",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "graphics/v055/botanical-circuit.svg",
+      "details": "graphics/v055/README.md",
+      "spec": "registry/material-expansion-v055.json",
+      "demo": "playground/materials-v055/index.html",
+      "verified": "Original file and matching specimen checked at source level 2026-11-23; no real browser/device/target-host acceptance test claimed.",
+      "handoff": {
+        "entry": "graphics/v055/botanical-circuit.svg",
+        "stack": "Self-contained editable original SVG scene with 640x360 viewBox",
+        "instructions": "Use graphics/v055/botanical-circuit.svg as image/vector; provide meaningful alt or decorative empty alt and verify in target host.",
+        "limitations": "Fictional ornamental geometry, not a real electronic schematic."
+      }
+    },
+    {
+      "id": "VG-093",
+      "type": "component",
+      "name": "Imaginary transit / 虚构线路图",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v055",
+        "original-svg",
+        "independent-material",
+        "standalone-vector",
+        "no-dependencies",
+        "static-illustration"
+      ],
+      "aliases": [
+        "虚构交通图",
+        "abstract metro",
+        "imaginary transit"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored vector SVG; no third-party media, fonts, scripts or imports.",
+      "styleIds": [
+        "shape-expressive",
+        "neo-brutalist"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "storytelling",
+        "navigation-visual"
+      ],
+      "dependencies": [],
+      "path": "graphics/v055/imaginary-transit.svg",
+      "details": "graphics/v055/README.md",
+      "spec": "registry/material-expansion-v055.json",
+      "demo": "playground/materials-v055/index.html",
+      "verified": "Original file and matching specimen checked at source level 2026-11-23; no real browser/device/target-host acceptance test claimed.",
+      "handoff": {
+        "entry": "graphics/v055/imaginary-transit.svg",
+        "stack": "Self-contained editable original SVG scene with 640x360 viewBox",
+        "instructions": "Use graphics/v055/imaginary-transit.svg as image/vector; provide meaningful alt or decorative empty alt and verify in target host.",
+        "limitations": "Fictional network; not a geographic map, location evidence or route planner."
+      }
+    },
+    {
+      "id": "VG-094",
+      "type": "component",
+      "name": "Ceramic relief / 陶土浮雕场景",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v055",
+        "original-svg",
+        "independent-material",
+        "standalone-vector",
+        "no-dependencies",
+        "static-illustration"
+      ],
+      "aliases": [
+        "陶土浮雕",
+        "ceramic relief",
+        "clay illustration"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original hand-authored vector SVG; no third-party media, fonts, scripts or imports.",
+      "styleIds": [
+        "organic-tactile",
+        "commerce-atelier"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "product-backdrop",
+        "editorial"
+      ],
+      "dependencies": [],
+      "path": "graphics/v055/ceramic-relief.svg",
+      "details": "graphics/v055/README.md",
+      "spec": "registry/material-expansion-v055.json",
+      "demo": "playground/materials-v055/index.html",
+      "verified": "Original file and matching specimen checked at source level 2026-11-23; no real browser/device/target-host acceptance test claimed.",
+      "handoff": {
+        "entry": "graphics/v055/ceramic-relief.svg",
+        "stack": "Self-contained editable original SVG scene with 640x360 viewBox",
+        "instructions": "Use graphics/v055/ceramic-relief.svg as image/vector; provide meaningful alt or decorative empty alt and verify in target host.",
+        "limitations": "Static original flat SVG artwork, not a 3D model or photographed ceramic."
       }
     }
   ],

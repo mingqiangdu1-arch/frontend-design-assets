@@ -4,7 +4,7 @@
 
 **任务需要可重复执行的方法时**：先查看 [Frontend Agent Skills](.agents/skills/README.md)，按具体任务只加载其中一项 `SKILL.md`；本 CATALOG 仍负责素材和源码定位，不把技能当作已实现组件。
 
-## V0.54 · 近期 GitHub 原件与已有风格深化
+## V0.55 · 原创触感 CSS / 物理感图形素材\n\n- [V0.55 机器索引](registry/material-expansion-v055.json) · [FX-100..105 原始 CSS](styles/primitives/v055/tactile-atoms.css) · [语义 HTML 标本](playground/materials-v055/index.html) · [4 幅原生 SVG](graphics/v055/README.md)。\n- 六个物理材质方向包括蚀刻铭牌、静态频谱、真实 radio 触感选择、馆藏标签、CSS 棱镜边框、原生 details 展开卡；四个 VG 原件为棱镜观测台、植物电路、虚构线路图、陶土浮雕。\n- **真正的原始素材，而非第三方链接**；但 UI 交互限于 HTML 原生控件，样张里的图表/线路并非真实数据。无新增 React export、主题、依赖、业务产品或全新校验框架。\n\n## V0.54 · 近期 GitHub 原件与已有风格深化
 
 - [结构化来源](registry/material-expansion-v054.json) · [具体文件与许可](docs/research/material-expansion-v054.md)：`REF-137..148`，涵盖 Shader、Agent 状态、MDX 叙事、Neo-brutalist 图表、图标形变、像素反馈和原生语义控件。
 - 来源均固定 Git commit 并指向具体上游文件；`styleDeepeningTargets` 是**研究方向**而非已实现 React 兼容。Canvas UI/Pxlkit 存在额外再分发限制。

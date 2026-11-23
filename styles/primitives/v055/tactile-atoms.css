@@ -1,0 +1,97 @@
+/* V0.55 · Original tactile micro-materials. Each .fx55-* family is independent.
+   No global resets, external fonts/assets, script, timers or network access. */
+
+/* FX-100: etched instrument label */
+.fx55-etched-label {
+  --ink:#d7d2c4; --plate:#242b30; --line:#727e80;
+  display:inline-grid; gap:.35rem; min-width:15rem; padding:1rem 1.25rem;
+  color:var(--ink); background:
+    repeating-linear-gradient(100deg,#ffffff06 0 1px,transparent 1px 5px),
+    linear-gradient(130deg,#3a4546,var(--plate) 52%,#151b20);
+  border:1px solid #879092; border-radius:.3rem;
+  box-shadow:inset 0 1px #ffffff70,inset 0 -2px #0008,0 10px 20px #0002;
+  font-family:ui-monospace,SFMono-Regular,Consolas,monospace;
+}
+.fx55-etched-label__eyebrow { font-size:.66rem; letter-spacing:.19em; text-transform:uppercase; opacity:.72; }
+.fx55-etched-label__title {font-size:clamp(1.15rem,3vw,1.65rem);font-weight:700;letter-spacing:.06em;text-shadow:0 1px 1px #000;}
+.fx55-etched-label__code {font-size:.7rem;border-top:1px solid #a9b5b544;padding-top:.48rem;letter-spacing:.1em;}
+
+/* FX-101: optical signal equalizer — fixed illustration, not audio monitoring */
+.fx55-signal-equalizer {
+  --signal:#a8fe9b; display:flex;align-items:end;gap:clamp(3px,.8vw,7px);
+  width:min(100%,19rem);height:7.5rem;padding:1rem;
+  background:linear-gradient(#17322b,#0a1513);
+  border:1px solid #285445;border-radius:.6rem;box-shadow:inset 0 0 25px #030;
+}
+.fx55-signal-equalizer span {
+  flex:1;min-width:0;height:var(--level,40%);
+  border-radius:2px 2px 0 0; background:
+  repeating-linear-gradient(to top,#0008 0 3px,transparent 3px 7px),
+  linear-gradient(to top,#3bc69f,var(--signal));
+  box-shadow:0 0 10px #5df8bc4d;
+}
+
+/* FX-102: tactile selector, real native radio input and visible focus */
+.fx55-selector {border:0;padding:0;display:flex;flex-wrap:wrap;gap:.65rem;min-inline-size:0}
+.fx55-selector legend {font:600 .78rem/1.4 system-ui;letter-spacing:.08em;margin-bottom:.7rem;}
+.fx55-selector label {display:inline-flex;position:relative;cursor:pointer}
+.fx55-selector input {position:absolute;inset:0;opacity:0;cursor:pointer}
+.fx55-selector__face {
+  display:flex;align-items:center;gap:.6rem;min-width:7rem;justify-content:center;
+  padding:.75rem 1rem;border:1px solid #86949d;border-radius:.4rem;
+  color:#32434b;background:linear-gradient(#fff,#d5dedb);
+  box-shadow:inset 0 2px #fff,0 3px 0 #9caaa9,0 5px 10px #0002;
+  font:600 .85rem/1.4 system-ui;transition:transform .16s ease,box-shadow .16s ease;
+}
+.fx55-selector__face::before {content:"";width:.48rem;height:.48rem;border-radius:50%;background:#9aa5aa;box-shadow:inset 0 1px 2px #0005}
+.fx55-selector input:checked+.fx55-selector__face {transform:translateY(2px);box-shadow:inset 0 2px 6px #0003,0 1px 0 #74817b;background:#bbd8ca;color:#142e23;}
+.fx55-selector input:checked+.fx55-selector__face::before {background:#1b9b65;box-shadow:0 0 0 2px #1b9b6522}
+.fx55-selector input:focus-visible+.fx55-selector__face {outline:3px solid #336acb;outline-offset:3px}
+.fx55-selector input:disabled+.fx55-selector__face {opacity:.5;cursor:not-allowed}
+
+/* FX-103: object label, title/content remain selectable text */
+.fx55-museum-tag {
+  max-width:27rem;display:grid;grid-template-columns:3.25rem minmax(0,1fr);gap:1.15rem;
+  padding:1rem 0;border-top:2px solid #302e2a;border-bottom:1px solid #a9a69b;
+  font:400 .88rem/1.55 Georgia,"Times New Roman",serif;color:#302e2a;
+}
+.fx55-museum-tag__index {font:600 1.65rem/1 ui-monospace,monospace;color:#a14c31}
+.fx55-museum-tag h3 {font-size:1.35rem;line-height:1.22;font-weight:500;margin:0 0 .4rem}
+.fx55-museum-tag p {margin:0 0 .65rem}
+.fx55-museum-tag small {font:500 .7rem/1.4 ui-monospace,monospace;text-transform:uppercase;letter-spacing:.08em}
+
+/* FX-104: prism treatment — CSS-only frame, no WebGL or displacement */
+.fx55-prism-edge {
+  position:relative;isolation:isolate;overflow:hidden;
+  padding:1.75rem;max-width:26rem;min-height:8rem;
+  border-radius:1rem;color:#f3f5fc;background:#121827;
+  border:1px solid #a7bcef55;
+}
+.fx55-prism-edge::before {
+  content:"";position:absolute;inset:-45%;z-index:-2;
+  background:conic-gradient(from 25deg,#65cffb,#b496ff,#ec90af,#8ce6cb,#65cffb);
+  transform:rotate(-12deg);filter:blur(18px);opacity:.38;
+}
+.fx55-prism-edge::after {content:"";position:absolute;inset:3px;z-index:-1;border-radius:calc(1rem - 3px);background:linear-gradient(145deg,#1d2644e8,#0b1020ef)}
+.fx55-prism-edge strong {display:block;font:700 clamp(1.15rem,3vw,1.8rem)/1.2 system-ui}
+.fx55-prism-edge p {max-width:30ch;font:.82rem/1.5 system-ui;color:#c2cce4}
+
+/* FX-105: native disclosure with folded-card styling */
+.fx55-folded-panel {
+  max-width:27rem;color:#3f352f;background:linear-gradient(150deg,#fffdf5,#e9dbc5);
+  border:1px solid #c8b8a0;box-shadow:6px 8px 0 #998f7a36;
+  clip-path:polygon(0 0,calc(100% - 23px) 0,100% 23px,100% 100%,0 100%);
+  font:400 .9rem/1.55 system-ui;
+}
+.fx55-folded-panel summary {cursor:pointer;padding:1rem 2.25rem 1rem 1rem;font-weight:700}
+.fx55-folded-panel summary:focus-visible {outline:3px solid #2256b3;outline-offset:-4px}
+.fx55-folded-panel[open] summary {border-bottom:1px dashed #b7a78f}
+.fx55-folded-panel__body {padding:.8rem 1rem 1.1rem}
+.fx55-folded-panel__body p {margin:0}
+@media (prefers-reduced-motion:reduce) {
+  .fx55-selector__face {transition:none}
+}
+@media (max-width:420px) {
+  .fx55-museum-tag {grid-template-columns:2.3rem minmax(0,1fr);gap:.7rem}
+  .fx55-selector__face {min-width:5.5rem}
+}

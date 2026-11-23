@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>V0.55 · Tactile material specimens</title>
+<link rel="stylesheet" href="../../styles/primitives/v055/tactile-atoms.css">
+<style>
+:root{color-scheme:light}body{margin:0;background:#f1f0eb;color:#292b2f;font:16px/1.5 system-ui,sans-serif}
+main{max-width:1100px;margin:auto;padding:clamp(1rem,4vw,3rem)}
+h1{font-size:clamp(1.6rem,5vw,2.75rem)}.samples{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:1rem}
+.sample{padding:1.3rem;background:#fff;border:1px solid #dedcd2;border-radius:12px;min-width:0}
+.sample>h2{font-size:.78rem;font-family:ui-monospace,monospace;text-transform:uppercase;letter-spacing:.09em}
+.sample>p{font-size:.82rem;opacity:.7}.samples .sample{min-height:190px}
+svg,img{max-width:100%;height:auto}.vector-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:1rem}
+figure{margin:0;background:#fff;border:1px solid #dedcd2;border-radius:12px;padding:.8rem}
+figcaption{font-size:.8rem;padding:.5rem}
+</style></head><body><main>
+<header><h1>V0.55 · Tactile UI materials</h1><p>Original isolated CSS and SVG specimens only. No real sensor data, app state, APIs, or third-party media.</p></header>
+<section class="samples" aria-label="Six CSS specimens">
+<div class="sample"><h2>FX-100 · Etched label</h2><div class="fx55-etched-label"><span class="fx55-etched-label__eyebrow">Archive / 08</span><span class="fx55-etched-label__title">FIELD SIGNAL</span><span class="fx55-etched-label__code">INSTRUMENT 04 — LOCAL</span></div></div>
+<div class="sample"><h2>FX-101 · Signal equalizer</h2><p>Static illustration; not a meter connected to real audio.</p><div class="fx55-signal-equalizer" aria-hidden="true"><span style="--level:42%"></span><span style="--level:82%"></span><span style="--level:57%"></span><span style="--level:26%"></span><span style="--level:94%"></span><span style="--level:61%"></span><span style="--level:36%"></span><span style="--level:72%"></span><span style="--level:49%"></span></div></div>
+<div class="sample"><h2>FX-102 · Native selector</h2><fieldset class="fx55-selector"><legend>Choose a specimen mode</legend><label><input type="radio" name="mode" checked value="studio"><span class="fx55-selector__face">Studio</span></label><label><input type="radio" name="mode" value="archive"><span class="fx55-selector__face">Archive</span></label></fieldset></div>
+<div class="sample"><h2>FX-103 · Museum label</h2><article class="fx55-museum-tag"><div class="fx55-museum-tag__index">07</div><div><h3>Objects of Memory</h3><p>An imaginary artifact study, indexed by material and period.</p><small>Study / catalog / no. 07</small></div></article></div>
+<div class="sample"><h2>FX-104 · Prism edge</h2><div class="fx55-prism-edge"><strong>Chromatic field</strong><p>A CSS-only light treatment with real, selectable text.</p></div></div>
+<div class="sample"><h2>FX-105 · Folded panel</h2><details class="fx55-folded-panel"><summary>Open field note</summary><div class="fx55-folded-panel__body"><p>A native disclosure with a folded-paper surface. No scripted state or persistence.</p></div></details></div>
+</section>
+<h2>Standalone original SVGs</h2><section class="vector-grid" aria-label="Four SVG specimens">
+<figure><img src="../../graphics/v055/prism-observatory.svg" alt="Abstract translucent prisms and offset orbit paths"><figcaption>VG-091 · Prism observatory</figcaption></figure>
+<figure><img src="../../graphics/v055/botanical-circuit.svg" alt="Leaves connected by original circuit traces"><figcaption>VG-092 · Botanical circuit</figcaption></figure>
+<figure><img src="../../graphics/v055/imaginary-transit.svg" alt="Fictional geometric transit diagram with nodes"><figcaption>VG-093 · Imaginary transit</figcaption></figure>
+<figure><img src="../../graphics/v055/ceramic-relief.svg" alt="Original layered warm ceramic relief composition"><figcaption>VG-094 · Ceramic relief</figcaption></figure>
+</section>
+</main></body></html>

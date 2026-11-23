@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Imaginary transit</title><desc id="desc">A fictional, non-geographic transit sketch with three independent colored paths and stations.</desc>
+<rect width="640" height="360" rx="20" fill="#f7f4ed"/>
+<g fill="none" stroke="#e1dbd0"><path d="M60 45V315M160 45V315M260 45V315M360 45V315M460 45V315M560 45V315M40 80H600M40 180H600M40 280H600"/></g>
+<path d="M78 275H210Q240 275 240 245V137Q240 105 272 105H556" fill="none" stroke="#c95b56" stroke-width="12" stroke-linecap="round"/>
+<path d="M105 90H185L325 230H525" fill="none" stroke="#437f9a" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M115 304L205 214H385L510 89" fill="none" stroke="#d4a545" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<g fill="#fff" stroke-width="5"><g stroke="#c95b56"><circle cx="78" cy="275" r="11"/><circle cx="240" cy="180" r="11"/><circle cx="405" cy="105" r="11"/><circle cx="556" cy="105" r="11"/></g><g stroke="#437f9a"><circle cx="105" cy="90" r="11"/><circle cx="325" cy="230" r="11"/><circle cx="525" cy="230" r="11"/></g><g stroke="#d4a545"><circle cx="115" cy="304" r="11"/><circle cx="205" cy="214" r="11"/><circle cx="385" cy="214" r="11"/><circle cx="510" cy="89" r="11"/></g></g>
+<g fill="#2e3b46"><rect x="40" y="30" width="119" height="30" rx="6"/><rect x="455" y="283" width="144" height="29" rx="6"/></g>
+<g fill="#fff" font-family="monospace" font-size="12"><text x="53" y="50">FICTIONAL MAP</text><text x="466" y="302">NOT TO SCALE</text></g>
+</svg>

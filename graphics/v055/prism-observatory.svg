@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Prism observatory</title><desc id="desc">Original translucent polygonal prisms and orbital guides in a midnight field.</desc>
+<defs><linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#74e7f2" stop-opacity=".72"/><stop offset=".48" stop-color="#a995ff" stop-opacity=".32"/><stop offset="1" stop-color="#f7b4d8" stop-opacity=".72"/></linearGradient><linearGradient id="lit" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f2fcff" stop-opacity=".96"/><stop offset="1" stop-color="#4b90bb" stop-opacity=".4"/></linearGradient></defs>
+<rect width="640" height="360" rx="20" fill="#10182a"/>
+<g stroke="#89b6d0" stroke-opacity=".24" fill="none"><ellipse cx="320" cy="180" rx="240" ry="96" transform="rotate(-19 320 180)"/><ellipse cx="320" cy="180" rx="168" ry="142" transform="rotate(28 320 180)"/><path d="M44 180H596M320 28V332" stroke-dasharray="4 8"/></g>
+<path d="M214 91L321 45 411 106 393 250 286 307 199 239Z" fill="url(#glass)" stroke="#b4ecff" stroke-width="2"/>
+<path d="M321 45L327 169 286 307M199 239L327 169 411 106M214 91L327 169" stroke="#d5ffff" stroke-opacity=".8" stroke-width="2" fill="none"/>
+<path d="M327 169L393 250 286 307Z" fill="url(#lit)" opacity=".5"/>
+<circle cx="327" cy="169" r="10" fill="#f4f4ff"/><circle cx="515" cy="118" r="7" fill="#eaaaf4"/><circle cx="125" cy="235" r="5" fill="#87e9ec"/>
+<g stroke="#bfe9f8" opacity=".7"><path d="M55 50h35M55 50v35M585 310h-35M585 310v-35"/></g>
+</svg>

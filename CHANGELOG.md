@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-23 · V0.55 original tactile micro-materials and SVG scenes
+
+- Added **six original, independent HTML/CSS source atoms** `FX-100..105`: etched instrument label, fictional static signal bars, native tactile radio group, museum object tag, CSS prism edge, and native folded disclosure.
+- Added **four self-contained original 640×360 SVG scenes** `VG-091..094`: prism observatory, botanical circuit, fictional transit and ceramic relief. No copied external media, code, fonts or icons.
+- [Machine index](registry/material-expansion-v055.json) · [CSS/HTML usage](styles/primitives/v055/README.md) · [SVG files](graphics/v055/README.md) · [separate specimen gallery](playground/materials-v055/index.html). Catalog **523 → 533**.
+- No new React exports, global themes, dependencies, end-user application, business features or test infrastructure. Registry/source references are checked; real browser/target-device visual QA has not been completed.
+
 ## 2026-11-20 · V0.54 fixed-source GitHub expansion and existing-style deepening
 
 - Added **12 concrete source-file dossiers** `REF-137..148`: ThreeUI, affectUI, Paper Shaders, BoldKit, mdxcn, Morphicons, pixelfx, Oat, islandcn, Plasma UI, Canvas UI and Pxlkit. Each item points at verified files on a pinned Git commit rather than a generic homepage.

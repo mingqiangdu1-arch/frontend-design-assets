@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Botanical circuit</title><desc id="desc">Original leaves and veins merge with fine geometric circuit traces and small copper nodes.</desc>
+<defs><linearGradient id="leaf" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#d2e5aa"/><stop offset="1" stop-color="#5e9f78"/></linearGradient></defs>
+<rect width="640" height="360" rx="20" fill="#f1ecda"/>
+<g fill="none" stroke="#b3baa3" stroke-width="1"><path d="M30 58H610M30 302H610M68 25V335M570 25V335"/><circle cx="320" cy="180" r="138" stroke-dasharray="2 7"/></g>
+<path d="M95 260H180L221 219H283L334 168H415L449 132H550" stroke="#a36338" stroke-width="3" fill="none"/>
+<path d="M116 102H188L242 155H338L405 224H529" stroke="#668871" stroke-width="3" fill="none"/>
+<g fill="#be8554"><circle cx="95" cy="260" r="6"/><circle cx="550" cy="132" r="6"/><circle cx="116" cy="102" r="6"/><circle cx="529" cy="224" r="6"/><circle cx="334" cy="168" r="5"/></g>
+<path d="M318 185C244 117 225 68 295 59C347 67 371 123 318 185Z" fill="url(#leaf)" stroke="#377658" stroke-width="3"/>
+<path d="M322 201C383 135 448 91 489 130C504 185 440 226 322 201Z" fill="url(#leaf)" stroke="#377658" stroke-width="3"/>
+<path d="M314 191C244 194 193 224 215 274C264 312 320 257 314 191Z" fill="url(#leaf)" stroke="#377658" stroke-width="3"/>
+<g fill="none" stroke="#e8efd8" stroke-width="2"><path d="M318 185L294 79M322 201L476 142M314 191L230 268"/><path d="M307 145L280 128M305 133L325 113M388 179L398 155M411 170L422 194M283 210L270 245M275 216L239 218"/></g>
+</svg>

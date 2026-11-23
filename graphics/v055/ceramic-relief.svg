@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Ceramic relief</title><desc id="desc">Original warm-toned abstract relief built with overlapping clay-like sculptural forms and thin shadows.</desc>
+<defs><linearGradient id="terracotta" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f2c69d"/><stop offset=".65" stop-color="#b96f58"/><stop offset="1" stop-color="#824c45"/></linearGradient><linearGradient id="sand" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff1d9"/><stop offset="1" stop-color="#c5aa8c"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="8" dy="12" stdDeviation="9" flood-color="#71463d" flood-opacity=".24"/></filter></defs>
+<rect width="640" height="360" rx="20" fill="#e9ddca"/>
+<path d="M58 297V104Q58 44 118 44H313Q380 44 380 112V297Z" fill="#c6b19b" opacity=".6"/>
+<g filter="url(#shadow)"><path d="M95 302V128Q95 75 151 75H291Q347 75 347 131V302Z" fill="url(#sand)"/>
+<path d="M172 306V196Q172 140 228 140H419Q489 140 489 205V306Z" fill="url(#terracotta)"/>
+<path d="M289 304V229Q289 192 331 192H532Q568 192 568 228V304Z" fill="url(#sand)"/></g>
+<path d="M114 124Q203 90 310 126M189 196Q318 159 454 202M311 241Q429 219 546 244" fill="none" stroke="#fff6e4" stroke-opacity=".58" stroke-width="4"/>
+<g fill="none" stroke="#986f5b" opacity=".38"><circle cx="226" cy="210" r="81"/><circle cx="226" cy="210" r="56"/><path d="M44 321H596"/></g>
+<circle cx="226" cy="210" r="15" fill="#fff1dd" opacity=".58"/>
+</svg>

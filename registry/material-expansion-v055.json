@@ -1,0 +1,238 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.55.0",
+  "date": "2026-11-23",
+  "focus": "Six truly reusable self-contained original HTML/CSS interface-material specimens and four independently usable, authored SVG illustrations; no imported third-party code, no business app, no new infrastructure.",
+  "previousAssetCount": 523,
+  "newAssetCount": 10,
+  "expectedAssetCount": 533,
+  "reactExportsAdded": 0,
+  "styleIdsAdded": 0,
+  "thirdPartyCodeCopied": false,
+  "externalMediaCopied": false,
+  "sourceFiles": [
+    "registry/material-expansion-v055.json",
+    "styles/primitives/v055/tactile-atoms.css",
+    "styles/primitives/v055/README.md",
+    "playground/materials-v055/index.html",
+    "graphics/v055/README.md",
+    "graphics/v055/prism-observatory.svg",
+    "graphics/v055/botanical-circuit.svg",
+    "graphics/v055/imaginary-transit.svg",
+    "graphics/v055/ceramic-relief.svg"
+  ],
+  "cssAtoms": [
+    {
+      "id": "FX-100",
+      "name": "Etched maker plaque / 金属蚀刻铭牌",
+      "className": "fx55-etched-label",
+      "source": "styles/primitives/v055/tactile-atoms.css",
+      "readme": "styles/primitives/v055/README.md",
+      "demo": "playground/materials-v055/index.html",
+      "styleIds": [
+        "precision-dark",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "portfolio",
+        "instrument-ui",
+        "creative-site"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-scoped-native-html-css",
+      "limitations": "Selectable real text and illustrative CSS surface, not a physical engraved asset."
+    },
+    {
+      "id": "FX-101",
+      "name": "Static spectral equalizer / 静态频谱刻度",
+      "className": "fx55-signal-equalizer",
+      "source": "styles/primitives/v055/tactile-atoms.css",
+      "readme": "styles/primitives/v055/README.md",
+      "demo": "playground/materials-v055/index.html",
+      "styleIds": [
+        "signal-noir",
+        "pixel-arcade"
+      ],
+      "applicationContexts": [
+        "music-ui",
+        "creative-tool",
+        "experimental-visual"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-scoped-native-html-css",
+      "limitations": "Fictional bar heights; not an audio analyzer, live telemetry or data-connected chart."
+    },
+    {
+      "id": "FX-102",
+      "name": "Tactile radio selector / 机械触感单选控件",
+      "className": "fx55-selector",
+      "source": "styles/primitives/v055/tactile-atoms.css",
+      "readme": "styles/primitives/v055/README.md",
+      "demo": "playground/materials-v055/index.html",
+      "styleIds": [
+        "organic-tactile",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "form",
+        "settings",
+        "creative-tool"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-scoped-native-html-css",
+      "limitations": "Native radio semantics, no persistence or form submission logic; host accessibility and screen readers still require integration review."
+    },
+    {
+      "id": "FX-103",
+      "name": "Museum object label / 博物馆式藏品说明牌",
+      "className": "fx55-museum-tag",
+      "source": "styles/primitives/v055/tactile-atoms.css",
+      "readme": "styles/primitives/v055/README.md",
+      "demo": "playground/materials-v055/index.html",
+      "styleIds": [
+        "editorial-warm",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "museum",
+        "archive",
+        "editorial"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-scoped-native-html-css",
+      "limitations": "Static semantic object description; no asset database, collection logic or localization handling."
+    },
+    {
+      "id": "FX-104",
+      "name": "CSS prism edge / 棱镜光边容器",
+      "className": "fx55-prism-edge",
+      "source": "styles/primitives/v055/tactile-atoms.css",
+      "readme": "styles/primitives/v055/README.md",
+      "demo": "playground/materials-v055/index.html",
+      "styleIds": [
+        "liquid-layer",
+        "aether-orbit"
+      ],
+      "applicationContexts": [
+        "portfolio",
+        "creative-site",
+        "status-visual"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-scoped-native-html-css",
+      "limitations": "Original CSS gradient art; no WebGL, realistic optical refraction or performance-measured shader."
+    },
+    {
+      "id": "FX-105",
+      "name": "Native folded disclosure / 折页原生展开卡",
+      "className": "fx55-folded-panel",
+      "source": "styles/primitives/v055/tactile-atoms.css",
+      "readme": "styles/primitives/v055/README.md",
+      "demo": "playground/materials-v055/index.html",
+      "styleIds": [
+        "paper-rebellion",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "knowledge-base",
+        "editorial",
+        "research-notes"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-scoped-native-html-css",
+      "limitations": "Native details/summary state only; no remote content, persistence, backend or keyboard/device certification."
+    }
+  ],
+  "originalSvg": [
+    {
+      "id": "VG-091",
+      "name": "Prism observatory / 棱镜观测台",
+      "source": "graphics/v055/prism-observatory.svg",
+      "readme": "graphics/v055/README.md",
+      "demo": "playground/materials-v055/index.html",
+      "viewBox": "0 0 640 360",
+      "styleIds": [
+        "aether-orbit",
+        "liquid-layer"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "immersive-ui",
+        "portfolio"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-static-svg",
+      "limitations": "Static original geometry, not GPU or physically correct optical simulation."
+    },
+    {
+      "id": "VG-092",
+      "name": "Botanical circuit / 植物电路插画",
+      "source": "graphics/v055/botanical-circuit.svg",
+      "readme": "graphics/v055/README.md",
+      "demo": "playground/materials-v055/index.html",
+      "viewBox": "0 0 640 360",
+      "styleIds": [
+        "organic-tactile",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "eco-tech",
+        "creative-site"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-static-svg",
+      "limitations": "Fictional ornamental geometry, not a real electronic schematic."
+    },
+    {
+      "id": "VG-093",
+      "name": "Imaginary transit / 虚构线路图",
+      "source": "graphics/v055/imaginary-transit.svg",
+      "readme": "graphics/v055/README.md",
+      "demo": "playground/materials-v055/index.html",
+      "viewBox": "0 0 640 360",
+      "styleIds": [
+        "shape-expressive",
+        "neo-brutalist"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "storytelling",
+        "navigation-visual"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-static-svg",
+      "limitations": "Fictional network; not a geographic map, location evidence or route planner."
+    },
+    {
+      "id": "VG-094",
+      "name": "Ceramic relief / 陶土浮雕场景",
+      "source": "graphics/v055/ceramic-relief.svg",
+      "readme": "graphics/v055/README.md",
+      "demo": "playground/materials-v055/index.html",
+      "viewBox": "0 0 640 360",
+      "styleIds": [
+        "organic-tactile",
+        "commerce-atelier"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "product-backdrop",
+        "editorial"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-static-svg",
+      "limitations": "Static original flat SVG artwork, not a 3D model or photographed ceramic."
+    }
+  ]
+}
