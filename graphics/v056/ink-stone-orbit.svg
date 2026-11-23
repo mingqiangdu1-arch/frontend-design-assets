@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Ink stone orbit</title><desc id="desc">Original abstract pebble shapes and light orbital circles on rice-paper tone, with no text or geographic meaning.</desc>
+<defs><linearGradient id="ink" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#535d56"/><stop offset=".65" stop-color="#1c292a"/><stop offset="1" stop-color="#080f19"/></linearGradient><radialGradient id="wash"><stop stop-color="#e0d8c8"/><stop offset="1" stop-color="#f5f1e6"/></radialGradient></defs>
+<rect width="640" height="360" rx="20" fill="url(#wash)"/>
+<g fill="none" stroke="#ad9a82" stroke-width="1.7" opacity=".65"><circle cx="320" cy="180" r="136"/><circle cx="320" cy="180" r="111"/><circle cx="320" cy="180" r="74" stroke-dasharray="2 7"/><path d="M66 180H574M320 24V336" stroke-dasharray="2 11"/></g>
+<path d="M232 241C205 188 232 130 300 110C351 96 381 122 407 163C437 219 391 263 329 283C278 295 245 279 232 241Z" fill="url(#ink)"/>
+<path d="M271 174C297 129 354 116 380 151" stroke="#9bb0a1" stroke-width="8" stroke-linecap="round" opacity=".34" fill="none"/>
+<path d="M434 85C457 78 488 90 499 112C506 132 499 153 480 160C451 171 424 152 418 126C415 106 423 92 434 85Z" fill="#a16f5c"/>
+<path d="M159 253C174 238 198 239 210 259C222 277 213 299 195 305C172 312 148 294 148 275Z" fill="#d1a983"/>
+<g fill="#917b65" opacity=".5"><circle cx="102" cy="112" r="2"/><circle cx="540" cy="233" r="3"/><circle cx="499" cy="276" r="2"/><circle cx="115" cy="213" r="2"/></g>
+<path d="M71 71h65M71 71v34M569 289v-34M569 289h-65" fill="none" stroke="#9f8068" stroke-width="2"/>
+</svg>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>V0.56 · 多语言排版原件</title>
+<link rel="stylesheet" href="../../styles/primitives/v056/multiscript-atoms.css">
+<style>
+body{margin:0;background:#ededed;color:#292d34;font:16px/1.6 system-ui,sans-serif}
+main{max-width:1140px;margin:auto;padding:clamp(1rem,3vw,2.5rem)}
+h1{font-size:clamp(1.7rem,4vw,2.4rem);margin:.3rem 0}
+.intro{max-width:67ch;color:#606777;font-size:.91rem;margin:0 0 2rem}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:1rem}
+.specimen{min-width:0;padding:1.35rem;background:#fff;border:1px solid #d9dadc;border-radius:12px}
+.specimen>h2{font:700 .75rem/1.5 ui-monospace,monospace;color:#535c6c;letter-spacing:.08em;text-transform:uppercase}
+figure{margin:0;padding:1rem;background:#fff;border:1px solid #d9dadc;border-radius:12px}
+figure img{max-width:100%;width:100%;height:auto;display:block}
+figcaption{font:400 .8rem/1.6 system-ui;padding:.65rem 0 .1rem}
+.vector-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:1rem}
+</style></head>
+<body><main>
+<h1>V0.56 · Multiscript typography</h1>
+<p class="intro">六套原创独立 CSS/HTML 排版素材与四幅 SVG 图形。该页仅验证源码结构与语义示例；不加载外部字体，不宣称浏览器兼容和视觉生产验收。字体选择由宿主系统决定。</p>
+<section class="gallery" aria-label="Six independent typography specimens">
+<article class="specimen"><h2>FX-106 · Vertical cover</h2>
+<div class="fx56-vertical-cover">
+ <div class="fx56-vertical-cover__body"><span class="fx56-vertical-cover__kicker">Notes / volume 01</span><p>让标题成为页面中的独立空间坐标。此处的文本可被选择。</p></div>
+ <h3 class="fx56-vertical-cover__title">纸上的风景</h3>
+</div></article>
+<article class="specimen"><h2>FX-107 · Native ruby</h2>
+<div class="fx56-ruby-reader"><span class="fx56-ruby-reader__label">Reading / 发音</span>
+ <p lang="ja">雨上がりの<ruby>東京<rt>とうきょう</rt></ruby>を歩く。</p>
+ <p lang="zh-Hans">记录<ruby>山海<rt>shān hǎi</rt></ruby>之间的声音。</p>
+ <small>浏览器原生 ruby / rt；不是拼音转换程序或语言教学服务。</small>
+</div></article>
+<article class="specimen"><h2>FX-108 · Parallel language lines</h2>
+<div class="fx56-parallel-lines"><dl>
+ <div class="fx56-parallel-lines__row"><div><dt lang="zh-Hans">中文</dt><dd lang="zh-Hans">把复杂留给系统，把清晰交给读者。</dd></div><div><dt>English</dt><dd lang="en">Let systems handle complexity; give readers clarity.</dd></div></div>
+ <div class="fx56-parallel-lines__row"><div><dt lang="zh-Hans">中文</dt><dd lang="zh-Hans">留白不是空缺，也是设计。</dd></div><div><dt>English</dt><dd lang="en">Whitespace is part of the design, not its absence.</dd></div></div>
+ </dl></div></article>
+<article class="specimen"><h2>FX-109 · CJK line-break proof</h2>
+<div class="fx56-linebreak-study"><h3>Typography / 禁则标点</h3>
+ <p lang="ja">言葉の間にある余白は、意味のない場所ではない。「読む」という動作に、静かなリズムをつくる。</p>
+ <div class="fx56-linebreak-study__lang">CSS line-break: strict · actual support depends on the browser and font</div>
+</div></article>
+<article class="specimen"><h2>FX-110 · Tabular figures</h2>
+<div class="fx56-number-ledger"><dl><dt>观察项目 / Items</dt><dd><strong>1,248</strong><span class="fx56-number-ledger__unit">件</span></dd>
+ <dt>版本数量 / Versions</dt><dd>003<span class="fx56-number-ledger__unit">rev</span></dd>
+ <dt>样本比例 / Sample</dt><dd>72.6<span class="fx56-number-ledger__unit">%</span></dd>
+ </dl></div></article>
+<article class="specimen"><h2>FX-111 · Pullquote punctuation</h2>
+<blockquote class="fx56-punctuation-quote"><p lang="zh-Hans">有些内容不需要更大的声音，只需要更清楚的层次。</p><footer>FICTIONAL EDITORIAL SPECIMEN / 01</footer></blockquote>
+</article>
+</section>
+<h2>Four independently usable SVG scenes</h2>
+<section class="vector-gallery" aria-label="Original language-neutral editorial vectors">
+<figure><img src="../../graphics/v056/scroll-window.svg" alt="Original vertical paper scrolls suspended within an editorial frame"><figcaption>VG-095 · Scroll window</figcaption></figure>
+<figure><img src="../../graphics/v056/parallel-ribbons.svg" alt="Two abstract ribbon paths intertwined without text"><figcaption>VG-096 · Parallel ribbons</figcaption></figure>
+<figure><img src="../../graphics/v056/bookplate-terraces.svg" alt="Layered editorial bookplate terraces and nested paper shapes"><figcaption>VG-097 · Bookplate terraces</figcaption></figure>
+<figure><img src="../../graphics/v056/ink-stone-orbit.svg" alt="Abstract black ink stones and minimal circular orbital traces"><figcaption>VG-098 · Ink stone orbit</figcaption></figure>
+</section></main></body></html>

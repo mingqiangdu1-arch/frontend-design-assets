@@ -21230,6 +21230,446 @@
         "instructions": "Use graphics/v055/ceramic-relief.svg as image/vector; provide meaningful alt or decorative empty alt and verify in target host.",
         "limitations": "Static original flat SVG artwork, not a 3D model or photographed ceramic."
       }
+    },
+    {
+      "id": "FX-106",
+      "type": "component",
+      "name": "Vertical chapter cover / 纵排章节标题",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v056",
+        "original-source",
+        "multiscript-css",
+        "semantic-html-css",
+        "no-dependencies",
+        "fx56-vertical-cover"
+      ],
+      "aliases": [
+        "中文纵排",
+        "CJK vertical title",
+        "vertical-rl"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original scoped HTML and CSS, no external code, font download, image or package.",
+      "styleIds": [
+        "editorial-warm",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "portfolio",
+        "reading"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v056/multiscript-atoms.css",
+      "details": "styles/primitives/v056/README.md",
+      "spec": "registry/material-expansion-v056.json",
+      "demo": "playground/multiscript-v056/index.html",
+      "verified": "Original source and specimen provided 2026-11-23; source existence and document structure only, no device/browser/a11y production acceptance claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v056/multiscript-atoms.css",
+        "stack": "Scoped native HTML/CSS family with no runtime dependencies or React export",
+        "instructions": "Take only .fx56-vertical-cover and matching semantic specimen from playground/multiscript-v056/index.html; verify actual locale, font, line breaking and host responsive display.",
+        "limitations": "CSS vertical title only; no book pagination or complex vertical layout engine."
+      }
+    },
+    {
+      "id": "FX-107",
+      "type": "component",
+      "name": "Native ruby annotation / 原生注音行文",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v056",
+        "original-source",
+        "multiscript-css",
+        "semantic-html-css",
+        "no-dependencies",
+        "fx56-ruby-reader"
+      ],
+      "aliases": [
+        "日语假名注音",
+        "ruby furigana",
+        "拼音行内注解"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original scoped HTML and CSS, no external code, font download, image or package.",
+      "styleIds": [
+        "editorial-warm",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "reading",
+        "learning",
+        "bilingual-content"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v056/multiscript-atoms.css",
+      "details": "styles/primitives/v056/README.md",
+      "spec": "registry/material-expansion-v056.json",
+      "demo": "playground/multiscript-v056/index.html",
+      "verified": "Original source and specimen provided 2026-11-23; source existence and document structure only, no device/browser/a11y production acceptance claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v056/multiscript-atoms.css",
+        "stack": "Scoped native HTML/CSS family with no runtime dependencies or React export",
+        "instructions": "Take only .fx56-ruby-reader and matching semantic specimen from playground/multiscript-v056/index.html; verify actual locale, font, line breaking and host responsive display.",
+        "limitations": "Browser native ruby/rt; no automatic transliteration, word segmentation or pronunciation audio."
+      }
+    },
+    {
+      "id": "FX-108",
+      "type": "component",
+      "name": "Paired bilingual line layout / 双语句段对照",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v056",
+        "original-source",
+        "multiscript-css",
+        "semantic-html-css",
+        "no-dependencies",
+        "fx56-parallel-lines"
+      ],
+      "aliases": [
+        "英中对照",
+        "parallel translation",
+        "two-language editorial"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original scoped HTML and CSS, no external code, font download, image or package.",
+      "styleIds": [
+        "type-led-minimal",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "documentation",
+        "knowledge-base",
+        "reading"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v056/multiscript-atoms.css",
+      "details": "styles/primitives/v056/README.md",
+      "spec": "registry/material-expansion-v056.json",
+      "demo": "playground/multiscript-v056/index.html",
+      "verified": "Original source and specimen provided 2026-11-23; source existence and document structure only, no device/browser/a11y production acceptance claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v056/multiscript-atoms.css",
+        "stack": "Scoped native HTML/CSS family with no runtime dependencies or React export",
+        "instructions": "Take only .fx56-parallel-lines and matching semantic specimen from playground/multiscript-v056/index.html; verify actual locale, font, line breaking and host responsive display.",
+        "limitations": "Semantic static language pairs; content alignment and translations supplied manually, no translation model."
+      }
+    },
+    {
+      "id": "FX-109",
+      "type": "component",
+      "name": "CJK strict line breaking / 中日韩禁则标点版",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v056",
+        "original-source",
+        "multiscript-css",
+        "semantic-html-css",
+        "no-dependencies",
+        "fx56-linebreak-study"
+      ],
+      "aliases": [
+        "行首行尾禁则",
+        "strict line break",
+        "日文排版换行"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original scoped HTML and CSS, no external code, font download, image or package.",
+      "styleIds": [
+        "editorial-warm",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "reading",
+        "documentation",
+        "editorial"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v056/multiscript-atoms.css",
+      "details": "styles/primitives/v056/README.md",
+      "spec": "registry/material-expansion-v056.json",
+      "demo": "playground/multiscript-v056/index.html",
+      "verified": "Original source and specimen provided 2026-11-23; source existence and document structure only, no device/browser/a11y production acceptance claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v056/multiscript-atoms.css",
+        "stack": "Scoped native HTML/CSS family with no runtime dependencies or React export",
+        "instructions": "Take only .fx56-linebreak-study and matching semantic specimen from playground/multiscript-v056/index.html; verify actual locale, font, line breaking and host responsive display.",
+        "limitations": "Browser and font support for line-break/word-break features vary; no cross-engine typographic guarantees."
+      }
+    },
+    {
+      "id": "FX-110",
+      "type": "component",
+      "name": "Tabular numeral ledger / 等宽数字信息排版",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v056",
+        "original-source",
+        "multiscript-css",
+        "semantic-html-css",
+        "no-dependencies",
+        "fx56-number-ledger"
+      ],
+      "aliases": [
+        "数字等宽",
+        "tabular numerals",
+        "双语统计标签"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original scoped HTML and CSS, no external code, font download, image or package.",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "metadata",
+        "dashboard",
+        "documentation"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v056/multiscript-atoms.css",
+      "details": "styles/primitives/v056/README.md",
+      "spec": "registry/material-expansion-v056.json",
+      "demo": "playground/multiscript-v056/index.html",
+      "verified": "Original source and specimen provided 2026-11-23; source existence and document structure only, no device/browser/a11y production acceptance claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v056/multiscript-atoms.css",
+        "stack": "Scoped native HTML/CSS family with no runtime dependencies or React export",
+        "instructions": "Take only .fx56-number-ledger and matching semantic specimen from playground/multiscript-v056/index.html; verify actual locale, font, line breaking and host responsive display.",
+        "limitations": "Fictional example values, no real statistics or API; depends on font availability for tabular figures."
+      }
+    },
+    {
+      "id": "FX-111",
+      "type": "component",
+      "name": "Punctuation-led pullquote / 标点主导引言版",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v056",
+        "original-source",
+        "multiscript-css",
+        "semantic-html-css",
+        "no-dependencies",
+        "fx56-punctuation-quote"
+      ],
+      "aliases": [
+        "中文引语",
+        "punctuation-led quote",
+        "CJK pullquote"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original scoped HTML and CSS, no external code, font download, image or package.",
+      "styleIds": [
+        "paper-rebellion",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "portfolio",
+        "research-story"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v056/multiscript-atoms.css",
+      "details": "styles/primitives/v056/README.md",
+      "spec": "registry/material-expansion-v056.json",
+      "demo": "playground/multiscript-v056/index.html",
+      "verified": "Original source and specimen provided 2026-11-23; source existence and document structure only, no device/browser/a11y production acceptance claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v056/multiscript-atoms.css",
+        "stack": "Scoped native HTML/CSS family with no runtime dependencies or React export",
+        "instructions": "Take only .fx56-punctuation-quote and matching semantic specimen from playground/multiscript-v056/index.html; verify actual locale, font, line breaking and host responsive display.",
+        "limitations": "Original static semantic blockquote, not a quotation sourcing or translation system."
+      }
+    },
+    {
+      "id": "VG-095",
+      "type": "component",
+      "name": "Scroll window / 纵向卷轴窗口",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v056",
+        "original-source",
+        "independent-svg",
+        "vector-illustration",
+        "no-dependencies",
+        "font-free-art"
+      ],
+      "aliases": [
+        "卷轴插画",
+        "scroll window art",
+        "vertical paper scenes"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Hand-authored original static vector SVG. No bundled font, third-party graphic, network or script.",
+      "styleIds": [
+        "editorial-warm",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "editorial",
+        "knowledge-base"
+      ],
+      "dependencies": [],
+      "path": "graphics/v056/scroll-window.svg",
+      "details": "graphics/v056/README.md",
+      "spec": "registry/material-expansion-v056.json",
+      "demo": "playground/multiscript-v056/index.html",
+      "verified": "Original source and specimen provided 2026-11-23; source existence and document structure only, no device/browser/a11y production acceptance claimed.",
+      "handoff": {
+        "entry": "graphics/v056/scroll-window.svg",
+        "stack": "Self-contained 640x360 original vector SVG",
+        "instructions": "Use graphics/v056/scroll-window.svg as image/media with alt or decorative empty alt, and verify in target host.",
+        "limitations": "Decorative static vector, not an interactive page turning or scrolling engine."
+      }
+    },
+    {
+      "id": "VG-096",
+      "type": "component",
+      "name": "Parallel ribbons / 双轨缎带交织",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v056",
+        "original-source",
+        "independent-svg",
+        "vector-illustration",
+        "no-dependencies",
+        "font-free-art"
+      ],
+      "aliases": [
+        "双轨缎带",
+        "parallel voice ribbon",
+        "weave vector"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Hand-authored original static vector SVG. No bundled font, third-party graphic, network or script.",
+      "styleIds": [
+        "shape-expressive",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "bilingual-content",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "graphics/v056/parallel-ribbons.svg",
+      "details": "graphics/v056/README.md",
+      "spec": "registry/material-expansion-v056.json",
+      "demo": "playground/multiscript-v056/index.html",
+      "verified": "Original source and specimen provided 2026-11-23; source existence and document structure only, no device/browser/a11y production acceptance claimed.",
+      "handoff": {
+        "entry": "graphics/v056/parallel-ribbons.svg",
+        "stack": "Self-contained 640x360 original vector SVG",
+        "instructions": "Use graphics/v056/parallel-ribbons.svg as image/media with alt or decorative empty alt, and verify in target host.",
+        "limitations": "An abstract metaphor, not a real data flow, linkage or accurate information chart."
+      }
+    },
+    {
+      "id": "VG-097",
+      "type": "component",
+      "name": "Bookplate terraces / 藏书票纸页叠层",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v056",
+        "original-source",
+        "independent-svg",
+        "vector-illustration",
+        "no-dependencies",
+        "font-free-art"
+      ],
+      "aliases": [
+        "藏书票几何",
+        "bookplate terraces",
+        "archival papers"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Hand-authored original static vector SVG. No bundled font, third-party graphic, network or script.",
+      "styleIds": [
+        "paper-rebellion",
+        "commerce-atelier"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "editorial",
+        "portfolio"
+      ],
+      "dependencies": [],
+      "path": "graphics/v056/bookplate-terraces.svg",
+      "details": "graphics/v056/README.md",
+      "spec": "registry/material-expansion-v056.json",
+      "demo": "playground/multiscript-v056/index.html",
+      "verified": "Original source and specimen provided 2026-11-23; source existence and document structure only, no device/browser/a11y production acceptance claimed.",
+      "handoff": {
+        "entry": "graphics/v056/bookplate-terraces.svg",
+        "stack": "Self-contained 640x360 original vector SVG",
+        "instructions": "Use graphics/v056/bookplate-terraces.svg as image/media with alt or decorative empty alt, and verify in target host.",
+        "limitations": "Decorative static vector, not document scanning, OCR or paginated book UI."
+      }
+    },
+    {
+      "id": "VG-098",
+      "type": "component",
+      "name": "Ink stone orbit / 墨石轨迹构成",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v056",
+        "original-source",
+        "independent-svg",
+        "vector-illustration",
+        "no-dependencies",
+        "font-free-art"
+      ],
+      "aliases": [
+        "墨石轨迹",
+        "ink pebble orbit",
+        "rice paper minimal"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Hand-authored original static vector SVG. No bundled font, third-party graphic, network or script.",
+      "styleIds": [
+        "organic-tactile",
+        "aether-orbit"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "creative-site",
+        "reading"
+      ],
+      "dependencies": [],
+      "path": "graphics/v056/ink-stone-orbit.svg",
+      "details": "graphics/v056/README.md",
+      "spec": "registry/material-expansion-v056.json",
+      "demo": "playground/multiscript-v056/index.html",
+      "verified": "Original source and specimen provided 2026-11-23; source existence and document structure only, no device/browser/a11y production acceptance claimed.",
+      "handoff": {
+        "entry": "graphics/v056/ink-stone-orbit.svg",
+        "stack": "Self-contained 640x360 original vector SVG",
+        "instructions": "Use graphics/v056/ink-stone-orbit.svg as image/media with alt or decorative empty alt, and verify in target host.",
+        "limitations": "Fictional geometry, not astronomy, measured orbital data or geographical information."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",

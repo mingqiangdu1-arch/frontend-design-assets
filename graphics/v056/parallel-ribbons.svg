@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Parallel ribbons</title><desc id="desc">Two independently colored abstract ribbons weave around a shared center, representing parallel voices without typographic symbols.</desc>
+<defs>
+<linearGradient id="blue" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#9ce9ee"/><stop offset="1" stop-color="#3b7eb4"/></linearGradient>
+<linearGradient id="coral" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ecb28f"/><stop offset="1" stop-color="#c76172"/></linearGradient>
+<filter id="ds"><feDropShadow dx="3" dy="7" stdDeviation="5" flood-color="#234157" flood-opacity=".22"/></filter>
+</defs>
+<rect width="640" height="360" rx="20" fill="#eff2ed"/>
+<g stroke="#c6d3d6" stroke-width="1" fill="none" opacity=".65"><circle cx="320" cy="180" r="130"/><circle cx="320" cy="180" r="75"/><path d="M35 180H605M320 28V332"/></g>
+<g filter="url(#ds)" fill="none" stroke-linecap="round" stroke-width="40">
+ <path d="M75 264C154 254 161 85 255 97C344 107 320 285 414 268C502 252 530 111 563 102" stroke="url(#blue)"/>
+ <path d="M75 100C157 115 183 266 260 263C350 259 317 92 408 100C510 110 516 245 563 256" stroke="url(#coral)"/>
+</g>
+<!-- Small masking patch makes the crossing read as an intentional weave. -->
+<path d="M288 176C309 163 330 159 349 168" stroke="#eff2ed" stroke-width="47" stroke-linecap="round" fill="none"/>
+<path d="M288 176C309 163 330 159 349 168" stroke="url(#blue)" stroke-width="36" stroke-linecap="round" fill="none"/>
+<g fill="#2a6575"><circle cx="74" cy="264" r="8"/><circle cx="562" cy="102" r="8"/></g>
+<g fill="#ae6071"><circle cx="74" cy="100" r="8"/><circle cx="563" cy="256" r="8"/></g>
+</svg>

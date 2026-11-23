@@ -1,0 +1,98 @@
+/* V0.56 · Multiscript editorial primitives. All classes are scoped .fx56-*.
+   Standalone original CSS/HTML. No fonts, scripts, network assets or global resets. */
+
+/* FX-106 · Vertical cover title / 纵排标题 */
+.fx56-vertical-cover{
+  --fx56-paper:#f5efdf;--fx56-ink:#303d38;--fx56-accent:#9e5b42;
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(4.5rem,24%);
+  align-items:stretch;gap:clamp(.8rem,2vw,1.5rem);max-width:31rem;min-height:15rem;
+  padding:clamp(1rem,3vw,1.6rem);background:var(--fx56-paper);color:var(--fx56-ink);
+  border:1px solid #d4c8ac;border-radius:.3rem;overflow-wrap:anywhere;
+  font-family:"Noto Serif CJK SC","Source Han Serif SC","Yu Mincho",serif;
+}
+.fx56-vertical-cover__body{align-self:end;min-width:0}
+.fx56-vertical-cover__kicker{color:var(--fx56-accent);font:600 .72rem/1.5 system-ui;letter-spacing:.15em;text-transform:uppercase}
+.fx56-vertical-cover__body p{font:400 .9rem/1.8 system-ui;margin:.7rem 0 0;max-width:24ch}
+.fx56-vertical-cover__title{
+  justify-self:end;writing-mode:vertical-rl;text-orientation:mixed;letter-spacing:.17em;
+  margin:0;border-left:1px solid #b5ad98;padding-left:.7rem;
+  font-size:clamp(1.6rem,4vw,2.35rem);font-weight:600;line-height:1.4;
+}
+
+/* FX-107 · Native ruby reading specimen */
+.fx56-ruby-reader{
+  --fx56-ink:#292d3c;--fx56-paper:#fcfbf6;--fx56-accent:#b15142;
+  padding:1rem 1.2rem;max-width:30rem;color:var(--fx56-ink);
+  background:var(--fx56-paper);border:1px solid #dedbd1;border-radius:.6rem;
+  font-family:"Noto Sans CJK JP","Noto Sans CJK SC",system-ui,sans-serif;
+}
+.fx56-ruby-reader p{margin:.7rem 0 0;line-height:2.7;font-size:1.15rem;letter-spacing:.04em}
+.fx56-ruby-reader ruby{ruby-align:center;white-space:nowrap;text-decoration:underline dotted #c3b4ab;text-underline-offset:.3em}
+.fx56-ruby-reader rt{font-size:.54em;font-weight:500;color:var(--fx56-accent);letter-spacing:0;line-height:1}
+.fx56-ruby-reader__label{display:block;font:600 .72rem/1.4 system-ui;letter-spacing:.08em;text-transform:uppercase;color:#666a6a}
+.fx56-ruby-reader small{display:block;font:.77rem/1.65 system-ui;color:#60666f;margin-top:.35rem}
+
+/* FX-108 · Bilingual line-pair card, semantic dl */
+.fx56-parallel-lines{
+  --fx56-ink:#202b39;--fx56-edge:#d7dde4;
+  max-width:37rem;color:var(--fx56-ink);
+  border-block:1px solid var(--fx56-edge);font:400 .92rem/1.75 system-ui,sans-serif;
+}
+.fx56-parallel-lines dl{margin:0;display:grid;gap:0}
+.fx56-parallel-lines__row{
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1.25rem;
+  padding:1rem .1rem;border-bottom:1px solid var(--fx56-edge);
+}
+.fx56-parallel-lines__row:last-child{border-bottom:0}
+.fx56-parallel-lines dt{font:600 .66rem/1.3 system-ui;letter-spacing:.1em;color:#68717c;text-transform:uppercase;margin-bottom:.3rem}
+.fx56-parallel-lines dd{margin:0;overflow-wrap:break-word;line-break:strict}
+.fx56-parallel-lines__row>div:first-child dd{font-family:"Noto Serif CJK SC","Yu Mincho",serif;font-size:1.02rem}
+
+/* FX-109 · Strict CJK line breaking, responsive reading width */
+.fx56-linebreak-study{
+  --fx56-text:#2e343a;--fx56-paper:#f5f8f7;
+  padding:1.2rem 1.4rem;max-width:31rem;background:var(--fx56-paper);color:var(--fx56-text);
+  border-left:4px solid #40897b;
+}
+.fx56-linebreak-study h3{font-size:.83rem;font-weight:700;margin:0 0 .8rem;letter-spacing:.08em}
+.fx56-linebreak-study p{
+  font:400 1rem/1.95 "Noto Serif CJK JP","Yu Mincho","Noto Serif CJK SC",serif;
+  max-width:28em;margin:0;text-align:start;line-break:strict;
+  overflow-wrap:anywhere;word-break:normal;hanging-punctuation:first allow-end;
+}
+.fx56-linebreak-study .fx56-linebreak-study__lang{margin-top:.85rem;font:.72rem/1.5 system-ui;color:#60746e}
+
+/* FX-110 · Number-ledger specimen, semantic dl */
+.fx56-number-ledger{
+  --fx56-ink:#243147;--fx56-line:#c9d0db;--fx56-accent:#3164b7;
+  max-width:30rem;padding:1.15rem 1.4rem;color:var(--fx56-ink);
+  background:#f8fafc;border:1px solid #dce1eb;border-radius:.6rem;
+  font:400 .85rem/1.5 system-ui;
+}
+.fx56-number-ledger dl{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:0 1rem;margin:0}
+.fx56-number-ledger dt,.fx56-number-ledger dd{padding:.7rem 0;border-bottom:1px solid var(--fx56-line)}
+.fx56-number-ledger dt:nth-last-of-type(1),.fx56-number-ledger dd:nth-last-of-type(1){border-bottom:0}
+.fx56-number-ledger dt{min-width:0}
+.fx56-number-ledger dd{margin:0;text-align:right;font-weight:700;white-space:nowrap;
+  font-variant-numeric:tabular-nums lining-nums;font-feature-settings:"tnum" 1}
+.fx56-number-ledger dd strong{font-size:1.12rem;color:var(--fx56-accent)}
+.fx56-number-ledger__unit{font-size:.73rem;font-weight:400;color:#596575;margin-inline-start:.3em}
+
+/* FX-111 · CJK punctuation pullquote */
+.fx56-punctuation-quote{
+  --fx56-ink:#302f32;--fx56-accent:#b5544f;--fx56-paper:#fffaf6;
+  max-width:31rem;position:relative;margin:0;padding:2rem 1.5rem 1.15rem;
+  border-block:2px solid var(--fx56-ink);color:var(--fx56-ink);background:var(--fx56-paper);
+}
+.fx56-punctuation-quote::before{
+  content:"「";position:absolute;inset:.15rem auto auto .45rem;
+  font:700 2.7rem/1 "Noto Serif CJK SC","Yu Mincho",serif;color:var(--fx56-accent);
+}
+.fx56-punctuation-quote p{margin:0;max-width:22em;line-height:1.9;font-size:clamp(1.12rem,3vw,1.55rem);
+  font-family:"Noto Serif CJK SC","Yu Mincho",serif;line-break:strict}
+.fx56-punctuation-quote footer{margin-top:1rem;font:.7rem/1.6 system-ui;letter-spacing:.08em;color:#77716b}
+@media (max-width:520px){
+  .fx56-vertical-cover{grid-template-columns:minmax(0,1fr) minmax(3rem,32%);min-height:12rem}
+  .fx56-parallel-lines__row{grid-template-columns:1fr;gap:.7rem}
+  .fx56-number-ledger{padding:1rem}
+}

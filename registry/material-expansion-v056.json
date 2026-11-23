@@ -1,0 +1,240 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.56.0",
+  "date": "2026-11-23",
+  "focus": "Six original scoped CJK/multiscript typography HTML/CSS primitives and four self-contained wordless SVG illustrations, not external references or assembled applications.",
+  "previousAssetCount": 533,
+  "newAssetCount": 10,
+  "expectedAssetCount": 543,
+  "reactExportsAdded": 0,
+  "styleIdsAdded": 0,
+  "testSuitesAdded": 0,
+  "thirdPartyCodeCopied": false,
+  "externalMediaCopied": false,
+  "fontFilesImported": false,
+  "sourceFiles": [
+    "registry/material-expansion-v056.json",
+    "styles/primitives/v056/multiscript-atoms.css",
+    "styles/primitives/v056/README.md",
+    "playground/multiscript-v056/index.html",
+    "graphics/v056/README.md",
+    "graphics/v056/scroll-window.svg",
+    "graphics/v056/parallel-ribbons.svg",
+    "graphics/v056/bookplate-terraces.svg",
+    "graphics/v056/ink-stone-orbit.svg"
+  ],
+  "cssAtoms": [
+    {
+      "id": "FX-106",
+      "name": "Vertical chapter cover / 纵排章节标题",
+      "className": "fx56-vertical-cover",
+      "source": "styles/primitives/v056/multiscript-atoms.css",
+      "readme": "styles/primitives/v056/README.md",
+      "demo": "playground/multiscript-v056/index.html",
+      "styleIds": [
+        "editorial-warm",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "portfolio",
+        "reading"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "scoped-semantic-native-html-css",
+      "limitations": "CSS vertical title only; no book pagination or complex vertical layout engine."
+    },
+    {
+      "id": "FX-107",
+      "name": "Native ruby annotation / 原生注音行文",
+      "className": "fx56-ruby-reader",
+      "source": "styles/primitives/v056/multiscript-atoms.css",
+      "readme": "styles/primitives/v056/README.md",
+      "demo": "playground/multiscript-v056/index.html",
+      "styleIds": [
+        "editorial-warm",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "reading",
+        "learning",
+        "bilingual-content"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "scoped-semantic-native-html-css",
+      "limitations": "Browser native ruby/rt; no automatic transliteration, word segmentation or pronunciation audio."
+    },
+    {
+      "id": "FX-108",
+      "name": "Paired bilingual line layout / 双语句段对照",
+      "className": "fx56-parallel-lines",
+      "source": "styles/primitives/v056/multiscript-atoms.css",
+      "readme": "styles/primitives/v056/README.md",
+      "demo": "playground/multiscript-v056/index.html",
+      "styleIds": [
+        "type-led-minimal",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "documentation",
+        "knowledge-base",
+        "reading"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "scoped-semantic-native-html-css",
+      "limitations": "Semantic static language pairs; content alignment and translations supplied manually, no translation model."
+    },
+    {
+      "id": "FX-109",
+      "name": "CJK strict line breaking / 中日韩禁则标点版",
+      "className": "fx56-linebreak-study",
+      "source": "styles/primitives/v056/multiscript-atoms.css",
+      "readme": "styles/primitives/v056/README.md",
+      "demo": "playground/multiscript-v056/index.html",
+      "styleIds": [
+        "editorial-warm",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "reading",
+        "documentation",
+        "editorial"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "scoped-semantic-native-html-css",
+      "limitations": "Browser and font support for line-break/word-break features vary; no cross-engine typographic guarantees."
+    },
+    {
+      "id": "FX-110",
+      "name": "Tabular numeral ledger / 等宽数字信息排版",
+      "className": "fx56-number-ledger",
+      "source": "styles/primitives/v056/multiscript-atoms.css",
+      "readme": "styles/primitives/v056/README.md",
+      "demo": "playground/multiscript-v056/index.html",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "metadata",
+        "dashboard",
+        "documentation"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "scoped-semantic-native-html-css",
+      "limitations": "Fictional example values, no real statistics or API; depends on font availability for tabular figures."
+    },
+    {
+      "id": "FX-111",
+      "name": "Punctuation-led pullquote / 标点主导引言版",
+      "className": "fx56-punctuation-quote",
+      "source": "styles/primitives/v056/multiscript-atoms.css",
+      "readme": "styles/primitives/v056/README.md",
+      "demo": "playground/multiscript-v056/index.html",
+      "styleIds": [
+        "paper-rebellion",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "portfolio",
+        "research-story"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "scoped-semantic-native-html-css",
+      "limitations": "Original static semantic blockquote, not a quotation sourcing or translation system."
+    }
+  ],
+  "editorialSvg": [
+    {
+      "id": "VG-095",
+      "name": "Scroll window / 纵向卷轴窗口",
+      "source": "graphics/v056/scroll-window.svg",
+      "readme": "graphics/v056/README.md",
+      "demo": "playground/multiscript-v056/index.html",
+      "viewBox": "0 0 640 360",
+      "styleIds": [
+        "editorial-warm",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "editorial",
+        "knowledge-base"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-static-svg",
+      "limitations": "Decorative static vector, not an interactive page turning or scrolling engine."
+    },
+    {
+      "id": "VG-096",
+      "name": "Parallel ribbons / 双轨缎带交织",
+      "source": "graphics/v056/parallel-ribbons.svg",
+      "readme": "graphics/v056/README.md",
+      "demo": "playground/multiscript-v056/index.html",
+      "viewBox": "0 0 640 360",
+      "styleIds": [
+        "shape-expressive",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "bilingual-content",
+        "creative-site"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-static-svg",
+      "limitations": "An abstract metaphor, not a real data flow, linkage or accurate information chart."
+    },
+    {
+      "id": "VG-097",
+      "name": "Bookplate terraces / 藏书票纸页叠层",
+      "source": "graphics/v056/bookplate-terraces.svg",
+      "readme": "graphics/v056/README.md",
+      "demo": "playground/multiscript-v056/index.html",
+      "viewBox": "0 0 640 360",
+      "styleIds": [
+        "paper-rebellion",
+        "commerce-atelier"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "editorial",
+        "portfolio"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-static-svg",
+      "limitations": "Decorative static vector, not document scanning, OCR or paginated book UI."
+    },
+    {
+      "id": "VG-098",
+      "name": "Ink stone orbit / 墨石轨迹构成",
+      "source": "graphics/v056/ink-stone-orbit.svg",
+      "readme": "graphics/v056/README.md",
+      "demo": "playground/multiscript-v056/index.html",
+      "viewBox": "0 0 640 360",
+      "styleIds": [
+        "organic-tactile",
+        "aether-orbit"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "creative-site",
+        "reading"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-static-svg",
+      "limitations": "Fictional geometry, not astronomy, measured orbital data or geographical information."
+    }
+  ]
+}

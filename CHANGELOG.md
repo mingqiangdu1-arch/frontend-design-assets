@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-23 · V0.56 original multiscript typography and wordless editorial vectors
+
+- Added **six original standalone scoped CSS/semantic HTML primitives** `FX-106..111`: vertical CJK cover, native ruby pronunciation annotation, bilingual line-pair layout, strict CJK line-break study, tabular numerals and punctuation-led pullquote. No translation model, audio, webfont or global CSS reset.
+- Added **four original 640×360 standalone SVGs** `VG-095..098`: scroll window, parallel ribbons, bookplate terraces and ink-stone orbit. Each includes `title`/`desc` and no external media/font/script.
+- [Machine registry](registry/material-expansion-v056.json) · [CSS specimens](styles/primitives/v056/README.md) · [SVG sources](graphics/v056/README.md) · [gallery](playground/multiscript-v056/index.html). Registered count **533 → 543**.
+- No new themes, React exports, third-party code, dependency, product application or test framework. Source/registry structure checked; real multilingual browser, device, font and accessibility QA not claimed.
+
 ## 2026-11-23 · V0.55 original tactile micro-materials and SVG scenes
 
 - Added **six original, independent HTML/CSS source atoms** `FX-100..105`: etched instrument label, fictional static signal bars, native tactile radio group, museum object tag, CSS prism edge, and native folded disclosure.

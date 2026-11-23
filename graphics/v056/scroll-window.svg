@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Scroll window</title><desc id="desc">An original abstract editorial scene of hanging scrolls, slender guides and layered window openings; no characters or downloaded fonts.</desc>
+<defs>
+ <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff8e8"/><stop offset="1" stop-color="#ddcbae"/></linearGradient>
+ <linearGradient id="shadow" x1="0" x2="1"><stop stop-color="#a99074" stop-opacity=".52"/><stop offset="1" stop-color="#e6d5b9" stop-opacity="0"/></linearGradient>
+</defs>
+<rect width="640" height="360" rx="20" fill="#2d4244"/>
+<rect x="44" y="32" width="552" height="296" rx="7" fill="#36585b" stroke="#76988f" stroke-width="2"/>
+<g stroke="#80a69d" stroke-opacity=".4" fill="none"><path d="M60 72H580M60 288H580M110 47V314M530 47V314"/><path d="M320 49V313" stroke-dasharray="4 8"/></g>
+<rect x="135" y="44" width="125" height="266" rx="62" fill="#f4e6cc" opacity=".15"/>
+<g>
+ <path d="M130 52h104v230l-15 22H130z" fill="url(#paper)"/><path d="M130 52h20v252h-20z" fill="url(#shadow)"/>
+ <path d="M278 30h110v274h-110z" fill="#e8dac2"/><path d="M278 30h20v274h-20z" fill="url(#shadow)"/>
+ <path d="M420 72h91v210l-12 22h-79z" fill="#eed7b0"/><path d="M420 72h17v231h-17z" fill="url(#shadow)"/>
+</g>
+<g fill="none" stroke="#ad7357" stroke-width="3" opacity=".8">
+ <path d="M183 83v75m0 22v31m0 18v34"/><path d="M333 61v98m0 19v75"/><path d="M466 103v77m0 20v48"/>
+</g>
+<g fill="#9d6e4d"><rect x="123" y="302" width="118" height="8" rx="4"/><rect x="272" y="304" width="122" height="8" rx="4"/><rect x="414" y="302" width="103" height="8" rx="4"/></g>
+<g fill="#a5d1c8"><circle cx="81" cy="180" r="7"/><circle cx="557" cy="180" r="7"/></g>
+</svg>
