@@ -8,19 +8,19 @@ Explore distinct visual styles, locate reusable React and native web source, ins
 
 [中文指南](README.zh-CN.md) · [Live preview (GitHub Pages)](https://mingqiangdu1-arch.github.io/frontend-design-assets/) · [Explore the gallery](docs/gallery.md) · [Agent quick start](DISCOVER.md) · [Task catalog](CATALOG.md) · [Contributing](CONTRIBUTING.md)
 
-![Registry inventory: 619 registered assets, 48 React exports, 14 visual styles, 7 page templates; type and maturity distributions](docs/media/inventory.svg)
+![Registry inventory: 620 registered assets, 48 React exports, 15 visual styles, 7 page templates; type and maturity distributions](docs/media/inventory.svg)
 
 *Snapshot: 2026-11-24. Counts come from the canonical registries; registered assets include research, prototypes and source references, not just implemented components. See [inventory data and regeneration](docs/README.md#inventory).*
 
-## Explore 14 visual directions
+## Explore 15 visual directions
 
-[![Token-based illustrations of fourteen distinct visual styles](docs/media/style-atlas.svg)](docs/gallery.md#visual-directions--视觉风格)
+[![Token-based illustrations of fifteen distinct visual styles](docs/media/style-atlas.svg)](docs/gallery.md#visual-directions--视觉风格)
 
-*Static compositions derived from actual semantic color tokens, not screenshots. [Explore themes and source demos](docs/gallery.md) · [Local preview and screenshot guide](docs/visual-showcase.md).* The React package supports four explicitly registered themes, not all fourteen.
+*Static compositions derived from actual semantic color tokens, not screenshots. [Explore themes and source demos](docs/gallery.md) · [Local preview and screenshot guide](docs/visual-showcase.md).* The React package supports four explicitly registered themes, not all fifteen.
 
 ## Live UI screenshots
 
-| Theme Atlas (14 Styles) | React Component Gallery (Dark) |
+| Theme Atlas (15 Styles) | React Component Gallery (Dark) |
 | :---: | :---: |
 | ![Theme Atlas 1280x800](docs/media/screenshots/style-atlas-1280x800.png) | ![Component Gallery Precision Dark 1280x800](docs/media/screenshots/component-gallery-dark-1280x800.png) |
 | **Spatial Composition (V0.64)** | **Creative Micro-Controls (V0.62)** |

@@ -11,13 +11,13 @@ const data={styles:read("styles.json"),facets:read("style-facets.json"),
  assets:read("assets.json")};
 const request=(style,other={})=>assembleStyleBrief(data,{style,...other});
 
-test("14 assembly grammars and 57 unique, concrete page sections reference registered sources",()=>{
+test("15 assembly grammars and 61 unique, concrete page sections reference registered sources",()=>{
  const v=validateStyleAssembly(data);
- assert.equal(v.styles,14);
- assert.equal(v.sections,57);
+ assert.equal(v.styles,15);
+ assert.equal(v.sections,61);
  assert.equal(v.defaultStyleId,null);
  const structures=data.assembly.recipes.map(x=>x.structureId);
- assert.equal(new Set(structures).size,14);
+ assert.equal(new Set(structures).size,15);
  for(const style of data.styles.styles){
   const r=request(style.id);
   assert.equal(r.theme.id,style.id);

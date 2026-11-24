@@ -20,7 +20,7 @@ Source of truth: [assets](../registry/assets.json), [React exports](../registry/
 node scripts/generate-public-overview.mjs
 ```
 
-Current snapshot: 2026-11-24; 619 asset entries, 48 React exports, 14 styles, 7 templates. Component-type entries and React exports are not synonymous.
+Current snapshot: 2026-11-24; 620 asset entries, 48 React exports, 15 styles, 7 templates. Component-type entries and React exports are not synonymous.
 
 | Asset type | Count |
 | --- | ---: |
@@ -29,7 +29,7 @@ Current snapshot: 2026-11-24; 619 asset entries, 48 React exports, 14 styles, 7 
 | interaction | 79 |
 | recipe | 18 |
 | archive | 16 |
-| token | 14 |
+| token | 15 |
 | page-template | 7 |
 | motion | 2 |
 
@@ -37,7 +37,7 @@ Current snapshot: 2026-11-24; 619 asset entries, 48 React exports, 14 styles, 7 
 | --- | ---: |
 | reference-implemented | 319 |
 | analyzed | 200 |
-| prototype | 99 |
+| prototype | 100 |
 | captured | 1 |
 | validated | 0 |
 | production-ready | 0 |

@@ -58,6 +58,8 @@ function createVisuals(input) {
       out+=tx(19,18,"INDEX / 13",10,sub,600,"monospace")+L(19,24,331,24,line)+tx(15,76,"Less.",53,fg,850)+tx(15,122,"But better.",41,fg,850)+rr(297,42,33,80,a)+T(314,112,"↗",20,at,700,"system-ui",'text-anchor="middle"');
     }else if(id==="organic-tactile"){
       out+=rr(16,13,160,116,sf,19,line)+P("M183 112Q177 42 236 27Q307 3 330 75Q339 123 289 129Z",up)+P("M211 109Q191 82 226 53Q266 20 299 65Q318 91 289 114Z",sel)+P("M237 111Q218 83 252 63Q275 49 285 82Q287 106 269 118Z",a)+tx(28,47,"Made for",19,fg,600,"Georgia,serif")+tx(28,70,"human hands.",19,fg,600,"Georgia,serif")+btn(28,89,111,"Find your feel");
+    }else if(id==="swiss-blueprint"){
+      out+=[42,84,126,168,210,252,294].map(x=>L(x,8,x,134,line,.35)).join("")+[34,68,102].map(y=>L(8,y,342,y,line,.35)).join("")+rr(14,12,208,118,sf,2,line,1.2)+rr(34,36,168,74,up,1,fg,1.4)+C(92,73,23,bg,fg,1.4)+C(92,73,11,"none",a,1.2)+[134,146,158,170,182].map(x=>L(x,46,x,100,sub,1.3)).join("")+L(34,24,202,24,a,1.2)+L(34,19,34,32,a,1)+L(202,19,202,32,a,1)+rr(230,12,106,118,c.sidebar,2,line,1.2)+tx(239,28,"DWG 15-A",10,a,750,"ui-monospace,monospace")+L(230,36,336,36,line,1)+tx(239,53,"SCALE 1:1",9,sub,600,"ui-monospace,monospace")+hline(239,65,78,fg)+hline(239,77,64,sub)+hline(239,89,72,line)+rr(239,103,86,18,a,2)+tx(248,115,"SPEC LEDGER",9,at,750,"ui-monospace,monospace");
     }else throw Error("Unknown style "+id+"; add an explicit specimen");
     return out;
   }

@@ -24891,6 +24891,55 @@
         "instructions": "Read https://github.com/carbon-design-system/carbon-for-ibm-dotcom/blob/f681ec41939a259731c2edac29ec6339a20590d7/packages/web-components/src/components/leadspace/leadspace.ts and companion paths in registry/material-expansion-v065.json (REF-172); follow specific license limitations before independent adaptation.",
         "limitations": "Lit、Carbon utilities 和样式依赖；Apache-2.0 不授予 IBM 品牌/商标或媒体使用权；需核对对比度及真实内容。"
       }
+    },
+    {
+      "id": "DT-015",
+      "type": "token",
+      "name": "Swiss Blueprint / Technical Spec independent original style",
+      "stage": "prototype",
+      "priority": "P1",
+      "reuseKind": "style-token",
+      "tags": [
+        "v066",
+        "style-profile",
+        "design-tokens",
+        "swiss-blueprint",
+        "technical-spec",
+        "cyanotype",
+        "original-source"
+      ],
+      "aliases": [
+        "工程蓝图",
+        "技术规格书",
+        "蓝图风格",
+        "建筑制图",
+        "swiss blueprint",
+        "technical blueprint",
+        "schematic"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "MIT (owner-authored original scoped tokens, SVG schematic and standalone HTML/CSS/ESM specimen; see LICENSE and NOTICE.md).",
+      "styleIds": [
+        "swiss-blueprint"
+      ],
+      "applicationContexts": [
+        "architecture-spec",
+        "hardware-docs",
+        "engineering-catalog",
+        "technical-blueprint"
+      ],
+      "dependencies": [],
+      "path": "styles/swiss-blueprint/tokens.css",
+      "spec": "styles/swiss-blueprint/tokens.json",
+      "details": "styles/swiss-blueprint/README.md",
+      "demo": "playground/swiss-blueprint/index.html",
+      "verified": "WCAG contrast audit (all critical pairs >= 7:1), JSON/CSS token consistency, registry/facet/assembly validation and pure model tests; not a React package theme.",
+      "handoff": {
+        "entry": "styles/swiss-blueprint/tokens.css",
+        "stack": "Scoped CSS custom properties ([data-design-theme=\"swiss-blueprint\"]) + standalone HTML/CSS/ESM demo",
+        "instructions": "Import styles/swiss-blueprint/tokens.css inside a [data-design-theme=\"swiss-blueprint\"] container and inspect playground/swiss-blueprint/index.html for title-block, schematic-pin and tabular-schedule patterns.",
+        "limitations": "Not wired into packages/ui React ThemeSurface; illustrative dimensions only and not certified engineering tolerances."
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",

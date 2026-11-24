@@ -2,13 +2,13 @@ import {test,expect} from "@playwright/test";
 const base="/playground/style-atlas/";
 test.beforeEach(async({page})=>{
  await page.goto(base);
- await expect(page.locator("#resultCount")).toContainText("显示 14 / 14 套主题");
+ await expect(page.locator("#resultCount")).toContainText("显示 15 / 15 套主题");
 });
 
-test("first view has fourteen registered grammar thumbnails and no preselected default",async({page})=>{
- await expect(page.locator(".theme-card")).toHaveCount(14);
- await expect(page.locator(".mini-visual")).toHaveCount(14);
- await expect(page.locator("#styleCount")).toHaveText("14");
+test("first view has fifteen registered grammar thumbnails and no preselected default",async({page})=>{
+ await expect(page.locator(".theme-card")).toHaveCount(15);
+ await expect(page.locator(".mini-visual")).toHaveCount(15);
+ await expect(page.locator("#styleCount")).toHaveText("15");
  await expect(page.locator("#compareLeft")).toHaveValue("");
  await expect(page.locator("#compareRight")).toHaveValue("");
  await expect(page.locator("#recommendations")).toContainText("没有默认主题");
@@ -53,7 +53,7 @@ test("explicit incompatible stack/context combination fails closed without SaaS 
 
 test("two selected themes load their actual independent demo pages with accurate deep links",async({page})=>{
  await page.goto(base+"?left=editorial-warm&right=liquid-layer");
- await expect(page.locator("#resultCount")).toContainText("显示 14 / 14 套主题");
+ await expect(page.locator("#resultCount")).toContainText("显示 15 / 15 套主题");
  await expect(page.locator("#compareLeft")).toHaveValue("editorial-warm");
  await expect(page.locator("#compareRight")).toHaveValue("liquid-layer");
  const section=page.locator("#compare");
@@ -169,7 +169,7 @@ test("existing real React template is linked only when chosen explicitly",async(
  await expect(page.locator("#assemblyResult")).toContainText("wired-in-selected-demo");
 });
 
-test("14-theme assembly UI is narrow-screen usable and style changes clear stale results",async({page})=>{
+test("15-theme assembly UI is narrow-screen usable and style changes clear stale results",async({page})=>{
  await page.setViewportSize({width:390,height:850});
  await page.locator("#assemblyStyle").selectOption("playful-pop");
  await page.locator("#assemblyContext").selectOption("consumer-mobile");

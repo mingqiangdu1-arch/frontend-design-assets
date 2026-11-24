@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DT-015 · Swiss Blueprint · 工程蓝图交互样张</title>
+  <meta name="description" content="Swiss Blueprint 独立视觉风格样张：工程蓝图图签、交互式剖面标注板、单位切换与联动规格表。">
+  <link rel="stylesheet" href="../../styles/swiss-blueprint/tokens.css">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body data-design-theme="swiss-blueprint">
+  <div class="bp-shell" data-grid="on">
+    <header class="bp-titleblock" aria-label="图纸图签">
+      <div class="bp-brand">
+        <span class="bp-code">DWG NO. DT-015-A</span>
+        <h1>Swiss Blueprint · 工程蓝图规格板</h1>
+        <p class="bp-subtitle">独立蓝图风格参考样张：坐标网格、编号图签、交互式零件标注与联动规格表（示例数据仅用于界面展示，非真实工程公差）。</p>
+      </div>
+      <dl class="bp-meta">
+        <div><dt>SCALE</dt><dd>1 : 1</dd></div>
+        <div><dt>REV</dt><dd>01</dd></div>
+        <div><dt>PROJECTION</dt><dd>ORTHO</dd></div>
+        <div><dt>UNITS</dt><dd id="metaUnit">MM</dd></div>
+      </dl>
+    </header>
+
+    <div class="bp-toolbar" role="region" aria-label="图纸控制条">
+      <div class="bp-filters" role="group" aria-label="按子系统筛选">
+        <button type="button" class="bp-chip" data-filter="all" aria-pressed="true">全部 (6)</button>
+        <button type="button" class="bp-chip" data-filter="frame" aria-pressed="false">Frame · 结构</button>
+        <button type="button" class="bp-chip" data-filter="optics" aria-pressed="false">Optics · 光学</button>
+        <button type="button" class="bp-chip" data-filter="thermal" aria-pressed="false">Thermal · 散热</button>
+        <button type="button" class="bp-chip" data-filter="fastener" aria-pressed="false">Fastener · 紧固</button>
+      </div>
+      <div class="bp-controls">
+        <button type="button" id="unitToggle" class="bp-btn" aria-pressed="false">单位：mm → in</button>
+        <button type="button" id="gridToggle" class="bp-btn" aria-pressed="true">坐标网格：开</button>
+      </div>
+    </div>
+
+    <main class="bp-workspace">
+      <section class="bp-plate-panel" aria-labelledby="plateTitle">
+        <div class="bp-panel-head">
+          <h2 id="plateTitle">PLATE 01 · 正视剖面示意</h2>
+          <span class="bp-coord">GRID 10 × 10 · SELECT PIN OR ROW</span>
+        </div>
+        <div class="bp-plate-stage" id="plateStage">
+          <svg class="bp-schematic" viewBox="0 0 640 360" role="img" aria-label="模块化仪器外壳正视剖面蓝图示意">
+            <defs>
+              <pattern id="bpGridMinor" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#4A78B5" stroke-opacity="0.22" stroke-width="0.75"/>
+              </pattern>
+              <pattern id="bpGridMajor" width="80" height="80" patternUnits="userSpaceOnUse">
+                <rect width="80" height="80" fill="url(#bpGridMinor)"/>
+                <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#4A78B5" stroke-opacity="0.45" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect class="bp-grid-fill" x="0" y="0" width="640" height="360" fill="url(#bpGridMajor)"/>
+            <!-- Outer drafting border & centerlines -->
+            <rect x="24" y="20" width="592" height="320" fill="none" stroke="#4A78B5" stroke-width="1.2"/>
+            <line x1="320" y1="20" x2="320" y2="340" stroke="#9EC0EA" stroke-dasharray="6 4" stroke-opacity="0.55" stroke-width="1"/>
+            <line x1="24" y1="180" x2="616" y2="180" stroke="#9EC0EA" stroke-dasharray="6 4" stroke-opacity="0.55" stroke-width="1"/>
+            <!-- Chassis elevation geometry -->
+            <rect x="110" y="84" width="420" height="192" fill="#1A3B6B" fill-opacity="0.45" stroke="#F2F7FF" stroke-width="2"/>
+            <rect x="132" y="106" width="376" height="148" fill="none" stroke="#B8D2F2" stroke-width="1.2"/>
+            <!-- Optics aperture -->
+            <circle cx="236" cy="180" r="54" fill="#0D2444" stroke="#F2F7FF" stroke-width="2"/>
+            <circle cx="236" cy="180" r="34" fill="none" stroke="#FFD166" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <circle cx="236" cy="180" r="10" fill="none" stroke="#5EEAD4" stroke-width="1.5"/>
+            <!-- Thermal fin array -->
+            <g stroke="#B8D2F2" stroke-width="1.5">
+              <line x1="348" y1="118" x2="348" y2="242"/>
+              <line x1="366" y1="118" x2="366" y2="242"/>
+              <line x1="384" y1="118" x2="384" y2="242"/>
+              <line x1="402" y1="118" x2="402" y2="242"/>
+              <line x1="420" y1="118" x2="420" y2="242"/>
+              <line x1="438" y1="118" x2="438" y2="242"/>
+              <line x1="456" y1="118" x2="456" y2="242"/>
+              <line x1="474" y1="118" x2="474" y2="242"/>
+            </g>
+            <!-- Corner fastener bores -->
+            <circle cx="122" cy="96" r="5" fill="#0D2444" stroke="#F2F7FF" stroke-width="1.3"/>
+            <circle cx="518" cy="96" r="5" fill="#0D2444" stroke="#F2F7FF" stroke-width="1.3"/>
+            <circle cx="122" cy="264" r="5" fill="#0D2444" stroke="#F2F7FF" stroke-width="1.3"/>
+            <circle cx="518" cy="264" r="5" fill="#0D2444" stroke="#F2F7FF" stroke-width="1.3"/>
+            <!-- Dimension callout line -->
+            <line x1="110" y1="54" x2="530" y2="54" stroke="#FFD166" stroke-width="1.2"/>
+            <line x1="110" y1="46" x2="110" y2="76" stroke="#FFD166" stroke-width="1"/>
+            <line x1="530" y1="46" x2="530" y2="76" stroke="#FFD166" stroke-width="1"/>
+            <rect x="276" y="42" width="88" height="22" fill="#0D2444" stroke="#FFD166" stroke-width="1"/>
+            <text id="svgDimSpan" x="320" y="57" text-anchor="middle" fill="#FFD166" font-family="ui-monospace,monospace" font-size="12" font-weight="700">420.0 mm</text>
+          </svg>
+          <div class="bp-pins" id="pinLayer" aria-label="图纸零件标注点"></div>
+        </div>
+        <aside class="bp-inspector" aria-live="polite" aria-label="当前选中零件说明">
+          <div class="bp-inspector-head">
+            <span class="bp-part-badge" id="detailCode">P-01</span>
+            <h3 id="detailName">主框架外壳 / Main Chassis Frame</h3>
+            <span class="bp-status" id="detailStatus">VERIFIED</span>
+          </div>
+          <p id="detailNote"></p>
+          <dl class="bp-detail-specs" id="detailSpecs"></dl>
+        </aside>
+      </section>
+
+      <section class="bp-ledger-panel" aria-labelledby="ledgerTitle">
+        <div class="bp-panel-head">
+          <h2 id="ledgerTitle">SCHEDULE · 规格明细表</h2>
+          <span class="bp-coord" id="scheduleCount">6 / 6 PARTS</span>
+        </div>
+        <div class="bp-table-wrap">
+          <table class="bp-table">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">零件 / Component</th>
+                <th scope="col">子系统</th>
+                <th scope="col">尺寸</th>
+                <th scope="col">公差</th>
+                <th scope="col">状态</th>
+              </tr>
+            </thead>
+            <tbody id="scheduleBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bp-footer">
+      <span>DT-015 · Swiss Blueprint · Scoped token specimen (`[data-design-theme="swiss-blueprint"]`)</span>
+      <a href="../../styles/swiss-blueprint/README.md">查看风格规范 ↗</a>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+/* Original independent scoped Swiss Blueprint color tokens; no global :root, no React UI package mapping. */
+[data-design-theme="swiss-blueprint"]{
+ color-scheme:dark;
+ --ds-canvas:#0D2444;
+ --ds-surface:#132F57;
+ --ds-surface-raised:#1A3B6B;
+ --ds-sidebar:#0A1D38;
+ --ds-border:#4A78B5;
+ --ds-text:#F2F7FF;
+ --ds-text-secondary:#B8D2F2;
+ --ds-text-muted:#9EC0EA;
+ --ds-accent:#FFD166;
+ --ds-accent-text:#102038;
+ --ds-selected:#21487D;
+ --ds-success:#5EEAD4;
+ --ds-danger:#FF8A8A;
+ --ds-warning:#FFD166;
+ --ds-font-ui:system-ui,-apple-system,"Segoe UI","PingFang SC",sans-serif;
+ --ds-font-mono:ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+ --ds-radius-control:2px;
+ --ds-radius-panel:2px;
+ --ds-motion-fast:100ms;
+ --ds-motion-medium:180ms;
+}
+@media (prefers-reduced-motion:reduce){[data-design-theme="swiss-blueprint"]{--ds-motion-fast:0ms;--ds-motion-medium:0ms;}}

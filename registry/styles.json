@@ -278,6 +278,26 @@
       },
       "demo": "playground/trend-style-lab/index.html",
       "licenseNote": "Original tokens, visual grammar, CSS illustration and interaction code. Trend sources used as research, not copied vendor UI, fonts or assets."
+    },
+    {
+      "id": "swiss-blueprint",
+      "label": "Swiss Blueprint / Technical Spec",
+      "status": "design-proposal",
+      "origin": "Original cyanotype engineering drawing and Swiss technical grid direction; no borrowed CAD assets or vendor tokens",
+      "categories": [
+        "architecture-spec",
+        "hardware-docs",
+        "engineering-catalog",
+        "technical-blueprint"
+      ],
+      "styleProfile": "styles/swiss-blueprint/style.json",
+      "documentation": "styles/swiss-blueprint/README.md",
+      "tokens": {
+        "css": "styles/swiss-blueprint/tokens.css",
+        "json": "styles/swiss-blueprint/tokens.json"
+      },
+      "demo": "playground/swiss-blueprint/index.html",
+      "licenseNote": "Original tokens, visual grammar, SVG schematic and interactive specimen under root MIT license; no third-party assets copied."
     }
   ]
 }

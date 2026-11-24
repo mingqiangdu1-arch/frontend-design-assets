@@ -8,7 +8,7 @@
 
 ![素材登记与成熟度分布](docs/media/inventory.svg)
 
-## 14 套视觉风格
+## 15 套视觉风格
 
 [![基于真实主题 Token 的独立视觉风格图谱](docs/media/style-atlas.svg)](docs/gallery.md)
 
@@ -16,7 +16,7 @@
 
 ## 真实界面截图
 
-| Theme Atlas（14 套风格对照） | React 组件画廊（Precision Dark） |
+| Theme Atlas（15 套风格对照） | React 组件画廊（Precision Dark） |
 | :---: | :---: |
 | ![Theme Atlas 1280x800](docs/media/screenshots/style-atlas-1280x800.png) | ![React 组件画廊深色主题 1280x800](docs/media/screenshots/component-gallery-dark-1280x800.png) |
 | **空间构图原件（V0.64）** | **创意编辑微控件（V0.62）** |

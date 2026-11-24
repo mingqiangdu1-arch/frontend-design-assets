@@ -3,7 +3,7 @@
   "defaultStyleId": null,
   "stage": "assembly-research",
   "reuseKind": "composition-recipe",
-  "purpose": "Fourteen style-specific page architecture and interaction handoffs; not generated source code, live React compatibility or a full app.",
+  "purpose": "Fifteen style-specific page architecture and interaction handoffs; not generated source code, live React compatibility or a full app.",
   "policy": "Explicit style selection only; align context/template, inspect actual sources and never infer package compatibility.",
   "recipes": [
     {
@@ -719,6 +719,54 @@
           "purpose": "以具体信息支持故事",
           "layout": "3 个简短实体内容块",
           "behavior": "阅读材料说明与跳转实际来源"
+        }
+      ]
+    },
+    {
+      "styleId": "swiss-blueprint",
+      "structureId": "schematic-spec-sheet",
+      "title": "Technical blueprint and synchronized spec ledger",
+      "focus": "以图纸编号、剖面标注和等宽公差表组织高可信技术规格说明",
+      "typeRules": "几何无衬线标题搭配大写等宽图纸编号与 tabular-nums 尺寸刻度",
+      "spacing": "顶部图签条+左侧剖面示意板+右侧同步规格明细表；全线 2px 锐利边角与细线框格",
+      "motion": "100–180ms 干脆机械切换反馈，无持续漂浮或发光动画",
+      "responsive": "窄屏将剖面图与选中说明置顶，明细表支持横向滚动并保留按钮定位",
+      "a11y": "每个图纸标注点必须是原生可聚焦按钮，并与键盘可读的规格表双向同步",
+      "avoid": "不要加赛博霓虹辉光或低对比伪 CAD 装饰线掩盖核心参数",
+      "templateIds": [],
+      "relatedExperienceIds": [
+        "XC-005",
+        "XC-008"
+      ],
+      "componentHints": [],
+      "sections": [
+        {
+          "id": "titleblock",
+          "label": "图纸图签",
+          "purpose": "立即声明图号、比例、版本与当前单位",
+          "layout": "标题说明与 2×2 网格元数据表并排",
+          "behavior": "切换 mm / in 时同步刷新图签单位"
+        },
+        {
+          "id": "controls",
+          "label": "子系统筛选与视图控制",
+          "purpose": "聚焦目标子系统并按需开关辅助网格",
+          "layout": "单行紧凑等宽按钮条，当前激活项高对比反色",
+          "behavior": "按子系统筛选零件，切换公制/英制与网格"
+        },
+        {
+          "id": "plate",
+          "label": "交互式剖面图板",
+          "purpose": "直观建立空间位置与零件编号的对应关系",
+          "layout": "坐标网格底板 + 清晰线条图 + 编号标注按钮 + 选中详情卡",
+          "behavior": "点击或键盘回车选中编号，高亮并展示材料与公差"
+        },
+        {
+          "id": "schedule",
+          "label": "同步规格明细表",
+          "purpose": "提供不依赖视觉图形的可检索、可访问参数清单",
+          "layout": "等宽数字对齐表格，含 ID、子系统、尺寸、公差与审核状态",
+          "behavior": "点击行与图板标注双向同步选中，窄屏可横向滚动"
         }
       ]
     }

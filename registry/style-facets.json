@@ -632,6 +632,49 @@
       ],
       "caution": "不能伪造环保声明或借用未获授权的产品摄影",
       "preview": "playground/trend-style-lab/index.html?style=organic-tactile"
+    },
+    {
+      "id": "swiss-blueprint",
+      "asset": "DT-015",
+      "labelCN": "工程蓝图规格",
+      "layouts": [
+        "workspace",
+        "editorial"
+      ],
+      "materials": [
+        "technical",
+        "graphic"
+      ],
+      "interactions": [
+        "data",
+        "reading",
+        "filter"
+      ],
+      "density": "compact",
+      "devices": [
+        "desktop",
+        "responsive"
+      ],
+      "keywords": [
+        "工程蓝图",
+        "技术规格书",
+        "建筑制图",
+        "硬件文档",
+        "剖面图",
+        "规格表",
+        "swiss blueprint",
+        "technical spec",
+        "schematic",
+        "cyanotype"
+      ],
+      "summary": "深钴蓝晒图底色、细线坐标网格与琥珀色零件标注，面向硬件文档、工程规格与结构说明",
+      "dna": [
+        "图纸图签与坐标轴刻度",
+        "高对比粉笔白字与细线栅格",
+        "图纸标注点与规格表双向联动"
+      ],
+      "caution": "不要用装饰网格降低数字可读性，也不要把示意尺寸冒充真实工程公差；需提供键盘可访问的表格替代",
+      "preview": "playground/swiss-blueprint/index.html"
     }
   ]
 }

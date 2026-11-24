@@ -10,11 +10,11 @@ const styles=read("styles.json"),facets=read("style-facets.json");
 const components=read("components.json"),assets=read("assets.json");
 const ids=facets.entries.map(x=>x.id);
 
-test("all 14 theme facets match actual registered styles, tokens, assets and demo paths",()=>{
+test("all 15 theme facets match actual registered styles, tokens, assets and demo paths",()=>{
  assert.equal(styles.defaultStyleId,null);
  assert.equal(facets.defaultStyleId,null);
  assert.deepEqual(new Set(ids),new Set(styles.styles.map(s=>s.id)));
- assert.equal(validateRepo().styles,14);
+ assert.equal(validateRepo().styles,15);
  assert.equal(validateRepo().reactCompatible,4);
  assert.ok(facets.entries.every(x=>x.dna.length>=3));
 });
