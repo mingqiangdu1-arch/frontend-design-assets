@@ -1,0 +1,242 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.61.0",
+  "date": "2026-11-24",
+  "focus": "Original print pattern materials: two adjustable mathematical visual specimens, four static CSS/HTML atoms, four standalone SVGs.",
+  "previousAssetCount": 581,
+  "newAssetCount": 10,
+  "expectedAssetCount": 591,
+  "reactExportsAdded": 0,
+  "styleIdsAdded": 0,
+  "thirdPartyCodeCopied": false,
+  "externalMediaCopied": false,
+  "testSuitesAdded": 0,
+  "sourceFiles": [
+    "registry/material-expansion-v061.json",
+    "styles/primitives/v061/print-math.mjs",
+    "styles/primitives/v061/print-atoms.css",
+    "graphics/v061/orbit-filigree.svg",
+    "graphics/v061/quilt-compass.svg",
+    "graphics/v061/overprint-ridge.svg",
+    "graphics/v061/stipple-eclipse.svg",
+    "playground/print-patterns-v061/index.html",
+    "styles/primitives/v061/README.md",
+    "graphics/v061/README.md"
+  ],
+  "cssAtoms": [
+    {
+      "id": "FX-130",
+      "name": "Harmonic loop engraving / 谐波闭合线雕",
+      "className": "fx61-loop",
+      "source": "styles/primitives/v061/print-atoms.css",
+      "helper": "styles/primitives/v061/print-math.mjs",
+      "readme": "styles/primitives/v061/README.md",
+      "demo": "playground/print-patterns-v061/index.html",
+      "styleIds": [
+        "aether-orbit",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "portfolio"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "original-local-math-native-html-css-module",
+      "limitations": "非物理测量、防伪或图案编辑器。"
+    },
+    {
+      "id": "FX-131",
+      "name": "Ordered-threshold print field / 有序阈值点阵",
+      "className": "fx61-dither",
+      "source": "styles/primitives/v061/print-atoms.css",
+      "helper": "styles/primitives/v061/print-math.mjs",
+      "readme": "styles/primitives/v061/README.md",
+      "demo": "playground/print-patterns-v061/index.html",
+      "styleIds": [
+        "pixel-arcade",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "editorial"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "original-local-math-native-html-css-module",
+      "limitations": "不处理照片或用户上传数据；非印刷校色。"
+    },
+    {
+      "id": "FX-132",
+      "name": "Crossed ribbon tile / 交织带状纹样",
+      "className": "fx61-ribbon",
+      "source": "styles/primitives/v061/print-atoms.css",
+      "helper": null,
+      "readme": "styles/primitives/v061/README.md",
+      "demo": "playground/print-patterns-v061/index.html",
+      "styleIds": [
+        "neo-brutalist",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "brand-site",
+        "illustration"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "scoped-native-html-css",
+      "limitations": "装饰，不模拟实物织物或碰撞算法。"
+    },
+    {
+      "id": "FX-133",
+      "name": "Offset ink silhouette / 套印错位剪影",
+      "className": "fx61-offset",
+      "source": "styles/primitives/v061/print-atoms.css",
+      "helper": null,
+      "readme": "styles/primitives/v061/README.md",
+      "demo": "playground/print-patterns-v061/index.html",
+      "styleIds": [
+        "paper-rebellion",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "brand-site"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "scoped-native-html-css",
+      "limitations": "CSS 合成示意，非真实油墨校准。"
+    },
+    {
+      "id": "FX-134",
+      "name": "Pattern-keyed comparison bars / 纹理编码比较条",
+      "className": "fx61-chart",
+      "source": "styles/primitives/v061/print-atoms.css",
+      "helper": null,
+      "readme": "styles/primitives/v061/README.md",
+      "demo": "playground/print-patterns-v061/index.html",
+      "styleIds": [
+        "precision-dark",
+        "editorial-warm",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "analytics",
+        "workspace",
+        "documentation"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "scoped-native-html-css",
+      "limitations": "示例值虚构，真实数据须统一派生条宽及文本，非图表引擎。"
+    },
+    {
+      "id": "FX-135",
+      "name": "Line frequency proof / 排线密度样本册",
+      "className": "fx61-proof",
+      "source": "styles/primitives/v061/print-atoms.css",
+      "helper": null,
+      "readme": "styles/primitives/v061/README.md",
+      "demo": "playground/print-patterns-v061/index.html",
+      "styleIds": [
+        "editorial-warm",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "documentation",
+        "editorial"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "scoped-native-html-css",
+      "limitations": "非物理网点密度或印刷认证。"
+    }
+  ],
+  "originalSvg": [
+    {
+      "id": "VG-111",
+      "name": "Orbit filigree / 轨道丝纹",
+      "source": "graphics/v061/orbit-filigree.svg",
+      "readme": "graphics/v061/README.md",
+      "demo": "playground/print-patterns-v061/index.html",
+      "viewBox": "0 0 640 360",
+      "styleIds": [
+        "aether-orbit",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "creative-site",
+        "portfolio"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "original-independent-svg",
+      "limitations": "旋转椭圆装饰纹样，非天体数据。"
+    },
+    {
+      "id": "VG-112",
+      "name": "Quilt compass / 拼砖罗盘",
+      "source": "graphics/v061/quilt-compass.svg",
+      "readme": "graphics/v061/README.md",
+      "demo": "playground/print-patterns-v061/index.html",
+      "viewBox": "0 0 640 360",
+      "styleIds": [
+        "shape-expressive",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "creative-site",
+        "portfolio"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "original-independent-svg",
+      "limitations": "固定弧形拼版，非无缝生成器或真实罗盘。"
+    },
+    {
+      "id": "VG-113",
+      "name": "Overprint ridge / 套色山脊",
+      "source": "graphics/v061/overprint-ridge.svg",
+      "readme": "graphics/v061/README.md",
+      "demo": "playground/print-patterns-v061/index.html",
+      "viewBox": "0 0 640 360",
+      "styleIds": [
+        "paper-rebellion",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "creative-site",
+        "portfolio"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "original-independent-svg",
+      "limitations": "虚构山形与叠色，非真实地形。"
+    },
+    {
+      "id": "VG-114",
+      "name": "Stipple eclipse / 点纹蚀圆",
+      "source": "graphics/v061/stipple-eclipse.svg",
+      "readme": "graphics/v061/README.md",
+      "demo": "playground/print-patterns-v061/index.html",
+      "viewBox": "0 0 640 360",
+      "styleIds": [
+        "pixel-arcade",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "creative-site",
+        "portfolio"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "original-independent-svg",
+      "limitations": "装饰点纹剪影，非天文观测。"
+    }
+  ]
+}

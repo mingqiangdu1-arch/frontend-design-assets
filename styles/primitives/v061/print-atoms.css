@@ -1,0 +1,21 @@
+/* V0.61 original visual atoms, scoped selectors. */
+.fx61-loop,.fx61-dither,.fx61-ribbon,.fx61-offset,.fx61-chart,.fx61-proof{margin:0;min-width:0;padding:1rem;background:#f4e8d0;color:#213d3b;font:.85rem/1.55 system-ui,sans-serif;border:1px solid #9b9c8c}
+.fx61-loop svg,.fx61-dither canvas{display:block;width:100%;height:auto;box-sizing:border-box;border:1px solid currentColor;background:#f4e6c7}
+.fx61-dither canvas{image-rendering:pixelated}
+.fx61-loop label,.fx61-dither label{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem}
+.fx61-loop input,.fx61-dither input{accent-color:#275f55;max-width:100%}
+.fx61-loop input:focus-visible,.fx61-dither input:focus-visible{outline:3px solid #214a77;outline-offset:3px}
+.fx61-loop figcaption,.fx61-dither figcaption,.fx61-ribbon figcaption,.fx61-offset figcaption,.fx61-proof figcaption{margin:.6rem 0}
+.fx61-ribbon__field{min-height:12rem;background-color:#e7dcc9;background-image:repeating-linear-gradient(45deg,transparent 0 12px,#234f50 12px 16px,transparent 16px 32px),repeating-linear-gradient(-45deg,transparent 0 12px,#b45f48 12px 16px,transparent 16px 32px);border:1px solid #345956}
+.fx61-offset__field{position:relative;isolation:isolate;min-height:12rem;overflow:hidden;display:grid;place-items:center;border:1px solid #635b52}
+.fx61-offset__field::before,.fx61-offset__field::after{content:"";position:absolute;width:min(55%,13rem);aspect-ratio:1;clip-path:polygon(50% 0,100% 35%,81% 100%,19% 100%,0 35%);transform:translate(-12%,-5%) rotate(-12deg);background:#d45541}
+.fx61-offset__field::after{background:#214f65;mix-blend-mode:multiply;transform:translate(12%,5%) rotate(12deg)}
+.fx61-chart__row{display:grid;grid-template-columns:minmax(5rem,1fr) minmax(0,2.6fr) 3ch;gap:.5rem;align-items:center;margin:.65rem 0}
+.fx61-chart__bar{display:block;height:1.5rem;width:var(--fx61-value);border:1px solid #252e30;box-sizing:border-box}
+.fx61-chart__bar--stripe{background:repeating-linear-gradient(45deg,#1e3b3a 0 2px,#f4eddc 2px 6px)}
+.fx61-chart__bar--dot{background:#f4eddc radial-gradient(#1e3b3a 1.6px,transparent 1.8px) 0 0/8px 8px}
+.fx61-chart__bar--grid{background:repeating-linear-gradient(0deg,transparent 0 5px,#1e3b3a 5px 6px),repeating-linear-gradient(90deg,#f4eddc 0 5px,#1e3b3a 5px 6px)}
+.fx61-chart__value{font-variant-numeric:tabular-nums;text-align:right}
+.fx61-proof dl{margin:0;display:grid;grid-template-columns:minmax(5rem,1fr) minmax(0,2fr);gap:.5rem;align-items:center}
+.fx61-proof dd{margin:0;height:2.2rem;border:1px solid currentColor;background:repeating-linear-gradient(120deg,#4d3c37 0 1px,transparent 1px var(--fx61-step))}
+@media(forced-colors:active){.fx61-chart__bar{border:2px solid CanvasText}.fx61-loop input:focus-visible,.fx61-dither input:focus-visible{outline-color:Highlight}}

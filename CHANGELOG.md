@@ -1,3 +1,8 @@
+## 2026-11-24 · V0.61 original print and pattern primitives
+
+- Added FX-130..135 six original source materials and VG-111..114 four independent original SVGs. [Manifest](registry/material-expansion-v061.json) · [source](styles/primitives/v061/README.md) · [specimens](playground/print-patterns-v061/index.html).
+- 591 assets; no copied upstream code/media, new dependencies, React exports, theme or test framework. Pure math sanity checks only for new dynamic specimens; browser acceptance not claimed.
+
 ## 2026-11-24 · V0.60 procedural pattern, material and creative-control source expansion
 
 - Added eight commit-pinned reference entries REF-149..156 from six newly indexed sources (Flowshape, Vladstudio Patterns, Textures.js, Viberdy UI, React Colorful and Rough.js). Source files and license texts inspected; no code/media vendored.

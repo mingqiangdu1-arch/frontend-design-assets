@@ -23312,6 +23312,418 @@
         "instructions": "Read https://github.com/rough-stuff/rough/blob/56a2762171b1294d643501e8d14f120db6b27bd7/src/fillers/hachure-filler.ts and companion paths in registry/material-expansion-v060.json (REF-156); verify dependencies, licensing, accessibility and actual runtime in target project.",
         "limitations": "扫描线模块引用 hachure-fill；许可证及依赖需再核实，复杂多边形、洞及随机确定性需实测。"
       }
+    },
+    {
+      "id": "FX-130",
+      "type": "component",
+      "name": "Harmonic loop engraving / 谐波闭合线雕",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v061",
+        "original-source",
+        "print-pattern",
+        "fx61-loop"
+      ],
+      "aliases": [
+        "闭合曲线",
+        "谐波雕纹",
+        "harmonic loop"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored material; no third-party code, media or fonts copied.",
+      "styleIds": [
+        "aether-orbit",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "portfolio"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v061/print-atoms.css",
+      "details": "styles/primitives/v061/README.md",
+      "spec": "registry/material-expansion-v061.json",
+      "demo": "playground/print-patterns-v061/index.html",
+      "verified": "Structural source/path review; dynamic formulas sanity checked; no target runtime/browser/device/accessibility acceptance claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v061/print-atoms.css",
+        "stack": "Native HTML/CSS + local ES module",
+        "instructions": "Extract .fx61-loop and matching HTML in playground/print-patterns-v061/index.html; include styles/primitives/v061/print-math.mjs and call mountPrintAtoms.",
+        "limitations": "非物理测量、防伪或图案编辑器。"
+      }
+    },
+    {
+      "id": "FX-131",
+      "type": "component",
+      "name": "Ordered-threshold print field / 有序阈值点阵",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v061",
+        "original-source",
+        "print-pattern",
+        "fx61-dither"
+      ],
+      "aliases": [
+        "有序抖动",
+        "点阵印刷",
+        "ordered dither"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored material; no third-party code, media or fonts copied.",
+      "styleIds": [
+        "pixel-arcade",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "editorial"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v061/print-atoms.css",
+      "details": "styles/primitives/v061/README.md",
+      "spec": "registry/material-expansion-v061.json",
+      "demo": "playground/print-patterns-v061/index.html",
+      "verified": "Structural source/path review; dynamic formulas sanity checked; no target runtime/browser/device/accessibility acceptance claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v061/print-atoms.css",
+        "stack": "Native HTML/CSS + local ES module",
+        "instructions": "Extract .fx61-dither and matching HTML in playground/print-patterns-v061/index.html; include styles/primitives/v061/print-math.mjs and call mountPrintAtoms.",
+        "limitations": "不处理照片或用户上传数据；非印刷校色。"
+      }
+    },
+    {
+      "id": "FX-132",
+      "type": "component",
+      "name": "Crossed ribbon tile / 交织带状纹样",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v061",
+        "original-source",
+        "print-pattern",
+        "fx61-ribbon"
+      ],
+      "aliases": [
+        "交叉纹样",
+        "带状拼贴",
+        "ribbon tile"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored material; no third-party code, media or fonts copied.",
+      "styleIds": [
+        "neo-brutalist",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "brand-site",
+        "illustration"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v061/print-atoms.css",
+      "details": "styles/primitives/v061/README.md",
+      "spec": "registry/material-expansion-v061.json",
+      "demo": "playground/print-patterns-v061/index.html",
+      "verified": "Structural source/path review; dynamic formulas sanity checked; no target runtime/browser/device/accessibility acceptance claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v061/print-atoms.css",
+        "stack": "Native HTML/CSS",
+        "instructions": "Extract .fx61-ribbon and matching HTML in playground/print-patterns-v061/index.html.",
+        "limitations": "装饰，不模拟实物织物或碰撞算法。"
+      }
+    },
+    {
+      "id": "FX-133",
+      "type": "component",
+      "name": "Offset ink silhouette / 套印错位剪影",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v061",
+        "original-source",
+        "print-pattern",
+        "fx61-offset"
+      ],
+      "aliases": [
+        "套印错位",
+        "双色印刷",
+        "overprint"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored material; no third-party code, media or fonts copied.",
+      "styleIds": [
+        "paper-rebellion",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "brand-site"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v061/print-atoms.css",
+      "details": "styles/primitives/v061/README.md",
+      "spec": "registry/material-expansion-v061.json",
+      "demo": "playground/print-patterns-v061/index.html",
+      "verified": "Structural source/path review; dynamic formulas sanity checked; no target runtime/browser/device/accessibility acceptance claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v061/print-atoms.css",
+        "stack": "Native HTML/CSS",
+        "instructions": "Extract .fx61-offset and matching HTML in playground/print-patterns-v061/index.html.",
+        "limitations": "CSS 合成示意，非真实油墨校准。"
+      }
+    },
+    {
+      "id": "FX-134",
+      "type": "component",
+      "name": "Pattern-keyed comparison bars / 纹理编码比较条",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v061",
+        "original-source",
+        "print-pattern",
+        "fx61-chart"
+      ],
+      "aliases": [
+        "图表纹理",
+        "非颜色编码",
+        "pattern chart"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored material; no third-party code, media or fonts copied.",
+      "styleIds": [
+        "precision-dark",
+        "editorial-warm",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "analytics",
+        "workspace",
+        "documentation"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v061/print-atoms.css",
+      "details": "styles/primitives/v061/README.md",
+      "spec": "registry/material-expansion-v061.json",
+      "demo": "playground/print-patterns-v061/index.html",
+      "verified": "Structural source/path review; dynamic formulas sanity checked; no target runtime/browser/device/accessibility acceptance claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v061/print-atoms.css",
+        "stack": "Native HTML/CSS",
+        "instructions": "Extract .fx61-chart and matching HTML in playground/print-patterns-v061/index.html.",
+        "limitations": "示例值虚构，真实数据须统一派生条宽及文本，非图表引擎。"
+      }
+    },
+    {
+      "id": "FX-135",
+      "type": "component",
+      "name": "Line frequency proof / 排线密度样本册",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v061",
+        "original-source",
+        "print-pattern",
+        "fx61-proof"
+      ],
+      "aliases": [
+        "排线样本",
+        "线条密度",
+        "hatch swatch"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored material; no third-party code, media or fonts copied.",
+      "styleIds": [
+        "editorial-warm",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "documentation",
+        "editorial"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v061/print-atoms.css",
+      "details": "styles/primitives/v061/README.md",
+      "spec": "registry/material-expansion-v061.json",
+      "demo": "playground/print-patterns-v061/index.html",
+      "verified": "Structural source/path review; dynamic formulas sanity checked; no target runtime/browser/device/accessibility acceptance claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v061/print-atoms.css",
+        "stack": "Native HTML/CSS",
+        "instructions": "Extract .fx61-proof and matching HTML in playground/print-patterns-v061/index.html.",
+        "limitations": "非物理网点密度或印刷认证。"
+      }
+    },
+    {
+      "id": "VG-111",
+      "type": "component",
+      "name": "Orbit filigree / 轨道丝纹",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v061",
+        "original-source",
+        "print-pattern",
+        "orbit-filigree.svg"
+      ],
+      "aliases": [
+        "轨道丝纹",
+        "filigree"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored material; no third-party code, media or fonts copied.",
+      "styleIds": [
+        "aether-orbit",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "creative-site",
+        "portfolio"
+      ],
+      "dependencies": [],
+      "path": "graphics/v061/orbit-filigree.svg",
+      "details": "graphics/v061/README.md",
+      "spec": "registry/material-expansion-v061.json",
+      "demo": "playground/print-patterns-v061/index.html",
+      "verified": "Structural source/path review; dynamic formulas sanity checked; no target runtime/browser/device/accessibility acceptance claimed.",
+      "handoff": {
+        "entry": "graphics/v061/orbit-filigree.svg",
+        "stack": "Standalone SVG",
+        "instructions": "Use independent SVG with context-appropriate alt.",
+        "limitations": "旋转椭圆装饰纹样，非天体数据。"
+      }
+    },
+    {
+      "id": "VG-112",
+      "type": "component",
+      "name": "Quilt compass / 拼砖罗盘",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v061",
+        "original-source",
+        "print-pattern",
+        "quilt-compass.svg"
+      ],
+      "aliases": [
+        "拼砖罗盘",
+        "quilt compass"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored material; no third-party code, media or fonts copied.",
+      "styleIds": [
+        "shape-expressive",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "creative-site",
+        "portfolio"
+      ],
+      "dependencies": [],
+      "path": "graphics/v061/quilt-compass.svg",
+      "details": "graphics/v061/README.md",
+      "spec": "registry/material-expansion-v061.json",
+      "demo": "playground/print-patterns-v061/index.html",
+      "verified": "Structural source/path review; dynamic formulas sanity checked; no target runtime/browser/device/accessibility acceptance claimed.",
+      "handoff": {
+        "entry": "graphics/v061/quilt-compass.svg",
+        "stack": "Standalone SVG",
+        "instructions": "Use independent SVG with context-appropriate alt.",
+        "limitations": "固定弧形拼版，非无缝生成器或真实罗盘。"
+      }
+    },
+    {
+      "id": "VG-113",
+      "type": "component",
+      "name": "Overprint ridge / 套色山脊",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v061",
+        "original-source",
+        "print-pattern",
+        "overprint-ridge.svg"
+      ],
+      "aliases": [
+        "套色山脊",
+        "overprint ridge"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored material; no third-party code, media or fonts copied.",
+      "styleIds": [
+        "paper-rebellion",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "creative-site",
+        "portfolio"
+      ],
+      "dependencies": [],
+      "path": "graphics/v061/overprint-ridge.svg",
+      "details": "graphics/v061/README.md",
+      "spec": "registry/material-expansion-v061.json",
+      "demo": "playground/print-patterns-v061/index.html",
+      "verified": "Structural source/path review; dynamic formulas sanity checked; no target runtime/browser/device/accessibility acceptance claimed.",
+      "handoff": {
+        "entry": "graphics/v061/overprint-ridge.svg",
+        "stack": "Standalone SVG",
+        "instructions": "Use independent SVG with context-appropriate alt.",
+        "limitations": "虚构山形与叠色，非真实地形。"
+      }
+    },
+    {
+      "id": "VG-114",
+      "type": "component",
+      "name": "Stipple eclipse / 点纹蚀圆",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v061",
+        "original-source",
+        "print-pattern",
+        "stipple-eclipse.svg"
+      ],
+      "aliases": [
+        "点纹蚀圆",
+        "stipple eclipse"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored material; no third-party code, media or fonts copied.",
+      "styleIds": [
+        "pixel-arcade",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "creative-site",
+        "portfolio"
+      ],
+      "dependencies": [],
+      "path": "graphics/v061/stipple-eclipse.svg",
+      "details": "graphics/v061/README.md",
+      "spec": "registry/material-expansion-v061.json",
+      "demo": "playground/print-patterns-v061/index.html",
+      "verified": "Structural source/path review; dynamic formulas sanity checked; no target runtime/browser/device/accessibility acceptance claimed.",
+      "handoff": {
+        "entry": "graphics/v061/stipple-eclipse.svg",
+        "stack": "Standalone SVG",
+        "instructions": "Use independent SVG with context-appropriate alt.",
+        "limitations": "装饰点纹剪影，非天文观测。"
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",
