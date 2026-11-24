@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.2",
   "purpose": "Living cross-application, multi-style design asset repository; no repository-wide visual default.",
-  "updatedAt": "2026-11-23",
+  "updatedAt": "2026-11-24",
   "stageDefinitions": [
     "captured",
     "analyzed",
@@ -22109,6 +22109,446 @@
         "stack": "Original standalone 640x360 decorative SVG without data semantics",
         "instructions": "Reuse graphics/v057/interval-architecture.svg as a decorative/vector illustration with contextual alt or empty alt and inspect host display.",
         "limitations": "Decorative shapes, not numerical confidence intervals or an evidence chart."
+      }
+    },
+    {
+      "id": "FX-118",
+      "type": "component",
+      "name": "Floating object plinth / 实物悬浮陈列台",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v058",
+        "original-source",
+        "standalone-object-css",
+        "commerce-display",
+        "no-external-dependencies",
+        "fx58-plinth"
+      ],
+      "aliases": [
+        "商品悬浮台",
+        "object pedestal",
+        "CSS product hero"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Author-created semantic HTML/CSS; FX-120 contains one local optional native range helper. No third-party image, font or source code.",
+      "styleIds": [
+        "commerce-atelier",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "commerce",
+        "portfolio",
+        "brand-site"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v058/object-display.css",
+      "details": "styles/primitives/v058/README.md",
+      "spec": "registry/material-expansion-v058.json",
+      "demo": "playground/object-studies-v058/index.html",
+      "verified": "Source presence and scoped structure checked 2026-11-24; no real browser, production visual, accessibility or actual product specification verification claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v058/object-display.css",
+        "stack": "Scoped semantic HTML/CSS; no runtime dependency",
+        "instructions": "Extract only fx58-plinth from styles/primitives/v058/object-display.css and corresponding markup in playground/object-studies-v058/index.html; check host layout and actual alt/meaning.",
+        "limitations": "Visual CSS staging only, not 3D modeling, physical lighting or a storefront."
+      }
+    },
+    {
+      "id": "FX-119",
+      "type": "component",
+      "name": "Material finish ledger / 材质样张档案",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v058",
+        "original-source",
+        "standalone-object-css",
+        "commerce-display",
+        "no-external-dependencies",
+        "fx58-finish-ledger"
+      ],
+      "aliases": [
+        "工艺材质表",
+        "finish record",
+        "surface swatch index"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Author-created semantic HTML/CSS; FX-120 contains one local optional native range helper. No third-party image, font or source code.",
+      "styleIds": [
+        "commerce-atelier",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "commerce",
+        "product-specs",
+        "brand-site"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v058/object-display.css",
+      "details": "styles/primitives/v058/README.md",
+      "spec": "registry/material-expansion-v058.json",
+      "demo": "playground/object-studies-v058/index.html",
+      "verified": "Source presence and scoped structure checked 2026-11-24; no real browser, production visual, accessibility or actual product specification verification claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v058/object-display.css",
+        "stack": "Scoped semantic HTML/CSS; no runtime dependency",
+        "instructions": "Extract only fx58-finish-ledger from styles/primitives/v058/object-display.css and corresponding markup in playground/object-studies-v058/index.html; check host layout and actual alt/meaning.",
+        "limitations": "CSS swatches are illustrative approximations; no physical PBR, calibration or actual product variant selection."
+      }
+    },
+    {
+      "id": "FX-120",
+      "type": "component",
+      "name": "Native object zoom range / 原生滑杆局部放大",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v058",
+        "original-source",
+        "standalone-object-css",
+        "commerce-display",
+        "no-external-dependencies",
+        "fx58-zoom"
+      ],
+      "aliases": [
+        "产品放大",
+        "range zoom",
+        "preview scaling"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Author-created semantic HTML/CSS; FX-120 contains one local optional native range helper. No third-party image, font or source code.",
+      "styleIds": [
+        "commerce-atelier",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "commerce",
+        "portfolio",
+        "media-review"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v058/object-display.css",
+      "details": "styles/primitives/v058/README.md",
+      "spec": "registry/material-expansion-v058.json",
+      "demo": "playground/object-studies-v058/index.html",
+      "verified": "Source presence and scoped structure checked 2026-11-24; no real browser, production visual, accessibility or actual product specification verification claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v058/object-display.css",
+        "stack": "Scoped HTML/CSS and optional local JavaScript on native range",
+        "instructions": "Extract only fx58-zoom from styles/primitives/v058/object-display.css and corresponding markup in playground/object-studies-v058/index.html; include styles/primitives/v058/zoom.js for actual slider zoom; check host layout and actual alt/meaning.",
+        "limitations": "Native keyboard range plus optional scoped JavaScript; centered CSS scaling only, no panning, pointer-follow magnifier or increased image resolution."
+      }
+    },
+    {
+      "id": "FX-121",
+      "type": "component",
+      "name": "Fictional dimension callout / 概念尺寸标注图",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v058",
+        "original-source",
+        "standalone-object-css",
+        "commerce-display",
+        "no-external-dependencies",
+        "fx58-measure"
+      ],
+      "aliases": [
+        "尺寸标注",
+        "dimension callout",
+        "object measurement visual"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Author-created semantic HTML/CSS; FX-120 contains one local optional native range helper. No third-party image, font or source code.",
+      "styleIds": [
+        "commerce-atelier",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "commerce",
+        "product-specs",
+        "documentation"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v058/object-display.css",
+      "details": "styles/primitives/v058/README.md",
+      "spec": "registry/material-expansion-v058.json",
+      "demo": "playground/object-studies-v058/index.html",
+      "verified": "Source presence and scoped structure checked 2026-11-24; no real browser, production visual, accessibility or actual product specification verification claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v058/object-display.css",
+        "stack": "Scoped semantic HTML/CSS; no runtime dependency",
+        "instructions": "Extract only fx58-measure from styles/primitives/v058/object-display.css and corresponding markup in playground/object-studies-v058/index.html; check host layout and actual alt/meaning.",
+        "limitations": "Demo dimensions are invented and artwork is not true scale; not an engineering measurement or print specification."
+      }
+    },
+    {
+      "id": "FX-122",
+      "type": "component",
+      "name": "Matte glaze finish proof / 哑光釉面材质对照",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v058",
+        "original-source",
+        "standalone-object-css",
+        "commerce-display",
+        "no-external-dependencies",
+        "fx58-surface-proof"
+      ],
+      "aliases": [
+        "釉面与哑光",
+        "material finish comparison",
+        "procedural surface swatches"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Author-created semantic HTML/CSS; FX-120 contains one local optional native range helper. No third-party image, font or source code.",
+      "styleIds": [
+        "commerce-atelier",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "brand-site",
+        "commerce",
+        "portfolio"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v058/object-display.css",
+      "details": "styles/primitives/v058/README.md",
+      "spec": "registry/material-expansion-v058.json",
+      "demo": "playground/object-studies-v058/index.html",
+      "verified": "Source presence and scoped structure checked 2026-11-24; no real browser, production visual, accessibility or actual product specification verification claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v058/object-display.css",
+        "stack": "Scoped semantic HTML/CSS; no runtime dependency",
+        "instructions": "Extract only fx58-surface-proof from styles/primitives/v058/object-display.css and corresponding markup in playground/object-studies-v058/index.html; check host layout and actual alt/meaning.",
+        "limitations": "Pure illustrative procedural CSS, not real scanned surfaces or measured optical properties."
+      }
+    },
+    {
+      "id": "FX-123",
+      "type": "component",
+      "name": "Folded sleeve visual mock / 折页包装视觉模拟",
+      "stage": "reference-implemented",
+      "priority": "P0",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v058",
+        "original-source",
+        "standalone-object-css",
+        "commerce-display",
+        "no-external-dependencies",
+        "fx58-sleeve"
+      ],
+      "aliases": [
+        "包装视觉样张",
+        "faux packaging sleeve",
+        "CSS sleeve illusion"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Author-created semantic HTML/CSS; FX-120 contains one local optional native range helper. No third-party image, font or source code.",
+      "styleIds": [
+        "commerce-atelier",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "brand-site",
+        "commerce",
+        "portfolio"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v058/object-display.css",
+      "details": "styles/primitives/v058/README.md",
+      "spec": "registry/material-expansion-v058.json",
+      "demo": "playground/object-studies-v058/index.html",
+      "verified": "Source presence and scoped structure checked 2026-11-24; no real browser, production visual, accessibility or actual product specification verification claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v058/object-display.css",
+        "stack": "Scoped semantic HTML/CSS; no runtime dependency",
+        "instructions": "Extract only fx58-sleeve from styles/primitives/v058/object-display.css and corresponding markup in playground/object-studies-v058/index.html; check host layout and actual alt/meaning.",
+        "limitations": "CSS illustration, not a printable packaging dieline or manufacturing/cut specification."
+      }
+    },
+    {
+      "id": "VG-103",
+      "type": "component",
+      "name": "Ceramic desk lamp / 陶瓷桌灯概念矢量",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v058",
+        "original-source",
+        "transparent-original-svg",
+        "commerce-display",
+        "no-external-dependencies",
+        "ceramic-desk-lamp.svg"
+      ],
+      "aliases": [
+        "陶瓷台灯",
+        "original lamp vector",
+        "transparent object SVG"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Hand-authored original transparent SVG fictional object. No third-party media, brand images, fonts or script.",
+      "styleIds": [
+        "commerce-atelier",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "brand-site",
+        "commerce"
+      ],
+      "dependencies": [],
+      "path": "graphics/v058/ceramic-desk-lamp.svg",
+      "details": "graphics/v058/README.md",
+      "spec": "registry/material-expansion-v058.json",
+      "demo": "playground/object-studies-v058/index.html",
+      "verified": "Source presence and scoped structure checked 2026-11-24; no real browser, production visual, accessibility or actual product specification verification claimed.",
+      "handoff": {
+        "entry": "graphics/v058/ceramic-desk-lamp.svg",
+        "stack": "Original 640x480 standalone transparent SVG",
+        "instructions": "Use the standalone vector graphics/v058/ceramic-desk-lamp.svg with contextual meaningful alt or empty decorative alt; not manufactured products.",
+        "limitations": "Fictional original transparent vector, not an actual retail SKU, 3D model or photography."
+      }
+    },
+    {
+      "id": "VG-104",
+      "type": "component",
+      "name": "Tinted vial / 琥珀玻璃容器概念矢量",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v058",
+        "original-source",
+        "transparent-original-svg",
+        "commerce-display",
+        "no-external-dependencies",
+        "tinted-vial.svg"
+      ],
+      "aliases": [
+        "琥珀玻璃瓶",
+        "transparent vial art",
+        "fictional perfume vector"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Hand-authored original transparent SVG fictional object. No third-party media, brand images, fonts or script.",
+      "styleIds": [
+        "commerce-atelier",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "brand-site",
+        "commerce"
+      ],
+      "dependencies": [],
+      "path": "graphics/v058/tinted-vial.svg",
+      "details": "graphics/v058/README.md",
+      "spec": "registry/material-expansion-v058.json",
+      "demo": "playground/object-studies-v058/index.html",
+      "verified": "Source presence and scoped structure checked 2026-11-24; no real browser, production visual, accessibility or actual product specification verification claimed.",
+      "handoff": {
+        "entry": "graphics/v058/tinted-vial.svg",
+        "stack": "Original 640x480 standalone transparent SVG",
+        "instructions": "Use the standalone vector graphics/v058/tinted-vial.svg with contextual meaningful alt or empty decorative alt; not manufactured products.",
+        "limitations": "Fictional original vector, not a chemical/medical product, manufacturer image or physically correct refraction."
+      }
+    },
+    {
+      "id": "VG-105",
+      "type": "component",
+      "name": "Sound pod / 便携声音设备概念矢量",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v058",
+        "original-source",
+        "transparent-original-svg",
+        "commerce-display",
+        "no-external-dependencies",
+        "sound-pod.svg"
+      ],
+      "aliases": [
+        "声音设备插画",
+        "original sound pod",
+        "speaker-inspired vector"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Hand-authored original transparent SVG fictional object. No third-party media, brand images, fonts or script.",
+      "styleIds": [
+        "precision-dark",
+        "commerce-atelier"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "portfolio",
+        "commerce"
+      ],
+      "dependencies": [],
+      "path": "graphics/v058/sound-pod.svg",
+      "details": "graphics/v058/README.md",
+      "spec": "registry/material-expansion-v058.json",
+      "demo": "playground/object-studies-v058/index.html",
+      "verified": "Source presence and scoped structure checked 2026-11-24; no real browser, production visual, accessibility or actual product specification verification claimed.",
+      "handoff": {
+        "entry": "graphics/v058/sound-pod.svg",
+        "stack": "Original 640x480 standalone transparent SVG",
+        "instructions": "Use the standalone vector graphics/v058/sound-pod.svg with contextual meaningful alt or empty decorative alt; not manufactured products.",
+        "limitations": "Fictional original illustration, not an actual electronic device or real acoustic component."
+      }
+    },
+    {
+      "id": "VG-106",
+      "type": "component",
+      "name": "Folded notebook / 折页随记本概念矢量",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v058",
+        "original-source",
+        "transparent-original-svg",
+        "commerce-display",
+        "no-external-dependencies",
+        "folded-notebook.svg"
+      ],
+      "aliases": [
+        "折页随记本",
+        "field notebook illustration",
+        "folded paper product"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Hand-authored original transparent SVG fictional object. No third-party media, brand images, fonts or script.",
+      "styleIds": [
+        "editorial-warm",
+        "commerce-atelier"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "editorial",
+        "commerce"
+      ],
+      "dependencies": [],
+      "path": "graphics/v058/folded-notebook.svg",
+      "details": "graphics/v058/README.md",
+      "spec": "registry/material-expansion-v058.json",
+      "demo": "playground/object-studies-v058/index.html",
+      "verified": "Source presence and scoped structure checked 2026-11-24; no real browser, production visual, accessibility or actual product specification verification claimed.",
+      "handoff": {
+        "entry": "graphics/v058/folded-notebook.svg",
+        "stack": "Original 640x480 standalone transparent SVG",
+        "instructions": "Use the standalone vector graphics/v058/folded-notebook.svg with contextual meaningful alt or empty decorative alt; not manufactured products.",
+        "limitations": "Fictional vector artwork, not an existing published notebook, manufacturing or packaging dieline."
       }
     }
   ],

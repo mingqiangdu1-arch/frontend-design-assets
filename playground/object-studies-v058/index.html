@@ -1,0 +1,68 @@
+<!doctype html><html lang="zh-Hans">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>V0.58 · Object display material specimens</title>
+<link rel="stylesheet" href="../../styles/primitives/v058/object-display.css">
+<style>
+body{margin:0;background:#eff0ec;color:#273539;font:16px/1.65 system-ui}
+main{max-width:1160px;margin:auto;padding:clamp(1rem,3vw,2.3rem)}
+h1{font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.2}
+.intro{max-width:72ch;color:#536363}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:1rem}
+.sample{min-width:0;background:#fff;padding:1.25rem;border:1px solid #d7dbd6;border-radius:.8rem}
+.sample h2{font:700 .8rem/1.5 ui-monospace,monospace;color:#566875;margin:.1rem 0 1rem}
+.vectors{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:1rem}
+.vectors figure{margin:0;background:#fff;padding:.65rem;border:1px solid #d7dbd6;border-radius:.7rem}
+.vectors img{display:block;width:100%;height:auto;background:#f7f6f0}
+.vectors figcaption{font-size:.78rem;color:#64716a;padding:.45rem 0 0}
+</style></head><body><main>
+<h1>Object display studies · V0.58</h1>
+<p class="intro">六套独立的实物展示 HTML/CSS 视觉原件、局部原生 JS 放大交互和四幅原创透明 SVG 物件。产品、材质、尺寸均为虚构的教学示例；本页不是电商、制造或产品测量应用。</p>
+<section class="gallery" aria-label="Six original object presentation sources">
+<article class="sample"><h2>FX-118 · Floating display plinth</h2>
+<div class="fx58-plinth">
+<div class="fx58-plinth__stage"><img src="../../graphics/v058/ceramic-desk-lamp.svg" alt="虚构陶瓷桌灯，暖色圆润灯罩与赤陶底座"></div>
+<div class="fx58-plinth__meta"><div><h3>Forma / Table Light</h3><p>虚构造型 · Original object study</p></div><span class="fx58-plinth__index">01 / 04</span></div>
+</div></article>
+<article class="sample"><h2>FX-119 · Material finish ledger</h2>
+<section class="fx58-finish-ledger" aria-label="Three original surface approximations">
+<h3>Finish studies / 材质样张</h3><dl>
+<div class="fx58-finish-ledger__row"><dt><span aria-hidden="true" class="fx58-finish-ledger__sample" data-finish="clay"></span>陶土 / Clay</dt><dd>暖色渐变、人工生成的条纹，非实物照片</dd></div>
+<div class="fx58-finish-ledger__row"><dt><span aria-hidden="true" class="fx58-finish-ledger__sample" data-finish="alloy"></span>金属 / Alloy</dt><dd>平行丝纹，非金属粗糙度扫描数据</dd></div>
+<div class="fx58-finish-ledger__row"><dt><span aria-hidden="true" class="fx58-finish-ledger__sample" data-finish="linen"></span>织物 / Linen</dt><dd>程序化条纹，非真实布料色卡</dd></div>
+</dl></section></article>
+<article class="sample"><h2>FX-120 · Native zoom range</h2>
+<div class="fx58-zoom" data-fx58-zoom>
+<div class="fx58-zoom__frame"><img src="../../graphics/v058/tinted-vial.svg" alt="半透明琥珀色玻璃容器概念矢量"></div>
+<div class="fx58-zoom__tools"><label for="fx58-zoom-1">缩放预览</label>
+<input id="fx58-zoom-1" type="range" min="100" max="200" value="100" step="10" aria-label="预览图片放大百分比">
+<output for="fx58-zoom-1">100%</output></div>
+<p class="fx58-zoom__note">可用鼠标或键盘方向键操作；滑杆实际改变当前插画的 CSS 缩放，不产生额外图像细节。</p>
+</div></article>
+<article class="sample"><h2>FX-121 · Object dimension annotation</h2>
+<figure class="fx58-measure"><div class="fx58-measure__frame">
+<img src="../../graphics/v058/sound-pod.svg" alt="虚构圆角便携声音设备的正面矢量">
+<span aria-hidden="true" class="fx58-measure__height">120 mm</span>
+<span aria-hidden="true" class="fx58-measure__width">76 mm</span>
+</div><figcaption>虚构尺寸：高度 120 mm、宽度 76 mm；非按比例工程图，也非设备实测值。</figcaption></figure></article>
+<article class="sample"><h2>FX-122 · Matte / glaze finish proof</h2>
+<section class="fx58-surface-proof" aria-label="Two decorative material texture samples">
+<div class="fx58-surface-proof__panels">
+<figure><div class="fx58-surface-proof__chip" data-surface="matte" aria-hidden="true"></div><figcaption>Matte / 哑光</figcaption></figure>
+<figure><div class="fx58-surface-proof__chip" data-surface="glaze" aria-hidden="true"></div><figcaption>Glaze / 釉面</figcaption></figure>
+</div><p>纯 CSS 的假想纹理对照，不代表真实表面反射率、光照或色彩标准。</p>
+</section></article>
+<article class="sample"><h2>FX-123 · Folded package-sleeve illusion</h2>
+<div class="fx58-sleeve"><div class="fx58-sleeve__object" aria-hidden="true">
+<div class="fx58-sleeve__side"></div><div class="fx58-sleeve__flap"></div>
+<div class="fx58-sleeve__front"><span>FORM<br>01</span></div></div>
+<div><h3>Sleeve / 01</h3><p>原创 CSS 三面折页包装效果。</p><p>仅为实物展示视觉概念，不含实际印刷刀版或折叠工程数据。</p></div>
+</div></article>
+</section>
+<h2>Four independent transparent product-concept SVGs</h2>
+<section class="vectors" aria-label="Standalone fictional object illustrations">
+<figure><img src="../../graphics/v058/ceramic-desk-lamp.svg" alt="桌灯独立原创矢量"><figcaption>VG-103 · Ceramic desk lamp</figcaption></figure>
+<figure><img src="../../graphics/v058/tinted-vial.svg" alt="玻璃容器独立原创矢量"><figcaption>VG-104 · Tinted vial</figcaption></figure>
+<figure><img src="../../graphics/v058/sound-pod.svg" alt="声音设备独立原创矢量"><figcaption>VG-105 · Sound pod</figcaption></figure>
+<figure><img src="../../graphics/v058/folded-notebook.svg" alt="折页随记本独立原创矢量"><figcaption>VG-106 · Folded notebook</figcaption></figure>
+</section></main>
+<script src="../../styles/primitives/v058/zoom.js"></script></body></html>

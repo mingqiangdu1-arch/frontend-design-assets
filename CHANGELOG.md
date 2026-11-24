@@ -1,3 +1,11 @@
+
+## 2026-11-24 · V0.58 original object-display CSS, native preview zoom, and independent transparent illustrations
+
+- Added **six original selectively extractable CSS/HTML visual materials** `FX-118..123`: floating product plinth, labeled material finish ledger, actually operable native range image zoom (optional local JS), fictional dimension callout, matte/glaze CSS material pair and faux-3D packaging sleeve.
+- Added **four hand-authored original standalone transparent SVGs** `VG-103..106`: ceramic desk lamp, tinted vial, portable sound pod and folded notebook. All are fictional concepts rather than real retail products or manufacturer photography.
+- [Version manifest](registry/material-expansion-v058.json) · [real CSS/JS sources](styles/primitives/v058/README.md) · [SVG files](graphics/v058/README.md) · [standalone semantic gallery](playground/object-studies-v058/index.html). Registry **553 → 563**.
+- No new theme, third-party image/font/code, React exports, storefront, stock API, physical PBR material, product validation, engineering specification or testing infrastructure. Source and path consistency checks are not production browser, contrast or accessibility certification.
+
 # Changelog
 
 ## 2026-11-23 · V0.57 original semantic analytics micro-visualizations and decorative vectors

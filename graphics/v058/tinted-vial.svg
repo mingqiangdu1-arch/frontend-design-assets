@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title desc">
+<title id="title">Original tinted glass vessel concept</title><desc id="desc">An original fictional amber tinted glass vial with layered translucent surfaces and a dark stopper, on a transparent background.</desc>
+<defs>
+<linearGradient id="glass" x1="0" y1="0" x2="1" y2=".2"><stop stop-color="#b46e3b" stop-opacity=".85"/><stop offset=".18" stop-color="#f1c88d" stop-opacity=".48"/><stop offset=".68" stop-color="#ae6b3b" stop-opacity=".74"/><stop offset="1" stop-color="#75492f" stop-opacity=".84"/></linearGradient>
+<linearGradient id="cap" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#172c30"/><stop offset=".5" stop-color="#546a6b"/><stop offset="1" stop-color="#192b30"/></linearGradient>
+</defs>
+<ellipse cx="320" cy="428" rx="145" ry="20" fill="#3d2c21" opacity=".13"/>
+<rect x="270" y="55" width="101" height="79" rx="10" fill="url(#cap)" stroke="#142a2c" stroke-width="4"/>
+<rect x="264" y="73" width="112" height="15" rx="3" fill="#708281" opacity=".42"/>
+<rect x="281" y="133" width="77" height="28" fill="#d9b789" opacity=".8"/>
+<path d="M253 157H386C406 157 420 172 420 193V387C420 406 405 417 385 417H253C228 417 219 399 219 379V194C219 172 230 157 253 157Z" fill="url(#glass)" stroke="#9a623d" stroke-width="5"/>
+<path d="M253 171V383C253 398 266 404 281 404" fill="none" stroke="#fff4d3" stroke-width="17" stroke-linecap="round" opacity=".32"/>
+<path d="M374 174V387" fill="none" stroke="#633b28" stroke-width="17" opacity=".34"/>
+<rect x="255" y="228" width="130" height="118" rx="2" fill="#eee4c7" opacity=".9"/>
+<rect x="265" y="240" width="110" height="94" fill="none" stroke="#b49c78" stroke-width="2"/>
+<path d="M286 271H354M286 285H354M286 300H335" fill="none" stroke="#846b54" stroke-width="4" stroke-linecap="round" opacity=".76"/>
+<circle cx="322" cy="318" r="7" fill="#9e6c4e"/>
+</svg>

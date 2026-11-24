@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title desc">
+<title id="title">Original fold-out notebook concept</title><desc id="desc">An original fictional accordion-fold field notebook with an olive cover and ivory paper leaves, drawn with flat vector layers.</desc>
+<defs><linearGradient id="paper" x1="0" y1="0" x2="1" y2=".6"><stop stop-color="#fff8e9"/><stop offset="1" stop-color="#d5c6ae"/></linearGradient>
+<linearGradient id="cover" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7b8b65"/><stop offset="1" stop-color="#354d42"/></linearGradient></defs>
+<ellipse cx="328" cy="420" rx="201" ry="22" fill="#3b4638" opacity=".14"/>
+<path d="M124 135L259 87 388 154 264 383 124 310Z" fill="#c7b99d" stroke="#96886e" stroke-width="5"/>
+<path d="M246 94L397 123 495 307 356 389 244 294Z" fill="url(#paper)" stroke="#b8a78a" stroke-width="5"/>
+<path d="M256 108L392 141 467 301 352 369 252 285Z" fill="#f0e6d2"/>
+<path d="M255 108L256 285 352 369 392 141" fill="none" stroke="#b7a88d" stroke-width="3"/>
+<path d="M158 135L292 117 343 320 216 385 149 285Z" fill="url(#cover)" stroke="#354d42" stroke-width="5"/>
+<path d="M188 159L287 146 316 305 224 352 177 271Z" fill="none" stroke="#b7c4a3" opacity=".58" stroke-width="3"/>
+<path d="M201 179L283 168M208 201L288 189M215 223L292 211" stroke="#a9b7a0" stroke-width="4" opacity=".6"/>
+<circle cx="257" cy="295" r="21" fill="#d1b88b"/><circle cx="257" cy="295" r="12" fill="#596e5e"/>
+<path d="M423 194L450 258M405 206L434 271" stroke="#c6b79a" stroke-width="4" stroke-linecap="round"/>
+</svg>

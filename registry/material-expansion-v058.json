@@ -1,0 +1,246 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.58.0",
+  "date": "2026-11-24",
+  "focus": "Six original object/merchandise presentation HTML/CSS specimens (one with a native keyboard-operable zoom slider and optional local JS) plus four original fictional transparent SVG product concepts; not a commerce app, PBR model, physical measurement or manufacturing template.",
+  "previousAssetCount": 553,
+  "newAssetCount": 10,
+  "expectedAssetCount": 563,
+  "reactExportsAdded": 0,
+  "styleIdsAdded": 0,
+  "thirdPartyCodeCopied": false,
+  "externalMediaCopied": false,
+  "testSuitesAdded": 0,
+  "sourceFiles": [
+    "registry/material-expansion-v058.json",
+    "styles/primitives/v058/object-display.css",
+    "styles/primitives/v058/zoom.js",
+    "styles/primitives/v058/README.md",
+    "playground/object-studies-v058/index.html",
+    "graphics/v058/README.md",
+    "graphics/v058/ceramic-desk-lamp.svg",
+    "graphics/v058/tinted-vial.svg",
+    "graphics/v058/sound-pod.svg",
+    "graphics/v058/folded-notebook.svg"
+  ],
+  "cssAtoms": [
+    {
+      "id": "FX-118",
+      "name": "Floating object plinth / 实物悬浮陈列台",
+      "className": "fx58-plinth",
+      "source": "styles/primitives/v058/object-display.css",
+      "readme": "styles/primitives/v058/README.md",
+      "demo": "playground/object-studies-v058/index.html",
+      "helper": null,
+      "styleIds": [
+        "commerce-atelier",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "commerce",
+        "portfolio",
+        "brand-site"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "scoped-html-css",
+      "limitations": "Visual CSS staging only, not 3D modeling, physical lighting or a storefront."
+    },
+    {
+      "id": "FX-119",
+      "name": "Material finish ledger / 材质样张档案",
+      "className": "fx58-finish-ledger",
+      "source": "styles/primitives/v058/object-display.css",
+      "readme": "styles/primitives/v058/README.md",
+      "demo": "playground/object-studies-v058/index.html",
+      "helper": null,
+      "styleIds": [
+        "commerce-atelier",
+        "editorial-warm"
+      ],
+      "applicationContexts": [
+        "commerce",
+        "product-specs",
+        "brand-site"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "scoped-html-css",
+      "limitations": "CSS swatches are illustrative approximations; no physical PBR, calibration or actual product variant selection."
+    },
+    {
+      "id": "FX-120",
+      "name": "Native object zoom range / 原生滑杆局部放大",
+      "className": "fx58-zoom",
+      "source": "styles/primitives/v058/object-display.css",
+      "readme": "styles/primitives/v058/README.md",
+      "demo": "playground/object-studies-v058/index.html",
+      "helper": "styles/primitives/v058/zoom.js",
+      "styleIds": [
+        "commerce-atelier",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "commerce",
+        "portfolio",
+        "media-review"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-range-html-css-opt-in-local-js",
+      "limitations": "Native keyboard range plus optional scoped JavaScript; centered CSS scaling only, no panning, pointer-follow magnifier or increased image resolution."
+    },
+    {
+      "id": "FX-121",
+      "name": "Fictional dimension callout / 概念尺寸标注图",
+      "className": "fx58-measure",
+      "source": "styles/primitives/v058/object-display.css",
+      "readme": "styles/primitives/v058/README.md",
+      "demo": "playground/object-studies-v058/index.html",
+      "helper": null,
+      "styleIds": [
+        "commerce-atelier",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "commerce",
+        "product-specs",
+        "documentation"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "scoped-html-css",
+      "limitations": "Demo dimensions are invented and artwork is not true scale; not an engineering measurement or print specification."
+    },
+    {
+      "id": "FX-122",
+      "name": "Matte glaze finish proof / 哑光釉面材质对照",
+      "className": "fx58-surface-proof",
+      "source": "styles/primitives/v058/object-display.css",
+      "readme": "styles/primitives/v058/README.md",
+      "demo": "playground/object-studies-v058/index.html",
+      "helper": null,
+      "styleIds": [
+        "commerce-atelier",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "brand-site",
+        "commerce",
+        "portfolio"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "scoped-html-css",
+      "limitations": "Pure illustrative procedural CSS, not real scanned surfaces or measured optical properties."
+    },
+    {
+      "id": "FX-123",
+      "name": "Folded sleeve visual mock / 折页包装视觉模拟",
+      "className": "fx58-sleeve",
+      "source": "styles/primitives/v058/object-display.css",
+      "readme": "styles/primitives/v058/README.md",
+      "demo": "playground/object-studies-v058/index.html",
+      "helper": null,
+      "styleIds": [
+        "commerce-atelier",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "brand-site",
+        "commerce",
+        "portfolio"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "scoped-html-css",
+      "limitations": "CSS illustration, not a printable packaging dieline or manufacturing/cut specification."
+    }
+  ],
+  "originalSvg": [
+    {
+      "id": "VG-103",
+      "name": "Ceramic desk lamp / 陶瓷桌灯概念矢量",
+      "source": "graphics/v058/ceramic-desk-lamp.svg",
+      "readme": "graphics/v058/README.md",
+      "demo": "playground/object-studies-v058/index.html",
+      "viewBox": "0 0 640 480",
+      "styleIds": [
+        "commerce-atelier",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "brand-site",
+        "commerce"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-transparent-svg",
+      "limitations": "Fictional original transparent vector, not an actual retail SKU, 3D model or photography."
+    },
+    {
+      "id": "VG-104",
+      "name": "Tinted vial / 琥珀玻璃容器概念矢量",
+      "source": "graphics/v058/tinted-vial.svg",
+      "readme": "graphics/v058/README.md",
+      "demo": "playground/object-studies-v058/index.html",
+      "viewBox": "0 0 640 480",
+      "styleIds": [
+        "commerce-atelier",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "brand-site",
+        "commerce"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-transparent-svg",
+      "limitations": "Fictional original vector, not a chemical/medical product, manufacturer image or physically correct refraction."
+    },
+    {
+      "id": "VG-105",
+      "name": "Sound pod / 便携声音设备概念矢量",
+      "source": "graphics/v058/sound-pod.svg",
+      "readme": "graphics/v058/README.md",
+      "demo": "playground/object-studies-v058/index.html",
+      "viewBox": "0 0 640 480",
+      "styleIds": [
+        "precision-dark",
+        "commerce-atelier"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "portfolio",
+        "commerce"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-transparent-svg",
+      "limitations": "Fictional original illustration, not an actual electronic device or real acoustic component."
+    },
+    {
+      "id": "VG-106",
+      "name": "Folded notebook / 折页随记本概念矢量",
+      "source": "graphics/v058/folded-notebook.svg",
+      "readme": "graphics/v058/README.md",
+      "demo": "playground/object-studies-v058/index.html",
+      "viewBox": "0 0 640 480",
+      "styleIds": [
+        "editorial-warm",
+        "commerce-atelier"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "editorial",
+        "commerce"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-original-transparent-svg",
+      "limitations": "Fictional vector artwork, not an existing published notebook, manufacturing or packaging dieline."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title desc">
+<title id="title">Original ceramic desk lamp concept</title><desc id="desc">An original fictional sculptural desk lamp, ivory shade and terracotta base, drawn from independent vector shapes on a transparent background.</desc>
+<defs><linearGradient id="shade" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff4da"/><stop offset=".55" stop-color="#f0dfbf"/><stop offset="1" stop-color="#c8b79d"/></linearGradient>
+<linearGradient id="clay" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e2b39a"/><stop offset=".55" stop-color="#b87254"/><stop offset="1" stop-color="#8e5846"/></linearGradient></defs>
+<ellipse cx="316" cy="425" rx="180" ry="18" fill="#44352f" opacity=".13"/>
+<path d="M296 198H343V333H296Z" fill="#aa7b63"/><path d="M300 199H315V333H300Z" fill="#d1a58a"/>
+<path d="M215 318C231 293 261 289 277 272C289 256 287 234 288 227H352C352 264 359 284 399 305C433 324 444 373 413 393C366 426 251 427 209 397C180 375 185 344 215 318Z" fill="url(#clay)" stroke="#8d594b" stroke-width="4"/>
+<path d="M247 333C225 354 224 379 254 393" fill="none" stroke="#efc3a8" stroke-width="14" opacity=".6" stroke-linecap="round"/>
+<path d="M211 190C229 115 267 75 316 76C375 76 406 119 428 190Z" fill="url(#shade)" stroke="#ae9e84" stroke-width="4"/>
+<ellipse cx="320" cy="190" rx="108" ry="25" fill="#ebd9b7" stroke="#af9b79" stroke-width="4"/>
+<ellipse cx="320" cy="190" rx="77" ry="12" fill="#d4ae75" opacity=".72"/>
+<path d="M263 104C276 88 289 84 300 82" fill="none" stroke="#fff9e8" stroke-width="12" stroke-linecap="round" opacity=".55"/>
+<path d="M320 77V65" stroke="#9b755c" stroke-width="6" stroke-linecap="round"/><circle cx="320" cy="59" r="12" fill="#b8866a"/>
+</svg>

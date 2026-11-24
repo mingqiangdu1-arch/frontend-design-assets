@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title desc">
+<title id="title">Original pocket sound pod concept</title><desc id="desc">A fictional rounded portable audio object in blue slate enamel, circular grille and a single accent dial, with transparent exterior.</desc>
+<defs><linearGradient id="shell" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a3c2cb"/><stop offset=".45" stop-color="#54879a"/><stop offset="1" stop-color="#244b64"/></linearGradient>
+<linearGradient id="face" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#304658"/><stop offset="1" stop-color="#122b3e"/></linearGradient>
+<pattern id="mesh" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="7" cy="7" r="2" fill="#7b9baa" opacity=".76"/></pattern></defs>
+<ellipse cx="321" cy="435" rx="142" ry="16" fill="#304858" opacity=".14"/>
+<rect x="188" y="90" width="262" height="329" rx="100" fill="url(#shell)" stroke="#274e63" stroke-width="5"/>
+<path d="M221 117C247 92 283 102 303 102" stroke="#cbe0df" opacity=".65" stroke-width="12" fill="none" stroke-linecap="round"/>
+<circle cx="319" cy="263" r="112" fill="url(#face)" stroke="#c6dbda" stroke-width="7"/>
+<circle cx="319" cy="263" r="95" fill="url(#mesh)" stroke="#6f9aac" stroke-width="3"/>
+<circle cx="319" cy="263" r="37" fill="#24495c" stroke="#a5bec4" stroke-width="5"/>
+<circle cx="319" cy="263" r="12" fill="#d1e1df"/>
+<circle cx="319" cy="118" r="17" fill="#dda977" stroke="#a67b53" stroke-width="4"/>
+<path d="M319 106V117" stroke="#705640" stroke-width="4" stroke-linecap="round"/>
+<path d="M258 387H378" stroke="#d1e4df" stroke-width="7" stroke-linecap="round" opacity=".6"/>
+</svg>

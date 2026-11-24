@@ -4,6 +4,13 @@
 
 **任务需要可重复执行的方法时**：先查看 [Frontend Agent Skills](.agents/skills/README.md)，按具体任务只加载其中一项 `SKILL.md`；本 CATALOG 仍负责素材和源码定位，不把技能当作已实现组件。
 
+## V0.58 · 商品及实物陈列视觉原件
+
+- [V0.58 机器索引](registry/material-expansion-v058.json) · [可提取 CSS/JS](styles/primitives/v058/README.md) · [6 个独立语义示例](playground/object-studies-v058/index.html) · [原创透明 SVG](graphics/v058/README.md)。
+- `FX-118..123`：独立悬浮陈列台、材质档案、键盘可操作的原生 range 缩放控件、尺寸标注框、哑光与釉面对比、CSS 折页包装假体。`VG-103..106`：陶瓷桌灯、琥珀玻璃容器、便携声音设备、折页随记本四幅独立原创 SVG。
+- 适合品牌、作品集、实物陈列、商品详情视觉探索；FX-120 使用局部 `zoom.js` 控制 CSS 图片缩放，其他原件不需要 JS。尺寸/材质/包装及产品概念全部虚构，既非商品后端也非真实 PBR 或工业设计打样。
+
+
 ## V0.57 · 原创分析图表原件与装饰性矢量
 
 - [原件索引](registry/material-expansion-v057.json) · [CSS/HTML 源码](styles/primitives/v057/analytical-atoms.css) · [含数据说明的独立示例](playground/analytics-v057/index.html) · [无数据语义 SVG](graphics/v057/README.md)。
