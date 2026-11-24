@@ -1,0 +1,179 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.64.0",
+  "date": "2026-11-24",
+  "focus": "Six original independently extractable functional spatial composition atoms; no additional decorative filler or editor app.",
+  "previousAssetCount": 605,
+  "newAssetCount": 6,
+  "expectedAssetCount": 611,
+  "reactExportsAdded": 0,
+  "styleIdsAdded": 0,
+  "thirdPartyCodeCopied": false,
+  "externalMediaCopied": false,
+  "testSuitesAdded": 0,
+  "sourceFiles": [
+    "registry/material-expansion-v064.json",
+    "styles/primitives/v064/spatial-model.mjs",
+    "styles/primitives/v064/spatial-atoms.css",
+    "playground/spatial-composition-v064/index.html",
+    "styles/primitives/v064/README.md"
+  ],
+  "cssAtoms": [
+    {
+      "id": "FX-142",
+      "name": "Independent seeded composition / 双种子构图样本",
+      "className": "fx64-seed",
+      "mode": "seed",
+      "source": "styles/primitives/v064/spatial-atoms.css",
+      "helper": "styles/primitives/v064/spatial-model.mjs",
+      "readme": "styles/primitives/v064/README.md",
+      "demo": "playground/spatial-composition-v064/index.html",
+      "styleIds": [
+        "editorial-warm",
+        "type-led-minimal",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "workspace",
+        "editorial"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-html-css-local-es-module",
+      "designContract": "两个可输入种子独立生成网格比例与六个视觉块顺序；单独递增任一 seed 不改变另一个结果。",
+      "limitations": "固定六块与四列三行，非任意文档排版、内容生成、拖拽或布局导出。",
+      "distinctFrom": "REF-157 研究转为独立原创简化原件；PR-012 是方向简报，FX-085 是数学图形。"
+    },
+    {
+      "id": "FX-143",
+      "name": "Offset typographic staircase / 错阶文字构图",
+      "className": "fx64-type",
+      "mode": "type",
+      "source": "styles/primitives/v064/spatial-atoms.css",
+      "helper": "styles/primitives/v064/spatial-model.mjs",
+      "readme": "styles/primitives/v064/README.md",
+      "demo": "playground/spatial-composition-v064/index.html",
+      "styleIds": [
+        "type-led-minimal",
+        "paper-rebellion",
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "brand-site",
+        "creative-site"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-html-css-local-es-module",
+      "designContract": "真实 DOM 三行文字通过有界水平偏移形成可调阶梯构图，保持阅读顺序。",
+      "limitations": "固定示例文字；非真实字体轮廓变形、CJK 自动断行或任意包络编辑。",
+      "distinctFrom": "REF-158/159 是轮廓几何；此项不需要字体解析且保留 DOM。"
+    },
+    {
+      "id": "FX-144",
+      "name": "Curved media selection rail / 弧形媒体选择轨",
+      "className": "fx64-arc",
+      "mode": "arc",
+      "source": "styles/primitives/v064/spatial-atoms.css",
+      "helper": "styles/primitives/v064/spatial-model.mjs",
+      "readme": "styles/primitives/v064/README.md",
+      "demo": "playground/spatial-composition-v064/index.html",
+      "styleIds": [
+        "aether-orbit",
+        "shape-expressive",
+        "liquid-layer"
+      ],
+      "applicationContexts": [
+        "portfolio",
+        "creative-site",
+        "brand-site"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-html-css-local-es-module",
+      "designContract": "五个可聚焦原生按钮，点击或键盘激活改变选中卡片与其他卡片的弧形偏移、旋转，输出名称。",
+      "limitations": "固定五项原创 CSS 色块；非无限滚动、3D、WebGL、媒体下载或播放器。",
+      "distinctFrom": "REF-162 的 WebGL 轨道简化为可操作 CSS 选中构图；不同于环形命令菜单。"
+    },
+    {
+      "id": "FX-145",
+      "name": "Inset-aware artboard fit / 遮挡感知画板适配",
+      "className": "fx64-fit",
+      "mode": "fit",
+      "source": "styles/primitives/v064/spatial-atoms.css",
+      "helper": "styles/primitives/v064/spatial-model.mjs",
+      "readme": "styles/primitives/v064/README.md",
+      "demo": "playground/spatial-composition-v064/index.html",
+      "styleIds": [
+        "precision-dark",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "workspace",
+        "developer-tool",
+        "creative-site"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-html-css-local-es-module",
+      "designContract": "改变左侧工具面板的模拟遮挡比例，按剩余视口实时计算画板居中与缩放；ResizeObserver 跟随容器。",
+      "limitations": "固定单画板、只缩小不放大；无拖拽、滚轮、真实浮动工具窗或无限画布。",
+      "distinctFrom": "IP-018 已有一般 pan/zoom；此项专门补充遮挡边距 fit。"
+    },
+    {
+      "id": "FX-146",
+      "name": "Explicit node-to-source linking / 显式元素源码联动",
+      "className": "fx64-linked",
+      "mode": "link",
+      "source": "styles/primitives/v064/spatial-atoms.css",
+      "helper": "styles/primitives/v064/spatial-model.mjs",
+      "readme": "styles/primitives/v064/README.md",
+      "demo": "playground/spatial-composition-v064/index.html",
+      "styleIds": [
+        "precision-dark",
+        "signal-noir",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "developer-tool",
+        "workspace",
+        "documentation"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-html-css-local-es-module",
+      "designContract": "固定三个 SVG 元素与源码标签，通过两组原生按钮双向选择，统一高亮状态与名称输出。",
+      "limitations": "显式固定 ID 映射，不解析任意源码、不编辑 SVG、不提供真实 source map 或编译器。",
+      "distinctFrom": "REF-164 提供真实复杂映射，本项仅为可提取联动模式，不重复通用属性检查器。"
+    },
+    {
+      "id": "FX-147",
+      "name": "Pinned ribbon deformation / 固定端带状形变",
+      "className": "fx64-ribbon",
+      "mode": "ribbon",
+      "source": "styles/primitives/v064/spatial-atoms.css",
+      "helper": "styles/primitives/v064/spatial-model.mjs",
+      "readme": "styles/primitives/v064/README.md",
+      "demo": "playground/spatial-composition-v064/index.html",
+      "styleIds": [
+        "liquid-layer",
+        "aether-orbit",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "illustration",
+        "portfolio"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-html-css-local-es-module",
+      "designContract": "有界滑杆调整 SVG 二次曲线带状中部偏移，顶部/底部端点保持固定。",
+      "limitations": "手动几何样本，无滚动驱动、弹簧动力学、纹理变形或 GPU 渲染。",
+      "distinctFrom": "REF-161 是 WebGL 弹性滚动；本项是原创低成本几何原件。"
+    }
+  ],
+  "originalSvg": []
+}

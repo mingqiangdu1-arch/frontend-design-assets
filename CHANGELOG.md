@@ -1,3 +1,8 @@
+## 2026-11-24 · V0.64 original spatial composition atoms
+
+- Added FX-142..147 six original independently usable controls and visual atoms: independent seeded composition, stepped DOM typography, curved media selection rail, inset-aware artboard fit, explicit node-source linking, pinned ribbon deformation. [Manifest](registry/material-expansion-v064.json) · [source notes](styles/primitives/v064/README.md) · [specimens](playground/spatial-composition-v064/index.html).
+- 611 total entries; no third-party source/media, extra SVG filler, dependencies, themes, React exports or test framework. Ten pure-model checks; no new browser acceptance claimed.
+
 ## 2026-11-24 · V0.63 spatial, typographic and editor source expansion
 
 - Added REF-157..164 from six newly indexed repositories: Grid System, Bouffont, Magic Spells Split Text, ElasticGridScroll, Infinite Circular WebGL Gallery, xsvg Viewer. [Manifest](registry/material-expansion-v063.json) · [source research](docs/research/material-expansion-v063.md).

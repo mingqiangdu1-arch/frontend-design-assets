@@ -1,0 +1,28 @@
+/* Original scoped V0.64 spatial/composition atoms. */
+.fx64-seed,.fx64-type,.fx64-arc,.fx64-fit,.fx64-linked,.fx64-ribbon{display:grid;gap:.7rem;margin:0;padding:1rem;min-width:0;max-width:40rem;border:1px solid #b5b9b1;border-radius:.4rem;background:#f7f3e8;color:#26373a;font:.86rem/1.5 system-ui,sans-serif}
+.fx64-seed button,.fx64-arc button,.fx64-linked button{font:inherit;color:inherit;border:1px solid #77898a;background:#fff9eb;padding:.35rem .6rem;cursor:pointer}
+.fx64-seed input,.fx64-type input,.fx64-fit input,.fx64-ribbon input{max-width:100%;min-width:0;accent-color:#315c63}
+.fx64-seed :focus-visible,.fx64-type :focus-visible,.fx64-arc :focus-visible,.fx64-fit :focus-visible,.fx64-linked :focus-visible,.fx64-ribbon :focus-visible{outline:3px solid #226a9c;outline-offset:3px}
+.fx64-seed label,.fx64-type label,.fx64-fit label,.fx64-ribbon label{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem}
+.fx64-seed output,.fx64-type output,.fx64-arc output,.fx64-fit output,.fx64-linked output,.fx64-ribbon output{font: .76rem/1.5 ui-monospace,Consolas,monospace;overflow-wrap:anywhere}
+.fx64-seed__board{display:grid;grid-template-columns:1fr 2fr 1fr 2fr;grid-template-rows:1fr 2fr 1fr;height:13rem;gap:4px;padding:4px;background:#d7d7ce}
+.fx64-seed__board b{display:grid;place-items:center;min-width:0;overflow:hidden;background:#254b53;color:white;font:700 1rem/1 system-ui}
+.fx64-seed__board b:nth-child(1){grid-column:span 2}.fx64-seed__board b:nth-child(4){grid-column:span 2}.fx64-seed__board b:nth-child(5){grid-column:span 2}.fx64-seed__board b:nth-child(6){grid-column:span 2}.fx64-seed__board b[data-tone="1"],.fx64-seed__board b[data-tone="4"]{background:#d9a85f;color:#222}.fx64-seed__board b[data-tone="2"],.fx64-seed__board b[data-tone="5"]{background:#ba6350;color:#fff}
+.fx64-type__poster{display:grid;gap:.05em;padding:1.5rem 2.2rem;overflow:hidden;text-align:center;background:#233d42;color:#f4e8c7;font:800 clamp(1.3rem,5vw,2.5rem)/1.05 system-ui;letter-spacing:-.055em}
+.fx64-type__poster span{display:block;overflow-wrap:anywhere}
+.fx64-arc__track{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.35rem;padding:1rem .15rem 4rem;overflow:hidden;min-height:8rem;align-items:start}
+.fx64-arc__track button{display:grid;gap:.3rem;padding:.25rem;min-width:0;transform:translateY(var(--fx64-offset,0px)) rotate(var(--fx64-rot,0deg));transform-origin:50% 20%;font-size:.7rem;overflow-wrap:anywhere}
+.fx64-arc__track button[aria-pressed="true"]{outline:2px solid #315c63;outline-offset:2px;box-shadow:0 3px 8px #24373a30}
+.fx64-arc__track button:focus-visible{outline:3px dashed #226a9c;outline-offset:3px}
+.fx64-arc__track i{display:block;aspect-ratio:3/4;background:linear-gradient(145deg,#244f59 0 45%,#dbaa66 45% 75%,#bd624f 75%)}
+.fx64-arc__track button:nth-child(2n) i{background:radial-gradient(circle at 40% 30%,#e8c075 0 23%,transparent 24%),linear-gradient(140deg,#2c6570,#223c43)}
+.fx64-fit__view{position:relative;overflow:hidden;height:13rem;border:1px solid #718485;background:repeating-linear-gradient(0deg,#e0e5df 0 1px,transparent 1px 16px),#eff0e9}
+.fx64-fit__art{position:absolute;left:0;top:0;width:240px;height:150px;transform-origin:0 0;background:#244d55;color:#f4e6c7;display:grid;place-items:center;font:700 1rem/1.3 system-ui;box-sizing:border-box;border:2px solid #ba7857}
+.fx64-fit__inset{position:absolute;inset:0 auto 0 0;width:0;background:#273d42d9;border-right:1px solid #fff;pointer-events:none}
+.fx64-linked__layout{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;align-items:start}.fx64-linked__layout svg{display:block;width:100%;height:auto;background:#e6e9df;border:1px solid #899b99}
+.fx64-linked__keys{display:grid;gap:.3rem;min-width:0}.fx64-linked__keys button{text-align:left;overflow-wrap:anywhere;font: .72rem/1.4 ui-monospace,monospace}
+.fx64-linked button[aria-pressed="true"]{border:2px solid #315c63;background:#e0e8df}
+.fx64-linked__active{stroke:#dd743d!important;stroke-width:4!important}
+.fx64-ribbon svg{display:block;width:100%;height:auto;background:#223c43;border:1px solid #6c8587}
+@media(max-width:440px){.fx64-linked__layout{grid-template-columns:1fr}.fx64-type__poster{padding-inline:1.7rem}.fx64-arc__track{gap:.2rem}.fx64-arc__track button{font-size:.65rem}}
+@media(forced-colors:active){.fx64-arc__track button[aria-pressed="true"],.fx64-linked button[aria-pressed="true"]{outline:2px solid Highlight}.fx64-linked__active{stroke:Highlight!important}.fx64-fit__inset{border:2px dashed CanvasText}}

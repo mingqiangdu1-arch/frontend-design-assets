@@ -24311,6 +24311,275 @@
         "instructions": "Read https://github.com/visioncortex/xsvg/blob/48ec313160babbef86ff4352d3059f27b5eccfda/packages/xsvg-viewer/src/interactive-inspector.ts and companion paths in registry/material-expansion-v063.json (REF-164); assess target dependencies, asset licenses, accessibility and rendering before adaptation.",
         "limitations": "依赖 CodeMirror、源位置映射和节点身份约定，不是任意 HTML 或 SVG 通用映射器；须校验源文本与渲染节点同步及可访问性。"
       }
+    },
+    {
+      "id": "FX-142",
+      "type": "component",
+      "name": "Independent seeded composition / 双种子构图样本",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v064",
+        "original-source",
+        "spatial-composition",
+        "native-controls",
+        "fx64-seed"
+      ],
+      "aliases": [
+        "种子构图",
+        "独立随机种子",
+        "seeded layout",
+        "grid content seed"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored HTML/CSS/ES module; no third-party code, media or fonts copied.",
+      "styleIds": [
+        "editorial-warm",
+        "type-led-minimal",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "workspace",
+        "editorial"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v064/spatial-atoms.css",
+      "details": "styles/primitives/v064/README.md",
+      "spec": "registry/material-expansion-v064.json",
+      "demo": "playground/spatial-composition-v064/index.html",
+      "verified": "Ten pure-model assertions and structural registry checks; no new browser/device/accessibility or target-project certification.",
+      "handoff": {
+        "entry": "styles/primitives/v064/spatial-atoms.css",
+        "stack": "Native HTML/CSS + local ES module",
+        "instructions": "Extract .fx64-seed and matching data-fx64=\"seed\" HTML from playground/spatial-composition-v064/index.html; include styles/primitives/v064/spatial-model.mjs and call mountSpatialAtoms(root) once, cleanup on unmount.",
+        "limitations": "固定六块与四列三行，非任意文档排版、内容生成、拖拽或布局导出。"
+      }
+    },
+    {
+      "id": "FX-143",
+      "type": "component",
+      "name": "Offset typographic staircase / 错阶文字构图",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v064",
+        "original-source",
+        "spatial-composition",
+        "native-controls",
+        "fx64-type"
+      ],
+      "aliases": [
+        "错阶排版",
+        "阶梯文字",
+        "offset typography",
+        "stepped text"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored HTML/CSS/ES module; no third-party code, media or fonts copied.",
+      "styleIds": [
+        "type-led-minimal",
+        "paper-rebellion",
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "brand-site",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v064/spatial-atoms.css",
+      "details": "styles/primitives/v064/README.md",
+      "spec": "registry/material-expansion-v064.json",
+      "demo": "playground/spatial-composition-v064/index.html",
+      "verified": "Ten pure-model assertions and structural registry checks; no new browser/device/accessibility or target-project certification.",
+      "handoff": {
+        "entry": "styles/primitives/v064/spatial-atoms.css",
+        "stack": "Native HTML/CSS + local ES module",
+        "instructions": "Extract .fx64-type and matching data-fx64=\"type\" HTML from playground/spatial-composition-v064/index.html; include styles/primitives/v064/spatial-model.mjs and call mountSpatialAtoms(root) once, cleanup on unmount.",
+        "limitations": "固定示例文字；非真实字体轮廓变形、CJK 自动断行或任意包络编辑。"
+      }
+    },
+    {
+      "id": "FX-144",
+      "type": "component",
+      "name": "Curved media selection rail / 弧形媒体选择轨",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v064",
+        "original-source",
+        "spatial-composition",
+        "native-controls",
+        "fx64-arc"
+      ],
+      "aliases": [
+        "弧形媒体",
+        "曲线卡片",
+        "curved gallery",
+        "arc rail"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored HTML/CSS/ES module; no third-party code, media or fonts copied.",
+      "styleIds": [
+        "aether-orbit",
+        "shape-expressive",
+        "liquid-layer"
+      ],
+      "applicationContexts": [
+        "portfolio",
+        "creative-site",
+        "brand-site"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v064/spatial-atoms.css",
+      "details": "styles/primitives/v064/README.md",
+      "spec": "registry/material-expansion-v064.json",
+      "demo": "playground/spatial-composition-v064/index.html",
+      "verified": "Ten pure-model assertions and structural registry checks; no new browser/device/accessibility or target-project certification.",
+      "handoff": {
+        "entry": "styles/primitives/v064/spatial-atoms.css",
+        "stack": "Native HTML/CSS + local ES module",
+        "instructions": "Extract .fx64-arc and matching data-fx64=\"arc\" HTML from playground/spatial-composition-v064/index.html; include styles/primitives/v064/spatial-model.mjs and call mountSpatialAtoms(root) once, cleanup on unmount.",
+        "limitations": "固定五项原创 CSS 色块；非无限滚动、3D、WebGL、媒体下载或播放器。"
+      }
+    },
+    {
+      "id": "FX-145",
+      "type": "component",
+      "name": "Inset-aware artboard fit / 遮挡感知画板适配",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v064",
+        "original-source",
+        "spatial-composition",
+        "native-controls",
+        "fx64-fit"
+      ],
+      "aliases": [
+        "画板适配",
+        "遮挡感知",
+        "viewport inset",
+        "artboard fit"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored HTML/CSS/ES module; no third-party code, media or fonts copied.",
+      "styleIds": [
+        "precision-dark",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "workspace",
+        "developer-tool",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v064/spatial-atoms.css",
+      "details": "styles/primitives/v064/README.md",
+      "spec": "registry/material-expansion-v064.json",
+      "demo": "playground/spatial-composition-v064/index.html",
+      "verified": "Ten pure-model assertions and structural registry checks; no new browser/device/accessibility or target-project certification.",
+      "handoff": {
+        "entry": "styles/primitives/v064/spatial-atoms.css",
+        "stack": "Native HTML/CSS + local ES module",
+        "instructions": "Extract .fx64-fit and matching data-fx64=\"fit\" HTML from playground/spatial-composition-v064/index.html; include styles/primitives/v064/spatial-model.mjs and call mountSpatialAtoms(root) once, cleanup on unmount.",
+        "limitations": "固定单画板、只缩小不放大；无拖拽、滚轮、真实浮动工具窗或无限画布。"
+      }
+    },
+    {
+      "id": "FX-146",
+      "type": "component",
+      "name": "Explicit node-to-source linking / 显式元素源码联动",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v064",
+        "original-source",
+        "spatial-composition",
+        "native-controls",
+        "fx64-linked"
+      ],
+      "aliases": [
+        "图形源码定位",
+        "元素高亮",
+        "node source link",
+        "inspector mapping"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored HTML/CSS/ES module; no third-party code, media or fonts copied.",
+      "styleIds": [
+        "precision-dark",
+        "signal-noir",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "developer-tool",
+        "workspace",
+        "documentation"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v064/spatial-atoms.css",
+      "details": "styles/primitives/v064/README.md",
+      "spec": "registry/material-expansion-v064.json",
+      "demo": "playground/spatial-composition-v064/index.html",
+      "verified": "Ten pure-model assertions and structural registry checks; no new browser/device/accessibility or target-project certification.",
+      "handoff": {
+        "entry": "styles/primitives/v064/spatial-atoms.css",
+        "stack": "Native HTML/CSS + local ES module",
+        "instructions": "Extract .fx64-linked and matching data-fx64=\"link\" HTML from playground/spatial-composition-v064/index.html; include styles/primitives/v064/spatial-model.mjs and call mountSpatialAtoms(root) once, cleanup on unmount.",
+        "limitations": "显式固定 ID 映射，不解析任意源码、不编辑 SVG、不提供真实 source map 或编译器。"
+      }
+    },
+    {
+      "id": "FX-147",
+      "type": "component",
+      "name": "Pinned ribbon deformation / 固定端带状形变",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v064",
+        "original-source",
+        "spatial-composition",
+        "native-controls",
+        "fx64-ribbon"
+      ],
+      "aliases": [
+        "固定端形变",
+        "弹性带",
+        "pinned ribbon",
+        "strip deformation"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored HTML/CSS/ES module; no third-party code, media or fonts copied.",
+      "styleIds": [
+        "liquid-layer",
+        "aether-orbit",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "illustration",
+        "portfolio"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v064/spatial-atoms.css",
+      "details": "styles/primitives/v064/README.md",
+      "spec": "registry/material-expansion-v064.json",
+      "demo": "playground/spatial-composition-v064/index.html",
+      "verified": "Ten pure-model assertions and structural registry checks; no new browser/device/accessibility or target-project certification.",
+      "handoff": {
+        "entry": "styles/primitives/v064/spatial-atoms.css",
+        "stack": "Native HTML/CSS + local ES module",
+        "instructions": "Extract .fx64-ribbon and matching data-fx64=\"ribbon\" HTML from playground/spatial-composition-v064/index.html; include styles/primitives/v064/spatial-model.mjs and call mountSpatialAtoms(root) once, cleanup on unmount.",
+        "limitations": "手动几何样本，无滚动驱动、弹簧动力学、纹理变形或 GPU 渲染。"
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",
