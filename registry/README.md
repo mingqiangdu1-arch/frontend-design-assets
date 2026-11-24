@@ -7,6 +7,7 @@ This directory is the **authoritative index** for choosing existing design refer
 | File | Source of truth for |
 | --- | --- |
 | `assets.json` | Every stable asset ID, its identity/type/lifecycle/source/reuse constraints, tags, aliases, context, style, dependencies, and handoff |
+| `material-expansion-v063.json` | REF-157..164 六个新来源、八项固定源码：种子构图、字形几何、弹性/环形图库与画布检视；MIT 代码许可，媒体/字体另查，全部 research-only |
 | `material-expansion-v062.json` | FX-136..141 六个原创原生创意编辑控件，HSL 色面、三色标、双底透明度、材质高光、Bezier、遮罩；本地 ES 模块，不含应用或持久化 |
 | `material-expansion-v061.json` | FX-130..135 原创六个 CSS/HTML 素材，谐波和点阵附本地模块；VG-111..114 四幅独立 SVG；非真实图表或印刷校色 |
 | `material-expansion-v060.json` | REF-149..156：六个新来源的八项固定 Git 提交源码参考，包含参数化矢量纹样、手绘填充、点阵/噪声材质及颜色控件；许可逐项记录，全部 research-only |

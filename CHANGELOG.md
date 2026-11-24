@@ -1,3 +1,8 @@
+## 2026-11-24 · V0.63 spatial, typographic and editor source expansion
+
+- Added REF-157..164 from six newly indexed repositories: Grid System, Bouffont, Magic Spells Split Text, ElasticGridScroll, Infinite Circular WebGL Gallery, xsvg Viewer. [Manifest](registry/material-expansion-v063.json) · [source research](docs/research/material-expansion-v063.md).
+- 605 total entries; pinned source paths and code license text inspected. No vendored code, media, font, new dependency, theme or React export. Research-only; no browser/runtime acceptance claim.
+
 ## 2026-11-24 · V0.62 original creative editing micro-controls
 
 - Added FX-136..141 six native interactive materials: HSL plane, three gradient stops, dual-background alpha proof, microfinish roughness/tilt, bounded cubic Bezier and inset mask. [Manifest](registry/material-expansion-v062.json) · [source](styles/primitives/v062/README.md) · [specimen](playground/editing-controls-v062/index.html).

@@ -23994,6 +23994,323 @@
         "instructions": "Extract .fx62-mask and matching data-fx62=\"mask\" HTML from playground/editing-controls-v062/index.html; include styles/primitives/v062/editing-model.mjs and call mountEditingAtoms once (cleanup on unmount).",
         "limitations": "只预览原创几何背景；不加载或裁切真实图片、不生成文件、不做布尔路径编辑。"
       }
+    },
+    {
+      "id": "REF-157",
+      "type": "reference",
+      "name": "Grid System · Seeded layout locks / 双种子锁定构图",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v063",
+        "pinned-upstream-source",
+        "research-only",
+        "editorial-layout"
+      ],
+      "aliases": [
+        "双种子排版",
+        "锁定网格",
+        "seeded composition",
+        "grid lock",
+        "Swiss grid"
+      ],
+      "source": "https://github.com/dostevskii/grid-system/blob/203a601f5b362e16671484710a476ee3e72229d9/src/core.ts",
+      "license": "MIT code; pinned license https://github.com/dostevskii/grid-system/blob/203a601f5b362e16671484710a476ee3e72229d9/LICENSE. External dependencies, fonts, media and derived artwork not cleared. No third-party source/media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "editorial",
+        "workspace",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v063.md",
+      "spec": "registry/material-expansion-v063.json",
+      "verified": "Source files and MIT license text inspected at 203a601f5b362e16671484710a476ee3e72229d9 on 2026-11-24; no runtime/browser integration verification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v063.md",
+        "mode": "research-only",
+        "stack": "Pinned upstream research; verify target stack and rights",
+        "instructions": "Read https://github.com/dostevskii/grid-system/blob/203a601f5b362e16671484710a476ee3e72229d9/src/core.ts and companion paths in registry/material-expansion-v063.json (REF-157); assess target dependencies, asset licenses, accessibility and rendering before adaptation.",
+        "limitations": "依赖完整 Settings、字体度量、布局计算与 React；字体授权及导出权限另查，不复制字体或应用。"
+      }
+    },
+    {
+      "id": "REF-158",
+      "type": "reference",
+      "name": "Bouffont · Stepwise glyph growth / 逐步字形膨胀",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v063",
+        "pinned-upstream-source",
+        "research-only",
+        "type-geometry"
+      ],
+      "aliases": [
+        "字形膨胀",
+        "气泡字",
+        "puffy lettering",
+        "glyph growth"
+      ],
+      "source": "https://github.com/meodai/bouffont/blob/32fd0e589b9a00a5c6c5e1a696213dac4fadb6bc/src/strategies/grow.js",
+      "license": "MIT code; pinned license https://github.com/meodai/bouffont/blob/32fd0e589b9a00a5c6c5e1a696213dac4fadb6bc/LICENSE. External dependencies, fonts, media and derived artwork not cleared. No third-party source/media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "brand-site",
+        "creative-site",
+        "illustration"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v063.md",
+      "spec": "registry/material-expansion-v063.json",
+      "verified": "Source files and MIT license text inspected at 32fd0e589b9a00a5c6c5e1a696213dac4fadb6bc on 2026-11-24; no runtime/browser integration verification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v063.md",
+        "mode": "research-only",
+        "stack": "Pinned upstream research; verify target stack and rights",
+        "instructions": "Read https://github.com/meodai/bouffont/blob/32fd0e589b9a00a5c6c5e1a696213dac4fadb6bc/src/strategies/grow.js and companion paths in registry/material-expansion-v063.json (REF-158); assess target dependencies, asset licenses, accessibility and rendering before adaptation.",
+        "limitations": "依赖轮廓裁切/偏移、字体解析与字形特征模块；字体和派生字形授权、复杂文字与可读性须分别检查。"
+      }
+    },
+    {
+      "id": "REF-159",
+      "type": "reference",
+      "name": "Bouffont · Glyph envelope warp / 文字外轮廓变形",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v063",
+        "pinned-upstream-source",
+        "research-only",
+        "type-geometry"
+      ],
+      "aliases": [
+        "文字形变",
+        "字形外包络",
+        "envelope warp",
+        "cloud lettering"
+      ],
+      "source": "https://github.com/meodai/bouffont/blob/32fd0e589b9a00a5c6c5e1a696213dac4fadb6bc/src/envelope.js",
+      "license": "MIT code; pinned license https://github.com/meodai/bouffont/blob/32fd0e589b9a00a5c6c5e1a696213dac4fadb6bc/LICENSE. External dependencies, fonts, media and derived artwork not cleared. No third-party source/media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "brand-site",
+        "editorial",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v063.md",
+      "spec": "registry/material-expansion-v063.json",
+      "verified": "Source files and MIT license text inspected at 32fd0e589b9a00a5c6c5e1a696213dac4fadb6bc on 2026-11-24; no runtime/browser integration verification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v063.md",
+        "mode": "research-only",
+        "stack": "Pinned upstream research; verify target stack and rights",
+        "instructions": "Read https://github.com/meodai/bouffont/blob/32fd0e589b9a00a5c6c5e1a696213dac4fadb6bc/src/envelope.js and companion paths in registry/material-expansion-v063.json (REF-159); assess target dependencies, asset licenses, accessibility and rendering before adaptation.",
+        "limitations": "需正确解析和重采样真实轮廓，处理退化形状、文字语义及字体授权；不直接当可访问 DOM 文本。"
+      }
+    },
+    {
+      "id": "REF-160",
+      "type": "reference",
+      "name": "Magic Spells Split Text · Layout-aware units / 按版面拆分文本",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v063",
+        "pinned-upstream-source",
+        "research-only",
+        "type-motion"
+      ],
+      "aliases": [
+        "拆词动画",
+        "自动分行",
+        "split text",
+        "line splitting",
+        "staggered text"
+      ],
+      "source": "https://github.com/magic-spells/split-text/blob/78e0c5a493fc69227188ecc80457fe84ce7dedff/src/split-text.js",
+      "license": "MIT code; pinned license https://github.com/magic-spells/split-text/blob/78e0c5a493fc69227188ecc80457fe84ce7dedff/LICENSE. External dependencies, fonts, media and derived artwork not cleared. No third-party source/media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "creative-site",
+        "portfolio",
+        "landing-page"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v063.md",
+      "spec": "registry/material-expansion-v063.json",
+      "verified": "Source files and MIT license text inspected at 78e0c5a493fc69227188ecc80457fe84ce7dedff on 2026-11-24; no runtime/browser integration verification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v063.md",
+        "mode": "research-only",
+        "stack": "Pinned upstream research; verify target stack and rights",
+        "instructions": "Read https://github.com/magic-spells/split-text/blob/78e0c5a493fc69227188ecc80457fe84ce7dedff/src/split-text.js and companion paths in registry/material-expansion-v063.json (REF-160); assess target dependencies, asset licenses, accessibility and rendering before adaptation.",
+        "limitations": "需审查 DOM 包装、字体加载后重排、CJK/emoji/RTL、读屏、无 JS 与 reduced-motion；CSS 依赖与现有 split 类工具不自动安装。"
+      }
+    },
+    {
+      "id": "REF-161",
+      "type": "reference",
+      "name": "Elastic Grid Scroll · Pinned spring strips / 弹性列带滚动",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v063",
+        "pinned-upstream-source",
+        "research-only",
+        "spatial-motion"
+      ],
+      "aliases": [
+        "弹性列",
+        "滚动拉伸",
+        "elastic columns",
+        "spring strips",
+        "webgl grid"
+      ],
+      "source": "https://github.com/codrops/ElasticGridScroll/blob/40e474582ae72df26cd9d90b05d5b15fed423abd/js/demo6/ElasticColumns.js",
+      "license": "MIT code; pinned license https://github.com/codrops/ElasticGridScroll/blob/40e474582ae72df26cd9d90b05d5b15fed423abd/LICENSE. External dependencies, fonts, media and derived artwork not cleared. No third-party source/media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "portfolio",
+        "creative-site",
+        "landing-page"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v063.md",
+      "spec": "registry/material-expansion-v063.json",
+      "verified": "Source files and MIT license text inspected at 40e474582ae72df26cd9d90b05d5b15fed423abd on 2026-11-24; no runtime/browser integration verification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v063.md",
+        "mode": "research-only",
+        "stack": "Pinned upstream research; verify target stack and rights",
+        "instructions": "Read https://github.com/codrops/ElasticGridScroll/blob/40e474582ae72df26cd9d90b05d5b15fed423abd/js/demo6/ElasticColumns.js and companion paths in registry/material-expansion-v063.json (REF-161); assess target dependencies, asset licenses, accessibility and rendering before adaptation.",
+        "limitations": "Three.js/WebGL2、GSAP/ScrollSmoother 和原图依赖的许可与性能分别核对；保留普通 DOM、焦点和滚动控制，不复制媒体或 vendored 库。"
+      }
+    },
+    {
+      "id": "REF-162",
+      "type": "reference",
+      "name": "Infinite Circular Gallery · Scroll-linked curved media / 环形滚动媒体轨道",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v063",
+        "pinned-upstream-source",
+        "research-only",
+        "spatial-motion"
+      ],
+      "aliases": [
+        "环形图库",
+        "弧形轨道",
+        "circular gallery",
+        "scroll velocity shader"
+      ],
+      "source": "https://github.com/bizarro/infinite-circular-webgl-gallery/blob/3db485819df63550f9872b0ca5e6961a9fe517e4/app/Media.js",
+      "license": "MIT code; pinned license https://github.com/bizarro/infinite-circular-webgl-gallery/blob/3db485819df63550f9872b0ca5e6961a9fe517e4/LICENSE. External dependencies, fonts, media and derived artwork not cleared. No third-party source/media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "portfolio",
+        "creative-site",
+        "brand-site"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v063.md",
+      "spec": "registry/material-expansion-v063.json",
+      "verified": "Source files and MIT license text inspected at 3db485819df63550f9872b0ca5e6961a9fe517e4 on 2026-11-24; no runtime/browser integration verification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v063.md",
+        "mode": "research-only",
+        "stack": "Pinned upstream research; verify target stack and rights",
+        "instructions": "Read https://github.com/bizarro/infinite-circular-webgl-gallery/blob/3db485819df63550f9872b0ca5e6961a9fe517e4/app/Media.js and companion paths in registry/material-expansion-v063.json (REF-162); assess target dependencies, asset licenses, accessibility and rendering before adaptation.",
+        "limitations": "OGL、纹理、标题字体、GPU 资源释放和旧构建链需目标验证；需普通列表/静态导航降级，不搬运照片字体。"
+      }
+    },
+    {
+      "id": "REF-163",
+      "type": "reference",
+      "name": "xsvg Viewer · Inset-aware pan and zoom / 浮动面板感知视口",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v063",
+        "pinned-upstream-source",
+        "research-only",
+        "editor-interaction"
+      ],
+      "aliases": [
+        "画布适配",
+        "遮挡感知缩放",
+        "pan zoom",
+        "viewport insets",
+        "fit artboard"
+      ],
+      "source": "https://github.com/visioncortex/xsvg/blob/48ec313160babbef86ff4352d3059f27b5eccfda/packages/xsvg-viewer/src/pan-zoom.ts",
+      "license": "MIT code; pinned license https://github.com/visioncortex/xsvg/blob/48ec313160babbef86ff4352d3059f27b5eccfda/packages/xsvg-viewer/LICENSE. External dependencies, fonts, media and derived artwork not cleared. No third-party source/media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "workspace",
+        "developer-tool",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v063.md",
+      "spec": "registry/material-expansion-v063.json",
+      "verified": "Source files and MIT license text inspected at 48ec313160babbef86ff4352d3059f27b5eccfda on 2026-11-24; no runtime/browser integration verification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v063.md",
+        "mode": "research-only",
+        "stack": "Pinned upstream research; verify target stack and rights",
+        "instructions": "Read https://github.com/visioncortex/xsvg/blob/48ec313160babbef86ff4352d3059f27b5eccfda/packages/xsvg-viewer/src/pan-zoom.ts and companion paths in registry/material-expansion-v063.json (REF-163); assess target dependencies, asset licenses, accessibility and rendering before adaptation.",
+        "limitations": "依赖宿主 viewport/content DOM 和 CSS transform；触摸手势、浏览器缩放、滚动冲突、键盘操作及解绑需验证。"
+      }
+    },
+    {
+      "id": "REF-164",
+      "type": "reference",
+      "name": "xsvg Viewer · Source-to-canvas inspector / 源码图形双向定位",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v063",
+        "pinned-upstream-source",
+        "research-only",
+        "editor-interaction"
+      ],
+      "aliases": [
+        "源码定位",
+        "元素检视",
+        "source canvas mapping",
+        "bidirectional inspector",
+        "SVG sourcemap"
+      ],
+      "source": "https://github.com/visioncortex/xsvg/blob/48ec313160babbef86ff4352d3059f27b5eccfda/packages/xsvg-viewer/src/interactive-inspector.ts",
+      "license": "MIT code; pinned license https://github.com/visioncortex/xsvg/blob/48ec313160babbef86ff4352d3059f27b5eccfda/packages/xsvg-viewer/LICENSE. External dependencies, fonts, media and derived artwork not cleared. No third-party source/media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "developer-tool",
+        "workspace",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v063.md",
+      "spec": "registry/material-expansion-v063.json",
+      "verified": "Source files and MIT license text inspected at 48ec313160babbef86ff4352d3059f27b5eccfda on 2026-11-24; no runtime/browser integration verification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v063.md",
+        "mode": "research-only",
+        "stack": "Pinned upstream research; verify target stack and rights",
+        "instructions": "Read https://github.com/visioncortex/xsvg/blob/48ec313160babbef86ff4352d3059f27b5eccfda/packages/xsvg-viewer/src/interactive-inspector.ts and companion paths in registry/material-expansion-v063.json (REF-164); assess target dependencies, asset licenses, accessibility and rendering before adaptation.",
+        "limitations": "依赖 CodeMirror、源位置映射和节点身份约定，不是任意 HTML 或 SVG 通用映射器；须校验源文本与渲染节点同步及可访问性。"
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",

@@ -17,6 +17,7 @@
 
 | 典型任务（中英关键词） | 优先入口 | 核心说明 |
 | --- | --- | --- |
+| 种子构图、字形外包络、弹性媒体、源码定位 / seeded layout, glyph warp, spatial editor | [V0.63](registry/material-expansion-v063.json) · [具体源码与许可](docs/research/material-expansion-v063.md) · REF-157..164 | 六个新来源、八项固定源码研究，全部 research-only |
 | HSL 二维调色、渐变色标、透明度、材质、贝塞尔、遮罩 / creative micro-controls | [V0.62](registry/material-expansion-v062.json) · [源码与样张](styles/primitives/v062/README.md) · FX-136..141 | 六个真正可操作的原生独立控件，不是编辑器或 React 导出 |
 | 谐波线雕、有序点阵、套印、纹理比较条 / engraving, ordered dither, overprint | [V0.61](registry/material-expansion-v061.json) · [CSS/JS](styles/primitives/v061/README.md) · [SVG](graphics/v061/README.md) · FX-130..135 · VG-111..114 | 两个可调数学原件、四个 CSS/HTML 原件、四幅装饰 SVG；非照片转换或真实数据 |
 | 参数纹样、程序材质、二维调色、图表纹理 / generative pattern, dither, color picker | [V0.60](registry/material-expansion-v060.json) · [源码与许可](docs/research/material-expansion-v060.md) · REF-149..156 | 六个新来源、八项固定源码参考，仅研究；不得视为本库已实现组件 |
