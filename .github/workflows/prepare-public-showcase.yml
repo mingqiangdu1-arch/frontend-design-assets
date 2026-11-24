@@ -1,0 +1,142 @@
+name: Prepare Public Showcase (Sync V0.65, Screenshots & Lockfile)
+on:
+  workflow_dispatch:
+    inputs:
+      sync_main:
+        description: "Merge latest main (including V0.65) into current branch"
+        required: true
+        default: true
+        type: boolean
+      capture_screenshots:
+        description: "Capture 6 curated 1280x800 Playwright screenshots into docs/media/screenshots/"
+        required: true
+        default: true
+        type: boolean
+      generate_lockfile:
+        description: "Generate reproducible package-lock.json"
+        required: true
+        default: true
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Sync latest main (V0.65) cleanly if requested
+        if: ${{ inputs.sync_main }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          if ! git merge-base --is-ancestor origin/main HEAD; then
+            set +e
+            git merge --no-commit --no-ff origin/main
+            merge_status=$?
+            set -e
+            if [ $merge_status -ne 0 ]; then
+              conflicts=$(git diff --name-only --diff-filter=U)
+              echo "Resolving merge conflicts: $conflicts"
+              if [ "$conflicts" = "CHANGELOG.md" ]; then
+                node -e '
+                import { execFileSync } from "node:child_process";
+                import { writeFileSync } from "node:fs";
+                const ours = execFileSync("git", ["show", ":2:CHANGELOG.md"], { encoding: "utf8" });
+                const theirs = execFileSync("git", ["show", ":3:CHANGELOG.md"], { encoding: "utf8" });
+                const v065Match = theirs.match(/^## 2026-11-24 · V0\.65[\s\S]*?(?=\n## 2026-11-24 · V0\.64)/);
+                if (!v065Match) throw new Error("Expected V0.65 block in main CHANGELOG.md");
+                const merged = ours
+                  .replace("611/611 metadata coverage", "619/619 metadata coverage")
+                  .replace("Preserve all 611 registered assets", "Preserve all 619 registered assets (including V0.65 REF-165..172)")
+                  .replace("## 2026-11-24 · V0.64", v065Match[0].trimEnd() + "\n\n## 2026-11-24 · V0.64");
+                writeFileSync("CHANGELOG.md", merged);
+                '
+                git add CHANGELOG.md
+              else
+                echo "Unexpected conflict files: $conflicts"
+                exit 1
+              fi
+            fi
+            git commit -m "chore: merge main (V0.65) into public release branch"
+          fi
+
+      - name: Install dependencies & generate lockfile
+        run: |
+          if [ "${{ inputs.generate_lockfile }}" = "true" ]; then
+            npm install --no-audit --no-fund
+          elif [ -f package-lock.json ]; then
+            npm ci --no-audit --no-fund
+          else
+            npm install --no-audit --no-fund
+          fi
+
+      - name: Regenerate public SVGs and sync documented asset counts
+        run: |
+          node scripts/generate-public-overview.mjs
+          node scripts/generate-public-visuals.mjs
+          node -e '
+          import { readFileSync, writeFileSync } from "node:fs";
+          const assets = JSON.parse(readFileSync("registry/assets.json", "utf8")).assets;
+          const total = assets.length;
+          const refs = assets.filter(a => a.type === "reference").length;
+          const analyzed = assets.filter(a => a.stage === "analyzed").length;
+          for (const file of ["README.md", "docs/README.md"]) {
+            let txt = readFileSync(file, "utf8");
+            txt = txt.replace(/\b611 registered assets\b/g, `${total} registered assets`);
+            txt = txt.replace(/\b611 asset entries\b/g, `${total} asset entries`);
+            txt = txt.replace(/\| reference \| 152 \|/g, `| reference | ${refs} |`);
+            txt = txt.replace(/\| analyzed \| 192 \|/g, `| analyzed | ${analyzed} |`);
+            writeFileSync(file, txt);
+          }
+          '
+
+      - name: Capture curated 1280x800 Playwright screenshots
+        if: ${{ inputs.capture_screenshots }}
+        run: |
+          npx playwright install --with-deps chromium
+          npm run screenshots:public
+          node -e '
+          import { readFileSync, writeFileSync } from "node:fs";
+          const blockEn = `## Live UI screenshots\n\n| Theme Atlas (14 Styles) | React Component Gallery (Dark) |\n| :---: | :---: |\n| ![Theme Atlas 1280x800](docs/media/screenshots/style-atlas-1280x800.png) | ![Component Gallery Precision Dark 1280x800](docs/media/screenshots/component-gallery-dark-1280x800.png) |\n| **Spatial Composition (V0.64)** | **Creative Micro-Controls (V0.62)** |\n| ![Spatial Composition 1280x800](docs/media/screenshots/spatial-composition-1280x800.png) | ![Creative Editing Controls 1280x800](docs/media/screenshots/editing-controls-1280x800.png) |\n\n*Captured at 1280 × 800 in Chromium from actual repository demos. [All screenshots and live preview guide →](docs/visual-showcase.md)*\n\n`;
+          let readme = readFileSync("README.md", "utf8");
+          if (!readme.includes("## Live UI screenshots")) {
+            readme = readme.replace("## Explore real materials", blockEn + "## Explore real materials");
+            writeFileSync("README.md", readme);
+          }
+          const blockZh = `## 真实界面截图\n\n| Theme Atlas（14 套风格对照） | React 组件画廊（Precision Dark） |\n| :---: | :---: |\n| ![Theme Atlas 1280x800](docs/media/screenshots/style-atlas-1280x800.png) | ![React 组件画廊深色主题 1280x800](docs/media/screenshots/component-gallery-dark-1280x800.png) |\n| **空间构图原件（V0.64）** | **创意编辑微控件（V0.62）** |\n| ![空间构图原件 1280x800](docs/media/screenshots/spatial-composition-1280x800.png) | ![创意编辑微控件 1280x800](docs/media/screenshots/editing-controls-1280x800.png) |\n\n*以上均为 Chromium 1280 × 800 实际渲染截图。查看[完整截图与在线预览指南](docs/visual-showcase.md)。*\n\n`;
+          let zh = readFileSync("README.zh-CN.md", "utf8");
+          if (!zh.includes("## 真实界面截图")) {
+            zh = zh.replace("## 如何使用", blockZh + "## 如何使用");
+            writeFileSync("README.zh-CN.md", zh);
+          }
+          '
+
+      - name: Verify release gate, tests and Pages build
+        run: |
+          npm run test:registry
+          npm run test:unit
+          npm run check:components
+          npm run build:pages
+          git add -A
+          node scripts/check-public-snapshot.mjs --release
+
+      - name: Commit and push updated showcase assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: sync V0.65, lockfile and curated 1280x800 showcase screenshots"
+            git push
+          else
+            echo "No changes to commit."
+          fi
