@@ -1,0 +1,92 @@
+# V0.65 · 成熟商业设计与产品交互来源
+
+六个新来源、八项具体源码研究；优先成熟产品中的局部结构与状态行为，不引入整站或整套组件库。所有条目 research-only。
+
+> 许可边界：Shopify Dawn 不是 MIT；仅限与 Shopify 软件或服务集成的主题用途。Elastic EUI 的这两个源码文件明确为 ELv2 或 SSPL-1.0，不按通用可复制组件处理。MIT/Apache-2.0 项目的代码许可不自动涵盖商标、字体、照片或依赖。
+
+## REF-165 · Hydrogen · Variant-aware swatch selection / 商品规格色标与可用性
+
+- 仓库：Shopify/hydrogen · 固定提交 `b22b7ed6fcb309bc38e2dad278b50ecdc3255488`
+- [examples/hydrogen/app/components/ProductForm.tsx](https://github.com/Shopify/hydrogen/blob/b22b7ed6fcb309bc38e2dad278b50ecdc3255488/examples/hydrogen/app/components/ProductForm.tsx)
+- [packages/hydrogen/src/core/product/options.ts](https://github.com/Shopify/hydrogen/blob/b22b7ed6fcb309bc38e2dad278b50ecdc3255488/packages/hydrogen/src/core/product/options.ts)
+- [代码许可证](https://github.com/Shopify/hydrogen/blob/b22b7ed6fcb309bc38e2dad278b50ecdc3255488/LICENSE.md)：MIT
+- 源码机制：规格控件按所选状态、组合存在性、可售状态区分；跨商品组合使用链接，同商品规格使用按钮；色标、待提交和售罄文案与商品数据相联。URL 选项解析支持已知参数过滤。
+- 既有素材差异：IP-015 是模拟零售筛选与规格；此项补足真实 SKU 状态、路由与色标之间的契约。
+- 风格深化候选：commerce-atelier / refined-light-saas（非兼容承诺）
+- 使用边界：React Router、Hydrogen 商品表单与 Shopify 数据依赖；不能用视觉灰度代替完整可售性语义，素材与商标另查。
+
+## REF-166 · Dawn · Variant-linked media gallery / 规格联动商品媒体画廊
+
+- 仓库：Shopify/dawn · 固定提交 `779b2830977d6c9ebc817422e09de21885c33217`
+- [snippets/product-media-gallery.liquid](https://github.com/Shopify/dawn/blob/779b2830977d6c9ebc817422e09de21885c33217/snippets/product-media-gallery.liquid)
+- [assets/media-gallery.js](https://github.com/Shopify/dawn/blob/779b2830977d6c9ebc817422e09de21885c33217/assets/media-gallery.js)
+- [代码许可证](https://github.com/Shopify/dawn/blob/779b2830977d6c9ebc817422e09de21885c33217/LICENSE.md)：Shopify 专用主题许可（非通用 MIT；仅限与 Shopify 软件或服务集成的主题）
+- 源码机制：Liquid 根据规格首图及隐藏变体媒体计算布局；自定义元素连接缩略图、活动媒体、滑动事件和 aria-current，响应移动/桌面布局。
+- 既有素材差异：FX-028 是通用吸附卡轨，FX-144 是弧形选择；此项关注真实商品规格和媒体状态同步。
+- 风格深化候选：commerce-atelier / editorial-warm（非兼容承诺）
+- 使用边界：仅研究交互逻辑和设计概念；禁止向通用资产库复制/移植 Dawn 源码、衍生代码或主题，受 Shopify 专用许可约束。
+
+## REF-167 · Primer · Overflow-aware action bar / 自适应操作栏
+
+- 仓库：primer/react · 固定提交 `cc9daf0a8551f93dc8ed09f643c82f7c9c9fe8e7`
+- [packages/react/src/ActionBar/ActionBar.tsx](https://github.com/primer/react/blob/cc9daf0a8551f93dc8ed09f643c82f7c9c9fe8e7/packages/react/src/ActionBar/ActionBar.tsx)
+- [代码许可证](https://github.com/primer/react/blob/cc9daf0a8551f93dc8ed09f643c82f7c9c9fe8e7/LICENSE)：MIT
+- 源码机制：使用 overflow observer 与子项注册，把溢出操作转移至更多菜单；横向方向键和 Home/End 焦点移动排除隐藏项，菜单项支持返回焦点引用。
+- 既有素材差异：已有命令菜单及普通工具栏规范，此项聚焦实际容器宽度收纳和焦点连续性。
+- 风格深化候选：precision-dark / refined-light-saas / type-led-minimal（非兼容承诺）
+- 使用边界：依赖 Primer ActionMenu、ActionList、内部注册及观察器；不要直接复制单个 TSX 当成无依赖组件，核查目标键盘与焦点。
+
+## REF-168 · Primer · Compound page header / 响应式复合页头
+
+- 仓库：primer/react · 固定提交 `cc9daf0a8551f93dc8ed09f643c82f7c9c9fe8e7`
+- [packages/react/src/PageHeader/PageHeader.tsx](https://github.com/primer/react/blob/cc9daf0a8551f93dc8ed09f643c82f7c9c9fe8e7/packages/react/src/PageHeader/PageHeader.tsx)
+- [代码许可证](https://github.com/primer/react/blob/cc9daf0a8551f93dc8ed09f643c82f7c9c9fe8e7/LICENSE)：MIT
+- 源码机制：显式 ContextArea、TitleArea、Actions、Description、Navigation 等 compound slots；根据断点隐藏导航并调整标题，源码还提示标题与上下文操作之间的 DOM 焦点顺序。
+- 既有素材差异：已有侧边栏、详情页、面包屑素材，此项补足可组合对象页头的结构约定。
+- 风格深化候选：refined-light-saas / precision-dark / type-led-minimal（非兼容承诺）
+- 使用边界：依赖 Primer 样式、断点和 React slot 工具；不得将视觉顺序等同读屏顺序，需目标端验证。
+
+## REF-169 · Elastic EUI · Anchored cell inspector / 表格单元格检视浮层
+
+- 仓库：elastic/eui · 固定提交 `697e1817246e7f22838fce07f501986f24bfc9e0`
+- [packages/eui/src/components/datagrid/body/cell/data_grid_cell_popover.tsx](https://github.com/elastic/eui/blob/697e1817246e7f22838fce07f501986f24bfc9e0/packages/eui/src/components/datagrid/body/cell/data_grid_cell_popover.tsx)
+- [代码许可证](https://github.com/elastic/eui/blob/697e1817246e7f22838fce07f501986f24bfc9e0/LICENSE.txt)：ELv2 或 SSPL-1.0（对应源码头；非宽松 MIT）
+- 源码机制：集中管理一个活动单元格浮层的坐标、锚点和内容；关闭时处理焦点回到原单元格，默认内容按 schema 处理 JSON 等长值。
+- 既有素材差异：区别于普通排序筛选表格、通用侧边检查器，关注高密度单元格内的局部详细内容及焦点回流。
+- 风格深化候选：precision-dark / refined-light-saas / signal-noir（非兼容承诺）
+- 使用边界：仅研究设计模式；具体文件 ELv2/SSPL 双许可，禁止当无约束可搬运素材；需独立实现并验证虚拟滚动锚点。
+
+## REF-170 · Elastic EUI · Width-aware data-grid controls / 容器宽度感知数据工具栏
+
+- 仓库：elastic/eui · 固定提交 `697e1817246e7f22838fce07f501986f24bfc9e0`
+- [packages/eui/src/components/datagrid/controls/data_grid_toolbar.tsx](https://github.com/elastic/eui/blob/697e1817246e7f22838fce07f501986f24bfc9e0/packages/eui/src/components/datagrid/controls/data_grid_toolbar.tsx)
+- [代码许可证](https://github.com/elastic/eui/blob/697e1817246e7f22838fce07f501986f24bfc9e0/LICENSE.txt)：ELv2 或 SSPL-1.0（对应源码头；非宽松 MIT）
+- 源码机制：基于 gridWidth 和全屏状态决定是否有足够空间展示控件，排序、列显示、显示设置、全屏及键盘快捷键入口可配置，并提供自定义工具栏渲染契约。
+- 既有素材差异：Primer ActionBar 关注任意动作溢出；此项关注数据表专属的显示/排序等控制及容器宽度。
+- 风格深化候选：refined-light-saas / precision-dark（非兼容承诺）
+- 使用边界：仅研究设计模式；对应源码受 ELv2/SSPL，禁止直接搬运至通用资产库。需目标表格状态和可访问性验证。
+
+## REF-171 · Ionic · Swipe-synchronized segment view / 滑动同步分段内容
+
+- 仓库：ionic-team/ionic-framework · 固定提交 `8f46feadd4fb93f1bf0442d83389f33dde3caab3`
+- [core/src/components/segment-view/segment-view.tsx](https://github.com/ionic-team/ionic-framework/blob/8f46feadd4fb93f1bf0442d83389f33dde3caab3/core/src/components/segment-view/segment-view.tsx)
+- [core/src/components/segment-content/segment-content.tsx](https://github.com/ionic-team/ionic-framework/blob/8f46feadd4fb93f1bf0442d83389f33dde3caab3/core/src/components/segment-content/segment-content.tsx)
+- [代码许可证](https://github.com/ionic-team/ionic-framework/blob/8f46feadd4fb93f1bf0442d83389f33dde3caab3/LICENSE)：MIT
+- 源码机制：通过 scroll ratio 通知分段内容滚动，区分手动与程序滚动、触摸结束和滚动结束；支持 RTL 计算及禁用滑动。
+- 既有素材差异：FX-027 底部导航、FX-028 吸附卡片轨不包含分段控件与内容滑动之间的同步契约。
+- 风格深化候选：refined-light-saas / playful-pop / shape-expressive（非兼容承诺）
+- 使用边界：Stencil Web Components、配套 segment/segment-button 与样式；需处理零滚动范围、RTL、嵌套滚动和键盘替代，不能只移植单个文件。
+
+## REF-172 · Carbon for IBM.com · Slot-based leadspace / 品牌首屏叙事结构
+
+- 仓库：carbon-design-system/carbon-for-ibm-dotcom · 固定提交 `f681ec41939a259731c2edac29ec6339a20590d7`
+- [packages/web-components/src/components/leadspace/leadspace.ts](https://github.com/carbon-design-system/carbon-for-ibm-dotcom/blob/f681ec41939a259731c2edac29ec6339a20590d7/packages/web-components/src/components/leadspace/leadspace.ts)
+- [代码许可证](https://github.com/carbon-design-system/carbon-for-ibm-dotcom/blob/f681ec41939a259731c2edac29ec6339a20590d7/LICENSE)：Apache-2.0
+- 源码机制：通过 heading、copy、action、image 插槽与公开 CSS parts 组织企业首屏；多种类型、尺寸与渐变方案在同一组件契约中表达。
+- 既有素材差异：现有艺术构图及 SaaS 模板偏视觉或工作台；此项补充成熟品牌网站可配置首屏的内容层级、行动路径与可替换媒体。
+- 风格深化候选：editorial-warm / type-led-minimal / refined-light-saas（非兼容承诺）
+- 使用边界：Lit、Carbon utilities 和样式依赖；Apache-2.0 不授予 IBM 品牌/商标或媒体使用权；需核对对比度及真实内容。
+
+## 后续独立原件候选
+
+优先独立原创：规格可售性矩阵、媒体与规格同步、容器宽度工具栏、详情页头的视觉与语义顺序、显式单元格详情、分段与滚动同步。品牌首屏重在内容层级及行动路径，避免复制 IBM 品牌标识。未登记已弃用的 Carbon segmented/pictogram legacy 组件。

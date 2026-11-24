@@ -1,3 +1,8 @@
+## 2026-11-24 · V0.65 commercial product design source expansion
+
+- Added REF-165..172 from Shopify Hydrogen, Dawn, Primer React, Elastic EUI, Ionic and Carbon for IBM.com. [Manifest](registry/material-expansion-v065.json) · [source research](docs/research/material-expansion-v065.md).
+- 619 total entries; pinned code and per-file license reviewed. Dawn Shopify-only and EUI ELv2/SSPL references are research-only, not vendored. No new code/media/font copied, dependencies, themes, React exports or runtime acceptance claims.
+
 ## 2026-11-24 · V0.64 original spatial composition atoms
 
 - Added FX-142..147 six original independently usable controls and visual atoms: independent seeded composition, stepped DOM typography, curved media selection rail, inset-aware artboard fit, explicit node-source linking, pinned ribbon deformation. [Manifest](registry/material-expansion-v064.json) · [source notes](styles/primitives/v064/README.md) · [specimens](playground/spatial-composition-v064/index.html).

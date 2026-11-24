@@ -24580,6 +24580,324 @@
         "instructions": "Extract .fx64-ribbon and matching data-fx64=\"ribbon\" HTML from playground/spatial-composition-v064/index.html; include styles/primitives/v064/spatial-model.mjs and call mountSpatialAtoms(root) once, cleanup on unmount.",
         "limitations": "手动几何样本，无滚动驱动、弹簧动力学、纹理变形或 GPU 渲染。"
       }
+    },
+    {
+      "id": "REF-165",
+      "type": "reference",
+      "name": "Hydrogen · Variant-aware swatch selection / 商品规格色标与可用性",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v065",
+        "pinned-upstream-source",
+        "research-only",
+        "commerce-product"
+      ],
+      "aliases": [
+        "规格选择",
+        "商品色标",
+        "variant availability",
+        "product swatch",
+        "sku options"
+      ],
+      "source": "https://github.com/Shopify/hydrogen/blob/b22b7ed6fcb309bc38e2dad278b50ecdc3255488/examples/hydrogen/app/components/ProductForm.tsx",
+      "license": "MIT; https://github.com/Shopify/hydrogen/blob/b22b7ed6fcb309bc38e2dad278b50ecdc3255488/LICENSE.md. Research-only; no upstream code/media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "commerce",
+        "brand-site"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v065.md",
+      "spec": "registry/material-expansion-v065.json",
+      "verified": "Pinned upstream source and code license text inspected at b22b7ed6fcb309bc38e2dad278b50ecdc3255488 on 2026-11-24; no runtime integration verified.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v065.md",
+        "mode": "research-only",
+        "stack": "Upstream source study only; confirm target stack and legal boundaries",
+        "instructions": "Read https://github.com/Shopify/hydrogen/blob/b22b7ed6fcb309bc38e2dad278b50ecdc3255488/examples/hydrogen/app/components/ProductForm.tsx and companion paths in registry/material-expansion-v065.json (REF-165); follow specific license limitations before independent adaptation.",
+        "limitations": "React Router、Hydrogen 商品表单与 Shopify 数据依赖；不能用视觉灰度代替完整可售性语义，素材与商标另查。"
+      }
+    },
+    {
+      "id": "REF-166",
+      "type": "reference",
+      "name": "Dawn · Variant-linked media gallery / 规格联动商品媒体画廊",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v065",
+        "pinned-upstream-source",
+        "research-only",
+        "commerce-product"
+      ],
+      "aliases": [
+        "商品主图",
+        "规格切图",
+        "媒体联动",
+        "product media gallery",
+        "variant featured media"
+      ],
+      "source": "https://github.com/Shopify/dawn/blob/779b2830977d6c9ebc817422e09de21885c33217/snippets/product-media-gallery.liquid",
+      "license": "Shopify 专用主题许可（非通用 MIT；仅限与 Shopify 软件或服务集成的主题）; https://github.com/Shopify/dawn/blob/779b2830977d6c9ebc817422e09de21885c33217/LICENSE.md. Research-only; no upstream code/media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "commerce",
+        "brand-site"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v065.md",
+      "spec": "registry/material-expansion-v065.json",
+      "verified": "Pinned upstream source and code license text inspected at 779b2830977d6c9ebc817422e09de21885c33217 on 2026-11-24; no runtime integration verified.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v065.md",
+        "mode": "research-only",
+        "stack": "Upstream source study only; confirm target stack and legal boundaries",
+        "instructions": "Read https://github.com/Shopify/dawn/blob/779b2830977d6c9ebc817422e09de21885c33217/snippets/product-media-gallery.liquid and companion paths in registry/material-expansion-v065.json (REF-166); follow specific license limitations before independent adaptation.",
+        "limitations": "仅研究交互逻辑和设计概念；禁止向通用资产库复制/移植 Dawn 源码、衍生代码或主题，受 Shopify 专用许可约束。"
+      }
+    },
+    {
+      "id": "REF-167",
+      "type": "reference",
+      "name": "Primer · Overflow-aware action bar / 自适应操作栏",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v065",
+        "pinned-upstream-source",
+        "research-only",
+        "enterprise-controls"
+      ],
+      "aliases": [
+        "工具栏溢出",
+        "操作收纳",
+        "action bar",
+        "overflow menu",
+        "roving focus"
+      ],
+      "source": "https://github.com/primer/react/blob/cc9daf0a8551f93dc8ed09f643c82f7c9c9fe8e7/packages/react/src/ActionBar/ActionBar.tsx",
+      "license": "MIT; https://github.com/primer/react/blob/cc9daf0a8551f93dc8ed09f643c82f7c9c9fe8e7/LICENSE. Research-only; no upstream code/media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "workspace",
+        "developer-tool",
+        "analytics"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v065.md",
+      "spec": "registry/material-expansion-v065.json",
+      "verified": "Pinned upstream source and code license text inspected at cc9daf0a8551f93dc8ed09f643c82f7c9c9fe8e7 on 2026-11-24; no runtime integration verified.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v065.md",
+        "mode": "research-only",
+        "stack": "Upstream source study only; confirm target stack and legal boundaries",
+        "instructions": "Read https://github.com/primer/react/blob/cc9daf0a8551f93dc8ed09f643c82f7c9c9fe8e7/packages/react/src/ActionBar/ActionBar.tsx and companion paths in registry/material-expansion-v065.json (REF-167); follow specific license limitations before independent adaptation.",
+        "limitations": "依赖 Primer ActionMenu、ActionList、内部注册及观察器；不要直接复制单个 TSX 当成无依赖组件，核查目标键盘与焦点。"
+      }
+    },
+    {
+      "id": "REF-168",
+      "type": "reference",
+      "name": "Primer · Compound page header / 响应式复合页头",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v065",
+        "pinned-upstream-source",
+        "research-only",
+        "enterprise-layout"
+      ],
+      "aliases": [
+        "复合页头",
+        "对象详情页头",
+        "page header",
+        "context bar",
+        "responsive slots"
+      ],
+      "source": "https://github.com/primer/react/blob/cc9daf0a8551f93dc8ed09f643c82f7c9c9fe8e7/packages/react/src/PageHeader/PageHeader.tsx",
+      "license": "MIT; https://github.com/primer/react/blob/cc9daf0a8551f93dc8ed09f643c82f7c9c9fe8e7/LICENSE. Research-only; no upstream code/media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "workspace",
+        "developer-tool",
+        "documentation"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v065.md",
+      "spec": "registry/material-expansion-v065.json",
+      "verified": "Pinned upstream source and code license text inspected at cc9daf0a8551f93dc8ed09f643c82f7c9c9fe8e7 on 2026-11-24; no runtime integration verified.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v065.md",
+        "mode": "research-only",
+        "stack": "Upstream source study only; confirm target stack and legal boundaries",
+        "instructions": "Read https://github.com/primer/react/blob/cc9daf0a8551f93dc8ed09f643c82f7c9c9fe8e7/packages/react/src/PageHeader/PageHeader.tsx and companion paths in registry/material-expansion-v065.json (REF-168); follow specific license limitations before independent adaptation.",
+        "limitations": "依赖 Primer 样式、断点和 React slot 工具；不得将视觉顺序等同读屏顺序，需目标端验证。"
+      }
+    },
+    {
+      "id": "REF-169",
+      "type": "reference",
+      "name": "Elastic EUI · Anchored cell inspector / 表格单元格检视浮层",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v065",
+        "pinned-upstream-source",
+        "research-only",
+        "enterprise-controls"
+      ],
+      "aliases": [
+        "单元格展开",
+        "表格检视",
+        "cell inspector",
+        "data grid popover",
+        "JSON cell"
+      ],
+      "source": "https://github.com/elastic/eui/blob/697e1817246e7f22838fce07f501986f24bfc9e0/packages/eui/src/components/datagrid/body/cell/data_grid_cell_popover.tsx",
+      "license": "ELv2 或 SSPL-1.0（对应源码头；非宽松 MIT）; https://github.com/elastic/eui/blob/697e1817246e7f22838fce07f501986f24bfc9e0/LICENSE.txt. Research-only; no upstream code/media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "analytics",
+        "developer-tool",
+        "workspace"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v065.md",
+      "spec": "registry/material-expansion-v065.json",
+      "verified": "Pinned upstream source and code license text inspected at 697e1817246e7f22838fce07f501986f24bfc9e0 on 2026-11-24; no runtime integration verified.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v065.md",
+        "mode": "research-only",
+        "stack": "Upstream source study only; confirm target stack and legal boundaries",
+        "instructions": "Read https://github.com/elastic/eui/blob/697e1817246e7f22838fce07f501986f24bfc9e0/packages/eui/src/components/datagrid/body/cell/data_grid_cell_popover.tsx and companion paths in registry/material-expansion-v065.json (REF-169); follow specific license limitations before independent adaptation.",
+        "limitations": "仅研究设计模式；具体文件 ELv2/SSPL 双许可，禁止当无约束可搬运素材；需独立实现并验证虚拟滚动锚点。"
+      }
+    },
+    {
+      "id": "REF-170",
+      "type": "reference",
+      "name": "Elastic EUI · Width-aware data-grid controls / 容器宽度感知数据工具栏",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v065",
+        "pinned-upstream-source",
+        "research-only",
+        "enterprise-controls"
+      ],
+      "aliases": [
+        "数据表工具栏",
+        "列显示",
+        "宽度感知",
+        "grid toolbar",
+        "display density"
+      ],
+      "source": "https://github.com/elastic/eui/blob/697e1817246e7f22838fce07f501986f24bfc9e0/packages/eui/src/components/datagrid/controls/data_grid_toolbar.tsx",
+      "license": "ELv2 或 SSPL-1.0（对应源码头；非宽松 MIT）; https://github.com/elastic/eui/blob/697e1817246e7f22838fce07f501986f24bfc9e0/LICENSE.txt. Research-only; no upstream code/media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "analytics",
+        "workspace",
+        "developer-tool"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v065.md",
+      "spec": "registry/material-expansion-v065.json",
+      "verified": "Pinned upstream source and code license text inspected at 697e1817246e7f22838fce07f501986f24bfc9e0 on 2026-11-24; no runtime integration verified.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v065.md",
+        "mode": "research-only",
+        "stack": "Upstream source study only; confirm target stack and legal boundaries",
+        "instructions": "Read https://github.com/elastic/eui/blob/697e1817246e7f22838fce07f501986f24bfc9e0/packages/eui/src/components/datagrid/controls/data_grid_toolbar.tsx and companion paths in registry/material-expansion-v065.json (REF-170); follow specific license limitations before independent adaptation.",
+        "limitations": "仅研究设计模式；对应源码受 ELv2/SSPL，禁止直接搬运至通用资产库。需目标表格状态和可访问性验证。"
+      }
+    },
+    {
+      "id": "REF-171",
+      "type": "reference",
+      "name": "Ionic · Swipe-synchronized segment view / 滑动同步分段内容",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v065",
+        "pinned-upstream-source",
+        "research-only",
+        "mobile-navigation"
+      ],
+      "aliases": [
+        "滑动分段",
+        "分段页联动",
+        "segment view",
+        "swipe tabs",
+        "scroll ratio"
+      ],
+      "source": "https://github.com/ionic-team/ionic-framework/blob/8f46feadd4fb93f1bf0442d83389f33dde3caab3/core/src/components/segment-view/segment-view.tsx",
+      "license": "MIT; https://github.com/ionic-team/ionic-framework/blob/8f46feadd4fb93f1bf0442d83389f33dde3caab3/LICENSE. Research-only; no upstream code/media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "mobile",
+        "workspace",
+        "commerce"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v065.md",
+      "spec": "registry/material-expansion-v065.json",
+      "verified": "Pinned upstream source and code license text inspected at 8f46feadd4fb93f1bf0442d83389f33dde3caab3 on 2026-11-24; no runtime integration verified.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v065.md",
+        "mode": "research-only",
+        "stack": "Upstream source study only; confirm target stack and legal boundaries",
+        "instructions": "Read https://github.com/ionic-team/ionic-framework/blob/8f46feadd4fb93f1bf0442d83389f33dde3caab3/core/src/components/segment-view/segment-view.tsx and companion paths in registry/material-expansion-v065.json (REF-171); follow specific license limitations before independent adaptation.",
+        "limitations": "Stencil Web Components、配套 segment/segment-button 与样式；需处理零滚动范围、RTL、嵌套滚动和键盘替代，不能只移植单个文件。"
+      }
+    },
+    {
+      "id": "REF-172",
+      "type": "reference",
+      "name": "Carbon for IBM.com · Slot-based leadspace / 品牌首屏叙事结构",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v065",
+        "pinned-upstream-source",
+        "research-only",
+        "brand-composition"
+      ],
+      "aliases": [
+        "品牌首屏",
+        "商业首屏",
+        "leadspace",
+        "hero composition",
+        "CTA slots"
+      ],
+      "source": "https://github.com/carbon-design-system/carbon-for-ibm-dotcom/blob/f681ec41939a259731c2edac29ec6339a20590d7/packages/web-components/src/components/leadspace/leadspace.ts",
+      "license": "Apache-2.0; https://github.com/carbon-design-system/carbon-for-ibm-dotcom/blob/f681ec41939a259731c2edac29ec6339a20590d7/LICENSE. Research-only; no upstream code/media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "brand-site",
+        "landing-page",
+        "commerce"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v065.md",
+      "spec": "registry/material-expansion-v065.json",
+      "verified": "Pinned upstream source and code license text inspected at f681ec41939a259731c2edac29ec6339a20590d7 on 2026-11-24; no runtime integration verified.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v065.md",
+        "mode": "research-only",
+        "stack": "Upstream source study only; confirm target stack and legal boundaries",
+        "instructions": "Read https://github.com/carbon-design-system/carbon-for-ibm-dotcom/blob/f681ec41939a259731c2edac29ec6339a20590d7/packages/web-components/src/components/leadspace/leadspace.ts and companion paths in registry/material-expansion-v065.json (REF-172); follow specific license limitations before independent adaptation.",
+        "limitations": "Lit、Carbon utilities 和样式依赖；Apache-2.0 不授予 IBM 品牌/商标或媒体使用权；需核对对比度及真实内容。"
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",
