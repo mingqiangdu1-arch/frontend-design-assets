@@ -17,6 +17,7 @@
 
 | 典型任务（中英关键词） | 优先入口 | 核心说明 |
 | --- | --- | --- |
+| 参数纹样、程序材质、二维调色、图表纹理 / generative pattern, dither, color picker | [V0.60](registry/material-expansion-v060.json) · [源码与许可](docs/research/material-expansion-v060.md) · REF-149..156 | 六个新来源、八项固定源码参考，仅研究；不得视为本库已实现组件 |
 | 字符栅格、ASCII、可调字符场 / glyph field | [V0.59](registry/material-expansion-v059.json) · FX-124..129 · VG-107..110 | 四个原生可操作字符场、两个静态字纹、四幅装饰 SVG |
 | 商品陈列、材质、原生缩放 / object display | [V0.58](registry/material-expansion-v058.json) · FX-118..123 · VG-103..106 | 商品视觉原件；尺寸、材质和物件均为虚构 |
 | 分析图表、留存、瀑布、象限 / analytical charts | [V0.57](registry/material-expansion-v057.json) · FX-112..117 · VG-099..102 | 静态图表，真实数值须由宿主绑定；SVG 仅装饰 |

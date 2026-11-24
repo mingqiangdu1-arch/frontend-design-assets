@@ -1,3 +1,9 @@
+## 2026-11-24 · V0.60 procedural pattern, material and creative-control source expansion
+
+- Added eight commit-pinned reference entries REF-149..156 from six newly indexed sources (Flowshape, Vladstudio Patterns, Textures.js, Viberdy UI, React Colorful and Rough.js). Source files and license texts inspected; no code/media vendored.
+- Added [structured source index](registry/material-expansion-v060.json) and [research notes](docs/research/material-expansion-v060.md), with distinct value, limitations and license boundaries. Viberdy MIT + Commons Clause is research-only, not unrestricted MIT.
+- Registry now holds 581 assets; no new React exports, themes, runtime dependencies, demos or test framework. Task routes added without expanding README/DISCOVER.
+
 
 
 ## 2026-11-24 · Retrieval maintenance (after V0.59)

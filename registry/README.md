@@ -7,6 +7,7 @@ This directory is the **authoritative index** for choosing existing design refer
 | File | Source of truth for |
 | --- | --- |
 | `assets.json` | Every stable asset ID, its identity/type/lifecycle/source/reuse constraints, tags, aliases, context, style, dependencies, and handoff |
+| `material-expansion-v060.json` | REF-149..156：六个新来源的八项固定 Git 提交源码参考，包含参数化矢量纹样、手绘填充、点阵/噪声材质及颜色控件；许可逐项记录，全部 research-only |
 | `material-expansion-v059.json` | `FX-124..127` 四种原创可运行的数学字符场 + 实际原生滑杆/按钮交互，`FX-128..129` 两种独立静态文字纹理，`VG-107..110` 四幅不依赖字体的自绘 SVG；不可视为真实数据、图片转 ASCII、App 或已认证组件 |
 | `material-expansion-v058.json` | `FX-118..123` 六个原创 HTML/CSS 实物陈列样式，FX-120 有可选局部原生缩放脚本；`VG-103..106` 四幅原创透明 SVG 商品概念图；非真实制造、测量、色彩材质或商品数据 |
 | `material-expansion-v057.json` | `FX-112..117` 六套带语义数值说明的原创静态 HTML/CSS 分析可视化原件，`VG-099..102` 四幅只作装饰的原创 SVG；数据虚构、图形坐标由作者手动同步，不是计算引擎 |

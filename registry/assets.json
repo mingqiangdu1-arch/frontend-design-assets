@@ -22990,6 +22990,328 @@
         "instructions": "Use graphics/v059/stepped-prism.svg as informative or decorative media with proper alt; no real-world data representation.",
         "limitations": "Pseudo-3D decorative geometry, not an actual 3D model, optics simulation or manufacturing object."
       }
+    },
+    {
+      "id": "REF-149",
+      "type": "reference",
+      "name": "Flowshape · Guilloché ring engraving / 玑镂环形雕纹",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v060",
+        "pinned-upstream-source",
+        "research-only",
+        "vector-pattern"
+      ],
+      "aliases": [
+        "guilloche",
+        "玑镂纹",
+        "腕表雕纹",
+        "环形雕刻",
+        "security engraving style"
+      ],
+      "source": "https://github.com/Jossifresben/flowshape/blob/07d30a244e4b638a8356e03c9bd252c82a9c42b3/src/patterns/guilloche.ts",
+      "license": "MIT; fixed license: https://github.com/Jossifresben/flowshape/blob/07d30a244e4b638a8356e03c9bd252c82a9c42b3/LICENSE. Only source URLs and original analysis stored; no third-party code or media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "illustration",
+        "brand-site",
+        "portfolio"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v060.md",
+      "spec": "registry/material-expansion-v060.json",
+      "verified": "Exact upstream commit 07d30a244e4b638a8356e03c9bd252c82a9c42b3, listed source files and license text inspected on 2026-11-24; no installation or runtime/browser verification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v060.md",
+        "mode": "research-only",
+        "stack": "Pinned upstream source; target-specific adaptation review",
+        "instructions": "Read https://github.com/Jossifresben/flowshape/blob/07d30a244e4b638a8356e03c9bd252c82a9c42b3/src/patterns/guilloche.ts and companion paths in registry/material-expansion-v060.json (REF-149); verify dependencies, licensing, accessibility and actual runtime in target project.",
+        "limitations": "仅参考装饰性几何，不作货币、防伪或仪表数据；依赖项目 SVG 和 pattern registry。"
+      }
+    },
+    {
+      "id": "REF-150",
+      "type": "reference",
+      "name": "Flowshape · Truchet seeded tiling / 种子弧线拼砖",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v060",
+        "pinned-upstream-source",
+        "research-only",
+        "vector-pattern"
+      ],
+      "aliases": [
+        "truchet",
+        "弧线拼砖",
+        "种子拼贴",
+        "quarter circle tile",
+        "随机拼砖"
+      ],
+      "source": "https://github.com/Jossifresben/flowshape/blob/07d30a244e4b638a8356e03c9bd252c82a9c42b3/src/patterns/truchet.ts",
+      "license": "MIT; fixed license: https://github.com/Jossifresben/flowshape/blob/07d30a244e4b638a8356e03c9bd252c82a9c42b3/LICENSE. Only source URLs and original analysis stored; no third-party code or media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "illustration",
+        "brand-site",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v060.md",
+      "spec": "registry/material-expansion-v060.json",
+      "verified": "Exact upstream commit 07d30a244e4b638a8356e03c9bd252c82a9c42b3, listed source files and license text inspected on 2026-11-24; no installation or runtime/browser verification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v060.md",
+        "mode": "research-only",
+        "stack": "Pinned upstream source; target-specific adaptation review",
+        "instructions": "Read https://github.com/Jossifresben/flowshape/blob/07d30a244e4b638a8356e03c9bd252c82a9c42b3/src/patterns/truchet.ts and companion paths in registry/material-expansion-v060.json (REF-150); verify dependencies, licensing, accessibility and actual runtime in target project.",
+        "limitations": "依赖 PRNG 与 SVG 生成层；导出平铺边缘连续性不能由单格连续直接推断。"
+      }
+    },
+    {
+      "id": "REF-151",
+      "type": "reference",
+      "name": "Vladstudio Patterns · Clearance-aware shape packing / 无碰撞形状纹样",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v060",
+        "pinned-upstream-source",
+        "research-only",
+        "vector-pattern"
+      ],
+      "aliases": [
+        "shape packing",
+        "图形填充",
+        "无碰撞纹样",
+        "seamless tile",
+        "程序纹理"
+      ],
+      "source": "https://github.com/vladstudio/patterns/blob/59d6905c8f120f3c481d9f23dd846aa1adee1beb/app/generator.js",
+      "license": "MIT; fixed license: https://github.com/vladstudio/patterns/blob/59d6905c8f120f3c481d9f23dd846aa1adee1beb/LICENSE. Only source URLs and original analysis stored; no third-party code or media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "illustration",
+        "brand-site",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v060.md",
+      "spec": "registry/material-expansion-v060.json",
+      "verified": "Exact upstream commit 59d6905c8f120f3c481d9f23dd846aa1adee1beb, listed source files and license text inspected on 2026-11-24; no installation or runtime/browser verification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v060.md",
+        "mode": "research-only",
+        "stack": "Pinned upstream source; target-specific adaptation review",
+        "instructions": "Read https://github.com/vladstudio/patterns/blob/59d6905c8f120f3c481d9f23dd846aa1adee1beb/app/generator.js and companion paths in registry/material-expansion-v060.json (REF-151); verify dependencies, licensing, accessibility and actual runtime in target project.",
+        "limitations": "生成复杂度、输出规模、几何辅助文件与原始形状素材许可须分别复核。"
+      }
+    },
+    {
+      "id": "REF-152",
+      "type": "reference",
+      "name": "Textures.js · SVG pattern fills / 图表图案填充",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v060",
+        "pinned-upstream-source",
+        "research-only",
+        "data-texture"
+      ],
+      "aliases": [
+        "svg pattern fill",
+        "图表纹理",
+        "图案填充",
+        "非颜色编码",
+        "hatching"
+      ],
+      "source": "https://github.com/riccardoscalco/textures/blob/6d39b98a2b46c4674c98033b8a6b4d7fda192b45/dist/textures.esm.js",
+      "license": "MIT; fixed license: https://github.com/riccardoscalco/textures/blob/6d39b98a2b46c4674c98033b8a6b4d7fda192b45/license. Only source URLs and original analysis stored; no third-party code or media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "analytics",
+        "workspace",
+        "documentation"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v060.md",
+      "spec": "registry/material-expansion-v060.json",
+      "verified": "Exact upstream commit 6d39b98a2b46c4674c98033b8a6b4d7fda192b45, listed source files and license text inspected on 2026-11-24; no installation or runtime/browser verification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v060.md",
+        "mode": "research-only",
+        "stack": "Pinned upstream source; target-specific adaptation review",
+        "instructions": "Read https://github.com/riccardoscalco/textures/blob/6d39b98a2b46c4674c98033b8a6b4d7fda192b45/dist/textures.esm.js and companion paths in registry/material-expansion-v060.json (REF-152); verify dependencies, licensing, accessibility and actual runtime in target project.",
+        "limitations": "所核对文件为发布构建产物，使用 D3 风格 selection；真实无障碍须通过文字图例与对比度验证，注意 SVG ID 冲突。"
+      }
+    },
+    {
+      "id": "REF-153",
+      "type": "reference",
+      "name": "Viberdy · Dither Develop Card / 点阵显影图卡",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v060",
+        "pinned-upstream-source",
+        "research-only",
+        "surface-effects",
+        "license-restricted"
+      ],
+      "aliases": [
+        "dither card",
+        "点阵显影",
+        "ordered dither",
+        "图像抖动",
+        "印刷揭示"
+      ],
+      "source": "https://github.com/viberdy-dev/ui/blob/3ef691b4dbf79e81a8615b1f934ea6c4ef2c79e7/components/dither-develop-card.tsx",
+      "license": "MIT with Commons Clause; fixed license: https://github.com/viberdy-dev/ui/blob/3ef691b4dbf79e81a8615b1f934ea6c4ef2c79e7/LICENSE. Only source URLs and original analysis stored; no third-party code or media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "portfolio",
+        "creative-site",
+        "landing-page"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v060.md",
+      "spec": "registry/material-expansion-v060.json",
+      "verified": "Exact upstream commit 3ef691b4dbf79e81a8615b1f934ea6c4ef2c79e7, listed source files and license text inspected on 2026-11-24; no installation or runtime/browser verification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v060.md",
+        "mode": "research-only",
+        "stack": "Pinned upstream source; target-specific adaptation review",
+        "instructions": "Read https://github.com/viberdy-dev/ui/blob/3ef691b4dbf79e81a8615b1f934ea6c4ef2c79e7/components/dither-develop-card.tsx and companion paths in registry/material-expansion-v060.json (REF-153); verify dependencies, licensing, accessibility and actual runtime in target project.",
+        "limitations": "不得作为本库的可转售/再分发 UI 素材复制；图片/字体授权、移动端和 reduced-motion 实测须在目标项目核验。"
+      }
+    },
+    {
+      "id": "REF-154",
+      "type": "reference",
+      "name": "Viberdy · Concrete Wall Texture / 水泥墙程序材质",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v060",
+        "pinned-upstream-source",
+        "research-only",
+        "surface-effects",
+        "license-restricted"
+      ],
+      "aliases": [
+        "concrete texture",
+        "水泥墙",
+        "程序噪声",
+        "value noise",
+        "混凝土纹理"
+      ],
+      "source": "https://github.com/viberdy-dev/ui/blob/3ef691b4dbf79e81a8615b1f934ea6c4ef2c79e7/components/concrete-wall-texture.tsx",
+      "license": "MIT with Commons Clause; fixed license: https://github.com/viberdy-dev/ui/blob/3ef691b4dbf79e81a8615b1f934ea6c4ef2c79e7/LICENSE. Only source URLs and original analysis stored; no third-party code or media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "brand-site",
+        "portfolio",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v060.md",
+      "spec": "registry/material-expansion-v060.json",
+      "verified": "Exact upstream commit 3ef691b4dbf79e81a8615b1f934ea6c4ef2c79e7, listed source files and license text inspected on 2026-11-24; no installation or runtime/browser verification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v060.md",
+        "mode": "research-only",
+        "stack": "Pinned upstream source; target-specific adaptation review",
+        "instructions": "Read https://github.com/viberdy-dev/ui/blob/3ef691b4dbf79e81a8615b1f934ea6c4ef2c79e7/components/concrete-wall-texture.tsx and companion paths in registry/material-expansion-v060.json (REF-154); verify dependencies, licensing, accessibility and actual runtime in target project.",
+        "limitations": "同上 Commons Clause；仅研究算法与层次，不复制组件；检查 DPR、resize、内存及遮盖文字时的可读性。"
+      }
+    },
+    {
+      "id": "REF-155",
+      "type": "reference",
+      "name": "React Colorful · Saturation and hue controls / 二维色彩选择",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v060",
+        "pinned-upstream-source",
+        "research-only",
+        "creative-controls"
+      ],
+      "aliases": [
+        "color picker",
+        "二维调色",
+        "饱和度选择",
+        "色相滑杆",
+        "HSV picker"
+      ],
+      "source": "https://github.com/omgovich/react-colorful/blob/0bc3fb57999522ead7215debb89e0660de28a4d4/src/components/common/Saturation.tsx",
+      "license": "MIT; fixed license: https://github.com/omgovich/react-colorful/blob/0bc3fb57999522ead7215debb89e0660de28a4d4/LICENSE. Only source URLs and original analysis stored; no third-party code or media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "workspace",
+        "developer-tool",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v060.md",
+      "spec": "registry/material-expansion-v060.json",
+      "verified": "Exact upstream commit 0bc3fb57999522ead7215debb89e0660de28a4d4, listed source files and license text inspected on 2026-11-24; no installation or runtime/browser verification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v060.md",
+        "mode": "research-only",
+        "stack": "Pinned upstream source; target-specific adaptation review",
+        "instructions": "Read https://github.com/omgovich/react-colorful/blob/0bc3fb57999522ead7215debb89e0660de28a4d4/src/components/common/Saturation.tsx and companion paths in registry/material-expansion-v060.json (REF-155); verify dependencies, licensing, accessibility and actual runtime in target project.",
+        "limitations": "需配合 Interactive、Pointer、颜色转换与宿主数据契约；不能仅依据 ARIA 属性宣称可访问性认证。"
+      }
+    },
+    {
+      "id": "REF-156",
+      "type": "reference",
+      "name": "Rough.js · Polygon hachure filler / 手绘排线填充",
+      "stage": "analyzed",
+      "priority": "P1",
+      "reuseKind": "design-reference",
+      "tags": [
+        "v060",
+        "pinned-upstream-source",
+        "research-only",
+        "data-texture"
+      ],
+      "aliases": [
+        "rough sketch",
+        "手绘排线",
+        "hachure",
+        "素描填充",
+        "sketch diagram"
+      ],
+      "source": "https://github.com/rough-stuff/rough/blob/56a2762171b1294d643501e8d14f120db6b27bd7/src/fillers/hachure-filler.ts",
+      "license": "MIT; fixed license: https://github.com/rough-stuff/rough/blob/56a2762171b1294d643501e8d14f120db6b27bd7/LICENSE. Only source URLs and original analysis stored; no third-party code or media copied.",
+      "styleIds": [],
+      "applicationContexts": [
+        "illustration",
+        "documentation",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "details": "docs/research/material-expansion-v060.md",
+      "spec": "registry/material-expansion-v060.json",
+      "verified": "Exact upstream commit 56a2762171b1294d643501e8d14f120db6b27bd7, listed source files and license text inspected on 2026-11-24; no installation or runtime/browser verification.",
+      "handoff": {
+        "entry": "docs/research/material-expansion-v060.md",
+        "mode": "research-only",
+        "stack": "Pinned upstream source; target-specific adaptation review",
+        "instructions": "Read https://github.com/rough-stuff/rough/blob/56a2762171b1294d643501e8d14f120db6b27bd7/src/fillers/hachure-filler.ts and companion paths in registry/material-expansion-v060.json (REF-156); verify dependencies, licensing, accessibility and actual runtime in target project.",
+        "limitations": "扫描线模块引用 hachure-fill；许可证及依赖需再核实，复杂多边形、洞及随机确定性需实测。"
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",

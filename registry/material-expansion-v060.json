@@ -1,0 +1,343 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.60.0",
+  "date": "2026-11-24",
+  "focus": "Eight item-level references across six distinct sources: procedural vector pattern grammars, non-color chart texture, material rendering and accessible color controls. No code vendoring or runtime integration.",
+  "previousAssetCount": 573,
+  "newAssetCount": 8,
+  "expectedAssetCount": 581,
+  "reactExportsAdded": 0,
+  "styleIdsAdded": 0,
+  "thirdPartyCodeCopied": false,
+  "externalMediaCopied": false,
+  "entries": [
+    {
+      "id": "REF-149",
+      "name": "Flowshape · Guilloché ring engraving / 玑镂环形雕纹",
+      "group": "vector-pattern",
+      "priority": "P1",
+      "repository": "Jossifresben/flowshape",
+      "sourceCommit": "07d30a244e4b638a8356e03c9bd252c82a9c42b3",
+      "checkedOn": "2026-11-24",
+      "sourceFiles": [
+        {
+          "path": "src/patterns/guilloche.ts",
+          "url": "https://github.com/Jossifresben/flowshape/blob/07d30a244e4b638a8356e03c9bd252c82a9c42b3/src/patterns/guilloche.ts"
+        }
+      ],
+      "license": "MIT",
+      "licenseUrl": "https://github.com/Jossifresben/flowshape/blob/07d30a244e4b638a8356e03c9bd252c82a9c42b3/LICENSE",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "aliases": [
+        "guilloche",
+        "玑镂纹",
+        "腕表雕纹",
+        "环形雕刻",
+        "security engraving style"
+      ],
+      "styleDeepeningTargets": [
+        "aether-orbit",
+        "organic-tactile",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "brand-site",
+        "portfolio"
+      ],
+      "studyValue": "以参数化闭合余弦环和相位差形成雕刻交织，提供环数、瓣数、深度、线宽和周期控制。",
+      "gapVsExisting": "补充 VG 固定装饰与 FX 字符场之外的连续矢量曲线参数研究。",
+      "limitations": "仅参考装饰性几何，不作货币、防伪或仪表数据；依赖项目 SVG 和 pattern registry。",
+      "copiedThirdPartySource": false
+    },
+    {
+      "id": "REF-150",
+      "name": "Flowshape · Truchet seeded tiling / 种子弧线拼砖",
+      "group": "vector-pattern",
+      "priority": "P1",
+      "repository": "Jossifresben/flowshape",
+      "sourceCommit": "07d30a244e4b638a8356e03c9bd252c82a9c42b3",
+      "checkedOn": "2026-11-24",
+      "sourceFiles": [
+        {
+          "path": "src/patterns/truchet.ts",
+          "url": "https://github.com/Jossifresben/flowshape/blob/07d30a244e4b638a8356e03c9bd252c82a9c42b3/src/patterns/truchet.ts"
+        }
+      ],
+      "license": "MIT",
+      "licenseUrl": "https://github.com/Jossifresben/flowshape/blob/07d30a244e4b638a8356e03c9bd252c82a9c42b3/LICENSE",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "aliases": [
+        "truchet",
+        "弧线拼砖",
+        "种子拼贴",
+        "quarter circle tile",
+        "随机拼砖"
+      ],
+      "styleDeepeningTargets": [
+        "paper-rebellion",
+        "neo-brutalist",
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "brand-site",
+        "creative-site"
+      ],
+      "studyValue": "种子控制网格单元方向，可选弧形/斜线及线条/填充表示；形状和强调色的选择受参数控制。",
+      "gapVsExisting": "不同于现有固定重复纹样，研究整幅网格的确定性变化。",
+      "limitations": "依赖 PRNG 与 SVG 生成层；导出平铺边缘连续性不能由单格连续直接推断。",
+      "copiedThirdPartySource": false
+    },
+    {
+      "id": "REF-151",
+      "name": "Vladstudio Patterns · Clearance-aware shape packing / 无碰撞形状纹样",
+      "group": "vector-pattern",
+      "priority": "P1",
+      "repository": "vladstudio/patterns",
+      "sourceCommit": "59d6905c8f120f3c481d9f23dd846aa1adee1beb",
+      "checkedOn": "2026-11-24",
+      "sourceFiles": [
+        {
+          "path": "app/generator.js",
+          "url": "https://github.com/vladstudio/patterns/blob/59d6905c8f120f3c481d9f23dd846aa1adee1beb/app/generator.js"
+        }
+      ],
+      "license": "MIT",
+      "licenseUrl": "https://github.com/vladstudio/patterns/blob/59d6905c8f120f3c481d9f23dd846aa1adee1beb/LICENSE",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "aliases": [
+        "shape packing",
+        "图形填充",
+        "无碰撞纹样",
+        "seamless tile",
+        "程序纹理"
+      ],
+      "styleDeepeningTargets": [
+        "organic-tactile",
+        "paper-rebellion",
+        "shape-expressive"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "brand-site",
+        "creative-site"
+      ],
+      "studyValue": "以胶囊线段与安全间距判断碰撞，先从邻近形状扩展再填补空隙；支持 tile 边缘模式。",
+      "gapVsExisting": "补充已有固定周期 VG 图纹和程序化 Canvas，而非再增加一个静态平铺样张。",
+      "limitations": "生成复杂度、输出规模、几何辅助文件与原始形状素材许可须分别复核。",
+      "copiedThirdPartySource": false
+    },
+    {
+      "id": "REF-152",
+      "name": "Textures.js · SVG pattern fills / 图表图案填充",
+      "group": "data-texture",
+      "priority": "P1",
+      "repository": "riccardoscalco/textures",
+      "sourceCommit": "6d39b98a2b46c4674c98033b8a6b4d7fda192b45",
+      "checkedOn": "2026-11-24",
+      "sourceFiles": [
+        {
+          "path": "dist/textures.esm.js",
+          "url": "https://github.com/riccardoscalco/textures/blob/6d39b98a2b46c4674c98033b8a6b4d7fda192b45/dist/textures.esm.js"
+        }
+      ],
+      "license": "MIT",
+      "licenseUrl": "https://github.com/riccardoscalco/textures/blob/6d39b98a2b46c4674c98033b8a6b4d7fda192b45/license",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "aliases": [
+        "svg pattern fill",
+        "图表纹理",
+        "图案填充",
+        "非颜色编码",
+        "hatching"
+      ],
+      "styleDeepeningTargets": [
+        "type-led-minimal",
+        "editorial-warm",
+        "precision-dark"
+      ],
+      "applicationContexts": [
+        "analytics",
+        "workspace",
+        "documentation"
+      ],
+      "studyValue": "可配置圆点等 SVG pattern 定义、尺寸、密度、底色和 ID；支持以填充引用组织纹理。",
+      "gapVsExisting": "现有 FX 图表以静态色形为主；此处研究非颜色视觉编码与图例配套。",
+      "limitations": "所核对文件为发布构建产物，使用 D3 风格 selection；真实无障碍须通过文字图例与对比度验证，注意 SVG ID 冲突。",
+      "copiedThirdPartySource": false
+    },
+    {
+      "id": "REF-153",
+      "name": "Viberdy · Dither Develop Card / 点阵显影图卡",
+      "group": "surface-effects",
+      "priority": "P1",
+      "repository": "viberdy-dev/ui",
+      "sourceCommit": "3ef691b4dbf79e81a8615b1f934ea6c4ef2c79e7",
+      "checkedOn": "2026-11-24",
+      "sourceFiles": [
+        {
+          "path": "components/dither-develop-card.tsx",
+          "url": "https://github.com/viberdy-dev/ui/blob/3ef691b4dbf79e81a8615b1f934ea6c4ef2c79e7/components/dither-develop-card.tsx"
+        }
+      ],
+      "license": "MIT with Commons Clause",
+      "licenseUrl": "https://github.com/viberdy-dev/ui/blob/3ef691b4dbf79e81a8615b1f934ea6c4ef2c79e7/LICENSE",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "aliases": [
+        "dither card",
+        "点阵显影",
+        "ordered dither",
+        "图像抖动",
+        "印刷揭示"
+      ],
+      "styleDeepeningTargets": [
+        "pixel-arcade",
+        "signal-noir",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "portfolio",
+        "creative-site",
+        "landing-page"
+      ],
+      "studyValue": "React 组件源文件说明以 CSS ordered dithering、首次进入显影与指针光照组合；使用 React hooks 与独立字体回退。",
+      "gapVsExisting": "FX-124..129 是字符场，不提供图像明暗抖动；该参考补充影像显影机制。",
+      "limitations": "不得作为本库的可转售/再分发 UI 素材复制；图片/字体授权、移动端和 reduced-motion 实测须在目标项目核验。",
+      "copiedThirdPartySource": false
+    },
+    {
+      "id": "REF-154",
+      "name": "Viberdy · Concrete Wall Texture / 水泥墙程序材质",
+      "group": "surface-effects",
+      "priority": "P1",
+      "repository": "viberdy-dev/ui",
+      "sourceCommit": "3ef691b4dbf79e81a8615b1f934ea6c4ef2c79e7",
+      "checkedOn": "2026-11-24",
+      "sourceFiles": [
+        {
+          "path": "components/concrete-wall-texture.tsx",
+          "url": "https://github.com/viberdy-dev/ui/blob/3ef691b4dbf79e81a8615b1f934ea6c4ef2c79e7/components/concrete-wall-texture.tsx"
+        }
+      ],
+      "license": "MIT with Commons Clause",
+      "licenseUrl": "https://github.com/viberdy-dev/ui/blob/3ef691b4dbf79e81a8615b1f934ea6c4ef2c79e7/LICENSE",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "aliases": [
+        "concrete texture",
+        "水泥墙",
+        "程序噪声",
+        "value noise",
+        "混凝土纹理"
+      ],
+      "styleDeepeningTargets": [
+        "organic-tactile",
+        "neo-brutalist",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "brand-site",
+        "portfolio",
+        "creative-site"
+      ],
+      "studyValue": "Canvas 使用可重复种子与循环值噪声、低分辨率底层斑驳及高分辨率细点，提供色调和混合模式。",
+      "gapVsExisting": "补充 V0.55 的金属/棱镜 CSS 质感与 V0.52 的 Canvas 绘图。",
+      "limitations": "同上 Commons Clause；仅研究算法与层次，不复制组件；检查 DPR、resize、内存及遮盖文字时的可读性。",
+      "copiedThirdPartySource": false
+    },
+    {
+      "id": "REF-155",
+      "name": "React Colorful · Saturation and hue controls / 二维色彩选择",
+      "group": "creative-controls",
+      "priority": "P1",
+      "repository": "omgovich/react-colorful",
+      "sourceCommit": "0bc3fb57999522ead7215debb89e0660de28a4d4",
+      "checkedOn": "2026-11-24",
+      "sourceFiles": [
+        {
+          "path": "src/components/common/Saturation.tsx",
+          "url": "https://github.com/omgovich/react-colorful/blob/0bc3fb57999522ead7215debb89e0660de28a4d4/src/components/common/Saturation.tsx"
+        },
+        {
+          "path": "src/components/common/Hue.tsx",
+          "url": "https://github.com/omgovich/react-colorful/blob/0bc3fb57999522ead7215debb89e0660de28a4d4/src/components/common/Hue.tsx"
+        }
+      ],
+      "license": "MIT",
+      "licenseUrl": "https://github.com/omgovich/react-colorful/blob/0bc3fb57999522ead7215debb89e0660de28a4d4/LICENSE",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "aliases": [
+        "color picker",
+        "二维调色",
+        "饱和度选择",
+        "色相滑杆",
+        "HSV picker"
+      ],
+      "styleDeepeningTargets": [
+        "refined-light-saas",
+        "precision-dark",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "workspace",
+        "developer-tool",
+        "creative-site"
+      ],
+      "studyValue": "饱和度/亮度平面映射双轴，色相映射单轴；源文件处理键盘增量、边界截断与可读 ARIA 值。",
+      "gapVsExisting": "FX-039 只是原生调色入口，本参考是二维控件和色相轴的状态逻辑。",
+      "limitations": "需配合 Interactive、Pointer、颜色转换与宿主数据契约；不能仅依据 ARIA 属性宣称可访问性认证。",
+      "copiedThirdPartySource": false
+    },
+    {
+      "id": "REF-156",
+      "name": "Rough.js · Polygon hachure filler / 手绘排线填充",
+      "group": "data-texture",
+      "priority": "P1",
+      "repository": "rough-stuff/rough",
+      "sourceCommit": "56a2762171b1294d643501e8d14f120db6b27bd7",
+      "checkedOn": "2026-11-24",
+      "sourceFiles": [
+        {
+          "path": "src/fillers/hachure-filler.ts",
+          "url": "https://github.com/rough-stuff/rough/blob/56a2762171b1294d643501e8d14f120db6b27bd7/src/fillers/hachure-filler.ts"
+        },
+        {
+          "path": "src/fillers/scan-line-hachure.ts",
+          "url": "https://github.com/rough-stuff/rough/blob/56a2762171b1294d643501e8d14f120db6b27bd7/src/fillers/scan-line-hachure.ts"
+        }
+      ],
+      "license": "MIT",
+      "licenseUrl": "https://github.com/rough-stuff/rough/blob/56a2762171b1294d643501e8d14f120db6b27bd7/LICENSE",
+      "stage": "analyzed",
+      "reuse": "research-only",
+      "aliases": [
+        "rough sketch",
+        "手绘排线",
+        "hachure",
+        "素描填充",
+        "sketch diagram"
+      ],
+      "styleDeepeningTargets": [
+        "paper-rebellion",
+        "editorial-warm",
+        "organic-tactile"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "documentation",
+        "creative-site"
+      ],
+      "studyValue": "多边形扫描排线生成后通过双线操作绘制粗糙填充；角度、间距和粗糙度可调。",
+      "gapVsExisting": "比已有手绘视觉 SVG 多出任意多边形的可适配填充算法。",
+      "limitations": "扫描线模块引用 hachure-fill；许可证及依赖需再核实，复杂多边形、洞及随机确定性需实测。",
+      "copiedThirdPartySource": false
+    }
+  ]
+}
