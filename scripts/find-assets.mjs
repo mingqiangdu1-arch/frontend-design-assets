@@ -69,11 +69,12 @@ function scoreIntent(asset,terms){
 }
 
 export function searchAssets(assets,options={}){
- const {style=null,context=null,kind=null,type=null,stage=null,reuse=null,goal=null,intent="",limit=12,reusePolicies={}}=options;
+ const {style=null,context=null,kind=null,type=null,family=null,stage=null,reuse=null,goal=null,intent="",limit=12,reusePolicies={}}=options;
  const terms=text(intent).normalize("NFKC").split(/[\s,，、;；。.!?！？/]+/).filter(Boolean);
  return assets.filter(asset=>{
   if(kind&&asset.reuseKind!==kind)return false;
   if(type&&asset.type!==type)return false;
+  if(family&&!asset.id.startsWith(family.toUpperCase()+"-"))return false;
   if(stage&&asset.stage!==stage)return false;
   if(reuse&&reuseMode(asset,reusePolicies)!==reuse)return false;
   if(style&&asset.styleIds?.length&&!asset.styleIds.includes(style))return false;
@@ -99,11 +100,17 @@ function parseArgs(args){
  const params={};
  for(const raw of args){
   if(raw==="--json"){params.json=true;continue;}
-  if(!raw.startsWith("--")||!raw.includes("="))throw Error("Use --style=... --context=... --intent=... --kind=... --type=... --stage=... --reuse=... --goal=... --limit=... [--json]");
+  if(raw==="--compact"){params.compact=true;continue;}
+  if(!raw.startsWith("--")||!raw.includes("="))throw Error("Use --style=... --context=... --intent=... --kind=... --type=... --family=... --stage=... --reuse=... --goal=... --limit=... [--json] [--compact]");
   const [key,...rest]=raw.slice(2).split("=");
-  if(!["style","context","kind","type","stage","intent","reuse","goal","limit"].includes(key))throw Error("Unknown option: "+key);
+  if(!["style","context","kind","type","family","stage","intent","reuse","goal","limit"].includes(key))throw Error("Unknown option: "+key);
   if(params[key]!==undefined)throw Error("Duplicate option: "+key);
   params[key]=rest.join("=");
+ }
+ if(params.compact&&!params.json)throw Error("--compact requires --json");
+ if(params.family!==undefined){
+  if(!/^[A-Za-z]{2,4}$/.test(params.family))throw Error("Invalid asset family: "+params.family);
+  params.family=params.family.toUpperCase();
  }
  if(params.reuse&&!MODES.has(params.reuse))throw Error("Unknown reuse mode: "+params.reuse);
  if(params.goal&&!GOALS.has(params.goal))throw Error("Unknown goal: "+params.goal);
@@ -114,17 +121,26 @@ export function runCLI(args,root=process.cwd()){
  const manifest=JSON.parse(fs.readFileSync(path.join(root,"registry/assets.json"),"utf8"));
  const styleRegistry=JSON.parse(fs.readFileSync(path.join(root,"registry/styles.json"),"utf8"));
  if(opt.style&&!styleRegistry.styles.some(s=>s.id===opt.style))throw Error("Unknown styleId: "+opt.style);
+ if(opt.family&&!manifest.assets.some(a=>a.id.startsWith(opt.family+"-")))throw Error("Unknown asset family: "+opt.family);
  const options={...opt,reusePolicies:manifest.reusePolicies||{}};
  const results=searchAssets(manifest.assets,options);
  const criteria={style:opt.style||null,context:opt.context||null,intent:opt.intent||null,
-  kind:opt.kind||null,type:opt.type||null,stage:opt.stage||null,reuse:opt.reuse||null,goal:opt.goal||null};
+  kind:opt.kind||null,type:opt.type||null,family:opt.family||null,stage:opt.stage||null,reuse:opt.reuse||null,goal:opt.goal||null};
  if(opt.json)return JSON.stringify({
   criteria,
   note:"Reference handoffs are not certified code. Empty styleIds denotes conceptual neutrality, not CSS/React portability.",
-  results:results.map(asset=>({...asset,handoffResolved:buildHandoff(asset,manifest.reusePolicies)}))
+  ...(opt.compact?{compact:true,note:"Candidate summaries only. Read full registry entry, license, source and handoff before reuse; no production or style compatibility guarantee."}:{}),
+  results:results.map(asset=>opt.compact?{
+   id:asset.id,name:asset.name,type:asset.type,stage:asset.stage,
+   reuseMode:asset._reuseMode,styleIds:asset.styleIds||[],
+   entry:buildHandoff(asset,manifest.reusePolicies).entry,
+   ...(asset.spec?{spec:asset.spec}:{}),...(asset.demo?{demo:asset.demo}:{}),
+   ...(asset.source?{source:asset.source}:{}),...(asset.sources?.length?{sources:asset.sources}:{}),
+   score:asset._score
+  }:({...asset,handoffResolved:buildHandoff(asset,manifest.reusePolicies)}))
  },null,2);
  const lines=[
-  "Candidates ("+results.length+"): type="+(opt.type||"any")+", stage="+(opt.stage||"any")+", style="+(opt.style||"any")+", context="+(opt.context||"any")+
+  "Candidates ("+results.length+"): family="+(opt.family||"any")+", type="+(opt.type||"any")+", stage="+(opt.stage||"any")+", style="+(opt.style||"any")+", context="+(opt.context||"any")+
    ", intent="+(opt.intent||"any")+", reuse="+(opt.reuse||"any")+", goal="+(opt.goal||"any"),
   "INFO: copyable-source means inspectable reference code, NOT drop-in/production-ready software."
  ];

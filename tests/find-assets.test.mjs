@@ -119,3 +119,23 @@ test("explicit research-only override cannot promote sources or make a component
  const promoted={...fixtures[2],handoff:{mode:"copyable-source"}};
  assert.equal(searchAssets([promoted],{reuse:"copyable-source"}).length,0);
 });
+
+test("family filter separates graphic and native material IDs without changing type semantics",()=>{
+ const ids=JSON.parse(runCLI(["--family=vg","--type=component","--limit=100","--json"]));
+ assert.equal(ids.criteria.family,"VG");
+ assert.ok(ids.results.length>0);
+ assert.ok(ids.results.every(a=>a.id.startsWith("VG-")&&a.type==="component"));
+ assert.throws(()=>runCLI(["--family=ZZZZ"]),/Unknown asset family/);
+ assert.throws(()=>runCLI(["--family=VG-001"]),/Invalid asset family/);
+});
+test("compact JSON preserves candidate identity and reuse boundary without returning full registry entries",()=>{
+ const args=["--intent=IP-031","--goal=behavior"];
+ const full=JSON.parse(runCLI([...args,"--json"]));
+ const compact=JSON.parse(runCLI([...args,"--compact","--json"]));
+ assert.equal(compact.compact,true);
+ assert.deepEqual(compact.results.map(x=>x.id),full.results.map(x=>x.id));
+ assert.equal(compact.results[0].reuseMode,full.results[0].handoffResolved.mode);
+ assert.equal(compact.results[0].entry,full.results[0].handoffResolved.entry);
+ assert.ok(!("handoffResolved" in compact.results[0]));
+ assert.throws(()=>runCLI(["--compact"]),/requires --json/);
+});

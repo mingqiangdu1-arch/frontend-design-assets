@@ -20,15 +20,10 @@
 | 用选定主题规划页面 | [页面搭建配方](docs/assembly/style-assembly-v028.md) · [CLI](scripts/build-style-brief.mjs) · [Theme Atlas](playground/style-atlas/) | 14 套主题对应 57 个分区设计；真实模板、源文件和验收清单保持关联 |
 | 浏览全部主题并排对比 | [主题图谱](playground/style-atlas/README.md) · [Agent 选型](docs/styles/theme-selection-v027.md) | 按场景、构图、材质、交互筛选 14 套主题，任选两套加载真实 Demo |
 | 2026 流行主题研究与预览 | [趋势对比](docs/styles/trend-research-2026.md) · [Trend Style Lab](playground/trend-style-lab/README.md) | Liquid Layer、Shape Expressive、Type-led Minimal、Organic Tactile：独立主题与可交互场景，不是 React 库兼容声明 |
-| 查找独立 CSS / 原生 JS / Canvas 素材 | [按任务检索](CATALOG.md) · [原件目录](styles/primitives/) · [最近一轮 V0.53](styles/primitives/v053/README.md) | `FX-*` 系列包含可按类/函数提取的原创视觉、动效、控件和程序绘图；必须检查各项交互和适配边界 |
-| **V0.59 字符栅格与 ASCII 视觉原件** | [4 组原创可操作字符场 + 2 组静态字纹](styles/primitives/v059/README.md) · [独立样张](playground/glyph-fields-v059/index.html) · [4 幅原创 SVG](graphics/v059/README.md) · [机器索引](registry/material-expansion-v059.json) | 正弦、交叠网纹、径向扇面、离散层带四种本地数学渲染与字符纹样；非监测数据、图像转换或绘图平台 |
-| **V0.58 实物与商品展示素材** | [六套源码原件](styles/primitives/v058/README.md) · [独立演示](playground/object-studies-v058/index.html) · [四幅原创透明 SVG](graphics/v058/README.md) · [机器索引](registry/material-expansion-v058.json) | 商品陈列台、材质说明、原生放大滑杆、尺寸标注、表面质感对照、包装视觉与原创物件插画；不是商城或真实制造资料 |
-| **V0.57 数据工作台原件** | [6 套数据可视化源码](styles/primitives/v057/README.md) · [独立示例](playground/analytics-v057/index.html) · [原创 SVG](graphics/v057/README.md) · [机器索引](registry/material-expansion-v057.json) | 新增累计瀑布、双向意见分布、目标基准、留存矩阵、二维象限、区块占比及四幅装饰性矢量；虚构数字有可读说明，不等于数据分析引擎 |
-| **V0.56 多语言排版与原创图形** | [CSS 排版原件](styles/primitives/v056/README.md) · [4 幅无字体 SVG](graphics/v056/README.md) · [语义样张](playground/multiscript-v056/index.html) · [机器索引](registry/material-expansion-v056.json) | 新增 6 套中英日纵排、ruby 注音、双语对照、禁则换行、等宽数字与引语排版，以及 4 幅原创 SVG；按原件提取，非字体包或翻译引擎 |
-| **最新 V0.55 原创触感素材** | [6 个 CSS 原件](styles/primitives/v055/README.md) · [4 幅 SVG](graphics/v055/README.md) · [独立样张](playground/materials-v055/index.html) · [机器索引](registry/material-expansion-v055.json) | 金属蚀刻牌、静态频谱、原生触感单选、博物馆标签、棱镜边缘、折页展开，以及四幅独立原创 SVG；无 React 导出和业务行为 |
-| 查找原创 SVG、图标、纹理和场景图 | [图形原件](graphics/) · [V0.53 图形说明](graphics/v053/README.md) · [素材登记](registry/README.md) | `VG-*` 等独立矢量原件可逐项查源文件；图形示意与可运行交互、真实数据或 3D 引擎不可混同 |
+| 查找独立 CSS / 原生 JS / Canvas 素材 | [按任务检索](CATALOG.md) · [原件目录](styles/primitives/) · [按任务查原件](CATALOG.md#任务到入口) | `FX-*` 系列包含可按类/函数提取的原创视觉、动效、控件和程序绘图；必须检查各项交互和适配边界 |
+| 查找原创 SVG、图标、纹理和场景图 | [图形原件](graphics/) · [图形系列导航](registry/README.md) · [素材登记](registry/README.md) | `VG-*` 等独立矢量原件可逐项查源文件；图形示意与可运行交互、真实数据或 3D 引擎不可混同 |
 | 近期 GitHub 项目与已有风格深化 | [V0.54 固定上游文件索引](registry/material-expansion-v054.json) · [许可和源文件档案](docs/research/material-expansion-v054.md) | 12 项可追踪到具体 Git 提交的研究原件，涵盖 GPU、Agent、MDX、图标、像素和原生控件；不代表本仓库已安装或允许重新分发 |
-| 回溯版本素材、研究来源和许可 | [历次研究](docs/research/) · [逐版机器索引](registry/README.md) · [变更历史](CHANGELOG.md) | V0.42–V0.53 的原件与研究按版本保留；外部来源默认只供研究，不代表已安装或获复制授权 |
+| 回溯版本素材、研究来源和许可 | [历次研究](docs/research/) · [逐版机器索引](registry/README.md) · [变更历史](CHANGELOG.md) | 各轮原件与研究按版本保留；外部来源默认只供研究，不代表已安装或获复制授权 |
 | 查找并复用 React 组件 | [组件登记](registry/components.json) · [组件源码](packages/ui/src/) · [组件文档](packages/ui/README.md) | 真实 TSX/CSS、API、四套显式兼容主题和适配限制 |
 | 参考页面结构素材 | [页面模板](registry/page-templates.json) · [组装指南](docs/assembly/README.md) · [独立 Demo](playground/page-blueprints/) | 可复用分区、构图和交互案例；真实页面开发须在外部项目进行 |
 | 检索外部专项技术与视觉资源 | [V0.30 专题资源](docs/research/specialized-resources-v030.md) · [结构化资源索引](registry/specialized-resources-v030.json) | 17 个画布/富文本、地图数据、3D 与移动交互来源；只做研究与素材交接，不安装到本库 |
@@ -54,14 +49,15 @@
 可运行 Node 时使用：
 
 ```sh
-node scripts/find-assets.mjs --intent="可编辑表格" --type=component --goal=implementation --json
+node scripts/find-assets.mjs --intent="可编辑表格" --family=UI --goal=implementation --compact --json
+node scripts/find-assets.mjs --intent="像素" --family=VG --limit=5 --compact --json
 node scripts/find-assets.mjs --intent="拖拽" --type=interaction --goal=behavior --json
 node scripts/find-assets.mjs --style=precision-dark --goal=implementation --json
 node scripts/compose-page.mjs --list
 node scripts/select-style.mjs --task="我需要一个液态玻璃导航" --format=markdown
 ```
 
-搜索是**可复现的词项匹配**，不是语义检索，也不会直接生成应用。检索为空时可改用同义词、准确 ID 或本仓库导航，不应据此断言不存在该类设计。
+`--family=UI|FX|VG|IP|REF` 等按稳定 ID 前缀筛选（UI 不等于公共 React 导出）；`--compact --json` 只输出候选摘要及原件入口，确认选中条目后再读取完整登记和源码。搜索是**可复现的词项匹配**，不是语义检索，也不会直接生成应用。检索为空时可改用同义词、准确 ID 或本仓库导航，不应据此断言不存在该类设计。
 
 ## 快速开发与验证
 

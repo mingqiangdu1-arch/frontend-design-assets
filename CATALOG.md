@@ -4,46 +4,6 @@
 
 **任务需要可重复执行的方法时**：先查看 [Frontend Agent Skills](.agents/skills/README.md)，按具体任务只加载其中一项 `SKILL.md`；本 CATALOG 仍负责素材和源码定位，不把技能当作已实现组件。
 
-## V0.59 · 字符栅格 / ASCII 原创视觉素材
-
-- [V0.59 结构化索引](registry/material-expansion-v059.json) · [CSS / JS 原件](styles/primitives/v059/README.md) · [可操作真实字符场演示](playground/glyph-fields-v059/index.html) · [独立 SVG 纹理插画](graphics/v059/README.md)。
-- `FX-124..127`：真正的四个不同公式计算字符波面、交叉网纹、径向扇面、离散层带。共用局部 `glyph-fields.js`，滑杆调整字符列数，按钮推进相位；不调用 Canvas、API 或第三方图形代码。`FX-128..129`：静态字符针脚图案、带明文说明的字符密度样张。
-- `VG-107..110`：点阵日出、像素织带、方格拱窗、阶梯棱镜四份新绘制自包含 SVG；纯装饰而非遥测、实测或图像转写。所有图形用于独立素材提取，不提供应用级设计器/默认主题/React 导出。
-
-
-## V0.58 · 商品及实物陈列视觉原件
-
-- [V0.58 机器索引](registry/material-expansion-v058.json) · [可提取 CSS/JS](styles/primitives/v058/README.md) · [6 个独立语义示例](playground/object-studies-v058/index.html) · [原创透明 SVG](graphics/v058/README.md)。
-- `FX-118..123`：独立悬浮陈列台、材质档案、键盘可操作的原生 range 缩放控件、尺寸标注框、哑光与釉面对比、CSS 折页包装假体。`VG-103..106`：陶瓷桌灯、琥珀玻璃容器、便携声音设备、折页随记本四幅独立原创 SVG。
-- 适合品牌、作品集、实物陈列、商品详情视觉探索；FX-120 使用局部 `zoom.js` 控制 CSS 图片缩放，其他原件不需要 JS。尺寸/材质/包装及产品概念全部虚构，既非商品后端也非真实 PBR 或工业设计打样。
-
-
-## V0.57 · 原创分析图表原件与装饰性矢量
-
-- [原件索引](registry/material-expansion-v057.json) · [CSS/HTML 源码](styles/primitives/v057/analytical-atoms.css) · [含数据说明的独立示例](playground/analytics-v057/index.html) · [无数据语义 SVG](graphics/v057/README.md)。
-- `FX-112..117`：增减贡献瀑布、双向观点分布、目标基准 bullet、留存矩阵、二维决策象限、固定比例矩形区块。源码均是静态/原生 HTML/CSS，数值由可读表格或明文说明提供并需手动同步，不含计算引擎或 API。
-- `VG-099..102`：决策等高轮廓、指标星群、来源织带、区间构筑。纯原创插画并非实测数据或真正统计可视化。
-- 用于数据工作台、研究报告、产品分析与专业 SaaS 的局部设计参考。无 React 包导出、第三方图库、测试框架或业务页面。
-
-
-## V0.56 · 中英日原生混排与阅读素材
-
-- [V0.56 机器索引](registry/material-expansion-v056.json) · [CSS/HTML 源文件](styles/primitives/v056/multiscript-atoms.css) · [真实语义样张](playground/multiscript-v056/index.html) · [原创 SVG](graphics/v056/README.md)。
-- `FX-106..111`：纵排章节标题、浏览器原生 ruby/rt 注音、双语语段配对、日文禁则换行示例、等宽数字信息账本、CJK 标点式引语。`VG-095..098`：卷轴窗口、双轨交织、藏书票叠层、墨石轨迹。
-- 适用多语言阅读、知识库、文档和作品集。字体由目标系统选择；不导入字体二进制、不实现翻译/音频/排版引擎，也不宣称全浏览器兼容或 React 已导出。
-
-## V0.55 · 原创触感 CSS / 物理感图形素材
-
-- [V0.55 机器索引](registry/material-expansion-v055.json) · [FX-100..105 原始 CSS](styles/primitives/v055/tactile-atoms.css) · [语义 HTML 标本](playground/materials-v055/index.html) · [4 幅原生 SVG](graphics/v055/README.md)。
-- 六个物理材质方向包括蚀刻铭牌、静态频谱、真实 radio 触感选择、馆藏标签、CSS 棱镜边框、原生 details 展开卡；四个 VG 原件为棱镜观测台、植物电路、虚构线路图、陶土浮雕。
-- **真正的原始素材，而非第三方链接**；但 UI 交互限于 HTML 原生控件，样张里的图表/线路并非真实数据。无新增 React export、主题、依赖、业务产品或全新校验框架。
-
-## V0.54 · 近期 GitHub 原件与已有风格深化
-
-- [结构化来源](registry/material-expansion-v054.json) · [具体文件与许可](docs/research/material-expansion-v054.md)：`REF-137..148`，涵盖 Shader、Agent 状态、MDX 叙事、Neo-brutalist 图表、图标形变、像素反馈和原生语义控件。
-- 来源均固定 Git commit 并指向具体上游文件；`styleDeepeningTargets` 是**研究方向**而非已实现 React 兼容。Canvas UI/Pxlkit 存在额外再分发限制。
-- 全部为 `research-only`；请按任务选择一个实际源文件再研究，不安装整套组件库。
-
 ## 检索顺序
 
 1. **判断目标**：视觉方向（visual） / 可执行 React 组件（implementation） / 交互行为（behavior） / 页面结构（composition） / 设计审查（review）。
@@ -57,6 +17,12 @@
 
 | 典型任务（中英关键词） | 优先入口 | 核心说明 |
 | --- | --- | --- |
+| 字符栅格、ASCII、可调字符场 / glyph field | [V0.59](registry/material-expansion-v059.json) · FX-124..129 · VG-107..110 | 四个原生可操作字符场、两个静态字纹、四幅装饰 SVG |
+| 商品陈列、材质、原生缩放 / object display | [V0.58](registry/material-expansion-v058.json) · FX-118..123 · VG-103..106 | 商品视觉原件；尺寸、材质和物件均为虚构 |
+| 分析图表、留存、瀑布、象限 / analytical charts | [V0.57](registry/material-expansion-v057.json) · FX-112..117 · VG-099..102 | 静态图表，真实数值须由宿主绑定；SVG 仅装饰 |
+| CJK、纵排、注音、多语言 / multiscript | [V0.56](registry/material-expansion-v056.json) · FX-106..111 · VG-095..098 | 原生 CSS/HTML 与字体无依赖 SVG |
+| 金属、棱镜、物理感、触感控件 / tactile | [V0.55](registry/material-expansion-v055.json) · FX-100..105 · VG-091..094 | CSS/HTML 原件和独立装饰 SVG |
+| 具体上游源码、GPU、Agent、MDX / pinned upstream | [V0.54](registry/material-expansion-v054.json) · REF-137..148 | 固定提交、具体文件与许可，仅研究 |
 | 风格选型、视觉体系、art direction、theme | `registry/styles.json`、`docs/styles/decision-matrix.md`、`registry/creative-directions.json` | 14 套独立风格；React 包仍仅支持明确列出的原有 4 套 |
 | 已选主题构建页面、风格复现、页面搭建简报 / theme-to-page | `PR-018`、`registry/style-assembly.json`、`scripts/build-style-brief.mjs`、`docs/assembly/style-assembly-v028.md` | 14 套主题 → 57 个页面结构分区，来源真实，模板显式绑定；输出 Markdown/JSON 并声明移植风险 |
 | 14 套主题、视觉对比、场景选型、theme atlas / compare styles | `playground/style-atlas/README.md`、`registry/style-facets.json`、`scripts/select-style.mjs` | 原创抽象缩略图 + 真实 Demo 双列对比；CLI 基于显式任务和维度证据匹配，无默认风格和审美分 |
@@ -175,3 +141,43 @@ node scripts/plan-design-composition.mjs --context=knowledge-base --stack=react 
 - 视觉截图、受控浏览器冒烟、人工批准、读屏测试和真实产品集成是不同证据层级。
 
 相关规范：[轻量交付](docs/assembly/asset-handoff.md) · [长效维护](docs/governance.md) · [公开发布前审查](docs/publication-readiness.md) · [历史版本](CHANGELOG.md)。
+
+## V0.59 · 字符栅格 / ASCII 原创视觉素材
+
+- [V0.59 结构化索引](registry/material-expansion-v059.json) · [CSS / JS 原件](styles/primitives/v059/README.md) · [可操作真实字符场演示](playground/glyph-fields-v059/index.html) · [独立 SVG 纹理插画](graphics/v059/README.md)。
+- `FX-124..127`：真正的四个不同公式计算字符波面、交叉网纹、径向扇面、离散层带。共用局部 `glyph-fields.js`，滑杆调整字符列数，按钮推进相位；不调用 Canvas、API 或第三方图形代码。`FX-128..129`：静态字符针脚图案、带明文说明的字符密度样张。
+- `VG-107..110`：点阵日出、像素织带、方格拱窗、阶梯棱镜四份新绘制自包含 SVG；纯装饰而非遥测、实测或图像转写。所有图形用于独立素材提取，不提供应用级设计器/默认主题/React 导出。
+
+
+## V0.58 · 商品及实物陈列视觉原件
+
+- [V0.58 机器索引](registry/material-expansion-v058.json) · [可提取 CSS/JS](styles/primitives/v058/README.md) · [6 个独立语义示例](playground/object-studies-v058/index.html) · [原创透明 SVG](graphics/v058/README.md)。
+- `FX-118..123`：独立悬浮陈列台、材质档案、键盘可操作的原生 range 缩放控件、尺寸标注框、哑光与釉面对比、CSS 折页包装假体。`VG-103..106`：陶瓷桌灯、琥珀玻璃容器、便携声音设备、折页随记本四幅独立原创 SVG。
+- 适合品牌、作品集、实物陈列、商品详情视觉探索；FX-120 使用局部 `zoom.js` 控制 CSS 图片缩放，其他原件不需要 JS。尺寸/材质/包装及产品概念全部虚构，既非商品后端也非真实 PBR 或工业设计打样。
+
+
+## V0.57 · 原创分析图表原件与装饰性矢量
+
+- [原件索引](registry/material-expansion-v057.json) · [CSS/HTML 源码](styles/primitives/v057/analytical-atoms.css) · [含数据说明的独立示例](playground/analytics-v057/index.html) · [无数据语义 SVG](graphics/v057/README.md)。
+- `FX-112..117`：增减贡献瀑布、双向观点分布、目标基准 bullet、留存矩阵、二维决策象限、固定比例矩形区块。源码均是静态/原生 HTML/CSS，数值由可读表格或明文说明提供并需手动同步，不含计算引擎或 API。
+- `VG-099..102`：决策等高轮廓、指标星群、来源织带、区间构筑。纯原创插画并非实测数据或真正统计可视化。
+- 用于数据工作台、研究报告、产品分析与专业 SaaS 的局部设计参考。无 React 包导出、第三方图库、测试框架或业务页面。
+
+
+## V0.56 · 中英日原生混排与阅读素材
+
+- [V0.56 机器索引](registry/material-expansion-v056.json) · [CSS/HTML 源文件](styles/primitives/v056/multiscript-atoms.css) · [真实语义样张](playground/multiscript-v056/index.html) · [原创 SVG](graphics/v056/README.md)。
+- `FX-106..111`：纵排章节标题、浏览器原生 ruby/rt 注音、双语语段配对、日文禁则换行示例、等宽数字信息账本、CJK 标点式引语。`VG-095..098`：卷轴窗口、双轨交织、藏书票叠层、墨石轨迹。
+- 适用多语言阅读、知识库、文档和作品集。字体由目标系统选择；不导入字体二进制、不实现翻译/音频/排版引擎，也不宣称全浏览器兼容或 React 已导出。
+
+## V0.55 · 原创触感 CSS / 物理感图形素材
+
+- [V0.55 机器索引](registry/material-expansion-v055.json) · [FX-100..105 原始 CSS](styles/primitives/v055/tactile-atoms.css) · [语义 HTML 标本](playground/materials-v055/index.html) · [4 幅原生 SVG](graphics/v055/README.md)。
+- 六个物理材质方向包括蚀刻铭牌、静态频谱、真实 radio 触感选择、馆藏标签、CSS 棱镜边框、原生 details 展开卡；四个 VG 原件为棱镜观测台、植物电路、虚构线路图、陶土浮雕。
+- **真正的原始素材，而非第三方链接**；但 UI 交互限于 HTML 原生控件，样张里的图表/线路并非真实数据。无新增 React export、主题、依赖、业务产品或全新校验框架。
+
+## V0.54 · 近期 GitHub 原件与已有风格深化
+
+- [结构化来源](registry/material-expansion-v054.json) · [具体文件与许可](docs/research/material-expansion-v054.md)：`REF-137..148`，涵盖 Shader、Agent 状态、MDX 叙事、Neo-brutalist 图表、图标形变、像素反馈和原生语义控件。
+- 来源均固定 Git commit 并指向具体上游文件；`styleDeepeningTargets` 是**研究方向**而非已实现 React 兼容。Canvas UI/Pxlkit 存在额外再分发限制。
+- 全部为 `research-only`；请按任务选择一个实际源文件再研究，不安装整套组件库。

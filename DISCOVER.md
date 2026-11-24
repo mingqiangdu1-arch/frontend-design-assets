@@ -17,13 +17,8 @@
 | 目标 | 第一处查看 | 必须继续核查 |
 | --- | --- | --- |
 | **已有 React/TSX 导出** | [`registry/components.json`](registry/components.json) → `entries[].id/exportName/source` | [`packages/ui/src/`](packages/ui/src/) 中真实导出、依赖和明确兼容风格；`registry/assets.json` 的“组件类”**不等于**公共 React 导出 |
-| **原生 CSS/HTML/JavaScript/Canvas 原件** | [材料系列索引](registry/README.md) → 对应 `registry/material-expansion-v0xx.json` 的 `FX-*` | 对应 [`styles/primitives/`](styles/primitives/) 源码、README 和独立 Demo；不是默认已集成 React |
-| **ASCII 字符可视化、可调字符场、文字纹理** | [V0.59 实际 HTML/CSS/局部 JS](styles/primitives/v059/README.md) · [六个独立示例](playground/glyph-fields-v059/index.html) · [四幅字体无依赖 SVG](graphics/v059/README.md) | `FX-124..127` 对应真实可调字符场算法与滑杆/相位控制；`FX-128..129` 为静态语义字符纹理；`VG-107..110` 是独立装饰矢量，非数据编码 |
-| **商品/实物陈列、原生预览缩放、原创透明物件图** | [V0.58 独立 HTML/CSS/JS 原件](styles/primitives/v058/README.md) · [6 项真实语义样张](playground/object-studies-v058/index.html) · [4 幅原创透明 SVG](graphics/v058/README.md) | `FX-118..123` 六类独立提取；FX-120 需要可选局部 JS 才能真正放大，SVG 为虚构物件，尺寸与纹理不得作为真实商品信息 |
-| **统计和分析可视化原件（静态）** | [V0.57 六套语义 HTML/CSS](styles/primitives/v057/README.md) · [独立数值样张](playground/analytics-v057/index.html) · [四幅装饰图](graphics/v057/README.md) | `FX-112..117` 图形含可阅读的原始数值/说明，不自动计算或绑定接口；`VG-099..102` 仅装饰性图形，不能冒充实际数据 |
-| **CJK 排版、Ruby 注音与多语言混排** | [V0.56 六套语义 CSS/HTML](styles/primitives/v056/README.md) · [4 幅原始 SVG](graphics/v056/README.md) · [原件样张](playground/multiscript-v056/index.html) | `FX-106..111` 有独立 class/真实 HTML，`VG-095..098` 有自包含矢量；浏览器字体支持与实际语言内容须在宿主验证 |
-| **最新原创触感控件 / 手绘矢量** | [V0.55 CSS/HTML 原件](styles/primitives/v055/README.md) · [V0.55 SVG](graphics/v055/README.md) · [原件 Demo](playground/materials-v055/index.html) | `FX-100..105` 可按类提取；`VG-091..094` 可独立使用。静态图不是传感器/地图/真实数据，研究级实现非生产验收 |
-| **SVG、图标、纹理、插画** | [材料系列索引](registry/README.md) → 对应 `VG-*` | [`graphics/`](graphics/) 中单个原图/相应版权与用途说明；不要把静态示意当成动态组件 |
+| **原生 CSS/HTML/JavaScript/Canvas 原件** | [按任务查原件](CATALOG.md#任务到入口) → [材料系列索引](registry/README.md) 中对应 `FX-*` | 对应 [`styles/primitives/`](styles/primitives/) 源码、README 和独立 Demo；不是默认已集成 React |
+| **SVG、图标、纹理、插画** | [按任务查图形](CATALOG.md#任务到入口) → [材料系列索引](registry/README.md) 中对应 `VG-*` | [`graphics/`](graphics/) 中单个原图/相应版权与用途说明；不要把静态示意当成动态组件 |
 | **交互行为/可操作原型** | [交互研究](docs/interactions/) → `IP-*` | 对应 `path/spec/demo` 和 `handoff.mode`；行为合同、原型与可复用源码要区分 |
 | **第三方现成项目/外部设计参考** | [来源档案](docs/research/sources.md) · [具体组件研究](docs/research/component-dossiers-v037.md) · [专项资源](registry/specialized-resources-v030.json) · [V0.54 固定源码级近期参考](registry/material-expansion-v054.json) | 原作者、固定源码路径/版本、许可、访问状态；外部 REF 默认**不能直接复制** |
 | **页面结构/布局案例** | [V0.53 独立图文布局](styles/primitives/v053/README.md) · [原始预览](playground/composition-v053/index.html) · [页面模板](registry/page-templates.json) · [页面配方](recipes/) | 6 种可独立复制的 CSS 图文编排原件；不是可直接部署的整页产品 |
@@ -34,9 +29,12 @@
 
 ```sh
 node scripts/find-assets.mjs --intent="图片对比滑块" --type=component --reuse=copyable-source --goal=implementation --limit=5 --json
-node scripts/find-assets.mjs --intent="程序绘图" --reuse=copyable-source --goal=implementation --limit=5 --json
+node scripts/find-assets.mjs --intent="程序绘图" --family=FX --reuse=copyable-source --goal=implementation --limit=5 --compact --json
+node scripts/find-assets.mjs --intent="像素" --family=VG --limit=5 --compact --json
 node scripts/find-assets.mjs --intent="拖拽排序" --type=interaction --goal=behavior --limit=5 --json
 ```
+
+`--family` 区分稳定 ID 系列，不改变原有 `type`、生命周期或复用等级。`--compact --json` 只用于第一轮筛选；选中后再看完整条目、许可及原始源码。无 Node 时按 CATALOG 任务入口选择小索引，不必下载全量登记。
 
 **典型定位范例（仅示意路径）**：
 - `UI-060` → `packages/ui/src/cross-context.tsx`：真实 React 前后对比组件；仍需检查依赖及宿主适配。

@@ -1,4 +1,11 @@
 
+
+## 2026-11-24 · Retrieval maintenance (after V0.59)
+
+- Keep 573 stable asset entries, original files, style profiles and skill snapshots unchanged.
+- Consolidate README/DISCOVER into task-first entry points and preserve detailed V0.54–V0.59 sections in CATALOG after task routing.
+- Extend existing lexical CLI with optional ID-family filters and compact JSON shortlist; full JSON remains available. Add focused regression cases. No new search engine or runtime dependency.
+
 ## 2026-11-24 · V0.58 original object-display CSS, native preview zoom, and independent transparent illustrations
 
 - Added **six original selectively extractable CSS/HTML visual materials** `FX-118..123`: floating product plinth, labeled material finish ledger, actually operable native range image zoom (optional local JS), fictional dimension callout, matte/glaze CSS material pair and faux-3D packaging sleeve.

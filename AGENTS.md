@@ -24,6 +24,8 @@
 4. Inspect the selected item's **source + specification + demo**, as appropriate. Read `styleIds`, `stage`, `reuseKind`, `dependencies` and `verified` before suggesting reuse. Prefer explicit IDs and paths over guesses.
 5. Handoff a **small shortlist**: IDs, why each fits, exact source paths, compatible themes, required adaptation, validation gaps and alternative options. Do not pretend the selection tool generated or modified a target app.
 
+For new material rounds, keep README and DISCOVER task-first: update existing task routes only when the discovery path changes. Put per-version details in the matching registry/topic document and CHANGELOG; use CATALOG task rows rather than prepending version histories. Use `--family=UI|FX|VG|IP|REF` and `--compact --json` to narrow the first shortlist when Node is available; the family prefix is not evidence of public exports or license.
+
 For version-specific research and material families, follow [CATALOG.md](CATALOG.md) and the matching `docs/research/` entry; historical notes do not add repository-wide runtime or style defaults.
 
 ## 2. Know exactly what can be reused
