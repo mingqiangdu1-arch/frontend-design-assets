@@ -34,19 +34,19 @@ Aesthetic lint findings remain subject to project-specific human review. Hallmar
 
 - Baseline **72 findings** (17 FAIL, 53 REFLEX, 2 WARN); first candidate **73** (17 FAIL, 54 REFLEX, 2 WARN).
 - Identified the only newly introduced flag: Hallmark **24b / REFLEX**, because the new keyboard skip link had 10px vertical padding outside Hallmark's preferred 4px scale.
-- Replaced the link padding with 12px and aligned left inset to 16px, both consistent with this page's own spacing scheme. [Final Hallmark comparison](https://github.com/mingqiangdu1-arch/frontend-design-assets/actions/runs/41948868445) now shows **72 vs 72**, with no changed gate counts; this is **not** a 0-defect design result.
+- Replaced the link padding with 12px and aligned left inset to 16px, both consistent with this page's own spacing scheme. Final Hallmark comparison (historical private actions/runs/41948868445) now shows **72 vs 72**, with no changed gate counts; this is **not** a 0-defect design result.
 - Both versions still trigger aesthetic house rules, which are not automatically relevant to an editorial publication. The actual usability difference is captured by explicit font/target/skip-link browser tests and screenshots, not the unchanged lint total.
-- [Draft PR #2](https://github.com/mingqiangdu1-arch/frontend-design-assets/pull/2) is intentionally separate from [Precision Dark Draft PR #1](https://github.com/mingqiangdu1-arch/frontend-design-assets/pull/1), making the two genre pilots independently reviewable.
+- Draft PR #2 (historical private pull/2) is intentionally separate from Precision Dark Draft PR #1 (historical private pull/1), making the two genre pilots independently reviewable.
 
 ## Verification contract
 
-- [x] Typecheck/build, existing search/filter/preview/status + Undo/browser screenshots — [Editorial React CI](https://github.com/mingqiangdu1-arch/frontend-design-assets/actions/runs/41948860839)
+- [x] Typecheck/build, existing search/filter/preview/status + Undo/browser screenshots — Editorial React CI (historical private actions/runs/41948860839)
 - [x] New keyboard skip & font/target tests across 390/768/1440px — included in the same passing Chromium run
-- [x] Registry/unit tests including JSON report parser — [registry/test CI](https://github.com/mingqiangdu1-arch/frontend-design-assets/actions/runs/41948868306)
-- [x] Actual Hallmark baseline-to-candidate run, artifact and delta — [advisory CI run](https://github.com/mingqiangdu1-arch/frontend-design-assets/actions/runs/41948868445)
+- [x] Registry/unit tests including JSON report parser — registry/test CI (historical private actions/runs/41948868306)
+- [x] Actual Hallmark baseline-to-candidate run, artifact and delta — advisory CI run (historical private actions/runs/41948868445)
 - [x] Reviewed generated 390px and 1440px Chromium screenshots, with side-by-side 390px baseline/candidate comparison. No obvious cropping; changes are concentrated in filter/readability affordances. This is **not** a formally approved visual baseline.
 - [ ] Formal approved screenshots, Safari/Firefox, screen reader and physical-touch validation remain outside scope
 
 Do not merge solely because an advisory lint count decreases. If verification passes, consider this a second **cross-genre case**, not a generic global CSS recipe.
 
-Related: [first Precision Dark pilot](https://github.com/mingqiangdu1-arch/frontend-design-assets/pull/1), [contextual design review](../../recipes/contextual-design-review.md).
+Related: first Precision Dark pilot (historical private pull/1), [contextual design review](../../recipes/contextual-design-review.md).

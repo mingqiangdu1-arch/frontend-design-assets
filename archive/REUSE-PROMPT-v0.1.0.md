@@ -1,6 +1,6 @@
 # 面向 Codex / AI 开发 Agent 的复用提示词
 
-请将随附 `ai-workflow-ui-assets-v0.1.0/` 目录作为独立的 UI 资产参考库，而不是现有业务系统的可直接覆盖模板。
+请将随附 `frontend-design-assets-v0.1.0/` 目录作为独立的 UI 资产参考库，而不是现有业务系统的可直接覆盖模板。
 
 目标：按新需求快速组装 **Attio × Vercel 风格的 Refined Light SaaS UI**，并保证交互连续、视觉一致。
 

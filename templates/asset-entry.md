@@ -8,7 +8,7 @@
 - **Application contexts**: descriptive filter only; [] does NOT guarantee universal compatibility
 - **Style / tags**:
 - **Source URL**:
-- **Notion URL**:
+- **Public documentation URL (optional)**:
 - **Demo / screenshot**:
 - **License / attribution**:
 - **Related or superseding asset IDs**:

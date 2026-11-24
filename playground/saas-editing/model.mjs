@@ -1,6 +1,6 @@
 /** Independent SaaS editing / filter research model. No persistence or API. */
 export const savedExample=Object.freeze({
- name:"AI Workflow Platform",slug:"ai-workflow",email:"owner@example.com",
+ name:"Example Workspace",slug:"example-workspace",email:"owner@example.com",
  description:"协同完成从需求到发布的产品研发工作。",owner:"产品团队",notifications:true
 });
 export const filterData=[

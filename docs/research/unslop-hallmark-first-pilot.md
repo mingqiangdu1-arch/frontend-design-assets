@@ -46,8 +46,8 @@ Related: [PR-013](../../recipes/contextual-design-review.md), [V0.13.1 routing](
 
 ## First CI evidence (2026-11-04)
 
-- [Pinned Hallmark baseline/candidate audit](https://github.com/mingqiangdu1-arch/frontend-design-assets/actions/runs/41810639853) completed. The tool itself returned nonzero in both cases; the advisory workflow successfully retained JSON output rather than treating aesthetic rules as hard universal failures.
+- Pinned Hallmark baseline/candidate audit (historical private actions/runs/41810639853) completed. The tool itself returned nonzero in both cases; the advisory workflow successfully retained JSON output rather than treating aesthetic rules as hard universal failures.
 - Baseline: **75 findings** (19 FAIL, 54 REFLEX, 2 WARN). First candidate: **73 findings** (18 FAIL, 53 REFLEX, 2 WARN). An explicit `:focus-visible` rule removed a material failure.
 - Some outstanding warnings are Hallmark house rules, including its CSS stamp, eyebrow headings and uppercase micro-labels. They are not automatically defects in Precision Dark.
 - The audit also identified a potential `100vw` scrollbar overflow and hardcoded page-specific colors. A second iteration addresses both with local tokens and tests. Compare against the latest CI run for the final measurements; these counts describe the **first candidate only**.
-- [First audit evidence artifact](https://github.com/mingqiangdu1-arch/frontend-design-assets/actions/runs/41810639853/artifacts/13311043813) includes raw JSON and stderr for baseline/candidate.
+- First audit evidence artifact (historical private actions/runs/41810639853) includes raw JSON and stderr for baseline/candidate.

@@ -1,12 +1,12 @@
 # Application Profiles — 按应用组装，而非强制统一风格
 
-本目录保存真实项目的**设计需求与选型决策**，不是业务应用代码，也不是通用组件库。
+本目录保存公开的虚构应用 Profile 示例，用于展示设计需求与素材选型结构，不保存真实项目决策、私人数据或业务应用代码。
 
 每个实际应用可拥有独立 Profile，包含用户、设备、交互方式、设计调性、内容密度、技术栈、可访问性要求以及选用的若干风格与资产。
 
 ## 使用方式
 
-1. 从 `templates/application-profile.json` 复制到 `applications/<project-id>.json`。
+1. 将 `templates/application-profile.json` 复制到目标项目（或仅本地的 `applications/local/`），不要提交实际业务或私有配置。
 2. 明确应用场景和界面体验目标，不先假设 SaaS。
 3. 通过 `registry/assets.json` 检索参考模式和实现。
 4. 从 `registry/styles.json` 选已有风格；若没有合适风格，保持 `selectedStyleIds: []` 并另开风格探索。
@@ -15,7 +15,7 @@
 
 ## 现有示例
 
-[AI WORKFLOW PLATFORM](examples/ai-workflow-platform.json) 保留此前确定的 Refined Light SaaS 方案，但它仅作为一个项目的候选组合。其他应用无需继承它。
+[Example Workspace](examples/generic-workspace.json) 是虚构示例，展示如何引用 Refined Light SaaS 和候选资产 ID。并非真实项目，也不是默认风格。
 
 **注意：** 不应自动为所有应用生成同样的侧栏、Dashboard 或顶部工具条。
 

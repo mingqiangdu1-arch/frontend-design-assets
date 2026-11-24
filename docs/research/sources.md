@@ -26,8 +26,8 @@ Prefer source with real, observable interaction or official documentation over s
 
 ## Notion sources
 
-- [Research collection]([private-notion-link-redacted])
-- [Living asset catalog]([private-notion-link-redacted])
+- Research collection (private research record omitted)
+- Living asset catalog (private research record omitted)
 
 ## SaaS-focused source review (2026-10-23)
 

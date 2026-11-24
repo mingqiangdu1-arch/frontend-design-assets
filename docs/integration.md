@@ -1,6 +1,6 @@
 # Reuse and integration checklist
 
-This is a source/reference workspace; the live AI WORKFLOW PLATFORM is not modified.
+This is a source/reference workspace; the target application is not modified.
 
 ## Selecting assets
 

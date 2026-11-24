@@ -1,6 +1,6 @@
 # React / TypeScript Reference Implementations
 
-**Status: `reference-implemented`, NOT production-ready.** These are stand-alone examples from the 2026-10-23 design exploration, built to demonstrate component APIs and interaction behavior. They have not been validated in AI WORKFLOW PLATFORM.
+**Status: `reference-implemented`, NOT production-ready.** These are stand-alone examples from the 2026-10-23 design exploration, built to demonstrate component APIs and interaction behavior. They have not been validated in a target application.
 
 ## Setup for isolated checking
 

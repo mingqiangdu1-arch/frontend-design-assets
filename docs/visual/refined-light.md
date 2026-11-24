@@ -1,6 +1,6 @@
 # Visual system — Refined Light SaaS (proposal 1)
 
-Status: **Design direction / not a production theme**. Sources: [Attio](https://attio.com/), [Vercel Geist](https://vercel.com/geist/introduction), [Notion design notes]([private-notion-link-redacted]).
+Status: **Design direction / not a production theme**. Sources: [Attio](https://attio.com/), [Vercel Geist](https://vercel.com/geist/introduction), Notion design notes (private research record omitted).
 
 ## Design language
 

@@ -59,7 +59,6 @@ function renderDetail(){
  const urls=mk("div","detail-links");
  if(safeRepoPath(item.path))link(urls,"打开源码 / 说明",repoBase+encodeURI(item.path));
  if(safeRepoPath(item.demo))link(urls,"查看示例入口",repoBase+encodeURI(item.demo));
- if(item.notion?.startsWith("https://app.notion.com/"))link(urls,"Notion 研究记录",item.notion);
  if(item.source?.startsWith("https://"))link(urls,"参考来源",item.source);
  body.append(urls);
  const add=mk("button","detail-select",selected.has(item.id)?"从清单移除":"加入交接清单");

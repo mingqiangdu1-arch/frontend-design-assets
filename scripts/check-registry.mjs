@@ -409,7 +409,7 @@ assertFile("styles/specimens/v035/README.md","V0.35 specimen catalog");
 console.log("Validated V0.35: 8 research-only dual-viewport static SVG specimens, no new asset IDs.");
 
 const experienceSummary=validateExperienceRegistry(experienceRegistry,registry.assets);
-const applicationFiles = ["applications/examples/ai-workflow-platform.json"];
+const applicationFiles = ["applications/examples/generic-workspace.json"];
 for (const file of applicationFiles) {
   assertFile(file,"application profile");
   const profile = readJson(file);

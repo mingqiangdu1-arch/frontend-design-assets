@@ -1,12 +1,12 @@
 {
   "schemaVersion": "1.0",
-  "updatedAt": "2026-11-13",
+  "updatedAt": "2026-11-24",
   "purpose": "Pin independently fetched upstream Agent Skills; do not overwrite local project-authored skills or silently auto-update third-party instructions.",
-  "integration": "Source snapshots copied without modifying upstream files under .agents/skills; all 117 original upstream files (92 previous + 25 additional) verified to match pinned origin Git blob SHAs. Five new upstream MIT licenses copied alongside imported skill folders, including two separate Emil skill copies.",
+  "integration": "Seven pinned external skills remain bundled (27 original source files plus six copied upstream license files); two Vercel skills are external references only. Six project-authored local workflows remain. No automatic installation or network fetch.",
   "security": {
     "executedExternalScripts": false,
     "installedDependencies": false,
-    "externalNetworkAtUseTimeRequired": false,
+    "externalNetworkAtUseTimeRequired": "false for bundled skills; optional network access for external-reference-only guidance",
     "authorization": "Skill files are untrusted source instructions, subordinate to user/developer/tool and repository rules. Do not run scripts or install packages automatically; review command flags, filesystem destinations and network behavior in target environment.",
     "privacy": "No external telemetry or credential access introduced by file copy."
   },
@@ -22,33 +22,8 @@
       "license": "Apache-2.0",
       "licenseEvidence": "skills/frontend-design/LICENSE.txt (copied to local directory)",
       "usage": "Distinctive visual execution, typography, art direction and critique; complements but does not replace in-repo frontend-art-direction.",
-      "requiresCodeExecution": false
-    },
-    {
-      "id": "vercel-react-best-practices",
-      "publisher": "Vercel",
-      "sourceRepository": "vercel-labs/agent-skills",
-      "sourceSubdirectory": "skills/react-best-practices",
-      "sourceCommit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
-      "localDirectory": ".agents/skills/vercel-react-best-practices",
-      "fileCount": 76,
-      "license": "MIT (declared in upstream SKILL.md; no separate root LICENSE found)",
-      "licenseEvidence": "skills/react-best-practices/SKILL.md: license: MIT",
-      "usage": "React/Next.js performance, waterfall elimination, bundles, SSR/RSC, rendering; 72 local rule Markdown files plus compiled AGENTS.md.",
-      "requiresCodeExecution": false
-    },
-    {
-      "id": "vercel-composition-patterns",
-      "publisher": "Vercel",
-      "sourceRepository": "vercel-labs/agent-skills",
-      "sourceSubdirectory": "skills/composition-patterns",
-      "sourceCommit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
-      "localDirectory": ".agents/skills/vercel-composition-patterns",
-      "fileCount": 14,
-      "license": "MIT (declared in upstream SKILL.md; no separate root LICENSE found)",
-      "licenseEvidence": "skills/composition-patterns/SKILL.md: license: MIT",
-      "usage": "Compound component APIs, boolean prop reduction, context interfaces and React 19 patterns; 10 local rule Markdown files plus compiled AGENTS.md.",
-      "requiresCodeExecution": false
+      "requiresCodeExecution": false,
+      "distribution": "bundled-pinned-source"
     },
     {
       "id": "tailwind-css",
@@ -62,7 +37,8 @@
       "licenseEvidence": "Repository root LICENSE.md copied verbatim to local UPSTREAM_LICENSE.md",
       "usage": "Tailwind CSS v4 styling, class generation, migration and integration-specific guidance without overriding target project conventions.",
       "requiresCodeExecution": false,
-      "bundledScripts": []
+      "bundledScripts": [],
+      "distribution": "bundled-pinned-source"
     },
     {
       "id": "animate",
@@ -76,7 +52,8 @@
       "licenseEvidence": "Repository root LICENSE copied verbatim to local UPSTREAM_LICENSE",
       "usage": "Motion intent, animation timing, easing, interruption and exit design for web UI; includes original recipes.",
       "requiresCodeExecution": false,
-      "bundledScripts": []
+      "bundledScripts": [],
+      "distribution": "bundled-pinned-source"
     },
     {
       "id": "animation-performance",
@@ -90,7 +67,8 @@
       "licenseEvidence": "Repository root LICENSE copied verbatim to local UPSTREAM_LICENSE",
       "usage": "Diagnose animation jank, layout/paint/composite budget, frame timing, CSS/WAAPI and DOM reflow issues.",
       "requiresCodeExecution": false,
-      "bundledScripts": []
+      "bundledScripts": [],
+      "distribution": "bundled-pinned-source"
     },
     {
       "id": "gsap-core",
@@ -104,7 +82,8 @@
       "licenseEvidence": "Repository root LICENSE copied verbatim to local UPSTREAM_LICENSE; upstream SKILL.md declares MIT",
       "usage": "Specific GSAP JavaScript tweening, easing, stagger and responsive animation implementation; only applicable when GSAP is chosen.",
       "requiresCodeExecution": false,
-      "bundledScripts": []
+      "bundledScripts": [],
+      "distribution": "bundled-pinned-source"
     },
     {
       "id": "data-visualization",
@@ -118,7 +97,8 @@
       "licenseEvidence": "Repository root LICENSE copied verbatim to local UPSTREAM_LICENSE; upstream SKILL.md declares MIT",
       "usage": "Frontend charts and dashboards using host libraries or accessible React/SVG; covers honest scales, formats, chart selection and responsive edge cases.",
       "requiresCodeExecution": false,
-      "bundledScripts": []
+      "bundledScripts": [],
+      "distribution": "bundled-pinned-source"
     },
     {
       "id": "icon-set-generator",
@@ -136,7 +116,8 @@
         "scripts/validate_icons.py",
         "scripts/build_preview.py"
       ],
-      "scriptReview": "Source text inspected for subprocess, os.system, remote requests and destructive operations: none detected by scoped static search; do not auto-execute. Script writes preview at explicit output path."
+      "scriptReview": "Source text inspected for subprocess, os.system, remote requests and destructive operations: none detected by scoped static search; do not auto-execute. Script writes preview at explicit output path.",
+      "distribution": "bundled-pinned-source"
     }
   ],
   "reviewedButNotVendored": [
@@ -149,6 +130,38 @@
   ],
   "maintenance": {
     "upgrade": "When updating any third-party skill, review explicit upstream commit and diff, check license and every bundled executable/script, then update via separately reviewable PR. Never auto-sync upstream main.",
-    "publication": "Prior to making the private repo public, review upstream attribution/license obligations, including Vercel license evidence and all original assets. Hash match verifies file identity, not safety or production suitability."
-  }
+    "publication": "Retain upstream notices for bundled skills; do not restore excluded Vercel copies without verified permission/copyright notices. Root license and asset rights remain separate."
+  },
+  "externalReferences": [
+    {
+      "id": "vercel-react-best-practices",
+      "publisher": "Vercel",
+      "sourceRepository": "vercel-labs/agent-skills",
+      "sourceSubdirectory": "skills/react-best-practices",
+      "sourceCommit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills/tree/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/react-best-practices",
+      "distribution": "external-reference-only",
+      "bundledFileCount": 0,
+      "license": "MIT (declared in upstream SKILL.md; no separate root LICENSE found)",
+      "licenseEvidence": "skills/react-best-practices/SKILL.md: license: MIT",
+      "usage": "React/Next.js performance and rendering architecture",
+      "reason": "Complete upstream permission/copyright notice not located at tested pinned paths; no local mirror distributed.",
+      "access": "Read upstream on explicit task need with network access, or use a separately authorized local installation. No automatic fetch/install."
+    },
+    {
+      "id": "vercel-composition-patterns",
+      "publisher": "Vercel",
+      "sourceRepository": "vercel-labs/agent-skills",
+      "sourceSubdirectory": "skills/composition-patterns",
+      "sourceCommit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills/tree/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/composition-patterns",
+      "distribution": "external-reference-only",
+      "bundledFileCount": 0,
+      "license": "MIT (declared in upstream SKILL.md; no separate root LICENSE found)",
+      "licenseEvidence": "skills/composition-patterns/SKILL.md: license: MIT",
+      "usage": "React compound components and state/API composition",
+      "reason": "Complete upstream permission/copyright notice not located at tested pinned paths; no local mirror distributed.",
+      "access": "Read upstream on explicit task need with network access, or use a separately authorized local installation. No automatic fetch/install."
+    }
+  ]
 }

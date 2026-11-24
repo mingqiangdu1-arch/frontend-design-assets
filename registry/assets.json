@@ -11,7 +11,6 @@
     "production-ready",
     "deprecated"
   ],
-  "notionCatalog": "[private-notion-link-redacted]",
   "assets": [
     {
       "id": "DT-001",
@@ -61,14 +60,14 @@
         "layout"
       ],
       "source": "https://attio.com/changelog/2026/record-page-redesign",
-      "notion": "[private-notion-link-redacted]",
       "reuseKind": "design-reference",
       "styleIds": [
         "refined-light-saas"
       ],
       "applicationContexts": [
         "workspace"
-      ]
+      ],
+      "license": "External research link only; upstream rights retained; no license or redistribution grant asserted for upstream code or media."
     },
     {
       "id": "REF-002",
@@ -82,10 +81,10 @@
         "component"
       ],
       "source": "https://vercel.com/geist/introduction",
-      "notion": "[private-notion-link-redacted]",
       "reuseKind": "design-reference",
       "styleIds": [],
-      "applicationContexts": []
+      "applicationContexts": [],
+      "license": "External research link only; upstream rights retained; no license or redistribution grant asserted for upstream code or media."
     },
     {
       "id": "REF-003",
@@ -98,10 +97,10 @@
         "microinteraction"
       ],
       "source": "https://60fps.design/",
-      "notion": "[private-notion-link-redacted]",
       "reuseKind": "design-reference",
       "styleIds": [],
-      "applicationContexts": []
+      "applicationContexts": [],
+      "license": "External research link only; upstream rights retained; no license or redistribution grant asserted for upstream code or media."
     },
     {
       "id": "IP-001",
@@ -118,7 +117,6 @@
       "source": "https://vercel.com/geist/command-menu",
       "demo": "playground/initial-interaction-lab.html",
       "spec": "docs/interactions/patterns.md",
-      "notion": "[private-notion-link-redacted]",
       "license": "Original prototype inspired by official pattern",
       "reuseKind": "behavior-pattern",
       "styleIds": [],
@@ -146,7 +144,6 @@
       ],
       "source": "https://linear.app/docs/peek",
       "spec": "docs/interactions/patterns.md",
-      "notion": "[private-notion-link-redacted]",
       "reuseKind": "behavior-pattern",
       "styleIds": [],
       "applicationContexts": [
@@ -157,7 +154,8 @@
       "aliases": [
         "快速预览",
         "悬浮预览"
-      ]
+      ],
+      "license": "MIT for the repository owner's independently authored local specification, tokens or implementation only (see LICENSE and NOTICE.md); cited upstream code, design assets, media and other third-party material are not relicensed. Check actual upstream reuse before redistribution."
     },
     {
       "id": "IP-003",
@@ -173,7 +171,6 @@
       "source": "https://vercel.com/geist/sheet",
       "demo": "playground/initial-interaction-lab.html",
       "spec": "docs/interactions/patterns.md",
-      "notion": "[private-notion-link-redacted]",
       "reuseKind": "behavior-pattern",
       "styleIds": [],
       "applicationContexts": [],
@@ -181,7 +178,8 @@
       "aliases": [
         "详情侧滑面板",
         "检查器"
-      ]
+      ],
+      "license": "MIT for the repository owner's independently authored local specification, tokens or implementation only (see LICENSE and NOTICE.md); cited upstream code, design assets, media and other third-party material are not relicensed. Check actual upstream reuse before redistribution."
     },
     {
       "id": "IP-004",
@@ -204,7 +202,8 @@
       "aliases": [
         "二次确认",
         "危险操作确认"
-      ]
+      ],
+      "license": "MIT for the repository owner's independently authored local specification, tokens or implementation only (see LICENSE and NOTICE.md); cited upstream code, design assets, media and other third-party material are not relicensed. Check actual upstream reuse before redistribution."
     },
     {
       "id": "IP-005",
@@ -227,7 +226,8 @@
       "aliases": [
         "标签页指示动画",
         "共享布局指示器"
-      ]
+      ],
+      "license": "MIT for the repository owner's independently authored local specification, tokens or implementation only (see LICENSE and NOTICE.md); cited upstream code, design assets, media and other third-party material are not relicensed. Check actual upstream reuse before redistribution."
     },
     {
       "id": "IP-006",
@@ -250,7 +250,8 @@
       "aliases": [
         "Toast反馈",
         "操作结果提示"
-      ]
+      ],
+      "license": "MIT for the repository owner's independently authored local specification, tokens or implementation only (see LICENSE and NOTICE.md); cited upstream code, design assets, media and other third-party material are not relicensed. Check actual upstream reuse before redistribution."
     },
     {
       "id": "IP-007",
@@ -277,7 +278,8 @@
       "aliases": [
         "异步加载反馈",
         "停止任务"
-      ]
+      ],
+      "license": "MIT for the repository owner's independently authored local specification, tokens or implementation only (see LICENSE and NOTICE.md); cited upstream code, design assets, media and other third-party material are not relicensed. Check actual upstream reuse before redistribution."
     },
     {
       "id": "IP-008",
@@ -301,7 +303,8 @@
       "aliases": [
         "面板拖动调整",
         "分栏调整"
-      ]
+      ],
+      "license": "MIT for the repository owner's independently authored local specification, tokens or implementation only (see LICENSE and NOTICE.md); cited upstream code, design assets, media and other third-party material are not relicensed. Check actual upstream reuse before redistribution."
     },
     {
       "id": "AN-001",
@@ -314,10 +317,10 @@
         "motion"
       ],
       "source": "https://motion.dev/examples/react-smooth-tabs",
-      "notion": "[private-notion-link-redacted]",
       "reuseKind": "motion-reference",
       "styleIds": [],
-      "applicationContexts": []
+      "applicationContexts": [],
+      "license": "External research link only; upstream rights retained; no license or redistribution grant asserted for upstream code or media."
     },
     {
       "id": "PR-001",
@@ -345,7 +348,8 @@
       "aliases": [
         "工作台首页",
         "概览工作台"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "PR-002",
@@ -375,7 +379,8 @@
       "aliases": [
         "主从列表详情",
         "列表详情布局"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "PR-003",
@@ -404,7 +409,8 @@
       "aliases": [
         "文档审阅流程",
         "内容审批页"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "KIT-001",
@@ -418,7 +424,6 @@
       ],
       "path": "archive/v0.1.0.md",
       "demo": "playground/initial-interaction-lab.html",
-      "notion": "[private-notion-link-redacted]",
       "reuseKind": "snapshot",
       "styleIds": [
         "refined-light-saas"
@@ -426,7 +431,8 @@
       "applicationContexts": [
         "workspace"
       ],
-      "demoStyleId": "refined-light-saas"
+      "demoStyleId": "refined-light-saas",
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "UI-001",
@@ -696,7 +702,7 @@
         "workspace",
         "data-tool"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "license": "External research link only; upstream rights retained; no license or redistribution grant asserted for upstream code or media."
     },
     {
       "id": "REF-017",
@@ -718,7 +724,7 @@
         "data-tool",
         "consumer"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "license": "External research link only; upstream rights retained; no license or redistribution grant asserted for upstream code or media."
     },
     {
       "id": "REF-018",
@@ -739,7 +745,7 @@
         "b2b-saas",
         "workspace"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "license": "External research link only; upstream rights retained; no license or redistribution grant asserted for upstream code or media."
     },
     {
       "id": "REF-019",
@@ -760,7 +766,7 @@
         "b2b-saas",
         "workspace"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "license": "External research link only; upstream rights retained; no license or redistribution grant asserted for upstream code or media."
     },
     {
       "id": "REF-020",
@@ -781,7 +787,7 @@
         "b2b-saas",
         "workspace"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "license": "External research link only; upstream rights retained; no license or redistribution grant asserted for upstream code or media."
     },
     {
       "id": "SAAS-001",
@@ -809,11 +815,11 @@
         "REF-019",
         "REF-001"
       ],
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "视图切换",
         "数据密度调整"
-      ]
+      ],
+      "license": "MIT for the repository owner's independently authored local specification, tokens or implementation only (see LICENSE and NOTICE.md); cited upstream code, design assets, media and other third-party material are not relicensed. Check actual upstream reuse before redistribution."
     },
     {
       "id": "SAAS-002",
@@ -840,11 +846,11 @@
       "dependencies": [
         "REF-016"
       ],
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "可排序数据表",
         "表格检索"
-      ]
+      ],
+      "license": "MIT for the repository owner's independently authored local specification, tokens or implementation only (see LICENSE and NOTICE.md); cited upstream code, design assets, media and other third-party material are not relicensed. Check actual upstream reuse before redistribution."
     },
     {
       "id": "SAAS-003",
@@ -871,11 +877,11 @@
       "dependencies": [
         "SAAS-002"
       ],
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "批量选择",
         "批量操作撤销"
-      ]
+      ],
+      "license": "MIT for the repository owner's independently authored local specification, tokens or implementation only (see LICENSE and NOTICE.md); cited upstream code, design assets, media and other third-party material are not relicensed. Check actual upstream reuse before redistribution."
     },
     {
       "id": "SAAS-004",
@@ -902,11 +908,11 @@
       "dependencies": [
         "IP-003"
       ],
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "上下文检查器",
         "详情修改保存"
-      ]
+      ],
+      "license": "MIT for the repository owner's independently authored local specification, tokens or implementation only (see LICENSE and NOTICE.md); cited upstream code, design assets, media and other third-party material are not relicensed. Check actual upstream reuse before redistribution."
     },
     {
       "id": "SAAS-005",
@@ -933,11 +939,11 @@
       "dependencies": [
         "REF-017"
       ],
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "请求状态矩阵",
         "加载失败空状态"
-      ]
+      ],
+      "license": "MIT for the repository owner's independently authored local specification, tokens or implementation only (see LICENSE and NOTICE.md); cited upstream code, design assets, media and other third-party material are not relicensed. Check actual upstream reuse before redistribution."
     },
     {
       "id": "SAAS-006",
@@ -962,11 +968,11 @@
       "dependencies": [
         "REF-018"
       ],
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "权限感知菜单",
         "业务上下文操作"
-      ]
+      ],
+      "license": "MIT for the repository owner's independently authored local specification, tokens or implementation only (see LICENSE and NOTICE.md); cited upstream code, design assets, media and other third-party material are not relicensed. Check actual upstream reuse before redistribution."
     },
     {
       "id": "PR-004",
@@ -1000,11 +1006,11 @@
         "SAAS-004",
         "SAAS-005"
       ],
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "运营列表详情配方",
         "SaaS列表"
-      ]
+      ],
+      "license": "MIT for the repository owner's independently authored local specification, tokens or implementation only (see LICENSE and NOTICE.md); cited upstream code, design assets, media and other third-party material are not relicensed. Check actual upstream reuse before redistribution."
     },
     {
       "id": "KIT-002",
@@ -1031,7 +1037,7 @@
       "dependencies": [
         "PR-004"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "REF-021",
@@ -1054,7 +1060,7 @@
         "data-tool"
       ],
       "spec": "docs/saas/editing-patterns.md",
-      "notion": "[private-notion-link-redacted]"
+      "license": "MIT for the repository owner's original local research commentary and independently authored example material only (see LICENSE and NOTICE.md); external references and upstream code/media retain their original terms; no upstream reuse grant asserted."
     },
     {
       "id": "REF-022",
@@ -1077,7 +1083,7 @@
         "data-tool"
       ],
       "spec": "docs/saas/editing-patterns.md",
-      "notion": "[private-notion-link-redacted]"
+      "license": "MIT for the repository owner's original local research commentary and independently authored example material only (see LICENSE and NOTICE.md); external references and upstream code/media retain their original terms; no upstream reuse grant asserted."
     },
     {
       "id": "REF-023",
@@ -1100,7 +1106,7 @@
         "data-tool"
       ],
       "spec": "docs/saas/editing-patterns.md",
-      "notion": "[private-notion-link-redacted]"
+      "license": "MIT for the repository owner's original local research commentary and independently authored example material only (see LICENSE and NOTICE.md); external references and upstream code/media retain their original terms; no upstream reuse grant asserted."
     },
     {
       "id": "REF-024",
@@ -1123,7 +1129,7 @@
         "data-tool"
       ],
       "spec": "docs/saas/editing-patterns.md",
-      "notion": "[private-notion-link-redacted]"
+      "license": "MIT for the repository owner's original local research commentary and independently authored example material only (see LICENSE and NOTICE.md); external references and upstream code/media retain their original terms; no upstream reuse grant asserted."
     },
     {
       "id": "REF-025",
@@ -1146,7 +1152,7 @@
         "data-tool"
       ],
       "spec": "docs/saas/editing-patterns.md",
-      "notion": "[private-notion-link-redacted]"
+      "license": "MIT for the repository owner's original local research commentary and independently authored example material only (see LICENSE and NOTICE.md); external references and upstream code/media retain their original terms; no upstream reuse grant asserted."
     },
     {
       "id": "SAAS-007",
@@ -1173,11 +1179,11 @@
       "dependencies": [
         "REF-021"
       ],
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "行内编辑确认",
         "修改取消"
-      ]
+      ],
+      "license": "MIT for the repository owner's independently authored local specification, tokens or implementation only (see LICENSE and NOTICE.md); cited upstream code, design assets, media and other third-party material are not relicensed. Check actual upstream reuse before redistribution."
     },
     {
       "id": "SAAS-008",
@@ -1204,11 +1210,11 @@
       "dependencies": [
         "REF-022"
       ],
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "字段验证",
         "保存中状态"
-      ]
+      ],
+      "license": "MIT for the repository owner's independently authored local specification, tokens or implementation only (see LICENSE and NOTICE.md); cited upstream code, design assets, media and other third-party material are not relicensed. Check actual upstream reuse before redistribution."
     },
     {
       "id": "SAAS-009",
@@ -1235,11 +1241,11 @@
       "dependencies": [
         "REF-021"
       ],
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "未保存提醒",
         "放弃修改保护"
-      ]
+      ],
+      "license": "MIT for the repository owner's independently authored local specification, tokens or implementation only (see LICENSE and NOTICE.md); cited upstream code, design assets, media and other third-party material are not relicensed. Check actual upstream reuse before redistribution."
     },
     {
       "id": "SAAS-010",
@@ -1266,11 +1272,11 @@
       "dependencies": [
         "REF-023"
       ],
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "条件组合筛选",
         "高级AND OR筛选"
-      ]
+      ],
+      "license": "MIT for the repository owner's independently authored local specification, tokens or implementation only (see LICENSE and NOTICE.md); cited upstream code, design assets, media and other third-party material are not relicensed. Check actual upstream reuse before redistribution."
     },
     {
       "id": "SAAS-011",
@@ -1297,11 +1303,11 @@
       "dependencies": [
         "REF-024"
       ],
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "局部快捷键",
         "焦点范围管理"
-      ]
+      ],
+      "license": "MIT for the repository owner's independently authored local specification, tokens or implementation only (see LICENSE and NOTICE.md); cited upstream code, design assets, media and other third-party material are not relicensed. Check actual upstream reuse before redistribution."
     },
     {
       "id": "PR-005",
@@ -1335,11 +1341,11 @@
         "SAAS-010",
         "SAAS-011"
       ],
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "设置筛选页面",
         "高级筛选表单"
-      ]
+      ],
+      "license": "MIT for the repository owner's independently authored local specification, tokens or implementation only (see LICENSE and NOTICE.md); cited upstream code, design assets, media and other third-party material are not relicensed. Check actual upstream reuse before redistribution."
     },
     {
       "id": "KIT-003",
@@ -1366,7 +1372,7 @@
       "dependencies": [
         "PR-005"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "DT-002",
@@ -1402,7 +1408,6 @@
       "dependencies": [],
       "license": "Original design proposal, not an official source design system",
       "verified": "Styles scoped. Standalone demo + pure state model, but no full visual/browser or production QA.",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "深色工作台",
         "开发者工具",
@@ -1443,7 +1448,6 @@
       "dependencies": [],
       "license": "Original design proposal, not an official source design system",
       "verified": "Styles scoped. Standalone demo + pure state model, but no full visual/browser or production QA.",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "内容阅读",
         "知识库",
@@ -1484,7 +1488,6 @@
       "dependencies": [],
       "license": "Original design proposal, not an official source design system",
       "verified": "Styles scoped. Standalone demo + pure state model, but no full visual/browser or production QA.",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "移动端视觉",
         "游戏化",
@@ -1518,8 +1521,7 @@
         "DT-004"
       ],
       "license": "Original demo implementation, local-only, no third-party media",
-      "verified": "Style-switch and interaction-state model tests; browser and accessibility verification pending",
-      "notion": "[private-notion-link-redacted]"
+      "verified": "Style-switch and interaction-state model tests; browser and accessibility verification pending"
     },
     {
       "id": "UI-010",
@@ -1555,7 +1557,6 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "主题容器",
         "主题切换范围"
@@ -1595,7 +1596,6 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]",
       "handoff": {
         "entry": "packages/ui/src/index.tsx",
         "stack": "React/TypeScript",
@@ -1643,7 +1643,6 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "状态标签",
         "状态徽标"
@@ -1683,7 +1682,6 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "卡片",
         "内容卡片"
@@ -1723,7 +1721,6 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "单行输入",
         "输入框",
@@ -1766,7 +1763,6 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "多行输入",
         "文本域",
@@ -1808,7 +1804,6 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "下拉选项",
         "选择器",
@@ -1850,7 +1845,6 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "复选框",
         "多选勾选"
@@ -1890,7 +1884,6 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "开关",
         "切换开关"
@@ -1930,7 +1923,6 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]",
       "handoff": {
         "entry": "packages/ui/src/index.tsx",
         "stack": "React/TypeScript",
@@ -1977,7 +1969,6 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "提示消息",
         "警告提示",
@@ -2019,7 +2010,6 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "进度条",
         "任务进度"
@@ -2059,7 +2049,6 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "骨架屏",
         "加载占位"
@@ -2099,7 +2088,6 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "对话框",
         "确认弹窗",
@@ -2141,7 +2129,6 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "空状态",
         "空列表提示"
@@ -2181,7 +2168,6 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "头像",
         "用户头像"
@@ -2221,7 +2207,6 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "数据列表",
         "可选列表"
@@ -2261,7 +2246,6 @@
       "framework": "React >=19.2",
       "license": "Original code; React is peer dependency",
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "轻提示",
         "状态通知"
@@ -2311,7 +2295,7 @@
         "UI-027"
       ],
       "verified": "TypeScript + library/gallery build and 8 Chromium browser smoke tests passed (2026-10-26, run 40284518385); no production, screen-reader or cross-browser certification.",
-      "notion": "[private-notion-link-redacted]"
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "DT-005",
@@ -2341,12 +2325,12 @@
       "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
       "details": "styles/neo-brutalist/README.md",
       "demo": "playground/bold-grid/index.html",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "粗野主义",
         "大胆网格",
         "brutalist"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "REF-026",
@@ -2368,7 +2352,7 @@
       "dependencies": [],
       "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
       "details": "styles/neo-brutalist/README.md",
-      "notion": "[private-notion-link-redacted]"
+      "license": "MIT for the repository owner's original local research commentary and independently authored example material only (see LICENSE and NOTICE.md); external references and upstream code/media retain their original terms; no upstream reuse grant asserted."
     },
     {
       "id": "REF-027",
@@ -2390,7 +2374,7 @@
       "dependencies": [],
       "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
       "details": "docs/motion/motion-system.md",
-      "notion": "[private-notion-link-redacted]"
+      "license": "MIT for the repository owner's original local research commentary and independently authored example material only (see LICENSE and NOTICE.md); external references and upstream code/media retain their original terms; no upstream reuse grant asserted."
     },
     {
       "id": "REF-028",
@@ -2412,7 +2396,7 @@
       "dependencies": [],
       "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
       "details": "docs/interactions/advanced-patterns.md",
-      "notion": "[private-notion-link-redacted]"
+      "license": "MIT for the repository owner's original local research commentary and independently authored example material only (see LICENSE and NOTICE.md); external references and upstream code/media retain their original terms; no upstream reuse grant asserted."
     },
     {
       "id": "IP-009",
@@ -2441,11 +2425,11 @@
       "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
       "demo": "playground/interaction-lab/index.html",
       "details": "docs/interactions/advanced-patterns.md",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "撤销归档",
         "可恢复操作"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "IP-010",
@@ -2472,11 +2456,11 @@
       "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
       "demo": "playground/interaction-lab/index.html",
       "details": "docs/interactions/advanced-patterns.md",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "多步骤表单",
         "分步向导"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "IP-011",
@@ -2505,11 +2489,11 @@
       "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
       "demo": "playground/interaction-lab/index.html",
       "details": "docs/interactions/advanced-patterns.md",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "无障碍排序",
         "键盘上下移动"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "IP-012",
@@ -2536,11 +2520,11 @@
       "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
       "demo": "playground/interaction-lab/index.html",
       "details": "docs/interactions/advanced-patterns.md",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "可调整分屏",
         "原生滑块布局"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "IP-013",
@@ -2569,11 +2553,11 @@
       "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
       "demo": "playground/bold-grid/index.html",
       "details": "docs/motion/motion-system.md",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "视图过渡筛选",
         "过渡动画"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "MOT-001",
@@ -2597,7 +2581,7 @@
       ],
       "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
       "details": "docs/motion/motion-system.md",
-      "notion": "[private-notion-link-redacted]"
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "PR-006",
@@ -2628,11 +2612,11 @@
       ],
       "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
       "demo": "playground/bold-grid/index.html",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "创意活动页布局",
         "活动落地页"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "PR-007",
@@ -2661,11 +2645,11 @@
       ],
       "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
       "demo": "playground/interaction-lab/index.html",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "可恢复操作工作台",
         "异常恢复流程"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "KIT-006",
@@ -2694,7 +2678,7 @@
       ],
       "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
       "demo": "playground/bold-grid/index.html",
-      "notion": "[private-notion-link-redacted]"
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "KIT-007",
@@ -2722,7 +2706,7 @@
       ],
       "verified": "Research/prototype only; limited automated tests do not establish production integration or full accessibility.",
       "demo": "playground/interaction-lab/index.html",
-      "notion": "[private-notion-link-redacted]"
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "TPL-001",
@@ -2754,11 +2738,11 @@
         "PR-002"
       ],
       "verified": "Standalone HTML/JS demo. Not a React package export or real app; Chromium smoke and unit test results pending.",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "运营列表工作台",
         "表格详情页"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "TPL-002",
@@ -2789,11 +2773,11 @@
         "IP-002"
       ],
       "verified": "Standalone HTML/JS demo. Not a React package export or real app; Chromium smoke and unit test results pending.",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "编辑阅读页",
         "阅读资料库"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "TPL-003",
@@ -2824,11 +2808,11 @@
         "IP-008"
       ],
       "verified": "Standalone HTML/JS demo. Not a React package export or real app; Chromium smoke and unit test results pending.",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "移动打卡页面",
         "习惯养成页"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "TPL-004",
@@ -2860,11 +2844,11 @@
         "PR-006"
       ],
       "verified": "Standalone HTML/JS demo. Not a React package export or real app; Chromium smoke and unit test results pending.",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "粗野主义落地页",
         "创意宣传页"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "stage": "prototype",
@@ -2899,7 +2883,6 @@
         "UI-019",
         "UI-023"
       ],
-      "notion": "[private-notion-link-redacted]",
       "handoff": {
         "entry": "playground/precision-workbench/src/main.tsx",
         "stack": "React/Vite",
@@ -2911,7 +2894,8 @@
         "暗色工作台",
         "暗色专业工作台",
         "数据分析工作台"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "stage": "prototype",
@@ -2951,7 +2935,7 @@
         "UI-025",
         "UI-027"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "stage": "prototype",
@@ -2984,11 +2968,11 @@
         "UI-019",
         "UI-027"
       ],
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "专业工作台组合",
         "React工作台"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "priority": "P1",
@@ -3019,7 +3003,7 @@
         "IP-014",
         "PR-009"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "priority": "P1",
@@ -3048,11 +3032,11 @@
         "selection"
       ],
       "dependencies": [],
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "素材多维检索",
         "组合筛选资产"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "priority": "P1",
@@ -3081,11 +3065,11 @@
       "dependencies": [
         "IP-014"
       ],
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "素材交接清单",
         "交给Codex"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "stage": "prototype",
@@ -3112,12 +3096,12 @@
       "dependencies": [],
       "details": "styles/commerce-atelier/README.md",
       "demo": "playground/commerce-atelier/index.html",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "电商商品页",
         "商品目录",
         "commerce"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "stage": "prototype",
@@ -3143,11 +3127,11 @@
         "REF-029"
       ],
       "demo": "playground/commerce-atelier/index.html",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "商品规格选择",
         "电商筛选"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "stage": "prototype",
@@ -3176,11 +3160,11 @@
         "IP-015"
       ],
       "demo": "playground/commerce-atelier/index.html",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "商品目录构图",
         "电商商品展示"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "stage": "prototype",
@@ -3209,7 +3193,7 @@
         "IP-015"
       ],
       "demo": "playground/commerce-atelier/index.html",
-      "notion": "[private-notion-link-redacted]"
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "stage": "prototype",
@@ -3239,11 +3223,11 @@
         "PR-010"
       ],
       "demo": "playground/commerce-atelier/index.html",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "电商商品集合页",
         "商品发现页面"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "stage": "analyzed",
@@ -3266,7 +3250,7 @@
       ],
       "dependencies": [],
       "details": "styles/commerce-atelier/README.md",
-      "notion": "[private-notion-link-redacted]"
+      "license": "MIT for the repository owner's original local research commentary and independently authored example material only (see LICENSE and NOTICE.md); external references and upstream code/media retain their original terms; no upstream reuse grant asserted."
     },
     {
       "id": "IP-016",
@@ -3296,11 +3280,11 @@
       ],
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
       "verified": "Reference implementation. Automated browser and build checks pending; no production certification or human-approved visual baseline.",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "组件状态矩阵",
         "多主题状态展示"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "KIT-012",
@@ -3332,7 +3316,7 @@
       ],
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
       "verified": "Reference implementation. Automated browser and build checks pending; no production certification or human-approved visual baseline.",
-      "notion": "[private-notion-link-redacted]"
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "PR-011",
@@ -3363,11 +3347,11 @@
       ],
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
       "verified": "Reference implementation. Automated browser and build checks pending; no production certification or human-approved visual baseline.",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "编辑审阅构图",
         "文档复审"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "KIT-011",
@@ -3396,7 +3380,7 @@
       ],
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
       "verified": "Reference implementation. Automated browser and build checks pending; no production certification or human-approved visual baseline.",
-      "notion": "[private-notion-link-redacted]"
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "TPL-007",
@@ -3426,7 +3410,6 @@
       ],
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
       "verified": "Reference implementation. Automated browser and build checks pending; no production certification or human-approved visual baseline.",
-      "notion": "[private-notion-link-redacted]",
       "handoff": {
         "entry": "playground/editorial-review/src/main.tsx",
         "stack": "React/Vite",
@@ -3438,7 +3421,8 @@
         "文章审阅",
         "内容审阅工作台",
         "编辑审查页面"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "DT-007",
@@ -3469,12 +3453,12 @@
       "dependencies": [],
       "source": "https://www.figma.com/resource-library/web-design-trends/",
       "verified": "Original Token and CSS/JSON prototype. Automated checks pending; not React-compatible or production certified.",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "像素风",
         "复古游戏",
         "pixel art"
-      ]
+      ],
+      "license": "MIT for the repository owner's independently authored local specification, tokens or implementation only (see LICENSE and NOTICE.md); cited upstream code, design assets, media and other third-party material are not relicensed. Check actual upstream reuse before redistribution."
     },
     {
       "id": "DT-008",
@@ -3505,7 +3489,7 @@
       "dependencies": [],
       "source": "https://www.figma.com/resource-library/web-design-trends/",
       "verified": "Original Token and CSS/JSON prototype. Automated checks pending; not React-compatible or production certified.",
-      "notion": "[private-notion-link-redacted]"
+      "license": "MIT for the repository owner's independently authored local specification, tokens or implementation only (see LICENSE and NOTICE.md); cited upstream code, design assets, media and other third-party material are not relicensed. Check actual upstream reuse before redistribution."
     },
     {
       "id": "DT-009",
@@ -3536,7 +3520,7 @@
       "dependencies": [],
       "source": "https://www.figma.com/resource-library/web-design-trends/",
       "verified": "Original Token and CSS/JSON prototype. Automated checks pending; not React-compatible or production certified.",
-      "notion": "[private-notion-link-redacted]"
+      "license": "MIT for the repository owner's independently authored local specification, tokens or implementation only (see LICENSE and NOTICE.md); cited upstream code, design assets, media and other third-party material are not relicensed. Check actual upstream reuse before redistribution."
     },
     {
       "id": "DT-010",
@@ -3567,7 +3551,7 @@
       "dependencies": [],
       "source": "https://www.figma.com/resource-library/web-design-trends/",
       "verified": "Original Token and CSS/JSON prototype. Automated checks pending; not React-compatible or production certified.",
-      "notion": "[private-notion-link-redacted]"
+      "license": "MIT for the repository owner's independently authored local specification, tokens or implementation only (see LICENSE and NOTICE.md); cited upstream code, design assets, media and other third-party material are not relicensed. Check actual upstream reuse before redistribution."
     },
     {
       "stage": "prototype",
@@ -3598,11 +3582,11 @@
         "DT-009",
         "DT-010"
       ],
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "创意交互场景",
         "不同风格交互"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "stage": "prototype",
@@ -3633,11 +3617,11 @@
         "DT-009",
         "DT-010"
       ],
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "创意方向组合",
         "多风格构图"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "stage": "prototype",
@@ -3674,7 +3658,7 @@
         "DT-010",
         "IP-017"
       ],
-      "notion": "[private-notion-link-redacted]"
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "stage": "analyzed",
@@ -3699,7 +3683,7 @@
         "experimental-web"
       ],
       "dependencies": [],
-      "notion": "[private-notion-link-redacted]"
+      "license": "MIT for the repository owner's original local research commentary and independently authored example material only (see LICENSE and NOTICE.md); external references and upstream code/media retain their original terms; no upstream reuse grant asserted."
     },
     {
       "id": "REF-031",
@@ -3726,7 +3710,7 @@
       "dependencies": [],
       "source": "https://github.com/heydamir/unslop",
       "verified": "Upstream README, Skill instructions and licenses reviewed on 2026-11-04. No upstream code copied or executed; guidance is not production validation.",
-      "notion": "[private-notion-link-redacted]"
+      "license": "MIT for the repository owner's original local research commentary and independently authored example material only (see LICENSE and NOTICE.md); external references and upstream code/media retain their original terms; no upstream reuse grant asserted."
     },
     {
       "id": "REF-032",
@@ -3753,7 +3737,7 @@
       "dependencies": [],
       "source": "https://github.com/Nutlope/hallmark",
       "verified": "Upstream README, Skill instructions and licenses reviewed on 2026-11-04. No upstream code copied or executed; guidance is not production validation.",
-      "notion": "[private-notion-link-redacted]"
+      "license": "MIT for the repository owner's original local research commentary and independently authored example material only (see LICENSE and NOTICE.md); external references and upstream code/media retain their original terms; no upstream reuse grant asserted."
     },
     {
       "id": "PR-013",
@@ -3783,11 +3767,11 @@
       ],
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
       "verified": "Upstream README, Skill instructions and licenses reviewed on 2026-11-04. No upstream code copied or executed; guidance is not production validation.",
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "去模板化复审",
         "界面视觉审查"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "PR-014",
@@ -3831,7 +3815,8 @@
         "去模板化",
         "审查工作流规划",
         "视觉审查分流"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "PR-015",
@@ -3871,7 +3856,8 @@
       "aliases": [
         "多风格复核报告",
         "设计质量评估"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "PR-016",
@@ -3912,7 +3898,8 @@
       "aliases": [
         "像素风审查",
         "复古游戏视觉验收"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "IP-018",
@@ -3943,7 +3930,6 @@
         "undo",
         "keyboard"
       ],
-      "notion": "[private-notion-link-redacted]",
       "handoff": {
         "entry": "playground/advanced-interactions/model.mjs",
         "stack": "Vanilla JS model + DOM demo",
@@ -3954,7 +3940,8 @@
         "空间画布",
         "框选",
         "缩放"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "IP-019",
@@ -3983,11 +3970,11 @@
         "focus-restore",
         "mobile-fallback"
       ],
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "径向菜单",
         "圆盘快捷菜单"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "IP-020",
@@ -4017,11 +4004,11 @@
         "keyboard",
         "state-scrub"
       ],
-      "notion": "[private-notion-link-redacted]",
       "aliases": [
         "状态擦拭对比",
         "前后对比滑块"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "KIT-014",
@@ -4055,7 +4042,7 @@
       ],
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
       "verified": "Runnable dependency-free local research; Node model tests and Chromium browser QA specified, no production library or approved visual golden claimed.",
-      "notion": "[private-notion-link-redacted]"
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "IP-021",
@@ -4098,7 +4085,8 @@
         "跨容器拖放",
         "拖拽",
         "撤销"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "IP-022",
@@ -4133,7 +4121,8 @@
       "aliases": [
         "FLIP重排动画",
         "布局过渡重排"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "KIT-015",
@@ -4164,7 +4153,8 @@
         "IP-022"
       ],
       "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
-      "verified": "Local fixture and original scoped visual wrapper; not a reusable production React component or global design theme."
+      "verified": "Local fixture and original scoped visual wrapper; not a reusable production React component or global design theme.",
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "stage": "prototype",
@@ -4207,7 +4197,8 @@
         "磁吸时间线",
         "多轨编辑",
         "时间线"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "stage": "prototype",
@@ -4248,7 +4239,8 @@
       "aliases": [
         "滚动叙事",
         "章节进度"
-      ]
+      ],
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "stage": "prototype",
@@ -4280,7 +4272,8 @@
         "IP-023",
         "IP-024"
       ],
-      "verified": "Original independent local-only demonstration of two behaviors. Style wrapper is not a default theme or production-ready component."
+      "verified": "Original independent local-only demonstration of two behaviors. Style wrapper is not a default theme or production-ready component.",
+      "license": "MIT for the repository owner's original local material only (see LICENSE and NOTICE.md); dependencies and third-party material retain their own terms. Provenance based on registered local paths; no independent ownership certification."
     },
     {
       "id": "REF-033",

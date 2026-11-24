@@ -33,4 +33,4 @@ Original exploratory values; no real store/catalog, licensed images, analytics, 
 
 ## Asset catalog entry
 
-[Notion DT-005 visual direction]([private-notion-link-redacted]) · [V0.7 research summary]([private-notion-link-redacted]).
+Notion DT-005 visual direction (private research record omitted) · V0.7 research summary (private research record omitted).

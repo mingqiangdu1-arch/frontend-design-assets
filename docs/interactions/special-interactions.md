@@ -75,9 +75,9 @@ npm run test:browser
 
 ## V0.14 首轮真实验证记录 · 2026-11-05
 
-- [GitHub Draft PR #4](https://github.com/mingqiangdu1-arch/frontend-design-assets/pull/4)：独立实验分支，未合并主分支。
-- [仓库资产/单元/语法/Token CI](https://github.com/mingqiangdu1-arch/frontend-design-assets/actions/runs/41982369352)：通过；新增 4 条资产后，分支注册总数为 125。
-- [真实 Chromium Playwright 浏览器回归](https://github.com/mingqiangdu1-arch/frontend-design-assets/actions/runs/41982369373)：**45 项通过**（其中 7 项属于新高级交互实验，其他既有浏览器测试保留），包含 Pointer 拖动、撤销、键盘菜单、状态滑杆、390/768/1440px 三个宽度和页面级溢出验证。
+- GitHub Draft PR #4 (historical private pull/4)：独立实验分支，未合并主分支。
+- 仓库资产/单元/语法/Token CI (historical private actions/runs/41982369352)：通过；新增 4 条资产后，分支注册总数为 125。
+- 真实 Chromium Playwright 浏览器回归 (historical private actions/runs/41982369373)：**45 项通过**（其中 7 项属于新高级交互实验，其他既有浏览器测试保留），包含 Pointer 拖动、撤销、键盘菜单、状态滑杆、390/768/1440px 三个宽度和页面级溢出验证。
 - 最初测试在桌面视口外发送鼠标动作而失败，已修改为先滚动节点至视口可见再执行拖动。另经浏览器截图复核发现“桌面加载后缩小到手机宽度”时画布沿用旧缩放导致初始节点被裁切，现已在 resize 时主动适配画布，并增加目标节点始终完整可见的断言。该改动以主分支实验 PR 的最新 CI 为准。
 - 已审看 CI 实际 390px 截图，默认选中节点可见且原始四节点关系可平移浏览；这不是形式化的视觉 golden，更不表示 Safari/Firefox 或真机多指交互已认证。
-- [Notion 长期知识库记录]([private-notion-link-redacted])：使用场景、源代码入口、适用边界与未来高级交互待办。首次用户可用演示仍是本地静态页面，没有部署公网服务。
+- Notion 长期知识库记录 (private research record omitted)：使用场景、源代码入口、适用边界与未来高级交互待办。首次用户可用演示仍是本地静态页面，没有部署公网服务。

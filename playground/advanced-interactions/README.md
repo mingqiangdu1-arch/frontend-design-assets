@@ -23,6 +23,6 @@ In contrast with the old [Interaction Lab](../interaction-lab/README.md), this e
 
 ## Latest verified evidence
 
-- [Draft PR #4](https://github.com/mingqiangdu1-arch/frontend-design-assets/pull/4), [Chromium browser evidence](https://github.com/mingqiangdu1-arch/frontend-design-assets/actions/runs/41982369373) (45 tests passing), [registry/unit checks](https://github.com/mingqiangdu1-arch/frontend-design-assets/actions/runs/41982369352) passing.
+- Draft PR #4 (historical private pull/4), Chromium browser evidence (historical private actions/runs/41982369373) (45 tests passing), registry/unit checks (historical private actions/runs/41982369352) passing.
 - Responsive window resizing re-fits the viewport before screenshots at 390, 768 and 1440; original local state and keyboard alternatives remain. Captured screenshots are not an approved visual golden.
-- [Notion archival analysis]([private-notion-link-redacted]) for future incremental additions and product-specific adaptations.
+- Notion archival analysis (private research record omitted) for future incremental additions and product-specific adaptations.

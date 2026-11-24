@@ -1,6 +1,6 @@
 # Asset Explorer · V1.0 catalog
 
-An interactive browser for the live machine asset registry. Search by name, ID, type, stage, visual scope, tags and application context. Examine exact provenance, dependencies, validation maturity and source/Notion links. Select references and export a Markdown handoff brief for Codex; mixed visual styles receive an explicit warning.
+An interactive browser for the live machine asset registry. Search by name, ID, type, stage, visual scope, tags and application context. Examine exact provenance, dependencies, validation maturity and public source links. Select references and export a Markdown handoff brief for Codex; mixed visual styles receive an explicit warning.
 
 Local server from repository root:
 

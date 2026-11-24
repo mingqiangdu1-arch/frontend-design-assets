@@ -3,7 +3,19 @@
   "private": true,
   "version": "0.13.0",
   "type": "module",
+  "license": "MIT",
   "description": "Living multi-style design assets, React component lab and independent research demos.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mingqiangdu1-arch/frontend-design-assets.git"
+  },
+  "homepage": "https://mingqiangdu1-arch.github.io/frontend-design-assets/",
+  "bugs": {
+    "url": "https://github.com/mingqiangdu1-arch/frontend-design-assets/issues"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "scripts": {
     "test:unit": "node --test tests/*.test.mjs",
     "test:tokens": "node scripts/contrast-audit.mjs",
@@ -11,6 +23,7 @@
     "test:browser": "playwright test",
     "dev:components": "vite --config playground/component-gallery/vite.config.ts",
     "build:components": "vite build --config playground/component-gallery/vite.config.ts",
+    "build:pages": "npm run build:ui && vite build --config playground/component-gallery/vite.config.ts --base=./ && node scripts/build-pages-site.mjs",
     "build:ui": "vite build --config packages/ui/vite.config.ts && tsc -p packages/ui/tsconfig.build.json",
     "typecheck:ui": "tsc -p tsconfig.json --noEmit",
     "test:components:browser": "playwright test -c playwright.components.config.mjs",
@@ -29,6 +42,7 @@
     "test:component-states": "node scripts/check-component-states.mjs",
     "visual:capture": "node scripts/visual-evidence.mjs capture",
     "visual:verify": "node scripts/visual-evidence.mjs verify",
+    "screenshots:public": "node scripts/capture-public-screenshots.mjs",
     "creative:brief": "node scripts/creative-director.mjs",
     "design:plan": "node scripts/plan-design-review.mjs",
     "design:compose": "node scripts/plan-design-composition.mjs",

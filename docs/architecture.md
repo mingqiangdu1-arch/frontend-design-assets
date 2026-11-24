@@ -8,7 +8,7 @@
 | --- | --- | --- |
 | Notion | research, screenshots, comparison, source attribution, status decisions | source of runnable component code |
 | GitHub / docs+registry | stable IDs, change history, recipes, implementation requirements | every catalog item is implemented |
-| GitHub / playground+code | original demos, verified reference components, integration guides | automatic compatibility with AI WORKFLOW PLATFORM |
+| GitHub / playground+code | original demos, verified reference components, integration guides | automatic compatibility with a target application |
 
 ## Information architecture
 

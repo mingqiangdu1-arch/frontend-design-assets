@@ -1,0 +1,19 @@
+{
+  "id": "generic-workspace",
+  "name": "Example Workspace",
+  "status": "research-only",
+  "context": "Fictional desktop collaboration workspace",
+  "platforms": [
+    "desktop-web"
+  ],
+  "selectedStyleIds": [
+    "refined-light-saas"
+  ],
+  "styleDecisionStatus": "illustrative candidate; not a default style",
+  "candidateAssetIds": [
+    "DT-001",
+    "IP-001",
+    "PR-001"
+  ],
+  "notes": "Synthetic profile for demonstrating selection metadata. No real project, user data or integrated application."
+}

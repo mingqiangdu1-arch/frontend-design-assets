@@ -2,23 +2,7 @@ name: Browser smoke — Style Explorer
 on:
   push:
     paths:
-      - "playground/style-explorer/**"
-      - "playground/bold-grid/**"
-      - "playground/interaction-lab/**"
-      - "playground/advanced-interactions/**"
-      - "playground/advanced-interactions-v2/**"
-      - "playground/advanced-interactions-v3/**"
-      - "playground/advanced-interactions-v4/**"
-      - "playground/agent-interactions-v038/**"
-      - "playground/visual-editor-v039/**"
-      - "playground/registry-slots-v040/**"
-      - "playground/registry-metadata-v041/**"
-      - "playground/page-blueprints/**"
-      - "playground/asset-explorer/**"
-      - "playground/commerce-atelier/**"
-      - "playground/creative-style-lab/**"
-      - "playground/trend-style-lab/**"
-      - "playground/style-atlas/**"
+      - "playground/**"
       - "registry/creative-directions.json"
       - "registry/assets.json"
       - "registry/styles.json"
@@ -34,26 +18,11 @@ on:
       - "tests/browser/**"
       - "playwright.config.mjs"
       - "package.json"
+      - "package-lock.json"
       - ".github/workflows/browser-smoke.yml"
   pull_request:
     paths:
-      - "playground/style-explorer/**"
-      - "playground/bold-grid/**"
-      - "playground/interaction-lab/**"
-      - "playground/advanced-interactions/**"
-      - "playground/advanced-interactions-v2/**"
-      - "playground/advanced-interactions-v3/**"
-      - "playground/advanced-interactions-v4/**"
-      - "playground/agent-interactions-v038/**"
-      - "playground/visual-editor-v039/**"
-      - "playground/registry-slots-v040/**"
-      - "playground/registry-metadata-v041/**"
-      - "playground/page-blueprints/**"
-      - "playground/asset-explorer/**"
-      - "playground/commerce-atelier/**"
-      - "playground/creative-style-lab/**"
-      - "playground/trend-style-lab/**"
-      - "playground/style-atlas/**"
+      - "playground/**"
       - "registry/creative-directions.json"
       - "registry/assets.json"
       - "registry/styles.json"
@@ -69,19 +38,28 @@ on:
       - "tests/browser/**"
       - "playwright.config.mjs"
       - "package.json"
+      - "package-lock.json"
       - ".github/workflows/browser-smoke.yml"
-
+permissions:
+  contents: read
 jobs:
   playwright-chromium:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
       - name: Install test runner
-        run: npm install --no-audit --no-fund
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci --no-audit --no-fund
+          else
+            npm install --no-audit --no-fund
+          fi
       - name: Install Chromium and system dependencies
         run: npx playwright install --with-deps chromium
       - name: Run browser smoke checks

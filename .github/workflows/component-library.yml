@@ -15,6 +15,7 @@ on:
       - "playwright.components.config.mjs"
       - "tsconfig.json"
       - "package.json"
+      - "package-lock.json"
       - ".github/workflows/component-library.yml"
   pull_request:
     paths:
@@ -31,19 +32,28 @@ on:
       - "playwright.components.config.mjs"
       - "tsconfig.json"
       - "package.json"
+      - "package-lock.json"
       - ".github/workflows/component-library.yml"
-
+permissions:
+  contents: read
 jobs:
   build-test:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
       - name: Install dependencies
-        run: npm install --no-audit --no-fund
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci --no-audit --no-fund
+          else
+            npm install --no-audit --no-fund
+          fi
       - name: Check source imports and indexed exports
         run: node scripts/check-components.mjs
       - name: Validate selected component states and unapproved visual baselines

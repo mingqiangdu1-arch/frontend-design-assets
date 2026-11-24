@@ -1,6 +1,6 @@
 # PR-005 · SaaS 表单 + 高级筛选组合
 
-状态：**prototype**。这是用于比选的交互页面配方，并非对 AI WORKFLOW PLATFORM 的页面改造。
+状态：**prototype**。这是用于比选的交互页面配方，并非对 a target application 的页面改造。
 
 ## 引用资产
 

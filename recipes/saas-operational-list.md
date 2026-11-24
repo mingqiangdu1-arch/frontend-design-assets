@@ -1,6 +1,6 @@
 # PR-004 · SaaS Operational List with Inspector
 
-**Status:** `prototype`，仅 Refined Light SaaS 组合实验；不等于 AI WORKFLOW PLATFORM 已集成。
+**Status:** `prototype`，仅 Refined Light SaaS 组合实验；不等于 a target application 已集成。
 
 ## 组合配方
 

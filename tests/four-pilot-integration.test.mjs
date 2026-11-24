@@ -19,10 +19,7 @@ test("integrated repo retains the original behavior code and evidence scripts",(
   "playground/advanced-interactions/app.mjs",
   "playground/advanced-interactions/model.mjs",
   "scripts/report-design-audit.mjs",
-  "scripts/triage-genre-audit.mjs",
-  ".github/workflows/design-review-pilot.yml",
-  ".github/workflows/editorial-design-review-audit.yml",
-  ".github/workflows/pixel-genre-audit.yml"
+  "scripts/triage-genre-audit.mjs"
  ];
  for(const path of paths)assert.ok(fs.existsSync(path),"missing "+path);
 });

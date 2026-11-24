@@ -35,8 +35,7 @@
         "390px overflow",
         "mutation failure recovery in a real backend"
       ],
-      "note": "Legacy SaaS reference experiment, not a complete shipped dashboard; React UI package not wired into this demo.",
-      "notion": "[private-notion-link-redacted]"
+      "note": "Legacy SaaS reference experiment, not a complete shipped dashboard; React UI package not wired into this demo."
     },
     {
       "id": "TPL-002",
@@ -70,8 +69,7 @@
         "focus trap Escape and return",
         "Chinese article line length and 390px overflow"
       ],
-      "note": "Original mock editorial content. Bookmark is ephemeral and no search backend exists.",
-      "notion": "[private-notion-link-redacted]"
+      "note": "Original mock editorial content. Bookmark is ephemeral and no search backend exists."
     },
     {
       "id": "TPL-003",
@@ -106,8 +104,7 @@
         "reduced motion",
         "no persistent progress implied"
       ],
-      "note": "Local daily task simulation; no account, streak persistence, or server rewards.",
-      "notion": "[private-notion-link-redacted]"
+      "note": "Local daily task simulation; no account, streak persistence, or server rewards."
     },
     {
       "id": "TPL-004",
@@ -142,8 +139,7 @@
         "collection item focus",
         "390px text clipping"
       ],
-      "note": "Original graphic concept; not a store, no commerce/checkout or real catalog.",
-      "notion": "[private-notion-link-redacted]"
+      "note": "Original graphic concept; not a store, no commerce/checkout or real catalog."
     },
     {
       "id": "TPL-005",
@@ -207,8 +203,7 @@
         "390/768/1440px screenshots and no horizontal overflow",
         "manual keyboard and screen-reader evaluation"
       ],
-      "note": "First React-composed page using 11 real packages/ui exports; demo stores all data in memory. Requires Vite/Node; not runnable via static Python server.",
-      "notion": "[private-notion-link-redacted]"
+      "note": "First React-composed page using 11 real packages/ui exports; demo stores all data in memory. Requires Vite/Node; not runnable via static Python server."
     },
     {
       "id": "TPL-006",

@@ -47,11 +47,11 @@ Related: [Unslop/Hallmark reference](unslop-hallmark.md), [current review policy
 
 ## Actual execution evidence · 2026-11-05
 
-- [Draft PR #3](https://github.com/mingqiangdu1-arch/frontend-design-assets/pull/3) preserves an independently reviewable experiment. `main` remains unchanged.
-- [Real pinned upstream Hallmark audit + raw JSON artifacts](https://github.com/mingqiangdu1-arch/frontend-design-assets/actions/runs/41977358623): baseline and candidate each **240 findings**: 141 FAIL, 88 REFLEX, 11 WARN. Both upstream lint exits nonzero; the advisory Action succeeded by generating a valid comparison, **not by passing all Hallmark style rules**.
+- Draft PR #3 (historical private pull/3) preserves an independently reviewable experiment. `main` remains unchanged.
+- Real pinned upstream Hallmark audit + raw JSON artifacts (historical private actions/runs/41977358623): baseline and candidate each **240 findings**: 141 FAIL, 88 REFLEX, 11 WARN. Both upstream lint exits nonzero; the advisory Action succeeded by generating a valid comparison, **not by passing all Hallmark style rules**.
 - Narrow contextual annotations match exactly **2 findings out of 240** (gate 67, uppercase in-world HUD at `index.html:21–22`); each remains a raw FAIL, and other categories of findings remain unfiltered.
-- [Full four-scene Chromium browser smoke](https://github.com/mingqiangdu1-arch/frontend-design-assets/actions/runs/41977358598) passed, including the new Pixel-specific art, computed-font, selected-state and keyboard checks at 390/768/1440.
-- [Registry and deterministic unit tests](https://github.com/mingqiangdu1-arch/frontend-design-assets/actions/runs/41977358622) passed; proposed new asset `PR-016` yields 122 assets **only on the experiment branch**, not `main`.
+- Full four-scene Chromium browser smoke (historical private actions/runs/41977358598) passed, including the new Pixel-specific art, computed-font, selected-state and keyboard checks at 390/768/1440.
+- Registry and deterministic unit tests (historical private actions/runs/41977358622) passed; proposed new asset `PR-016` yields 122 assets **only on the experiment branch**, not `main`.
 - Downloaded the previously approved-as-capture-only main-branch and candidate **CI screenshots** and manually inspected Pixel Arcade at 390px and 1440px. Pixel landscape, square frames, typesetting and original page identity remain intact; text is somewhat larger, and active quest receives the visible arrow. A slight increase in page height is expected due to the changed text/controls. No obvious newly clipped content observed. These are **unapproved before/after captures**, not a reviewer-signed golden.
 - Remaining boundaries: the original scan spans a shared four-scene source, **not a Pixel-only defect report**; 240 counts are not a quality metric. Read raw findings before assigning severity; no claim of 0 accessibility faults, Safari/Firefox compliance, physical touch, or real game-server integration.
 

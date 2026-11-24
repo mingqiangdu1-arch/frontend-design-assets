@@ -2,7 +2,7 @@
 
 本目录是 **SaaS 类前端资产的长期专题研究**，不是把所有应用都变成 SaaS，更不是宣称某一套视觉适合所有 SaaS。
 
-对应 [Notion SaaS 持续研究专题]([private-notion-link-redacted]) 和 [Notion 可检索素材库]([private-notion-link-redacted])。
+对应 Notion SaaS 持续研究专题 (private research record omitted) 和 Notion 可检索素材库 (private research record omitted)。
 
 ## 当前研究范围
 
@@ -28,7 +28,7 @@
 
 ## 表单与高级筛选专题 V0.3
 
-- [本轮 Notion 研究及资产索引]([private-notion-link-redacted])
+- 本轮 Notion 研究及资产索引 (private research record omitted)
 
 - [SAAS-007～011 行为与边界](editing-patterns.md)：就地编辑、blur 校验、失败重试、未保存提醒、AND/OR 条件组及快捷键。
 - [SaaS Edit + Filter Lab](../../playground/saas-editing/index.html)：独立模拟交互，不连接后端。

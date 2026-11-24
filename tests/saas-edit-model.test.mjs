@@ -6,7 +6,7 @@ import {savedExample,filterData,clone,hasUnsaved,validateField,validateDraft,sav
 test("unchanged and changed form state are distinct",()=>{
  const draft=clone(savedExample);assert.equal(hasUnsaved(savedExample,draft),false);
  draft.name="new";assert.equal(hasUnsaved(savedExample,draft),true);
- assert.equal(savedExample.name,"AI Workflow Platform");
+ assert.equal(savedExample.name,"Example Workspace");
 });
 test("required and length validation catches field errors",()=>{
  assert.ok(validateField("name"," "));
@@ -38,7 +38,7 @@ test("successful explicit save only updates returned baseline",()=>{
  const draft={...savedExample,name:"  New Name  "};
  const res=saveDraft(savedExample,draft);
  assert.equal(res.ok,true);assert.equal(res.saved.name,"New Name");
- assert.equal(savedExample.name,"AI Workflow Platform");
+ assert.equal(savedExample.name,"Example Workspace");
 });
 test("one rule, whitespace, empty rules are predictable",()=>{
  const a=group("root","and",[rule("s","status","equals","进行中")]);

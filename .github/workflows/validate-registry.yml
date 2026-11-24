@@ -12,78 +12,58 @@ on:
       - "playground/**"
       - "components/**"
       - "applications/**"
+      - "package.json"
+      - "LICENSE"
+      - "NOTICE.md"
       - ".github/workflows/validate-registry.yml"
   pull_request:
+permissions:
+  contents: read
 jobs:
   registry:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Check syntax of all scripts and standalone playground modules
+        run: |
+          node -e '
+          import { readdirSync } from "node:fs";
+          import { execFileSync } from "node:child_process";
+          import { join } from "node:path";
+          function walk(dir, out = []) {
+            for (const entry of readdirSync(dir, { withFileTypes: true })) {
+              if (entry.name === "node_modules" || entry.name === "dist") continue;
+              const full = join(dir, entry.name);
+              if (entry.isDirectory()) walk(full, out);
+              else if (entry.name.endsWith(".mjs")) out.push(full);
+            }
+            return out;
+          }
+          const files = [...walk("scripts"), ...walk("playground")].sort();
+          for (const file of files) execFileSync(process.execPath, ["--check", file], { stdio: "inherit" });
+          console.log(`Syntax checked ${files.length} .mjs files across scripts/ and playground/.`);
+          '
+      - name: Check reproducible public graphics
+        run: |
+          node scripts/generate-public-overview.mjs
+          node scripts/generate-public-visuals.mjs
+          git diff --exit-code -- docs/media/inventory.svg docs/media/cover.svg docs/media/style-atlas.svg
       - name: Validate registry and referenced files
         run: node scripts/check-registry.mjs
       - name: Validate complete page template registry
         run: node scripts/check-page-templates.mjs
-      - name: Validate standalone demo syntax
-        run: |
-          node --check playground/saas-patterns/model.mjs
-          node --check playground/saas-patterns/app.mjs
-          node --check playground/saas-editing/model.mjs
-          node --check playground/saas-editing/app.mjs
-          node --check playground/style-explorer/model.mjs
-          node --check playground/style-explorer/explorer.mjs
-          node --check playground/bold-grid/model.mjs
-          node --check playground/bold-grid/app.mjs
-          node --check playground/interaction-lab/model.mjs
-          node --check playground/interaction-lab/app.mjs
-          node --check playground/advanced-interactions/model.mjs
-          node --check playground/advanced-interactions/app.mjs
-          node --check playground/advanced-interactions-v2/model.mjs
-          node --check playground/advanced-interactions-v2/app.mjs
-          node --check playground/advanced-interactions-v3/model.mjs
-          node --check playground/advanced-interactions-v3/app.mjs
-          node --check playground/page-blueprints/gallery.mjs
-          node --check playground/page-blueprints/editorial-library/model.mjs
-          node --check playground/page-blueprints/editorial-library/app.mjs
-          node --check playground/page-blueprints/mobile-habits/model.mjs
-          node --check playground/page-blueprints/mobile-habits/app.mjs
-          node --check playground/agent-interactions-v038/timeline-model.mjs
-          node --check playground/agent-interactions-v038/approval-model.mjs
-          node --check playground/agent-interactions-v038/clarification-model.mjs
-          node --check playground/agent-interactions-v038/app.mjs
-          node --check playground/visual-editor-v039/block-schema.mjs
-          node --check playground/visual-editor-v039/reorder-model.mjs
-          node --check playground/visual-editor-v039/editor-history.mjs
-          node --check playground/visual-editor-v039/app.mjs
-          node --check playground/registry-slots-v040/registry-adapter.mjs
-          node --check playground/registry-slots-v040/slot-tree.mjs
-          node --check playground/registry-slots-v040/command-preview.mjs
-          node --check playground/registry-slots-v040/app.mjs
-          node --check playground/registry-metadata-v041/registry-item-parser.mjs
-          node --check playground/registry-metadata-v041/dependency-graph.mjs
-          node --check playground/registry-metadata-v041/metadata-migration.mjs
-          node --check playground/registry-metadata-v041/app.mjs
-          node --check scripts/compose-page.mjs
-          node --check scripts/check-page-templates.mjs
-          node --check playground/asset-explorer/model.mjs
-          node --check playground/asset-explorer/app.mjs
-          node --check playground/commerce-atelier/model.mjs
-          node --check playground/commerce-atelier/app.mjs
-          node --check playground/creative-style-lab/app.mjs
-          node --check scripts/creative-director.mjs
-          node --check scripts/check-creative-directions.mjs
-          node --check scripts/visual-evidence.mjs
-          node --check scripts/check-component-states.mjs
-          node --check scripts/dev-static.mjs
       - name: Validate experimental creative grammars
         run: node scripts/check-creative-directions.mjs
       - name: Audit scoped theme contrast and CSS token drift
         run: node scripts/contrast-audit.mjs
-      - name: Validate asset finder syntax
-        run: node --check scripts/find-assets.mjs
       - name: Validate selected React state matrix declarations
         run: node scripts/check-component-states.mjs
       - name: Test isolated state models
         run: node --test tests/*.test.mjs
+      - name: Release hygiene, privacy and license preflight
+        run: node scripts/check-public-snapshot.mjs --release

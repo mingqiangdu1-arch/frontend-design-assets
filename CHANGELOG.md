@@ -1,3 +1,10 @@
+## 2026-11-24 · Public snapshot preparation (not a release)
+
+- Adopt owner-authorized MIT for original materials; retain separate upstream terms and add NOTICE.md. Document scoped license boundaries for the remaining 91 entries (619/619 metadata coverage, not independent rights clearance).
+
+- Retain six project-authored workflows and seven pinned bundled external skills; convert the two Vercel skill mirrors to fixed upstream references. Remove 90 mirrored files and the locally constructed Vercel notice from the preparation tree only.
+- Preserve all 619 registered assets (including V0.65 REF-165..172), 48 React exports, 14 styles and 7 page templates. No new asset version, merge, history rewrite or visibility change.
+
 ## 2026-11-24 · V0.65 commercial product design source expansion
 
 - Added REF-165..172 from Shopify Hydrogen, Dawn, Primer React, Elastic EUI, Ionic and Carbon for IBM.com. [Manifest](registry/material-expansion-v065.json) · [source research](docs/research/material-expansion-v065.md).
@@ -614,7 +621,7 @@ The existing React examples remain style-bound and **not production validated**.
 
 ## 2026-10-23 · Repository initialization
 
-- Established a living asset repository independent of AI WORKFLOW PLATFORM.
+- Established a living asset repository independent of a target application.
 - Collected visual direction, color/typography/layout tokens, component and interaction research, source registry, Notion links and reuse policies.
 - Imported the standalone HTML interaction lab as an **initial prototype** (not production code).
 - Introduced machine-readable registry, asset template, page recipes and validation script.
