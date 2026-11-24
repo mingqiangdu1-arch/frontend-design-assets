@@ -6,6 +6,15 @@
 - [Version manifest](registry/material-expansion-v058.json) · [real CSS/JS sources](styles/primitives/v058/README.md) · [SVG files](graphics/v058/README.md) · [standalone semantic gallery](playground/object-studies-v058/index.html). Registry **553 → 563**.
 - No new theme, third-party image/font/code, React exports, storefront, stock API, physical PBR material, product validation, engineering specification or testing infrastructure. Source and path consistency checks are not production browser, contrast or accessibility certification.
 
+
+## 2026-11-24 · V0.59 original executable ASCII glyph fields and raster-inspired SVGs
+
+- Added **four original mathematical glyph-field source implementations** `FX-124..127`: sine wave, crossed moiré, angular fan and quantized strata with real density range + phase controls in a single local optional JS helper. No audio, real data, image-to-ASCII conversion, GPU engine or third-party code.
+- Added **two original standalone static text-based surfaces** `FX-128..129`: ASCII stitch atlas and labeled glyph density ledger. Character shading is font-dependent and not QR, real Braille or optically calibrated print data.
+- Added **four original independent font-free SVGs** `VG-107..110`: raster sunrise, bitstream weave, glyph window and stepped prism; fictional/decorative only.
+- [Machine source index](registry/material-expansion-v059.json) · [HTML/CSS/JS sources](styles/primitives/v059/README.md) · [actual specimen controls](playground/glyph-fields-v059/index.html) · [SVG gallery](graphics/v059/README.md). Registry **563 → 573**.
+- No new default style, external packages, React exports, media, business application, drawing platform or test framework. Source/path checks are not browser, accessibility or production QA.
+
 # Changelog
 
 ## 2026-11-23 · V0.57 original semantic analytics micro-visualizations and decorative vectors

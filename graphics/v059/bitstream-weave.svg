@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Bitstream weave</title><desc id="desc">Decorative crossed ribbons of repeated rectangular pixels, an original abstract textile-like motif with no real coded information.</desc>
+<defs><linearGradient id="ground" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#192f37"/><stop offset="1" stop-color="#3f344c"/></linearGradient>
+<pattern id="teal" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(25)"><rect x="0" y="3" width="15" height="8" rx="1" fill="#8fd6c2"/><rect x="0" y="14" width="11" height="3" fill="#488d89"/></pattern>
+<pattern id="gold" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(-25)"><rect x="2" y="1" width="15" height="7" rx="1" fill="#e7bc7e"/><rect x="5" y="12" width="11" height="3" fill="#a46e60"/></pattern>
+<clipPath id="cl"><rect width="640" height="360" rx="20"/></clipPath></defs>
+<g clip-path="url(#cl)"><rect width="640" height="360" fill="url(#ground)"/>
+<path d="M-60 237C122 35 261 65 364 195S571 326 713 91" fill="none" stroke="#224b53" stroke-width="104" stroke-linecap="round"/>
+<path d="M-60 237C122 35 261 65 364 195S571 326 713 91" fill="none" stroke="url(#teal)" stroke-width="96" stroke-linecap="round"/>
+<path d="M-44 70C99 244 201 340 342 169S557 24 689 271" fill="none" stroke="#574258" stroke-width="87" stroke-linecap="round"/>
+<path d="M-44 70C99 244 201 340 342 169S557 24 689 271" fill="none" stroke="url(#gold)" stroke-width="79" stroke-linecap="round"/>
+<path d="M174 204C230 162 285 122 340 177" fill="none" stroke="#1e3e4b" stroke-width="62" stroke-linecap="round"/>
+<path d="M174 204C230 162 285 122 340 177" fill="none" stroke="url(#teal)" stroke-width="54" stroke-linecap="round"/>
+<g stroke="#becfc8" stroke-opacity=".3" fill="none"><circle cx="320" cy="180" r="143"/><circle cx="320" cy="180" r="98"/></g>
+</g></svg>

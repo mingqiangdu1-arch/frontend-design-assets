@@ -4,6 +4,13 @@
 
 **任务需要可重复执行的方法时**：先查看 [Frontend Agent Skills](.agents/skills/README.md)，按具体任务只加载其中一项 `SKILL.md`；本 CATALOG 仍负责素材和源码定位，不把技能当作已实现组件。
 
+## V0.59 · 字符栅格 / ASCII 原创视觉素材
+
+- [V0.59 结构化索引](registry/material-expansion-v059.json) · [CSS / JS 原件](styles/primitives/v059/README.md) · [可操作真实字符场演示](playground/glyph-fields-v059/index.html) · [独立 SVG 纹理插画](graphics/v059/README.md)。
+- `FX-124..127`：真正的四个不同公式计算字符波面、交叉网纹、径向扇面、离散层带。共用局部 `glyph-fields.js`，滑杆调整字符列数，按钮推进相位；不调用 Canvas、API 或第三方图形代码。`FX-128..129`：静态字符针脚图案、带明文说明的字符密度样张。
+- `VG-107..110`：点阵日出、像素织带、方格拱窗、阶梯棱镜四份新绘制自包含 SVG；纯装饰而非遥测、实测或图像转写。所有图形用于独立素材提取，不提供应用级设计器/默认主题/React 导出。
+
+
 ## V0.58 · 商品及实物陈列视觉原件
 
 - [V0.58 机器索引](registry/material-expansion-v058.json) · [可提取 CSS/JS](styles/primitives/v058/README.md) · [6 个独立语义示例](playground/object-studies-v058/index.html) · [原创透明 SVG](graphics/v058/README.md)。

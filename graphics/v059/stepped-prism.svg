@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Stepped prism</title><desc id="desc">Original abstract three-color stepped cuboid structure made of pixel-like slabs over a technical grid; it represents no physical measured object.</desc>
+<defs><linearGradient id="ground" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eef1e8"/><stop offset="1" stop-color="#d6e0df"/></linearGradient>
+<pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" stroke="#aec1ba" stroke-width="1" fill="none"/></pattern></defs>
+<rect width="640" height="360" rx="20" fill="url(#ground)"/><rect width="640" height="360" rx="20" fill="url(#grid)" opacity=".55"/>
+<path d="M134 241L319 143 518 241 333 337Z" fill="#799eab" opacity=".25"/>
+<g stroke="#41585d" stroke-width="2" stroke-linejoin="round">
+<path d="M176 221L300 153 414 211 290 280Z" fill="#88c2bc"/>
+<path d="M176 221V273L290 334V280Z" fill="#4b9e9c"/>
+<path d="M290 280V334L414 263V211Z" fill="#387b8b"/>
+<path d="M212 184L305 135 415 192 323 243Z" fill="#f0d09a"/>
+<path d="M212 184V222L323 282V243Z" fill="#d5a96f"/>
+<path d="M323 243V282L415 231V192Z" fill="#b8875b"/>
+<path d="M259 150L329 111 415 155 345 195Z" fill="#ddabbd"/>
+<path d="M259 150V180L345 226V195Z" fill="#bd809c"/>
+<path d="M345 195V226L415 185V155Z" fill="#9e668e"/>
+<path d="M309 111L355 86 415 115 369 142Z" fill="#cdd5f2"/>
+<path d="M309 111V136L369 170V142Z" fill="#929ecf"/>
+<path d="M369 142V170L415 144V115Z" fill="#707db2"/>
+</g>
+<path d="M83 303h85M83 303v-58M470 73h89M559 73v56" stroke="#658b85" stroke-width="3" fill="none"/>
+<g fill="#50736f"><circle cx="83" cy="303" r="4"/><circle cx="559" cy="73" r="4"/></g>
+</svg>

@@ -1,0 +1,54 @@
+/* V0.59 Original glyph-field material. Scope: fx59-* only. No global CSS reset.
+   FX-124..127 are independent formula modes in glyph-fields.js; FX-128..129 static HTML/CSS. */
+.fx59-glyph{
+  --fx59-ink:#a7e1be;--fx59-face:#152629;--fx59-edge:#426664;
+  max-width:38rem;min-width:0;margin:0;padding:clamp(.75rem,2vw,1.1rem);
+  background:var(--fx59-face);color:var(--fx59-ink);
+  border:1px solid var(--fx59-edge);border-radius:.6rem;
+  box-shadow:inset 0 0 0 2px #ffffff08;
+}
+.fx59-glyph--wave{--fx59-ink:#b3ecb6;--fx59-face:#142523;--fx59-edge:#3e6860}
+.fx59-glyph--moire{--fx59-ink:#ecd18c;--fx59-face:#342d2a;--fx59-edge:#74634f}
+.fx59-glyph--fan{--fx59-ink:#b4cffe;--fx59-face:#17283f;--fx59-edge:#385a83}
+.fx59-glyph--strata{--fx59-ink:#e6aec4;--fx59-face:#3a2939;--fx59-edge:#78576d}
+.fx59-glyph__head{display:flex;justify-content:space-between;align-items:baseline;gap:.8rem;
+  margin:0 0 .6rem;font:650 .76rem/1.4 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.035em}
+.fx59-glyph__head small{font-weight:400;opacity:.75}
+.fx59-glyph__viewport{overflow-x:auto;overscroll-behavior-inline:contain;border:1px solid #ffffff1b;
+  background:linear-gradient(#ffffff05,#00000010);padding:.65rem .5rem;border-radius:.2rem}
+.fx59-glyph__canvas{display:block;margin:0;width:max-content;max-width:none;
+  font:650 clamp(.48rem,1.25vw,.7rem)/1 ui-monospace,SFMono-Regular,Consolas,monospace;
+  letter-spacing:0;white-space:pre;tab-size:1;user-select:text}
+.fx59-glyph__caption{color:inherit;opacity:.85;font:400 .72rem/1.55 system-ui,sans-serif;margin:.65rem 0 0}
+.fx59-glyph__tools{display:flex;flex-wrap:wrap;gap:.55rem 1rem;align-items:center;margin-top:.75rem;
+  font:400 .75rem/1.5 system-ui,sans-serif}
+.fx59-glyph__tools label{white-space:nowrap}
+.fx59-glyph__tools input{accent-color:var(--fx59-ink);width:clamp(6rem,12vw,10rem)}
+.fx59-glyph__tools output{font-variant-numeric:tabular-nums;min-width:2.2ch}
+.fx59-glyph__tools button{border:1px solid var(--fx59-edge);border-radius:.3rem;
+  background:#ffffff16;color:inherit;padding:.28rem .7rem;font:600 .75rem/1.5 system-ui;cursor:pointer}
+.fx59-glyph__tools button:focus-visible,.fx59-glyph__tools input:focus-visible{
+  outline:3px solid #fff;outline-offset:2px}
+
+/* FX-128 · Original literal ASCII stitch inventory (not Braille, QR or machine-readable code) */
+.fx59-stitch-atlas{max-width:35rem;margin:0;border:1px solid #c5c8c6;border-radius:.55rem;
+  padding:1rem;background:#f6f5ef;color:#2e4542;font:400 .82rem/1.5 system-ui}
+.fx59-stitch-atlas__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.5rem}
+.fx59-stitch-atlas__unit{min-width:0;margin:0;padding:.6rem .4rem;text-align:center;border:1px solid #d9dcd8;background:#fff}
+.fx59-stitch-atlas__unit pre{font:700 clamp(.6rem,1.5vw,.9rem)/1.2 ui-monospace,SFMono-Regular,Consolas,monospace;
+  white-space:pre;margin:.2rem 0 .55rem;overflow:hidden;letter-spacing:0;color:#44685e}
+.fx59-stitch-atlas__unit figcaption{font-size:.71rem;font-weight:650}
+.fx59-stitch-atlas__note{font-size:.72rem;color:#586967;margin:.7rem 0 0}
+@media(max-width:400px){.fx59-stitch-atlas__grid{grid-template-columns:1fr 1fr}}
+
+/* FX-129 · Monospace optical stripe: real text-based shading samples, no graphics engine. */
+.fx59-density-book{max-width:35rem;border:1px solid #a7a5a0;padding:1rem;border-radius:.4rem;
+  color:#2b2a2e;background:#ece5dc;font:400 .82rem/1.5 system-ui}
+.fx59-density-book__row{display:grid;grid-template-columns:minmax(5.5rem,34%) minmax(0,1fr);
+  gap:.75rem;padding:.6rem 0;border-top:1px solid #c4bdb4;align-items:center}
+.fx59-density-book__row:first-of-type{border-top:0}
+.fx59-density-book__row dt{font-weight:700}.fx59-density-book__row dd{margin:0;min-width:0}
+.fx59-density-book__row pre{margin:0;overflow-x:auto;padding:.4rem .3rem;background:#f8f3ed;
+  font:600 .8rem/1.2 ui-monospace,Consolas,monospace;white-space:pre}
+.fx59-density-book__row span{display:block;font-size:.68rem;color:#6b5b57}
+.fx59-density-book__note{font-size:.72rem;color:#655d5b;margin:.7rem 0 0}

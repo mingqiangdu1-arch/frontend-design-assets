@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Raster sunrise</title><desc id="desc">An original graphic of a geometric rising sun cut into pixel-style horizontal steps over an abstract sea, with no fonts or external assets.</desc>
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#263b55"/><stop offset=".65" stop-color="#576f80"/><stop offset="1" stop-color="#ca9589"/></linearGradient>
+<linearGradient id="sun" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fce0ae"/><stop offset="1" stop-color="#e58b80"/></linearGradient>
+<pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><rect x="2" y="3" width="3" height="3" fill="#e7f1e7" opacity=".22"/></pattern></defs>
+<rect width="640" height="360" rx="20" fill="url(#sky)"/><rect width="640" height="360" rx="20" fill="url(#dots)"/>
+<path d="M188 205v-25h24v-25h35v-22h40v-18h67v18h39v22h35v25h24v25Z" fill="url(#sun)"/>
+<path d="M201 193h238M224 171h194M255 150h138" stroke="#ffe8bd" stroke-width="5" opacity=".5"/>
+<rect x="0" y="208" width="640" height="152" fill="#254b62"/>
+<g fill="#83b0b3" opacity=".92">
+<rect x="119" y="230" width="401" height="7" rx="3"/><rect x="171" y="252" width="290" height="6" rx="3"/>
+<rect x="224" y="275" width="181" height="6" rx="3"/><rect x="255" y="298" width="114" height="6" rx="3"/>
+</g><g stroke="#a6ced0" stroke-width="3" opacity=".5"><path d="M34 251h81m402 0h93M70 281h85m315 0h113M38 318h179m221 0h170"/></g>
+<g fill="#d4eeea" opacity=".35"><rect x="54" y="48" width="12" height="12"/><rect x="570" y="92" width="9" height="9"/><rect x="111" y="103" width="6" height="6"/></g>
+</svg>

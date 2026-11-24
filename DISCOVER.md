@@ -18,6 +18,7 @@
 | --- | --- | --- |
 | **已有 React/TSX 导出** | [`registry/components.json`](registry/components.json) → `entries[].id/exportName/source` | [`packages/ui/src/`](packages/ui/src/) 中真实导出、依赖和明确兼容风格；`registry/assets.json` 的“组件类”**不等于**公共 React 导出 |
 | **原生 CSS/HTML/JavaScript/Canvas 原件** | [材料系列索引](registry/README.md) → 对应 `registry/material-expansion-v0xx.json` 的 `FX-*` | 对应 [`styles/primitives/`](styles/primitives/) 源码、README 和独立 Demo；不是默认已集成 React |
+| **ASCII 字符可视化、可调字符场、文字纹理** | [V0.59 实际 HTML/CSS/局部 JS](styles/primitives/v059/README.md) · [六个独立示例](playground/glyph-fields-v059/index.html) · [四幅字体无依赖 SVG](graphics/v059/README.md) | `FX-124..127` 对应真实可调字符场算法与滑杆/相位控制；`FX-128..129` 为静态语义字符纹理；`VG-107..110` 是独立装饰矢量，非数据编码 |
 | **商品/实物陈列、原生预览缩放、原创透明物件图** | [V0.58 独立 HTML/CSS/JS 原件](styles/primitives/v058/README.md) · [6 项真实语义样张](playground/object-studies-v058/index.html) · [4 幅原创透明 SVG](graphics/v058/README.md) | `FX-118..123` 六类独立提取；FX-120 需要可选局部 JS 才能真正放大，SVG 为虚构物件，尺寸与纹理不得作为真实商品信息 |
 | **统计和分析可视化原件（静态）** | [V0.57 六套语义 HTML/CSS](styles/primitives/v057/README.md) · [独立数值样张](playground/analytics-v057/index.html) · [四幅装饰图](graphics/v057/README.md) | `FX-112..117` 图形含可阅读的原始数值/说明，不自动计算或绑定接口；`VG-099..102` 仅装饰性图形，不能冒充实际数据 |
 | **CJK 排版、Ruby 注音与多语言混排** | [V0.56 六套语义 CSS/HTML](styles/primitives/v056/README.md) · [4 幅原始 SVG](graphics/v056/README.md) · [原件样张](playground/multiscript-v056/index.html) | `FX-106..111` 有独立 class/真实 HTML，`VG-095..098` 有自包含矢量；浏览器字体支持与实际语言内容须在宿主验证 |

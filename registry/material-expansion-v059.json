@@ -1,0 +1,246 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.59.0",
+  "date": "2026-11-24",
+  "focus": "Four original locally executable ASCII/glyph text-field algorithms with working native density/phase controls, two independent static typographic microtexture specimens, and four original independent pixel/raster-inspired SVG illustrations. No third-party code, fonts, image-to-ASCII conversion, products or shared platform.",
+  "previousAssetCount": 563,
+  "newAssetCount": 10,
+  "expectedAssetCount": 573,
+  "reactExportsAdded": 0,
+  "styleIdsAdded": 0,
+  "thirdPartyCodeCopied": false,
+  "externalMediaCopied": false,
+  "testSuitesAdded": 0,
+  "sourceFiles": [
+    "registry/material-expansion-v059.json",
+    "styles/primitives/v059/glyph-surfaces.css",
+    "styles/primitives/v059/glyph-fields.js",
+    "styles/primitives/v059/README.md",
+    "playground/glyph-fields-v059/index.html",
+    "graphics/v059/README.md",
+    "graphics/v059/raster-sunrise.svg",
+    "graphics/v059/bitstream-weave.svg",
+    "graphics/v059/glyph-window.svg",
+    "graphics/v059/stepped-prism.svg"
+  ],
+  "cssAtoms": [
+    {
+      "id": "FX-124",
+      "name": "Procedural wave glyph field / 程序正弦字符波场",
+      "className": "fx59-glyph--wave",
+      "source": "styles/primitives/v059/glyph-surfaces.css",
+      "helper": "styles/primitives/v059/glyph-fields.js",
+      "readme": "styles/primitives/v059/README.md",
+      "demo": "playground/glyph-fields-v059/index.html",
+      "styleIds": [
+        "pixel-arcade",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "portfolio",
+        "developer-tool"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "authored-math-glyph-field-native-html-css-local-js",
+      "limitations": "Original deterministic sine-wave field with native density and phase controls; not music, measured signals, noise analysis or image-to-ASCII conversion."
+    },
+    {
+      "id": "FX-125",
+      "name": "Crossed glyph moiré lattice / 交叉字符网纹",
+      "className": "fx59-glyph--moire",
+      "source": "styles/primitives/v059/glyph-surfaces.css",
+      "helper": "styles/primitives/v059/glyph-fields.js",
+      "readme": "styles/primitives/v059/README.md",
+      "demo": "playground/glyph-fields-v059/index.html",
+      "styleIds": [
+        "neo-brutalist",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "brand-site",
+        "creative-site"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "authored-math-glyph-field-native-html-css-local-js",
+      "limitations": "Authored two-sine lattice; no photographic rasterizer, physically measured moire or data encoding."
+    },
+    {
+      "id": "FX-126",
+      "name": "Angular glyph fan / 极角字符扇面",
+      "className": "fx59-glyph--fan",
+      "source": "styles/primitives/v059/glyph-surfaces.css",
+      "helper": "styles/primitives/v059/glyph-fields.js",
+      "readme": "styles/primitives/v059/README.md",
+      "demo": "playground/glyph-fields-v059/index.html",
+      "styleIds": [
+        "aether-orbit",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "developer-tool",
+        "portfolio",
+        "creative-site"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "authored-math-glyph-field-native-html-css-local-js",
+      "limitations": "Angular and radial decorative field, not star data, real orbital dynamics or audio spectrum."
+    },
+    {
+      "id": "FX-127",
+      "name": "Quantized glyph strata / 字符离散层带",
+      "className": "fx59-glyph--strata",
+      "source": "styles/primitives/v059/glyph-surfaces.css",
+      "helper": "styles/primitives/v059/glyph-fields.js",
+      "readme": "styles/primitives/v059/README.md",
+      "demo": "playground/glyph-fields-v059/index.html",
+      "styleIds": [
+        "organic-tactile",
+        "pixel-arcade"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "creative-site",
+        "portfolio"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "authored-math-glyph-field-native-html-css-local-js",
+      "limitations": "Discrete authored contour bands, not actual topographic elevations or field observations."
+    },
+    {
+      "id": "FX-128",
+      "name": "ASCII stitch atlas / 字符针脚纹样",
+      "className": "fx59-stitch-atlas",
+      "source": "styles/primitives/v059/glyph-surfaces.css",
+      "helper": null,
+      "readme": "styles/primitives/v059/README.md",
+      "demo": "playground/glyph-fields-v059/index.html",
+      "styleIds": [
+        "pixel-arcade",
+        "paper-rebellion"
+      ],
+      "applicationContexts": [
+        "portfolio",
+        "editorial",
+        "brand-site"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-scoped-native-html-css",
+      "limitations": "Three literal decorative original character samples, not QR, Braille, encoded information or a pattern-generation engine."
+    },
+    {
+      "id": "FX-129",
+      "name": "Glyph density ledger / 字符明暗目录",
+      "className": "fx59-density-book",
+      "source": "styles/primitives/v059/glyph-surfaces.css",
+      "helper": null,
+      "readme": "styles/primitives/v059/README.md",
+      "demo": "playground/glyph-fields-v059/index.html",
+      "styleIds": [
+        "type-led-minimal",
+        "neo-brutalist"
+      ],
+      "applicationContexts": [
+        "editorial",
+        "documentation",
+        "creative-site"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "standalone-scoped-native-html-css",
+      "limitations": "Real hand-authored glyph density samples with semantic labels, not calibrated optical/printing density or a data chart."
+    }
+  ],
+  "originalSvg": [
+    {
+      "id": "VG-107",
+      "name": "Raster sunrise / 点阵日出插画",
+      "source": "graphics/v059/raster-sunrise.svg",
+      "readme": "graphics/v059/README.md",
+      "demo": "playground/glyph-fields-v059/index.html",
+      "viewBox": "0 0 640 360",
+      "styleIds": [
+        "pixel-arcade",
+        "signal-noir"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "creative-site",
+        "portfolio"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "independent-original-font-free-svg",
+      "limitations": "Original fictional SVG illustration, not weather, astronomical data or actual photography."
+    },
+    {
+      "id": "VG-108",
+      "name": "Bitstream weave / 像素织带插画",
+      "source": "graphics/v059/bitstream-weave.svg",
+      "readme": "graphics/v059/README.md",
+      "demo": "playground/glyph-fields-v059/index.html",
+      "viewBox": "0 0 640 360",
+      "styleIds": [
+        "pixel-arcade",
+        "neo-brutalist"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "brand-site",
+        "creative-site"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "independent-original-font-free-svg",
+      "limitations": "Decorative woven pixel pattern, no binary stream, QR or source data."
+    },
+    {
+      "id": "VG-109",
+      "name": "Glyph window / 方格拱窗插画",
+      "source": "graphics/v059/glyph-window.svg",
+      "readme": "graphics/v059/README.md",
+      "demo": "playground/glyph-fields-v059/index.html",
+      "viewBox": "0 0 640 360",
+      "styleIds": [
+        "paper-rebellion",
+        "pixel-arcade"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "creative-site",
+        "editorial"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "independent-original-font-free-svg",
+      "limitations": "Fictional night window geometry, not interactive portal, building model or measured landscape."
+    },
+    {
+      "id": "VG-110",
+      "name": "Stepped prism / 阶梯棱镜插画",
+      "source": "graphics/v059/stepped-prism.svg",
+      "readme": "graphics/v059/README.md",
+      "demo": "playground/glyph-fields-v059/index.html",
+      "viewBox": "0 0 640 360",
+      "styleIds": [
+        "shape-expressive",
+        "pixel-arcade"
+      ],
+      "applicationContexts": [
+        "illustration",
+        "portfolio",
+        "brand-site"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "independent-original-font-free-svg",
+      "limitations": "Pseudo-3D decorative geometry, not an actual 3D model, optics simulation or manufacturing object."
+    }
+  ]
+}

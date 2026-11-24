@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Glyph window</title><desc id="desc">An original pixel-step arch framing an abstract night horizon with a small reflective moon and decorative grid marks.</desc>
+<defs><linearGradient id="night" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#222945"/><stop offset="1" stop-color="#576788"/></linearGradient>
+<linearGradient id="frame" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dfc1a3"/><stop offset="1" stop-color="#9f756e"/></linearGradient>
+<clipPath id="window"><path d="M185 306V170h20v-40h25v-25h34V85h112v20h34v25h25v40h20v136Z"/></clipPath></defs>
+<rect width="640" height="360" rx="20" fill="#eae0d0"/>
+<g opacity=".5" fill="#baa88c"><rect x="40" y="39" width="11" height="11"/><rect x="589" y="67" width="11" height="11"/><rect x="83" y="290" width="9" height="9"/><rect x="546" y="291" width="9" height="9"/></g>
+<path d="M164 325V160h20v-42h25V93h32V65h158v28h32v25h25v42h20v165Z" fill="url(#frame)" stroke="#9a7770" stroke-width="3"/>
+<g clip-path="url(#window)"><rect x="180" y="70" width="280" height="260" fill="url(#night)"/>
+<circle cx="341" cy="151" r="39" fill="#fce6c0"/>
+<path d="M181 257l43-37 41 20 55-52 50 50 44-26 51 34v100H181Z" fill="#385a78"/>
+<path d="M180 273l62-41 43 44 44-28 35 30 41-40 65 28v75H180Z" fill="#2b485d"/>
+<g fill="#e6e4d6" opacity=".8"><rect x="218" y="118" width="5" height="5"/><rect x="400" y="132" width="6" height="6"/><rect x="269" y="164" width="4" height="4"/></g>
+</g>
+<path d="M152 324h335v12H152Z" fill="#89615b"/><path d="M173 341h294v8H173Z" fill="#b38c7d"/>
+</svg>
