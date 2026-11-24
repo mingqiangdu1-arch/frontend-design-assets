@@ -1,0 +1,180 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.62.0",
+  "date": "2026-11-24",
+  "focus": "Six independently extractable original functional creative-editing controls. No duplicate decorative SVG filler.",
+  "previousAssetCount": 591,
+  "newAssetCount": 6,
+  "expectedAssetCount": 597,
+  "reactExportsAdded": 0,
+  "styleIdsAdded": 0,
+  "thirdPartyCodeCopied": false,
+  "externalMediaCopied": false,
+  "testSuitesAdded": 0,
+  "sourceFiles": [
+    "registry/material-expansion-v062.json",
+    "styles/primitives/v062/editing-model.mjs",
+    "styles/primitives/v062/editing-atoms.css",
+    "playground/editing-controls-v062/index.html",
+    "styles/primitives/v062/README.md"
+  ],
+  "cssAtoms": [
+    {
+      "id": "FX-136",
+      "name": "HSL plane with keyboard parity / HSL 二维颜色编辑",
+      "className": "fx62-hsl",
+      "mode": "hsl",
+      "source": "styles/primitives/v062/editing-atoms.css",
+      "helper": "styles/primitives/v062/editing-model.mjs",
+      "readme": "styles/primitives/v062/README.md",
+      "demo": "playground/editing-controls-v062/index.html",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "workspace",
+        "creative-site",
+        "developer-tool"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-html-css-local-es-module",
+      "designContract": "21 行 HSL 色面与指针拖动，三条原生滑杆提供相同色相/饱和度/亮度能力；实时 HEX。",
+      "limitations": "色面是 5% 亮度采样近似，标记与 HEX 用精确值；不是 HSV、色彩管理或对比度认证。",
+      "distinctFrom": "FX-039 仅 native color；FX-064 仅视觉焦点。"
+    },
+    {
+      "id": "FX-137",
+      "name": "Three-stop gradient rail / 三色标渐变编辑",
+      "className": "fx62-stops",
+      "mode": "stops",
+      "source": "styles/primitives/v062/editing-atoms.css",
+      "helper": "styles/primitives/v062/editing-model.mjs",
+      "readme": "styles/primitives/v062/README.md",
+      "demo": "playground/editing-controls-v062/index.html",
+      "styleIds": [
+        "liquid-layer",
+        "shape-expressive",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "workspace",
+        "brand-site"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-html-css-local-es-module",
+      "designContract": "三原生颜色输入、可移动中间色标与真实 CSS 渐变字符串。",
+      "limitations": "固定两端和单中间色标，不支持自由增删、角度、持久化或跨色彩空间。",
+      "distinctFrom": "FX-063 只有角度，不含色标。"
+    },
+    {
+      "id": "FX-138",
+      "name": "Dual-background alpha proof / 双背景透明度校样",
+      "className": "fx62-alpha",
+      "mode": "alpha",
+      "source": "styles/primitives/v062/editing-atoms.css",
+      "helper": "styles/primitives/v062/editing-model.mjs",
+      "readme": "styles/primitives/v062/README.md",
+      "demo": "playground/editing-controls-v062/index.html",
+      "styleIds": [
+        "precision-dark",
+        "commerce-atelier",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "workspace",
+        "developer-tool",
+        "documentation"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-html-css-local-es-module",
+      "designContract": "同一前景颜色和透明度同时显示浅/深底，输出两组按 sRGB 通道插值的估算 HEX。",
+      "limitations": "普通 source-over 估算，不作色彩管理、对比度认证、图层混合或导出。",
+      "distinctFrom": "FX-067 是 blend-mode 选择；本项强调透明度在两种底色上的实际差异。"
+    },
+    {
+      "id": "FX-139",
+      "name": "Microfinish roughness and tilt / 材质粗糙度与倾角",
+      "className": "fx62-finish",
+      "mode": "finish",
+      "source": "styles/primitives/v062/editing-atoms.css",
+      "helper": "styles/primitives/v062/editing-model.mjs",
+      "readme": "styles/primitives/v062/README.md",
+      "demo": "playground/editing-controls-v062/index.html",
+      "styleIds": [
+        "organic-tactile",
+        "commerce-atelier",
+        "liquid-layer"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "portfolio",
+        "commerce"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-html-css-local-es-module",
+      "designContract": "粗糙度调高光宽度/模糊/强度，倾角控制试片及高光方向。",
+      "limitations": "纯 CSS 材质近似，非 PBR、BRDF、3D 渲染、真实材质测量。",
+      "distinctFrom": "FX-092 固定三态色盘；本项连续参数改变表面效果。"
+    },
+    {
+      "id": "FX-140",
+      "name": "Bounded cubic Bezier curve / 四参数缓动曲线编辑",
+      "className": "fx62-bezier",
+      "mode": "bezier",
+      "source": "styles/primitives/v062/editing-atoms.css",
+      "helper": "styles/primitives/v062/editing-model.mjs",
+      "readme": "styles/primitives/v062/README.md",
+      "demo": "playground/editing-controls-v062/index.html",
+      "styleIds": [
+        "signal-noir",
+        "precision-dark",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "developer-tool",
+        "workspace",
+        "creative-site"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-html-css-local-es-module",
+      "designContract": "四个原生滑杆调整 SVG 曲线和控制柄，同步输出合法 cubic-bezier CSS。",
+      "limitations": "四轴都限制在 0–1，无 overshoot、动画播放或时间线编辑。",
+      "distinctFrom": "VG-053 只是图标；本项为实际数学控制。"
+    },
+    {
+      "id": "FX-141",
+      "name": "Inset and rounded mask proof / 内缩圆角遮罩编辑",
+      "className": "fx62-mask",
+      "mode": "mask",
+      "source": "styles/primitives/v062/editing-atoms.css",
+      "helper": "styles/primitives/v062/editing-model.mjs",
+      "readme": "styles/primitives/v062/README.md",
+      "demo": "playground/editing-controls-v062/index.html",
+      "styleIds": [
+        "shape-expressive",
+        "paper-rebellion",
+        "commerce-atelier"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "portfolio",
+        "workspace"
+      ],
+      "stage": "reference-implemented",
+      "reuse": "copyable-source",
+      "runtime": "native-html-css-local-es-module",
+      "designContract": "两条原生滑杆改变 CSS clip-path inset 与百分比圆角，棋盘标记被裁掉的区域。",
+      "limitations": "只预览原创几何背景；不加载或裁切真实图片、不生成文件、不做布尔路径编辑。",
+      "distinctFrom": "VG-073..076 静态 SVG；FX-066 仅开关安全线。"
+    }
+  ],
+  "originalSvg": []
+}

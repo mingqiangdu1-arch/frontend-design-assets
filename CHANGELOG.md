@@ -1,3 +1,8 @@
+## 2026-11-24 · V0.62 original creative editing micro-controls
+
+- Added FX-136..141 six native interactive materials: HSL plane, three gradient stops, dual-background alpha proof, microfinish roughness/tilt, bounded cubic Bezier and inset mask. [Manifest](registry/material-expansion-v062.json) · [source](styles/primitives/v062/README.md) · [specimen](playground/editing-controls-v062/index.html).
+- 597 total assets. No extra SVG filler, copied upstream code/media, runtime dependencies, React exports, themes or test framework. Ten pure-model sanity assertions; no new browser/device/accessibility certification.
+
 ## 2026-11-24 · V0.61 original print and pattern primitives
 
 - Added FX-130..135 six original source materials and VG-111..114 four independent original SVGs. [Manifest](registry/material-expansion-v061.json) · [source](styles/primitives/v061/README.md) · [specimens](playground/print-patterns-v061/index.html).

@@ -23724,6 +23724,276 @@
         "instructions": "Use independent SVG with context-appropriate alt.",
         "limitations": "装饰点纹剪影，非天文观测。"
       }
+    },
+    {
+      "id": "FX-136",
+      "type": "component",
+      "name": "HSL plane with keyboard parity / HSL 二维颜色编辑",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v062",
+        "original-source",
+        "creative-editing",
+        "native-controls",
+        "fx62-hsl"
+      ],
+      "aliases": [
+        "HSL 调色",
+        "二维色彩",
+        "饱和度亮度",
+        "HSL color plane"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored HTML/CSS/ES module; no third-party source, font or media copied.",
+      "styleIds": [
+        "refined-light-saas",
+        "precision-dark",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "workspace",
+        "creative-site",
+        "developer-tool"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v062/editing-atoms.css",
+      "details": "styles/primitives/v062/README.md",
+      "spec": "registry/material-expansion-v062.json",
+      "demo": "playground/editing-controls-v062/index.html",
+      "verified": "Source/path inspection and ten pure-model assertions; no browser, device, screen-reader or target-project certification claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v062/editing-atoms.css",
+        "stack": "Native HTML/CSS + local ES module",
+        "instructions": "Extract .fx62-hsl and matching data-fx62=\"hsl\" HTML from playground/editing-controls-v062/index.html; include styles/primitives/v062/editing-model.mjs and call mountEditingAtoms once (cleanup on unmount).",
+        "limitations": "色面是 5% 亮度采样近似，标记与 HEX 用精确值；不是 HSV、色彩管理或对比度认证。"
+      }
+    },
+    {
+      "id": "FX-137",
+      "type": "component",
+      "name": "Three-stop gradient rail / 三色标渐变编辑",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v062",
+        "original-source",
+        "creative-editing",
+        "native-controls",
+        "fx62-stops"
+      ],
+      "aliases": [
+        "渐变色标",
+        "三色渐变",
+        "gradient stop",
+        "middle stop"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored HTML/CSS/ES module; no third-party source, font or media copied.",
+      "styleIds": [
+        "liquid-layer",
+        "shape-expressive",
+        "playful-pop"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "workspace",
+        "brand-site"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v062/editing-atoms.css",
+      "details": "styles/primitives/v062/README.md",
+      "spec": "registry/material-expansion-v062.json",
+      "demo": "playground/editing-controls-v062/index.html",
+      "verified": "Source/path inspection and ten pure-model assertions; no browser, device, screen-reader or target-project certification claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v062/editing-atoms.css",
+        "stack": "Native HTML/CSS + local ES module",
+        "instructions": "Extract .fx62-stops and matching data-fx62=\"stops\" HTML from playground/editing-controls-v062/index.html; include styles/primitives/v062/editing-model.mjs and call mountEditingAtoms once (cleanup on unmount).",
+        "limitations": "固定两端和单中间色标，不支持自由增删、角度、持久化或跨色彩空间。"
+      }
+    },
+    {
+      "id": "FX-138",
+      "type": "component",
+      "name": "Dual-background alpha proof / 双背景透明度校样",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v062",
+        "original-source",
+        "creative-editing",
+        "native-controls",
+        "fx62-alpha"
+      ],
+      "aliases": [
+        "透明度",
+        "alpha compositing",
+        "双背景校样",
+        "颜色叠加"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored HTML/CSS/ES module; no third-party source, font or media copied.",
+      "styleIds": [
+        "precision-dark",
+        "commerce-atelier",
+        "refined-light-saas"
+      ],
+      "applicationContexts": [
+        "workspace",
+        "developer-tool",
+        "documentation"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v062/editing-atoms.css",
+      "details": "styles/primitives/v062/README.md",
+      "spec": "registry/material-expansion-v062.json",
+      "demo": "playground/editing-controls-v062/index.html",
+      "verified": "Source/path inspection and ten pure-model assertions; no browser, device, screen-reader or target-project certification claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v062/editing-atoms.css",
+        "stack": "Native HTML/CSS + local ES module",
+        "instructions": "Extract .fx62-alpha and matching data-fx62=\"alpha\" HTML from playground/editing-controls-v062/index.html; include styles/primitives/v062/editing-model.mjs and call mountEditingAtoms once (cleanup on unmount).",
+        "limitations": "普通 source-over 估算，不作色彩管理、对比度认证、图层混合或导出。"
+      }
+    },
+    {
+      "id": "FX-139",
+      "type": "component",
+      "name": "Microfinish roughness and tilt / 材质粗糙度与倾角",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v062",
+        "original-source",
+        "creative-editing",
+        "native-controls",
+        "fx62-finish"
+      ],
+      "aliases": [
+        "材质粗糙度",
+        "高光预览",
+        "microfinish",
+        "surface tilt"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored HTML/CSS/ES module; no third-party source, font or media copied.",
+      "styleIds": [
+        "organic-tactile",
+        "commerce-atelier",
+        "liquid-layer"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "portfolio",
+        "commerce"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v062/editing-atoms.css",
+      "details": "styles/primitives/v062/README.md",
+      "spec": "registry/material-expansion-v062.json",
+      "demo": "playground/editing-controls-v062/index.html",
+      "verified": "Source/path inspection and ten pure-model assertions; no browser, device, screen-reader or target-project certification claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v062/editing-atoms.css",
+        "stack": "Native HTML/CSS + local ES module",
+        "instructions": "Extract .fx62-finish and matching data-fx62=\"finish\" HTML from playground/editing-controls-v062/index.html; include styles/primitives/v062/editing-model.mjs and call mountEditingAtoms once (cleanup on unmount).",
+        "limitations": "纯 CSS 材质近似，非 PBR、BRDF、3D 渲染、真实材质测量。"
+      }
+    },
+    {
+      "id": "FX-140",
+      "type": "component",
+      "name": "Bounded cubic Bezier curve / 四参数缓动曲线编辑",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v062",
+        "original-source",
+        "creative-editing",
+        "native-controls",
+        "fx62-bezier"
+      ],
+      "aliases": [
+        "贝塞尔编辑",
+        "缓动曲线",
+        "cubic-bezier",
+        "easing curve"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored HTML/CSS/ES module; no third-party source, font or media copied.",
+      "styleIds": [
+        "signal-noir",
+        "precision-dark",
+        "type-led-minimal"
+      ],
+      "applicationContexts": [
+        "developer-tool",
+        "workspace",
+        "creative-site"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v062/editing-atoms.css",
+      "details": "styles/primitives/v062/README.md",
+      "spec": "registry/material-expansion-v062.json",
+      "demo": "playground/editing-controls-v062/index.html",
+      "verified": "Source/path inspection and ten pure-model assertions; no browser, device, screen-reader or target-project certification claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v062/editing-atoms.css",
+        "stack": "Native HTML/CSS + local ES module",
+        "instructions": "Extract .fx62-bezier and matching data-fx62=\"bezier\" HTML from playground/editing-controls-v062/index.html; include styles/primitives/v062/editing-model.mjs and call mountEditingAtoms once (cleanup on unmount).",
+        "limitations": "四轴都限制在 0–1，无 overshoot、动画播放或时间线编辑。"
+      }
+    },
+    {
+      "id": "FX-141",
+      "type": "component",
+      "name": "Inset and rounded mask proof / 内缩圆角遮罩编辑",
+      "stage": "reference-implemented",
+      "priority": "P1",
+      "reuseKind": "styled-implementation",
+      "tags": [
+        "v062",
+        "original-source",
+        "creative-editing",
+        "native-controls",
+        "fx62-mask"
+      ],
+      "aliases": [
+        "内缩遮罩",
+        "圆角蒙版",
+        "clip-path",
+        "mask inset"
+      ],
+      "source": "https://github.com/mingqiangdu1-arch/frontend-design-assets",
+      "license": "Original authored HTML/CSS/ES module; no third-party source, font or media copied.",
+      "styleIds": [
+        "shape-expressive",
+        "paper-rebellion",
+        "commerce-atelier"
+      ],
+      "applicationContexts": [
+        "creative-site",
+        "portfolio",
+        "workspace"
+      ],
+      "dependencies": [],
+      "path": "styles/primitives/v062/editing-atoms.css",
+      "details": "styles/primitives/v062/README.md",
+      "spec": "registry/material-expansion-v062.json",
+      "demo": "playground/editing-controls-v062/index.html",
+      "verified": "Source/path inspection and ten pure-model assertions; no browser, device, screen-reader or target-project certification claimed.",
+      "handoff": {
+        "entry": "styles/primitives/v062/editing-atoms.css",
+        "stack": "Native HTML/CSS + local ES module",
+        "instructions": "Extract .fx62-mask and matching data-fx62=\"mask\" HTML from playground/editing-controls-v062/index.html; include styles/primitives/v062/editing-model.mjs and call mountEditingAtoms once (cleanup on unmount).",
+        "limitations": "只预览原创几何背景；不加载或裁切真实图片、不生成文件、不做布尔路径编辑。"
+      }
     }
   ],
   "referenceImplementationRoot": "components/reference",

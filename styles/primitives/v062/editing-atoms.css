@@ -1,0 +1,27 @@
+/* V0.62 · Six opt-in native editing atoms. No global resets. */
+.fx62-hsl,.fx62-stops,.fx62-alpha,.fx62-finish,.fx62-bezier,.fx62-mask{--fx62-ink:#24343d;--fx62-paper:#f8f7f2;display:grid;gap:.75rem;min-width:0;max-width:36rem;margin:0;padding:1rem;border:1px solid #b7c0c1;border-radius:.8rem;background:var(--fx62-paper);color:var(--fx62-ink);font: .88rem/1.5 system-ui,sans-serif}
+.fx62-hsl label,.fx62-stops label,.fx62-alpha label,.fx62-finish label,.fx62-bezier label,.fx62-mask label{display:grid;grid-template-columns:minmax(5rem,1fr) minmax(0,2fr) minmax(3.1rem,auto);gap:.5rem;align-items:center}
+.fx62-hsl input,.fx62-stops input,.fx62-alpha input,.fx62-finish input,.fx62-bezier input,.fx62-mask input{min-width:0;max-width:100%;accent-color:#335f69}
+.fx62-hsl output,.fx62-stops output,.fx62-alpha output,.fx62-finish output,.fx62-bezier output,.fx62-mask output{font: .78rem/1.4 ui-monospace,Consolas,monospace;overflow-wrap:anywhere}
+.fx62-hsl input:focus-visible,.fx62-stops input:focus-visible,.fx62-alpha input:focus-visible,.fx62-finish input:focus-visible,.fx62-bezier input:focus-visible,.fx62-mask input:focus-visible{outline:3px solid #185b9a;outline-offset:3px}
+.fx62-hsl__plane{position:relative;display:grid;grid-template-rows:repeat(21,1fr);height:12rem;border:1px solid #52646d;touch-action:none;cursor:crosshair;isolation:isolate;background:#ddd}
+.fx62-hsl__plane i{display:block;min-height:0}
+.fx62-hsl__plane::after{content:"";position:absolute;left:var(--fx62-s,60%);top:var(--fx62-py,50%);width:1.1rem;height:1.1rem;border:2px solid white;box-shadow:0 0 0 2px #12191c;border-radius:50%;transform:translate(-50%,-50%);pointer-events:none;background:var(--fx62-color,#337799)}
+.fx62-hsl__chip{height:2rem;border:1px solid #52646d;background:var(--fx62-color,#337799)}
+.fx62-stops__ramp{position:relative;height:7rem;margin:.5rem .3rem 1rem;background:var(--fx62-gradient,linear-gradient(90deg,#315b72,#d6a55d,#d05c48));border:1px solid #52646d}
+.fx62-stops__ramp::after{content:"";position:absolute;left:var(--fx62-pos,50%);bottom:-.7rem;width:.8rem;height:.8rem;transform:translateX(-50%) rotate(45deg);background:white;border:2px solid #293942}
+.fx62-stops__colors{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.4rem}
+.fx62-stops__colors label{display:grid;grid-template-columns:1fr;gap:.2rem}
+.fx62-stops__colors input{width:100%;height:2.5rem;box-sizing:border-box}
+.fx62-alpha__proof{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+.fx62-alpha__sample{margin:0;min-width:0;display:grid;gap:.35rem}
+.fx62-alpha__tile{display:grid;place-items:center;min-height:7rem;border:1px solid #52646d;background:#f4efe4}
+.fx62-alpha__tile--dark{background:#202a32}
+.fx62-alpha__tile i{display:block;width:66%;aspect-ratio:1;background:var(--fx62-fg,#cf6d48);opacity:var(--fx62-alpha,.6);border-radius:28%}
+.fx62-finish__plate{position:relative;overflow:hidden;isolation:isolate;min-height:10rem;display:grid;place-items:center;border:1px solid #52646d;background:#172a32;border-radius:.4rem}
+.fx62-finish__plate::before{content:"";width:65%;height:64%;border-radius:1rem;background:linear-gradient(145deg,#325661,#84a9a8 40%,#325661);box-shadow:0 10px 20px #101e22;transform:rotate(var(--fx62-tilt,0deg))}
+.fx62-finish__plate::after{content:"";position:absolute;width:var(--fx62-spread,47%);height:38%;background:linear-gradient(120deg,transparent,#e9f7e9 50%,transparent);filter:blur(var(--fx62-blur,4px));opacity:var(--fx62-shine,.64);transform:rotate(var(--fx62-tilt,0deg));pointer-events:none}
+.fx62-bezier svg{width:100%;height:auto;display:block;background:#edf0ed;border:1px solid #aab9b9}
+.fx62-mask__plate{position:relative;min-height:12rem;overflow:hidden;isolation:isolate;border:1px solid #8a9b9f;background:conic-gradient(#d4dddd 25%,#f7f8f7 0 50%,#d4dddd 0 75%,#f7f8f7 0) 0 0/1.2rem 1.2rem}
+.fx62-mask__plate::before{content:"";position:absolute;inset:0;clip-path:var(--fx62-mask,inset(8% round 10%));background:radial-gradient(circle at 28% 26%,#edc879 0 14%,transparent 14.5%),linear-gradient(145deg,#324c64 0 45%,#aa7868 45% 69%,#386c73 69%)}
+@media(forced-colors:active){.fx62-hsl__plane,.fx62-hsl__chip,.fx62-stops__ramp,.fx62-alpha__tile,.fx62-finish__plate,.fx62-mask__plate{border:2px solid CanvasText}.fx62-hsl__plane::after{border:2px solid Highlight;box-shadow:none}.fx62-stops__ramp::after{border-color:Highlight}.fx62-bezier svg{border-color:CanvasText}}
