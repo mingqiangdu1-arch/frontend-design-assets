@@ -26,13 +26,13 @@
 
 ## 精选原创图形素材
 
-| 程序化丝纹 | 几何拼砖纹样 |
+| 程序化丝纹（`VG-111` · 轨道丝纹） | 几何拼砖纹样（`VG-112` · 拼砖罗盘） |
 | :---: | :---: |
-| [![轨道丝纹](graphics/v061/orbit-filigree.svg)](graphics/v061/orbit-filigree.svg)<br>`VG-111` · 轨道丝纹 | [![拼砖罗盘](graphics/v061/quilt-compass.svg)](graphics/v061/quilt-compass.svg)<br>`VG-112` · 拼砖罗盘 |
-| **叠印山脊** | **点阵蚀圆** |
-| [![套色山脊](graphics/v061/overprint-ridge.svg)](graphics/v061/overprint-ridge.svg)<br>`VG-113` · 套色山脊 | [![点纹蚀圆](graphics/v061/stipple-eclipse.svg)](graphics/v061/stipple-eclipse.svg)<br>`VG-114` · 点纹蚀圆 |
+| [![轨道丝纹](graphics/v061/orbit-filigree.svg)](graphics/v061/orbit-filigree.svg) | [![拼砖罗盘](graphics/v061/quilt-compass.svg)](graphics/v061/quilt-compass.svg) |
+| **叠印山脊（`VG-113` · 套色山脊）** | **点阵蚀圆（`VG-114` · 点纹蚀圆）** |
+| [![套色山脊](graphics/v061/overprint-ridge.svg)](graphics/v061/overprint-ridge.svg) | [![点纹蚀圆](graphics/v061/stipple-eclipse.svg)](graphics/v061/stipple-eclipse.svg) |
 
-*以上均为仓库内真实原创 16:9 SVG 原件，非产品截图。查看[更多视觉样张与交互实验 →](docs/gallery.md)*
+*以上均为仓库内真实原创 640 × 360 SVG 原件，非产品截图。查看[更多视觉样张与交互实验 →](docs/gallery.md)*
 
 ## 如何使用
 

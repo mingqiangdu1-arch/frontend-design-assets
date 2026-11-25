@@ -30,13 +30,13 @@ Explore distinct visual styles, locate reusable React and native web source, ins
 
 ## Explore real materials
 
-| Procedural graphics | Geometric pattern |
+| Procedural graphics (`VG-111`) | Geometric pattern (`VG-112`) |
 | :---: | :---: |
-| [![Orbit filigree](graphics/v061/orbit-filigree.svg)](graphics/v061/orbit-filigree.svg)<br>`VG-111` · vector filigree | [![Quilt compass](graphics/v061/quilt-compass.svg)](graphics/v061/quilt-compass.svg)<br>`VG-112` · modular arc tiles |
-| **Editorial patterns** | **Experimental form** |
-| [![Overprint ridge](graphics/v061/overprint-ridge.svg)](graphics/v061/overprint-ridge.svg)<br>`VG-113` · layered composition | [![Stipple eclipse](graphics/v061/stipple-eclipse.svg)](graphics/v061/stipple-eclipse.svg)<br>`VG-114` · ordered texture |
+| [![Orbit filigree](graphics/v061/orbit-filigree.svg)](graphics/v061/orbit-filigree.svg) | [![Quilt compass](graphics/v061/quilt-compass.svg)](graphics/v061/quilt-compass.svg) |
+| **Editorial patterns (`VG-113`)** | **Experimental form (`VG-114`)** |
+| [![Overprint ridge](graphics/v061/overprint-ridge.svg)](graphics/v061/overprint-ridge.svg) | [![Stipple eclipse](graphics/v061/stipple-eclipse.svg)](graphics/v061/stipple-eclipse.svg) |
 
-Actual original SVG files from the repository (uniform 16:9 specimens), not product screenshots. [More visual specimens and interactive labs →](docs/gallery.md)
+*Actual original 640 × 360 SVG files from the repository, not product screenshots. [More visual specimens and interactive labs →](docs/gallery.md)*
 
 ## Find what you need
 
