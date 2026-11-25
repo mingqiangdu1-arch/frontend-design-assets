@@ -11,7 +11,7 @@ const sample=fs.readFileSync("playground/trend-style-lab/index.html","utf8");
 
 test("2026 trend profile candidates are four distinct registered styles with no implicit default",()=>{
  assert.equal(styles.defaultStyleId,null);
- assert.equal(styles.styles.length,14);
+ assert.equal(styles.styles.length,15);
  assert.deepEqual(directionIds,["liquid-layer","shape-expressive","type-led-minimal","organic-tactile"]);
  for(const [i,id] of directionIds.entries()){
   const style=styles.styles.find(item=>item.id===id);
@@ -38,7 +38,7 @@ test("2026 trend profile candidates are four distinct registered styles with no 
 });
 test("2026 original theme tokens pass all built-in contrast and scoped CSS consistency audits",()=>{
  const result=auditAll();
- assert.equal(result.length,14);
+ assert.equal(result.length,15);
  const newThemes=result.filter(v=>directionIds.includes(v.styleId));
  assert.equal(newThemes.length,4);
  assert.deepEqual(newThemes.flatMap(x=>x.checks.filter(c=>!c.pass)),[]);

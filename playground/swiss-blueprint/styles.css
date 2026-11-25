@@ -1,0 +1,321 @@
+/* Scoped styles for DT-015 Swiss Blueprint standalone specimen. No global :root or @import. */
+[data-design-theme="swiss-blueprint"] {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--ds-canvas);
+  color: var(--ds-text);
+  font-family: var(--ds-font-ui);
+  font-size: 14px;
+  line-height: 1.55;
+}
+[data-design-theme="swiss-blueprint"] * { box-sizing: border-box; }
+[data-design-theme="swiss-blueprint"] :where(button, a):focus-visible {
+  outline: 2px solid var(--ds-accent);
+  outline-offset: 2px;
+}
+
+[data-design-theme="swiss-blueprint"] .bp-shell {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  gap: 16px;
+}
+[data-design-theme="swiss-blueprint"] .bp-shell[data-grid="off"] .bp-grid-fill {
+  opacity: 0;
+}
+
+[data-design-theme="swiss-blueprint"] .bp-titleblock {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 16px;
+  border: 1px solid var(--ds-border);
+  background: var(--ds-sidebar);
+  padding: 16px 20px;
+  border-radius: var(--ds-radius-panel);
+}
+[data-design-theme="swiss-blueprint"] .bp-code {
+  display: inline-block;
+  font-family: var(--ds-font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--ds-accent);
+}
+[data-design-theme="swiss-blueprint"] .bp-brand h1 {
+  margin: 4px 0 6px;
+  font-size: clamp(20px, 2.8vw, 28px);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+[data-design-theme="swiss-blueprint"] .bp-subtitle {
+  margin: 0;
+  color: var(--ds-text-secondary);
+  font-size: 13px;
+}
+[data-design-theme="swiss-blueprint"] .bp-meta {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(84px, auto));
+  border: 1px solid var(--ds-border);
+  align-self: start;
+}
+[data-design-theme="swiss-blueprint"] .bp-meta > div {
+  padding: 6px 10px;
+  border-right: 1px solid var(--ds-border);
+  border-bottom: 1px solid var(--ds-border);
+}
+[data-design-theme="swiss-blueprint"] .bp-meta > div:nth-child(2n) { border-right: 0; }
+[data-design-theme="swiss-blueprint"] .bp-meta > div:nth-last-child(-n+2) { border-bottom: 0; }
+[data-design-theme="swiss-blueprint"] .bp-meta dt {
+  font-family: var(--ds-font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--ds-text-muted);
+}
+[data-design-theme="swiss-blueprint"] .bp-meta dd {
+  margin: 2px 0 0;
+  font-family: var(--ds-font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+[data-design-theme="swiss-blueprint"] .bp-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border: 1px solid var(--ds-border);
+  background: var(--ds-surface);
+}
+[data-design-theme="swiss-blueprint"] .bp-filters,
+[data-design-theme="swiss-blueprint"] .bp-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+[data-design-theme="swiss-blueprint"] .bp-chip,
+[data-design-theme="swiss-blueprint"] .bp-btn {
+  appearance: none;
+  border: 1px solid var(--ds-border);
+  background: var(--ds-canvas);
+  color: var(--ds-text);
+  padding: 6px 11px;
+  font-family: var(--ds-font-mono);
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: var(--ds-radius-control);
+  transition: background var(--ds-motion-fast) ease, color var(--ds-motion-fast) ease;
+}
+[data-design-theme="swiss-blueprint"] .bp-chip[aria-pressed="true"] {
+  background: var(--ds-accent);
+  color: var(--ds-accent-text);
+  border-color: var(--ds-accent);
+  font-weight: 700;
+}
+[data-design-theme="swiss-blueprint"] .bp-btn[aria-pressed="true"] {
+  background: var(--ds-selected);
+  border-color: var(--ds-accent);
+}
+
+[data-design-theme="swiss-blueprint"] .bp-workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.95fr);
+  gap: 16px;
+  align-items: start;
+}
+[data-design-theme="swiss-blueprint"] .bp-plate-panel,
+[data-design-theme="swiss-blueprint"] .bp-ledger-panel {
+  border: 1px solid var(--ds-border);
+  background: var(--ds-surface);
+  min-width: 0;
+}
+[data-design-theme="swiss-blueprint"] .bp-panel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--ds-border);
+  background: var(--ds-sidebar);
+}
+[data-design-theme="swiss-blueprint"] .bp-panel-head h2 {
+  margin: 0;
+  font-family: var(--ds-font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+[data-design-theme="swiss-blueprint"] .bp-coord {
+  font-family: var(--ds-font-mono);
+  font-size: 11px;
+  color: var(--ds-text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+[data-design-theme="swiss-blueprint"] .bp-plate-stage {
+  position: relative;
+  background: var(--ds-canvas);
+  border-bottom: 1px solid var(--ds-border);
+}
+[data-design-theme="swiss-blueprint"] .bp-schematic {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+[data-design-theme="swiss-blueprint"] .bp-pins {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+[data-design-theme="swiss-blueprint"] .bp-pin {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: auto;
+  min-width: 34px;
+  height: 24px;
+  padding: 0 6px;
+  border: 1px solid var(--ds-text);
+  background: var(--ds-sidebar);
+  color: var(--ds-text);
+  font-family: var(--ds-font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: var(--ds-radius-control);
+}
+[data-design-theme="swiss-blueprint"] .bp-pin[aria-pressed="true"] {
+  background: var(--ds-accent);
+  color: var(--ds-accent-text);
+  border-color: var(--ds-accent);
+}
+[data-design-theme="swiss-blueprint"] .bp-pin[hidden] { display: none; }
+
+[data-design-theme="swiss-blueprint"] .bp-inspector {
+  padding: 14px 16px;
+  background: var(--ds-surface-raised);
+}
+[data-design-theme="swiss-blueprint"] .bp-inspector-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+[data-design-theme="swiss-blueprint"] .bp-inspector-head h3 {
+  margin: 0;
+  font-size: 15px;
+  flex: 1;
+}
+[data-design-theme="swiss-blueprint"] .bp-part-badge {
+  font-family: var(--ds-font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 7px;
+  background: var(--ds-accent);
+  color: var(--ds-accent-text);
+}
+[data-design-theme="swiss-blueprint"] .bp-status {
+  font-family: var(--ds-font-mono);
+  font-size: 11px;
+  padding: 2px 7px;
+  border: 1px solid var(--ds-success);
+  color: var(--ds-success);
+}
+[data-design-theme="swiss-blueprint"] .bp-status[data-tone="warning"] {
+  border-color: var(--ds-warning);
+  color: var(--ds-warning);
+}
+[data-design-theme="swiss-blueprint"] .bp-inspector p {
+  margin: 8px 0 12px;
+  color: var(--ds-text-secondary);
+  font-size: 13px;
+}
+[data-design-theme="swiss-blueprint"] .bp-detail-specs {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 8px;
+}
+[data-design-theme="swiss-blueprint"] .bp-detail-specs > div {
+  padding: 8px 10px;
+  border: 1px solid var(--ds-border);
+  background: var(--ds-canvas);
+}
+[data-design-theme="swiss-blueprint"] .bp-detail-specs dt {
+  font-family: var(--ds-font-mono);
+  font-size: 10px;
+  color: var(--ds-text-muted);
+}
+[data-design-theme="swiss-blueprint"] .bp-detail-specs dd {
+  margin: 2px 0 0;
+  font-family: var(--ds-font-mono);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+[data-design-theme="swiss-blueprint"] .bp-table-wrap { overflow-x: auto; }
+[data-design-theme="swiss-blueprint"] .bp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+[data-design-theme="swiss-blueprint"] .bp-table th,
+[data-design-theme="swiss-blueprint"] .bp-table td {
+  text-align: left;
+  padding: 9px 10px;
+  border-bottom: 1px solid var(--ds-border);
+  font-size: 12px;
+}
+[data-design-theme="swiss-blueprint"] .bp-table th {
+  font-family: var(--ds-font-mono);
+  font-size: 11px;
+  color: var(--ds-text-muted);
+  background: var(--ds-canvas);
+}
+[data-design-theme="swiss-blueprint"] .bp-table tbody tr { cursor: pointer; }
+[data-design-theme="swiss-blueprint"] .bp-table tbody tr[data-active="true"] {
+  background: var(--ds-selected);
+}
+[data-design-theme="swiss-blueprint"] .bp-row-btn {
+  background: none;
+  border: 0;
+  color: var(--ds-text);
+  font-family: var(--ds-font-mono);
+  font-weight: 700;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+[data-design-theme="swiss-blueprint"] .bp-table tr[data-active="true"] .bp-row-btn {
+  color: var(--ds-accent);
+}
+
+[data-design-theme="swiss-blueprint"] .bp-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 8px;
+  border-top: 1px solid var(--ds-border);
+  font-family: var(--ds-font-mono);
+  font-size: 11px;
+  color: var(--ds-text-muted);
+}
+[data-design-theme="swiss-blueprint"] .bp-footer a {
+  color: var(--ds-accent);
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  [data-design-theme="swiss-blueprint"] .bp-workspace { grid-template-columns: 1fr; }
+  [data-design-theme="swiss-blueprint"] .bp-titleblock { grid-template-columns: 1fr; }
+}
+@media (forced-colors: active) {
+  [data-design-theme="swiss-blueprint"] .bp-chip[aria-pressed="true"],
+  [data-design-theme="swiss-blueprint"] .bp-pin[aria-pressed="true"] {
+    outline: 2px solid Highlight;
+  }
+}

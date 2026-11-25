@@ -5,7 +5,7 @@
 When GitHub Pages is enabled (Source: **GitHub Actions**), `.github/workflows/deploy-pages.yml` builds and publishes:
 
 - Landing index (`index.html`) linking all major interactive labs
-- **Theme Atlas** (`./playground/style-atlas/`) for side-by-side comparison of 14 visual directions
+- **Theme Atlas** (`./playground/style-atlas/`) for side-by-side comparison of 15 visual directions
 - **React Component Gallery** (`./component-gallery/`) for all 48 React/TSX exports across four explicit themes
 - Native ESM demos (`spatial-composition-v064`, `editing-controls-v062`, `print-patterns-v061`, `commerce-atelier`, `trend-style-lab`, `creative-style-lab`, `asset-explorer`)
 
@@ -20,7 +20,7 @@ npm run build:pages
 | File | Basis | Regenerate |
 | --- | --- | --- |
 | [cover.svg](media/cover.svg) | Original abstract identity composition; not a product screen | `node scripts/generate-public-visuals.mjs` |
-| [style-atlas.svg](media/style-atlas.svg) | 14 registered style IDs and actual semantic color tokens, illustrated compositions | same command |
+| [style-atlas.svg](media/style-atlas.svg) | 15 registered style IDs and actual semantic color tokens, illustrated compositions | same command |
 | [inventory.svg](media/inventory.svg) | Canonical asset and component registries | `node scripts/generate-public-overview.mjs` |
 | [Gallery](gallery.md) | Actual original SVGs, curated screenshots and source/demo links | Update references after adding or moving assets |
 
@@ -69,5 +69,6 @@ Run `npm run dev:catalog` at repository root and open paths under `http://127.0.
 | `shape-expressive` | `playground/trend-style-lab/index.html?style=shape-expressive` |
 | `type-led-minimal` | `playground/trend-style-lab/index.html?style=type-led-minimal` |
 | `organic-tactile` | `playground/trend-style-lab/index.html?style=organic-tactile` |
+| `swiss-blueprint` | `playground/swiss-blueprint/index.html` |
 
 Interactive two-theme comparison: `http://127.0.0.1:8009/playground/style-atlas/?left=editorial-warm&right=liquid-layer`.

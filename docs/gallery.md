@@ -6,7 +6,7 @@ Browse by visual direction, original graphics, or working interaction. The visua
 
 ## Visual directions / 视觉风格
 
-![Fourteen visual directions illustrated using their registered semantic color tokens](media/style-atlas.svg)
+![Fifteen visual directions illustrated using their registered semantic color tokens](media/style-atlas.svg)
 
 The compositions are original static interpretations of the registered visual grammar, not runtime screenshots. No theme is the default. For interactive comparison, see [Theme Atlas](../playground/style-atlas/README.md).
 
@@ -26,6 +26,7 @@ The compositions are original static interpretations of the registered visual gr
 | **Shape Expressive** / 表现力形状任务 | 以形状区分任务与动作层级的表现力移动界面 | [Tokens](../styles/shape-expressive/tokens.json) · [Source demo](../playground/trend-style-lab/index.html) |
 | **Type-led Minimal** / 字体主导极简 | 大尺度排版、精简信息与可发现的深入阅读路径 | [Tokens](../styles/type-led-minimal/tokens.json) · [Source demo](../playground/trend-style-lab/index.html) |
 | **Organic Tactile** / 有机触感自然材质 | 自然材料和人文温度的可阅读商品/服务叙事 | [Tokens](../styles/organic-tactile/tokens.json) · [Source demo](../playground/trend-style-lab/index.html) |
+| **Swiss Blueprint** / 工程蓝图规格 | 深钴蓝晒图底色、坐标网格、图纸图签与琥珀色零件标注，面向硬件与工程规格说明 | [Tokens](../styles/swiss-blueprint/tokens.json) · [Source demo](../playground/swiss-blueprint/index.html) |
 
 ## Original vectors / 原创图形
 
@@ -64,7 +65,7 @@ The following sixteen thumbnails link to their actual standalone SVGs; the image
 
 ## React component spotlight / React 组件精选
 
-The following are actual exported components, selected from the canonical registry. The React package explicitly supports only four theme scopes: `refined-light-saas`, `precision-dark`, `editorial-warm`, `playful-pop`. The fourteen-style atlas is **not** a fourteen-theme React compatibility promise.
+The following are actual exported components, selected from the canonical registry. The React package explicitly supports only four theme scopes: `refined-light-saas`, `precision-dark`, `editorial-warm`, `playful-pop`. The fifteen-style atlas is **not** a fifteen-theme React compatibility promise.
 
 | ID | Export | Reference behavior | Source |
 | --- | --- | --- | --- |

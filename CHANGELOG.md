@@ -1,3 +1,9 @@
+## 2026-11-24 · V0.66 Swiss Blueprint 15th visual direction
+
+- Added `DT-015` (`swiss-blueprint` / 工程蓝图规格) as the 15th independent visual direction, completing the 5 × 3 Visual Atlas grid (`docs/media/style-atlas.svg`) with zero empty cells.
+- Includes strictly scoped cobalt cyanotype tokens (`styles/swiss-blueprint/tokens.json` & `tokens.css`, all critical text/accent contrast >= 7:1), style profile, facet & assembly grammar (`schematic-spec-sheet`, 61 total sections), standalone interactive HTML/CSS/ESM schematic & spec-ledger demo (`playground/swiss-blueprint/`), Theme Atlas thumbnail, and GitHub Pages card.
+- 620 total assets, 15 independent visual styles; `packages/ui` React compatibility remains explicitly four themes only.
+
 ## 2026-11-24 · Public snapshot preparation (not a release)
 
 - Adopt owner-authorized MIT for original materials; retain separate upstream terms and add NOTICE.md. Document scoped license boundaries for the remaining 91 entries (619/619 metadata coverage, not independent rights clearance).

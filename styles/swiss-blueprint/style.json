@@ -1,0 +1,24 @@
+{
+  "id": "swiss-blueprint",
+  "displayName": "Swiss Blueprint",
+  "stage": "design-proposal",
+  "assetId": "DT-015",
+  "description": "Cyanotype cobalt architectural drafting grid, hairline coordinate rules, chalk-white technical typography, and amber callout pins for specs and schematics",
+  "categoryHints": [
+    "architecture-spec",
+    "hardware-docs",
+    "engineering-catalog",
+    "technical-blueprint"
+  ],
+  "sources": [
+    "https://www.smashingmagazine.com/2009/07/lessons-from-swiss-style-graphic-design/",
+    "https://www.iso.org/standard/55091.html"
+  ],
+  "tokenFile": "tokens.json",
+  "cssFile": "tokens.css",
+  "documentation": "README.md",
+  "scopeSelector": "[data-design-theme=\"swiss-blueprint\"]",
+  "sample": "../../playground/swiss-blueprint/index.html",
+  "implementationStatus": "Standalone original scoped Token system and interactive HTML/CSS/JS schematic specimen; React package compatibility not claimed; not production-ready",
+  "isDefault": false
+}

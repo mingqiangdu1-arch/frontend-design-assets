@@ -29,10 +29,16 @@ const templates = JSON.parse(readFileSync(join(root, 'registry/page-templates.js
 
 const showcaseCards = [
   {
-    title: 'Theme Atlas · 14 Visual Styles',
-    desc: 'Filter and compare 14 independent visual directions side-by-side with live demos and assembly handoffs.',
+    title: 'Theme Atlas · 15 Visual Styles',
+    desc: 'Filter and compare 15 independent visual directions side-by-side with live demos and assembly handoffs.',
     href: './playground/style-atlas/',
     tag: 'Interactive Atlas'
+  },
+  {
+    title: 'Swiss Blueprint · Technical Spec (DT-015)',
+    desc: 'Cyanotype cobalt drafting grid, numbered drawing title block, interactive schematic pins, and synchronized mm/in spec ledger.',
+    href: './playground/swiss-blueprint/',
+    tag: 'New · 15th Style'
   },
   {
     title: 'React Component Gallery · 48 Exports',
@@ -100,7 +106,7 @@ const html = `<!doctype html>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Frontend Design Assets · Live Showcase</title>
-  <meta name="description" content="Live interactive previews for Frontend Design Assets: 14 visual styles, 48 React reference components, and native web specimens.">
+  <meta name="description" content="Live interactive previews for Frontend Design Assets: 15 visual styles, 48 React reference components, and native web specimens.">
   <style>
     :root { color-scheme: dark; --bg: #0c1220; --surface: #141e30; --border: #25344f; --text: #eef3fb; --muted: #9eb0c9; --accent: #77d6bc; --accent2: #78b6f7; }
     * { box-sizing: border-box; }

@@ -1,6 +1,6 @@
 # Cross-application style decision matrix · V0.26
 
-This matrix is a **reasoned selection guide**, not a rule engine or a claim that any style is universally best. For the interactive **14-theme** catalog and original-demo comparisons, use [Theme Atlas](../../playground/style-atlas/README.md); for machine-assisted matching use [selection contract V0.27](theme-selection-v027.md). First identify user tasks, platform and content, then select candidates.
+This matrix is a **reasoned selection guide**, not a rule engine or a claim that any style is universally best. For the interactive **15-theme** catalog and original-demo comparisons, use [Theme Atlas](../../playground/style-atlas/README.md); for machine-assisted matching use [selection contract V0.27](theme-selection-v027.md). First identify user tasks, platform and content, then select candidates.
 
 | Dimension | Refined Light SaaS | Precision Dark | Editorial Warm | Playful Pop |
 | --- | --- | --- | --- | --- |
@@ -85,5 +85,6 @@ Following the new explicit request to study **current popular design directions 
 | `shape-expressive` / DT-012 | Immediate one-of-three focus choice; dominant asymmetric decision grouping | Expressive colored silhouettes, high-salience copy | Playful Pop is gamified/reward-based, not task-first shape grouping | No shape-only state communication; protect focus order and contrast |
 | `type-led-minimal` / DT-013 | Concise product narrative + side index + visible summary/depth | Oversized type and whitespace instead of routine cards | Editorial Warm optimizes deep reading, Neo Brutalist uses poster grid energy | Deep text must be available through semantic disclosure; no inaccessible kinetic text |
 | `organic-tactile` / DT-014 | Object/material-focused story + short notes + palette controls | Earthy shades and original soft CSS clay forms | Paper Rebellion is deliberate chaotic collage, Commerce Atelier is structured retail comparison | Avoid texture over body text, false environmental claims and unlicensed imagery |
+| `swiss-blueprint` / DT-015 | Drawing title block + schematic plate + synchronized spec ledger | Deep cyanotype cobalt, hairline grid rules, chalk-white ink, amber pins | Precision Dark is neutral dev console, Signal Noir is glowing telemetry HUD | Keep grid contrast restrained, never fake tolerances, pair pins with keyboard-accessible table |
 
 Source comparison and research confidence: [Trend research 2026](trend-research-2026.md). Implemented reference: [Trend Style Lab](../../playground/trend-style-lab/README.md). **All four are scoped original experimental HTML/CSS/JS, not React package themes**, and no default theme has been selected. Prefer full-page task selection over choosing a fashionable surface effect in isolation.

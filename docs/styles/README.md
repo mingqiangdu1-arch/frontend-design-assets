@@ -1,10 +1,10 @@
 # Multi-style research collection · V0.26
 
-Browse all **14 styles**, source-grounded design grammar and live two-column demos in [Theme Atlas](../../playground/style-atlas/README.md). For agent selection use [task-first policy](theme-selection-v027.md) and [style facets](../../registry/style-facets.json); these are lexical evidence matches, not measured aesthetic scores.
+Browse all **15 styles**, source-grounded design grammar and live two-column demos in [Theme Atlas](../../playground/style-atlas/README.md). For agent selection use [task-first policy](theme-selection-v027.md) and [style facets](../../registry/style-facets.json); these are lexical evidence matches, not measured aesthetic scores.
 
 The repository **does not have a default visual theme**. Visual styles are explicit, independently scoped alternatives. Shared UI behavior can be researched across styles, but implementation and layout are not assumed portable.
 
-## Current registered collection: 14 independent styles
+## Current registered collection: 15 independent styles
 
 2026 trend study added four task-distinct, original scoped designs — **not** a silent React component package compatibility expansion. See [research and gap analysis](trend-research-2026.md), [interactive trend lab](../../playground/trend-style-lab/README.md) and the current [registry](../../registry/styles.json).
 
@@ -14,6 +14,7 @@ The repository **does not have a default visual theme**. Visual styles are expli
 | [`shape-expressive`](../../styles/shape-expressive/README.md) | High-salience asymmetric shape choices | consumer/mobile task selection | research reinterpretation, not Google UI source |
 | [`type-led-minimal`](../../styles/type-led-minimal/README.md) | Hero-scale typography + index + concise TL;DR | product brands and studios | deep content must remain discoverable |
 | [`organic-tactile`](../../styles/organic-tactile/README.md) | Natural clay-like CSS illustration + grounded notes | wellbeing, hospitality, sustainable goods | no unsupported environmental claims |
+| [`swiss-blueprint`](../../styles/swiss-blueprint/README.md) | Cyanotype cobalt drafting grid, title block & linked spec ledger | hardware docs, architecture specs, engineering catalogs | no fake CAD tolerances or pointer-only markers |
 
 **Research-driven scope update:** an earlier V0.11 study deferred Liquid Glass and Material Expressive as individual themes because an implementation purpose was not established. This V0.26 task explicitly asks for contemporary **independent theme exploration**; it therefore implements original, distinct use-case-led sample pages, not a global brand skin or production-ready mobile SDK.
 

@@ -46,11 +46,12 @@ node scripts/find-assets.mjs --intent="拖拽排序" --type=interaction --goal=b
 
 ### B · 给出有依据的大致设计方向
 
-先读 [`registry/style-facets.json`](registry/style-facets.json)（14 种风格的场景、布局、材质、密度、设备、概述、预览及注意事项），再参考 [风格注册表](registry/styles.json) 或 [创意方向](registry/creative-directions.json)。从以下分组挑选**不同**的方向，不应因为项目类型自动选中第一项：
+先读 [`registry/style-facets.json`](registry/style-facets.json)（15 种风格的场景、布局、材质、密度、设备、概述、预览及注意事项），再参考 [风格注册表](registry/styles.json) 或 [创意方向](registry/creative-directions.json)。从以下分组挑选**不同**的方向，不应因为项目类型自动选中第一项：
 
 | 任务形态 | 候选风格 ID |
 | --- | --- |
 | 后台、工作空间、专业工具 | `refined-light-saas` · `precision-dark` |
+| 工程规格、硬件文档、架构图纸 | `swiss-blueprint` · `precision-dark` |
 | 阅读、内容叙事、作品集 | `editorial-warm` · `type-led-minimal` · `paper-rebellion` |
 | 零售、商品展示、温暖品牌 | `commerce-atelier` · `organic-tactile` |
 | 移动短任务、学习、个性化选择 | `playful-pop` · `shape-expressive` |
