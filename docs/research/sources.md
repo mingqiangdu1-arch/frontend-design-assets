@@ -93,3 +93,14 @@ These references do not license copying vendors' UI, artwork, trademarks or font
 New indexed material: **REF-033..038 and REF-041**, covering [Animate UI](https://github.com/imskyleen/animate-ui), [Motion-Primitives](https://github.com/ibelick/motion-primitives), [React Bits](https://github.com/DavidHDev/react-bits), [Leva](https://github.com/pmndrs/leva), [WAI-ARIA Treegrid](https://www.w3.org/WAI/ARIA/apg/patterns/treegrid/), [MDN View Transitions](https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API) and [Observable Plot](https://github.com/observablehq/plot). Also added **REF-039/040**, two independently authored visual grammar research sketches rather than borrowed vendor designs.
 
 [Source matrix and license constraints](external-catalog-v018.md) records their use and limits. React Bits and Animate UI are licensed MIT + Commons Clause: do **not** treat their code as automatically redistributable components in this living library. No upstream source imported.
+
+
+## 2026-11-27 / Frontend reverse extraction
+
+- [Impeccable Extract](https://github.com/pbakaus/impeccable/tree/2fc5e1459efbbf06d92c7306517c286bf12490cf/.agents/skills/impeccable/reference/extract.md) — candidate discovery and incremental extraction.
+- [Vercel DS Skills Pipeline](https://github.com/vercel-labs/design-systems-to-agent-skills/tree/0e541bc7a8eb8e86e6b1c93fac7cf21588d487da) — verified source facts, usage analysis and staged verification.
+- [Dembrandt](https://github.com/dembrandt/dembrandt/tree/61d8aa4adc8c8725eca00d6d46abda3bd913155b) and [StyleLift](https://github.com/sreenathmmenon/stylelift/tree/7c976f86cb6a037dfc3d37fb17da1640488d97b4) — browser-side design-system sampling; optional references, not installed.
+- [Storybook](https://github.com/storybookjs/storybook/tree/deb929b1e1a943a37da82946fa11b42b983d704e) — component isolation and verification, not an extractor.
+- [shadcn registry](https://github.com/shadcn-ui/ui/tree/0e5b2e621a9ee4cf6a604bbe6c5c0d5b70561eb4) — component handoff metadata, not a universal registry contract.
+- [DTCG 2025.10](https://www.designtokens.org/tr/2025.10/format/) — optional token exchange format; stable Community Group report, not a W3C Standard.
+- Full decisions and pinned revisions: [frontend reverse extraction research](frontend-reverse-extraction-20261127.md).

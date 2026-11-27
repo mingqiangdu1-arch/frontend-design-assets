@@ -10,8 +10,10 @@
 | “还没有确定风格，先看看可以怎么设计” | **B. 方向探索** | 2–3 个**有区别**的方向：结构、视觉语言、交互特点、已有依据 |
 | “已有产品或截图，想参考或复现” | **先 B 后 A** | 先提取布局/材质/密度/交互约束，再逐项找实现素材；不能声称已精确复刻 |
 | “仓库里都有什么” | [完整任务索引](CATALOG.md) | 按类别给入口，不读取全量注册表、不罗列全部资产 |
-| “希望 Agent 按固定方法做选型、响应式布局、迁移或检查” | [Frontend Skills](.agents/skills/README.md) | 14 项可本地读取的 `SKILL.md`（7 自建 + 7 上游固定版本）及 2 项固定版本外部参考；按需读取，不自动安装或复制上游 |
+| “希望 Agent 按固定方法做选型、响应式布局、迁移或检查” | [Frontend Skills](.agents/skills/README.md) | 16 项可本地读取的 `SKILL.md`（9 自建 + 7 上游固定版本）及 2 项固定版本外部参考；按需读取，不自动安装或复制上游 |
 | “已有前端，要生成 UE 稿、页面地图或交互规则说明” | [frontend-ue-documentation](.agents/skills/frontend-ue-documentation/SKILL.md) | 页面与状态清单、控件规则、跳转与数据边界、证据及覆盖限制 |
+| “从现有项目提取可复用组件” | [frontend-component-extraction](.agents/skills/frontend-component-extraction/SKILL.md) | 候选识别、依赖解耦、API、交互状态、源码授权及资产交付 |
+| “从现有项目提取设计系统 / Tokens” | [frontend-design-system-extraction](.agents/skills/frontend-design-system-extraction/SKILL.md) | 多页面采样、Token 分层、设计规范、DTCG 可选导出及覆盖证据 |
 
 ### A · 找到可参考或可引用的实物
 

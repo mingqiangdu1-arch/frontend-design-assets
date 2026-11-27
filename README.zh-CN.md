@@ -40,10 +40,11 @@
 | --- | --- |
 | 找到可以参考或改造的实物 | [任务索引](CATALOG.md) → 对应登记项 → 源码与 Demo |
 | 尚未确定视觉方向 | [风格索引](registry/styles.json) · [主题图谱](playground/style-atlas/README.md) · [选型矩阵](docs/styles/decision-matrix.md) |
-| 让 AI Agent 自动检索和选型 | [两条检索路线](DISCOVER.md) · [Agent 工作指南](AGENTS.md) · [14 项本地技能 + 2 项外部参考](.agents/skills/README.md) |
+| 让 AI Agent 自动检索和选型 | [两条检索路线](DISCOVER.md) · [Agent 工作指南](AGENTS.md) · [16 项本地技能 + 2 项外部参考](.agents/skills/README.md) |
 | 直接查看 React 导出 | [组件索引](registry/components.json) · [源码说明](packages/ui/README.md) |
 | 欣赏原创图形与交互实验 | [素材画廊](docs/gallery.md) |
 | 研究外部项目及许可 | [研究目录](docs/research/) · [素材登记规则](registry/README.md) |
+| 从已有前端提取组件与设计系统 | [组件提取 Skill](.agents/skills/frontend-component-extraction/SKILL.md) · [设计系统提取 Skill](.agents/skills/frontend-design-system-extraction/SKILL.md) |
 
 ## 本地使用（Node.js 22+）
 

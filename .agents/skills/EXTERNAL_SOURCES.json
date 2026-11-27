@@ -2,7 +2,7 @@
   "schemaVersion": "1.0",
   "updatedAt": "2026-11-27",
   "purpose": "Pin independently fetched upstream Agent Skills; do not overwrite local project-authored skills or silently auto-update third-party instructions.",
-  "integration": "Seven pinned external skills remain bundled (27 original source files plus six copied upstream license files); two Vercel skills are external references only. Seven project-authored local workflows remain. No automatic installation or network fetch.",
+  "integration": "Seven pinned external skills remain bundled (27 original source files plus six copied upstream license files); two Vercel guidance references remain external-only. Nine project-authored workflows are local. No automatic installation or network fetch.",
   "security": {
     "executedExternalScripts": false,
     "installedDependencies": false,
@@ -134,6 +134,90 @@
       "sourceSubdirectory": "skills/frontend-to-ue",
       "reason": "No explicit redistribution license found in inspected root or skill directory; separately authored local workflow frontend-ue-documentation references general handoff concepts only.",
       "disposition": "research citation only; not installed or bundled"
+    },
+    {
+      "id": "impeccable-extract",
+      "publisher": "pbakaus",
+      "sourceRepository": "pbakaus/impeccable",
+      "sourceCommit": "2fc5e1459efbbf06d92c7306517c286bf12490cf",
+      "sourceSubdirectory": ".agents/skills/impeccable/reference/extract.md",
+      "sourceUrl": "https://github.com/pbakaus/impeccable/tree/2fc5e1459efbbf06d92c7306517c286bf12490cf/.agents/skills/impeccable/reference/extract.md",
+      "license": "Apache-2.0 (repository root)",
+      "licenseEvidence": "Root LICENSE inspected at pinned revision",
+      "reason": "Research reference for candidate discovery and incremental extraction; no source text, scripts or assets copied.",
+      "disposition": "research-reference-only; no vendored files"
+    },
+    {
+      "id": "vercel-design-systems-to-agent-skills",
+      "publisher": "Diego De Miguel / Vercel Labs",
+      "sourceRepository": "vercel-labs/design-systems-to-agent-skills",
+      "sourceCommit": "0e541bc7a8eb8e86e6b1c93fac7cf21588d487da",
+      "sourceSubdirectory": "/",
+      "sourceUrl": "https://github.com/vercel-labs/design-systems-to-agent-skills/tree/0e541bc7a8eb8e86e6b1c93fac7cf21588d487da",
+      "license": "MIT",
+      "licenseEvidence": "Root LICENSE inspected at pinned revision",
+      "reason": "Research reference for verified source facts, staged extraction and validation; no pipeline commands, templates or code copied.",
+      "disposition": "research-reference-only; no vendored files"
+    },
+    {
+      "id": "dembrandt",
+      "publisher": "thevangelist",
+      "sourceRepository": "dembrandt/dembrandt",
+      "sourceCommit": "61d8aa4adc8c8725eca00d6d46abda3bd913155b",
+      "sourceSubdirectory": "/",
+      "sourceUrl": "https://github.com/dembrandt/dembrandt/tree/61d8aa4adc8c8725eca00d6d46abda3bd913155b",
+      "license": "MIT",
+      "licenseEvidence": "Root LICENSE inspected at pinned revision",
+      "reason": "Optional DOM/computed-style/CSSOM extraction tool. Requires Node dependencies and first-run Chromium download; not installed or executed.",
+      "disposition": "optional tool reference; no vendored files"
+    },
+    {
+      "id": "stylelift",
+      "publisher": "sreenathmmenon",
+      "sourceRepository": "sreenathmmenon/stylelift",
+      "sourceCommit": "7c976f86cb6a037dfc3d37fb17da1640488d97b4",
+      "sourceSubdirectory": "/",
+      "sourceUrl": "https://github.com/sreenathmmenon/stylelift/tree/7c976f86cb6a037dfc3d37fb17da1640488d97b4",
+      "license": "No root license file found in inspected tree",
+      "licenseEvidence": "Pinned repository tree inspected; no LICENSE path present",
+      "reason": "Browser-side extraction concept only. Redistribution permission not established.",
+      "disposition": "research-reference-only; do not vendor or redistribute code"
+    },
+    {
+      "id": "storybook",
+      "publisher": "Storybook",
+      "sourceRepository": "storybookjs/storybook",
+      "sourceCommit": "deb929b1e1a943a37da82946fa11b42b983d704e",
+      "sourceSubdirectory": "/",
+      "sourceUrl": "https://github.com/storybookjs/storybook/tree/deb929b1e1a943a37da82946fa11b42b983d704e",
+      "license": "MIT (repository root)",
+      "licenseEvidence": "Root LICENSE inspected at pinned revision",
+      "reason": "Optional component story and isolated verification reference, not an extraction engine; no dependency added.",
+      "disposition": "optional verification reference; no vendored files"
+    },
+    {
+      "id": "shadcn-registry",
+      "publisher": "shadcn",
+      "sourceRepository": "shadcn-ui/ui",
+      "sourceCommit": "0e5b2e621a9ee4cf6a604bbe6c5c0d5b70561eb4",
+      "sourceSubdirectory": "/",
+      "sourceUrl": "https://github.com/shadcn-ui/ui/tree/0e5b2e621a9ee4cf6a604bbe6c5c0d5b70561eb4",
+      "license": "MIT (repository LICENSE.md)",
+      "licenseEvidence": "LICENSE.md inspected at pinned revision",
+      "reason": "Optional registry item metadata and component packaging reference; individual source/assets and target dependencies still require separate review.",
+      "disposition": "reference-only; no component files copied"
+    },
+    {
+      "id": "dtcg-2025-10",
+      "publisher": "Design Tokens Community Group",
+      "sourceRepository": "design-tokens/community-group",
+      "sourceCommit": "882ebd6716abef9a46d8ef5fb12e82009d6cee2e",
+      "sourceSubdirectory": "/",
+      "sourceUrl": "https://github.com/design-tokens/community-group/tree/882ebd6716abef9a46d8ef5fb12e82009d6cee2e",
+      "license": "W3C Community Final Specification Agreement",
+      "licenseEvidence": "Official 2025.10 format report and W3C CG publication status inspected",
+      "reason": "Optional typed design-token interchange format; stable Community Group specification, not a W3C Standard.",
+      "disposition": "standards reference; no spec text copied"
     }
   ],
   "maintenance": {

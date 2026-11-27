@@ -47,7 +47,8 @@ Explore distinct visual styles, locate reusable React and native web source, ins
 | Find native CSS, JavaScript or SVG materials | [Task catalog](CATALOG.md) · [Primitives](styles/primitives/) · [Graphics](graphics/) |
 | Explore behavior and composition | [Interaction patterns](docs/interactions/) · [Page templates](registry/page-templates.json) · [Recipes](recipes/) |
 | Research upstream projects | [Research archive](docs/research/) · [Source and reuse guidance](registry/README.md) |
-| Work with an AI agent | [Discovery routes](DISCOVER.md) · [Agent guide](AGENTS.md) · [14 local skills + 2 external references](.agents/skills/README.md) |
+| Extract assets from an existing frontend | [Component extraction](.agents/skills/frontend-component-extraction/SKILL.md) · [Design-system extraction](.agents/skills/frontend-design-system-extraction/SKILL.md) |
+| Work with an AI agent | [Discovery routes](DISCOVER.md) · [Agent guide](AGENTS.md) · [16 local skills + 2 external references](.agents/skills/README.md) |
 
 ## How the library works
 

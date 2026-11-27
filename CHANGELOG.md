@@ -1,3 +1,10 @@
+## 2026-11-27 · Reverse frontend extraction skills
+
+- Added project-authored `frontend-component-extraction` and `frontend-design-system-extraction` skills plus a shared evidence/provenance/authorization protocol and handoff templates.
+- Added an illustrative DTCG 2025.10 example and pinned research notes for Impeccable Extract, Vercel DS Skills Pipeline, Dembrandt, StyleLift, Storybook, shadcn Registry and DTCG. No upstream files/scripts or runtime dependencies were copied or installed.
+- Updated skill discovery and repository guidance: 16 locally available skills (9 authored + 7 pinned upstream), 2 existing external Vercel references. No asset IDs, React exports or style IDs changed; registry inventory remains 620 assets / 48 React exports / 15 styles.
+- Documentation-only introduction. No runtime extraction or browser validation is claimed.
+
 ## 2026-11-27 · As-built frontend UE documentation
 
 - Added the project-authored [frontend-ue-documentation](.agents/skills/frontend-ue-documentation/SKILL.md) workflow and a fictional handoff example: screen/state inventory, UI annotations, transition and data rules, evidence and delivery acceptance.

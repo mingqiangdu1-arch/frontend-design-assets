@@ -51,3 +51,20 @@ Exact Git blob SHA and decoded text equality were confirmed between pinned upstr
 ## BadbotAI — frontend-to-ue (research citation only, 2026-11-27)
 
 [Source v4.1](https://github.com/BadbotAI/BadGoods/tree/5e583c3a8866af190b75146f43d717fa87ddd8aa/skills/frontend-to-ue). No license file was found in the inspected repository root or skill directory, and the skill metadata does not declare one. No redistribution rights are assumed. The local [frontend-ue-documentation](frontend-ue-documentation/SKILL.md) workflow and fictional handoff example are separately authored; no upstream files, templates or scripts are distributed or executed. The two installed-index external references remain unchanged.
+
+
+## Reverse-extraction research references — 2026-11-27 (not vendored)
+
+The following sources informed the separately authored local workflows [frontend-component-extraction](frontend-component-extraction/SKILL.md) and [frontend-design-system-extraction](frontend-design-system-extraction/SKILL.md). **No upstream skill text, scripts, source code, browser extension, package or assets were copied into this repository.** Pins and license evidence are also recorded in [EXTERNAL_SOURCES.json](EXTERNAL_SOURCES.json) and the [research note](../../docs/research/frontend-reverse-extraction-20261127.md).
+
+| Source | Pinned revision | Inspected license / status | Use |
+| --- | --- | --- | --- |
+| [Impeccable Extract](https://github.com/pbakaus/impeccable/tree/2fc5e1459efbbf06d92c7306517c286bf12490cf) | `2fc5e1459efbbf06d92c7306517c286bf12490cf` | Apache-2.0 root LICENSE | Candidate discovery and incremental abstraction concepts only |
+| [Vercel DS Skills Pipeline](https://github.com/vercel-labs/design-systems-to-agent-skills/tree/0e541bc7a8eb8e86e6b1c93fac7cf21588d487da) | `0e541bc7a8eb8e86e6b1c93fac7cf21588d487da` | MIT root LICENSE | Verified facts and staged validation concepts only |
+| [Dembrandt](https://github.com/dembrandt/dembrandt/tree/61d8aa4adc8c8725eca00d6d46abda3bd913155b) | `61d8aa4adc8c8725eca00d6d46abda3bd913155b` | MIT root LICENSE | Optional tool reference; not installed or executed |
+| [StyleLift](https://github.com/sreenathmmenon/stylelift/tree/7c976f86cb6a037dfc3d37fb17da1640488d97b4) | `7c976f86cb6a037dfc3d37fb17da1640488d97b4` | No root LICENSE found in inspected tree | Research only; no redistribution assumed |
+| [Storybook](https://github.com/storybookjs/storybook/tree/deb929b1e1a943a37da82946fa11b42b983d704e) | `deb929b1e1a943a37da82946fa11b42b983d704e` | MIT root LICENSE | Optional component documentation/verification reference |
+| [shadcn UI registry](https://github.com/shadcn-ui/ui/tree/0e5b2e621a9ee4cf6a604bbe6c5c0d5b70561eb4) | `0e5b2e621a9ee4cf6a604bbe6c5c0d5b70561eb4` | MIT repository LICENSE.md | Optional metadata/packaging reference; source assets checked separately |
+| [DTCG 2025.10](https://www.designtokens.org/tr/2025.10/format/) | `882ebd6716abef9a46d8ef5fb12e82009d6cee2e` | W3C Community Group Final Specification Agreement | Optional exchange format; not a W3C Standard |
+
+The repository's local token JSON predates/does not necessarily conform to DTCG 2025.10. Do not silently replace it; an interoperable export should be a separate file and validated against the specification.

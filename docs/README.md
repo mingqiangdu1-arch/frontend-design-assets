@@ -9,6 +9,7 @@
 | [Styles](styles/) | Visual systems, tokens, comparison and selection |
 | [Assembly](assembly/) · [Interactions](interactions/) | Layout recipes and behavior contracts |
 | [Research](research/) | Pinned external sources and exploratory studies |
+| [Frontend reverse extraction](research/frontend-reverse-extraction-20261127.md) | Component extraction, design-system extraction and source/tool decisions |
 | [Quality](quality/) | Evidence, test boundaries and limitations |
 | [Governance](governance.md) · [Licensing](licensing.md) · [Release maintenance](release-maintenance.md) · [Publication readiness](publication-readiness.md) | Maintenance, attribution and release gates |
 
