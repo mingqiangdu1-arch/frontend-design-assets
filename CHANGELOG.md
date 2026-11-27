@@ -1,3 +1,8 @@
+## 2026-11-27 · As-built frontend UE documentation
+
+- Added the project-authored [frontend-ue-documentation](.agents/skills/frontend-ue-documentation/SKILL.md) workflow and a fictional handoff example: screen/state inventory, UI annotations, transition and data rules, evidence and delivery acceptance.
+- Referenced BadbotAI/BadGoods frontend-to-ue v4.1 at a fixed revision; no upstream files, scripts or renderer redistributed. Updated skill routing (14 local skills, 2 pinned external references); asset and React-export counts unchanged. Documentation-only; no runtime tests claimed.
+
 ## 2026-11-24 · V0.66 Swiss Blueprint 15th visual direction
 
 - Added `DT-015` (`swiss-blueprint` / 工程蓝图规格) as the 15th independent visual direction, completing the 5 × 3 Visual Atlas grid (`docs/media/style-atlas.svg`) with zero empty cells.

@@ -2,7 +2,7 @@
 
 This is the **skill layer** of this living frontend asset repository. Existing sources are the *materials*; each skill is an *on-demand workflow* for an agent to discover, reason about, adapt or review those materials. The module does not generate or deploy a website inside the library.
 
-**Thirteen locally available skills and two pinned external references**: six project-authored workflows, seven complete bundled upstream skills, and two Vercel guidance links. The 13 local skills have YAML-frontmatter `SKILL.md` files following the [Agent Skills specification](https://agentskills.io/specification). The two Vercel references are not installed or bundled. No skill auto-runs in GitHub.
+**Fourteen locally available skills and two pinned external references**: seven project-authored workflows, seven complete bundled upstream skills, and two Vercel guidance links. The 14 local skills have YAML-frontmatter `SKILL.md` files following the [Agent Skills specification](https://agentskills.io/specification). The two Vercel references are not installed or bundled. No skill auto-runs in GitHub.
 
 ## Select by objective
 
@@ -14,6 +14,7 @@ This is the **skill layer** of this living frontend asset repository. Existing s
 | “按钮、拖拽、表格、Agent 操作流程有哪些状态？” | [frontend-interaction-contract](frontend-interaction-contract/SKILL.md) | state transitions, input and accessibility contracts, failure recovery |
 | “把现有素材迁到 React / Next / Vue 项目” | [frontend-component-adaptation](frontend-component-adaptation/SKILL.md) | precise source-to-host migration plan/changes with provenance |
 | “这个界面/组件是否可用？有哪些缺陷？” | [frontend-quality-audit](frontend-quality-audit/SKILL.md) | evidence-scoped audit, severity, smallest fixes and unverified items |
+| “已有前端，反向生成 UE 稿 / 页面交互说明” | [frontend-ue-documentation](frontend-ue-documentation/SKILL.md) | Screen inventory + UI annotations + interaction/data rules + coverage evidence |
 
 ### Imported third-party skills (pinned, not auto-updated)
 
@@ -36,7 +37,7 @@ This is the **skill layer** of this living frontend asset repository. Existing s
 | React / Next.js performance | [Vercel React Best Practices](https://github.com/vercel-labs/agent-skills/tree/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/react-best-practices) | Reference only; read upstream when authorized |
 | Scalable React component API/state architecture | [Vercel Composition Patterns](https://github.com/vercel-labs/agent-skills/tree/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/composition-patterns) | Reference only; read upstream when authorized |
 
-The pinned versions declare MIT in their respective upstream SKILL.md. A full upstream permission/copyright notice was not located at the tested paths; therefore no local copies are shipped. Offline agents should use the six local workflows and clearly state that external guidance is unavailable. Do not silently fetch, install, or execute upstream content.
+The pinned versions declare MIT in their respective upstream SKILL.md. A full upstream permission/copyright notice was not located at the tested paths; therefore no local copies are shipped. Offline agents should use the seven local workflows and clearly state that external guidance is unavailable. Do not silently fetch, install, or execute upstream content.
 
 ### Task-first routing
 
@@ -46,15 +47,16 @@ The pinned versions declare MIT in their respective upstream SKILL.md. A full up
 - For React/Next.js performance, optionally consult the pinned **Vercel React Best Practices** upstream reference when access is authorized; do not assume it is installed. For final visual execution from an agreed brief, use **Anthropic frontend-design** after exploring options only if needed.
 - For Tailwind v4 tasks, load **Tailwind CSS**; for motion design use **Animate**, for motion jank use **Animation Performance**, and only load **GSAP Core** if GSAP is actually relevant.
 - For frontend chart selection, implementation or accessibility, use **Data Visualization**. For a new coordinated icon family, use **Icon Set Generator**; running its bundled Python scripts requires deliberate target-directory review.
+- For existing frontend-to-UE handoff: **UE documentation**; add interaction contract or quality audit only for requested redesign or defect review.
 - For general UX reviews: use **quality audit alone** and avoid reading every skill, registry and historical version.
 
 ### How to use
 
 - **Codex inside this repo:** Open the repository as the working directory, then ask for the relevant task or invoke the displayed skill by name where supported. Codex scans `.agents/skills` in repository directories; if skills do not appear, check product support/configuration or restart after installing. [Codex official skill documentation](https://learn.chatgpt.com/docs/build-skills).
 - **Agent with GitHub access, no local checkout:** Read this short index, open **one** matching `SKILL.md`, then only its referenced source files. GitHub source navigation works even without local execution; scripts and target verification require a suitable runtime.
-- **Other repositories / local installs:** The **six local skills** contain links to this repository's relative asset sources, so a stand-alone copy into an unrelated project does **not** make the source library available. Give the agent a checkout or authorized GitHub connector for `mingqiangdu1-arch/frontend-design-assets`, and resolve references against that original repo; otherwise use the procedural guidance only and mark source paths unavailable. Resolve paths against the actual checkout or authorized repository; do not assume availability.
-- **Language:** Our six skills provide English triggers and bilingual instructions/examples; imported skills retain upstream English. Respond to the user in the requested language.
-- **Scope:** The six local workflows are author-created. Seven additional skills are attributed upstream snapshots; two Vercel sources are pinned external references only. None is a certification, deployment tool or proof of application browser behavior.
+- **Other repositories / local installs:** The **seven local skills** contain links to this repository's relative asset sources, so a stand-alone copy into an unrelated project does **not** make the source library available. Give the agent a checkout or authorized GitHub connector for `mingqiangdu1-arch/frontend-design-assets`, and resolve references against that original repo; otherwise use the procedural guidance only and mark source paths unavailable. Resolve paths against the actual checkout or authorized repository; do not assume availability.
+- **Language:** Our seven skills provide English triggers and bilingual instructions/examples; imported skills retain upstream English. Respond to the user in the requested language.
+- **Scope:** The seven local workflows are author-created. Seven additional skills are attributed upstream snapshots; two Vercel sources are pinned external references only. None is a certification, deployment tool or proof of application browser behavior.
 
 ### Keep this module lean
-Only add a skill when a distinct repeatable task cannot be covered by the 13 local skills and two external references. Prefer concrete worked examples and source links over near-duplicate “frontend best practices” prompts. Keep all original asset IDs and style claims grounded in [DISCOVER.md](../../DISCOVER.md), [registry data](../../registry/README.md) and the real source files. Research and implementation evidence must stay separate.
+Only add a skill when a distinct repeatable task cannot be covered by the 14 local skills and two external references. Prefer concrete worked examples and source links over near-duplicate “frontend best practices” prompts. Keep all original asset IDs and style claims grounded in [DISCOVER.md](../../DISCOVER.md), [registry data](../../registry/README.md) and the real source files. Research and implementation evidence must stay separate.

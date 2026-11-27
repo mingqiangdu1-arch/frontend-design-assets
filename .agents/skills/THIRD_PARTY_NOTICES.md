@@ -47,3 +47,7 @@ The full [machine-readable source manifest](EXTERNAL_SOURCES.json) records IDs, 
 ## Pinned license recheck — 2026-11-24
 
 Exact Git blob SHA and decoded text equality were confirmed between pinned upstream and local license files for frontend-design, tailwind-css, animate, animation-performance, gsap-core, data-visualization and icon-set-generator (seven folders). For the two Vercel skills, pinned upstream and local SKILL.md blobs match and declare MIT. The tested root LICENSE, LICENSE.md, LICENSE.txt and each skill's LICENSE path were not returned at the pinned revision; the locally supplied Vercel MIT notice is not an original upstream license file. Retain this distinction. Both Vercel directories and the locally constructed notice have now been removed from the candidate tree; do not restore them without confirmed rights. Source identity is not a new full-content safety or redistribution audit.
+
+## BadbotAI — frontend-to-ue (research citation only, 2026-11-27)
+
+[Source v4.1](https://github.com/BadbotAI/BadGoods/tree/5e583c3a8866af190b75146f43d717fa87ddd8aa/skills/frontend-to-ue). No license file was found in the inspected repository root or skill directory, and the skill metadata does not declare one. No redistribution rights are assumed. The local [frontend-ue-documentation](frontend-ue-documentation/SKILL.md) workflow and fictional handoff example are separately authored; no upstream files, templates or scripts are distributed or executed. The two installed-index external references remain unchanged.

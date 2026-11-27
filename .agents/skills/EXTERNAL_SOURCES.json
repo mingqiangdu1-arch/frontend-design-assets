@@ -1,8 +1,8 @@
 {
   "schemaVersion": "1.0",
-  "updatedAt": "2026-11-24",
+  "updatedAt": "2026-11-27",
   "purpose": "Pin independently fetched upstream Agent Skills; do not overwrite local project-authored skills or silently auto-update third-party instructions.",
-  "integration": "Seven pinned external skills remain bundled (27 original source files plus six copied upstream license files); two Vercel skills are external references only. Six project-authored local workflows remain. No automatic installation or network fetch.",
+  "integration": "Seven pinned external skills remain bundled (27 original source files plus six copied upstream license files); two Vercel skills are external references only. Seven project-authored local workflows remain. No automatic installation or network fetch.",
   "security": {
     "executedExternalScripts": false,
     "installedDependencies": false,
@@ -126,6 +126,14 @@
       "sourceRepository": "vercel-labs/agent-skills",
       "reason": "Requires fetching mutable remote rules on every execution; no self-contained pinned ruleset in that one-file skill and no local license declaration. Existing frontend-quality-audit remains available for evidence-based UI checks.",
       "disposition": "external-reference-only; do not imply installed"
+    },
+    {
+      "id": "frontend-to-ue",
+      "sourceRepository": "BadbotAI/BadGoods",
+      "sourceCommit": "5e583c3a8866af190b75146f43d717fa87ddd8aa",
+      "sourceSubdirectory": "skills/frontend-to-ue",
+      "reason": "No explicit redistribution license found in inspected root or skill directory; separately authored local workflow frontend-ue-documentation references general handoff concepts only.",
+      "disposition": "research citation only; not installed or bundled"
     }
   ],
   "maintenance": {
