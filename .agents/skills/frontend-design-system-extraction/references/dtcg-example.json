@@ -1,0 +1,47 @@
+{
+  "$description": "Illustrative DTCG 2025.10 example. Values are synthetic and are not extracted from a real product.",
+  "primitive": {
+    "color": {
+      "blue-600": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [0.1451, 0.3882, 0.9216],
+          "alpha": 1
+        }
+      }
+    },
+    "spacing": {
+      "4": {
+        "$type": "dimension",
+        "$value": {
+          "value": 4,
+          "unit": "px"
+        }
+      }
+    },
+    "duration": {
+      "fast": {
+        "$type": "duration",
+        "$value": {
+          "value": 130,
+          "unit": "ms"
+        }
+      }
+    }
+  },
+  "semantic": {
+    "action": {
+      "primary": {
+        "$type": "color",
+        "$value": "{primitive.color.blue-600}"
+      }
+    },
+    "control": {
+      "gap": {
+        "$type": "dimension",
+        "$value": "{primitive.spacing.4}"
+      }
+    }
+  }
+}
